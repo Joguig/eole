@@ -1,0 +1,11 @@
+#! /usr/bin/perl -w
+# decodage base64
+
+use strict;
+use MIME::Base64;
+my $var;
+
+while ($var = <STDIN>)
+{
+  print decode_base64($var)."\n";
+}

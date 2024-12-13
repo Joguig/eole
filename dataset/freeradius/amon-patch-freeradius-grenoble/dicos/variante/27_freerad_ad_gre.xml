@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<creole>
+
+    <files>
+        <service redefine='True' servicelist='fr_kerberos' method='upstart'>smbd</service>
+        <service redefine='True' servicelist='fr_kerberos'  method='upstart'>nmbd</service>
+        <service redefine='True' servicelist='fr_kerberos'>winbind</service>
+        <service redefine='True' servicelist='fr_kerberos' startlevel='18' stoplevel='18'>krb5-admin-server</service>
+        <service redefine='True' servicelist='fr_kerberos' startlevel='18' stoplevel='18'>krb5-kdc</service>
+
+        <file filelist='fr_kerberos' name='/etc/samba/smb.conf' source='krb-smb.conf'/>
+        <file filelist='fr_kerberos' name='/etc/krb5.conf'   source='krb5.conf'/>
+        <file filelist='fr_kerberos' name='/etc/samba/lmhosts' source='lmhosts' />
+
+    </files>
+
+    <variables>
+        <family name='freeradius'>
+            <variable name='freerad_acc_type_annuaire' type='string'  description='Annuaire utilisé'>
+                <value>ldap</value>
+            </variable>
+
+            <variable name='freerad_ldap_ip' redefine='True' />
+
+            <!-- **** KRB **** -->
+            <variable name='fr_nom_serveur_krb' type='hostname_strict' description='Nom du contrôleur de domaine KERBEROS' mandatory='True'/>
+            <variable name='fr_nom_domaine_krb' type='domain' description='Nom du domaine KERBEROS (fqdn)' mandatory='True'/>
+            <variable name='fr_nom_domaine_windows' type='netbios' description='Nom du domaine Windows' mandatory='True'/>
+            <variable name='fr_ip_serveur_krb' type='ip' description='Adresse IP du contrôleur de domaine KERBEROS' mandatory='True'/>
+            <variable name='freerad_eap_default_method' type='string' description='Methode eap par defaut' mandatory='True'>
+                 <value>peap</value>
+            </variable>
+
+            <variable name='activation_ldap_ip_adress' type='string' hidden='True' />
+
+
+        </family>
+
+        <separators>
+            <separator name='freerad_acc_type_annuaire'>Configuration du type d'annuaire </separator>
+            <separator name='fr_nom_serveur_krb'>Configuration Active Directory </separator>
+            <separator name='freerad_eap_default_method'>Configuration EAP</separator>
+        </separators>
+
+
+    </variables>
+
+    <constraints>
+        <check name="valid_enum" target='freerad_acc_type_annuaire'>
+            <param>['AD','ldap']</param>
+        </check>
+
+        <auto name='calc_multi_condition' target='activation_ldap_ip_adress'>
+            <param  >['accounting', 'AD']</param>
+            <param type='eole' name='condition_1' hidden='False' >freerad_mode</param>
+            <param type='eole' name='condition_2' hidden='False' >freerad_acc_type_annuaire</param>
+            <param name='match'>non</param>
+            <param name='mismatch'>oui</param>
+        </auto>
+
+        <condition name='frozen_if_in' source='freerad_mode' fallback='True'>
+            <param>802.1x</param>
+            <target type='variable' optional='True'>freerad_acc_type_annuaire</target>
+        </condition>
+
+        <condition name='disabled_if_in' source='activation_ldap_ip_adress'  >
+            <param>non</param>
+            <target type='variable'>freerad_cle_ldap_scribe</target>
+            <target type='variable' >freerad_ldap_ip</target>
+            <target type='variable'>freerad_ldap_base_dn</target>
+        </condition>
+
+        <condition name='disabled_if_in' source='activation_ldap_ip_adress'>
+            <param>oui</param>
+            <target type='servicelist'>fr_kerberos</target>
+            <target type='filelist'>fr_kerberos</target>
+        </condition>
+
+        <condition name='disabled_if_in' source='freerad_acc_type_annuaire'>
+            <param>ldap</param>
+            <target type='variable'>fr_nom_serveur_krb</target>
+            <target type='variable'>fr_nom_domaine_krb</target>
+            <target type='variable'>fr_nom_domaine_windows</target>
+            <target type='variable'>fr_ip_serveur_krb</target>
+        </condition>
+
+        <check name="valid_enum" target='freerad_eap_default_method'>
+            <param>['ttls','peap']</param>
+        </check>
+
+    </constraints>
+
+    <help>
+    </help>
+
+
+</creole>
+

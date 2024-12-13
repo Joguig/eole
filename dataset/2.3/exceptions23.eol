@@ -1,0 +1,49 @@
+[nombre_interfaces]
+valdefault = []
+valprec = []
+val = ['5']
+
+
+[era_proxy_bypass]
+valdefault = []
+valprec = []
+val = ['1.1.1.1', '2.2.2.2']
+
+
+[adresse_ip_wpad_exclude]
+valdefault = []
+valprec = []
+val = ['8.8.8.8', '10.0.0.0']
+
+[adresse_netmask_wpad_exclude]
+valdefault = []
+valprec = []
+val = ['255.255.255.255', '255.255.255.0']
+
+[interface_wpad_exclude]
+valdefault = []
+valprec = ['Toutes', '2']
+val = ['Toutes', '2']
+
+
+[nom_domaine_wpad_exclude]
+valdefault = []
+valprec = []
+val = ['eole.ac-dijon.fr', 'free.fr']
+
+[nom_interface_wpad_exclude]
+valdefault = []
+valprec = ['']
+val = ['Toutes', '3']
+
+
+[nom_host_wpad_exclude]
+valdefault = []
+valprec = []
+val = ['hote.com']
+
+[nom_host_interface_wpad_exclude]
+valdefault = []
+valprec = []
+val = ['Toutes']
+

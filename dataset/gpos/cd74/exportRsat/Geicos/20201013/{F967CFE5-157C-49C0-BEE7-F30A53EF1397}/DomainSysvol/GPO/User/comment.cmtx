@@ -1,0 +1,287 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<policyComments xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/CommentDefinitions">
+  <policyNamespaces>
+    <using prefix="ns0" namespace="Microsoft.Policies.CloudContent"></using>
+    <using prefix="ns1" namespace="Microsoft.Policies.ControlPanel"></using>
+    <using prefix="ns2" namespace="Microsoft.Policies.ControlPanelDisplay"></using>
+    <using prefix="ns3" namespace="Microsoft.Policies.EdgeUI"></using>
+    <using prefix="ns4" namespace="Microsoft.Policies.Globalization"></using>
+    <using prefix="ns5" namespace="Microsoft.Policies.InternetCommunicationManagement"></using>
+    <using prefix="ns6" namespace="Microsoft.Policies.MMCSnapIns"></using>
+    <using prefix="ns7" namespace="Microsoft.Policies.MSI"></using>
+    <using prefix="ns8" namespace="Microsoft.Policies.MicrosoftEdge"></using>
+    <using prefix="ns9" namespace="Microsoft.Policies.NetworkConnections"></using>
+    <using prefix="ns10" namespace="Microsoft.Policies.Notifications"></using>
+    <using prefix="ns11" namespace="Microsoft.Policies.Printing"></using>
+    <using prefix="ns12" namespace="Microsoft.Policies.Programs"></using>
+    <using prefix="ns13" namespace="Microsoft.Policies.SideBar"></using>
+    <using prefix="ns14" namespace="Microsoft.Policies.StartMenu"></using>
+    <using prefix="ns15" namespace="Microsoft.Policies.TaskBar2"></using>
+    <using prefix="ns16" namespace="Microsoft.Policies.WindowsDesktop"></using>
+    <using prefix="ns17" namespace="Microsoft.Policies.WindowsExplorer"></using>
+    <using prefix="ns18" namespace="Microsoft.Policies.WindowsMessenger"></using>
+    <using prefix="ns19" namespace="Microsoft.Policies.WindowsStore"></using>
+    <using prefix="ns20" namespace="Microsoft.Policies.WindowsTools"></using>
+    <using prefix="ns21" namespace="Mozilla.Policies.Firefox"></using>
+    <using prefix="ns22" namespace="Open-Shell.Policies.Menu"></using>
+  </policyNamespaces>
+  <comments>
+    <admTemplate>
+      <comment policyRef="ns0:DisableTailoredExperiencesWithDiagnosticData" commentText="$(resource.ns0_DisableTailoredExperiencesWithDiagnosticData)"></comment>
+      <comment policyRef="ns1:RestrictCpls" commentText="$(resource.ns1_RestrictCpls)"></comment>
+      <comment policyRef="ns1:SettingsPageVisibility" commentText="$(resource.ns1_SettingsPageVisibility)"></comment>
+      <comment policyRef="ns2:CPL_Personalization_DisableThemeChange" commentText="$(resource.ns2_CPL_Personalization_DisableThemeChange)"></comment>
+      <comment policyRef="ns2:CPL_Personalization_DisableVisualStyle" commentText="$(resource.ns2_CPL_Personalization_DisableVisualStyle)"></comment>
+      <comment policyRef="ns2:CPL_Personalization_NoColorAppearanceUI" commentText="$(resource.ns2_CPL_Personalization_NoColorAppearanceUI)"></comment>
+      <comment policyRef="ns2:CPL_Personalization_NoDesktopBackgroundUI" commentText="$(resource.ns2_CPL_Personalization_NoDesktopBackgroundUI)"></comment>
+      <comment policyRef="ns2:CPL_Personalization_NoDesktopIconsUI" commentText="$(resource.ns2_CPL_Personalization_NoDesktopIconsUI)"></comment>
+      <comment policyRef="ns2:CPL_Personalization_NoMousePointersUI" commentText="$(resource.ns2_CPL_Personalization_NoMousePointersUI)"></comment>
+      <comment policyRef="ns2:CPL_Personalization_NoScreenSaverUI" commentText="$(resource.ns2_CPL_Personalization_NoScreenSaverUI)"></comment>
+      <comment policyRef="ns3:ShowCommandPromptOnWinX" commentText="$(resource.ns3_ShowCommandPromptOnWinX)"></comment>
+      <comment policyRef="ns4:HideLocaleSelectAndCustomize" commentText="$(resource.ns4_HideLocaleSelectAndCustomize)"></comment>
+      <comment policyRef="ns5:ShellNoUseStoreOpenWith_1" commentText="$(resource.ns5_ShellNoUseStoreOpenWith_1)"></comment>
+      <comment policyRef="ns6:MMC_ComputerManagement" commentText="$(resource.ns6_MMC_ComputerManagement)"></comment>
+      <comment policyRef="ns6:MMC_DiskMgmt" commentText="$(resource.ns6_MMC_DiskMgmt)"></comment>
+      <comment policyRef="ns7:DisableMedia" commentText="$(resource.ns7_DisableMedia)"></comment>
+      <comment policyRef="ns8:HomePages" commentText="$(resource.ns8_HomePages)"></comment>
+      <comment policyRef="ns8:PreventFirstRunPage" commentText="$(resource.ns8_PreventFirstRunPage)"></comment>
+      <comment policyRef="ns9:NC_LanProperties" commentText="$(resource.ns9_NC_LanProperties)"></comment>
+      <comment policyRef="ns10:NoTileNotification" commentText="$(resource.ns10_NoTileNotification)"></comment>
+      <comment policyRef="ns11:NoAddPrinter" commentText="$(resource.ns11_NoAddPrinter)"></comment>
+      <comment policyRef="ns11:NoDeletePrinter" commentText="$(resource.ns11_NoDeletePrinter)"></comment>
+      <comment policyRef="ns12:NoDefaultPrograms" commentText="$(resource.ns12_NoDefaultPrograms)"></comment>
+      <comment policyRef="ns12:NoGetPrograms" commentText="$(resource.ns12_NoGetPrograms)"></comment>
+      <comment policyRef="ns12:NoInstalledUpdates" commentText="$(resource.ns12_NoInstalledUpdates)"></comment>
+      <comment policyRef="ns12:NoProgramsAndFeatures" commentText="$(resource.ns12_NoProgramsAndFeatures)"></comment>
+      <comment policyRef="ns12:NoProgramsCPL" commentText="$(resource.ns12_NoProgramsCPL)"></comment>
+      <comment policyRef="ns12:NoWindowsFeatures" commentText="$(resource.ns12_NoWindowsFeatures)"></comment>
+      <comment policyRef="ns13:TurnOffSidebar_1" commentText="$(resource.ns13_TurnOffSidebar_1)"></comment>
+      <comment policyRef="ns14:ClearRecentDocsOnExit" commentText="$(resource.ns14_ClearRecentDocsOnExit)"></comment>
+      <comment policyRef="ns14:DisableContextMenusInStart" commentText="$(resource.ns14_DisableContextMenusInStart)"></comment>
+      <comment policyRef="ns14:HidePeopleBar" commentText="$(resource.ns14_HidePeopleBar)"></comment>
+      <comment policyRef="ns14:Intellimenus" commentText="$(resource.ns14_Intellimenus)"></comment>
+      <comment policyRef="ns14:LockTaskbar" commentText="$(resource.ns14_LockTaskbar)"></comment>
+      <comment policyRef="ns14:NoChangeStartMenu" commentText="$(resource.ns14_NoChangeStartMenu)"></comment>
+      <comment policyRef="ns14:NoCommonGroups" commentText="$(resource.ns14_NoCommonGroups)"></comment>
+      <comment policyRef="ns14:NoFind" commentText="$(resource.ns14_NoFind)"></comment>
+      <comment policyRef="ns14:NoGamesFolderOnStartMenu" commentText="$(resource.ns14_NoGamesFolderOnStartMenu)"></comment>
+      <comment policyRef="ns14:NoHelp" commentText="$(resource.ns14_NoHelp)"></comment>
+      <comment policyRef="ns14:NoMoreProgramsList" commentText="$(resource.ns14_NoMoreProgramsList)"></comment>
+      <comment policyRef="ns14:NoNetAndDialupConnect" commentText="$(resource.ns14_NoNetAndDialupConnect)"></comment>
+      <comment policyRef="ns14:NoPinnedPrograms" commentText="$(resource.ns14_NoPinnedPrograms)"></comment>
+      <comment policyRef="ns14:NoRun" commentText="$(resource.ns14_NoRun)"></comment>
+      <comment policyRef="ns14:NoSMConfigurePrograms" commentText="$(resource.ns14_NoSMConfigurePrograms)"></comment>
+      <comment policyRef="ns14:NoSMMyNetworkPlaces" commentText="$(resource.ns14_NoSMMyNetworkPlaces)"></comment>
+      <comment policyRef="ns14:NoSearchCommInStartMenu" commentText="$(resource.ns14_NoSearchCommInStartMenu)"></comment>
+      <comment policyRef="ns14:NoSearchComputerLinkInStartMenu" commentText="$(resource.ns14_NoSearchComputerLinkInStartMenu)"></comment>
+      <comment policyRef="ns14:NoSearchEverywhereLinkInStartMenu" commentText="$(resource.ns14_NoSearchEverywhereLinkInStartMenu)"></comment>
+      <comment policyRef="ns14:NoSearchFilesInStartMenu" commentText="$(resource.ns14_NoSearchFilesInStartMenu)"></comment>
+      <comment policyRef="ns14:NoSearchInternetInStartMenu" commentText="$(resource.ns14_NoSearchInternetInStartMenu)"></comment>
+      <comment policyRef="ns14:NoSearchProgramsInStartMenu" commentText="$(resource.ns14_NoSearchProgramsInStartMenu)"></comment>
+      <comment policyRef="ns14:NoSetFolders" commentText="$(resource.ns14_NoSetFolders)"></comment>
+      <comment policyRef="ns14:NoSetTaskbar" commentText="$(resource.ns14_NoSetTaskbar)"></comment>
+      <comment policyRef="ns14:NoStartMenuHomegroup" commentText="$(resource.ns14_NoStartMenuHomegroup)"></comment>
+      <comment policyRef="ns14:NoStartMenuRecordedTV" commentText="$(resource.ns14_NoStartMenuRecordedTV)"></comment>
+      <comment policyRef="ns14:NoToolbarsOnTaskbar" commentText="$(resource.ns14_NoToolbarsOnTaskbar)"></comment>
+      <comment policyRef="ns14:NoTrayContextMenu" commentText="$(resource.ns14_NoTrayContextMenu)"></comment>
+      <comment policyRef="ns14:NoUninstallFromStart" commentText="$(resource.ns14_NoUninstallFromStart)"></comment>
+      <comment policyRef="ns14:NoWindowsUpdate" commentText="$(resource.ns14_NoWindowsUpdate)"></comment>
+      <comment policyRef="ns15:DisableNotificationCenter" commentText="$(resource.ns15_DisableNotificationCenter)"></comment>
+      <comment policyRef="ns15:HideSCAHealth" commentText="$(resource.ns15_HideSCAHealth)"></comment>
+      <comment policyRef="ns15:NoPinningStoreToTaskbar" commentText="$(resource.ns15_NoPinningStoreToTaskbar)"></comment>
+      <comment policyRef="ns15:NoPinningToTaskbar" commentText="$(resource.ns15_NoPinningToTaskbar)"></comment>
+      <comment policyRef="ns15:TaskbarLockAll" commentText="$(resource.ns15_TaskbarLockAll)"></comment>
+      <comment policyRef="ns15:TaskbarNoAddRemoveToolbar" commentText="$(resource.ns15_TaskbarNoAddRemoveToolbar)"></comment>
+      <comment policyRef="ns15:TaskbarNoDragToolbar" commentText="$(resource.ns15_TaskbarNoDragToolbar)"></comment>
+      <comment policyRef="ns15:TaskbarNoMultimon" commentText="$(resource.ns15_TaskbarNoMultimon)"></comment>
+      <comment policyRef="ns15:TaskbarNoRedock" commentText="$(resource.ns15_TaskbarNoRedock)"></comment>
+      <comment policyRef="ns15:TaskbarNoResize" commentText="$(resource.ns15_TaskbarNoResize)"></comment>
+      <comment policyRef="ns16:NoMyComputerIcon" commentText="$(resource.ns16_NoMyComputerIcon)"></comment>
+      <comment policyRef="ns16:NoPropertiesMyComputer" commentText="$(resource.ns16_NoPropertiesMyComputer)"></comment>
+      <comment policyRef="ns16:NoPropertiesMyDocuments" commentText="$(resource.ns16_NoPropertiesMyDocuments)"></comment>
+      <comment policyRef="ns16:NoRecycleBinIcon" commentText="$(resource.ns16_NoRecycleBinIcon)"></comment>
+      <comment policyRef="ns16:NoRecycleBinProperties" commentText="$(resource.ns16_NoRecycleBinProperties)"></comment>
+      <comment policyRef="ns16:NoSaveSettings" commentText="$(resource.ns16_NoSaveSettings)"></comment>
+      <comment policyRef="ns16:Wallpaper" commentText="$(resource.ns16_Wallpaper)"></comment>
+      <comment policyRef="ns17:DisableIndexedLibraryExperience" commentText="$(resource.ns17_DisableIndexedLibraryExperience)"></comment>
+      <comment policyRef="ns17:NoDrives" commentText="$(resource.ns17_NoDrives)"></comment>
+      <comment policyRef="ns17:NoFolderOptions" commentText="$(resource.ns17_NoFolderOptions)"></comment>
+      <comment policyRef="ns17:NoManageMyComputerVerb" commentText="$(resource.ns17_NoManageMyComputerVerb)"></comment>
+      <comment policyRef="ns17:NoNetConnectDisconnect" commentText="$(resource.ns17_NoNetConnectDisconnect)"></comment>
+      <comment policyRef="ns17:NoSecurityTab" commentText="$(resource.ns17_NoSecurityTab)"></comment>
+      <comment policyRef="ns17:NoViewOnDrive" commentText="$(resource.ns17_NoViewOnDrive)"></comment>
+      <comment policyRef="ns18:WinMSG_NoAutoStartWindowsMsg_User" commentText="$(resource.ns18_WinMSG_NoAutoStartWindowsMsg_User)"></comment>
+      <comment policyRef="ns18:WinMSG_NoWindowsMsg_User" commentText="$(resource.ns18_WinMSG_NoWindowsMsg_User)"></comment>
+      <comment policyRef="ns19:DisableOSUpgrade_1" commentText="$(resource.ns19_DisableOSUpgrade_1)"></comment>
+      <comment policyRef="ns19:RemoveWindowsStore_1" commentText="$(resource.ns19_RemoveWindowsStore_1)"></comment>
+      <comment policyRef="ns20:DisableCMD" commentText="$(resource.ns20_DisableCMD)"></comment>
+      <comment policyRef="ns20:DisableRegedit" commentText="$(resource.ns20_DisableRegedit)"></comment>
+      <comment policyRef="ns21:AppUpdateURL" commentText="$(resource.ns21_AppUpdateURL)"></comment>
+      <comment policyRef="ns21:BlockAboutAddons" commentText="$(resource.ns21_BlockAboutAddons)"></comment>
+      <comment policyRef="ns21:BlockAboutConfig" commentText="$(resource.ns21_BlockAboutConfig)"></comment>
+      <comment policyRef="ns21:BlockAboutProfiles" commentText="$(resource.ns21_BlockAboutProfiles)"></comment>
+      <comment policyRef="ns21:C_SanitizeOnShutdown" commentText="$(resource.ns21_C_SanitizeOnShutdown)"></comment>
+      <comment policyRef="ns21:Camera_Locked" commentText="$(resource.ns21_Camera_Locked)"></comment>
+      <comment policyRef="ns21:Cookies_ExpireAtSessionEnd" commentText="$(resource.ns21_Cookies_ExpireAtSessionEnd)"></comment>
+      <comment policyRef="ns21:Cookies_Locked" commentText="$(resource.ns21_Cookies_Locked)"></comment>
+      <comment policyRef="ns21:DisableAppUpdate" commentText="$(resource.ns21_DisableAppUpdate)"></comment>
+      <comment policyRef="ns21:DisableDeveloperTools" commentText="$(resource.ns21_DisableDeveloperTools)"></comment>
+      <comment policyRef="ns21:DisableFeedbackCommands" commentText="$(resource.ns21_DisableFeedbackCommands)"></comment>
+      <comment policyRef="ns21:DisableForgetButton" commentText="$(resource.ns21_DisableForgetButton)"></comment>
+      <comment policyRef="ns21:DisableMasterPasswordCreation" commentText="$(resource.ns21_DisableMasterPasswordCreation)"></comment>
+      <comment policyRef="ns21:DisablePocket" commentText="$(resource.ns21_DisablePocket)"></comment>
+      <comment policyRef="ns21:DisablePrivateBrowsing" commentText="$(resource.ns21_DisablePrivateBrowsing)"></comment>
+      <comment policyRef="ns21:DisableProfileImport" commentText="$(resource.ns21_DisableProfileImport)"></comment>
+      <comment policyRef="ns21:DisableProfileRefresh" commentText="$(resource.ns21_DisableProfileRefresh)"></comment>
+      <comment policyRef="ns21:DisableSafeMode" commentText="$(resource.ns21_DisableSafeMode)"></comment>
+      <comment policyRef="ns21:DisableSetDesktopBackground" commentText="$(resource.ns21_DisableSetDesktopBackground)"></comment>
+      <comment policyRef="ns21:DisableSystemAddonUpdate" commentText="$(resource.ns21_DisableSystemAddonUpdate)"></comment>
+      <comment policyRef="ns21:DisableTelemetry" commentText="$(resource.ns21_DisableTelemetry)"></comment>
+      <comment policyRef="ns21:DisplayMenuBar" commentText="$(resource.ns21_DisplayMenuBar)"></comment>
+      <comment policyRef="ns21:DontCheckDefaultBrowser" commentText="$(resource.ns21_DontCheckDefaultBrowser)"></comment>
+      <comment policyRef="ns21:DownloadDirectory" commentText="$(resource.ns21_DownloadDirectory)"></comment>
+      <comment policyRef="ns21:HomepageStartPage" commentText="$(resource.ns21_HomepageStartPage)"></comment>
+      <comment policyRef="ns21:HomepageURL" commentText="$(resource.ns21_HomepageURL)"></comment>
+      <comment policyRef="ns21:Location_Locked" commentText="$(resource.ns21_Location_Locked)"></comment>
+      <comment policyRef="ns21:Microphone_Locked" commentText="$(resource.ns21_Microphone_Locked)"></comment>
+      <comment policyRef="ns21:NoDefaultBookmarks" commentText="$(resource.ns21_NoDefaultBookmarks)"></comment>
+      <comment policyRef="ns21:Notifications_Locked" commentText="$(resource.ns21_Notifications_Locked)"></comment>
+      <comment policyRef="ns21:PopupBlocking_Locked" commentText="$(resource.ns21_PopupBlocking_Locked)"></comment>
+      <comment policyRef="ns21:Proxy" commentText="$(resource.ns21_Proxy)"></comment>
+      <comment policyRef="ns21:SearchBar" commentText="$(resource.ns21_SearchBar)"></comment>
+      <comment policyRef="ns21:SearchEngines_Default" commentText="$(resource.ns21_SearchEngines_Default)"></comment>
+      <comment policyRef="ns21:SearchEngines_PreventInstalls" commentText="$(resource.ns21_SearchEngines_PreventInstalls)"></comment>
+    </admTemplate>
+  </comments>
+  <resources minRequiredRevision="1.0">
+    <stringTable>
+      <string id="ns0_DisableTailoredExperiencesWithDiagnosticData">geicos</string>
+      <string id="ns1_RestrictCpls">geicos</string>
+      <string id="ns1_SettingsPageVisibility">geicos</string>
+      <string id="ns2_CPL_Personalization_DisableThemeChange">geicos</string>
+      <string id="ns2_CPL_Personalization_DisableVisualStyle">geicos</string>
+      <string id="ns2_CPL_Personalization_NoColorAppearanceUI">geicos</string>
+      <string id="ns2_CPL_Personalization_NoDesktopBackgroundUI">geicos</string>
+      <string id="ns2_CPL_Personalization_NoDesktopIconsUI">geicos</string>
+      <string id="ns2_CPL_Personalization_NoMousePointersUI">geicos</string>
+      <string id="ns2_CPL_Personalization_NoScreenSaverUI">geicos</string>
+      <string id="ns3_ShowCommandPromptOnWinX">geicos</string>
+      <string id="ns4_HideLocaleSelectAndCustomize">geicos</string>
+      <string id="ns5_ShellNoUseStoreOpenWith_1">geicos</string>
+      <string id="ns6_MMC_ComputerManagement">geicos</string>
+      <string id="ns6_MMC_DiskMgmt">geicos</string>
+      <string id="ns7_DisableMedia">geicos</string>
+      <string id="ns8_HomePages">geicos</string>
+      <string id="ns8_PreventFirstRunPage">geicos</string>
+      <string id="ns9_NC_LanProperties">geicos</string>
+      <string id="ns10_NoTileNotification">geicos</string>
+      <string id="ns11_NoAddPrinter">geicos</string>
+      <string id="ns11_NoDeletePrinter">geicos</string>
+      <string id="ns12_NoDefaultPrograms">geicos</string>
+      <string id="ns12_NoGetPrograms">geicos</string>
+      <string id="ns12_NoInstalledUpdates">geicos</string>
+      <string id="ns12_NoProgramsAndFeatures">geicos</string>
+      <string id="ns12_NoProgramsCPL">geicos</string>
+      <string id="ns12_NoWindowsFeatures">geicos
+</string>
+      <string id="ns13_TurnOffSidebar_1">geicos</string>
+      <string id="ns14_ClearRecentDocsOnExit">geicos</string>
+      <string id="ns14_DisableContextMenusInStart">geicos</string>
+      <string id="ns14_HidePeopleBar">geicos</string>
+      <string id="ns14_Intellimenus">geicos Nono</string>
+      <string id="ns14_LockTaskbar">geicos</string>
+      <string id="ns14_NoChangeStartMenu">geicos</string>
+      <string id="ns14_NoCommonGroups">geicos Nono</string>
+      <string id="ns14_NoFind">geicos Nono</string>
+      <string id="ns14_NoGamesFolderOnStartMenu">geicos</string>
+      <string id="ns14_NoHelp">geicos Nono</string>
+      <string id="ns14_NoMoreProgramsList">geicos Nono</string>
+      <string id="ns14_NoNetAndDialupConnect">geicos Nono</string>
+      <string id="ns14_NoPinnedPrograms">geicos Nono</string>
+      <string id="ns14_NoRun">geicos</string>
+      <string id="ns14_NoSMConfigurePrograms">geicos Nono</string>
+      <string id="ns14_NoSMMyNetworkPlaces">geicos Nono</string>
+      <string id="ns14_NoSearchCommInStartMenu">geicos Nono</string>
+      <string id="ns14_NoSearchComputerLinkInStartMenu">geicos Nono</string>
+      <string id="ns14_NoSearchEverywhereLinkInStartMenu">geicos Nono</string>
+      <string id="ns14_NoSearchFilesInStartMenu">geicos Nono</string>
+      <string id="ns14_NoSearchInternetInStartMenu">geicos Nono</string>
+      <string id="ns14_NoSearchProgramsInStartMenu">geicos Nono</string>
+      <string id="ns14_NoSetFolders">geicos Nono</string>
+      <string id="ns14_NoSetTaskbar">geicos</string>
+      <string id="ns14_NoStartMenuHomegroup">geicos Nono</string>
+      <string id="ns14_NoStartMenuRecordedTV">geicos Nono</string>
+      <string id="ns14_NoToolbarsOnTaskbar">geicos</string>
+      <string id="ns14_NoTrayContextMenu">geicos</string>
+      <string id="ns14_NoUninstallFromStart">geicos Nono</string>
+      <string id="ns14_NoWindowsUpdate">geicos Nono</string>
+      <string id="ns15_DisableNotificationCenter">geicos Nono</string>
+      <string id="ns15_HideSCAHealth">geicos Nono</string>
+      <string id="ns15_NoPinningStoreToTaskbar">geicos</string>
+      <string id="ns15_NoPinningToTaskbar">geicos</string>
+      <string id="ns15_TaskbarLockAll">geicos</string>
+      <string id="ns15_TaskbarNoAddRemoveToolbar">geicos Nono</string>
+      <string id="ns15_TaskbarNoDragToolbar">geicos Nono</string>
+      <string id="ns15_TaskbarNoMultimon">geicos
+Pour avoir la barre de tache sur un ecran</string>
+      <string id="ns15_TaskbarNoRedock">geicos</string>
+      <string id="ns15_TaskbarNoResize">geicos</string>
+      <string id="ns16_NoMyComputerIcon">geicos</string>
+      <string id="ns16_NoPropertiesMyComputer">geicos</string>
+      <string id="ns16_NoPropertiesMyDocuments">geicos</string>
+      <string id="ns16_NoRecycleBinIcon">
+</string>
+      <string id="ns16_NoRecycleBinProperties">geicos</string>
+      <string id="ns16_NoSaveSettings">geicos</string>
+      <string id="ns16_Wallpaper">si on définit un papier peint, bginfo n'est pas pris en compte</string>
+      <string id="ns17_DisableIndexedLibraryExperience">geicos</string>
+      <string id="ns17_NoDrives">geicos</string>
+      <string id="ns17_NoFolderOptions">geicos</string>
+      <string id="ns17_NoManageMyComputerVerb">geicos</string>
+      <string id="ns17_NoNetConnectDisconnect">geicos</string>
+      <string id="ns17_NoSecurityTab">geicos</string>
+      <string id="ns17_NoViewOnDrive">geicos</string>
+      <string id="ns18_WinMSG_NoAutoStartWindowsMsg_User">geicos</string>
+      <string id="ns18_WinMSG_NoWindowsMsg_User">geicos</string>
+      <string id="ns19_DisableOSUpgrade_1">geicos</string>
+      <string id="ns19_RemoveWindowsStore_1">geicos</string>
+      <string id="ns20_DisableCMD">geicos</string>
+      <string id="ns20_DisableRegedit">geicos</string>
+      <string id="ns21_AppUpdateURL">geicos Nono</string>
+      <string id="ns21_BlockAboutAddons">geicos Nono</string>
+      <string id="ns21_BlockAboutConfig">geicos Nono</string>
+      <string id="ns21_BlockAboutProfiles">geicos Nono</string>
+      <string id="ns21_C_SanitizeOnShutdown">geicos Nono</string>
+      <string id="ns21_Camera_Locked">geicos Nono</string>
+      <string id="ns21_Cookies_ExpireAtSessionEnd">geicos Nono</string>
+      <string id="ns21_Cookies_Locked">geicos Nono</string>
+      <string id="ns21_DisableAppUpdate">geicos Nono</string>
+      <string id="ns21_DisableDeveloperTools">geicos Nono</string>
+      <string id="ns21_DisableFeedbackCommands">geicos Nono</string>
+      <string id="ns21_DisableForgetButton">geicos Nono</string>
+      <string id="ns21_DisableMasterPasswordCreation">geicos Nono</string>
+      <string id="ns21_DisablePocket">geicos Nono</string>
+      <string id="ns21_DisablePrivateBrowsing">geicos Nono</string>
+      <string id="ns21_DisableProfileImport">geicos Nono</string>
+      <string id="ns21_DisableProfileRefresh">geicos Nono</string>
+      <string id="ns21_DisableSafeMode">geicos Nono</string>
+      <string id="ns21_DisableSetDesktopBackground">geicos Nono</string>
+      <string id="ns21_DisableSystemAddonUpdate">geicos Nono</string>
+      <string id="ns21_DisableTelemetry">geicos Nono</string>
+      <string id="ns21_DisplayMenuBar">geicos Nono</string>
+      <string id="ns21_DontCheckDefaultBrowser">geicos Nono</string>
+      <string id="ns21_DownloadDirectory">geicos Nono</string>
+      <string id="ns21_HomepageStartPage">geicos</string>
+      <string id="ns21_HomepageURL">geicos</string>
+      <string id="ns21_Location_Locked">geicos Nono</string>
+      <string id="ns21_Microphone_Locked">geicos Nono</string>
+      <string id="ns21_NoDefaultBookmarks">geicos Nono</string>
+      <string id="ns21_Notifications_Locked">geicos Nono</string>
+      <string id="ns21_PopupBlocking_Locked">geicos Nono</string>
+      <string id="ns21_Proxy">geicos</string>
+      <string id="ns21_SearchBar">geicos Nono</string>
+      <string id="ns21_SearchEngines_Default">geicos Nono</string>
+      <string id="ns21_SearchEngines_PreventInstalls">geicos Nono</string>
+    </stringTable>
+  </resources>
+</policyComments>

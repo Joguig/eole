@@ -1,0 +1,13 @@
+dn: dc=gouv,dc=fr
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: equipement
+dc: gouv
+
+dn: cn=admin,dc=gouv,dc=fr
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+description: LDAP administrator
+userPassword: e1NTSEF9VXBWNHpQcW1qSkFBcUh6TEZUQ254NTlpMnNJTWFnWVI= 

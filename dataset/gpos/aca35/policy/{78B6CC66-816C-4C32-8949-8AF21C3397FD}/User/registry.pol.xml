@@ -1,0 +1,37 @@
+<PolFile num_entries="7" signature="PReg" version="1">
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</Key>
+		<ValueName>NoDrives</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</Key>
+		<ValueName>NoViewOnDrive</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</Key>
+		<ValueName>**del.NoRun</ValueName>
+		<Value> </Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</Key>
+		<ValueName>**del.NoControlPanel</ValueName>
+		<Value> </Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Microsoft\Windows\CurrentVersion\Policies\System</Key>
+		<ValueName>**del.DisableRegistryTools</ValueName>
+		<Value> </Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Microsoft\Windows\CurrentVersion\Policies\System</Key>
+		<ValueName>**del.DisableTaskMgr</ValueName>
+		<Value> </Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Policies\Microsoft\Windows\System</Key>
+		<ValueName>**del.DisableCMD</ValueName>
+		<Value> </Value>
+	</Entry>
+</PolFile>

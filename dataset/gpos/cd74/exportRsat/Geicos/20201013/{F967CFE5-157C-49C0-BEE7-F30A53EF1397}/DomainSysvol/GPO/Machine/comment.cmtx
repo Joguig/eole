@@ -1,0 +1,328 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<policyComments xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/CommentDefinitions">
+  <policyNamespaces>
+    <using prefix="ns0" namespace="FullArmor.Policies.3B9EA2B5_A1D1_4CD5_9EDE_75B22990BC21"></using>
+    <using prefix="ns1" namespace="Microsoft.Policies.AllowBuildPreview"></using>
+    <using prefix="ns2" namespace="Microsoft.Policies.AppPrivacy"></using>
+    <using prefix="ns3" namespace="Microsoft.Policies.ApplicationCompatibility"></using>
+    <using prefix="ns4" namespace="Microsoft.Policies.AutoPlay"></using>
+    <using prefix="ns5" namespace="Microsoft.Policies.CloudContent"></using>
+    <using prefix="ns6" namespace="Microsoft.Policies.ControlPanel"></using>
+    <using prefix="ns7" namespace="Microsoft.Policies.ControlPanel2"></using>
+    <using prefix="ns8" namespace="Microsoft.Policies.ControlPanelDisplay"></using>
+    <using prefix="ns9" namespace="Microsoft.Policies.DataCollection"></using>
+    <using prefix="ns10" namespace="Microsoft.Policies.DeliveryOptimization"></using>
+    <using prefix="ns11" namespace="Microsoft.Policies.DeviceCompatibility"></using>
+    <using prefix="ns12" namespace="Microsoft.Policies.DigitalLocker"></using>
+    <using prefix="ns13" namespace="Microsoft.Policies.DigitalRights2"></using>
+    <using prefix="ns14" namespace="Microsoft.Policies.EdgeUI"></using>
+    <using prefix="ns15" namespace="Microsoft.Policies.FeedbackNotifications"></using>
+    <using prefix="ns16" namespace="Microsoft.Policies.FileHistory"></using>
+    <using prefix="ns17" namespace="Microsoft.Policies.FindMyDevice"></using>
+    <using prefix="ns18" namespace="Microsoft.Policies.GameDVR"></using>
+    <using prefix="ns19" namespace="Microsoft.Policies.GameExplorer"></using>
+    <using prefix="ns20" namespace="Microsoft.Policies.Globalization"></using>
+    <using prefix="ns21" namespace="Microsoft.Policies.GroupPolicy"></using>
+    <using prefix="ns22" namespace="Microsoft.Policies.InkWatson"></using>
+    <using prefix="ns23" namespace="Microsoft.Policies.InternetCommunicationManagement"></using>
+    <using prefix="ns24" namespace="Microsoft.Policies.InternetExplorer"></using>
+    <using prefix="ns25" namespace="Microsoft.Policies.LanmanWorkstation"></using>
+    <using prefix="ns26" namespace="Microsoft.Policies.MDM"></using>
+    <using prefix="ns27" namespace="Microsoft.Policies.MSI"></using>
+    <using prefix="ns28" namespace="Microsoft.Policies.MediaPlayer"></using>
+    <using prefix="ns29" namespace="Microsoft.Policies.Messaging"></using>
+    <using prefix="ns30" namespace="Microsoft.Policies.MicrosoftAccount"></using>
+    <using prefix="ns31" namespace="Microsoft.Policies.NetMeeting"></using>
+    <using prefix="ns32" namespace="Microsoft.Policies.NetworkSharing"></using>
+    <using prefix="ns33" namespace="Microsoft.Policies.OfflineFiles"></using>
+    <using prefix="ns34" namespace="Microsoft.Policies.OneDrive"></using>
+    <using prefix="ns35" namespace="Microsoft.Policies.PowerManagement"></using>
+    <using prefix="ns36" namespace="Microsoft.Policies.PushToInstall"></using>
+    <using prefix="ns37" namespace="Microsoft.Policies.QualityofService"></using>
+    <using prefix="ns38" namespace="Microsoft.Policies.SecondaryAuthenticationFactor"></using>
+    <using prefix="ns39" namespace="Microsoft.Policies.Sensors"></using>
+    <using prefix="ns40" namespace="Microsoft.Policies.Sensors.WindowsLocationProvider"></using>
+    <using prefix="ns41" namespace="Microsoft.Policies.SettingSync"></using>
+    <using prefix="ns42" namespace="Microsoft.Policies.SideBar"></using>
+    <using prefix="ns43" namespace="Microsoft.Policies.StartMenu"></using>
+    <using prefix="ns44" namespace="Microsoft.Policies.TabletPC.ShapeCollector"></using>
+    <using prefix="ns45" namespace="Microsoft.Policies.TabletPCShell"></using>
+    <using prefix="ns46" namespace="Microsoft.Policies.UEV"></using>
+    <using prefix="ns47" namespace="Microsoft.Policies.UserProfiles"></using>
+    <using prefix="ns48" namespace="Microsoft.Policies.WindowsBackup"></using>
+    <using prefix="ns49" namespace="Microsoft.Policies.WindowsColorSystem"></using>
+    <using prefix="ns50" namespace="Microsoft.Policies.WindowsDefenderSecurityCenter"></using>
+    <using prefix="ns51" namespace="Microsoft.Policies.WindowsErrorReporting"></using>
+    <using prefix="ns52" namespace="Microsoft.Policies.WindowsExplorer"></using>
+    <using prefix="ns53" namespace="Microsoft.Policies.WindowsInitialization"></using>
+    <using prefix="ns54" namespace="Microsoft.Policies.WindowsInkWorkspace"></using>
+    <using prefix="ns55" namespace="Microsoft.Policies.WindowsLogon"></using>
+    <using prefix="ns56" namespace="Microsoft.Policies.WindowsMessenger"></using>
+    <using prefix="ns57" namespace="Microsoft.Policies.WindowsStore"></using>
+    <using prefix="ns58" namespace="Microsoft.Policies.WindowsTimeService"></using>
+    <using prefix="ns59" namespace="Microsoft.Policies.WindowsUpdate"></using>
+    <using prefix="ns60" namespace="Mozilla.Policies.Firefox"></using>
+  </policyNamespaces>
+  <comments>
+    <admTemplate>
+      <comment policyRef="ns0:AllowCortana" commentText="$(resource.ns0_AllowCortana)"></comment>
+      <comment policyRef="ns0:AllowCortanaAboveLock" commentText="$(resource.ns0_AllowCortanaAboveLock)"></comment>
+      <comment policyRef="ns0:AllowIndexingEncryptedStoresOrItems" commentText="$(resource.ns0_AllowIndexingEncryptedStoresOrItems)"></comment>
+      <comment policyRef="ns0:AllowSearchToUseLocation" commentText="$(resource.ns0_AllowSearchToUseLocation)"></comment>
+      <comment policyRef="ns0:DisableRemovableDriveIndexing" commentText="$(resource.ns0_DisableRemovableDriveIndexing)"></comment>
+      <comment policyRef="ns0:DisableWebSearch" commentText="$(resource.ns0_DisableWebSearch)"></comment>
+      <comment policyRef="ns0:DoNotUseWebResults" commentText="$(resource.ns0_DoNotUseWebResults)"></comment>
+      <comment policyRef="ns0:EnableIndexingDelegateMailboxes" commentText="$(resource.ns0_EnableIndexingDelegateMailboxes)"></comment>
+      <comment policyRef="ns1:AllowBuildPreview" commentText="$(resource.ns1_AllowBuildPreview)"></comment>
+      <comment policyRef="ns2:LetAppsAccessAccountInfo" commentText="$(resource.ns2_LetAppsAccessAccountInfo)"></comment>
+      <comment policyRef="ns2:LetAppsAccessLocation" commentText="$(resource.ns2_LetAppsAccessLocation)"></comment>
+      <comment policyRef="ns3:AppCompatTurnOffApplicationImpactTelemetry" commentText="$(resource.ns3_AppCompatTurnOffApplicationImpactTelemetry)"></comment>
+      <comment policyRef="ns3:AppCompatTurnOffProgramCompatibilityAssistant_2" commentText="$(resource.ns3_AppCompatTurnOffProgramCompatibilityAssistant_2)"></comment>
+      <comment policyRef="ns3:AppCompatTurnOffProgramInventory" commentText="$(resource.ns3_AppCompatTurnOffProgramInventory)"></comment>
+      <comment policyRef="ns4:Autorun" commentText="$(resource.ns4_Autorun)"></comment>
+      <comment policyRef="ns4:NoAutorun" commentText="$(resource.ns4_NoAutorun)"></comment>
+      <comment policyRef="ns5:DisableSoftLanding" commentText="$(resource.ns5_DisableSoftLanding)"></comment>
+      <comment policyRef="ns5:DisableWindowsConsumerFeatures" commentText="$(resource.ns5_DisableWindowsConsumerFeatures)"></comment>
+      <comment policyRef="ns6:AllowOnlineTips" commentText="$(resource.ns6_AllowOnlineTips)"></comment>
+      <comment policyRef="ns7:UseDefaultTile" commentText="$(resource.ns7_UseDefaultTile)"></comment>
+      <comment policyRef="ns8:CPL_Personalization_NoChangingLockScreen" commentText="$(resource.ns8_CPL_Personalization_NoChangingLockScreen)"></comment>
+      <comment policyRef="ns8:CPL_Personalization_NoChangingStartMenuBackground" commentText="$(resource.ns8_CPL_Personalization_NoChangingStartMenuBackground)"></comment>
+      <comment policyRef="ns9:AllowTelemetry" commentText="$(resource.ns9_AllowTelemetry)"></comment>
+      <comment policyRef="ns9:EnableExperimentation" commentText="$(resource.ns9_EnableExperimentation)"></comment>
+      <comment policyRef="ns10:MaxDownloadBandwidth" commentText="$(resource.ns10_MaxDownloadBandwidth)"></comment>
+      <comment policyRef="ns10:MinBackgroundQos" commentText="$(resource.ns10_MinBackgroundQos)"></comment>
+      <comment policyRef="ns11:DriverShims" commentText="$(resource.ns11_DriverShims)"></comment>
+      <comment policyRef="ns12:Digitalx_DiableApplication_TitleText_2" commentText="$(resource.ns12_Digitalx_DiableApplication_TitleText_2)"></comment>
+      <comment policyRef="ns13:DisableOnline" commentText="$(resource.ns13_DisableOnline)"></comment>
+      <comment policyRef="ns14:DisableHelpSticker" commentText="$(resource.ns14_DisableHelpSticker)"></comment>
+      <comment policyRef="ns15:DoNotShowFeedbackNotifications" commentText="$(resource.ns15_DoNotShowFeedbackNotifications)"></comment>
+      <comment policyRef="ns16:DisableFileHistory" commentText="$(resource.ns16_DisableFileHistory)"></comment>
+      <comment policyRef="ns17:FindMy_AllowFindMyDeviceConfig" commentText="$(resource.ns17_FindMy_AllowFindMyDeviceConfig)"></comment>
+      <comment policyRef="ns18:AllowGameDVR" commentText="$(resource.ns18_AllowGameDVR)"></comment>
+      <comment policyRef="ns19:DownloadGameInfo_2" commentText="$(resource.ns19_DownloadGameInfo_2)"></comment>
+      <comment policyRef="ns19:GameUpdateOptions_2" commentText="$(resource.ns19_GameUpdateOptions_2)"></comment>
+      <comment policyRef="ns19:ListRecentlyPlayed_2" commentText="$(resource.ns19_ListRecentlyPlayed_2)"></comment>
+      <comment policyRef="ns20:AllowInputPersonalization" commentText="$(resource.ns20_AllowInputPersonalization)"></comment>
+      <comment policyRef="ns20:ImplicitDataCollectionOff_2" commentText="$(resource.ns20_ImplicitDataCollectionOff_2)"></comment>
+      <comment policyRef="ns21:UserPolicyMode" commentText="$(resource.ns21_UserPolicyMode)"></comment>
+      <comment policyRef="ns22:PreventHandwritingErrorReports_2" commentText="$(resource.ns22_PreventHandwritingErrorReports_2)"></comment>
+      <comment policyRef="ns23:CEIPEnable" commentText="$(resource.ns23_CEIPEnable)"></comment>
+      <comment policyRef="ns23:HSS_HeadlinesPolicy" commentText="$(resource.ns23_HSS_HeadlinesPolicy)"></comment>
+      <comment policyRef="ns23:PCH_DoNotReport" commentText="$(resource.ns23_PCH_DoNotReport)"></comment>
+      <comment policyRef="ns23:ShellNoUseStoreOpenWith_2" commentText="$(resource.ns23_ShellNoUseStoreOpenWith_2)"></comment>
+      <comment policyRef="ns24:Disable_Feed_Add_Remove" commentText="$(resource.ns24_Disable_Feed_Add_Remove)"></comment>
+      <comment policyRef="ns24:Disable_Feed_Discovery" commentText="$(resource.ns24_Disable_Feed_Discovery)"></comment>
+      <comment policyRef="ns25:Pol_EnableInsecureGuestLogons" commentText="$(resource.ns25_Pol_EnableInsecureGuestLogons)"></comment>
+      <comment policyRef="ns26:MDM_MDM_DisplayName" commentText="$(resource.ns26_MDM_MDM_DisplayName)"></comment>
+      <comment policyRef="ns27:DisableMSI" commentText="$(resource.ns27_DisableMSI)"></comment>
+      <comment policyRef="ns28:DisableSetupFirstUseConfiguration" commentText="$(resource.ns28_DisableSetupFirstUseConfiguration)"></comment>
+      <comment policyRef="ns28:PreventLibrarySharing" commentText="$(resource.ns28_PreventLibrarySharing)"></comment>
+      <comment policyRef="ns28:PreventQuickLaunchShortcut" commentText="$(resource.ns28_PreventQuickLaunchShortcut)"></comment>
+      <comment policyRef="ns28:PreventWMPDeskTopShortcut" commentText="$(resource.ns28_PreventWMPDeskTopShortcut)"></comment>
+      <comment policyRef="ns29:AllowMessageSync" commentText="$(resource.ns29_AllowMessageSync)"></comment>
+      <comment policyRef="ns30:MicrosoftAccount_DisableUserAuth" commentText="$(resource.ns30_MicrosoftAccount_DisableUserAuth)"></comment>
+      <comment policyRef="ns31:DisableRDS" commentText="$(resource.ns31_DisableRDS)"></comment>
+      <comment policyRef="ns32:DisableHomeGroup" commentText="$(resource.ns32_DisableHomeGroup)"></comment>
+      <comment policyRef="ns33:Pol_Enabled" commentText="$(resource.ns33_Pol_Enabled)"></comment>
+      <comment policyRef="ns33:Pol_NoConfigCache_2" commentText="$(resource.ns33_Pol_NoConfigCache_2)"></comment>
+      <comment policyRef="ns33:Pol_NoMakeAvailableOffline_2" commentText="$(resource.ns33_Pol_NoMakeAvailableOffline_2)"></comment>
+      <comment policyRef="ns33:Pol_OnlineCachingSettings" commentText="$(resource.ns33_Pol_OnlineCachingSettings)"></comment>
+      <comment policyRef="ns33:Pol_PurgeAtLogoff" commentText="$(resource.ns33_Pol_PurgeAtLogoff)"></comment>
+      <comment policyRef="ns33:Pol_WorkOfflineDisabled_2" commentText="$(resource.ns33_Pol_WorkOfflineDisabled_2)"></comment>
+      <comment policyRef="ns34:DisableLibrariesDefaultSaveToOneDrive" commentText="$(resource.ns34_DisableLibrariesDefaultSaveToOneDrive)"></comment>
+      <comment policyRef="ns34:PreventNetworkTrafficPreUserSignIn" commentText="$(resource.ns34_PreventNetworkTrafficPreUserSignIn)"></comment>
+      <comment policyRef="ns34:PreventOneDriveFileSyncOnMeteredNetwork" commentText="$(resource.ns34_PreventOneDriveFileSyncOnMeteredNetwork)"></comment>
+      <comment policyRef="ns34:PreventOnedriveFileSync" commentText="$(resource.ns34_PreventOnedriveFileSync)"></comment>
+      <comment policyRef="ns35:ACHibernateTimeOut_2" commentText="$(resource.ns35_ACHibernateTimeOut_2)"></comment>
+      <comment policyRef="ns35:ACStandbyTimeOut_2" commentText="$(resource.ns35_ACStandbyTimeOut_2)"></comment>
+      <comment policyRef="ns35:VideoPowerDownTimeOutAC_2" commentText="$(resource.ns35_VideoPowerDownTimeOutAC_2)"></comment>
+      <comment policyRef="ns36:DisablePushToInstall" commentText="$(resource.ns36_DisablePushToInstall)"></comment>
+      <comment policyRef="ns37:QosNonBestEffortLimit" commentText="$(resource.ns37_QosNonBestEffortLimit)"></comment>
+      <comment policyRef="ns38:MSSecondaryAuthFactor_AllowSecondaryAuthenticationDevice" commentText="$(resource.ns38_MSSecondaryAuthFactor_AllowSecondaryAuthenticationDevice)"></comment>
+      <comment policyRef="ns39:DisableLocation_2" commentText="$(resource.ns39_DisableLocation_2)"></comment>
+      <comment policyRef="ns39:DisableSensors_2" commentText="$(resource.ns39_DisableSensors_2)"></comment>
+      <comment policyRef="ns40:DisableWindowsLocationProvider_1" commentText="$(resource.ns40_DisableWindowsLocationProvider_1)"></comment>
+      <comment policyRef="ns41:DisableSettingSync" commentText="$(resource.ns41_DisableSettingSync)"></comment>
+      <comment policyRef="ns42:TurnOffSidebar_2" commentText="$(resource.ns42_TurnOffSidebar_2)"></comment>
+      <comment policyRef="ns42:TurnOffUserInstalledGagdets_2" commentText="$(resource.ns42_TurnOffUserInstalledGagdets_2)"></comment>
+      <comment policyRef="ns43:DisableContextMenusInStart" commentText="$(resource.ns43_DisableContextMenusInStart)"></comment>
+      <comment policyRef="ns43:HideRecentlyAddedApps" commentText="$(resource.ns43_HideRecentlyAddedApps)"></comment>
+      <comment policyRef="ns43:LockedStartLayout" commentText="$(resource.ns43_LockedStartLayout)"></comment>
+      <comment policyRef="ns44:PreventHandwritingDataSharing" commentText="$(resource.ns44_PreventHandwritingDataSharing)"></comment>
+      <comment policyRef="ns45:DisableInkball_2" commentText="$(resource.ns45_DisableInkball_2)"></comment>
+      <comment policyRef="ns46:Games" commentText="$(resource.ns46_Games)"></comment>
+      <comment policyRef="ns47:CleanupProfiles" commentText="$(resource.ns47_CleanupProfiles)"></comment>
+      <comment policyRef="ns47:DeleteRoamingCachedProfiles" commentText="$(resource.ns47_DeleteRoamingCachedProfiles)"></comment>
+      <comment policyRef="ns47:DisableAdvertisingId" commentText="$(resource.ns47_DisableAdvertisingId)"></comment>
+      <comment policyRef="ns47:MachineProfilePath" commentText="$(resource.ns47_MachineProfilePath)"></comment>
+      <comment policyRef="ns47:SlowLinkDefault" commentText="$(resource.ns47_SlowLinkDefault)"></comment>
+      <comment policyRef="ns48:DisallowLocallyAttachedStorageAsBackupTarget" commentText="$(resource.ns48_DisallowLocallyAttachedStorageAsBackupTarget)"></comment>
+      <comment policyRef="ns49:ProhibitChangingInstalledProfileList_2" commentText="$(resource.ns49_ProhibitChangingInstalledProfileList_2)"></comment>
+      <comment policyRef="ns50:AppBrowserProtection_DisallowExploitProtectionOverride" commentText="$(resource.ns50_AppBrowserProtection_DisallowExploitProtectionOverride)"></comment>
+      <comment policyRef="ns50:DevicePerformanceHealth_UILockdown" commentText="$(resource.ns50_DevicePerformanceHealth_UILockdown)"></comment>
+      <comment policyRef="ns50:EnterpriseCustomization_CompanyName" commentText="$(resource.ns50_EnterpriseCustomization_CompanyName)"></comment>
+      <comment policyRef="ns50:FamilyOptions_UILockdown" commentText="$(resource.ns50_FamilyOptions_UILockdown)"></comment>
+      <comment policyRef="ns50:Notifications_DisableEnhancedNotifications" commentText="$(resource.ns50_Notifications_DisableEnhancedNotifications)"></comment>
+      <comment policyRef="ns51:WerAutoApproveOSDumps_2" commentText="$(resource.ns51_WerAutoApproveOSDumps_2)"></comment>
+      <comment policyRef="ns51:WerDisable_2" commentText="$(resource.ns51_WerDisable_2)"></comment>
+      <comment policyRef="ns51:WerNoSecondLevelData_2" commentText="$(resource.ns51_WerNoSecondLevelData_2)"></comment>
+      <comment policyRef="ns52:DefaultAssociationsConfiguration" commentText="$(resource.ns52_DefaultAssociationsConfiguration)"></comment>
+      <comment policyRef="ns52:EnableSmartScreen" commentText="$(resource.ns52_EnableSmartScreen)"></comment>
+      <comment policyRef="ns52:ShowHibernateOption" commentText="$(resource.ns52_ShowHibernateOption)"></comment>
+      <comment policyRef="ns52:ShowLockOption" commentText="$(resource.ns52_ShowLockOption)"></comment>
+      <comment policyRef="ns52:ShowSleepOption" commentText="$(resource.ns52_ShowSleepOption)"></comment>
+      <comment policyRef="ns53:Hiberboot" commentText="$(resource.ns53_Hiberboot)"></comment>
+      <comment policyRef="ns53:ShutdownTimeoutHungSessionsDescription" commentText="$(resource.ns53_ShutdownTimeoutHungSessionsDescription)"></comment>
+      <comment policyRef="ns54:AllowWindowsInkWorkspace" commentText="$(resource.ns54_AllowWindowsInkWorkspace)"></comment>
+      <comment policyRef="ns55:EnableFirstLogonAnimation" commentText="$(resource.ns55_EnableFirstLogonAnimation)"></comment>
+      <comment policyRef="ns55:HideFastUserSwitching" commentText="$(resource.ns55_HideFastUserSwitching)"></comment>
+      <comment policyRef="ns56:WinMSG_NoAutoStartWindowsMsg_Comp" commentText="$(resource.ns56_WinMSG_NoAutoStartWindowsMsg_Comp)"></comment>
+      <comment policyRef="ns56:WinMSG_NoWindowsMsg_Comp" commentText="$(resource.ns56_WinMSG_NoWindowsMsg_Comp)"></comment>
+      <comment policyRef="ns57:DisableStoreApps" commentText="$(resource.ns57_DisableStoreApps)"></comment>
+      <comment policyRef="ns57:RemoveWindowsStore_2" commentText="$(resource.ns57_RemoveWindowsStore_2)"></comment>
+      <comment policyRef="ns57:RequirePrivateStoreOnly_2" commentText="$(resource.ns57_RequirePrivateStoreOnly_2)"></comment>
+      <comment policyRef="ns58:W32TIME_POLICY_CONFIGURE_NTPCLIENT" commentText="$(resource.ns58_W32TIME_POLICY_CONFIGURE_NTPCLIENT)"></comment>
+      <comment policyRef="ns58:W32TIME_POLICY_ENABLE_NTPCLIENT" commentText="$(resource.ns58_W32TIME_POLICY_ENABLE_NTPCLIENT)"></comment>
+      <comment policyRef="ns59:ActiveHours" commentText="$(resource.ns59_ActiveHours)"></comment>
+      <comment policyRef="ns59:AutoUpdateCfg" commentText="$(resource.ns59_AutoUpdateCfg)"></comment>
+      <comment policyRef="ns59:ManagePreviewBuilds" commentText="$(resource.ns59_ManagePreviewBuilds)"></comment>
+      <comment policyRef="ns60:BlockAboutConfig" commentText="$(resource.ns60_BlockAboutConfig)"></comment>
+      <comment policyRef="ns60:BlockAboutProfiles" commentText="$(resource.ns60_BlockAboutProfiles)"></comment>
+      <comment policyRef="ns60:Extensions_Install" commentText="$(resource.ns60_Extensions_Install)"></comment>
+      <comment policyRef="ns60:Extensions_Locked" commentText="$(resource.ns60_Extensions_Locked)"></comment>
+    </admTemplate>
+  </comments>
+  <resources minRequiredRevision="1.0">
+    <stringTable>
+      <string id="ns0_AllowCortana">geicos</string>
+      <string id="ns0_AllowCortanaAboveLock">geicos</string>
+      <string id="ns0_AllowIndexingEncryptedStoresOrItems">geicos</string>
+      <string id="ns0_AllowSearchToUseLocation">Geicos-Mi</string>
+      <string id="ns0_DisableRemovableDriveIndexing">Geicos-Mi</string>
+      <string id="ns0_DisableWebSearch">geicos</string>
+      <string id="ns0_DoNotUseWebResults">geicos</string>
+      <string id="ns0_EnableIndexingDelegateMailboxes">Geicos-Mi</string>
+      <string id="ns1_AllowBuildPreview">geicos</string>
+      <string id="ns2_LetAppsAccessAccountInfo">geicos</string>
+      <string id="ns2_LetAppsAccessLocation">geicos</string>
+      <string id="ns3_AppCompatTurnOffApplicationImpactTelemetry">Geicos-Mi</string>
+      <string id="ns3_AppCompatTurnOffProgramCompatibilityAssistant_2">Geicos-Mi</string>
+      <string id="ns3_AppCompatTurnOffProgramInventory">Geicos-Mi</string>
+      <string id="ns4_Autorun">Geicos-Mi</string>
+      <string id="ns4_NoAutorun">Geicos-Mi</string>
+      <string id="ns5_DisableSoftLanding">Geicos-Mi</string>
+      <string id="ns5_DisableWindowsConsumerFeatures">geicos</string>
+      <string id="ns6_AllowOnlineTips">Geicos-Mi</string>
+      <string id="ns7_UseDefaultTile">geicos</string>
+      <string id="ns8_CPL_Personalization_NoChangingLockScreen">geicos</string>
+      <string id="ns8_CPL_Personalization_NoChangingStartMenuBackground">geicos</string>
+      <string id="ns9_AllowTelemetry">Geicos-Mi</string>
+      <string id="ns9_EnableExperimentation">geicos</string>
+      <string id="ns10_MaxDownloadBandwidth">Geicos-Mi</string>
+      <string id="ns10_MinBackgroundQos">Geicos-Mi</string>
+      <string id="ns11_DriverShims">Geicos-Mi</string>
+      <string id="ns12_Digitalx_DiableApplication_TitleText_2">Geicos-Mi</string>
+      <string id="ns13_DisableOnline">Geicos-Mi</string>
+      <string id="ns14_DisableHelpSticker">Geicos-Mi</string>
+      <string id="ns15_DoNotShowFeedbackNotifications">geicos</string>
+      <string id="ns16_DisableFileHistory">Geicos-Mi</string>
+      <string id="ns17_FindMy_AllowFindMyDeviceConfig">Geicos-Mi</string>
+      <string id="ns18_AllowGameDVR">geicos</string>
+      <string id="ns19_DownloadGameInfo_2">geicos</string>
+      <string id="ns19_GameUpdateOptions_2">geicos</string>
+      <string id="ns19_ListRecentlyPlayed_2">geicos</string>
+      <string id="ns20_AllowInputPersonalization">geicos</string>
+      <string id="ns20_ImplicitDataCollectionOff_2">geicos</string>
+      <string id="ns21_UserPolicyMode">geicos</string>
+      <string id="ns22_PreventHandwritingErrorReports_2">geicos</string>
+      <string id="ns23_CEIPEnable">geicos</string>
+      <string id="ns23_HSS_HeadlinesPolicy">geicos</string>
+      <string id="ns23_PCH_DoNotReport">geicos</string>
+      <string id="ns23_ShellNoUseStoreOpenWith_2">geicos</string>
+      <string id="ns24_Disable_Feed_Add_Remove">Geicos-Mi</string>
+      <string id="ns24_Disable_Feed_Discovery">Geicos-Mi</string>
+      <string id="ns25_Pol_EnableInsecureGuestLogons">geicos</string>
+      <string id="ns26_MDM_MDM_DisplayName">Geicos-Mi</string>
+      <string id="ns27_DisableMSI">geicos</string>
+      <string id="ns28_DisableSetupFirstUseConfiguration">Geicos-Mi</string>
+      <string id="ns28_PreventLibrarySharing">Geicos-Mi</string>
+      <string id="ns28_PreventQuickLaunchShortcut">Geicos-Mi</string>
+      <string id="ns28_PreventWMPDeskTopShortcut">Geicos-Mi</string>
+      <string id="ns29_AllowMessageSync">Geicos-Mi</string>
+      <string id="ns30_MicrosoftAccount_DisableUserAuth">geicos</string>
+      <string id="ns31_DisableRDS">Geicos-Mi</string>
+      <string id="ns32_DisableHomeGroup">Geicos-Mi</string>
+      <string id="ns33_Pol_Enabled">Geicos-Mi</string>
+      <string id="ns33_Pol_NoConfigCache_2">Geicos-Mi</string>
+      <string id="ns33_Pol_NoMakeAvailableOffline_2">Geicos-Mi</string>
+      <string id="ns33_Pol_OnlineCachingSettings">Geicos-Mi</string>
+      <string id="ns33_Pol_PurgeAtLogoff">Geicos-Mi</string>
+      <string id="ns33_Pol_WorkOfflineDisabled_2">Geicos-Mi</string>
+      <string id="ns34_DisableLibrariesDefaultSaveToOneDrive">Geicos-Mi</string>
+      <string id="ns34_PreventNetworkTrafficPreUserSignIn">geicos</string>
+      <string id="ns34_PreventOneDriveFileSyncOnMeteredNetwork">Geicos-Mi</string>
+      <string id="ns34_PreventOnedriveFileSync">geicos</string>
+      <string id="ns35_ACHibernateTimeOut_2">geicos</string>
+      <string id="ns35_ACStandbyTimeOut_2">geicos</string>
+      <string id="ns35_VideoPowerDownTimeOutAC_2">geicos</string>
+      <string id="ns36_DisablePushToInstall">Geicos-Mi</string>
+      <string id="ns37_QosNonBestEffortLimit">Geicos-Mi</string>
+      <string id="ns38_MSSecondaryAuthFactor_AllowSecondaryAuthenticationDevice">Geicos-Mi</string>
+      <string id="ns39_DisableLocation_2">geicos</string>
+      <string id="ns39_DisableSensors_2">Geicos-Mi</string>
+      <string id="ns40_DisableWindowsLocationProvider_1">Geicos-Mi</string>
+      <string id="ns41_DisableSettingSync">geicos</string>
+      <string id="ns42_TurnOffSidebar_2">geicos</string>
+      <string id="ns42_TurnOffUserInstalledGagdets_2">Geicos-Mi</string>
+      <string id="ns43_DisableContextMenusInStart">geicos</string>
+      <string id="ns43_HideRecentlyAddedApps">Geicos-Mi</string>
+      <string id="ns43_LockedStartLayout">geicos
+Modif de la barre de tache ( xml se trouvant sur le scribe dans /home/netlogon/icones )</string>
+      <string id="ns44_PreventHandwritingDataSharing">geicos</string>
+      <string id="ns45_DisableInkball_2">Geicos-Mi</string>
+      <string id="ns46_Games">geicos</string>
+      <string id="ns47_CleanupProfiles">geicos</string>
+      <string id="ns47_DeleteRoamingCachedProfiles">geicos
+Pascal désactivation le 8/10/20</string>
+      <string id="ns47_DisableAdvertisingId">geicos</string>
+      <string id="ns47_MachineProfilePath">geicos</string>
+      <string id="ns47_SlowLinkDefault">geicos</string>
+      <string id="ns48_DisallowLocallyAttachedStorageAsBackupTarget">Geicos-Mi</string>
+      <string id="ns49_ProhibitChangingInstalledProfileList_2">Geicos-Mi</string>
+      <string id="ns50_AppBrowserProtection_DisallowExploitProtectionOverride">Geicos-Mi</string>
+      <string id="ns50_DevicePerformanceHealth_UILockdown">Geicos-Mi</string>
+      <string id="ns50_EnterpriseCustomization_CompanyName">Geicos-Mi</string>
+      <string id="ns50_FamilyOptions_UILockdown">Geicos-Mi</string>
+      <string id="ns50_Notifications_DisableEnhancedNotifications">Geicos-Mi</string>
+      <string id="ns51_WerAutoApproveOSDumps_2">geicos</string>
+      <string id="ns51_WerDisable_2">geicos</string>
+      <string id="ns51_WerNoSecondLevelData_2">geicos</string>
+      <string id="ns52_DefaultAssociationsConfiguration">geicos</string>
+      <string id="ns52_EnableSmartScreen">Geicos-Mi</string>
+      <string id="ns52_ShowHibernateOption">Geicos-Mi</string>
+      <string id="ns52_ShowLockOption">Geicos-Mi</string>
+      <string id="ns52_ShowSleepOption">Geicos-Mi</string>
+      <string id="ns53_Hiberboot">geicos
+Empeche l'utilisateur d'activer le fast boot</string>
+      <string id="ns53_ShutdownTimeoutHungSessionsDescription">Geicos-Mi</string>
+      <string id="ns54_AllowWindowsInkWorkspace">geicos
+Désactive un espace de travail en bas à droite. Ce dernier "gêne" les utilisateurs</string>
+      <string id="ns55_EnableFirstLogonAnimation">geicos</string>
+      <string id="ns55_HideFastUserSwitching">geicos</string>
+      <string id="ns56_WinMSG_NoAutoStartWindowsMsg_Comp">geicos</string>
+      <string id="ns56_WinMSG_NoWindowsMsg_Comp">geicos</string>
+      <string id="ns57_DisableStoreApps">geicos</string>
+      <string id="ns57_RemoveWindowsStore_2">geicos</string>
+      <string id="ns57_RequirePrivateStoreOnly_2">geicos</string>
+      <string id="ns58_W32TIME_POLICY_CONFIGURE_NTPCLIENT">geicos</string>
+      <string id="ns58_W32TIME_POLICY_ENABLE_NTPCLIENT">geicos</string>
+      <string id="ns59_ActiveHours">geicos</string>
+      <string id="ns59_AutoUpdateCfg">geicos</string>
+      <string id="ns59_ManagePreviewBuilds">geicos</string>
+      <string id="ns60_BlockAboutConfig">geicos old</string>
+      <string id="ns60_BlockAboutProfiles">geicos old</string>
+      <string id="ns60_Extensions_Install">geicos Nono</string>
+      <string id="ns60_Extensions_Locked">geicos Nono</string>
+    </stringTable>
+  </resources>
+</policyComments>

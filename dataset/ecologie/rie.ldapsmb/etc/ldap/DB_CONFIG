@@ -1,0 +1,9 @@
+set_cachesize 0 100000000 1
+set_lg_regionmax 2097152
+set_lg_max 20971520
+set_lg_bsize 4194304
+set_lk_max_locks 30000
+set_lk_max_lockers 30000
+set_lk_max_objects 30000
+set_flags DB_LOG_AUTOREMOVE
+set_tx_max 96

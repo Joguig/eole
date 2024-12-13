@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<policyComments xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/CommentDefinitions">
+  <policyNamespaces>
+    <using prefix="ns0" namespace="Microsoft.Policies.InternetExplorer"></using>
+    <using prefix="ns1" namespace="Microsoft.Policies.NetworkConnections"></using>
+    <using prefix="ns2" namespace="Microsoft.Policies.TaskScheduler"></using>
+    <using prefix="ns3" namespace="Microsoft.Policies.UEV"></using>
+    <using prefix="ns4" namespace="Microsoft.Policies.WindowsErrorReporting"></using>
+    <using prefix="ns5" namespace="Microsoft.Policies.WindowsExplorer"></using>
+    <using prefix="ns6" namespace="Microsoft.Policies.WindowsLogon"></using>
+    <using prefix="ns7" namespace="Microsoft.Policies.WindowsMessenger"></using>
+  </policyNamespaces>
+  <comments>
+    <admTemplate>
+      <comment policyRef="ns1:NC_RenameLanConnection" commentText="$(resource.ns1_NC_RenameLanConnection)"></comment>
+      <comment policyRef="ns5:NoDrives" commentText="$(resource.ns5_NoDrives)"></comment>
+      <comment policyRef="ns5:NoViewOnDrive" commentText="$(resource.ns5_NoViewOnDrive)"></comment>
+    </admTemplate>
+  </comments>
+  <resources minRequiredRevision="1.0">
+    <stringTable>
+      <string id="ns1_NC_RenameLanConnection">Interdire renommage lecteur réseau</string>
+      <string id="ns5_NoDrives">Masquer lecteurs A, B, C:</string>
+      <string id="ns5_NoViewOnDrive">Pas d'accés aux lecteurs A, B ,C</string>
+    </stringTable>
+  </resources>
+</policyComments>

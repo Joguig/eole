@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<policyComments xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/CommentDefinitions">
+  <policyNamespaces>
+    <using prefix="ns0" namespace="Mozilla.Policies.Firefox"></using>
+  </policyNamespaces>
+  <comments>
+    <admTemplate>
+      <comment policyRef="ns0:Bookmark01" commentText="$(resource.ns0_Bookmark01)"></comment>
+      <comment policyRef="ns0:DisableAppUpdate" commentText="$(resource.ns0_DisableAppUpdate)"></comment>
+      <comment policyRef="ns0:DisableFirefoxStudies" commentText="$(resource.ns0_DisableFirefoxStudies)"></comment>
+      <comment policyRef="ns0:DisplayBookmarksToolbar" commentText="$(resource.ns0_DisplayBookmarksToolbar)"></comment>
+      <comment policyRef="ns0:DisplayMenuBar" commentText="$(resource.ns0_DisplayMenuBar)"></comment>
+      <comment policyRef="ns0:DontCheckDefaultBrowser" commentText="$(resource.ns0_DontCheckDefaultBrowser)"></comment>
+      <comment policyRef="ns0:HomepageStartPage" commentText="$(resource.ns0_HomepageStartPage)"></comment>
+      <comment policyRef="ns0:HomepageURL" commentText="$(resource.ns0_HomepageURL)"></comment>
+      <comment policyRef="ns0:NoDefaultBookmarks" commentText="$(resource.ns0_NoDefaultBookmarks)"></comment>
+      <comment policyRef="ns0:OverrideFirstRunPage" commentText="$(resource.ns0_OverrideFirstRunPage)"></comment>
+      <comment policyRef="ns0:SearchBar" commentText="$(resource.ns0_SearchBar)"></comment>
+    </admTemplate>
+  </comments>
+  <resources minRequiredRevision="1.0">
+    <stringTable>
+      <string id="ns0_Bookmark01">Marque page Gestion de classe dans la barre d'outils en haut</string>
+      <string id="ns0_DisableAppUpdate">Désactivation mises à jour</string>
+      <string id="ns0_DisableFirefoxStudies">Pas de remontées</string>
+      <string id="ns0_DisplayBookmarksToolbar">Barre de signets en haut affichée</string>
+      <string id="ns0_DisplayMenuBar">Barre de menu visible</string>
+      <string id="ns0_DontCheckDefaultBrowser">Pas de vérification</string>
+      <string id="ns0_HomepageStartPage">Page de démarrage configurée sur la page d'accueil</string>
+      <string id="ns0_HomepageURL">Qwant par défaut</string>
+      <string id="ns0_NoDefaultBookmarks">Pas de création des signets par défaut</string>
+      <string id="ns0_OverrideFirstRunPage">Première page sur Qwant</string>
+      <string id="ns0_SearchBar">Zone de recherche séparée</string>
+    </stringTable>
+  </resources>
+</policyComments>

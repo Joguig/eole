@@ -1,0 +1,3758 @@
+
+dn: ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,d
+ c=fr
+objectClass: top
+objectClass: organizationalUnit
+ou: domaines
+description: domaines Samba
+
+dn: ou=DDT-101,ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipemen
+ t,dc=gouv,dc=fr
+ou: DDT-101
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=idmap,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=
+ equipement,dc=gouv,dc=fr
+objectClass: organizationalUnit
+objectClass: top
+objectClass: sambaUnixIdPool
+ou: idmap
+gidNumber: 810007
+uidNumber: 810007
+
+dn: uid=root,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=
+ equipement,dc=gouv,dc=fr
+uid: root
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1013
+displayName: root
+sambaPasswordHistory: 00000000000000000000000000000000000000000000000000000000
+ 00000000
+sambaAcctFlags: [U          ]
+objectClass: sambaSamAccount
+objectClass: account
+sambaLMPassword: F6F08B25ADAE1B30AAD3B435B51404EE
+sambaNTPassword: 578B6AB1D105872DD0E7058F8FFF192F
+sambaPwdLastSet: 1287145571
+
+dn: ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,ou=ressources,
+ dc=equipement,dc=gouv,dc=fr
+ou: Machines
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Serveurs,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,ou=ressources,
+ dc=equipement,dc=gouv,dc=fr
+ou: Serveurs
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,ou=ressource
+ s,dc=equipement,dc=gouv,dc=fr
+ou: Population
+objectClass: top
+objectClass: organizationalUnit
+
+dn: uid=zcompteur,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,ou=ressource
+ s,dc=equipement,dc=gouv,dc=fr
+cn: zcompteur
+description: compteurs amedee
+homeDirectory: compteur
+loginShell: /bin/false
+objectClass: top
+objectClass: person
+objectClass: posixAccount
+sn: zcompteur
+uid: zcompteur
+gidNumber: 500109
+uidNumber: 20058
+
+dn: uid=SambaAdm.DDT-101,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,ou=re
+ ssources,dc=equipement,dc=gouv,dc=fr
+loginShell: /bin/false
+gidNumber: 512
+uidNumber: 998
+uid: SambaAdm.DDT-101
+objectClass: top
+objectClass: organizationalRole
+objectClass: posixAccount
+homeDirectory: /dev/null
+cn: SambaAdm.DDT-101
+userPassword: {SSHA}5lKrGOjnP3sotZtLMIhu0Pb8X9aHr0R5
+
+dn: cn=syncuser.ldapra:268,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,ou=
+ ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: organizationalRole
+objectClass: simpleSecurityObject
+cn: syncuser.ldapra:268
+userPassword: {SSHA}BuKiVxdiwaLjCM7f6CLl5jfXWYHg/Awj
+
+dn: sambaDomainName=DDT-101,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,ou
+ =ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: sambaDomain
+objectClass: sambaUnixIdPool
+sambaDomainName: DDT-101
+sambaSID: S-1-5-21-3323092181-3044490355-778632617
+sambaAlgorithmicRidBase: 1000
+sambaForceLogoff: -1
+sambaLogonToChgPwd: 0
+sambaNextUserRid: 1000
+sambaRefuseMachinePwdChange: 0
+sambaLockoutObservationWindow: 30
+gidNumber: 10027
+sambaMinPwdAge: 0
+sambaMaxPwdAge: -1
+sambaPwdHistoryLength: 0
+sambaLockoutDuration: 30
+sambaLockoutThreshold: 0
+sambaNextRid: 1246
+uidNumber: 11188
+sambaMinPwdLength: 5
+
+dn: sambaSID=S-1-5-21-395910669-2098292090-367356602-500,ou=idmap,ou=DDT-101,o
+ u=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: sambaIdmapEntry
+objectClass: sambaSidEntry
+uidNumber: 810002
+sambaSID: S-1-5-21-395910669-2098292090-367356602-500
+
+dn: sambaSID=S-1-5-21-395910669-2098292090-367356602-501,ou=idmap,ou=DDT-101,o
+ u=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: sambaIdmapEntry
+objectClass: sambaSidEntry
+uidNumber: 810005
+sambaSID: S-1-5-21-395910669-2098292090-367356602-501
+
+dn: sambaSID=S-1-5-21-395910669-2098292090-367356602-512,ou=idmap,ou=DDT-101,o
+ u=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: sambaIdmapEntry
+objectClass: sambaSidEntry
+gidNumber: 810004
+sambaSID: S-1-5-21-395910669-2098292090-367356602-512
+
+dn: sambaSID=S-1-5-21-395910669-2098292090-367356602-513,ou=idmap,ou=DDT-101,o
+ u=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: sambaIdmapEntry
+objectClass: sambaSidEntry
+gidNumber: 810006
+sambaSID: S-1-5-21-395910669-2098292090-367356602-513
+
+dn: sambaSID=S-1-5-21-395910669-2098292090-367356602-514,ou=idmap,ou=DDT-101,o
+ u=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: sambaIdmapEntry
+objectClass: sambaSidEntry
+gidNumber: 810005
+sambaSID: S-1-5-21-395910669-2098292090-367356602-514
+
+dn: sambaSID=S-1-5-21-395910669-2098292090-367356602-1001,ou=idmap,ou=DDT-101,
+ ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=f
+ r
+objectClass: sambaIdmapEntry
+objectClass: sambaSidEntry
+uidNumber: 810006
+sambaSID: S-1-5-21-395910669-2098292090-367356602-1001
+
+dn: sambaSID=S-1-5-21-395910669-2098292090-367356602-1002,ou=idmap,ou=DDT-101,
+ ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=f
+ r
+objectClass: sambaIdmapEntry
+objectClass: sambaSidEntry
+uidNumber: 810004
+sambaSID: S-1-5-21-395910669-2098292090-367356602-1002
+
+dn: sambaSID=S-1-5-21-395910669-2098292090-367356602-1003,ou=idmap,ou=DDT-101,
+ ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=f
+ r
+objectClass: sambaIdmapEntry
+objectClass: sambaSidEntry
+uidNumber: 810003
+sambaSID: S-1-5-21-395910669-2098292090-367356602-1003
+
+dn: sambaSID=S-1-5-21-395910669-2098292090-367356602-1022,ou=idmap,ou=DDT-101,
+ ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=f
+ r
+objectClass: sambaIdmapEntry
+objectClass: sambaSidEntry
+uidNumber: 810001
+sambaSID: S-1-5-21-395910669-2098292090-367356602-1022
+
+dn: uid=xp-tj$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,ou=
+ ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: xp-tj$
+uid: xp-tj$
+uidNumber: 10820
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1214
+displayName: XP-TJ$
+sambaNTPassword: C7BAC115F17E91AAE4F86A2071E93F9C
+sambaPwdLastSet: 1444809256
+sambaAcctFlags: [W          ]
+
+dn: uid=w2008r2$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,o
+ u=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: w2008r2$
+uid: w2008r2$
+uidNumber: 10940
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1225
+displayName: W2008R2$
+sambaAcctFlags: [W          ]
+sambaNTPassword: A91B8DA93462F02F97F8CF134CF84038
+sambaPwdLastSet: 1461826599
+
+dn: uid=vm-xp-ag$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,
+ ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: vm-xp-ag$
+uid: vm-xp-ag$
+uidNumber: 10814
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1210
+displayName: VM-XP-AG$
+sambaAcctFlags: [W          ]
+sambaNTPassword: 0A84BE5EEFDFA3E51B9E4FF02A7F28DF
+sambaPwdLastSet: 1466771937
+
+dn: uid=d101-cdl1$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applications
+ ,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: d101-cdl1$
+uid: d101-cdl1$
+uidNumber: 10065
+gidNumber: 515
+homeDirectory: /dev/null
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1057
+displayName: Computer
+sambaAcctFlags: [W          ]
+sambaLMPassword: 9164391611D41100578904D2054CB7E7
+sambaNTPassword: BE71B556E5B6810F9B7BA33CE56DBE27
+sambaPwdLastSet: 1314104880
+
+dn: uid=dose-win8$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applications
+ ,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1109
+cn: dose-win8$
+uid: dose-win8$
+uidNumber: 10119
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+displayName: DOSE-WIN8$
+sambaAcctFlags: [W          ]
+sambaNTPassword: F2C3416BCD92356E571A9D0F9FEB9089
+sambaPwdLastSet: 1381840560
+
+dn: uid=pnesr-w10$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applications
+ ,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: pnesr-w10$
+uid: pnesr-w10$
+uidNumber: 10772
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1202
+displayName: PNESR-W10$
+sambaNTPassword: 19B696B4F38365970B7D76540C77DE22
+sambaPwdLastSet: 1438238872
+sambaAcctFlags: [W          ]
+
+dn: uid=seven-64b$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applications
+ ,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1198
+cn: seven-64b$
+uid: seven-64b$
+uidNumber: 10729
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+displayName: SEVEN-64B$
+sambaAcctFlags: [W          ]
+sambaNTPassword: 1CED351E2E9E6EE577687436B6851DE6
+sambaPwdLastSet: 1434697501
+
+dn: uid=w7-214-21$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applications
+ ,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: w7-214-21$
+uid: w7-214-21$
+uidNumber: 11184
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1246
+displayName: W7-214-21$
+sambaNTPassword: 1C652D5A2137259C8B01509CF8EC404E
+sambaPwdLastSet: 1490797540
+sambaAcctFlags: [W          ]
+
+dn: uid=w7-xx-214$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applications
+ ,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: w7-xx-214$
+uid: w7-xx-214$
+uidNumber: 11084
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1240
+displayName: W7-XX-214$
+sambaNTPassword: 71AE2ADDDC52CBFB4A14C312A900E609
+sambaPwdLastSet: 1475846128
+sambaAcctFlags: [W          ]
+
+dn: uid=sbl-214-10$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=application
+ s,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: sbl-214-10$
+uid: sbl-214-10$
+uidNumber: 10899
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1220
+displayName: Computer
+sambaLMPassword: 23502E471AE42B74ED0A1B5793E049E0
+sambaNTPassword: 0591F49250F937DCC1B7E2884A49759A
+sambaPwdLastSet: 1450546771
+sambaAcctFlags: [W          ]
+
+dn: uid=sbl-214-31$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=application
+ s,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: sbl-214-31$
+uid: sbl-214-31$
+uidNumber: 10822
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1215
+displayName: Computer
+sambaAcctFlags: [W          ]
+sambaNTPassword: B64E2BAB18314CFBACE9C2DD501770A8
+sambaPwdLastSet: 1475592883
+
+dn: uid=sbl-214-32$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=application
+ s,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: sbl-214-32$
+uid: sbl-214-32$
+uidNumber: 11012
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1231
+displayName: Computer
+sambaAcctFlags: [WX         ]
+sambaNTPassword: 2BB1BCEA8F32495C4C04E1A585093115
+sambaPwdLastSet: 1466590166
+
+dn: uid=TEST-PNESR$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=application
+ s,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: TEST-PNESR$
+uid: TEST-PNESR$
+uidNumber: 11170
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1243
+displayName: Computer
+sambaNTPassword: A6EC05E9197A1ADDDF865944FB259960
+sambaPwdLastSet: 1488472865
+sambaAcctFlags: [I          ]
+
+dn: uid=xp-hapy-01$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=application
+ s,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: xp-hapy-01$
+uid: xp-hapy-01$
+uidNumber: 10834
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1217
+displayName: XP-HAPY-01$
+sambaNTPassword: AA2ABEB1A1AA71D68E8DD0C32D6C018C
+sambaPwdLastSet: 1445500585
+sambaAcctFlags: [W          ]
+
+dn: uid=esbl-214-11$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applicatio
+ ns,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: esbl-214-11$
+uid: esbl-214-11$
+uidNumber: 10819
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1213
+displayName: Computer
+sambaAcctFlags: [WX         ]
+sambaNTPassword: EF7ECEA5DDF813DC885720A4BCBB50F3
+sambaPwdLastSet: 1478181367
+
+dn: uid=esbl-214-30$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applicatio
+ ns,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: esbl-214-30$
+uid: esbl-214-30$
+uidNumber: 10870
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1218
+displayName: Computer
+sambaAcctFlags: [W          ]
+sambaNTPassword: 962C5486964E6827D5F48E9A6C40ECE9
+sambaPwdLastSet: 1464620630
+
+dn: uid=esbl-214-31$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applicatio
+ ns,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: esbl-214-31$
+uid: esbl-214-31$
+uidNumber: 10907
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1224
+displayName: Computer
+sambaAcctFlags: [W          ]
+sambaNTPassword: 85AE1707318E40A31BA4283B250A6F7E
+sambaPwdLastSet: 1473409986
+
+dn: uid=esbl-214-42$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applicatio
+ ns,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: esbl-214-42$
+uid: esbl-214-42$
+uidNumber: 11182
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1245
+displayName: Computer
+sambaAcctFlags: [WX         ]
+sambaNTPassword: 42221973B7B358D77AA6D2E1DFA2CE07
+sambaPwdLastSet: 1489484950
+
+dn: uid=pnesr-w2012$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applicatio
+ ns,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: pnesr-w2012$
+uid: pnesr-w2012$
+uidNumber: 10337
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+displayName: PNESR-W2012$
+sambaAcctFlags: [W          ]
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1158
+sambaNTPassword: 09539C50622DEA5D1F1F80E74B0CD62C
+sambaPwdLastSet: 1411479670
+
+dn: uid=psys69-sbl1$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applicatio
+ ns,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: psys69-sbl1$
+uid: psys69-sbl1$
+uidNumber: 10016
+gidNumber: 515
+homeDirectory: /dev/null
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1012
+displayName: Computer
+sambaLMPassword: E788E5BD3ADAE43D2691ADF656519D72
+sambaNTPassword: 4F74DF0D13DD18B08D736D4976E02F00
+sambaAcctFlags: [W          ]
+
+dn: uid=w2012-wsus3$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applicatio
+ ns,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1114
+cn: w2012-wsus3$
+uid: w2012-wsus3$
+uidNumber: 10121
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+displayName: W2012-WSUS3$
+sambaAcctFlags: [W          ]
+sambaNTPassword: AAD72915C9BE525C5F4053A20B5E869F
+sambaPwdLastSet: 1395744270
+
+dn: uid=win10-pnesr$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applicatio
+ ns,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: win10-pnesr$
+uid: win10-pnesr$
+uidNumber: 10468
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1171
+displayName: WIN10-PNESR$
+sambaNTPassword: DC6A5C7CBCB8432C1EBD220FEDE1166A
+sambaPwdLastSet: 1412932118
+sambaAcctFlags: [W          ]
+
+dn: uid=DOSE-PNESR-7$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applicati
+ ons,ou=ressources,dc=equipement,dc=gouv,dc=fr
+uid: DOSE-PNESR-7$
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1236
+objectClass: sambaSamAccount
+objectClass: account
+displayName: DOSE-PNESR-7$
+sambaAcctFlags: [W          ]
+sambaNTPassword: 4D6BC2801B6B601BF740D77E99306C08
+sambaPwdLastSet: 1476264979
+
+dn: uid=w7-64b-vm-ag$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applicati
+ ons,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: w7-64b-vm-ag$
+uid: w7-64b-vm-ag$
+uidNumber: 10749
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1199
+displayName: W7-64B-VM-AG$
+sambaAcctFlags: [W          ]
+sambaNTPassword: 88EC3BC605BD1273ECC2EFE4AD4ECCA1
+sambaPwdLastSet: 1435826696
+
+dn: uid=W7-AG-214-21$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applicati
+ ons,ou=ressources,dc=equipement,dc=gouv,dc=fr
+uid: W7-AG-214-21$
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1242
+objectClass: sambaSamAccount
+objectClass: account
+displayName: W7-AG-214-21$
+sambaAcctFlags: [W          ]
+sambaNTPassword: 678988113B819A85826036C47E19E734
+sambaPwdLastSet: 1485964885
+
+dn: uid=xpvirt-alain$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applicati
+ ons,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1148
+cn: xpvirt-alain$
+uid: xpvirt-alain$
+uidNumber: 10233
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+displayName: XPVIRT-ALAIN$
+sambaNTPassword: C639105154FBCE4B896D39088C56F788
+sambaPwdLastSet: 1387190589
+sambaAcctFlags: [W          ]
+
+dn: uid=w8-1-32b-test$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applicat
+ ions,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1141
+cn: w8-1-32b-test$
+uid: w8-1-32b-test$
+uidNumber: 10168
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+displayName: W8-1-32B-TEST$
+sambaAcctFlags: [W          ]
+sambaNTPassword: 8CA8C59B5BDB0A822E683542482DA7B4
+sambaPwdLastSet: 1406191167
+
+dn: uid=dose-bally-por$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applica
+ tions,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: becchio-port-g$
+uidNumber: 10116
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+displayName: BECCHIO-PORT-G$
+sambaNTPassword: 7CD9C5EF235154B740BB9A6B1EDF8E3A
+sambaPwdLastSet: 1357901370
+sambaAcctFlags: [W          ]
+uid: dose-bally-por$
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1105
+
+dn: uid=dose-bally-vis$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applica
+ tions,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1107
+cn: dose-bally-vis$
+uid: dose-bally-vis$
+uidNumber: 10117
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+displayName: DOSE-BALLY-VIS$
+sambaAcctFlags: [W          ]
+sambaNTPassword: DF172556A3C4C52CCD6B3F696A30D0FF
+sambaPwdLastSet: 1366099645
+
+dn: uid=dose-pnesys-w7$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applica
+ tions,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: dose-pnesys-w7$
+uid: dose-pnesys-w7$
+uidNumber: 10160
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1139
+displayName: DOSE-PNESYS-W7$
+sambaAcctFlags: [W          ]
+sambaNTPassword: 115EFE2615598226665963EA8CED12A7
+sambaPwdLastSet: 1404918883
+
+dn: uid=w7-64b-214-104$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applica
+ tions,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: w7-64b-214-104$
+uid: w7-64b-214-104$
+uidNumber: 11011
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1230
+displayName: W7-64B-214-104$
+sambaAcctFlags: [W          ]
+sambaNTPassword: 2145592E7F0BD9DF8F2D2261A6A196CB
+sambaPwdLastSet: 1473250475
+
+dn: uid=w7-64b-214-105$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applica
+ tions,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: w7-64b-214-105$
+uid: w7-64b-214-105$
+uidNumber: 10961
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1227
+displayName: W7-64B-214-105$
+sambaNTPassword: C0FDA1E90AFE3B7C993C8EA2D3C0BFA5
+sambaPwdLastSet: 1459412730
+sambaAcctFlags: [W          ]
+
+dn: uid=w7-64b-214-114$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applica
+ tions,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: w7-64b-214-114$
+uid: w7-64b-214-114$
+uidNumber: 11063
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1238
+displayName: W7-64B-214-114$
+sambaNTPassword: F81B46C484718171188D789E3F5C13DF
+sambaPwdLastSet: 1473686132
+sambaAcctFlags: [W          ]
+
+dn: uid=xp-hapy-214-12$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applica
+ tions,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: xp-hapy-214-12$
+uid: xp-hapy-214-12$
+uidNumber: 10823
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1216
+displayName: XP-HAPY-214-12$
+sambaNTPassword: A20059183CAC1C465C90B40CECCD2F3E
+sambaPwdLastSet: 1444980478
+sambaAcctFlags: [W          ]
+
+dn: uid=xpvirt-michel2$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applica
+ tions,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: xpvirt-michel2$
+uid: xpvirt-michel2$
+uidNumber: 10636
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1193
+displayName: XPVIRT-MICHEL2$
+sambaAcctFlags: [W          ]
+sambaNTPassword: 949128EFFAFA59460953CF7218B5D953
+sambaPwdLastSet: 1458571364
+
+dn: uid=virtualxp-pnesr$,ou=Machines,ou=DDT-101,ou=domaines,ou=Samba,ou=applic
+ ations,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: sambaSamAccount
+cn: virtualxp-pnesr$
+uid: virtualxp-pnesr$
+uidNumber: 10713
+gidNumber: 515
+homeDirectory: /nonexistent
+loginShell: /bin/false
+description: Computer
+gecos: Computer
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-1195
+displayName: VIRTUALXP-PNESR$
+sambaAcctFlags: [W          ]
+sambaNTPassword: 587AD073DC5CD835D47ABD86AC5E5CE6
+sambaPwdLastSet: 1441027535
+
+dn: cn=d101-cdl1,ou=Serveurs,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,o
+ u=ressources,dc=equipement,dc=gouv,dc=fr
+ipHostNumber: 172.20.43.118
+objectClass: top
+objectClass: device
+objectClass: ipHost
+cn: d101-cdl1
+
+dn: cn=d101-cdl2,ou=Serveurs,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,o
+ u=ressources,dc=equipement,dc=gouv,dc=fr
+ipHostNumber: 172.20.44.118
+objectClass: top
+objectClass: device
+objectClass: ipHost
+cn: d101-cdl2
+
+dn: cn=ddt-101-38-1,ou=Serveurs,ou=DDT-101,ou=domaines,ou=Samba,ou=application
+ s,ou=ressources,dc=equipement,dc=gouv,dc=fr
+ipHostNumber: 172.20.214.141
+objectClass: top
+objectClass: device
+objectClass: ipHost
+cn: ddt-101-38-1
+
+dn: cn=ddt-101-44-1,ou=Serveurs,ou=DDT-101,ou=domaines,ou=Samba,ou=application
+ s,ou=ressources,dc=equipement,dc=gouv,dc=fr
+ipHostNumber: 172.26.62.12
+objectClass: top
+objectClass: device
+objectClass: ipHost
+cn: ddt-101-44-1
+
+dn: cn=ddt-101-cdl3,ou=Serveurs,ou=DDT-101,ou=domaines,ou=Samba,ou=application
+ s,ou=ressources,dc=equipement,dc=gouv,dc=fr
+ipHostNumber: 172.20.214.43
+objectClass: top
+objectClass: device
+objectClass: ipHost
+cn: ddt-101-cdl3
+
+dn: cn=ddt-101-cdl4,ou=Serveurs,ou=DDT-101,ou=domaines,ou=Samba,ou=application
+ s,ou=ressources,dc=equipement,dc=gouv,dc=fr
+ipHostNumber: 172.20.214.44
+objectClass: top
+objectClass: device
+objectClass: ipHost
+cn: ddt-101-cdl4
+
+dn: ou=Groupes,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,o
+ u=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: organizationalUnit
+ou: local
+ou: Groupes
+
+dn: cn=kladmins,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,
+ ou=ressources,dc=equipement,dc=gouv,dc=fr
+cn: kladmins
+gidNumber: 10003
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21007
+
+dn: cn=grouptest,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applications
+ ,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21049
+sambaGroupType: 2
+displayName: grouptest
+cn: grouptest
+gidNumber: 10024
+memberUid: local.admddt-101
+
+dn: cn=grouptest1,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=application
+ s,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21051
+sambaGroupType: 2
+displayName: grouptest1
+cn: grouptest1
+gidNumber: 10025
+memberUid: local.adm1ddt-101
+
+dn: uid=local.fff,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=application
+ s,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+cn: local.fff
+sn: local.fff
+uid: local.fff
+uidNumber: 10135
+gidNumber: 513
+homeDirectory: /data/bureautique/individuel/DDT-101/local.fff
+loginShell: /bin/false
+gecos: System User
+givenName: local.fff
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: local.fff
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21270
+sambaPasswordHistory: 00000000000000000000000000000000000000000000000000000000
+ 00000000
+sambaPrimaryGroupSID: S-1-5-21-3323092181-3044490355-778632617-513
+sambaLMPassword: 9FA62BC2EC66FD40F6A6DD97ED17729F
+sambaAcctFlags: [U]
+sambaNTPassword: EB82338B9221DF013DE6620373F49E82
+sambaPwdLastSet: 1386584577
+sambaPwdMustChange: 1386584577
+userPassword: {SSHA}koe81yWSkEtVIKUTMLyU3n2rrQ85bXdN
+shadowLastChange: 16048
+
+dn: cn=DomainUsers,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applicatio
+ ns,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+objectClass: top
+cn: DomainUsers
+sn: DomainUsers
+gidNumber: 513
+description: Utilisateurs du domaine
+displayName: Utilisateurs
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-513
+sambaGroupType: 2
+memberUid: admin.DDT-101
+memberUid: admin.ddt-101
+
+dn: cn=kloperators,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applicatio
+ ns,ou=ressources,dc=equipement,dc=gouv,dc=fr
+cn: kloperators
+gidNumber: 10021
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21043
+
+dn: uid=local.scan,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applicatio
+ ns,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+cn: local.scan
+sn: local.scan
+uid: local.scan
+uidNumber: 10158
+gidNumber: 513
+gecos: System User
+givenName: local.scan
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: local.scan
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21316
+sambaPrimaryGroupSID: S-1-5-21-3323092181-3044490355-778632617-513
+sambaLMPassword: DD59FB81FD23E160AAD3B435B51404EE
+sambaAcctFlags: [U]
+sambaNTPassword: 9796EF5829E5303E785DD4665FC5D99E
+sambaPwdLastSet: 1371128267
+sambaPwdMustChange: 1371128267
+userPassword: {SSHA}Viak1ICKbluTpGMCHl+V8SW4WQxOcGdP
+shadowLastChange: 15869
+loginShell: /bin/bash
+homeDirectory: /home/data/bureautique/echanges/scanV2
+
+dn: uid=local.truc,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applicatio
+ ns,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+cn: local.truc
+sn: local.truc
+uid: local.truc
+uidNumber: 11131
+gidNumber: 513
+homeDirectory: /data/bureautique/individuel/DDT-101/local.truc
+loginShell: /bin/false
+gecos: System User
+userPassword: {crypt}x
+givenName: local.truc
+sambaPwdLastSet: 0
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+sambaPwdMustChange: 2147483647
+displayName: local.truc
+sambaAcctFlags: [UX]
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-23262
+sambaPrimaryGroupSID: S-1-5-21-3323092181-3044490355-778632617-513
+sambaNTPassword: XXX
+sambaLMPassword: XXX
+
+dn: cn=DomainAdmins,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applicati
+ ons,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+gidNumber: 512
+description: Administrateurs des stations
+sambaGroupType: 2
+memberUid: admin.DDT-101
+memberUid: frank.t
+memberUid: local.admindose
+memberUid: local.admddt-101
+memberUid: local.adm1ddt-101
+memberUid: kador.bidochon
+memberUid: local.fff
+memberUid: local.zzz-v1
+memberUid: local.pnesr
+memberUid: local.pnesr-cgu
+displayName: Administrateurs
+sn: domainadmins
+cn: domainadmins
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-512
+
+dn: cn=DomainGuests,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applicati
+ ons,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+objectClass: top
+cn: DomainGuests
+sn: DomainGuests
+gidNumber: 514
+description: invites du domaine
+displayName: invites
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-514
+sambaGroupType: 2
+
+dn: uid=local.pnesr,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applicati
+ ons,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+cn: local.pnesr
+sn: local.pnesr
+uid: local.pnesr
+uidNumber: 11117
+gidNumber: 513
+homeDirectory: /data/bureautique/individuel/DDT-101/local.pnesr
+loginShell: /bin/false
+gecos: System User
+givenName: local.pnesr
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: local.pnesr
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-23234
+sambaPrimaryGroupSID: S-1-5-21-3323092181-3044490355-778632617-513
+sambaAcctFlags: [U]
+sambaNTPassword: 5E32520CFA1279B8F9B8DB122E751164
+sambaPwdMustChange: 1481711265
+sambaPwdLastSet: 1481711265
+sambaLMPassword: 7FC1B53B9BA398E7AAD3B435B51404EE
+userPassword: {SSHA}4uJWO1ZcyLdOPUp4PFGbMZFDChpXQlhn
+shadowLastChange: 17149
+
+dn: uid=local.140327,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applicat
+ ions,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: 140327
+sn: LOCAL
+loginShell: /bin/false
+uidNumber: 20027
+gidNumber: 513
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: calEntry
+objectClass: sambaSamAccount
+objectClass: posixAccount
+uid: local.140327
+sambaDomainName: DDT-101
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19027
+cn: local.140327
+homeDirectory: /bureautique/individuel/null
+sambaLMPassword: BAC14D04669EE1D1AAD3B435B51404EE
+sambaAcctFlags: [U]
+sambaNTPassword: FBBF55D0EF0E34D39593F55C5F2CA5F2
+sambaPwdLastSet: 1395931892
+sambaPwdMustChange: 1395931892
+userPassword: {SSHA}n2SGIaSs1aKgmhi3XVbb7CX2qjZPeHR1
+
+dn: uid=local.pne-sr,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applicat
+ ions,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: local.pne-sr
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21456
+cn: local.pne-sr
+sn: local.pne-sr
+uid: local.pne-sr
+uidNumber: 10228
+gidNumber: 513
+homeDirectory: /data/bureautique/individuel/DDT-101/local.pne-sr
+loginShell: /bin/false
+gecos: System User
+givenName: local.pne-sr
+sambaPrimaryGroupSID: S-1-5-21-3323092181-3044490355-778632617-513
+sambaLMPassword: 7FC1B53B9BA398E7AAD3B435B51404EE
+sambaAcctFlags: [U]
+sambaNTPassword: 5E32520CFA1279B8F9B8DB122E751164
+sambaPwdLastSet: 1423558885
+sambaPwdMustChange: 1423558885
+userPassword: {SSHA}RH5zVMmfxH0z1MqeLxVogoyB/g9scE5a
+shadowLastChange: 16476
+
+dn: uid=local.zzz-v1,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applicat
+ ions,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: sambaSamAccount
+cn: local.zzz-v1
+sn: local.zzz-v1
+givenName: local.zzz-v1
+uid: local.zzz-v1
+uidNumber: 10218
+gidNumber: 513
+homeDirectory: /data/bureautique/individuel/DDT-101/local.zzz-v1
+loginShell: /bin/false
+gecos: System User
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: local.zzz-v1
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21436
+sambaPrimaryGroupSID: S-1-5-21-3323092181-3044490355-778632617-513
+sambaLMPassword: 01FC5A6BE7BC6929AAD3B435B51404EE
+sambaAcctFlags: [U]
+sambaNTPassword: 0CB6948805F797BF2A82807973B89537
+sambaPwdLastSet: 1385131963
+sambaPwdMustChange: 1385131963
+userPassword: {SSHA}Rb21i5b83zrFyBN6bJhiUvyZRyIwOVVD
+shadowLastChange: 16031
+shadowMax: 0
+
+dn: cn=PrintOperators,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applica
+ tions,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+objectClass: top
+cn: PrintOperators
+sn: PrintOperators
+gidNumber: 550
+description: Administrateurs des imprimantes
+sambaGroupType: 5
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-550
+displayName: OperateurImpression
+memberUid: admin.ddt-101
+
+dn: uid=admin.DDT-101,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applica
+ tions,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: sambaSamAccount
+uid: admin.DDT-101
+displayName: admin.DDT-101
+gidNumber: 512
+homeDirectory: /home/admin
+sambaKickoffTime: 2147483647
+sambaLogoffTime: 2147483647
+sambaLogonTime: 0
+sambaPrimaryGroupSID: S-1-5-21-3323092181-3044490355-778632617-513
+sambaPwdCanChange: 0
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21000
+uidNumber: 10000
+shadowMax: 0
+sambaPasswordHistory: 00000000000000000000000000000000000000000000000000000000
+ 00000000
+gecos: admin.DDT-101,,,,
+cn: admin.DDT-101
+sn: admin.DDT-101
+loginShell: /bin/false
+sambaNTPassword: EB82338B9221DF013DE6620373F49E82
+sambaLMPassword: 9FA62BC2EC66FD40F6A6DD97ED17729F
+sambaPwdLastSet: 1486736608
+sambaAcctFlags: [U]
+sambaPwdMustChange: 1486736608
+userPassword: {SSHA}oGSNN+0FeNdeh2JwrQFz3e5z1AtUc1ZO
+shadowLastChange: 17207
+
+dn: uid=local.testpwd,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applica
+ tions,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Testpwd
+sn: LOCAL
+loginShell: /bin/false
+uidNumber: 20021
+gidNumber: 513
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: calEntry
+objectClass: sambaSamAccount
+objectClass: posixAccount
+uid: local.testpwd
+sambaDomainName: DDT-101
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19021
+cn: local.testpwd
+homeDirectory: /bureautique/individuel/null
+sambaLMPassword: 01FC5A6BE7BC6929AAD3B435B51404EE
+sambaAcctFlags: [U]
+sambaNTPassword: 0CB6948805F797BF2A82807973B89537
+sambaPwdLastSet: 1393595466
+sambaPwdMustChange: 1393595466
+userPassword: {SSHA}aKzYNkPAVx7mFvL9cdJpNja5d7xBRkZX
+
+dn: cn=DomainComputers,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applic
+ ations,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+objectClass: top
+cn: DomainComputers
+sn: DomainComputers
+gidNumber: 515
+description: ordinateurs du domaine
+displayName: ordinateurs
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-515
+sambaGroupType: 2
+
+dn: uid=administrateur,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applic
+ ations,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: sambaSamAccount
+sambaPwdLastSet: 0
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+sambaPwdMustChange: 2147483647
+displayName: administrateur
+sambaAcctFlags: [UX]
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21166
+cn: administrateur
+sn: administrateur
+givenName: administrateur
+uid: administrateur
+uidNumber: 10083
+gidNumber: 513
+homeDirectory: /data/bureautique/individuel/DDT-101/administrateur
+loginShell: /bin/false
+gecos: System User
+userPassword: {crypt}x
+sambaLMPassword: XXX
+sambaPrimaryGroupSID: S-1-5-21-3323092181-3044490355-778632617-513
+sambaNTPassword: XXX
+
+dn: uid=local.testpwd1,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applic
+ ations,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+cn: local.testpwd1
+sn: local.testpwd1
+uid: local.testpwd1
+uidNumber: 10303
+gidNumber: 513
+homeDirectory: /data/bureautique/individuel/DDT-101/local.testpwd1
+loginShell: /bin/false
+gecos: System User
+givenName: local.testpwd1
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: local.testpwd1
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21606
+sambaPrimaryGroupSID: S-1-5-21-3323092181-3044490355-778632617-513
+sambaLMPassword: 94AF515EEB7D781D09752A3293831D17
+sambaAcctFlags: [U]
+sambaNTPassword: FA6388BB3A85A0535CEEBF4174030329
+sambaPwdLastSet: 1393595794
+sambaPwdMustChange: 1393595794
+userPassword: {SSHA}SJKigQb5Z7jaR2Ltm7DUcqu+1/Fqd1Vz
+shadowLastChange: 16129
+
+dn: uid=local.testsoda,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applic
+ ations,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sambaPwdLastSet: 1394719242
+givenName: Testsoda
+sn: LOCAL
+sambaAcctFlags: [UX]
+loginShell: /bin/false
+uidNumber: 20023
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: calEntry
+objectClass: sambaSamAccount
+objectClass: posixAccount
+uid: local.testsoda
+sambaDomainName: DDT-101
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19023
+cn: local.testsoda
+homeDirectory: /bureautique/individuel/null
+sambaNTPassword: 151F8AD67FDCE5F86F15DE93247BD056
+
+dn: uid=local.adminDO69,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=appli
+ cations,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: local.adminDO69
+sn: local.adminDO69
+givenName: local.adminDO69
+uid: local.adminDO69
+uidNumber: 10039
+gidNumber: 513
+homeDirectory: /data/bureautique/individuel/DDT-101/local.adminDO69
+loginShell: /bin/false
+gecos: System User
+userPassword: {SSHA}RYED8yHmRFytlHBcp/Hq7TJPUj5mbHF0
+shadowLastChange: 14876
+shadowMax: 0
+
+dn: uid=local.admindose,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=appli
+ cations,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: sambaSamAccount
+uid: local.admindose
+uidNumber: 10045
+gidNumber: 513
+homeDirectory: /data/bureautique/individuel/DDT-101/local.admindose
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: local.admindose
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21090
+sambaPrimaryGroupSID: S-1-5-21-3323092181-3044490355-778632617-513
+sambaLMPassword: BDFC3AACC4DF776673251AA2B4314B90
+sambaAcctFlags: [U]
+sambaNTPassword: 06D43041CDDBACE59C07FD259576644E
+sambaPwdLastSet: 1288964951
+sambaPwdMustChange: 1288964951
+userPassword: {SSHA}9N1YFjrlmtqljFAw0t9h1fMXRkViZE9W
+shadowLastChange: 14918
+shadowMax: 0
+gecos: System User,,123123,1111,
+cn: System User
+sn: User
+givenName: System
+telephoneNumber: 123123
+homePhone: 1111
+loginShell: /bin/false
+
+dn: uid=local.pnesr-cgu,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=appli
+ cations,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+cn: local.pnesr-cgu
+sn: local.pnesr-cgu
+uid: local.pnesr-cgu
+uidNumber: 11178
+gidNumber: 513
+homeDirectory: /data/bureautique/individuel/DDT-101/local.pnesr-cgu
+loginShell: /bin/false
+gecos: System User
+givenName: local.pnesr-cgu
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: local.pnesr-cgu
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-23356
+sambaPrimaryGroupSID: S-1-5-21-3323092181-3044490355-778632617-513
+sambaPwdMustChange: 1488830173
+sambaPwdLastSet: 1488830173
+sambaAcctFlags: [U]
+sambaLMPassword: BDFC3AACC4DF776641A86CC7FA9D87FE
+sambaNTPassword: A1E7C851973627AA8E7D4A5E5D4B2912
+userPassword: {SSHA}BHt7cM7xhedn8cEtnrORavf3p+9HRmRs
+shadowLastChange: 17231
+
+dn: uid=local.test_user,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=appli
+ cations,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: local.test_user
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21246
+cn: local.test_user
+sn: local.test_user
+uid: local.test_user
+uidNumber: 10123
+gidNumber: 513
+homeDirectory: /data/bureautique/individuel/DDT-101/local.test_user
+loginShell: /bin/false
+gecos: System User
+givenName: local.test_user
+sambaPrimaryGroupSID: S-1-5-21-3323092181-3044490355-778632617-513
+sambaLMPassword: BDFC3AACC4DF776641A86CC7FA9D87FE
+sambaAcctFlags: [U]
+sambaNTPassword: A1E7C851973627AA8E7D4A5E5D4B2912
+sambaPwdLastSet: 1385633298
+sambaPwdMustChange: 1385633298
+userPassword: {SSHA}vUjxf8SUtORm0HPBZ8Y6OW+9wDBZVjU1
+shadowLastChange: 16037
+
+dn: uid=local.testsoda2,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=appli
+ cations,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Testsoda2
+sn: LOCAL
+loginShell: /bin/false
+uidNumber: 20024
+gidNumber: 513
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: calEntry
+objectClass: sambaSamAccount
+objectClass: posixAccount
+uid: local.testsoda2
+sambaDomainName: DDT-101
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19024
+cn: local.testsoda2
+homeDirectory: /bureautique/individuel/null
+sambaLMPassword: ED76A0E2A377036EAAD3B435B51404EE
+sambaAcctFlags: [U]
+sambaNTPassword: A53584147AE69FD7C99B93130351676C
+sambaPwdLastSet: 1394722196
+sambaPwdMustChange: 1394722196
+userPassword: {SSHA}IqvHqzmlGCfV41fUnx6QewPMyfgWran+5TlXkA==
+
+dn: uid=local.admddt-101,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=appl
+ ications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: sambaSamAccount
+cn: local.admddt-101
+sn: local.admddt-101
+givenName: local.admddt-101
+uid: local.admddt-101
+uidNumber: 10097
+gidNumber: 513
+homeDirectory: /data/bureautique/individuel/DDT-101/local.admddt-101
+loginShell: /bin/false
+gecos: System User
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: local.admddt-101
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21194
+sambaPrimaryGroupSID: S-1-5-21-3323092181-3044490355-778632617-513
+sambaLogonScript: local.bat
+sambaLMPassword: BDFC3AACC4DF776641A86CC7FA9D87FE
+sambaAcctFlags: [U]
+sambaNTPassword: A1E7C851973627AA8E7D4A5E5D4B2912
+sambaPwdLastSet: 1352988147
+sambaPwdMustChange: 1352988147
+userPassword: {SSHA}1xTemMPPghUM0ZsNbIp31WvoXPJKRUF0
+shadowLastChange: 15659
+shadowMax: 0
+
+dn: uid=local.test140206,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=appl
+ ications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+cn: local.test140206
+sn: local.test140206
+uid: local.test140206
+uidNumber: 10279
+gidNumber: 513
+homeDirectory: /data/bureautique/individuel/DDT-101/local.test140206
+loginShell: /bin/false
+gecos: System User
+givenName: local.test140206
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: local.test140206
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21558
+sambaPrimaryGroupSID: S-1-5-21-3323092181-3044490355-778632617-513
+userPassword: {SSHA}D7jAb2j7FUTCiGZLT9ezW8d/JWFYbDZk
+sambaLMPassword: 01FC5A6BE7BC6929AAD3B435B51404EE
+sambaAcctFlags: [U]
+sambaNTPassword: 0CB6948805F797BF2A82807973B89537
+sambaPwdLastSet: 1391686564
+sambaPwdMustChange: 1391686564
+shadowLastChange: 16107
+
+dn: sambaSID=S-1-5-32-544,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=app
+ lications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: sambaSidEntry
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-32-544
+sambaGroupType: 4
+displayName: Administrators
+gidNumber: 810000
+sambaSIDList: S-1-5-21-3323092181-3044490355-778632617-512
+sambaSIDList: S-1-5-21-3323092181-3044490355-778632617-1013
+
+dn: sambaSID=S-1-5-32-545,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=app
+ lications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: sambaSidEntry
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-32-545
+sambaGroupType: 4
+displayName: Users
+gidNumber: 810001
+sambaSIDList: S-1-5-21-3323092181-3044490355-778632617-513
+
+dn: uid=local.adm1ddt-101,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=app
+ lications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+cn: local.adm1ddt-101
+sn: local.adm1ddt-101
+uid: local.adm1ddt-101
+uidNumber: 10115
+gidNumber: 513
+homeDirectory: /data/bureautique/individuel/DDT-101/local.adm1ddt-101
+loginShell: /bin/false
+gecos: System User
+givenName: local.adm1ddt-101
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: local.adm1ddt-101
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21230
+sambaPrimaryGroupSID: S-1-5-21-3323092181-3044490355-778632617-513
+sambaLMPassword: BDFC3AACC4DF776641A86CC7FA9D87FE
+sambaAcctFlags: [U]
+sambaNTPassword: A1E7C851973627AA8E7D4A5E5D4B2912
+sambaPwdLastSet: 1357890138
+sambaPwdMustChange: 1357890138
+shadowLastChange: 15716
+userPassword: {SSHA}H2d7CEu87Ka9QrQ+oGD8kG3+IYpPdUxT
+sambaLogonScript: local.bat
+
+dn: uid=local.psin-standard,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=a
+ pplications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+cn: local.psin-standard
+sn: local.psin-standard
+uid: local.psin-standard
+uidNumber: 10122
+gidNumber: 513
+homeDirectory: /data/bureautique/individuel/DDT-101/local.psin-standard
+loginShell: /bin/false
+gecos: System User
+givenName: local.psin-standard
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+sambaPwdMustChange: 2147483647
+displayName: local.psin-standard
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-21244
+sambaLMPassword: C366359C799CA7E717306D272A9441BB
+sambaNTPassword: 15767F0455B34A8F850BEF6CD59106D2
+sambaPasswordHistory: 00000000000000000000000000000000000000000000000000000000
+ 00000000
+sambaPwdLastSet: 1360073033
+sambaAcctFlags: [UX         ]
+sambaPrimaryGroupSID: S-1-5-21-3323092181-3044490355-778632617-513
+userPassword: {SSHA}N0emVOq7yMEKR5QGfMC5STkycKURbyAh
+
+dn: uid=local.pnesr-tb140327,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=
+ applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sambaPwdLastSet: 1395930815
+givenName: Pnesr-Tb140327
+sn: LOCAL
+sambaAcctFlags: [UX]
+loginShell: /bin/false
+uidNumber: 20026
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: calEntry
+objectClass: sambaSamAccount
+objectClass: posixAccount
+uid: local.pnesr-tb140327
+sambaDomainName: DDT-101
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19026
+cn: local.pnesr-tb140327
+homeDirectory: /bureautique/individuel/null
+sambaNTPassword: 151F8AD67FDCE5F86F15DE93247BD056
+
+dn: ou=Amedee,ou=Groupes,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=appl
+ ications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: organizationalUnit
+ou: Amedee
+
+dn: ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=appl
+ ications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: organizationalUnit
+ou: Listes
+
+dn: ou=Entites,ou=Groupes,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=app
+ lications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: organizationalUnit
+ou: Entites
+
+dn: cn=ddt101-i2,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou=domaines,ou=
+ Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101-i2
+gidNumber: 500044
+displayName: ddt101-i2
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499044
+sambaGroupType: 2
+cn: ddt101-i2
+description: ddt101-i2
+memberUid: jacques.latuile
+memberUid: marylin.monroe
+info: SAMBA.gb.auto.majts: 20160927133416Z
+info: SAMBA.gb.auto.liste.dn: ListeAuto=ListesSUAutres,ou=DDT101,ou=TF,ou=mela
+ nie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+
+dn: cn=ddt101-gouv,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou=domaines,o
+ u=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101-gouv
+gidNumber: 500045
+displayName: ddt101-gouv
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+cn: ddt101-gouv
+description: ddt101-gouv
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499045
+memberUid: abcdefghijabcdefg.abcdefghijabcdefghij
+memberUid: admin.ou
+memberUid: admin.pc
+memberUid: alain.g
+memberUid: alain.testtest
+memberUid: annuaire.ldap
+memberUid: christophe.g
+memberUid: ddt101.aucun
+memberUid: ddt101.ecriture
+memberUid: ddt101.lecture
+memberUid: form.amedee
+memberUid: frank.t
+memberUid: gaston.lagaffe-ad
+memberUid: kador.bidochon
+memberUid: kador.bidocon-adm
+memberUid: lewis.martin
+memberUid: lucien.bidochon
+memberUid: marcel.bidochon
+memberUid: michel.b
+memberUid: penelope.ldap
+memberUid: penelope.ldap2
+memberUid: penelope.ldap3
+memberUid: prenom.nom-tres-tres-tres-tres-long
+memberUid: raymonde.bidochon
+memberUid: robert.bidochon
+memberUid: sodara.ddt101test
+memberUid: test1.marcel
+memberUid: thierry.b
+memberUid: ti.teuf
+memberUid: vincent.c
+info: SAMBA.gb.auto.majts: 20170406033344Z
+info: SAMBA.gb.auto.liste.dn: ListeAuto=ListesSU,ou=DDT101,ou=TF,ou=melanie,ou
+ =organisation,dc=equipement,dc=gouv,dc=fr
+
+dn: cn=ddt101.test,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou=domaines,o
+ u=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+objectClass: top
+cn: ddt101.test
+sn: ddt101.test
+gidNumber: 500016
+description: ddt101.test
+displayName: ddt101.test
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499016
+sambaGroupType: 2
+memberUid: marcel.bidochon
+memberUid: kador.bidochon
+memberUid: abcdefghijabcdefg.abcdefghijabcdefghij
+memberUid: lewis.martin
+info: SAMBA.gb.auto.majts: 20161104103405Z
+info: SAMBA.gb.auto.liste.dn: mineqRDN=test,ou=DDT101,ou=TF,ou=melanie,ou=orga
+ nisation,dc=equipement,dc=gouv,dc=fr
+
+dn: cn=ddt101.sg-i2,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou=domaines,
+ ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101.sg-i2
+gidNumber: 500032
+displayName: ddt101.sg-i2
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499032
+sambaGroupType: 2
+cn: ddt101.sg-i2
+description: ddt101.sg-i2
+memberUid: jacques.latuile
+memberUid: marylin.monroe
+info: SAMBA.gb.auto.majts: 20161207093623Z
+info: SAMBA.gb.auto.liste.dn: ListeAuto=ListesSUAutres,ou=SG,ou=DDT101,ou=TF,o
+ u=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+
+dn: cn=ddt101.sg-gouv,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou=domaine
+ s,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101.sg-gouv
+gidNumber: 500047
+displayName: ddt101.sg-gouv
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499047
+sambaGroupType: 2
+cn: ddt101.sg-gouv
+description: ddt101.sg-gouv
+memberUid: abcdefghijabcdefg.abcdefghijabcdefghij
+memberUid: alain.testtest
+memberUid: annuaire.ldap
+memberUid: kador.bidochon
+memberUid: lewis.martin
+memberUid: lucien.bidochon
+memberUid: prenom.nom-tres-tres-tres-tres-long
+memberUid: raymonde.bidochon
+memberUid: robert.bidochon
+memberUid: test1.marcel
+memberUid: ti.teuf
+info: SAMBA.gb.auto.majts: 20170125123625Z
+info: SAMBA.gb.auto.liste.dn: ListeAuto=ListesSU,ou=SG,ou=DDT101,ou=TF,ou=mela
+ nie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+
+dn: cn=ddt101.sg.liste1,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou=domai
+ nes,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101.sg.liste1
+info: SAMBA.gb.auto.liste.dn: mineqRDN=liste1,ou=SG,ou=DDT101,ou=TF,ou=melanie
+ ,ou=organisation,dc=equipement,dc=gouv,dc=fr
+gidNumber: 500105
+displayName: ddt101.sg.liste1
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499105
+sambaGroupType: 2
+cn: ddt101.sg.liste1
+description: ddt101.sg.liste1
+
+dn: cn=ddt101.liste130607,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou=dom
+ aines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+objectClass: top
+cn: ddt101.liste130607
+sn: ddt101.liste130607
+gidNumber: 500021
+description: ddt101.liste130607
+displayName: ddt101.liste130607
+info: SAMBA.gb.auto.liste.dn: mineqRDN=liste130607,ou=DDT101,ou=TF,ou=melanie,
+ ou=organisation,dc=equipement,dc=gouv,dc=fr
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499021
+sambaGroupType: 2
+
+dn: cn=ddt101.sg.test-pnsr,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou=do
+ maines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+objectClass: top
+cn: ddt101.sg.test-pnsr
+sn: ddt101.sg.test-pnsr
+gidNumber: 500035
+description: ddt101.sg.test-pnsr
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499035
+sambaGroupType: 2
+displayName: ddt101.sg.test-pnsr
+memberUid: kador.bidochon
+memberUid: lucien.bidochon
+memberUid: marcel.bidochon
+memberUid: robert.bidochon
+info: SAMBA.gb.auto.majts: 20170126093352Z
+info: SAMBA.gb.auto.liste.dn: mineqRDN=test-pnsr,ou=SG,ou=DDT101,ou=TF,ou=mela
+ nie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+
+dn: cn=ddt101.sg.bureau1-i2,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou=d
+ omaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101.sg.bureau1-i2
+gidNumber: 500087
+displayName: ddt101.sg.bureau1-i2
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499087
+sambaGroupType: 2
+cn: ddt101.sg.bureau1-i2
+description: ddt101.sg.bureau1-i2
+memberUid: jacques.latuile
+info: SAMBA.gb.auto.majts: 20160212043459Z
+info: SAMBA.gb.auto.liste.dn: ListeAuto=ListesSUAutres,ou=bureau1,ou=SG,ou=DDT
+ 101,ou=TF,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+
+dn: cn=ddt101.sg.bureau2-i2,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou=d
+ omaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101.sg.bureau2-i2
+info: SAMBA.gb.auto.liste.dn: ListeAuto=ListesSUAutres,ou=bureau2,ou=SG,ou=DDT
+ 101,ou=TF,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+gidNumber: 500054
+displayName: ddt101.sg.bureau2-i2
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499054
+sambaGroupType: 2
+cn: ddt101.sg.bureau2-i2
+description: ddt101.sg.bureau2-i2
+
+dn: cn=ddt101.do-69.pnesr-i2,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou=
+ domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101.do-69.pnesr-i2
+info: SAMBA.gb.auto.liste.dn: ListeAuto=ListesSUAutres,ou=pnesr,ou=do-69,ou=DD
+ T101,ou=TF,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+gidNumber: 500103
+displayName: ddt101.do-69.pnesr-i2
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499103
+sambaGroupType: 2
+cn: ddt101.do-69.pnesr-i2
+description: ddt101.do-69.pnesr-i2
+
+dn: cn=ddt101.sg.liste140620,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou=
+ domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+objectClass: top
+cn: ddt101.sg.liste140620
+sn: ddt101.sg.liste140620
+gidNumber: 500036
+description: ddt101.sg.liste140620
+displayName: ddt101.sg.liste140620
+info: SAMBA.gb.auto.liste.dn: mineqRDN=liste140620,ou=SG,ou=DDT101,ou=TF,ou=me
+ lanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499036
+memberUid: raymonde.bidochon
+memberUid: kador.bidochon
+sambaGroupType: 2
+
+dn: cn=ddt101.sg.liste140623,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou=
+ domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+objectClass: top
+cn: ddt101.sg.liste140623
+sn: ddt101.sg.liste140623
+gidNumber: 500037
+description: ddt101.sg.liste140623
+displayName: ddt101.sg.liste140623
+info: SAMBA.gb.auto.liste.dn: mineqRDN=liste140623,ou=SG,ou=DDT101,ou=TF,ou=me
+ lanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499037
+memberUid: raymonde.bidochon
+sambaGroupType: 2
+
+dn: cn=dreal-fu.nouv-enta-i2,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou=
+ domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+gidNumber: 500065
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499065
+sambaGroupType: 2
+cn: dreal-fu.nouv-enta-i2
+description: dreal-fu.nouv-enta-i2
+displayName: dreal-fu.nouv-enta-i2
+sn: dreal-fu.nouv-enta-i2
+memberUid: bali.entitea
+info: SAMBA.gb.auto.majts: 20160802113418Z
+info: SAMBA.gb.auto.liste.dn: ListeAuto=ListesSUAutres,ou=Nouv EntA,ou=DREAL F
+ usion,ou=TF,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+
+dn: cn=ddt101.sg.bureau1-gouv,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou
+ =domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101.sg.bureau1-gouv
+info: SAMBA.gb.auto.liste.dn: ListeAuto=ListesSU,ou=bureau1,ou=SG,ou=DDT101,ou
+ =TF,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+gidNumber: 500088
+displayName: ddt101.sg.bureau1-gouv
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499088
+sambaGroupType: 2
+cn: ddt101.sg.bureau1-gouv
+description: ddt101.sg.bureau1-gouv
+
+dn: cn=ddt101.sg.bureau2-gouv,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou
+ =domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101.sg.bureau2-gouv
+info: SAMBA.gb.auto.liste.dn: ListeAuto=ListesSU,ou=bureau2,ou=SG,ou=DDT101,ou
+ =TF,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+gidNumber: 500057
+displayName: ddt101.sg.bureau2-gouv
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499057
+sambaGroupType: 2
+cn: ddt101.sg.bureau2-gouv
+description: ddt101.sg.bureau2-gouv
+
+dn: cn=dreal-fu.nouv-ent-b-i2,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,ou
+ =domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+gidNumber: 500069
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499069
+memberUid: bali.entb
+memberUid: bali.entiteb
+info: SAMBA.gb.auto.majts: 20150630093417Z
+info: SAMBA.gb.auto.liste.dn: ListeAuto=ListesSUAutres,ou=Nouv Ent B,ou=DREAL 
+ Fusion,ou=TF,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+cn: dreal-fu.nouv-ent-b-i2
+description: dreal-fu.nouv-ent-b-i2
+displayName: dreal-fu.nouv-ent-b-i2
+sn: dreal-fu.nouv-ent-b-i2
+
+dn: cn=ddt101.do-69.pnesr-gouv,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,o
+ u=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101.do-69.pnesr-gouv
+gidNumber: 500104
+displayName: ddt101.do-69.pnesr-gouv
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499104
+sambaGroupType: 2
+cn: ddt101.do-69.pnesr-gouv
+description: ddt101.do-69.pnesr-gouv
+memberUid: alain.g
+memberUid: michel.b
+memberUid: sodara.ddt101test
+info: SAMBA.gb.auto.majts: 20161022033536Z
+info: SAMBA.gb.auto.liste.dn: ListeAuto=ListesSU,ou=pnesr,ou=do-69,ou=DDT101,o
+ u=TF,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+
+dn: cn=ddt101.enfants-bidochon,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,o
+ u=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101.enfants-bidochon
+gidNumber: 500108
+displayName: ddt101.enfants-bidochon
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499108
+sambaGroupType: 2
+cn: ddt101.enfants-bidochon
+description: ddt101.enfants-bidochon
+memberUid: kador.bidochon
+memberUid: lucien.bidochon
+info: SAMBA.gb.auto.majts: 20170102163636Z
+info: SAMBA.gb.auto.liste.dn: mineqRDN=enfants-bidochon,ou=DDT101,ou=TF,ou=mel
+ anie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+
+dn: cn=ddt101.parents-bidochon,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,o
+ u=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+objectClass: top
+cn: ddt101.parents-bidochon
+sn: ddt101.parents-bidochon
+gidNumber: 500008
+description: ddt101.parents-bidochon
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499008
+sambaGroupType: 2
+displayName: ddt101.parents-bidochon
+memberUid: robert.bidochon
+memberUid: raymonde.bidochon
+memberUid: prenom.nom-tres-tres-tres-tres-long
+info: SAMBA.gb.auto.majts: 20130923132023Z
+info: SAMBA.gb.auto.liste.dn: mineqRDN=parents-bidochon,ou=DDT101,ou=TF,ou=mel
+ anie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+
+dn: cn=dreal-fu.nouv-enta-gouv,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,o
+ u=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+gidNumber: 500066
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499066
+sambaGroupType: 2
+cn: dreal-fu.nouv-enta-gouv
+description: dreal-fu.nouv-enta-gouv
+displayName: dreal-fu.nouv-enta-gouv
+sn: dreal-fu.nouv-enta-gouv
+memberUid: faby.test
+info: SAMBA.gb.auto.majts: 20150820033420Z
+info: SAMBA.gb.auto.liste.dn: ListeAuto=ListesSU,ou=Nouv EntA,ou=DREAL Fusion,
+ ou=TF,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+
+dn: cn=ddt101.sg.liste-sg140715,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,
+ ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=f
+ r
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+objectClass: top
+cn: ddt101.sg.liste-sg140715
+sn: ddt101.sg.liste-sg140715
+gidNumber: 500040
+description: ddt101.sg.liste-sg140715
+displayName: ddt101.sg.liste-sg140715
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499040
+sambaGroupType: 2
+memberUid: raymonde.bidochon
+info: SAMBA.gb.auto.majts: 20140715112047Z
+info: SAMBA.gb.auto.liste.dn: mineqRDN=liste-sg140715,ou=SG,ou=DDT101,ou=TF,ou
+ =melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+
+dn: cn=dreal-fu.nouv-ent-b-gouv,ou=Listes,ou=Groupes,ou=Population,ou=DDT-101,
+ ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=f
+ r
+gidNumber: 500070
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+info: SAMBA.gb.auto.entite.niveau: gouv
+info: SAMBA.gb.auto.liste.dn: ListeAuto=ListesSU,ou=Nouv Ent B,ou=DREAL Fusion
+ ,ou=TF,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499070
+cn: dreal-fu.nouv-ent-b-gouv
+description: dreal-fu.nouv-ent-b-gouv
+displayName: dreal-fu.nouv-ent-b-gouv
+sn: dreal-fu.nouv-ent-b-gouv
+
+dn: cn=ddt101,ou=Entites,ou=Groupes,ou=Population,ou=DDT-101,ou=domaines,ou=Sa
+ mba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101
+gidNumber: 500043
+displayName: ddt101
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+cn: ddt101
+description: ddt101
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499043
+memberUid: admin.ou
+memberUid: admin.pc
+memberUid: form.amedee
+memberUid: ddt101.aucun
+memberUid: penelope.ldap
+memberUid: ddt101.lecture
+memberUid: penelope.ldap2
+memberUid: penelope.ldap3
+memberUid: ddt101.ecriture
+memberUid: gaston.lagaffe-ad
+memberUid: kador.bidocon-adm
+memberUid: ti.teuf
+memberUid: lewis.martin
+memberUid: test1.marcel
+memberUid: alain.testtest
+memberUid: kador.bidochon
+memberUid: marylin.monroe
+memberUid: lucien.bidochon
+memberUid: robert.bidochon
+memberUid: raymonde.bidochon
+memberUid: prenom.nom-tres-tres-tres-tres-long
+memberUid: abcdefghijabcdefg.abcdefghijabcdefghij
+memberUid: jacques.latuile
+memberUid: thierry.b
+memberUid: vincent.c
+memberUid: christophe.g
+memberUid: frank.t
+memberUid: marcel.bidochon
+memberUid: alain.g
+memberUid: michel.b
+memberUid: sodara.ddt101test
+memberUid: annuaire.ldap
+info: SAMBA.gb.auto.majts: 20170405123733Z
+info: SAMBA.gb.auto.entite.dn: ou=DDT101,ou=TF,ou=melanie,ou=organisation,dc=e
+ quipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: complet
+
+dn: cn=ddt101.sg,ou=Entites,ou=Groupes,ou=Population,ou=DDT-101,ou=domaines,ou
+ =Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101.sg
+gidNumber: 500030
+displayName: ddt101.sg
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499030
+sambaGroupType: 2
+cn: ddt101.sg
+description: ddt101.sg
+memberUid: ti.teuf
+memberUid: lewis.martin
+memberUid: test1.marcel
+memberUid: alain.testtest
+memberUid: kador.bidochon
+memberUid: marylin.monroe
+memberUid: lucien.bidochon
+memberUid: robert.bidochon
+memberUid: raymonde.bidochon
+memberUid: prenom.nom-tres-tres-tres-tres-long
+memberUid: abcdefghijabcdefg.abcdefghijabcdefghij
+memberUid: jacques.latuile
+memberUid: annuaire.ldap
+info: SAMBA.gb.auto.entite.dn: ou=SG,ou=DDT101,ou=TF,ou=melanie,ou=organisatio
+ n,dc=equipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: complet
+info: SAMBA.gb.auto.majts: 20170209123728Z
+
+dn: cn=ddt101.do-44,ou=Entites,ou=Groupes,ou=Population,ou=DDT-101,ou=domaines
+ ,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+cn: ddt101.do-44
+sn: ddt101.do-44
+gidNumber: 500025
+description: ddt101.do-44
+displayName: ddt101.do-44
+sambaGroupType: 2
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499025
+memberUid: thierry.b
+memberUid: vincent.c
+memberUid: christophe.g
+info: SAMBA.gb.auto.entite.dn: ou=do-44,ou=DDT101,ou=TF,ou=melanie,ou=organisa
+ tion,dc=equipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: complet
+info: SAMBA.gb.auto.majts: 20170209123728Z
+
+dn: cn=ddt101.do-69,ou=Entites,ou=Groupes,ou=Population,ou=DDT-101,ou=domaines
+ ,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+cn: ddt101.do-69
+sn: ddt101.do-69
+gidNumber: 500024
+description: ddt101.do-69
+displayName: ddt101.do-69
+sambaGroupType: 2
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499024
+memberUid: frank.t
+memberUid: marcel.bidochon
+memberUid: alain.g
+memberUid: michel.b
+memberUid: sodara.ddt101test
+memberUid: jacques.latuile
+info: SAMBA.gb.auto.entite.dn: ou=do-69,ou=DDT101,ou=TF,ou=melanie,ou=organisa
+ tion,dc=equipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: complet
+info: SAMBA.gb.auto.majts: 20170209123728Z
+
+dn: cn=ddt101-entite,ou=Entites,ou=Groupes,ou=Population,ou=DDT-101,ou=domaine
+ s,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101-entite
+gidNumber: 500042
+displayName: ddt101-entite
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+cn: ddt101-entite
+description: ddt101-entite
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499042
+memberUid: admin.ou
+memberUid: admin.pc
+memberUid: form.amedee
+memberUid: ddt101.aucun
+memberUid: penelope.ldap
+memberUid: ddt101.lecture
+memberUid: penelope.ldap2
+memberUid: penelope.ldap3
+memberUid: ddt101.ecriture
+memberUid: gaston.lagaffe-ad
+memberUid: kador.bidocon-adm
+info: SAMBA.gb.auto.majts: 20170405123733Z
+info: SAMBA.gb.auto.entite.dn: ou=DDT101,ou=TF,ou=melanie,ou=organisation,dc=e
+ quipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: racine
+
+dn: cn=ddt101.sg-entite,ou=Entites,ou=Groupes,ou=Population,ou=DDT-101,ou=doma
+ ines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101.sg-entite
+gidNumber: 500046
+displayName: ddt101.sg-entite
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499046
+sambaGroupType: 2
+cn: ddt101.sg-entite
+description: ddt101.sg-entite
+memberUid: ti.teuf
+memberUid: lewis.martin
+memberUid: test1.marcel
+memberUid: alain.testtest
+memberUid: kador.bidochon
+memberUid: marylin.monroe
+memberUid: lucien.bidochon
+memberUid: robert.bidochon
+memberUid: raymonde.bidochon
+memberUid: prenom.nom-tres-tres-tres-tres-long
+memberUid: abcdefghijabcdefg.abcdefghijabcdefghij
+memberUid: annuaire.ldap
+info: SAMBA.gb.auto.entite.dn: ou=SG,ou=DDT101,ou=TF,ou=melanie,ou=organisatio
+ n,dc=equipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: racine
+info: SAMBA.gb.auto.majts: 20170209123728Z
+
+dn: cn=ddt101.sg.bureau1,ou=Entites,ou=Groupes,ou=Population,ou=DDT-101,ou=dom
+ aines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101.sg.bureau1
+gidNumber: 500086
+displayName: ddt101.sg.bureau1
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499086
+sambaGroupType: 2
+cn: ddt101.sg.bureau1
+description: ddt101.sg.bureau1
+memberUid: jacques.latuile
+info: SAMBA.gb.auto.majts: 20160211143623Z
+info: SAMBA.gb.auto.entite.dn: ou=bureau1,ou=SG,ou=DDT101,ou=TF,ou=melanie,ou=
+ organisation,dc=equipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: complet
+
+dn: cn=ddt101.do-69.pnesr,ou=Entites,ou=Groupes,ou=Population,ou=DDT-101,ou=do
+ maines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: ddt101.do-69.pnesr
+gidNumber: 500102
+displayName: ddt101.do-69.pnesr
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499102
+sambaGroupType: 2
+cn: ddt101.do-69.pnesr
+description: ddt101.do-69.pnesr
+memberUid: alain.g
+memberUid: michel.b
+memberUid: sodara.ddt101test
+info: SAMBA.gb.auto.entite.dn: ou=pnesr,ou=do-69,ou=DDT101,ou=TF,ou=melanie,ou
+ =organisation,dc=equipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: complet
+info: SAMBA.gb.auto.majts: 20170209123728Z
+
+dn: cn=dreal-fu.nouv-enta,ou=Entites,ou=Groupes,ou=Population,ou=DDT-101,ou=do
+ maines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+gidNumber: 500064
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499064
+sambaGroupType: 2
+cn: dreal-fu.nouv-enta
+description: dreal-fu.nouv-enta
+displayName: dreal-fu.nouv-enta
+sn: dreal-fu.nouv-enta
+memberUid: faby.test
+memberUid: bali.entitea
+info: SAMBA.gb.auto.entite.dn: ou=Nouv EntA,ou=DREAL Fusion,ou=TF,ou=melanie,o
+ u=organisation,dc=equipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: complet
+info: SAMBA.gb.auto.majts: 20170209123728Z
+
+dn: cn=dreal-fu.nouv-ent-b,ou=Entites,ou=Groupes,ou=Population,ou=DDT-101,ou=d
+ omaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+gidNumber: 500068
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499068
+memberUid: bali.entb
+memberUid: bali.entiteb
+info: SAMBA.gb.auto.majts: 20150618143559Z
+info: SAMBA.gb.auto.entite.niveau: complet
+info: SAMBA.gb.auto.entite.dn: ou=Nouv Ent B,ou=DREAL Fusion,ou=TF,ou=melanie,
+ ou=organisation,dc=equipement,dc=gouv,dc=fr
+cn: dreal-fu.nouv-ent-b
+description: dreal-fu.nouv-ent-b
+displayName: dreal-fu.nouv-ent-b
+sn: dreal-fu.nouv-ent-b
+
+dn: cn=ddt101.sg.bureau1-entite,ou=Entites,ou=Groupes,ou=Population,ou=DDT-101
+ ,ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=
+ fr
+sn: ddt101.sg.bureau1-entite
+gidNumber: 500085
+displayName: ddt101.sg.bureau1-entite
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499085
+sambaGroupType: 2
+cn: ddt101.sg.bureau1-entite
+description: ddt101.sg.bureau1-entite
+memberUid: jacques.latuile
+info: SAMBA.gb.auto.majts: 20160211143623Z
+info: SAMBA.gb.auto.entite.dn: ou=bureau1,ou=SG,ou=DDT101,ou=TF,ou=melanie,ou=
+ organisation,dc=equipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: racine
+
+dn: cn=ddt101.do-69.pnesr-entite,ou=Entites,ou=Groupes,ou=Population,ou=DDT-10
+ 1,ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc
+ =fr
+sn: ddt101.do-69.pnesr-entite
+gidNumber: 500101
+displayName: ddt101.do-69.pnesr-entite
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499101
+sambaGroupType: 2
+cn: ddt101.do-69.pnesr-entite
+description: ddt101.do-69.pnesr-entite
+memberUid: alain.g
+memberUid: michel.b
+memberUid: sodara.ddt101test
+info: SAMBA.gb.auto.entite.dn: ou=pnesr,ou=do-69,ou=DDT101,ou=TF,ou=melanie,ou
+ =organisation,dc=equipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: racine
+info: SAMBA.gb.auto.majts: 20170209123728Z
+
+dn: cn=ddt101.testpneam-niveau-1,ou=Entites,ou=Groupes,ou=Population,ou=DDT-10
+ 1,ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc
+ =fr
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+objectClass: top
+cn: ddt101.testpneam-niveau-1
+sn: ddt101.testpneam-niveau-1
+gidNumber: 500019
+description: ddt101.testpneam-niveau-1
+displayName: ddt101.testpneam-niveau-1
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499019
+sambaGroupType: 2
+info: SAMBA.gb.auto.entite.dn: ou=Testpneam niveau 1,ou=DDT101,ou=TF,ou=melani
+ e,ou=organisation,dc=equipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: complet
+
+dn: cn=dreal-fu.nouv-enta-entite,ou=Entites,ou=Groupes,ou=Population,ou=DDT-10
+ 1,ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc
+ =fr
+gidNumber: 500063
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499063
+sambaGroupType: 2
+cn: dreal-fu.nouv-enta-entite
+description: dreal-fu.nouv-enta-entite
+displayName: dreal-fu.nouv-enta-entite
+sn: dreal-fu.nouv-enta-entite
+memberUid: faby.test
+memberUid: bali.entitea
+info: SAMBA.gb.auto.entite.dn: ou=Nouv EntA,ou=DREAL Fusion,ou=TF,ou=melanie,o
+ u=organisation,dc=equipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: racine
+info: SAMBA.gb.auto.majts: 20170209123728Z
+
+dn: cn=ddt101.test-pne-messagerie,ou=Entites,ou=Groupes,ou=Population,ou=DDT-1
+ 01,ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,d
+ c=fr
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+objectClass: top
+cn: ddt101.test-pne-messagerie
+sn: ddt101.test-pne-messagerie
+gidNumber: 500011
+description: ddt101.test-pne-messagerie
+displayName: ddt101.test-pne-messagerie
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499011
+sambaGroupType: 2
+info: SAMBA.gb.auto.entite.dn: ou=test-pne-messagerie,ou=DDT101,ou=TF,ou=melan
+ ie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: complet
+
+dn: cn=dreal-fu.nouv-ent-b-entite,ou=Entites,ou=Groupes,ou=Population,ou=DDT-1
+ 01,ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,d
+ c=fr
+gidNumber: 500067
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499067
+memberUid: bali.entb
+memberUid: bali.entiteb
+info: SAMBA.gb.auto.majts: 20150618143559Z
+info: SAMBA.gb.auto.entite.niveau: racine
+info: SAMBA.gb.auto.entite.dn: ou=Nouv Ent B,ou=DREAL Fusion,ou=TF,ou=melanie,
+ ou=organisation,dc=equipement,dc=gouv,dc=fr
+cn: dreal-fu.nouv-ent-b-entite
+description: dreal-fu.nouv-ent-b-entite
+displayName: dreal-fu.nouv-ent-b-entite
+sn: dreal-fu.nouv-ent-b-entite
+
+dn: cn=test-st-cete-lyon.pnem.test-fab,ou=Entites,ou=Groupes,ou=Population,ou=
+ DDT-101,ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=g
+ ouv,dc=fr
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+objectClass: top
+cn: test-st-cete-lyon.pnem.test-fab
+sn: test-st-cete-lyon.pnem.test-fab
+gidNumber: 500018
+description: test-st-cete-lyon.pnem.test-fab
+displayName: test-st-cete-lyon.pnem.test-fab
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499018
+sambaGroupType: 2
+info: SAMBA.gb.auto.majts: 20131018112335Z
+info: SAMBA.gb.auto.entite.dn: ou=Test pnem,ou=Testpneam niveau 1,ou=DDT101,ou
+ =TF,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: complet
+
+dn: cn=ddt101.testpneam-niveau-1-entite,ou=Entites,ou=Groupes,ou=Population,ou
+ =DDT-101,ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=
+ gouv,dc=fr
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+objectClass: top
+cn: ddt101.testpneam-niveau-1-entite
+sn: ddt101.testpneam-niveau-1-entite
+gidNumber: 500031
+description: ddt101.testpneam-niveau-1-entite
+displayName: ddt101.testpneam-niveau-1-entite
+info: SAMBA.gb.auto.entite.dn: ou=Testpneam niveau 1,ou=DDT101,ou=TF,ou=melani
+ e,ou=organisation,dc=equipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: racine
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499031
+sambaGroupType: 2
+
+dn: cn=ddt101.testpneam-niveau-1.test-pnem,ou=Entites,ou=Groupes,ou=Population
+ ,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,
+ dc=gouv,dc=fr
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+objectClass: mineqGroup
+objectClass: top
+cn: ddt101.testpneam-niveau-1.test-pnem
+sn: ddt101.testpneam-niveau-1.test-pnem
+gidNumber: 500020
+description: ddt101.testpneam-niveau-1.test-pnem
+displayName: ddt101.testpneam-niveau-1.test-pnem
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499020
+sambaGroupType: 2
+info: SAMBA.gb.auto.entite.dn: ou=Test pnem,ou=Testpneam niveau 1,ou=DDT101,ou
+ =TF,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+info: SAMBA.gb.auto.entite.niveau: complet
+
+dn: sambaDomainName=TEST-PNESR,sambaDomainName=DDT-101,ou=DDT-101,ou=domaines,
+ ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+objectClass: sambaTrustedDomainPassword
+sambaDomainName: TEST-PNESR
+sambaSID: S-1-5-21-3474514030-1453272919-3736605999
+sambaPwdLastSet: 1488473128
+sambaClearTextPassword: PaNaM_0000
+
+dn: ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=applications,o
+ u=ressources,dc=equipement,dc=gouv,dc=fr
+objectclass: top
+objectclass: organizationalUnit
+ou: LesGens
+
+dn: uid=admin.ou,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=a
+ pplications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Admin
+sn: OU
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: mineqMelBoite
+objectClass: sambaSamAccount
+objectClass: posixAccount
+displayName: OU Admin
+userPassword: {ssha}w3h/BgkmC998CNm58ivBQ3cIJEWMFeJN
+uid: admin.ou
+cn: OU Admin - DDT101
+sambaAcctFlags: [UX]
+uidNumber: 20057
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+sambaPwdLastSet: 1490019176
+sambaNTPassword: **NoLogin**
+homeDirectory: /bureautique/individuel/admin.ou
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19057
+sambaDomainName: DDT-101
+loginShell: /bin/false
+
+dn: uid=admin.pc,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=a
+ pplications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Admin
+sn: PC
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: mineqMelBoite
+uid: admin.pc
+cn: PC Admin - DDT101
+displayName: PC Admin
+sambaAcctFlags: [UX]
+uidNumber: 20056
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+sambaNTPassword: **NoLogin**
+homeDirectory: /bureautique/individuel/admin.pc
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19056
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaPwdLastSet: 1490008916
+userPassword: {GRILLED/SSHA}7aWT3G2oKwX6VIVbzvRPhkotzJJxuqpA
+
+dn: uid=form.amedee,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,o
+ u=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Form
+sn: AMEDEE
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: mineqMelBoite
+objectClass: sambaSamAccount
+objectClass: posixAccount
+displayName: AMEDEE Form
+uid: form.amedee
+sambaAcctFlags: [UX]
+uidNumber: 20058
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/form.amedee
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19058
+sambaDomainName: DDT-101
+loginShell: /bin/false
+userPassword: {ssha}/cWVQDkM+M4pYQG+zbz/TjPenDmh5fxv
+sambaNTPassword: 573383E3A6E853E12E57E0EBB974A926
+sambaPwdLastSet: 1491395581
+cn: AMEDEE Form (A NE PAS SUPPRIMER Compte de gestion des domaines FormLyonx) 
+ - DDT101
+
+dn: gidNumber=500005,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,
+ ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: g1
+gidNumber: 500005
+displayName: g1
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+cn: g1
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499005
+
+dn: gidNumber=500006,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,
+ ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: g2
+gidNumber: 500006
+displayName: g2
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+cn: g2
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499006
+
+dn: gidNumber=500007,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,
+ ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: famille-bidochon
+gidNumber: 500007
+displayName: famille-bidochon
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+cn: famille-bidochon
+memberUid: kador.bidochon
+memberUid: raymonde.bidochon
+memberUid: robert.bidochon
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499007
+
+dn: gidNumber=500015,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,
+ ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+gidNumber: 500015
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+sn: ddt101-bis
+displayName: ddt101-bis
+cn: ddt101-bis
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499015
+
+dn: gidNumber=500074,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,
+ ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: g-aucun
+gidNumber: 500074
+displayName: g-aucun
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+cn: g-aucun
+memberUid: ddt101.aucun
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499074
+
+dn: gidNumber=500075,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,
+ ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: g-ecriture
+gidNumber: 500075
+displayName: g-ecriture
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+cn: g-ecriture
+memberUid: ddt101.ecriture
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499075
+
+dn: gidNumber=500076,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,
+ ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: g-lecture
+gidNumber: 500076
+displayName: g-lecture
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+cn: g-lecture
+memberUid: ddt101.lecture
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499076
+
+dn: gidNumber=500083,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,
+ ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: l-isle
+gidNumber: 500083
+displayName: l-isle
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499083
+sambaGroupType: 2
+cn: l-isle
+
+dn: gidNumber=500099,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,
+ ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: groupe_mano
+gidNumber: 500099
+displayName: groupe_mano
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+cn: groupe_mano
+memberUid: marcel.bidochon
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499099
+
+dn: gidNumber=500106,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,
+ ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: test_ad
+gidNumber: 500106
+displayName: test_ad
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+cn: test_ad
+memberUid: kador.bidochon
+memberUid: lucien.bidochon
+memberUid: raymonde.bidochon
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499106
+
+dn: uid=ddt101.aucun,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,
+ ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Ddt101
+sn: AUCUN
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: mineqMelBoite
+uid: ddt101.aucun
+cn: AUCUN Ddt101 - DDT101
+sambaAcctFlags: [UX]
+uidNumber: 20038
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/ddt101.aucun
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19038
+sambaDomainName: DDT-101
+loginShell: /bin/false
+userPassword: {ssha}y6RAYAP1wujN2Sn82xwl2BZblj8rh8Qt
+sambaNTPassword: 68D8816D4E449D80750B672B9CA2D571
+sambaPwdLastSet: 1441029740
+displayName: AUCUN Ddt101
+
+dn: uid=penelope.ldap,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba
+ ,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Penelope
+sn: LDAP
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: mineqMelBoite
+uid: penelope.ldap
+cn: LDAP Penelope - DDT101
+displayName: LDAP Penelope
+sambaAcctFlags: [UX]
+uidNumber: 20053
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/penelope.ldap
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19053
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaPwdLastSet: 1491290982
+userPassword: {ssha}J67cOBk1c/SImF/ftohdqTx5GAUlCbPS
+sambaNTPassword: 60A519748EC506C17052A443B7FE3840
+
+dn: gidNumber=60990901,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samb
+ a,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: comptables
+displayName: comptables
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+cn: comptables
+memberUid: jacques.latuile
+memberUid: marylin.monroe
+memberUid: christophe.g
+memberUid: raymonde.bidochon
+gidNumber: 60990901
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-60989901
+
+dn: uid=ddt101.lecture,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samb
+ a,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Ddt101
+sn: LECTURE
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: mineqMelBoite
+uid: ddt101.lecture
+cn: LECTURE Ddt101 - DDT101
+sambaAcctFlags: [UX]
+uidNumber: 20040
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/ddt101.lecture
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19040
+sambaDomainName: DDT-101
+loginShell: /bin/false
+userPassword: {ssha}v8FA15mEyvZAIOdlBcG+RBBhYDtrOnpR
+sambaNTPassword: 68D8816D4E449D80750B672B9CA2D571
+sambaPwdLastSet: 1441029985
+displayName: LECTURE Ddt101
+
+dn: uid=penelope.ldap2,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samb
+ a,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Penelope
+sn: LDAP2
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: mineqMelBoite
+uid: penelope.ldap2
+cn: LDAP2 Penelope - DDT101
+displayName: LDAP2 Penelope
+sambaAcctFlags: [UX]
+uidNumber: 20054
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/penelope.ldap2
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19054
+sambaDomainName: DDT-101
+loginShell: /bin/false
+userPassword: {ssha}oOsjEzzGMLV5XqDrvcDmbmFM+JXrP7RG
+sambaNTPassword: A1E7C851973627AA8E7D4A5E5D4B2912
+sambaPwdLastSet: 1486117632
+
+dn: uid=penelope.ldap3,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samb
+ a,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Penelope
+sn: LDAP3
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+uid: penelope.ldap3
+cn: LDAP3 Penelope - DDT101
+displayName: LDAP3 Penelope
+userPassword: {ssha}YvrzboVlzcwvT7z4mwLjO6GCEjz/eJKa
+sambaAcctFlags: [UX]
+uidNumber: 20055
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+sambaPwdLastSet: 1486116570
+sambaNTPassword: **NoLogin**
+homeDirectory: /bureautique/individuel/penelope.ldap3
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19055
+sambaDomainName: DDT-101
+loginShell: /bin/false
+
+dn: uid=ddt101.ecriture,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Sam
+ ba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Ddt101
+sn: ECRITURE
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: mineqMelBoite
+uid: ddt101.ecriture
+cn: ECRITURE Ddt101 - DDT101
+sambaAcctFlags: [UX]
+uidNumber: 20039
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/ddt101.ecriture
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19039
+sambaDomainName: DDT-101
+loginShell: /bin/false
+userPassword: {ssha}veG/hpD2kRjDMBOQY2bggKPhObupzTAP
+sambaNTPassword: 68D8816D4E449D80750B672B9CA2D571
+sambaPwdLastSet: 1441029883
+displayName: ECRITURE Ddt101
+
+dn: uid=gaston.lagaffe-ad,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=S
+ amba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Gaston
+sn: LAGAFFE-AD
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: mineqMelBoite
+uid: gaston.lagaffe-ad
+cn: LAGAFFE-AD Gaston - DDT101
+displayName: LAGAFFE-AD Gaston
+userPassword: {ssha}zgHbf7QXbnn8yBfqpnl5onCf40UI9gv2
+sambaAcctFlags: [UX]
+uidNumber: 20047
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+sambaNTPassword: **NoLogin**
+homeDirectory: /bureautique/individuel/gaston.lagaffe-ad
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19047
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaPwdLastSet: 1474020114
+
+dn: uid=kador.bidocon-adm,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=S
+ amba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Kador
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: mineqMelBoite
+uid: kador.bidocon-adm
+userPassword: {ssha}6ECsLQz+qRmRnpcVRHXfnw/3ci7u1db9
+sambaAcctFlags: [UX]
+uidNumber: 20049
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+sambaNTPassword: **NoLogin**
+homeDirectory: /bureautique/individuel/kador.bidocon-adm
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19049
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sn: BIDOCON-ADM
+sambaPwdLastSet: 1479220678
+cn: BIDOCON-ADM Kador - DDT101
+displayName: BIDOCON-ADM Kador
+
+dn: uid=ti.teuf,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=ap
+ plications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Ti
+sn: TEUF
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: mineqMelBoite
+uid: ti.teuf
+cn: TEUF Ti - DDT101/SG
+displayName: TEUF Ti
+sambaAcctFlags: [UX]
+uidNumber: 20050
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/ti.teuf
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19050
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaPwdLastSet: 1478255507
+userPassword: {ssha}/uYK97CgNnbmaQk+zk1E78eeAFKAyLYZ
+sambaNTPassword: 68D8816D4E449D80750B672B9CA2D571
+
+dn: uid=lewis.martin,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,
+ ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Lewis
+sn: MARTIN
+userPassword: {SSHA}o+5HDAUwP5cMk3FknxOwmvmXpg6Z4JSY
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: mineqMelBoite
+objectClass: sambaSamAccount
+objectClass: posixAccount
+sambaAcctFlags: [UX]
+uidNumber: 20045
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+sambaPwdLastSet: 1454595879
+sambaNTPassword: **NoLogin**
+homeDirectory: /bureautique/individuel/lewis.martin
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19045
+sambaDomainName: DDT-101
+loginShell: /bin/false
+displayName: MARTIN Lewis
+uid: lewis.martin
+cn: MARTIN Lewis - DDT101/SG
+
+dn: uid=test1.marcel,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,
+ ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Test1
+sn: MARCEL
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+uid: test1.marcel
+cn: MARCEL Test1 - DDT101/SG
+displayName: MARCEL Test1
+userPassword: {ssha}qmvfBq0FCOv0mjKJ9xbVRrLvAckiN3Yi
+sambaAcctFlags: [UX]
+uidNumber: 20051
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+sambaPwdLastSet: 1484752971
+sambaNTPassword: **NoLogin**
+homeDirectory: /bureautique/individuel/test1.marcel
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19051
+sambaDomainName: DDT-101
+loginShell: /bin/false
+
+dn: uid=alain.testtest,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samb
+ a,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Alain
+sn: TESTTEST
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+uid: alain.testtest
+cn: TESTTEST Alain - DDT101/SG
+displayName: TESTTEST Alain
+userPassword: {ssha}9tVTL6Nk9Pwk2iRgYyeElPIzIok4YuFf
+sambaAcctFlags: [UX]
+uidNumber: 20052
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+sambaPwdLastSet: 1485331452
+sambaNTPassword: **NoLogin**
+homeDirectory: /bureautique/individuel/alain.testtest
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19052
+sambaDomainName: DDT-101
+loginShell: /bin/false
+
+dn: uid=kador.bidochon,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samb
+ a,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Kador
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: mineqMelBoite
+objectClass: sambaSamAccount
+objectClass: posixAccount
+sn: BIDOCHON
+uidNumber: 60990012
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/kador.bidochon
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-60989012
+sambaDomainName: DDT-101
+loginShell: /bin/false
+userPassword: {ssha}Nd9Hd5vJS4Hzu5d2sbUJ05j4Ctn33TEF
+sambaLMPassword: 4B9FFF7E2027759E73251AA2B4314B90
+sambaNTPassword: 60A519748EC506C17052A443B7FE3840
+sambaAcctFlags: [UX]
+uid: kador.bidochon
+cn: BIDOCHON Kador - DDT101/SG
+displayName: BIDOCHON Kador
+sambaPwdLastSet: 1486552452
+
+dn: uid=marylin.monroe,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samb
+ a,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Marylin
+sn: MONROE
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: mineqMelBoite
+objectClass: sambaSamAccount
+objectClass: posixAccount
+sambaAcctFlags: [UX]
+uidNumber: 60990002
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/marylin.monroe
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-60989002
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaNTPassword: C697A6BC060E734C4AACE6E4AACBC129
+userPassword: {ssha}Kn6FledEyemYTzz+KjtPNVxqgHF+aK8g
+sambaPwdLastSet: 1385380614
+uid: marylin.monroe
+cn: MONROE Marylin - DDT101/SG
+displayName: MONROE Marylin
+
+dn: uid=lucien.bidochon,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Sam
+ ba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Lucien
+sn: BIDOCHON
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: mineqMelBoite
+sambaAcctFlags: [UX]
+uidNumber: 20012
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/lucien.bidochon
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19012
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaNTPassword: 60A519748EC506C17052A443B7FE3840
+userPassword: {ssha}d4dF96zX2rYoWSAzNj+mNYinmn6Podnw
+sambaPwdLastSet: 1399281376
+uid: lucien.bidochon
+cn: BIDOCHON Lucien - DDT101/SG
+displayName: BIDOCHON Lucien
+
+dn: uid=robert.bidochon,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Sam
+ ba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Robert
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: mineqMelBoite
+objectClass: sambaSamAccount
+objectClass: posixAccount
+sn: BIDOCHON
+sambaAcctFlags: [UX]
+uidNumber: 60990011
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/robert.bidochon
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-60989011
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaNTPassword: 60A519748EC506C17052A443B7FE3840
+userPassword: {ssha}Cn2XE7qnzGiZrfK6ifjUhH7RwxrgOZIj
+uid: robert.bidochon
+cn: BIDOCHON Robert - DDT101/SG
+displayName: BIDOCHON Robert
+sambaPwdLastSet: 1486552472
+
+dn: uid=raymonde.bidochon,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=S
+ amba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Raymonde
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: mineqMelBoite
+objectClass: sambaSamAccount
+objectClass: posixAccount
+sn: BIDOCHON
+sambaAcctFlags: [UX]
+uidNumber: 60990009
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/raymonde.bidochon
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-60989009
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaNTPassword: 60A519748EC506C17052A443B7FE3840
+userPassword: {ssha}bVhKTvXtCyc5FjHrJ8SGtx/UTRZRcbwB
+uid: raymonde.bidochon
+displayName: BIDOCHON Raymonde
+sambaPwdLastSet: 1459933757
+sambaLogonScript: %username%/logon.bat
+cn: BIDOCHON Raymonde - DDT101/SG
+
+dn: uid=prenom.nom-tres-tres-tres-tres-long,ou=LesGens,ou=Population,ou=DDT-10
+ 1,ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc
+ =fr
+givenName: Prenom
+sn: NOM-TRES-TRES-TRES-TRES-LONG
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: mineqMelBoite
+sambaAcctFlags: [UX]
+uidNumber: 20018
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/prenom.nom-tres-tres-tres-tres-long
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19018
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaPwdLastSet: 1379947356
+sambaNTPassword: **NoLogin**
+userPassword: {GRILLED/SSHA}nZ6QHv9CVT656KDSBb4BpDKkZ1avb+fp
+uid: prenom.nom-tres-tres-tres-tres-long
+cn: NOM-TRES-TRES-TRES-TRES-LONG Prenom - DDT101/SG
+displayName: NOM-TRES-TRES-TRES-TRES-LONG Prenom
+
+dn: uid=abcdefghijabcdefg.abcdefghijabcdefghij,ou=LesGens,ou=Population,ou=DDT
+ -101,ou=domaines,ou=Samba,ou=applications,ou=ressources,dc=equipement,dc=gouv
+ ,dc=fr
+givenName: Abcdefghijabcdefg
+sn: ABCDEFGHIJABCDEFGHIJ
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: mineqMelBoite
+objectClass: sambaSamAccount
+objectClass: posixAccount
+sambaAcctFlags: [UX]
+uidNumber: 20011
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/abcdefghijabcdefg.abcdefghijabcdefghij
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19011
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaPwdLastSet: 1412861018
+userPassword: {ssha}d/suFht5CnpSfZqDlmZOHxeAQkja6LDY
+sambaNTPassword: A1E7C851973627AA8E7D4A5E5D4B2912
+uid: abcdefghijabcdefg.abcdefghijabcdefghij
+cn: ABCDEFGHIJABCDEFGHIJ Abcdefghijabcdefg - DDT101/SG
+displayName: ABCDEFGHIJABCDEFGHIJ Abcdefghijabcdefg
+
+dn: uid=jacques.latuile,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Sam
+ ba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Jacques
+sn: LATUILE
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: mineqMelBoite
+uidNumber: 60990003
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/jacques.latuile
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-60989003
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaNTPassword: C697A6BC060E734C4AACE6E4AACBC129
+userPassword: {ssha}N/LggDpkgpBRRWGh9Lvh3QFRQsCFpXX3
+sambaAcctFlags: [UX]
+uid: jacques.latuile
+cn: LATUILE Jacques - DDT101/SG/bureau1
+displayName: LATUILE Jacques
+sambaPwdLastSet: 1484142515
+
+dn: uid=thierry.b,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=
+ applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Thierry
+sn: B
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: mineqMelBoite
+objectClass: sambaSamAccount
+objectClass: posixAccount
+uid: thierry.b
+cn: B Thierry - DDT101/do-44
+sambaAcctFlags: [UX]
+uidNumber: 60990032
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+sambaPwdLastSet: 1266939107
+homeDirectory: /bureautique/individuel/thierry.b
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-60989032
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaNTPassword: 1628FE70A1FA91F8EF0073D2B4715058
+userPassword: {ssha}8lFaVoFLGUg1xdNMU9ipPSEdhZo2hwo0
+displayName: B Thierry
+
+dn: uid=vincent.c,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=
+ applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Vincent
+sn: C
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+sambaAcctFlags: [UX]
+uidNumber: 20029
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+sambaPwdLastSet: 1412084650
+homeDirectory: /bureautique/individuel/vincent.c
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19029
+sambaDomainName: DDT-101
+loginShell: /bin/false
+uid: vincent.c
+cn: C Vincent - DDT101/do-44
+userPassword: {ssha}pniItpAJzXCn57CTVQMK1opEItqp9kKr
+sambaNTPassword: C697A6BC060E734C4AACE6E4AACBC129
+
+dn: uid=christophe.g,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,
+ ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Christophe
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: mineqMelBoite
+objectClass: sambaSamAccount
+objectClass: posixAccount
+sn: G
+sambaAcctFlags: [UX]
+uidNumber: 60990027
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/christophe.g
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-60989027
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaPwdLastSet: 1411971421
+userPassword: {ssha}LJqAOulxKd5KAnWPZp6NeC67IxXg6//7
+sambaNTPassword: C697A6BC060E734C4AACE6E4AACBC129
+displayName: G Christophe
+uid: christophe.g
+cn: G Christophe - DDT101/do-44
+
+dn: gidNumber=60990006,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samb
+ a,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: do-44
+displayName: do-44
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+cn: do-44
+gidNumber: 60990006
+memberUid: thierry.b
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-60989006
+
+dn: uid=frank.t,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=ap
+ plications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Frank
+sn: T
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: mineqMelBoite
+objectClass: sambaSamAccount
+objectClass: posixAccount
+uid: frank.t
+cn: T Frank - DDT101/do-69
+sambaAcctFlags: [UX]
+uidNumber: 60990022
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/frank.t
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-60989022
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaPwdLastSet: 1266937459
+sambaNTPassword: D76466C2357373C39B6331E2697D718F
+userPassword: {ssha}FO8JD9Zit1fC4gVnuW8W+6gKUAWz7Z07
+displayName: T Frank
+
+dn: gidNumber=500010,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,
+ ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: grp_alain
+gidNumber: 500010
+displayName: grp_alain
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+cn: grp_alain
+memberUid: robert.bidochon
+memberUid: raymonde.bidochon
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-499010
+
+dn: gidNumber=60991069,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samb
+ a,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+sn: do-69
+gidNumber: 60991069
+displayName: do-69
+objectClass: top
+objectClass: posixGroup
+objectClass: mineqGroup
+objectClass: sambaGroupMapping
+sambaGroupType: 2
+cn: do-69
+memberUid: alain.g
+memberUid: christophe.g
+memberUid: frank.t
+memberUid: bea.mama
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-60990069
+
+dn: uid=marcel.bidochon,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Sam
+ ba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Marcel
+sn: BIDOCHON
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: mineqMelBoite
+sambaAcctFlags: [UX]
+uidNumber: 20015
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/marcel.bidochon
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19015
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaPwdLastSet: 1342109807
+userPassword: {ssha}FwF6AUiuvPRHyNB9qTEujZzxztEU/Vwy
+uid: marcel.bidochon
+cn: BIDOCHON Marcel - DDT101/do-69
+displayName: BIDOCHON Marcel
+sambaNTPassword: 34521B7BEE2BFE3E0880C59992D23C6C
+
+dn: uid=alain.g,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=ap
+ plications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Alain
+sn: G
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: mineqMelBoite
+objectClass: sambaSamAccount
+objectClass: posixAccount
+sambaAcctFlags: [UX]
+uidNumber: 60990020
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/alain.g
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-60989020
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaPwdLastSet: 1267012586
+sambaNTPassword: 75B4BBDD3B2641DCAB8B17111CFFFB24
+userPassword: {ssha}grwgaQpXbhcl/yIzHWWoYbE3WD7Z8nV4
+displayName: G Alain
+uid: alain.g
+cn: G Alain - DDT101/do-69/pnesr
+
+dn: uid=michel.b,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=a
+ pplications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Michel
+sn: B
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: mineqMelBoite
+displayName: B Michel
+sambaAcctFlags: [UX]
+uidNumber: 20048
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/michel.b
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19048
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaPwdLastSet: 1474981922
+sambaNTPassword: 9F9B5E08A4A6EEA96E98175166B10B5E
+uid: michel.b
+cn: B Michel - DDT101/do-69/pnesr
+userPassword: {GRILLED/ssha}MMSIm9rs2WNKs0aYvEgTwhnqVrbTrBlk
+
+dn: uid=sodara.ddt101test,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=S
+ amba,ou=applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Sodara
+sn: DDT101TEST
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: mineqMelBoite
+objectClass: sambaSamAccount
+objectClass: posixAccount
+sambaAcctFlags: [UX]
+uidNumber: 20022
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+homeDirectory: /bureautique/individuel/sodara.ddt101test
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19022
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaPwdLastSet: 1394708673
+sambaNTPassword: 151F8AD67FDCE5F86F15DE93247BD056
+userPassword: {GRILLED/SSHA}1VgWHQzT89J07al630SEzbgpb2PiC1Sy
+uid: sodara.ddt101test
+displayName: DDT101TEST Sodara
+cn: DDT101TEST Sodara - DDT101/do-69/pnesr
+
+dn: uid=faby.test,ou=LesGens,ou=Population,ou=DDT-101,ou=domaines,ou=Samba,ou=
+ applications,ou=ressources,dc=equipement,dc=gouv,dc=fr
+givenName: Faby
+sn: TEST
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mineqPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+uid: faby.test
+cn: TEST Faby - DREAL Fusion/Nouv EntA
+userPassword: {ssha}uuWCUJXPCpqWyolTJlXwlAoquHfg5QdH
+sambaAcctFlags: [UX]
+uidNumber: 20032
+gidNumber: 513
+sambaPwdMustChange: 2147483647
+sambaNTPassword: **NoLogin**
+homeDirectory: /bureautique/individuel/faby.test
+sambaSID: S-1-5-21-3323092181-3044490355-778632617-19032
+sambaDomainName: DDT-101
+loginShell: /bin/false
+sambaPwdLastSet: 1439993703

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<!DOCTYPE ficAlimMENESR SYSTEM "ficAlimMENESR.dtd">
+<ficAlimMENESR>
+<!-- versionAF="AAF-VE1401" -->
+
+<modifyRequest>
+<operationalAttributes><attr name="categoriePersonne"><value>PersEducNat</value></attr></operationalAttributes>
+<identifier><id>370009</id></identifier>
+<modifications>
+<modification name="ENTPersonJointure" operation="replace"><value>370009</value></modification>
+<modification name="ENTPersonDateNaissance" operation="replace"><value>23/09/1959</value></modification>
+<modification name="ENTPersonNomPatro" operation="replace"><value>BOURGAT</value></modification>
+<modification name="sn" operation="replace"><value>DUPONNE</value></modification>
+<modification name="givenName" operation="replace"><value>NATHALI</value></modification>
+<modification name="personalTitle" operation="replace"><value>Mme</value></modification>
+<modification name="mail" operation="replace"><value>Nathali.duponne@ac-tata.fr</value></modification>
+<modification name="ENTPersonStructRattach" operation="replace"><value>2091</value></modification>
+<modification name="ENTAuxEnsCategoDiscipline" operation="replace"><value>04$LANGUES VIVANTES</value></modification>
+<modification name="ENTAuxEnsDisciplinesPoste" operation="replace"><value>ESPAGNOL$04</value></modification>
+<modification name="ENTAuxEnsMEF" operation="replace"><value/></modification>
+<modification name="ENTAuxEnsMatiereEnseignEtab" operation="replace"><value/></modification>
+<modification name="ENTAuxEnsClasses" operation="replace"><value/></modification>
+<modification name="ENTAuxEnsGroupes" operation="replace"><value/></modification>
+<modification name="ENTAuxEnsClassesMatieres" operation="replace"><value/></modification>
+<modification name="ENTAuxEnsGroupesMatieres" operation="replace"><value/></modification>
+<modification name="ENTAuxEnsClassesPrincipal" operation="replace"><value/></modification>
+<modification name="ENTPersonFonctions" operation="replace"><value>2091$ENS$ENSEIGNEMENT$L0426$ESPAGNOL</value></modification>
+<modification name="PersEducNatPresenceDevantEleves" operation="replace"><value>N</value></modification>
+</modifications>
+</modifyRequest>
+
+</ficAlimMENESR>

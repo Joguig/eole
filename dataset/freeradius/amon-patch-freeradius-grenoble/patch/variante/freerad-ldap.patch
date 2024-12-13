@@ -1,0 +1,27 @@
+--- distrib/freerad-ldap	2015-01-16 16:26:29.000000000 +0100
++++ modif/freerad-ldap	2016-09-21 10:08:44.357374293 +0200
+@@ -27,7 +27,9 @@
+ #  really can't emphasize this enough.
+ #
+ ldap {
+-	#
++%if %%freerad_acc_type_annuaire == 'ldap'
++
++#
+ 	#  Note that this needs to match the name in the LDAP
+ 	#  server certificate, if you're using ldaps.
+ 	server = "%%freerad_ldap_ip"
+@@ -165,4 +167,13 @@
+ 	#	default: 0x0000 (no debugging messages)
+ 	#	Example:(LDAP_DEBUG_FILTER+LDAP_DEBUG_CONNS)
+ 	#ldap_debug = 0x0028
++
++%elif  %%freerad_acc_type_annuaire == 'AD'
++
++    # patch eole ac-grenoble
++    # authentification configuree sur un  annuaire active directory
++    # pour configurer un annuaire ldap modifier la configuration via gen_config
++
++%end if
++
+ }

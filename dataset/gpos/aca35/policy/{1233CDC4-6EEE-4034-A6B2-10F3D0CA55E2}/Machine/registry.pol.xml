@@ -1,0 +1,22 @@
+<PolFile num_entries="4" signature="PReg" version="1">
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall</Key>
+		<ValueName>PolicyVersion</ValueName>
+		<Value>540</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile</Key>
+		<ValueName>EnableFirewall</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile</Key>
+		<ValueName>EnableFirewall</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile</Key>
+		<ValueName>EnableFirewall</ValueName>
+		<Value>0</Value>
+	</Entry>
+</PolFile>

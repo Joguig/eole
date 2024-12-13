@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RegistrySettings
+	clsid="{A3CCFC41-DFDB-43a5-8D26-0FE8B954DA51}">
+	<Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}"
+		name="Common Desktop" status="Common Desktop" image="6"
+		changed="2020-06-09 14:39:19"
+		uid="{6AE7C94A-2FF9-4860-8768-3E325C30D960}" bypassErrors="1"
+		removePolicy="1">
+		<Properties action="R" displayDecimal="0" default="0"
+			hive="HKEY_LOCAL_MACHINE"
+			key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders"
+			name="Common Desktop" type="REG_EXPAND_SZ"
+			value="\\s1peda\netlogon\icones\TECHNOLOGIE\Eleves\Bureau" />
+	</Registry>
+</RegistrySettings>

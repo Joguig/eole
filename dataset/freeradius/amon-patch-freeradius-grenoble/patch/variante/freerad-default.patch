@@ -1,0 +1,36 @@
+--- distrib/freerad-default	2015-01-16 16:26:29.000000000 +0100
++++ modif/freerad-default	2016-09-21 10:08:44.349374336 +0200
+@@ -163,7 +163,14 @@
+ %if %%freerad_mode == '802.1x'
+ 	#ldap
+ %elif %%freerad_mode == 'accounting'
++  %if %%freerad_acc_type_annuaire == 'ldap'
+ 	ldap
++  %elif %%freerad_acc_type_annuaire == 'AD'
++    # patch eole ac-grenoble
++    # authentification configuree sur un  annuaire active directory
++    # pour configurer un annuaire ldap modifier la configuration via gen_config
++    #ldap
++  %end if
+ %end if
+ 
+ 	#
+@@ -280,9 +287,18 @@
+ 	#	ldap
+ 	#}
+ %elif %%freerad_mode == 'accounting'
++%if  %%freerad_acc_type_annuaire == 'ldap'
+     Auth-Type LDAP {
+         ldap
+     }
++%elif  %%freerad_acc_type_annuaire == 'AD'
++    # patch eole ac-grenoble
++    # authentification configuree sur un  annuaire active directory
++    # pour configurer un annuaire ldap modifier la configuration via gen_config
++    #Auth-Type LDAP {
++    #   ldap
++    #        }
++%end if
+ %end if
+ 
+ 	#

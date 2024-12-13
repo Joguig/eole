@@ -1,0 +1,42 @@
+<PolFile num_entries="8" signature="PReg" version="1">
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall</Key>
+		<ValueName>PolicyVersion</ValueName>
+		<Value>540</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile</Key>
+		<ValueName>EnableFirewall</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\RemoteAdminSettings</Key>
+		<ValueName>Enabled</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\RemoteAdminSettings</Key>
+		<ValueName>RemoteAddresses</ValueName>
+		<Value>*</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Services\RemoteDesktop</Key>
+		<ValueName>Enabled</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Services\RemoteDesktop</Key>
+		<ValueName>RemoteAddresses</ValueName>
+		<Value>*</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile</Key>
+		<ValueName>EnableFirewall</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile</Key>
+		<ValueName>EnableFirewall</ValueName>
+		<Value>1</Value>
+	</Entry>
+</PolFile>

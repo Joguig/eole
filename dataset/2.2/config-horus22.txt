@@ -1,0 +1,760 @@
+[bacula_sd_dir_name]
+valdefault = []
+valprec = []
+val = ['127.0.0.1-dir']
+
+[phpmyadmin]
+valdefault = []
+valprec = []
+val = ['non']
+
+[ssl_organization_name]
+valdefault = []
+valprec = []
+val = ['Ministere Education Nationale (MENESR)']
+
+[ip_haute_dhcp]
+valdefault = []
+valprec = []
+val = ['10.21.41.240']
+
+[check_passwd]
+valdefault = []
+valprec = []
+val = ['oui']
+
+[check_passwd_min_len_two_type]
+valdefault = []
+valprec = []
+val = ['9']
+
+[cups_browsing]
+valdefault = []
+valprec = []
+val = ['on']
+
+[serveur_maj]
+valdefault = []
+valprec = ['maj-eole.ac-dijon.fr']
+val = ['eoleng.ac-dijon.fr']
+
+[smb_os_level]
+valdefault = []
+valprec = []
+val = ['35']
+
+[bacula_mail_from]
+valdefault = []
+valprec = []
+val = ['']
+
+[smb_trash]
+valdefault = []
+valprec = ['non']
+val = ['oui']
+
+[nom_machine]
+valdefault = []
+valprec = []
+val = ['horus']
+
+[ldap_timelimit]
+valdefault = []
+valprec = []
+val = ['3600']
+
+[adresse_ip_zephirlogs]
+valdefault = []
+valprec = []
+val = []
+
+[smb_trash_purge]
+valdefault = []
+valprec = []
+val = ['8']
+
+[mysql]
+valdefault = []
+valprec = ['non']
+val = ['oui']
+
+[cups_autopurgejobs]
+valdefault = []
+valprec = []
+val = ['No']
+
+[cups]
+valdefault = []
+valprec = ['oui']
+val = ['non']
+
+[bacula_full_retention_unit]
+valdefault = []
+valprec = []
+val = ['months']
+
+[netmask_ssh_eth0]
+valdefault = []
+valprec = ['']
+val = ['0.0.0.0']
+
+[ssl_default_cert_time]
+valdefault = []
+valprec = []
+val = ['1096']
+
+[smb_server_string]
+valdefault = []
+valprec = []
+val = ['Serveur Horus']
+
+[mars_nwe]
+valdefault = []
+valprec = []
+val = ['non']
+
+[bacula_diff_retention]
+valdefault = []
+valprec = []
+val = ['5']
+
+[cups_preservejobhistory]
+valdefault = []
+valprec = []
+val = ['Yes']
+
+[smb_unixextensions]
+valdefault = []
+valprec = []
+val = ['no']
+
+[server_key]
+valdefault = []
+valprec = []
+val = ['/etc/ssl/certs/eole.key']
+
+[passerelle_smtp]
+valdefault = []
+valprec = ['smtp.dijon.men.fr']
+val = ['smtp.in.ac-dijon.fr']
+
+[clam_broken_exe]
+valdefault = []
+valprec = ['no']
+val = ['yes']
+
+[ldap_loglevel]
+valdefault = []
+valprec = []
+val = ['0']
+
+[xinet_interbase]
+valdefault = []
+valprec = ['non']
+val = ['oui']
+
+[ssl_serveur_name]
+valdefault = []
+valprec = []
+val = []
+
+[clam_max_file_size]
+valdefault = []
+valprec = ['5']
+val = ['100']
+
+[adresse_ip_dns]
+valdefault = []
+valprec = []
+val = ['10.21.41.1']
+
+[default_lease_time]
+valdefault = []
+valprec = []
+val = ['604800']
+
+[sso_pam_securid]
+valdefault = []
+valprec = []
+val = ['non']
+
+[active_bacula_sd]
+valdefault = []
+valprec = []
+val = ['oui']
+
+[type_maj]
+valdefault = []
+valprec = ['minimum']
+val = ['complete']
+
+[ssh_allow_passwd]
+valdefault = []
+valprec = []
+val = ['oui']
+
+[adresse_netware]
+valdefault = []
+valprec = []
+val = ['22']
+
+[bacula_sd_name]
+valdefault = []
+valprec = []
+val = ['127.0.0.1-sd']
+
+[base_ldap_sso]
+valdefault = []
+valprec = []
+val = ['o=gouv,c=fr']
+
+[rsyslog_ca_file]
+valdefault = []
+valprec = []
+val = ['/etc/ssl/certs/ca-eole-rsyslog.crt']
+
+[sso_ldap_reader_passfile]
+valdefault = []
+valprec = []
+val = ['/root/.reader']
+
+[ftp_perso]
+valdefault = []
+valprec = []
+val = ['non']
+
+[numero_etab]
+valdefault = []
+valprec = []
+val = ['0210001M']
+
+[smb_oplocks]
+valdefault = []
+valprec = ['no']
+val = ['yes']
+
+[adresse_sso_parent]
+valdefault = []
+valprec = []
+val = []
+
+[active_onduleur]
+valdefault = []
+valprec = []
+val = ['non']
+
+[sso]
+valdefault = []
+valprec = []
+val = ['oui']
+
+[sso_session_timeout]
+valdefault = []
+valprec = []
+val = ['7200']
+
+[bacula_inc_retention_unit]
+valdefault = []
+valprec = []
+val = ['days']
+
+[bacula_fd_name]
+valdefault = []
+valprec = []
+val = ['127.0.0.1-fd']
+
+[active_bash_completion]
+valdefault = []
+valprec = []
+val = ['non']
+
+[bacula_use_separate_pool]
+valdefault = []
+valprec = []
+val = ['non']
+
+[cups_loglevel]
+valdefault = []
+valprec = []
+val = ['info']
+
+[bacula_sd_address]
+valdefault = []
+valprec = []
+val = ['10.21.41.10']
+
+[activer_log_distant]
+valdefault = []
+valprec = []
+val = ['non']
+
+[ip_ssh_eth0]
+valdefault = []
+valprec = ['']
+val = ['0.0.0.0']
+
+[ssl_subjectaltname_ns]
+valdefault = []
+valprec = []
+val = []
+
+[clam_detect_pua]
+valdefault = []
+valprec = ['no']
+val = ['yes']
+
+[max_lease_time]
+valdefault = []
+valprec = []
+val = ['604800']
+
+[ftp_tls]
+valdefault = []
+valprec = []
+val = ['non']
+
+[bacula_fd_dir_name]
+valdefault = []
+valprec = []
+val = ['127.0.0.1-dir']
+
+[check_passwd_min_len_four_type]
+valdefault = []
+valprec = []
+val = ['8']
+
+[smb_netbios_name]
+valdefault = []
+valprec = []
+val = ['horus']
+
+[sso_otppass_minsize]
+valdefault = []
+valprec = []
+val = ['10']
+
+[port_sso]
+valdefault = []
+valprec = []
+val = ['8443']
+
+[horus_frontend]
+valdefault = []
+valprec = ['non']
+val = ['oui']
+
+[cups_preservejobfiles]
+valdefault = []
+valprec = []
+val = ['No']
+
+[ead_web]
+valdefault = []
+valprec = []
+val = ['oui']
+
+[res_dhcp_ip]
+valdefault = []
+valprec = []
+val = ['']
+
+[cups_maxjobs]
+valdefault = []
+valprec = []
+val = ['500']
+
+[sso_cert]
+valdefault = []
+valprec = []
+val = []
+
+[clam_scan_pdf]
+valdefault = []
+valprec = []
+val = ['no']
+
+[adresse_netmask_eth0]
+valdefault = []
+valprec = []
+val = ['255.255.255.0']
+
+[sso_ca_location]
+valdefault = []
+valprec = []
+val = []
+
+[ssl_country_name]
+valdefault = []
+valprec = []
+val = ['FR']
+
+[ftp_scan]
+valdefault = []
+valprec = []
+val = ['oui']
+
+[nom_domaine_local]
+valdefault = []
+valprec = ['monreseau.lan']
+val = ['col-guyot.lan']
+
+[smb_trash_dir]
+valdefault = []
+valprec = []
+val = ['.corbeille']
+
+[adresse_ip_sso]
+valdefault = []
+valprec = []
+val = ['10.21.41.10']
+
+[bacula_inc_retention]
+valdefault = []
+valprec = []
+val = ['10']
+
+[smb_guest]
+valdefault = []
+valprec = []
+val = ['non']
+
+[smb_dns_proxy]
+valdefault = []
+valprec = []
+val = ['no']
+
+[smb_log_level]
+valdefault = []
+valprec = []
+val = ['0']
+
+[active_bacula_fd]
+valdefault = []
+valprec = []
+val = ['oui']
+
+[sso_saml_time_adjust]
+valdefault = []
+valprec = []
+val = ['-300']
+
+[bacula_dir_name]
+valdefault = []
+valprec = []
+val = ['127.0.0.1-dir']
+
+[ldap_cachesize]
+valdefault = []
+valprec = []
+val = ['1000']
+
+[check_passwd_min_len_three_type]
+valdefault = []
+valprec = []
+val = ['8']
+
+[cups_printcap]
+valdefault = []
+valprec = []
+val = ['non']
+
+[cas_version]
+valdefault = []
+valprec = []
+val = ['2']
+
+[port]
+valdefault = []
+valprec = []
+val = ['serie']
+
+[clam_max_scan_size]
+valdefault = []
+valprec = []
+val = ['20']
+
+[adresse_ip_eth0]
+valdefault = []
+valprec = []
+val = ['10.21.41.10']
+
+[system_mail_from]
+valdefault = []
+valprec = []
+val = []
+
+[ldap_replication]
+valdefault = []
+valprec = []
+val = ['non']
+
+[clam_max_recursion]
+valdefault = []
+valprec = []
+val = ['12']
+
+[adresse_network_eth0]
+valdefault = []
+valprec = ['']
+val = ['10.21.41.0']
+
+[ssl_organization_unit_name]
+valdefault = []
+valprec = []
+val = ['110 043 015', 'ac-dijon', '0210001M']
+
+[active_bacula_dir]
+valdefault = []
+valprec = []
+val = ['oui']
+
+[ip_basse_dhcp]
+valdefault = []
+valprec = []
+val = ['10.21.41.40']
+
+[sso_ldap_reader]
+valdefault = []
+valprec = []
+val = ['cn=reader,o=gouv,c=fr']
+
+[sso_ldap_login_otp]
+valdefault = []
+valprec = []
+val = ['inactifs']
+
+[sso_entity_name]
+valdefault = []
+valprec = []
+val = []
+
+[ssh_permit_root]
+valdefault = []
+valprec = []
+val = ['oui']
+
+[bash_tmout]
+valdefault = []
+valprec = []
+val = ['900']
+
+[sso_otppass_maxsize]
+valdefault = []
+valprec = []
+val = ['12']
+
+[dhcp]
+valdefault = []
+valprec = ['non']
+val = ['oui']
+
+[smb_dos_attributes]
+valdefault = []
+valprec = []
+val = ['no']
+
+[ssl_default_key_bits]
+valdefault = []
+valprec = []
+val = ['2048']
+
+[check_passwd_min_len_one_type]
+valdefault = []
+valprec = []
+val = ['0']
+
+[proxy_server]
+valdefault = []
+valprec = ['']
+val = ['admin.col-guyot.lan']
+
+[sso_ldap_infos]
+valdefault = []
+valprec = []
+val = ['']
+
+[serveur_ntp]
+valdefault = []
+valprec = ['pool.ntp.org']
+val = ['ntp.univ-lyon1.fr']
+
+[nom_driver]
+valdefault = []
+valprec = []
+val = ['apcsmart']
+
+[federation_transparente]
+valdefault = []
+valprec = []
+val = ['non']
+
+[server_cert]
+valdefault = []
+valprec = []
+val = ['/etc/ssl/certs/eole.crt']
+
+[port_sso_parent]
+valdefault = []
+valprec = []
+val = ['8443']
+
+[proxy_port]
+valdefault = []
+valprec = []
+val = ['3128']
+
+[bacula_compression]
+valdefault = []
+valprec = []
+val = ['GZIP6']
+
+[smb_wins_support]
+valdefault = []
+valprec = []
+val = ['yes']
+
+[proxy]
+valdefault = []
+valprec = ['non']
+val = ['oui']
+
+[clam_max_files]
+valdefault = []
+valprec = []
+val = ['5000']
+
+[ldap_sso]
+valdefault = []
+valprec = []
+val = ['localhost']
+
+[apache]
+valdefault = []
+valprec = []
+val = ['non']
+
+[sso_ldap_label]
+valdefault = []
+valprec = []
+val = ['Annuaire de horus.col-guyot.lan']
+
+[activate_tls]
+valdefault = []
+valprec = []
+val = ['Non']
+
+[bacula_full_retention]
+valdefault = []
+valprec = []
+val = ['6']
+
+[port_ldap_sso]
+valdefault = []
+valprec = []
+val = ['389']
+
+[libelle_etab]
+valdefault = []
+valprec = []
+val = ['0210001M']
+
+[smb_workgroup]
+valdefault = []
+valprec = []
+val = ['col-guyot']
+
+[adresse_broadcast_eth0]
+valdefault = []
+valprec = []
+val = ['10.21.41.255']
+
+[sso_css]
+valdefault = []
+valprec = []
+val = []
+
+[smb_vscan]
+valdefault = []
+valprec = ['oui']
+val = ['non']
+
+[cups_maxclients]
+valdefault = []
+valprec = []
+val = ['100']
+
+[ldap_sizelimit]
+valdefault = []
+valprec = []
+val = ['500']
+
+[cups_maxcopies]
+valdefault = []
+valprec = []
+val = ['100']
+
+[check_passwd_max]
+valdefault = []
+valprec = []
+val = ['40']
+
+[serveur_maj2]
+valdefault = []
+valprec = []
+val = ['eoleng.ac-dijon.fr']
+
+[res_dhcp_mac]
+valdefault = []
+valprec = []
+val = ['']
+
+[smb_vscan_purge]
+valdefault = []
+valprec = []
+val = ['20']
+
+[bacula_diff_retention_unit]
+valdefault = []
+valprec = []
+val = ['weeks']
+
+[cas_send_logout]
+valdefault = []
+valprec = []
+val = ['oui']
+
+[res_dhcp_nom]
+valdefault = []
+valprec = []
+val = []
+
+[bacula_retention]
+valdefault = []
+valprec = ['21']
+val = ['28']
+
+[nom_academie]
+valdefault = []
+valprec = []
+val = ['ac-dijon']
+
+[adresse_ip_gw]
+valdefault = []
+valprec = []
+val = ['10.21.41.1']
+
+[ssl_subjectaltname_ip]
+valdefault = []
+valprec = []
+val = ['10.21.41.10']
+
+[smb_widelinks]
+valdefault = []
+valprec = []
+val = ['yes']
+
+[sso_otppass_regx]
+valdefault = []
+valprec = []
+val = ['^[0-9]{10,12}$']
+

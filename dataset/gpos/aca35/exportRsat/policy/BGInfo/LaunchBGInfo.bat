@@ -1,0 +1,1 @@
+\\ADDC\Netlogon\BGInfo\BGInfo.exe /accepteula \\ADDC\Netlogon\BGInfo\Standard.bgi /timer:0

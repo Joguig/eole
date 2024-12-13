@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<!DOCTYPE ficAlimMENESR SYSTEM "ficAlimMENESR.dtd">
+<ficAlimMENESR>
+<!-- versionAF="AAF-VE1401" -->
+
+<modifyRequest>
+<operationalAttributes><attr name="categoriePersonne"><value>Eleve</value></attr></operationalAttributes>
+<identifier><id>22949</id></identifier>
+<modifications>
+<modification name="ENTPersonJointure" operation="replace"><value>22949</value></modification>
+<modification name="ENTEleveStructRattachId" operation="replace"><value>271078</value></modification>
+<modification name="ENTPersonDateNaissance" operation="replace"><value>22/01/1990</value></modification>
+<modification name="ENTPersonNomPatro" operation="replace"><value>DUPONT</value></modification>
+<modification name="sn" operation="replace"><value>DUPONT</value></modification>
+<modification name="givenName" operation="replace"><value>Jean</value></modification>
+<modification name="ENTPersonAutresPrenoms" operation="replace"><value>Simon</value><value>Charles</value><value>Pierre</value></modification>
+<modification name="personalTitle" operation="replace"><value>M.</value></modification>
+<modification name="ENTEleveParents" operation="replace"><value>422261</value></modification>
+<modification name="ENTElevePere" operation="replace"><value/></modification>
+<modification name="ENTEleveMere" operation="replace"><value>422261</value></modification>
+<modification name="ENTEleveAutoriteParentale" operation="replace"><value>422261</value></modification>
+<modification name="ENTElevePersRelEleve1" operation="replace"><value/></modification>
+<modification name="ENTEleveQualitePersRelEleve1" operation="replace"><value/></modification>
+<modification name="ENTElevePersRelEleve2" operation="replace"><value/></modification>
+<modification name="ENTEleveQualitePersRelEleve2" operation="replace"><value/></modification>
+<modification name="ENTElevePersRelEleve" operation="replace"><value>422261$2$1$1$1$0</value></modification>
+<modification name="ENTEleveBoursier" operation="replace"><value>N</value></modification>
+<modification name="ENTEleveRegime" operation="replace"><value>EXTERNE LIBRE</value></modification>
+<modification name="ENTEleveTransport" operation="replace"><value>N</value></modification>
+<modification name="ENTEleveStatutEleve" operation="replace"><value>SCOLAIRE</value></modification>
+<modification name="ENTEleveMEF" operation="replace"><value>41231403330</value></modification>
+<modification name="ENTEleveLibelleMEF" operation="replace"><value>DCG3  COMPTABILITE ET GESTION 3E ANNEE</value></modification>
+<modification name="ENTEleveNivFormation" operation="replace"><value>DIP DE COMPTA ET GESTION 3E AN.</value></modification>
+<modification name="ENTEleveFiliere" operation="replace"><value>DIP DE COMPTA ET GESTION : 3EME ANNEE</value></modification>
+<modification name="ENTEleveEnseignements" operation="replace"><value>CONTROLE DE GESTION</value><value>DROIT SOCIAL</value><value>MANAGEMENT</value><value>ANGLAIS APPLIQUE AUX AFFAIRES</value><value>MODULES METHODOLOGIQUES</value><value>RELATIONS PROFESSIONNELLES</value></modification>
+<modification name="ENTEleveCodeEnseignements" operation="replace"><value>430600</value><value>362400</value><value>434500</value><value>500700</value><value>005800</value><value>005700</value></modification>
+<modification name="ENTPersonStructRattach" operation="replace"><value>2565</value></modification>
+<modification name="ENTEleveClasses" operation="replace"><value>2565$DCG3</value></modification>
+<modification name="ENTEleveGroupes" operation="replace"><value/></modification>
+</modifications>
+</modifyRequest>
+
+</ficAlimMENESR>

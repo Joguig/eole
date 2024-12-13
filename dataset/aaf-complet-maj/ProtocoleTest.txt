@@ -1,0 +1,32 @@
+AAF complet en mode mise à jour
+==================================
+
+protocole de tests
+----------------------
+
+**Les fichiers XML sont à mettre dans `/home/aaf-complet`**
+
+
+
+- `DELTACREATE` : correspond à une mise à jour en fait
+  tout-à-fait équivalente à un AAF complet :
+  le XML est à lancer avec une database et un ldap vides.
+  (le personnel n'existe pas dans la base ni dans le ldap)
+
+  **le script à lancer est `aaf-complet-maj` uniquement**
+
+- `DELTAUPDATE` : correspond à une mise à jour réelle :
+  le personnel existe déjà dans la base mais n'est pas identique
+  au XML. il y a donc une mise à jour de faite.
+
+
+  - le script à lancer en premier est `aaf-complet` avec le
+    XML dans `complet`
+
+  - puis le deuxième script à lancer est `aaf-complet_maj` avec
+    le XML dans `complet-maj`
+
+
+
+**FIXME** : pour les personnels, pour être exhaustif, il faudrait
+prévoir deux cas (enseignant et administratif).

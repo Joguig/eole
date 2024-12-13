@@ -1,0 +1,65 @@
+--- distrib/freerad-inner-tunnel	2015-01-16 16:26:29.000000000 +0100
++++ modif/freerad-inner-tunnel	2016-09-21 10:08:44.353374313 +0200
+@@ -29,7 +29,7 @@
+ #  The order of the realm modules will determine the order that
+ #  we try to find a matching realm.
+ #
+-#  Make *sure* that 'preprocess' comes before any realm if you 
++#  Make *sure* that 'preprocess' comes before any realm if you
+ #  need to setup hints for the remote radius server
+ authorize {
+ 	#
+@@ -126,7 +126,16 @@
+ 	#
+ 	#  The ldap module will set Auth-Type to LDAP if it has not
+ 	#  already been set
+-	ldap
++%if %%freerad_acc_type_annuaire == 'ldap'
++        ldap
++%elif  %%freerad_acc_type_annuaire == 'AD'
++    #
++    # patch eole ac-grenoble
++    # authentification configuree sur un  annuaire active directory
++    # pour configurer un annuaire ldap modifier la configuration via gen_config
++        #
++        #ldap
++%end if
+ 
+ 	#
+ 	#  Enforce daily limits on time spent logged in.
+@@ -206,7 +215,7 @@
+ 	#  module checks the users password.  Note that packets
+ 	#  containing CHAP-Password attributes CANNOT be authenticated
+ 	#  against /etc/passwd!  See the FAQ for details.
+-	#  
++	#
+ #	unix
+ 
+ 	# Uncomment it if you want to use ldap for authentication
+@@ -221,7 +230,7 @@
+ 	#
+ 	#  Allow EAP authentication.
+ 	#eap
+-	Auth-Type EAP { 
++	Auth-Type EAP {
+ 		eap
+ 	}
+ }
+@@ -234,7 +243,7 @@
+ ######################################################################
+ 
+ 
+-#  Session database, used for checking Simultaneous-Use. Either the radutmp 
++#  Session database, used for checking Simultaneous-Use. Either the radutmp
+ #  or rlm_sql module can handle this.
+ #  The rlm_sql module is *much* faster
+ session {
+@@ -283,7 +292,7 @@
+ 	#  Access-Reject packets are sent through the REJECT sub-section of the
+ 	#  post-auth section.
+ 	#
+-	#  Add the ldap module name (or instance) if you have set 
++	#  Add the ldap module name (or instance) if you have set
+ 	#  'edir_account_policy_check = yes' in the ldap module configuration
+ 	#
+ 	Post-Auth-Type REJECT {

@@ -1,0 +1,246 @@
+# This is the main slapd configuration file. See slapd.conf(5) for more
+# info on the configuration options.
+
+#######################################################################
+# Global Directives:
+
+# Features to permit
+#allow bind_v2
+
+# Schema and objectClass definitions
+include         /etc/ldap/schema/core.schema
+include         /etc/ldap/schema/cosine.schema
+include         /etc/ldap/schema/nis.schema
+include         /etc/ldap/schema/inetorgperson.schema
+include         /etc/ldap/schema/pamela.schema
+include         /etc/ldap/schema/rfc2739.schema
+include         /etc/ldap/schema/samba.schema
+
+sizelimit       5000
+timelimit       10
+
+# Where the pid file is put. The init.d script
+# will not stop the server if you change this.
+pidfile         /var/run/slapd/slapd.pid
+
+# List of arguments that were passed to the server
+argsfile        /var/run/slapd/slapd.args
+
+# Read slapd.conf(5) for possible values
+loglevel        stats
+#loglevel        -1
+
+# Nombre de connexion
+conn_max_pending        3000
+conn_max_pending_auth   5000
+
+tool-threads 4
+# Lors de la modification de threads, pensez a modifier dbconfig set_tx_max dans
+# le slapd.conf dbconfig et dans le DB_CONFIG avec un dbX.Y_recover -e
+# avec la valeur dbconfig set_tx_max=3*threads (source openldap)
+# http://ti2appli.appli.i2/mantis/view.php?id=2345
+threads 64
+
+# Where the dynamically loaded modules are stored
+modulepath	/usr/lib/ldap
+moduleload	back_hdb
+moduleload      syncprov
+#moduleload      accesslog
+moduleload      back_monitor
+moduleload      unique
+
+# base de recherche par defaut
+defaultsearchbase	"dc=equipement,dc=gouv,dc=fr"
+
+# TLS
+#pnesr TLSCACertificateFile	/etc/certs/CA2010.pem
+#pnesr TLSCertificateFile	/etc/certs/ldapmapnes-ida01.ida.melanie2.i2.pem
+#pnesr TLSCertificateKeyFile	/etc/certs/ldapmapnes-ida01.ida.melanie2.i2.key
+TLSCACertificateFile	/etc/certs/CAldap.pem
+TLSCertificateFile	/etc/certs/ldapma.eole.e2.rie.gouv.fr-cert.pem
+TLSCertificateKeyFile	/etc/certs/ldapma.eole.e2.rie.gouv.fr-key.pem
+
+#######################################################################
+# Specific Backend Directives for bdb:
+# Backend specific directives apply to this backend until another
+# 'backend' directive occurs
+# Les alias ne marche pas avce openldap 2.1 et une base BDB. Il faut
+# donc utiliser une base ldbm.
+# Ce problème est corrigé avec une openldap 2.2.
+#backend		bdb
+
+#######################################################################
+# Specific Backend Directives for 'other':
+# Backend specific directives apply to this backend until another
+# 'backend' directive occurs
+#backend		<other>
+
+#######################################################################
+# Specific Directives for database #1, of type bdb:
+# Database specific directives apply to this databasse until another
+# 'database' directive occurs
+
+# Equipement
+database        hdb
+
+#readonly on
+
+# The base of your directory in database #1
+suffix          "dc=equipement,dc=gouv,dc=fr"
+
+# Where the database file are physically stored for database #1
+directory       "/var/lib/ldap/equipement"
+rootdn "dc=equipement,dc=gouv,dc=fr"
+
+#PAMELA_MIRROR_MODE_LDAP_MAITRE
+
+
+# caches bases hdb dc=equipement
+cachesize    75000
+cachefree      1000
+idlcachesize 225000
+#searchstack      24
+checkpoint 512 10
+
+# Indexing options for database #1
+index objectClass eq
+index mineqMelPartages,mineqLiensImport,mineqMelmailEmission,cn,uid eq,sub
+index mail,mineqMelMembres,employeeNumber,ou,gidnumber,uidNumber,mineqTypeEntree,sn,drink,aliasedObjectName,memberUid,sambaSID,mineqMelRemise,info,owner,mineqVpnInfos eq
+index entryCSN,entryUUID eq
+
+# Save the time that the entry gets modified, for database #1
+lastmod         on
+
+overlay syncprov
+syncprov-checkpoint 100 10
+syncprov-sessionlog 200000
+syncprov-reloadhint TRUE
+
+overlay unique
+unique_uri ldap:///dc=equipement,dc=gouv,dc=fr?mail,employeeNumber?sub
+unique_uri ldap:///ou=organisation,dc=equipement,dc=gouv,dc=fr?uid?sub
+
+limits dn.regex="cn=syncuser.testpnes,ou=admin,ou=ressources,dc=equipement,dc=gouv,dc=fr"
+	size.soft=unlimited size.hard=unlimited
+        time.soft=unlimited time.hard=unlimited
+
+limits dn.exact="cn=admin,ou=admin,ou=ressources,dc=equipement,dc=gouv,dc=fr"
+        size.soft=unlimited size.hard=unlimited
+        time.soft=unlimited time.hard=unlimited
+
+limits dn.exact="cn=admcs,ou=admin,ou=ressources,dc=equipement,dc=gouv,dc=fr"
+        size.soft=unlimited size.hard=unlimited
+        time.soft=unlimited time.hard=unlimited
+
+limits dn.exact="cn=admread,ou=admin,ou=ressources,dc=equipement,dc=gouv,dc=fr"
+        size.soft=unlimited size.hard=unlimited
+        time.soft=unlimited time.hard=unlimited
+
+limits dn.exact="cn=amedee,ou=admin,ou=ressources,dc=equipement,dc=gouv,dc=fr"
+        time.soft=30 time.hard=30
+
+# ACl Samba
+include         /etc/ldap/acl-samba.conf
+
+#PAMELA_BLOCAGE_HORS_CS
+access to *
+        by peername.ip=127.0.0.1 break
+        by peername.ip=192.168.251.144 break
+        by peername.ip=172.20.41.96 break
+        by peername.ip=172.26.46.251 break
+        by * none
+
+
+# ACL AMEDEE
+include         /etc/ldap/acl-amedee.conf
+# Acl des Operateurs Melanie
+include         /etc/ldap/acl.conf
+
+# The userPassword by default can be changed
+# by the entry owning it if they are authenticated.
+# Others should not be able to see it, except the
+# admin entry below
+# These access lines apply to database #1 only
+access to attrs=userPassword
+        by dn="cn=admin,ou=admin,ou=ressources,dc=equipement,dc=gouv,dc=fr" write
+	by dn.regex="cn=syncuser.testpnes,ou=admin,ou=ressources,dc=equipement,dc=gouv,dc=fr" read
+        by anonymous auth
+        by self write
+        by * none
+
+#Attributs a acces limite en lecture/ecriture au proprio seul (et admin)
+access to attrs=mineqPasswordModifyTimestamp,mineqPasswordDoitChanger,mineqMelPartages,mineqMelReponse,mineqMelAccesInternetU,sambaNTPassword,sambaLMPassword,mineqPublicationPhotoAder,mineqPublicationPhotoIntranet,street,postalcode,l,telephonenumber,facsimiletelephonenumber,mobile,roomnumber
+	by dn="cn=admin,ou=admin,ou=ressources,dc=equipement,dc=gouv,dc=fr" write
+	by dn.regex="cn=syncuser.testpnes,ou=admin,ou=ressources,dc=equipement,dc=gouv,dc=fr" read
+        by self write
+        by * none break
+
+# acces userCertificate
+access to attrs=userCertificate
+        by dn="cn=admin,ou=admin,ou=ressources,dc=equipement,dc=gouv,dc=fr" write
+        by dn.regex="cn=syncuser.(csac|csbx),ou=admin,ou=ressources,dc=equipement,dc=gouv,dc=fr" read
+        by * none break
+
+#Pour gestion des listes
+access to filter=(objectClass=mineqMelListe) attrs=mineqMelMembres,member,memberUid
+        by dn.base="uid=listeadmin,ou=admin,ou=ressources,dc=equipement,dc=gouv,dc=fr" write
+	by dn.regex="cn=syncuser.testpnes,ou=admin,ou=ressources,dc=equipement,dc=gouv,dc=fr" read
+        by * none break
+
+#Pour gestion des Organismes Heberges
+access to dn.base="ou=OH,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr"
+        by dn.base="uid=ohadmin,ou=admin,ou=ressources,dc=equipement,dc=gouv,dc=fr" write
+        by * none break
+
+# Ensure read access to the base for things like
+# supportedSASLMechanisms.  Without this you may
+# have problems with SASL not knowing what
+# mechanisms are available and the like.
+# Note that this is covered by the 'access to *'
+# ACL below too but if you change that as people
+# are wont to do you'll still need this if you
+# want SASL (and possible other things) to work 
+# happily.
+access to dn.base="" by * read
+
+# The admin dn has full write access, everyone else
+# can read everything.
+access to *
+        by dn="cn=admin,ou=admin,ou=ressources,dc=equipement,dc=gouv,dc=fr" write
+	by dn.regex="cn=syncuser.testpnes,ou=admin,ou=ressources,dc=equipement,dc=gouv,dc=fr" read
+        by * read
+
+# For Netscape Roaming support, each user gets a roaming
+# profile for which they have write access to
+#access to dn=".*,ou=Roaming,o=morsnet"
+#        by dn="@ADMIN@" write
+#        by dnattr=owner write
+
+# Replica PAMELA (tag pour fai)
+
+#dbconfig set_flags DB_TXN_NOSYNC
+dbconfig set_cachesize 0 100000000 1
+dbconfig set_lg_regionmax 2097152
+dbconfig set_lg_max 20971520
+dbconfig set_lg_bsize 4194304
+dbconfig set_lk_max_locks 30000
+dbconfig set_lk_max_lockers 30000
+dbconfig set_lk_max_objects 30000
+dbconfig set_flags DB_LOG_AUTOREMOVE
+dbconfig set_tx_max 192
+
+#######################################################################
+# Specific Directives for database #2, of type 'other' (can be bdb too):
+# Database specific directives apply to this databasse until another
+# 'database' directive occurs
+#database        <other>
+
+# The base of your directory for database #2
+#suffix		"dc=debian,dc=org"
+
+database        monitor
+
+access to dn.subtree="cn=monitor"
+        by peername.ip=127.0.0.1 read
+        by * none
+

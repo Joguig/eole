@@ -1,0 +1,3 @@
+#! /bin/sed -f
+
+:k; N; /^ /M { s/^ //M; s/\n//; tk; }; P; D; bk;

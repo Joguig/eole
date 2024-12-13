@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PolFile num_entries="32" signature="PReg" version="1">
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</Key>
+		<ValueName>NoDriveTypeAutoRun</ValueName>
+		<Value>255</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</Key>
+		<ValueName>NoAutorun</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Microsoft\Windows\CurrentVersion\Policies\System</Key>
+		<ValueName>RunLogonScriptSync</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Microsoft\Windows\CurrentVersion\Policies\System</Key>
+		<ValueName>EnableFirstLogonAnimation</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Microsoft\Windows\CurrentVersion\Policies\System</Key>
+		<ValueName>HideFastUserSwitching</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Policies\Microsoft\W32time\Parameters</Key>
+		<ValueName>NtpServer</ValueName>
+		<Value>172.16.128.2</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Policies\Microsoft\W32time\Parameters</Key>
+		<ValueName>Type</ValueName>
+		<Value>NT5DS</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\W32time\TimeProviders\NtpClient</Key>
+		<ValueName>Enabled</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\W32time\TimeProviders\NtpClient</Key>
+		<ValueName>CrossSiteSyncFlags</ValueName>
+		<Value>2</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\W32time\TimeProviders\NtpClient</Key>
+		<ValueName>ResolvePeerBackoffMinutes</ValueName>
+		<Value>15</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\W32time\TimeProviders\NtpClient</Key>
+		<ValueName>ResolvePeerBackoffMaxTimes</ValueName>
+		<Value>7</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\W32time\TimeProviders\NtpClient</Key>
+		<ValueName>SpecialPollInterval</ValueName>
+		<Value>3600</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\W32time\TimeProviders\NtpClient</Key>
+		<ValueName>EventLogFlags</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\W32time\TimeProviders\NtpServer</Key>
+		<ValueName>Enabled</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\Windows\HomeGroup</Key>
+		<ValueName>DisableHomeGroup</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\Windows\NetCache</Key>
+		<ValueName>Enabled</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\Windows\System</Key>
+		<ValueName>GpNetworkStartTimeoutPolicyValue</ValueName>
+		<Value>60</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\Windows\System</Key>
+		<ValueName>UserPolicyMode</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\Windows\System</Key>
+		<ValueName>BlockDomainPicturePassword</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\Windows NT\CurrentVersion\Winlogon</Key>
+		<ValueName>SyncForegroundPolicy</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint</Key>
+		<ValueName>PackagePointAndPrintServerList</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint</Key>
+		<ValueName>PackagePointAndPrintOnly</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint\ListofServers</Key>
+		<ValueName>**delvals.</ValueName>
+		<Value> </Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint</Key>
+		<ValueName>Restricted</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint</Key>
+		<ValueName>TrustedServers</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint</Key>
+		<ValueName>**del.ServerList</ValueName>
+		<Value> </Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint</Key>
+		<ValueName>InForest</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint</Key>
+		<ValueName>**del.NoWarningNoElevationOnInstall</ValueName>
+		<Value> </Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint</Key>
+		<ValueName>**del.UpdatePromptSettings</ValueName>
+		<Value> </Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\Windows NT\Security Center</Key>
+		<ValueName>SecurityCenterInDomain</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\Windows NT\SystemRestore</Key>
+		<ValueName>DisableSR</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Microsoft\Windows NT\SystemRestore</Key>
+		<ValueName>DisableConfig</ValueName>
+		<Value>1</Value>
+	</Entry>
+</PolFile>

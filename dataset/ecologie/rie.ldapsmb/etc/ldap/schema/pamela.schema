@@ -1,0 +1,628 @@
+# Extension de schema Amedee pour Amelie
+# v02 21/02/03
+# v03 01/04/03 par Julien, ajout mineqMeluid, mineqMelgid
+# v04 01/06/03 par Patrick, modif mineqMelReponse, passage en multivalue, taille 4096
+# v05 16/06/03 par Patrick, ajout mineqMelServeurPrincipal et mineqMelServeurSecours et modif classe mineqMelBAL
+# v06 17/06/03 par Patrick, ajout mineqMelListeInfos 
+# v07 28/07/03 par Patrick, ajout mineqMelQuotas devient multivalué 
+# v08 08/12/03 par Julien, modification des SYNTAX et EQUALITY pour être conforme 
+# v09 21/01/04 par Patrick, ajout de cn comme champ de mineqMelBAL
+
+# v1a 19/02/04 par Patrick, prise en compte des besoins LDAP avant Amede
+# v1b 09/03/04 par Patrick, passage de mineqMelRoutage a 512
+
+# V1d 29/03/04 par Patrick, Nouvelles classes mineqOrganisation et mineqMelDP
+#                           Correction de oid des classes Messagerie ...
+# V1e 07/04/04 par Patrick, Nouvelles classes mineqEntite et mineqMelObjetPartage
+#                           Nouvel attribut mineqRDN et mineqMeldomaine
+# V1f 07/04/04 par Patrick, Nouvelles Attribut et Classe pour OpenGroupware.org
+
+# v2a 19/04/04 par Patrick, Reorganisation des classes
+#                           Disparition de mineqOrganisation
+
+# v2b 26/05/04 par Patrick, Ajout de mineqOgoAccesInternet dans la classe mineqOgo
+#                           Dans la foulee, reprise de oid mineqOgo ...
+
+# v2c 16/06/04 par Patrick, Ajout de mineqPasswordModifyTimestamp et mineqPasswordDoitChanger
+
+# v2d 16/06/04 par Patrick, Ajout de ORDERING caseIgnoreOrderingMatch pour mineqOrdreAffichage et mineqPortee
+
+# v3a 02/07/04 par Patrick, Ajout de gender et autres champs Amedee/Maya2
+#                           mineqEntiteCodeUsage et mineqZone
+#                           Ajout de sn aux listes ...
+
+# v3b 10/01/05 par Julien,  Ajout de EQUALITY generalizedTimeMatch a
+#                           mineqPasswordModifyTimestamp
+
+# v3c 25/10/05 par Julien,  Ajout de SUBSTR caseIgnoreIA5SubstringsMatch a
+#                           mineqMelmailEmission
+
+# v3d 25/10/05 par Julien,  Ajout de SUBSTR caseIgnoreIA5SubstringsMatch a
+#                           mineqMelRoutage
+
+# v3e 02/11/05 par Patrick, Ajout de mineqPasswordModifyTimestamp et mineqPasswordDoitChanger a la classe mineqOgo pour permettre un cht de mot de passe par BaladeU
+
+# v4  16/12/05 par Patrick, roomNumber dans mineqMelDP
+#                           Suppression des password des listes (VOIR Marc pour maj Balade)
+#                           Ajout de mineqOgoPartages et classe mineqOgo dependente de mineqMelBoite
+# v4a 22/12/05 par Patrick, roomNumber dans mineqEntite
+
+# v5  03/04/06 par Patrick, mineqMelAccesInternetA et mineqMelAccesInternetU pour gestion des acces Horde depuis Internet
+#                           Mise a jour de la classe mineqMelBoite
+
+# v6  19/01/07 par Patrick, Ajout de employeeNumber sur mineqMelDP
+#                           Creation de l'attribut mineqMission
+#                           Ajout de mineqMission sur mineqEntite mineqMelBoite mineqMelDP mineqMelListe mineqMelListeAbonnement
+#                           Ajout de businessCategory a mineqMelDP
+#                           Creation de la classe mineqNomenclature
+
+# v7  18/04/07 par Patrick, Ajout de la classe mineqPerson pour Amedee
+
+# v8  03/05/07 par Patrick, Ajout de la classe mineqGroup pour Amedee
+#                           Ajout a la classe mineqMelEntite des attributs manager, cn, departmentNumber, uniqueIdentifier
+
+# v9  29/05/07 par Patrick, Mise a jour classe nomenclatures
+
+# v10 31/05/07 par Patrick, Mise a jour classe nomenclatures, ajout de employeeNumber
+
+# v11 24/04/08 par Patrick, Creation des attributs mineqModifiedTimestamp et mineqExpireTimestamp 
+#                           Ajout de mineqModifiedTimestamp a toutes nos classes
+#                           Ajout mineqExpireTimestamp a la classe mineqPerson 
+                            
+# v12 18/06/08 par Patrick, Creation des attributs mineqPublicationPhotoIntranet et attribut mineqPublicationPhotoAder
+#                           Ajout a la classe mineqPerson
+
+# v13 28/08/09 par Patrick, Creation des attributs mineqVpnProfil et attribut mineqVpnInfos
+#                           Ajout a la classe mineqPerson
+#                           et mineqMelBoite pour un eventuel besoin sur des bal non Amedee
+
+# v14 28/09/09 par Patrick, Ajout de mineqMelAccesInternetA a la classe mineqEntite
+
+# v15 29/12/09 par Patrick, Ajout de mineqLiensImport a la classe mineqMelBoite
+
+# v16 07/05/10 par Patrick, Creation de mineqAccesInternet 
+#                           et ajout a la classe mineqPerson et mineqMelBoite pour un eventuel besoin sur des bal non Amedee
+#                           Ajout de SeeAlso aux mineqMelDP
+
+# v17 04/06/10 par Patrick, Ajout de mineqAccesInternet a la classe mineqEntite
+
+# v18 23/08/10 par Patrick, Ajout de mineqMajInfoPerso a la classe mineqPerson
+
+# v19 10/09/10 par Patrick, Ajout de mineqMajInfoPerso a la classe mineqEntite
+
+# v20 23/09/10 par Patrick, Ajout de SeeAlso aux listes
+
+# v21 10/09/12 par Patrick, Ajout de mineqMelAccesSynchroA et mineqMelAccesSynchroU a la classe mineqMelBoite
+
+# v22 28/03/13 par Patrick, Ajout de mineqAccesWifiA et mineqAccesWifiU a la classe mineqMelBoite et mineqPerson
+
+# v23 22/01/14 par Patrick, Ajout de X-ORDERED 'VALUES' mineqMelmailEmission 
+
+# v24 22/01/14 par Patrick, Suppression de X-ORDERED 'VALUES' mineqMelmailEmission 
+#                           Ajout des attributs mailPR et mineqMelmailEmissionPR
+#                           Suppression des attributs et classes Ogo
+
+# v26 25/02/15 par Patrick, Ajout mineqMelmailEmissionPR au objets de partages
+#                           Suppression de :
+#                           mineqMeluidNumber mineqMelgidNumber mineqEntiteCodeUsage mineqMelNouvelleAdresse
+#                           Ajout d'un attribut mineqCerbereUID pour Cerbere 
+#                           pour les classes mineqPerson mineqMelDP et mineqMelBoite
+#                           Ajout de jpegPhoto, mineqPublicationPhotoIntranet et mineqPublicationPhotoAder
+#                           pour la classe mineqMelDP
+
+
+#A faire :
+# Menage des attributs vraiment obsoletes
+#  -mineqMelBoite pour un eventuel besoin sur des bal non Amedee
+#  -uid et guinumber m2
+#  -...
+
+########################################################
+#                  BESOINS SYSTEM (DE BASE)            #
+# attributs : 1.3.6.1.4.1.15504.2.2.1.1.x              #
+# classes   : 1.3.6.1.4.1.15504.2.1.1.1.x              #
+########################################################
+########################################################
+#                     MESSAGERIE                       #
+# attributs : 1.3.6.1.4.1.15504.2.2.1.2.x              #
+# classes   : 1.3.6.1.4.1.15504.2.1.1.2.x              #
+########################################################
+########################################################
+#                OpenGroupeware.Org                    #
+# attributs : 1.3.6.1.4.1.15504.2.2.1.3.x              #
+# classes   : 1.3.6.1.4.1.15504.2.1.1.3.x              #
+########################################################
+
+
+
+
+#####################################################
+# Attributs systeme : 1.3.6.1.4.1.15504.2.2.1.1.x   
+#####################################################
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.10
+ NAME 'mineqPortee'
+ DESC 'Portee de l entree'
+ EQUALITY caseIgnoreMatch
+ ORDERING caseIgnoreOrderingMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{32} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.11
+ NAME 'mineqOrdreAffichage'
+ DESC 'Ordre d affichage'
+ EQUALITY caseIgnoreMatch
+ ORDERING caseIgnoreOrderingMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{32} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.12
+ NAME 'mineqLiensImport'
+ DESC 'Maintient des liens des objets importes'
+ EQUALITY caseIgnoreMatch
+ SUBSTR caseIgnoreSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{512} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.13
+ NAME 'mineqTypeEntree'
+ DESC 'Type d objet Amedee'
+ EQUALITY caseIgnoreIA5Match
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{32} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.14
+ NAME 'mineqRDN'
+ DESC 'Pour construction de DN si ca aide'
+ EQUALITY caseIgnoreMatch
+ SUBSTR caseIgnoreSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{512} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.15
+ NAME 'mineqDomainesSMTP'
+ DESC 'Domaines SMTP utilisables'
+ EQUALITY caseIgnoreIA5Match
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} )
+
+#attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.35
+# NAME 'mineqPassword'
+# DESC 'Copie du mot de passe'
+# EQUALITY octetStringMatch
+# SYNTAX 1.3.6.1.4.1.1466.115.121.1.40{128} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.16
+ NAME 'mineqPasswordDoitChanger'
+ DESC 'Raison de mot de passe plus utilisable'
+ EQUALITY caseIgnoreMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{512} )
+
+#Format date ldap, cad  "%Y%m%d%H%M%SZ" sur un gmtime
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.17
+ NAME 'mineqPasswordModifyTimestamp'
+ DESC 'Date du dernier cht de mot de passe'
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 
+ EQUALITY generalizedTimeMatch
+ ORDERING generalizedTimeOrderingMatch
+ SINGLE-VALUE )
+
+#~ attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.18
+ #~ NAME 'mineqEntiteCodeUsage'
+ #~ DESC 'Code complet eventuellement simplifie'
+ #~ EQUALITY caseIgnoreMatch
+ #~ SUBSTR caseIgnoreSubstringsMatch
+ #~ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{256} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.19
+ NAME 'mineqZone'
+ DESC 'Zone d origine de l entree, equipement, aviation civile, maia, ...'
+ EQUALITY caseIgnoreMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{128} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.20
+ NAME 'mineqMission'
+ DESC 'Descrition de la mission'
+ EQUALITY caseIgnoreMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{512} )
+
+#Format date ldap, cad  "%Y%m%d%H%M%SZ" sur un gmtime
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.21
+ NAME 'mineqModifiedTimestamp'
+ DESC 'Attribut positionne par Amedee lorsque certains attributs sont modifies'
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 
+ EQUALITY generalizedTimeMatch
+ ORDERING generalizedTimeOrderingMatch
+ SINGLE-VALUE )
+
+#Format date ldap, cad  "%Y%m%d%H%M%SZ" sur un gmtime
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.22
+ NAME 'mineqExpireTimestamp'
+ DESC 'Date d archivage differe d un compte dans Amedee'
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 
+ EQUALITY generalizedTimeMatch
+ ORDERING generalizedTimeOrderingMatch
+ SINGLE-VALUE )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.23
+ NAME 'mineqPublicationPhotoIntranet'
+ DESC 'Pour autoriser la publication de la photo sur Intranet'
+ EQUALITY caseIgnoreMatch
+ SUBSTR caseIgnoreSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{16} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.24
+ NAME 'mineqPublicationPhotoAder'
+ DESC 'Pour autoriser la publication de la photo sur AdER'
+ EQUALITY caseIgnoreMatch
+ SUBSTR caseIgnoreSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{16} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.25
+ NAME 'mineqVpnProfil'
+ DESC 'Profil de connexion vpn'
+ EQUALITY caseIgnoreMatch
+ SUBSTR caseIgnoreSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{16} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.26
+ NAME 'mineqVpnInfos'
+ DESC 'Infos relatives au profil de connexion vpn'
+ EQUALITY caseIgnoreMatch
+ SUBSTR caseIgnoreSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{512} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.27
+ NAME 'mineqAccesInternet'
+ DESC 'Profil de surf internet'
+ EQUALITY caseIgnoreMatch
+ SUBSTR caseIgnoreSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{32} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.28
+ NAME 'mineqMajInfoPerso'
+ DESC 'Donne le droit a la personne de modifier ses infos perso du type telephone'
+ EQUALITY caseIgnoreMatch
+ SUBSTR caseIgnoreSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{16} )
+
+#Attribut gender valeurs possible M ou F, provenant de la rfc 2985
+#non encore implemente dans les schemas fournis par OpenLdap
+attributetype (1.3.6.1.5.5.7.9.3
+ NAME 'gender'
+ DESC 'Gender'
+ EQUALITY caseIgnoreMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.44
+ SINGLE-VALUE)
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.29
+ NAME 'mineqAccesWifiA'
+ DESC 'Controle adminitrateur de la possibilite d acces wifi'
+ EQUALITY caseIgnoreMatch
+ SUBSTR caseIgnoreSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{64} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.30
+ NAME 'mineqAccesWifiU'
+ DESC 'Controle utilisateur de la possibilite d acces wifi'
+ EQUALITY caseIgnoreMatch
+ SUBSTR caseIgnoreSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{64} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.1.31
+ NAME 'mineqCerbereUID'
+ DESC 'Indentifiant Cerbere UTILISATEUR.ID'
+ EQUALITY caseExactMatch
+ SUBSTR caseExactSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{64} )
+
+
+#####################################################
+# Attributs messagerie : 1.3.6.1.4.1.15504.2.2.1.2.x
+#####################################################
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.1
+ NAME 'mineqMelmailEmission'
+ DESC 'Adresses SMTP utilisables en emission lors d un depot de message authentifie'
+ EQUALITY caseIgnoreIA5Match
+ SUBSTR caseIgnoreIA5SubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.2
+ NAME 'mineqMelReponse'
+ DESC 'Contient le message de reponse automatique (absence...)'
+ EQUALITY caseIgnoreMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{4096})
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.3
+ NAME 'mineqMelRestrictions'
+ DESC 'Restrictions de remise'
+ EQUALITY caseIgnoreMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{512} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.4
+ NAME 'mineqMelRoutage'
+ DESC 'Adresse SMTP permettant de routage interne ou un re-routage externe'
+ EQUALITY caseIgnoreIA5Match
+ SUBSTR caseIgnoreIA5SubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.5
+ NAME 'mineqMelRemise'
+ DESC 'Repertoire des Messages ou methode de remise'
+ EQUALITY caseIgnoreMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{1024}
+ SINGLE-VALUE )
+
+#~ attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.6
+ #~ NAME 'mineqMelNouvelleAdresse'
+ #~ DESC 'NPAI Nouvelle Adresse'
+ #~ EQUALITY caseIgnoreIA5Match
+ #~ SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256}
+ #~ SINGLE-VALUE )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.7
+ NAME 'mineqMelQuotas'
+ DESC 'Quotas de boite aux lettres'
+ EQUALITY caseIgnoreMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{128} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.8
+ NAME 'mineqMelMembres'
+ DESC 'Adresses SMTP d un membre de liste de distribution'
+ EQUALITY caseIgnoreIA5Match
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} )
+
+#~ attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.12
+ #~ NAME 'mineqMeluidNumber'
+ #~ DESC 'uidNumber pour la messagerie'
+ #~ EQUALITY integerMatch
+ #~ SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 SINGLE-VALUE )
+
+#~ attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.13
+ #~ NAME 'mineqMelgidNumber'
+ #~ DESC 'gidNumber pour la messagerie'
+ #~ EQUALITY integerMatch
+ #~ SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 SINGLE-VALUE )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.14
+ NAME 'mineqMelServeurPrincipal'
+ DESC 'Serveur principal'
+ EQUALITY caseIgnoreIA5Match
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256}
+ SINGLE-VALUE )
+ 
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.15
+ NAME 'mineqMelServeurSecours'
+ DESC 'Serveurs de secours'
+ EQUALITY caseIgnoreIA5Match
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.16
+ NAME 'mineqMelListeInfos'
+ DESC 'Infos sur l expansion des listes de diffusion'
+ EQUALITY caseIgnoreMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{256} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.18
+ NAME 'mineqMelPartages'
+ DESC 'Liste des uid:droits des ayant droits sur la bal'
+ EQUALITY caseIgnoreMatch
+ SUBSTR caseIgnoreSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{256} )
+
+#attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.19
+#	NAME 'mineqMelDomaines'
+#	DESC 'Liste de domaines SMTP'
+#	EQUALITY caseIgnoreIA5Match
+#	SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.20
+ NAME 'mineqMelAccesInternetA'
+ DESC 'Controle adminitrateur de la possibilite d acces depuis Internet a Horde'
+ EQUALITY caseIgnoreMatch
+ SUBSTR caseIgnoreSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{16} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.21
+ NAME 'mineqMelAccesInternetU'
+ DESC 'Controle utilisateur de la possibilite d acces depuis Internet a Horde'
+ EQUALITY caseIgnoreMatch
+ SUBSTR caseIgnoreSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{16} )
+
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.22
+ NAME 'mineqMelAccesSynchroA'
+ DESC 'Controle adminitrateur de la possibilite de synchro zPush'
+ EQUALITY caseIgnoreMatch
+ SUBSTR caseIgnoreSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{64} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.23
+ NAME 'mineqMelAccesSynchroU'
+ DESC 'Controle utilisateur de la possibilite de synchro zPush'
+ EQUALITY caseIgnoreMatch
+ SUBSTR caseIgnoreSubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{64} )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.24
+ NAME 'mailPR'
+ DESC 'Adresse mail PRincipale (la "premiere" valeur de mail)'
+ EQUALITY caseIgnoreIA5Match
+ SUBSTR caseIgnoreIA5SubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256}
+ SINGLE-VALUE )
+
+attributetype ( 1.3.6.1.4.1.15504.2.2.1.2.25
+ NAME 'mineqMelmailEmissionPR'
+ DESC 'Adresse d emissopn PRincipale (la "premiere" valeur de mineqMelmailEmission)'
+ EQUALITY caseIgnoreIA5Match
+ SUBSTR caseIgnoreIA5SubstringsMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256}
+ SINGLE-VALUE )
+
+
+
+#####################################################
+# Classes systeme : 1.3.6.1.4.1.15504.2.1.1.1.x            
+#####################################################
+
+objectClass ( 1.3.6.1.4.1.15504.2.1.1.1.2 NAME 'mineqEntite'
+ DESC 'Classe des OU du mineq'
+ SUP top AUXILIARY
+ MAY ( roomNumber $ mineqPortee $ mineqOrdreAffichage $ mineqTypeEntree $
+       mineqDomainesSMTP  $ info $ mineqZone $ mineqMission $
+       cn $ manager $ departmentNumber $ uniqueIdentifier $ mineqModifiedTimestamp $
+       mineqAccesWifiA $ mineqMelAccesInternetA $ mineqMelAccesSynchroA $ 
+       mineqAccesInternet $ mineqMajInfoPerso ) )
+
+
+objectClass ( 1.3.6.1.4.1.15504.2.1.1.1.3 NAME 'mineqNomenclature'
+ DESC 'Classe des entrees nomenclature'
+ SUP top STRUCTURAL
+ MAY ( mineqRDN $ cn $ description $ mineqZone $ mineqMission $ title $ businessCategory $
+       mineqDomainesSMTP $ mineqZone $ mineqPortee $ employeeNumber $ mineqModifiedTimestamp ) )
+
+
+objectClass ( 1.3.6.1.4.1.15504.2.1.1.1.4 NAME 'mineqPerson'
+ DESC 'Classe personnes equipement, complete les classes person'
+ SUP top AUXILIARY
+ MAY ( mineqPortee $ mineqOrdreAffichage $ mineqTypeEntree $
+       uid $ userPassword $ mineqCerbereUID $ 
+       mineqPasswordDoitChanger $ mineqPasswordModifyTimestamp $
+       mineqZone $ mineqMission $
+       mineqAccesWifiA $ mineqAccesWifiU $      
+       info $ gender $ mineqModifiedTimestamp $ mineqExpireTimestamp $
+       mineqPublicationPhotoIntranet $ mineqPublicationPhotoAder $
+       mineqVpnProfil $ mineqVpnInfos $ mineqAccesInternet $ mineqMajInfoPerso ) )
+
+
+objectClass ( 1.3.6.1.4.1.15504.2.1.1.1.5 NAME 'mineqGroup'
+ DESC 'Complement au posixGroup'
+ SUP top AUXILIARY
+ MAY ( sn $ owner $ departmentNumber $ info $ mineqPortee $ mineqModifiedTimestamp ) )
+
+
+#####################################################
+#Classes messagerie : 1.3.6.1.4.1.15504.2.1.1.2.x
+#####################################################
+
+#Classe Structurale de la messagerie
+####################################
+#Il a ete choisi de ne faire que des classes Auxilliaires
+#Pour creer un objet, il faut au moins une classe Structurale.
+#Si on n'a en pas, on structure avec mineqMelSA ...
+
+objectClass ( 1.3.6.1.4.1.15504.2.1.1.2.9999 NAME 'mineqMelSA'
+ DESC 'Classe structurale abstraite pour objet non type construit avec nos AUXILIARY'
+ SUP top 
+ STRUCTURAL )
+
+
+#Classes par type d'entree
+##########################
+
+objectClass ( 1.3.6.1.4.1.15504.2.1.1.2.5 NAME 'mineqMelBoite'
+ DESC 'Boite au lettre '
+ SUP top AUXILIARY 
+ MAY ( mineqPortee $ mineqOrdreAffichage $ mineqTypeEntree $
+       mineqMelRemise $ mineqMelQuotas $ mineqMelReponse $ 
+       mineqMelRestrictions $ mineqMelmailEmission $ 
+       mailPR $ mineqMelmailEmissionPR $ 
+       mineqMelServeurPrincipal $ mineqMelServeurSecours $
+       mineqMelPartages $ mineqLiensImport $
+       mineqMelAccesInternetA $ mineqMelAccesInternetU $
+       mineqMelAccesSynchroA $ mineqMelAccesSynchroU $
+       mineqAccesWifiA $ mineqAccesWifiU $
+       uid $ userPassword $ mail $ mineqCerbereUID $
+       mineqPasswordDoitChanger $ mineqPasswordModifyTimestamp $
+       mineqMelRoutage $ 
+       mineqZone $ mineqMission $
+       info $ gender $ mineqModifiedTimestamp $
+       mineqVpnProfil $ mineqVpnInfos $ mineqAccesInternet ) )
+
+objectClass ( 1.3.6.1.4.1.15504.2.1.1.2.6 NAME 'mineqMelDP'
+ DESC 'Destinataire particulier au sens Exchange'
+ SUP top AUXILIARY
+ MAY ( mineqRDN $ mineqLiensImport $ seeAlso $ mineqCerbereUID $
+       mineqPortee $ mineqOrdreAffichage $ mineqTypeEntree $
+       mail $ mailPR $ mineqMelRoutage $ 
+       cn $ sn $ givenName $ title $ businessCategory $ employeeNumber $
+       street $ postalAddress $ postalCode $ l $ physicalDeliveryOfficeName $
+       jpegPhoto $ mineqPublicationPhotoIntranet $ mineqPublicationPhotoAder $
+       roomNumber $ telephoneNumber $ facsimileTelephoneNumber $ mobile $
+       departmentNumber $ description $ info $ gender $ mineqZone $ mineqMission $ mineqModifiedTimestamp ) )
+
+objectClass ( 1.3.6.1.4.1.15504.2.1.1.2.7 NAME 'mineqMelObjetPartage'
+ DESC 'Objet technique utilise pour les partages de boites'
+ SUP top AUXILIARY 
+ MAY ( cn $ uid $ userPassword $ mineqMelPartages $ mineqMelmailEmission $ 
+       mineqMelmailEmissionPR $ mineqModifiedTimestamp ) )
+
+
+
+#Classes listes
+###############
+
+objectClass ( 1.3.6.1.4.1.15504.2.1.1.2.14 NAME 'mineqMelListe'
+ DESC 'Liste de distribution'
+ SUP top AUXILIARY
+ MAY ( mineqRDN $ seeAlso $ 
+       mineqMelMembres $ 
+       mineqMelListeInfos $ 
+       mineqPortee $ mineqOrdreAffichage $ mineqTypeEntree $
+       mineqMelRemise $ 
+       mineqMelReponse $ mineqMelRestrictions $ 
+       mail $ mailPR $ mineqMelRoutage $ 
+       cn $ sn $ owner $ mineqModifiedTimestamp $
+       departmentNumber $ description $ info $ mineqZone $ mineqMission ) )
+
+objectClass ( 1.3.6.1.4.1.15504.2.1.1.2.15 NAME 'mineqMelListeAbonnement'
+ DESC 'Liste a abonnement'
+ SUP top AUXILIARY
+ MAY ( mineqRDN $ seeAlso $ 
+       mineqMelListeInfos $ 
+       mineqPortee $ mineqOrdreAffichage $ mineqTypeEntree $
+       mineqMelRemise $ 
+       mineqMelReponse $ mineqMelRestrictions $ 
+       mail $ mailPR $ mineqMelRoutage $ 
+       cn $ sn $ owner $ mineqModifiedTimestamp $
+       departmentNumber $ description $ info $ mineqZone $ mineqMission ) )
+
+
+
+
+
+
+#~ ########################################################
+#~ # attributs OpenGroupeware.Org : 1.3.6.1.4.1.15504.2.2.1.3.x 
+#~ ########################################################
+
+#~ attributetype ( 1.3.6.1.4.1.15504.2.2.1.3.1
+ #~ NAME 'mineqOgoProfil'
+ #~ DESC 'Type d usage d OpenGroupware'
+ #~ EQUALITY caseIgnoreMatch
+ #~ SUBSTR caseIgnoreSubstringsMatch
+ #~ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{128} )
+
+#~ attributetype ( 1.3.6.1.4.1.15504.2.2.1.3.2
+ #~ NAME 'mineqOgoAccesInternet'
+ #~ DESC 'Valide la possibilite d acces depuis Internet a Ogo'
+ #~ EQUALITY caseIgnoreMatch
+ #~ SUBSTR caseIgnoreSubstringsMatch
+ #~ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{16} )
+
+#~ attributetype ( 1.3.6.1.4.1.15504.2.2.1.3.3
+ #~ NAME 'mineqOgoPartages'
+ #~ DESC 'Liste des uid:droits des ayant droits sur l agenda'
+ #~ EQUALITY caseIgnoreMatch
+ #~ SUBSTR caseIgnoreSubstringsMatch
+ #~ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{256} )
+
+
+#~ ########################################################
+#~ # classes  OpenGroupeware.Org : 1.3.6.1.4.1.15504.2.1.1.3.x 
+#~ ########################################################
+
+#~ objectClass ( 1.3.6.1.4.1.15504.2.1.1.3.1 NAME 'mineqOgo'
+ #~ DESC 'Classe pour utilisateurs OpenGroupware'
+ #~ SUP ( top $ mineqMelBoite ) AUXILIARY
+ #~ MAY ( mineqOgoProfil $ mineqOgoAccesInternet $ mineqOgoPartages ) )
+ 
+
+

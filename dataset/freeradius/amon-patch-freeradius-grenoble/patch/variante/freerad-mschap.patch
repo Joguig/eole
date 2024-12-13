@@ -1,0 +1,10 @@
+--- distrib/freerad-mschap	2015-01-16 16:26:29.000000000 +0100
++++ modif/freerad-mschap	2016-09-21 10:08:44.373374442 +0200
+@@ -63,4 +63,7 @@
+ 	# the "best" user name for the request.
+ 	#
+ 	#ntlm_auth = "/path/to/ntlm_auth --request-nt-key --username=%{%{Stripped-User-Name}:-%{User-Name:-None}} --challenge=%{mschap:Challenge:-00} --nt-response=%{mschap:NT-Response:-00}"
++%if %%freerad_acc_type_annuaire == 'AD'
++    ntlm_auth = "/usr/bin/ntlm_auth --request-nt-key --username=%{%{Stripped-User-Name}:-%{User-Name:-None}} --domain=%%fr_nom_domaine_windows --challenge=%{mschap:Challenge:-00} --nt-response=%{mschap:NT-Response:-00}"
++%end if
+ }

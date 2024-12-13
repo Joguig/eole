@@ -1,0 +1,32 @@
+=============================
+Jeu de tests `aaf-delta`
+=============================
+
+**dans tous les cas, partir d'une database qui a été vidée.**
+
+test élèves
+------------
+
+- dans le cas `addRequest` :
+
+    - lancer `aaf-delta` avec les données du dossier `delta` dans `/home/aaf-delta`
+
+- dans le cas `modifyRequest` :
+
+    - test du cas anormal (l'élève à modifier **n'est pas** présent dans la base)
+
+        - lancer `aaf-delta` avec les données du dossier `delta` dans 
+          `/home/aaf-delta`
+
+    - test du cas normal (l'élève est bien dans la base):
+
+        - lancer `aaf-complet` avec les données du dossier `complet` dans 
+          `/home/aaf-complet`
+  
+        - lancer `aaf-delta` avec les données du dossier `delta` dans 
+          `/home/aaf-delta`
+
+- dans le cas `deleteRequest` :
+
+    - lancer `aaf-complet` avec les données du dossier `complet`
+    - lancer `aaf-delta` avec les données du dossier `delta`

@@ -1,0 +1,12 @@
+{
+"nombre_interfaces": {"owner": "gen_config", "val": "5"},
+"era_proxy_bypass_eth1": {"owner": "gen_config", "val": ["1.1.1.1", "2.2.2.2"]},
+"era_proxy_bypass_eth3": {"owner": "gen_config", "val": ["3.3.3.3"]},
+"adresse_ip_wpad_exclude": {"owner": "gen_config", "val": ["8.8.8.8", "10.0.0.0"]},
+"adresse_netmask_wpad_exclude": {"owner": "gen_config", "val": ["255.255.255.255", "255.255.255.0"]},
+"interface_wpad_exclude": {"owner": "gen_config", "val": ["Toutes", "2"]},
+"nom_domaine_wpad_exclude": {"owner": "gen_config", "val": ["eole.ac-dijon.fr", "free.fr"]},
+"nom_interface_wpad_exclude": {"owner": "gen_config", "val": ["Toutes", "3"]},
+"nom_host_wpad_exclude": {"owner": "gen_config", "val": ["hote.com"]},
+"nom_host_interface_wpad_exclude": {"owner": "gen_config", "val": ["Toutes"]}
+}

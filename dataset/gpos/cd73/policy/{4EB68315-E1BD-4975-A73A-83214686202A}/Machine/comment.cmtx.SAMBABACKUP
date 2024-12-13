@@ -1,0 +1,32 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<policyComments xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/CommentDefinitions">
+  <policyNamespaces>
+    <using prefix="ns0" namespace="Microsoft.Policies.WindowsDefender"></using>
+    <using prefix="ns1" namespace="Microsoft.Policies.WindowsFirewall"></using>
+    <using prefix="ns2" namespace="Microsoft.Policies.WindowsRemoteManagement"></using>
+  </policyNamespaces>
+  <comments>
+    <admTemplate>
+      <comment policyRef="ns0:DisableAntiSpywareDefender" commentText="$(resource.ns0_DisableAntiSpywareDefender)"></comment>
+      <comment policyRef="ns1:WF_AllowedProgramsLocal_Name_1" commentText="$(resource.ns1_WF_AllowedProgramsLocal_Name_1)"></comment>
+      <comment policyRef="ns1:WF_AllowedPrograms_Name_1" commentText="$(resource.ns1_WF_AllowedPrograms_Name_1)"></comment>
+      <comment policyRef="ns1:WF_IcmpSettings_Name_1" commentText="$(resource.ns1_WF_IcmpSettings_Name_1)"></comment>
+      <comment policyRef="ns1:WF_OpenPortsLocal_Name_1" commentText="$(resource.ns1_WF_OpenPortsLocal_Name_1)"></comment>
+      <comment policyRef="ns1:WF_RemoteAdmin_Name_1" commentText="$(resource.ns1_WF_RemoteAdmin_Name_1)"></comment>
+      <comment policyRef="ns1:WF_RemoteDesktop_Name_1" commentText="$(resource.ns1_WF_RemoteDesktop_Name_1)"></comment>
+      <comment policyRef="ns2:AllowAutoConfig" commentText="$(resource.ns2_AllowAutoConfig)"></comment>
+    </admTemplate>
+  </comments>
+  <resources minRequiredRevision="1.0">
+    <stringTable>
+      <string id="ns0_DisableAntiSpywareDefender">Désactivation de Antivirus Windows Defender</string>
+      <string id="ns1_WF_AllowedProgramsLocal_Name_1">Permet de définir une liste de programmes autorisés.</string>
+      <string id="ns1_WF_AllowedPrograms_Name_1">Liste de programmes locaux autorisés au niveau du parefeu.</string>
+      <string id="ns1_WF_IcmpSettings_Name_1">Autoriser les pings</string>
+      <string id="ns1_WF_OpenPortsLocal_Name_1">Pour Winrm</string>
+      <string id="ns1_WF_RemoteAdmin_Name_1">Autoriser l'administration à distance</string>
+      <string id="ns1_WF_RemoteDesktop_Name_1">Autorisation du bureau à distance pour 10.173.x.x et 10.1.x.x</string>
+      <string id="ns2_AllowAutoConfig">Autoriser la gestion à distance depuis IP 10.173.2.x</string>
+    </stringTable>
+  </resources>
+</policyComments>

@@ -1,0 +1,137 @@
+<PolFile num_entries="27" signature="PReg" version="1">
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\Windows\WinRM\Service</Key>
+		<ValueName>AllowAutoConfig</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>SOFTWARE\Policies\Microsoft\Windows\WinRM\Service</Key>
+		<ValueName>IPv4Filter</ValueName>
+		<Value>*</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>SOFTWARE\Policies\Microsoft\Windows\WinRM\Service</Key>
+		<ValueName>IPv6Filter</ValueName>
+		<Value>*</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\Windows Defender</Key>
+		<ValueName>DisableAntiSpyware</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall</Key>
+		<ValueName>PolicyVersion</ValueName>
+		<Value>540</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\AuthorizedApplications</Key>
+		<ValueName>AllowUserPrefMerge</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\AuthorizedApplications</Key>
+		<ValueName>Enabled</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\AuthorizedApplications\List</Key>
+		<ValueName>C:\appsportables\ardublock-educ-1.7_arduino-1.6.11\java\bin\javaw.exe:*:enabled:Java-Arduino 1.7</ValueName>
+		<Value>C:\appsportables\ardublock-educ-1.7_arduino-1.6.11\java\bin\javaw.exe:*:enabled:Java-Arduino 1.7</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\AuthorizedApplications\List</Key>
+		<ValueName>C:\program files\cisco packet tracer 7.1\bin\packettracer7.exe:*:enabled:Java-Packet-Tracer</ValueName>
+		<Value>C:\program files\cisco packet tracer 7.1\bin\packettracer7.exe:*:enabled:Java-Packet-Tracer</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\AuthorizedApplications\List</Key>
+		<ValueName>C:\program files\java\jre1.8.0_201\bin\javaw.exe:*:enabled:Java(TM) Platform SE binary</ValueName>
+		<Value>C:\program files\java\jre1.8.0_201\bin\javaw.exe:*:enabled:Java(TM) Platform SE binary</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\GloballyOpenPorts</Key>
+		<ValueName>AllowUserPrefMerge</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings</Key>
+		<ValueName>AllowOutboundDestinationUnreachable</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings</Key>
+		<ValueName>AllowOutboundSourceQuench</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings</Key>
+		<ValueName>AllowRedirect</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings</Key>
+		<ValueName>AllowInboundEchoRequest</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings</Key>
+		<ValueName>AllowInboundRouterRequest</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings</Key>
+		<ValueName>AllowOutboundTimeExceeded</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings</Key>
+		<ValueName>AllowOutboundParameterProblem</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings</Key>
+		<ValueName>AllowInboundTimestampRequest</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings</Key>
+		<ValueName>AllowInboundMaskRequest</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\IcmpSettings</Key>
+		<ValueName>AllowOutboundPacketTooBig</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\RemoteAdminSettings</Key>
+		<ValueName>Enabled</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\RemoteAdminSettings</Key>
+		<ValueName>RemoteAddresses</ValueName>
+		<Value>10.173.0.0/16,10.1.0.0/16</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Services\RemoteDesktop</Key>
+		<ValueName>Enabled</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Services\RemoteDesktop</Key>
+		<ValueName>RemoteAddresses</ValueName>
+		<Value>10.173.0.0/16,10.1.0.0/16</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\FirewallRules</Key>
+		<ValueName>WINRM-HTTP-In-TCP</ValueName>
+		<Value>v2.28|Action=Allow|Active=TRUE|Dir=In|Protocol=6|Profile=Public|LPort=5985|RA4=LocalSubnet|RA6=LocalSubnet|App=System|Name=@FirewallAPI.dll,-30253|Desc=@FirewallAPI.dll,-30256|EmbedCtxt=@FirewallAPI.dll,-30267|</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>SOFTWARE\Policies\Microsoft\WindowsFirewall\FirewallRules</Key>
+		<ValueName>WINRM-HTTP-In-TCP-NoScope</ValueName>
+		<Value>v2.28|Action=Allow|Active=TRUE|Dir=In|Protocol=6|Profile=Domain|Profile=Private|LPort=5985|App=System|Name=@FirewallAPI.dll,-30253|Desc=@FirewallAPI.dll,-30256|EmbedCtxt=@FirewallAPI.dll,-30267|</Value>
+	</Entry>
+</PolFile>

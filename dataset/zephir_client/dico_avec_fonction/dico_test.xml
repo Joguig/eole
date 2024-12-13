@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<creole>
+    <files>
+    </files>
+    <containers>
+    </containers>
+    <!--************************************************************************************************* -->
+    <variables>
+        <family name='test_perso'>
+            <variable name='var_test_fonction_perso' type='string' description='variable de test zephir fonctions persos'/>
+        </family>
+    </variables>
+    <constraints>
+        <fill name='calc_val_test' target='var_test_fonction_perso'>
+            <param type='eole'>nom_machine</param>
+        </fill>
+    </constraints>
+    <help/>
+</creole>
+<!-- vim: ts=4 sw=4 expandtab
+-->

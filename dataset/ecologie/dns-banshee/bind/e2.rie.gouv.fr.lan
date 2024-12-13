@@ -1,0 +1,37 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA    e2.rie.gouv.fr admin.e2.rie.gouv.fr (
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       		IN      NS      ns.e2.rie.gouv.fr.
+NS      		IN      A       192.168.227.12
+banshee.eole 		IN      A       192.168.227.12
+debmiroir-01.eole	IN	A       194.167.18.18
+debmiroir-02.eole	IN	A	194.167.18.18
+ldapma.m2		IN	A	192.168.227.10
+ldapsmb.m2		IN	A	192.168.227.10
+smtp.m2			IN	A	192.168.232.2
+ntp.eole		IN	A	192.168.232.2
+esbl-ddt101.eole	IN	A	192.168.227.11
+esbl-ad.eole		IN	A	192.168.227.14
+dns-banshee.eole	IN	A	192.168.227.12
+radius.eole		IN	A	192.168.227.13
+ecdl-ddt101.eole	IN	A	192.168.227.15
+depot-intra.eole	IN	A	192.168.227.16
+zephir.eole		IN	A	192.168.227.20
+pdc-ad1.eole		IN	A	192.168.227.21
+pdc-ad2.eole		IN	A	192.168.227.22
+spc.eole		IN	A	192.168.227.91
+siegeNT1.eole		IN	A	192.168.227.41
+siegeNT2.eole		IN	A	192.168.227.51
+siegeAD1.eole		IN	A	192.168.227.61
+siegeAD2.eole		IN	A	192.168.227.71
+vut.eole		IN	A	192.168.227.81
+stats1.eole		IN	A	192.168.227.12
+stats2.eole		IN	A	192.168.227.12

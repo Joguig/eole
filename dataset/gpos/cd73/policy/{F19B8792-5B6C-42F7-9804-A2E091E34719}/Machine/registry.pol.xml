@@ -1,0 +1,62 @@
+<PolFile num_entries="12" signature="PReg" version="1">
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Mozilla\Firefox\Proxy</Key>
+		<ValueName>Locked</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Policies\Mozilla\Firefox\Proxy</Key>
+		<ValueName>Mode</ValueName>
+		<Value>manual</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Policies\Mozilla\Firefox\Proxy</Key>
+		<ValueName>HTTPProxy</ValueName>
+		<Value>10.173.92.1:3128</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Mozilla\Firefox\Proxy</Key>
+		<ValueName>UseHTTPProxyForAllProtocols</ValueName>
+		<Value>1</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Policies\Mozilla\Firefox\Proxy</Key>
+		<ValueName>SSLProxy</ValueName>
+		<Value />
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Policies\Mozilla\Firefox\Proxy</Key>
+		<ValueName>FTPProxy</ValueName>
+		<Value />
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Policies\Mozilla\Firefox\Proxy</Key>
+		<ValueName>SOCKSProxy</ValueName>
+		<Value />
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Mozilla\Firefox\Proxy</Key>
+		<ValueName>SOCKSVersion</ValueName>
+		<Value>5</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Policies\Mozilla\Firefox\Proxy</Key>
+		<ValueName>Passthrough</ValueName>
+		<Value>*.savoie-colleges.fr, *.collegessavoie.fr, collegessavoie.fr, 10.173.0.0/16</Value>
+	</Entry>
+	<Entry type="1" type_name="REG_SZ">
+		<Key>Software\Policies\Mozilla\Firefox\Proxy</Key>
+		<ValueName>AutoConfigURL</ValueName>
+		<Value />
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Mozilla\Firefox\Proxy</Key>
+		<ValueName>AutoLogin</ValueName>
+		<Value>0</Value>
+	</Entry>
+	<Entry type="4" type_name="REG_DWORD">
+		<Key>Software\Policies\Mozilla\Firefox\Proxy</Key>
+		<ValueName>UseProxyForDNS</ValueName>
+		<Value>0</Value>
+	</Entry>
+</PolFile>

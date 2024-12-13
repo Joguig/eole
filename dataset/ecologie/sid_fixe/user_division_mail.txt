@@ -1,0 +1,60 @@
+dn: CN=p10.nom-gouv,CN=Users,DC=ac-test,DC=fr
+changetype: modify
+replace: division, mail
+division: uid=p10.nom-gouv,ou=groupe1,ou=PGCI,ou=RH,ou=DREAL Rhône-Alpes,ou=DR,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+mail: p10.nom-gouv@developpement-durable.gouv.fr
+
+dn: CN=p10.nom-i2,CN=Users,DC=ac-test,DC=fr
+changetype: modify
+replace: division, mail
+division: uid=p10.nom-i2,ou=groupe1,ou=PGCI,ou=RH,ou=DREAL Rhône-Alpes,ou=DR,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+mail: p10.nom-i2@i-carre.net
+
+dn: CN=p11.nom-gouv,CN=Users,DC=ac-test,DC=fr
+changetype: modify
+replace: division, mail
+division: uid=p11.nom-gouv,ou=sous-groupe1,ou=groupe1,ou=PGCI,ou=RH,ou=DREAL Rhône-Alpes,ou=DR,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+mail: p11.nom-gouv@developpement-durable.gouv.fr
+
+dn: CN=p11.nom-i2,CN=Users,DC=ac-test,DC=fr
+changetype: modify
+replace: division, mail
+division: uid=p11.nom-i2,ou=sous-groupe1,ou=groupe1,ou=PGCI,ou=RH,ou=DREAL Rhône-Alpes,ou=DR,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+mail: p11.nom-i2@i-carre.net
+
+dn: CN=p12.nom-gouv,CN=Users,DC=ac-test,DC=fr
+changetype: modify
+replace: division, mail
+division: uid=p12.nom-gouv,ou=sous-groupe2,ou=groupe1,ou=PGCI,ou=RH,ou=DREAL Rhône-Alpes,ou=DR,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+mail: p12.nom-gouv@developpement-durable.gouv.fr
+
+dn: CN=p11a.nom-gouv,CN=Users,DC=ac-test,DC=fr
+changetype: modify
+replace: division, mail
+division: uid=p11a.nom-i2,ou=sêrviçè âvé àccénts,ou=sous-groupe1,ou=groupe1,ou=PGCI,ou=RH,ou=DREAL Rhône-Alpes,ou=DR,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+mail: p11a.nom-gouv@developpement-durable.gouv.fr
+
+dn: CN=p11b.nom-gouv,CN=Users,DC=ac-test,DC=fr
+changetype: modify
+replace: division, mail
+division: uid=p11b.nom-i2,ou=- service- ---tiret-,ou=sous-groupe1,ou=groupe1,ou=PGCI,ou=RH,ou=DREAL Rhône-Alpes,ou=DR,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+mail: p11b.nom-gouv@developpement-durable.gouv.fr
+
+dn: CN=p11c.nom-i2,CN=Users,DC=ac-test,DC=fr
+changetype: modify
+replace: division, mail
+division: uid=p11c.nom-i2,ou=' service'' apostrophe'',ou=sous-groupe1,ou=groupe1,ou=PGCI,ou=RH,ou=DREAL Rhône-Alpes,ou=DR,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+mail: p11c.nom-i2@i-carre.net
+
+dn: CN=p12d.nom-gouv,CN=Users,DC=ac-test,DC=fr
+changetype: modify
+replace: division, mail
+division: uid=p12d.nom-gouv,ou=.service.. - .-.point..,ou=sous-groupe2,ou=groupe1,ou=PGCI,ou=RH,ou=DREAL Rhône-Alpes,ou=DR,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+mail: p12d.nom-gouv@developpement-durable.gouv.fr
+
+dn: CN=p12e.nom-i2,CN=Users,DC=ac-test,DC=fr
+changetype: modify
+replace: division, mail
+division: uid=p12e.nom-gouv,ou='.service-. .espace,ou=sous-groupe2,ou=groupe1,ou=PGCI,ou=RH,ou=DREAL Rhône-Alpes,ou=DR,ou=melanie,ou=organisation,dc=equipement,dc=gouv,dc=fr
+mail: p12e.nom-i2@i-carre.net
+
