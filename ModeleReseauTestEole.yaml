@@ -1,0 +1,1654 @@
+bases:
+  - base: eole
+    # pas de version ==> toutes versions
+
+  - base: win
+    # pas de version ==> toutes versions
+
+  - base: mac
+    # pas de version ==> toutes versions
+    imageNebula: macOs.qcow2
+    architecture: amd64
+
+  - base: win10
+    imageNebula: Windows10.22H2-amd64.vm
+    architecture: amd64
+
+  - base: win11
+    imageNebula: Windows11.22H2-amd64.vm
+    architecture: amd64
+
+  - base: linux
+    imageNebula: pc-mate-2204.vm
+    architecture: amd64
+
+  - base: w2k3
+    imageNebula: Windows2003-ip73.vm
+    architecture: amd64
+
+  - base: w2012R2
+    imageNebula: Windows2012R2-amd64.vm
+    architecture: amd64
+
+  - base: w2019
+    imageNebula: Windows2019-amd64.vm
+    architecture: amd64
+
+  - base: eolecitests
+    imageNebula: eolecitests.fi
+    architecture: amd64
+
+  - base: pxe
+    architecture: amd64
+
+  - base: ubuntu
+    imageNebula: ubuntu-20.04-server-amd64.daily
+    architecture: amd64
+
+  - base: debian
+    imageNebula: debian-10.4.0-amd64-eole-ci-tests.fi
+    architecture: amd64
+
+  - base: rieldapma
+    imageNebula: rie-ldapma.vm
+    architecture: amd64
+
+  - base: rie-dns-banshee
+    imageNebula: rie-dns-banshee.vm
+    architecture: amd64
+
+  - base: kubernetes
+    imageNebula: kubernetes.vm
+    architecture: amd64
+
+  - base: gateway
+    imageNebula: gateway.fi
+    architecture: amd64
+
+  - base: robot
+    imageNebula: robot.fi
+    architecture: amd64
+
+  - base: eole3k3d
+    imageNebula: eolebase-3-k3d-disk-0
+    architecture: amd64
+
+switchs:
+  - sw: academie
+    network: 192.168.0
+  - sw: windows
+    network: 192.168.253
+  - sw: interco
+    network: 172.30.101
+  - sw: racine
+    network: 172.31.20
+  - sw: raip
+    network: 172.31.21
+  - sw: ha1
+    network: 10.0.254
+  - sw: admin1
+    network: 10.1.1
+  - sw: pedago1
+    network: 10.1.2
+  - sw: dmz1
+    network: 10.1.3
+  - sw: admin2
+    network: 10.2.1
+  - sw: pedago2
+    network: 10.2.2
+  - sw: dmz2
+    network: 10.2.3
+  - sw: dmz2priv
+    network: 10.2.4
+  - sw: pedago3
+    network: 10.3.2
+  - sw: pedago4
+    network: 10.4.2
+  - sw: admin5
+    network: 10.5.1
+  - sw: pedago6
+    network: 10.6.2
+
+  - sw: RIE
+    network: 192.168.227
+  - sw: vext
+    network: 10.200.0
+  - sw: vsiege-nt1
+    network: 10.200.1
+  - sw: vdmz-nt1
+    network: 10.200.2
+  - sw: vwifi-nt1
+    network: 10.200.3
+  - sw: vsiege-nt2
+    network: 10.200.6
+  - sw: vdmz-nt2
+    network: 10.200.7
+  - sw: vwifi-nt2
+    network: 10.200.8
+  - sw: vsiege-ad1
+    network: 10.200.11
+  - sw: vdmz-ad1
+    network: 10.200.12
+  - sw: vwifi-ad1
+    network: 10.200.13
+  - sw: vsiege-ad2
+    network: 10.200.16
+  - sw: vdmz-ad2
+    network: 10.200.17
+  - sw: vwifi-ad2
+    network: 10.200.18
+  - sw: vut
+    network: 10.200.20
+  - sw: vspcmet
+    network: 10.200.30
+  - sw: vspccol
+    network: 10.200.31
+
+networks:
+  - etablissement: aca
+    noEtab: 0000000A
+    machines:
+    - machine: gateway
+      base: gateway
+      templates: []
+      switchs:
+      - sw: academie
+        host: 1
+
+    - machine: eolecitests
+      base: eolecitests
+      templates: [EoleCiTests]
+      depends:
+      - depend: gateway
+      switchs:
+      - sw: academie
+        host: 253
+
+    - machine: ubuntuserver
+      base: ubuntu
+      templates: [UbuntuBasic,UbuntuServer]
+      switchs:
+      - sw: academie
+        host: 2
+
+    - machine: dc1
+      module: seth
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      switchs:
+      - sw: academie
+        host: 5
+
+    - machine: dc2
+      module: seth
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      switchs:
+      - sw: academie
+        host: 6
+
+    - machine: file
+      module: seth
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      switchs:
+      - sw: academie
+        host: 7
+
+    - machine: file1
+      module: seth
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      switchs:
+      - sw: academie
+        host: 9
+
+    - machine: dc3
+      module: seth
+      contrainte: version >= 2.6.2
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      switchs:
+      - sw: academie
+        host: 8
+
+    - machine: proxy
+      module: base
+      base: eole
+      # cf doc e2guardian !!
+      memoire: 8192
+      contrainte: version >= 2.6.0
+      templates: [FreshInstall,Daily,Instance]
+      depends:
+      - depend: scribe
+      switchs:
+      - sw: academie
+        host: 10
+
+    - machine: sphynx
+      module: sphynx
+      templates: [FreshInstall,Daily,Instance,AllConfiguration]
+      base: eole
+      switchs:
+      - sw: academie
+        host: 11
+      - sw: interco
+        host: 11
+      - sw: ha1
+        host: 11
+
+    - machine: sphynxslave
+      templates: [FreshInstall,Daily,Instance]
+      module: sphynx
+      base: eole
+      switchs:
+      - sw: academie
+        host: 12
+      - sw: interco
+        host: 12
+      - sw: ha1
+        host: 12
+
+    - machine: srvagriates
+      module: base
+      base: eole
+      switchs:
+      - sw: interco
+        host: 23
+
+    - machine: zephir
+      module: zephir
+      base: eole
+      templates: [FreshInstall,Daily,Instance,AvecConf]
+      switchs:
+      - sw: academie
+        host: 20
+
+    - machine: sentinelle
+      module: sentinelle
+      base: eole
+      switchs:
+      - sw: academie
+        host: 21
+
+    - machine: thot
+      module: thot
+      templates: [FreshInstall,Daily,Cdrom,Instance]
+      base: eole
+      switchs:
+      - sw: academie
+        host: 22
+
+    - machine: seshat
+      module: seshat
+      templates: [FreshInstall,Daily,Cdrom,Instance]
+      base: eole
+      switchs:
+      - sw: academie
+        host: 23
+
+    - machine: eolebase
+      module: base
+      base: eole
+      templates: [FreshInstall,Daily,Cdrom,Instance,AvecCdrom]
+      switchs:
+      - sw: academie
+        host: 24
+
+    - machine: horus
+      module: horus
+      templates: [FreshInstall,Daily,Cdrom,Instance]
+      base: eole
+      switchs:
+      - sw: academie
+        host: 25
+        hostAddc: 29
+
+    - machine: scribe
+      module: scribe
+      templates: [FreshInstall,Daily,Instance,AvecImport]
+      base: eole
+      switchs:
+      - sw: academie
+        host: 26
+        hostAddc: 30
+
+    - machine: envole
+      module: scribe
+      templates: [FreshInstall,Daily,Instance,AvecImport]
+      base: eole
+      switchs:
+      - sw: academie
+        host: 27
+        hostAddc: 37
+
+    - machine: k3d
+      base: eole3k3d
+      contrainte: version >= 3.0
+      memoire: 20480
+      switchs:
+      - sw: academie
+        host: 17
+
+    - machine: eole3
+      base: eole3k3d
+      contrainte: version >= 3.0
+      memoire: 20480
+      switchs:
+      - sw: academie
+        host: 101
+
+    - machine: k8s
+      base: kubernetes
+      templates: [ServerNonEole]
+      memoire: 20480
+      switchs:
+      - sw: academie
+        host: 18
+
+    - machine: uk8s
+      module: base
+      base: eole
+      contrainte: version >= 3.0
+      templates: [FreshInstall,Daily,Instance,AvecImport]
+      memoire: 20480
+      switchs:
+      - sw: academie
+        host: 19
+
+    - machine: kubernetes-master
+      base: kubernetes
+      templates: [ServerNonEole]
+      memoire: 20480
+      switchs:
+      - sw: academie
+        host: 200
+
+    - machine: kubernetes-node
+      base: kubernetes
+      templates: [ServerNonEole]
+      memoire: 8192
+      switchs:
+      - sw: academie
+        allocation: Dhcp
+
+
+# reserved : ip addc horus 29
+# reserved : ip addc scribe 30
+# reserved : ip addc envole 37
+
+    - machine: ha-master
+      module: base
+      base: eole
+      switchs:
+      - sw: academie
+        host: 40
+
+    - machine: ha-slave
+      module: base
+      base: eole
+      switchs:
+      - sw: academie
+        host: 41
+
+    - machine: ubuntu
+      base: ubuntu
+      templates: [UbuntuBasic,UbuntuServer]
+      switchs:
+      - sw: academie
+        host: 50
+
+    - machine: ubuntu-dhcp
+      base: ubuntu
+      templates: [ServerNonEole]
+      memoire: 8192
+      switchs:
+      - sw: academie
+        allocation: Dhcp
+
+    - machine: WindowsServerAD
+      base: w2k3
+      templates: [ServerWindows]
+      depends:
+      - depend: eolecitests
+      switchs:
+      - sw: academie
+        host: 73
+
+    - machine: hapy
+      module: hapy
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      switchs:
+      - sw: academie
+        host: 115
+      - sw: academie
+        allocation: Manual
+        host: 117
+
+    - machine: hapy-node
+      module: hapy-node
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      switchs:
+      - sw: academie
+        host: 114
+      - sw: academie
+        allocation: Manual
+        host: 117
+
+    - machine: hapy-market
+      module: hapy-market
+      base: eole
+      switchs:
+      - sw: academie
+        host: 113
+      - sw: academie
+        allocation: Manual
+        host: 117
+
+    - machine: hapy-master
+      module: hapy-master
+      base: eole
+      switchs:
+      - sw: academie
+        host: 112
+      - sw: academie
+        allocation: Manual
+        host: 117
+
+    - machine: esbl
+      module: esbl
+      base: eole
+      switchs:
+      - sw: academie
+        host: 80
+
+    - machine: ecdl
+      module: ecdl
+      base: eole
+      switchs:
+      - sw: academie
+        host: 81
+
+    - machine: mac
+      base: mac
+      templates: [Mac]
+      depends:
+      - depend: eolecitests
+      switchs:
+      - sw: academie
+        allocation: Dhcp
+
+    - machine: pc
+      base: win10
+      templates: [Pc,PcDaily]
+      depends:
+      - depend: eolecitests
+      switchs:
+      - sw: academie
+        allocation: Dhcp
+
+    - machine: eolebasedhcp
+      module: base
+      base: eole
+      templates: [TestCharge]
+      switchs:
+      - sw: academie
+        allocation: Dhcp
+
+    - machine: robot
+      base: robot
+      templates: [ServerNonEole]
+      switchs:
+      - sw: academie
+        host: 252
+      - sw: admin1
+        host: 252
+      - sw: pedago1
+        host: 252
+      - sw: dmz1
+        host: 252
+      - sw: pedago3
+        host: 252
+
+  - etablissement: in
+    noEtab: 00000009
+    machines:
+    - machine: routeuretab
+      base: ubuntu
+      templates: [UbuntuBasic]
+      switchs:
+      - sw: academie
+        host: 39
+      - sw: interco
+        host: 24
+      - sw: racine
+        host: 1
+      - sw: raip
+        host: 1
+
+    - machine: srvracine
+      base: ubuntu
+      templates: [UbuntuBasic]
+      switchs:
+      - sw: racine
+        host: 10
+
+    - machine: srvraip
+      base: ubuntu
+      templates: [UbuntuBasic]
+      switchs:
+      - sw: raip
+        host: 10
+
+  - etablissement: etb1
+    noEtab: 00000001
+    machines:
+    - machine: amon
+      module: amon
+      templates: [FreshInstall,Daily,Cdrom,Instance,AllConfiguration]
+      base: eole
+      switchs:
+      - sw: academie
+        host: 31
+      - sw: admin1
+        host: 1
+      - sw: pedago1
+        host: 1
+      - sw: dmz1
+        host: 1
+
+    - machine: hapy
+      module: hapy
+      hostname: hapy1
+      templates: [FreshInstall,Daily,Instance]
+      contrainte: version >= 2.7.2
+      base: eole
+      switchs:
+      - sw: academie
+        host: 116
+      - sw: academie
+        allocation: Manual
+        host: 117
+      - sw: admin1
+        allocation: Manual
+        host: 116
+      - sw: pedago1
+        allocation: Manual
+        host: 116
+      - sw: dmz1
+        allocation: Manual
+        host: 116
+
+    - machine: scribe
+      module: scribe
+      base: eole
+      templates: [FreshInstall,Daily,Instance,AvecImport,AvecImportSconet]
+      depends:
+      - depend: amon
+      switchs:
+      - sw: dmz1
+        host: 5
+        hostAddc: 11
+
+    - machine: seth1
+      module: seth
+      base: eole
+      templates: [FreshInstall,Daily,Instance]
+      depends:
+      - depend: amon
+      switchs:
+      - sw: dmz1
+        host: 6
+
+    - machine: seth2
+      module: seth
+      base: eole
+      templates: [FreshInstall,Daily]
+      depends:
+      - depend: amon
+      switchs:
+      - sw: dmz1
+        host: 7
+
+    - machine: eclairdmz
+      module: eclair
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      depends:
+      - depend: scribe
+      - depend: amon
+      switchs:
+      - sw: dmz1
+        host: 20
+
+    - machine: fogserver
+      module: base
+      contrainte: version >= 2.8.0
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      depends:
+      - depend: scribe
+      - depend: amon
+      switchs:
+      - sw: pedago1
+        host: 11
+
+    - machine: eolebasepeda
+      module: base
+      base: eole
+      switchs:
+      - sw: pedago1
+        host: 10
+
+    - machine: client-pxe
+      base: pxe
+      templates: [Pxe]
+      depends:
+      - depend: amon
+      - depend: scribe
+      switchs:
+      - sw: pedago1
+        allocation: Dhcp
+
+    - machine: eolebase
+      module: base
+      templates: [FreshInstall,Daily]
+      base: eole
+      switchs:
+      - sw: dmz1
+        host: 10
+
+    - machine: pcdmz
+      base: win10
+      templates: [Pc]
+      depends:
+      - depend: scribe
+      - depend: eolecitestsdmz
+      switchs:
+      - sw: dmz1
+        allocation: Dhcp
+
+    - machine: eolecitestsdmz
+      base: eolecitests
+      templates: [EoleCiTests]
+      switchs:
+      - sw: dmz1
+        host: 253
+
+    - machine: horus
+      module: horus
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      depends:
+      - depend: scribe
+      - depend: amon
+      switchs:
+      - sw: admin1
+        host: 10
+        hostAddc: 11
+
+    - machine: eolecitestsadmin
+      base: eolecitests
+      templates: [EoleCiTests]
+      switchs:
+      - sw: admin1
+        host: 253
+
+    - machine: pcadmin
+      base: win10
+      templates: [Pc]
+      depends:
+      - depend: amon
+      - depend: horus
+      - depend: eolecitestsadmin
+      switchs:
+      - sw: admin1
+        allocation: Dhcp
+
+    - machine: dcpedago
+      module: seth
+      base: eole
+      templates: [FreshInstall,Daily,Instance]
+      depends:
+      - depend: amon
+      switchs:
+      - sw: pedago1
+        host: 5
+
+    - machine: eolecitestspedago
+      base: eolecitests
+      templates: [EoleCiTests]
+      switchs:
+      - sw: pedago1
+        host: 253
+
+    - machine: pcprofs
+      base: win10
+      templates: [Pc,PcDomain]
+      depends:
+      - depend: amon
+      - depend: scribe
+      - depend: eolecitestspedago
+      switchs:
+      - sw: pedago1
+        allocation: Dhcp
+
+    - machine: pceleve
+      base: win10
+      templates: [Pc,PcDomain]
+      depends:
+      - depend: amon
+      - depend: scribe
+      - depend: eolecitestspedago
+      switchs:
+      - sw: pedago1
+        allocation: Dhcp
+
+    - machine: eclair
+      module: eclair
+      base: eole
+      depends:
+      - depend: amon
+      - depend: scribe
+      switchs:
+      - sw: pedago1
+        host: 20
+
+    - machine: WindowsServerAD
+      base: w2k3
+      templates: [ServerWindows]
+      depends:
+      - depend: eolecitestspedago
+      switchs:
+      - sw: pedago1
+        host: 73
+
+  - etablissement: etb2
+    noEtab: 00000002
+    machines:
+    - machine: amon
+      module: amon
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      switchs:
+      - sw: academie
+        host: 32
+      - sw: admin2
+        host: 1
+      - sw: pedago2
+        host: 1
+      - sw: dmz2
+        host: 1
+      - sw: dmz2priv
+        host: 1
+
+    - machine: eolebasepriv
+      module: base
+      base: eole
+      switchs:
+      - sw: dmz2priv
+        host: 5
+
+    - machine: envole
+      module: base
+      base: eole
+      switchs:
+      - sw: dmz2
+        host: 5
+
+    - machine: eolebase
+      module: base
+      base: eole
+      switchs:
+      - sw: dmz2
+        host: 6
+
+    - machine: eolecitestsdmz
+      base: eolecitests
+      templates: [EoleCiTests]
+      switchs:
+      - sw: dmz2
+        host: 253
+
+    - machine: dcpedago
+      module: seth
+      base: eole
+      contrainte: version >= 2.7.1
+      templates: [FreshInstall,Daily,Instance]
+      depends:
+      - depend: amon
+      switchs:
+      - sw: pedago2
+        host: 5
+
+    - machine: scribe
+      module: scribe
+      base: eole
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: pedago2
+        host: 5
+        hostAddc: 11
+
+    - machine: horus
+      module: horus
+      base: eole
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: admin2
+        host: 10
+        hostAddc: 11
+
+    - machine: eolecitestsadmin
+      base: eolecitests
+      templates: [EoleCiTests]
+      switchs:
+      - sw: admin2
+        host: 253
+
+    - machine: pcadmin
+      base: win10
+      templates: [Pc]
+      depends:
+      - depend: amon
+      - depend: horus
+      - depend: eolecitestsadmin
+      switchs:
+      - sw: admin2
+        allocation: Dhcp
+
+    - machine: eolecitestspedago
+      base: eolecitests
+      templates: [EoleCiTests]
+      depends:
+      - depend: amon
+      - depend: eolecitestspedago
+      switchs:
+      - sw: pedago2
+        host: 253
+
+    - machine: pcprofs
+      base: win10
+      templates: [Pc]
+      depends:
+      - depend: amon
+      - depend: eolecitestspedago
+      switchs:
+      - sw: pedago2
+        allocation: Dhcp
+
+    - machine: pceleve
+      base: win10
+      templates: [Pc]
+      depends:
+      - depend: amon
+      - depend: scribe
+      - depend: eolecitestspedago
+      switchs:
+      - sw: pedago2
+        allocation: Dhcp
+
+    - machine: eclair
+      module: eclair
+      base: eole
+      depends:
+      - depend: amon
+      - depend: scribe
+      switchs:
+      - sw: pedago2
+        host: 11
+
+  - etablissement: etb3
+    noEtab: 00000003
+    machines:
+    - machine: amonecole
+      module: amonecole
+      templates: [FreshInstall,Daily,Cdrom,Instance,AvecImport,AvecImportSconet]
+      base: eole
+      switchs:
+      - sw: academie
+        host: 33
+      - sw: pedago3
+        host: 1
+
+    - machine: envole
+      module: base
+      base: eole
+      switchs:
+      - sw: pedago3
+        host: 10
+
+    - machine: eolecitestspedago
+      base: eolecitests
+      templates: [EoleCiTests]
+      switchs:
+      - sw: pedago3
+        host: 253
+
+    - machine: pcprofs-fixe
+      base: win10
+      templates: [Pc]
+      depends:
+      - depend: amonecole
+      - depend: eolecitestspedago
+      switchs:
+      - sw: pedago3
+        host: 49
+
+    - machine: pcprofs
+      base: win10
+      templates: [Pc]
+      depends:
+      - depend: amonecole
+      - depend: eolecitestspedago
+      switchs:
+      - sw: pedago3
+        allocation: Dhcp
+
+    - machine: pceleve
+      base: win10
+      templates: [Pc]
+      depends:
+      - depend: amonecole
+      - depend: eolecitestspedago
+      switchs:
+      - sw: pedago3
+        allocation: Dhcp
+
+    - machine: eclair
+      module: eclair
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      depends:
+      - depend: amonecole
+      switchs:
+      - sw: pedago3
+        host: 20
+
+    - machine: client-pxe
+      base: pxe
+      templates: [Pxe]
+      depends:
+      - depend: amonecole
+      - depend: eclair
+      switchs:
+      - sw: pedago3
+        allocation: Dhcp
+
+
+  - etablissement: etb4
+    noEtab: 00000004
+    machines:
+    - machine: amonecoleeclair
+      module: amonecoleeclair
+      base: eole
+      switchs:
+      - sw: academie
+        host: 34
+      - sw: pedago4
+        host: 1
+
+    - machine: eolecitestspedago
+      base: eolecitests
+      templates: [EoleCiTests]
+      switchs:
+      - sw: pedago4
+        host: 253
+
+    - machine: pcprofs
+      base: win10
+      templates: [Pc]
+      depends:
+      - depend: amonecoleeclair
+      - depend: eolecitestspedago
+      switchs:
+      - sw: pedago4
+        allocation: Dhcp
+
+    - machine: pceleve
+      base: win10
+      templates: [Pc]
+      depends:
+      - depend: amonecoleeclair
+      - depend: eolecitestspedago
+      switchs:
+      - sw: pedago4
+        allocation: Dhcp
+
+    - machine: client-pxe
+      base: pxe
+      templates: [Pxe]
+      switchs:
+      - sw: pedago4
+        allocation: Dhcp
+
+  - etablissement: etb5
+    noEtab: 00000005
+    machines:
+    - machine: amonhorus
+      module: amonhorus
+      base: eole
+      switchs:
+      - sw: academie
+        host: 35
+      - sw: admin5
+        host: 1
+
+    - machine: eolecitestsadmin
+      base: eolecitests
+      templates: [EoleCiTests]
+      switchs:
+      - sw: admin5
+        host: 253
+
+    - machine: pcadmin
+      base: win10
+      templates: [Pc]
+      depends:
+      - depend: amonhorus
+      - depend: eolecitestsadmin
+      switchs:
+      - sw: admin5
+        allocation: Dhcp
+
+  - etablissement: etb6
+    noEtab: 00000006
+    machines:
+    - machine: eclair
+      module: eclair
+      base: eole
+      switchs:
+      - sw: academie
+        host: 36
+      - sw: pedago6
+        host: 1
+
+    - machine: eolecitestspedago
+      base: eolecitests
+      templates: [EoleCiTests]
+      switchs:
+      - sw: pedago6
+        host: 253
+
+    - machine: pcprofs
+      base: win10
+      templates: [Pc]
+      depends:
+      - depend: eclair
+      - depend: eolecitestspedago
+      switchs:
+      - sw: pedago6
+        allocation: Dhcp
+
+    - machine: pceleve
+      base: win10
+      templates: [Pc]
+      depends:
+      - depend: eclair
+      - depend: eolecitestspedago
+      switchs:
+      - sw: pedago6
+        allocation: Dhcp
+
+  - etablissement: rie
+    noEtab: 0000001A
+    machines:
+    - machine: gateway
+      base: gateway
+      templates: []
+      switchs:
+      - sw: RIE
+        host: 1
+
+    - machine: eolecitests
+      base: eolecitests
+      templates: [EoleCiTests]
+      switchs:
+      - sw: RIE
+        host: 253
+
+    - machine: ldapma
+      base: rieldapma
+      templates: [ServerNonEole]
+      switchs:
+      - sw: RIE
+        host: 10
+
+    - machine: esbl-ddt101
+      module: esbl
+      base: eole
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      depends:
+      - depend: dns-banshee
+      switchs:
+      - sw: RIE
+        host: 11
+
+    - machine: esbl-ddt101-geomatique
+      module: esbl
+      base: eole
+      contrainte: version >= 2.6.2
+      templates: [FreshInstall,Daily,Instance]
+      depends:
+      - depend: dns-banshee
+      switchs:
+      - sw: RIE
+        host: 19
+
+    - machine: esbl-ddt101-applisweb
+      module: esbl
+      base: eole
+      contrainte: version >= 2.6.2
+      templates: [FreshInstall,Daily,Instance]
+      depends:
+      - depend: dns-banshee
+      switchs:
+      - sw: RIE
+        host: 22
+
+    - machine: esbl-ad
+      module: esbl
+      base: eole
+      contrainte: version >= 2.6.0
+      templates: [FreshInstall,Daily,Instance]
+      depends:
+      - depend: dns-banshee
+      switchs:
+      - sw: RIE
+        host: 14
+
+    - machine: dns-banshee
+      base: rie-dns-banshee
+      templates: [ServerNonEole]
+      switchs:
+      - sw: RIE
+        host: 12
+
+    - machine: radius
+      base: debian
+      templates: [ServerNonEole]
+      switchs:
+      - sw: RIE
+        host: 13
+
+    - machine: ecdl-ddt101
+      module: ecdl
+      base: eole
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      depends:
+      - depend: dns-banshee
+      switchs:
+      - sw: RIE
+        host: 15
+
+    - machine: depot-intra
+      base: debian
+      templates: [ServerNonEole]
+      switchs:
+      - sw: RIE
+        host: 16
+
+    - machine: zephir
+      module: zephir
+      base: eole
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance,AvecConf]
+      depends:
+      - depend: dns-banshee
+      switchs:
+      - sw: RIE
+        host: 20
+
+    - machine: pdc-ad1
+      module: seth
+      base: eole
+      templates: [FreshInstall,Daily,Instance,AvecImport]
+      depends:
+      - depend: dns-banshee
+      switchs:
+      - sw: RIE
+        host: 21
+
+    - machine: pdc-ad2
+      module: seth
+      base: eole
+      templates: [FreshInstall,Daily,Instance]
+      depends:
+      - depend: dns-banshee
+      switchs:
+      - sw: RIE
+        host: 140
+
+    - machine: member-ad
+      module: seth
+      base: eole
+      templates: [FreshInstall,Daily,Instance]
+      depends:
+      - depend: dns-banshee
+      switchs:
+      - sw: RIE
+        host: 26
+
+    - machine: pc
+      base: win10
+      templates: [Pc]
+      depends:
+      - depend: eolecitests
+      switchs:
+      - sw: RIE
+        allocation: Dhcp
+
+  - etablissement: spc
+    noEtab: 00000011
+    machines:
+    - machine: eSSL
+      module: amon
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      switchs:
+      - sw: vext
+        host: 91
+      - sw: RIE
+        host: 91
+      - sw: vspcmet
+        host: 1
+      - sw: vspccol
+        host: 1
+
+    - machine: bureautique
+      module: esbl
+      base: eole
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vspccol
+        host: 5
+
+    - machine: meteo
+      module: esbl
+      base: eole
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vspccol
+        host: 6
+
+    - machine: previsionniste
+      base: win10
+      templates: [Pc]
+      switchs:
+      - sw: vspcmet
+        allocation: Dhcp
+
+  - etablissement: siegeNT1
+    noEtab: 00000012
+    machines:
+    - machine: eSSL
+      module: amon
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      switchs:
+      - sw: vext
+        host: 41
+      - sw: RIE
+        host: 41
+      - sw: vsiege-nt1
+        host: 1
+      - sw: vdmz-nt1
+        host: 1
+      - sw: vwifi-nt1
+        host: 1
+
+    - machine: pdc
+      module: ecdl
+      base: eole
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vsiege-nt1
+        host: 4
+
+    - machine: bdc
+      module: ecdl
+      base: eole
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vsiege-nt1
+        host: 5
+
+    - machine: fichier
+      module: esbl
+      base: eole
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vsiege-nt1
+        host: 6
+
+    - machine: pcsiege
+      base: win10
+      templates: [Pc]
+      switchs:
+      - sw: vsiege-nt1
+        allocation: Dhcp
+
+    - machine: fichier-dmz
+      module: esbl
+      base: eole
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vdmz-nt1
+        host: 2
+
+    - machine: pcwifi
+      base: win10
+      templates: [Pc]
+      switchs:
+      - sw: vwifi-nt1
+        allocation: Dhcp
+
+  - etablissement: siegeNT2
+    noEtab: 00000013
+    machines:
+    - machine: eSSL
+      module: amon
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      switchs:
+      - sw: vext
+        host: 51
+      - sw: RIE
+        host: 51
+      - sw: vsiege-nt2
+        host: 1
+      - sw: vdmz-nt2
+        host: 1
+      - sw: vwifi-nt2
+        host: 1
+
+    - machine: pdc
+      module: ecdl
+      base: eole
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vsiege-nt2
+        host: 4
+
+    - machine: bdc
+      module: ecdl
+      base: eole
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vsiege-nt2
+        host: 5
+
+    - machine: fichier
+      module: esbl
+      base: eole
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vsiege-nt2
+        host: 6
+
+    - machine: pcsiege
+      base: win10
+      templates: [Pc]
+      switchs:
+      - sw: vsiege-nt2
+        allocation: Dhcp
+
+    - machine: fichier-dmz
+      module: esbl
+      base: eole
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vdmz-nt1
+        host: 2
+
+    - machine: pcwifi
+      base: win10
+      templates: [Pc]
+      switchs:
+      - sw: vwifi-nt2
+        allocation: Dhcp
+
+
+  - etablissement: siegeAD1
+    noEtab: 00000014
+    machines:
+    - machine: eSSL
+      module: amon
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      switchs:
+      - sw: vext
+        host: 61
+      - sw: RIE
+        host: 61
+      - sw: vsiege-ad1
+        host: 1
+      - sw: vdmz-ad1
+        host: 1
+      - sw: vwifi-ad1
+        host: 1
+
+    - machine: pdc
+      module: seth
+      base: eole
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vsiege-ad1
+        host: 4
+
+    - machine: bdc
+      module: seth
+      base: eole
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vsiege-ad1
+        host: 5
+
+    - machine: rodc
+      module: seth
+      base: eole
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vsiege-ad1
+        host: 6
+
+    - machine: fichier-ad
+      module: seth
+      base: eole
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vsiege-ad1
+        host: 7
+
+    - machine: fichier-esbl
+      module: esbl
+      base: eole
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vsiege-ad1
+        host: 8
+
+    - machine: pcsiege
+      base: win10
+      templates: [Pc]
+      switchs:
+      - sw: vsiege-ad1
+        allocation: Dhcp
+
+    - machine: fichier-sethdmz
+      module: seth
+      base: eole
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vdmz-ad1
+        host: 2
+
+    - machine: fichier-esbldmz
+      module: esbl
+      base: eole
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vdmz-ad1
+        host: 3
+
+    - machine: pcwifi
+      base: win10
+      templates: [Pc]
+      switchs:
+      - sw: vwifi-ad1
+        allocation: Dhcp
+
+  - etablissement: siegeAD2
+    noEtab: 00000015
+    machines:
+    - machine: eSSL
+      module: amon
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      switchs:
+      - sw: vext
+        host: 71
+      - sw: RIE
+        host: 71
+      - sw: vsiege-ad2
+        host: 1
+      - sw: vdmz-ad2
+        host: 1
+      - sw: vwifi-ad2
+        host: 1
+
+    - machine: pdc
+      module: seth
+      base: eole
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vsiege-ad2
+        host: 4
+
+    - machine: bdc
+      module: seth
+      base: eole
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vsiege-ad2
+        host: 5
+
+    - machine: rodc
+      module: seth
+      base: eole
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vsiege-ad2
+        host: 6
+
+    - machine: fichier-ad
+      module: seth
+      base: eole
+      contrainte: version >= 2.5.2
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vsiege-ad2
+        host: 7
+
+    - machine: fichier-esbl
+      module: esbl
+      base: eole
+      contrainte: version >= 2.6.0
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vsiege-ad2
+        host: 8
+
+    - machine: pcsiege
+      base: win10
+      templates: [Pc]
+      switchs:
+      - sw: vsiege-ad2
+        allocation: Dhcp
+
+    - machine: fichier-sethdmz
+      module: seth
+      base: eole
+      contrainte: version >= 2.6.0
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vdmz-ad2
+        host: 2
+
+    - machine: fichier-esbldmz
+      module: esbl
+      base: eole
+      contrainte: version >= 2.6.0
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vdmz-ad2
+        host: 3
+
+    - machine: pcwifi
+      base: win10
+      templates: [Pc]
+      switchs:
+      - sw: vwifi-ad2
+        allocation: Dhcp
+
+  - etablissement: vut
+    noEtab: 00000016
+    machines:
+    - machine: eSSL
+      module: amon
+      contrainte: version >= 2.6.0
+      templates: [FreshInstall,Daily,Instance]
+      base: eole
+      switchs:
+      - sw: vext
+        host: 81
+      - sw: RIE
+        host: 81
+      - sw: vut
+        host: 1
+
+    - machine: ecdl
+      module: ecdl
+      base: eole
+      contrainte: version >= 2.6.0
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vut
+        host: 5
+
+    - machine: fichier
+      module: esbl
+      base: eole
+      contrainte: version >= 2.6.0
+      templates: [FreshInstall,Daily,Instance]
+      switchs:
+      - sw: vut
+        host: 6
+
+    - machine: pc
+      base: win10
+      templates: [Pc]
+      switchs:
+      - sw: vut
+        allocation: Dhcp
+

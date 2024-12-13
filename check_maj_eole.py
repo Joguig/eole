@@ -1,0 +1,312 @@
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+###########################################################################
+# Eole NG - 2007
+# Copyright Pole de Competence Eole  (Ministere Education - Academie Dijon)
+# Licence CeCill  cf /root/LicenceEole.txt
+# eole@ac-dijon.fr
+#
+# get_date_maj.py
+#
+# script de vérification de la dernière date de mise à jour
+#
+###########################################################################
+
+import os
+import sys
+import socket
+import glob
+import urllib.request, urllib.parse, urllib.error
+from shutil import copyfileobj
+from configparser import ConfigParser
+import apt_pkg
+from creole.client import CreoleClient
+from zephir.backend.config import PATH_ZEPHIR
+from zephir.config import DISTRIBS, ENVOLE_VERSION
+
+
+def get_url_opener(dico):
+    """renvoie une instance de urllib.FancyURLopener prenant en compte
+    le proxy défini dans la configuration creole
+    """
+    # recherche du proxy si nécessaire
+    try:
+        assert dico.get_creole('activer_proxy_client', 'non') == 'oui'
+        prox_creole = 'http://%s:%s' % (dico.get_creole('proxy_client_adresse'), dico.get_creole('proxy_client_port'))
+        proxies = {'http':prox_creole, 'https':prox_creole}
+        proxy = urllib.request.ProxyHandler(proxies)
+        opener = urllib.request.build_opener(proxy)
+        urllib.request.install_opener(opener)
+    except:
+        pass
+
+def check_maj_md5(serveur_maj, zephir_version, version=None, codename=None, envole_version=None):
+    """vérifie la présence de mises à jour
+    si version : dépôts de type 'Eole'
+    si codename : dépôts de type 'Ubuntu'
+    si envole_version : dépôts de type 'Envole'
+    """
+    # minimum_dist: égal à False seulement pour les distributions < 2.4 (notion de dépôt minimum/complet)
+    minimum_dist = zephir_version >= 6
+    if version:
+        suffix = "eole_%s" % version
+        # cas particulier : 2.4 correspond à 2.4.0 dans les dépôts
+        if zephir_version == 6:
+            repo_version = "%s.0" % version
+        else:
+            repo_version = version
+        # gestion des différentes arborescences pour les dépots eole
+        base_url = "eoleng"
+        if zephir_version < 4:
+            eole_dirs = ['']
+        elif zephir_version < 6:
+            eole_dirs = ['amd64','all']
+        else:
+            base_url = "eole/dists"
+            eole_dirs = ['main/binary-amd64']
+            if zephir_version > 6:
+                # eole 2.4.1 et > : ajout du dépot cloud
+                eole_dirs.append('cloud/binary-amd64')
+
+        repositories = [('%s/eole-%s' % (base_url, repo_version), eole_dirs, True),
+                        ('%s/eole-%s-security' % (base_url, repo_version), eole_dirs, True),
+                        ('%s/eole-%s-updates' % (base_url, repo_version), eole_dirs, minimum_dist)]
+    elif envole_version:
+        suffix = "envole_%s" % envole_version
+        repositories = [('envole/dists/envole-%s' % envole_version, ['main/binary-amd64'], True)]
+    elif codename:
+        suffix = "ubuntu_%s" % codename
+        # gestion des différentes arborescences pour les dépots ubuntu
+        ubuntu_dirs = ['main/binary-amd64','universe/binary-amd64','restricted/binary-amd64']
+        repositories = [('ubuntu/dists/%s' % codename, ubuntu_dirs, True),
+                        ('ubuntu/dists/%s-security' % codename, ubuntu_dirs, True),
+                        ('ubuntu/dists/%s-updates' % codename, ubuntu_dirs, minimum_dist)]
+
+    c=ConfigParser()
+    if os.path.isfile(os.path.join(PATH_ZEPHIR, 'md5maj_%s.ini' % suffix)):
+        c.read(os.path.join(PATH_ZEPHIR, 'md5maj_%s.ini' % suffix))
+    updates = []
+    checked = []
+    for serv_maj in serveur_maj:
+        section_name = 'eole_maj_%s' % serv_maj
+        if not c.has_section(section_name):
+            c.add_section(section_name)
+        # récupération des md5sums
+        md5_info = []
+        try:
+            for repository, filepaths, minimum in repositories:
+                for arch in filepaths:
+                    info = None
+                    info = parse_release('http://%s/%s/%s/Release' % (serv_maj, repository, arch), '', serv_maj, repository, minimum)
+                    if info is None:
+                        info = parse_release('http://%s/%s/Release' % (serv_maj, repository), arch, serv_maj, repository, minimum)
+                    if info is not None:
+                        md5_info.append(info)
+        except:
+            # erreur de connexion, on passe au serveur suivant sans mettre à jour les infos
+            print("Erreur d'accès aux informations de mise à jour (serveur %s)" % (serv_maj,))
+            continue
+        if md5_info:
+            if codename and codename not in checked:
+                print("* Vérification des données (md5) : Ubuntu %s" % codename)
+                checked.append(codename)
+            elif envole_version and envole_version not in checked:
+                print("* Vérification des données (md5) : Envole %s" % envole_version)
+                checked.append(envole_version)
+            elif version and repo_version not in checked:
+                print("* Vérification des données (md5) : Eole %s" % repo_version)
+                checked.append(repo_version)
+        # traitement des md5
+        for repos, md5, minimum, pkg_url in md5_info:
+            up_to_date = True
+            # reformatage de l'url pour utilisation comme clé dans le fichier des md5
+            # (ConfigParser ne conserve pas la casse des noms d'options)
+            md5key = pkg_url.split('://')[1].lower()
+            # dans tous les cas, si le fichier 'packages' correspondant est corrompu,
+            # on force le recalcul des données
+            package_file = os.path.join(PATH_ZEPHIR, 'packages_%s_%s.ini' % (suffix, serv_maj))
+            try:
+                if os.path.isfile(package_file):
+                    ConfigParser().read(package_file)
+            except:
+                print("\n Fichier corrompu : packages_%s_%s.ini, mise à jour forcée\n" % (suffix, serv_maj))
+                up_to_date = False
+                os.unlink(package_file)
+            else:
+                if c.has_option(section_name, md5key):
+                    # vérification par rapport à l'ancienne valeur
+                    if c.get(section_name, md5key) != md5:
+                        up_to_date = False
+                else:
+                    up_to_date = False
+            # mise à jour du md5
+            c.set(section_name, md5key, md5)
+            updates.append((repos, up_to_date, minimum, pkg_url, serv_maj))
+    return updates, c
+
+def parse_release(f_rel, filepath, serveur_maj, repository, minimum):
+    url = urllib.request.urlopen(f_rel)
+    data = url.read().decode().split('SHA1:\n')[0]
+    # for filepath in filepaths:
+    for line in data.split('\n'):
+        line = line.strip().split()
+        if len(line) > 0:
+            # md5 du fichier Packages
+            if line[-1] == os.path.join(filepath, 'Packages.gz'):
+                pkg_url = '%s/%s' % (os.path.dirname(f_rel), os.path.join(filepath, 'Packages.gz'))
+                return (os.path.join(repository,filepath), line[0], minimum, pkg_url)
+    return None
+
+def maj_listes(updates, zephir_version, version=None, codename=None, envole_version=None):
+    """construit une liste de paquets par repository"""
+    apt_pkg.init_system()
+    aff_serv_maj = ""
+    if codename:
+        suffix = "ubuntu_%s" % codename
+    elif envole_version:
+        suffix = "envole_%s" % envole_version
+    else:
+        suffix = "eole_%s" % version
+    for repos, state, minimum, pkg_url, serv_maj in updates:
+        if serv_maj != aff_serv_maj:
+            aff_serv_maj = serv_maj
+            print("  Mise à jour de la liste des paquets (%s)" % (serv_maj,))
+        c = ConfigParser()
+        if os.path.isfile(os.path.join(PATH_ZEPHIR, 'packages_%s_%s.ini' % (suffix, serv_maj))):
+            c.read(os.path.join(PATH_ZEPHIR, 'packages_%s_%s.ini' % (suffix, serv_maj)))
+        if state is False:
+            # lecture et traitement du fichier 'Packages'
+            pkg_name = ""
+            pack_temp = os.path.join(PATH_ZEPHIR, 'Packages')
+
+            with urllib.request.urlopen(pkg_url) as in_stream, open('%s.gz' % pack_temp, 'wb') as out_file:
+                copyfileobj(in_stream, out_file)
+
+            res = os.system("""/bin/gunzip -c %s.gz | grep -E "^(Package:|Version:)" > %s""" % (pack_temp, pack_temp))
+            if os.path.isfile(pack_temp):
+                info_pkgs = open(pack_temp)
+                for line in info_pkgs:
+                    if line.startswith("Package:"):
+                        pkg_name = line.split()[1].strip()
+                    if line.startswith("Version:"):
+                        pkg_version = line.split()[1].strip()
+                        # stockage des infos
+                        if not c.has_section(pkg_name):
+                            c.add_section(pkg_name)
+                        if zephir_version < 6 and minimum is True:
+                            # paquets pour maj minimum (inexistant à partir d'eole 2.4)
+                            try:
+                                old_rev=c.get(pkg_name, 'minimum')
+                                assert apt_pkg.version_compare(pkg_version, old_rev) <= 0
+                            except:
+                                # paquet plus récent ou pas de paquet repéré avant, on update
+                                c.set(pkg_name, 'minimum', pkg_version)
+                        # paquets pour maj_complete
+                        try:
+                            old_rev=c.get(pkg_name, 'complete')
+                            assert apt_pkg.version_compare(pkg_version, old_rev) <= 0
+                        except:
+                            # paquet plus récent ou pas de paquet repéré avant
+                            c.set(pkg_name, 'complete', pkg_version)
+                            # si le paquet de la maj minimum est plus récent on le prend
+                            try:
+                                min_rev = c.get(pkg_name, 'minimum')
+                                if apt_pkg.version_compare(pkg_version, min_rev) <= 0:
+                                    c.set(pkg_name, 'complete', min_rev)
+                            except:
+                                pass
+                os.unlink(pack_temp)
+                os.unlink("%s.gz" % pack_temp)
+                info_pkgs.close()
+        f_pkg_ini = open(os.path.join(PATH_ZEPHIR, 'packages_%s_%s.ini' % (suffix, serv_maj)), 'w')
+        c.write(f_pkg_ini)
+        f_pkg_ini.close()
+
+def purge_old_data(codename):
+    """Supprime d'éventuels fichiers générés par les versions précédentes du script
+    """
+    if os.path.isfile(os.path.join(PATH_ZEPHIR, 'md5maj_%s.ini' % codename)):
+        os.unlink(os.path.join(PATH_ZEPHIR, 'md5maj_%s.ini' % codename))
+    for f_package in glob.glob(os.path.join(PATH_ZEPHIR, 'packages_%s_*.ini' % codename)):
+        os.unlink(f_package)
+
+if __name__ == '__main__':
+    dico = CreoleClient()
+    if "reconfigure" in sys.argv:
+        mode_reconf = True
+    else:
+        mode_reconf = False
+    # initialisation d'un objet pour lire les urls avec proxy si nécessaire
+    get_url_opener(dico)
+    # test de connexion au serveur de maj
+    serveurs_maj_ok = []
+    maj_client = dico.get_creole('serveur_maj_clients')
+    maj_envole = dico.get_creole('serveur_maj_envole', [])
+    socket.setdefaulttimeout(30)
+    for serveurs in maj_client, maj_envole:
+        for serv_maj in serveurs:
+            if serv_maj not in serveurs_maj_ok:
+                try:
+                    urllib.request.urlretrieve('http://%s/ubuntu/' % serv_maj)
+                    serveurs_maj_ok.append(serv_maj)
+                except IOError:
+                    # téléchargement des informations impossibles
+                    print(("Erreur d'accès au serveur de mise à jour %s" % serv_maj))
+    # mise à jour des différentes distributions gérées
+    codename_processed = []
+    envole_processed = []
+    for zephir_version, dist_infos in list(DISTRIBS.items()):
+        if zephir_version > 1:
+            envole_version = ENVOLE_VERSION.get(zephir_version, None)
+            codename, version, maintained = dist_infos
+            for paq_type in ['ubuntu', 'eole', 'envole']:
+                updates = []
+                if paq_type == 'ubuntu':
+                    # Pour les versions < 2.3, on ne récupère pas les données pendant
+                    # reconfigure si elles ont déjà été vérifiées une fois (non maintenu)
+                    if zephir_version < 6 and mode_reconf:
+                        if os.path.isfile(os.path.join(PATH_ZEPHIR, 'md5maj_%s_%s.ini' % (paq_type, codename))):
+                            continue
+                    # on ne traite pas plusieurs fois la même distribution ubuntu (releases Eole)
+                    if codename not in codename_processed:
+                        # Suppression des éventuels anciens fichiers de configuration
+                        purge_old_data(codename)
+                        # traitement des paquets
+                        updates, md5_ini = check_maj_md5(serveurs_maj_ok,
+                                                         zephir_version,
+                                                         codename = codename)
+                        codename_processed.append(codename)
+                elif paq_type == 'envole':
+                    # on ne traite pas plusieurs fois la même version d'Envole
+                    if envole_version and envole_version not in envole_processed:
+                        # traitement des paquets
+                        updates, md5_ini = check_maj_md5(serveurs_maj_ok,
+                                                         zephir_version,
+                                                         envole_version=envole_version)
+                        envole_processed.append(envole_version)
+                else:
+                    # pour les paquets eole, on vérifie jusqu'aux dépôts 2.3
+                    if zephir_version < 5 and mode_reconf:
+                        if os.path.isfile(os.path.join(PATH_ZEPHIR, 'md5maj_%s_%s.ini' % (paq_type, version))):
+                            continue
+                    updates, md5_ini = check_maj_md5(serveurs_maj_ok, zephir_version, version = version)
+                # si il y a un changement, on lance Query-Auto et on met à jour les infos
+                # sur les paquets disponibles
+                for repos, state, minimum, pkg_url, serv_maj in updates:
+                    if state is False:
+                        # mise à jour des infos nécessaires
+                        if paq_type == 'ubuntu':
+                            maj_listes(updates, zephir_version, codename=codename)
+                            f_maj = open(os.path.join(PATH_ZEPHIR, 'md5maj_ubuntu_%s.ini' % codename),'w')
+                        elif paq_type == 'envole':
+                            maj_listes(updates, zephir_version, envole_version=envole_version)
+                            f_maj = open(os.path.join(PATH_ZEPHIR, 'md5maj_envole_%s.ini' % envole_version),'w')
+                        else:
+                            maj_listes(updates, zephir_version, version=version)
+                            f_maj = open(os.path.join(PATH_ZEPHIR, 'md5maj_eole_%s.ini' % version),'w')
+                        # sauvegarde des md5 pour la prochaine vérification
+                        md5_ini.write(f_maj)
+                        f_maj.close()
+                        # listes mises à jour, on arrête la boucle
+                        break
+    sys.exit(0)

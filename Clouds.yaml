@@ -1,0 +1,647 @@
+clouds:
+- cloud: ONE
+  provider: OpenNebula
+  url: one.eole.lan
+  urlXmlRpc: http://one.eole.lan/RPC2
+  swEole: EOLE
+  proprietaireSwEole: nebula
+  isoDatastore: default
+  imagesDatastore: default
+  filesDatastore: files
+  nomDomaineMachinesPhysique: eole.lan
+  nomDisqueVide100G: DSK-100G-QCOW2
+  nomDisqueVide40G: DSK-50G-QCOW2
+  nomVariableIpDansRouteur: IP_ONE
+  gatewayImage: gateway.fi
+  bridge: nebula
+  coefficientPerformance: 1
+  autoInstallIso: oui
+  useSwEole: oui
+  defaultVirtualNetworkCluster: 102
+  market: magasin.eole.education
+  marketPublic: "OpenNebula Public"
+  forceDeviceVideo: vga
+
+- cloud: DEMO1
+  provider: OpenNebula
+  url: igor.eole.lan
+  urlXmlRpc: http://igor.eole.lan/RPC2
+  swEole: CR_eole
+  useSwEole: oui
+  proprietaireSwEole: oneadmin
+  proprietaireImageEole: jenkins
+  isoDatastore: iso-images
+  imagesDatastore: images-disques
+  filesDatastore: files
+  nomDisqueVide100G: DSK-100-Go
+  nomDisqueVide40G: DSK-40-Go
+  nomDomaineMachinesPhysique: eole.lan
+  gatewayImage: gateway.fi
+  bridge: nebula
+  nomVariableIpDansRouteur: IP_EOLE
+  coefficientPerformance: 4
+  market: magasin.eole.education
+  autoInstallIso: non
+
+- cloud: HAPY
+  provider: OpenNebula
+  url: 192.168.0.115
+  urlXmlRpc: http://192.168.0.115/RPC2
+  swEole: CR_eole
+  useSwEole: oui
+  proprietaireSwEole: oneadmin
+  proprietaireImageEole: oneadmin
+  isoDatastore: iso-images
+  imagesDatastore: images-disques
+  filesDatastore: files
+  nomDisqueVide100G: DSK-40-Go
+  nomDisqueVide40G: DSK-40-Go
+  nomDomaineMachinesPhysique: eole.lan
+  gatewayImage: gateway.fi
+  bridge: nebula
+  nomVariableIpDansRouteur: IP_EOLE
+  coefficientPerformance: 1
+  market: magasin.eole.education
+  autoInstallIso: non
+
+images:
+- iso: ubuntu-20.04-server-amd64.iso
+  url: https://releases.ubuntu.com/20.04/ubuntu-20.04-live-server-amd64.iso
+  imageFreshInstall: ubuntu-20.04-server-amd64.fi
+  architecture: amd64
+  repertoireTemplates: ubuntu
+  typeOs: ubuntu
+
+- iso: ubuntu-22.04-server-amd64.iso
+  url: https://releases.ubuntu.com/jammy/ubuntu-22.04-live-server-amd64.iso
+  imageFreshInstall: ubuntu-22.04-server-amd64.fi
+  architecture: amd64
+  repertoireTemplates: ubuntucloud
+  typeOs: ubuntu
+
+- iso: ubuntu-24.04-server-amd64.iso
+  url: https://releases.ubuntu.com/noble/ubuntu-24.04-live-server-amd64.iso
+  imageFreshInstall: ubuntu-24.04-server-amd64.fi
+  architecture: amd64
+  repertoireTemplates: ubuntucloud
+  typeOs: ubuntu
+  boot: uefi
+
+- iso: ubuntu-24.04-desktop-amd64.iso
+  url: https://releases.ubuntu.com/24.04/ubuntu-24.04-desktop-amd64.iso
+  imageFreshInstall: ubuntu-24.04-desktop-amd64.fi
+  architecture: amd64
+  repertoireTemplates: ubuntudesktop
+  typeDownload: indirect
+  typeOs: ubuntumate
+  boot: uefi
+
+- iso: ubuntu-22.04-desktop-amd64.iso
+  url: https://releases.ubuntu.com/22.04/ubuntu-22.04-desktop-amd64.iso
+  imageFreshInstall: ubuntu-22.04-desktop-amd64.fi
+  architecture: amd64
+  repertoireTemplates: ubuntudesktop
+  typeOs: ubuntumate
+
+- iso: ubuntu-21.10-desktop-amd64.iso
+  url: https://releases.ubuntu.com/21.10/ubuntu-21.10-desktop-amd64.iso
+  imageFreshInstall: ubuntu-21.10-desktop-amd64.fi
+  architecture: amd64
+  repertoireTemplates: ubuntudesktop
+  typeOs: ubuntumate
+
+- iso: ubuntu-20.04-desktop-amd64.iso
+  url: https://releases.ubuntu.com/focal/ubuntu-20.04.3-desktop-amd64.iso
+  imageFreshInstall: ubuntu-20.04-desktop-amd64.fi
+  architecture: amd64
+  repertoireTemplates: ubuntudesktop
+  typeOs: ubuntumate
+
+- iso: ubuntumate-24.04-desktop-amd64.iso
+  url: http://cdimage.ubuntu.com/ubuntu-mate/releases/24.04/release/ubuntu-mate-24.04-desktop-amd64.iso
+  imageFreshInstall: ubuntumate-24.04-desktop-amd64.fi
+  architecture: amd64
+  repertoireTemplates: ubuntumate
+  typeOs: ubuntumate
+  boot: uefi
+
+- iso: ubuntumate-22.04-desktop-amd64.iso
+  url: http://cdimage.ubuntu.com/ubuntu-mate/releases/22.04/release/ubuntu-mate-22.04-desktop-amd64.iso
+  imageFreshInstall: ubuntumate-22.04-desktop-amd64.fi
+  architecture: amd64
+  repertoireTemplates: ubuntumate
+  typeOs: ubuntumate
+
+- iso: ubuntumate-20.04-desktop-amd64.iso
+  url: http://cdimage.ubuntu.com/ubuntu-mate/releases/20.04/release/ubuntu-mate-20.04-desktop-amd64.iso
+  imageFreshInstall: ubuntumate-20.04-desktop-amd64.fi
+  architecture: amd64
+  repertoireTemplates: ubuntumate
+  typeOs: ubuntumate
+
+- iso: linuxmint-20-cinnamon-amd64.iso
+  url: http://mirrors.evowise.com/linuxmint/stable/20/linuxmint-20-cinnamon-64bit.iso
+  imageFreshInstall: linuxmint-20-cinnamon-amd64.fi
+  tailleDisque: 100
+  architecture: amd64
+  repertoireTemplates: cinnamon
+  typeOs: linuxmint
+
+- iso: linuxmint-21-cinnamon-amd64.iso
+  url: https://mirrors.kernel.org/linuxmint/stable/21/linuxmint-21-cinnamon-64bit.iso
+  imageFreshInstall: linuxmint-21-cinnamon-amd64.fi
+  tailleDisque: 100
+  architecture: amd64
+  repertoireTemplates: cinnamon
+  typeOs: linuxmint
+
+- iso: linuxmint-21.3-cinnamon-amd64.iso
+  url: https://mirrors.kernel.org/linuxmint/stable/21.3/linuxmint-21.3-cinnamon-64bit.iso
+  imageFreshInstall: linuxmint-21.3-cinnamon-amd64.fi
+  tailleDisque: 100
+  architecture: amd64
+  repertoireTemplates: cinnamon
+  typeOs: linuxmint
+
+- iso: linuxmint-22-cinnamon-amd64.iso
+  url: https://mirror.ibcp.fr/pub/linuxmint/iso/testing/linuxmint-22-cinnamon-64bit-beta.iso
+  imageFreshInstall: linuxmint-22-cinnamon-amd64.fi
+  tailleDisque: 100
+  architecture: amd64
+  repertoireTemplates: cinnamon
+  typeOs: linuxmint
+  boot: uefi
+
+- iso: debian-10.4.0-amd64-netinst.iso
+  url: https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-10.4.0-amd64-netinst.iso
+  typeDownload: direct
+  imageFreshInstall: debian-10.4.0-amd64-eole-ci-tests.fi
+  architecture: amd64
+  repertoireTemplates: debian10
+  typeOs: debian
+
+- iso: debian-11-amd64-netinst.iso
+  url: https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.0.0-amd64-netinst.iso
+  typeDownload: direct
+  imageFreshInstall: debian-11-amd64-eole-ci-tests.fi
+  architecture: amd64
+  repertoireTemplates: debian10
+  typeOs: debian
+
+- iso: debian-12-amd64-netinst.iso
+  url: https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-netinst.iso
+  typeDownload: direct
+  imageFreshInstall: debian-12-amd64-eole-ci-tests.fi
+  architecture: amd64
+  repertoireTemplates: debian10
+  typeOs: debian
+
+- iso: virtio-win.iso
+  url: https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.248-1/virtio-win.iso
+  typeDownload: direct
+  architecture: amd64
+
+# W10 : VTNMT-2FMYP-QCY43-QR9VK-WTVCK Windows 10 Entreprise Evaluation
+
+- iso: Windows10.21H2-amd64.iso
+  url: https://dev-eole.ac-dijon.fr/jenkins/userContent/Win10_21H2_French_x64.iso
+  typeDownload: direct
+  imageFreshInstall: Windows10.21H2-amd64.fi
+  architecture: amd64
+  typeOs: windows
+  repertoireTemplates: 10
+  suffixeVersion: 10.21H2
+  iso2: virtio-win.iso
+
+- iso: Windows11.23H2-amd64.iso
+  url: Win11.23H2_French_x64v2.iso
+  typeDownload: indirect
+  imageFreshInstall: Windows11.23H2-amd64.fi
+  architecture: amd64
+  typeOs: windows
+  repertoireTemplates: 11
+  suffixeVersion: 11.23H2
+  iso2: virtio-win.iso
+  boot: uefi
+
+- iso: Windows11.22H2-amd64.iso
+  url: Win11_French_x64.iso
+  typeDownload: indirect
+  imageFreshInstall: Windows11.22H2-amd64.fi
+  architecture: amd64
+  typeOs: windows
+  repertoireTemplates: 11
+  suffixeVersion: 11.22H2
+  iso2: virtio-win.iso
+  boot: uefi
+
+- iso: Windows2012R2-amd64.iso
+  url: 9600.17050.WINBLUE_REFRESH.140317-1640_X64FRE_SERVER_EVAL_FR-FR-IR3_SSS_X64FREE_FR-FR_DV9.ISO
+  imageFreshInstall: Windows2012R2-amd64.fi
+  typeDownload: indirect
+  architecture: amd64
+  typeOs: windowsServer
+  repertoireTemplates: 8.1
+  suffixeVersion: w2012R2
+
+- iso: Windows2019-amd64.iso
+  url: 17763.253.190108-0006.rs5_release_svc_refresh_SERVER_EVAL_x64FRE_fr-fr.iso
+  imageFreshInstall: Windows2019-amd64.fi
+  typeDownload: indirect
+  architecture: amd64
+  typeOs: windowsServer
+  repertoireTemplates: 10
+  suffixeVersion: w2019
+
+#- iso: Windows7-i386.iso
+#  url: X17-59195.iso
+#  typeDownload: indirect
+#  imageFreshInstall: Windows7-i386.fi
+#  architecture: i386
+#  typeOs: windows
+#  repertoireTemplates: 7
+#  suffixeVersion: 7
+
+- imageFreshInstall: ubuntu-20.04-server-amd64.fi
+  imageIntermediaire: ubuntu-20.04-server-amd64.daily
+  architecture: amd64
+  typeOs: ubuntu
+
+- imageFreshInstall: ubuntu-22.04-server-amd64.fi
+  imageIntermediaire: ubuntu-22.04-server-amd64.daily
+  architecture: amd64
+  typeOs: ubuntu
+
+- imageFreshInstall: ubuntu-24.04-server-amd64.fi
+  imageIntermediaire: ubuntu-24.04-server-amd64.daily
+  architecture: amd64
+  typeOs: ubuntu
+  boot: uefi
+
+- imageFreshInstall: ubuntumate-20.04-desktop-amd64.fi
+  imageIntermediaire: ubuntumate-20.04-desktop-amd64.daily
+  architecture: amd64
+  repertoireTemplates: ubuntumate
+  typeOs: ubuntumate
+
+- imageFreshInstall: ubuntumate-22.04-desktop-amd64.fi
+  imageIntermediaire: ubuntumate-22.04-desktop-amd64.daily
+  architecture: amd64
+  repertoireTemplates: ubuntumate
+  typeOs: ubuntumate
+
+- imageFreshInstall: ubuntumate-24.04-desktop-amd64.fi
+  imageIntermediaire: ubuntumate-24.04-desktop-amd64.daily
+  architecture: amd64
+  repertoireTemplates: ubuntumate
+  typeOs: ubuntumate
+  boot: uefi
+
+- imageFreshInstall: linuxmint-22-cinnamon-amd64.fi
+  imageIntermediaire: linuxmint-22-cinnamon-amd64.daily
+  architecture: amd64
+  repertoireTemplates: cinnamon
+  typeOs: linuxmint
+  boot: uefi
+
+- imageFreshInstall: linuxmint-21.3-cinnamon-amd64.fi
+  imageIntermediaire: linuxmint-21.3-cinnamon-amd64.daily
+  architecture: amd64
+  repertoireTemplates: cinnamon
+  typeOs: linuxmint
+
+- imageFreshInstall: linuxmint-21-cinnamon-amd64.fi
+  imageIntermediaire: linuxmint-21-cinnamon-amd64.daily
+  architecture: amd64
+  repertoireTemplates: cinnamon
+  typeOs: linuxmint
+
+- imageFreshInstall: linuxmint-20-cinnamon-amd64.fi
+  imageIntermediaire: linuxmint-20-cinnamon-amd64.daily
+  architecture: amd64
+  repertoireTemplates: cinnamon
+  typeOs: linuxmint
+
+- imageFreshInstall: ubuntu-20.04-desktop-amd64.fi
+  imageIntermediaire: ubuntu-20.04-desktop-amd64.daily
+  architecture: amd64
+  repertoireTemplates: ubuntumate
+  typeOs: ubuntumate
+
+- imageFreshInstall: ubuntu-21.10-desktop-amd64.fi
+  imageIntermediaire: ubuntu-21.10-desktop-amd64.daily
+  architecture: amd64
+  repertoireTemplates: ubuntumate
+  typeOs: ubuntumate
+
+- imageFreshInstall: ubuntu-24.04-desktop-amd64.fi
+  imageIntermediaire: ubuntu-24.04-desktop-amd64.daily
+  architecture: amd64
+  repertoireTemplates: ubuntumate
+  typeOs: ubuntumate
+  boot: uefi
+
+- imageFreshInstall: ubuntu-22.04-desktop-amd64.fi
+  imageIntermediaire: ubuntu-22.04-desktop-amd64.daily
+  architecture: amd64
+  repertoireTemplates: ubuntumate
+  typeOs: ubuntumate
+
+- imageFreshInstall: debian-10.4.0-amd64-eole-ci-tests.fi
+  imageIntermediaire: debian-10.4.0-amd64-eole-ci-tests.daily
+  architecture: amd64
+  repertoireTemplates: debian10
+  typeOs: debian
+
+- imageFreshInstall: debian-11-amd64-eole-ci-tests.fi
+  imageIntermediaire: debian-11-amd64-eole-ci-tests.daily
+  architecture: amd64
+  repertoireTemplates: debian10
+  typeOs: debian
+
+- imageFreshInstall: debian-12-amd64-eole-ci-tests.fi
+  imageIntermediaire: debian-12-amd64-eole-ci-tests.daily
+  architecture: amd64
+  repertoireTemplates: debian10
+  typeOs: debian
+
+- imageFreshInstall: Windows11.23H2-amd64.fi
+  imageIntermediaire: Windows11.23H2-amd64.daily
+  tailleDisque: 100
+  architecture: amd64
+  typeOs: windows
+  repertoireTemplates: 11
+  suffixeVersion: 11.23H2
+  files:
+  - EoleCiTestContext.ps1
+  - EoleCiTestService.ps1
+  - EoleCiTestsCommon.ps1
+  - install.ps1
+  - run-from-context.ps1
+  boot: uefi
+
+- imageIntermediaire: Windows10.22H2-amd64.daily
+  imageFreshInstall: Windows10.22H2-amd64.fi
+  tailleDisque: 100
+  architecture: amd64
+  typeOs: windows
+  repertoireTemplates: 10
+  suffixeVersion: 10.22H2
+  files:
+  - EoleCiTestContext.ps1
+  - EoleCiTestService.ps1
+  - EoleCiTestsCommon.ps1
+  - install.ps1
+  - run-from-context.ps1
+
+- imageFreshInstall: Windows2012R2-amd64.fi
+  imageIntermediaire: Windows2012R2-amd64.daily
+  tailleDisque: 100
+  architecture: amd64
+  typeOs: windowsServer
+  repertoireTemplates: 8.1
+  suffixeVersion: w2012R2
+  files:
+  - EoleCiTestContext.ps1
+  - EoleCiTestService.ps1
+  - EoleCiTestsCommon.ps1
+  - install.ps1
+  - run-from-context.ps1
+
+- imageFreshInstall: Windows2019-amd64.fi
+  imageIntermediaire: Windows2019-amd64.daily
+  tailleDisque: 100
+  architecture: amd64
+  typeOs: windowsServer
+  repertoireTemplates: 10
+  suffixeVersion: w2019
+  files:
+  - EoleCiTestContext.ps1
+  - EoleCiTestService.ps1
+  - EoleCiTestsCommon.ps1
+  - install.ps1
+  - run-from-context.ps1
+
+# VM finale
+- imageIntermediaire: ubuntu-22.04-server-amd64.daily
+  imageFinale: kubernetes.vm
+  tailleDisque: 100
+  architecture: amd64
+  frequence: daily
+  typeOs: ubuntu
+  buildCommand: install-kubernetes.sh
+
+- imageIntermediaire: ubuntu-22.04-server-amd64.daily
+  imageFinale: robot.fi
+  architecture: amd64
+  typeOs: ubuntu
+  buildCommand: robot.sh
+
+- imageIntermediaire: ubuntu-24.04-server-amd64.daily
+  imageFinale: gateway.fi
+  architecture: amd64
+  typeOs: ubuntu
+  buildCommand: gateway.sh
+  usePersistentImage: non
+  boot: uefi
+
+- imageIntermediaire: ubuntu-20.04-server-amd64.daily
+  architecture: amd64
+  imageFinale: eolecitests.fi
+  typeOs: ubuntu
+  buildCommand: eolecitests.sh
+
+- imageIntermediaire: ubuntumate-20.04-desktop-amd64.daily
+  architecture: amd64
+  imageFinale: pc-mate-2004.vm
+  typeOs: ubuntumate
+  suffixeVersion: mate-2004
+  buildCommand: pc-mate.sh
+
+- imageIntermediaire: ubuntumate-22.04-desktop-amd64.daily
+  architecture: amd64
+  imageFinale: pc-mate-2204.vm
+  typeOs: ubuntumate
+  suffixeVersion: mate-2204
+  buildCommand: pc-mate.sh
+
+- imageIntermediaire: ubuntumate-24.04-desktop-amd64.daily
+  architecture: amd64
+  imageFinale: pc-mate-2404.vm
+  typeOs: ubuntumate
+  suffixeVersion: mate-2204
+  buildCommand: pc-mate.sh
+  boot: uefi
+
+- imageIntermediaire: ubuntu-20.04-desktop-amd64.daily
+  architecture: amd64
+  imageFinale: pc-ubuntu-2004.vm
+  typeOs: ubuntumate
+  suffixeVersion: ubuntu-2004
+  buildCommand: pc-ubuntu.sh
+
+- imageIntermediaire: ubuntu-21.10-desktop-amd64.daily
+  architecture: amd64
+  imageFinale: pc-ubuntu-2110.vm
+  typeOs: ubuntumate
+  suffixeVersion: ubuntu-2110
+  buildCommand: pc-ubuntu.sh
+
+- imageIntermediaire: ubuntu-22.04-desktop-amd64.daily
+  architecture: amd64
+  imageFinale: pc-ubuntu-2204.vm
+  typeOs: ubuntumate
+  suffixeVersion: ubuntu-2204
+  buildCommand: pc-ubuntu.sh
+
+- imageIntermediaire: ubuntu-24.04-desktop-amd64.daily
+  architecture: amd64
+  imageFinale: pc-ubuntu-2404.vm
+  typeOs: ubuntumate
+  suffixeVersion: ubuntu-2404
+  buildCommand: pc-ubuntu.sh
+  boot: uefi
+
+- imageIntermediaire: linuxmint-20-cinnamon-amd64.daily
+  architecture: amd64
+  imageFinale: pc-linuxmint-20.vm
+  typeOs: linuxmint
+  suffixeVersion: linuxmint-20
+  buildCommand: pc-linuxmint.sh
+
+- imageIntermediaire: linuxmint-21-cinnamon-amd64.daily
+  architecture: amd64
+  imageFinale: pc-linuxmint-21.vm
+  typeOs: linuxmint
+  suffixeVersion: linuxmint-21
+  buildCommand: pc-linuxmint.sh
+
+- imageIntermediaire: linuxmint-21.3-cinnamon-amd64.daily
+  architecture: amd64
+  imageFinale: pc-linuxmint-21.3.vm
+  typeOs: linuxmint
+  suffixeVersion: linuxmint-21.3
+  buildCommand: pc-linuxmint.sh
+
+- imageIntermediaire: linuxmint-22-cinnamon-amd64.daily
+  architecture: amd64
+  imageFinale: pc-linuxmint-22.vm
+  typeOs: linuxmint
+  suffixeVersion: linuxmint-22
+  buildCommand: pc-linuxmint.sh
+  boot: uefi
+
+- imageIntermediaire: ubuntumate-20.04-desktop-amd64.daily
+  architecture: amd64
+  imageFinale: pc-openvas.fi
+  typeOs: ubuntumate
+  buildCommand: pc-mate.sh
+
+- imageIntermediaire: debian-12-amd64-eole-ci-tests.daily
+  imageFinale: pc-debian-12.vm
+  architecture: amd64
+  suffixeVersion: debian12
+  typeOs: debiandesktop
+  buildCommand: pc-debian.sh
+
+- imageIntermediaire: debian-10.4.0-amd64-eole-ci-tests.daily
+  architecture: amd64
+  imageFinale: rie-ldapma.vm
+  typeOs: debian
+  suffixeVersion: debian
+  buildCommand: rie.sh
+
+- imageIntermediaire: debian-10.4.0-amd64-eole-ci-tests.daily
+  architecture: amd64
+  imageFinale: rie-dns-banshee.vm
+  typeOs: debian
+  suffixeVersion: debian
+  buildCommand: rie.sh
+
+- imageIntermediaire: macOs.qcow2
+  architecture: amd64
+  imageFinale: macOs.qcow2
+  typeOs: macos
+  suffixeVersion: macos
+
+- imageFinale: Windows11.22H2-amd64.vm
+  imageIntermediaire: Windows11.22H2-amd64.daily
+  tailleDisque: 100
+  architecture: amd64
+  typeOs: windows
+  repertoireTemplates: 11
+  suffixeVersion: 11.22H2
+  files:
+  - EoleCiTestContext.ps1
+  - EoleCiTestService.ps1
+  - EoleCiFunctions.ps1
+  - EoleCiTestsCommon.ps1
+  - run-from-context.ps1
+  - install.ps1
+  - start.ps1
+
+- imageFinale: Windows11.23H2-amd64.vm
+  imageIntermediaire: Windows11.23H2-amd64.daily
+  tailleDisque: 100
+  architecture: amd64
+  typeOs: windows
+  repertoireTemplates: 11
+  suffixeVersion: 11.22H2
+  files:
+  - EoleCiTestContext.ps1
+  - EoleCiTestService.ps1
+  - EoleCiFunctions.ps1
+  - EoleCiTestsCommon.ps1
+  - run-from-context.ps1
+  - install.ps1
+  - start.ps1
+  boot: uefi
+
+- imageFinale: Windows10.22H2-amd64.vm
+  imageIntermediaire: Windows10.22H2-amd64.daily
+  tailleDisque: 100
+  architecture: amd64
+  typeOs: windows
+  repertoireTemplates: 10
+  suffixeVersion: 10.22H2
+  files:
+  - EoleCiTestContext.ps1
+  - EoleCiTestService.ps1
+  - EoleCiFunctions.ps1
+  - EoleCiTestsCommon.ps1
+  - run-from-context.ps1
+  - install.ps1
+  - start.ps1
+
+- imageFinale: Windows2012R2-amd64.vm
+  imageIntermediaire: Windows2012R2-amd64.daily
+  tailleDisque: 100
+  architecture: amd64
+  typeOs: windowsServer
+  repertoireTemplates: 8.1
+  suffixeVersion: W2012R2
+  files:
+  - EoleCiTestContext.ps1
+  - EoleCiTestService.ps1
+  - EoleCiFunctions.ps1
+  - EoleCiTestsCommon.ps1
+  - run-from-context.ps1
+  - install.ps1
+  - start.ps1
+
+- imageFinale: Windows2019-amd64.vm
+  imageIntermediaire: Windows2019-amd64.daily
+  tailleDisque: 100
+  architecture: amd64
+  typeOs: windowsServer
+  repertoireTemplates: 10
+  suffixeVersion: W2012R2
+  files:
+  - EoleCiTestContext.ps1
+  - EoleCiTestService.ps1
+  - EoleCiFunctions.ps1
+  - EoleCiTestsCommon.ps1
+  - run-from-context.ps1
+  - install.ps1
+  - start.ps1
+

@@ -1,0 +1,177 @@
+# voir http://jenkins.eole.lan/jenkins/job/Internes/job/git-clone-eole-ci-tests-to-all-vm/configure
+# le fichier est copiée dans le script vers /var/lib/jenkins/logparser-eole.rules
+
+# see https://wiki.jenkins-ci.org/display/JENKINS/Log+Parser+Plugin
+
+# create a quick access link to lines in the report containing 'INFO'
+info /INFO/
+info /INFO: /
+info /Préparation du dépaquetage de .../
+info /received a SIGTERM. Exiting./
+info /apparmor="DENIED"/
+info /Erreur de segmentation.*proftpd/
+info /ERROR: Step ‘Archiver des artefacts’/
+info /lib2to3: Aucun fichier ou dossier de ce type/
+info /plymouth-switch-root-initramfs.service not loaded./
+info /Failed to kill control group \/system.slice\/veyon.service/
+
+# suite https://github.com/logrotate/logrotate/blob/master/ChangeLog.md ignorer la cas 'prepend error...'
+ok /error: Compressing program wrote following message to stderr/
+ok /Attention : Définir GRUB_TIMEOUT à une valeur non nulle si GRUB_HIDDEN_TIMEOUT est définie n’est plus possible/
+
+ok /not really/
+ok /Error while decoding stream/
+# message de creolint (faux positif)
+ok /:ERROR:error/
+# message test mocha / electron
+ok / electron:stderr /
+# erreur Upgrade-Auto
+ok /ubuntu-release-upgrader-/
+
+
+warning /Duplicate entry 'pydio-ajxp_user_rights/
+warning /^W: /
+warning /^E: /
+warning /[Ww]arning/
+warning /WARNING/
+warning /EOLE_CI_WARNING/
+warning /ATTENTION: /
+warning /ATTENTION /
+warning /WARNING: /
+warning /HACK: /
+warning /Dernière mise à jour => Erreur/
+# erreurs EOLE 2.8
+warning /fwupd.postinst: /
+warning /open-iscsi.conf: Aucun/
+warning /find: (.)(.)usr(.)lib(.)python3.7/
+warning /find: (.)usr(.)lib(.)python3(.)7/
+# erreurs ScribeAD 2.6.2
+warning /Est-ce que /dev/pts est monté/
+warning /Failed to connect to bus: Aucun/
+warning /Operation failed: Aucun/
+warning /setfacl.*:.*Option.*-m/
+# erreurs AmonEcole 2.6.2
+warning /impossible de déréférencer '(.)usr(.)lib(.)courier/
+# erreur Eclair 2.7
+warning /Mirror.jpg/
+# erreurs Sauvegarde Bareos
+warning /Could not stat /
+warning /role "bareos" already exists/
+# erreurs maj cron
+warning /stat: impossible d'.*valuer '.': Aucun fichier ou dossier de ce type/
+# erreur install bareos-database-common Amon 2.9
+warning /chown: utilisateur incorrect: «postgres»/
+# erreurs Upgrade-Auto
+warning /.apparmor.md5sums:/
+warning / kadmind: Aucun /
+warning /locale: Ne peut initialiser LC_ALL à la locale par défaut: /
+warning /extend.conf»: Aucun/
+warning /logger(.) socket (.)dev(.)log(.) Aucun fichier ou dossier de ce type/
+warning /grep: (.)etc(.)ubuntu-advantage(.)uaclient.conf: Aucun fichier ou dossier de ce type/
+warning /find: : Aucun fichier ou dossier de ce type/
+warning /find: ‘’: Aucun fichier ou dossier de ce type/
+warning /distutils: Aucun fichier ou dossier de ce type/
+warning /error: systemctl preset failed on .*.service: No such file or directory/
+warning /impossible de réouvrir stdin.*: No such file or directory/
+warning /apache2: Syntax error on line 142 of (.)etc(.)apache2(.)apache2.conf/
+warning /apache2: Syntax error on line 146 of (.)etc(.)apache2(.)apache2.conf/
+warning /Impossible d'accéder au répertoire personnel que vous avez indiqué .*stunnel4.*: No such file or directory./
+warning /Impossible d'accder au rpertoire personnel que vous avez indiqu \(/var/lib/swtpm\): No such file or directory./
+warning /nonexistent.*: No such file or directory/
+warning /x86_64-linux-gnu_EGL.conf: No such file or directory/
+warning /Spool read error for .* No such file or directory/
+warning /AssertionError.php/
+# traceback "assumés"
+warning /Backtrace \(most recent call last\):/
+warning /user_cas(.)appinfo(.)info.xml/
+# erreurs 24.04
+warning /snapd.lxd.daemon.unix.socket does not exist./
+
+# EOLE:
+error /(?i)^error /
+error /EOLE_CI_ALERTE/
+error /ExceptionNebula/
+error /^Erreur FAILED/
+error /ERREUR: /
+error /:ERROR:/
+error /ERROR: /
+error /ERROR\(exception\):/
+error /Erreur : /
+error /ERR : /
+error /Erreur HTTP : /
+error /Uncaught TypeError:/
+error /PHP Fatal error:/
+error /ClientAfterJob: ERROR/
+error /termination status:  Error/
+error /AUTOMATE : Traceback dans la sortie console/
+error /Traceback \(most recent call last\):/
+error /uncaught exception/
+error /SyntaxError: /
+error /Aucun espace disponible sur le/
+error /no space on disk/
+error /Espace libre insuffisant/
+error /: SQL error,/
+error /MySQL error,/
+error /Can't connect to/
+error /Access denied for user/
+error /Access denied; you need/
+error /Closing DB...Error, entries missing!/
+error /seg fault/
+error /core dump/
+error /Erreur de segmentation/
+error /fatal: /
+error / --help /
+error /Erreur à la mise à jour/
+error /Cannot parse image/
+error /Error parsing image name/
+error /Service unknown to creoled: /
+error /Erreur creole /
+error /est une valeur invalide pour l'option/
+error /CRITICAL/
+error /commande introuvable/
+error /identifient le même fichier/
+error /Execution commande en erreur, exit=/
+error /Des erreurs ont été rencontrées/
+error /utilisateur incorrect:/
+error /invalid per syntax/
+error /^Usage: /
+error /not available on this platform/
+error /Résultat de la commande bconsole imprévu/
+error /Erreur lors de la récupération du catalogue/
+error /Erreur au test de montage/
+error /Erreur lors de l'enregistrement du noeud/
+error / rc  eole/
+error /Invalid argument/
+error /Operation not supported/
+error /Unknown operation/
+error /Aucun fichier ou dossier de ce type/
+error /Aucun fichier ou dossier de ce nom/
+error /No such file or directory/
+error /.service not loaded./
+error /= FAILURES =/
+error /Synchronisation LSC => Erreur/
+error /'ascii' codec can't encode character/
+error /root - Variable inconnue /
+error /Could not resolve host: get.helm.sh/
+error /ERR=Argument invalide/
+error /Périphérique ou ressource occupé/
+error /AssertionError/
+error /undefined method/
+error /unable to import/
+error /Erreur, réseaux virtuels incohérents/
+error /Patch de .* échoué/
+error /vfs objects specified without required AD DC module/
+error /ipset .* Set cannot be destroyed/
+error /Invalid option/
+error /Cannot contact any KDC/
+error / erreur format :/
+error /Erreur inconnue :/
+error /was not found/
+error /Failed to bind to uuid/
+error /Failed to disable unit: /
+error /failed: Jinja variable/
+error /Failed to authenticate!/
+error /Minion did not return/
+error /chown: warning:/
+#
+

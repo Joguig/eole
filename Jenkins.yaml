@@ -1,0 +1,62 @@
+jenkins:
+- hostname: gilles-G10AJ
+  contextOne: ONE_EOLE
+  cloud: ONE
+  repertoireEoleCiTestsExchange: /mnt/eole-ci-tests
+  repertoireToolEoleCi: DEV
+  keepEscapeInOutput: non
+  squashUrl: http://squash-tm.eole.lan
+
+- hostname: gilles-thinkpad
+  contextOne: ONE_EOLE
+  cloud: ONE
+  repertoireEoleCiTestsExchange: /mnt/eole-ci-tests
+  repertoireToolEoleCi: DEV
+  keepEscapeInOutput: non
+  squashUrl: http://squash-tm.eole.lan
+
+- hostname: gilles-thinkpad
+  contextOne: ACA_HAPY
+  cloud: HAPY
+  repertoireEoleCiTestsExchange: /mnt/eole-ci-tests
+  repertoireToolEoleCi: DEV
+  keepEscapeInOutput: non
+  squashUrl: http://squash-tm.eole.lan
+
+- hostname: gilles-nuc
+  contextOne: ONE_EOLE
+  cloud: ONE
+  repertoireEoleCiTestsExchange: /mnt/eole-ci-tests
+  repertoireToolEoleCi: DEV
+  keepEscapeInOutput: non
+  squashUrl: http://squash-tm.eole.lan
+
+- hostname: gilles-nuc
+  contextOne: DEMO1
+  cloud: DEMO1
+  repertoireEoleCiTestsExchange: /mnt/eole-ci-tests-demo
+  repertoireToolEoleCi: DEV
+  keepEscapeInOutput: non
+  squashUrl: http://squash-tm.eole.lan
+
+- hostname: jenkins.eole.lan
+  contextOne: ONE_EOLE
+  cloud: ONE
+  repertoireToolEoleCi: SYSTEM
+  keepEscapeInOutput: non
+  squashUrl: http://squash-tm.eole.lan
+
+- hostname: jenkins-one.eole.lan
+  contextOne: ONE_EOLE
+  cloud: ONE
+  repertoireToolEoleCi: SYSTEM
+  keepEscapeInOutput: non
+  squashUrl: http://squash-tm.eole.lan
+
+- hostname: gateway
+  contextOne: ONE_EOLE
+  cloud: ONE
+  repertoireEoleCiTestsExchange: /mnt/eole-ci-tests
+  repertoireToolEoleCi: AGENT
+  keepEscapeInOutput: non
+  squashUrl: http://squash-tm.eole.lan

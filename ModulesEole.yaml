@@ -1,0 +1,403 @@
+eoleVersions:
+- versionMajeur: "3.0"
+  version: "3.0a"
+  architectures: [ amd64 ]
+  genereFreshInstall: non
+  genereDaily: non
+  frequenceDaily: daily
+  frequenceTest: daily
+  usePersistentImageForDaily: oui
+  majAuto: DEV
+  sources:
+#  - name: "amon3"
+#    url: "http://castor.eole.lan/test-amon3/FreeBSD:11:amd64/20.1/sets/OPNsense-20.1-OpenSSL-dvd-amd64.iso"
+#    repertoireTemplates: "3.0"
+#    freshInstallFromDistribution: non
+#    distributionVersion: "12.1"
+#    distributionNom: "freebsd"
+#    typeOs: freebsd
+#    boot: bios
+#    modulesVersion:
+#    - module: amon
+#      memoire: 3072
+#      menu: 1
+
+  - name: "eolebase3"
+    freshInstallFromDistribution: oui
+    distributionVersion: "22.04"
+    distributionNom: "jammy"
+    boot: bios
+    modulesVersion:
+    - module: base
+      memoire: 20480
+      tailleDisque: 100
+      menu: 1
+
+#  - name: "hapy3"
+#    freshInstallFromDistribution: oui
+#    distributionVersion: "22.04"
+#    distributionNom: "jammy"
+#    boot: bios
+#    modulesVersion:
+#    - module: hapy
+#      memoire: 20480
+#      menu: 11
+
+- versionMajeur: "2.10.0"
+  version: "2.10.0a0"
+  estDerniereVersion: oui
+  architectures: [ amd64 ]
+  genereFreshInstall: oui
+  genereDaily: oui
+  frequenceDaily: daily
+  frequenceTest: daily
+  usePersistentImageForDaily: oui
+  majAuto: DEV
+  sources:
+  - name: eole
+    url: http://castor.eole.lan/iso/2.10/release/2.10.0a2/eole-2.10.0a2-amd64.iso
+    repertoireTemplates: "2.10"
+    distributionVersion: "24.04"
+    distributionNom: "noble"
+    boot: uefi
+    modulesVersion:
+    - module: base
+      memoire: 2048
+      tailleDisque: 100
+      menu: 2
+    - module: amon
+      publishMarket: non
+      memoire: 5120
+      menu: 3
+    - module: scribe
+      publishMarket: non
+      memoire: 6144
+      menu: 4
+    - module: seth
+      memoire: 3072
+      publishMarket: non
+      menu: 5
+    - module: amonecole
+      memoire: 8192
+      menu: 6
+    - module: sphynx
+      memoire: 2048
+      menu: 7
+    - module: seshat
+      memoire: 3072
+      menu: 8
+    - module: thot
+      memoire: 4096
+      menu: 9
+    - module: zephir
+      publishMarket: non
+      memoire: 8192
+      menu: 10
+#    - module: hapy
+#      memoire: 8192
+#      menu: 11
+#    - module: hapy-node
+#      memoire: 8192
+#      menu: 12
+
+- versionMajeur: "2.9.0"
+  version: "2.9.0"
+  estDerniereVersion: oui
+  architectures: [ amd64 ]
+  genereFreshInstall: oui
+  genereDaily: oui
+  frequenceDaily: daily
+  frequenceTest: daily
+  usePersistentImageForDaily: oui
+  majAuto: RC
+  sources:
+  - name: eole
+    url: http://eole.ac-dijon.fr/pub/iso/EOLE-2.9/2.9.0.1/eole-2.9.0.1-amd64.iso
+    distributionVersion: "22.04"
+    distributionNom: "jammy"
+    freshInstallFromDistribution: non
+    boot: uefi
+    repertoireTemplates: "2.9"
+    modulesVersion:
+    - module: base
+      memoire: 2048
+      publishMarket: oui
+      menu: 2
+    - module: amon
+      publishMarket: oui
+      memoire: 3072
+      menu: 3
+    - module: scribe
+      publishMarket: oui
+      memoire: 6144
+      menu: 4
+    - module: seth
+      memoire: 3072
+      publishMarket: oui
+      menu: 5
+    - module: amonecole
+      memoire: 8192
+      menu: 6
+    - module: sphynx
+      memoire: 2048
+      menu: 7
+    - module: seshat
+      memoire: 3072
+      menu: 8
+    - module: thot
+      memoire: 4096
+      menu: 9
+    - module: zephir
+      publishMarket: non
+      memoire: 8192
+      menu: 10
+    - module: hapy
+      memoire: 8192
+      menu: 11
+    - module: hapy-node
+      memoire: 8192
+      menu: 12
+
+- versionMajeur: "2.8.1"
+  version: "2.8.1"
+  architectures: [ amd64 ]
+  estDerniereVersion: non
+  genereFreshInstall: oui
+  genereDaily: oui
+  frequenceDaily: daily
+  frequenceTest: daily
+  usePersistentImageForDaily: oui
+  majAuto: RC
+  sources:
+  - name: eole
+    url: "http://castor.eole.lan/iso/2.8/releases/2.8.1.3/eole-2.8.1.3-alternate-amd64.iso"
+    distributionVersion: "20.04"
+    distributionNom: "focal"
+    freshInstallFromDistribution: non
+    boot: bios
+    repertoireTemplates: "2.5"
+    modulesVersion:
+    - module: base
+      memoire: 2048
+      publishMarket: oui
+      menu: 1
+    - module: amon
+      memoire: 3072
+      publishMarket: oui
+      menu: 2
+    - module: scribe
+      memoire: 6144
+      publishMarket: oui
+      menu: 3
+    - module: seth
+      memoire: 3072
+      publishMarket: oui
+      menu: 4
+    - module: amonecole
+      memoire: 8192
+      menu: 5
+    - module: sphynx
+      memoire: 2048
+      menu: 6
+    - module: seshat
+      memoire: 3072
+      menu: 7
+    - module: thot
+      memoire: 4096
+      menu: 8
+    - module: zephir
+      publishMarket: oui
+      memoire: 8192
+      menu: 9
+    - module: hapy
+      memoire: 8192
+      menu: 10
+    - module: hapy-node
+      memoire: 8192
+      menu: 11
+
+- versionMajeur: "2.8.0"
+  version: "2.8.0"
+  architectures: [ amd64 ]
+  genereFreshInstall: oui
+  genereDaily: oui
+  frequenceDaily: daily
+  frequenceTest: weekly
+  usePersistentImageForDaily: oui
+  majAuto: RC
+  sources:
+  - name: eole
+    url: "http://test-eole.ac-dijon.fr/pub/iso/devel/2.8/releases/2.8.0/eole-2.8.0-alternate-amd64.iso"
+    distributionVersion: "20.04"
+    distributionNom: "focal"
+    freshInstallFromDistribution: non
+    boot: bios
+    repertoireTemplates: "2.5"
+    modulesVersion:
+    - module: base
+      memoire: 2048
+      menu: 1
+    - module: scribe
+      memoire: 6144
+      menu: 2
+    - module: seth
+      memoire: 3072
+      publishMarket: oui
+      menu: 3
+    - module: sphynx
+      memoire: 2048
+      menu: 4
+    - module: seshat
+      memoire: 3072
+      menu: 5
+    - module: thot
+      memoire: 4096
+      menu: 6
+    - module: zephir
+      memoire: 8192
+      menu: 7
+    - module: hapy
+      memoire: 4096
+      menu: 8
+    - module: hapy-node
+      memoire: 4096
+      menu: 9
+
+
+- versionMajeur: "2.7.2"
+  version: "2.7.2"
+  architectures: [ amd64 ]
+  estDerniereVersion: oui
+  genereFreshInstall: oui
+  genereDaily: oui
+  frequenceDaily: weekly
+  frequenceTest: weekly
+  usePersistentImageForDaily: oui
+  majAuto: RC
+  sources:
+  - name: eole
+    url: "http://test-eole.ac-dijon.fr/pub/iso/devel/2.7/releases/2.7.2/eole-2.7.2-alternate-amd64.iso"
+    distributionVersion: "18.04"
+    distributionNom: "bionic"
+    freshInstallFromDistribution: non
+    boot: bios
+    repertoireTemplates: "2.5"
+    modulesVersion:
+    - module: base
+      memoire: 2048
+      publishMarket: oui
+      menu: 1
+    - module: amon
+      memoire: 3072
+      publishMarket: oui
+      menu: 2
+    - module: horus
+      memoire: 6144
+      publishMarket: oui
+      menu: 3
+    - module: scribe
+      memoire: 6144
+      publishMarket: oui
+      menu: 4
+    - module: seth
+      memoire: 3072
+      publishMarket: oui
+      menu: 5
+    - module: eclair
+      memoire: 4096
+      menu: 6
+    - module: sphynx
+      memoire: 2048
+      menu: 7
+    - module: seshat
+      memoire: 3072
+      menu: 8
+    - module: thot
+      memoire: 4096
+      menu: 9
+    - module: zephir
+      publishMarket: oui
+      memoire: 8192
+      menu: 10
+    - module: hapy
+      memoire: 4096
+      menu: 11
+    - module: hapy-node
+      memoire: 4096
+      menu: 12
+
+
+modules:
+  - module: base
+    nomHostApresReboot: eolebase
+    memoire: 1024
+
+  - module: amon
+    memoire: 2048
+
+  - module: amonecole
+    memoire: 8192
+    tailleDisque: 100
+    container: oui
+
+  - module: horus
+    memoire: 2048
+
+  - module: amonhorus
+    memoire: 2048
+    container: oui
+
+  - module: scribe
+    memoire: 2048
+
+  - module: seth
+    memoire: 2048
+    tailleDisque: 100
+
+  # attention eclair 2.3 ==< uniquement i386 et container=oui
+  - module: eclair
+    memoire: 2048
+
+  - module: amonecoleeclair
+    memoire: 8192
+    tailleDisque: 100
+    container: oui
+
+  - module: seshat
+
+  - module: thot
+    memoire: 4096
+
+  - module: hapy
+    memoire: 8192
+    tailleDisque: 100
+    architecture: amd64
+
+  - module: hapy-node
+    memoire: 2048
+    tailleDisque: 100
+    architecture: amd64
+
+  - module: hapy-market
+    tailleDisque: 100
+    architecture: amd64
+
+  - module: hapy-master
+    tailleDisque: 100
+    architecture: amd64
+
+  - module: esbl
+    memoire: 2048
+
+  - module: ecdl
+    memoire: 2048
+
+  - module: sphynx
+
+  - module: zephir
+    memoire: 2048
+
+  - module: zephirlog
+
+  - module: sentinelle
+    memoire: 2048
