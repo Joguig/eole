@@ -1,0 +1,25 @@
+eole-web-pkg
+  Dépend: apache2
+  Dépend: libapache2-mod-rpaf
+  Dépend: libapache2-mod-php
+    libapache2-mod-php7.0
+  Dépend: php
+    php7.0
+  Dépend: php-curl
+    php7.0-curl
+  Dépend: php-gd
+    php7.0-gd
+  Dépend: php-imap
+    php7.0-imap
+  Dépend: php-intl
+    php7.0-intl
+  Dépend: php-ldap
+    php7.0-ldap
+  Dépend: php-mysql
+  Dépend: php-xml-parser
+  Dépend: eole-php-cas
+  Dépend: eole-web-config
+  Dépend: eole-flask-apps
+  Est en conflit avec: <web-pkg>
+  Remplace: <web-pkg>
+    eole-web-pkg

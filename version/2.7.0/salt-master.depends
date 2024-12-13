@@ -1,0 +1,12 @@
+salt-master
+  Dépend: adduser
+  Dépend: lsb-base
+  Dépend: python3-crypto
+ |Dépend: python3-systemd
+  Dépend: <sysvinit-core>
+  Dépend: python3-zmq
+  Dépend: salt-common
+  Dépend: <python3:any>
+    python3
+ |Recommande: <python3-pygit2>
+  Recommande: <python3-git>

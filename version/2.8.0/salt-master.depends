@@ -1,0 +1,7 @@
+salt-master
+  Dépend: python3-crypto
+  Dépend: python3-zmq
+  Dépend: salt-common
+  Dépend: <python3:any>
+    python3
+  Recommande: python3-git

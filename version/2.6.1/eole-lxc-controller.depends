@@ -1,0 +1,10 @@
+eole-lxc-controller
+  Dépend: eole-server
+  Dépend: lxc1
+  Dépend: lxc-templates
+  Dépend: debootstrap
+  Dépend: cgroup-lite
+  Dépend: eole-ssmtp-pkg
+  Dépend: eole-apt-cacher-ng
+  Casse: <eole-conteneur>
+  Remplace: <eole-conteneur>

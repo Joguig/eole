@@ -1,0 +1,21 @@
+bareos-director
+ |Pré-Dépend: debconf
+  Pré-Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Pré-Dépend: adduser
+  Dépend: bareos-common
+  Dépend: bareos-database-common
+  Dépend: bareos-database-tools
+  Dépend: lsb-base
+  Dépend: lsof
+ |Dépend: bsd-mailx
+  Dépend: <mailx>
+    bsd-mailx
+    mailutils
+  Dépend: libc6
+  Dépend: libjansson4
+  Dépend: libstdc++6
+  Est en conflit avec: bacula-director
+  Recommande: logrotate
+  Remplace: bacula-director

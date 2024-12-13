@@ -1,0 +1,18 @@
+eole-fichier-common-pkg
+  Dépend: init-system-helpers
+  Dépend: acl
+  Dépend: quota
+  Dépend: quotatool
+  Dépend: nscd
+    unscd
+  Dépend: samba
+  Dépend: samba-common-bin
+  Dépend: smbclient
+  Dépend: winbind
+  Dépend: libpam-winbind
+  Dépend: tdb-tools
+  Dépend: samba-vfs-modules
+  Dépend: samba-dsdb-modules
+  Est en conflit avec: <fichier-pkg>
+  Remplace: <fichier-pkg>
+    eole-fichier-common-pkg

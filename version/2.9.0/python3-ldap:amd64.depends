@@ -1,0 +1,12 @@
+python3-ldap
+  Dépend: python3
+  Dépend: python3
+  Dépend: python3-pyasn1
+  Dépend: python3-pyasn1-modules
+  Dépend: <python3:any>
+    python3
+  Dépend: libc6
+  Dépend: libldap-2.5-0
+  Est en conflit avec: python3-pyldap
+  Remplace: python3-pyldap
+    python3-ldap

@@ -1,0 +1,6 @@
+eole-mysql-pkg
+  Dépend: mysql-server
+    percona-xtradb-cluster-server-5.7
+  Est en conflit avec: <mysql-pkg>
+  Remplace: <mysql-pkg>
+    eole-mysql-pkg

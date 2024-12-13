@@ -1,0 +1,14 @@
+bareos-database-common
+ |Pré-Dépend: debconf
+  Pré-Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Dépend: bareos-common
+ |Dépend: bareos-database-postgresql
+ |Dépend: bareos-database-mysql
+  Dépend: bareos-database-sqlite3
+  Dépend: dbconfig-common
+  Dépend: lsb-base
+  Dépend: libc6
+  Dépend: libgcc-s1
+  Dépend: libstdc++6

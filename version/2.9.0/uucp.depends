@@ -1,0 +1,21 @@
+uucp
+  Dépend: libc6
+  Dépend: libpam0g
+  Dépend: cron
+  Dépend: <mailx>
+    mailutils
+  Dépend: logrotate
+  Dépend: libpam-runtime
+  Dépend: cu
+  Dépend: netbase
+ |Dépend: openbsd-inetd
+  Dépend: <inet-superserver>
+    openbsd-inetd
+  Est en conflit avec: <tua>
+ |Recommande: <postfix>
+ |Recommande: exim4
+ |Recommande: <exim>
+ |Recommande: <smail>
+ |Recommande: <courier-mta>
+ |Recommande: <zmailer>
+  Recommande: <rmail>

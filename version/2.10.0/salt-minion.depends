@@ -1,0 +1,9 @@
+salt-minion
+  Dépend: bsdmainutils
+  Dépend: dctrl-tools
+  Dépend: salt-common
+  Casse: salt-common
+  Recommande: debconf-utils
+  Recommande: dmidecode
+  Recommande: net-tools
+  Remplace: salt-common

@@ -1,0 +1,58 @@
+courier-imap
+  Dépend: courier-base
+ |Dépend: debconf
+  Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Dépend: gamin
+ |Dépend: <default-mta>
+    postfix
+  Dépend: <mail-transport-agent>
+    esmtp-run
+    exim4-daemon-light
+    msmtp-mta
+    nullmailer
+    opensmtpd
+    sendmail-bin
+    ssmtp
+    dma
+    exim4-daemon-heavy
+    postfix
+ |Dépend: sysvinit-utils
+  Dépend: <init-d-script>
+  Dépend: courier-authlib
+  Dépend: libc6
+  Dépend: libcourier-unicode4
+ |Dépend: libgamin0
+  Dépend: <libfam0>
+    libgamin0
+  Dépend: <libgdbm6>
+    libgdbm6t64
+  Dépend: libidn12
+  Est en conflit avec: <imap-server>
+    cyrus-imapd
+    dovecot-imapd
+    mailutils-imap4d
+  Casse: <courier-imap-ssl>
+  Suggère: <courier-doc>
+  Suggère: <imap-client>
+    geary
+    mew-beta
+    wl
+    wl-beta
+    balsa
+    claws-mail
+    evolution
+    gnumail.app
+    im
+    kmail
+    mew
+    mutt
+    neomutt
+    s-nail
+  Remplace: <courier-imap-ssl>
+  Remplace: <imap-server>
+    cyrus-imapd
+    courier-imap
+    dovecot-imapd
+    mailutils-imap4d

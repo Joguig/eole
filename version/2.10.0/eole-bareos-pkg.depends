@@ -1,0 +1,12 @@
+eole-bareos-pkg
+  Dépend: mtx
+  Dépend: cifs-utils
+  Dépend: eole-postgresql
+  Dépend: bareos-tools
+  Dépend: bareos
+  Dépend: bareos-common
+  Dépend: bareos-database-postgresql
+  Dépend: python3-bareos
+  Est en conflit avec: <eole-bareos-mysql>
+  Remplace: <eole-bareos-mysql>
+    eole-bareos-pkg

@@ -1,0 +1,12 @@
+eole-one-master
+  Dépend: sqlite3
+  Dépend: ruby-xmlrpc
+  Dépend: eole-ovs
+  Dépend: eole-libvirt
+  Dépend: opennebula
+  Est en conflit avec: <appmarket-sunstone>
+  Est en conflit avec: eole-one-singlenode
+  Casse: eole-one-frontend
+  Remplace: eole-one-frontend
+  Remplace: eole-one-singlenode
+    eole-one-master

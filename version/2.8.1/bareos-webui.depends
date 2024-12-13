@@ -1,0 +1,44 @@
+bareos-webui
+ |Dépend: apache2
+  Dépend: <httpd>
+    tntnet
+    apache2
+    lighttpd
+    micro-httpd
+    mini-httpd
+    nginx-core
+    nginx-extras
+    nginx-full
+    nginx-light
+    ocsigenserver
+    webfs
+    yaws
+ |Dépend: libapache2-mod-php
+    libapache2-mod-php7.4
+ |Dépend: <libapache2-mod-php5>
+ |Dépend: <libapache2-mod-php7>
+ |Dépend: php
+    uwsgi-plugin-php
+    php7.4
+ |Dépend: <php5>
+ |Dépend: <php7>
+  Dépend: php-cgi
+    php7.4-cgi
+ |Dépend: php-common
+ |Dépend: <php5-common>
+  Dépend: <php7-common>
+ |Dépend: php-date
+ |Dépend: <php5-date>
+  Dépend: <php7-date>
+ |Dépend: php-intl
+    php7.4-intl
+ |Dépend: <php5-intl>
+  Dépend: <php7-intl>
+ |Dépend: php-json
+    php7.4-json
+ |Dépend: <php5-json>
+  Dépend: <php7-json>
+ |Dépend: php-curl
+    php7.4-curl
+ |Dépend: <php5-curl>
+  Dépend: <php7-curl>

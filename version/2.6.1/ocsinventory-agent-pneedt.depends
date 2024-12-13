@@ -1,0 +1,24 @@
+ocsinventory-agent-pneedt
+ |Dépend: debconf
+  Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Dépend: perl
+  Dépend: po-debconf
+  Dépend: ucf
+  Dépend: libxml-simple-perl
+  Dépend: libnet-ip-perl
+  Dépend: libnet-snmp-perl
+  Dépend: <libcompress-zlib-perl>
+    libio-compress-perl
+    libperl5.22
+  Dépend: libwww-perl
+  Dépend: libnet-ssleay-perl
+  Dépend: libproc-daemon-perl
+  Est en conflit avec: ocsinventory-agent
+  Suggère: dmidecode
+  Suggère: pciutils
+  Suggère: nmap
+  Suggère: smartmontools
+  Suggère: read-edid
+  Remplace: ocsinventory-agent

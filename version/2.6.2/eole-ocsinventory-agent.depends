@@ -1,0 +1,8 @@
+eole-ocsinventory-agent
+ |Dépend: debconf
+  Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Dépend: ocsinventory-agent-pneedt
+  Casse: supervision-psin
+  Remplace: supervision-psin

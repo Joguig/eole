@@ -1,0 +1,9 @@
+eole-cups-pkg
+  Dépend: cups
+  Dépend: <cups-pdf>
+    printer-driver-cups-pdf
+  Dépend: cups-browsed
+  Dépend: libldap-common
+  Est en conflit avec: <cups-pkg>
+  Remplace: <cups-pkg>
+    eole-cups-pkg

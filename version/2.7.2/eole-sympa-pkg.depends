@@ -1,0 +1,9 @@
+eole-sympa-pkg
+  Dépend: sympa
+  Dépend: libapache2-mod-fcgid
+  Dépend: <apache2-suexec>
+    apache2-suexec-custom
+    apache2-suexec-pristine
+  Est en conflit avec: <sympa-pkg>
+  Remplace: <sympa-pkg>
+    eole-sympa-pkg

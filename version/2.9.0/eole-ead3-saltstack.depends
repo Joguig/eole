@@ -1,0 +1,9 @@
+eole-ead3-saltstack
+  Dépend: <eole-common>
+    eole-server
+  Dépend: salt-api
+  Dépend: salt-master
+  Dépend: salt-minion
+  Est en conflit avec: eole-saltstack
+  Remplace: eole-saltstack
+    eole-ead3-saltstack

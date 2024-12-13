@@ -1,0 +1,14 @@
+bareos-filedaemon
+ |Pré-Dépend: debconf
+  Pré-Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Pré-Dépend: adduser
+  Dépend: bareos-common
+  Dépend: lsb-base
+  Dépend: lsof
+  Dépend: libc6
+  Dépend: libjansson4
+  Dépend: zlib1g
+  Est en conflit avec: bacula-fd
+  Remplace: bacula-fd

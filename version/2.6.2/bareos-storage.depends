@@ -1,0 +1,16 @@
+bareos-storage
+ |Pré-Dépend: debconf
+  Pré-Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Pré-Dépend: adduser
+  Dépend: bareos-common
+  Dépend: lsb-base
+  Dépend: lsof
+  Dépend: libc6
+  Dépend: libstdc++6
+  Dépend: libwrap0
+  Dépend: zlib1g
+  Est en conflit avec: bacula-sd
+  Casse: bareos-storage-tape
+  Remplace: bacula-sd

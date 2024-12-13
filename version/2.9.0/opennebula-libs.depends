@@ -1,0 +1,15 @@
+opennebula-libs
+  Dépend: ruby
+  Dépend: libzmq5
+  Dépend: libzmq3-dev
+  Dépend: opennebula-rubygems
+  Casse: opennebula
+  Casse: opennebula-gate
+  Casse: opennebula-sunstone
+  Casse: opennebula-tools
+  Casse: <ruby-opennebula>
+  Remplace: opennebula
+  Remplace: opennebula-gate
+  Remplace: opennebula-sunstone
+  Remplace: opennebula-tools
+  Remplace: <ruby-opennebula>

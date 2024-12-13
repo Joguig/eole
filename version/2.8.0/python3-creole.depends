@@ -1,0 +1,31 @@
+python3-creole
+  Dépend: <python3:any>
+    python3
+  Dépend: creole-common
+  Dépend: python3-tiramisu
+  Dépend: python-cheetah
+  Dépend: python-openssl
+  Dépend: python3-configobj
+  Dépend: python3-pyeole
+  Dépend: python-cherrypy3
+  Dépend: python-cjson
+  Dépend: python3-formencode
+  Dépend: patch
+  Dépend: python3-lxml
+  Dépend: libxml2-utils
+  Dépend: python3-ipy
+  Dépend: python3-pyinotify
+  Dépend: python3-passlib
+  Dépend: python3-requests
+  Dépend: python3-dateutil
+  Dépend: python3-eventlet
+  Dépend: python3-systemd
+  Dépend: python3-distutils
+  Est en conflit avec: <python3-creole-base>
+    python3-creole-client
+  Est en conflit avec: python3-creole-client
+  Remplace: <python3-creole-base>
+    python3-creole
+    python3-creole-client
+  Remplace: python3-creole-client
+    python3-creole

@@ -1,0 +1,7 @@
+eole-seshat-backend
+  Dépend: <python3:any>
+    python3
+  Dépend: python3-sqlalchemy
+  Dépend: python3-ldap
+  Est en conflit avec: <seshat-backend>
+  Remplace: <seshat-backend>

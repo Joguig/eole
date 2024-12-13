@@ -1,0 +1,22 @@
+opennebula-node
+  Dépend: adduser
+  Dépend: libvirt-daemon-system
+ |Dépend: qemu-kvm
+  Dépend: <pve-qemu-kvm>
+  Dépend: qemu-utils
+  Dépend: opennebula-common
+  Dépend: ruby
+  Dépend: vlan
+  Dépend: ipset
+  Dépend: pciutils
+  Dépend: rsync
+  Dépend: cron
+    bcron
+  Dépend: augeas-tools
+  Dépend: ruby-sqlite3
+ |Recommande: openssh-server
+  Recommande: <ssh-server>
+    lsh-server
+    dropbear-bin
+    openssh-server
+    tinysshd

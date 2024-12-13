@@ -1,0 +1,19 @@
+bareos-common
+ |Pré-Dépend: debconf
+  Pré-Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Pré-Dépend: adduser
+  Dépend: gawk
+  Dépend: openssl
+  Dépend: libacl1
+  Dépend: libc6
+  Dépend: libcap2
+  Dépend: libgcc-s1
+  Dépend: libjansson4
+  Dépend: liblzo2-2
+  Dépend: libssl1.1
+  Dépend: libstdc++6
+  Dépend: zlib1g
+  Est en conflit avec: <bacula-common>
+  Est en conflit avec: <bacula-director-common>

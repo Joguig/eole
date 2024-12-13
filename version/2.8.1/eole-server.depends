@@ -1,0 +1,71 @@
+eole-server
+  Dépend: acpid
+  Dépend: apparmor
+  Dépend: apt-show-versions
+  Dépend: at
+  Dépend: console-data
+  Dépend: convmv
+  Dépend: elinks
+  Dépend: fdisk
+  Dépend: fping
+  Dépend: gnutls-bin
+  Dépend: gpm
+  Dépend: htop
+  Dépend: language-pack-fr
+  Dépend: language-pack-gnome-fr
+  Dépend: libpam-passwdqc
+  Dépend: manpages-fr
+  Dépend: memtest86+
+  Dépend: mlocate
+  Dépend: networkd-dispatcher
+  Dépend: net-tools
+  Dépend: ntp
+  Dépend: ntpdate
+  Dépend: ntpstat
+  Dépend: numlockx
+  Dépend: pwgen
+  Dépend: rng-tools
+    rng-tools-debian
+  Dépend: screen
+  Dépend: tcptraceroute
+  Dépend: tofrodos
+  Dépend: traceroute
+    inetutils-traceroute
+  Dépend: tree
+  Dépend: unzip
+  Dépend: update-manager-core
+  Dépend: vlan
+  Dépend: vnstat
+  Dépend: vnstati
+  Dépend: w3m
+ |Dépend: zephir-stats
+  Dépend: zephir-backend
+  Dépend: zip
+  Dépend: creole
+  Dépend: plymouth-theme-eole-logo
+  Dépend: plymouth-theme-eole-text
+  Dépend: eole-common-pkg
+  Dépend: eole-debsums-zephir-agent
+  Dépend: eole-ead
+  Dépend: eole-ead3
+ |Dépend: eole-exim
+  Dépend: <eole-mail>
+    eole-exim
+ |Dépend: eole-exim-pkg
+  Dépend: <eole-mail-pkg>
+    eole-exim-pkg
+    eole-ssmtp-pkg
+  Dépend: eole-genconfig
+  Dépend: eole-genconfig-client
+  Dépend: eole-nut
+  Dépend: ubuntu-minimal
+  Dépend: ubuntu-standard
+  Casse: <eole-common>
+  Casse: <eole-kernel-version>
+  Casse: <eolebase>
+  Casse: <eolebase-minimal>
+  Remplace: <eole-common>
+  Remplace: <eole-kernel-version>
+    eole-server
+  Remplace: <eolebase>
+  Remplace: <eolebase-minimal>

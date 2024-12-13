@@ -1,0 +1,19 @@
+python-beaker
+  Dépend: python-funcsigs
+  Dépend: <python:any>
+    python
+    python-is-python2
+  Dépend: <python:any>
+    python
+    python-is-python2
+  Dépend: python
+    python-is-python2
+  Recommande: python-pkg-resources
+  Suggère: python-sqlalchemy
+ |Suggère: python-pycryptopp
+  Suggère: python-crypto
+ |Suggère: python-pylibmc
+  Suggère: <python-memcache>
+  Suggère: python-pymongo
+  Suggère: python-redis
+  Améliore: <python-pylons>

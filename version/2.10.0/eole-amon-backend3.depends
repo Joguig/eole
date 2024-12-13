@@ -1,0 +1,14 @@
+eole-amon-backend3
+  Dépend: <python3:any>
+    python3
+  Dépend: python3-pyeole
+  Dépend: python3-netaddr
+  Dépend: ipset
+  Est en conflit avec: <amon-backend>
+    eole-amon-backend
+  Est en conflit avec: eole-amon-backend
+  Remplace: <amon-backend>
+    eole-amon-backend
+    eole-amon-backend3
+  Remplace: eole-amon-backend
+    eole-amon-backend3

@@ -1,0 +1,76 @@
+courier-pop
+  Dépend: courier-base
+ |Dépend: debconf
+  Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+ |Dépend: <default-mta>
+    postfix
+  Dépend: <mail-transport-agent>
+    esmtp-run
+    exim4-daemon-light
+    msmtp-mta
+    nullmailer
+    opensmtpd
+    sendmail-bin
+    ssmtp
+    dma
+    exim4-daemon-heavy
+    postfix
+ |Dépend: sysvinit-utils
+  Dépend: <init-d-script>
+  Dépend: courier-authlib
+  Dépend: libc6
+  Dépend: libcourier-unicode4
+  Est en conflit avec: <pop3-server>
+    cyrus-pop3d
+    popa3d
+    solid-pop3d
+    dovecot-pop3d
+    mailutils-pop3d
+  Casse: <courier-pop-ssl>
+  Suggère: <courier-doc>
+  Suggère: <mail-reader>
+    edbrowse
+    geary
+    mew-beta
+    mew-beta-bin
+    wl
+    wl-beta
+    balsa
+    bsd-mailx
+    claws-mail
+    emacs-gtk
+    emacs-lucid
+    emacs-nox
+    emacs-pgtk
+    evolution
+    gnumail.app
+    im
+    jed
+    kmail
+    mailutils
+    mailutils-mh
+    mew
+    mew-bin
+    mmh
+    mutt
+    neomutt
+    nmh
+    s-nail
+    sup-mail
+    sylpheed
+    thunderbird
+    vm
+    xemacs21-mule
+    xemacs21-mule-canna-wnn
+    xemacs21-nomule
+    xjed
+  Remplace: <courier-pop-ssl>
+  Remplace: <pop3-server>
+    cyrus-pop3d
+    popa3d
+    solid-pop3d
+    courier-pop
+    dovecot-pop3d
+    mailutils-pop3d

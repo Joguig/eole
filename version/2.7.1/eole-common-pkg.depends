@@ -1,0 +1,37 @@
+eole-common-pkg
+  Dépend: ca-certificates
+  Dépend: certbot
+  Dépend: dbconfig-no-thanks
+  Dépend: ifenslave
+  Dépend: iptables
+  Dépend: less
+  Dépend: molly-guard
+  Dépend: nano
+  Dépend: openssh-client
+  Dépend: openssh-server
+  Dépend: rsyslog
+  Dépend: rsyslog-gnutls
+  Dépend: rsyslog-relp
+  Dépend: s-nail
+  Dépend: vim
+    vim-athena
+    vim-gtk
+    vim-gtk3
+    vim-nox
+  Dépend: eole-archive-keyring
+  Dépend: eole-debsums
+  Dépend: eole-resolvconf
+ |Dépend: eole-ssmtp-pkg
+  Dépend: <eole-mail-pkg>
+    eole-exim-pkg
+    eole-ssmtp-pkg
+  Dépend: apt-transport-https
+    apt
+ |Dépend: debconf
+  Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Casse: creole
+  Casse: supervision-psin
+  Remplace: creole
+  Remplace: supervision-psin

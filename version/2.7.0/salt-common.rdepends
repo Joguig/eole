@@ -1,0 +1,10 @@
+salt-common
+Reverse Depends:
+  salt-master
+  salt-minion
+  salt-cloud
+  salt-ssh
+  salt-minion
+  salt-master
+  python-salt.states.eole
+  python3-salt.states.eole

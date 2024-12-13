@@ -1,0 +1,15 @@
+eole-amon-all
+  Dépend: eole-antivirus-pkg
+  Dépend: eole-dns-pkg
+  Dépend: eole-exim-pkg
+  Dépend: eole-proxy-pkg
+  Dépend: eole-amon-module
+  Est en conflit avec: <all-amon>
+  Est en conflit avec: eole-cntlm
+  Est en conflit avec: eole-cntlm-pkg
+  Remplace: <all-amon>
+    eole-amon-all
+  Remplace: eole-cntlm
+    eole-amon-all
+  Remplace: eole-cntlm-pkg
+    eole-amon-all

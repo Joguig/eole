@@ -1,0 +1,12 @@
+bareos-database-mysql
+ |Pré-Dépend: debconf
+  Pré-Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Dépend: lsb-base
+  Dépend: libc6
+  Dépend: libmysqlclient21
+ |Suggère: default-mysql-server
+  Suggère: <virtual-mysql-server>
+    mariadb-server-10.3
+    mysql-server-8.0

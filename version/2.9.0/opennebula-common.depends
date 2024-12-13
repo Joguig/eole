@@ -1,0 +1,12 @@
+opennebula-common
+  Pré-Dépend: opennebula-common-onescape
+  Dépend: adduser
+  Dépend: openssh-client
+  Casse: opennebula
+  Casse: opennebula-node
+  Casse: opennebula-node-firecracker
+  Recommande: lvm2
+  Recommande: sudo
+  Remplace: opennebula
+  Remplace: opennebula-node
+  Remplace: opennebula-node-firecracker

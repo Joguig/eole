@@ -1,0 +1,16 @@
+salt-minion
+  Dépend: bsdmainutils
+  Dépend: dctrl-tools
+  Dépend: lsb-base
+  Dépend: python3-crypto
+ |Dépend: python3-systemd
+  Dépend: <sysvinit-core>
+  Dépend: python3-zmq
+  Dépend: salt-common
+  Dépend: <python3:any>
+    python3
+  Recommande: <debconf-utils>
+  Recommande: dmidecode
+  Recommande: e2fsprogs
+  Recommande: <sfdisk>
+  Suggère: <python3-augeas>

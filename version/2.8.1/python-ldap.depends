@@ -1,0 +1,24 @@
+python-ldap
+  Dépend: python
+    python-is-python2
+  Dépend: python
+    python-is-python2
+  Dépend: python-pyasn1
+  Dépend: python-pyasn1-modules
+  Dépend: <python:any>
+    python
+    python-is-python2
+  Dépend: <python:any>
+    python
+    python-is-python2
+  Dépend: libc6
+  Dépend: libldap-2.4-2
+  Est en conflit avec: python-pyldap
+  Est en conflit avec: <python2.3-ldap>
+  Est en conflit avec: <python2.3-ldap-tls>
+  Est en conflit avec: <python2.4-ldap>
+  Remplace: python-pyldap
+    python-ldap
+  Remplace: <python2.3-ldap>
+  Remplace: <python2.3-ldap-tls>
+  Remplace: <python2.4-ldap>

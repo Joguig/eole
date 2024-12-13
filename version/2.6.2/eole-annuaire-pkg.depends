@@ -1,0 +1,7 @@
+eole-annuaire-pkg
+  Dépend: ldap-utils
+  Dépend: slapd
+  Dépend: eole-ldapschema
+  Est en conflit avec: <annuaire-pkg>
+  Remplace: <annuaire-pkg>
+    eole-annuaire-pkg

@@ -1,0 +1,10 @@
+eole-vpn
+  Dépend: strongswan
+  Dépend: libstrongswan-extra-plugins
+  Dépend: libstrongswan-standard-plugins
+  Dépend: python-arv
+  Est en conflit avec: <eole-rvp>
+  Casse: <conf-sphynx>
+  Remplace: <conf-sphynx>
+  Remplace: <eole-rvp>
+    eole-vpn

@@ -1,0 +1,36 @@
+bareos-webui
+ |Dépend: apache2
+  Dépend: <httpd>
+    tntnet
+    aolserver4-core
+    aolserver4-daemon
+    apache2
+    ebhttpd
+    lighttpd
+    micro-httpd
+    mini-httpd
+    nginx-core
+    nginx-extras
+    nginx-full
+    nginx-light
+    ocsigenserver
+    webfs
+    yaws
+ |Dépend: libapache2-mod-php
+    libapache2-mod-php7.0
+ |Dépend: php
+    php7.0
+  Dépend: php-cgi
+    php7.0-cgi
+  Dépend: php-cli
+    php7.0-cli
+  Dépend: php-gd
+    php7.0-gd
+  Dépend: php-json
+    php7.0-json
+  Dépend: php-mysql
+  Dépend: php-sqlite3
+    php7.0-sqlite3
+ |Dépend: <zendframework>
+ |Dépend: zend-framework
+  Dépend: php-zendframework2

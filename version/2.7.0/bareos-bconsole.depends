@@ -1,0 +1,11 @@
+bareos-bconsole
+ |Pré-Dépend: debconf
+  Pré-Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Dépend: bareos-common
+  Dépend: libc6
+  Dépend: libjansson4
+  Dépend: libreadline7
+  Est en conflit avec: bacula-console
+  Remplace: bacula-console

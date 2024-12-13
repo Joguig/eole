@@ -1,0 +1,32 @@
+opennebula-node-kvm
+  Dépend: adduser
+  Dépend: libvirt-daemon-system
+ |Dépend: <qemu-kvm>
+    qemu-system-x86
+  Dépend: <pve-qemu-kvm>
+  Dépend: qemu-utils
+  Dépend: opennebula-common
+  Dépend: ruby
+  Dépend: vlan
+  Dépend: ipset
+  Dépend: pciutils
+  Dépend: rsync
+  Dépend: tar
+  Dépend: cron
+    bcron
+  Dépend: augeas-tools
+  Dépend: ruby-sqlite3
+  Dépend: libxml2-utils
+  Dépend: iptables
+  Dépend: libnbd-bin
+  Est en conflit avec: opennebula-node-firecracker
+  Est en conflit avec: opennebula-node-lxc
+  Est en conflit avec: opennebula-node-lxd
+  Casse: <opennebula-node>
+ |Recommande: openssh-server
+  Recommande: <ssh-server>
+    lsh-server
+    dropbear-bin
+    openssh-server
+    tinysshd
+  Remplace: <opennebula-node>

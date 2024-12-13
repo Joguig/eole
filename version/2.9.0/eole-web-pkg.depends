@@ -1,0 +1,25 @@
+eole-web-pkg
+  Dépend: apache2
+  Dépend: libapache2-mod-php
+    libapache2-mod-php8.1
+  Dépend: php
+    php8.1
+  Dépend: php-curl
+    php8.1-curl
+  Dépend: php-gd
+    php8.1-gd
+  Dépend: php-imap
+    php8.1-imap
+  Dépend: php-intl
+    php8.1-intl
+  Dépend: php-ldap
+    php8.1-ldap
+  Dépend: php-mysql
+  Dépend: php-xml
+    php8.1-xml
+  Dépend: eole-php-cas
+  Dépend: eole-web-config
+  Dépend: eole-flask-apps
+  Est en conflit avec: <web-pkg>
+  Remplace: <web-pkg>
+    eole-web-pkg

@@ -1,0 +1,12 @@
+eole-exim-pkg
+  Dépend: exim4
+  Dépend: exim4-daemon-heavy
+  Dépend: eole-exim4-config
+  Est en conflit avec: <eole-mail-pkg>
+    eole-ssmtp-pkg
+  Est en conflit avec: <exim-pkg>
+  Remplace: <eole-mail-pkg>
+    eole-exim-pkg
+    eole-ssmtp-pkg
+  Remplace: <exim-pkg>
+    eole-exim-pkg

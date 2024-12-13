@@ -1,0 +1,11 @@
+eole-scribe-scripts
+  Dépend: <python:any>
+    python
+  Dépend: eole-scribe-backend
+  Dépend: python-axiom
+  Dépend: zenity
+  Dépend: python-libxml2
+  Dépend: libxml2-utils
+  Dépend: python-lxml
+  Est en conflit avec: <scribe-scripts>
+  Remplace: <scribe-scripts>

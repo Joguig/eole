@@ -1,0 +1,13 @@
+bareos-database-mysql
+ |Pré-Dépend: debconf
+  Pré-Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Dépend: lsb-base
+  Dépend: libc6
+  Dépend: libmysqlclient20
+ |Suggère: default-mysql-server
+  Suggère: <virtual-mysql-server>
+    percona-xtradb-cluster-server-5.7
+    mariadb-server-10.1
+    mysql-server-5.7

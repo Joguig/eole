@@ -1,0 +1,13 @@
+libssl1.1
+  Dépend: libc6
+ |Dépend: debconf
+  Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Casse: isync
+  Casse: lighttpd
+  Casse: <python-boto>
+  Casse: <python-httplib2>
+  Casse: <python-imaplib2>
+  Casse: python3-boto
+  Casse: python3-imaplib2

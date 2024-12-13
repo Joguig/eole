@@ -1,0 +1,25 @@
+eole-scribe-all
+  Dépend: eole-annuaire-pkg
+  Dépend: eole-antivirus-pkg
+  Dépend: eole-bareoswebui-pkg
+  Dépend: eole-controle-vnc-pkg
+  Dépend: eole-courier-pkg
+  Dépend: eole-cups-pkg
+  Dépend: eole-dhcp-pkg
+  Dépend: eole-eoe-apps
+  Dépend: eole-eop-apps
+  Dépend: eole-exim-auth-pkg
+  Dépend: eole-exim-pkg
+  Dépend: eole-mysql-pkg
+  Dépend: eole-proftpd-pkg
+  Dépend: eole-spamassassin-pkg
+  Dépend: eole-sympa-pkg
+  Dépend: eole-web-pkg
+  Dépend: eole-websockify-pkg
+  Dépend: eole-fichier-common-pkg
+  Dépend: eole-fichier-primaire-pkg
+  Dépend: eole-scribe-web-pkg
+  Dépend: eole-scribe-module
+  Est en conflit avec: <all-scribe>
+  Remplace: <all-scribe>
+    eole-scribe-all

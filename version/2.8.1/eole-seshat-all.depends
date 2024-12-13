@@ -1,0 +1,12 @@
+eole-seshat-all
+  Dépend: eole-annuaire-pkg
+  Dépend: eole-antivirus-pkg
+  Dépend: eole-exim-pkg
+  Dépend: eole-mysql-pkg
+  Dépend: eole-adminer-pkg
+  Dépend: eole-spamassassin-pkg
+  Dépend: eole-web-pkg
+  Dépend: eole-seshat-module
+  Est en conflit avec: <all-seshat>
+  Remplace: <all-seshat>
+    eole-seshat-all

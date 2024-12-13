@@ -1,0 +1,17 @@
+bareos-database-tools
+ |Pré-Dépend: debconf
+  Pré-Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Dépend: bareos-common
+  Dépend: bareos-database-common
+  Dépend: lsb-base
+    sysvinit-utils
+  Dépend: libc6
+  Dépend: libgcc-s1
+  Dépend: <libssl3>
+    libssl3t64
+  Dépend: libstdc++6
+  Est en conflit avec: <bacula-sd-mysql>
+  Est en conflit avec: <bacula-sd-pgsql>
+  Est en conflit avec: <bacula-sd-sqlite3>

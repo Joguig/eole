@@ -1,0 +1,12 @@
+eole-one-master
+  Dépend: init-system-helpers
+  Dépend: eole-ovs
+  Dépend: eole-libvirt
+  Dépend: opennebula
+  Dépend: sqlite3
+  Est en conflit avec: <appmarket-sunstone>
+  Est en conflit avec: eole-one-singlenode
+  Casse: eole-one-frontend
+  Remplace: eole-one-frontend
+  Remplace: eole-one-singlenode
+    eole-one-master

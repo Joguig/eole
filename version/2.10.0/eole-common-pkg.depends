@@ -1,0 +1,31 @@
+eole-common-pkg
+  Dépend: ca-certificates
+  Dépend: certbot
+  Dépend: ifenslave
+  Dépend: iptables
+  Dépend: less
+  Dépend: molly-guard
+  Dépend: nano
+  Dépend: openssh-client
+  Dépend: openssh-server
+  Dépend: rsyslog
+  Dépend: rsyslog-gnutls
+  Dépend: rsyslog-relp
+  Dépend: s-nail
+  Dépend: vim
+    vim-gtk3
+    vim-nox
+    vim-motif
+  Dépend: eole-archive-keyring
+  Dépend: eole-debsums
+ |Dépend: eole-ssmtp-pkg
+  Dépend: <eole-mail-pkg>
+    eole-exim-pkg
+    eole-ssmtp-pkg
+  Dépend: apt-transport-https
+    apt
+ |Dépend: debconf
+  Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Est en conflit avec: eole-server

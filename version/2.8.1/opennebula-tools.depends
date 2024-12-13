@@ -1,0 +1,14 @@
+opennebula-tools
+  Pré-Dépend: opennebula-common-onescape
+  Dépend: opennebula-common
+  Dépend: ruby-opennebula
+  Dépend: opennebula-rubygems
+  Dépend: less
+  Casse: opennebula
+  Casse: <opennebula-addon-tools>
+  Recommande: gnuplot-nox
+    gnuplot-qt
+    gnuplot-x11
+  Recommande: bash-completion
+  Remplace: opennebula
+  Remplace: <opennebula-addon-tools>

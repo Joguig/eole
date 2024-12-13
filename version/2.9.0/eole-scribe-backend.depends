@@ -1,0 +1,12 @@
+eole-scribe-backend
+  Dépend: <python3:any>
+    python3
+  Dépend: python3-pyeole
+  Dépend: python3-ldap
+  Dépend: python3-configobj
+  Dépend: eole-python3-fichier
+  Est en conflit avec: eole-horus-backend
+  Est en conflit avec: eole-scribe-backend3
+  Est en conflit avec: <horus-backend>
+  Est en conflit avec: <scribe-backend>
+  Remplace: eole-scribe-backend3

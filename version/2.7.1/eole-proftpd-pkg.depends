@@ -1,0 +1,8 @@
+eole-proftpd-pkg
+  Dépend: <proftpd>
+    proftpd-basic
+  Dépend: libpam-cas-eole
+  Dépend: proftpd-mod-clamav
+  Est en conflit avec: <proftpd-pkg>
+  Remplace: <proftpd-pkg>
+    eole-proftpd-pkg

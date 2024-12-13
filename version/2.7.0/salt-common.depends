@@ -1,0 +1,22 @@
+salt-common
+  Dépend: python3-apt
+  Dépend: python3-dateutil
+  Dépend: python3-jinja2
+  Dépend: python3-msgpack
+  Dépend: python3-pkg-resources
+  Dépend: python3-psutil
+  Dépend: python3-requests
+  Dépend: python3-tornado
+  Dépend: python3-yaml
+  Dépend: <python3:any>
+    python3
+  Casse: <python3-mako>
+  Casse: <salt-formula-ceilometer>
+  Casse: <salt-formula-cinder>
+  Casse: <salt-formula-glance>
+  Casse: <salt-formula-keystone>
+  Casse: <salt-formula-kubernetes>
+  Recommande: lsb-release
+  Recommande: <python3-croniter>
+  Suggère: <python3-mako>
+  Suggère: <salt-doc>

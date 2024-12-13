@@ -1,0 +1,22 @@
+bareos-webui
+ |Dépend: apache2
+  Dépend: <httpd>
+    tntnet
+    apache2
+    lighttpd
+    micro-httpd
+    mini-httpd
+    nginx-core
+    nginx-extras
+    nginx-full
+    nginx-light
+    webfs
+    yaws
+  Dépend: libapache2-mod-php
+    libapache2-mod-php8.1
+  Dépend: php-date
+  Dépend: php-intl
+    php8.1-intl
+  Dépend: php-json
+  Dépend: php-curl
+    php8.1-curl

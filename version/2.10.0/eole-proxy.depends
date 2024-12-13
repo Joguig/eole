@@ -1,0 +1,11 @@
+eole-proxy
+  Dépend: eole-amon-backend
+    eole-amon-backend3
+  Dépend: eole-amon-backend3
+  Dépend: eole-wpad
+  Dépend: lightsquid
+  Dépend: snmp
+  Dépend: xz-utils
+  Est en conflit avec: <eole-cntlm>
+  Remplace: <eole-cntlm>
+    eole-proxy

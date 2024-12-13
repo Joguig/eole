@@ -1,0 +1,10 @@
+python3-mysqldb
+  Dépend: python3
+  Dépend: python3
+  Dépend: <python3:any>
+    python3
+  Dépend: libc6
+  Dépend: libmysqlclient21
+ |Suggère: <default-mysql-server>
+  Suggère: <virtual-mysql-server>
+    mysql-server-8.0

@@ -1,0 +1,13 @@
+eole-scribe-backend
+  Dépend: <python2:any>
+    python2
+  Dépend: <python2:any>
+    python2
+  Dépend: python-pyeole
+  Dépend: python-ldap
+  Dépend: eole-python-fichier
+  Dépend: python-configobj
+  Est en conflit avec: eole-horus-backend
+  Est en conflit avec: <horus-backend>
+  Est en conflit avec: <scribe-backend>
+  Remplace: <scribe-backend>

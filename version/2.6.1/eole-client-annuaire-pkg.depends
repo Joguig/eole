@@ -1,0 +1,11 @@
+eole-client-annuaire-pkg
+ |Dépend: libpam-ldap
+    libpam-ldapd
+  Dépend: libpam-ldapd
+ |Dépend: libnss-ldap
+    libnss-ldapd
+  Dépend: libnss-ldapd
+  Dépend: ldap-utils
+  Est en conflit avec: <client-annuaire-pkg>
+  Remplace: <client-annuaire-pkg>
+    eole-client-annuaire-pkg

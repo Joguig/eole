@@ -1,0 +1,8 @@
+eole-phpmyadmin-pkg
+  Dépend: phpmyadmin
+  Dépend: php-mbstring
+    php7.0-mbstring
+  Dépend: php-gettext
+  Est en conflit avec: <phpmyadmin-pkg>
+  Remplace: <phpmyadmin-pkg>
+    eole-phpmyadmin-pkg

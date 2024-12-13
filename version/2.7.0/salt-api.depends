@@ -1,0 +1,8 @@
+salt-api
+  Dépend: lsb-base
+ |Dépend: python3-systemd
+  Dépend: <sysvinit-core>
+  Dépend: salt-master
+  Dépend: <python3:any>
+    python3
+  Recommande: <python3-cherrypy3>

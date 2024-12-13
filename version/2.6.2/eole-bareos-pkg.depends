@@ -1,0 +1,15 @@
+eole-bareos-pkg
+  Dépend: mtx
+  Dépend: cifs-utils
+  Dépend: sqlite3
+  Dépend: bareos-database-sqlite3
+  Dépend: bareos-tools
+  Dépend: bareos
+  Dépend: bareos-common
+  Dépend: check-bareos-plugin
+  Est en conflit avec: <bacula-pkg>
+  Est en conflit avec: <eole-bacula-pkg>
+  Remplace: <bacula-pkg>
+    eole-bareos-pkg
+  Remplace: <eole-bacula-pkg>
+    eole-bareos-pkg

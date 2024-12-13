@@ -1,0 +1,9 @@
+bareos-database-sqlite3
+ |Pré-Dépend: debconf
+  Pré-Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Dépend: sqlite3
+  Dépend: lsb-base
+  Dépend: libc6
+  Dépend: libsqlite3-0

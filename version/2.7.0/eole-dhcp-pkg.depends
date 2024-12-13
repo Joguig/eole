@@ -1,0 +1,6 @@
+eole-dhcp-pkg
+  Dépend: isc-dhcp-server
+  Dépend: tftpd-hpa
+  Est en conflit avec: <dhcp-pkg>
+  Remplace: <dhcp-pkg>
+    eole-dhcp-pkg

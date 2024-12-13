@@ -1,0 +1,29 @@
+courier-base
+  Dépend: adduser
+  Dépend: courier-authdaemon
+  Dépend: courier-authlib
+  Dépend: courier-authlib-userdb
+ |Dépend: debconf
+  Dépend: <debconf-2.0>
+    cdebconf
+    debconf
+  Dépend: gnutls-bin
+  Dépend: lsb-base
+    sysvinit-utils
+  Dépend: sysvinit-utils
+  Dépend: <perl:any>
+    perl
+  Dépend: libc6
+  Dépend: libcourier-unicode4
+ |Dépend: libgamin0
+  Dépend: <libfam0>
+    libgamin0
+  Dépend: <libgdbm6>
+    libgdbm6t64
+  Dépend: <libgnutls30>
+    libgnutls30t64
+  Dépend: libidn12
+  Dépend: libpcre3
+  Casse: courier-authdaemon
+  Casse: <courier-ssl>
+  Remplace: <courier-ssl>
