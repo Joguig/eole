@@ -1,0 +1,16 @@
+CPU = "0.2"
+MEMORY = "4096"
+VCPU = "4"
+FEATURES = [ ACPI="yes",PAE="no" ]
+GRAPHICS = [ KEYMAP="fr",LISTEN="vnc.localdomain",TYPE="vnc" ]
+INPUT = [ BUS ="usb",TYPE="tablet" ]
+CPU_MODEL = [ MODEL="host-passthrough" ]
+OS = [ MACHINE="q35",FIRMWARE="/usr/share/OVMF/OVMF_CODE.fd",SD_DISK_BUS="scsi",ARCH="x86_64",BOOT="disk0" ]
+RAW = [ TYPE="kvm",VALIDATE="no",DATA="<devices>  <filesystem type='mount' accessmode='squash'>    <source dir='/var/lib/one/datastores/eole-ci'/>    <target dir='eole-ci'/>  </filesystem>  <video>    <model type='vga' vram='16384' heads='1'></model>  </video></devices>" ]
+NAME = "siegeNT1.pcsiege-mate-2204"
+DISK = [ DRIVER="qcow2",IMAGE="pc-mate-2404.vm",IMAGE_UNAME="jenkins" ]
+NIC = [ NETWORK="vsiege-nt1",MODEL="virtio" ]
+LOGO = "images/logos/ubuntu.png"
+CONTEXT = [ NETWORK="YES",SSH_PUBLIC_KEY="$USER[SSH_PUBLIC_KEY]",VM_ID="$VMID",VM_OWNER="$UNAME",VM_ONE="one",VM_DAEMON="once",VM_HOSTNAME="pcsiege",VM_NAME="siegeNT1.pcsiege-mate-2204",VM_MACHINE="siegeNT1.pcsiege",VM_METHODE="instance",VM_CONFIGURATION="default" ]
+LABELS = "siegeNT1,siegeNT1/autres"
+SHA1 = "f4a4358afd9dd63e1d91e7ce78b7114e930065b3"

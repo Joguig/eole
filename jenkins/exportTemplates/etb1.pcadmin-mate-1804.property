@@ -1,0 +1,16 @@
+CPU = "0.2"
+MEMORY = "4096"
+VCPU = "4"
+FEATURES = [ ACPI="yes",PAE="no" ]
+GRAPHICS = [ KEYMAP="fr",LISTEN="vnc.localdomain",TYPE="vnc" ]
+INPUT = [ BUS ="usb",TYPE="tablet" ]
+CPU_MODEL = [ MODEL="host-passthrough" ]
+RAW = [ TYPE="kvm",VALIDATE="no",DATA="<devices>  <filesystem type='mount' accessmode='squash'>    <source dir='/var/lib/one/datastores/eole-ci'/>    <target dir='eole-ci'/>  </filesystem>  <video>    <model type='vga' vram='16384' heads='1'></model>  </video></devices>" ]
+NAME = "etb1.pcadmin-mate-1804"
+DISK = [ DRIVER="qcow2",IMAGE="pc-mate-1804.vm",IMAGE_UNAME="jenkins" ]
+OS = [ ARCH="x86_64",BOOT="disk0" ]
+NIC = [ NETWORK="admin1",MODEL="virtio" ]
+LOGO = "images/logos/ubuntu.png"
+CONTEXT = [ NETWORK="YES",SSH_PUBLIC_KEY="$USER[SSH_PUBLIC_KEY]",VM_ID="$VMID",VM_OWNER="$UNAME",VM_ONE="one",VM_DAEMON="once",VM_HOSTNAME="pcadmin",VM_NAME="etb1.pcadmin-mate-1804",VM_MACHINE="etb1.pcadmin",VM_METHODE="instance",VM_CONFIGURATION="default" ]
+LABELS = "etb1,etb1/autres"
+SHA1 = "22d1269960693a68da59b55140903ab6d94cf429"

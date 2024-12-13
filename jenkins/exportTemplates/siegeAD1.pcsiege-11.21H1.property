@@ -1,0 +1,19 @@
+CPU = "1"
+MEMORY = "8192"
+VCPU = "4"
+FEATURES = [ ACPI="yes",LOCALTIME="no",PAE="yes" ]
+GRAPHICS = [ KEYMAP="fr",LISTEN="vnc.localdomain",TYPE="vnc" ]
+INPUT = [ BUS ="usb",TYPE="tablet" ]
+CPU_MODEL = [ MODEL="host-passthrough" ]
+OS = [ MACHINE="q35",FIRMWARE="/usr/share/OVMF/OVMF_CODE.fd",SD_DISK_BUS="scsi",ARCH="x86_64",BOOT="disk0" ]
+RAW = [ TYPE="kvm",VALIDATE="no",DATA="<qemu:commandline>  <qemu:arg value='-no-hpet' />  <qemu:arg value='-nodefaults' /></qemu:commandline><devices>  <video>    <model type='vga' vram='65536' heads='1'><acceleration accel3d='no' accel2d='no'/></model>  </video></devices>" ]
+NAME = "siegeAD1.pcsiege-11.21H1"
+DISK = [ DEV_PREFIX="vd",TARGET="vda",DRIVER="qcow2",IMAGE="Windows11.21H1-amd64.vm",IMAGE_UNAME="jenkins" ]
+NIC = [ NETWORK="vsiege-ad1",MODEL="virtio" ]
+CONTEXT = [ NETWORK="YES",SSH_PUBLIC_KEY="$USER[SSH_PUBLIC_KEY]",VM_ID="$VMID",VM_OWNER="$UNAME",VM_ONE="one",DO_INITSCRIPTS="$DO_INITSCRIPTS",DO_INSTALLSCRIPTS="$DO_INSTALLSCRIPTS",DO_SET_NETWORK_PRIVATE="$SET_NETWORK_PRIVATE",DO_SET_TIMEZONE_UTC="$SET_TIMEZONE_UTC",SET_NETWORK_STATIC="$SET_NETWORK_STATIC",ENABLE_PING="$ENABLE_PING",ENABLE_REMOTE_DESKTOP="$ENABLE_REMOTE_DESKTOP",ENABLE_RENAMEAUTO="$ENABLE_RENAMEAUTO",ENABLE_FILE_PRINTER_SHARING="$ENABLE_FILE_PRINTER_SHARING",DISABLE_FIREWALL_PUBLIC="$DISABLE_FIREWALL_PUBLIC",FILES_DS="$FILE[IMAGE=\"EoleCiTestContext.ps1\",IMAGE_UNAME=\"jenkins\"] $FILE[IMAGE=\"EoleCiTestService.ps1\",IMAGE_UNAME=\"jenkins\"] $FILE[IMAGE=\"EoleCiFunctions.ps1\",IMAGE_UNAME=\"jenkins\"] $FILE[IMAGE=\"EoleCiTestsCommon.ps1\",IMAGE_UNAME=\"jenkins\"] $FILE[IMAGE=\"run-from-context.ps1\",IMAGE_UNAME=\"jenkins\"] $FILE[IMAGE=\"install.ps1\",IMAGE_UNAME=\"jenkins\"] $FILE[IMAGE=\"start.ps1\",IMAGE_UNAME=\"jenkins\"]",VM_DAEMON="once",VM_HOSTNAME="pcsiege-11",VM_NAME="siegeAD1.pcsiege-11.21H1",VM_MACHINE="siegeAD1.pcsiege",VM_IP_EOLECITEST="10.200.11.253",VM_CONFIGURATION="$VM_CONFIGURATION",SET_HOSTNAME="$SET_HOSTNAME" ]
+LOGO = "images/logos/windows8.png"
+LABELS = "siegeAD1,siegeAD1/autres"
+INPUTS_ORDER = "SET_TIMEZONE_UTC,ENABLE_RENAMEAUTO,VM_CONFIGURATION,SET_NETWORK_STATIC,SET_NETWORK_PRIVATE,DISABLE_FIREWALL_PUBLIC,DO_INITSCRIPTS,DO_INSTALLSCRIPTS,ENABLE_FILE_PRINTER_SHARING,ENABLE_PING,ENABLE_REMOTE_DESKTOP"
+USER_INPUTS = [ SET_TIMEZONE_UTC="M|boolean|Positionne Timezone Utc| |YES",ENABLE_RENAMEAUTO="M|boolean|Active renommage auto en PC<VM_Id>| |YES",SET_HOSTNAME="O|text|Hostname a utiliser avec RenameAuto",VM_CONFIGURATION="M|list|Auto configuration|minimale,joineole,domain|minimale",SET_NETWORK_STATIC="M|boolean|Force network to static configuration from ONE context| |NO",DISABLE_FIREWALL_PUBLIC="M|boolean|Désactive le firewall public| |NO",DO_INITSCRIPTS="M|boolean|Execute le script d'INIT| |NO",DO_INSTALLSCRIPTS="M|boolean|Execute le script d'INSTALL| |NO",ENABLE_FILE_PRINTER_SHARING="M|boolean|Active partage fichiers et imprimantes| |NO",ENABLE_PING="M|boolean|Enable Ping| |NO",ENABLE_REMOTE_DESKTOP="M|boolean|Enable Remote Desktop| |NO",SET_NETWORK_PRIVATE="M|boolean|Force network private||NO" ]
+SUNSTONE = [ NETWORK_SELECT="NO",CAPACITY_SELECT="NO" ]
+SHA1 = "bc0c43f0bf2657e2303e0bb7cc2231d1176a4f54"

@@ -1,0 +1,17 @@
+CPU = "0.2"
+MEMORY = "6144"
+VCPU = "4"
+FEATURES = [ ACPI="yes",PAE="no" ]
+GRAPHICS = [ KEYMAP="fr",LISTEN="vnc.localdomain",TYPE="vnc" ]
+INPUT = [ BUS ="usb",TYPE="tablet" ]
+CPU_MODEL = [ MODEL="host-passthrough" ]
+RAW = [ TYPE="kvm",VALIDATE="no",DATA="<devices>  <filesystem type='mount' accessmode='squash'>    <source dir='/var/lib/one/datastores/eole-ci'/>    <target dir='eole-ci'/>  </filesystem>  <video>    <model type='vga' vram='16384' heads='1'></model>  </video></devices>" ]
+NAME = "etb2.scribe-2.8.1-Daily"
+DISK = [ DRIVER="qcow2",IMAGE="scribe-2.8.1-daily-amd64.fi",IMAGE_UNAME="jenkins" ]
+OS = [ ARCH="x86_64",BOOT="disk0" ]
+NIC = [ NETWORK="pedago2",MODEL="virtio" ]
+LOGO = "images/logos/eole.png"
+CONTEXT = [ NETWORK="YES",SSH_PUBLIC_KEY="$USER[SSH_PUBLIC_KEY]",VM_ID="$VMID",VM_OWNER="$UNAME",VM_ONE="one",VM_DAEMON="once",VM_HOSTNAME="scribe",VM_NAME="etb2.scribe-2.8.1-Daily",VM_MACHINE="etb2.scribe",VM_VERSIONMAJEUR="2.8.1",VM_VERSION="2.8.1",VM_MAJAUTO="RC" ]
+LABELS = "etb2,etb2/2.8.1,etb2/2.8.1/daily"
+DISK = [ DRIVER="qcow2",IMAGE="DSK-100G-QCOW2",IMAGE_UNAME="nebula" ]
+SHA1 = "41b42286ba53f5caa8b580d68b21ee8fc136e167"

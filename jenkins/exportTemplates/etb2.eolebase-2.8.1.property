@@ -1,0 +1,17 @@
+CPU = "0.2"
+MEMORY = "2048"
+VCPU = "4"
+FEATURES = [ ACPI="yes",PAE="no" ]
+GRAPHICS = [ KEYMAP="fr",LISTEN="vnc.localdomain",TYPE="vnc" ]
+INPUT = [ BUS ="usb",TYPE="tablet" ]
+CPU_MODEL = [ MODEL="host-passthrough" ]
+RAW = [ TYPE="kvm",VALIDATE="no",DATA="<devices>  <filesystem type='mount' accessmode='squash'>    <source dir='/var/lib/one/datastores/eole-ci'/>    <target dir='eole-ci'/>  </filesystem>  <video>    <model type='vga' vram='16384' heads='1'></model>  </video></devices>" ]
+NAME = "etb2.eolebase-2.8.1"
+DISK = [ DRIVER="qcow2",IMAGE="base-2.8.1-amd64.fi",IMAGE_UNAME="jenkins" ]
+OS = [ ARCH="x86_64",BOOT="disk0" ]
+NIC = [ NETWORK="dmz2",MODEL="virtio" ]
+LOGO = "images/logos/eole.png"
+CONTEXT = [ NETWORK="YES",SSH_PUBLIC_KEY="$USER[SSH_PUBLIC_KEY]",VM_ID="$VMID",VM_OWNER="$UNAME",VM_ONE="one",VM_DAEMON="once",VM_HOSTNAME="eolebase",VM_NAME="etb2.eolebase-2.8.1",VM_MACHINE="etb2.eolebase",VM_VERSIONMAJEUR="2.8.1",VM_VERSION="2.8.1",VM_MAJAUTO="RC" ]
+LABELS = "etb2,etb2/2.8.1,etb2/2.8.1/fi"
+DISK = [ DRIVER="qcow2",IMAGE="DSK-100G-QCOW2",IMAGE_UNAME="nebula" ]
+SHA1 = "9153cace68d2c8d8c332d8218d10d36b0b0789a8"

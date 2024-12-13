@@ -1,0 +1,17 @@
+CPU = "0.2"
+MEMORY = "3072"
+VCPU = "4"
+FEATURES = [ ACPI="yes",PAE="no" ]
+GRAPHICS = [ KEYMAP="fr",LISTEN="vnc.localdomain",TYPE="vnc" ]
+INPUT = [ BUS ="usb",TYPE="tablet" ]
+CPU_MODEL = [ MODEL="host-passthrough" ]
+RAW = [ TYPE="kvm",VALIDATE="no",DATA="<devices>  <filesystem type='mount' accessmode='squash'>    <source dir='/var/lib/one/datastores/eole-ci'/>    <target dir='eole-ci'/>  </filesystem>  <video>    <model type='vga' vram='16384' heads='1'></model>  </video></devices>" ]
+NAME = "aca.file1-2.7.0-Instance-Auto"
+DISK = [ DRIVER="qcow2",IMAGE="seth-2.7.0-daily-amd64.fi",IMAGE_UNAME="jenkins" ]
+OS = [ ARCH="x86_64",BOOT="disk0" ]
+NIC = [ NETWORK="academie",MODEL="virtio" ]
+LOGO = "images/logos/eole.png"
+CONTEXT = [ NETWORK="YES",SSH_PUBLIC_KEY="$USER[SSH_PUBLIC_KEY]",VM_ID="$VMID",VM_OWNER="$UNAME",VM_ONE="one",VM_DAEMON="once",VM_HOSTNAME="file1",VM_NAME="aca.file1-2.7.0-Instance-Auto",VM_MACHINE="aca.file1",VM_VERSIONMAJEUR="2.7.0",VM_VERSION="2.7.0",VM_MAJAUTO="RC",VM_METHODE="instance",VM_CONFIGURATION="default" ]
+LABELS = "aca,aca/2.7.0,aca/2.7.0/auto"
+DISK = [ DRIVER="qcow2",IMAGE="DSK-100G-QCOW2",IMAGE_UNAME="nebula" ]
+SHA1 = "1fc690f7780b757eddf83aa3800803fc7d498069"

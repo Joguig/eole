@@ -1,0 +1,17 @@
+CPU = "0.2"
+MEMORY = "3072"
+VCPU = "4"
+FEATURES = [ ACPI="yes",PAE="no" ]
+GRAPHICS = [ KEYMAP="fr",LISTEN="vnc.localdomain",TYPE="vnc" ]
+INPUT = [ BUS ="usb",TYPE="tablet" ]
+CPU_MODEL = [ MODEL="host-passthrough" ]
+OS = [ MACHINE="q35",FIRMWARE="/usr/share/OVMF/OVMF_CODE.fd",SD_DISK_BUS="scsi",ARCH="x86_64",BOOT="disk0" ]
+RAW = [ TYPE="kvm",VALIDATE="no",DATA="<devices>  <filesystem type='mount' accessmode='squash'>    <source dir='/var/lib/one/datastores/eole-ci'/>    <target dir='eole-ci'/>  </filesystem>  <video>    <model type='vga' vram='16384' heads='1'></model>  </video></devices>" ]
+NAME = "rie.member-ad-2.9.0a"
+DISK = [ DRIVER="qcow2",IMAGE="seth-2.9.0a-amd64.fi",IMAGE_UNAME="jenkins" ]
+NIC = [ NETWORK="RIE",MODEL="virtio" ]
+LOGO = "images/logos/eole.png"
+CONTEXT = [ NETWORK="YES",SSH_PUBLIC_KEY="$USER[SSH_PUBLIC_KEY]",VM_ID="$VMID",VM_OWNER="$UNAME",VM_ONE="one",VM_DAEMON="once",VM_HOSTNAME="member-ad",VM_NAME="rie.member-ad-2.9.0a",VM_MACHINE="rie.member-ad",VM_VERSIONMAJEUR="2.9.0",VM_VERSION="2.9.0a",VM_MAJAUTO="DEV" ]
+LABELS = "rie,rie/2.9.0,rie/2.9.0/fi"
+DISK = [ DRIVER="qcow2",IMAGE="DSK-100G-QCOW2",IMAGE_UNAME="nebula" ]
+SHA1 = "d36155b7989d7ed7b1857cba6c70420d107e2c24"

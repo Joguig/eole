@@ -1,0 +1,17 @@
+CPU = "0.2"
+MEMORY = "6144"
+VCPU = "4"
+FEATURES = [ ACPI="yes",PAE="no" ]
+GRAPHICS = [ KEYMAP="fr",LISTEN="vnc.localdomain",TYPE="vnc" ]
+INPUT = [ BUS ="usb",TYPE="tablet" ]
+CPU_MODEL = [ MODEL="host-passthrough" ]
+OS = [ MACHINE="q35",FIRMWARE="/usr/share/OVMF/OVMF_CODE.fd",SD_DISK_BUS="scsi",ARCH="x86_64",BOOT="disk0" ]
+RAW = [ TYPE="kvm",VALIDATE="no",DATA="<devices>  <filesystem type='mount' accessmode='squash'>    <source dir='/var/lib/one/datastores/eole-ci'/>    <target dir='eole-ci'/>  </filesystem>  <video>    <model type='vga' vram='16384' heads='1'></model>  </video></devices>" ]
+NAME = "etb2.scribe-2.10.0a0-Instance-Auto"
+DISK = [ DRIVER="qcow2",IMAGE="scribe-2.10.0a0-daily-amd64.fi",IMAGE_UNAME="jenkins" ]
+NIC = [ NETWORK="pedago2",MODEL="virtio" ]
+LOGO = "images/logos/eole.png"
+CONTEXT = [ NETWORK="YES",SSH_PUBLIC_KEY="$USER[SSH_PUBLIC_KEY]",VM_ID="$VMID",VM_OWNER="$UNAME",VM_ONE="one",VM_DAEMON="once",VM_HOSTNAME="scribe",VM_NAME="etb2.scribe-2.10.0a0-Instance-Auto",VM_MACHINE="etb2.scribe",VM_VERSIONMAJEUR="2.10.0",VM_VERSION="2.10.0a0",VM_MAJAUTO="DEV",VM_METHODE="instance",VM_CONFIGURATION="default" ]
+LABELS = "etb2,etb2/2.10.0,etb2/2.10.0/auto"
+DISK = [ DRIVER="qcow2",IMAGE="DSK-100G-QCOW2",IMAGE_UNAME="nebula" ]
+SHA1 = "7b2d428f3cc9fa295a063b6cbaa8bd1bb5648414"

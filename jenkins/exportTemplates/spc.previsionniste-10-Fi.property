@@ -1,0 +1,16 @@
+CPU = "1"
+MEMORY = "4096"
+VCPU = "4"
+FEATURES = [ ACPI="yes",LOCALTIME="no",PAE="yes" ]
+GRAPHICS = [ KEYMAP="fr",LISTEN="vnc.localdomain",TYPE="vnc" ]
+INPUT = [ BUS ="usb",TYPE="tablet" ]
+CPU_MODEL = [ MODEL="host-passthrough" ]
+RAW = [ TYPE="kvm",VALIDATE="no",DATA="<qemu:commandline>  <qemu:arg value='-no-hpet' />  <qemu:arg value='-nodefaults' /></qemu:commandline>" ]
+NAME = "spc.previsionniste-10-Fi"
+DISK = [ DEV_PREFIX="hd",TARGET="hda",DRIVER="qcow2",IMAGE="Windows10.21H2-amd64.fi",IMAGE_UNAME="jenkins" ]
+NIC = [ NETWORK="vspcmet",MODEL="rtl8139" ]
+OS = [ ARCH="x86_64",BOOT="disk0" ]
+CONTEXT = [ NETWORK="YES",SSH_PUBLIC_KEY="$USER[SSH_PUBLIC_KEY]",VM_ID="$VMID",VM_OWNER="$UNAME",VM_ONE="one",DO_INITSCRIPTS="NO",DO_INSTALLSCRIPTS="NO",DO_SET_NETWORK_PRIVATE="NO",DO_SET_TIMEZONE_UTC="NO",SET_NETWORK_STATIC="NO",ENABLE_PING="NO",ENABLE_REMOTE_DESKTOP="NO",ENABLE_RENAMEAUTO="YES",ENABLE_FILE_PRINTER_SHARING="NO",DISABLE_FIREWALL_PUBLIC="NO",VM_DAEMON="once",VM_HOSTNAME="previsionniste-1021H2",VM_NAME="spc.previsionniste-10-Fi",VM_MACHINE="spc.previsionniste",VM_IP_EOLECITEST="10.200.30.253" ]
+LOGO = "images/logos/windows8.png"
+LABELS = "spc,spc/autres"
+SHA1 = "2506e33fdd2974743ec676615bf33a52c27b2f9b"

@@ -1,0 +1,17 @@
+CPU = "1"
+MEMORY = "4096"
+VCPU = "4"
+FEATURES = [ ACPI="yes",LOCALTIME="no",PAE="yes" ]
+GRAPHICS = [ KEYMAP="fr",LISTEN="vnc.localdomain",TYPE="vnc" ]
+INPUT = [ BUS ="usb",TYPE="tablet" ]
+CPU_MODEL = [ MODEL="host-passthrough" ]
+RAW = [ TYPE="kvm",VALIDATE="no",DATA="<qemu:commandline>  <qemu:arg value='-no-hpet' />  <qemu:arg value='-nodefaults' /></qemu:commandline>" ]
+NAME = "aca.WindowsServerAD-w2012"
+DISK = [ DRIVER="qcow2",IMAGE="Windows2012R2-amd64.vm",IMAGE_UNAME="jenkins" ]
+NIC = [ NETWORK="academie",MODEL="rtl8139" ]
+OS = [ ARCH="x86_64",BOOT="disk0" ]
+CONTEXT = [ NETWORK="YES",SSH_PUBLIC_KEY="$USER[SSH_PUBLIC_KEY]",VM_ID="$VMID",VM_OWNER="$UNAME",VM_ONE="one",ENABLE_RENAMEAUTO="NO",VM_DAEMON="start",VM_HOSTNAME="WindowsServerAD",VM_NAME="aca.WindowsServerAD-w2012",VM_MACHINE="aca.WindowsServerAD",VM_IP_EOLECITEST="192.168.0.253",FILES_DS="$FILE[IMAGE=\"EoleCiTestContext.ps1\",IMAGE_UNAME=\"jenkins\"] $FILE[IMAGE=\"EoleCiTestService.ps1\",IMAGE_UNAME=\"jenkins\"] $FILE[IMAGE=\"EoleCiFunctions.ps1\",IMAGE_UNAME=\"jenkins\"] $FILE[IMAGE=\"EoleCiTestsCommon.ps1\",IMAGE_UNAME=\"jenkins\"] $FILE[IMAGE=\"run-from-context.ps1\",IMAGE_UNAME=\"jenkins\"] $FILE[IMAGE=\"install.ps1\",IMAGE_UNAME=\"jenkins\"] $FILE[IMAGE=\"start.ps1\",IMAGE_UNAME=\"jenkins\"]" ]
+LOGO = "images/logos/windowsxp.png"
+SUNSTONE_CAPACITY_SELECT = "NO"
+SUNSTONE_NETWORK_SELECT = "NO"
+SHA1 = "73271b8ffa373625d0cf1ada75edea7a5a3e2b04"

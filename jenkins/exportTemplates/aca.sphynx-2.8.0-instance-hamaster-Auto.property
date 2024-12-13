@@ -1,0 +1,19 @@
+CPU = "0.2"
+MEMORY = "2048"
+VCPU = "4"
+FEATURES = [ ACPI="yes",PAE="no" ]
+GRAPHICS = [ KEYMAP="fr",LISTEN="vnc.localdomain",TYPE="vnc" ]
+INPUT = [ BUS ="usb",TYPE="tablet" ]
+CPU_MODEL = [ MODEL="host-passthrough" ]
+RAW = [ TYPE="kvm",VALIDATE="no",DATA="<devices>  <filesystem type='mount' accessmode='squash'>    <source dir='/var/lib/one/datastores/eole-ci'/>    <target dir='eole-ci'/>  </filesystem>  <video>    <model type='vga' vram='16384' heads='1'></model>  </video></devices>" ]
+NAME = "aca.sphynx-2.8.0-instance-hamaster-Auto"
+DISK = [ DRIVER="qcow2",IMAGE="aca.sphynx-2.8.0-instance-default-amd64.vm",IMAGE_UNAME="jenkins" ]
+OS = [ ARCH="x86_64",BOOT="disk0" ]
+NIC = [ NETWORK="academie",MODEL="virtio" ]
+NIC = [ NETWORK="interco",MODEL="virtio" ]
+NIC = [ NETWORK="ha1",MODEL="virtio" ]
+LOGO = "images/logos/eole.png"
+CONTEXT = [ NETWORK="YES",SSH_PUBLIC_KEY="$USER[SSH_PUBLIC_KEY]",VM_ID="$VMID",VM_OWNER="$UNAME",VM_ONE="one",VM_DAEMON="once",VM_HOSTNAME="sphynx",VM_NAME="aca.sphynx-2.8.0-instance-hamaster-Auto",VM_MACHINE="aca.sphynx",VM_VERSIONMAJEUR="2.8.0",VM_VERSION="2.8.0",VM_MAJAUTO="RC",VM_METHODE="instance",VM_CONFIGURATION="hamaster" ]
+LABELS = "aca,aca/2.8.0,aca/2.8.0/auto"
+DISK = [ DRIVER="qcow2",IMAGE="DSK-100G-QCOW2",IMAGE_UNAME="nebula" ]
+SHA1 = "65a5b15fe78f8e53b0f150c692fbd88472c5bcdd"

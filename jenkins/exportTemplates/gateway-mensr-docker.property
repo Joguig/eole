@@ -1,0 +1,19 @@
+CPU = "0.2"
+MEMORY = "3096"
+VCPU = "4"
+FEATURES = [ ACPI="yes",PAE="no" ]
+GRAPHICS = [ KEYMAP="fr",LISTEN="vnc.localdomain",TYPE="vnc" ]
+INPUT = [ BUS ="usb",TYPE="tablet" ]
+CPU_MODEL = [ MODEL="host-passthrough" ]
+OS = [ MACHINE="q35",FIRMWARE="/usr/share/OVMF/OVMF_CODE.fd",SD_DISK_BUS="scsi",ARCH="x86_64",BOOT="disk0" ]
+RAW = [ TYPE="kvm",VALIDATE="no",DATA="<devices>  <filesystem type='mount' accessmode='squash'>    <source dir='/var/lib/one/datastores/eole-ci'/>    <target dir='eole-ci'/>  </filesystem>  <video>    <model type='vga' vram='16384' heads='1'></model>  </video></devices>" ]
+NAME = "gateway-mensr-docker"
+LOGO = "images/logos/ubuntu.png"
+DISK = [ DRIVER="qcow2",IMAGE="gateway.fi",IMAGE_UNAME="jenkins" ]
+DISK = [ DRIVER="qcow2",IMAGE="DSK-100G-QCOW2",IMAGE_UNAME="nebula" ]
+NIC = [ NETWORK="EOLE",MODEL="virtio",NETWORK_UNAME="nebula" ]
+NIC = [ NETWORK="academie",MODEL="virtio" ]
+NIC = [ NETWORK="RIE",MODEL="virtio" ]
+NIC = [ NETWORK="windows",MODEL="virtio" ]
+CONTEXT = [ NETWORK="YES",SSH_PUBLIC_KEY="$USER[SSH_PUBLIC_KEY]",VM_ID="$VMID",VM_OWNER="$UNAME",VM_ONE="one",VM_DAEMON="start",VM_NAME="gateway-mensr-docker",VM_MACHINE="gateway-mensr-docker",VM_CONFIGURATION="docker" ]
+SHA1 = "1027bb6c5ed2810487ab3764228da1454b5c9dbd"

@@ -1,0 +1,17 @@
+CPU = "0.2"
+MEMORY = "8192"
+VCPU = "4"
+FEATURES = [ ACPI="yes",PAE="no" ]
+GRAPHICS = [ KEYMAP="fr",LISTEN="vnc.localdomain",TYPE="vnc" ]
+INPUT = [ BUS ="usb",TYPE="tablet" ]
+CPU_MODEL = [ MODEL="host-passthrough" ]
+OS = [ MACHINE="q35",FIRMWARE="/usr/share/OVMF/OVMF_CODE.fd",SD_DISK_BUS="scsi",ARCH="x86_64",BOOT="disk0" ]
+RAW = [ TYPE="kvm",VALIDATE="no",DATA="<devices>  <filesystem type='mount' accessmode='squash'>    <source dir='/var/lib/one/datastores/eole-ci'/>    <target dir='eole-ci'/>  </filesystem>  <video>    <model type='vga' vram='16384' heads='1'></model>  </video></devices>" ]
+NAME = "aca.zephir-2.9.0rc3-AvecConf"
+DISK = [ DRIVER="qcow2",IMAGE="aca.zephir-2.9.0rc3-AvecConf-amd64.vm",IMAGE_UNAME="jenkins" ]
+NIC = [ NETWORK="academie",MODEL="virtio" ]
+LOGO = "images/logos/eole.png"
+CONTEXT = [ NETWORK="YES",SSH_PUBLIC_KEY="$USER[SSH_PUBLIC_KEY]",VM_ID="$VMID",VM_OWNER="$UNAME",VM_ONE="one",VM_DAEMON="once",VM_HOSTNAME="zephir",VM_NAME="aca.zephir-2.9.0rc3-AvecConf",VM_MACHINE="aca.zephir",VM_VERSIONMAJEUR="2.9.0",VM_VERSION="2.9.0rc3",VM_MAJAUTO="RC",VM_METHODE="AvecConf" ]
+LABELS = "aca,aca/2.9.0,aca/2.9.0/instance"
+DISK = [ DRIVER="qcow2",IMAGE="DSK-100G-QCOW2",IMAGE_UNAME="nebula" ]
+SHA1 = "cd500198fc13df2c67289050a4567992ca915551"

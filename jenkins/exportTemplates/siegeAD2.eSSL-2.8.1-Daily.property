@@ -1,0 +1,21 @@
+CPU = "0.2"
+MEMORY = "3072"
+VCPU = "4"
+FEATURES = [ ACPI="yes",PAE="no" ]
+GRAPHICS = [ KEYMAP="fr",LISTEN="vnc.localdomain",TYPE="vnc" ]
+INPUT = [ BUS ="usb",TYPE="tablet" ]
+CPU_MODEL = [ MODEL="host-passthrough" ]
+RAW = [ TYPE="kvm",VALIDATE="no",DATA="<devices>  <filesystem type='mount' accessmode='squash'>    <source dir='/var/lib/one/datastores/eole-ci'/>    <target dir='eole-ci'/>  </filesystem>  <video>    <model type='vga' vram='16384' heads='1'></model>  </video></devices>" ]
+NAME = "siegeAD2.eSSL-2.8.1-Daily"
+DISK = [ DRIVER="qcow2",IMAGE="amon-2.8.1-daily-amd64.fi",IMAGE_UNAME="jenkins" ]
+OS = [ ARCH="x86_64",BOOT="disk0" ]
+NIC = [ NETWORK="vext",MODEL="virtio" ]
+NIC = [ NETWORK="RIE",MODEL="virtio" ]
+NIC = [ NETWORK="vsiege-ad2",MODEL="virtio" ]
+NIC = [ NETWORK="vdmz-ad2",MODEL="virtio" ]
+NIC = [ NETWORK="vwifi-ad2",MODEL="virtio" ]
+LOGO = "images/logos/eole.png"
+CONTEXT = [ NETWORK="YES",SSH_PUBLIC_KEY="$USER[SSH_PUBLIC_KEY]",VM_ID="$VMID",VM_OWNER="$UNAME",VM_ONE="one",VM_DAEMON="once",VM_HOSTNAME="eSSL",VM_NAME="siegeAD2.eSSL-2.8.1-Daily",VM_MACHINE="siegeAD2.eSSL",VM_VERSIONMAJEUR="2.8.1",VM_VERSION="2.8.1",VM_MAJAUTO="RC" ]
+LABELS = "siegeAD2,siegeAD2/2.8.1,siegeAD2/2.8.1/daily"
+DISK = [ DRIVER="qcow2",IMAGE="DSK-100G-QCOW2",IMAGE_UNAME="nebula" ]
+SHA1 = "605653ee08a4c3aa16528a1400a24ebd69731371"
