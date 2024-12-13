@@ -1,0 +1,394 @@
+#!/bin/sh
+
+set -e
+
+die() { echo "$@"; exit 1; }
+
+[ "$(id -u)" = 0 ] || die "You must be root."
+
+is_systemd() {
+    command -v systemctl > /dev/null \
+	&& expr "$(systemctl)" : '.*-\.mount' > /dev/null
+}
+
+echo "Install packages"
+apt-get -qy install wget ca-certificates nano gpm
+apt-get clean
+
+[ -d "/root/bin" ] || mkdir /root/bin
+
+echo "Script to prepare for OpenNebula"
+cat > ~root/bin/prepare-one <<'EOT'
+#!/bin/sh
+
+#------------------------------------------------------------------------
+# Copyright © 2016 Équpe EOLE <eole@ac-dijon.fr>
+# Author: Daniel Dehennin <daniel.dehennin@ac-dijon.fr>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+set -e
+
+die() { echo "$@"; exit 1; }
+
+[ "$(id -u)" = 0 ] || die "You must be root."
+
+VERSION="5.10.0"
+DEB_VERSION="${VERSION}-1"
+
+if ! dpkg -l one-context 2>&1 | grep -qs "^ii.*${DEB_VERSION}"
+then
+    echo "Install context package ${VERSION}"
+    wget "https://github.com/OpenNebula/addon-context-linux/releases/download/v${VERSION}/one-context_${DEB_VERSION}.deb"
+    apt-get -y install "./one-context_${DEB_VERSION}.deb"
+    apt-get clean
+    rm -f "one-context_${DEB_VERSION}.deb"
+fi
+
+echo "Create random password script on first boot"
+RANDOM_PASSWD_SCRIPT=/etc/one-context.d/loc-21-eole-set-random-password
+SET_IPS_SCRIPTS=/etc/one-context.d/loc-91-eole-set-ip-addresses
+SET_ROOT_MAIL_ALIAS=/etc/one-context.d/loc-92-eole-set-root-mail
+mkdir -p /etc/one-context.d/
+
+cat > "${RANDOM_PASSWD_SCRIPT}" <<'EOS'
+#!/bin/bash
+
+# -------------------------------------------------------------------------- #
+# Copyright 2015, C12G Labs S.L.                                             #
+#                                                                            #
+# Licensed under the Apache License, Version 2.0 (the "License"); you may    #
+# not use this file except in compliance with the License. You may obtain    #
+# a copy of the License at                                                   #
+#                                                                            #
+# http://www.apache.org/licenses/LICENSE-2.0                                 #
+#                                                                            #
+# Unless required by applicable law or agreed to in writing, software        #
+# distributed under the License is distributed on an "AS IS" BASIS,          #
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.   #
+# See the License for the specific language governing permissions and        #
+# limitations under the License.                                             #
+#--------------------------------------------------------------------------- #
+
+if [ -z "${USERNAME}" ]
+then
+    USERNAME=root
+elif [ "${USERNAME}" != 'root' ]
+then
+    exit 0
+fi
+
+if ! getent passwd "${USERNAME}" > /dev/null 2>&1
+then
+    echo "User “${USERNAME}” does not exist" >&2
+    exit 0
+fi
+
+if [ -z "${PASSWORD}${PASSWORD_BASE64}${CRYPTED_PASSWORD}${CRYPTED_PASSWORD_BASE64}" ]
+then
+    command -v pwgen > /dev/null || exit 0
+    PASSWORD="$(pwgen -s -c -n -B -1 12)"
+fi
+
+if [ -n "${PASSWORD}" ] \
+    && [ ! -f /etc/ssh/ssh_host_rsa_key ]
+then
+    # Generate password only if ssh keys does not exists
+    if chpasswd -c SHA512 <<< "${USERNAME}:${PASSWORD}"
+    then
+        if [ -d /etc/eole ]
+        then
+            cat > /etc/issue <<EOF
+EOLE \l
+
+Connexion par défaut :
+- Utilisateur : ${USERNAME}
+- Mot de passe : $(echo "${PASSWORD}" | sed -e 's,\\,\\\\,g')
+EOF
+        else
+            cat > /etc/issue <<EOF
+$(lsb_release -sd) \l
+
+Default connection:
+- Login: ${USERNAME}
+- Password: $(echo "${PASSWORD}" | sed -e 's,\\,\\\\,g')
+EOF
+        fi
+    fi
+fi
+EOS
+
+chmod +x "${RANDOM_PASSWD_SCRIPT}"
+
+cat > "${SET_ROOT_MAIL_ALIAS}" <<'EOS'
+#!/bin/bash
+
+# -------------------------------------------------------------------------- #
+# Copyright 2015, C12G Labs S.L.                                             #
+#                                                                            #
+# Licensed under the Apache License, Version 2.0 (the "License"); you may    #
+# not use this file except in compliance with the License. You may obtain    #
+# a copy of the License at                                                   #
+#                                                                            #
+# http://www.apache.org/licenses/LICENSE-2.0                                 #
+#                                                                            #
+# Unless required by applicable law or agreed to in writing, software        #
+# distributed under the License is distributed on an "AS IS" BASIS,          #
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.   #
+# See the License for the specific language governing permissions and        #
+# limitations under the License.                                             #
+#--------------------------------------------------------------------------- #
+
+[ -n "${MAIL}" ] || exit 0
+
+SSMTP_CONF=/etc/ssmtp/ssmtp.conf
+
+if [ -f "${SSMTP_CONF}" ]
+then
+    sed -i -E "s,^#?[[:space:]]*root=.*,root=${MAIL}," "${SSMTP_CONF}"
+fi
+EOS
+
+chmod +x "${SET_ROOT_MAIL_ALIAS}"
+
+cat > "${SET_IPS_SCRIPTS}" <<'EOS'
+#!/usr/bin/env python
+
+# -------------------------------------------------------------------------- #
+# Copyright 2015, C12G Labs S.L.                                             #
+#                                                                            #
+# Licensed under the Apache License, Version 2.0 (the "License"); you may    #
+# not use this file except in compliance with the License. You may obtain    #
+# a copy of the License at                                                   #
+#                                                                            #
+# http://www.apache.org/licenses/LICENSE-2.0                                 #
+#                                                                            #
+# Unless required by applicable law or agreed to in writing, software        #
+# distributed under the License is distributed on an "AS IS" BASIS,          #
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.   #
+# See the License for the specific language governing permissions and        #
+# limitations under the License.                                             #
+#--------------------------------------------------------------------------- #
+
+from sys import exit
+
+from os import environ
+from os.path import isfile
+
+import json
+
+CONFIG_FILE = "/etc/eole/config.eol"
+CHANGED = False
+
+if not isfile(CONFIG_FILE):
+    exit(0)
+
+config = json.load(file(CONFIG_FILE, "r"))
+
+for index in range(int(config['nombre_interfaces']['val'])):
+    ip_env_var = 'ETH{0}_IP'.format(index)
+    ip_var = u'adresse_ip_eth{0}'.format(index)
+    ip = environ.get(ip_env_var)
+
+    if ip and ip != config.get(ip_var).get('val'):
+        print "Set {0} to {1}".format(ip_var, ip)
+        CHANGED = True
+        config[ip_var][u'val'] = ip
+
+if CHANGED:
+    json.dump(config, file(CONFIG_FILE, "w"), indent=4)
+EOS
+
+chmod +x "${SET_IPS_SCRIPTS}"
+
+echo "Reset network configuration"
+cat > /etc/network/interfaces <<EOF
+# This file will be overwrit by one-contextd
+auto lo
+iface lo inet loopback
+EOF
+
+: > /etc/resolv.conf
+
+echo "Remove SSH host keys"
+rm -f /etc/ssh/ssh_host*
+
+echo "Clean root account"
+rm -rf /root/.ssh/
+: > /root/.bash_history
+
+EOT
+
+chmod +x ~root/bin/prepare-one
+
+######################################
+# Run fstrim at system boot/shutdown #
+######################################
+if is_systemd
+then
+    if ! systemctl list-unit-files | grep -qs fstrim.service
+    then
+        echo "Install systemd service to TRIM filesystems at boot/shutdown"
+        # Provide default fstrim.service
+        cat > /etc/systemd/system/fstrim.service <<EOT
+[Unit]
+Description=Discard unused blocks
+After=local-fs.target remote-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/fstrim -av
+ExecStop=/sbin/fstrim -av
+RemainAfterExit=yes
+
+[Install]
+WantedBy=basic.target
+EOT
+    else
+        echo "Override systemd service to TRIM filesystems at boot/shutdown"
+        mkdir -p /etc/systemd/system/fstrim.service.d
+        cat > /etc/systemd/system/fstrim.service.d/override.conf <<EOT
+[Unit]
+After=local-fs.target remote-fs.target
+
+[Service]
+ExecStart=
+ExecStart=/sbin/fstrim -av
+ExecStop=/sbin/fstrim -av
+RemainAfterExit=yes
+
+[Install]
+WantedBy=basic.target
+EOT
+    fi
+    systemctl daemon-reload
+    systemctl enable fstrim.service
+else
+    echo "Install wrapper to TRIM filesystems"
+    mkdir -p ~root/bin
+
+    update-rc.d -f zeroallfs remove
+    rm -f /etc/init.d/zeroallfs ~root/bin/zeroallfs
+
+    cat > ~root/bin/trimallfs <<'EOT'
+#!/bin/bash
+
+#------------------------------------------------------------------------
+# Copyright © 2016 Équpe EOLE <eole@ac-dijon.fr>
+# Author: Daniel Dehennin <daniel.dehennin@ac-dijon.fr>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+log() { echo -e "$@"; }
+warn() { log "$@" >&2; }
+die() { warn "$@"; exit ${EXIT_CODE:-1}; }
+
+[ "${DEBUG}" = 'yes' ] && set -x
+
+if ! command -v fstrim > /dev/null
+then
+    die "Binary fstrim is not installed"
+fi
+
+fstrim -av 2> /dev/null
+if [ $? = 1 ]
+then
+    # -a option is not supported
+    # List all MOUNTPOINT with TRIM support then run fstrim on them
+    lsblk -o MOUNTPOINT,DISC-MAX | grep -E '^/.* [1-9]+.*' | awk '{print $1}' | xargs -I{} fstrim -v {}
+fi
+EOT
+
+    chmod +x ~root/bin/trimallfs
+
+    if [ -x /sbin/initctl ]
+    then
+        echo "Upstart service to TRIM filesystem at boot/shutdown"
+
+        cat > /etc/init/fstrim.conf <<'EOT'
+# fstrim
+#
+# This service discard unused block
+
+description "Discard unused block"
+
+start on runlevel [S] and not-container
+stop on runlevel [016] and not-container
+
+exec /root/bin/trimallfs
+EOT
+    else
+        echo "System V service to TRIM filesystems at boot/shutdown"
+        cat > /etc/init.d/fstrim <<'EOT'
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          fstrim
+# Required-Start:    $local_fs
+# Required-Stop:     $local_fs
+# Default-Start:     S
+# Default-Stop:      0 1 6
+# Short-Description: TRIM all filesystems
+# Description:       Discard all deleted blocs to permit qemu-img
+#                    to strip the images
+### END INIT INFO
+
+TRIMALLFS="/root/bin/trimallfs"
+
+if [ -x "${TRIMALLFS}" ]
+then
+    ${TRIMALLFS}
+fi
+EOT
+    chmod +x /etc/init.d/fstrim
+    update-rc.d fstrim start 10 S . stop 30 0 1 6 . 2> /dev/null
+    fi
+fi
+
+# Trim the filesystems now
+service fstrim start
+
+###########################
+# Remove EOLE CI services #
+###########################
+
+echo "Remove EOLE CI services and scripts"
+
+if is_systemd
+then
+   for srv in EoleCiTestsContext.service EoleCiTestsDaemon.service
+   do
+       systemctl stop "${srv}" || true
+       systemctl disable "${srv}" || true
+       rm -f "/etc/systemd/system/${srv}"
+   done
+fi
+
+for script in /root/EoleCiFunctions.sh /root/getVMContext.sh /root/mount.eole-ci-tests /root/.EoleCiTests* .eole-ci-tests*
+do
+    rm -f "${script}"
+done
+
+rm -f $(readlink -e "${0}")

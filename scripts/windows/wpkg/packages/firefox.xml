@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- OpenSource -->
+<packages>
+<package
+    id="Firefox"
+    name="Mozilla Firefox %version%"
+    revision="%version%"
+    reboot="false"
+    priority="30">
+    <variable name="version" value="57.0" />
+    <variable architecture="x86" name="progfiles" value="%PROGRAMFILES%" />
+    <variable architecture="x64" name="progfiles" value="%PROGRAMFILES(X86)%" />
+    <!-- http://www.mozilla.org/en-US/firefox/all.html  -->
+    <eoledl dl="http://download.mozilla.org/?product=firefox-%version%&amp;os=win&amp;lang=fr" destname="firefox/Firefox Setup %version%.exe" />
+
+    <check type="uninstall" condition="versiongreaterorequal" path="Mozilla Firefox %version% (x86 fr)" value="%version%" />
+    <check type="file" condition="versiongreaterorequal" path="%progfiles%\Mozilla Firefox\firefox.exe" value="%version%" />
+
+    <install cmd="taskkill /F /IM Firefox.exe">
+        <exit code="any" />
+    </install>
+    <install cmd='"%SOFTWARE%\firefox\Firefox Setup %version%.exe" -ms' />
+    <!-- Pour mettre Firefox en navigateur par défaut, décommenter les 3 lignes suivantes -->
+    <!--
+    <install cmd='%ComSpec% /c  "%progfiles%\Mozilla Firefox\uninstall\helper.exe" /SetAsDefaultAppGlobal' >
+        <exit code="any" />
+    </install>
+    -->
+    <downgrade include="install" />
+    <upgrade include="install" />
+
+    <remove cmd="taskkill /F /IM Firefox.exe">
+        <exit code="any" />
+    </remove>
+    <remove timeout="300" cmd='"%progfiles%\Mozilla Firefox\uninstall\helper.exe" /S' />
+
+</package>
+</packages>

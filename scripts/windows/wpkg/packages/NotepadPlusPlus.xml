@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- OpenSource -->
+<packages>
+<package
+    id="NotepadPlusPlus"
+    name="Notepad++"
+    revision="%version%"
+    reboot="false"
+    priority="30">
+
+    <variable name="version" value="7.5.5" />
+    <variable architecture="x86" name="progfiles" value="%PROGRAMFILES%" />
+    <variable architecture="x64" name="progfiles" value="%PROGRAMFILES(X86)%" />
+
+    <eoledl dl="https://notepad-plus-plus.org/repository/7.x/%version%/npp.%version%.Installer.exe" destname="notepad++/npp.%version%.Installer.exe" />
+    <eoledl dl="https://notepad-plus-plus.org/repository/7.x/%version%/npp.%version%.Installer.x64.exe" destname="notepad++/npp.%version%.Installer.x64.exe" />
+
+    <check type="uninstall" condition="versionequalto" path="Notepad++" value="%version%" />
+    <check type="file" condition="versionequalto" path="%progfiles%\Notepad++\notepad++.exe" value="%version%" />
+
+    <!-- remove plug-ins to prevent installer hanging -->
+    <install cmd='%ComSpec% /c if exist "%progfiles%\Notepad++\plugins" del /f /q "%progfiles%\Notepad++\plugins\*.dll"' ><exit code="any"/></install>
+    <install cmd="%SOFTWARE%\notepad++\npp.%version%.Installer.exe /S">
+        <condition>
+           <check type="host" condition="architecture" value="x86" />
+        </condition>
+    </install>      
+    <install cmd="%SOFTWARE%\notepad++\npp.%version%.Installer.x64.exe /S">
+        <condition>
+           <check type="host" condition="architecture" value="x64" />
+        </condition>
+    </install>      
+
+    <!-- suppression de la mise à jour -->
+    <install cmd='%COMSPEC% /c if exist "%ProgramFiles%\Notepad++\disabled-updater" rmdir /S /Q "%PROGRAMFILES%\Notepad++\disabled-updater"' />
+    <install cmd='%COMSPEC% /c if exist "%ProgramFiles%\Notepad++\updater" move /Y "%PROGRAMFILES%\Notepad++\updater" "%PROGRAMFILES%\Notepad++\disabled-updater"' />
+
+    <upgrade include="install" />
+    <downgrade include="upgrade"/>
+
+    <remove cmd='%ComSpec% /c if exist "%progfiles%\Notepad++\plugins" del /f /q "%progfiles%\Notepad++\plugins\*.dll"' ><exit code="any"/></remove>
+    <remove cmd='%ComSpec% /c if exist "%progfiles%\Notepad++\uninstall.exe" "%progfiles%\Notepad++\uninstall.exe" /S _?=%progfiles%\Notepad++' />
+</package>
+</packages>

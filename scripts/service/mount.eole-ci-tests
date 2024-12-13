@@ -1,0 +1,63 @@
+#!/bin/bash
+[ ! -d /mnt/eole-ci-tests ] && mkdir -p /mnt/eole-ci-tests
+if [ -d /mnt/eole-ci-tests/scripts ]
+then
+    #echo "VirtFs 'eole-ci-tests' déjà monté"
+    exit 0
+fi
+
+CDU="1"
+DISTRIB=$(uname -o)
+if [ "$DISTRIB" == FreeBSD ] 
+then
+    kldload fuse.ko
+    sysctl vfs.usermount=1
+    devfs ruleset 10
+    devfs rule add path 'fuse*' mode 666
+
+    [ -d /root/.ssh ] || mkdir /root/.ssh
+    [ -f /root/.ssh/id_rsa ] || ssh-keygen -b 2048 -t rsa -f /root/.ssh/id_rsa -q -N ""
+	# si le batchmode fonctionne c'est que l'échange est OK!
+    if ! ssh -o BatchMode=yes -o StrictHostKeyChecking=no root@192.168.0.1 "exit 0"
+    then
+    	# publie clef SSH sur la GW
+	    sshpass -p eole ssh-copy-id -i /root/.ssh/id_rsa.pub root@192.168.0.1
+	    # Accept la clef de la GW 
+	    scp root@192.168.0.1:/root/.ssh/id_rsa.pub /root/id_rsa.pub
+	    cat /root/id_rsa.pub >> /root/.ssh/authorized_keys
+	    rm /root/id_rsa.pub
+	    # test
+	    ssh -o StrictHostKeyChecking=no root@192.168.0.1 "ls -l"
+    fi
+    # monte eole-ci-tests
+    sshfs -o allow_other,compression=no,auto_cache,reconnect,uid=1000,gid=1000 root@192.168.0.1:/mnt/eole-ci-tests /mnt/eole-ci-tests
+    CDU="$?"
+    # vérification
+    ls -l /mnt/eole-ci-tests/
+    echo "mount_sshfs ==> $CDU"
+else
+    counter=0
+    while [[ ${counter} -lt 6 ]] ;
+    do
+        counter=$(( counter + 1 ))
+        if mount -t 9p -o trans=virtio eole-ci /mnt/eole-ci-tests -oversion=9p2000.L
+        then
+            CDU="$?"
+            echo "wait mount 9P (${counter}/6): ok"
+            exit 0
+        fi
+        echo "wait mount 9P (${counter}/6): wait"
+        sleep 10
+    done
+    echo "wait mount 9P (${counter}/6): timeout"
+    exit 1
+fi
+
+if [ "$CDU" -ne 0 ]
+then
+    echo "Impossible de monter VirtFs 'eole-ci' ==> annulation démarrage !"
+    exit 1
+fi
+
+exit 0
+

@@ -1,0 +1,208 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          creoled
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Creole daemon
+# Description:       Start the creole daemon
+### END INIT INFO
+
+# Author: Équipe EOLE <eole@ac-dijon.fr>
+#
+# Do NOT "set -e"
+
+# PATH should only include /usr/* if it runs after the mountnfs.sh script
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+DESC="Creole daemon"
+NAME=creoled
+DAEMON=/usr/sbin/$NAME
+PIDFILE=/run/$NAME.pid
+SCRIPTNAME=/etc/init.d/$NAME
+LOCALE_FILE=/etc/default/locale
+
+DAEMON_ARGS="--daemon --pidfile $PIDFILE"
+
+# Exit if the package is not installed
+[ -x "$DAEMON" ] || exit 0
+
+# Read configuration variable file if it is present
+[ -r /etc/default/$NAME ] && . /etc/default/$NAME
+
+# Loading locale file  (ref #7938)
+if [ -r ${LOCALE_FILE} ]; then
+    . ${LOCALE_FILE}
+     export LANG
+     LC_ALL=$LANG
+     export LC_ALL
+fi
+
+# Load the VERBOSE setting and other rcS variables
+. /lib/init/vars.sh
+
+# Define LSB log_* functions.
+# Depend on lsb-base (>= 3.2-14) to ensure that this file is present
+# and status_of_proc is working.
+. /lib/lsb/init-functions
+
+#
+# Function to wait for daemon to terminate
+#
+do_wait_stop()
+{
+        if [ -f "$PIDFILE" ]; then
+		pid=$(cat $PIDFILE)
+	else
+		pid=$(pidofproc $DAEMON)
+		pid=$(echo "$pid" | sed -e "s,$$,,")
+	fi
+        if [ -z "$pid" ]; then
+		return 1
+	else
+		sig=0
+		n=1
+		while kill -$sig $pid 2>/dev/null; do
+			if [ $n -eq 1 ]; then
+				echo "waiting for pid $pid to die"
+			fi
+			if [ $n -eq 11 ]; then
+				echo "giving up on pid $pid with kill -0; trying -9"
+				sig=9
+			fi
+			if [ $n -gt 20 ]; then
+				echo "giving up on pid $pid"
+				return 2
+			fi
+			n=$(($n+1))
+			sleep 1
+		done
+		return 0
+        fi
+}
+
+#
+# Function that starts the daemon/service
+#
+do_start()
+{
+	# Return
+	#   0 if daemon has been started
+	#   1 if daemon was already running
+	#   2 if daemon could not be started
+    date >> /tmp/creoled.log
+    echo "-------" >> /tmp/creoled.log
+    ifconfig >> /tmp/creoled.log
+    echo "-------" >> /tmp/creoled.log
+    netstat -taunp >> /tmp/creoled.log
+    echo "-------" >> /tmp/creoled.log
+	start-stop-daemon --start --quiet --pidfile $PIDFILE --startas $DAEMON --test >> /tmp/creoled.log \
+		|| return 1
+	start-stop-daemon --start --quiet --pidfile $PIDFILE --startas $DAEMON -- \
+		$DAEMON_ARGS 2>> /tmp/creoled.log \
+		|| return 2
+    echo "-------" >> /tmp/creoled.log
+    netstat -taunp >> /tmp/creoled.log
+    echo "-------" >> /tmp/creoled.log
+    ps auxf >> /tmp/creoled.log
+    echo "fin" >> /tmp/creoled.log
+	# Add code here, if necessary, that waits for the process to be ready
+	# to handle requests from services started subsequently which depend
+	# on this one.  As a last resort, sleep for some time.
+}
+
+#
+# Function that stops the daemon/service
+#
+do_stop()
+{
+	# Return
+	#   0 if daemon has been stopped
+	#   1 if daemon was already stopped
+	#   2 if daemon could not be stopped
+	#   other if a failure occurred
+	start-stop-daemon --stop --quiet --retry=TERM/30/KILL/5 --pidfile $PIDFILE --name $NAME
+	do_wait_stop
+	RETVAL="$?"
+	[ "$RETVAL" = 2 ] && return 2
+	# Many daemons don't delete their pidfiles when they exit.
+	rm -f $PIDFILE
+	return "$RETVAL"
+}
+
+#
+# Function that sends a SIGHUP to the daemon/service
+#
+do_reload() {
+	#
+	# If the daemon can reload its configuration without
+	# restarting (for example, when it is sent a SIGHUP),
+	# then implement that here.
+	#
+	start-stop-daemon --status --quiet --pidfile $PIDFILE --name $NAME \
+	    || return 3
+	pkill -USR1 -F $PIDFILE
+	start-stop-daemon --status --quiet --pidfile $PIDFILE --name $NAME \
+	    && return 0 || return 3
+}
+
+case "$1" in
+  start)
+	log_daemon_msg "Starting $DESC" "$NAME"
+	do_start
+	case "$?" in
+		0) sleep .2 && echo >> $PIDFILE; log_end_msg 0 ;;
+		1) log_end_msg 0 ;;
+		2) log_end_msg 1 ;;
+	esac
+	;;
+  stop)
+	log_daemon_msg "Stopping $DESC" "$NAME"
+	do_stop
+	case "$?" in
+		0|1) log_end_msg 0 ;;
+		2) log_end_msg 1 ;;
+	esac
+	;;
+  status)
+	status_of_proc "$DAEMON" "$NAME" && exit 0 || exit $?
+	;;
+  reload|force-reload)
+	#
+	# If do_reload() is not implemented then leave this commented out
+	# and leave 'force-reload' as an alias for 'restart'.
+	#
+	log_daemon_msg "Reloading $DESC" "$NAME"
+	do_reload
+	log_end_msg $?
+	;;
+  restart)
+	#
+	# If the "reload" option is implemented then remove the
+	# 'force-reload' alias
+	#
+	log_daemon_msg "Restarting $DESC" "$NAME"
+	do_stop
+	case "$?" in
+	  0|1)
+		do_start
+		case "$?" in
+			0) log_end_msg 0 ;;
+			1) log_end_msg 1 ;; # Old process is still running
+			*) log_end_msg 1 ;; # Failed to start
+		esac
+		;;
+	  *)
+		# Failed to stop
+		log_end_msg 1
+		;;
+	esac
+	;;
+  *)
+	#echo "Usage: $SCRIPTNAME {start|stop|restart|reload|force-reload}" >&2
+	echo "Usage: $SCRIPTNAME {start|stop|status|restart|force-reload}" >&2
+	exit 3
+	;;
+esac
+
+:

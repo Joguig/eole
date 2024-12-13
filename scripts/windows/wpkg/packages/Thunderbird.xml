@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- OpenSource -->
+<packages>
+<package
+    id="thunderbird"
+    name="Mozilla Thunderbird"
+    revision="%version%"
+    reboot="false"
+    priority="10">
+
+    <variable name="version" value="52.6.0-SSL" />
+    <variable architecture="x86" name="progfiles" value="%PROGRAMFILES%" />
+    <variable architecture="x64" name="progfiles" value="%PROGRAMFILES(X86)%" />
+
+    <!-- http://www.mozilla.org/en-US/thunderbird/all.html -->
+    <eoledl dl="http://download.mozilla.org/?product=thunderbird-%version%&amp;os=win&amp;lang=fr" destname="thunderbird/Thunderbird Setup %version%.exe" />
+
+    <check type="uninstall" condition="exists" path="Mozilla Thunderbird %version% (x86 fr)" />
+    <check type="file" condition="exists" path="%progfiles%\Mozilla Thunderbird\thunderbird.exe" />
+
+    <install cmd='taskkill /F /IM thunderbird.exe'>
+        <exit code="any" />
+    </install>
+    <install cmd='"%SOFTWARE%\thunderbird\Thunderbird Setup %version%.exe" -ms' />
+
+    <downgrade include="install" />
+    <upgrade include="install" />
+
+    <remove cmd='taskkill /F /IM thunderbird.exe'>
+        <exit code="any" />
+    </remove>
+    <remove cmd='"%progfiles%\Mozilla Thunderbird\uninstall\helper.exe" /S' />
+</package>
+</packages>

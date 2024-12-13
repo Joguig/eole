@@ -1,0 +1,173 @@
+#!/bin/bash
+### BEGIN INIT INFO
+# Provides:          eole-ci-tests
+# Required-Start:    $local_fs
+# Required-Stop:     $local_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: eole-ci-tests
+# Description: Ce daemon gére :
+#              - le montage automatique de eole-ci-tests dans /mnt/eole-ci-tests, 
+#              - lance le script "start.sh" de /mnt/eole-ci-tests/src/scripts
+### END INIT INFO
+
+# Do NOT "set -e"
+
+# PATH should only include /usr/* if it runs after the mountnfs.sh script
+ACTION=$1
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+DAEMON=/root/eole-ci-tests_start.sh
+DAEMON_ARGS=
+NAME=eole-ci-tests
+PIDFILE=/var/run/$NAME.pid
+LOGFILE=/var/log/$NAME.log
+DESC="EOLE Continuous Integration Tests daemon"
+
+# Read configuration variable file if it is present
+[ -r /etc/default/$NAME ] && . /etc/default/$NAME
+
+# Load the VERBOSE setting and other rcS variables
+. /lib/init/vars.sh
+
+export VERBOSE=yes
+
+# Define LSB log_* functions.
+# Depend on lsb-base (>= 3.2-14) to ensure that this file is present
+# and status_of_proc is working.
+. /lib/lsb/init-functions
+
+#
+# Function that starts the daemon/service
+#
+do_start()
+{
+    [ "$VERBOSE" != no ] && log_daemon_msg "Monte Disk Partage Toutes les VM /mnt/eole-ci-tests "
+    [ ! -d /mnt/eole-ci-tests ] && mkdir /mnt/eole-ci-tests
+    if [ -d /mnt/eole-ci-tests/scripts ]
+    then
+        [ "$VERBOSE" != no ] && log_warning_msg "VirtFs 'eole-ci' déjà monté : demontage"
+        umount /mnt/eole-ci-tests
+    fi
+
+    mount -t 9p -o trans=virtio eole-ci /mnt/eole-ci-tests -oversion=9p2000.L
+    if [ "$?" -ne 0 ]
+    then
+        [ "$VERBOSE" != no ] && log_failure_msg "Impossible de monter VirtFs 'eole-ci' ==> annulation démarrage !"
+        exit 1
+    fi
+
+    if [ ! -f /mnt/eole-ci-tests/scripts/service/start.sh ] 
+    then 
+        [ "$VERBOSE" != no ] && log_failure_msg "Le script du daemon '/mnt/eole-ci-tests/scripts/service/start.sh' n'existe pas ou n'est pas accessible"
+        exit 1
+    fi
+    cp /mnt/eole-ci-tests/scripts/service/start.sh $DAEMON
+    /bin/bash $DAEMON >/dev/null 2>&1
+}
+
+#
+# Function that stops the daemon/service
+#
+do_stop()
+{
+    # Many daemons don't delete their pidfiles when they exit.
+    if [ -f "$PIDFILE" ]
+    then 
+        for SOUS_PROCESSUS in $(cat $PIDFILE) ;
+        do
+            [ "$VERBOSE" != no ] && log_progress_msg "$NAME : clean process $SOUS_PROCESSUS "
+            kill -9 $SOUS_PROCESSUS >/dev/null 2>&1
+        done 
+        rm -f $PIDFILE
+    fi
+
+    [ "$VERBOSE" != no ] && log_progress_msg "Démontage '$NAME'"
+    [ -f /mnt/cdrom/context.sh ]               && umount /mnt/cdrom
+    [ -f /mnt/eole-ci-tests/ModulesEole.yaml ] && umount /mnt/eole-ci-tests
+    return 0
+}
+
+#
+# Function that stops the daemon/service
+#
+do_status()
+{
+    RETVAL="2"
+    if [ -f "$PIDFILE" ]
+    then 
+        for SOUS_PROCESSUS in $(cat $PIDFILE) ;
+        do
+            if [ -d /proc/$SOUS_PROCESSUS ]
+            then
+                RETVAL="0" 
+            fi
+        done 
+    fi
+    
+    if [ "$RETVAL" = 2 ] 
+    then 
+        if [ -f /mnt/eole-ci-tests/ModulesEole.yaml ] 
+        then
+            RETVAL="1"
+        fi
+    fi
+    return $RETVAL
+}
+
+case "$ACTION" in
+  stop)
+    [ "$VERBOSE" != no ] && log_daemon_msg "Stopping $DESC" "$NAME"
+    do_stop
+    case "$?" in
+        0|1) [ "$VERBOSE" != no ] && log_end_msg 0 ;;
+        2) [ "$VERBOSE" != no ] && log_end_msg 1 ;;
+    esac
+    ;;
+    
+  status)
+    do_status
+    case "$?" in
+        0) [ "$VERBOSE" != no ] && log_success_msg "$NAME is running" || log_end_msg 0  
+           ;;
+        1) [ "$VERBOSE" != no ] && log_success_msg "$NAME is not running, but eole-ci-tests is mounted" || log_end_msg 1  
+           ;;
+        2) [ "$VERBOSE" != no ] && log_failure_msg "$NAME is not running" || log_end_msg 2 
+           ;;
+    esac
+    ;;
+    
+  restart)
+    [ "$VERBOSE" != no ] && log_daemon_msg "Restarting $DESC" "$NAME"
+    do_stop
+    case "$?" in
+      0|1)
+        do_start
+        case "$?" in
+            0) log_end_msg 0 ;;
+            1) log_end_msg 1 ;; # Old process is still running
+            *) log_end_msg 1 ;; # Failed to start
+        esac
+        ;;
+      *)
+        # Failed to stop
+        log_end_msg 1
+        ;;
+    esac
+    ;;
+
+  start)
+    [ "$VERBOSE" != no ] && log_daemon_msg "Starting $DESC" "$NAME"
+    do_start
+    case "$?" in
+        0|1) [ "$VERBOSE" != no ] && log_end_msg 0 ;;
+        2) [ "$VERBOSE" != no ] && log_end_msg 1 ;;
+    esac
+    ;;
+    
+
+  *)
+    echo "Usage: $0 {start|stop|restart|status}" >&2
+    exit 3
+    ;;
+esac
+

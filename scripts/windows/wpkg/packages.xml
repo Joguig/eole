@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Available package database.
+
+     This is a list of all packages that can be deployed to workstations.
+
+     Each package has the following attributes:
+
+        id          A unique identifier representing the package. Should be
+                    short and to the point.
+
+        name        Longer textual description of the package. This should be
+                    the full product name.
+
+        revision    User created integer to represent the "version" of the
+                    specific package. Should be incremented when creating a new
+                    release.
+
+        reboot      If "true" system reboots when done installing, removing or
+                    upgrading the package.
+
+        priority    Specifies a numeric value that determines in what order a
+                    package will be installed.
+
+    The following additional elements can or must be included within a package:
+
+        depends     Specifies that this package depends on another package and
+                    optionally version. Either that package must be installed or
+                    must be installable.
+
+        install     Contains command(s) to be run when the package is to be
+                    installed.
+
+        remove      Contains command(s) to be run when the package is to be
+                    removed.
+
+        upgrade     Contains commands(s) to be run when the package is already
+                    installed, but the new revision number is greater than the
+                    old revision number.
+
+        env         Sets an environmental variable to the specified value
+		    (not yet implemented).
+
+    THIS IS A SAMPLE FILE
+
+    For more info, see http://wpkg.org/index.php/Category:Documentation
+
+-->
+
+<packages>
+
+    <package/>
+
+</packages>

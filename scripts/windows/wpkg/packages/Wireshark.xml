@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- FreeWare -->
+<packages>
+<package
+    id="wireshark"
+    name="Wireshark"
+    revision="%version%"
+    reboot="false"
+    priority="20">
+
+    <variable name="version" value="2.6.2" />
+
+    <variable name="PROGRAMS" value="%PROGRAMFILES%" architecture="x86"/>
+    <eoledl dl="https://1.eu.dl.wireshark.org/win32/Wireshark-win32-%version%.exe" destname="sumatra/Wireshark-win32-%version%.exe" architecture="x86" />
+    <install architecture="x86" cmd='wireshark/Wireshark-win32-%version%.exe /s' />
+    <upgrade architecture="x86" cmd='"%SOFTWARE%\wireshark/Wireshark-win32-%version%.exe" /S' />
+    <remove architecture="x86" cmd='"%PROGRAMFILES%\wireshark\uninstall.exe" _?=%PROGRAMFILES%' />
+
+    <variable name="PROGRAMS" value="%PROGRAMFILES(X86)%" architecture="x64"/>
+    <eoledl dl="https://1.eu.dl.wireshark.org/win64/Wireshark-win64-%version%.exe" destname="sumatra/Wireshark-win64-%version%.exe" architecture="x64" />
+    <install architecture="x64" cmd='wireshark/Wireshark-win64-%version%.exe /s' />
+    <upgrade architecture="x64" cmd='"%SOFTWARE%\wireshark/Wireshark-win64-%version%.exe" /S' />
+    <remove architecture="x64" cmd='"%PROGRAMFILES%\wireshark\uninstall.exe" _?=%PROGRAMFILES%' />
+    
+</package>
+</packages>

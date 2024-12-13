@@ -1,0 +1,23 @@
+#!/usr/bin/python3
+
+import sys
+import traceback
+
+from creole.loader import creole_loader
+from creole.loader import config_save_values
+
+try:
+    print("Load EOLE configuration... ",end="")
+    loader = creole_loader(load_extra=True)
+    print("OK")
+except Exception as error:
+    traceback.print_exc()
+    sys.exit(1)
+
+try:
+    print("Save EOLE configuration... ", end="")
+    config_save_values(loader, namespace='creole', reload_config=False)
+    print("OK")
+except Exception as error:
+    traceback.print_exc()
+    sys.exit(1)

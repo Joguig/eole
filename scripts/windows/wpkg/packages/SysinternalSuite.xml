@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- FreeWare -->
+<packages>
+<package
+    id="sysinternals"
+    name="Sysinternals"
+    revision="%version%"
+    reboot="false"
+    priority="20">
+
+    <variable name="version" value="2017_12" />
+
+    <eoledl dl="https://download.sysinternals.com/files/sysinternalssuite.zip" destname="sysinternalssuite/sysinternalssuite_%version%.zip" />
+
+    <install cmd='%PROGRAMFILES%\7-Zip\7z.exe -x "%SOFTWARE%\sysinternalssuite\sysinternalssuite_%version%.zip" -o c:\util -y ' />
+    <downgrade include="install" />
+    <upgrade include="install" />
+    <remove cmd="del /q /s /y c:\util" />
+</package>
+</packages>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- FreeWare -->
+<packages>
+<package
+    id="sumatra"
+    name="Sumatra-PDF"
+    revision="%version%"
+    reboot="false"
+    priority="20">
+
+    <variable name="version" value="3.1.2" architecture="x86"/>
+    <variable name="versionurl" value="%version%" architecture="x86" />
+    <variable name="versionurl" value="%version%-64" architecture="x64" />
+    
+    <variable name="PROGRAMS" value="%PROGRAMFILES%" architecture="x86"/>
+    <variable name="PROGRAMS" value="%PROGRAMFILES(X86)%" architecture="x64"/>
+
+    <eoledl dl="https://www.sumatrapdfreader.org/dl/SumatraPDF-%versionurl%.zip" destname="sumatra/SumatraPDF-%versionurl%.zip"/>
+    
+    <install cmd='%PROGRAMS%\7-Zip\7z.exe -x "%SOFTWARE%\sumatra\SumatraPDF-%versionurl%.zip" -o %PROGRAMS%\SumatraPDF -y ' />
+    <downgrade include="install" />
+    <upgrade include="install" />
+</package>
+</packages>

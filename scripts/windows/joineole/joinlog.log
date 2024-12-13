@@ -1,0 +1,38 @@
+2016-01-12 17:06:53.177000 : Test OS [u'6', u'3', u'9600']
+2016-01-12 17:06:53.411000 : Dossier courant ['joineole.py']
+2016-01-12 17:06:53.567000 : Test OS [u'6', u'3', u'9600']
+2016-01-12 17:06:53.614000 : passage reseau en modeprivate
+2016-01-12 17:06:53.614000 : lance commande netsh advfirewall firewall set rule group="Recherche du rÃ©seau" new enable=Yes
+2016-01-12 17:06:55.833000 : Dossier courant ['joineole.py']
+2016-01-12 17:06:55.864000 : cherche  domaines
+2016-01-12 17:06:55.942000 : options joineole.cfg joineole.cfg
+2016-01-12 17:07:18.993000 : cherche controleur de domaine DOMACA = SCRIBE
+2016-01-12 17:07:19.024000 : cherche ip  SCRIBE
+2016-01-12 17:07:19.056000 : test port 8789 : 192.168.0.26
+2016-01-12 17:07:45.571000 : Dossier courant ['joineole.py']
+2016-01-12 17:07:46.806000 : Dossier courant ['joineole.py']
+2016-01-12 17:07:46.837000 : read_conf
+2016-01-12 17:07:46.852000 : {'admin': u'admin', 'ip': u'192.168.0.26', 'passwd': 'ZW9sZQ==\n', 'domaine': u'DOMACA', 'serveur': u'SCRIBE'}
+2016-01-12 17:07:46.868000 : DomainCompatibilityMode 14
+2016-01-12 17:07:46.868000 : DNSNameResolutionRequired 04
+2016-01-12 17:07:46.884000 : EnableLUA 04
+2016-01-12 17:07:46.899000 : ConsentPromptBehaviorAdmin 04
+2016-01-12 17:07:46.899000 : PromptOnSecureDesktop 04
+2016-01-12 17:07:46.946000 : Traceback (most recent call last):
+  File "Z:\scripts\windows\joineole\registre.py", line 61, in apply_cles
+    regkey = OpenKeyEx(ruche, keypath, 0, KEY_ALL_ACCESS|KEY_WOW64_64KEY)
+WindowsError: [Error 2] Le fichier spécifié est introuvable
+
+2016-01-12 17:07:46.962000 : attention creation 2147483650 SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\NetworkProvider\HardenedPaths
+2016-01-12 17:07:46.962000 : \\*\netlogon RequireMutualAuthentication=0,RequireIntegrity=0,RequirePrivacy=01
+2016-01-12 17:07:46.977000 : WaitForNetwork 04
+2016-01-12 17:07:46.993000 : LmCompatibilityLevel 14
+2016-01-12 17:07:46.993000 : rename >7 
+2016-01-12 17:07:47.024000 : joindom DOMACA admin
+2016-01-12 17:08:18.376000 : joindom retourne 0
+2016-01-12 17:08:18.391000 : domaine par defaut = DOMACA
+2016-01-12 17:08:18.407000 : DefaultDomainName DOMACA1
+2016-01-12 17:08:18.438000 : connect u::\\192.168.0.26\perso
+2016-01-12 17:08:18.610000 : lance commande u:\client\cliscribe-setup.exe /SILENT /NORESTART
+2016-01-12 17:09:06.893000 : disconnect u:
+2016-01-12 17:09:06.924000 : regfile 8.1 8.1

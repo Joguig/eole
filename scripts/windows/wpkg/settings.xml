@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<file>\\EOLECITEST\wpkg\wpkg.js</file>
+	<net-use-machine-account>NO</net-use-machine-account>
+	<path-user></path-user>
+	<path-password></path-password>
+	<exec-user>SYSTEM</exec-user>
+	<exec-password></exec-password>
+	<parameters>/synchronize /nonotify /quiet</parameters>
+	<silent>YES</silent>
+	<pre-action>\\EOLECITEST\wpkg\preinstall.bat</pre-action>
+	<post-action>\\EOLECITEST\wpkg\postinstall.bat</post-action>
+	<show-GUI>NO</show-GUI>
+	<logon-delay>1</logon-delay>
+	<logon-message-title>Déploiement d'application WPKG</logon-message-title>
+	<logon-message-logo-picture></logon-message-logo-picture>
+	<logon-message-1>WPKG installe les applications et applique les paramètres...</logon-message-1>
+	<logon-message-2>Veuillez patienter et ne pas redémarrer votre ordinateur...</logon-message-2>
+	<script-variable name="SOFTWARE">\\EOLECITEST\wpkg\softwares</script-variable>
+	<priority>normal</priority>
+	<stop-service-after-done>YES</stop-service-after-done>
+	<laptop-mode>NO</laptop-mode>
+	<server-connecting-method>standard</server-connecting-method>
+	<server-connecting-ip></server-connecting-ip>
+	<server-connecting-timeout>3</server-connecting-timeout>
+	<server-connecting-script-timeout>3</server-connecting-script-timeout>
+	<server-connecting-script-file></server-connecting-script-file>
+	<log-file></log-file>
+	<run-on-shutdown>NO</run-on-shutdown>
+	<shutdown-delay>10</shutdown-delay>
+	<logon-interrupt-password></logon-interrupt-password>
+</configuration>

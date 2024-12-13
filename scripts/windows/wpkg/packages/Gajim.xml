@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<packages>
+<package
+    id="Gajim" 
+    name="Gajim - Creation 3D" 
+    revision="%version%"
+    priority="20" 
+    reboot="false" >
+    
+    <variable name="version" value="0.16"/>
+    <variable name="subversion" value="0.16.5-1"/>
+    
+    <eoledl dl="https://gajim.org/downloads/%version%/gajim-%subversion%.exe" destname="gajim\gajim-%subversion%.exe" />
+    
+    <install cmd='"%SOFTWARE%\gajim\gajim-%subversion%.exe" /S' />
+    <upgrade cmd='"%SOFTWARE%\gajim\gajim-%subversion%.exe" /S' />
+    <remove cmd='"%PROGRAMFILES%\Gajim\uninstall.exe" _?=%PROGRAMFILES%' />
+
+</package>
+</packages>

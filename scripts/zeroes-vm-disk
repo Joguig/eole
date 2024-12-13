@@ -1,0 +1,121 @@
+#!/bin/sh
+
+die() { echo "$@"; exit 1; }
+
+[ "$(id -u)" = 0 ] || die "You must be root."
+
+echo "Wrapper to zeroize filesystems"
+if ! dpkg -l zerofree > /dev/null 2>&1
+then
+    echo "Install package zerofree"
+    apt-get -qy install zerofree
+fi
+
+[ -d "/root/bin" ] || mkdir /root/bin
+
+cat > ~/bin/zeroallfs <<'EOF'
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:          zerofreeallfs
+# Required-Start:    $local_fs
+# Required-Stop:     
+# Default-Start:     0
+# Default-Stop:      
+# Short-Description: Zerofree on all ext filesystem
+# Description:       Replace all deleted blocs by zero to permit qemu-img
+#                    to strip the images
+### END INIT INFO
+
+# Author: Daniel Dehennin <daniel.dehennin@ac-dijon.fr>
+#
+log() { echo -e "$@"; }
+warn() { log "$@" >&2; }
+die() { warn "$@"; exit ${EXIT_CODE:-1}; }
+
+if ! expr "$(runlevel)" : '.*0$' > /dev/null
+then
+    die "You must be in runlevel 0"
+fi
+
+[ "${DEBUG}" = 'yes' ] && set -x
+[ "${DRY_RUN}" = 'yes' ] && DRY=echo
+
+if ! type -p zerofree > /dev/null
+then
+    die "Binary zerofree is not installed"
+fi
+
+zeroing() {
+    local device="${1}"
+    local vg="${2}"
+
+    if ! blkid -s TYPE -o value "${device}" | grep -q '^ext'
+    then
+	warn "Skipping non EXT filesystem ${device}"
+	return 0
+    fi
+
+    log "Zeroing ${device}"
+    if [[ "${device}" =~ root$ ]]
+    then
+        mount_point='/'
+    elif [ -n "${vg}" ]
+    then
+        # Resolve /dev/${vg}/${lv} to mounted device
+        lv="${device#/dev/${vg}/}"
+        mount_point=$(grep "${vg}[^[:space:]]\+${lv} " /proc/mounts | cut -d' ' -f2)
+	if [ -z "${mount_point}" ]
+	then
+	    # try /dev/mapper/${vg}-${lv}, double the dash
+	    mount_point=$(grep "${vg//-/--}[^[:space:]]\+${lv} " /proc/mounts | cut -d' ' -f2)
+	fi
+    else
+        mount_point=$(grep "${device} " /proc/mounts | cut -d' ' -f2)
+    fi
+
+    if [ -n "${mount_point}" ]
+    then
+        log "Read-only remount ${mount_point}"
+        ${DRY} mount -o remount,ro "${mount_point}" #2> /dev/null
+    fi
+    ${DRY} zerofree -v "${device}"
+    if [ -n "${mount_point}" ]
+    then
+        log "Read-write remount ${mount_point}"
+        ${DRY} mount -o remount,rw "${mount_point}" #2> /dev/null
+    fi
+}
+
+# Process blocking /var
+${DRY} service rsyslog stop 2> /dev/null || true
+${DRY} service systemd-logind stop 2> /dev/null || true
+
+# /boot
+boot=$(grep '/boot ' /proc/mounts | cut -d' ' -f 1)
+zeroing "${boot}"
+
+for vg in $(vgs --noheadings -o name 2> /dev/null)
+do
+    for device in /dev/${vg}/*
+    do
+        zeroing "${device}" "${vg}"
+    done
+done
+
+if [ "$1" = "start" ]
+then
+    # run by init?
+    # delete itself
+    sleep 10
+    ${DRY} rm -f $(readlink -e "${0}")
+    ${DRY} rm -f "${0}"
+fi
+EOF
+
+chmod +x ~/bin/zeroallfs
+cp ~/bin/zeroallfs /etc/init.d/
+chmod +x /etc/init.d/zeroallfs
+update-rc.d zeroallfs start 30 0 . 2> /dev/null
+
+echo "Disk will be zeroed when you shutdown the machine."

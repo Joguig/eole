@@ -1,0 +1,12 @@
+[Unit]
+Description=EOLE Continuous Integration Tests Daemon
+After=multi-user.target
+
+[Service]
+Type=forking
+ExecStartPre=-/bin/bash /root/mount.eole-ci-tests
+ExecStartPre=-/bin/bash /mnt/eole-ci-tests/scripts/service/CheckUpdate.sh
+ExecStart=-/bin/bash /root/.EoleCiTestsDaemon.sh
+
+[Install]
+WantedBy=multi-user.target

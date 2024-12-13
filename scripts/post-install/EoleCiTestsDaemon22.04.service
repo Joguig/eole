@@ -1,0 +1,15 @@
+[Unit]
+Description=EOLE Continuous Integration Tests Daemon 22.04
+After=multi-user.target
+Wants=multi-user.target
+
+[Service]
+Type=forking
+RemainAfterExit=yes
+ExecStartPre=-/bin/bash /root/mount.eole-ci-tests
+ExecStartPre=-/bin/bash /mnt/eole-ci-tests/scripts/service/CheckUpdate.sh
+ExecStart=-/bin/bash /root/.EoleCiTestsDaemon.sh
+TimeoutStartSec=1m
+
+[Install]
+WantedBy=multi-user.target

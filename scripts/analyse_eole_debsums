@@ -1,0 +1,40 @@
+#!/bin/sh
+
+SELF="$(basename $0)"
+RUN="/etc/cron.daily/eole-debsums"
+REPORT="/usr/share/eole/debsums/show-reports.py"
+AGGREGATED=$(mktemp -t eole-debsums-XXXXXXXXX.log)
+
+__clean__() {
+    set +e
+    [ ! -f "${AGGREGATED}" ] || rm -f "${AGGREGATED}"
+}
+
+trap __clean__ EXIT
+
+echo "Début ${SELF}"
+
+for script in "${RUN}" "${REPORT}"
+do
+    if [ ! -x "${script}" ]
+    then
+	   echo "Script '${script}' inexistant: ERREUR"
+	   exit 1
+    fi
+done
+
+echo "Exécution de '${RUN}'"
+${RUN}
+
+echo "Exécution de '${REPORT}'"
+${REPORT} | tee "${AGGREGATED}"
+
+# Grep any line matching “<package>:”
+if grep -F ':' "${AGGREGATED}" | grep -qsv 'Container\|Filename\|Last'
+then
+    echo "Fin ${SELF} : ERREUR "
+    exit 1
+else
+    echo "Fin ${SELF} : OK"
+    exit 0
+fi

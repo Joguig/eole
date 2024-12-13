@@ -1,0 +1,36 @@
+#!/bin/sh
+# shellcheck disable=SC2034,SC2148,SC2006
+
+# $FreeBSD$
+#
+# EoleCiTestsDaemon startup script
+#
+# PROVIDE: EoleCiTestsDaemon
+# REQUIRE: DAEMON NETWORKING
+# KEYWORD: shutdown
+
+# Add the following to /etc/rc.conf[.local] to enable this service
+#
+# EoleCiTestsDaemon_enable (bool):       Set to YES by default.
+#               Set it to NO to disable EoleCiTestsDaemon
+#
+
+# shellcheck disable=SC1091,SC1090
+. /etc/rc.subr
+
+name=EoleCiTestsDaemon
+rcvar=EoleCiTestsDaemon_enable
+
+load_rc_config ${name}
+
+# Set the default
+# shellcheck disable=SC2223
+: ${EoleCiTestsDaemon_enable:="YES"}
+
+# This is the tool init launches
+command="/usr/sbin/daemon"
+procname="/usr/local/bin/bash" 
+pidfile="/var/run/EoleCiTestsDaemon.pid"
+task="/root/EoleCiTestsDaemon.sh"
+command_args="-p ${pidfile} ${task}"
+run_rc_command "$1"

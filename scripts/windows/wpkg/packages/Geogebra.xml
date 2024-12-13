@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<packages>
+<package
+    id="Geogebra"
+    name="GeoGebra : logiciel de geometrie dynamique"
+    revision="%version%.5"
+    reboot="false"
+    priority="10"
+    category="Mathématiques"
+    lnk="GeoGebra.lnk">
+
+    <depends package-id="Java" />
+    <depends package-id="nircmd"/>
+
+    <variable name="PROGFILES" value="%PROGRAMFILES%" architecture="x86"/>
+    <variable name="PROGFILES" value="%PROGRAMFILES(X86)%" architecture="x64"/>
+    <variable name="ComSpec" value="%SystemRoot%\System32\cmd.exe" architecture="x86"/>
+    <variable name="ComSpec" value="%SystemRoot%\SysWOW64\cmd.exe" architecture="x64"/>
+    <variable name="AllUsersPrograms" value="%ALLUSERSPROFILE%\Menu Démarrer\Programmes" os="5\.\d\.\d{4}"/>
+    <variable name="AllUsersPrograms" value="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs" os="6\.\d\.\d{4}"/>
+    <variable name="versionroot" value="5" />
+    <variable name="versioncourt" value="%versionroot%.0" />
+    <variable name="version" value="%versioncourt%.390.0" />
+    <variable name="versionexe" value="%versionroot%-0-390-0" />
+
+    
+    <eoledl dl="http://download.geogebra.org/installers/%versioncourt%/GeoGebra-Windows-Installer-%versionexe%.msi" destname="math\geogebra\GeoGebra-Windows-Installer-%versionexe%.msi" />
+
+    <!-- Telechargement des raccourcis XP et 7 64bits -->
+    <eoledl dl="https://dev-eole.ac-dijon.fr/attachments/download/1525/raccourcis_Geogebra.zip" destname="math\geogebra\" unzip="1" />
+
+    <!-- Telechargement des fichiers pour association des fichier ggb -->
+    <eoledl dl="http://www21.ac-lyon.fr/wiki-dane/_media/association_geogebra.zip" destname="math\geogebra\" unzip="1" />
+
+
+    <check type="uninstall" condition="versiongreaterorequal" path="GeoGebra 5" value="%version%"/>
+    <check type="file" condition="exists" path="%progfiles%\GeoGebra\GeoGebra.exe" />
+
+    <!-- menage ancienne version 3.0 si elle existe -->
+    <install cmd='%COMSPEC% /C if exist "%PROGFILES%\GeoGebra\uninstaller.exe" "%PROGFILES%\GeoGebra\uninstaller.exe" /S' />
+    <!-- desinstallation de la precedente version (4.0), sinon msi error 1638 avec sortie 1605 si la version n existe pas -->
+    <install cmd='MsiExec.exe /passive /X{D44FFF47-306C-4198-9899-832C1DAA4566}' ><exit code='0' /><exit code='1605' /></install>
+
+    <!-- installation silencieuse -->
+    <install cmd='msiexec /qn /i "%SOFTWARE%\math\geogebra\GeoGebra-Windows-Installer-%versionexe%.msi" INSTALLDIR="%PROGFILES%\GeoGebra" /qn /norestart ' />
+    <!-- association des fichiers GGB -->
+
+    <install cmd="%ComSpec% /C reg.exe add &quot;hkcr\.ggb&quot; /ve /d &quot;GeoGebra.File&quot; /f "/>
+    <install cmd="%ComSpec% /C reg.exe add &quot;hkcr\.ggb&quot; /v &quot;Content Type&quot; /d &quot;application/vnd.geogebra.file&quot; /f "/>
+    <install cmd="%ComSpec% /C reg.exe add &quot;hkcr\.ggt&quot; /ve /d &quot;GeoGebra.Tool&quot; /f "/>
+    <install cmd="%ComSpec% /C reg.exe add &quot;hkcr\.ggt&quot; /v &quot;Content Type&quot; /d &quot;application/vnd.geogebra.tool&quot; /f "/>
+    <install cmd="%ComSpec% /C reg.exe add &quot;hkcr\GeoGebra.File&quot; /ve /d &quot;GeoGebra File&quot; /f "/>
+    <install cmd="%ComSpec% /C reg.exe add &quot;hkcr\GeoGebra.File\DefaultIcon&quot; /ve /d &quot;C:\Program Files\GeoGebra\GeoGebra.exe,0&quot; /f " architecture="x86"/>
+    <install cmd="%ComSpec% /C reg.exe add &quot;hkcr\GeoGebra.File\DefaultIcon&quot; /ve /d &quot;C:\Program Files (x86)\GeoGebra\GeoGebra.exe,0&quot; /f " architecture="x64"/>
+    <install cmd="%ComSpec% /C reg.exe add &quot;hkcr\GeoGebra.File\shell\open\command&quot; /ve /d &quot;\&quot;C:\Program Files\GeoGebra\GeoGebra.exe\&quot; \&quot;%1\&quot;&quot; /f" architecture="x86"/>
+    <install cmd="%ComSpec% /C reg.exe add &quot;hkcr\GeoGebra.File\shell\open\command&quot; /ve /d &quot;\&quot;C:\Program Files (x86)\GeoGebra\GeoGebra.exe\&quot; \&quot;%1\&quot;&quot; /f" architecture="x64"/>
+    <install cmd="%ComSpec% /C reg.exe add &quot;hkcr\GeoGebra.Tool&quot; /ve /d &quot;GeoGebra Tool&quot; /f "/>
+    <install cmd="%ComSpec% /C reg.exe add &quot;hkcr\GeoGebra.Tool\DefaultIcon&quot; /ve /d &quot;C:\Program Files\GeoGebra\GeoGebra.exe,0&quot; /f " architecture="x86"/>
+    <install cmd="%ComSpec% /C reg.exe add &quot;hkcr\GeoGebra.Tool\DefaultIcon&quot; /ve /d &quot;C:\Program Files (x86)\GeoGebra\GeoGebra.exe,0&quot; /f " architecture="x64"/>
+    <install cmd="%ComSpec% /C reg.exe add &quot;hkcr\GeoGebra.Tool\shell\open\command&quot; /ve /d &quot;\&quot;C:\Program Files\GeoGebra\GeoGebra.exe\&quot; \&quot;%1\&quot;&quot; /f" architecture="x86"/>
+    <install cmd="%ComSpec% /C reg.exe add &quot;hkcr\GeoGebra.Tool\shell\open\command&quot; /ve /d &quot;\&quot;C:\Program Files (x86)\GeoGebra\GeoGebra.exe\&quot; \&quot;%1\&quot;&quot; /f" architecture="x64"/>
+<!--    <install architecture="x86" cmd='regedit /s "%SOFTWARE%\math\geogebra\Geogebra_OS32.reg" ' />-->
+<!--    <install architecture="x64" cmd='regedit /s "%SOFTWARE%\math\geogebra\Geogebra_OS64.reg" ' />-->
+
+    <!-- suppression d'une possible mise a jour -->
+    <install architecture="x86" cmd='reg add "HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Prefs\geogebra" /v "version_check_allow" /d "false" /t REG_SZ /f' />
+    <install architecture="x64" cmd='reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\JavaSoft\Prefs\geogebra" /v "version_check_allow" /d "false" /t REG_SZ /f' />
+    
+    <install cmd="%SOFTWARE%\tools\nircmd.exe shortcut &quot;%PROGFILES%\GeoGebra\GeoGebra.exe&quot; &quot;%AllUsersPrograms%&quot; &quot;Geogebra&quot;"/>
+    
+    <upgrade include="install" />
+    <downgrade include="upgrade" />
+
+    <!-- desinstallation -->
+    <remove cmd='MsiExec.exe /passive /X {D44FFF47-306C-4198-9899-832C1DAA4566}' />
+    <remove architecture="x86" cmd='reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Prefs\geogebra" /f' />
+    <remove architecture="x64" cmd='reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\JavaSoft\Prefs\geogebra" /f' />
+</package>
+</packages>

@@ -1,0 +1,96 @@
+#!/bin/bash
+# shellcheck disable=SC2034,SC2148,SC2009
+
+# shellcheck disable=SC1091
+source /dev/stdin </mnt/eole-ci-tests/scripts/imagesNonEole/functions.sh
+
+ciPrintMsgMachine "* Zephir2 "
+if [ ! -f "/etc/lsb-release" ]
+then
+    ciPrintMsg "Zephir2 doit etre ubuntu "
+    exit 1
+fi
+
+# shellcheck disable=SC1091
+source /etc/lsb-release
+VM_BASE_IMAGE="ubuntu"
+
+export DEBIAN_FRONTEND=noninteractive
+export APT_OPTS=""
+
+doUbuntu
+sshAccesRoot
+apt-get install "$APT_OPTS" -y hwinfo
+apt-get install "$APT_OPTS" -y less
+apt-get install "$APT_OPTS" -y xauth
+apt-get install "$APT_OPTS" -y iputils-ping
+apt-get install "$APT_OPTS" -y dnsutils
+apt-get install "$APT_OPTS" -y zerofree
+apt-get install "$APT_OPTS" -y vim
+apt-get install "$APT_OPTS" -y iputils-arping 
+apt-get install "$APT_OPTS" -y ldap-utils
+apt-get install "$APT_OPTS" -y python-all 
+#apt-get install "$APT_OPTS" -y python-imaging
+#apt-get install "$APT_OPTS" -y python-twisted
+apt-get install "$APT_OPTS" -y debconf-i18n debconf-utils
+apt-get install "$APT_OPTS" -y openssh-server
+apt-get install "$APT_OPTS" -y openssl
+apt-get install "$APT_OPTS" -y python-pip
+#pip install pip --upgrade # ne pas upgrader, tant pis pour les warnings !
+apt-get install "$APT_OPTS" -y git
+apt-get install "$APT_OPTS" -y make
+apt-get install "$APT_OPTS" -y git-flow
+apt-get install "$APT_OPTS" -y python-coverage
+#apt-get install "$APT_OPTS" -y pylint
+#apt-get install "$APT_OPTS" -y python-pytest
+#apt-get install "$APT_OPTS" -y python-sphinx
+#apt-get install "$APT_OPTS" -y mscgen
+#apt-get install "$APT_OPTS" -y python3-jinja2
+#apt-get install "$APT_OPTS" -y python3-yaml
+#easy_install sphinxcontrib-mscgen
+
+#bash install-tools-docker.sh
+echo "Installation Docker depuis Ubuntu !"
+apt-get install "$APT_OPTS" -y docker.io docker-compose
+systemctl unmask docker
+systemctl enable docker
+
+mkdir -p /etc/systemd/system/docker.service.d
+cat >/etc/systemd/system/docker.service.d/override.conf <<EOF
+[Service]
+# efface l'ancienne valeur!
+ExecStart=
+ExecStart=/usr/bin/dockerd -H unix:// -H tcp://0.0.0.0:2375 --dns 192.168.0.1 --dns 192.168.232.2
+EOF
+  
+systemctl daemon-reload
+systemctl restart docker
+
+echo "* docker version"
+docker version
+
+lvextend -l +100%FREE /dev/mapper/ubuntu--vg-root
+resize2fs /dev/mapper/ubuntu--vg-root
+
+cd /home || exit 1
+if [ ! -d /home/zephir ]
+then
+    git clone https://dev-eole.ac-dijon.fr/git/zephir.git
+fi
+
+cd /home/zephir || exit 1
+git checkout develop
+git pull
+
+#pip install --upgrade -r requirements.txt
+
+/home/zephir/bin/zephir-compose -b dev -- pull
+/home/zephir/bin/zephir-compose -b dev -- build
+
+cat >/etc/profile.d/zephir2.sh <<EOF
+export PATH="/home/zephir/bin:$PATH"
+EOF
+chmod 644 /etc/profile.d/zephir2.sh
+
+tagImage
+exit 0

@@ -1,0 +1,26 @@
+[Unit]
+Description=EOLE Continuous Integration Tests Contextualisation
+
+# Do not start after basic.target!
+DefaultDependencies=no
+
+# We wants network-pre.target as we are a provider
+# See man systemd.special(7) - SPECIAL PASSIVE SYSTEM UNITS
+Before=network-pre.target
+Wants=network-pre.target
+After=local-fs.target basic.target
+
+Conflicts=shutdown.target
+Before=shutdown.target
+
+[Service]
+Type=oneshot
+ExecStart=-/bin/bash /root/mount.eole-ci-tests
+ExecStart=-/bin/bash /mnt/eole-ci-tests/scripts/service/CheckUpdate.sh
+ExecStart=-/bin/bash /root/.EoleCiTestsContext.sh
+ExecStart=-/bin/echo "Contextualisation Ok"
+TimeoutStartSec=1m
+
+[Install]
+#WantedBy=networking.service
+WantedBy=network.target

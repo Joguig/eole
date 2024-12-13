@@ -1,0 +1,39 @@
+#!/bin/sh
+# shellcheck disable=SC2034,SC2148,SC2006
+
+# $FreeBSD$
+#
+# EoleCiTestsDaemon startup script
+#
+# PROVIDE: EoleCiTestsContext
+# 
+# c'est pas 9p ==> il faut attendre le réseau ! /usr/local/bin/bash /root/mount.eole-ci-tests
+# c'est pas 9p ==> il faut attendre le réseau ! /usr/local/bin/bash /mnt/eole-ci-tests/scripts/service/CheckUpdate.sh
+#
+# Add the following to /etc/rc.conf[.local] to enable this service
+#
+# EoleCiTestsContext_enable (bool):       Set to YES by default.
+#               Set it to NO to disable EoleCiTestsDaemon
+#
+
+# shellcheck disable=SC1091,SC1090
+. /etc/rc.subr
+ 
+name=EoleCiTestsContext
+rcvar=EoleCiTestsContext_enable
+
+load_rc_config ${name}
+
+# Set the default
+# shellcheck disable=SC2223
+: ${EoleCiTestsContext_enable:=YES}
+
+# This is the tool init launches
+command="/usr/sbin/daemon"
+pidfile="/var/run/EoleCiTestsContext.pid"
+procname="/usr/local/bin/bash" 
+task="/root/EoleCiTestsContext.sh"
+command_args="-p ${pidfile} ${task}"
+run_rc_command "$1"
+
+
