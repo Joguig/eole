@@ -1,0 +1,45 @@
+Machine aca.pc  : Debut ciConfigurationPcLinux
+Machine aca.pc  : ciConfigurationMinimale: 1er fois, à faire...
+Machine aca.pc  : GW actuelle : 192.168.0.1 OK
+Machine aca.pc  : pas de fichier startup '/mnt/eole-ci-tests/configuration/aca.pc//minimale/startup.sh' 
+Machine aca.pc  : Configurer sysctl.swapiness=0
+Machine aca.pc  : Configuration minimale OK
+Machine aca.pc  : Fin ciConfigurationMinimale : 1398745 le 2024-11-12 11:15:11
+GW actuelle : 192.168.0.1 OK, attendu: 192.168.0.1
+** Test GW 192.168.0.1
+Machine aca.pc  : ciPingHost enp2s0 => 192.168.0.1 ping=0 ==> OK (exit 0)
+Machine aca.pc  : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/eole/' : OK
+Machine aca.pc  : Liste des applications active
+/etc/xdg/autostart/at-spi-dbus-bus.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-a11y.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-application.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-datetime.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-keyboard.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-messages.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-notifications.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-power.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-printers.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-session.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-sound.desktop:NoDisplay=true
+/etc/xdg/autostart/geoclue-demo-agent.desktop:NoDisplay=true
+/etc/xdg/autostart/gnome-keyring-pkcs11.desktop:NoDisplay=true
+/etc/xdg/autostart/gnome-keyring-secrets.desktop:NoDisplay=true
+/etc/xdg/autostart/im-launch.desktop:NoDisplay=true
+/etc/xdg/autostart/magnus-autostart.desktop:NoDisplay=true
+/etc/xdg/autostart/mate-optimus.desktop:NoDisplay=true
+/etc/xdg/autostart/mate-screensaver.desktop:NoDisplay=true
+/etc/xdg/autostart/mate-settings-daemon.desktop:NoDisplay=true
+/etc/xdg/autostart/nm-applet.desktop:NoDisplay=true
+/etc/xdg/autostart/onboard-autostart.desktop:NoDisplay=true
+/etc/xdg/autostart/orca-autostart.desktop:NoDisplay=true
+/etc/xdg/autostart/org.gnome.Evolution-alarm-notify.desktop:NoDisplay=true
+/etc/xdg/autostart/picom.desktop:NoDisplay=false
+/etc/xdg/autostart/polkit-mate-authentication-agent-1.desktop:NoDisplay=true
+/etc/xdg/autostart/snap-userd-autostart.desktop:NoDisplay=true
+/etc/xdg/autostart/spice-vdagent.desktop:NoDisplay=true
+/etc/xdg/autostart/ubuntu-advantage-notification.desktop:NoDisplay=true
+/etc/xdg/autostart/ubuntu-report-on-upgrade.desktop:NoDisplay=true
+/etc/xdg/autostart/update-notifier.desktop:NoDisplay=true
+/etc/xdg/autostart/user-dirs-update-gtk.desktop:NoDisplay=true
+/etc/xdg/autostart/xdg-user-dirs.desktop:NoDisplay=true
+Fin ciConfigurationPcLinux

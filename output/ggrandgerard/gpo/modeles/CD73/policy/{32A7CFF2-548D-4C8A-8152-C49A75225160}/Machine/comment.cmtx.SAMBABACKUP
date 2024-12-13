@@ -1,0 +1,137 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<policyComments xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/CommentDefinitions">
+  <policyNamespaces>
+    <using prefix="ns0" namespace="FullArmor.Policies.3B9EA2B5_A1D1_4CD5_9EDE_75B22990BC21"></using>
+    <using prefix="ns1" namespace="Microsoft.Policies.ApplicationCompatibility"></using>
+    <using prefix="ns2" namespace="Microsoft.Policies.CloudContent"></using>
+    <using prefix="ns3" namespace="Microsoft.Policies.DataCollection"></using>
+    <using prefix="ns4" namespace="Microsoft.Policies.EdgeUI"></using>
+    <using prefix="ns5" namespace="Microsoft.Policies.Explorer.WAU"></using>
+    <using prefix="ns6" namespace="Microsoft.Policies.FeedbackNotifications"></using>
+    <using prefix="ns7" namespace="Microsoft.Policies.GameDVR"></using>
+    <using prefix="ns8" namespace="Microsoft.Policies.InternetExplorer"></using>
+    <using prefix="ns9" namespace="Microsoft.Policies.MicrosoftEdge"></using>
+    <using prefix="ns10" namespace="Microsoft.Policies.OneDrive"></using>
+    <using prefix="ns11" namespace="Microsoft.Policies.PowerManagement"></using>
+    <using prefix="ns12" namespace="Microsoft.Policies.PreviousVersions"></using>
+    <using prefix="ns13" namespace="Microsoft.Policies.SideBar"></using>
+    <using prefix="ns14" namespace="Microsoft.Policies.StartMenu"></using>
+    <using prefix="ns15" namespace="Microsoft.Policies.TaskScheduler"></using>
+    <using prefix="ns16" namespace="Microsoft.Policies.TerminalServer"></using>
+    <using prefix="ns17" namespace="Microsoft.Policies.UEV"></using>
+    <using prefix="ns18" namespace="Microsoft.Policies.WindowsErrorReporting"></using>
+    <using prefix="ns19" namespace="Microsoft.Policies.WindowsExplorer"></using>
+    <using prefix="ns20" namespace="Microsoft.Policies.WindowsLogon"></using>
+    <using prefix="ns21" namespace="Microsoft.Policies.WindowsMessenger"></using>
+    <using prefix="ns22" namespace="Microsoft.Policies.WindowsStore"></using>
+    <using prefix="ns23" namespace="Microsoft.Policies.WindowsUpdate"></using>
+  </policyNamespaces>
+  <comments>
+    <admTemplate>
+      <comment policyRef="ns0:AllowCortana" commentText="$(resource.ns0_AllowCortana)"></comment>
+      <comment policyRef="ns0:DisableWebSearch" commentText="$(resource.ns0_DisableWebSearch)"></comment>
+      <comment policyRef="ns0:DoNotUseWebResults" commentText="$(resource.ns0_DoNotUseWebResults)"></comment>
+      <comment policyRef="ns1:AppCompatTurnOffProgramInventory" commentText="$(resource.ns1_AppCompatTurnOffProgramInventory)"></comment>
+      <comment policyRef="ns2:DisableSoftLanding" commentText="$(resource.ns2_DisableSoftLanding)"></comment>
+      <comment policyRef="ns2:DisableWindowsConsumerFeatures" commentText="$(resource.ns2_DisableWindowsConsumerFeatures)"></comment>
+      <comment policyRef="ns3:AllowTelemetry" commentText="$(resource.ns3_AllowTelemetry)"></comment>
+      <comment policyRef="ns3:ConfigureTelemetryOptInChangeNotification" commentText="$(resource.ns3_ConfigureTelemetryOptInChangeNotification)"></comment>
+      <comment policyRef="ns3:ConfigureTelemetryOptInSettingsUx" commentText="$(resource.ns3_ConfigureTelemetryOptInSettingsUx)"></comment>
+      <comment policyRef="ns4:DisableHelpSticker" commentText="$(resource.ns4_DisableHelpSticker)"></comment>
+      <comment policyRef="ns5:Disabled" commentText="$(resource.ns5_Disabled)"></comment>
+      <comment policyRef="ns6:DoNotShowFeedbackNotifications" commentText="$(resource.ns6_DoNotShowFeedbackNotifications)"></comment>
+      <comment policyRef="ns7:AllowGameDVR" commentText="$(resource.ns7_AllowGameDVR)"></comment>
+      <comment policyRef="ns8:Disable_Feed_Add_Remove" commentText="$(resource.ns8_Disable_Feed_Add_Remove)"></comment>
+      <comment policyRef="ns8:NoDelBrowsingHistory" commentText="$(resource.ns8_NoDelBrowsingHistory)"></comment>
+      <comment policyRef="ns8:NoFirstRunCustomise" commentText="$(resource.ns8_NoFirstRunCustomise)"></comment>
+      <comment policyRef="ns8:RestrictHistory" commentText="$(resource.ns8_RestrictHistory)"></comment>
+      <comment policyRef="ns9:HomePages" commentText="$(resource.ns9_HomePages)"></comment>
+      <comment policyRef="ns9:PreventLiveTileDataCollection" commentText="$(resource.ns9_PreventLiveTileDataCollection)"></comment>
+      <comment policyRef="ns9:PreventTabPreloading" commentText="$(resource.ns9_PreventTabPreloading)"></comment>
+      <comment policyRef="ns9:SetDefaultSearchEngine" commentText="$(resource.ns9_SetDefaultSearchEngine)"></comment>
+      <comment policyRef="ns10:PreventOnedriveFileSync" commentText="$(resource.ns10_PreventOnedriveFileSync)"></comment>
+      <comment policyRef="ns11:ACStandbyTimeOut_2" commentText="$(resource.ns11_ACStandbyTimeOut_2)"></comment>
+      <comment policyRef="ns11:VideoPowerDownTimeOutAC_2" commentText="$(resource.ns11_VideoPowerDownTimeOutAC_2)"></comment>
+      <comment policyRef="ns12:DisableRemotePage_2" commentText="$(resource.ns12_DisableRemotePage_2)"></comment>
+      <comment policyRef="ns13:TurnOffSidebar_2" commentText="$(resource.ns13_TurnOffSidebar_2)"></comment>
+      <comment policyRef="ns14:HideRecentlyAddedApps" commentText="$(resource.ns14_HideRecentlyAddedApps)"></comment>
+      <comment policyRef="ns15:AllowBrowse_2" commentText="$(resource.ns15_AllowBrowse_2)"></comment>
+      <comment policyRef="ns15:DragAndDrop_2" commentText="$(resource.ns15_DragAndDrop_2)"></comment>
+      <comment policyRef="ns16:TS_DISABLE_CONNECTIONS" commentText="$(resource.ns16_TS_DISABLE_CONNECTIONS)"></comment>
+      <comment policyRef="ns17:InternetExplorerCommon" commentText="$(resource.ns17_InternetExplorerCommon)"></comment>
+      <comment policyRef="ns17:MicrosoftOffice2013UploadCenter" commentText="$(resource.ns17_MicrosoftOffice2013UploadCenter)"></comment>
+      <comment policyRef="ns17:MicrosoftOffice2016UploadCenter" commentText="$(resource.ns17_MicrosoftOffice2016UploadCenter)"></comment>
+      <comment policyRef="ns18:WerAutoApproveOSDumps_2" commentText="$(resource.ns18_WerAutoApproveOSDumps_2)"></comment>
+      <comment policyRef="ns18:WerNoSecondLevelData_2" commentText="$(resource.ns18_WerNoSecondLevelData_2)"></comment>
+      <comment policyRef="ns19:DefaultAssociationsConfiguration" commentText="$(resource.ns19_DefaultAssociationsConfiguration)"></comment>
+      <comment policyRef="ns19:NoNewAppAlert" commentText="$(resource.ns19_NoNewAppAlert)"></comment>
+      <comment policyRef="ns20:DontEnumerateConnectedUsers" commentText="$(resource.ns20_DontEnumerateConnectedUsers)"></comment>
+      <comment policyRef="ns20:EnableFirstLogonAnimation" commentText="$(resource.ns20_EnableFirstLogonAnimation)"></comment>
+      <comment policyRef="ns20:SyncForegroundPolicy" commentText="$(resource.ns20_SyncForegroundPolicy)"></comment>
+      <comment policyRef="ns21:WinMSG_NoAutoStartWindowsMsg_Comp" commentText="$(resource.ns21_WinMSG_NoAutoStartWindowsMsg_Comp)"></comment>
+      <comment policyRef="ns21:WinMSG_NoWindowsMsg_Comp" commentText="$(resource.ns21_WinMSG_NoWindowsMsg_Comp)"></comment>
+      <comment policyRef="ns22:DisableOSUpgrade_2" commentText="$(resource.ns22_DisableOSUpgrade_2)"></comment>
+      <comment policyRef="ns22:RemoveWindowsStore_2" commentText="$(resource.ns22_RemoveWindowsStore_2)"></comment>
+      <comment policyRef="ns23:AutoUpdateCfg" commentText="$(resource.ns23_AutoUpdateCfg)"></comment>
+      <comment policyRef="ns23:CorpWuURL" commentText="$(resource.ns23_CorpWuURL)"></comment>
+      <comment policyRef="ns23:DetectionFrequency_Title" commentText="$(resource.ns23_DetectionFrequency_Title)"></comment>
+      <comment policyRef="ns23:ImmediateInstall_Title" commentText="$(resource.ns23_ImmediateInstall_Title)"></comment>
+      <comment policyRef="ns23:NoAutoRebootWithLoggedOnUsers_Title" commentText="$(resource.ns23_NoAutoRebootWithLoggedOnUsers_Title)"></comment>
+      <comment policyRef="ns23:UpdateNotificationLevel" commentText="$(resource.ns23_UpdateNotificationLevel)"></comment>
+    </admTemplate>
+  </comments>
+  <resources minRequiredRevision="1.0">
+    <stringTable>
+      <string id="ns0_AllowCortana">Désactiver Cortana</string>
+      <string id="ns0_DisableWebSearch">Désactive le recherche web dans Search</string>
+      <string id="ns0_DoNotUseWebResults">Pas de recherche sur le Web avec Search</string>
+      <string id="ns1_AppCompatTurnOffProgramInventory">Suppression de la collecte des données d'application envoyées à Microsoft.</string>
+      <string id="ns2_DisableSoftLanding">Désactivation des conseils Microsoft</string>
+      <string id="ns2_DisableWindowsConsumerFeatures">Désactivation des recommandations personnalisées de Microsoft</string>
+      <string id="ns3_AllowTelemetry">Limitation minimale des données envoyées</string>
+      <string id="ns3_ConfigureTelemetryOptInChangeNotification">Désactivation des notifications liées à la télémétrie</string>
+      <string id="ns3_ConfigureTelemetryOptInSettingsUx">interdit les modifications liées au niveau de la télémétrie</string>
+      <string id="ns4_DisableHelpSticker">Suppression des astuces.</string>
+      <string id="ns5_Disabled">Pas d'exécution de l'assistant.</string>
+      <string id="ns6_DoNotShowFeedbackNotifications">Suppression des notifications de commentaire</string>
+      <string id="ns7_AllowGameDVR">Désactivation enregistrement et diffusion jeux Windows</string>
+      <string id="ns8_Disable_Feed_Add_Remove">Pas d'abonnement aux flux.</string>
+      <string id="ns8_NoDelBrowsingHistory">Pas d'accès à la suppression de l'historique</string>
+      <string id="ns8_NoFirstRunCustomise">Remplacer "assistant première exécution" par la page d'accueil</string>
+      <string id="ns8_RestrictHistory">Verrouillage du réglage de l'historique à 10 j.</string>
+      <string id="ns9_HomePages">Qwant en page d'accueil</string>
+      <string id="ns9_PreventLiveTileDataCollection">Pas de rassemblement des métadonnées pour les vignettes</string>
+      <string id="ns9_PreventTabPreloading">Suppression du pré-chargement à l'ouverture de session</string>
+      <string id="ns9_SetDefaultSearchEngine">Qwant par défaut</string>
+      <string id="ns10_PreventOnedriveFileSync">Désactivation de OneDrive</string>
+      <string id="ns11_ACStandbyTimeOut_2">Pas de mise en veille ordinateur</string>
+      <string id="ns11_VideoPowerDownTimeOutAC_2">Veille ecran au bout de 2h.</string>
+      <string id="ns12_DisableRemotePage_2">Pas de version précédente sur les partages.</string>
+      <string id="ns13_TurnOffSidebar_2">Suppression gadgets bureau</string>
+      <string id="ns14_HideRecentlyAddedApps">Pas de liste récemment ajoutées.</string>
+      <string id="ns15_AllowBrowse_2">Pas de parcours pour les tâches planifiées.</string>
+      <string id="ns15_DragAndDrop_2">Pas de possibilité de glisser un programme dans les tâches planifiées.</string>
+      <string id="ns16_TS_DISABLE_CONNECTIONS">Autoriser le bureau à distance</string>
+      <string id="ns17_InternetExplorerCommon">Pas de synchronisation des paramètres communs d'IE.</string>
+      <string id="ns17_MicrosoftOffice2013UploadCenter">Pas de synchronisation paramètres utilisateur - Microsoft</string>
+      <string id="ns17_MicrosoftOffice2016UploadCenter">Pas de synchronisation paramètres utilisateur - Microsoft</string>
+      <string id="ns18_WerAutoApproveOSDumps_2">Notification avant l'envoi d'images mémoire pour les rapports d'erreur</string>
+      <string id="ns18_WerNoSecondLevelData_2">Pas de demande de données complémentaires émanant de Microsoft</string>
+      <string id="ns19_DefaultAssociationsConfiguration">Association Extension -Application</string>
+      <string id="ns19_NoNewAppAlert">Suppression notification "Nouvelle application"</string>
+      <string id="ns20_DontEnumerateConnectedUsers">Ne pas afficher les anciennes connexionx</string>
+      <string id="ns20_EnableFirstLogonAnimation">Suppression de l'animation de première connexion.</string>
+      <string id="ns20_SyncForegroundPolicy">Attente réseau pour application GPO ??</string>
+      <string id="ns21_WinMSG_NoAutoStartWindowsMsg_Comp">Pas de démarrage automatique de Windows Messenger</string>
+      <string id="ns21_WinMSG_NoWindowsMsg_Comp">Pas d'exécution de Windows Messenger</string>
+      <string id="ns22_DisableOSUpgrade_2">Pas de proposition de nouvelle version</string>
+      <string id="ns22_RemoveWindowsStore_2">Désactiver l'accés au Store</string>
+      <string id="ns23_AutoUpdateCfg">Mises à jour le soir à 18h.</string>
+      <string id="ns23_CorpWuURL">Mises à jour par WSUS</string>
+      <string id="ns23_DetectionFrequency_Title">Intervalle entre 2 vérifications de mises à jour.</string>
+      <string id="ns23_ImmediateInstall_Title">Installation immédiate des mises à jour</string>
+      <string id="ns23_NoAutoRebootWithLoggedOnUsers_Title">Pas de redémarrage automatique si un utilisateur est connecté.</string>
+      <string id="ns23_UpdateNotificationLevel">Afficher uniquement les notifications de redémarrage.</string>
+    </stringTable>
+  </resources>
+</policyComments>

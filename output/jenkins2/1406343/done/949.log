@@ -1,0 +1,42 @@
+liste *.conf différentes!
+Machine gateway-mensr  : * Vide les exceptions crée par les tests
+removed '/etc/dnsmasq-hostsdir/salt.conf'
+Machine gateway-mensr  : * nettoye /etc/dnsmasq.d/*.conf
+removed '/etc/dnsmasq.d/agent_jenkins.conf'
+removed '/etc/dnsmasq.d/dhcp_academie.conf'
+removed '/etc/dnsmasq.d/dhcp_rie.conf'
+removed '/etc/dnsmasq.d/domaca.conf'
+removed '/etc/dnsmasq.d/domhorus.conf'
+removed '/etc/dnsmasq.d/domscribe.conf'
+removed '/etc/dnsmasq.d/domseth.conf'
+removed '/etc/dnsmasq.d/k3d.conf'
+removed '/etc/dnsmasq.d/logging.conf'
+removed '/etc/dnsmasq.d/pxe.conf'
+Machine gateway-mensr  : * copy /tmp/dnsmasq.d/*.conf -> /etc/dnsmasq.d/*.conf
+dnsmasq: syntax check OK.
+* efface logs gateway
+192.168.0.26 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 41/41/2probes 1 STALE 
+192.168.0.156 dev enp3s0  used 12719/12884/12716probes 6 FAILED 
+192.168.0.30 dev enp3s0 lladdr da:ed:d4:db:b5:e9  ref 1 used 7/7/7probes 1 REACHABLE 
+192.168.0.5 dev enp3s0  used 399/458/390probes 3 FAILED 
+192.168.230.254 dev enp2s0 lladdr d4:ae:52:ce:2f:16  ref 1 used 65/9/65probes 1 REACHABLE 
+192.168.0.10 dev enp3s0 lladdr 02:00:c0:a8:00:67  ref 1 used 28/28/28probes 1 REACHABLE 
+192.168.0.31 dev enp3s0 lladdr 02:00:c0:a8:00:68  ref 1 used 22/22/22probes 1 REACHABLE 
+192.168.0.253 dev enp3s0 lladdr 02:00:c0:a8:00:65  used 362/362/317probes 1 STALE 
+192.168.230.43 dev enp2s0  used 11/13005/10probes 6 FAILED 
+192.168.0.33 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 1457/1457/1411probes 1 STALE 
+192.168.0.20 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 3370/3370/3324probes 1 STALE 
+fe80::2204:fff:fea7:6f4c dev enp2s0 lladdr 20:04:0f:a7:6f:4c router  used 1810/1810/1782probes 1 STALE 
+fe80::2204:fff:fea7:674c dev enp2s0 lladdr 20:04:0f:a7:67:4c router  used 3849/3849/3807probes 1 STALE 
+
+*** Round 1, deleting 13 entries ***
+*** Flush is complete after 1 round ***
+* Verification 'salt.domscribe.ac-test.fr' : 192.168.0.26
+* Vérification résolution 'salt'           : 192.168.0.30
+* Vérification du Forward vers les DC      : 192.168.0.30
+PING domscribe.ac-test.fr (192.168.0.30) 56(84) bytes of data.
+64 bytes from salt.ac-test.fr (192.168.0.30): icmp_seq=1 ttl=64 time=0.374 ms
+
+--- domscribe.ac-test.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.374/0.374/0.374/0.000 ms

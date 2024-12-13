@@ -1,0 +1,40 @@
+Machine daily 2.9.0 : Debut ciConfigurationDaily
+Machine daily 2.9.0 : systemctl is-active network.target : active
+Machine daily 2.9.0 : systemctl is-active network-online.target : active
+Machine daily 2.9.0 : systemctl is-system-running : starting
+Machine daily 2.9.0 : ls -l /etc/netplan/
+total 4
+-rw------- 1 root root 112 juin   5  2024 01-netcfg.yaml
+--------------------------------------------
+cat /etc/netplan/01-netcfg.yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp2s0:
+      dhcp4: yes
+      dhcp-identifier: mac
+--------------------------------------------
+** ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp2s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 02:00:c0:a8:00:66 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.0.152/24 metric 100 brd 192.168.0.255 scope global dynamic enp2s0
+       valid_lft 7086sec preferred_lft 7086sec
+    inet6 fe80::c0ff:fea8:66/64 scope link dadfailed tentative 
+       valid_lft forever preferred_lft forever
+** ip route
+default via 192.168.0.1 dev enp2s0 proto dhcp src 192.168.0.152 metric 100 
+192.168.0.0/24 dev enp2s0 proto kernel scope link src 192.168.0.152 metric 100 
+192.168.0.1 dev enp2s0 proto dhcp scope link src 192.168.0.152 metric 100 
+192.168.232.2 via 192.168.0.1 dev enp2s0 proto dhcp src 192.168.0.152 metric 100 
+Machine daily 2.9.0 : ciPingHost enp2s0 => 192.168.0.1 ping=0 ==> OK (exit 0)
+Machine daily 2.9.0 : GW actuelle : 192.168.0.1 OK
+Fin ciConfigurationDaily
+/usr/bin/updatedb
+Machine daily 2.9.0 : * désactivation updatedb/locate sur /mnt/eole-ci-test présente !

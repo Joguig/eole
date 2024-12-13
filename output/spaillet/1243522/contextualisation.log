@@ -1,0 +1,131 @@
+Machine gateway-mensr  : Début ciContextualizeMachine : gateway-mensr, 
+TEMPLATE : VM_ONE=one, VM_ID=1243522, VM_OWNER=spaillet, VM_DAEMON=start, VM_MACHINE=gateway-mensr
+TEMPLATE : VM_VERSIONMAJEUR=, VM_MAJAUTO=
+USER     : IP_GW=108, GW=192.168.230.108, IP_UTILISATEUR=, MAIL=stephane.paillet.ext@ac-aix-marseille.fr
+FI       : IMAGE=ubuntu-22.04-server-amd64.fi, ISO=ubuntu-22.04-server-amd64.iso, MODULE=
+DAILY    : DATE=2024-03-29 22:35, MAJAUTO=
+MODELE   : VM_MODULE=, VM_CONTAINER=, VM_ETABLISSEMENT=
+ciExtendsLvmRoot
+ciExtendsLvmRoot -> /dev/ubuntu-vg/ubuntu-lv
+LVM_FREE1=24,50g
+  Size of logical volume ubuntu-vg/ubuntu-lv changed from <24,50 GiB (6271 extents) to <49,00 GiB (12543 extents).
+  Logical volume ubuntu-vg/ubuntu-lv successfully resized.
+Étendre le système de fichier pour occuper tout l’espace ajouté
+resize2fs 1.46.5 (30-Dec-2021)
+Filesystem at /dev/ubuntu-vg/ubuntu-lv is mounted on /; on-line resizing required
+old_desc_blocks = 4, new_desc_blocks = 7
+The filesystem on /dev/ubuntu-vg/ubuntu-lv is now 12844032 (4k) blocks long.
+
+24,50g ajouter à /dev/ubuntu-vg/ubuntu-lv
+Machine gateway-mensr  : Contextualisation gateway DNSMASQ 1 (12:35:38)
+Machine gateway-mensr  : Gateway pour spaillet en cours de démarrage sur 'one'
+Machine gateway-mensr  :  * HACk snapd mal déinstallé
+Machine gateway-mensr  : * Set Hostname
+gateway108
+Machine gateway-mensr  : * /etc/hosts avant modification
+127.0.0.1 localhost
+127.0.1.1 eole
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+Machine gateway-mensr  : * Désactive IPV6
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+* Correction timezone
+timedatectl = 0
+Europe/Paris
+Machine gateway-mensr  : * Definition de /etc/hosts NON AGENTS
+127.0.0.1   localhost.localdomain localhost
+127.0.1.1   gateway108
+192.168.230.108   gateway108.eole.lan gateway108
+192.168.230.108   gateway108.ac-test.fr gateway108
+192.168.0.1   gateway.ac-test.fr gateway
+192.168.227.1  gateway.eole.e2.rie.gouv.fr gatewayrie
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+* cat /etc/netplan/01-netcfg.yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens4:
+      dhcp4: yes
+      dhcp-identifier: mac
+* /bin/rm -f /etc/netplan/01-netcfg.yaml
+* cat /etc/netplan/00-installer-config.yaml
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    ens4:
+      dhcp4: true
+  version: 2
+* /bin/rm -f /etc/netplan/00-installer-config.yaml
+ * /etc/network/interfaces n'existe pas, OK
+* detach DHCP 1712234138
+* apres detach DHCP => 0 date=1712234139
+* set ip static for ens4
+* set ip static for ens5
+* set ip static for ens6
+* set ip static for ens7
+ * is-enabled systemd-networkd.service ?
+enabled
+ * systemd-networkd.service is enable
+inactive
+ * systemd-networkd.service is NOT ACTIVE
+Machine gateway-mensr  : * Définition /etc/hosts.allow
+sshd:0.0.0.0/0.0.0.0
+Machine gateway-mensr  : * Création /root/.ssh/authorized_keys
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/antoine@ratatosk.pub'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/arno@arno-desktop'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/barco@barco-zotac'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/bbohard@isk'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/bruno@bruno-zotac'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/carre-p@pcarre-debian'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/Clement21000@eole-TravelMate-P238-M'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/corentin@corentin-ThinkPad-L390-Yoga'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/dad@daniel'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/edouard@edouard-MS-B09611'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/emonnot.pub'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/Emonnot.pub'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/gilles@gilles-nuc.ed25519'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/gilles@gilles-thinkpad.ed25519'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/hamza.pub'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/jason@vincent-ThinkPad-X13'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/jenkins@jenkins-one'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/jojo@chablis'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/jojo@jojo-zotac'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/julien@abydos'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/k@kls'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/lgourvenec@debiang'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/lolo@laurent'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/lseys@lseys-W65-W67RZ1'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/luc@luc-nuc'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/mlamalle@cadoles.com.pub'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/pcaseiro@volantis'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/root@gateway106'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/spaillet@laptop.pub'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/teebee44@hoth'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/thijamb@thierryj'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/vfebvre@asus'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/vincent.fontesse@inetum.com'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/wpetit@cadoles.com.pub'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/yo@yo-desktop'
+Machine gateway-mensr  : * Creation lien gateway dans VM_DIR 
+Machine gateway-mensr  : * disable old services
+Machine gateway-mensr  : * Notify utilisateur
+Machine gateway-mensr  : Contextualisation sur 'one' pour 'spaillet' OK
+Machine gateway-mensr  : * Fin ok
+Machine gateway-mensr  : Démarrée en 
+Machine gateway-mensr  : Contextualization Machine OK
+Machine gateway-mensr  : spaillet 1243522 gateway-mensr Contextualization Machine : OK
+Machine gateway-mensr  : Fin ciContextualizeMachine : ok à 2024-04-04 14:35:39

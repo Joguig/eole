@@ -1,0 +1,660 @@
+openapi: 3.0.3
+info:
+  title: LaBoite
+  description: |-
+    This is LaBoite Api based on the OpenAPI 3.0 specification.  
+  contact:
+    email: eole@ac-dijon.fr
+  license:
+    name: EUPL 1.2
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+servers:
+  - url: https://laboite-api.eole3.dev/api/v1
+tags:
+  - name: structure
+    description: Tous à propos des structures
+  - name: groupe
+    description: Operations sur les groupes
+  - name: utilisateur
+    description: Operations à propos des utilisateurs
+paths:
+  /structure:
+    put:
+      tags:
+        - structure
+      summary: Update an existing structure
+      description: Update an existing structure by Id
+      operationId: updateStructure
+      requestBody:
+        description: Update an existent structure in the store
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Structure'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Structure'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Structure'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Structure'          
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Structure'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Pet not found
+        '422':
+          description: Validation exception
+      security:
+        - laboite_auth:
+            - write:structures
+            - read:structures
+    post:
+      tags:
+        - structure
+      summary: Add a new structure to the parent
+      description: Add a new structure to the parent structure
+      operationId: addPet
+      requestBody:
+        description: Create a new structure in the parent structure
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Structure'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Structure'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Structure'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Structure'          
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Structure'
+        '400':
+          description: Invalid input
+        '422':
+          description: Validation exception
+      security:
+        - laboite_auth:
+            - write:structures
+            - read:structures
+  /structure/findByParent:
+    get:
+      tags:
+        - structure
+      summary: Finds structure by parent
+      description: Multiple status values can be provided with comma separated strings
+      operationId: findPetsByStatus
+      parameters:
+        - name: parent
+          in: query
+          description: Parent values that need to be considered for filter
+          required: false
+          explode: true
+          schema:
+            type: string
+            default: available
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Structure'          
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Structure'
+        '400':
+          description: Invalid status value
+      security:
+        - laboite_auth:
+            - write:pets
+            - read:pets
+  /structure/{name}:
+    get:
+      tags:
+        - structure
+      summary: Find pet by name
+      description: Returns a single pet
+      operationId: getStructureByName
+      parameters:
+        - name: name
+          in: path
+          description: name of structure to return
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Structure'          
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Structure'
+        '400':
+          description: Invalid name supplied
+        '404':
+          description: Structure not found
+      security:
+        - api_key: []
+        - laboite_auth:
+            - write:pets
+            - read:pets
+    post:
+      tags:
+        - structure
+      summary: Updates a structure in the store with form data
+      description: ''
+      operationId: updatestructureWithForm
+      parameters:
+        - name: name
+          in: path
+          description: name of structure that needs to be updated
+          required: true
+          schema:
+            type: string
+      responses:
+        '400':
+          description: Invalid input
+      security:
+        - laboite_auth:
+            - write:structure
+            - read:structure
+    delete:
+      tags:
+        - structure
+      summary: Deletes a structure
+      description: delete a structure
+      operationId: deletePet
+      parameters:
+        - name: name
+          in: path
+          description: structure name to delete
+          required: true
+          schema:
+            type: string
+        - name: api_key
+          in: header
+          description: ''
+          required: false
+          schema:
+            type: string
+      responses:
+        '400':
+          description: Invalid pet value
+      security:
+        - laboite_auth:
+            - write:structures
+            - read:structure
+  /structure/{name}/uploadImage:
+    post:
+      tags:
+        - structure
+      summary: uploads an image
+      description: ''
+      operationId: uploadFile
+      parameters:
+        - name: name
+          in: path
+          description: ID of pet to update
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: additionalMetadata
+          in: query
+          description: Additional Metadata
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/octet-stream:
+            schema:
+              type: string
+              format: binary
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+      security:
+        - laboite_auth:
+            - write:structures
+            - read:structures
+  /group/inventory:
+    get:
+      tags:
+        - store
+      summary: Returns pet inventories by status
+      description: Returns a map of status codes to quantities
+      operationId: getInventory
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  type: integer
+                  format: int32
+      security:
+        - api_key: []
+  /group/order:
+    post:
+      tags:
+        - store
+      summary: Place an order for a pet
+      description: Place a new order in the store
+      operationId: placeOrder
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Structure'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Structure'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Structure'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Structure'
+        '400':
+          description: Invalid input
+        '422':
+          description: Validation exception
+  /group/order/{orderId}:
+    get:
+      tags:
+        - store
+      summary: Find purchase order by ID
+      description: For valid response try integer IDs with value <= 5 or > 10. Other values will generate exceptions.
+      operationId: getOrderById
+      parameters:
+        - name: orderId
+          in: path
+          description: ID of order that needs to be fetched
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Structure'          
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Structure'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Order not found
+    delete:
+      tags:
+        - store
+      summary: Delete purchase order by ID
+      description: For valid response try integer IDs with value < 1000. Anything above 1000 or nonintegers will generate API errors
+      operationId: deleteOrder
+      parameters:
+        - name: orderId
+          in: path
+          description: ID of the order that needs to be deleted
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Order not found
+  /utilisateur:
+    post:
+      tags:
+        - utilisateur
+      summary: Create utilisateur
+      description: This can only be done by the logged in utilisateur.
+      operationId: createUser
+      requestBody:
+        description: Created utilisateur object
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Utilisateur'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Utilisateur'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Utilisateur'
+      responses:
+        default:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Utilisateur'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Utilisateur'
+  /utilisateur/createWithList:
+    post:
+      tags:
+        - utilisateur
+      summary: Creates list of users with given input array
+      description: Creates list of users with given input array
+      operationId: createUsersWithListInput
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/Utilisateur'
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Utilisateur'          
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Utilisateur'
+        default:
+          description: successful operation
+  /utilisateur/login:
+    get:
+      tags:
+        - utilisateur
+      summary: Logs user into the system
+      description: ''
+      operationId: loginUser
+      parameters:
+        - name: username
+          in: query
+          description: The user name for login
+          required: false
+          schema:
+            type: string
+        - name: password
+          in: query
+          description: The password for login in clear text
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          headers:
+            X-Rate-Limit:
+              description: calls per hour allowed by the user
+              schema:
+                type: integer
+                format: int32
+            X-Expires-After:
+              description: date in UTC when token expires
+              schema:
+                type: string
+                format: date-time
+          content:
+            application/xml:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+        '400':
+          description: Invalid username/password supplied
+  /utilisateur/logout:
+    get:
+      tags:
+        - utilisateur
+      summary: Logs out current logged in user session
+      description: ''
+      operationId: logoutUser
+      parameters: []
+      responses:
+        default:
+          description: successful operation
+  /utilisateur/{username}:
+    get:
+      tags:
+        - utilisateur
+      summary: Get user by user name
+      description: ''
+      operationId: getUserByName
+      parameters:
+        - name: username
+          in: path
+          description: 'The name that needs to be fetched. Use user1 for testing. '
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Utilisateur'          
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Utilisateur'
+        '400':
+          description: Invalid username supplied
+        '404':
+          description: User not found
+    put:
+      tags:
+        - utilisateur
+      summary: Update user
+      description: This can only be done by the logged in user.
+      operationId: updateUser
+      parameters:
+        - name: username
+          in: path
+          description: name that need to be deleted
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Update an existent user in the store
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Utilisateur'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Utilisateur'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Utilisateur'
+      responses:
+        default:
+          description: successful operation
+    delete:
+      tags:
+        - utilisateur
+      summary: Delete user
+      description: This can only be done by the logged in user.
+      operationId: deleteUser
+      parameters:
+        - name: username
+          in: path
+          description: The name that needs to be deleted
+          required: true
+          schema:
+            type: string
+      responses:
+        '400':
+          description: Invalid username supplied
+        '404':
+          description: User not found
+components:
+  schemas:
+    Structure:
+      type: object
+      properties:
+        name:
+          type: string
+          example: "PCLL"
+        parent:
+          type: string
+      xml:
+        name: structure
+    Groupe:
+      type: object
+      properties:
+        name:
+          type: string
+          example: "Membre PCLL"
+        parent:
+          type: string
+        utilisateurs:
+          type: array
+          items:
+            type: string
+      xml:
+        name: groupe
+    MarquePage:
+      type: object
+      properties:
+        bookmark:
+          type: string
+          example: "Eole3dev"
+        url:
+          type: string
+          example: Palo Alto
+      xml:
+        name: bookmark
+    Utilisateur:
+      type: object
+      properties:
+        username:
+          type: string
+          example: theUser
+        firstName:
+          type: string
+          example: John
+        lastName:
+          type: string
+          example: James
+        email:
+          type: string
+          example: john@email.com
+        userStatus:
+          type: integer
+          description: User Status
+          format: int32
+          example: 1
+      xml:
+        name: utilisateur
+    DomainsEmail:
+      type: object
+      properties:
+        domain:
+          type: string
+        structure:
+          type: string
+      xml:
+        name: domainsEmail
+    Service:
+      required:
+        - name
+        - url
+      type: object
+      properties:
+        name:
+          type: string
+          example: doggie
+        structures:
+          type: array
+          xml:
+            wrapped: true
+          items:
+            type: string
+        url:
+          type: string
+      xml:
+        name: service
+    ApiResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        type:
+          type: string
+        message:
+          type: string
+      xml:
+        name: '##default'
+  requestBodies:
+    Structure:
+      description: Pet object that needs to be added to the store
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Structure'
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/Structure'
+    UtilisateurArray:
+      description: List of user object
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/Utilisateur'
+  securitySchemes:
+    laboite_auth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: https://auth.eole3.dev/oauth/auth
+          scopes:
+            write:structures: modify structure
+            read:structures: read your structure
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header

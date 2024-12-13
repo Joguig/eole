@@ -1,0 +1,14 @@
+Start Context début... 
+Monte CDROM de CONTEXT dans /mnt/cdrom (Ubuntu)
+TEMPLATE : VM_ONE=one, VM_ID=1420986, VM_OWNER=bbohard, VM_DAEMON=once, VM_MACHINE=etb1.scribe
+TEMPLATE : VM_VERSIONMAJEUR=2.10.0, VM_MAJAUTO=DEV
+ONBOOT   : VM_METHODE=instance, VM_CONFIGURATION=AvecImport
+USER     : IP_GW=98, GW=192.168.230.98, IP_UTILISATEUR=192.168.230.204, MAIL=bbohard@cadoles.com
+FI       : IMAGE=scribe-2.10.0a0-amd64.fi, ISO=eole-2.10.0a0-amd64.iso, MODULE=scribe
+DAILY    : DATE=2024-12-10 17:54, MAJAUTO=DEV
+INSTANCE : DATE=2024-12-11 00:52, METHODE=, CONFIGURATION=default
+MODELE   : VM_MODULE=scribe, VM_CONTAINER=non, VM_ETABLISSEMENT=etb1
+ETH0     : NAME=dmz1, DHCP=non, IP=10.1.3.5, GW=10.1.3.1, DNS=10.1.3.1
+Début ciContextualizeMe
+Machine etb1.scribe 2.10.0 : ciContextualizeMachine: déjà réalisée à 
+Fin ciContextualizeMe

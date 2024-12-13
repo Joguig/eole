@@ -1,0 +1,12 @@
+Start Context début... 
+TEMPLATE : VM_ONE=one, VM_ID=1416072, VM_OWNER=bbohard, VM_DAEMON=once, VM_MACHINE=etb3.amonecole
+TEMPLATE : VM_VERSIONMAJEUR=2.8.1, VM_MAJAUTO=RC
+USER     : IP_GW=98, GW=192.168.230.98, IP_UTILISATEUR=192.168.230.204, MAIL=bbohard@cadoles.com
+FI       : IMAGE=amonecole-2.8.1-amd64.fi, ISO=eole-2.8.1-amd64.iso, MODULE=amonecole
+DAILY    : DATE=2024-12-03 18:19, MAJAUTO=RC
+MODELE   : VM_MODULE=amonecole, VM_CONTAINER=oui, VM_ETABLISSEMENT=etb3
+ETH0     : NAME=academie, DHCP=non, IP=192.168.0.33, GW=192.168.0.1, DNS=192.168.0.1
+ETH1     : NAME=pedago3, DHCP=non, IP=10.3.2.1, GW=10.3.2.1, DNS=10.3.2.1
+Début ciContextualizeMe
+Machine etb3.amonecole 2.8.1 : ciContextualizeMachine: déjà réalisée à 
+Fin ciContextualizeMe

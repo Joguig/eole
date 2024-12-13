@@ -1,0 +1,15 @@
+Machine etb1.scribe 2.9.0 : Début ciConfigurationModuleEole
+Machine etb1.scribe 2.9.0 : Le fichier config.eol existe : je ne fais rien !
+[3172mMachine etb1.scribe 2.9.0 : ATTENTION: ciSetHttpProxy, Injection 'http_proxy=http://admin:eole@10.1.3.1:3128' 
+(B[m*********************************************
+* Affiche connectivité
+*********************************************
+    inet 127.0.0.1/8 scope host lo
+    inet 10.1.3.5/24 brd 10.1.3.255 scope global enp2s0
+    inet 192.0.2.1/24 brd 192.0.2.255 scope global br0
+    inet 10.88.0.1/16 brd 10.88.255.255 scope global cni-podman0
+Machine etb1.scribe 2.9.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+Machine etb1.scribe 2.9.0 : ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine etb1.scribe 2.9.0 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+/usr/bin/updatedb
+Machine etb1.scribe 2.9.0 : * désactivation updatedb/locate sur /mnt/eole-ci-test présente !

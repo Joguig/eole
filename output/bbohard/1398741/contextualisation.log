@@ -1,0 +1,36 @@
+Machine aca.file 2.9.0 : Début ciContextualizeMachine : aca.file, file
+Machine aca.file 2.9.0 : Début ciContextualizeModuleEole
+Machine aca.file 2.9.0 : ciContextualisationMinimale:
+Machine aca.file 2.9.0 : rm /etc/netplan/* désactivé !
+Machine aca.file 2.9.0 : Inject /etc/hosts
+Machine aca.file 2.9.0 : ciContextualisationMinimaleSystemd
+Machine aca.file 2.9.0 : Inject /etc/hostname
+Machine aca.file 2.9.0 : ls -l /etc/netplan/
+total 4
+-rw------- 1 root root 112 oct.  15 04:51 01-netcfg.yaml
+Machine aca.file 2.9.0 : ciContextualisationMinimaleSystemdServer
+Machine aca.file 2.9.0 : Inject /etc/resolv.conf
+Machine aca.file 2.9.0 : /bin/rm -f /etc/resolv.conf (pour casser le lien!)
+Machine aca.file 2.9.0 : ls -l /etc/netplan
+total 4
+-rw------- 1 root root 112 oct.  15 04:51 01-netcfg.yaml
+Machine aca.file 2.9.0 : netoyage si besoin /etc/network/interfaces /etc/netplan/01-network-manager-all.yaml /etc/netplan/00-installer-config.yaml /etc/netplan/50-cloud-init.yaml
+Machine aca.file 2.9.0 : Inject /etc/netplan/01-netcfg-2204.yaml dans /etc/netplan/01-netcfg.yaml
+Machine aca.file 2.9.0 : netplan generate --debug
+** (generate:1018): DEBUG: 09:11:34.047: starting new processing pass
+** (generate:1018): DEBUG: 09:11:34.048: enp2s0: adding new route
+** (generate:1018): DEBUG: 09:11:34.048: We have some netdefs, pass them through a final round of validation
+** (generate:1018): DEBUG: 09:11:34.048: enp2s0: setting default backend to 1
+** (generate:1018): DEBUG: 09:11:34.048: Configuration is valid
+** (generate:1018): DEBUG: 09:11:34.049: Generating output files..
+** (generate:1018): DEBUG: 09:11:34.049: Open vSwitch: definition enp2s0 is not for us (backend 1)
+** (generate:1018): DEBUG: 09:11:34.049: NetworkManager: definition enp2s0 is not for us (backend 1)
+Machine aca.file 2.9.0 : Inject authorized_keys
+Machine aca.file 2.9.0 : Actualisation /root/.ssh/authorized_keys
+Machine aca.file 2.9.0 : Inject bash_history
+Machine aca.file 2.9.0 : Contextualisation minimale OK
+Machine aca.file 2.9.0 : Fin ciContextualisationMinimale
+Machine aca.file 2.9.0 : Fin ciContextualizeModuleEole
+Machine aca.file 2.9.0 : Contextualization Machine OK
+Machine aca.file 2.9.0 : bbohard 1398741 aca.file Contextualization Machine : OK
+Machine aca.file 2.9.0 : Fin ciContextualizeMachine : ok à 2024-11-12 09:11:34

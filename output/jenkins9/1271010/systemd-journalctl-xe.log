@@ -1,0 +1,1075 @@
+déc. 03 03:16:38 gateway119 dnsmasq[2118782]: reply onedscolprdeus08.eastus.cloudapp.azure.com is 20.42.65.88
+déc. 03 03:16:38 gateway119 dnsmasq[2118782]: query[A] onedscolprdeus08.eastus.cloudapp.azure.com from 192.168.0.31
+déc. 03 03:16:38 gateway119 dnsmasq[2118782]: forwarded onedscolprdeus08.eastus.cloudapp.azure.com to 192.168.232.2
+déc. 03 03:16:38 gateway119 dnsmasq[2118782]: reply onedscolprdeus08.eastus.cloudapp.azure.com is 20.42.65.88
+déc. 03 03:16:47 gateway119 dnsmasq[2118782]: query[A] a1961.g2.akamai.net from 192.168.0.31
+déc. 03 03:16:47 gateway119 dnsmasq[2118782]: forwarded a1961.g2.akamai.net to 192.168.232.2
+déc. 03 03:16:47 gateway119 dnsmasq[2118782]: reply a1961.g2.akamai.net is 23.200.86.241
+déc. 03 03:16:47 gateway119 dnsmasq[2118782]: reply a1961.g2.akamai.net is 23.200.87.13
+déc. 03 03:16:53 gateway119 dnsmasq[2118782]: query[PTR] 1.21.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:16:53 gateway119 dnsmasq[2118782]: config 10.1.21.1 is NXDOMAIN
+déc. 03 03:16:53 gateway119 dnsmasq[2118782]: query[PTR] 1.16.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:16:53 gateway119 dnsmasq[2118782]: config 10.1.16.1 is NXDOMAIN
+déc. 03 03:16:53 gateway119 dnsmasq[2118782]: query[PTR] 1.15.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:16:53 gateway119 dnsmasq[2118782]: config 10.1.15.1 is NXDOMAIN
+déc. 03 03:16:53 gateway119 dnsmasq[2118782]: query[PTR] 1.22.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:16:53 gateway119 dnsmasq[2118782]: config 10.1.22.1 is NXDOMAIN
+déc. 03 03:16:56 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.31
+déc. 03 03:16:56 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:16:56 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:16:56 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:17:00 gateway119 dnsmasq[2118782]: query[A] fg.microsoft.map.fastly.net from 192.168.0.31
+déc. 03 03:17:00 gateway119 dnsmasq[2118782]: forwarded fg.microsoft.map.fastly.net to 192.168.232.2
+déc. 03 03:17:00 gateway119 dnsmasq[2118782]: reply fg.microsoft.map.fastly.net is 146.75.118.172
+déc. 03 03:17:01 gateway119 CRON[2119990]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+déc. 03 03:17:01 gateway119 CRON[2119991]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+déc. 03 03:17:01 gateway119 CRON[2119990]: pam_unix(cron:session): session closed for user root
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: query[A] ecs.office.com from 192.168.0.31
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: forwarded ecs.office.com to 192.168.232.2
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: reply ecs.office.com is <CNAME>
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: reply ecs.office.trafficmanager.net is <CNAME>
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: reply s-0005-office.config.skype.com is <CNAME>
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: reply ecs-office.s-0005.s-msedge.net is <CNAME>
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: reply s-0005.s-msedge.net is 52.113.194.132
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: query[A] ecs.office.trafficmanager.net from 192.168.0.31
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: forwarded ecs.office.trafficmanager.net to 192.168.232.2
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: reply ecs.office.trafficmanager.net is <CNAME>
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: reply s-0005-office.config.skype.com is <CNAME>
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: reply ecs-office.s-0005.s-msedge.net is <CNAME>
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: reply s-0005.s-msedge.net is 52.113.194.132
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: query[A] ecs-office.s-0005.s-msedge.net from 192.168.0.31
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: forwarded ecs-office.s-0005.s-msedge.net to 192.168.232.2
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: reply ecs-office.s-0005.s-msedge.net is <CNAME>
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: reply s-0005.s-msedge.net is 52.113.194.132
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: query[A] s-0005.s-msedge.net from 192.168.0.31
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: forwarded s-0005.s-msedge.net to 192.168.232.2
+déc. 03 03:17:04 gateway119 dnsmasq[2118782]: reply s-0005.s-msedge.net is 52.113.194.132
+déc. 03 03:17:11 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:11 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:16 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:17:22 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:22 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:17:22 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:22 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:17:23 gateway119 dnsmasq[2118782]: query[A] a1961.g2.akamai.net from 192.168.0.31
+déc. 03 03:17:23 gateway119 dnsmasq[2118782]: forwarded a1961.g2.akamai.net to 192.168.232.2
+déc. 03 03:17:23 gateway119 dnsmasq[2118782]: reply a1961.g2.akamai.net is 23.200.87.13
+déc. 03 03:17:23 gateway119 dnsmasq[2118782]: reply a1961.g2.akamai.net is 23.200.86.241
+déc. 03 03:17:31 gateway119 dnsmasq[2118782]: query[A] bg.microsoft.map.fastly.net from 192.168.0.31
+déc. 03 03:17:31 gateway119 dnsmasq[2118782]: forwarded bg.microsoft.map.fastly.net to 192.168.232.2
+déc. 03 03:17:31 gateway119 dnsmasq[2118782]: reply bg.microsoft.map.fastly.net is 146.75.118.172
+déc. 03 03:17:42 gateway119 dnsmasq[2118782]: query[AAAA] scribe from 192.168.0.31
+déc. 03 03:17:42 gateway119 dnsmasq[2118782]: config scribe is NXDOMAIN
+déc. 03 03:17:42 gateway119 dnsmasq[2118782]: query[A] scribe from 192.168.0.31
+déc. 03 03:17:42 gateway119 dnsmasq[2118782]: config scribe is NXDOMAIN
+déc. 03 03:17:51 gateway119 dnsmasq[2118782]: query[A] win-global-asimov-leafs-events-data.trafficmanager.net from 192.168.0.31
+déc. 03 03:17:51 gateway119 dnsmasq[2118782]: forwarded win-global-asimov-leafs-events-data.trafficmanager.net to 192.168.232.2
+déc. 03 03:17:51 gateway119 dnsmasq[2118782]: reply win-global-asimov-leafs-events-data.trafficmanager.net is <CNAME>
+déc. 03 03:17:51 gateway119 dnsmasq[2118782]: reply onedscolprdwus23.westus.cloudapp.azure.com is 20.189.173.24
+déc. 03 03:17:51 gateway119 dnsmasq[2118782]: query[A] onedscolprdwus23.westus.cloudapp.azure.com from 192.168.0.31
+déc. 03 03:17:51 gateway119 dnsmasq[2118782]: forwarded onedscolprdwus23.westus.cloudapp.azure.com to 192.168.232.2
+déc. 03 03:17:51 gateway119 dnsmasq[2118782]: reply onedscolprdwus23.westus.cloudapp.azure.com is 20.189.173.24
+déc. 03 03:17:54 gateway119 dnsmasq[2118782]: query[PTR] 1.15.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:54 gateway119 dnsmasq[2118782]: config 10.1.15.1 is NXDOMAIN
+déc. 03 03:17:54 gateway119 dnsmasq[2118782]: query[PTR] 1.16.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:54 gateway119 dnsmasq[2118782]: config 10.1.16.1 is NXDOMAIN
+déc. 03 03:17:54 gateway119 dnsmasq[2118782]: query[PTR] 1.21.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:54 gateway119 dnsmasq[2118782]: config 10.1.21.1 is NXDOMAIN
+déc. 03 03:17:54 gateway119 dnsmasq[2118782]: query[PTR] 1.22.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:54 gateway119 dnsmasq[2118782]: config 10.1.22.1 is NXDOMAIN
+déc. 03 03:17:57 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:57 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:17:57 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:17:57 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:17:58 gateway119 dnsmasq[2118782]: query[A] a1961.g2.akamai.net from 192.168.0.31
+déc. 03 03:17:58 gateway119 dnsmasq[2118782]: forwarded a1961.g2.akamai.net to 192.168.232.2
+déc. 03 03:17:58 gateway119 dnsmasq[2118782]: reply a1961.g2.akamai.net is 23.200.86.241
+déc. 03 03:17:58 gateway119 dnsmasq[2118782]: reply a1961.g2.akamai.net is 23.200.87.13
+déc. 03 03:17:59 gateway119 dnsmasq[2118782]: query[A] a1961.g2.akamai.net from 192.168.0.31
+déc. 03 03:17:59 gateway119 dnsmasq[2118782]: forwarded a1961.g2.akamai.net to 192.168.232.2
+déc. 03 03:17:59 gateway119 dnsmasq[2118782]: reply a1961.g2.akamai.net is 23.200.87.13
+déc. 03 03:17:59 gateway119 dnsmasq[2118782]: reply a1961.g2.akamai.net is 23.200.86.241
+déc. 03 03:18:00 gateway119 dnsmasq[2118782]: query[A] fg.microsoft.map.fastly.net from 192.168.0.31
+déc. 03 03:18:00 gateway119 dnsmasq[2118782]: forwarded fg.microsoft.map.fastly.net to 192.168.232.2
+déc. 03 03:18:00 gateway119 dnsmasq[2118782]: reply fg.microsoft.map.fastly.net is 146.75.118.172
+déc. 03 03:18:16 gateway119 dnsmasq[2118782]: query[A] www.whatismyproxy.com from 192.168.0.31
+déc. 03 03:18:16 gateway119 dnsmasq[2118782]: forwarded www.whatismyproxy.com to 192.168.232.2
+déc. 03 03:18:16 gateway119 dnsmasq[2118782]: reply www.whatismyproxy.com is 173.255.232.166
+déc. 03 03:18:16 gateway119 dnsmasq[2118782]: query[A] ecs.office.trafficmanager.net from 192.168.0.31
+déc. 03 03:18:16 gateway119 dnsmasq[2118782]: forwarded ecs.office.trafficmanager.net to 192.168.232.2
+déc. 03 03:18:16 gateway119 dnsmasq[2118782]: reply ecs.office.trafficmanager.net is <CNAME>
+déc. 03 03:18:16 gateway119 dnsmasq[2118782]: reply s-0005-office.config.skype.com is <CNAME>
+déc. 03 03:18:16 gateway119 dnsmasq[2118782]: reply ecs-office.s-0005.s-msedge.net is <CNAME>
+déc. 03 03:18:16 gateway119 dnsmasq[2118782]: reply s-0005.s-msedge.net is 52.113.194.132
+déc. 03 03:18:21 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:21 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:18:22 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:22 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:18:22 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:22 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: query[PTR] 50.2.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:26 gateway119 dnsmasq[2118782]: config 10.1.2.50 is NXDOMAIN
+déc. 03 03:18:30 gateway119 dnsmasq[2118782]: query[A] europe.pool.ntp.org from 192.168.0.31
+déc. 03 03:18:30 gateway119 dnsmasq[2118782]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 03 03:18:30 gateway119 dnsmasq[2118782]: query[AAAA] europe.pool.ntp.org from 192.168.0.31
+déc. 03 03:18:30 gateway119 dnsmasq[2118782]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 03 03:18:30 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 5.188.119.216
+déc. 03 03:18:30 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 45.138.55.61
+déc. 03 03:18:30 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 44.32.63.52
+déc. 03 03:18:30 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 88.209.121.106
+déc. 03 03:18:30 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is NODATA-IPv6
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: query[A] dcat-b-tlu-net.trafficmanager.net from 192.168.0.31
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: forwarded dcat-b-tlu-net.trafficmanager.net to 192.168.232.2
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply dcat-b-tlu-net.trafficmanager.net is <CNAME>
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply edge.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is <CNAME>
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.13
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.21
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.5
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.28
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.3
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.27
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: query[A] edge.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com from 192.168.0.31
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: forwarded edge.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com to 192.168.232.2
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply edge.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is <CNAME>
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.27
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.13
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.21
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.5
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.28
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.3
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: query[A] default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com from 192.168.0.31
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: forwarded default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com to 192.168.232.2
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.3
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.27
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.13
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.21
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.5
+déc. 03 03:18:32 gateway119 dnsmasq[2118782]: reply default.qdr.p1.ds-c7108-microsoft.global.dns.qwilted-cds.cqloud.com is 212.229.88.28
+déc. 03 03:18:35 gateway119 dnsmasq[2118782]: query[A] a1961.g2.akamai.net from 192.168.0.31
+déc. 03 03:18:35 gateway119 dnsmasq[2118782]: forwarded a1961.g2.akamai.net to 192.168.232.2
+déc. 03 03:18:35 gateway119 dnsmasq[2118782]: reply a1961.g2.akamai.net is 23.200.86.241
+déc. 03 03:18:35 gateway119 dnsmasq[2118782]: reply a1961.g2.akamai.net is 23.200.87.13
+déc. 03 03:18:41 gateway119 dnsmasq[2118782]: query[A] one.eole.lan from 127.0.0.1
+déc. 03 03:18:41 gateway119 dnsmasq[2118782]: cached one.eole.lan is 192.168.10.140
+déc. 03 03:18:54 gateway119 dnsmasq[2118782]: query[PTR] 1.21.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:54 gateway119 dnsmasq[2118782]: config 10.1.21.1 is NXDOMAIN
+déc. 03 03:18:54 gateway119 dnsmasq[2118782]: query[PTR] 1.15.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:54 gateway119 dnsmasq[2118782]: config 10.1.15.1 is NXDOMAIN
+déc. 03 03:18:54 gateway119 dnsmasq[2118782]: query[PTR] 1.16.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:54 gateway119 dnsmasq[2118782]: config 10.1.16.1 is NXDOMAIN
+déc. 03 03:18:55 gateway119 dnsmasq[2118782]: query[PTR] 1.22.1.10.in-addr.arpa from 192.168.0.31
+déc. 03 03:18:55 gateway119 dnsmasq[2118782]: config 10.1.22.1 is NXDOMAIN
+déc. 03 03:19:00 gateway119 dnsmasq[2118782]: query[A] bp-eole.ac-dijon.fr from 192.168.0.31
+déc. 03 03:19:00 gateway119 dnsmasq[2118782]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 03 03:19:15 gateway119 dnsmasq[2118782]: query[A] one.eole.lan from 127.0.0.1
+déc. 03 03:19:15 gateway119 dnsmasq[2118782]: cached one.eole.lan is 192.168.10.140
+déc. 03 03:19:45 gateway119 dnsmasq[2118782]: query[A] one.eole.lan from 127.0.0.1
+déc. 03 03:19:45 gateway119 dnsmasq[2118782]: cached one.eole.lan is 192.168.10.140
+déc. 03 03:20:02 gateway119 systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+░░ Subject: L'unité (unit) sysstat-collect.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.service a commencé à démarrer.
+déc. 03 03:20:02 gateway119 systemd[1]: sysstat-collect.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit sysstat-collect.service has successfully entered the 'dead' state.
+déc. 03 03:20:02 gateway119 systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+░░ Subject: L'unité (unit) sysstat-collect.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.service a terminé son démarrage, avec le résultat done.
+déc. 03 03:20:32 gateway119 dnsmasq[2118782]: query[A] one.eole.lan from 127.0.0.1
+déc. 03 03:20:32 gateway119 dnsmasq[2118782]: cached one.eole.lan is 192.168.10.140
+déc. 03 03:20:33 gateway119 java[3282]: déc. 03, 2024 2:20:33 AM hudson.plugins.logparser.ParsingStrategyLocator get
+déc. 03 03:20:33 gateway119 java[3282]: INFOS: Defaulting to hudson.plugins.logparser.ClassicParsingStrategy
+déc. 03 03:20:33 gateway119 java[3282]: déc. 03, 2024 2:20:33 AM hudson.plugins.logparser.ClassicParsingStrategy parse
+déc. 03 03:20:33 gateway119 java[3282]: INFOS: Local temp file:/tmp/log-parser_test-etb1-proxy-win11-2.9.0-amd64_build_544
+déc. 03 03:20:33 gateway119 java[3282]: déc. 03, 2024 2:20:33 AM hudson.plugins.logparser.LogParserReader readLogPart
+déc. 03 03:20:33 gateway119 java[3282]: INFOS: Start reading log part 0 in thread #0
+déc. 03 03:20:33 gateway119 java[3282]: déc. 03, 2024 2:20:33 AM hudson.plugins.logparser.LogParserReader readLogPart
+déc. 03 03:20:33 gateway119 java[3282]: INFOS: Done reading log part 0
+déc. 03 03:20:33 gateway119 java[3282]: déc. 03, 2024 2:20:33 AM hudson.plugins.logparser.LogParserThread getLineStatuses
+déc. 03 03:20:33 gateway119 java[3282]: INFOS: LogParserThread: Start parsing log part 0
+déc. 03 03:20:33 gateway119 java[3282]: déc. 03, 2024 2:20:33 AM hudson.plugins.logparser.LogParserThread getLineStatuses
+déc. 03 03:20:33 gateway119 java[3282]: INFOS: LogParserThread: Done parsing log part 0
+déc. 03 03:22:02 gateway119 systemd[1]: Starting fwupd-refresh.service - Refresh fwupd metadata and update motd...
+░░ Subject: L'unité (unit) fwupd-refresh.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fwupd-refresh.service a commencé à démarrer.
+déc. 03 03:22:02 gateway119 systemd[1]: fwupd-refresh.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit fwupd-refresh.service has successfully entered the 'dead' state.
+déc. 03 03:22:02 gateway119 systemd[1]: Finished fwupd-refresh.service - Refresh fwupd metadata and update motd.
+░░ Subject: L'unité (unit) fwupd-refresh.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fwupd-refresh.service a terminé son démarrage, avec le résultat done.
+déc. 03 03:25:01 gateway119 CRON[2120142]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+déc. 03 03:25:01 gateway119 CRON[2120143]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+déc. 03 03:25:01 gateway119 CRON[2120142]: pam_unix(cron:session): session closed for user root
+déc. 03 03:25:05 gateway119 dnsmasq[2118782]: query[A] one.eole.lan from 127.0.0.1
+déc. 03 03:25:05 gateway119 dnsmasq[2118782]: cached one.eole.lan is 192.168.10.140
+déc. 03 03:25:46 gateway119 dnsmasq[2118782]: query[A] gateway.ac-test.fr from 192.168.0.1
+déc. 03 03:25:46 gateway119 dnsmasq[2118782]: /etc/hosts gateway.ac-test.fr is 192.168.0.1
+déc. 03 03:25:46 gateway119 dnsmasq[2118782]: query[A] hestia.eole.lan from 192.168.0.1
+déc. 03 03:25:46 gateway119 dnsmasq[2118782]: cached hestia.eole.lan is 192.168.232.2
+déc. 03 03:25:46 gateway119 dnsmasq[2118782]: query[A] hestia.eole.lan from 127.0.0.1
+déc. 03 03:25:46 gateway119 dnsmasq[2118782]: cached hestia.eole.lan is 192.168.232.2
+déc. 03 03:25:46 gateway119 dnsmasq[2118782]: query[AAAA] hestia.eole.lan from 127.0.0.1
+déc. 03 03:25:46 gateway119 dnsmasq[2118782]: forwarded hestia.eole.lan to 192.168.232.2
+déc. 03 03:25:46 gateway119 dnsmasq[2118782]: reply hestia.eole.lan is NODATA-IPv6
+déc. 03 03:25:49 gateway119 dnsmasq[2118782]: query[AAAA] gateway119.eole.lan from 127.0.0.1
+déc. 03 03:25:49 gateway119 dnsmasq[2118782]: forwarded gateway119.eole.lan to 192.168.232.2
+déc. 03 03:25:49 gateway119 dnsmasq[2118782]: reply gateway119.eole.lan is NODATA-IPv6
+déc. 03 03:25:49 gateway119 dnsmasq[2118782]: query[AAAA] gateway119 from 127.0.0.1
+déc. 03 03:25:49 gateway119 dnsmasq[2118782]: config gateway119 is NODATA-IPv6
+déc. 03 03:26:12 gateway119 dnsmasq[2118782]: query[A] one.eole.lan from 127.0.0.1
+déc. 03 03:26:12 gateway119 dnsmasq[2118782]: cached one.eole.lan is 192.168.10.140
+déc. 03 03:26:48 gateway119 dnsmasq[2118782]: query[A] hestia.eole.lan from 192.168.0.33
+déc. 03 03:26:48 gateway119 dnsmasq[2118782]: cached hestia.eole.lan is 192.168.232.2
+déc. 03 03:26:48 gateway119 dnsmasq[2118782]: query[AAAA] hestia.eole.lan from 192.168.0.33
+déc. 03 03:26:48 gateway119 dnsmasq[2118782]: forwarded hestia.eole.lan to 192.168.232.2
+déc. 03 03:26:48 gateway119 dnsmasq[2118782]: reply hestia.eole.lan is NODATA-IPv6
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: query[A] europe.pool.ntp.org from 192.168.0.33
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: query[PTR] 50.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: config 192.0.2.50 is NXDOMAIN
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: query[AAAA] europe.pool.ntp.org from 192.168.0.33
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 185.175.56.208
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 151.22.209.90
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 178.62.68.79
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 87.197.132.218
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is NODATA-IPv6
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: query[PTR] 53.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: config 192.0.2.53 is NXDOMAIN
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: query[PTR] 52.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: config 192.0.2.52 is NXDOMAIN
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: query[PTR] 51.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: config 192.0.2.51 is NXDOMAIN
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: query[PTR] 53.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:26:53 gateway119 dnsmasq[2118782]: config 192.0.2.53 is NXDOMAIN
+déc. 03 03:26:54 gateway119 dnsmasq[2118782]: query[AAAA] reseau from 192.168.0.33
+déc. 03 03:26:54 gateway119 dnsmasq[2118782]: config reseau is NXDOMAIN
+déc. 03 03:26:54 gateway119 dnsmasq[2118782]: query[AAAA] reseau from 192.168.0.33
+déc. 03 03:26:54 gateway119 dnsmasq[2118782]: config reseau is NXDOMAIN
+déc. 03 03:26:56 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:26:56 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:26:56 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:26:56 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:26:57 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:26:57 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:26:57 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:26:57 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:26:58 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:26:58 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:26:58 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:26:58 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:26:58 gateway119 dnsmasq[2118782]: query[A] compiling.spamassassin.taint.org.fresh.fmb.la from 192.168.0.33
+déc. 03 03:26:58 gateway119 dnsmasq[2118782]: forwarded compiling.spamassassin.taint.org.fresh.fmb.la to 192.168.232.2
+déc. 03 03:26:58 gateway119 dnsmasq[2118782]: reply compiling.spamassassin.taint.org.fresh.fmb.la is NXDOMAIN
+déc. 03 03:26:59 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:26:59 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:26:59 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:26:59 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:26:59 gateway119 dnsmasq[2118782]: query[AAAA] reseau from 192.168.0.33
+déc. 03 03:26:59 gateway119 dnsmasq[2118782]: config reseau is NXDOMAIN
+déc. 03 03:26:59 gateway119 dnsmasq[2118782]: query[AAAA] reseau from 192.168.0.33
+déc. 03 03:26:59 gateway119 dnsmasq[2118782]: config reseau is NXDOMAIN
+déc. 03 03:26:59 gateway119 dnsmasq[2118782]: query[AAAA] reseau from 192.168.0.33
+déc. 03 03:26:59 gateway119 dnsmasq[2118782]: config reseau is NXDOMAIN
+déc. 03 03:27:01 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:27:01 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:27:01 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:27:01 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:27:01 gateway119 dnsmasq[2118782]: query[A] ftp.crihan.fr from 192.168.0.33
+déc. 03 03:27:01 gateway119 dnsmasq[2118782]: forwarded ftp.crihan.fr to 192.168.232.2
+déc. 03 03:27:01 gateway119 dnsmasq[2118782]: query[AAAA] ftp.crihan.fr from 192.168.0.33
+déc. 03 03:27:01 gateway119 dnsmasq[2118782]: forwarded ftp.crihan.fr to 192.168.232.2
+déc. 03 03:27:01 gateway119 dnsmasq[2118782]: reply ftp.crihan.fr is 195.221.21.36
+déc. 03 03:27:01 gateway119 dnsmasq[2118782]: reply ftp.crihan.fr is 2001:660:7401:211::36
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: query[A] eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: forwarded eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: query[AAAA] eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: forwarded eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: reply eole.ac-dijon.fr is <CNAME>
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is 194.167.18.18
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is <RRSIG>
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: reply eole.ac-dijon.fr is <CNAME>
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is NODATA-IPv6
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: query[A] thor.ac-dijon.fr from 192.168.0.33
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: forwarded thor.ac-dijon.fr to 192.168.232.2
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is 194.167.18.18
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is <RRSIG>
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: query[AAAA] thor.ac-dijon.fr from 192.168.0.33
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: forwarded thor.ac-dijon.fr to 192.168.232.2
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is NODATA-IPv6
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: query[A] test-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: forwarded test-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: query[AAAA] test-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: forwarded test-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: reply test-eole.ac-dijon.fr is <CNAME>
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is 194.167.18.18
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is <RRSIG>
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: reply test-eole.ac-dijon.fr is <CNAME>
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is NODATA-IPv6
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:27:02 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:27:05 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:27:05 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:27:05 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:27:05 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:27:17 gateway119 dnsmasq[2118782]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:27:17 gateway119 dnsmasq[2118782]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 03 03:27:17 gateway119 dnsmasq[2118782]: query[A] eole.orion.education.fr from 192.168.0.33
+déc. 03 03:27:17 gateway119 dnsmasq[2118782]: forwarded eole.orion.education.fr to 192.168.232.2
+déc. 03 03:27:17 gateway119 dnsmasq[2118782]: reply eole.orion.education.fr is 194.167.18.15
+déc. 03 03:27:17 gateway119 dnsmasq[2118782]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:27:17 gateway119 dnsmasq[2118782]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:27:17 gateway119 dnsmasq[2118782]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 03 03:27:17 gateway119 dnsmasq[2118782]: reply bp-eole.ac-dijon.fr is <RRSIG>
+déc. 03 03:27:17 gateway119 dnsmasq[2118782]: query[AAAA] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:27:17 gateway119 dnsmasq[2118782]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:27:17 gateway119 dnsmasq[2118782]: reply bp-eole.ac-dijon.fr is NODATA-IPv6
+déc. 03 03:27:51 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:27:51 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:27:51 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:27:51 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:28:51 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:28:51 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:28:51 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:28:51 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:29:52 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:29:52 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:29:52 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:29:52 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:29:52 gateway119 dnsmasq[2118782]: query[A] one.eole.lan from 127.0.0.1
+déc. 03 03:29:52 gateway119 dnsmasq[2118782]: cached one.eole.lan is 192.168.10.140
+déc. 03 03:30:02 gateway119 systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+░░ Subject: L'unité (unit) sysstat-collect.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.service a commencé à démarrer.
+déc. 03 03:30:02 gateway119 systemd[1]: sysstat-collect.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit sysstat-collect.service has successfully entered the 'dead' state.
+déc. 03 03:30:02 gateway119 systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+░░ Subject: L'unité (unit) sysstat-collect.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.service a terminé son démarrage, avec le résultat done.
+déc. 03 03:30:16 gateway119 dnsmasq[2118782]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:30:16 gateway119 dnsmasq[2118782]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:30:16 gateway119 dnsmasq[2118782]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 03 03:30:52 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:30:52 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:30:52 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:30:52 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:31:09 gateway119 dnsmasq[2118782]: query[A] europe.pool.ntp.org from 192.168.0.33
+déc. 03 03:31:09 gateway119 dnsmasq[2118782]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 03 03:31:09 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 95.85.21.89
+déc. 03 03:31:09 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 217.147.223.78
+déc. 03 03:31:09 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 62.169.23.198
+déc. 03 03:31:09 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 185.175.56.208
+déc. 03 03:31:52 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:31:52 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:31:52 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:31:52 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:32:32 gateway119 dnsmasq[2118782]: query[A] one.eole.lan from 127.0.0.1
+déc. 03 03:32:32 gateway119 dnsmasq[2118782]: cached one.eole.lan is 192.168.10.140
+déc. 03 03:32:53 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:32:53 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:32:53 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:32:53 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:33:12 gateway119 dnsmasq[2118782]: query[AAAA] api.snapcraft.io from 192.168.0.33
+déc. 03 03:33:12 gateway119 dnsmasq[2118782]: forwarded api.snapcraft.io to 192.168.232.2
+déc. 03 03:33:12 gateway119 dnsmasq[2118782]: query[A] api.snapcraft.io from 192.168.0.33
+déc. 03 03:33:12 gateway119 dnsmasq[2118782]: forwarded api.snapcraft.io to 192.168.232.2
+déc. 03 03:33:12 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 2620:2d:4000:1010::6d
+déc. 03 03:33:12 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 2620:2d:4000:1010::2e6
+déc. 03 03:33:12 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 2620:2d:4000:1010::42
+déc. 03 03:33:12 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 2620:2d:4000:1010::117
+déc. 03 03:33:12 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 185.125.188.55
+déc. 03 03:33:12 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 185.125.188.58
+déc. 03 03:33:12 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 185.125.188.59
+déc. 03 03:33:12 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 185.125.188.54
+déc. 03 03:33:16 gateway119 dnsmasq[2118782]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:33:16 gateway119 dnsmasq[2118782]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 03 03:33:27 gateway119 dnsmasq[2118782]: query[A] motd.ubuntu.com from 192.168.0.253
+déc. 03 03:33:27 gateway119 dnsmasq[2118782]: forwarded motd.ubuntu.com to 192.168.232.2
+déc. 03 03:33:27 gateway119 dnsmasq[2118782]: query[AAAA] motd.ubuntu.com from 192.168.0.253
+déc. 03 03:33:27 gateway119 dnsmasq[2118782]: forwarded motd.ubuntu.com to 192.168.232.2
+déc. 03 03:33:27 gateway119 dnsmasq[2118782]: reply motd.ubuntu.com is 54.247.62.1
+déc. 03 03:33:27 gateway119 dnsmasq[2118782]: reply motd.ubuntu.com is 54.217.10.153
+déc. 03 03:33:27 gateway119 dnsmasq[2118782]: reply motd.ubuntu.com is 34.254.182.186
+déc. 03 03:33:27 gateway119 dnsmasq[2118782]: reply motd.ubuntu.com is 34.243.160.129
+déc. 03 03:33:27 gateway119 dnsmasq[2118782]: reply motd.ubuntu.com is 54.171.230.55
+déc. 03 03:33:27 gateway119 dnsmasq[2118782]: reply motd.ubuntu.com is 2a05:d018:91c:3200:2846:99fb:81b6:1e11
+déc. 03 03:33:27 gateway119 dnsmasq[2118782]: reply motd.ubuntu.com is 2a05:d018:91c:3200:5e0d:21a9:26ca:90b5
+déc. 03 03:33:27 gateway119 dnsmasq[2118782]: reply motd.ubuntu.com is 2a05:d018:91c:3200:d8b6:37bc:63f9:703c
+déc. 03 03:33:27 gateway119 dnsmasq[2118782]: reply motd.ubuntu.com is 2a05:d018:91c:3200:c8f:1a06:a2dd:450f
+déc. 03 03:33:27 gateway119 dnsmasq[2118782]: reply motd.ubuntu.com is 2a05:d018:91c:3200:c887:2f22:290f:a7c
+déc. 03 03:33:36 gateway119 dnsmasq[2118782]: query[A] ntp.ubuntu.com from 192.168.0.33
+déc. 03 03:33:36 gateway119 dnsmasq[2118782]: forwarded ntp.ubuntu.com to 192.168.232.2
+déc. 03 03:33:36 gateway119 dnsmasq[2118782]: query[AAAA] ntp.ubuntu.com from 192.168.0.33
+déc. 03 03:33:36 gateway119 dnsmasq[2118782]: forwarded ntp.ubuntu.com to 192.168.232.2
+déc. 03 03:33:36 gateway119 dnsmasq[2118782]: reply ntp.ubuntu.com is 91.189.91.157
+déc. 03 03:33:36 gateway119 dnsmasq[2118782]: reply ntp.ubuntu.com is 185.125.190.56
+déc. 03 03:33:36 gateway119 dnsmasq[2118782]: reply ntp.ubuntu.com is 185.125.190.57
+déc. 03 03:33:36 gateway119 dnsmasq[2118782]: reply ntp.ubuntu.com is 185.125.190.58
+déc. 03 03:33:36 gateway119 dnsmasq[2118782]: reply ntp.ubuntu.com is 2620:2d:4000:1::41
+déc. 03 03:33:36 gateway119 dnsmasq[2118782]: reply ntp.ubuntu.com is 2620:2d:4000:1::40
+déc. 03 03:33:36 gateway119 dnsmasq[2118782]: reply ntp.ubuntu.com is 2620:2d:4000:1::3f
+déc. 03 03:33:53 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:33:53 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:33:53 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:33:53 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:34:12 gateway119 dnsmasq[2118782]: query[A] github.com from 192.168.0.33
+déc. 03 03:34:12 gateway119 dnsmasq[2118782]: forwarded github.com to 192.168.232.2
+déc. 03 03:34:12 gateway119 dnsmasq[2118782]: query[AAAA] github.com from 192.168.0.33
+déc. 03 03:34:12 gateway119 dnsmasq[2118782]: forwarded github.com to 192.168.232.2
+déc. 03 03:34:12 gateway119 dnsmasq[2118782]: reply github.com is 140.82.121.3
+déc. 03 03:34:12 gateway119 dnsmasq[2118782]: reply github.com is NODATA-IPv6
+déc. 03 03:34:12 gateway119 dnsmasq[2118782]: query[A] objects.githubusercontent.com from 192.168.0.33
+déc. 03 03:34:12 gateway119 dnsmasq[2118782]: forwarded objects.githubusercontent.com to 192.168.232.2
+déc. 03 03:34:12 gateway119 dnsmasq[2118782]: query[AAAA] objects.githubusercontent.com from 192.168.0.33
+déc. 03 03:34:12 gateway119 dnsmasq[2118782]: forwarded objects.githubusercontent.com to 192.168.232.2
+déc. 03 03:34:12 gateway119 dnsmasq[2118782]: reply objects.githubusercontent.com is 185.199.110.133
+déc. 03 03:34:12 gateway119 dnsmasq[2118782]: reply objects.githubusercontent.com is 185.199.111.133
+déc. 03 03:34:12 gateway119 dnsmasq[2118782]: reply objects.githubusercontent.com is 185.199.109.133
+déc. 03 03:34:12 gateway119 dnsmasq[2118782]: reply objects.githubusercontent.com is 185.199.108.133
+déc. 03 03:34:12 gateway119 dnsmasq[2118782]: reply objects.githubusercontent.com is NODATA-IPv6
+déc. 03 03:34:52 gateway119 dnsmasq[2118782]: query[A] repo.saltproject.io from 192.168.0.33
+déc. 03 03:34:52 gateway119 dnsmasq[2118782]: forwarded repo.saltproject.io to 192.168.232.2
+déc. 03 03:34:52 gateway119 dnsmasq[2118782]: reply repo.saltproject.io is <CNAME>
+déc. 03 03:34:52 gateway119 dnsmasq[2118782]: reply d39c38qjhaa4za.cloudfront.net is NODATA-IPv4
+déc. 03 03:34:52 gateway119 dnsmasq[2118782]: query[A] d39c38qjhaa4za.cloudfront.net from 192.168.0.33
+déc. 03 03:34:52 gateway119 dnsmasq[2118782]: forwarded d39c38qjhaa4za.cloudfront.net to 192.168.232.2
+déc. 03 03:34:52 gateway119 dnsmasq[2118782]: reply d39c38qjhaa4za.cloudfront.net is NODATA-IPv4
+déc. 03 03:34:53 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:34:53 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:34:53 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:34:53 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:35:01 gateway119 CRON[2120484]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+déc. 03 03:35:01 gateway119 CRON[2120485]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+déc. 03 03:35:01 gateway119 CRON[2120484]: pam_unix(cron:session): session closed for user root
+déc. 03 03:35:29 gateway119 dnsmasq[2118782]: query[A] europe.pool.ntp.org from 192.168.0.33
+déc. 03 03:35:29 gateway119 dnsmasq[2118782]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 03 03:35:29 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 86.80.166.233
+déc. 03 03:35:29 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 128.140.109.119
+déc. 03 03:35:29 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 176.9.44.212
+déc. 03 03:35:29 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 188.225.9.167
+déc. 03 03:35:53 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:35:53 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:35:53 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:35:53 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:36:17 gateway119 dnsmasq[2118782]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:36:17 gateway119 dnsmasq[2118782]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 03 03:36:27 gateway119 dnsmasq[2118782]: query[AAAA] eolecitests.ac-test.fr from 192.168.0.253
+déc. 03 03:36:27 gateway119 dnsmasq[2118782]: forwarded eolecitests.ac-test.fr to 192.168.232.2
+déc. 03 03:36:27 gateway119 dnsmasq[2118782]: reply eolecitests.ac-test.fr is NXDOMAIN
+déc. 03 03:36:27 gateway119 dnsmasq[2118782]: query[AAAA] eolecitests from 192.168.0.253
+déc. 03 03:36:27 gateway119 dnsmasq[2118782]: config eolecitests is NXDOMAIN
+déc. 03 03:36:44 gateway119 dnsmasq[2118782]: query[A] api.snapcraft.io from 192.168.0.33
+déc. 03 03:36:44 gateway119 dnsmasq[2118782]: forwarded api.snapcraft.io to 192.168.232.2
+déc. 03 03:36:44 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 185.125.188.58
+déc. 03 03:36:44 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 185.125.188.59
+déc. 03 03:36:44 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 185.125.188.54
+déc. 03 03:36:44 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 185.125.188.55
+déc. 03 03:36:44 gateway119 dnsmasq[2118782]: query[AAAA] api.snapcraft.io from 192.168.0.33
+déc. 03 03:36:44 gateway119 dnsmasq[2118782]: forwarded api.snapcraft.io to 192.168.232.2
+déc. 03 03:36:44 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 2620:2d:4000:1010::6d
+déc. 03 03:36:44 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 2620:2d:4000:1010::42
+déc. 03 03:36:44 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 2620:2d:4000:1010::2e6
+déc. 03 03:36:44 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 2620:2d:4000:1010::117
+déc. 03 03:36:54 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:36:54 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:36:54 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:36:54 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:37:42 gateway119 dnsmasq[2118782]: query[A] one.eole.lan from 127.0.0.1
+déc. 03 03:37:42 gateway119 dnsmasq[2118782]: cached one.eole.lan is 192.168.10.140
+déc. 03 03:37:54 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:37:54 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:37:54 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:37:54 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:38:13 gateway119 dnsmasq[2118782]: query[A] one.eole.lan from 127.0.0.1
+déc. 03 03:38:13 gateway119 dnsmasq[2118782]: cached one.eole.lan is 192.168.10.140
+déc. 03 03:38:49 gateway119 dnsmasq[2118782]: query[A] one.eole.lan from 127.0.0.1
+déc. 03 03:38:49 gateway119 dnsmasq[2118782]: cached one.eole.lan is 192.168.10.140
+déc. 03 03:39:23 gateway119 dnsmasq[2118782]: query[A] one.eole.lan from 127.0.0.1
+déc. 03 03:39:23 gateway119 dnsmasq[2118782]: cached one.eole.lan is 192.168.10.140
+déc. 03 03:39:24 gateway119 java[3282]: déc. 03, 2024 2:39:24 AM hudson.plugins.logparser.ParsingStrategyLocator get
+déc. 03 03:39:24 gateway119 java[3282]: INFOS: Defaulting to hudson.plugins.logparser.ClassicParsingStrategy
+déc. 03 03:39:24 gateway119 java[3282]: déc. 03, 2024 2:39:24 AM hudson.plugins.logparser.ClassicParsingStrategy parse
+déc. 03 03:39:24 gateway119 java[3282]: INFOS: Local temp file:/tmp/log-parser_test-etb3-amonecole-joineole-mate2204-2.9.0-amd64_build_502
+déc. 03 03:39:24 gateway119 java[3282]: déc. 03, 2024 2:39:24 AM hudson.plugins.logparser.LogParserReader readLogPart
+déc. 03 03:39:24 gateway119 java[3282]: INFOS: Start reading log part 0 in thread #0
+déc. 03 03:39:24 gateway119 java[3282]: déc. 03, 2024 2:39:24 AM hudson.plugins.logparser.LogParserReader readLogPart
+déc. 03 03:39:24 gateway119 java[3282]: INFOS: Done reading log part 0
+déc. 03 03:39:24 gateway119 java[3282]: déc. 03, 2024 2:39:24 AM hudson.plugins.logparser.LogParserThread getLineStatuses
+déc. 03 03:39:24 gateway119 java[3282]: INFOS: LogParserThread: Start parsing log part 0
+déc. 03 03:39:24 gateway119 java[3282]: déc. 03, 2024 2:39:24 AM hudson.plugins.logparser.LogParserThread getLineStatuses
+déc. 03 03:39:24 gateway119 java[3282]: INFOS: LogParserThread: Done parsing log part 0
+déc. 03 03:40:02 gateway119 systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+░░ Subject: L'unité (unit) sysstat-collect.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.service a commencé à démarrer.
+déc. 03 03:40:02 gateway119 systemd[1]: sysstat-collect.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit sysstat-collect.service has successfully entered the 'dead' state.
+déc. 03 03:40:02 gateway119 systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+░░ Subject: L'unité (unit) sysstat-collect.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.service a terminé son démarrage, avec le résultat done.
+déc. 03 03:40:06 gateway119 dnsmasq[2118782]: query[A] one.eole.lan from 127.0.0.1
+déc. 03 03:40:06 gateway119 dnsmasq[2118782]: cached one.eole.lan is 192.168.10.140
+déc. 03 03:40:41 gateway119 dnsmasq[2118782]: query[A] gateway.ac-test.fr from 192.168.0.1
+déc. 03 03:40:41 gateway119 dnsmasq[2118782]: /etc/hosts gateway.ac-test.fr is 192.168.0.1
+déc. 03 03:40:41 gateway119 dnsmasq[2118782]: query[A] hestia.eole.lan from 192.168.0.1
+déc. 03 03:40:41 gateway119 dnsmasq[2118782]: cached hestia.eole.lan is 192.168.232.2
+déc. 03 03:40:41 gateway119 dnsmasq[2118782]: query[A] hestia.eole.lan from 127.0.0.1
+déc. 03 03:40:41 gateway119 dnsmasq[2118782]: cached hestia.eole.lan is 192.168.232.2
+déc. 03 03:40:41 gateway119 dnsmasq[2118782]: query[AAAA] hestia.eole.lan from 127.0.0.1
+déc. 03 03:40:41 gateway119 dnsmasq[2118782]: forwarded hestia.eole.lan to 192.168.232.2
+déc. 03 03:40:41 gateway119 dnsmasq[2118782]: reply hestia.eole.lan is NODATA-IPv6
+déc. 03 03:41:08 gateway119 dnsmasq[2118782]: query[A] one.eole.lan from 127.0.0.1
+déc. 03 03:41:08 gateway119 dnsmasq[2118782]: cached one.eole.lan is 192.168.10.140
+déc. 03 03:41:45 gateway119 dnsmasq[2118782]: query[A] hestia.eole.lan from 192.168.0.33
+déc. 03 03:41:45 gateway119 dnsmasq[2118782]: cached hestia.eole.lan is 192.168.232.2
+déc. 03 03:41:45 gateway119 dnsmasq[2118782]: query[AAAA] hestia.eole.lan from 192.168.0.33
+déc. 03 03:41:45 gateway119 dnsmasq[2118782]: forwarded hestia.eole.lan to 192.168.232.2
+déc. 03 03:41:45 gateway119 dnsmasq[2118782]: reply hestia.eole.lan is NODATA-IPv6
+déc. 03 03:41:46 gateway119 dnsmasq[2118782]: query[PTR] 53.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:41:46 gateway119 dnsmasq[2118782]: config 192.0.2.53 is NXDOMAIN
+déc. 03 03:41:46 gateway119 dnsmasq[2118782]: query[A] europe.pool.ntp.org from 192.168.0.33
+déc. 03 03:41:46 gateway119 dnsmasq[2118782]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 03 03:41:46 gateway119 dnsmasq[2118782]: query[AAAA] europe.pool.ntp.org from 192.168.0.33
+déc. 03 03:41:46 gateway119 dnsmasq[2118782]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 03 03:41:46 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 188.246.226.6
+déc. 03 03:41:46 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 23.147.168.177
+déc. 03 03:41:46 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 213.91.190.229
+déc. 03 03:41:46 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 82.64.230.205
+déc. 03 03:41:46 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is NODATA-IPv6
+déc. 03 03:41:51 gateway119 dnsmasq[2118782]: query[PTR] 53.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:41:51 gateway119 dnsmasq[2118782]: config 192.0.2.53 is NXDOMAIN
+déc. 03 03:41:51 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:41:51 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:41:51 gateway119 dnsmasq[2118782]: query[PTR] 50.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:41:51 gateway119 dnsmasq[2118782]: config 192.0.2.50 is NXDOMAIN
+déc. 03 03:41:51 gateway119 dnsmasq[2118782]: query[AAAA] reseau from 192.168.0.33
+déc. 03 03:41:51 gateway119 dnsmasq[2118782]: config reseau is NXDOMAIN
+déc. 03 03:41:51 gateway119 dnsmasq[2118782]: query[PTR] 52.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:41:51 gateway119 dnsmasq[2118782]: config 192.0.2.52 is NXDOMAIN
+déc. 03 03:41:51 gateway119 dnsmasq[2118782]: query[PTR] 51.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:41:51 gateway119 dnsmasq[2118782]: config 192.0.2.51 is NXDOMAIN
+déc. 03 03:41:51 gateway119 dnsmasq[2118782]: query[AAAA] reseau from 192.168.0.33
+déc. 03 03:41:51 gateway119 dnsmasq[2118782]: config reseau is NXDOMAIN
+déc. 03 03:41:53 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:41:53 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:41:53 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:41:53 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:41:55 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:41:55 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:41:55 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:41:55 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:41:56 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:41:56 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:41:56 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:41:56 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:41:56 gateway119 dnsmasq[2118782]: query[A] compiling.spamassassin.taint.org.fresh.fmb.la from 192.168.0.33
+déc. 03 03:41:56 gateway119 dnsmasq[2118782]: forwarded compiling.spamassassin.taint.org.fresh.fmb.la to 192.168.232.2
+déc. 03 03:41:56 gateway119 dnsmasq[2118782]: reply compiling.spamassassin.taint.org.fresh.fmb.la is NXDOMAIN
+déc. 03 03:41:57 gateway119 dnsmasq[2118782]: query[AAAA] reseau from 192.168.0.33
+déc. 03 03:41:57 gateway119 dnsmasq[2118782]: config reseau is NXDOMAIN
+déc. 03 03:41:57 gateway119 dnsmasq[2118782]: query[AAAA] reseau from 192.168.0.33
+déc. 03 03:41:57 gateway119 dnsmasq[2118782]: config reseau is NXDOMAIN
+déc. 03 03:41:57 gateway119 dnsmasq[2118782]: query[AAAA] reseau from 192.168.0.33
+déc. 03 03:41:57 gateway119 dnsmasq[2118782]: config reseau is NXDOMAIN
+déc. 03 03:41:57 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:41:57 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:41:57 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:41:57 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:42:01 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:42:01 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:42:01 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:42:01 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:42:48 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:42:48 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:42:48 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:42:48 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:43:28 gateway119 dnsmasq[2118782]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:43:28 gateway119 dnsmasq[2118782]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 03 03:43:28 gateway119 dnsmasq[2118782]: query[A] eole.orion.education.fr from 192.168.0.33
+déc. 03 03:43:28 gateway119 dnsmasq[2118782]: forwarded eole.orion.education.fr to 192.168.232.2
+déc. 03 03:43:28 gateway119 dnsmasq[2118782]: reply eole.orion.education.fr is 194.167.18.15
+déc. 03 03:43:28 gateway119 dnsmasq[2118782]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:43:28 gateway119 dnsmasq[2118782]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:43:28 gateway119 dnsmasq[2118782]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 03 03:43:28 gateway119 dnsmasq[2118782]: reply bp-eole.ac-dijon.fr is <RRSIG>
+déc. 03 03:43:28 gateway119 dnsmasq[2118782]: query[AAAA] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:43:28 gateway119 dnsmasq[2118782]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:43:28 gateway119 dnsmasq[2118782]: reply bp-eole.ac-dijon.fr is NODATA-IPv6
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: query[A] ftp.crihan.fr from 192.168.0.33
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: forwarded ftp.crihan.fr to 192.168.232.2
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: query[AAAA] ftp.crihan.fr from 192.168.0.33
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: forwarded ftp.crihan.fr to 192.168.232.2
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: reply ftp.crihan.fr is 195.221.21.36
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: reply ftp.crihan.fr is 2001:660:7401:211::36
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: query[A] eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: forwarded eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: query[AAAA] eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: forwarded eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: reply eole.ac-dijon.fr is <CNAME>
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is 194.167.18.18
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is <RRSIG>
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: reply eole.ac-dijon.fr is <CNAME>
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is NODATA-IPv6
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: query[A] thor.ac-dijon.fr from 192.168.0.33
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: forwarded thor.ac-dijon.fr to 192.168.232.2
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is 194.167.18.18
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is <RRSIG>
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: query[AAAA] thor.ac-dijon.fr from 192.168.0.33
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: forwarded thor.ac-dijon.fr to 192.168.232.2
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is NODATA-IPv6
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: query[A] test-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: forwarded test-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: reply test-eole.ac-dijon.fr is <CNAME>
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is 194.167.18.18
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is <RRSIG>
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: query[AAAA] test-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: forwarded test-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: reply test-eole.ac-dijon.fr is <CNAME>
+déc. 03 03:43:29 gateway119 dnsmasq[2118782]: reply thor.ac-dijon.fr is NODATA-IPv6
+déc. 03 03:43:35 gateway119 dnsmasq[2118782]: query[A] one.eole.lan from 127.0.0.1
+déc. 03 03:43:35 gateway119 dnsmasq[2118782]: cached one.eole.lan is 192.168.10.140
+déc. 03 03:43:48 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:43:48 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:43:48 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:43:48 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:44:49 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:44:49 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:44:49 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:44:49 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:45:01 gateway119 CRON[2120802]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+déc. 03 03:45:01 gateway119 CRON[2120803]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+déc. 03 03:45:01 gateway119 CRON[2120802]: pam_unix(cron:session): session closed for user root
+déc. 03 03:45:49 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:45:49 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:45:49 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:45:49 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:46:09 gateway119 dnsmasq[2118782]: query[A] europe.pool.ntp.org from 192.168.0.33
+déc. 03 03:46:09 gateway119 dnsmasq[2118782]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 03 03:46:09 gateway119 dnsmasq[2118782]: query[AAAA] europe.pool.ntp.org from 192.168.0.33
+déc. 03 03:46:09 gateway119 dnsmasq[2118782]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 03 03:46:09 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 213.136.76.15
+déc. 03 03:46:09 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 116.203.244.102
+déc. 03 03:46:09 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 185.228.138.224
+déc. 03 03:46:09 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 148.251.235.164
+déc. 03 03:46:09 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is NODATA-IPv6
+déc. 03 03:46:12 gateway119 dnsmasq[2118782]: query[A] one.eole.lan from 127.0.0.1
+déc. 03 03:46:12 gateway119 dnsmasq[2118782]: cached one.eole.lan is 192.168.10.140
+déc. 03 03:46:28 gateway119 dnsmasq[2118782]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:46:28 gateway119 dnsmasq[2118782]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:46:28 gateway119 dnsmasq[2118782]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 03 03:46:49 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:46:49 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:46:49 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:46:49 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:46:52 gateway119 dnsmasq[2118782]: query[AAAA] daisy.ubuntu.com from 192.168.0.33
+déc. 03 03:46:52 gateway119 dnsmasq[2118782]: forwarded daisy.ubuntu.com to 192.168.232.2
+déc. 03 03:46:52 gateway119 dnsmasq[2118782]: query[A] daisy.ubuntu.com from 192.168.0.33
+déc. 03 03:46:52 gateway119 dnsmasq[2118782]: forwarded daisy.ubuntu.com to 192.168.232.2
+déc. 03 03:46:52 gateway119 dnsmasq[2118782]: reply daisy.ubuntu.com is NODATA-IPv6
+déc. 03 03:46:52 gateway119 dnsmasq[2118782]: reply daisy.ubuntu.com is 162.213.35.25
+déc. 03 03:46:52 gateway119 dnsmasq[2118782]: reply daisy.ubuntu.com is 162.213.35.24
+déc. 03 03:47:01 gateway119 dnsmasq[2118782]: query[PTR] 6.6.2.0.3.0.e.f.f.f.a.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa from 192.168.0.33
+déc. 03 03:47:01 gateway119 dnsmasq[2118782]: config fe80::aff:fe03:266 is NXDOMAIN
+déc. 03 03:47:11 gateway119 dnsmasq[2118782]: query[A] ntp.ubuntu.com from 192.168.0.33
+déc. 03 03:47:11 gateway119 dnsmasq[2118782]: forwarded ntp.ubuntu.com to 192.168.232.2
+déc. 03 03:47:11 gateway119 dnsmasq[2118782]: query[AAAA] ntp.ubuntu.com from 192.168.0.33
+déc. 03 03:47:11 gateway119 dnsmasq[2118782]: forwarded ntp.ubuntu.com to 192.168.232.2
+déc. 03 03:47:11 gateway119 dnsmasq[2118782]: reply ntp.ubuntu.com is 185.125.190.56
+déc. 03 03:47:11 gateway119 dnsmasq[2118782]: reply ntp.ubuntu.com is 91.189.91.157
+déc. 03 03:47:11 gateway119 dnsmasq[2118782]: reply ntp.ubuntu.com is 185.125.190.58
+déc. 03 03:47:11 gateway119 dnsmasq[2118782]: reply ntp.ubuntu.com is 185.125.190.57
+déc. 03 03:47:11 gateway119 dnsmasq[2118782]: reply ntp.ubuntu.com is 2620:2d:4000:1::40
+déc. 03 03:47:11 gateway119 dnsmasq[2118782]: reply ntp.ubuntu.com is 2620:2d:4000:1::3f
+déc. 03 03:47:11 gateway119 dnsmasq[2118782]: reply ntp.ubuntu.com is 2620:2d:4000:1::41
+déc. 03 03:47:11 gateway119 dnsmasq[2118782]: query[PTR] 6.6.2.0.3.0.e.f.f.f.a.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa from 192.168.0.33
+déc. 03 03:47:11 gateway119 dnsmasq[2118782]: config fe80::aff:fe03:266 is NXDOMAIN
+déc. 03 03:47:26 gateway119 dnsmasq[2118782]: query[PTR] 6.6.2.0.3.0.e.f.f.f.a.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa from 192.168.0.33
+déc. 03 03:47:26 gateway119 dnsmasq[2118782]: config fe80::aff:fe03:266 is NXDOMAIN
+déc. 03 03:47:50 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:47:50 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:47:50 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:47:50 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:48:23 gateway119 dnsmasq[2118782]: query[SRV] _http._tcp.test-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:48:23 gateway119 dnsmasq[2118782]: forwarded _http._tcp.test-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:48:23 gateway119 dnsmasq[2118782]: reply _http._tcp.test-eole.ac-dijon.fr is NXDOMAIN
+déc. 03 03:50:02 gateway119 systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+░░ Subject: L'unité (unit) sysstat-collect.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.service a commencé à démarrer.
+déc. 03 03:50:02 gateway119 systemd[1]: sysstat-collect.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit sysstat-collect.service has successfully entered the 'dead' state.
+déc. 03 03:50:02 gateway119 systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+░░ Subject: L'unité (unit) sysstat-collect.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.service a terminé son démarrage, avec le résultat done.
+déc. 03 03:51:41 gateway119 dnsmasq[2118782]: query[A] api.snapcraft.io from 192.168.0.33
+déc. 03 03:51:41 gateway119 dnsmasq[2118782]: forwarded api.snapcraft.io to 192.168.232.2
+déc. 03 03:51:41 gateway119 dnsmasq[2118782]: query[AAAA] api.snapcraft.io from 192.168.0.33
+déc. 03 03:51:41 gateway119 dnsmasq[2118782]: forwarded api.snapcraft.io to 192.168.232.2
+déc. 03 03:51:41 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 185.125.188.54
+déc. 03 03:51:41 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 185.125.188.55
+déc. 03 03:51:41 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 185.125.188.58
+déc. 03 03:51:41 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 185.125.188.59
+déc. 03 03:51:41 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 2620:2d:4000:1010::6d
+déc. 03 03:51:41 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 2620:2d:4000:1010::117
+déc. 03 03:51:41 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 2620:2d:4000:1010::2e6
+déc. 03 03:51:41 gateway119 dnsmasq[2118782]: reply api.snapcraft.io is 2620:2d:4000:1010::42
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: query[A] dev-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: forwarded dev-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: reply dev-eole.ac-dijon.fr is <CNAME>
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: reply adonis.ac-dijon.fr is 194.167.18.22
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: reply adonis.ac-dijon.fr is <RRSIG>
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: query[A] adonis.ac-dijon.fr from 192.168.0.33
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: forwarded adonis.ac-dijon.fr to 192.168.232.2
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: reply adonis.ac-dijon.fr is 194.167.18.22
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: reply adonis.ac-dijon.fr is <RRSIG>
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: query[A] multi-ip-dn.eole.lan from 192.168.0.33
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: forwarded multi-ip-dn.eole.lan to 192.168.232.2
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: reply multi-ip-dn.eole.lan is <CNAME>
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: reply multi-ip.eole.lan is 192.168.230.121
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: reply multi-ip.eole.lan is 192.168.230.122
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: reply multi-ip.eole.lan is 192.168.230.120
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: query[A] multi-ip.eole.lan from 192.168.0.33
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: forwarded multi-ip.eole.lan to 192.168.232.2
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: reply multi-ip.eole.lan is 192.168.230.120
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: reply multi-ip.eole.lan is 192.168.230.121
+déc. 03 03:52:22 gateway119 dnsmasq[2118782]: reply multi-ip.eole.lan is 192.168.230.122
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[A] addc.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded addc.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply addc.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[CNAME] 1da1b468-247c-4cea-acdf-75324cfe3270._msdcs.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded 1da1b468-247c-4cea-acdf-75324cfe3270._msdcs.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply 1da1b468-247c-4cea-acdf-75324cfe3270._msdcs.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[NS] etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[NS] _msdcs.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _msdcs.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _msdcs.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[A] etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _ldap._tcp.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _ldap._tcp.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _ldap._tcp.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _ldap._tcp.dc._msdcs.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _ldap._tcp.dc._msdcs.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _ldap._tcp.dc._msdcs.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _ldap._tcp.df016e23-661e-4b20-bcff-76dd21a8b868.domains._msdcs.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _ldap._tcp.df016e23-661e-4b20-bcff-76dd21a8b868.domains._msdcs.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _ldap._tcp.df016e23-661e-4b20-bcff-76dd21a8b868.domains._msdcs.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _kerberos._tcp.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _kerberos._tcp.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _kerberos._tcp.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _kerberos._udp.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _kerberos._udp.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _kerberos._udp.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _kerberos._tcp.dc._msdcs.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _kerberos._tcp.dc._msdcs.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _kerberos._tcp.dc._msdcs.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _kpasswd._tcp.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _kpasswd._tcp.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _kpasswd._tcp.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _kpasswd._udp.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _kpasswd._udp.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _kpasswd._udp.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _ldap._tcp.Default-First-Site-Name._sites.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _ldap._tcp.Default-First-Site-Name._sites.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _ldap._tcp.Default-First-Site-Name._sites.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _kerberos._tcp.Default-First-Site-Name._sites.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _kerberos._tcp.Default-First-Site-Name._sites.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _kerberos._tcp.Default-First-Site-Name._sites.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _ldap._tcp.pdc._msdcs.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _ldap._tcp.pdc._msdcs.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _ldap._tcp.pdc._msdcs.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[A] gc._msdcs.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded gc._msdcs.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply gc._msdcs.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _gc._tcp.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _gc._tcp.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _gc._tcp.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _ldap._tcp.gc._msdcs.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _ldap._tcp.gc._msdcs.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _ldap._tcp.gc._msdcs.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _gc._tcp.Default-First-Site-Name._sites.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _gc._tcp.Default-First-Site-Name._sites.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _gc._tcp.Default-First-Site-Name._sites.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[A] DomainDnsZones.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded DomainDnsZones.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply DomainDnsZones.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _ldap._tcp.DomainDnsZones.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _ldap._tcp.DomainDnsZones.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _ldap._tcp.DomainDnsZones.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[A] ForestDnsZones.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded ForestDnsZones.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply ForestDnsZones.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _ldap._tcp.ForestDnsZones.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _ldap._tcp.ForestDnsZones.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _ldap._tcp.ForestDnsZones.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SRV] _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.etb3.lan is NXDOMAIN
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: query[SOA] etb3.lan from 192.168.0.33
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: forwarded etb3.lan to 192.168.232.2
+déc. 03 03:54:39 gateway119 dnsmasq[2118782]: reply etb3.lan is NXDOMAIN
+déc. 03 03:54:50 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:54:50 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:54:50 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:54:50 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:54:51 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:54:51 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:54:51 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:54:51 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:54:52 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:54:52 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:54:52 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:54:52 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:54:55 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:54:55 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:54:55 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:54:55 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:55:01 gateway119 CRON[2121021]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+déc. 03 03:55:01 gateway119 CRON[2121022]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+déc. 03 03:55:01 gateway119 CRON[2121021]: pam_unix(cron:session): session closed for user root
+déc. 03 03:55:03 gateway119 dnsmasq[2118782]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:55:03 gateway119 dnsmasq[2118782]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 03 03:55:03 gateway119 dnsmasq[2118782]: query[A] eole.orion.education.fr from 192.168.0.33
+déc. 03 03:55:03 gateway119 dnsmasq[2118782]: forwarded eole.orion.education.fr to 192.168.232.2
+déc. 03 03:55:03 gateway119 dnsmasq[2118782]: reply eole.orion.education.fr is 194.167.18.15
+déc. 03 03:55:03 gateway119 dnsmasq[2118782]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:55:03 gateway119 dnsmasq[2118782]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:55:03 gateway119 dnsmasq[2118782]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 03 03:55:03 gateway119 dnsmasq[2118782]: reply bp-eole.ac-dijon.fr is <RRSIG>
+déc. 03 03:55:03 gateway119 dnsmasq[2118782]: query[AAAA] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:55:03 gateway119 dnsmasq[2118782]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:55:03 gateway119 dnsmasq[2118782]: reply bp-eole.ac-dijon.fr is NODATA-IPv6
+déc. 03 03:55:06 gateway119 dnsmasq[2118782]: query[A] compiling.spamassassin.taint.org.fresh.fmb.la from 192.168.0.33
+déc. 03 03:55:06 gateway119 dnsmasq[2118782]: forwarded compiling.spamassassin.taint.org.fresh.fmb.la to 192.168.232.2
+déc. 03 03:55:06 gateway119 dnsmasq[2118782]: reply compiling.spamassassin.taint.org.fresh.fmb.la is NXDOMAIN
+déc. 03 03:55:07 gateway119 dnsmasq[2118782]: query[AAAA] reseau from 192.168.0.33
+déc. 03 03:55:07 gateway119 dnsmasq[2118782]: config reseau is NXDOMAIN
+déc. 03 03:55:07 gateway119 dnsmasq[2118782]: query[AAAA] reseau from 192.168.0.33
+déc. 03 03:55:07 gateway119 dnsmasq[2118782]: config reseau is NXDOMAIN
+déc. 03 03:55:07 gateway119 dnsmasq[2118782]: query[AAAA] reseau from 192.168.0.33
+déc. 03 03:55:07 gateway119 dnsmasq[2118782]: config reseau is NXDOMAIN
+déc. 03 03:55:15 gateway119 dnsmasq[2118782]: query[A] hestia.eole.lan from 192.168.0.33
+déc. 03 03:55:15 gateway119 dnsmasq[2118782]: forwarded hestia.eole.lan to 192.168.232.2
+déc. 03 03:55:15 gateway119 dnsmasq[2118782]: reply hestia.eole.lan is 192.168.232.2
+déc. 03 03:55:15 gateway119 dnsmasq[2118782]: query[AAAA] hestia.eole.lan from 192.168.0.33
+déc. 03 03:55:15 gateway119 dnsmasq[2118782]: forwarded hestia.eole.lan to 192.168.232.2
+déc. 03 03:55:15 gateway119 dnsmasq[2118782]: reply hestia.eole.lan is NODATA-IPv6
+déc. 03 03:55:16 gateway119 dnsmasq[2118782]: query[A] europe.pool.ntp.org from 192.168.0.33
+déc. 03 03:55:16 gateway119 dnsmasq[2118782]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 03 03:55:16 gateway119 dnsmasq[2118782]: query[AAAA] europe.pool.ntp.org from 192.168.0.33
+déc. 03 03:55:16 gateway119 dnsmasq[2118782]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 03 03:55:16 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 77.236.182.128
+déc. 03 03:55:16 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 161.53.78.72
+déc. 03 03:55:16 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 94.241.142.113
+déc. 03 03:55:16 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is 37.1.205.111
+déc. 03 03:55:16 gateway119 dnsmasq[2118782]: reply europe.pool.ntp.org is NODATA-IPv6
+déc. 03 03:55:27 gateway119 dnsmasq[2118782]: query[PTR] 53.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:55:27 gateway119 dnsmasq[2118782]: config 192.0.2.53 is NXDOMAIN
+déc. 03 03:55:28 gateway119 dnsmasq[2118782]: query[PTR] 50.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:55:28 gateway119 dnsmasq[2118782]: config 192.0.2.50 is NXDOMAIN
+déc. 03 03:55:29 gateway119 dnsmasq[2118782]: query[PTR] 51.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:55:29 gateway119 dnsmasq[2118782]: config 192.0.2.51 is NXDOMAIN
+déc. 03 03:55:30 gateway119 dnsmasq[2118782]: query[PTR] 52.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:55:30 gateway119 dnsmasq[2118782]: config 192.0.2.52 is NXDOMAIN
+déc. 03 03:55:50 gateway119 dnsmasq[2118782]: query[AAAA] gateway119.eole.lan from 127.0.0.1
+déc. 03 03:55:50 gateway119 dnsmasq[2118782]: forwarded gateway119.eole.lan to 192.168.232.2
+déc. 03 03:55:50 gateway119 dnsmasq[2118782]: reply gateway119.eole.lan is NODATA-IPv6
+déc. 03 03:55:50 gateway119 dnsmasq[2118782]: query[AAAA] gateway119 from 127.0.0.1
+déc. 03 03:55:50 gateway119 dnsmasq[2118782]: config gateway119 is NODATA-IPv6
+déc. 03 03:55:51 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:55:51 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:55:51 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:55:51 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:56:05 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:56:05 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:56:05 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:56:05 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:56:08 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:56:08 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:56:08 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:56:08 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:56:52 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:56:52 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:56:52 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:56:52 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:56:57 gateway119 dnsmasq[2118782]: query[PTR] 53.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:56:57 gateway119 dnsmasq[2118782]: config 192.0.2.53 is NXDOMAIN
+déc. 03 03:57:14 gateway119 dnsmasq-script[2118782]: del 02:00:c0:a8:00:68 192.168.0.154 PC-1414776
+déc. 03 03:57:18 gateway119 dnsmasq[2118782]: query[SOA] nextcloud.com from 192.168.0.33
+déc. 03 03:57:18 gateway119 dnsmasq[2118782]: forwarded nextcloud.com to 192.168.232.2
+déc. 03 03:57:18 gateway119 dnsmasq[2118782]: reply nextcloud.com is <SOA>
+déc. 03 03:57:18 gateway119 dnsmasq[2118782]: query[A] apps.nextcloud.com from 192.168.0.33
+déc. 03 03:57:18 gateway119 dnsmasq[2118782]: forwarded apps.nextcloud.com to 192.168.232.2
+déc. 03 03:57:18 gateway119 dnsmasq[2118782]: reply apps.nextcloud.com is 65.21.231.50
+déc. 03 03:57:18 gateway119 dnsmasq[2118782]: query[AAAA] apps.nextcloud.com from 192.168.0.33
+déc. 03 03:57:18 gateway119 dnsmasq[2118782]: forwarded apps.nextcloud.com to 192.168.232.2
+déc. 03 03:57:18 gateway119 dnsmasq[2118782]: reply apps.nextcloud.com is 2a01:4f9:6a:1de8::2
+déc. 03 03:57:18 gateway119 dnsmasq[2118782]: query[CNAME] apps.nextcloud.com from 192.168.0.33
+déc. 03 03:57:18 gateway119 dnsmasq[2118782]: forwarded apps.nextcloud.com to 192.168.232.2
+déc. 03 03:57:18 gateway119 dnsmasq[2118782]: reply apps.nextcloud.com is NODATA
+déc. 03 03:57:52 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:57:52 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:57:52 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:57:52 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:58:03 gateway119 dnsmasq[2118782]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:58:03 gateway119 dnsmasq[2118782]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:58:03 gateway119 dnsmasq[2118782]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 03 03:58:03 gateway119 dnsmasq[2118782]: query[A] eole.orion.education.fr from 192.168.0.33
+déc. 03 03:58:03 gateway119 dnsmasq[2118782]: forwarded eole.orion.education.fr to 192.168.232.2
+déc. 03 03:58:03 gateway119 dnsmasq[2118782]: reply eole.orion.education.fr is 194.167.18.15
+déc. 03 03:58:03 gateway119 dnsmasq[2118782]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:58:03 gateway119 dnsmasq[2118782]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:58:03 gateway119 dnsmasq[2118782]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 03 03:58:03 gateway119 dnsmasq[2118782]: reply bp-eole.ac-dijon.fr is <RRSIG>
+déc. 03 03:58:03 gateway119 dnsmasq[2118782]: query[AAAA] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 03 03:58:03 gateway119 dnsmasq[2118782]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 03 03:58:03 gateway119 dnsmasq[2118782]: reply bp-eole.ac-dijon.fr is NODATA-IPv6
+déc. 03 03:58:52 gateway119 dnsmasq[2118782]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 03 03:58:52 gateway119 dnsmasq[2118782]: config 192.0.2.1 is NXDOMAIN
+déc. 03 03:58:52 gateway119 dnsmasq[2118782]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 03 03:58:52 gateway119 dnsmasq[2118782]: config 10.88.0.1 is NXDOMAIN
+déc. 03 03:58:57 gateway119 dnsmasq[2118782]: query[A] etb3.ac-test.fr from 127.0.0.1
+déc. 03 03:58:57 gateway119 dnsmasq[2118782]: forwarded etb3.ac-test.fr to 192.168.232.2
+déc. 03 03:58:57 gateway119 dnsmasq[2118782]: query[AAAA] etb3.ac-test.fr from 127.0.0.1
+déc. 03 03:58:57 gateway119 dnsmasq[2118782]: forwarded etb3.ac-test.fr to 192.168.232.2
+déc. 03 03:58:57 gateway119 dnsmasq[2118782]: reply etb3.ac-test.fr is <CNAME>
+déc. 03 03:58:57 gateway119 dnsmasq[2118782]: reply amonecole.etb3.ac-test.fr is 192.168.0.33
+déc. 03 03:58:57 gateway119 dnsmasq[2118782]: reply etb3.ac-test.fr is <CNAME>
+déc. 03 03:58:57 gateway119 dnsmasq[2118782]: reply amonecole.etb3.ac-test.fr is NODATA-IPv6
+déc. 03 03:59:01 gateway119 EOLECITESTS[2121121]: ciExportCurrentStatus: (on exit 6661.sh)

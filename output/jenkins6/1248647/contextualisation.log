@@ -1,0 +1,43 @@
+Machine aca.eolecitests 2.7.2 : Début ciContextualizeMachine : aca.eolecitests, eolecitests
+Machine aca.eolecitests 2.7.2 : Début ciContextualizeEoleCiTests
+Machine aca.eolecitests 2.7.2 : ciContextualisationMinimale:
+Machine aca.eolecitests 2.7.2 : Contextualisation minimale réalisée pour 973431, à refaire
+Machine aca.eolecitests 2.7.2 : rm /etc/netplan/* désactivé !
+Machine aca.eolecitests 2.7.2 : Inject /etc/hosts
+Machine aca.eolecitests 2.7.2 : ciContextualisationMinimaleSystemd
+Machine aca.eolecitests 2.7.2 : Inject /etc/hostname
+Machine aca.eolecitests 2.7.2 : ls -l /etc/netplan/
+total 4
+-rw------- 1 root root 110 mars  29 23:25 01-netcfg.yaml
+Machine aca.eolecitests 2.7.2 : ciContextualisationMinimaleSystemdServer
+Machine aca.eolecitests 2.7.2 : Inject /etc/resolv.conf
+Machine aca.eolecitests 2.7.2 : /bin/rm -f /etc/resolv.conf (pour casser le lien!)
+Machine aca.eolecitests 2.7.2 : ls -l /etc/netplan
+total 4
+-rw------- 1 root root 110 mars  29 23:25 01-netcfg.yaml
+Machine aca.eolecitests 2.7.2 : netoyage si besoin /etc/network/interfaces /etc/netplan/01-network-manager-all.yaml /etc/netplan/00-installer-config.yaml
+Machine aca.eolecitests 2.7.2 : Inject /etc/netplan/01-netcfg.yaml avant 22.04
+Machine aca.eolecitests 2.7.2 : netplan generate --debug
+DEBUG:command generate: running ['/lib/netplan/generate']
+** (generate:916): DEBUG: 17:41:25.216: starting new processing pass
+** (generate:916): DEBUG: 17:41:25.217: We have some netdefs, pass them through a final round of validation
+** (generate:916): DEBUG: 17:41:25.217: ens4: setting default backend to 1
+** (generate:916): DEBUG: 17:41:25.218: Configuration is valid
+** (generate:916): DEBUG: 17:41:25.218: Generating output files..
+** (generate:916): DEBUG: 17:41:25.219: openvswitch: definition ens4 is not for us (backend 1)
+** (generate:916): DEBUG: 17:41:25.219: NetworkManager: definition ens4 is not for us (backend 1)
+(generate:916): GLib-DEBUG: 17:41:25.219: posix_spawn avoided (fd close requested) 
+(generate:916): GLib-DEBUG: 17:41:25.245: posix_spawn avoided (fd close requested) 
+Machine aca.eolecitests 2.7.2 : Inject authorized_keys
+Machine aca.eolecitests 2.7.2 : Actualisation /root/.ssh/authorized_keys
+Machine aca.eolecitests 2.7.2 : Inject bash_history
+Machine aca.eolecitests 2.7.2 : Contextualisation minimale OK
+Machine aca.eolecitests 2.7.2 : Fin ciContextualisationMinimale
+* timedatectl set-timezone
+Machine aca.eolecitests 2.7.2 : Début ciSambaContextualize
+Machine aca.eolecitests 2.7.2 : Configuration SMB (interface=ens4)
+* testparm NOK
+Machine aca.eolecitests 2.7.2 : Fin ciContextualizeEoleCiTests : ok (5)
+Machine aca.eolecitests 2.7.2 : Contextualization Machine OK
+Machine aca.eolecitests 2.7.2 : jenkins6 1248647 aca.eolecitests Contextualization Machine : OK
+Machine aca.eolecitests 2.7.2 : Fin ciContextualizeMachine : ok à 2024-04-12 17:41:25

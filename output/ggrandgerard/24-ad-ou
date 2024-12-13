@@ -1,0 +1,805 @@
+#!/bin/bash
+
+function doDebug()
+{
+    [[ -n "$DEBUG" ]] && [[ "$DEBUG" -gt 1 ]] && echo "$@"
+}
+
+function doDebug2()
+{
+    [[ -n "$DEBUG" ]] && [[ "$DEBUG" -gt 2 ]] && echo "$@"
+}
+
+function doSambaTool()
+{
+    if [ "$EST_SCRIBE_AD" == oui ]
+    then
+        # pb expansion variable contenant des espaces
+        lxc-attach -n addc -- samba-tool "$@"
+    else
+        samba-tool "$@" 
+    fi
+}
+
+function doLdbSearch()
+{
+    if [ "$EST_SCRIBE_AD" == oui ]
+    then
+        # pb expansion variable contenant des espaces
+        lxc-attach -n addc -- ldbsearch -H /var/lib/samba/private/sam.ldb "$@"
+    else
+        ldbsearch -H /var/lib/samba/private/sam.ldb "$@" 
+    fi
+}
+
+function doLdbModify()
+{
+    if [ "$EST_SCRIBE_AD" == oui ]
+    then
+        # pb expansion variable contenant des espaces
+        lxc-attach -n addc -- ldbmodify -H /var/lib/samba/private/sam.ldb "$@"
+    else
+        ldbmodify -H /var/lib/samba/private/sam.ldb "$@"
+    fi
+}
+
+function doRemoveDNFromUsers()
+{
+    local DN="$1"
+    if [ -n "${DN}" ]
+    then
+        doDebug2 "    remove ${DN}"
+        sed -i "/^dn: ${DN}\$/d" /tmp/users
+    fi
+}
+
+function doRemoveDNFromComputers()
+{
+    local DN="$1"
+    if [ -n "${DN}" ]
+    then
+        doDebug2 "    remove ${DN}"
+        sed -i "/^dn: ${DN}\$/d" /tmp/computers
+    fi
+}
+
+function doCreateOU()
+{
+    local OU="$1"
+    local BASE="$2"
+    local INDENT="$3"
+
+    local NEW_DN="OU=${OU//\//,OU=},$BASE"
+    if doSambaTool ou create "$NEW_DN" 
+    then
+        echo "dn: $NEW_DN" >>/tmp/all_ou
+    fi
+}
+
+function doCreateOUAndParent()
+{
+    local OU="$1"
+    local BASE="$2"
+    local INDENT="$3"
+
+    # je test l'existance pour éviter la récursivité ...
+    local NEW_DN="OU=${OU//\//,OU=},$BASE"
+    if grep -q ^"dn: $NEW_DN"$ /tmp/all_ou 
+    then
+        doDebug "--$INDENT $NEW_DN existe"
+        return 0
+    fi
+
+    local NAME
+    local PARENT
+    IFS=/ read -r NAME PARENT <<< "$OU"
+    if [ -n "$PARENT" ]
+    then
+        # Appel récursif !
+        doCreateOUAndParent "$PARENT" "$BASE" "--$INDENT"
+        BASE="OU=${PARENT//\//,OU=},$BASE"
+    fi
+    doCreateOU "$NAME" "$BASE" "$INDENT"
+}
+
+function doCreateOUAndParentENT()
+{
+    local OU="$1"
+    local BASE="$2"
+    local INDENT="$3"
+
+    local line
+    local CLASSE=""
+    local NIVEAU=""
+
+    # shellcheck disable=SC2046
+    while read -r DN_DN
+    do
+        DN=${DN_DN#* }
+        CN_EGAL_NAME=${DN%%,*}
+        NIVEAU=${CN_EGAL_NAME#*=}
+        if [[ -n "$NIVEAU" ]] 
+        then
+            OU_NIVEAU="$NIVEAU/$OU"
+            echo "* UO Niveau '$OU_NIVEAU'"
+            doCreateOUAndParent "$OU_NIVEAU" "$BASE" "$INDENT"
+        fi
+    done <<< $(ldapsearch -xLLL type=Niveau dn -o ldif-wrap=no)
+    
+    # shellcheck disable=SC2046
+    while read -r line
+    do
+        key=${line%%:*}
+        if [[ "$key" == cn ]] 
+        then
+            CLASSE=${line#*: }
+            continue
+        fi
+        if [[ "$key" == niveau ]] 
+        then
+            NIVEAU=${line#*: }
+            continue
+        fi
+        
+        if [[ -z "$key" ]] 
+        then
+            OU_CLASSE="$CLASSE/$NIVEAU/$OU"
+            echo "* UO Classe '$OU_CLASSE'"
+            doCreateOUAndParent "$OU_CLASSE" "$BASE" "$INDENT"
+        else
+            CLASSE=""
+            NIVEAU=""
+        fi
+    done <<< $(ldapsearch -xLLL type=Classe cn niveau -o ldif-wrap=no)
+}
+
+function IsCNMatchPattern()
+{
+    local CN="${1}"
+    local PATTERN="$2"
+    if [ -z "$CN" ]
+    then
+        return 1
+    fi
+    if [ "$PATTERN" == "None" ]
+    then
+        doDebug2 "    ! IsCNMatchPattern: ${CN} non renseingné : match ok"
+        return 0
+    fi
+    if [ -n "$PATTERN" ]
+    then
+        if [[ "${CN}" =~ $PATTERN ]]
+        then
+            doDebug2 "    ! IsCNMatchPattern: ${CN} =~ $PATTERN : match ok"
+            return 0
+        else
+            doDebug2 "    ! IsCNMatchPattern: ${CN} =~ $PATTERN : ne matche pas"
+            return 1
+        fi
+    else
+        doDebug2 "    ! IsCNMatchPattern: ${CN} tous : match ok"
+        return 0
+    fi
+}
+
+function IsComputerWindowsStation()
+{
+    local CN="${1}"
+    
+    # Les PC Win ont l'attribut 'operatingSystem'
+    CN_OPERATING_SYSTEM="${MAP_FICHE_AD[operatingSystem]}"
+    
+    if [ -z "$CN_OPERATING_SYSTEM" ]
+    then
+        doDebug "IsComputerWindowsStation: ${CN} cet ordinateur ne semble pas être un PC (server membre)"
+        return 1
+    fi
+    if [[ "$CN_OPERATING_SYSTEM" =~ ^V2lu.* ]]
+    then
+        # "V2luCg=="" = "Win"
+        CN_OPERATING_SYSTEM_BASE64_DECODE="$(echo "${CN_OPERATING_SYSTEM}" |base64 -d)"
+        if [[ "$CN_OPERATING_SYSTEM_BASE64_DECODE" =~ Server ]]
+        then
+            doDebug "IsComputerWindowsStation: ${CN} cet ordinateur semble être un Windows Server"
+            return 1
+        fi
+    fi
+    if [[ "$CN_OPERATING_SYSTEM" =~ ^Samba.* ]]
+    then
+        doDebug "IsComputerWindowsStation: ${CN} cet ordinateur semble être un Server Samba"
+        return 1
+    fi
+    return 0
+}
+
+# ****************************************************************************
+# doFiltrerAndLoadFicheAD :
+#      execute une requete LDAP pour récupérer un seul objet
+# result : 
+#      MAP_FICHE_AD
+# arg: 
+#      query = la requete LDAP (ex 'cn=admin' )
+# ****************************************************************************
+function doFiltrerAndLoadFicheAD()
+{
+    local CN="$1"
+    local TYPE_OBJECT="$2"
+
+    if [ ${#MAP_FICHE_AD} -ne 0 ]
+    then
+        echo "MAP_FICHE_AD non vide"
+        return 1
+    fi
+    
+    # astuce: je remplace l'editeur par CAT ==> plus d'edition, seulement l'affichage. MAIS, les lignes ne sont pas 'wrappées' à 72 caractères !
+    # shellcheck disable=SC2209
+    if ! >/tmp/fichead.txt EDITOR=cat doSambaTool "${TYPE_OBJECT}" edit "${CN}" 
+    then
+        return 1
+    fi
+    #cat /tmp/fichead.txt
+    # shellcheck disable=SC2046
+    while read -r line
+    do
+        if [[ "${line}" == "Nothing to do" ]] 
+        then
+            continue
+        fi
+        key=${line%%:*}
+        if [[ -z "$key" ]] || [[ "$key" =~ "# " ]] || [[ "$key" =~ "^ " ]]  || [[ "$key" == "ref" ]] 
+        then
+            continue
+        fi
+        if [ -z "${MAP_FICHE_AD[$key]}" ]
+        then
+            MAP_FICHE_AD[$key]=${line#*: }
+        else
+            MAP_FICHE_AD[$key]="${MAP_FICHE_AD[$key]}\n${line#*: }"
+        fi
+        # tips liste keys : for K in "${!MAP_FICHE_AD[@]}"; do echo $K; done
+        # tips liste keys et values : for K in ${!MAP_FICHE_AD[@]}; do echo $K --- ${MAP_FICHE_AD[$K]}; done
+    done <<< $(cat /tmp/fichead.txt)
+    /bin/rm /tmp/fichead.txt
+
+    if [[ "${MAP_FICHE_AD[objectClass]}" =~ group ]]
+    then
+        doDebug "doFiltrerAndLoadFicheAD: ignore group ${CN}"
+        return 1
+    fi
+    
+    if [[ "x${MAP_FICHE_AD[isCriticalSystemObject]}" == xTRUE ]]
+    then
+        doDebug "doFiltrerAndLoadFicheAD: ignore isCriticalSystemObject ${CN}"
+        return 1
+    fi
+    return 0
+}
+
+function doClassifierOUMembreDe()
+{
+    local OU_DESTINATION="${1}"
+    local PATTERN="$2"
+    local GROUP="$3"
+
+    doSambaTool group listmembers "$GROUP" >/tmp/listmembers
+    NB=$(wc -l </tmp/listmembers)
+    if [ "${NB}" -eq 0 ]
+    then
+        doDebug "  Pas de membres pour $GROUP" 
+        return 0
+    fi
+    
+    if [[ -n "$DEBUG" ]] && [[ "$DEBUG" -eq 2 ]]
+    then 
+        echo "    Membres de $GROUP: $(cat /tmp/listmembers)"
+        echo "    Utilisateurs : $(cat /tmp/users)"
+        # attention les comptes system peuvent être dans 'listmembers' !
+    fi
+
+    # shellcheck disable=SC2046
+    while read -r DN_DN
+    do
+        DN=${DN_DN#* }
+        if [ -z "${DN}" ]
+        then
+            continue
+        fi
+        CN_EGAL_NAME=${DN%%,*}
+        CN=${CN_EGAL_NAME#*=}
+
+        #doDebug2 "    PATTERN='$PATTERN', CN='$CN'"
+        if ! IsCNMatchPattern "${CN}" "${PATTERN}"
+        then
+            doDebug2 "IsCNMatchPattern ${CN}"
+            continue
+        fi
+        
+        if grep -q ^"${CN}"$ /tmp/listmembers
+        then
+            if doSambaTool user move "${CN}" "$OU_DESTINATION"
+            then
+                doRemoveDNFromUsers "$DN"
+            else
+                echo "Impossible de déplacer '${CN}' dans '$OU_DESTINATION'"
+            fi 
+        else
+            doDebug2 "    '${CN}' n'est pas dans groupe '$GROUP'"
+        fi
+    done <<< $(cat /tmp/users)
+}
+
+function doClassifierOUMembreDeENT()
+{
+    local OU_DESTINATION="${1}"
+    local PATTERN="$2"
+    local GROUP="$3"
+
+    doSambaTool group listmembers "$GROUP" >/tmp/listmembers
+    NB=$(wc -l </tmp/listmembers)
+    if [ "${NB}" -eq 0 ]
+    then
+        echo "Pas de membres pour $GROUP"
+        return 0
+    fi
+    
+    if [[ -n "$DEBUG" ]] && [[ "$DEBUG" -eq 2 ]]
+    then 
+        echo "    Membres de $GROUP: $(cat /tmp/listmembers)"
+        # attention les comptes system peuvent être dans 'listmembers' !
+    fi
+    
+    # shellcheck disable=SC2046
+    while read -r DN_DN
+    do
+        DN=${DN_DN#* }
+        if [ -z "${DN}" ]
+        then
+            continue
+        fi
+        CN_EGAL_NAME=${DN%%,*}
+        CN=${CN_EGAL_NAME#*=}
+
+        #doDebug2 "    PATTERN='$PATTERN', CN='$CN'"
+        if ! IsCNMatchPattern "${CN}" "${PATTERN}"
+        then
+            continue
+        fi
+        
+        if grep -q ^"${CN}"$ /tmp/listmembers
+        then
+            doDebug "    '${CN}' est dans groupe '$GROUP'"
+            OU_CLASSE=""
+            CLASSE=""
+            NIVEAU=""
+            if ! ldapsearch -xLLL "uid=$CN" cn Divcod Meflcf -o ldif-wrap=no >/tmp/ficheOpenLdap.txt
+            then
+                continue
+            fi
+            #cat /tmp/ficheOpenLdap.txt
+            while read -r line
+            do
+                key=${line%%:*}
+                #doDebug "        line=$line, key='$key'"
+                if [[ "$key" == Divcod ]] 
+                then
+                    CLASSE=${line#*: }
+                else
+                    if [[ "$key" == Meflcf ]] 
+                    then
+                        NIVEAU=${line#*: }
+                    fi
+                fi
+            done <<< $(cat /tmp/ficheOpenLdap.txt)
+            rm /tmp/ficheOpenLdap.txt
+
+            if [ -z "$CLASSE" ] || [ -z "$NIVEAU" ]
+            then
+                continue
+            fi
+            OU_CLASSE="$CLASSE/$NIVEAU"
+            doCreateOUAndParent "$OU_CLASSE" "$OU_DESTINATION"
+            OU_CLASSE_DESTINATION="OU=${OU_CLASSE//\//,OU=},$OU_DESTINATION"
+
+            doDebug "doClassifierOUMembreDeENT: CN=${CN} -> OU_CLASSE_DESTINATION=$OU_CLASSE_DESTINATION"
+            if ! doSambaTool user move "${CN}" "$OU_CLASSE_DESTINATION"
+            then
+                echo "  Impossible de déplacer '${CN}' dans '$OU_CLASSE_DESTINATION'"
+            else
+                doRemoveDNFromUsers "$DN" 
+            fi
+        else
+            doDebug "doClassifierOUMembreDe: '${CN}' n'est pas dans le groupe '$GROUP'"
+        fi
+    done <<< $(cat /tmp/users)
+}
+
+
+function doClassifierOUComputers()
+{
+    local OU_DESTINATION="${1}"
+    local PATTERN="$2"
+
+    # shellcheck disable=SC2046
+    while read -r DN_DN
+    do
+        DN=${DN_DN#* }
+        if [ -z "${DN}" ]
+        then
+            continue
+        fi
+        CN_EGAL_NAME=${DN%%,*}
+        CN=${CN_EGAL_NAME#*=}
+
+        #doDebug2 "    PATTERN='$PATTERN', CN='$CN'"
+        if ! IsCNMatchPattern "${CN}" "${PATTERN}"
+        then
+            continue
+        fi
+
+        unset MAP_FICHE_AD
+        declare -A MAP_FICHE_AD
+        if ! doFiltrerAndLoadFicheAD "${CN}" computer
+        then
+            continue
+        fi
+
+        if ! IsComputerWindowsStation "${CN}"
+        then
+            continue
+        fi
+        
+        if ! doSambaTool computer move "${CN}" "$OU_DESTINATION"
+        then
+            echo "  Impossible de déplacer '${CN}' dans '$OU_DESTINATION'"
+        else
+            doRemoveDNFromComputers "${DN}"
+        fi
+    done <<< $(cat /tmp/computers)
+}
+
+function doClassifierOUComputerAndClasse()
+{
+    local OU_DESTINATION="${1}"
+    local PATTERN="${2}.*"
+    local GROUP="$3"
+
+    # shellcheck disable=SC2046
+    while read -r DN_DN
+    do
+        DN=${DN_DN#* }
+        if [ -z "${DN}" ]
+        then
+            continue
+        fi
+        CN_EGAL_NAME=${DN%%,*}
+        CN=${CN_EGAL_NAME#*=}
+
+        #doDebug2 "    PATTERN='$PATTERN', CN='$CN'"
+        CLASSE=$( python3 -c "import re; print ( re.search('$PATTERN', '$CN').group(1) )" 2>/dev/null ) 
+        if [ -z "$CLASSE" ]
+        then
+            continue
+        fi
+
+        unset MAP_FICHE_AD
+        declare -A MAP_FICHE_AD
+        if ! doFiltrerAndLoadFicheAD "${CN}" computer
+        then
+            continue
+        fi
+
+        if ! IsComputerWindowsStation "${CN}"
+        then
+            continue
+        fi
+
+        OU_CLASSE_DESTINATION="OU=$CLASSE,$OU_DESTINATION"
+        doCreateOUAndParent "$CLASSE" "$OU_DESTINATION"
+        if ! doSambaTool computer move "${CN}" "$OU_CLASSE_DESTINATION"
+        then
+            echo "  Impossible de déplacer '${CN}' dans '$OU_CLASSE_DESTINATION'"
+        else
+            doRemoveDNFromComputers "${DN}"
+
+            # attention : le DN a été changé !
+            DN="CN=${CN},$OU_CLASSE_DESTINATION"
+            LOCATION="${MAP_FICHE_AD[location]}"
+            if [ -z "$LOCATION" ]
+            then
+                echo "* positionne location [$CN] à [${CLASSE}]"
+                doLdbModify -v <<EOF
+dn: ${DN}
+changetype: modify
+replace: location
+location: ${CLASSE}
+EOF
+            else
+                if [ "${LOCATION}" != "${CLASSE}" ]
+                then
+                    echo "* 'location' est déjà positionnée pour [$CN] à [${LOCATION}], pas de changement"
+                fi
+            fi
+        fi
+    done <<< $(cat /tmp/computers)
+}
+
+function doPrepareListesDn()
+{
+     # Attention au wrap end of line !
+    (doLdbSearch -b "CN=Users,$BASEDN"     "(&(objectClass=user)(!(objectClass=group))(!(isCriticalSystemObject=TRUE))(!(cn=eole-workstation*))(!(cn=dns-*))(!(cn=gpo-*))(!(cn=eole-*)))" dn) |grep dn: >/tmp/users
+    
+    declare -a ACCOUNTS_MOVE_FORBIDDEN=( "admin"
+                                         "eleves"
+                                         "professeurs"
+                                         "GpoAdmins"
+                                         "DnsAdmins"
+                                         "Guest"
+                                         "krbtgt"
+                                         "Domain Users"
+                                         "Administrator"
+                                         "Domain Admins"
+                                         "Domain Guests"
+                                         "Schema Admins"
+                                         "DnsUpdateProxy"
+                                         "Cert Publishers"
+                                         "Domain Computers"
+                                         "Enterprise Admins"
+                                         "Domain Controllers"
+                                         "RAS and IAS Servers"
+                                         "Group Policy Creator Owners"
+                                         "Read-only Domain Controllers"
+                                         "Denied RODC Password Replication Group"
+                                         "Allowed RODC Password Replication Group"
+                                         "Enterprise Read-only Domain Controllers"
+                                       )
+    # enleve les comptes protégés
+    for CN in "${ACCOUNTS_MOVE_FORBIDDEN[@]}"
+    do
+        DN="${CN},CN=Users,$BASEDN"
+        doRemoveDNFromUsers "$DN" 
+    done
+
+    # enleve les groupes
+    (doLdbSearch -b "CN=Users,$BASEDN"     "(&(objectClass=group)(!(isCriticalSystemObject=TRUE))" dn) |grep dn: >/tmp/groups
+    # shellcheck disable=SC2046
+    while read -r DN_DN
+    do
+        DN=${DN_DN#* }
+        doRemoveDNFromUsers "$DN" 
+    done <<< $(cat /tmp/groups)
+
+    NB=$(wc -l </tmp/users)
+    if [ "$NB" -gt 1 ]
+    then
+        echo "* Utilisateurs à classer"
+        cat /tmp/users
+    else
+        echo "* Aucun utilisateur à classer"
+    fi
+
+    (doLdbSearch -b "CN=Computers,$BASEDN" "(&(objectClass=computer)(!(isCriticalSystemObject=TRUE)))" dn) |grep dn: >/tmp/computers
+    NB=$(wc -l </tmp/computers)
+    if [ "$NB" -gt 1 ]
+    then
+        echo "* Ordinateurs à classer"
+        cat /tmp/computers
+    else
+        echo "* Aucun ordinateur à classer"
+    fi
+}
+
+function doClassifierOU()
+{
+    local OU="${1}"
+    local OU_DESTINATION="OU=${OU//\//,OU=},$BASEDN"
+    local CLASSIFIER="$2"
+    local PATTERN="$3"
+    local GROUP="$4"
+
+    PATTERN="${PATTERN//\*/.*}"
+    echo "* Classification OU: '${OU}'"
+    case "$CLASSIFIER" in
+        aucun)
+            # ignore
+            return 0
+            ;;
+        membreDe)
+            doClassifierOUMembreDe "${OU_DESTINATION}" "$PATTERN" "$GROUP"
+            ;;
+        membreDeENT)
+            if [ "${EST_SCRIBE_AD}" == non ]
+            then
+                echo "Cette option ne peut être utilisée que sur Scribe, ignore"
+            else
+                doClassifierOUMembreDeENT "${OU_DESTINATION}" "$PATTERN" "$GROUP"
+            fi
+            ;;
+        ordinateur)
+            doClassifierOUComputers "${OU_DESTINATION}" "$PATTERN" "$GROUP"
+            ;;
+        ordinateur_par_classe)
+            doClassifierOUComputerAndClasse "${OU_DESTINATION}" "$PATTERN" "$GROUP"
+            ;;
+        *)
+            echo "CLASSIFIER '$CLASSIFIER' : inconnu pour ${OU_DESTINATION}"
+            return 1
+            ;;
+    esac
+    return 0
+}
+
+function doInstance()
+{
+    local NB_OU=${#AD_OU_NAMES[@]}
+    if [ "$NB_OU" -eq 0 ]
+    then
+        echo "* Aucune UO configurée."
+        return 0
+    fi
+
+    ( doLdbSearch '(objectclass=organizationalunit)' dn: )| grep dn: >/tmp/all_ou
+    # Pré création des OU
+    # shellcheck disable=SC2068
+    for (( i = 0; i < NB_OU; i++))
+    do
+        OU=${AD_OU_NAMES[$i]}
+        echo "* UO '$OU' "
+        doCreateOUAndParent "$OU" "$BASEDN"
+        if [ "${AD_OU_CLASSIFIERS[$i]}" == "membreDeENT" ]
+        then
+            if [ "${EST_SCRIBE_AD}" == non ]
+            then
+                echo "Cette option ne peut être utilisée que sur Scribe"
+            else
+                doCreateOUAndParentENT "$OU" "$BASEDN"
+            fi
+        fi
+    done
+    
+    if [[ "$ACTIVER_AD_OU_CLASSIFIER" == oui ]]
+    then
+        doPrepareListesDn
+        # la configuration de UO doit est saisie dans l'ordre de l'arbre 
+        # l'analyse se fait donc dans l'ordre inverse. on teste les feuilles avant de remonter les branches.
+        for (( i = NB_OU; i > 0; ))
+        do
+            i=$(( i - 1))
+            doClassifierOU "${AD_OU_NAMES[$i]}" \
+                           "${AD_OU_CLASSIFIERS[$i]}" \
+                           "${AD_OU_PATTERN[$i]}" \
+                           "${AD_OU_GROUP[$i]}"
+        done
+    fi
+}
+
+function doResetOU()
+{
+    local OU="${1}"
+    local ORIGINE="OU=${OU//\//,OU=},$BASEDN"
+
+    echo "Reset UO : '$ORIGINE'"
+    # shellcheck disable=SC2046
+    while read -r DN
+    do
+        if [[ "${DN}" =~ .*"is empty" ]]
+        then
+            continue
+        fi
+        if [[ -z "${DN}" ]]
+        then
+            continue
+        fi
+        if [[ "${DN}" =~ ^OU=.* ]]
+        then
+            echo "    $DN ignore les sous OU"
+            continue
+        fi
+        echo "    $DN"
+        CN_EGAL_NAME=${DN%%,*}
+        CN=${CN_EGAL_NAME#*=}
+
+        if ! doSambaTool computer move "${CN}" "CN=Computers,$BASEDN" 2>/dev/null 
+        then
+            doSambaTool user move "${CN}" "CN=Users,$BASEDN" 2>/dev/null
+        fi
+    done <<< $(doSambaTool ou listobjects "$ORIGINE" --full-dn --recursive)
+}
+
+function doReset()
+{
+    local NB_OU=${#AD_OU_NAMES[@]}
+    # la configuration de UO doit est saisie dans l'ordre de l'arbre 
+    # l'analyse se fait donc dans l'ordre inverse. on teste les feuilles avant de remonter les branches.
+    for (( i = NB_OU; i > 0; ))
+    do
+        i=$(( i - 1))
+        doResetOU "${AD_OU_NAMES[$i]}"
+    done
+    doSambaTool ou listobjects "CN=Users,$BASEDN" --full-dn
+    doSambaTool ou listobjects "CN=Computers,$BASEDN" --full-dn
+}
+
+function doMain()
+{
+    COMMANDE_A_EXECUTER=${1:-reconfigure}
+    ACTIVER_AD_OU=$(CreoleGet activer_ad_ou)
+    if [ "$ACTIVER_AD_OU" != "oui" ]
+    then
+        echo "Pas de gestion d'UO dans genconfig"
+        exit 0
+    fi
+    
+    echo "Gestion Arborescence d'UO"
+    
+    if [ -d /var/lib/lxc/addc/rootfs ]
+    then
+        # cas ScribeAD
+        CONTAINER_ROOTFS="/var/lib/lxc/addc/rootfs"
+        EST_SCRIBE_AD=oui
+    else
+        CONTAINER_ROOTFS=""
+        EST_SCRIBE_AD=non
+    fi
+    #shellcheck disable=SC1091,SC1090
+    . "$CONTAINER_ROOTFS/etc/eole/samba4-vars.conf"
+    
+    if [ "${AD_SERVER_ROLE}" != "controleur de domaine" ]
+    then
+        echo "Pas de gestion d'UO sur les serveurs membres"
+        exit 0
+    fi
+    
+    if [ "${AD_ADDITIONAL_DC}" != "non" ]
+    then
+        echo "Cette commande ne doit pas être éxecutée sur les Dc Secondaires."
+        exit 0
+    fi
+    
+
+    BASEDN="DC=${AD_REALM//./,DC=}"    
+    ACTIVER_AD_OU_CLASSIFIER=$(CreoleGet activer_ad_ou_classifier)
+    
+    # dans un sous shell pour changer les options Shell localement
+    (
+        # ne pas supprimer les 2 lignes !
+        set -f
+        IFS=$'\n'
+        declare -a AD_OU_NAMES
+        declare -a AD_OU_CLASSIFIERS
+        declare -a AD_OU_PATTERN
+        declare -a AD_OU_GROUP
+    
+        mapfile -t AD_OU_NAMES < <(CreoleGet ad_ou_names)
+        mapfile -t AD_OU_CLASSIFIERS < <(CreoleGet ad_ou_classifier)
+        mapfile -t AD_OU_PATTERN < <(CreoleGet ad_ou_pattern)
+        mapfile -t AD_OU_GROUP < <(CreoleGet ad_ou_group)
+    
+        case "$COMMANDE_A_EXECUTER" in
+            instance)
+                doInstance
+                ;;
+                
+            reconfigure)
+                doInstance
+                ;;
+                
+            schedule)
+                doInstance
+                ;;
+            reset)
+                doReset
+                ;;
+            *)
+                echo "Usage: $0 <instance|reconfigure|schedule|reset>"
+                exit 1
+                ;;
+        esac
+    )
+    exit 0
+}
+
+# execute main si non sourcé
+if [[ "${BASH_SOURCE[0]}" == "$0" ]]
+then
+   doMain "$@"
+fi

@@ -1,0 +1,13 @@
+Start Context début... 
+TEMPLATE : VM_ONE=one, VM_ID=1420982, VM_OWNER=bbohard, VM_DAEMON=once, VM_MACHINE=aca.envole
+TEMPLATE : VM_VERSIONMAJEUR=2.8.1, VM_MAJAUTO=RC
+ONBOOT   : VM_METHODE=instance, VM_CONFIGURATION=AvecImport
+USER     : IP_GW=98, GW=192.168.230.98, IP_UTILISATEUR=192.168.230.204, MAIL=bbohard@cadoles.com
+FI       : IMAGE=scribe-2.8.1-amd64.fi, ISO=eole-2.8.1-amd64.iso, MODULE=scribe
+DAILY    : DATE=2024-12-10 19:00, MAJAUTO=RC
+INSTANCE : DATE=2024-12-10 21:52, METHODE=, CONFIGURATION=default
+MODELE   : VM_MODULE=scribe, VM_CONTAINER=non, VM_ETABLISSEMENT=aca
+ETH0     : NAME=academie, DHCP=non, IP=192.168.0.27, GW=192.168.0.1, DNS=192.168.0.1
+Début ciContextualizeMe
+Machine aca.envole 2.8.1 : ciContextualizeMachine: déjà réalisée à 
+Fin ciContextualizeMe

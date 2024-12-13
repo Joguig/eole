@@ -1,0 +1,197 @@
+++ CreoleGet container_path_domaine
++ . /etc/eole/samba4-vars.conf
+++ AD_REALM=domseth.ac-test.fr
+++ AD_DOMAIN=domseth
+++ AD_HOST_NAME=dc2
+++ AD_HOST_IP=192.168.0.6
+++ AD_HOST_NETMASK=255.255.255.0
+++ NOM_CARTE_NIC1=enp2s0
+++ AD_SERVER_ROLE='controleur de domaine'
+++ BASEDN=DC=domseth,DC=ac-test,DC=fr
+++ NTP_SERVERS=hestia.eole.lan
+++ AD_ADDITIONAL_DC_IP='192.168.0.5 '
+++ AD_DOMAIN_SID=
+++ AD_ADDITIONAL_DC=oui
+++ AD_DNS_BACKEND=BIND9_DLZ
+++ unset AD_SERVER_MODE
+++ AD_ADDITIONAL_DC_FORCE_SITE=non
+++ DC_SITE=Default-First-Site-Name
+++ AD_DC_SYSVOL_REF=192.168.0.5
+++ AD_DC_SYSVOL_TYPE=seth
+++ AD_ADMIN=Administrator
+++ AD_ADMIN_PASSWORD_FILE=/var/lib/samba/.eole-ad-dc
+++ AD_HOST_KEYTAB_FILE=/var/lib/samba/eole-ad-dc.keytab
+++ ACTIVER_AD_ZONES=non
+++ AD_ZONES_DEFAUT=non
+++ AD_ZONES=
+++ ACTIVER_AD_HOMES_SHARE=non
+++ ACTIVER_AD_PROFILES_SHARE=non
+++ AD_HOMES_SHARE_HOST_NAME=file
+++ AD_PROFILES_SHARE_HOST_NAME=file
+++ AD_HOME_SHARE_PATH=/home/adhomes
+++ AD_PROFILE_SHARE_PATH=/home/adprofiles
+++ AD_INSTANCE_LOCK_FILE=/var/lib/samba/.instance_ok
+++ AD_BACKEND_STORE=tdb
+++ AD_PLAINTEXT_SECRETS=non
+++ NOM_DOMAINE_MACHINE=dc2.domseth.ac-test.fr
+++ AD_SERVER_FULLNAME=domseth.ac-test.fr
+++ AD_TYPE=seth
++ '[' instance '!=' instance ']'
++ '[' oui = oui ']'
++ TIMEOUT=120
++ SLEEP_TIME=10
++ MAX_ATTEMPT=12
++ attempt=0
++ is_sync=false
++ wanted_peer=false
++ PATTERN_IPV4='(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])'
++ NTP_SERVERS_IP='192.168.0.5\n'
++ for ntp_server in $NTP_SERVERS
++ [[ hestia.eole.lan =~ ^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$ ]]
+++ dig @domseth.ac-test.fr +short hestia.eole.lan
++ ntp_server_ips=192.168.232.2
++ NTP_SERVERS_IP='192.168.0.5\n192.168.232.2\n'
++ false
+++ ntpq -c as
+++ sed -e 1,2d -e 's/\s\+/ /g' -e 's/^\s\+//'
+++ cut -f2 -d ' '
++ read -r assid
+++ ntpq -n -c 'rv =========================================================== srcadr'
+Invalid associd literal.
++ sync_data=
++ srcadr=
+++ echo -e '192.168.0.5\n192.168.232.2\n'
++ read -r ntp_server_ip
++ '[' '' == 192.168.0.5 ']'
++ read -r ntp_server_ip
++ '[' '' == 192.168.232.2 ']'
++ read -r ntp_server_ip
++ false
++ read -r assid
+++ ntpq -n -c 'rv 17767 srcadr'
++ sync_data=srcadr=0.0.0.0
++ srcadr=0.0.0.0
+++ echo -e '192.168.0.5\n192.168.232.2\n'
++ read -r ntp_server_ip
++ '[' 0.0.0.0 == 192.168.0.5 ']'
++ read -r ntp_server_ip
++ '[' 0.0.0.0 == 192.168.232.2 ']'
++ read -r ntp_server_ip
++ false
++ read -r assid
+++ ntpq -n -c 'rv 17768 srcadr'
++ sync_data=srcadr=0.0.0.0
++ srcadr=0.0.0.0
+++ echo -e '192.168.0.5\n192.168.232.2\n'
++ read -r ntp_server_ip
++ '[' 0.0.0.0 == 192.168.0.5 ']'
++ read -r ntp_server_ip
++ '[' 0.0.0.0 == 192.168.232.2 ']'
++ read -r ntp_server_ip
++ false
++ read -r assid
+++ ntpq -n -c 'rv 17769 srcadr'
++ sync_data=srcadr=0.0.0.0
++ srcadr=0.0.0.0
+++ echo -e '192.168.0.5\n192.168.232.2\n'
++ read -r ntp_server_ip
++ '[' 0.0.0.0 == 192.168.0.5 ']'
++ read -r ntp_server_ip
++ '[' 0.0.0.0 == 192.168.232.2 ']'
++ read -r ntp_server_ip
++ false
++ read -r assid
+++ ntpq -n -c 'rv 17770 srcadr'
++ sync_data=srcadr=0.0.0.0
++ srcadr=0.0.0.0
+++ echo -e '192.168.0.5\n192.168.232.2\n'
++ read -r ntp_server_ip
++ '[' 0.0.0.0 == 192.168.0.5 ']'
++ read -r ntp_server_ip
++ '[' 0.0.0.0 == 192.168.232.2 ']'
++ read -r ntp_server_ip
++ false
++ read -r assid
+++ ntpq -n -c 'rv 17771 srcadr'
++ sync_data=srcadr=185.125.190.56
++ srcadr=185.125.190.56
+++ echo -e '192.168.0.5\n192.168.232.2\n'
++ read -r ntp_server_ip
++ '[' 185.125.190.56 == 192.168.0.5 ']'
++ read -r ntp_server_ip
++ '[' 185.125.190.56 == 192.168.232.2 ']'
++ read -r ntp_server_ip
++ false
++ read -r assid
+++ ntpq -n -c 'rv 17773 srcadr'
++ sync_data=srcadr=94.23.21.189
++ srcadr=94.23.21.189
+++ echo -e '192.168.0.5\n192.168.232.2\n'
++ read -r ntp_server_ip
++ '[' 94.23.21.189 == 192.168.0.5 ']'
++ read -r ntp_server_ip
++ '[' 94.23.21.189 == 192.168.232.2 ']'
++ read -r ntp_server_ip
++ false
++ read -r assid
+++ ntpq -n -c 'rv 17776 srcadr'
++ sync_data=srcadr=149.202.2.105
++ srcadr=149.202.2.105
+++ echo -e '192.168.0.5\n192.168.232.2\n'
++ read -r ntp_server_ip
++ '[' 149.202.2.105 == 192.168.0.5 ']'
++ read -r ntp_server_ip
++ '[' 149.202.2.105 == 192.168.232.2 ']'
++ read -r ntp_server_ip
++ false
++ read -r assid
+++ ntpq -n -c 'rv 17778 srcadr'
++ sync_data=srcadr=95.81.173.155
++ srcadr=95.81.173.155
+++ echo -e '192.168.0.5\n192.168.232.2\n'
++ read -r ntp_server_ip
++ '[' 95.81.173.155 == 192.168.0.5 ']'
++ read -r ntp_server_ip
++ '[' 95.81.173.155 == 192.168.232.2 ']'
++ read -r ntp_server_ip
++ false
++ read -r assid
+++ ntpq -n -c 'rv 17779 srcadr'
++ sync_data=srcadr=162.159.200.123
++ srcadr=162.159.200.123
+++ echo -e '192.168.0.5\n192.168.232.2\n'
++ read -r ntp_server_ip
++ '[' 162.159.200.123 == 192.168.0.5 ']'
++ read -r ntp_server_ip
++ '[' 162.159.200.123 == 192.168.232.2 ']'
++ read -r ntp_server_ip
++ false
++ read -r assid
+++ ntpq -n -c 'rv 17780 srcadr'
++ sync_data=srcadr=51.15.182.163
++ srcadr=51.15.182.163
+++ echo -e '192.168.0.5\n192.168.232.2\n'
++ read -r ntp_server_ip
++ '[' 51.15.182.163 == 192.168.0.5 ']'
++ read -r ntp_server_ip
++ '[' 51.15.182.163 == 192.168.232.2 ']'
++ read -r ntp_server_ip
++ false
++ read -r assid
+++ ntpq -n -c 'rv 17781 srcadr'
++ sync_data=srcadr=51.195.104.188
++ srcadr=51.195.104.188
+++ echo -e '192.168.0.5\n192.168.232.2\n'
++ read -r ntp_server_ip
++ '[' 51.195.104.188 == 192.168.0.5 ']'
++ read -r ntp_server_ip
++ '[' 51.195.104.188 == 192.168.232.2 ']'
++ read -r ntp_server_ip
++ false
++ read -r assid
++ false
++ '[' 0 -lt 12 ']'
++ '[' 0 -eq 0 ']'
++ echo -n 'En attente de synchronisation '
+En attente de synchronisation + attempt=1
++ sleep 10

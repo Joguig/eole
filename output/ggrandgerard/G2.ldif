@@ -1,0 +1,31 @@
+# record 1
+dn: CN=G2,OU=ETAB2,DC=ac-test,DC=fr
+objectClass: top
+objectClass: group
+cn: G2
+instanceType: 4
+whenCreated: 20170926142026.0Z
+whenChanged: 20170926142026.0Z
+uSNCreated: 4089
+uSNChanged: 4089
+name: G2
+objectGUID: 62d8e952-2fc5-4bc3-90b8-5975dc34911d
+objectSid: S-1-5-21-3455065370-3996089814-4257709216-1186
+sAMAccountName: G2
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=ac-test,DC=fr
+distinguishedName: CN=G2,OU=ETAB2,DC=ac-test,DC=fr
+
+# Referral
+ref: ldap://ac-test.fr/CN=Configuration,DC=ac-test,DC=fr
+
+# Referral
+ref: ldap://ac-test.fr/DC=DomainDnsZones,DC=ac-test,DC=fr
+
+# Referral
+ref: ldap://ac-test.fr/DC=ForestDnsZones,DC=ac-test,DC=fr
+
+# returned 4 records
+# 1 entries
+# 3 referrals

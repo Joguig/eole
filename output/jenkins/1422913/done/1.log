@@ -1,0 +1,149 @@
+Machine daily 2.7.2 : ciUpdateDaily BUILD_DAILY
+Machine daily 2.7.2 : 'proposed-update' déjà actif!
+Machine daily 2.7.2 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.7.2 : liste des noyaux
+-rw------- 1 root root 8474280 mai   23  2023 /boot/vmlinuz-4.15.0-212-generic
+-rw------- 1 root root 8470184 juin  17  2023 /boot/vmlinuz-4.15.0-213-generic
+Machine daily 2.7.2 : * espaces disponibles
+Sys. de fichiers            Type Taille Utilisé Dispo Uti% Monté sur
+/dev/mapper/zephir--vg-root ext4   9,8G    2,8G  6,5G  30% /
+/dev/mapper/zephir--vg-home ext4   964M     54k  937M   1% /home
+/dev/mapper/zephir--vg-var  ext4   2,0G    765M  1,1G  42% /var
+/dev/sda1                   ext4   719M    127M  540M  19% /boot
+/dev/mapper/zephir--vg-tmp  ext4   2,0G     74k  1,9G   1% /tmp
+Machine daily 2.7.2 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.7.2 : dpkg --configure -a
+Machine daily 2.7.2 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+Machine daily 2.7.2 : ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 2.7.2 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 2.7.2 : Maj-Auto RC
+*********************************************
+Machine daily 2.7.2 : (py3) ciMonitor maj_auto
+
+monitor_maj_auto: pas de config.eol, donc utilise '-i' !
+
+MONITOR: Maj-Auto  -i -S test-eole.ac-dijon.fr -V test-eole.ac-dijon.fr  -C
+Mise à jour le vendredi 13 décembre 2024 19:26:48
+*** zephir 2.7.2 ***
+
+[33mMaj-Auto - (VERSION CANDIDATE) - Augmenter le niveau de mise à jour est irréversible.[0m
+Voulez-vous continuer ? [oui/non]
+[non] : 
+MONITOR: maj_auto_241a action:oui
+oui
+Configuration du dépôt Ubuntu avec la source eole.ac-dijon.fr
+Configuration du dépôt EOLE avec la source test-eole.ac-dijon.fr
+Action update pour root                                                   [|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]   
+Action list-upgrade pour root
+0 nouveau, 5 mis à jour, 0 à enlever
+Paquets à mettre à jour : 
+    zephir-backend (2.7.2-66) (root)
+    zephir-common (2.7.2-66) (root)
+    zephir-dictionnaires (2.7.2-66) (root)
+    zephir-parc (2.7.2-66) (root)
+    zephir-web (2.7.2-66) (root)
+Action download-upgrade pour root
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+Les paquets suivants seront mis à jour :
+  zephir-backend zephir-common zephir-dictionnaires zephir-parc zephir-web
+5 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Il est nécessaire de prendre 2 117 ko dans les archives.
+Après cette opération, 5 120 o d'espace disque supplémentaires seront utilisés.
+Réception de :1 http://test-eole.ac-dijon.fr/eole eole-2.7.2-updates/main amd64 zephir-dictionnaires all 2.7.2-66 [251 kB]
+Réception de :2 http://test-eole.ac-dijon.fr/eole eole-2.7.2-updates/main amd64 zephir-common all 2.7.2-66 [66,5 kB]
+Réception de :3 http://test-eole.ac-dijon.fr/eole eole-2.7.2-updates/main amd64 zephir-backend all 2.7.2-66 [144 kB]
+Réception de :4 http://test-eole.ac-dijon.fr/eole eole-2.7.2-updates/main amd64 zephir-web all 2.7.2-66 [1 626 kB]
+Réception de :5 http://test-eole.ac-dijon.fr/eole eole-2.7.2-updates/main amd64 zephir-parc all 2.7.2-66 [28,9 kB]
+2 117 ko réceptionnés en 0s (31,6 Mo/s)
+Téléchargement achevé et dans le mode téléchargement uniquement
+Action dist-upgrade pour root
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+Les paquets suivants seront mis à jour :
+  zephir-backend zephir-common zephir-dictionnaires zephir-parc zephir-web
+5 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Il est nécessaire de prendre 0 o/2 117 ko dans les archives.
+Après cette opération, 5 120 o d'espace disque supplémentaires seront utilisés.
+(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 145709 fichiers et répertoires déjà installés.)
+Préparation du dépaquetage de .../zephir-dictionnaires_2.7.2-66_all.deb ...
+Dépaquetage de zephir-dictionnaires (2.7.2-66) sur (2.7.2-65) ...
+Préparation du dépaquetage de .../zephir-common_2.7.2-66_all.deb ...
+Dépaquetage de zephir-common (2.7.2-66) sur (2.7.2-65) ...
+Préparation du dépaquetage de .../zephir-backend_2.7.2-66_all.deb ...
+Dépaquetage de zephir-backend (2.7.2-66) sur (2.7.2-65) ...
+Préparation du dépaquetage de .../zephir-web_2.7.2-66_all.deb ...
+Dépaquetage de zephir-web (2.7.2-66) sur (2.7.2-65) ...
+Préparation du dépaquetage de .../zephir-parc_2.7.2-66_all.deb ...
+Dépaquetage de zephir-parc (2.7.2-66) sur (2.7.2-65) ...
+Paramétrage de zephir-dictionnaires (2.7.2-66) ...
+Paramétrage de zephir-common (2.7.2-66) ...
+Traitement des actions différées (« triggers ») pour python-twisted-core (17.9.0-2ubuntu0.3) ...
+Paramétrage de zephir-backend (2.7.2-66) ...
+Paramétrage de zephir-web (2.7.2-66) ...
+Paramétrage de zephir-parc (2.7.2-66) ...
+Mise à jour OK
+[33mMaj-Auto - Un ou plusieurs paquets ont été mis à jour, utilisez la commande [reconfigure] pour que les modifications soient prises en compte.[0m
+Machine daily 2.7.2 : ciMonitor python3 ==> RESULT=0
+--------------------------------------------
+cat /etc/apt/sources.list
+
+# Ubuntu
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu bionic main universe multiverse restricted
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu bionic-security main universe multiverse restricted
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu bionic-updates main universe multiverse restricted
+
+# EOLE
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.7.2 main cloud
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.7.2-security main cloud
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.7.2-updates main cloud
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.7.2-proposed-updates main cloud
+
+
+--------------------------------------------
+--------------------------------------------
+cat /etc/apt/sources.list.d/additional.list
+#template genere par Maj-Auto
+#
+--------------------------------------------
+--------------------------------------------
+cat /etc/apt/sources.list.d/ubuntu-proposed.list
+deb http://test-eole.ac-dijon.fr/ubuntu bionic-proposed main universe multiverse restricted
+--------------------------------------------
+Machine daily 2.7.2 : GenConteneur
+*********************************************
+* Pas de conteneurs pour ce module.
+*********************************************
+Machine daily 2.7.2 : Pas de fichier startup '/mnt/eole-ci-tests/module/UpdateDaily-zephir.sh' 
+Machine daily 2.7.2 : Test CVE Noyau
+0
+Machine daily 2.7.2 : autoremove pour les anciens noyaux
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+/usr/bin/updatedb
+Machine daily 2.7.2 : * Execute updatedb
+/usr/bin/shellcheck
+Machine daily 2.7.2 : Tag l'Image Daily
+DAILY_CONTAINER=non
+DAILY_DATEUPDATE=1734114450
+DAILY_DATE='2024-12-13 19:27'
+DAILY_MAJAUTO=RC
+Machine daily 2.7.2 : Check Update Service
+/etc/systemd/system/EoleCiTestsContext.service A JOUR
+CheckUpdateService.sh: systemctl enable 'EoleCiTestsContext.service'
+Removed /etc/systemd/system/network.target.wants/EoleCiTestsContext.service.
+Created symlink /etc/systemd/system/network.target.wants/EoleCiTestsContext.service → /etc/systemd/system/EoleCiTestsContext.service.
+CheckUpdateService.sh: systemctl daemon-reload
+/etc/systemd/system/EoleCiTestsDaemon.service A JOUR
+CheckUpdateService.sh: systemctl enable 'EoleCiTestsDaemon.service'
+Removed /etc/systemd/system/multi-user.target.wants/EoleCiTestsDaemon.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/EoleCiTestsDaemon.service → /etc/systemd/system/EoleCiTestsDaemon.service.
+CheckUpdateService.sh: systemctl daemon-reload
+Machine daily 2.7.2 : Trim disk
+Machine daily 2.7.2 : ciUpdateDaily RC : OK

@@ -1,0 +1,26 @@
+Machine daily 2.10.0 : ciUpdateDaily BUILD_DAILY
+Machine daily 2.10.0 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.10.0 : liste des noyaux
+-rw------- 1 root root 14956936 nov.   1 11:41 /boot/vmlinuz-6.8.0-49-generic
+-rw------- 1 root root 14973320 nov.   9 16:00 /boot/vmlinuz-6.8.0-50-generic
+Machine daily 2.10.0 : * espaces disponibles
+Sys. de fichiers            Type     Taille Utilisé Dispo Uti% Monté sur
+efivarfs                    efivarfs    58k     17k   36k  33% /sys/firmware/efi/efivars
+/dev/mapper/zephir--vg-root ext4        11G    3,8G  6,2G  38% /
+/dev/mapper/zephir--vg-home ext4       2,1G     58k  2,1G   1% /home
+/dev/mapper/zephir--vg-var  ext4       4,2G    626M  3,3G  16% /var
+/dev/sda3                   ext4       756M    205M  496M  30% /boot
+/dev/sda1                   vfat        67M    6,4M   60M  10% /boot/efi
+Machine daily 2.10.0 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.10.0 : dpkg --configure -a
+Machine daily 2.10.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+Machine daily 2.10.0 : ciWaitTestHttp (1/2): wait..
+Machine daily 2.10.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+Machine daily 2.10.0 : ciWaitTestHttp (2/2): wait..
+Machine daily 2.10.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+--2024-12-13 18:30:39--  http://ftp.crihan.fr/ubuntu/dists
+Résolution de ftp.crihan.fr (ftp.crihan.fr)… 195.221.21.36, 2001:660:7401:211::36
+Connexion à ftp.crihan.fr (ftp.crihan.fr)|195.221.21.36|:80… échec : Connexion terminée par expiration du délai d'attente.
+Connexion à ftp.crihan.fr (ftp.crihan.fr)|2001:660:7401:211::36|:80… échec : Le réseau n'est pas accessible.
+EOLE_CI_PATH ciDignoseNetwork.log
+ERREUR: ciWaitTestHttp http://ftp.crihan.fr/ubuntu/dists : timeout, service non disponible, STOP ! 2024-12-13 18:31:43

@@ -1,0 +1,10 @@
+* Verification 'salt.domscribe.ac-test.fr' : 192.168.0.26
+* Vérification résolution 'salt'           : 192.168.0.30
+* Vérification du Forward vers les DC      : 192.168.0.30
+PING domscribe.ac-test.fr (192.168.0.30) 56(84) bytes of data.
+64 bytes from salt.ac-test.fr (192.168.0.30): icmp_seq=1 ttl=64 time=0.238 ms
+
+--- domscribe.ac-test.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.238/0.238/0.238/0.000 ms
+dnsmasq ok, pas de reload

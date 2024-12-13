@@ -1,0 +1,322 @@
+total 144
+-rwxrwxrwx   1 pcadmin root   1011 déc.  13 20:26 config.js
+drwxrwxrwx   2 pcadmin root   4096 déc.  13 20:26 helpers
+drwxrwxrwx 258 pcadmin root  12288 déc.  13 20:26 node_modules
+-rwxrwxrwx   1 pcadmin root    589 déc.  13 20:26 package.json
+-rwxrwxrwx   1 pcadmin root 112524 déc.  13 20:26 package-lock.json
+-rwxrwxrwx   1 pcadmin root    426 déc.  13 20:26 README.md
+drwxrwxrwx   3 pcadmin root   4096 déc.  13 20:26 test
+* Run test
+1..22
+ok 1 EAD3 should be activated
+Fri, 13 Dec 2024 19:27:39 GMT nightmare queuing process start
+Fri, 13 Dec 2024 19:27:39 GMT nightmare queueing action "viewport"
+Fri, 13 Dec 2024 19:27:39 GMT nightmare queueing action "goto" for https://eolebase.ac-test.fr/ead/
+Fri, 13 Dec 2024 19:27:39 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:27:39 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:27:39 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:27:39 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:27:39 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:27:39 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:27:39 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:27:39 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:27:39 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:27:39 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:27:39 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:27:39 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:27:39 GMT nightmare queueing action "evaluate"
+Fri, 13 Dec 2024 19:27:39 GMT nightmare running
+Fri, 13 Dec 2024 19:27:39 GMT electron:stderr [3857:1213/202739.939891:WARNING:browser_main_loop.cc(258)] Gtk: cannot open display: :1
+Fri, 13 Dec 2024 19:27:39 GMT nightmare electron child process exited with code 1: general error - you may need xvfb
+not ok 2 common:actions:majlist should generate the packages list and show it
+  Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+      at Timeout.<anonymous> (/home/pcadmin/Bureau/ewt-tests/node_modules/mocha/lib/runnable.js:232:19)
+      at listOnTimeout (node:internal/timers:581:17)
+      at process.processTimers (node:internal/timers:519:7)
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queuing process start
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "viewport"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "goto" for https://eolebase.ac-test.fr/ead/
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "enterIFrame"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:28:41 GMT nightmare running
+Fri, 13 Dec 2024 19:28:41 GMT electron:stderr [4247:1213/202841.465346:WARNING:browser_main_loop.cc(258)] Gtk: cannot open display: :1
+Fri, 13 Dec 2024 19:28:41 GMT nightmare electron child process exited with code 1: general error - you may need xvfb
+not ok 3 common:actions:majonce should start an update now (update + reconf)
+  Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+      at Timeout.<anonymous> (/home/pcadmin/Bureau/ewt-tests/node_modules/mocha/lib/runnable.js:232:19)
+      at listOnTimeout (node:internal/timers:581:17)
+      at process.processTimers (node:internal/timers:519:7)
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queuing process start
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "viewport"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "goto" for https://eolebase.ac-test.fr/ead/
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "enterIFrame"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:29:42 GMT nightmare running
+Fri, 13 Dec 2024 19:29:42 GMT electron:stderr [4250:1213/202942.462789:WARNING:browser_main_loop.cc(258)] Gtk: cannot open display: :1
+Fri, 13 Dec 2024 19:29:42 GMT nightmare electron child process exited with code 1: general error - you may need xvfb
+not ok 4 common:actions:majonce should schedule an update for the next night
+  Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+      at Timeout.<anonymous> (/home/pcadmin/Bureau/ewt-tests/node_modules/mocha/lib/runnable.js:232:19)
+      at listOnTimeout (node:internal/timers:581:17)
+      at process.processTimers (node:internal/timers:519:7)
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queuing process start
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "viewport"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "goto" for https://eolebase.ac-test.fr/ead/
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "enterIFrame"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:30:43 GMT nightmare running
+Fri, 13 Dec 2024 19:30:43 GMT electron:stderr [4255:1213/203043.281336:WARNING:browser_main_loop.cc(258)] Gtk: cannot open display: :1
+Fri, 13 Dec 2024 19:30:43 GMT nightmare electron child process exited with code 1: general error - you may need xvfb
+not ok 5 common:actions:majonce should schedule an update for a specified date (update)
+  Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+      at Timeout.<anonymous> (/home/pcadmin/Bureau/ewt-tests/node_modules/mocha/lib/runnable.js:232:19)
+      at listOnTimeout (node:internal/timers:581:17)
+      at process.processTimers (node:internal/timers:519:7)
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queuing process start
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "viewport"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "goto" for https://eolebase.ac-test.fr/ead/
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "enterIFrame"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:31:44 GMT nightmare running
+Fri, 13 Dec 2024 19:31:44 GMT electron:stderr [4258:1213/203144.065281:WARNING:browser_main_loop.cc(258)] Gtk: cannot open display: :1
+Fri, 13 Dec 2024 19:31:44 GMT nightmare electron child process exited with code 1: general error - you may need xvfb
+not ok 6 common:actions:majonce should schedule an update for a specified date (update + reconf)
+  Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+      at Timeout.<anonymous> (/home/pcadmin/Bureau/ewt-tests/node_modules/mocha/lib/runnable.js:232:19)
+      at listOnTimeout (node:internal/timers:581:17)
+      at process.processTimers (node:internal/timers:519:7)
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queuing process start
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "viewport"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "goto" for https://eolebase.ac-test.fr/ead/
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "enterIFrame"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:32:44 GMT nightmare running
+Fri, 13 Dec 2024 19:32:44 GMT electron:stderr [4268:1213/203244.971429:WARNING:browser_main_loop.cc(258)] Gtk: cannot open display: :1
+Fri, 13 Dec 2024 19:32:44 GMT nightmare electron child process exited with code 1: general error - you may need xvfb
+not ok 7 common:actions:majonce should schedule an update for a specified date (update + reconf + reboot)
+  Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+      at Timeout.<anonymous> (/home/pcadmin/Bureau/ewt-tests/node_modules/mocha/lib/runnable.js:232:19)
+      at listOnTimeout (node:internal/timers:581:17)
+      at process.processTimers (node:internal/timers:519:7)
+Fri, 13 Dec 2024 19:33:44 GMT nightmare queuing process start
+Fri, 13 Dec 2024 19:33:44 GMT nightmare queueing action "viewport"
+Fri, 13 Dec 2024 19:33:44 GMT nightmare queueing action "goto" for https://eolebase.ac-test.fr/ead/
+Fri, 13 Dec 2024 19:33:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:33:44 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:33:44 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:33:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:33:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:33:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:33:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:33:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:33:44 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:33:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:33:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:33:44 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:33:44 GMT nightmare queueing action "evaluate"
+Fri, 13 Dec 2024 19:33:44 GMT nightmare running
+Fri, 13 Dec 2024 19:33:45 GMT electron:stderr [4272:1213/203345.024530:WARNING:browser_main_loop.cc(258)] Gtk: cannot open display: :1
+Fri, 13 Dec 2024 19:33:45 GMT nightmare electron child process exited with code 1: general error - you may need xvfb
+not ok 8 common:actions:majreport should show the update report page
+  Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+      at Timeout.<anonymous> (/home/pcadmin/Bureau/ewt-tests/node_modules/mocha/lib/runnable.js:232:19)
+      at listOnTimeout (node:internal/timers:581:17)
+      at process.processTimers (node:internal/timers:519:7)
+Fri, 13 Dec 2024 19:34:45 GMT nightmare queuing process start
+Fri, 13 Dec 2024 19:34:45 GMT nightmare queueing action "goto" for https://eolebase.ac-test.fr/ead/
+Fri, 13 Dec 2024 19:34:45 GMT nightmare queueing action "evaluate"
+Fri, 13 Dec 2024 19:34:45 GMT nightmare running
+Fri, 13 Dec 2024 19:34:45 GMT electron:stderr [4275:1213/203445.055651:WARNING:browser_main_loop.cc(258)] Gtk: cannot open display: :1
+Fri, 13 Dec 2024 19:34:45 GMT nightmare electron child process exited with code 1: general error - you may need xvfb
+not ok 9 common:ead should be possible to access the web interface of EAD
+  Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+      at Timeout.<anonymous> (/home/pcadmin/Bureau/ewt-tests/node_modules/mocha/lib/runnable.js:232:19)
+      at listOnTimeout (node:internal/timers:581:17)
+      at process.processTimers (node:internal/timers:519:7)
+Fri, 13 Dec 2024 19:35:45 GMT nightmare queuing process start
+Fri, 13 Dec 2024 19:35:45 GMT nightmare queueing action "goto" for http://eolebase.ac-test.fr/ead/
+Fri, 13 Dec 2024 19:35:45 GMT nightmare queueing action "evaluate"
+Fri, 13 Dec 2024 19:35:45 GMT nightmare running
+Fri, 13 Dec 2024 19:35:45 GMT electron:stderr [4279:1213/203545.132718:WARNING:browser_main_loop.cc(258)] Gtk: cannot open display: :1
+Fri, 13 Dec 2024 19:35:45 GMT nightmare electron child process exited with code 1: general error - you may need xvfb
+not ok 10 common:ead should be not possible to access the web interface of EAD with a http protocol
+  Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+      at Timeout.<anonymous> (/home/pcadmin/Bureau/ewt-tests/node_modules/mocha/lib/runnable.js:232:19)
+      at listOnTimeout (node:internal/timers:581:17)
+      at process.processTimers (node:internal/timers:519:7)
+Fri, 13 Dec 2024 19:36:45 GMT nightmare queuing process start
+Fri, 13 Dec 2024 19:36:45 GMT nightmare queueing action "viewport"
+Fri, 13 Dec 2024 19:36:45 GMT nightmare queueing action "goto" for https://eolebase.ac-test.fr/ead/
+Fri, 13 Dec 2024 19:36:45 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:36:45 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:36:45 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:36:45 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:36:45 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:36:45 GMT nightmare queueing action "evaluate"
+Fri, 13 Dec 2024 19:36:45 GMT nightmare running
+Fri, 13 Dec 2024 19:36:45 GMT electron:stderr [4282:1213/203645.181510:WARNING:browser_main_loop.cc(258)] Gtk: cannot open display: :1
+Fri, 13 Dec 2024 19:36:45 GMT nightmare electron child process exited with code 1: general error - you may need xvfb
+not ok 11 common:ead should be possible to login with true login and password
+  Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+      at Timeout.<anonymous> (/home/pcadmin/Bureau/ewt-tests/node_modules/mocha/lib/runnable.js:232:19)
+      at listOnTimeout (node:internal/timers:581:17)
+      at process.processTimers (node:internal/timers:519:7)
+Fri, 13 Dec 2024 19:37:45 GMT nightmare queuing process start
+Fri, 13 Dec 2024 19:37:45 GMT nightmare queueing action "viewport"
+Fri, 13 Dec 2024 19:37:45 GMT nightmare queueing action "goto" for https://eolebase.ac-test.fr/ead/
+Fri, 13 Dec 2024 19:37:45 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:37:45 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:37:45 GMT nightmare queueing action "type"
+Fri, 13 Dec 2024 19:37:45 GMT nightmare queueing action "click"
+Fri, 13 Dec 2024 19:37:45 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:37:45 GMT nightmare queueing action "wait"
+Fri, 13 Dec 2024 19:37:45 GMT nightmare queueing action "evaluate"
+Fri, 13 Dec 2024 19:37:45 GMT nightmare running
+Fri, 13 Dec 2024 19:37:45 GMT electron:stderr [4295:1213/203745.262075:WARNING:browser_main_loop.cc(258)] Gtk: cannot open display: :1
+Fri, 13 Dec 2024 19:37:45 GMT nightmare electron child process exited with code 1: general error - you may need xvfb
+not ok 12 common:ead should be not possible to login with a wrong login

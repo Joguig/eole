@@ -1,0 +1,148 @@
+    PID ---User--- ----------CGroup------------ COMMAND
+      2 root       -                            [kthreadd]
+      3 root       -                             \_ [rcu_gp]
+      4 root       -                             \_ [rcu_par_gp]
+      5 root       -                             \_ [kworker/0:0-events]
+      6 root       -                             \_ [kworker/0:0H-kblockd]
+      7 root       -                             \_ [kworker/u8:0-events_power_efficient]
+      8 root       -                             \_ [mm_percpu_wq]
+      9 root       -                             \_ [ksoftirqd/0]
+     10 root       -                             \_ [rcu_sched]
+     11 root       -                             \_ [migration/0]
+     12 root       -                             \_ [idle_inject/0]
+     13 root       -                             \_ [kworker/0:1-memcg_kmem_cache]
+     14 root       -                             \_ [cpuhp/0]
+     15 root       -                             \_ [cpuhp/1]
+     16 root       -                             \_ [idle_inject/1]
+     17 root       -                             \_ [migration/1]
+     18 root       -                             \_ [ksoftirqd/1]
+     19 root       -                             \_ [kworker/1:0-events]
+     20 root       -                             \_ [kworker/1:0H-kblockd]
+     21 root       -                             \_ [cpuhp/2]
+     22 root       -                             \_ [idle_inject/2]
+     23 root       -                             \_ [migration/2]
+     24 root       -                             \_ [ksoftirqd/2]
+     25 root       -                             \_ [kworker/2:0-mm_percpu_wq]
+     26 root       -                             \_ [kworker/2:0H-kblockd]
+     27 root       -                             \_ [cpuhp/3]
+     28 root       -                             \_ [idle_inject/3]
+     29 root       -                             \_ [migration/3]
+     30 root       -                             \_ [ksoftirqd/3]
+     31 root       -                             \_ [kworker/3:0-events]
+     32 root       -                             \_ [kworker/3:0H-kblockd]
+     33 root       -                             \_ [kdevtmpfs]
+     34 root       -                             \_ [netns]
+     35 root       -                             \_ [rcu_tasks_kthre]
+     36 root       -                             \_ [kauditd]
+     37 root       -                             \_ [khungtaskd]
+     38 root       -                             \_ [oom_reaper]
+     39 root       -                             \_ [writeback]
+     40 root       -                             \_ [kcompactd0]
+     41 root       -                             \_ [ksmd]
+     42 root       -                             \_ [khugepaged]
+     48 root       -                             \_ [kworker/3:1-events]
+     89 root       -                             \_ [kintegrityd]
+     90 root       -                             \_ [kblockd]
+     91 root       -                             \_ [blkcg_punt_bio]
+     92 root       -                             \_ [tpm_dev_wq]
+     93 root       -                             \_ [ata_sff]
+     94 root       -                             \_ [md]
+     95 root       -                             \_ [edac-poller]
+     96 root       -                             \_ [devfreq_wq]
+     97 root       -                             \_ [watchdogd]
+     98 root       -                             \_ [kworker/u8:1-events_power_efficient]
+    100 root       -                             \_ [kswapd0]
+    101 root       -                             \_ [ecryptfs-kthrea]
+    103 root       -                             \_ [kthrotld]
+    104 root       -                             \_ [acpi_thermal_pm]
+    105 root       -                             \_ [scsi_eh_0]
+    106 root       -                             \_ [scsi_tmf_0]
+    107 root       -                             \_ [scsi_eh_1]
+    108 root       -                             \_ [scsi_tmf_1]
+    109 root       -                             \_ [kworker/u8:2-flush-253:1]
+    110 root       -                             \_ [vfio-irqfd-clea]
+    111 root       -                             \_ [kworker/u8:3]
+    112 root       -                             \_ [ipv6_addrconf]
+    114 root       -                             \_ [kworker/1:1-events]
+    122 root       -                             \_ [kstrp]
+    125 root       -                             \_ [kworker/u9:0]
+    138 root       -                             \_ [charger_manager]
+    139 root       -                             \_ [kworker/2:1-events]
+    140 root       -                             \_ [kworker/2:2-mm_percpu_wq]
+    188 root       -                             \_ [kworker/0:2-events]
+    189 root       -                             \_ [scsi_eh_2]
+    191 root       -                             \_ [scsi_tmf_2]
+    192 root       -                             \_ [kworker/1:1H-kblockd]
+    194 root       -                             \_ [kworker/3:1H-kblockd]
+    197 root       -                             \_ [kdmflush]
+    198 root       -                             \_ [kdmflush]
+    199 root       -                             \_ [kdmflush]
+    202 root       -                             \_ [kdmflush]
+    204 root       -                             \_ [kdmflush]
+    248 root       -                             \_ [jbd2/dm-1-8]
+    249 root       -                             \_ [ext4-rsv-conver]
+    263 root       -                             \_ [kworker/3:2-events]
+    281 root       -                             \_ [kworker/0:1H-kblockd]
+    318 root       -                             \_ [kworker/1:2-events]
+    353 root       -                             \_ [cryptd]
+    404 root       -                             \_ [kworker/1:3-events]
+    419 root       -                             \_ [ttm_swap]
+    441 root       -                             \_ [kworker/2:1H-kblockd]
+    446 root       -                             \_ [jbd2/dm-4-8]
+    447 root       -                             \_ [ext4-rsv-conver]
+    448 root       -                             \_ [jbd2/dm-3-8]
+    449 root       -                             \_ [ext4-rsv-conver]
+    450 root       -                             \_ [jbd2/dm-2-8]
+    451 root       -                             \_ [jbd2/sda1-8]
+    452 root       -                             \_ [ext4-rsv-conver]
+    455 root       -                             \_ [ext4-rsv-conver]
+    467 root       -                             \_ [kworker/0:3-events]
+    471 root       -                             \_ [nfit]
+    478 root       -                             \_ [kworker/0:4-events]
+    540 root       -                             \_ [kworker/3:3-events]
+    883 root       -                             \_ [kworker/2:3-events]
+      1 root       11:memory:/init.scope,5:pids /sbin/init
+    288 root       11:memory:/system.slice/syst /lib/systemd/systemd-journald
+    317 root       11:memory:/system.slice/syst /lib/systemd/systemd-udevd
+    501 root       11:memory:/system.slice/acco /usr/lib/accountsservice/accounts-daemon
+    507 root       11:memory:/system.slice/cron /usr/sbin/cron -f
+    508 messagebus 11:memory:/system.slice/dbus /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    515 root       11:memory:/system.slice/irqb /usr/sbin/irqbalance --foreground
+    519 root       11:memory:/system.slice/netw /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+    524 root       11:memory:/system.slice/rng- /usr/sbin/rngd -r /dev/hwrng -f
+    525 syslog     11:memory:/system.slice/rsys /usr/sbin/rsyslogd -n -iNONE
+    529 root       11:memory:/system.slice/syst /lib/systemd/systemd-logind
+    531 daemon     11:memory:/system.slice/atd. /usr/sbin/atd -f
+    539 clamav     11:memory:/system.slice/clam /usr/sbin/clamd --foreground=true
+    593 root       11:memory:/system.slice/gpm. /usr/sbin/gpm -m /dev/input/mice -t exps2
+    641 systemd-n+ 11:memory:/system.slice/syst /lib/systemd/systemd-networkd
+    669 systemd-r+ 11:memory:/system.slice/syst /lib/systemd/systemd-resolved
+    842 root       11:memory:/system.slice/creo /usr/bin/python3 /usr/sbin/creoled --pidfile /run/creoled.pid
+    859 vnstat     11:memory:/system.slice/vnst /usr/sbin/vnstatd -n
+    902 root       11:memory:/system.slice/ssh. sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+    923 root       11:memory:/system.slice/ngin nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+    924 www-data   11:memory:/system.slice/ngin  \_ nginx: worker process
+    925 www-data   11:memory:/system.slice/ngin  \_ nginx: worker process
+    926 www-data   11:memory:/system.slice/ngin  \_ nginx: worker process
+    927 www-data   11:memory:/system.slice/ngin  \_ nginx: worker process
+   1007 clamav     11:memory:/system.slice/clam /usr/bin/freshclam -d --foreground=true
+   1014 root       11:memory:/system.slice/inet /usr/sbin/inetd
+   1070 root       11:memory:/system.slice/syst /sbin/agetty -o -p -- \u --noclear tty1 linux
+   1071 openldap   11:memory:/system.slice/slap /usr/sbin/slapd -h ldap:/// ldapi:/// -g openldap -u openldap -F /etc/ldap/slapd.d
+   1144 ntp        11:memory:/system.slice/ntp. /usr/sbin/ntpd -p /var/run/ntpd.pid -g -c /run/ntp.conf.dhcp -u 109:117
+   1200 mysql      11:memory:/system.slice/mysq /usr/sbin/mysqld
+   1306 Debian-ex+ 11:memory:/system.slice/exim /usr/sbin/exim4 -bd -q30m
+   1346 root       11:memory:/system.slice/Eole /bin/bash /root/.EoleCiTestsDaemon.sh
+   1458 root       11:memory:/system.slice/Eole  \_ /bin/bash /mnt/eole-ci-tests/output/jenkins/1422907/running/1.sh
+   1469 root       11:memory:/system.slice/Eole      \_ /bin/bash /mnt/eole-ci-tests/output/jenkins/1422907/running/1.sh
+   1493 root       11:memory:/system.slice/Eole          \_ python3 /mnt/eole-ci-tests/scripts/monitor3/monitor_eole_ci4.py maj_auto
+  15513 root       11:memory:/system.slice/Eole              \_ /bin/bash /mnt/eole-ci-tests/scripts/sauvegarde-fichier.sh maj_auto
+  15535 root       11:memory:/system.slice/Eole                  \_ ps xawf -eo pid,user=---User---,cgroup=----------CGroup------------,args
+  15450 root       11:memory:/system.slice/apac /usr/sbin/apache2 -k start
+  15452 www-data   11:memory:/system.slice/apac  \_ /usr/sbin/apache2 -k start
+  15453 www-data   11:memory:/system.slice/apac  \_ /usr/sbin/apache2 -k start
+  15454 www-data   11:memory:/system.slice/apac  \_ /usr/sbin/apache2 -k start
+  15455 www-data   11:memory:/system.slice/apac  \_ /usr/sbin/apache2 -k start
+  15456 www-data   11:memory:/system.slice/apac  \_ /usr/sbin/apache2 -k start
+  15473 root       11:memory:/system.slice/eole /usr/bin/python3 /usr/bin/gunicorn --pid /run/eoleflask.pid -c /etc/eole/flask/eoleflask.py eoleflask.application:run(config='eoleadmin')
+  15499 root       11:memory:/system.slice/eole  \_ /usr/bin/python3 /usr/bin/gunicorn --pid /run/eoleflask.pid -c /etc/eole/flask/eoleflask.py eoleflask.application:run(config='eoleadmin')

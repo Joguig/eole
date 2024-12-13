@@ -1,0 +1,260 @@
+Machine daily 2.10.0 : ciUpdateDaily BUILD_DAILY
+Machine daily 2.10.0 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.10.0 : liste des noyaux
+-rw------- 1 root root 14956936 nov.   1 11:41 /boot/vmlinuz-6.8.0-49-generic
+-rw------- 1 root root 14973320 nov.   9 16:00 /boot/vmlinuz-6.8.0-50-generic
+Machine daily 2.10.0 : * espaces disponibles
+Sys. de fichiers            Type     Taille Utilisé Dispo Uti% Monté sur
+efivarfs                    efivarfs    58k     17k   36k  33% /sys/firmware/efi/efivars
+/dev/mapper/sphynx--vg-root ext4        11G    3,7G  6,3G  37% /
+/dev/mapper/sphynx--vg-var  ext4       4,2G    483M  3,5G  13% /var
+/dev/mapper/sphynx--vg-home ext4       2,1G     50k  2,1G   1% /home
+/dev/sda3                   ext4       756M    205M  496M  30% /boot
+/dev/sda1                   vfat        67M    6,4M   60M  10% /boot/efi
+Machine daily 2.10.0 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.10.0 : dpkg --configure -a
+Machine daily 2.10.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+Machine daily 2.10.0 : ciWaitTestHttp (1/2): wait..
+Machine daily 2.10.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+Machine daily 2.10.0 : ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 2.10.0 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 2.10.0 : Maj-Auto DEV
+*********************************************
+Machine daily 2.10.0 : (py3) ciMonitor maj_auto
+
+monitor_maj_auto: pas de config.eol, donc utilise '-i' !
+
+MONITOR: Maj-Auto  -i -S test-eole.ac-dijon.fr -V test-eole.ac-dijon.fr  -D
+Mise à jour le jeudi 12 décembre 2024 18:03:51
+Exécution des scripts /usr/share/eole/majauto_pre
+run-parts: executing /usr/share/eole/majauto_pre/clean
+run-parts: executing /usr/share/eole/majauto_pre/mitm
+*** sphynx 2.10.0 ***
+
+[33mMaj-Auto - (VERSION DE DEVELOPPEMENT) - Augmenter le niveau de mise à jour est irréversible.[0m
+Voulez-vous continuer ? [oui/non]
+[non] : 
+MONITOR: maj_auto_241a action:oui
+oui
+Configuration du dépôt Ubuntu avec la source eole.ac-dijon.fr
+Configuration du dépôt EOLE avec la source test-eole.ac-dijon.fr
+Action update pour root                                                   [|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]   
+Action list-upgrade pour root
+0 nouveau, 14 mis à jour, 0 à enlever
+Paquets à mettre à jour : 
+    apport (2.28.1-0ubuntu3.3) (root)
+    apport-core-dump-handler (2.28.1-0ubuntu3.3) (root)
+    exim4 (4.97-4ubuntu4.2) (root)
+    exim4-base (4.97-4ubuntu4.2) (root)
+    exim4-config (4.97-4ubuntu4.2) (root)
+    exim4-daemon-heavy (4.97-4ubuntu4.2) (root)
+    gir1.2-packagekitglib-1.0 (1.2.8-2ubuntu1) (root)
+    libpackagekit-glib2-18 (1.2.8-2ubuntu1) (root)
+    libudisks2-0 (2.10.1-6ubuntu1) (root)
+    packagekit (1.2.8-2ubuntu1) (root)
+    packagekit-tools (1.2.8-2ubuntu1) (root)
+    python3-apport (2.28.1-0ubuntu3.3) (root)
+    python3-problem-report (2.28.1-0ubuntu3.3) (root)
+    udisks2 (2.10.1-6ubuntu1) (root)
+Action download-upgrade pour root
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+Les paquets suivants seront mis à jour :
+  apport apport-core-dump-handler exim4 exim4-base exim4-config
+  exim4-daemon-heavy gir1.2-packagekitglib-1.0 libpackagekit-glib2-18
+  libudisks2-0 packagekit packagekit-tools python3-apport
+  python3-problem-report udisks2
+14 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Il est nécessaire de prendre 3 236 ko dans les archives.
+Après cette opération, 0 o d'espace disque supplémentaires seront utilisés.
+Réception de :1 http://eole.ac-dijon.fr/ubuntu noble-updates/main amd64 python3-problem-report all 2.28.1-0ubuntu3.3 [24,6 kB]
+Réception de :2 http://eole.ac-dijon.fr/ubuntu noble-updates/main amd64 python3-apport all 2.28.1-0ubuntu3.3 [92,3 kB]
+Réception de :3 http://eole.ac-dijon.fr/ubuntu noble-updates/main amd64 apport-core-dump-handler all 2.28.1-0ubuntu3.3 [17,5 kB]
+Réception de :4 http://eole.ac-dijon.fr/ubuntu noble-updates/main amd64 apport all 2.28.1-0ubuntu3.3 [84,5 kB]
+Réception de :5 http://eole.ac-dijon.fr/ubuntu noble-updates/main amd64 exim4-config all 4.97-4ubuntu4.2 [259 kB]
+Réception de :6 http://eole.ac-dijon.fr/ubuntu noble-updates/main amd64 exim4 all 4.97-4ubuntu4.2 [7 600 B]
+Réception de :7 http://eole.ac-dijon.fr/ubuntu noble-updates/main amd64 exim4-base amd64 4.97-4ubuntu4.2 [974 kB]
+Réception de :8 http://eole.ac-dijon.fr/ubuntu noble-updates/main amd64 exim4-daemon-heavy amd64 4.97-4ubuntu4.2 [697 kB]
+Réception de :9 http://eole.ac-dijon.fr/ubuntu noble-updates/main amd64 libpackagekit-glib2-18 amd64 1.2.8-2ubuntu1 [120 kB]
+Réception de :10 http://eole.ac-dijon.fr/ubuntu noble-updates/main amd64 gir1.2-packagekitglib-1.0 amd64 1.2.8-2ubuntu1 [25,6 kB]
+Réception de :11 http://eole.ac-dijon.fr/ubuntu noble-updates/main amd64 udisks2 amd64 2.10.1-6ubuntu1 [297 kB]
+Réception de :12 http://eole.ac-dijon.fr/ubuntu noble-updates/main amd64 libudisks2-0 amd64 2.10.1-6ubuntu1 [174 kB]
+Réception de :13 http://eole.ac-dijon.fr/ubuntu noble-updates/main amd64 packagekit-tools amd64 1.2.8-2ubuntu1 [28,2 kB]
+Réception de :14 http://eole.ac-dijon.fr/ubuntu noble-updates/main amd64 packagekit amd64 1.2.8-2ubuntu1 [434 kB]
+3 236 ko réceptionnés en 0s (42,2 Mo/s)
+Téléchargement achevé et dans le mode téléchargement uniquement
+Action dist-upgrade pour root
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+Les paquets suivants seront mis à jour :
+  apport apport-core-dump-handler exim4 exim4-base exim4-config
+  exim4-daemon-heavy gir1.2-packagekitglib-1.0 libpackagekit-glib2-18
+  libudisks2-0 packagekit packagekit-tools python3-apport
+  python3-problem-report udisks2
+14 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Il est nécessaire de prendre 0 o/3 236 ko dans les archives.
+Après cette opération, 0 o d'espace disque supplémentaires seront utilisés.
+Préconfiguration des paquets...
+(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 173152 fichiers et répertoires déjà installés.)
+Préparation du dépaquetage de .../00-python3-problem-report_2.28.1-0ubuntu3.3_all.deb ...
+Dépaquetage de python3-problem-report (2.28.1-0ubuntu3.3) sur (2.28.1-0ubuntu3.1) ...
+Préparation du dépaquetage de .../01-python3-apport_2.28.1-0ubuntu3.3_all.deb ...
+Dépaquetage de python3-apport (2.28.1-0ubuntu3.3) sur (2.28.1-0ubuntu3.1) ...
+Préparation du dépaquetage de .../02-apport-core-dump-handler_2.28.1-0ubuntu3.3_all.deb ...
+Dépaquetage de apport-core-dump-handler (2.28.1-0ubuntu3.3) sur (2.28.1-0ubuntu3.1) ...
+Préparation du dépaquetage de .../03-apport_2.28.1-0ubuntu3.3_all.deb ...
+Dépaquetage de apport (2.28.1-0ubuntu3.3) sur (2.28.1-0ubuntu3.1) ...
+Préparation du dépaquetage de .../04-exim4-config_4.97-4ubuntu4.2_all.deb ...
+Dépaquetage de exim4-config (4.97-4ubuntu4.2) sur (4.97-4ubuntu4.1) ...
+Préparation du dépaquetage de .../05-exim4_4.97-4ubuntu4.2_all.deb ...
+Dépaquetage de exim4 (4.97-4ubuntu4.2) sur (4.97-4ubuntu4.1) ...
+Préparation du dépaquetage de .../06-exim4-base_4.97-4ubuntu4.2_amd64.deb ...
+Dépaquetage de exim4-base (4.97-4ubuntu4.2) sur (4.97-4ubuntu4.1) ...
+Préparation du dépaquetage de .../07-exim4-daemon-heavy_4.97-4ubuntu4.2_amd64.deb ...
+Dépaquetage de exim4-daemon-heavy (4.97-4ubuntu4.2) sur (4.97-4ubuntu4.1) ...
+Préparation du dépaquetage de .../08-libpackagekit-glib2-18_1.2.8-2ubuntu1_amd64.deb ...
+Dépaquetage de libpackagekit-glib2-18:amd64 (1.2.8-2ubuntu1) sur (1.2.8-2build3) ...
+Préparation du dépaquetage de .../09-gir1.2-packagekitglib-1.0_1.2.8-2ubuntu1_amd64.deb ...
+Dépaquetage de gir1.2-packagekitglib-1.0 (1.2.8-2ubuntu1) sur (1.2.8-2build3) ...
+Préparation du dépaquetage de .../10-udisks2_2.10.1-6ubuntu1_amd64.deb ...
+Dépaquetage de udisks2 (2.10.1-6ubuntu1) sur (2.10.1-6build1) ...
+Préparation du dépaquetage de .../11-libudisks2-0_2.10.1-6ubuntu1_amd64.deb ...
+Dépaquetage de libudisks2-0:amd64 (2.10.1-6ubuntu1) sur (2.10.1-6build1) ...
+Préparation du dépaquetage de .../12-packagekit-tools_1.2.8-2ubuntu1_amd64.deb ...
+Dépaquetage de packagekit-tools (1.2.8-2ubuntu1) sur (1.2.8-2build3) ...
+Préparation du dépaquetage de .../13-packagekit_1.2.8-2ubuntu1_amd64.deb ...
+Dépaquetage de packagekit (1.2.8-2ubuntu1) sur (1.2.8-2build3) ...
+Paramétrage de python3-problem-report (2.28.1-0ubuntu3.3) ...
+Paramétrage de libpackagekit-glib2-18:amd64 (1.2.8-2ubuntu1) ...
+Paramétrage de python3-apport (2.28.1-0ubuntu3.3) ...
+Paramétrage de gir1.2-packagekitglib-1.0 (1.2.8-2ubuntu1) ...
+Paramétrage de exim4-config (4.97-4ubuntu4.2) ...
+Paramétrage de packagekit (1.2.8-2ubuntu1) ...
+Paramétrage de libudisks2-0:amd64 (2.10.1-6ubuntu1) ...
+Paramétrage de packagekit-tools (1.2.8-2ubuntu1) ...
+Paramétrage de udisks2 (2.10.1-6ubuntu1) ...
+Paramétrage de exim4-base (4.97-4ubuntu4.2) ...
+exim4-base.service is a disabled or a static unit not running, not starting it.
+Paramétrage de exim4-daemon-heavy (4.97-4ubuntu4.2) ...
+Paramétrage de exim4 (4.97-4ubuntu4.2) ...
+Paramétrage de apport-core-dump-handler (2.28.1-0ubuntu3.3) ...
+Paramétrage de apport (2.28.1-0ubuntu3.3) ...
+apport-autoreport.service is a disabled or a static unit not running, not starting it.
+Traitement des actions différées (« triggers ») pour dbus (1.14.10-4ubuntu4.1) ...
+Traitement des actions différées (« triggers ») pour hicolor-icon-theme (0.17-2) ...
+Traitement des actions différées (« triggers ») pour libc-bin (2.39-0ubuntu8.3) ...
+Traitement des actions différées (« triggers ») pour man-db (2.12.0-4build2) ...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Mise à jour OK
+[33mMaj-Auto - Un ou plusieurs paquets ont été mis à jour, utilisez la commande [reconfigure] pour que les modifications soient prises en compte.[0m
+Machine daily 2.10.0 : ciMonitor python3 ==> RESULT=0
+--------------------------------------------
+cat /etc/apt/sources.list
+
+# Ubuntu
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu noble main universe multiverse restricted
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu noble-security main universe multiverse restricted
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu noble-updates main universe multiverse restricted
+
+# EOLE
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.10-unstable main cloud
+
+--------------------------------------------
+--------------------------------------------
+cat /etc/apt/sources.list.d/additional.list
+#template genere par Maj-Auto
+#
+--------------------------------------------
+--------------------------------------------
+cat /etc/apt/sources.list.d/ubuntu.sources.curtin.orig
+# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+
+## Ubuntu distribution repository
+##
+## The following settings can be adjusted to configure which packages to use from Ubuntu.
+## Mirror your choices (except for URIs and Suites) in the security section below to
+## ensure timely security updates.
+##
+## Types: Append deb-src to enable the fetching of source package.
+## URIs: A URL to the repository (you may add multiple URLs)
+## Suites: The following additional suites can be configured
+##   <name>-updates   - Major bug fix updates produced after the final release of the
+##                      distribution.
+##   <name>-backports - software from this repository may not have been tested as
+##                      extensively as that contained in the main release, although it includes
+##                      newer versions of some applications which may provide useful features.
+##                      Also, please note that software in backports WILL NOT receive any review
+##                      or updates from the Ubuntu security team.
+## Components: Aside from main, the following components can be added to the list
+##   restricted  - Software that may not be under a free license, or protected by patents.
+##   universe    - Community maintained packages. Software in this repository receives maintenance
+##                 from volunteers in the Ubuntu community, or a 10 year security maintenance
+##                 commitment from Canonical when an Ubuntu Pro subscription is attached.
+##   multiverse  - Community maintained of restricted. Software from this repository is
+##                 ENTIRELY UNSUPPORTED by the Ubuntu team, and may not be under a free
+##                 licence. Please satisfy yourself as to your rights to use the software.
+##                 Also, please note that software in multiverse WILL NOT receive any
+##                 review or updates from the Ubuntu security team.
+##
+## See the sources.list(5) manual page for further settings.
+Types: deb
+URIs: http://archive.ubuntu.com/ubuntu/
+Suites: noble noble-updates noble-backports
+Components: main universe restricted multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+
+## Ubuntu security updates. Aside from URIs and Suites,
+## this should mirror your choices in the previous section.
+Types: deb
+URIs: http://security.ubuntu.com/ubuntu/
+Suites: noble-security
+Components: main universe restricted multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+--------------------------------------------
+Machine daily 2.10.0 : GenConteneur
+*********************************************
+* Pas de conteneurs pour ce module.
+*********************************************
+Machine daily 2.10.0 : Pas de fichier startup '/mnt/eole-ci-tests/module/UpdateDaily-sphynx.sh' 
+Machine daily 2.10.0 : Test CVE Noyau
+0
+Machine daily 2.10.0 : autoremove pour les anciens noyaux
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+/usr/bin/updatedb
+Machine daily 2.10.0 : * Execute updatedb
+/usr/bin/shellcheck
+Machine daily 2.10.0 : Tag l'Image Daily
+DAILY_CONTAINER=non
+DAILY_DATEUPDATE=1734026676
+DAILY_DATE='2024-12-12 18:04'
+DAILY_MAJAUTO=DEV
+Machine daily 2.10.0 : Check Update Service
+/etc/systemd/system/EoleCiTestsContext.service A JOUR
+CheckUpdateService.sh: systemctl enable 'EoleCiTestsContext.service'
+Removed "/etc/systemd/system/network.target.wants/EoleCiTestsContext.service".
+Created symlink /etc/systemd/system/network.target.wants/EoleCiTestsContext.service → /etc/systemd/system/EoleCiTestsContext.service.
+CheckUpdateService.sh: systemctl daemon-reload
+/etc/systemd/system/EoleCiTestsDaemon.service A JOUR
+CheckUpdateService.sh: systemctl enable 'EoleCiTestsDaemon.service'
+Removed "/etc/systemd/system/multi-user.target.wants/EoleCiTestsDaemon.service".
+Created symlink /etc/systemd/system/multi-user.target.wants/EoleCiTestsDaemon.service → /etc/systemd/system/EoleCiTestsDaemon.service.
+CheckUpdateService.sh: systemctl daemon-reload
+Machine daily 2.10.0 : Trim disk
+Machine daily 2.10.0 : ciUpdateDaily DEV : OK

@@ -1,0 +1,409 @@
+#!/bin/bash -xe
+
+SCRIPT_PATH="${BASH_SOURCE[0]}"
+if [ -h "${SCRIPT_PATH}" ]
+then
+  while [ -h "${SCRIPT_PATH}" ]
+  do 
+      SCRIPT_PATH=$(readlink "${SCRIPT_PATH}")
+  done
+fi
+pushd . > /dev/null
+DIR_SCRIPT=$(dirname "${SCRIPT_PATH}" )
+cd "${DIR_SCRIPT}" > /dev/null || exit 1
+SCRIPT_PATH=$(pwd);
+popd  > /dev/null || exit 1
+
+# shellcheck disable=SC1091
+source "$SCRIPT_PATH/function.sh"
+
+loginHarbor
+
+function createDockerfile()
+{
+    local projet="$1"
+    local type="$2"
+    local dest="$3"
+
+    case "$type" in
+        php)
+        
+            cat >"$BASE/$projet/start-apache" <<EOF
+#!/usr/bin/env bash
+sed -i "s/Listen 80/Listen \${PORT:-80}/g" /etc/apache2/ports.conf
+sed -i "s/:80/:\${PORT:-80}/g" /etc/apache2/sites-enabled/*
+apache2-foreground
+EOF
+            chmod 755 "$BASE/$projet/start-apache"
+            cat >"$BASE/$projet/000-default.conf" <<EOF
+# 000-default.conf
+<VirtualHost *:80>
+  ServerAdmin webmaster@localhost
+  DocumentRoot /var/www/public
+
+  <Directory /var/www>
+    Options Indexes FollowSymLinks
+    AllowOverride All
+    Require all granted
+  </Directory>
+</VirtualHost>
+EOF
+
+            rm "$BASE/$projet/Dockerfile" 2>/dev/null
+            cat >"$BASE/Dockerfile-$projet" <<EOF
+FROM hub.eole.education/proxyhub/library/php:7.4-apache
+COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY start-apache /usr/local/bin
+RUN a2enmod rewrite
+COPY . /var/www/
+RUN chown -R www-data:www-data /var/www
+EXPOSE 80
+CMD ["start-apache"]
+EOF
+            ;;
+
+        npm)
+            rm "$BASE/$projet/Dockerfile" 2>/dev/null
+            cat >"$BASE/Dockerfile-$projet" <<EOF
+from hub.eole.education/proxyhub/node:latest as builder
+RUN npm install -g npm@9.8.0
+RUN npm install -g vite
+RUN mkdir /src
+ADD . /src
+WORKDIR src
+RUN npm install
+RUN npm run build
+#
+FROM hub.eole.education/proxyhub/library/nginx:alpine
+COPY --from=builder src/$dest /usr/share/nginx/html
+VOLUME /usr/share/nginx/html
+VOLUME /etc/nginx
+EXPOSE 80
+EOF
+            ;;
+
+        nuxt)
+            rm "$BASE/$projet/Dockerfile" 2>/dev/null
+            cat >"$BASE/Dockerfile-$projet" <<EOF
+from hub.eole.education/proxyhub/node:latest as builder
+RUN npm install -g npm@9.8.0
+RUN npm install -g nuxt
+RUN npm install -g @nuxtjs/eslint-module
+RUN mkdir /src
+ADD . /src
+WORKDIR src
+RUN npm install
+RUN npm run build
+#
+FROM hub.eole.education/proxyhub/library/nginx:alpine
+COPY --from=builder src/$dest /usr/share/nginx/html
+VOLUME /usr/share/nginx/html
+VOLUME /etc/nginx
+EXPOSE 80
+EOF
+            ;;
+
+        vite)
+            rm "$BASE/$projet/Dockerfile" 2>/dev/null
+            cat >"$BASE/Dockerfile-$projet" <<EOF
+from hub.eole.education/proxyhub/node:latest as builder
+RUN npm install -g npm@9.8.0
+RUN npm install -g vite
+RUN mkdir /src
+ADD . /src
+WORKDIR src
+RUN npm install
+RUN npm run build
+#
+FROM hub.eole.education/proxyhub/library/nginx:alpine
+COPY --from=builder src/$dest /usr/share/nginx/html
+VOLUME /usr/share/nginx/html
+VOLUME /etc/nginx
+EXPOSE 80
+EOF
+            ;;
+
+        electron)
+            rm "$BASE/$projet/Dockerfile" 2>/dev/null
+            cat >"$BASE/Dockerfile-$projet" <<EOF
+from hub.eole.education/proxyhub/node:latest as builder
+RUN npm install -g npm@9.6.6
+RUN npm install -g vite
+RUN mkdir /src
+ADD . /src
+WORKDIR src
+RUN npm install
+WORKDIR src/electron
+RUN npm install
+RUN npm run build
+#
+FROM hub.eole.education/proxyhub/library/nginx:alpine
+COPY --from=builder src/$dest /usr/share/nginx/html
+VOLUME /usr/share/nginx/html
+VOLUME /etc/nginx
+EXPOSE 80
+EOF
+            ;;
+
+        *)
+            echo "$type non géré"
+    esac    
+
+    cd "$BASE/$projet" || exit 1
+    if [ ! -f "$BASE/$projet/.dockerignore" ]
+    then
+        cat >"$BASE/$projet/.dockerignore" <<EOF
+Dockerfile
+EOF
+    fi
+}
+export createDockerfile
+
+function buildDocker()
+{
+    local projet="$1"
+    set -x
+    cd "$BASE/$projet" || exit 1
+    if ! docker build -f "$BASE/Dockerfile-$projet" -t "$IMAGE" .
+    then
+        exit 1
+    fi
+        
+    if ! docker push "$IMAGE"
+    then
+        exit 1
+    fi
+}
+
+function buildLocal()
+{
+    local projet="$1"
+    local type="$2"
+    cd "$BASE/$projet" || exit 1
+
+    case "$type" in
+        npm)
+            npm install -g npm@9.6.6
+            npm install -g vite
+            #npm ci 
+            #npm cache clean --force
+            npm install
+            npm run build
+            ;;
+
+        nuxt)
+            npm install -g npm@9.6.6
+            npm install -g nuxt
+            npm install -g @nuxtjs/eslint-module
+            npm install
+            npm run build
+            ;;
+
+        vite)
+            npm install -g npm@9.6.6
+            npm install -g vite
+            #npm cache clean --force
+            npm install
+            npm run build
+            ;;
+
+        electron)
+            npm install -g npm@9.6.6
+            echo "==== 1er phase ===="
+            npm install
+            echo "==== 2nd phase ===="
+            pushd electron || exit 1 
+            npm install
+            popd || exit 1
+            ;;
+
+        *)
+            echo "$type non géré"
+    esac    
+}
+
+function updateDepot()
+{
+    local projet="$1"
+
+    echo "* updateDepot $1"
+    if [ -d "$BASE/$projet" ]
+    then
+        cd "$BASE/$projet" || return 1
+        git reset --hard
+    else
+        cd "$BASE" || return 1
+        git clone "https://codeberg.org/ladigitale/$projet.git"
+    fi
+    git pull
+    #npm install
+    git config --global --add safe.directory "$BASE/$projet"
+}
+
+function pushToMimLibre()
+{
+    local projet="$1"
+    local branche="$2"
+
+    echo "* pushToMimLibre $1 $2"
+    if grep -q mimlibre "$BASE/$projet/.git/config"
+    then
+        echo "synchro faite"
+        git push mimlibre refs/heads/* refs/tags/*
+        return 0
+    else
+        echo "synchro TODO"
+        git remote add mimlibre "git@gitlab.mim-libre.fr:ladigitale/apps/${projet}.git"
+        #git blame Dockerfile
+        #git reset --hard origin/master
+        #git push mimlibre --mirror 
+        git push mimlibre "$branche"
+        return 1
+    fi
+}
+
+function ladigitale()
+{
+    local projet="$1"
+    local type="npm"
+    local dest="public"
+ 
+    echo ""
+    echo ""
+    echo ""
+    echo "===================================================================================="
+    echo "$projet"
+ 
+    if ! updateDepot "$projet"
+    then
+        echo "update error stop"
+        return 1
+    fi
+    
+    REV="$(git rev-list --tags --max-count=1)"
+    VERSION=$(git describe --tags "$REV")
+    echo "VERSION=$VERSION"
+    if [ -z "$VERSION" ]
+    then
+        echo "Pas de version -> latest !!"
+        VERSION=latest
+        DATE_COMMIT=$(git log --format='%as' --no-walk )
+        echo "DATE_COMMIT=$DATE_COMMIT"
+        #return 0
+    else
+        DATE_COMMIT=$(git log --format='%as' --no-walk "$REV")
+        echo "DATE_COMMIT=$DATE_COMMIT"
+    fi
+    MASTER=$(git branch -r | grep /HEAD | sed 's#.*-> origin/##' )
+    echo "MASTER=$MASTER"
+    
+    if ! pushToMimLibre "$projet" "$MASTER"
+    then
+        echo "mirror stop"
+        return 1
+    fi
+
+    if [ -f "$BASE/$projet/vite.config.js" ]
+    then
+        type="vite"
+        dest="dist"
+    fi
+  
+    if [ -f "$BASE/$projet/nuxt.config.js" ]
+    then
+        type="nuxt"
+        dest=".nuxt"
+    fi
+    
+    if [ -d "$BASE/$projet/electron" ]
+    then
+        type="electron"
+        dest="electron/app"
+    fi
+    
+    if grep -q "php" "$BASE/$projet/README.md" 2>/dev/null
+    then
+        type="php"
+        dest="/"
+    fi
+    if [ -f "$BASE/$projet/contact.php" ]
+    then
+        type="php"
+        dest="/"
+    fi
+    if [ -f "$BASE/$projet/api.php" ]
+    then
+        type="php"
+        dest="/"
+    fi
+    if [ -f "$BASE/$projet/index.html" ]
+    then
+        type="php"
+        dest="/"
+    fi
+    
+    
+    echo "Builder: $projet type=$type dest:$dest"
+
+    echo "* check image $projet"
+    IMAGE="${BASE_IMAGE}/$projet:$VERSION"
+    if docker pull "$IMAGE" 
+    then
+        echo "image $IMAGE existe"
+        #return 0
+    fi
+    
+    echo "* createDockerfile: $type  dest:$dest"
+    createDockerfile "$projet" "$type" "$dest"
+
+    echo "* buildLocal: $type  dest:$dest"
+    #buildLocal "$projet" "$type"
+    #if [ ! -d "$BASE/$projet/$dest" ]
+    #then
+    #    echo "erreur $dest n'existe pas"
+    #    return 0
+    #fi
+
+    echo "* buildDocker: $type  dest:$dest"
+    #buildDocker "$projet" "$VERSION"
+    
+    echo "$projet|non|LaDigitale|https://codeberg.org/ladigitale/$projet.git|n/a|todo $DATE_COMMIT|hub.eole.education/test/$projet|ok $VERSION|n/a|to do|non|docker pull hub.eole.education/test/$projet:$VERSION|to do|n/a|" >>"$BASE/liste_images.csv"
+}
+
+
+BASE="$HOME/ladigitale/"
+echo "BASE=$BASE"
+mkdir -p "$BASE"
+rm -f "$BASE/liste_images.csv"
+BASE_IMAGE="hub.eole.education/test"
+ladigitale digipad
+exit 0 
+ladigitale digicode
+ladigitale digicalc
+#ladigitale mediatheque (préentations) !
+ladigitale logimix
+ladigitale digilink
+ladigitale ladigitale.dev
+ladigitale digiscreen
+ladigitale digiwall
+ladigitale digistorm 
+ladigitale digiwords
+ladigitale digiboard
+ladigitale digisteps
+ladigitale digislides
+ladigitale digibuzzer
+ladigitale digiflashcards
+ladigitale logiquiz
+ladigitale digiview
+ladigitale digitranscode
+ladigitale digirecord
+ladigitale digiread
+ladigitale digimindmap
+ladigitale digiface
+ladigitale digidrive
+ladigitale digicut
+ladigitale digicard
+ladigitale digibunch
+ladigitale digitools
+ladigitale digiquiz
+ladigitale digidoc

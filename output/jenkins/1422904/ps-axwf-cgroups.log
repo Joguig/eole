@@ -1,0 +1,142 @@
+  PID ---User--- ----------CGroup------------ COMMAND
+    2 root       -                            [kthreadd]
+    3 root       -                             \_ [kworker/0:0]
+    4 root       -                             \_ [kworker/0:0H]
+    5 root       -                             \_ [kworker/u8:0]
+    6 root       -                             \_ [mm_percpu_wq]
+    7 root       -                             \_ [ksoftirqd/0]
+    8 root       -                             \_ [rcu_sched]
+    9 root       -                             \_ [rcu_bh]
+   10 root       -                             \_ [migration/0]
+   11 root       -                             \_ [watchdog/0]
+   12 root       -                             \_ [cpuhp/0]
+   13 root       -                             \_ [cpuhp/1]
+   14 root       -                             \_ [watchdog/1]
+   15 root       -                             \_ [migration/1]
+   16 root       -                             \_ [ksoftirqd/1]
+   17 root       -                             \_ [kworker/1:0]
+   18 root       -                             \_ [kworker/1:0H]
+   19 root       -                             \_ [cpuhp/2]
+   20 root       -                             \_ [watchdog/2]
+   21 root       -                             \_ [migration/2]
+   22 root       -                             \_ [ksoftirqd/2]
+   23 root       -                             \_ [kworker/2:0]
+   24 root       -                             \_ [kworker/2:0H]
+   25 root       -                             \_ [cpuhp/3]
+   26 root       -                             \_ [watchdog/3]
+   27 root       -                             \_ [migration/3]
+   28 root       -                             \_ [ksoftirqd/3]
+   29 root       -                             \_ [kworker/3:0]
+   30 root       -                             \_ [kworker/3:0H]
+   31 root       -                             \_ [kdevtmpfs]
+   32 root       -                             \_ [netns]
+   33 root       -                             \_ [rcu_tasks_kthre]
+   34 root       -                             \_ [kauditd]
+   35 root       -                             \_ [kworker/0:1]
+   36 root       -                             \_ [khungtaskd]
+   37 root       -                             \_ [oom_reaper]
+   38 root       -                             \_ [writeback]
+   39 root       -                             \_ [kcompactd0]
+   40 root       -                             \_ [ksmd]
+   41 root       -                             \_ [khugepaged]
+   42 root       -                             \_ [crypto]
+   43 root       -                             \_ [kintegrityd]
+   44 root       -                             \_ [kblockd]
+   45 root       -                             \_ [ata_sff]
+   46 root       -                             \_ [md]
+   47 root       -                             \_ [edac-poller]
+   48 root       -                             \_ [devfreq_wq]
+   49 root       -                             \_ [watchdogd]
+   50 root       -                             \_ [kworker/u8:1]
+   52 root       -                             \_ [kswapd0]
+   53 root       -                             \_ [kworker/u9:0]
+   54 root       -                             \_ [ecryptfs-kthrea]
+   59 root       -                             \_ [kworker/2:1]
+   97 root       -                             \_ [kthrotld]
+   98 root       -                             \_ [acpi_thermal_pm]
+   99 root       -                             \_ [kworker/1:1]
+  100 root       -                             \_ [kworker/3:1]
+  101 root       -                             \_ [scsi_eh_0]
+  102 root       -                             \_ [scsi_tmf_0]
+  103 root       -                             \_ [scsi_eh_1]
+  104 root       -                             \_ [scsi_tmf_1]
+  105 root       -                             \_ [kworker/u8:2]
+  106 root       -                             \_ [kworker/u8:3]
+  110 root       -                             \_ [ipv6_addrconf]
+  112 root       -                             \_ [kworker/u8:4]
+  120 root       -                             \_ [kstrp]
+  137 root       -                             \_ [charger_manager]
+  138 root       -                             \_ [kworker/2:2]
+  191 root       -                             \_ [scsi_eh_2]
+  192 root       -                             \_ [scsi_tmf_2]
+  197 root       -                             \_ [kdmflush]
+  198 root       -                             \_ [bioset]
+  200 root       -                             \_ [kdmflush]
+  201 root       -                             \_ [bioset]
+  204 root       -                             \_ [kdmflush]
+  205 root       -                             \_ [bioset]
+  208 root       -                             \_ [kdmflush]
+  209 root       -                             \_ [bioset]
+  211 root       -                             \_ [kdmflush]
+  212 root       -                             \_ [bioset]
+  253 root       -                             \_ [kworker/1:1H]
+  257 root       -                             \_ [jbd2/dm-1-8]
+  258 root       -                             \_ [ext4-rsv-conver]
+  302 root       -                             \_ [kworker/3:1H]
+  311 root       -                             \_ [kworker/0:2]
+  347 root       -                             \_ [ttm_swap]
+  447 root       -                             \_ [kworker/0:1H]
+  455 root       -                             \_ [jbd2/dm-2-8]
+  456 root       -                             \_ [ext4-rsv-conver]
+  457 root       -                             \_ [jbd2/dm-4-8]
+  458 root       -                             \_ [ext4-rsv-conver]
+  459 root       -                             \_ [jbd2/dm-3-8]
+  460 root       -                             \_ [ext4-rsv-conver]
+  461 root       -                             \_ [jbd2/sda1-8]
+  462 root       -                             \_ [ext4-rsv-conver]
+  463 root       -                             \_ [kworker/2:1H]
+  467 root       -                             \_ [kworker/1:2]
+  618 root       -                             \_ [kworker/3:2]
+  890 root       -                             \_ [kworker/3:3]
+    1 root       1:name=systemd:/init.scope,0 /sbin/init
+  304 root       5:pids:/system.slice/systemd /lib/systemd/systemd-journald
+  313 root       5:pids:/system.slice/lvm2-lv /sbin/lvmetad -f
+  316 root       5:pids:/system.slice/systemd /lib/systemd/systemd-udevd
+  545 systemd-t+ 5:pids:/system.slice/systemd /lib/systemd/systemd-timesyncd
+  556 root       5:pids:/system.slice/irqbala /usr/sbin/irqbalance --foreground
+  557 root       5:pids:/system.slice/network /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+  560 messagebus 5:pids:/system.slice/dbus.se /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+  567 root       5:pids:/system.slice/rng-too /usr/sbin/rngd -r /dev/hwrng
+  573 root       5:pids:/system.slice/systemd /lib/systemd/systemd-logind
+  575 daemon     5:pids:/system.slice/atd.ser /usr/sbin/atd -f
+  576 syslog     5:pids:/system.slice/rsyslog /usr/sbin/rsyslogd -n
+  584 root       5:pids:/system.slice/cron.se /usr/sbin/cron -f
+  588 root       5:pids:/system.slice/account /usr/lib/accountsservice/accounts-daemon
+  608 clamav     5:pids:/system.slice/clamav- /usr/sbin/clamd --foreground=true
+  660 root       5:pids:/system.slice/gpm.ser /usr/sbin/gpm -m /dev/input/mice -t exps2
+  737 systemd-r+ 5:pids:/system.slice/systemd /lib/systemd/systemd-resolved
+  809 systemd-n+ 5:pids:/system.slice/systemd /lib/systemd/systemd-networkd
+  817 root       5:pids:/system.slice/creoled /usr/bin/python2 /usr/sbin/creoled --pidfile /run/creoled.pid
+  821 vnstat     5:pids:/system.slice/vnstat. /usr/sbin/vnstatd -n
+  848 root       5:pids:/system.slice/ssh.ser /usr/sbin/sshd -D
+  850 root       5:pids:/system.slice/nginx.s nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+  851 www-data   5:pids:/system.slice/nginx.s  \_ nginx: worker process
+  852 www-data   5:pids:/system.slice/nginx.s  \_ nginx: worker process
+  853 www-data   5:pids:/system.slice/nginx.s  \_ nginx: worker process
+  854 www-data   5:pids:/system.slice/nginx.s  \_ nginx: worker process
+  858 root       5:pids:/system.slice/eolefla /usr/bin/python /usr/bin/gunicorn --pid /run/eoleflask.pid -c /etc/eole/flask/eoleflask.conf eoleflask.application:run(config='eoleadmin')
+  868 root       5:pids:/system.slice/eolefla  \_ /usr/bin/python /usr/bin/gunicorn --pid /run/eoleflask.pid -c /etc/eole/flask/eoleflask.conf eoleflask.application:run(config='eoleadmin')
+  895 clamav     5:pids:/system.slice/clamav- /usr/bin/freshclam -d --foreground=true
+  903 root       5:pids:/system.slice/inetd.s /usr/sbin/inetd
+  932 root       5:pids:/system.slice/system- /sbin/agetty -o -p -- \u --noclear tty1 linux
+  940 openldap   5:pids:/system.slice/slapd.s /usr/sbin/slapd -h ldap:/// ldapi:/// -g openldap -u openldap -F /etc/ldap/slapd.d
+  944 root       5:pids:/system.slice/apache2 /usr/sbin/apache2 -k start
+  945 www-data   5:pids:/system.slice/apache2  \_ /usr/sbin/apache2 -k start
+  946 www-data   5:pids:/system.slice/apache2  \_ /usr/sbin/apache2 -k start
+  947 www-data   5:pids:/system.slice/apache2  \_ /usr/sbin/apache2 -k start
+  948 www-data   5:pids:/system.slice/apache2  \_ /usr/sbin/apache2 -k start
+  949 www-data   5:pids:/system.slice/apache2  \_ /usr/sbin/apache2 -k start
+ 1013 mysql      5:pids:/system.slice/mysql.s /usr/sbin/mysqld --daemonize --pid-file=/run/mysqld/mysqld.pid
+ 1062 Debian-ex+ 5:pids:/system.slice/exim4.s /usr/sbin/exim4 -bd -q30m
+ 1102 root       5:pids:/system.slice/EoleCiT /bin/bash /root/.EoleCiTestsDaemon.sh
+ 1322 root       5:pids:/system.slice/EoleCiT  \_ ps xawf -eo pid,user=---User---,cgroup=----------CGroup------------,args

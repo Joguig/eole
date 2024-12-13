@@ -1,0 +1,1962 @@
+-- Logs begin at Thu 2020-07-02 19:05:52 CEST, end at Fri 2024-12-13 19:19:35 CET. --
+déc. 13 19:15:55 thot kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000bffdbfff] usable
+déc. 13 19:15:55 thot kernel: BIOS-e820: [mem 0x00000000bffdc000-0x00000000bfffffff] reserved
+déc. 13 19:15:55 thot kernel: BIOS-e820: [mem 0x00000000feffc000-0x00000000feffffff] reserved
+déc. 13 19:15:55 thot kernel: BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+déc. 13 19:15:55 thot kernel: BIOS-e820: [mem 0x0000000100000000-0x000000013fffffff] usable
+déc. 13 19:15:55 thot kernel: NX (Execute Disable) protection: active
+déc. 13 19:15:55 thot kernel: SMBIOS 2.8 present.
+déc. 13 19:15:55 thot kernel: DMI: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.12.0-1 04/01/2014
+déc. 13 19:15:55 thot kernel: Hypervisor detected: KVM
+déc. 13 19:15:55 thot kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+déc. 13 19:15:55 thot kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+déc. 13 19:15:55 thot kernel: e820: last_pfn = 0x140000 max_arch_pfn = 0x400000000
+déc. 13 19:15:55 thot kernel: MTRR default type: write-back
+déc. 13 19:15:55 thot kernel: MTRR fixed ranges enabled:
+déc. 13 19:15:55 thot kernel:   00000-9FFFF write-back
+déc. 13 19:15:55 thot kernel:   A0000-BFFFF uncachable
+déc. 13 19:15:55 thot kernel:   C0000-FFFFF write-protect
+déc. 13 19:15:55 thot kernel: MTRR variable ranges enabled:
+déc. 13 19:15:55 thot kernel:   0 base 00C0000000 mask FFC0000000 uncachable
+déc. 13 19:15:55 thot kernel:   1 disabled
+déc. 13 19:15:55 thot kernel:   2 disabled
+déc. 13 19:15:55 thot kernel:   3 disabled
+déc. 13 19:15:55 thot kernel:   4 disabled
+déc. 13 19:15:55 thot kernel:   5 disabled
+déc. 13 19:15:55 thot kernel:   6 disabled
+déc. 13 19:15:55 thot kernel:   7 disabled
+déc. 13 19:15:55 thot kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+déc. 13 19:15:55 thot kernel: e820: last_pfn = 0xbffdc max_arch_pfn = 0x400000000
+déc. 13 19:15:55 thot kernel: found SMP MP-table at [mem 0x000f5a30-0x000f5a3f]
+déc. 13 19:15:55 thot kernel: Scanning 1 areas for low memory corruption
+déc. 13 19:15:55 thot kernel: Using GB pages for direct mapping
+déc. 13 19:15:55 thot kernel: RAMDISK: [mem 0x32775000-0x353b1fff]
+déc. 13 19:15:55 thot kernel: ACPI: Early table checksum verification disabled
+déc. 13 19:15:55 thot kernel: ACPI: RSDP 0x00000000000F59E0 000014 (v00 BOCHS )
+déc. 13 19:15:55 thot kernel: ACPI: RSDT 0x00000000BFFE13D2 000030 (v01 BOCHS  BXPCRSDT 00000001 BXPC 00000001)
+déc. 13 19:15:55 thot kernel: ACPI: FACP 0x00000000BFFE1296 000074 (v01 BOCHS  BXPCFACP 00000001 BXPC 00000001)
+déc. 13 19:15:55 thot kernel: ACPI: DSDT 0x00000000BFFDFDC0 0014D6 (v01 BOCHS  BXPCDSDT 00000001 BXPC 00000001)
+déc. 13 19:15:55 thot kernel: ACPI: FACS 0x00000000BFFDFD80 000040
+déc. 13 19:15:55 thot kernel: ACPI: APIC 0x00000000BFFE130A 000090 (v01 BOCHS  BXPCAPIC 00000001 BXPC 00000001)
+déc. 13 19:15:55 thot kernel: ACPI: HPET 0x00000000BFFE139A 000038 (v01 BOCHS  BXPCHPET 00000001 BXPC 00000001)
+déc. 13 19:15:55 thot kernel: ACPI: Reserving FACP table memory at [mem 0xbffe1296-0xbffe1309]
+déc. 13 19:15:55 thot kernel: ACPI: Reserving DSDT table memory at [mem 0xbffdfdc0-0xbffe1295]
+déc. 13 19:15:55 thot kernel: ACPI: Reserving FACS table memory at [mem 0xbffdfd80-0xbffdfdbf]
+déc. 13 19:15:55 thot kernel: ACPI: Reserving APIC table memory at [mem 0xbffe130a-0xbffe1399]
+déc. 13 19:15:55 thot kernel: ACPI: Reserving HPET table memory at [mem 0xbffe139a-0xbffe13d1]
+déc. 13 19:15:55 thot kernel: ACPI: Local APIC address 0xfee00000
+déc. 13 19:15:55 thot kernel: No NUMA configuration found
+déc. 13 19:15:55 thot kernel: Faking a node at [mem 0x0000000000000000-0x000000013fffffff]
+déc. 13 19:15:55 thot kernel: NODE_DATA(0) allocated [mem 0x13ffd5000-0x13fffffff]
+déc. 13 19:15:55 thot kernel: kvm-clock: cpu 0, msr 1:3ff54001, primary cpu clock
+déc. 13 19:15:55 thot kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+déc. 13 19:15:55 thot kernel: kvm-clock: using sched offset of 8359310260 cycles
+déc. 13 19:15:55 thot kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+déc. 13 19:15:55 thot kernel: Zone ranges:
+déc. 13 19:15:55 thot kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+déc. 13 19:15:55 thot kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+déc. 13 19:15:55 thot kernel:   Normal   [mem 0x0000000100000000-0x000000013fffffff]
+déc. 13 19:15:55 thot kernel:   Device   empty
+déc. 13 19:15:55 thot kernel: Movable zone start for each node
+déc. 13 19:15:55 thot kernel: Early memory node ranges
+déc. 13 19:15:55 thot kernel:   node   0: [mem 0x0000000000001000-0x000000000009efff]
+déc. 13 19:15:55 thot kernel:   node   0: [mem 0x0000000000100000-0x00000000bffdbfff]
+déc. 13 19:15:55 thot kernel:   node   0: [mem 0x0000000100000000-0x000000013fffffff]
+déc. 13 19:15:55 thot kernel: Reserved but unavailable: 101 pages
+déc. 13 19:15:55 thot kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000013fffffff]
+déc. 13 19:15:55 thot kernel: On node 0 totalpages: 1048442
+déc. 13 19:15:55 thot kernel:   DMA zone: 64 pages used for memmap
+déc. 13 19:15:55 thot kernel:   DMA zone: 21 pages reserved
+déc. 13 19:15:55 thot kernel:   DMA zone: 3998 pages, LIFO batch:0
+déc. 13 19:15:55 thot kernel:   DMA32 zone: 12224 pages used for memmap
+déc. 13 19:15:55 thot kernel:   DMA32 zone: 782300 pages, LIFO batch:31
+déc. 13 19:15:55 thot kernel:   Normal zone: 4096 pages used for memmap
+déc. 13 19:15:55 thot kernel:   Normal zone: 262144 pages, LIFO batch:31
+déc. 13 19:15:55 thot kernel: ACPI: PM-Timer IO Port: 0x608
+déc. 13 19:15:55 thot kernel: ACPI: Local APIC address 0xfee00000
+déc. 13 19:15:55 thot kernel: ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+déc. 13 19:15:55 thot kernel: IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+déc. 13 19:15:55 thot kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+déc. 13 19:15:55 thot kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+déc. 13 19:15:55 thot kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+déc. 13 19:15:55 thot kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+déc. 13 19:15:55 thot kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+déc. 13 19:15:55 thot kernel: ACPI: IRQ0 used by override.
+déc. 13 19:15:55 thot kernel: ACPI: IRQ5 used by override.
+déc. 13 19:15:55 thot kernel: ACPI: IRQ9 used by override.
+déc. 13 19:15:55 thot kernel: ACPI: IRQ10 used by override.
+déc. 13 19:15:55 thot kernel: ACPI: IRQ11 used by override.
+déc. 13 19:15:55 thot kernel: Using ACPI (MADT) for SMP configuration information
+déc. 13 19:15:55 thot kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+déc. 13 19:15:55 thot kernel: TSC deadline timer available
+déc. 13 19:15:55 thot kernel: smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+déc. 13 19:15:55 thot kernel: PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+déc. 13 19:15:55 thot kernel: PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+déc. 13 19:15:55 thot kernel: PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+déc. 13 19:15:55 thot kernel: PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+déc. 13 19:15:55 thot kernel: PM: Registered nosave memory: [mem 0xbffdc000-0xbfffffff]
+déc. 13 19:15:55 thot kernel: PM: Registered nosave memory: [mem 0xc0000000-0xfeffbfff]
+déc. 13 19:15:55 thot kernel: PM: Registered nosave memory: [mem 0xfeffc000-0xfeffffff]
+déc. 13 19:15:55 thot kernel: PM: Registered nosave memory: [mem 0xff000000-0xfffbffff]
+déc. 13 19:15:55 thot kernel: PM: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+déc. 13 19:15:55 thot kernel: e820: [mem 0xc0000000-0xfeffbfff] available for PCI devices
+déc. 13 19:15:55 thot kernel: Booting paravirtualized kernel on KVM
+déc. 13 19:15:55 thot kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+déc. 13 19:15:55 thot kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:4 nr_cpu_ids:4 nr_node_ids:1
+déc. 13 19:15:55 thot kernel: percpu: Embedded 50 pages/cpu s167936 r8192 d28672 u524288
+déc. 13 19:15:55 thot kernel: pcpu-alloc: s167936 r8192 d28672 u524288 alloc=1*2097152
+déc. 13 19:15:55 thot kernel: pcpu-alloc: [0] 0 1 2 3 
+déc. 13 19:15:55 thot kernel: KVM setup async PF for cpu 0
+déc. 13 19:15:55 thot kernel: kvm-stealtime: cpu 0, msr 13fc28040
+déc. 13 19:15:55 thot kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes)
+déc. 13 19:15:55 thot kernel: Built 1 zonelists, mobility grouping on.  Total pages: 1032037
+déc. 13 19:15:55 thot kernel: Policy zone: Normal
+déc. 13 19:15:55 thot kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-4.15.0-213-generic root=/dev/mapper/thot--vg-root ro rootdelay=90
+déc. 13 19:15:55 thot kernel: Calgary: detecting Calgary via BIOS EBDA area
+déc. 13 19:15:55 thot kernel: Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+déc. 13 19:15:55 thot kernel: Memory: 3987016K/4193768K available (12300K kernel code, 2477K rwdata, 4324K rodata, 2480K init, 2720K bss, 206752K reserved, 0K cma-reserved)
+déc. 13 19:15:55 thot kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+déc. 13 19:15:55 thot kernel: Kernel/User page tables isolation: enabled
+déc. 13 19:15:55 thot kernel: ftrace: allocating 39508 entries in 155 pages
+déc. 13 19:15:55 thot kernel: Hierarchical RCU implementation.
+déc. 13 19:15:55 thot kernel:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=4.
+déc. 13 19:15:55 thot kernel:         Tasks RCU enabled.
+déc. 13 19:15:55 thot kernel: RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+déc. 13 19:15:55 thot kernel: NR_IRQS: 524544, nr_irqs: 456, preallocated irqs: 16
+déc. 13 19:15:55 thot kernel: random: crng init done
+déc. 13 19:15:55 thot kernel: Console: colour dummy device 80x25
+déc. 13 19:15:55 thot kernel: console [tty0] enabled
+déc. 13 19:15:55 thot kernel: ACPI: Core revision 20170831
+déc. 13 19:15:55 thot kernel: ACPI: 1 ACPI AML tables successfully acquired and loaded
+déc. 13 19:15:55 thot kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+déc. 13 19:15:55 thot kernel: hpet clockevent registered
+déc. 13 19:15:55 thot kernel: APIC: Switch to symmetric I/O mode setup
+déc. 13 19:15:55 thot kernel: x2apic enabled
+déc. 13 19:15:55 thot kernel: Switched APIC routing to physical x2apic.
+déc. 13 19:15:55 thot kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+déc. 13 19:15:55 thot kernel: tsc: Detected 2194.776 MHz processor
+déc. 13 19:15:55 thot kernel: Calibrating delay loop (skipped) preset value.. 4389.55 BogoMIPS (lpj=8779104)
+déc. 13 19:15:55 thot kernel: pid_max: default: 32768 minimum: 301
+déc. 13 19:15:55 thot kernel: Security Framework initialized
+déc. 13 19:15:55 thot kernel: Yama: becoming mindful.
+déc. 13 19:15:55 thot kernel: AppArmor: AppArmor initialized
+déc. 13 19:15:55 thot kernel: Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
+déc. 13 19:15:55 thot kernel: Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
+déc. 13 19:15:55 thot kernel: Mount-cache hash table entries: 8192 (order: 4, 65536 bytes)
+déc. 13 19:15:55 thot kernel: Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes)
+déc. 13 19:15:55 thot kernel: x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+déc. 13 19:15:55 thot kernel: Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+déc. 13 19:15:55 thot kernel: Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+déc. 13 19:15:55 thot kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+déc. 13 19:15:55 thot kernel: Spectre V2 : Mitigation: IBRS
+déc. 13 19:15:55 thot kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+déc. 13 19:15:55 thot kernel: Spectre V2 : Spectre v2 / SpectreRSB : Filling RSB on VMEXIT
+déc. 13 19:15:55 thot kernel: RETBleed: Mitigation: IBRS
+déc. 13 19:15:55 thot kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+déc. 13 19:15:55 thot kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+déc. 13 19:15:55 thot kernel: MDS: Mitigation: Clear CPU buffers
+déc. 13 19:15:55 thot kernel: TAA: Mitigation: Clear CPU buffers
+déc. 13 19:15:55 thot kernel: MMIO Stale Data: Vulnerable: Clear CPU buffers attempted, no microcode
+déc. 13 19:15:55 thot kernel: Freeing SMP alternatives memory: 36K
+déc. 13 19:15:55 thot kernel: smpboot: CPU0: Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz (family: 0x6, model: 0x55, stepping: 0x7)
+déc. 13 19:15:55 thot kernel: Performance Events: Skylake events, Intel PMU driver.
+déc. 13 19:15:55 thot kernel: ... version:                2
+déc. 13 19:15:55 thot kernel: ... bit width:              48
+déc. 13 19:15:55 thot kernel: ... generic registers:      4
+déc. 13 19:15:55 thot kernel: ... value mask:             0000ffffffffffff
+déc. 13 19:15:55 thot kernel: ... max period:             000000007fffffff
+déc. 13 19:15:55 thot kernel: ... fixed-purpose events:   3
+déc. 13 19:15:55 thot kernel: ... event mask:             000000070000000f
+déc. 13 19:15:55 thot kernel: Hierarchical SRCU implementation.
+déc. 13 19:15:55 thot kernel: smp: Bringing up secondary CPUs ...
+déc. 13 19:15:55 thot kernel: x86: Booting SMP configuration:
+déc. 13 19:15:55 thot kernel: .... node  #0, CPUs:      #1
+déc. 13 19:15:55 thot kernel: kvm-clock: cpu 1, msr 1:3ff54041, secondary cpu clock
+déc. 13 19:15:55 thot kernel: x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+déc. 13 19:15:55 thot kernel: KVM setup async PF for cpu 1
+déc. 13 19:15:55 thot kernel: kvm-stealtime: cpu 1, msr 13fca8040
+déc. 13 19:15:55 thot kernel:  #2
+déc. 13 19:15:55 thot kernel: kvm-clock: cpu 2, msr 1:3ff54081, secondary cpu clock
+déc. 13 19:15:55 thot kernel: x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+déc. 13 19:15:55 thot kernel: KVM setup async PF for cpu 2
+déc. 13 19:15:55 thot kernel: kvm-stealtime: cpu 2, msr 13fd28040
+déc. 13 19:15:55 thot kernel:  #3
+déc. 13 19:15:55 thot kernel: kvm-clock: cpu 3, msr 1:3ff540c1, secondary cpu clock
+déc. 13 19:15:55 thot kernel: x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+déc. 13 19:15:55 thot kernel: KVM setup async PF for cpu 3
+déc. 13 19:15:55 thot kernel: kvm-stealtime: cpu 3, msr 13fda8040
+déc. 13 19:15:55 thot kernel: smp: Brought up 1 node, 4 CPUs
+déc. 13 19:15:55 thot kernel: smpboot: Max logical packages: 4
+déc. 13 19:15:55 thot kernel: smpboot: Total of 4 processors activated (17558.20 BogoMIPS)
+déc. 13 19:15:55 thot kernel: devtmpfs: initialized
+déc. 13 19:15:55 thot kernel: x86/mm: Memory block size: 128MB
+déc. 13 19:15:55 thot kernel: evm: security.selinux
+déc. 13 19:15:55 thot kernel: evm: security.SMACK64
+déc. 13 19:15:55 thot kernel: evm: security.SMACK64EXEC
+déc. 13 19:15:55 thot kernel: evm: security.SMACK64TRANSMUTE
+déc. 13 19:15:55 thot kernel: evm: security.SMACK64MMAP
+déc. 13 19:15:55 thot kernel: evm: security.apparmor
+déc. 13 19:15:55 thot kernel: evm: security.ima
+déc. 13 19:15:55 thot kernel: evm: security.capability
+déc. 13 19:15:55 thot kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+déc. 13 19:15:55 thot kernel: futex hash table entries: 1024 (order: 4, 65536 bytes)
+déc. 13 19:15:55 thot kernel: pinctrl core: initialized pinctrl subsystem
+déc. 13 19:15:55 thot kernel: RTC time: 18:15:49, date: 12/13/24
+déc. 13 19:15:55 thot kernel: NET: Registered protocol family 16
+déc. 13 19:15:55 thot kernel: audit: initializing netlink subsys (disabled)
+déc. 13 19:15:55 thot kernel: audit: type=2000 audit(1734113750.065:1): state=initialized audit_enabled=0 res=1
+déc. 13 19:15:55 thot kernel: cpuidle: using governor ladder
+déc. 13 19:15:55 thot kernel: cpuidle: using governor menu
+déc. 13 19:15:55 thot kernel: ACPI: bus type PCI registered
+déc. 13 19:15:55 thot kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+déc. 13 19:15:55 thot kernel: PCI: Using configuration type 1 for base access
+déc. 13 19:15:55 thot kernel: HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+déc. 13 19:15:55 thot kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+déc. 13 19:15:55 thot kernel: ACPI: Added _OSI(Module Device)
+déc. 13 19:15:55 thot kernel: ACPI: Added _OSI(Processor Device)
+déc. 13 19:15:55 thot kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+déc. 13 19:15:55 thot kernel: ACPI: Added _OSI(Processor Aggregator Device)
+déc. 13 19:15:55 thot kernel: ACPI: Added _OSI(Linux-Dell-Video)
+déc. 13 19:15:55 thot kernel: ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+déc. 13 19:15:55 thot kernel: ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+déc. 13 19:15:55 thot kernel: ACPI: Interpreter enabled
+déc. 13 19:15:55 thot kernel: ACPI: (supports S0 S3 S4 S5)
+déc. 13 19:15:55 thot kernel: ACPI: Using IOAPIC for interrupt routing
+déc. 13 19:15:55 thot kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+déc. 13 19:15:55 thot kernel: ACPI: Enabled 2 GPEs in block 00 to 0F
+déc. 13 19:15:55 thot kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+déc. 13 19:15:55 thot kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+déc. 13 19:15:55 thot kernel: acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+déc. 13 19:15:55 thot kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [3] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [4] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [5] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [6] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [7] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [8] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [9] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [10] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [11] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [12] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [13] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [14] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [15] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [16] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [17] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [18] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [19] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [20] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [21] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [22] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [23] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [24] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [25] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [26] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [27] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [28] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [29] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [30] registered
+déc. 13 19:15:55 thot kernel: acpiphp: Slot [31] registered
+déc. 13 19:15:55 thot kernel: PCI host bridge to bus 0000:00
+déc. 13 19:15:55 thot kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+déc. 13 19:15:55 thot kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+déc. 13 19:15:55 thot kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+déc. 13 19:15:55 thot kernel: pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfffff window]
+déc. 13 19:15:55 thot kernel: pci_bus 0000:00: root bus resource [mem 0x140000000-0x1bfffffff window]
+déc. 13 19:15:55 thot kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+déc. 13 19:15:55 thot kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+déc. 13 19:15:55 thot kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+déc. 13 19:15:55 thot kernel: pci 0000:00:01.1: [8086:7010] type 00 class 0x010180
+déc. 13 19:15:55 thot kernel: pci 0000:00:01.1: reg 0x20: [io  0xc120-0xc12f]
+déc. 13 19:15:55 thot kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+déc. 13 19:15:55 thot kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+déc. 13 19:15:55 thot kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+déc. 13 19:15:55 thot kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+déc. 13 19:15:55 thot kernel: pci 0000:00:01.2: [8086:7020] type 00 class 0x0c0300
+déc. 13 19:15:55 thot kernel: pci 0000:00:01.2: reg 0x20: [io  0xc0c0-0xc0df]
+déc. 13 19:15:55 thot kernel: pci 0000:00:01.3: [8086:7113] type 00 class 0x068000
+déc. 13 19:15:55 thot kernel: pci 0000:00:01.3: quirk: [io  0x0600-0x063f] claimed by PIIX4 ACPI
+déc. 13 19:15:55 thot kernel: pci 0000:00:01.3: quirk: [io  0x0700-0x070f] claimed by PIIX4 SMB
+déc. 13 19:15:55 thot kernel: pci 0000:00:02.0: [1234:1111] type 00 class 0x030000
+déc. 13 19:15:55 thot kernel: pci 0000:00:02.0: reg 0x10: [mem 0xfd000000-0xfdffffff pref]
+déc. 13 19:15:55 thot kernel: pci 0000:00:02.0: reg 0x18: [mem 0xfebd0000-0xfebd0fff]
+déc. 13 19:15:55 thot kernel: pci 0000:00:02.0: reg 0x30: [mem 0xfebc0000-0xfebcffff pref]
+déc. 13 19:15:55 thot kernel: pci 0000:00:02.0: BAR 0: assigned to efifb
+déc. 13 19:15:55 thot kernel: pci 0000:00:03.0: [1af4:1009] type 00 class 0x000200
+déc. 13 19:15:55 thot kernel: pci 0000:00:03.0: reg 0x10: [io  0xc000-0xc03f]
+déc. 13 19:15:55 thot kernel: pci 0000:00:03.0: reg 0x14: [mem 0xfebd1000-0xfebd1fff]
+déc. 13 19:15:55 thot kernel: pci 0000:00:03.0: reg 0x20: [mem 0xfe000000-0xfe003fff 64bit pref]
+déc. 13 19:15:55 thot kernel: pci 0000:00:04.0: [1af4:1000] type 00 class 0x020000
+déc. 13 19:15:55 thot kernel: pci 0000:00:04.0: reg 0x10: [io  0xc0e0-0xc0ff]
+déc. 13 19:15:55 thot kernel: pci 0000:00:04.0: reg 0x14: [mem 0xfebd2000-0xfebd2fff]
+déc. 13 19:15:55 thot kernel: pci 0000:00:04.0: reg 0x20: [mem 0xfe004000-0xfe007fff 64bit pref]
+déc. 13 19:15:55 thot kernel: pci 0000:00:04.0: reg 0x30: [mem 0xfeb80000-0xfebbffff pref]
+déc. 13 19:15:55 thot kernel: pci 0000:00:05.0: [1af4:1004] type 00 class 0x010000
+déc. 13 19:15:55 thot kernel: pci 0000:00:05.0: reg 0x10: [io  0xc040-0xc07f]
+déc. 13 19:15:55 thot kernel: pci 0000:00:05.0: reg 0x14: [mem 0xfebd3000-0xfebd3fff]
+déc. 13 19:15:55 thot kernel: pci 0000:00:05.0: reg 0x20: [mem 0xfe008000-0xfe00bfff 64bit pref]
+déc. 13 19:15:55 thot kernel: pci 0000:00:06.0: [1af4:1003] type 00 class 0x078000
+déc. 13 19:15:55 thot kernel: pci 0000:00:06.0: reg 0x10: [io  0xc080-0xc0bf]
+déc. 13 19:15:55 thot kernel: pci 0000:00:06.0: reg 0x14: [mem 0xfebd4000-0xfebd4fff]
+déc. 13 19:15:55 thot kernel: pci 0000:00:06.0: reg 0x20: [mem 0xfe00c000-0xfe00ffff 64bit pref]
+déc. 13 19:15:55 thot kernel: pci 0000:00:07.0: [1af4:1002] type 00 class 0x00ff00
+déc. 13 19:15:55 thot kernel: pci 0000:00:07.0: reg 0x10: [io  0xc100-0xc11f]
+déc. 13 19:15:55 thot kernel: pci 0000:00:07.0: reg 0x20: [mem 0xfe010000-0xfe013fff 64bit pref]
+déc. 13 19:15:55 thot kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 5 *10 11)
+déc. 13 19:15:55 thot kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+déc. 13 19:15:55 thot kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+déc. 13 19:15:55 thot kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 5 10 *11)
+déc. 13 19:15:55 thot kernel: ACPI: PCI Interrupt Link [LNKS] (IRQs *9)
+déc. 13 19:15:55 thot kernel: SCSI subsystem initialized
+déc. 13 19:15:55 thot kernel: libata version 3.00 loaded.
+déc. 13 19:15:55 thot kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+déc. 13 19:15:55 thot kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+déc. 13 19:15:55 thot kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+déc. 13 19:15:55 thot kernel: vgaarb: loaded
+déc. 13 19:15:55 thot kernel: ACPI: bus type USB registered
+déc. 13 19:15:55 thot kernel: usbcore: registered new interface driver usbfs
+déc. 13 19:15:55 thot kernel: usbcore: registered new interface driver hub
+déc. 13 19:15:55 thot kernel: usbcore: registered new device driver usb
+déc. 13 19:15:55 thot kernel: EDAC MC: Ver: 3.0.0
+déc. 13 19:15:55 thot kernel: PCI: Using ACPI for IRQ routing
+déc. 13 19:15:55 thot kernel: PCI: pci_cache_line_size set to 64 bytes
+déc. 13 19:15:55 thot kernel: e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+déc. 13 19:15:55 thot kernel: e820: reserve RAM buffer [mem 0xbffdc000-0xbfffffff]
+déc. 13 19:15:55 thot kernel: NetLabel: Initializing
+déc. 13 19:15:55 thot kernel: NetLabel:  domain hash size = 128
+déc. 13 19:15:55 thot kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+déc. 13 19:15:55 thot kernel: NetLabel:  unlabeled traffic allowed by default
+déc. 13 19:15:55 thot kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+déc. 13 19:15:55 thot kernel: hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+déc. 13 19:15:55 thot kernel: clocksource: Switched to clocksource kvm-clock
+déc. 13 19:15:55 thot kernel: VFS: Disk quotas dquot_6.6.0
+déc. 13 19:15:55 thot kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+déc. 13 19:15:55 thot kernel: AppArmor: AppArmor Filesystem Enabled
+déc. 13 19:15:55 thot kernel: pnp: PnP ACPI init
+déc. 13 19:15:55 thot kernel: pnp 00:00: Plug and Play ACPI device, IDs PNP0b00 (active)
+déc. 13 19:15:55 thot kernel: pnp 00:01: Plug and Play ACPI device, IDs PNP0303 (active)
+déc. 13 19:15:55 thot kernel: pnp 00:02: Plug and Play ACPI device, IDs PNP0f13 (active)
+déc. 13 19:15:55 thot kernel: pnp 00:03: [dma 2]
+déc. 13 19:15:55 thot kernel: pnp 00:03: Plug and Play ACPI device, IDs PNP0700 (active)
+déc. 13 19:15:55 thot kernel: pnp: PnP ACPI: found 4 devices
+déc. 13 19:15:55 thot kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+déc. 13 19:15:55 thot kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+déc. 13 19:15:55 thot kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+déc. 13 19:15:55 thot kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+déc. 13 19:15:55 thot kernel: pci_bus 0000:00: resource 7 [mem 0xc0000000-0xfebfffff window]
+déc. 13 19:15:55 thot kernel: pci_bus 0000:00: resource 8 [mem 0x140000000-0x1bfffffff window]
+déc. 13 19:15:55 thot kernel: NET: Registered protocol family 2
+déc. 13 19:15:55 thot kernel: IP idents hash table entries: 65536 (order: 7, 524288 bytes)
+déc. 13 19:15:55 thot kernel: TCP established hash table entries: 32768 (order: 6, 262144 bytes)
+déc. 13 19:15:55 thot kernel: TCP bind hash table entries: 32768 (order: 7, 524288 bytes)
+déc. 13 19:15:55 thot kernel: TCP: Hash tables configured (established 32768 bind 32768)
+déc. 13 19:15:55 thot kernel: UDP hash table entries: 2048 (order: 4, 65536 bytes)
+déc. 13 19:15:55 thot kernel: UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes)
+déc. 13 19:15:55 thot kernel: NET: Registered protocol family 1
+déc. 13 19:15:55 thot kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+déc. 13 19:15:55 thot kernel: pci 0000:00:01.0: PIIX3: Enabling Passive Release
+déc. 13 19:15:55 thot kernel: pci 0000:00:01.0: Activating ISA DMA hang workarounds
+déc. 13 19:15:55 thot kernel: ACPI: PCI Interrupt Link [LNKD] enabled at IRQ 11
+déc. 13 19:15:55 thot kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+déc. 13 19:15:55 thot kernel: PCI: CLS 0 bytes, default 64
+déc. 13 19:15:55 thot kernel: Unpacking initramfs...
+déc. 13 19:15:55 thot kernel: Freeing initrd memory: 45300K
+déc. 13 19:15:55 thot kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+déc. 13 19:15:55 thot kernel: software IO TLB: mapped [mem 0xbbfdc000-0xbffdc000] (64MB)
+déc. 13 19:15:55 thot kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1fa2ebd9b85, max_idle_ns: 440795259329 ns
+déc. 13 19:15:55 thot kernel: Scanning for low memory corruption every 60 seconds
+déc. 13 19:15:55 thot kernel: Initialise system trusted keyrings
+déc. 13 19:15:55 thot kernel: Key type blacklist registered
+déc. 13 19:15:55 thot kernel: workingset: timestamp_bits=36 max_order=20 bucket_order=0
+déc. 13 19:15:55 thot kernel: zbud: loaded
+déc. 13 19:15:55 thot kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+déc. 13 19:15:55 thot kernel: fuse init (API version 7.26)
+déc. 13 19:15:55 thot kernel: Key type asymmetric registered
+déc. 13 19:15:55 thot kernel: Asymmetric key parser 'x509' registered
+déc. 13 19:15:55 thot kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+déc. 13 19:15:55 thot kernel: io scheduler noop registered
+déc. 13 19:15:55 thot kernel: io scheduler deadline registered
+déc. 13 19:15:55 thot kernel: io scheduler cfq registered (default)
+déc. 13 19:15:55 thot kernel: efifb: probing for efifb
+déc. 13 19:15:55 thot kernel: efifb: framebuffer at 0xfd000000, using 1408k, total 1408k
+déc. 13 19:15:55 thot kernel: efifb: mode is 800x600x24, linelength=2400, pages=1
+déc. 13 19:15:55 thot kernel: efifb: scrolling: redraw
+déc. 13 19:15:55 thot kernel: efifb: Truecolor: size=0:8:8:8, shift=0:16:8:0
+déc. 13 19:15:55 thot kernel: Console: switching to colour frame buffer device 100x37
+déc. 13 19:15:55 thot kernel: fb0: EFI VGA frame buffer device
+déc. 13 19:15:55 thot kernel: intel_idle: Please enable MWAIT in BIOS SETUP
+déc. 13 19:15:55 thot kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+déc. 13 19:15:55 thot kernel: ACPI: Power Button [PWRF]
+déc. 13 19:15:55 thot kernel: ACPI: PCI Interrupt Link [LNKC] enabled at IRQ 10
+déc. 13 19:15:55 thot kernel: ACPI: PCI Interrupt Link [LNKA] enabled at IRQ 10
+déc. 13 19:15:55 thot kernel: ACPI: PCI Interrupt Link [LNKB] enabled at IRQ 11
+déc. 13 19:15:55 thot kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+déc. 13 19:15:55 thot kernel: Linux agpgart interface v0.103
+déc. 13 19:15:55 thot kernel: loop: module loaded
+déc. 13 19:15:55 thot kernel: ata_piix 0000:00:01.1: version 2.13
+déc. 13 19:15:55 thot kernel: scsi host0: ata_piix
+déc. 13 19:15:55 thot kernel: scsi host1: ata_piix
+déc. 13 19:15:55 thot kernel: ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc120 irq 14
+déc. 13 19:15:55 thot kernel: ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc128 irq 15
+déc. 13 19:15:55 thot kernel: tun: Universal TUN/TAP device driver, 1.6
+déc. 13 19:15:55 thot kernel: PPP generic driver version 2.4.2
+déc. 13 19:15:55 thot kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+déc. 13 19:15:55 thot kernel: ehci-pci: EHCI PCI platform driver
+déc. 13 19:15:55 thot kernel: ehci-platform: EHCI generic platform driver
+déc. 13 19:15:55 thot kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+déc. 13 19:15:55 thot kernel: ohci-pci: OHCI PCI platform driver
+déc. 13 19:15:55 thot kernel: ohci-platform: OHCI generic platform driver
+déc. 13 19:15:55 thot kernel: uhci_hcd: USB Universal Host Controller Interface driver
+déc. 13 19:15:55 thot kernel: uhci_hcd 0000:00:01.2: UHCI Host Controller
+déc. 13 19:15:55 thot kernel: uhci_hcd 0000:00:01.2: new USB bus registered, assigned bus number 1
+déc. 13 19:15:55 thot kernel: uhci_hcd 0000:00:01.2: detected 2 ports
+déc. 13 19:15:55 thot kernel: uhci_hcd 0000:00:01.2: irq 11, io base 0x0000c0c0
+déc. 13 19:15:55 thot kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0001
+déc. 13 19:15:55 thot kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+déc. 13 19:15:55 thot kernel: usb usb1: Product: UHCI Host Controller
+déc. 13 19:15:55 thot kernel: usb usb1: Manufacturer: Linux 4.15.0-213-generic uhci_hcd
+déc. 13 19:15:55 thot kernel: usb usb1: SerialNumber: 0000:00:01.2
+déc. 13 19:15:55 thot kernel: hub 1-0:1.0: USB hub found
+déc. 13 19:15:55 thot kernel: hub 1-0:1.0: 2 ports detected
+déc. 13 19:15:55 thot kernel: i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+déc. 13 19:15:55 thot kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+déc. 13 19:15:55 thot kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+déc. 13 19:15:55 thot kernel: mousedev: PS/2 mouse device common for all mice
+déc. 13 19:15:55 thot kernel: rtc_cmos 00:00: RTC can wake from S4
+déc. 13 19:15:55 thot kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+déc. 13 19:15:55 thot kernel: rtc_cmos 00:00: rtc core: registered rtc_cmos as rtc0
+déc. 13 19:15:55 thot kernel: rtc_cmos 00:00: alarms up to one day, y3k, 114 bytes nvram, hpet irqs
+déc. 13 19:15:55 thot kernel: i2c /dev entries driver
+déc. 13 19:15:55 thot kernel: device-mapper: uevent: version 1.0.3
+déc. 13 19:15:55 thot kernel: device-mapper: ioctl: 4.37.0-ioctl (2017-09-20) initialised: dm-devel@redhat.com
+déc. 13 19:15:55 thot kernel: ledtrig-cpu: registered to indicate activity on CPUs
+déc. 13 19:15:55 thot kernel: NET: Registered protocol family 10
+déc. 13 19:15:55 thot kernel: Segment Routing with IPv6
+déc. 13 19:15:55 thot kernel: NET: Registered protocol family 17
+déc. 13 19:15:55 thot kernel: Key type dns_resolver registered
+déc. 13 19:15:55 thot kernel: mce: Using 10 MCE banks
+déc. 13 19:15:55 thot kernel: RAS: Correctable Errors collector initialized.
+déc. 13 19:15:55 thot kernel: sched_clock: Marking stable (933862807, 0)->(1096948315, -163085508)
+déc. 13 19:15:55 thot kernel: registered taskstats version 1
+déc. 13 19:15:55 thot kernel: Loading compiled-in X.509 certificates
+déc. 13 19:15:55 thot kernel: Loaded X.509 cert 'Build time autogenerated kernel key: cdc7189136aaa35407544516090e2034d9c28e14'
+déc. 13 19:15:55 thot kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+déc. 13 19:15:55 thot kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+déc. 13 19:15:55 thot kernel: blacklist: Loading compiled-in revocation X.509 certificates
+déc. 13 19:15:55 thot kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+déc. 13 19:15:55 thot kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+déc. 13 19:15:55 thot kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+déc. 13 19:15:55 thot kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+déc. 13 19:15:55 thot kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+déc. 13 19:15:55 thot kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+déc. 13 19:15:55 thot kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+déc. 13 19:15:55 thot kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+déc. 13 19:15:55 thot kernel: zswap: loaded using pool lzo/zbud
+déc. 13 19:15:55 thot kernel: Key type big_key registered
+déc. 13 19:15:55 thot kernel: Key type trusted registered
+déc. 13 19:15:55 thot kernel: Key type encrypted registered
+déc. 13 19:15:55 thot kernel: AppArmor: AppArmor sha1 policy hashing enabled
+déc. 13 19:15:55 thot kernel: ima: No TPM chip found, activating TPM-bypass! (rc=-19)
+déc. 13 19:15:55 thot kernel: ima: Allocated hash algorithm: sha1
+déc. 13 19:15:55 thot kernel: evm: HMAC attrs: 0x1
+déc. 13 19:15:55 thot kernel:   Magic number: 4:643:291
+déc. 13 19:15:55 thot kernel: tty tty24: hash matches
+déc. 13 19:15:55 thot kernel: rtc_cmos 00:00: setting system clock to 2024-12-13 18:15:50 UTC (1734113750)
+déc. 13 19:15:55 thot kernel: BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+déc. 13 19:15:55 thot kernel: EDD information not available.
+déc. 13 19:15:55 thot kernel: ata1.01: NODEV after polling detection
+déc. 13 19:15:55 thot kernel: ata1.00: ATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+déc. 13 19:15:55 thot kernel: ata1.00: configured for MWDMA2
+déc. 13 19:15:55 thot kernel: scsi 0:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     2.5+ PQ: 0 ANSI: 5
+déc. 13 19:15:55 thot kernel: sr 0:0:0:0: [sr0] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+déc. 13 19:15:55 thot kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+déc. 13 19:15:55 thot kernel: sr 0:0:0:0: Attached scsi CD-ROM sr0
+déc. 13 19:15:55 thot kernel: sr 0:0:0:0: Attached scsi generic sg0 type 5
+déc. 13 19:15:55 thot kernel: Freeing unused kernel image memory: 2480K
+déc. 13 19:15:55 thot kernel: Write protecting the kernel read-only data: 20480k
+déc. 13 19:15:55 thot kernel: Freeing unused kernel image memory: 2008K
+déc. 13 19:15:55 thot kernel: Freeing unused kernel image memory: 1820K
+déc. 13 19:15:55 thot kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+déc. 13 19:15:55 thot kernel: x86/mm: Checking user space page tables
+déc. 13 19:15:55 thot kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+déc. 13 19:15:55 thot kernel: piix4_smbus 0000:00:01.3: SMBus Host Controller at 0x700, revision 0
+déc. 13 19:15:55 thot kernel: input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input4
+déc. 13 19:15:55 thot kernel: input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input3
+déc. 13 19:15:55 thot kernel: scsi host2: Virtio SCSI HBA
+déc. 13 19:15:55 thot kernel: usb 1-1: new full-speed USB device number 2 using uhci_hcd
+déc. 13 19:15:55 thot kernel: scsi 2:0:0:0: Direct-Access     QEMU     QEMU HARDDISK    2.5+ PQ: 0 ANSI: 5
+déc. 13 19:15:55 thot kernel: FDC 0 is a S82078B
+déc. 13 19:15:55 thot kernel: virtio_net virtio1 ens4: renamed from eth0
+déc. 13 19:15:55 thot kernel: usb 1-1: New USB device found, idVendor=0627, idProduct=0001
+déc. 13 19:15:55 thot kernel: usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=5
+déc. 13 19:15:55 thot kernel: usb 1-1: Product: QEMU USB Tablet
+déc. 13 19:15:55 thot kernel: usb 1-1: Manufacturer: QEMU
+déc. 13 19:15:55 thot kernel: usb 1-1: SerialNumber: 42
+déc. 13 19:15:55 thot kernel: hidraw: raw HID events driver (C) Jiri Kosina
+déc. 13 19:15:55 thot kernel: sd 2:0:0:0: Power-on or device reset occurred
+déc. 13 19:15:55 thot kernel: sd 2:0:0:0: Attached scsi generic sg1 type 0
+déc. 13 19:15:55 thot kernel: sd 2:0:0:0: [sda] 104857600 512-byte logical blocks: (53.7 GB/50.0 GiB)
+déc. 13 19:15:55 thot kernel: sd 2:0:0:0: [sda] Write Protect is off
+déc. 13 19:15:55 thot kernel: sd 2:0:0:0: [sda] Mode Sense: 63 00 00 08
+déc. 13 19:15:55 thot kernel: sd 2:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+déc. 13 19:15:55 thot kernel:  sda: sda1 sda2
+déc. 13 19:15:55 thot kernel: sd 2:0:0:0: [sda] Attached SCSI disk
+déc. 13 19:15:55 thot kernel: usbcore: registered new interface driver usbhid
+déc. 13 19:15:55 thot kernel: usbhid: USB HID core driver
+déc. 13 19:15:55 thot kernel: input: QEMU QEMU USB Tablet as /devices/pci0000:00/0000:00:01.2/usb1/1-1/1-1:1.0/0003:0627:0001.0001/input/input5
+déc. 13 19:15:55 thot kernel: hid-generic 0003:0627:0001.0001: input,hidraw0: USB HID v0.01 Mouse [QEMU QEMU USB Tablet] on usb-0000:00:01.2-1/input0
+déc. 13 19:15:55 thot kernel: EXT4-fs (dm-1): mounted filesystem with ordered data mode. Opts: (null)
+déc. 13 19:15:55 thot kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+déc. 13 19:15:55 thot systemd[1]: systemd 237 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+déc. 13 19:15:55 thot systemd[1]: Detected virtualization kvm.
+déc. 13 19:15:55 thot systemd[1]: Detected architecture x86-64.
+déc. 13 19:15:55 thot systemd[1]: Set hostname to <thot>.
+déc. 13 19:15:55 thot systemd[1]: Started ntp-systemd-netif.path.
+déc. 13 19:15:55 thot systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+déc. 13 19:15:55 thot systemd[1]: Created slice System Slice.
+déc. 13 19:15:55 thot systemd[1]: Listening on Journal Audit Socket.
+déc. 13 19:15:55 thot systemd[1]: Listening on Journal Socket.
+déc. 13 19:15:55 thot systemd[1]: Starting Create list of required static device nodes for the current kernel...
+déc. 13 19:15:55 thot kernel: EXT4-fs (dm-1): re-mounted. Opts: errors=remount-ro
+déc. 13 19:15:55 thot systemd-journald[304]: Journal started
+-- Subject: Le journal a été démarré
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Le processus du journal système a démarré, ouvert ses fichiers en écriture
+-- et est prêt à traiter les requêtes.
+déc. 13 19:15:55 thot systemd-journald[304]: Runtime journal (/run/log/journal/2f99f55f811243aab5eea26bdee5f40b) is 4.9M, max 39.4M, 34.5M free.
+-- Subject: Espace disque utilisé par le journal
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: man:journald.conf(5)
+-- 
+-- Runtime journal (/run/log/journal/2f99f55f811243aab5eea26bdee5f40b) utilise actuellement 4.9M.
+-- Le maximum autorisé est défini à 39.4M.
+-- Au moins 59.1M doivent être laissés libres
+-- (sur 389.2M d'espace disque actuellement libre).
+-- La limite appliquée est donc 39.4M, dont 34.5M
+-- sont toujours disponibles.
+-- 
+-- Les limites définissant la quantité d'espace disque que peut utiliser le
+-- journal peuvent être configurées avec les paramètres SystemMaxUse=,
+-- SystemKeepFree=, SystemMaxFileSize=, RuntimeMaxUse=, RuntimeKeepFree=,
+-- RuntimeMaxFileSize= dans le fichier /etc/systemd/journald.conf.
+-- Voir journald.conf(5) pour plus de détails.
+déc. 13 19:15:55 thot systemd[1]: Started Set the console keyboard layout.
+-- Subject: L'unité (unit) keyboard-setup.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) keyboard-setup.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:55 thot systemd[1]: Started LVM2 metadata daemon.
+-- Subject: L'unité (unit) lvm2-lvmetad.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) lvm2-lvmetad.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:55 thot systemd[1]: Started udev Coldplug all Devices.
+-- Subject: L'unité (unit) systemd-udev-trigger.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-udev-trigger.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:55 thot systemd[1]: Starting udev Wait for Complete Device Initialization...
+-- Subject: L'unité (unit) systemd-udev-settle.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-udev-settle.service a commencé à démarrer.
+déc. 13 19:15:55 thot systemd[1]: Started Apply Kernel Variables.
+-- Subject: L'unité (unit) systemd-sysctl.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-sysctl.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:55 thot systemd[1]: Started Create Static Device Nodes in /dev.
+-- Subject: L'unité (unit) systemd-tmpfiles-setup-dev.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-tmpfiles-setup-dev.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:55 thot systemd[1]: Starting udev Kernel Device Manager...
+-- Subject: L'unité (unit) systemd-udevd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-udevd.service a commencé à démarrer.
+déc. 13 19:15:55 thot lvm[298]:   5 logical volume(s) in volume group "thot-vg" monitored
+déc. 13 19:15:55 thot systemd[1]: Started Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+-- Subject: L'unité (unit) lvm2-monitor.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) lvm2-monitor.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:55 thot systemd[1]: Reached target Local File Systems (Pre).
+-- Subject: L'unité (unit) local-fs-pre.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) local-fs-pre.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:55 thot systemd[1]: Started udev Kernel Device Manager.
+-- Subject: L'unité (unit) systemd-udevd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-udevd.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:55 thot systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+-- Subject: L'unité (unit) systemd-ask-password-console.path a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-ask-password-console.path a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:55 thot systemd[1]: Reached target Local Encrypted Volumes.
+-- Subject: L'unité (unit) cryptsetup.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) cryptsetup.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:55 thot systemd-udevd[319]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+déc. 13 19:15:55 thot kernel: 9pnet: Installing 9P2000 support
+déc. 13 19:15:55 thot systemd-udevd[329]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+déc. 13 19:15:55 thot systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+-- Subject: L'unité (unit) systemd-rfkill.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-rfkill.socket a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:55 thot kernel: checking generic (fd000000 160000) vs hw (fd000000 1000000)
+déc. 13 19:15:55 thot kernel: fb: switching to bochsdrmfb from EFI VGA
+déc. 13 19:15:55 thot kernel: Console: switching to colour dummy device 80x25
+déc. 13 19:15:55 thot kernel: [drm] Found bochs VGA, ID 0xb0c0.
+déc. 13 19:15:55 thot kernel: [drm] Framebuffer size 16384 kB @ 0xfd000000, mmio @ 0xfebd0000.
+déc. 13 19:15:55 thot kernel: [TTM] Zone  kernel: Available graphics memory: 2019330 kiB
+déc. 13 19:15:55 thot kernel: [TTM] Initializing pool allocator
+déc. 13 19:15:55 thot kernel: [TTM] Initializing DMA pool allocator
+déc. 13 19:15:55 thot kernel: fbcon: bochsdrmfb (fb0) is primary device
+déc. 13 19:15:55 thot kernel: Console: switching to colour frame buffer device 128x48
+déc. 13 19:15:55 thot kernel: bochs-drm 0000:00:02.0: fb0: bochsdrmfb frame buffer device
+déc. 13 19:15:56 thot kernel: [drm] Initialized bochs-drm 1.0.0 20130925 for 0000:00:02.0 on minor 0
+déc. 13 19:15:56 thot kernel: AVX2 version of gcm_enc/dec engaged.
+déc. 13 19:15:56 thot kernel: AES CTR mode by8 optimization enabled
+déc. 13 19:15:56 thot systemd[1]: Found device /dev/mapper/thot--vg-swap_1.
+-- Subject: L'unité (unit) dev-mapper-thot\x2d\x2dvg\x2dswap_1.device a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dev-mapper-thot\x2d\x2dvg\x2dswap_1.device a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Found device /dev/mapper/thot--vg-tmp.
+-- Subject: L'unité (unit) dev-mapper-thot\x2d\x2dvg\x2dtmp.device a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dev-mapper-thot\x2d\x2dvg\x2dtmp.device a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Found device /dev/mapper/thot--vg-home.
+-- Subject: L'unité (unit) dev-mapper-thot\x2d\x2dvg\x2dhome.device a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dev-mapper-thot\x2d\x2dvg\x2dhome.device a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Found device QEMU_HARDDISK /boot.
+-- Subject: L'unité (unit) dev-disk-by\x2duuid-e737fec1\x2d9577\x2d49ea\x2dbb30\x2de108099813b9.device a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dev-disk-by\x2duuid-e737fec1\x2d9577\x2d49ea\x2dbb30\x2de108099813b9.device a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Found device /dev/mapper/thot--vg-var.
+-- Subject: L'unité (unit) dev-mapper-thot\x2d\x2dvg\x2dvar.device a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dev-mapper-thot\x2d\x2dvg\x2dvar.device a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Starting File System Check on /dev/mapper/thot--vg-var...
+-- Subject: L'unité (unit) systemd-fsck@dev-mapper-thot\x2d\x2dvg\x2dvar.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck@dev-mapper-thot\x2d\x2dvg\x2dvar.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Starting File System Check on /dev/disk/by-uuid/e737fec1-9577-49ea-bb30-e108099813b9...
+-- Subject: L'unité (unit) systemd-fsck@dev-disk-by\x2duuid-e737fec1\x2d9577\x2d49ea\x2dbb30\x2de108099813b9.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck@dev-disk-by\x2duuid-e737fec1\x2d9577\x2d49ea\x2dbb30\x2de108099813b9.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Starting File System Check on /dev/mapper/thot--vg-home...
+-- Subject: L'unité (unit) systemd-fsck@dev-mapper-thot\x2d\x2dvg\x2dhome.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck@dev-mapper-thot\x2d\x2dvg\x2dhome.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Starting File System Check on /dev/mapper/thot--vg-tmp...
+-- Subject: L'unité (unit) systemd-fsck@dev-mapper-thot\x2d\x2dvg\x2dtmp.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck@dev-mapper-thot\x2d\x2dvg\x2dtmp.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Activating swap /dev/mapper/thot--vg-swap_1...
+-- Subject: L'unité (unit) dev-mapper-thot\x2d\x2dvg\x2dswap_1.swap a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dev-mapper-thot\x2d\x2dvg\x2dswap_1.swap a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Created slice system-lvm2\x2dpvscan.slice.
+-- Subject: L'unité (unit) system-lvm2\x2dpvscan.slice a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) system-lvm2\x2dpvscan.slice a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Starting LVM2 PV scan on device 8:2...
+-- Subject: L'unité (unit) lvm2-pvscan@8:2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) lvm2-pvscan@8:2.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Started File System Check Daemon to report status.
+-- Subject: L'unité (unit) systemd-fsckd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsckd.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot kernel: Adding 1703932k swap on /dev/mapper/thot--vg-swap_1.  Priority:-2 extents:1 across:1703932k FS
+déc. 13 19:15:56 thot systemd[1]: Activated swap /dev/mapper/thot--vg-swap_1.
+-- Subject: L'unité (unit) dev-mapper-thot\x2d\x2dvg\x2dswap_1.swap a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dev-mapper-thot\x2d\x2dvg\x2dswap_1.swap a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Reached target Swap.
+-- Subject: L'unité (unit) swap.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) swap.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd-fsck[423]: /var : propre, 5797/124928 fichiers, 315861/499712 blocs
+déc. 13 19:15:56 thot systemd-fsck[429]: /home : propre, 18/124928 fichiers, 17515/499712 blocs
+déc. 13 19:15:56 thot systemd-fsck[427]: /boot : propre, 314/45696 fichiers, 38223/182784 blocs
+déc. 13 19:15:56 thot systemd-fsck[430]: /tmp : propre, 19/121920 fichiers, 17290/487424 blocs
+déc. 13 19:15:56 thot lvm[437]:   5 logical volume(s) in volume group "thot-vg" now active
+déc. 13 19:15:56 thot systemd[1]: Started LVM2 PV scan on device 8:2.
+-- Subject: L'unité (unit) lvm2-pvscan@8:2.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) lvm2-pvscan@8:2.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Started File System Check on /dev/mapper/thot--vg-var.
+-- Subject: L'unité (unit) systemd-fsck@dev-mapper-thot\x2d\x2dvg\x2dvar.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck@dev-mapper-thot\x2d\x2dvg\x2dvar.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Started File System Check on /dev/disk/by-uuid/e737fec1-9577-49ea-bb30-e108099813b9.
+-- Subject: L'unité (unit) systemd-fsck@dev-disk-by\x2duuid-e737fec1\x2d9577\x2d49ea\x2dbb30\x2de108099813b9.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck@dev-disk-by\x2duuid-e737fec1\x2d9577\x2d49ea\x2dbb30\x2de108099813b9.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Started File System Check on /dev/mapper/thot--vg-home.
+-- Subject: L'unité (unit) systemd-fsck@dev-mapper-thot\x2d\x2dvg\x2dhome.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck@dev-mapper-thot\x2d\x2dvg\x2dhome.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Started File System Check on /dev/mapper/thot--vg-tmp.
+-- Subject: L'unité (unit) systemd-fsck@dev-mapper-thot\x2d\x2dvg\x2dtmp.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck@dev-mapper-thot\x2d\x2dvg\x2dtmp.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Mounting /tmp...
+-- Subject: L'unité (unit) tmp.mount a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) tmp.mount a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Mounting /home...
+-- Subject: L'unité (unit) home.mount a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) home.mount a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Mounting /boot...
+-- Subject: L'unité (unit) boot.mount a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) boot.mount a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Mounting /var...
+-- Subject: L'unité (unit) var.mount a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) var.mount a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Mounted /tmp.
+-- Subject: L'unité (unit) tmp.mount a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) tmp.mount a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot kernel: EXT4-fs (dm-2): mounted filesystem with ordered data mode. Opts: (null)
+déc. 13 19:15:56 thot systemd[1]: Mounted /home.
+-- Subject: L'unité (unit) home.mount a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) home.mount a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot kernel: EXT4-fs (dm-4): mounted filesystem with ordered data mode. Opts: usrquota,grpquota
+déc. 13 19:15:56 thot systemd[1]: Mounted /var.
+-- Subject: L'unité (unit) var.mount a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) var.mount a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Mounted /boot.
+-- Subject: L'unité (unit) boot.mount a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) boot.mount a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot kernel: EXT4-fs (dm-3): mounted filesystem with ordered data mode. Opts: (null)
+déc. 13 19:15:56 thot kernel: EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+déc. 13 19:15:56 thot systemd[1]: Starting Flush Journal to Persistent Storage...
+-- Subject: L'unité (unit) systemd-journal-flush.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-journal-flush.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Starting Load/Save Random Seed...
+-- Subject: L'unité (unit) systemd-random-seed.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-random-seed.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Reached target Remote File Systems.
+-- Subject: L'unité (unit) remote-fs.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) remote-fs.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Reached target Local File Systems.
+-- Subject: L'unité (unit) local-fs.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) local-fs.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+-- Subject: L'unité (unit) plymouth-read-write.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-read-write.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Starting AppArmor initialization...
+-- Subject: L'unité (unit) apparmor.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apparmor.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Starting Set console font and keymap...
+-- Subject: L'unité (unit) console-setup.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) console-setup.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Started Load/Save Random Seed.
+-- Subject: L'unité (unit) systemd-random-seed.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-random-seed.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd-journald[304]: Time spent on flushing to /var is 17.370ms for 625 entries.
+déc. 13 19:15:56 thot systemd-journald[304]: System journal (/var/log/journal/2f99f55f811243aab5eea26bdee5f40b) is 184.0M, max 188.3M, 4.2M free.
+-- Subject: Espace disque utilisé par le journal
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: man:journald.conf(5)
+-- 
+-- System journal (/var/log/journal/2f99f55f811243aab5eea26bdee5f40b) utilise actuellement 184.0M.
+-- Le maximum autorisé est défini à 188.3M.
+-- Au moins 282.5M doivent être laissés libres
+-- (sur 604.5M d'espace disque actuellement libre).
+-- La limite appliquée est donc 188.3M, dont 4.2M
+-- sont toujours disponibles.
+-- 
+-- Les limites définissant la quantité d'espace disque que peut utiliser le
+-- journal peuvent être configurées avec les paramètres SystemMaxUse=,
+-- SystemKeepFree=, SystemMaxFileSize=, RuntimeMaxUse=, RuntimeKeepFree=,
+-- RuntimeMaxFileSize= dans le fichier /etc/systemd/journald.conf.
+-- Voir journald.conf(5) pour plus de détails.
+déc. 13 19:15:56 thot apparmor[468]:  * Starting AppArmor profiles
+déc. 13 19:15:56 thot systemd[1]: Started Set console font and keymap.
+-- Subject: L'unité (unit) console-setup.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) console-setup.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+-- Subject: L'unité (unit) plymouth-read-write.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-read-write.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Started udev Wait for Complete Device Initialization.
+-- Subject: L'unité (unit) systemd-udev-settle.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-udev-settle.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Started Flush Journal to Persistent Storage.
+-- Subject: L'unité (unit) systemd-journal-flush.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-journal-flush.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Starting Create Volatile Files and Directories...
+-- Subject: L'unité (unit) systemd-tmpfiles-setup.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-tmpfiles-setup.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Started Create Volatile Files and Directories.
+-- Subject: L'unité (unit) systemd-tmpfiles-setup.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-tmpfiles-setup.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Starting Network Time Synchronization...
+-- Subject: L'unité (unit) systemd-timesyncd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-timesyncd.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+-- Subject: L'unité (unit) systemd-update-utmp.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-update-utmp.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+-- Subject: L'unité (unit) plymouth-read-write.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-read-write.service a commencé à démarrer.
+déc. 13 19:15:56 thot audit[542]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_apt_news" pid=542 comm="apparmor_parser"
+déc. 13 19:15:56 thot kernel: audit: type=1400 audit(1734113756.380:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_apt_news" pid=542 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[544]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/freshclam" pid=544 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[541]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=541 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[541]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=541 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[541]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=541 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[541]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=541 comm="apparmor_parser"
+déc. 13 19:15:56 thot kernel: audit: type=1400 audit(1734113756.384:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/freshclam" pid=544 comm="apparmor_parser"
+déc. 13 19:15:56 thot kernel: audit: type=1400 audit(1734113756.384:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=541 comm="apparmor_parser"
+déc. 13 19:15:56 thot kernel: audit: type=1400 audit(1734113756.384:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=541 comm="apparmor_parser"
+déc. 13 19:15:56 thot kernel: audit: type=1400 audit(1734113756.384:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=541 comm="apparmor_parser"
+déc. 13 19:15:56 thot kernel: audit: type=1400 audit(1734113756.384:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=541 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[543]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache" pid=543 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[543]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//apt_methods" pid=543 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[543]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//apt_methods_gpgv" pid=543 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[543]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//cloud_id" pid=543 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[543]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//dpkg" pid=543 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[543]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//ps" pid=543 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[543]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//ubuntu_distro_info" pid=543 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[543]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache_systemctl" pid=543 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[543]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache_systemd_detect_virt" pid=543 comm="apparmor_parser"
+déc. 13 19:15:56 thot systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+-- Subject: L'unité (unit) plymouth-read-write.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-read-write.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot kernel: audit: type=1400 audit(1734113756.388:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache" pid=543 comm="apparmor_parser"
+déc. 13 19:15:56 thot kernel: audit: type=1400 audit(1734113756.388:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//apt_methods" pid=543 comm="apparmor_parser"
+déc. 13 19:15:56 thot kernel: audit: type=1400 audit(1734113756.388:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//apt_methods_gpgv" pid=543 comm="apparmor_parser"
+déc. 13 19:15:56 thot kernel: audit: type=1400 audit(1734113756.388:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//cloud_id" pid=543 comm="apparmor_parser"
+déc. 13 19:15:56 thot systemd[1]: Started Update UTMP about System Boot/Shutdown.
+-- Subject: L'unité (unit) systemd-update-utmp.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-update-utmp.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot audit[548]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=548 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[548]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=548 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[548]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=548 comm="apparmor_parser"
+déc. 13 19:15:56 thot apparmor[468]: Skipping profile in /etc/apparmor.d/disable: usr.sbin.rsyslogd
+déc. 13 19:15:56 thot audit[549]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/clamd" pid=549 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[550]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/mysqld" pid=550 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[551]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/ntpd" pid=551 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[553]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/slapd" pid=553 comm="apparmor_parser"
+déc. 13 19:15:56 thot audit[554]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=554 comm="apparmor_parser"
+déc. 13 19:15:56 thot apparmor[468]:    ...done.
+déc. 13 19:15:56 thot systemd[1]: Started AppArmor initialization.
+-- Subject: L'unité (unit) apparmor.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apparmor.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Started Network Time Synchronization.
+-- Subject: L'unité (unit) systemd-timesyncd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-timesyncd.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Reached target System Initialization.
+-- Subject: L'unité (unit) sysinit.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) sysinit.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Listening on ACPID Listen Socket.
+-- Subject: L'unité (unit) acpid.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) acpid.socket a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Listening on UUID daemon activation socket.
+-- Subject: L'unité (unit) uuidd.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) uuidd.socket a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Started ACPI Events Check.
+-- Subject: L'unité (unit) acpid.path a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) acpid.path a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Reached target Paths.
+-- Subject: L'unité (unit) paths.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) paths.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Listening on D-Bus System Message Bus Socket.
+-- Subject: L'unité (unit) dbus.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dbus.socket a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Reached target Sockets.
+-- Subject: L'unité (unit) sockets.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) sockets.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Reached target Basic System.
+-- Subject: L'unité (unit) basic.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) basic.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Started irqbalance daemon.
+-- Subject: L'unité (unit) irqbalance.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) irqbalance.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Starting Dispatcher daemon for systemd-networkd...
+-- Subject: L'unité (unit) networkd-dispatcher.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) networkd-dispatcher.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Starting rng-tools.service...
+-- Subject: L'unité (unit) rng-tools.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) rng-tools.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Starting LSB: gpm sysv init script...
+-- Subject: L'unité (unit) gpm.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) gpm.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Started D-Bus System Message Bus.
+-- Subject: L'unité (unit) dbus.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dbus.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot rng-tools[558]: Starting Hardware RNG entropy gatherer daemon: rngd.
+déc. 13 19:15:56 thot dbus-daemon[560]: [system] AppArmor D-Bus mediation is enabled
+déc. 13 19:15:56 thot systemd[1]: Started ntp-systemd-netif.service.
+-- Subject: L'unité (unit) ntp-systemd-netif.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ntp-systemd-netif.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Starting EOLE Continuous Integration Tests Contextualisation 18.04...
+-- Subject: L'unité (unit) EoleCiTestsContext.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) EoleCiTestsContext.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Starting LSB: Record successful boot for GRUB...
+-- Subject: L'unité (unit) grub-common.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) grub-common.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Starting Login Service...
+-- Subject: L'unité (unit) systemd-logind.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-logind.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Started Deferred execution scheduler.
+-- Subject: L'unité (unit) atd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) atd.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd[1]: Starting System Logging Service...
+-- Subject: L'unité (unit) rsyslog.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) rsyslog.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Started Regular background program processing daemon.
+-- Subject: L'unité (unit) cron.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) cron.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot cron[584]: (CRON) INFO (pidfile fd = 3)
+déc. 13 19:15:56 thot systemd[1]: Starting Clam AntiVirus userspace daemon...
+-- Subject: L'unité (unit) clamav-daemon.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) clamav-daemon.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Started Daily Cleanup of Temporary Directories.
+-- Subject: L'unité (unit) systemd-tmpfiles-clean.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-tmpfiles-clean.timer a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot kernel: FS-Cache: Loaded
+déc. 13 19:15:56 thot systemd[1]: Starting Accounts Service...
+-- Subject: L'unité (unit) accounts-daemon.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) accounts-daemon.service a commencé à démarrer.
+déc. 13 19:15:56 thot systemd[1]: Started rng-tools.service.
+-- Subject: L'unité (unit) rng-tools.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) rng-tools.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot systemd-logind[573]: New seat seat0.
+-- Subject: Un nouveau poste (seat) seat0 est disponible
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- Un nouveau poste (seat) seat0 a été configuré et est maintenant
+-- disponible.
+déc. 13 19:15:56 thot systemd-logind[573]: Watching system buttons on /dev/input/event0 (Power Button)
+déc. 13 19:15:56 thot systemd-logind[573]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+déc. 13 19:15:56 thot kernel: 9p: Installing v9fs 9p2000 file system support
+déc. 13 19:15:56 thot kernel: FS-Cache: Netfs '9p' registered for caching
+déc. 13 19:15:56 thot bash[569]: wait mount 9P (1/6): ok
+déc. 13 19:15:56 thot cron[584]: (CRON) INFO (Running @reboot jobs)
+déc. 13 19:15:56 thot systemd[1]: Started Clam AntiVirus userspace daemon.
+-- Subject: L'unité (unit) clamav-daemon.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) clamav-daemon.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot grub-common[572]:  * Recording successful boot for GRUB
+déc. 13 19:15:56 thot systemd[1]: Started Login Service.
+-- Subject: L'unité (unit) systemd-logind.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-logind.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot gpm[559]:  * Starting mouse interface server gpm
+déc. 13 19:15:56 thot rsyslogd[576]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.32.0]
+déc. 13 19:15:56 thot rsyslogd[576]: rsyslogd's groupid changed to 106
+déc. 13 19:15:56 thot systemd[1]: Started System Logging Service.
+-- Subject: L'unité (unit) rsyslog.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) rsyslog.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot rsyslogd[576]: rsyslogd's userid changed to 102
+déc. 13 19:15:56 thot rsyslogd[576]:  [origin software="rsyslogd" swVersion="8.32.0" x-pid="576" x-info="http://www.rsyslog.com"] start
+déc. 13 19:15:56 thot bash[606]: CheckUpdate.sh: /root/mount.eole-ci-tests A JOUR
+déc. 13 19:15:56 thot bash[606]: CheckUpdate.sh: /root/getVMContext.sh A JOUR
+déc. 13 19:15:56 thot bash[606]: CheckUpdate.sh: /root/EoleCiFunctions.sh A JOUR
+déc. 13 19:15:56 thot grub-common[572]:    ...done.
+déc. 13 19:15:56 thot systemd[1]: Started LSB: Record successful boot for GRUB.
+-- Subject: L'unité (unit) grub-common.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) grub-common.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot bash[606]: CheckUpdate.sh: /root/.EoleCiTestsContext.sh A JOUR
+déc. 13 19:15:56 thot bash[606]: CheckUpdate.sh: /root/.EoleCiTestsDaemon.sh A JOUR
+déc. 13 19:15:56 thot accounts-daemon[588]: started daemon version 0.6.45
+déc. 13 19:15:56 thot systemd[1]: Started Accounts Service.
+-- Subject: L'unité (unit) accounts-daemon.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) accounts-daemon.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot gpm[559]:    ...done.
+déc. 13 19:15:56 thot /usr/sbin/gpm[660]: *** info [daemon/startup.c(131)]:
+déc. 13 19:15:56 thot /usr/sbin/gpm[660]: Started gpm successfully. Entered daemon mode.
+déc. 13 19:15:56 thot systemd[1]: Started LSB: gpm sysv init script.
+-- Subject: L'unité (unit) gpm.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) gpm.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:56 thot kernel: ISO 9660 Extensions: Microsoft Joliet Level 3
+déc. 13 19:15:56 thot kernel: ISO 9660 Extensions: RRIP_1991A
+déc. 13 19:15:57 thot EOLECITESTS[684]: ciContextualizeMachine: réalisée pour 1414464, à refaire
+déc. 13 19:15:57 thot EOLECITESTS[685]: Début ciContextualizeMachine : daily,
+déc. 13 19:15:57 thot EOLECITESTS[686]: Debut ciContextualizeDaily
+déc. 13 19:15:57 thot networkd-dispatcher[557]: No valid path found for iwconfig
+déc. 13 19:15:57 thot networkd-dispatcher[557]: WARNING: systemd-networkd is not running, output will be incomplete.
+déc. 13 19:15:57 thot networkd-dispatcher[557]: ERROR:Unknown state for interface NetworkctlListState(idx=1, name='lo', type='loopback', operational='n/a', administrative='unmanaged'): n/a
+déc. 13 19:15:57 thot networkd-dispatcher[557]: Traceback (most recent call last):
+déc. 13 19:15:57 thot networkd-dispatcher[557]:   File "/usr/bin/networkd-dispatcher", line 286, in trigger_all
+déc. 13 19:15:57 thot networkd-dispatcher[557]:     force=True)
+déc. 13 19:15:57 thot networkd-dispatcher[557]:   File "/usr/bin/networkd-dispatcher", line 338, in handle_state
+déc. 13 19:15:57 thot networkd-dispatcher[557]:     raise UnknownState(operational_state)
+déc. 13 19:15:57 thot networkd-dispatcher[557]: UnknownState: n/a
+déc. 13 19:15:57 thot networkd-dispatcher[557]: ERROR:Unknown state for interface NetworkctlListState(idx=2, name='ens4', type='ether', operational='n/a', administrative='unmanaged'): n/a
+déc. 13 19:15:57 thot networkd-dispatcher[557]: Traceback (most recent call last):
+déc. 13 19:15:57 thot networkd-dispatcher[557]:   File "/usr/bin/networkd-dispatcher", line 286, in trigger_all
+déc. 13 19:15:57 thot networkd-dispatcher[557]:     force=True)
+déc. 13 19:15:57 thot networkd-dispatcher[557]:   File "/usr/bin/networkd-dispatcher", line 338, in handle_state
+déc. 13 19:15:57 thot networkd-dispatcher[557]:     raise UnknownState(operational_state)
+déc. 13 19:15:57 thot networkd-dispatcher[557]: UnknownState: n/a
+déc. 13 19:15:57 thot systemd[1]: Started Dispatcher daemon for systemd-networkd.
+-- Subject: L'unité (unit) networkd-dispatcher.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) networkd-dispatcher.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot EOLECITESTS[700]: 01-netcfg ok, on ne fait rien !
+déc. 13 19:15:57 thot EOLECITESTS[701]: Fin ciContextualizeDaily
+déc. 13 19:15:57 thot EOLECITESTS[702]: Contextualization Machine OK
+déc. 13 19:15:57 thot clamd[608]: LibClamAV Warning: **************************************************
+déc. 13 19:15:57 thot clamd[608]: LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+déc. 13 19:15:57 thot clamd[608]: LibClamAV Warning: ***   Please update it as soon as possible.    ***
+déc. 13 19:15:57 thot clamd[608]: LibClamAV Warning: **************************************************
+déc. 13 19:15:57 thot EOLECITESTS[708]: jenkins 1422904 daily Contextualization Machine : OK
+déc. 13 19:15:57 thot EOLECITESTS[709]: Fin ciContextualizeMachine : ok à 2024-12-13 19:15:57
+déc. 13 19:15:57 thot echo[710]: Contextualisation Ok
+déc. 13 19:15:57 thot systemd[1]: Started EOLE Continuous Integration Tests Contextualisation 18.04.
+-- Subject: L'unité (unit) EoleCiTestsContext.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) EoleCiTestsContext.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot systemd[1]: Reached target Network (Pre).
+-- Subject: L'unité (unit) network-pre.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) network-pre.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot systemd[1]: Starting Network Service...
+-- Subject: L'unité (unit) systemd-networkd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-networkd.service a commencé à démarrer.
+déc. 13 19:15:57 thot systemd[1]: Starting Raise network interfaces...
+-- Subject: L'unité (unit) networking.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) networking.service a commencé à démarrer.
+déc. 13 19:15:57 thot systemd[1]: Starting Apply netplan config...
+-- Subject: L'unité (unit) netplan-apply.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) netplan-apply.service a commencé à démarrer.
+déc. 13 19:15:57 thot systemd-networkd[711]: Enumeration completed
+déc. 13 19:15:57 thot systemd-networkd[711]: ens4: IPv6 successfully enabled
+déc. 13 19:15:57 thot systemd-networkd[711]: lo: Link is not managed by us
+déc. 13 19:15:57 thot systemd[1]: Started Network Service.
+-- Subject: L'unité (unit) systemd-networkd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-networkd.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot systemd-networkd[711]: ens4: Link UP
+déc. 13 19:15:57 thot systemd[1]: Starting Wait for Network to be Configured...
+-- Subject: L'unité (unit) systemd-networkd-wait-online.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-networkd-wait-online.service a commencé à démarrer.
+déc. 13 19:15:57 thot eole-purge-interfaces[713]: Purge all interfaces...
+déc. 13 19:15:57 thot systemd[1]: Starting Network Name Resolution...
+-- Subject: L'unité (unit) systemd-resolved.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-resolved.service a commencé à démarrer.
+déc. 13 19:15:57 thot systemd-networkd-wait-online[736]: ignoring: lo
+déc. 13 19:15:57 thot systemd-networkd[711]: ens4: Gained carrier
+déc. 13 19:15:57 thot systemd-networkd-wait-online[736]: ignoring: lo
+déc. 13 19:15:57 thot systemd-networkd[711]: ens4: DHCPv4 address 192.168.0.153/24 via 192.168.0.1
+déc. 13 19:15:57 thot dbus-daemon[560]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.4' (uid=100 pid=711 comm="/lib/systemd/systemd-networkd " label="unconfined")
+déc. 13 19:15:57 thot systemd-networkd-wait-online[736]: ignoring: lo
+déc. 13 19:15:57 thot systemd-networkd-wait-online[736]: ignoring: lo
+déc. 13 19:15:57 thot systemd-timesyncd[545]: Network configuration changed, trying to establish connection.
+déc. 13 19:15:57 thot systemd[1]: Started ntp-systemd-netif.service.
+-- Subject: L'unité (unit) ntp-systemd-netif.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ntp-systemd-netif.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot systemd[1]: Starting Hostname Service...
+-- Subject: L'unité (unit) systemd-hostnamed.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-hostnamed.service a commencé à démarrer.
+déc. 13 19:15:57 thot networkd-dispatcher[557]: openssh-server: SSH daemon is not running, exit
+déc. 13 19:15:57 thot systemd[1]: Started Raise network interfaces.
+-- Subject: L'unité (unit) networking.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) networking.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot systemd-resolved[737]: Positive Trust Anchors:
+déc. 13 19:15:57 thot systemd-resolved[737]: . IN DS 19036 8 2 49aac11d7b6f6446702e54a1607371607a1a41855200fd2ce1cdde32f24e8fb5
+déc. 13 19:15:57 thot systemd-resolved[737]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+déc. 13 19:15:57 thot systemd-resolved[737]: Negative trust anchors: 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa corp home internal intranet lan local private test
+déc. 13 19:15:57 thot systemd-resolved[737]: Using system hostname 'thot'.
+déc. 13 19:15:57 thot systemd[1]: Started Network Name Resolution.
+-- Subject: L'unité (unit) systemd-resolved.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-resolved.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot systemd[1]: Reached target Host and Network Name Lookups.
+-- Subject: L'unité (unit) nss-lookup.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nss-lookup.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot kernel: IPv6: ens4: IPv6 duplicate address fe80::c0ff:fea8:66 used by 02:00:c0:a8:00:66 detected!
+déc. 13 19:15:57 thot dbus-daemon[560]: [system] Successfully activated service 'org.freedesktop.hostname1'
+déc. 13 19:15:57 thot systemd[1]: Started Hostname Service.
+-- Subject: L'unité (unit) systemd-hostnamed.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-hostnamed.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot systemd[1]: Stopped Wait for Network to be Configured.
+-- Subject: L'unité (unit) systemd-networkd-wait-online.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-networkd-wait-online.service a terminé son arrêt.
+déc. 13 19:15:57 thot systemd[1]: Stopping Network Service...
+-- Subject: L'unité (unit) systemd-networkd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-networkd.service a commencé à s'arrêter.
+déc. 13 19:15:57 thot systemd-timesyncd[545]: Network configuration changed, trying to establish connection.
+déc. 13 19:15:57 thot systemd[1]: Started Apply netplan config.
+-- Subject: L'unité (unit) netplan-apply.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) netplan-apply.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot systemd[1]: Starting Wait for Network to be Configured by Netplan...
+-- Subject: L'unité (unit) netplan-wait-online.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) netplan-wait-online.service a commencé à démarrer.
+déc. 13 19:15:57 thot systemd[1]: Starting Network Service...
+-- Subject: L'unité (unit) systemd-networkd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-networkd.service a commencé à démarrer.
+déc. 13 19:15:57 thot systemd-timesyncd[545]: Network configuration changed, trying to establish connection.
+déc. 13 19:15:57 thot systemd-networkd[809]: Enumeration completed
+déc. 13 19:15:57 thot systemd-timesyncd[545]: Network configuration changed, trying to establish connection.
+déc. 13 19:15:57 thot systemd-timesyncd[545]: Network configuration changed, trying to establish connection.
+déc. 13 19:15:57 thot systemd-timesyncd[545]: Network configuration changed, trying to establish connection.
+déc. 13 19:15:57 thot systemd-networkd[809]: ens4: IPv6 successfully enabled
+déc. 13 19:15:57 thot systemd-networkd[809]: lo: Link is not managed by us
+déc. 13 19:15:57 thot systemd[1]: Started Network Service.
+-- Subject: L'unité (unit) systemd-networkd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-networkd.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot networkd-dispatcher[557]: openssh-server: SSH daemon is not running, exit
+déc. 13 19:15:57 thot systemd[1]: Reached target Network.
+-- Subject: L'unité (unit) network.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) network.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot systemd[1]: Starting Network UPS Tools - power device driver controller...
+-- Subject: L'unité (unit) nut-driver.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nut-driver.service a commencé à démarrer.
+déc. 13 19:15:57 thot systemd[1]: Starting OpenBSD Secure Shell server...
+-- Subject: L'unité (unit) ssh.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ssh.service a commencé à démarrer.
+déc. 13 19:15:57 thot upsdrvctl[815]: Error: no UPS definitions found in ups.conf
+déc. 13 19:15:57 thot upsdrvctl[815]: Network UPS Tools - UPS driver controller 2.7.4
+déc. 13 19:15:57 thot systemd-timesyncd[545]: Network configuration changed, trying to establish connection.
+déc. 13 19:15:57 thot systemd[1]: Starting EOLE Creole server...
+-- Subject: L'unité (unit) creoled.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) creoled.service a commencé à démarrer.
+déc. 13 19:15:57 thot systemd[1]: Starting Eole flask server...
+-- Subject: L'unité (unit) eoleflask.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) eoleflask.service a commencé à démarrer.
+déc. 13 19:15:57 thot systemd[1]: Starting Permit User Sessions...
+-- Subject: L'unité (unit) systemd-user-sessions.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-user-sessions.service a commencé à démarrer.
+déc. 13 19:15:57 thot systemd-networkd[809]: ens4: DHCPv4 address 192.168.0.153/24 via 192.168.0.1
+déc. 13 19:15:57 thot systemd[1]: Started vnStat network traffic monitor.
+-- Subject: L'unité (unit) vnstat.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vnstat.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot systemd-timesyncd[545]: Network configuration changed, trying to establish connection.
+déc. 13 19:15:57 thot systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: L'unité (unit) nginx.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nginx.service a commencé à démarrer.
+déc. 13 19:15:57 thot systemd[1]: Started ntp-systemd-netif.service.
+-- Subject: L'unité (unit) ntp-systemd-netif.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ntp-systemd-netif.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot systemd[1]: nut-driver.service: Control process exited, code=exited status=1
+déc. 13 19:15:57 thot systemd[1]: nut-driver.service: Failed with result 'exit-code'.
+déc. 13 19:15:57 thot systemd[1]: Failed to start Network UPS Tools - power device driver controller.
+-- Subject: L'unité (unit) nut-driver.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nut-driver.service a échoué, avec le résultat RESULT.
+déc. 13 19:15:57 thot systemd[1]: Started Permit User Sessions.
+-- Subject: L'unité (unit) systemd-user-sessions.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-user-sessions.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot networkd-dispatcher[557]: openssh-server: SSH daemon is not running, exit
+déc. 13 19:15:57 thot systemd[1]: Starting Network UPS Tools - power devices information server...
+-- Subject: L'unité (unit) nut-server.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nut-server.service a commencé à démarrer.
+déc. 13 19:15:57 thot upsd[840]: upsd disabled, please adjust the configuration to your needs
+déc. 13 19:15:57 thot upsd[840]: Then set MODE to a suitable value in /etc/nut/nut.conf to enable it
+déc. 13 19:15:57 thot systemd[1]: Started Network UPS Tools - power devices information server.
+-- Subject: L'unité (unit) nut-server.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nut-server.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot systemd[1]: Starting Network UPS Tools - power device monitor and shutdown controller...
+-- Subject: L'unité (unit) nut-monitor.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nut-monitor.service a commencé à démarrer.
+déc. 13 19:15:57 thot upsmon[843]: upsmon disabled, please adjust the configuration to your needs
+déc. 13 19:15:57 thot upsmon[843]: Then set MODE to a suitable value in /etc/nut/nut.conf to enable it
+déc. 13 19:15:57 thot systemd[1]: nut-monitor.service: Can't open PID file /var/run/nut/upsmon.pid (yet?) after start: No such file or directory
+déc. 13 19:15:57 thot systemd[1]: nut-monitor.service: Failed with result 'protocol'.
+déc. 13 19:15:57 thot systemd[1]: Failed to start Network UPS Tools - power device monitor and shutdown controller.
+-- Subject: L'unité (unit) nut-monitor.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nut-monitor.service a échoué, avec le résultat RESULT.
+déc. 13 19:15:57 thot vnstatd[821]: Info: vnStat daemon 1.18 started. (pid:821 uid:107 gid:112)
+déc. 13 19:15:57 thot vnstatd[821]: Info: Monitoring: ens4 (1000 Mbit)
+déc. 13 19:15:57 thot sshd[848]: Server listening on 0.0.0.0 port 22.
+déc. 13 19:15:57 thot sshd[848]: Server listening on :: port 22.
+déc. 13 19:15:57 thot systemd[1]: Started OpenBSD Secure Shell server.
+-- Subject: L'unité (unit) ssh.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ssh.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:57 thot systemd[1]: Started A high performance web server and a reverse proxy server.
+-- Subject: L'unité (unit) nginx.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nginx.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:58 thot systemd[1]: eoleflask.service: Can't open PID file /run/eoleflask.pid (yet?) after start: No such file or directory
+déc. 13 19:15:58 thot systemd[1]: Started Eole flask server.
+-- Subject: L'unité (unit) eoleflask.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) eoleflask.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:59 thot creoled[817]:  ENGINE Listening for SIGHUP.
+déc. 13 19:15:59 thot creoled[817]:  ENGINE Listening for SIGTERM.
+déc. 13 19:15:59 thot creoled[817]:  ENGINE Listening for SIGUSR1.
+déc. 13 19:15:59 thot creoled[817]:  ENGINE Listening for SIGINT.
+déc. 13 19:15:59 thot creoled[817]:  ENGINE Bus STARTING
+déc. 13 19:15:59 thot creoled[817]:  ENGINE Start InotifyMonitor thread
+déc. 13 19:15:59 thot creoled[817]:  ENGINE PID 817 written to '/run/creoled.pid'.
+déc. 13 19:15:59 thot creoled[817]:  ENGINE Started monitor thread '_TimeoutMonitor'.
+déc. 13 19:15:59 thot creoled[817]:  ENGINE Serving on http://127.0.0.1:8000
+déc. 13 19:15:59 thot creoled[817]:  ENGINE Bus STARTED
+déc. 13 19:15:59 thot systemd[1]: Started EOLE Creole server.
+-- Subject: L'unité (unit) creoled.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) creoled.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:15:59 thot creoled[817]: 127.0.0.1 - - [13/Dec/2024:19:15:59] "GET /get/creole/interface_0/nom_zone_eth0 HTTP/1.1" 200 33 "" "python-requests/2.18.4"
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Limits: Global time limit set to 120000 milliseconds.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Limits: Global size limit set to 104857600 bytes.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Limits: File size limit set to 26214400 bytes.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Limits: Recursion level limit set to 16.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Limits: Files limit set to 10000.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Limits: MaxScriptNormalize limit set to 5242880 bytes.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Limits: MaxPartitions limit set to 50.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Limits: MaxIconsPE limit set to 100.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Limits: MaxRecHWP3 limit set to 16.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Limits: PCREMatchLimit limit set to 10000.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Limits: PCRERecMatchLimit limit set to 5000.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Limits: PCREMaxFileSize limit set to 26214400.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Archive support enabled.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> AlertExceedsMax heuristic detection disabled.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Heuristic alerts enabled.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Portable Executable support enabled.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> ELF support enabled.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Mail files support enabled.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> OLE2 support enabled.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> PDF support enabled.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> SWF support enabled.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> HTML support enabled.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> XMLDOCS support enabled.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> HWP3 support enabled.
+déc. 13 19:16:19 thot clamd[608]: Fri Dec 13 19:16:19 2024 -> Self checking every 3600 seconds.
+déc. 13 19:16:28 thot systemd-timesyncd[545]: Synchronized to time server 192.168.232.2:123 (192.168.232.2).
+déc. 13 19:17:02 thot CRON[891]: pam_unix(cron:session): session opened for user root by (uid=0)
+déc. 13 19:17:02 thot CRON[892]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+déc. 13 19:17:02 thot CRON[891]: pam_unix(cron:session): session closed for user root
+déc. 13 19:17:58 thot systemd-networkd-wait-online[808]: Event loop failed: Connection timed out
+déc. 13 19:17:58 thot systemd[1]: netplan-wait-online.service: Main process exited, code=exited, status=1/FAILURE
+déc. 13 19:17:58 thot systemd[1]: netplan-wait-online.service: Failed with result 'exit-code'.
+déc. 13 19:17:58 thot systemd[1]: Failed to start Wait for Network to be Configured by Netplan.
+-- Subject: L'unité (unit) netplan-wait-online.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) netplan-wait-online.service a échoué, avec le résultat RESULT.
+déc. 13 19:17:58 thot systemd[1]: Reached target Network is Online.
+-- Subject: L'unité (unit) network-online.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) network-online.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:17:58 thot systemd[1]: Starting Force synchronisation of time...
+-- Subject: L'unité (unit) ntpdate.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ntpdate.service a commencé à démarrer.
+déc. 13 19:17:58 thot systemd[1]: Starting /etc/rc.local Compatibility...
+-- Subject: L'unité (unit) rc-local.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) rc-local.service a commencé à démarrer.
+déc. 13 19:17:58 thot ntpdate[893]: 13 Dec 19:17:58 ntpdate[893]: ntpdate 4.2.8p10@1.3728-o (1)
+déc. 13 19:17:58 thot systemd[1]: Started ClamAV virus database updater.
+-- Subject: L'unité (unit) clamav-freshclam.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) clamav-freshclam.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:17:58 thot systemd[1]: Starting The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à démarrer.
+déc. 13 19:17:58 thot systemd[1]: Starting LSB: OpenLDAP standalone server (Lightweight Directory Access Protocol)...
+-- Subject: L'unité (unit) slapd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) slapd.service a commencé à démarrer.
+déc. 13 19:17:58 thot systemd[1]: Starting Internet superserver...
+-- Subject: L'unité (unit) inetd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) inetd.service a commencé à démarrer.
+déc. 13 19:17:58 thot systemd[1]: Started /etc/rc.local Compatibility.
+-- Subject: L'unité (unit) rc-local.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) rc-local.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:17:58 thot systemd[1]: Starting Hold until boot process finishes up...
+-- Subject: L'unité (unit) plymouth-quit-wait.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-quit-wait.service a commencé à démarrer.
+déc. 13 19:17:58 thot systemd[1]: Starting Terminate Plymouth Boot Screen...
+-- Subject: L'unité (unit) plymouth-quit.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-quit.service a commencé à démarrer.
+déc. 13 19:17:58 thot systemd[1]: Started Internet superserver.
+-- Subject: L'unité (unit) inetd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) inetd.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:17:58 thot systemd[1]: Started Hold until boot process finishes up.
+-- Subject: L'unité (unit) plymouth-quit-wait.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-quit-wait.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:17:58 thot systemd[1]: Starting Set console scheme...
+-- Subject: L'unité (unit) setvtrgb.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) setvtrgb.service a commencé à démarrer.
+déc. 13 19:17:58 thot systemd[1]: Started Set console scheme.
+-- Subject: L'unité (unit) setvtrgb.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) setvtrgb.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:17:58 thot systemd[1]: Created slice system-getty.slice.
+-- Subject: L'unité (unit) system-getty.slice a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) system-getty.slice a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:17:58 thot systemd[1]: Started Getty on tty1.
+-- Subject: L'unité (unit) getty@tty1.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) getty@tty1.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:17:58 thot systemd[1]: Reached target Login Prompts.
+-- Subject: L'unité (unit) getty.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) getty.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:17:58 thot systemd[1]: Started Terminate Plymouth Boot Screen.
+-- Subject: L'unité (unit) plymouth-quit.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-quit.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:17:58 thot slapd[901]:  * Starting OpenLDAP slapd
+déc. 13 19:17:58 thot freshclam[895]: Fri Dec 13 19:17:58 2024 -> ClamAV update process started at Fri Dec 13 19:17:58 2024
+déc. 13 19:17:58 thot slapd[939]: @(#) $OpenLDAP: slapd  (Ubuntu) (May 12 2022 13:52:38) $
+                                           Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>
+déc. 13 19:17:58 thot slapd[940]: slapd starting
+déc. 13 19:17:58 thot slapd[901]:    ...done.
+déc. 13 19:17:58 thot systemd[1]: Started LSB: OpenLDAP standalone server (Lightweight Directory Access Protocol).
+-- Subject: L'unité (unit) slapd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) slapd.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:17:58 thot systemd[1]: Started The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:17:59 thot systemd-resolved[737]: Using degraded feature set (UDP) for DNS server 192.168.0.1.
+déc. 13 19:18:04 thot systemd-resolved[737]: Using degraded feature set (TCP) for DNS server 192.168.0.1.
+déc. 13 19:18:14 thot ntpdate[893]: Exiting, name server cannot be used: Temporary failure in name resolution (-3)13 Dec 19:18:14 ntpdate[893]: name server cannot be used: Temporary failure in name resolution (-3)
+déc. 13 19:18:14 thot freshclam[895]: Fri Dec 13 19:18:14 2024 -> ^Can't query current.cvd.clamav.net
+déc. 13 19:18:14 thot freshclam[895]: Fri Dec 13 19:18:14 2024 -> ^Invalid DNS reply. Falling back to HTTP mode.
+déc. 13 19:18:14 thot freshclam[895]: Fri Dec 13 19:18:14 2024 -> Trying to retrieve CVD header from https://database.clamav.net/daily.cvd
+déc. 13 19:18:14 thot systemd[1]: ntpdate.service: Main process exited, code=exited, status=1/FAILURE
+déc. 13 19:18:14 thot systemd[1]: ntpdate.service: Failed with result 'exit-code'.
+déc. 13 19:18:14 thot systemd[1]: Failed to start Force synchronisation of time.
+-- Subject: L'unité (unit) ntpdate.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ntpdate.service a échoué, avec le résultat RESULT.
+déc. 13 19:18:14 thot systemd[1]: Reached target System Time Synchronized.
+-- Subject: L'unité (unit) time-sync.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) time-sync.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:18:14 thot systemd[1]: Starting MySQL Community Server...
+-- Subject: L'unité (unit) mysql.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) mysql.service a commencé à démarrer.
+déc. 13 19:18:14 thot systemd[1]: Started Message of the Day.
+-- Subject: L'unité (unit) motd-news.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) motd-news.timer a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:18:14 thot systemd[1]: Started Clean PHP session files every 30 mins.
+-- Subject: L'unité (unit) phpsessionclean.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.timer a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:18:14 thot systemd[1]: Started Run certbot twice daily.
+-- Subject: L'unité (unit) certbot.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) certbot.timer a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:18:14 thot systemd[1]: Started Discard unused blocks once a week.
+-- Subject: L'unité (unit) fstrim.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) fstrim.timer a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:18:14 thot systemd[1]: Reached target Timers.
+-- Subject: L'unité (unit) timers.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) timers.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:18:14 thot systemd[1]: Starting Discard unused blocks...
+-- Subject: L'unité (unit) fstrim.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) fstrim.service a commencé à démarrer.
+déc. 13 19:18:14 thot systemd[1]: Starting Clean php session files...
+-- Subject: L'unité (unit) phpsessionclean.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a commencé à démarrer.
+déc. 13 19:18:14 thot systemd[1]: Starting Certbot...
+-- Subject: L'unité (unit) certbot.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) certbot.service a commencé à démarrer.
+déc. 13 19:18:14 thot systemd[1]: Starting Message of the Day...
+-- Subject: L'unité (unit) motd-news.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) motd-news.service a commencé à démarrer.
+déc. 13 19:18:14 thot systemd[1]: Started Message of the Day.
+-- Subject: L'unité (unit) motd-news.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) motd-news.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:18:14 thot systemd[1]: Started Clean php session files.
+-- Subject: L'unité (unit) phpsessionclean.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:18:14 thot fstrim[952]: /boot : 562,7 MiB (590028800 octets) taillés
+déc. 13 19:18:14 thot fstrim[952]: /var : 707,5 MiB (741855232 octets) taillés
+déc. 13 19:18:14 thot fstrim[952]: /home : 1,9 GiB (1975078912 octets) taillés
+déc. 13 19:18:14 thot fstrim[952]: /tmp : 1,8 GiB (1925632000 octets) taillés
+déc. 13 19:18:14 thot fstrim[952]: / : 6,3 GiB (6809022464 octets) taillés
+déc. 13 19:18:14 thot systemd[1]: Started Discard unused blocks.
+-- Subject: L'unité (unit) fstrim.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) fstrim.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:18:15 thot systemd[1]: Started MySQL Community Server.
+-- Subject: L'unité (unit) mysql.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) mysql.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:18:15 thot systemd[1]: Starting LSB: exim Mail Transport Agent...
+-- Subject: L'unité (unit) exim4.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) exim4.service a commencé à démarrer.
+déc. 13 19:18:15 thot exim4[1045]:  * Starting MTA
+déc. 13 19:18:15 thot systemd[1]: Started Certbot.
+-- Subject: L'unité (unit) certbot.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) certbot.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:18:17 thot exim4[1045]: 2024-12-13 19:18:17 Warning: No server certificate defined; will use a selfsigned one.
+déc. 13 19:18:17 thot exim4[1045]:  Suggested action: either install a certificate or change tls_advertise_hosts option
+déc. 13 19:18:17 thot exim4[1045]:    ...done.
+déc. 13 19:18:17 thot systemd[1]: Started LSB: exim Mail Transport Agent.
+-- Subject: L'unité (unit) exim4.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) exim4.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:18:17 thot systemd[1]: Reached target Multi-User System.
+-- Subject: L'unité (unit) multi-user.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) multi-user.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:18:17 thot systemd[1]: Reached target Graphical Interface.
+-- Subject: L'unité (unit) graphical.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) graphical.target a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:18:17 thot systemd[1]: Starting Update UTMP about System Runlevel Changes...
+-- Subject: L'unité (unit) systemd-update-utmp-runlevel.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-update-utmp-runlevel.service a commencé à démarrer.
+déc. 13 19:18:17 thot systemd[1]: Starting EOLE Continuous Integration Tests Daemon...
+-- Subject: L'unité (unit) EoleCiTestsDaemon.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) EoleCiTestsDaemon.service a commencé à démarrer.
+déc. 13 19:18:17 thot systemd[1]: Started Update UTMP about System Runlevel Changes.
+-- Subject: L'unité (unit) systemd-update-utmp-runlevel.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-update-utmp-runlevel.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:18:17 thot bash[1066]: CheckUpdate.sh: /root/mount.eole-ci-tests A JOUR
+déc. 13 19:18:17 thot bash[1066]: CheckUpdate.sh: /root/getVMContext.sh A JOUR
+déc. 13 19:18:17 thot bash[1066]: CheckUpdate.sh: /root/EoleCiFunctions.sh A JOUR
+déc. 13 19:18:17 thot bash[1066]: CheckUpdate.sh: /root/.EoleCiTestsContext.sh A JOUR
+déc. 13 19:18:17 thot bash[1066]: CheckUpdate.sh: /root/.EoleCiTestsDaemon.sh A JOUR
+déc. 13 19:18:17 thot systemd[1]: Started EOLE Continuous Integration Tests Daemon.
+-- Subject: L'unité (unit) EoleCiTestsDaemon.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) EoleCiTestsDaemon.service a terminé son démarrage, avec le résultat RESULT.
+déc. 13 19:18:17 thot systemd[1]: Startup finished in 5.720s (kernel) + 2min 21.790s (userspace) = 2min 27.511s.
+-- Subject: Le démarrage du système est terminé
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Tous les services nécessaires au démarrage du système ont été lancés.
+-- Notez que cela ne signifie pas que le système est maintenant au repos,
+-- car des services peuvent encore être en train de terminer leur démarrage.
+-- 
+-- Le chargement du noyau a nécessité 5720835 microsecondes.
+-- 
+-- Le chargement du « RAM disk » initial a nécessité INITRD_USEC microsecondes.
+-- 
+-- Le chargement de l'espace utilisateur a nécessité 141790638 microsecondes.
+déc. 13 19:18:17 thot EOLECITESTS[1142]: systemctl is-active multi-user.target : active
+déc. 13 19:18:17 thot EOLECITESTS[1144]: systemctl is-active network.target : active
+déc. 13 19:18:17 thot EOLECITESTS[1146]: systemctl is-active network-online.target : active
+déc. 13 19:18:17 thot EOLECITESTS[1148]: systemctl is-system-running : degraded
+déc. 13 19:18:17 thot freshclam[895]: Fri Dec 13 19:18:17 2024 -> OK
+déc. 13 19:18:17 thot freshclam[895]: Fri Dec 13 19:18:17 2024 -> daily database available for update (local version: 27475, remote version: 27485)
+déc. 13 19:18:17 thot EOLECITESTS[1164]: Debut ciConfigurationDaily
+déc. 13 19:18:17 thot EOLECITESTS[1166]: systemctl is-active network.target : active
+déc. 13 19:18:17 thot EOLECITESTS[1168]: systemctl is-active network-online.target : active
+déc. 13 19:18:17 thot EOLECITESTS[1170]: systemctl is-system-running : degraded
+déc. 13 19:18:17 thot EOLECITESTS[1171]: ls -l /etc/netplan/
+déc. 13 19:18:19 thot freshclam[895]: Fri Dec 13 19:18:19 2024 -> Testing database: '/var/lib/clamav/tmp.9b45eb9a36/clamav-97ecedbe117af617e65681c095f4274a.tmp-daily.cld' ...
+déc. 13 19:18:22 thot EOLECITESTS[1189]: ciPingHost ens4 => 192.168.0.1 ping=0 ==> OK (exit 0)
+déc. 13 19:18:22 thot EOLECITESTS[1196]: GW actuelle : 192.168.0.1 OK
+déc. 13 19:18:22 thot EOLECITESTS[1198]: * désactivation updatedb/locate sur /mnt/eole-ci-test présente !
+déc. 13 19:18:22 thot EOLECITESTS[1201]: * Creation lien daily dans /mnt/eole-ci-tests/output/jenkins/1422904
+déc. 13 19:18:26 thot freshclam[895]: Fri Dec 13 19:18:26 2024 -> Database test passed.
+déc. 13 19:18:26 thot freshclam[895]: Fri Dec 13 19:18:26 2024 -> daily.cld updated (version: 27485, sigs: 2069661, f-level: 90, builder: raynman)
+déc. 13 19:18:26 thot freshclam[895]: Fri Dec 13 19:18:26 2024 -> Trying to retrieve CVD header from https://database.clamav.net/main.cvd
+déc. 13 19:18:27 thot freshclam[895]: Fri Dec 13 19:18:27 2024 -> main.cvd database is up-to-date (version: 62, sigs: 6647427, f-level: 90, builder: sigmgr)
+déc. 13 19:18:27 thot freshclam[895]: Fri Dec 13 19:18:27 2024 -> Trying to retrieve CVD header from https://database.clamav.net/bytecode.cvd
+déc. 13 19:18:27 thot freshclam[895]: Fri Dec 13 19:18:27 2024 -> bytecode.cld database is up-to-date (version: 335, sigs: 86, f-level: 90, builder: raynman)
+déc. 13 19:18:27 thot freshclam[895]: Fri Dec 13 19:18:27 2024 -> Clamd successfully notified about the update.
+déc. 13 19:18:27 thot clamd[608]: Fri Dec 13 19:18:27 2024 -> Reading databases from /var/lib/clamav
+déc. 13 19:18:47 thot systemd-timesyncd[545]: Timed out waiting for reply from 192.168.232.2:123 (192.168.232.2).
+déc. 13 19:18:48 thot clamd[608]: Fri Dec 13 19:18:48 2024 -> Database correctly reloaded (8701166 signatures)
+déc. 13 19:18:48 thot clamd[608]: Fri Dec 13 19:18:48 2024 -> Activating the newly loaded database...
+déc. 13 19:18:52 thot EOLECITESTS[1218]: Adresse(s) ip changée de  vers 192.168.0.153
+déc. 13 19:18:52 thot EOLECITESTS[1241]: ciUpdateDaily BUILD_DAILY
+déc. 13 19:18:52 thot EOLECITESTS[1242]: 'proposed-update' déjà actif!
+déc. 13 19:18:52 thot EOLECITESTS[1243]: ciSetHttpProxy, pas de proxy pour les Daily
+déc. 13 19:18:52 thot EOLECITESTS[1244]: liste des noyaux
+déc. 13 19:18:52 thot EOLECITESTS[1246]: * espaces disponibles
+déc. 13 19:18:52 thot EOLECITESTS[1248]: ciSetHttpProxy, pas de proxy pour les Daily
+déc. 13 19:18:52 thot EOLECITESTS[1249]: dpkg --configure -a
+déc. 13 19:19:05 thot EOLECITESTS[1253]: ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+déc. 13 19:19:05 thot EOLECITESTS[1254]: ciWaitTestHttp (1/2): wait..
+déc. 13 19:19:15 thot EOLECITESTS[1258]: ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+déc. 13 19:19:15 thot EOLECITESTS[1259]: ciWaitTestHttp (2/2): wait..
+déc. 13 19:19:19 thot systemd-timesyncd[545]: Synchronized to time server 192.168.232.2:123 (192.168.232.2).
+déc. 13 19:19:25 thot EOLECITESTS[1263]: ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+déc. 13 19:19:25 thot EOLECITESTS[1265]: ciDiagnoseNetwork:
+déc. 13 19:19:25 thot EOLECITESTS[1282]: systemctl is-active network.target : active
+déc. 13 19:19:25 thot EOLECITESTS[1284]: systemctl is-active network-online.target : active
+déc. 13 19:19:25 thot EOLECITESTS[1286]: systemctl is-system-running : degraded
+déc. 13 19:19:30 thot EOLECITESTS[1291]: ATTENTION: ciPingHost ens4 => 192.168.0.1 ping=0 ==> K.O. (exit 1)
+déc. 13 19:19:30 thot kernel: nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+déc. 13 19:19:35 thot EOLECITESTS[1321]: ciExportCurrentStatus: (on exit 1.sh)
+déc. 13 19:19:35 thot dbus-daemon[560]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.9' (uid=0 pid=1324 comm="systemd-analyze plot " label="unconfined")
+déc. 13 19:19:35 thot systemd[1]: Starting Hostname Service...
+-- Subject: L'unité (unit) systemd-hostnamed.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-hostnamed.service a commencé à démarrer.
+déc. 13 19:19:35 thot dbus-daemon[560]: [system] Successfully activated service 'org.freedesktop.hostname1'
+déc. 13 19:19:35 thot systemd[1]: Started Hostname Service.
+-- Subject: L'unité (unit) systemd-hostnamed.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-hostnamed.service a terminé son démarrage, avec le résultat RESULT.

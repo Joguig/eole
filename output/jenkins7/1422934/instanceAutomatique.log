@@ -1,0 +1,57 @@
+Machine aca.pc 2.10.0 : Debut ciConfigurationPcLinux
+Machine aca.pc 2.10.0 : ciConfigurationMinimale: 1er fois, à faire...
+Machine aca.pc 2.10.0 : GW actuelle : 192.168.0.1 OK
+Machine aca.pc 2.10.0 : pas de fichier startup '/mnt/eole-ci-tests/configuration/aca.pc//minimale/startup.sh' 
+Machine aca.pc 2.10.0 : Configurer sysctl.swapiness=0
+Machine aca.pc 2.10.0 : Configuration minimale OK
+Machine aca.pc 2.10.0 : Fin ciConfigurationMinimale : 1422934 le 2024-12-13 20:22:46
+Inject minlen=4 dans /etc/pam.d/common-password
+minlen = 4
+minlen=4 present dans /etc/security/pwquality.conf
+mdp pcadmin/eole OK
+passwd : l'utilisateur 'eole' n'existe pas
+mdp eole/Eole12345!
+Nouveau mot de passe : Retapez le nouveau mot de passe : passwd : mot de passe mis à jour avec succès
+mdp root/eole OK
+Machine aca.pc 2.10.0 : * /etc/ssh/sshd_config à jour
+GW actuelle : 192.168.0.1 OK, attendu: 192.168.0.1
+** Test GW 192.168.0.1
+Machine aca.pc 2.10.0 : ciPingHost ens4 => 192.168.0.1 ping=0 ==> OK (exit 0)
+Machine aca.pc 2.10.0 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/eole/' : OK
+Machine aca.pc 2.10.0 : Liste des applications active
+/etc/xdg/autostart/at-spi-dbus-bus.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-application.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-datetime.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-keyboard.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-messages.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-notifications.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-power.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-printers.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-session.desktop:NoDisplay=true
+/etc/xdg/autostart/ayatana-indicator-sound.desktop:NoDisplay=true
+/etc/xdg/autostart/geoclue-demo-agent.desktop:NoDisplay=true
+/etc/xdg/autostart/gnome-keyring-pkcs11.desktop:NoDisplay=true
+/etc/xdg/autostart/gnome-keyring-secrets.desktop:NoDisplay=true
+/etc/xdg/autostart/im-launch.desktop:NoDisplay=true
+/etc/xdg/autostart/magnus-autostart.desktop:NoDisplay=true
+/etc/xdg/autostart/mate-optimus.desktop:NoDisplay=true
+/etc/xdg/autostart/mate-screensaver.desktop:NoDisplay=true
+/etc/xdg/autostart/mate-settings-daemon.desktop:NoDisplay=true
+/etc/xdg/autostart/nm-applet.desktop:NoDisplay=true
+/etc/xdg/autostart/onboard-autostart.desktop:NoDisplay=true
+/etc/xdg/autostart/orca-autostart.desktop:NoDisplay=true
+/etc/xdg/autostart/org.gnome.DejaDup.Monitor.desktop:NoDisplay=true
+/etc/xdg/autostart/org.gnome.Evolution-alarm-notify.desktop:NoDisplay=true
+/etc/xdg/autostart/org.gnome.SettingsDaemon.DiskUtilityNotify.desktop:NoDisplay=true
+/etc/xdg/autostart/polkit-mate-authentication-agent-1.desktop:NoDisplay=true
+/etc/xdg/autostart/pulseaudio.desktop:NoDisplay=true
+/etc/xdg/autostart/snap-userd-autostart.desktop:NoDisplay=true
+/etc/xdg/autostart/spice-vdagent.desktop:NoDisplay=true
+/etc/xdg/autostart/ubuntu-advantage-notification.desktop:NoDisplay=true
+/etc/xdg/autostart/ubuntu-report-on-upgrade.desktop:NoDisplay=true
+/etc/xdg/autostart/update-notifier.desktop:NoDisplay=true
+/etc/xdg/autostart/user-dirs-update-gtk.desktop:NoDisplay=true
+/etc/xdg/autostart/xdg-user-dirs.desktop:NoDisplay=true
+Fin ciConfigurationPcLinux
+/usr/bin/updatedb
+Machine aca.pc 2.10.0 : * désactivation updatedb/locate sur /mnt/eole-ci-test présente !

@@ -1,0 +1,42 @@
+# record 1
+dn: CN={CDE0E8EA-22F5-4E34-9781-02A20D872C9C},CN=Policies,CN=System,DC=dompedago,DC=etb1,DC=lan
+objectClass: top
+objectClass: container
+objectClass: groupPolicyContainer
+cn: {CDE0E8EA-22F5-4E34-9781-02A20D872C9C}
+instanceType: 4
+whenCreated: 20210601130854.0Z
+uSNCreated: 4862
+showInAdvancedViewOnly: TRUE
+name: {CDE0E8EA-22F5-4E34-9781-02A20D872C9C}
+objectGUID: 1abf161d-bfdf-4426-92f0-3b4d914591e8
+objectCategory: CN=Group-Policy-Container,CN=Schema,CN=Configuration,DC=domped
+ ago,DC=etb1,DC=lan
+gPCFileSysPath: \\dompedago.etb1.lan\SysVol\dompedago.etb1.lan\Policies\{CDE0E
+ 8EA-22F5-4E34-9781-02A20D872C9C}
+gPCFunctionalityVersion: 2
+flags: 0
+displayName: eole_script
+gPCUserExtensionNames: [{42B5FAAE-6536-11D2-AE5A-0000F87571E3}{40B66650-4972-1
+ 1D1-A7CA-0000F87571E3}]
+gPCMachineExtensionNames: [{35378EAC-683F-11D2-A89A-00C04FBBCFA2}{D02B1F72-340
+ 7-48AE-BA88-E8213C6761F1}][{42B5FAAE-6536-11D2-AE5A-0000F87571E3}{40B6664F-49
+ 72-11D1-A7CA-0000F87571E3}]
+versionNumber: 131075
+whenChanged: 20210601131648.0Z
+uSNChanged: 4881
+distinguishedName: CN={CDE0E8EA-22F5-4E34-9781-02A20D872C9C},CN=Policies,CN=Sy
+ stem,DC=dompedago,DC=etb1,DC=lan
+
+# Referral
+ref: ldap://dompedago.etb1.lan/CN=Configuration,DC=dompedago,DC=etb1,DC=lan
+
+# Referral
+ref: ldap://dompedago.etb1.lan/DC=DomainDnsZones,DC=dompedago,DC=etb1,DC=lan
+
+# Referral
+ref: ldap://dompedago.etb1.lan/DC=ForestDnsZones,DC=dompedago,DC=etb1,DC=lan
+
+# returned 4 records
+# 1 entries
+# 3 referrals

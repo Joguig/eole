@@ -1,0 +1,113 @@
+#!/bin/bash 
+
+SAMBA4_VARS=/etc/eole/samba4-vars.conf
+if [ -f "${SAMBA4_VARS}" ]
+then
+    . "${SAMBA4_VARS}"
+else
+    # Template is disabled => samba is disabled
+    echo "Samba is disabled"
+    exit 0
+fi
+
+. /usr/lib/eole/samba4.sh
+
+SAMBA_LIB_PRIVATE_DIR="/var/lib/samba/private"
+
+function usage
+{
+  echo "Usage :"
+  [[ -n $1 ]] && echo -e "\n${@}\n"
+  echo "   $(basename $0) username"
+  exit 2
+}
+
+function get_uid_by_name
+{
+  SID_ET_NAME=$(wbinfo -n "$1")
+  [[ -z "$SID_ET_NAME" ]] && return 1 
+  wbinfo -S $SID_ET_NAME  
+  return ${?}
+}
+
+function manage_acl
+{
+  user=$1
+  directory=$2
+
+  # Administrators
+  ADMINS_UID=$(get_uid_by_name "BUILTIN\Administrators")
+  # SYSTEM ACL
+  SYSTEM_UID=$(get_uid_by_name "NT AUTHORITY\SYSTEM")
+  # Domain Admins ACL 
+  DADMINS_UID=$(get_uid_by_name "Domain Admins")
+  # User ACL
+  USER_UID=$(get_uid_by_name "${user}")
+
+  # user ACL
+  setfacl -Rm u:${SYSTEM_UID}:rwx,u:${DADMINS_UID}:rwx,u:${USER_UID}:rwx ${directory}
+  [[ ${?} -ne 0 ]] && error "setfacl for users failed on ${directory}"
+
+  # Group ACL
+  setfacl -Rm g:${ADMINS_UID}:rwx,g:${SYSTEM_UID}:rwx,g:${DADMINS_UID}:rwx,g:${USER_UID}:rwx ${directory}
+  [[ ${?} -ne 0 ]] && error "setfacl for groups failed on ${directory}"
+
+  return 0
+
+}
+
+function create_home
+{
+  user=$1
+  [[ ${AD_HOME_SHARE_PATH} == /* ]] || AD_HOME_SHARE_PATH="/${AD_HOME_SHARE_PATH}"
+  home_directory_user="${AD_HOME_SHARE_PATH}/${user}"
+  home_mode="770"
+
+  mkdir -p "${home_directory_user}"
+  ret=${?}
+  if [[ ${ret} -eq 0 ]]
+  then
+    chmod g=rwx "${home_directory_user}"
+    chgrp "Domain Admins" "${home_directory_user}"
+    #chmod ${home_mode} "${home_directory_user}"
+    #manage_acl ${user} "${home_directory_user}"
+    return ${?}
+  else
+    return ${ret}
+  fi
+}
+
+function error
+{
+  echo "Error : $1"
+  exit $2
+}
+
+# le nom de login
+USERNAME="${1}"
+[[ -z ${USERNAME} ]] && usage "Missing username"
+
+# le mot de passe
+PASSWORD="${2}"
+[[ -z ${PASSWORD} ]] && read -s -p "Password of ${USERNAME}: " PASSWORD
+
+# le serveur portant le repertoire Home, à défault le DC !
+[[ -z "${AD_SERVER_USER_HOME_SHARE}" ]] && AD_SERVER_USER_HOME_SHARE="${AD_HOST_NAME}"
+
+UID_USER=$(get_uid_by_name "${USERNAME}")
+if [[ -z "$UID_USER" ]]
+then
+    samba-tool user add "${USERNAME}" "${PASSWORD}" \
+                        --home-drive="${AD_USER_HOME_DRIVE}" \
+                        --home-directory="\\\\${AD_HOST_NAME}.${AD_REALM}\\home\\$USERNAME" \
+                        || error "Creation of user ${USERNAME} failed" ${ret}
+fi
+
+if [[ "${AD_SERVER_USER_HOME_SHARE}" == "${AD_HOST_NAME}" ]]
+then
+    create_home ${USERNAME}
+    ret=${?}
+    [[ ${ret} -ne 0 ]] && error "Home directory creation for ${USERNAME} failed " 2
+else
+    echo "Le home directory de ${USERNAME} doit être crée sur ${AD_SERVER_USER_HOME_SHARE}!"
+fi

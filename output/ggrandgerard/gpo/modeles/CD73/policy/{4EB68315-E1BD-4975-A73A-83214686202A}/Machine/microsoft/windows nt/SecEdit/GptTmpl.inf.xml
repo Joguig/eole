@@ -1,0 +1,22 @@
+<GptTmplInfFile>
+	<Section name="Unicode" />
+	<Section name="Version" />
+	<Section name="System Access" />
+	<Section name="Kerberos Policy" />
+	<Section name="System Log" />
+	<Section name="Security Log" />
+	<Section name="Application Log" />
+	<Section name="Event Audit" />
+	<Section name="Registry Values" />
+	<Section name="Privilege Rights" />
+	<Section name="Service General Setting">
+		<Parameter>
+			<Value>WinRM</Value>
+			<Value>2</Value>
+			<Value acl="TRUE" />
+		</Parameter>
+	</Section>
+	<Section name="Registry Keys" />
+	<Section name="File Security" />
+	<Section name="Group Membership" />
+</GptTmplInfFile>

@@ -1,0 +1,214 @@
+#!/bin/bash
+. /usr/lib/eole/diagnose.sh
+
+SAMBA4_VARS=/etc/eole/samba4-vars.conf
+if [ -f "${SAMBA4_VARS}" ]
+then
+    . "${SAMBA4_VARS}"
+else
+    # Template is disabled => samba is disabled
+    echo "Samba is disabled"
+    exit 0
+fi
+
+SAMBA_LIB_PRIVATE_DIR="/var/lib/samba/private"
+
+EchoGras "*** Serveur Active Directory"
+echo
+echo "Fichier de configuration :"
+printf ".  %${len_pf}s => " "Syntaxe"
+CreoleRun "testparm -s >/dev/null 2>&1"
+if [[ $? -eq 0 ]]
+then
+	EchoVert "Ok"
+else
+	EchoRouge "Erreur"
+fi
+echo
+
+echo "DNS AD :"
+printf ".  %${len_pf}s => " "Enregistrements SRV"
+CDU=NOK
+if host -t SRV _ldap._tcp.dc._msdcs.${AD_REALM}. >/dev/null 2>&1
+then
+    DNS_LDAP_SCE=$(mktemp)
+    host -t SRV _ldap._tcp.${AD_REALM}. > $DNS_LDAP_SCE
+    if [ $? -eq 0 ]
+    then
+        # Hostname des controleurs de domaine dans le tableau DCS
+        read -a DCS <<< $(sed -e 's/.* \([^ ].*\)./\1/' ${DNS_LDAP_SCE})
+        if host -t SRV _kerberos._udp.${AD_REALM}. >/dev/null 2>&1
+        then
+            CDU=OK
+        fi
+    fi
+    rm -rf $DNS_LDAP_SCE
+fi
+if [ "$CDU" = "OK" ]
+then
+	EchoVert "Ok"
+else
+	EchoRouge "Erreur (Vérifier 'Nom DNS du réseau local')"
+fi
+
+if [ "${AD_SERVER_ROLE}" == "controleur de domaine" ] && [ -z "${AD_SERVER_MODE}" ]; then
+	# Attention au é qui compte 2 caractères
+    printf ".   %${len_pf}s => " "Résolution ${AD_HOST_NAME}.${AD_REALM}"
+    dig @localhost ${AD_HOST_NAME}.${AD_REALM} >/dev/null 2>&1
+    if [ $? = 0 ]
+	then
+		EchoVert "Ok"
+	else
+		EchoRouge "Erreur"
+	fi
+    echo
+    
+    echo "Certificat LDAPS :"
+    TLS_ENABLED=$(testparm -s --parameter-name='tls enabled' 2>/dev/null)
+    if [ "${TLS_ENABLED^^}" = YES ]
+    then
+        printf ".  %${len_pf}s => " "Certificat"
+        TLS_CERTFILE=$(testparm -s --parameter-name='tls certfile' 2>/dev/null)
+        if [ -f "${TLS_CERTFILE}" ]
+        then
+            if ! openssl x509 -enddate -noout -in "${TLS_CERTFILE}" -checkend 604800 >/tmp/samba_cert.info
+            then
+	        	if ! openssl x509 -enddate -noout -in "${TLS_CERTFILE}" -checkend 0 >/tmp/samba_cert.info
+                then
+                    MSG=$(awk -F= '/notAfter/ { print $2; }' /tmp/samba_cert.info)
+                    EchoOrange "Expiré (${MSG})"
+                else
+                    MSG=$(awk -F= '/notAfter/ { print $2; }' /tmp/samba_cert.info)
+                    EchoOrange "Expiration dans moins d'une semaine (${MSG})"
+                fi
+            else
+                MSG=$(awk -F= '/notAfter/ { print $2; }' /tmp/samba_cert.info)
+                EchoVert "Ok (${MSG})"
+            fi
+        else
+            EchoVert "Fichier ${TLS_CERTFILE} manquant"
+        fi
+        printf ".  %${len_pf}s => " "CA"
+        TLS_CAFILE=$(testparm -s --parameter-name='tls cafile' 2>/dev/null)
+        if [ -f "${TLS_CAFILE}" ]
+        then
+            if ! openssl x509 -enddate -noout -in "${TLS_CAFILE}" -checkend 604800 >/tmp/samba_cert.info
+            then
+                if ! openssl x509 -enddate -noout -in "${TLS_CAFILE}" -checkend 0 >/tmp/samba_cert.info
+                then
+                    MSG=$(awk -F= '/notAfter/ { print $2; }' /tmp/samba_cert.info)
+                    EchoRouge "Expiré (${MSG})"
+                else
+                    MSG=$(awk -F= '/notAfter/ { print $2; }' /tmp/samba_cert.info)
+                    EchoOrange "Expiration dans moins d'une semaine (${MSG})"
+                fi
+            else
+                MSG=$(awk -F= '/notAfter/ { print $2; }' /tmp/samba_cert.info)
+                EchoVert "Ok (${MSG})"
+            fi
+        else
+            EchoOrange "Fichier ${TLS_CAFILE} manquant"
+        fi
+    else
+        printf ".  %${len_pf}s => " "LDAPS"
+        EchoVert "Supportée"
+    fi
+    echo
+    #echo | openssl s_client -servername shellhacks.com -connect shellhacks.com:443 2>/dev/null | openssl x509
+    
+    echo "Réplication :"
+    printf ".  %${len_pf}s => " "Statut"
+    TestService "Port de réplication" localhost:135 > /dev/null
+    if [ $? -eq 0 ]
+    then
+        samba-tool drs bind |grep -qe "DRSUAPI_SUPPORTED_EXTENSION_BASE.* Yes"
+        if [ $? -eq 0 ]
+        then
+            EchoVert "Supportée"
+            LOCAL_DC=$(hostname -f)
+            # DN of the Naming Context dans la variable NC
+            IFS='.' read -a DN <<<$AD_REALM
+            NC="DC=${DN[0]}"
+            for ((i=1;i<${#DN[@]};i++))
+            do
+                NC="${NC},DC=${DN[$i]}"
+            done
+
+            # Etat de la replication entre chaque DC
+            declare -a ONLINE_DCS
+            for ((i=0; i<${#DCS[@]}; i++))
+            do
+                DC=${DCS[$i]}
+                if [ "${DC}" != "${LOCAL_DC}" ]
+                then
+                    /usr/bin/tcpcheck 2 ${DC}:135 >> /dev/null 2>&1
+                    if [ $? -eq 0 ]
+                    then
+                        ONLINE_DCS[$i]="0"
+                    else
+                        ONLINE_DCS[$i]="1"
+                    fi
+                fi
+            done
+            TMP_SHOWREPL=$(mktemp)
+            samba-tool drs showrepl > $TMP_SHOWREPL
+            IN_REPL=$(sed -n '/==== INBOUND NEIGHBORS ====/,/==== OUTBOUND NEIGHBORS ====/p' $TMP_SHOWREPL)
+            OUT_REPL=$(IFS="\n" sed -n '/==== OUTBOUND NEIGHBORS ====/,/==== KCC CONNECTION OBJECTS ====/p' $TMP_SHOWREPL)
+            rm -rf $TMP_SHOWREPL
+            for ((i=0; i<${#DCS[@]}; i++))
+            do
+                DC=${DCS[$i]}
+                if [ "${DC}" != "${LOCAL_DC}" ]
+                then
+                    if [ "${ONLINE_DCS[$i]}" == "0" ]
+                    then
+                        printf ".  %${len_pf}s => " "Depuis ${DC}"
+                        DC_INFO=$(grep -ie "$(cut -d'.' -f1 <<< $DC)" -A2 <<< $IN_REPL)
+                        if [ $? -eq 0 ]
+                        then
+                            grep -qe "Last attempt.*was successful" <<< $DC_INFO
+                            if [ $? -eq 0 ]
+                            then
+                                EchoVert "OK"
+                            else
+                                EchoRouge "Erreur"
+                            fi
+                        else
+                            EchoOrange "Inconnu"
+                        fi
+                        printf ".  %${len_pf}s => " "Vers ${DC}"
+                        DC_INFO=$(grep -ie "$(cut -d'.' -f1 <<< $DC)" -A2 <<< $OUT_REPL)
+                        if [ $? -eq 0 ]
+                        then
+                            grep -qe "Last attempt.*was successful" <<< $DC_INFO
+                            if [ $? -eq 0 ]
+                            then
+                                EchoVert "OK"
+                            else
+                                EchoRouge "Erreur"
+                            fi
+                        else
+                            EchoOrange "Inconnu"
+                        fi
+                    else
+                        printf ".  %${len_pf}s => " "Avec ${DC}"
+                        if [ "${ONLINE_DCS[$i]}" == "1" ]
+                        then
+                            EchoRouge "Erreur"
+                        else
+                            EchoRouge "Injoignable"
+                        fi
+                    fi
+                fi
+            done
+        else
+            EchoRouge "Non supportée"
+        fi
+    else
+        EchoRouge "Port de réplication 135 non accessible"
+    fi
+    echo
+else
+    echo
+fi
+exit 0

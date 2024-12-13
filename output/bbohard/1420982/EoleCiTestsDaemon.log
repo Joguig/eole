@@ -1,0 +1,18 @@
+Début ciDeamonMain /root/.EoleCiTestsDaemon.sh
+init à 2024-12-11 14:33:34
+* ciAfficheProcess : 2024-12-11 14:33:34
+* ciWaitConteneurs : 2024-12-11 14:33:34
+* ciConfigurationMe : avant 2024-12-11 14:33:34
+* ciConfigurationMe : apres 2024-12-11 14:33:35
+Machine aca.envole 2.8.1 : * Creation lien aca.envole dans /mnt/eole-ci-tests/output/bbohard/1420982
+unlink: impossible de supprimer '/mnt/eole-ci-tests/output/bbohard//aca.envole': Aucun fichier ou dossier de ce type
+Machine aca.envole 2.8.1 : Sauvegarde CA aca.envole
+-rw-r--r-- 1 9869 9869 1797 déc.  11 14:33 /mnt/eole-ci-tests/output/bbohard//aca.envole.crt
+    issuer=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-envole.domaca.ac-test.fr
+    subject=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-envole.domaca.ac-test.fr
+    notBefore=Dec 10 20:46:29 2024 GMT
+    notAfter=Dec 11 20:46:29 2027 GMT
+* ciBoucleDExecution : pas d'excution ==> sortie
+ciStopDaemon : 2024-12-11 14:33:35
+nettoyage 'motd' et '/etc/issue'
+Sauvegarde log EoleCiTests

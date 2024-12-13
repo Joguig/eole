@@ -1,0 +1,166 @@
+Machine daily 2.8.0 : ciUpdateDaily BUILD_DAILY
+Machine daily 2.8.0 : 'proposed-update' déjà actif!
+Machine daily 2.8.0 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.8.0 : liste des noyaux
+-rw------- 1 root root 13701896 sept. 27 14:56 /boot/vmlinuz-5.4.0-200-generic
+-rw------- 1 root root 13705992 nov.   8 15:31 /boot/vmlinuz-5.4.0-202-generic
+Machine daily 2.8.0 : * espaces disponibles
+Sys. de fichiers        Type Taille Utilisé Dispo Uti% Monté sur
+/dev/mapper/vgthot-root ext4   9,8G    3,6G  5,8G  39% /
+/dev/mapper/vgthot-home ext4   2,0G     54k  1,9G   1% /home
+/dev/mapper/vgthot-var  ext4   2,0G    1,4G  483M  75% /var
+/dev/mapper/vgthot-tmp  ext4   2,0G     87k  1,9G   1% /tmp
+/dev/sda1               ext4   719M    163M  504M  25% /boot
+Machine daily 2.8.0 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.8.0 : dpkg --configure -a
+Machine daily 2.8.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+Machine daily 2.8.0 : ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 2.8.0 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 2.8.0 : Maj-Auto RC
+*********************************************
+Machine daily 2.8.0 : (py3) ciMonitor maj_auto
+
+monitor_maj_auto: pas de config.eol, donc utilise '-i' !
+
+MONITOR: Maj-Auto  -i -S test-eole.ac-dijon.fr -V test-eole.ac-dijon.fr  -C
+Mise à jour le vendredi 13 décembre 2024 19:23:43
+*** thot 2.8.0 ***
+
+[33mMaj-Auto - (VERSION CANDIDATE) - Augmenter le niveau de mise à jour est irréversible.[0m
+Voulez-vous continuer ? [oui/non]
+[non] : 
+MONITOR: maj_auto_241a action:oui
+oui
+Configuration du dépôt Ubuntu avec la source eole.ac-dijon.fr
+Configuration du dépôt EOLE avec la source test-eole.ac-dijon.fr
+Action update pour root                                                   [|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]   
+Action list-upgrade pour root
+0 nouveau, 15 mis à jour, 0 à enlever
+Paquets à mettre à jour : 
+    libapache2-mod-php7.4 (7.4.3-4ubuntu2.26) (root)
+    php7.4 (7.4.3-4ubuntu2.26) (root)
+    php7.4-cli (7.4.3-4ubuntu2.26) (root)
+    php7.4-common (7.4.3-4ubuntu2.26) (root)
+    php7.4-curl (7.4.3-4ubuntu2.26) (root)
+    php7.4-gd (7.4.3-4ubuntu2.26) (root)
+    php7.4-imap (7.4.3-4ubuntu2.26) (root)
+    php7.4-intl (7.4.3-4ubuntu2.26) (root)
+    php7.4-json (7.4.3-4ubuntu2.26) (root)
+    php7.4-ldap (7.4.3-4ubuntu2.26) (root)
+    php7.4-mysql (7.4.3-4ubuntu2.26) (root)
+    php7.4-opcache (7.4.3-4ubuntu2.26) (root)
+    php7.4-readline (7.4.3-4ubuntu2.26) (root)
+    php7.4-sqlite3 (7.4.3-4ubuntu2.26) (root)
+    php7.4-xml (7.4.3-4ubuntu2.26) (root)
+Action download-upgrade pour root
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+Les paquets suivants seront mis à jour :
+  libapache2-mod-php7.4 php7.4 php7.4-cli php7.4-common php7.4-curl php7.4-gd
+  php7.4-imap php7.4-intl php7.4-json php7.4-ldap php7.4-mysql php7.4-opcache
+  php7.4-readline php7.4-sqlite3 php7.4-xml
+15 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Il est nécessaire de prendre 4 511 ko dans les archives.
+Après cette opération, 1 024 o d'espace disque supplémentaires seront utilisés.
+Réception de :1 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-xml amd64 7.4.3-4ubuntu2.26 [98,8 kB]
+Réception de :2 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-sqlite3 amd64 7.4.3-4ubuntu2.26 [27,0 kB]
+Réception de :3 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-readline amd64 7.4.3-4ubuntu2.26 [12,6 kB]
+Réception de :4 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-opcache amd64 7.4.3-4ubuntu2.26 [198 kB]
+Réception de :5 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-mysql amd64 7.4.3-4ubuntu2.26 [122 kB]
+Réception de :6 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-ldap amd64 7.4.3-4ubuntu2.26 [29,6 kB]
+Réception de :7 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-json amd64 7.4.3-4ubuntu2.26 [19,2 kB]
+Réception de :8 http://eole.ac-dijon.fr/ubuntu focal-security/universe amd64 php7.4-intl amd64 7.4.3-4ubuntu2.26 [126 kB]
+Réception de :9 http://eole.ac-dijon.fr/ubuntu focal-security/universe amd64 php7.4-imap amd64 7.4.3-4ubuntu2.26 [29,9 kB]
+Réception de :10 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-gd amd64 7.4.3-4ubuntu2.26 [28,0 kB]
+Réception de :11 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-curl amd64 7.4.3-4ubuntu2.26 [30,9 kB]
+Réception de :12 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 libapache2-mod-php7.4 amd64 7.4.3-4ubuntu2.26 [1 369 kB]
+Réception de :13 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-cli amd64 7.4.3-4ubuntu2.26 [1 427 kB]
+Réception de :14 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-common amd64 7.4.3-4ubuntu2.26 [984 kB]
+Réception de :15 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4 all 7.4.3-4ubuntu2.26 [9 236 B]
+4 511 ko réceptionnés en 0s (45,6 Mo/s)
+Téléchargement achevé et dans le mode téléchargement uniquement
+Action dist-upgrade pour root
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+Les paquets suivants seront mis à jour :
+  libapache2-mod-php7.4 php7.4 php7.4-cli php7.4-common php7.4-curl php7.4-gd
+  php7.4-imap php7.4-intl php7.4-json php7.4-ldap php7.4-mysql php7.4-opcache
+  php7.4-readline php7.4-sqlite3 php7.4-xml
+15 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Il est nécessaire de prendre 0 o/4 511 ko dans les archives.
+Après cette opération, 1 024 o d'espace disque supplémentaires seront utilisés.
+(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 146424 fichiers et répertoires déjà installés.)
+Préparation du dépaquetage de .../00-php7.4-xml_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-xml (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../01-php7.4-sqlite3_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-sqlite3 (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../02-php7.4-readline_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-readline (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../03-php7.4-opcache_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-opcache (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../04-php7.4-mysql_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-mysql (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../05-php7.4-ldap_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-ldap (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../06-php7.4-json_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-json (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../07-php7.4-intl_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-intl (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../08-php7.4-imap_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-imap (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../09-php7.4-gd_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-gd (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../10-php7.4-curl_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-curl (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../11-libapache2-mod-php7.4_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de libapache2-mod-php7.4 (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../12-php7.4-cli_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-cli (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../13-php7.4-common_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-common (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../14-php7.4_7.4.3-4ubuntu2.26_all.deb ...
+Dépaquetage de php7.4 (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Paramétrage de php7.4-common (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-curl (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-mysql (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-imap (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-readline (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-intl (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-ldap (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-opcache (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-sqlite3 (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-gd (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-json (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-xml (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-cli (7.4.3-4ubuntu2.26) ...
+Paramétrage de libapache2-mod-php7.4 (7.4.3-4ubuntu2.26) ...
+libapache2-mod-php7.4: not switching MPM - already enabled
+Paramétrage de php7.4 (7.4.3-4ubuntu2.26) ...
+Traitement des actions différées (« triggers ») pour man-db (2.9.1-1) ...
+Traitement des actions différées (« triggers ») pour php7.4-cli (7.4.3-4ubuntu2.26) ...
+Traitement des actions différées (« triggers ») pour libapache2-mod-php7.4 (7.4.3-4ubuntu2.26) ...
+Mise à jour OK
+[33mMaj-Auto - Un ou plusieurs paquets ont été mis à jour, utilisez la commande [reconfigure] pour que les modifications soient prises en compte.[0m
+
+MONITOR: Maj-Auto  -i -S test-eole.ac-dijon.fr -V test-eole.ac-dijon.fr  -C eole -D envole
+Mise à jour le vendredi 13 décembre 2024 19:24:43
+*** thot 2.8.0 ***
+
+[33mMaj-Auto -  envole (VERSION DE DEVELOPPEMENT) eole (VERSION CANDIDATE) - Augmenter le niveau de mise à jour est irréversible.[0m
+Voulez-vous continuer ? [oui/non]
+[non] : 
+MONITOR: maj_auto_241a action:oui
+oui
+[33mpyeole.pkg - Pas de configuration du miroir Ubuntu avec eole.ac-dijon.fr qui semble inaccessible : Impossible d'obtenir la version pour le dépôt : http://eole.ac-dijon.fr/ubuntu/dists/focal/main/binary-amd64/Release[0m
+[33mpyeole.pkg - Pas de configuration du miroir Ubuntu avec ftp.crihan.fr qui semble inaccessible : Impossible d'obtenir la version pour le dépôt : http://ftp.crihan.fr/ubuntu/dists/focal/main/binary-amd64/Release[0m
+[31mMaj-Auto - Impossible de configurer les sources APT pour Ubuntu[0m
+
+MONITOR: ATTENTION: Pexpect Exit=0, PexpectExit=1, Status=256, Signalstatus=None
+Sauvegarde des logs suite a erreur dans 'maj_auto' pour la VM '1422907' 
+sauvegardeFichier: Erreur '/etc/resolv.conf' cas 1 lien !
+Machine daily 2.8.0 : Export journalctl entre Daily - maintenant (moins polution salt)
+Machine daily 2.8.0 : ciMonitor python3 ==> RESULT=1

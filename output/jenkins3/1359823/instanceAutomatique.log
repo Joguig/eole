@@ -1,0 +1,15 @@
+Machine etb3.amonecole 2.8.1 : Début ciConfigurationModuleEole
+Machine etb3.amonecole 2.8.1 : Le fichier config.eol existe : je ne fais rien !
+Machine etb3.amonecole 2.8.1 : ciSetHttpProxy, la machine a une patte sur 'academie', pas de proxy
+*********************************************
+* Affiche connectivité
+*********************************************
+    inet 127.0.0.1/8 scope host lo
+    inet 192.168.0.33/24 brd 192.168.0.255 scope global ens4
+    inet 10.3.2.1/24 brd 10.3.2.255 scope global ens5
+    inet 192.0.2.1/24 brd 192.0.2.255 scope global br0
+Machine etb3.amonecole 2.8.1 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+Machine etb3.amonecole 2.8.1 : ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine etb3.amonecole 2.8.1 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+/usr/bin/updatedb
+Machine etb3.amonecole 2.8.1 : * désactivation updatedb/locate sur /mnt/eole-ci-test présente !

@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<policyComments xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/CommentDefinitions">
+  <policyNamespaces>
+    <using prefix="ns0" namespace="Open-Shell.Policies.Menu"></using>
+    <using prefix="ns1" namespace="Open-Shell.Policies.OpenShell"></using>
+  </policyNamespaces>
+  <comments>
+    <admTemplate>
+      <comment policyRef="ns0:CSM_Computer" commentText="$(resource.ns0_CSM_Computer)"></comment>
+      <comment policyRef="ns0:CSM_Documents" commentText="$(resource.ns0_CSM_Documents)"></comment>
+      <comment policyRef="ns0:CSM_HighlightNew" commentText="$(resource.ns0_CSM_HighlightNew)"></comment>
+      <comment policyRef="ns0:CSM_HighlightNewApps" commentText="$(resource.ns0_CSM_HighlightNewApps)"></comment>
+      <comment policyRef="ns0:CSM_LogOff" commentText="$(resource.ns0_CSM_LogOff)"></comment>
+      <comment policyRef="ns0:CSM_MenuItems1" commentText="$(resource.ns0_CSM_MenuItems1)"></comment>
+      <comment policyRef="ns0:CSM_Printers" commentText="$(resource.ns0_CSM_Printers)"></comment>
+      <comment policyRef="ns0:CSM_StartScreenShortcut" commentText="$(resource.ns0_CSM_StartScreenShortcut)"></comment>
+      <comment policyRef="ns1:CS_Language" commentText="$(resource.ns1_CS_Language)"></comment>
+      <comment policyRef="ns1:CS_Update" commentText="$(resource.ns1_CS_Update)"></comment>
+    </admTemplate>
+  </comments>
+  <resources minRequiredRevision="1.0">
+    <stringTable>
+      <string id="ns0_CSM_Computer">Pas d'affichage de l'ordinateur</string>
+      <string id="ns0_CSM_Documents">Pas d'affichage des documents récents</string>
+      <string id="ns0_CSM_HighlightNew">Pas de surbrillance pour les programmes installés</string>
+      <string id="ns0_CSM_HighlightNewApps">Pas de surbrillance pour les appils installées</string>
+      <string id="ns0_CSM_LogOff">Suppression Déconnecter</string>
+      <string id="ns0_CSM_MenuItems1">Personalisation des entrées dans le menu.
+</string>
+      <string id="ns0_CSM_Printers">Affichage des imprimantes</string>
+      <string id="ns0_CSM_StartScreenShortcut">Desactivation de l'affichage du menu windows</string>
+      <string id="ns1_CS_Language">Francais</string>
+      <string id="ns1_CS_Update">Pas de recherche de MaJ</string>
+    </stringTable>
+  </resources>
+</policyComments>

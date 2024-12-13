@@ -1,0 +1,38 @@
+Machine aca.dc1 2.8.1 : Début ciContextualizeMachine : aca.dc1, dc1
+Machine aca.dc1 2.8.1 : Début ciContextualizeModuleEole
+Machine aca.dc1 2.8.1 : ciContextualisationMinimale:
+Machine aca.dc1 2.8.1 : rm /etc/netplan/* désactivé !
+Machine aca.dc1 2.8.1 : Inject /etc/hosts
+Machine aca.dc1 2.8.1 : ciContextualisationMinimaleSystemd
+Machine aca.dc1 2.8.1 : Inject /etc/hostname
+Machine aca.dc1 2.8.1 : ls -l /etc/netplan/
+total 4
+-rw------- 1 root root 110 oct.  24 12:50 01-netcfg.yaml
+Machine aca.dc1 2.8.1 : ciContextualisationMinimaleSystemdServer
+Machine aca.dc1 2.8.1 : Inject /etc/resolv.conf
+Machine aca.dc1 2.8.1 : /bin/rm -f /etc/resolv.conf (pour casser le lien!)
+Machine aca.dc1 2.8.1 : ls -l /etc/netplan
+total 4
+-rw------- 1 root root 110 oct.  24 12:50 01-netcfg.yaml
+Machine aca.dc1 2.8.1 : netoyage si besoin /etc/network/interfaces /etc/netplan/01-network-manager-all.yaml /etc/netplan/00-installer-config.yaml /etc/netplan/50-cloud-init.yaml
+Machine aca.dc1 2.8.1 : Inject /etc/netplan/01-netcfg.yaml avant 22.04
+Machine aca.dc1 2.8.1 : netplan generate --debug
+DEBUG:command generate: running ['/lib/netplan/generate']
+** (generate:663): DEBUG: 20:36:51.941: starting new processing pass
+** (generate:663): DEBUG: 20:36:51.942: We have some netdefs, pass them through a final round of validation
+** (generate:663): DEBUG: 20:36:51.942: ens4: setting default backend to 1
+** (generate:663): DEBUG: 20:36:51.942: Configuration is valid
+** (generate:663): DEBUG: 20:36:51.943: Generating output files..
+** (generate:663): DEBUG: 20:36:51.944: openvswitch: definition ens4 is not for us (backend 1)
+** (generate:663): DEBUG: 20:36:51.944: NetworkManager: definition ens4 is not for us (backend 1)
+(generate:663): GLib-DEBUG: 20:36:51.944: posix_spawn avoided (fd close requested) 
+(generate:663): GLib-DEBUG: 20:36:51.965: posix_spawn avoided (fd close requested) 
+Machine aca.dc1 2.8.1 : Inject authorized_keys
+Machine aca.dc1 2.8.1 : Actualisation /root/.ssh/authorized_keys
+Machine aca.dc1 2.8.1 : Inject bash_history
+Machine aca.dc1 2.8.1 : Contextualisation minimale OK
+Machine aca.dc1 2.8.1 : Fin ciContextualisationMinimale
+Machine aca.dc1 2.8.1 : Fin ciContextualizeModuleEole
+Machine aca.dc1 2.8.1 : Contextualization Machine OK
+Machine aca.dc1 2.8.1 : jenkins 1422947 aca.dc1 Contextualization Machine : OK
+Machine aca.dc1 2.8.1 : Fin ciContextualizeMachine : ok à 2024-12-13 20:36:52

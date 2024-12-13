@@ -1,0 +1,101 @@
+Machine aca.dc1 2.8.1 : Install Config Eol depuis /mnt/eole-ci-tests/configuration/aca.dc1//default-2.8.1/etc/eole/config.eol
+Machine aca.dc1 2.8.1 : * pas de fichiers variante
+Machine aca.dc1 2.8.1 : Simulate a GenConfig load/save of the configuration
+Load EOLE configuration... OK
+Save EOLE configuration... OK
+Machine aca.dc1 2.8.1 : /mnt/eole-ci-tests/depots/2.8.1.last : dernière maj = 2024-12-13 17:43:04
+Machine aca.dc1 2.8.1 : ciEstCeQueLImageEstAJour : - 1h 26m et 26s, Différence inférieure à 1000 secondes : pas besoin de mise à jour !!! 
+Machine aca.dc1 2.8.1 : Image à jour: je ne fais rien
+Machine aca.dc1 2.8.1 : ciInstance
+Machine aca.dc1 2.8.1 : ciEstCeQueLImageEstInstanciee
+Machine aca.dc1 2.8.1 : ciCheckCreoled ok
+Machine aca.dc1 2.8.1 : ciSetHttpProxy, pas de proxy pour les machines 'academie'
+Machine aca.dc1 2.8.1 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/eole/' : OK
+Machine aca.dc1 2.8.1 : ciAvantInstance : Installation paquets complémentaires avant instance
+Machine aca.dc1 2.8.1 : Installation paquets : eole-gpo-script
+Action install pour root
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Les paquets supplémentaires suivants seront installés : 
+  attr eole-gpo-joineole eole-gpo-script-pkg hashdeep
+Les NOUVEAUX paquets suivants seront installés :
+  attr eole-gpo-joineole eole-gpo-script eole-gpo-script-pkg hashdeep
+0 mis à jour, 5 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Il est nécessaire de prendre 190 ko dans les archives.
+Après cette opération, 1 761 ko d'espace disque supplémentaires seront utilisés.
+Réception de :1 http://eole.ac-dijon.fr/ubuntu focal/main amd64 attr amd64 1:2.4.48-5 [21,9 kB]
+Réception de :2 http://test-eole.ac-dijon.fr/eole eole-2.8.1-updates/main amd64 eole-gpo-joineole all 2.8.1-23 [11,4 kB]
+Réception de :3 http://eole.ac-dijon.fr/ubuntu focal/universe amd64 hashdeep amd64 4.4-6build1 [122 kB]
+Réception de :4 http://test-eole.ac-dijon.fr/eole eole-2.8.1-updates/main amd64 eole-gpo-script-pkg all 2.8.1-34 [8 240 B]
+Réception de :5 http://test-eole.ac-dijon.fr/eole eole-2.8.1-updates/main amd64 eole-gpo-script all 2.8.1-34 [25,9 kB]
+190 ko réceptionnés en 0s (5 506 ko/s)
+Sélection du paquet attr précédemment désélectionné.
+(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 142484 fichiers et répertoires déjà installés.)
+Préparation du dépaquetage de .../attr_1%3a2.4.48-5_amd64.deb ...
+Dépaquetage de attr (1:2.4.48-5) ...
+Sélection du paquet eole-gpo-joineole précédemment désélectionné.
+Préparation du dépaquetage de .../eole-gpo-joineole_2.8.1-23_all.deb ...
+Dépaquetage de eole-gpo-joineole (2.8.1-23) ...
+Sélection du paquet hashdeep précédemment désélectionné.
+Préparation du dépaquetage de .../hashdeep_4.4-6build1_amd64.deb ...
+Dépaquetage de hashdeep (4.4-6build1) ...
+Sélection du paquet eole-gpo-script-pkg précédemment désélectionné.
+Préparation du dépaquetage de .../eole-gpo-script-pkg_2.8.1-34_all.deb ...
+Dépaquetage de eole-gpo-script-pkg (2.8.1-34) ...
+Sélection du paquet eole-gpo-script précédemment désélectionné.
+Préparation du dépaquetage de .../eole-gpo-script_2.8.1-34_all.deb ...
+Dépaquetage de eole-gpo-script (2.8.1-34) ...
+Paramétrage de eole-gpo-joineole (2.8.1-23) ...
+Paramétrage de attr (1:2.4.48-5) ...
+Paramétrage de hashdeep (4.4-6build1) ...
+Paramétrage de eole-gpo-script-pkg (2.8.1-34) ...
+Paramétrage de eole-gpo-script (2.8.1-34) ...
+Traitement des actions différées (« triggers ») pour man-db (2.9.1-1) ...
+Machine aca.dc1 2.8.1 : ----
+*********************************************
+Machine aca.dc1 2.8.1 : (py3) ciMonitor instance
+
+MONITOR: instance
+[34m--------------------------------------------------------------------------------
+[39;49m[34m                             Début de configuration                             
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49m[34m                           Préparation pour instance                            
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49mRestart Systemd service creoled                                         [  [92mOK[0m  ]
+[34m--------------------------------------------------------------------------------
+[39;49m[34m                              Gestion des paquets                               
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49mSuppression des paquets                                                         
+Action remove pour root
+Pas de paquet pour l'action remove
+Installation des paquets                                                        
+Vérification des paquets pour le conteneur root: eole-antivirus-pkg eole-dhcp-pkg eole-ad-dc-pkg eole-ad-dc-scripts eole-exim-pkg
+Action install pour root
+Pas de paquet pour l'action install
+[34m--------------------------------------------------------------------------------
+[39;49m[34m                        Exécution des scripts preservice                        
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49mrun-parts: executing /usr/share/eole/preservice/00-anetwork instance
+[34m--------------------------------------------------------------------------------
+[39;49m[34m                               Arrêt des services                               
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49mStop Systemd services                                                     [|]/]-]\]|]/]   
+Service z_stats is not running                                          [  [92mOK[0m  ]
+Service bastion is not running                                          [  [92mOK[0m  ]
+Service nginx is not running                                            [  [92mOK[0m  ]
+Service eoleflask is not running                                        [  [92mOK[0m  ]
+Service exim4 is not running                                            [  [92mOK[0m  ]
+Service winbind is not running                                          [  [92mOK[0m  ]
+Service nmbd is not running                                             [  [92mOK[0m  ]
+Service smbd is not running                                             [  [92mOK[0m  ]
+Service samba-ad-dc is not running                                      [  [92mOK[0m  ]
+Service ead-web is not running                                          [  [92mOK[0m  ]
+Service ead-server is not running                                       [  [92mOK[0m  ]
+Service salt-minion-ead3 is not running                                 [  [92mOK[0m  ]
+Service salt-master-ead3 is not running                                 [  [92mOK[0m  ]
+Service salt-api-ead3 is not running                                    [  [92mOK[0m  ]
+Service nut-monitor is not running                                      [  [92mOK[0m  ]
+Service nut-driver is not running                                       [  [92mOK[0m  ]
+Service nut-server is not running                                       [  [92mOK[0m  ]

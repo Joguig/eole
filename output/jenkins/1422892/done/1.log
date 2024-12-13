@@ -1,0 +1,25 @@
+Machine daily 2.8.0 : ciUpdateDaily BUILD_DAILY
+Machine daily 2.8.0 : 'proposed-update' déjà actif!
+Machine daily 2.8.0 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.8.0 : liste des noyaux
+-rw------- 1 root root 13701896 sept. 27 14:56 /boot/vmlinuz-5.4.0-200-generic
+-rw------- 1 root root 13705992 nov.   8 15:31 /boot/vmlinuz-5.4.0-202-generic
+Machine daily 2.8.0 : * espaces disponibles
+Sys. de fichiers                     Type Taille Utilisé Dispo Uti% Monté sur
+/dev/mapper/vghapy--node-root        ext4   9,8G    3,5G  5,9G  38% /
+/dev/mapper/vghapy--node-var         ext4   8,8G    1,5G  6,9G  18% /var
+/dev/mapper/vghapy--node-tmp         ext4   2,0G     82k  1,9G   1% /tmp
+/dev/mapper/vghapy--node-var+lib+one ext4   2,0G     41k  1,9G   1% /var/lib/one
+/dev/sda1                            ext4   719M    163M  504M  25% /boot
+Machine daily 2.8.0 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.8.0 : dpkg --configure -a
+Machine daily 2.8.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+Machine daily 2.8.0 : ciWaitTestHttp (1/2): wait..
+Machine daily 2.8.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+Machine daily 2.8.0 : ciWaitTestHttp (2/2): wait..
+Machine daily 2.8.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+--2024-12-13 18:50:00--  http://ftp.crihan.fr/ubuntu/dists
+Résolution de ftp.crihan.fr (ftp.crihan.fr)… 2001:660:7401:211::36
+Connexion à ftp.crihan.fr (ftp.crihan.fr)|2001:660:7401:211::36|:80… échec : Le réseau n'est pas accessible.
+EOLE_CI_PATH ciDignoseNetwork.log
+ERREUR: ciWaitTestHttp http://ftp.crihan.fr/ubuntu/dists : timeout, service non disponible, STOP ! 2024-12-13 18:50:04

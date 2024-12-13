@@ -1,0 +1,17 @@
+Début ciDeamonMain /root/.EoleCiTestsDaemon.sh
+init à 2024-10-17 10:23:32
+* ciAfficheProcess : 2024-10-17 10:23:32
+* ciWaitConteneurs : 2024-10-17 10:23:36
+* ciConfigurationMe : avant 2024-10-17 10:23:36
+* ciConfigurationMe : apres 2024-10-17 10:23:36
+Machine etb1.amon 2.7.2 : * Creation lien etb1.amon dans /mnt/eole-ci-tests/output/ktjebbes/1347285
+Machine etb1.amon 2.7.2 : Sauvegarde CA etb1.amon
+-rw-r--r-- 1 9869 9869 1753 oct.  17 10:23 /mnt/eole-ci-tests/output/ktjebbes//etb1.amon.crt
+    issuer=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-amon.etb1.lan
+    subject=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-amon.etb1.lan
+    notBefore=Sep  6 22:20:57 2024 GMT
+    notAfter=Sep  7 22:20:57 2027 GMT
+* ciBoucleDExecution : pas d'excution ==> sortie
+ciStopDaemon : 2024-10-17 10:23:36
+nettoyage 'motd' et '/etc/issue'
+Sauvegarde log EoleCiTests

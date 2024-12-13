@@ -1,0 +1,16 @@
+CreoleSet ad_additional_dc_ip --default
+CreoleSet activer_ad_profiles_share oui
+CreoleSet activer_ad_homes_share oui
+
+ ad_additional_share 0
+ ad_additional_share_name squash
+ ad_additional_share_path /home/squash
+ ad_additional_share_writeable oui
+ ad_additional_share_browseable oui
+ 
+ 
+ 
+ 
+192.168.0.1 example.letsencrypt.org
+192.168.0.1 elpmaxe.letsencrypt.org
+ 

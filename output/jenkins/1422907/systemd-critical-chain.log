@@ -1,0 +1,498 @@
+The time when unit became active or started is printed after the "@" character.
+The time the unit took to start is printed after the "+" character.
+
+graphical.target @2min 22.652s
+|-multi-user.target @2min 22.651s
+| |-exim4.service @2min 22.565s +82ms
+| | |-mysql.service @2min 18.451s +4.108s
+| | | |-time-sync.target @2min 18.445s
+| | | | `-time-set.target @508ms
+| | | |-network-online.target @2min 8.395s
+| | | | |-network.target @8.173s
+| | | | | |-netplan-apply.service @2.325s +5.847s
+| | | | | | |-network-pre.target @2.323s
+| | | | | | |-basic.target @1.686s
+| | | | | | | |-sockets.target @1.685s
+| | | | | | | | |-uuidd.socket @1.685s
+| | | | | | | | | |-sysinit.target @1.679s
+| | | | | | | | | | |-systemd-update-utmp.service @1.611s +15ms
+| | | | | | | | | | | |-systemd-tmpfiles-setup.service @1.545s +47ms
+| | | | | | | | | | | | |-systemd-journal-flush.service @1.126s +417ms
+| | | | | | | | | | | | | |-var.mount @1.108s +16ms
+| | | | | | | | | | | | | | |-systemd-fsck@dev-mapper-vgthot\x2dvar.service @1.054s +51ms
+| | | | | | | | | | | | | | | |-dev-mapper-vgthot\x2dvar.device @1.051s
+| | | | | | | | | | | | | | | |-local-fs-pre.target @698ms
+| | | | | | | | | | | | | | | | |-systemd-tmpfiles-setup-dev.service @671ms +26ms
+| | | | | | | | | | | | | | | | | |-systemd-sysusers.service @653ms +15ms
+| | | | | | | | | | | | | | | | | | |-systemd-remount-fs.service @605ms +36ms
+| | | | | | | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | | | | | | | | |   `--.slice @489ms
+| | | | | | | | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | | | | | |-kmod-static-nodes.service @554ms +72ms
+| | | | | | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | | | | |-lvm2-monitor.service @557ms +101ms
+| | | | | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | | | | |-dm-event.socket @510ms
+| | | | | | | | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | | | | |-keyboard-setup.service @551ms +104ms
+| | | | | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | | | | `-systemd-remount-fs.service @605ms +36ms
+| | | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | | |-systemd-fsckd.socket @516ms
+| | | | | | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | | | `-system-systemd\x2dfsck.slice @493ms
+| | | | | | | | | | | | | | |   `-system.slice @489ms
+| | | | | | | | | | | | | | |-dev-mapper-vgthot\x2dvar.device @1.051s
+| | | | | | | | | | | | | | |-local-fs-pre.target @698ms
+| | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | |-systemd-remount-fs.service @605ms +36ms
+| | | | | | | | | | | | | |-systemd-journald.service @545ms +84ms
+| | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | |-systemd-journald-dev-log.socket @523ms
+| | | | | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | | |-systemd-journald-audit.socket @521ms
+| | | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | | |-syslog.socket @514ms
+| | | | | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | |-local-fs.target @1.140s
+| | | | | | | | | | | | | |-mnt-cdrom.mount @2.043s
+| | | | | | | | | | | | | | |-dev-sr0.device @1.014s
+| | | | | | | | | | | | | | |-local-fs-pre.target @698ms
+| | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | |-mnt-eole\x2dci\x2dtests.mount @1.772s
+| | | | | | | | | | | | | | |-local-fs-pre.target @698ms
+| | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | |-boot.mount @1.112s +28ms
+| | | | | | | | | | | | | | |-systemd-fsck@dev-disk-by\x2duuid-0825b058\x2d8f7d\x2d4d35\x2da745\x2daec5bf7d43e9.service @1.052s +56ms
+| | | | | | | | | | | | | | | |-dev-disk-by\x2duuid-0825b058\x2d8f7d\x2d4d35\x2da745\x2daec5bf7d43e9.device @1.048s
+| | | | | | | | | | | | | | | |-local-fs-pre.target @698ms
+| | | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | | |-systemd-fsckd.socket @516ms
+| | | | | | | | | | | | | | | `-system-systemd\x2dfsck.slice @493ms
+| | | | | | | | | | | | | | |-dev-sda1.device @1.049s
+| | | | | | | | | | | | | | |-local-fs-pre.target @698ms
+| | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | |-tmp.mount @1.105s +33ms
+| | | | | | | | | | | | | | |-systemd-fsck@dev-mapper-vgthot\x2dtmp.service @1.028s +66ms
+| | | | | | | | | | | | | | | |-dev-mapper-vgthot\x2dtmp.device @1.024s
+| | | | | | | | | | | | | | | |-local-fs-pre.target @698ms
+| | | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | | |-systemd-fsckd.socket @516ms
+| | | | | | | | | | | | | | | `-system-systemd\x2dfsck.slice @493ms
+| | | | | | | | | | | | | | |-dev-mapper-vgthot\x2dtmp.device @1.024s
+| | | | | | | | | | | | | | |-local-fs-pre.target @698ms
+| | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | |-var.mount @1.108s +16ms
+| | | | | | | | | | | | | |-home.mount @1.101s +13ms
+| | | | | | | | | | | | | | |-systemd-fsck@dev-mapper-vgthot\x2dhome.service @1.005s +90ms
+| | | | | | | | | | | | | | | |-dev-mapper-vgthot\x2dhome.device @1.002s
+| | | | | | | | | | | | | | | |-local-fs-pre.target @698ms
+| | | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | | |-systemd-fsckd.socket @516ms
+| | | | | | | | | | | | | | | `-system-systemd\x2dfsck.slice @493ms
+| | | | | | | | | | | | | | |-dev-mapper-vgthot\x2dhome.device @1.002s
+| | | | | | | | | | | | | | |-local-fs-pre.target @698ms
+| | | | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | | |-local-fs-pre.target @698ms
+| | | | | | | | | | | | | |-systemd-remount-fs.service @605ms +36ms
+| | | | | | | | | | | | | `--.mount @489ms
+| | | | | | | | | | | | |-systemd-sysusers.service @653ms +15ms
+| | | | | | | | | | | | |-systemd-journald.service @545ms +84ms
+| | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | |-var.mount @1.108s +16ms
+| | | | | | | | | | | |-systemd-remount-fs.service @605ms +36ms
+| | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | |-systemd-tmpfiles-setup.service @1.545s +47ms
+| | | | | | | | | | |-apparmor.service @1.142s +206ms
+| | | | | | | | | | | |-local-fs.target @1.140s
+| | | | | | | | | | | |-var.mount @1.108s +16ms
+| | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | |-systemd-journald-audit.socket @521ms
+| | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | |-systemd-udev-settle.service @695ms +603ms
+| | | | | | | | | | | |-systemd-udev-trigger.service @608ms +81ms
+| | | | | | | | | | | | |-systemd-udevd-kernel.socket @529ms
+| | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | |-systemd-udevd-control.socket @527ms
+| | | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | |-local-fs.target @1.140s
+| | | | | | | | | | |-swap.target @1.076s
+| | | | | | | | | | | |-dev-mapper-vgthot\x2dswap_1.swap @1.026s +48ms
+| | | | | | | | | | | | |-dev-dm\x2d0.device @1.023s
+| | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | |-dev-dm\x2d0.swap @1.075s
+| | | | | | | | | | | | |-dev-dm\x2d0.device @1.023s
+| | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | |-dev-disk-by\x2did-dm\x2dname\x2dvgthot\x2dswap_1.swap @1.075s
+| | | | | | | | | | | | |-dev-dm\x2d0.device @1.023s
+| | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | |-dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dT5d2qU7Mb7uos2bapd1druKj08lxjxk0VetGf5gM7m177zjDklvie7SUyQMFZCbM.swap @1.075s
+| | | | | | | | | | | | |-dev-dm\x2d0.device @1.023s
+| | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | |-dev-disk-by\x2duuid-06937d7a\x2d3ca9\x2d45a6\x2db9c3\x2db25a1596e9eb.swap @1.075s
+| | | | | | | | | | | | |-dev-dm\x2d0.device @1.023s
+| | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | `-dev-vgthot-swap_1.swap @1.075s
+| | | | | | | | | | |   |-dev-dm\x2d0.device @1.023s
+| | | | | | | | | | |   |-systemd-journald.socket @525ms
+| | | | | | | | | | |   |--.mount @489ms
+| | | | | | | | | | |   `-system.slice @489ms
+| | | | | | | | | | |-cryptsetup.target @756ms
+| | | | | | | | | | | |-systemd-ask-password-console.path @755ms
+| | | | | | | | | | | | `--.mount @489ms
+| | | | | | | | | | | `-systemd-ask-password-wall.path @499ms
+| | | | | | | | | | |   `--.mount @489ms
+| | | | | | | | | | |-systemd-udevd.service @700ms +52ms
+| | | | | | | | | | | |-systemd-tmpfiles-setup-dev.service @671ms +26ms
+| | | | | | | | | | | |-systemd-sysusers.service @653ms +15ms
+| | | | | | | | | | | |-systemd-udevd-kernel.socket @529ms
+| | | | | | | | | | | |-systemd-udevd-control.socket @527ms
+| | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | |-systemd-tmpfiles-setup-dev.service @671ms +26ms
+| | | | | | | | | | |-systemd-udev-trigger.service @608ms +81ms
+| | | | | | | | | | |-systemd-sysctl.service @651ms +30ms
+| | | | | | | | | | | |-systemd-modules-load.service @602ms +38ms
+| | | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | |-systemd-sysusers.service @653ms +15ms
+| | | | | | | | | | |-sys-kernel-config.mount @648ms +12ms
+| | | | | | | | | | | |-systemd-modules-load.service @602ms +38ms
+| | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | |-sys-fs-fuse-connections.mount @646ms +11ms
+| | | | | | | | | | | |-systemd-modules-load.service @602ms +38ms
+| | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | |-systemd-modules-load.service @602ms +38ms
+| | | | | | | | | | |-systemd-journald.service @545ms +84ms
+| | | | | | | | | | |-kmod-static-nodes.service @554ms +72ms
+| | | | | | | | | | |-sys-kernel-tracing.mount @542ms +80ms
+| | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | |-sys-kernel-debug.mount @539ms +80ms
+| | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | |-dev-mqueue.mount @535ms +79ms
+| | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | |-dev-hugepages.mount @532ms +80ms
+| | | | | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | | | | |--.mount @489ms
+| | | | | | | | | | | `-system.slice @489ms
+| | | | | | | | | | `-proc-sys-fs-binfmt_misc.automount @501ms
+| | | | | | | | | |   `--.mount @489ms
+| | | | | | | | | |--.mount @489ms
+| | | | | | | | | `-system.slice @489ms
+| | | | | | | | |-dbus.socket @1.685s
+| | | | | | | | | |-sysinit.target @1.679s
+| | | | | | | | | |--.mount @489ms
+| | | | | | | | | `-system.slice @489ms
+| | | | | | | | |-acpid.socket @1.684s
+| | | | | | | | | |-sysinit.target @1.679s
+| | | | | | | | | |--.mount @489ms
+| | | | | | | | | `-system.slice @489ms
+| | | | | | | | |-systemd-udevd-kernel.socket @529ms
+| | | | | | | | |-systemd-udevd-control.socket @527ms
+| | | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | | |-systemd-journald-dev-log.socket @523ms
+| | | | | | | | |-systemd-journald-audit.socket @521ms
+| | | | | | | | |-systemd-initctl.socket @518ms
+| | | | | | | | | |--.mount @489ms
+| | | | | | | | | `-system.slice @489ms
+| | | | | | | | `-syslog.socket @514ms
+| | | | | | | |-paths.target @1.684s
+| | | | | | | | |-acpid.path @1.680s
+| | | | | | | | | |-sysinit.target @1.679s
+| | | | | | | | | `--.mount @489ms
+| | | | | | | | |-systemd-ask-password-console.path @755ms
+| | | | | | | | `-systemd-ask-password-wall.path @499ms
+| | | | | | | |-sysinit.target @1.679s
+| | | | | | | |-tmp.mount @1.105s +33ms
+| | | | | | | |-var.mount @1.108s +16ms
+| | | | | | | |-slices.target @506ms
+| | | | | | | | |-user.slice @495ms
+| | | | | | | | | `--.slice @489ms
+| | | | | | | | |--.slice @489ms
+| | | | | | | | `-system.slice @489ms
+| | | | | | | `--.mount @489ms
+| | | | | | |-sysinit.target @1.679s
+| | | | | | |-apparmor.service @1.142s +206ms
+| | | | | | |-local-fs.target @1.140s
+| | | | | | |-systemd-sysctl.service @651ms +30ms
+| | | | | | |-systemd-modules-load.service @602ms +38ms
+| | | | | | |-systemd-journald.socket @525ms
+| | | | | | `-system.slice @489ms
+| | | | | |-systemd-resolved.service @2.406s +218ms
+| | | | | | |-systemd-networkd.service @2.334s +65ms
+| | | | | | | |-network-pre.target @2.323s
+| | | | | | | |-systemd-udevd.service @700ms +52ms
+| | | | | | | |-systemd-sysctl.service @651ms +30ms
+| | | | | | | |-systemd-sysusers.service @653ms +15ms
+| | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | |--.mount @489ms
+| | | | | | | `-system.slice @489ms
+| | | | | | |-systemd-tmpfiles-setup.service @1.545s +47ms
+| | | | | | |-tmp.mount @1.105s +33ms
+| | | | | | |-var.mount @1.108s +16ms
+| | | | | | |-systemd-sysusers.service @653ms +15ms
+| | | | | | |-systemd-journald.socket @525ms
+| | | | | | |--.mount @489ms
+| | | | | | `-system.slice @489ms
+| | | | | |-networking.service @2.327s +125ms
+| | | | | | |-network-pre.target @2.323s
+| | | | | | |-apparmor.service @1.142s +206ms
+| | | | | | |-local-fs.target @1.140s
+| | | | | | |-ifupdown-pre.service @693ms +9ms
+| | | | | | | |-systemd-udev-trigger.service @608ms +81ms
+| | | | | | | |-systemd-journald.socket @525ms
+| | | | | | | `-system.slice @489ms
+| | | | | | |-systemd-sysctl.service @651ms +30ms
+| | | | | | |-systemd-modules-load.service @602ms +38ms
+| | | | | | |-systemd-journald.socket @525ms
+| | | | | | `-system.slice @489ms
+| | | | | |-systemd-networkd.service @2.334s +65ms
+| | | | | |-network-pre.target @2.323s
+| | | | | `-ifupdown-pre.service @693ms +9ms
+| | | | |-netplan-apply.service @2.325s +5.847s
+| | | | `-networking.service @2.327s +125ms
+| | | |-network.target @8.173s
+| | | |-basic.target @1.686s
+| | | |-sysinit.target @1.679s
+| | | |-systemd-journald.socket @525ms
+| | | |--.mount @489ms
+| | | `-system.slice @489ms
+| | |-time-sync.target @2min 18.445s
+| | |-network-online.target @2min 8.395s
+| | |-nss-lookup.target @2.628s
+| | | `-systemd-resolved.service @2.406s +218ms
+| | |-clamav-daemon.service @1.700s +118ms
+| | | |-basic.target @1.686s
+| | | |-sysinit.target @1.679s
+| | | |-systemd-journald.socket @525ms
+| | | `-system.slice @489ms
+| | |-basic.target @1.686s
+| | |-sysinit.target @1.679s
+| | |-remote-fs.target @1.116s
+| | |-systemd-journald.socket @525ms
+| | `-system.slice @489ms
+| |-mysql.service @2min 18.451s +4.108s
+| |-ntp.service @2min 18.452s +95ms
+| | |-time-sync.target @2min 18.445s
+| | |-network.target @8.173s
+| | |-basic.target @1.686s
+| | |-sysinit.target @1.679s
+| | |-systemd-tmpfiles-setup.service @1.545s +47ms
+| | |-tmp.mount @1.105s +33ms
+| | |-var.mount @1.108s +16ms
+| | |-systemd-journald.socket @525ms
+| | |--.mount @489ms
+| | `-system.slice @489ms
+| |-slapd.service @2min 8.412s +152ms
+| | |-network-online.target @2min 8.395s
+| | |-basic.target @1.686s
+| | |-sysinit.target @1.679s
+| | |-remote-fs.target @1.116s
+| | |-systemd-journald.socket @525ms
+| | `-system.slice @489ms
+| |-getty.target @2min 8.464s
+| | `-getty@tty1.service @2min 8.464s
+| |   |-system-getty.slice @2min 8.462s
+| |   | |-setvtrgb.service @2min 8.446s +7ms
+| |   | | |-systemd-user-sessions.service @8.196s +15ms
+| |   | | | |-network.target @8.173s
+| |   | | | |-basic.target @1.686s
+| |   | | | |-sysinit.target @1.679s
+| |   | | | |-remote-fs.target @1.116s
+| |   | | | |-systemd-journald.socket @525ms
+| |   | | | |-nss-user-lookup.target @504ms
+| |   | | | `-system.slice @489ms
+| |   | | |-systemd-journald.socket @525ms
+| |   | | `-system.slice @489ms
+| |   | `-system.slice @489ms
+| |   |-rc-local.service @2min 8.409s +17ms
+| |   | |-network-online.target @2min 8.395s
+| |   | |-network.target @8.173s
+| |   | |-basic.target @1.686s
+| |   | |-sysinit.target @1.679s
+| |   | |-systemd-journald.socket @525ms
+| |   | `-system.slice @489ms
+| |   |-systemd-user-sessions.service @8.196s +15ms
+| |   |-basic.target @1.686s
+| |   |-sysinit.target @1.679s
+| |   `-systemd-journald.socket @525ms
+| |-inetd.service @2min 8.402s +30ms
+| | |-network-online.target @2min 8.395s
+| | |-basic.target @1.686s
+| | |-sysinit.target @1.679s
+| | |-systemd-journald.socket @525ms
+| | `-system.slice @489ms
+| |-rc-local.service @2min 8.409s +17ms
+| |-clamav-freshclam.service @2min 8.399s
+| | |-network-online.target @2min 8.395s
+| | |-basic.target @1.686s
+| | |-sysinit.target @1.679s
+| | |-systemd-journald.socket @525ms
+| | `-system.slice @489ms
+| |-creoled.service @8.175s +1.789s
+| | |-network.target @8.173s
+| | |-basic.target @1.686s
+| | |-sysinit.target @1.679s
+| | |-local-fs.target @1.140s
+| | |-systemd-journald.socket @525ms
+| | `-system.slice @489ms
+| |-nginx.service @8.186s +315ms
+| | |-network.target @8.173s
+| | |-basic.target @1.686s
+| | |-sysinit.target @1.679s
+| | |-systemd-journald.socket @525ms
+| | `-system.slice @489ms
+| |-ssh.service @8.195s +128ms
+| | |-network.target @8.173s
+| | |-basic.target @1.686s
+| | |-sysinit.target @1.679s
+| | |-systemd-journald.socket @525ms
+| | |--.mount @489ms
+| | `-system.slice @489ms
+| |-systemd-user-sessions.service @8.196s +15ms
+| |-vnstat.service @8.208s
+| | |-network.target @8.173s
+| | |-basic.target @1.686s
+| | |-sysinit.target @1.679s
+| | |-systemd-tmpfiles-setup.service @1.545s +47ms
+| | |-tmp.mount @1.105s +33ms
+| | |-var.mount @1.108s +16ms
+| | |-systemd-remount-fs.service @605ms +36ms
+| | |-systemd-journald.socket @525ms
+| | |--.mount @489ms
+| | `-system.slice @489ms
+| |-netplan-apply.service @2.325s +5.847s
+| |-systemd-networkd.service @2.334s +65ms
+| |-networkd-dispatcher.service @1.748s +495ms
+| | |-basic.target @1.686s
+| | |-sysinit.target @1.679s
+| | |-systemd-journald.socket @525ms
+| | `-system.slice @489ms
+| |-gpm.service @1.738s +270ms
+| | |-basic.target @1.686s
+| | |-sysinit.target @1.679s
+| | |-remote-fs.target @1.116s
+| | |-systemd-journald.socket @525ms
+| | `-system.slice @489ms
+| |-rsyslog.service @1.762s +135ms
+| | |-basic.target @1.686s
+| | |-sysinit.target @1.679s
+| | |-syslog.socket @514ms
+| | `-system.slice @489ms
+| |-systemd-logind.service @1.767s +84ms
+| | |-basic.target @1.686s
+| | |-dbus.socket @1.685s
+| | |-sysinit.target @1.679s
+| | |-systemd-tmpfiles-setup.service @1.545s +47ms
+| | |-tmp.mount @1.105s +33ms
+| | |-var.mount @1.108s +16ms
+| | |-systemd-remount-fs.service @605ms +36ms
+| | |-systemd-journald.socket @525ms
+| | |-nss-user-lookup.target @504ms
+| | |-user.slice @495ms
+| | |--.mount @489ms
+| | `-system.slice @489ms
+| |-clamav-daemon.service @1.700s +118ms
+| |-atd.service @1.693s +81ms
+| | |-basic.target @1.686s
+| | |-sysinit.target @1.679s
+| | |-remote-fs.target @1.116s
+| | |-systemd-journald.socket @525ms
+| | |-nss-user-lookup.target @504ms
+| | `-system.slice @489ms
+| |-irqbalance.service @1.745s
+| | |-basic.target @1.686s
+| | |-sysinit.target @1.679s
+| | |-systemd-journald.socket @525ms
+| | |--.mount @489ms
+| | `-system.slice @489ms
+| |-dmesg.service @1.718s
+| | |-basic.target @1.686s
+| | |-sysinit.target @1.679s
+| | `-system.slice @489ms
+| |-dbus.service @1.712s
+| | |-basic.target @1.686s
+| | |-dbus.socket @1.685s
+| | |-sysinit.target @1.679s
+| | |-systemd-journald.socket @525ms
+| | `-system.slice @489ms
+| |-cron.service @1.706s
+| | |-basic.target @1.686s
+| | |-sysinit.target @1.679s
+| | |-remote-fs.target @1.116s
+| | |-systemd-journald.socket @525ms
+| | |-nss-user-lookup.target @504ms
+| | `-system.slice @489ms
+| `-basic.target @1.686s
+|-exim4.service @2min 22.565s +82ms
+|-slapd.service @2min 8.412s +152ms
+|-gpm.service @1.738s +270ms
+`-accounts-daemon.service @1.690s +211ms
+  |-basic.target @1.686s
+  |-dbus.socket @1.685s
+  |-sysinit.target @1.679s
+  |-systemd-journald.socket @525ms
+  |-nss-user-lookup.target @504ms
+  `-system.slice @489ms

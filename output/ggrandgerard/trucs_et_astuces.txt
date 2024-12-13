@@ -1,0 +1,3 @@
+tail -f /var/log/rsyslog/local/kernel/kernel.warning.log |grep DROPPED| grep -v '=137 '| grep -v '=135 ' |grep -v '=138 ' |grep -v '=67 ' |grep -v '=53 '
+
+tcpdump -n -i any -s 0 -w docker.pcap ! port 22

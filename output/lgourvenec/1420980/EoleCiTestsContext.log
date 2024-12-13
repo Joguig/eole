@@ -1,0 +1,18 @@
+Start Context début... 
+Monte CDROM de CONTEXT dans /mnt/cdrom (Ubuntu)
+ciCreateDir: /mnt/eole-ci-tests/output/lgourvenec/1420980
+ciCreateDir: /mnt/eole-ci-tests/output/lgourvenec/1420980/todo
+ciCreateDir: /mnt/eole-ci-tests/output/lgourvenec/1420980/running
+ciCreateDir: /mnt/eole-ci-tests/output/lgourvenec/1420980/done
+TEMPLATE : VM_ONE=one, VM_ID=1420980, VM_OWNER=lgourvenec, VM_DAEMON=once, VM_MACHINE=aca.eolebase
+TEMPLATE : VM_VERSIONMAJEUR=2.10.0, VM_MAJAUTO=DEV
+ONBOOT   : VM_METHODE=instance, VM_CONFIGURATION=default
+USER     : IP_GW=111, GW=192.168.230.111, IP_UTILISATEUR=, MAIL=lgourvenec@cadoles.com
+FI       : IMAGE=base-2.10.0a0-amd64.fi, ISO=eole-2.10.0a0-amd64.iso, MODULE=base
+DAILY    : DATE=2024-12-10 17:32, MAJAUTO=DEV
+INSTANCE : DATE=2024-12-10 20:05, METHODE=, CONFIGURATION=default
+MODELE   : VM_MODULE=base, VM_CONTAINER=non, VM_ETABLISSEMENT=aca
+ETH0     : NAME=academie, DHCP=non, IP=192.168.0.24, GW=192.168.0.1, DNS=192.168.0.1
+Début ciContextualizeMe
+Machine aca.eolebase 2.10.0 : ciContextualizeMachine: réalisée pour 1420089, à refaire
+Fin ciContextualizeMe

@@ -1,0 +1,17 @@
+Start Context début... 
+Monte CDROM de CONTEXT dans /mnt/cdrom (Ubuntu)
+TEMPLATE : VM_ONE=one, VM_ID=1420985, VM_OWNER=bbohard, VM_DAEMON=once, VM_MACHINE=etb1.amon
+TEMPLATE : VM_VERSIONMAJEUR=2.10.0, VM_MAJAUTO=DEV
+ONBOOT   : VM_METHODE=instance, VM_CONFIGURATION=default
+USER     : IP_GW=98, GW=192.168.230.98, IP_UTILISATEUR=192.168.230.204, MAIL=bbohard@cadoles.com
+FI       : IMAGE=amon-2.10.0a0-amd64.fi, ISO=eole-2.10.0a0-amd64.iso, MODULE=amon
+DAILY    : DATE=2024-12-10 17:14, MAJAUTO=DEV
+INSTANCE : DATE=2024-12-10 22:19, METHODE=, CONFIGURATION=default
+MODELE   : VM_MODULE=amon, VM_CONTAINER=non, VM_ETABLISSEMENT=etb1
+ETH0     : NAME=academie, DHCP=non, IP=192.168.0.31, GW=192.168.0.1, DNS=192.168.0.1
+ETH1     : NAME=admin1, DHCP=non, IP=10.1.1.1, GW=10.1.1.1, DNS=10.1.1.1
+ETH2     : NAME=pedago1, DHCP=non, IP=10.1.2.1, GW=10.1.2.1, DNS=10.1.2.1
+ETH3     : NAME=dmz1, DHCP=non, IP=10.1.3.1, GW=10.1.3.1, DNS=10.1.3.1
+Début ciContextualizeMe
+Machine etb1.amon 2.10.0 : ciContextualizeMachine: déjà réalisée à 
+Fin ciContextualizeMe

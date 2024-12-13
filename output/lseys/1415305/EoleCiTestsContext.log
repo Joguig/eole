@@ -1,0 +1,18 @@
+Start Context début... 
+Monte CDROM de CONTEXT dans /mnt/cdrom (Ubuntu)
+ciCreateDir: /mnt/eole-ci-tests/output/lseys/1415305
+ciCreateDir: /mnt/eole-ci-tests/output/lseys/1415305/todo
+ciCreateDir: /mnt/eole-ci-tests/output/lseys/1415305/running
+ciCreateDir: /mnt/eole-ci-tests/output/lseys/1415305/done
+TEMPLATE : VM_ONE=one, VM_ID=1415305, VM_OWNER=lseys, VM_DAEMON=once, VM_MACHINE=etb1.scribe
+TEMPLATE : VM_VERSIONMAJEUR=2.9.0, VM_MAJAUTO=RC
+ONBOOT   : VM_METHODE=instance, VM_CONFIGURATION=AvecImport
+USER     : IP_GW=103, GW=192.168.230.103, IP_UTILISATEUR=, MAIL=lseys@cadoles.com
+FI       : IMAGE=scribe-2.9.0-amd64.fi, ISO=eole-2.9.0-amd64.iso, MODULE=scribe
+DAILY    : DATE=2024-12-02 17:54, MAJAUTO=RC
+INSTANCE : DATE=2024-12-03 01:30, METHODE=, CONFIGURATION=default
+MODELE   : VM_MODULE=scribe, VM_CONTAINER=non, VM_ETABLISSEMENT=etb1
+ETH0     : NAME=dmz1, DHCP=non, IP=10.1.3.5, GW=10.1.3.1, DNS=10.1.3.1
+Début ciContextualizeMe
+Machine etb1.scribe 2.9.0 : ciContextualizeMachine: réalisée pour 1414812, à refaire
+Fin ciContextualizeMe

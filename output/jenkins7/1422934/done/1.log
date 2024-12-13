@@ -1,0 +1,539 @@
+/mnt/eole-ci-tests/tests/eolebase/prepare-pc-genconfig.sh : Début
+* ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ens4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 02:00:c0:a8:00:67 brd ff:ff:ff:ff:ff:ff
+    altname enp0s4
+    inet 192.168.0.151/24 brd 192.168.0.255 scope global dynamic noprefixroute ens4
+       valid_lft 7075sec preferred_lft 7075sec
+    inet6 fe80::c0ff:fea8:67/64 scope link 
+       valid_lft forever preferred_lft forever
+Réception de :1 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Atteint :2 http://fr.archive.ubuntu.com/ubuntu jammy InRelease
+Réception de :3 http://fr.archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Réception de :4 http://fr.archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+Réception de :5 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1 968 kB]
+Réception de :6 http://security.ubuntu.com/ubuntu jammy-security/main i386 Packages [570 kB]
+Réception de :7 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [314 kB]
+Réception de :8 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main i386 Packages [731 kB]
+Réception de :9 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [2 644 kB]
+Réception de :10 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [460 kB]
+Réception de :11 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [958 kB]
+Réception de :12 http://security.ubuntu.com/ubuntu jammy-security/universe i386 Packages [648 kB]
+Réception de :13 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [204 kB]
+Réception de :14 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [2 193 kB]
+Réception de :15 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [374 kB]
+Réception de :16 http://fr.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [2 733 kB]
+Réception de :17 http://fr.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [477 kB]
+Réception de :18 http://fr.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1 180 kB]
+Réception de :19 http://fr.archive.ubuntu.com/ubuntu jammy-updates/universe i386 Packages [753 kB]
+Réception de :20 http://fr.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [288 kB]
+16,9 Mo réceptionnés en 3s (5 207 ko/s)
+Lecture des listes de paquets…
+* bash install-tools-nodejs.sh
+Atteint :1 http://fr.archive.ubuntu.com/ubuntu jammy InRelease
+Atteint :2 http://fr.archive.ubuntu.com/ubuntu jammy-updates InRelease
+Atteint :3 http://fr.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Atteint :4 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Lecture des listes de paquets…
+NODE_VERSION_A_INSTALLER=20
+[38;5;79m2024-12-13 20:25:18 - Installing pre-requisites[0m
+Atteint :1 http://fr.archive.ubuntu.com/ubuntu jammy InRelease
+Réception de :2 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Atteint :3 http://fr.archive.ubuntu.com/ubuntu jammy-updates InRelease
+Atteint :4 http://fr.archive.ubuntu.com/ubuntu jammy-backports InRelease
+129 ko réceptionnés en 0s (295 ko/s)
+Lecture des listes de paquets…
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+ca-certificates est déjà la version la plus récente (20240203~22.04.1).
+ca-certificates passé en « installé manuellement ».
+curl est déjà la version la plus récente (7.81.0-1ubuntu1.19).
+gnupg est déjà la version la plus récente (2.2.27-3ubuntu2.1).
+gnupg passé en « installé manuellement ».
+Les NOUVEAUX paquets suivants seront installés :
+  apt-transport-https
+0 mis à jour, 1 nouvellement installés, 0 à enlever et 21 non mis à jour.
+Il est nécessaire de prendre 1 510 o dans les archives.
+Après cette opération, 170 ko d'espace disque supplémentaires seront utilisés.
+Réception de :1 http://fr.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 apt-transport-https all 2.4.13 [1 510 B]
+1 510 o réceptionnés en 0s (26,4 ko/s)
+Sélection du paquet apt-transport-https précédemment désélectionné.
+(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 301021 fichiers et répertoires déjà installés.)
+Préparation du dépaquetage de .../apt-transport-https_2.4.13_all.deb ...
+Dépaquetage de apt-transport-https (2.4.13) ...
+Paramétrage de apt-transport-https (2.4.13) ...
+Atteint :1 http://fr.archive.ubuntu.com/ubuntu jammy InRelease
+Atteint :2 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Atteint :3 http://fr.archive.ubuntu.com/ubuntu jammy-updates InRelease
+Atteint :4 http://fr.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Réception de :5 https://deb.nodesource.com/node_20.x nodistro InRelease [12,1 kB]
+Réception de :6 https://deb.nodesource.com/node_20.x nodistro/main amd64 Packages [9 928 B]
+22,1 ko réceptionnés en 1s (43,3 ko/s)
+Lecture des listes de paquets…
+[1;34m2024-12-13 20:25:29 - Repository configured successfully.[0m
+[38;5;79m2024-12-13 20:25:29 - To install Node.js, run: apt-get install nodejs -y[0m
+[38;5;79m2024-12-13 20:25:29 - You can use N|solid Runtime as a node.js alternative[0m
+[1;32m2024-12-13 20:25:29 - To install N|solid Runtime, run: apt-get install nsolid -y 
+[0m
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Les NOUVEAUX paquets suivants seront installés :
+  nodejs
+0 mis à jour, 1 nouvellement installés, 0 à enlever et 21 non mis à jour.
+Il est nécessaire de prendre 31,8 Mo dans les archives.
+Après cette opération, 197 Mo d'espace disque supplémentaires seront utilisés.
+Réception de :1 https://deb.nodesource.com/node_20.x nodistro/main amd64 nodejs amd64 20.18.1-1nodesource1 [31,8 MB]
+31,8 Mo réceptionnés en 1s (56,0 Mo/s)
+Sélection du paquet nodejs précédemment désélectionné.
+(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 301025 fichiers et répertoires déjà installés.)
+Préparation du dépaquetage de .../nodejs_20.18.1-1nodesource1_amd64.deb ...
+Dépaquetage de nodejs (20.18.1-1nodesource1) ...
+Paramétrage de nodejs (20.18.1-1nodesource1) ...
+Traitement des actions différées (« triggers ») pour man-db (2.10.2-1) ...
+Version de Nodejs (v20.18.1)
+Version de Npm (10.8.2)
+
+* lib Node
+* **************total 8
+drwxr-xr-x 4 root root 4096 déc.  13 20:25 corepack
+drwxr-xr-x 7 root root 4096 déc.  13 20:25 npm
+
+* **************
+* Install Npm
+* Install Updatenpm warn deprecated set-value@0.2.0: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm warn deprecated glob@5.0.15: Glob versions prior to v9 are no longer supported
+npm warn deprecated set-value@0.4.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated set-value@0.3.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm warn deprecated set-value@0.3.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm warn deprecated set-value@0.3.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm warn deprecated set-value@0.4.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm warn deprecated set-value@0.4.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm warn deprecated set-value@0.4.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm warn deprecated set-value@0.3.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm warn deprecated set-value@0.3.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm warn deprecated set-value@0.3.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm warn deprecated set-value@0.3.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm warn deprecated set-value@0.4.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+
+added 628 packages in 20s
+
+18 packages are looking for funding
+  run `npm fund` for details
+npm notice
+npm notice New minor version of npm available! 10.8.2 -> 10.9.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.9.2
+npm notice To update run: npm install -g npm@10.9.2
+npm notice
+
+* Install mocha
+added 104 packages in 3s
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+* Install nightmarenpm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated har-validator@5.1.5: this library is no longer supported
+npm warn deprecated home-path@1.0.7: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated electron-download@3.3.0: Please use @electron/get moving forward.
+npm warn deprecated deep-defaults@1.0.5: not actively maintained; find alternatives
+npm warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm warn deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+
+added 132 packages in 10s
+
+5 packages are looking for funding
+  run `npm fund` for details
+* fs.inotify.max_user_watches install
+fs.inotify.max_user_watches=524288
+fs.inotify.max_user_watches = 524288
+* clone-eole-genconfig-tests.sh
+Clonage dans 'eole-genconfig-tests'...
+* clone-ewt-tests.sh
+Clonage dans 'ewt-tests'...
+* install 'nightmare'
+npm warn idealTree Removing dependencies.nightmare in favor of devDependencies.nightmare
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated home-path@1.0.7: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated electron-download@3.3.0: Please use @electron/get moving forward.
+npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated har-validator@5.1.5: this library is no longer supported
+npm warn deprecated deep-defaults@1.0.5: not actively maintained; find alternatives
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@7.1.1: Glob versions prior to v9 are no longer supported
+npm warn deprecated json3@3.3.2: Please use the native JSON object instead of JSON 3
+npm warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm warn deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm warn deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+
+added 172 packages, and audited 173 packages in 7s
+
+5 packages are looking for funding
+  run `npm fund` for details
+
+15 vulnerabilities (4 moderate, 5 high, 6 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+* install 'electron'
+npm warn deprecated boolean@3.2.0: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+
+added 68 packages, removed 2 packages, changed 8 packages, and audited 239 packages in 10s
+
+22 packages are looking for funding
+  run `npm fund` for details
+
+15 vulnerabilities (4 moderate, 5 high, 6 critical)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+v33.2.1
+v33.2.1
+* install libgconf-2-4 pour electron (obligatoire, sinon electron bug au démarrage !)
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Les paquets supplémentaires suivants seront installés : 
+  gconf-service gconf-service-backend gconf2-common
+Les NOUVEAUX paquets suivants seront installés :
+  gconf-service gconf-service-backend gconf2-common libgconf-2-4
+0 mis à jour, 4 nouvellement installés, 0 à enlever et 21 non mis à jour.
+Il est nécessaire de prendre 861 ko dans les archives.
+Après cette opération, 8 092 ko d'espace disque supplémentaires seront utilisés.
+Réception de :1 http://fr.archive.ubuntu.com/ubuntu jammy/universe amd64 gconf2-common all 3.2.6-7ubuntu2 [698 kB]
+Réception de :2 http://fr.archive.ubuntu.com/ubuntu jammy/universe amd64 libgconf-2-4 amd64 3.2.6-7ubuntu2 [86,0 kB]
+Réception de :3 http://fr.archive.ubuntu.com/ubuntu jammy/universe amd64 gconf-service-backend amd64 3.2.6-7ubuntu2 [59,3 kB]
+Réception de :4 http://fr.archive.ubuntu.com/ubuntu jammy/universe amd64 gconf-service amd64 3.2.6-7ubuntu2 [17,4 kB]
+861 ko réceptionnés en 0s (4 003 ko/s)
+Sélection du paquet gconf2-common précédemment désélectionné.
+(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 306388 fichiers et répertoires déjà installés.)
+Préparation du dépaquetage de .../gconf2-common_3.2.6-7ubuntu2_all.deb ...
+Dépaquetage de gconf2-common (3.2.6-7ubuntu2) ...
+Sélection du paquet libgconf-2-4:amd64 précédemment désélectionné.
+Préparation du dépaquetage de .../libgconf-2-4_3.2.6-7ubuntu2_amd64.deb ...
+Dépaquetage de libgconf-2-4:amd64 (3.2.6-7ubuntu2) ...
+Sélection du paquet gconf-service-backend précédemment désélectionné.
+Préparation du dépaquetage de .../gconf-service-backend_3.2.6-7ubuntu2_amd64.deb ...
+Dépaquetage de gconf-service-backend (3.2.6-7ubuntu2) ...
+Sélection du paquet gconf-service précédemment désélectionné.
+Préparation du dépaquetage de .../gconf-service_3.2.6-7ubuntu2_amd64.deb ...
+Dépaquetage de gconf-service (3.2.6-7ubuntu2) ...
+Paramétrage de gconf2-common (3.2.6-7ubuntu2) ...
+
+Creating config file /etc/gconf/2/path with new version
+Paramétrage de gconf-service (3.2.6-7ubuntu2) ...
+Traitement des actions différées (« triggers ») pour sgml-base (1.30) ...
+Paramétrage de libgconf-2-4:amd64 (3.2.6-7ubuntu2) ...
+Traitement des actions différées (« triggers ») pour libc-bin (2.35-0ubuntu3.8) ...
+Paramétrage de gconf-service-backend (3.2.6-7ubuntu2) ...
+* Install dépendance eole-genconfig-tests
+
+up to date, audited 239 packages in 1s
+
+22 packages are looking for funding
+  run `npm fund` for details
+
+15 vulnerabilities (4 moderate, 5 high, 6 critical)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+* Vérification JS known vulnerabilities 
+# npm audit report
+
+debug  <=2.6.8
+Severity: high
+debug Inefficient Regular Expression Complexity vulnerability - https://github.com/advisories/GHSA-9vvw-cc9w-f27h
+Regular Expression Denial of Service in debug - https://github.com/advisories/GHSA-gxpj-cx7g-858c
+fix available via `npm audit fix --force`
+Will install mocha@11.0.1, which is a breaking change
+node_modules/debug
+  mocha  0.6.0 - 6.2.2 || 7.0.0-esm1 - 7.1.0
+  Depends on vulnerable versions of debug
+  Depends on vulnerable versions of diff
+  Depends on vulnerable versions of growl
+  Depends on vulnerable versions of mkdirp
+  node_modules/mocha
+
+deep-defaults  *
+Severity: critical
+deep-defaults vulnerable to prototype pollution - https://github.com/advisories/GHSA-h6xg-rg33-9mf4
+fix available via `npm audit fix --force`
+Will install nightmare@2.0.9, which is a breaking change
+node_modules/deep-defaults
+  nightmare  >=2.1.0
+  Depends on vulnerable versions of deep-defaults
+  Depends on vulnerable versions of electron
+  node_modules/nightmare
+
+diff  <3.5.0
+Severity: high
+Regular Expression Denial of Service (ReDoS) - https://github.com/advisories/GHSA-h6ch-v84p-w6p9
+fix available via `npm audit fix --force`
+Will install mocha@11.0.1, which is a breaking change
+node_modules/diff
+
+electron  <=22.3.24
+Severity: high
+Context isolation bypass via leaked cross-context objects in Electron - https://github.com/advisories/GHSA-m93v-9qjc-3g79
+Context isolation bypass via contextBridge in Electron - https://github.com/advisories/GHSA-h9jc-284h-533g
+Arbitrary file read via window-open IPC in Electron - https://github.com/advisories/GHSA-f9mq-jph6-9mhm
+Context isolation bypass via Promise in Electron - https://github.com/advisories/GHSA-6vrv-94jv-crrg
+AutoUpdater module fails to validate certain nested components of the bundle - https://github.com/advisories/GHSA-77xc-hjv8-ww97
+Compromised child renderer processes could obtain IPC access without nodeIntegrationInSubFrames being enabled - https://github.com/advisories/GHSA-mq8j-3h7h-p8g7
+Exfiltration of hashed SMB credentials on Windows via file:// redirect - https://github.com/advisories/GHSA-p2jh-44qj-pf2v
+Electron's sandboxed renderers can obtain thumbnails of arbitrary files through the nativeImage API - https://github.com/advisories/GHSA-mpjm-v997-c4h4
+IPC messages delivered to the wrong frame in Electron - https://github.com/advisories/GHSA-hvf8-h2qh-37m9
+Renderers can obtain access to random bluetooth device without permission in Electron - https://github.com/advisories/GHSA-3p22-ghq8-v749
+Electron vulnerable to out-of-package code execution when launched with arbitrary cwd - https://github.com/advisories/GHSA-7x97-j373-85x5
+Electron context isolation bypass via nested unserializable return value - https://github.com/advisories/GHSA-p7v2-p9m8-qqg7
+Electron affected by libvpx's heap buffer overflow in vp8 encoding - https://github.com/advisories/GHSA-qqvq-6xgj-jw8g
+ASAR Integrity bypass via filetype confusion in electron - https://github.com/advisories/GHSA-7m48-wc93-9g85
+Depends on vulnerable versions of electron-download
+fix available via `npm audit fix --force`
+Will install nightmare@2.0.9, which is a breaking change
+node_modules/nightmare/node_modules/electron
+
+growl  <1.10.0
+Severity: critical
+Growl before 1.10.0 vulnerable to Command Injection - https://github.com/advisories/GHSA-qh2h-chj9-jffq
+fix available via `npm audit fix --force`
+Will install mocha@11.0.1, which is a breaking change
+node_modules/growl
+
+minimist  <=0.2.3
+Severity: critical
+Prototype Pollution in minimist - https://github.com/advisories/GHSA-vh95-rmgr-6w4m
+Prototype Pollution in minimist - https://github.com/advisories/GHSA-xvch-5gv4-984h
+fix available via `npm audit fix --force`
+Will install mocha@11.0.1, which is a breaking change
+node_modules/minimist
+  mkdirp  0.4.1 - 0.5.1
+  Depends on vulnerable versions of minimist
+  node_modules/mkdirp
+
+request  *
+Severity: moderate
+Server-Side Request Forgery in Request - https://github.com/advisories/GHSA-p8p7-x288-28g6
+Depends on vulnerable versions of tough-cookie
+fix available via `npm audit fix --force`
+Will install nightmare@2.0.9, which is a breaking change
+node_modules/request
+  nugget  *
+  Depends on vulnerable versions of request
+  node_modules/nugget
+    electron-download  *
+    Depends on vulnerable versions of nugget
+    node_modules/electron-download
+
+ssh2  <1.4.0
+Severity: high
+OS Command Injection in ssh2 - https://github.com/advisories/GHSA-652h-xwhf-q4h6
+fix available via `npm audit fix --force`
+Will install node-ssh@13.2.0, which is a breaking change
+node_modules/ssh2
+  node-ssh  <=11.1.1
+  Depends on vulnerable versions of ssh2
+  node_modules/node-ssh
+
+tough-cookie  <4.1.3
+Severity: moderate
+tough-cookie Prototype Pollution vulnerability - https://github.com/advisories/GHSA-72xf-g2v4-qvf3
+fix available via `npm audit fix --force`
+Will install nightmare@2.0.9, which is a breaking change
+node_modules/tough-cookie
+
+15 vulnerabilities (4 moderate, 5 high, 6 critical)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+* Install dépendance ewt-tests
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated home-path@1.0.7: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated electron-download@3.3.0: Please use @electron/get moving forward.
+npm warn deprecated har-validator@5.1.5: this library is no longer supported
+npm warn deprecated deep-defaults@1.0.5: not actively maintained; find alternatives
+npm warn deprecated json3@3.3.2: Please use the native JSON object instead of JSON 3
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@7.1.1: Glob versions prior to v9 are no longer supported
+npm warn deprecated rimraf@2.6.3: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm warn deprecated circular-json@0.3.3: CircularJSON is in maintenance only, flatted is its successor.
+npm warn deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+npm warn deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm warn deprecated eslint@3.19.0: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 279 packages, and audited 280 packages in 11s
+
+17 packages are looking for funding
+  run `npm fund` for details
+
+19 vulnerabilities (7 moderate, 5 high, 7 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+* Vérification JS known vulnerabilities 
+# npm audit report
+
+ajv  <6.12.3
+Severity: moderate
+Prototype Pollution in Ajv - https://github.com/advisories/GHSA-v88g-cgmw-v5xw
+fix available via `npm audit fix`
+node_modules/table/node_modules/ajv
+  table  3.7.10 - 4.0.2
+  Depends on vulnerable versions of ajv
+  node_modules/table
+
+debug  <=2.6.8
+Severity: high
+debug Inefficient Regular Expression Complexity vulnerability - https://github.com/advisories/GHSA-9vvw-cc9w-f27h
+Regular Expression Denial of Service in debug - https://github.com/advisories/GHSA-gxpj-cx7g-858c
+fix available via `npm audit fix --force`
+Will install mocha@11.0.1, which is a breaking change
+node_modules/mocha/node_modules/debug
+  mocha  0.6.0 - 6.2.2 || 7.0.0-esm1 - 7.1.0
+  Depends on vulnerable versions of debug
+  Depends on vulnerable versions of diff
+  Depends on vulnerable versions of growl
+  Depends on vulnerable versions of mkdirp
+  node_modules/mocha
+
+deep-defaults  *
+Severity: critical
+deep-defaults vulnerable to prototype pollution - https://github.com/advisories/GHSA-h6xg-rg33-9mf4
+No fix available
+node_modules/deep-defaults
+  nightmare  >=2.1.0
+  Depends on vulnerable versions of deep-defaults
+  Depends on vulnerable versions of electron
+  node_modules/nightmare
+    nightmare-iframe-manager  *
+    Depends on vulnerable versions of nightmare
+    node_modules/nightmare-iframe-manager
+
+diff  <3.5.0
+Severity: high
+Regular Expression Denial of Service (ReDoS) - https://github.com/advisories/GHSA-h6ch-v84p-w6p9
+fix available via `npm audit fix --force`
+Will install mocha@11.0.1, which is a breaking change
+node_modules/diff
+
+electron  <=22.3.24
+Severity: high
+Context isolation bypass via leaked cross-context objects in Electron - https://github.com/advisories/GHSA-m93v-9qjc-3g79
+Context isolation bypass via contextBridge in Electron - https://github.com/advisories/GHSA-h9jc-284h-533g
+Arbitrary file read via window-open IPC in Electron - https://github.com/advisories/GHSA-f9mq-jph6-9mhm
+Context isolation bypass via Promise in Electron - https://github.com/advisories/GHSA-6vrv-94jv-crrg
+AutoUpdater module fails to validate certain nested components of the bundle - https://github.com/advisories/GHSA-77xc-hjv8-ww97
+Compromised child renderer processes could obtain IPC access without nodeIntegrationInSubFrames being enabled - https://github.com/advisories/GHSA-mq8j-3h7h-p8g7
+Exfiltration of hashed SMB credentials on Windows via file:// redirect - https://github.com/advisories/GHSA-p2jh-44qj-pf2v
+Electron's sandboxed renderers can obtain thumbnails of arbitrary files through the nativeImage API - https://github.com/advisories/GHSA-mpjm-v997-c4h4
+IPC messages delivered to the wrong frame in Electron - https://github.com/advisories/GHSA-hvf8-h2qh-37m9
+Renderers can obtain access to random bluetooth device without permission in Electron - https://github.com/advisories/GHSA-3p22-ghq8-v749
+Electron vulnerable to out-of-package code execution when launched with arbitrary cwd - https://github.com/advisories/GHSA-7x97-j373-85x5
+Electron context isolation bypass via nested unserializable return value - https://github.com/advisories/GHSA-p7v2-p9m8-qqg7
+Electron affected by libvpx's heap buffer overflow in vp8 encoding - https://github.com/advisories/GHSA-qqvq-6xgj-jw8g
+ASAR Integrity bypass via filetype confusion in electron - https://github.com/advisories/GHSA-7m48-wc93-9g85
+Depends on vulnerable versions of electron-download
+No fix available
+node_modules/electron
+
+growl  <1.10.0
+Severity: critical
+Growl before 1.10.0 vulnerable to Command Injection - https://github.com/advisories/GHSA-qh2h-chj9-jffq
+fix available via `npm audit fix --force`
+Will install mocha@11.0.1, which is a breaking change
+node_modules/growl
+
+minimist  <=0.2.3
+Severity: critical
+Prototype Pollution in minimist - https://github.com/advisories/GHSA-vh95-rmgr-6w4m
+Prototype Pollution in minimist - https://github.com/advisories/GHSA-xvch-5gv4-984h
+fix available via `npm audit fix --force`
+Will install mocha@11.0.1, which is a breaking change
+node_modules/mocha/node_modules/minimist
+  mkdirp  0.4.1 - 0.5.1
+  Depends on vulnerable versions of minimist
+  node_modules/mocha/node_modules/mkdirp
+
+request  *
+Severity: moderate
+Server-Side Request Forgery in Request - https://github.com/advisories/GHSA-p8p7-x288-28g6
+Depends on vulnerable versions of tough-cookie
+No fix available
+node_modules/request
+  nugget  *
+  Depends on vulnerable versions of request
+  node_modules/nugget
+    electron-download  *
+    Depends on vulnerable versions of nugget
+    node_modules/electron-download
+
+shelljs  <=0.8.4
+Severity: high
+Improper Privilege Management in shelljs - https://github.com/advisories/GHSA-64g7-mvw6-v9qj
+Improper Privilege Management in shelljs - https://github.com/advisories/GHSA-4rq4-32rv-6wp6
+fix available via `npm audit fix --force`
+Will install eslint@9.16.0, which is a breaking change
+node_modules/shelljs
+  eslint  1.4.0 - 4.0.0-rc.0
+  Depends on vulnerable versions of shelljs
+  node_modules/eslint
+
+ssh2  <1.4.0
+Severity: high
+OS Command Injection in ssh2 - https://github.com/advisories/GHSA-652h-xwhf-q4h6
+fix available via `npm audit fix --force`
+Will install ssh2@1.16.0, which is a breaking change
+node_modules/ssh2
+
+tough-cookie  <4.1.3
+Severity: moderate
+tough-cookie Prototype Pollution vulnerability - https://github.com/advisories/GHSA-72xf-g2v4-qvf3
+No fix available
+node_modules/tough-cookie
+
+19 vulnerabilities (7 moderate, 5 high, 7 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+* install Xvfb
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+xvfb est déjà la version la plus récente (2:21.1.4-2ubuntu1.7~22.04.12).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 21 non mis à jour.

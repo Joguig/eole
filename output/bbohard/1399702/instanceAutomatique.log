@@ -1,0 +1,48 @@
+Machine aca.pc  : Debut ciConfigurationPcLinux
+Machine aca.pc  : ciConfigurationMinimale: 1er fois, à faire...
+Machine aca.pc  : GW actuelle : 192.168.0.1 OK
+Machine aca.pc  : pas de fichier startup '/mnt/eole-ci-tests/configuration/aca.pc//minimale/startup.sh' 
+Machine aca.pc  : Configurer sysctl.swapiness=0
+Machine aca.pc  : Configuration minimale OK
+Machine aca.pc  : Fin ciConfigurationMinimale : 1399702 le 2024-11-13 11:48:33
+GW actuelle : 192.168.0.1 OK, attendu: 192.168.0.1
+** Test GW 192.168.0.1
+Machine aca.pc  : ciPingHost enp2s0 => 192.168.0.1 ping=0 ==> OK (exit 0)
+Machine aca.pc  : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/eole/' : OK
+Machine aca.pc  : Liste des applications active
+/etc/xdg/autostart/at-spi-dbus-bus.desktop:NoDisplay=true
+/etc/xdg/autostart/caribou-autostart.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-a11y-settings.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-automount.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-background.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-clipboard.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-color.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-housekeeping.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-keyboard.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-media-keys.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-power.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-print-notifications.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-screensaver-proxy.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-settings-remap.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-smartcard.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-wacom.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-xsettings.desktop:NoDisplay=true
+/etc/xdg/autostart/geoclue-demo-agent.desktop:NoDisplay=true
+/etc/xdg/autostart/gnome-keyring-pkcs11.desktop:NoDisplay=true
+/etc/xdg/autostart/gnome-keyring-secrets.desktop:NoDisplay=true
+/etc/xdg/autostart/im-launch.desktop:NoDisplay=true
+/etc/xdg/autostart/nm-applet.desktop:NoDisplay=true
+/etc/xdg/autostart/onboard-autostart.desktop:NoDisplay=true
+/etc/xdg/autostart/orca-autostart.desktop:NoDisplay=true
+/etc/xdg/autostart/org.gnome.Evolution-alarm-notify.desktop:NoDisplay=true
+/etc/xdg/autostart/org.gnome.SettingsDaemon.DiskUtilityNotify.desktop:NoDisplay=true
+/etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop:NoDisplay=true
+/etc/xdg/autostart/polkit-mate-authentication-agent-1.desktop:NoDisplay=true
+/etc/xdg/autostart/sticky.desktop:NoDisplay=true
+/etc/xdg/autostart/touchegg.desktop:NoDisplay=true
+/etc/xdg/autostart/user-dirs-update-gtk.desktop:NoDisplay=true
+/etc/xdg/autostart/warpinator-autostart.desktop:NoDisplay=true
+/etc/xdg/autostart/xdg-user-dirs.desktop:NoDisplay=true
+Fin ciConfigurationPcLinux
+/usr/bin/updatedb
+Machine aca.pc  : * désactivation updatedb/locate sur /mnt/eole-ci-test présente !

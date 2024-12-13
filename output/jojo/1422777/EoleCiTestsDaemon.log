@@ -1,0 +1,18 @@
+Début ciDeamonMain /root/.EoleCiTestsDaemon.sh
+init à 2024-12-13 11:57:21
+* ciAfficheProcess : 2024-12-13 11:57:21
+* ciWaitConteneurs : 2024-12-13 11:57:22
+* ciConfigurationMe : avant 2024-12-13 11:57:22
+* ciConfigurationMe : apres 2024-12-13 11:57:28
+Machine aca.scribe 2.9.0 : * Creation lien aca.scribe dans /mnt/eole-ci-tests/output/jojo/1422777
+unlink: impossible de supprimer '/mnt/eole-ci-tests/output/jojo//aca.scribe': Aucun fichier ou dossier de ce nom
+Machine aca.scribe 2.9.0 : Sauvegarde CA aca.scribe
+-rw-r--r-- 1 9869 9869 1777 déc.  13 11:57 /mnt/eole-ci-tests/output/jojo//aca.scribe.crt
+    issuer=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-scribe.domscribe.ac-test.fr
+    subject=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-scribe.domscribe.ac-test.fr
+    notBefore=Dec 12 20:06:11 2024 GMT
+    notAfter=Dec 13 20:06:11 2027 GMT
+* ciBoucleDExecution : pas d'excution ==> sortie
+ciStopDaemon : 2024-12-13 11:57:28
+nettoyage 'motd' et '/etc/issue'
+Sauvegarde log EoleCiTests

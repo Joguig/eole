@@ -1,0 +1,241 @@
+#!/bin/bash
+
+# see : https://wiki.samba.org/index.php/Rsync_based_SysVol_replication_workaround
+
+function checkSynchroIdMap()
+{
+    echo "* export on dc REF 'idmap.ldb'"
+    if ! ssh_on_dc tdbbackup -s .bak /var/lib/samba/private/idmap.ldb
+    then
+        echo "* export on dc REF 'idmap.ldb' ERREUR"
+        return 1
+    fi
+    
+    echo "* import 'idmap.tdb'"
+    if ! scp "root@${AD_DC_SYSVOL_REF}:/var/lib/samba/private/idmap.ldb.bak" /root/idmap.ldb
+    then
+        echo "* import 'idmap.tdb' : ERREUR"
+        return 1
+    fi
+
+    if ! ldbsearch -H /var/lib/samba/private/idmap.ldb | grep -v "# " >/tmp/idmap-local.ldif
+    then
+        echo "* export 'idmap' local : ERREUR"
+        return 1
+    fi
+
+    if ! ldbsearch -H /root/idmap.ldb | grep -v "# " >/tmp/idmap-ref.ldif
+    then
+        echo "* export 'idmap' distant : ERREUR"
+        return 1
+    fi
+    
+    if diff /tmp/idmap-local.ldif /tmp/idmap-ref.ldif >/tmp/idmap.diff
+    then
+        echo "Pas de diff idmap, OK"
+        return 0
+    fi
+
+    echo "diff idmap : DIFFERENT"
+    cat /tmp/idmap.diff
+
+    echo "copy idmap "
+    cp /root/idmap.ldb /var/lib/samba/private/idmap.ldb
+
+    echo "reload config"
+    smbcontrol winbind reload-config
+    net cache flush
+
+    return 0
+}
+
+function doSynchroFromWSAD()
+{
+    echo "FIXME: a faire"
+
+    # shellcheck disable=SC1091
+    source /usr/lib/eole/samba4.sh
+
+    echo "* Check reponse REF"
+    if ! tcpcheck 2 "${AD_DC_SYSVOL_REF}":445 &>/dev/null
+    then
+        echo "Impossible de joindre le serveur sysvol"
+        return 1
+    fi
+    
+    echo "kinit "${AD_HOST_NAME^^}\$@${AD_REALM^^}" -k -t /var/lib/samba/private/secrets.keytab"
+    kinit "${AD_HOST_NAME^^}\$@${AD_REALM^^}" -k -t /var/lib/samba/private/secrets.keytab
+    klist
+    
+    smbclient //${AD_DC_SYSVOL_REF}/sysvol -P -c "tarmode full; tar cv /tmp/sysvol.tar ${AD_REALM}\Policies ${AD_REALM}/scripts"
+    echo "smbclient -> $?"
+    mkdir -p /tmp/sysvol
+    tar -xf /tmp/sysvol.tar --directory=/tmp/sysvol
+    ls -l /tmp/sysvol
+    
+    rsync  --verbose \
+           --archive \
+           --compress \
+           --info=NAME \
+           --delete-after \
+           --itemize-changes \
+           --out-format="%B %G %U %o %M %i %f" \
+           /tmp/sysvol /home/sysvol
+    /bin/rm -rf /tmp/sysvol
+    /bin/rm -rf /tmp/sysvol.tar
+    chmod 
+    
+    # si le distant est windows, alors on utilise le partage sysvol
+    # info: https://wiki.samba.org/index.php/Enabling_the_Sysvol_Share_on_a_Windows_DC
+    mkdir -p /mnt/sysvol
+    #umount //${AD_DC_SYSVOL_REF}/SYSVOL/
+    #mount -t cifs -o user=${AD_HOST_NAME^^}\$@${AD_REALM^^},sec=krb5i,vers=2.0 //${AD_DC_SYSVOL_REF}/SYSVOL /mnt/sysvol
+    #if [ $? -eq 0 ]
+    #then
+    #    #rsync --verbose -a /media/sysvol /home/sysvol
+    #    umount //${AD_DC_SYSVOL_REF}/sysvol/
+    #fi
+    kdestroy
+}
+
+function doSynchro()
+{
+    RESULTAT="0"
+    if [ ! -f /etc/eole/samba4-vars.conf ]
+    then
+        # Template is disabled => samba is disabled
+        return 0
+    fi
+
+    # shellcheck disable=SC1091
+    . /etc/eole/samba4-vars.conf
+
+    if [ -z "${AD_DC_SYSVOL_REF}" ]
+    then
+        return 0
+    fi
+   
+    if [ "${AD_DC_SYSVOL_TYPE}" = "windows" ]
+    then
+        doSynchroFromWSAD
+        return 0
+    fi
+   
+    if [ "${AD_DC_SYSVOL_TYPE}" != "samba" ]
+    then
+        # shellcheck disable=SC1091
+        source /usr/lib/eole/samba4.sh
+
+        echo "* Check reponse REF"
+        if ! tcpcheck 2 "${AD_DC_SYSVOL_REF}":22 &>/dev/null
+        then
+            echo "Impossible de joindre le serveur sysvol"
+            return 1
+        fi
+
+        if ! checkSynchroIdMap
+        then
+            RESULTAT="1"
+        fi
+
+        echo "* ATTENDU SYSVOL_ACL (AVANT RSYNC)"
+        echo "O:LAG:BAD:P(A;OICI;0x001f01ff;;;BA)(A;OICI;0x001200a9;;;SO)(A;OICI;0x001f01ff;;;SY)(A;OICI;0x001200a9;;;AU)"
+        samba-tool ntacl get /home/sysvol/ --as-sddl
+
+        echo "* ATTENDU POLICIES_ACL (AVANT RSYNC)"
+        echo "O:LAG:BAD:P(A;OICI;0x001f01ff;;;BA)(A;OICI;0x001200a9;;;SO)(A;OICI;0x001f01ff;;;SY)(A;OICI;0x001200a9;;;AU)(A;OICI;0x001301bf;;;PA)"
+        samba-tool ntacl get "/home/sysvol/${AD_REALM}/" --as-sddl
+
+        echo "* samba-tool ntacl sysvolcheck (AVANT RSYNC)"
+        samba-tool ntacl sysvolcheck 2>/tmp/rsync_avant.err
+        CHECK_AVANT="$?"
+        echo "sysvolcheck avant : $CHECK_AVANT"
+
+        #rsync
+        # -A : --acls     preserve ACLs (implies --perms)
+        # -X : --xattrs   preserve extended attributes
+        # -a : --archive  archive mode; equals -rlptgoD (no -H,-A,-X) (recurse dirs, preserve symlinks, preserve permissions, preserves modification times, preserve groups, preserve owner and preserve Device files).
+        # -v : --verbose  increase verbosity
+        # -z : --compress compress file data during the transfer
+        # --delete-after  receiver deletes after transfer, not during
+        # --ignore-times          don't skip files that match size and time
+        # --force                 force deletion of dirs even if not empty
+        #rsync -XAavz --delete-after --password-file=/var/lib/samba/rsyncd-sysvol.secret rsync://sysvol-replication@192.168.0.5/SysVol/ /var/lib/samba/sysvol
+
+        # Warning: Make sure that the destination folder is really your SysVol folder, because the command
+        # will replicate to the given directory and removes everything in it that isn't also on the source!
+        # You could damage your system! So check the output carefully to see if the replication is doing what
+        # you expect!
+        echo "* Rsync"
+        echo "* itemize-changes: '>' file was transfered, 'f' is a file, 'd' is a folder, 's' size are different, 't' timestamp was different,  'p' Permission are different, 'o' Owner is different, 'g' Group is different, 'a' The ACL information changed"
+
+        # attention: --info ==> uniquement les fichiers transférés
+        rsync --rsh='ssh' \
+                   --archive \
+                   --compress \
+                   --info=NAME \
+                   --acls \
+                   --xattrs \
+                   --delete-after \
+                   --force \
+                   --itemize-changes \
+                   --out-format="%B %G %U %o %M %i %f" \
+                   "root@${AD_DC_SYSVOL_REF}:/home/sysvol/" /home/sysvol/ \
+                   >/var/log/samba/JobSynchroRsync.log
+        echo "rsync : $?"
+        if [ -s /var/log/samba/JobSynchroRsync.log ]
+        then
+            echo "des fichiers/rep ont été synchronisés..."
+            cat /var/log/samba/JobSynchroRsync.log
+            RESULTAT="1"
+        fi
+
+        echo "* ATTENDU SYSVOL_ACL (APRES RSYNC)"
+        echo "O:LAG:BAD:P(A;OICI;0x001f01ff;;;BA)(A;OICI;0x001200a9;;;SO)(A;OICI;0x001f01ff;;;SY)(A;OICI;0x001200a9;;;AU)"
+        samba-tool ntacl get /home/sysvol/ --as-sddl
+
+        echo "* ATTENDU POLICIES_ACL (APRES RSYNC)"
+        echo "O:LAG:BAD:P(A;OICI;0x001f01ff;;;BA)(A;OICI;0x001200a9;;;SO)(A;OICI;0x001f01ff;;;SY)(A;OICI;0x001200a9;;;AU)(A;OICI;0x001301bf;;;PA)"
+        samba-tool ntacl get "/home/sysvol/${AD_REALM}/" --as-sddl
+
+        echo "* samba-tool ntacl sysvolcheck (APRES RSYNC)"
+        samba-tool ntacl sysvolcheck 2>/tmp/rsync_apres.err
+        CHECK_APRES="$?"
+        echo "sysvolcheck : $CHECK_APRES"
+        if [ "$CHECK_AVANT" = "$CHECK_APRES" ]
+        then
+            echo "Rsync n'a pas changé l'état Sysvol"
+        else
+            echo "Rsync A CHANGE l ETAT SYSVOL" >/dev/stderr
+            cat /tmp/rsync_apres.err >/dev/stderr
+        fi
+        if [ "$CHECK_APRES" != "0" ]
+        then
+            echo "------------------" >/tmp/sysvolreset.err
+            echo "samba-tool ntacl sysvolreset " >>/tmp/sysvolreset.err
+            samba-tool ntacl sysvolreset >>/tmp/sysvolreset.err 2>&1
+            APRES_RESET="$?"
+            echo "samba-tool ntacl sysvolreset : $APRES_RESET" >>/tmp/sysvolreset.err
+            echo "------------------" >>/tmp/sysvolreset.err
+            if [ "$APRES_RESET" != "0" ]
+            then
+                echo "samba-tool ntacl sysvolreset N A PAS CORRIGE l ETAT SYSVOL" >/dev/stderr
+                cat /tmp/sysvolreset.err >/dev/stderr
+            fi
+        fi
+    fi
+    return $RESULTAT
+}
+
+echo "=========================================================================================================="
+set +e
+date "+%Y-%m-%d %H:%M:%S"
+doSynchro  
+#>/var/log/samba/JobSynchro.log 2>&1
+CDU="$?"
+echo "doSynchro ==> $CDU"
+if [ "$CDU" != "0" ]
+then
+    cat /var/log/samba/JobSynchro.log
+fi
+echo "=========================================================================================================="

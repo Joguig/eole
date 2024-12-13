@@ -1,0 +1,38 @@
+Debut ciAfficheProcess 2024-12-12 22:52:50
+****************************************************************************************************************
+Machine daily 3.0 : systemctl is-active multi-user.target : active
+Machine daily 3.0 : systemctl is-active network.target : active
+Machine daily 3.0 : systemctl is-active network-online.target : active
+Machine daily 3.0 : systemctl is-system-running : starting
+1 : 1/80, 1/30 Zzz.............. 2024-12-12 22:52:52
+58d57
+< 0 [kworker/1:1-events]
+59a59
+> 0 [kworker/1:1-mm_percpu_wq]
+80c80
+< 0 [kworker/u8:3-events_unbound]
+---
+> 0 [kworker/u8:3-events_power_efficient]
+82c82
+< 0 [kworker/u8:5-events_power_efficient]
+---
+> 0 [kworker/u8:5-events_unbound]
+113d112
+< 0 /sbin/fstrim -av
+reset counter_termine = 0
+****************************************************************************************************************
+Machine daily 3.0 : systemctl is-active multi-user.target : active
+Machine daily 3.0 : systemctl is-active network.target : active
+Machine daily 3.0 : systemctl is-active network-online.target : active
+Machine daily 3.0 : systemctl is-system-running : degraded
+**************************************
+systemctl --state=failed
+  UNIT                                 LOAD   ACTIVE SUB    DESCRIPTION
+● systemd-networkd-wait-online.service loaded failed failed Wait for Network to be Configured
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+1 loaded units listed.
+**************************************
+Fin ciAfficheProcess : RESULT = 0    2024-12-12 22:52:52

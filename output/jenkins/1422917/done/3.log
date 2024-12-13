@@ -1,0 +1,22 @@
+/mnt/eole-ci-tests/tests/importation/check-importation-compte.sh eleves 6a.01 6a,n6
+OK: le repertoire '/home/6/6a.01' existe
+OK: le repertoire '/home/mail/6a.01' existe
+* requete Ldap sur OpenLDAP
+OK: 6a.01 a le bon Dn
+dn: uid=6a.01,ou=local,ou=eleves,ou=utilisateurs,ou=0000000A,ou=ac-test,ou=education,o=gouv,c=fr
+cn: 6a 01
+sn: 01
+Divcod: 6a
+Meflcf: n6
+
+OK: 'getent passwd 6a.01' a répondu
+6a.01:*:11149:10513::/home/adhomes/6a.01:/bin/false 
+***************** Groupes de 6a.01 ****************************************
+*** Attendu    ****************************************   Importé **********
+6a								6a
+6a.01								6a.01
+domain users							domain users
+eleves								eleves
+n6								n6
+result sans Users=0
+La liste des groupes de l'utilisateur 6a.01 est correcte

@@ -1,0 +1,25 @@
+Machine daily 2.7.2 : ciUpdateDaily BUILD_DAILY
+Machine daily 2.7.2 : 'proposed-update' déjà actif!
+Machine daily 2.7.2 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.7.2 : liste des noyaux
+-rw------- 1 root root 8474280 mai   23  2023 /boot/vmlinuz-4.15.0-212-generic
+-rw------- 1 root root 8470184 juin  17  2023 /boot/vmlinuz-4.15.0-213-generic
+Machine daily 2.7.2 : * espaces disponibles
+Sys. de fichiers          Type Taille Utilisé Dispo Uti% Monté sur
+/dev/mapper/thot--vg-root ext4   9,8G    3,0G  6,3G  32% /
+/dev/mapper/thot--vg-tmp  ext4   2,0G     82k  1,9G   1% /tmp
+/dev/mapper/thot--vg-home ext4   2,0G     54k  1,9G   1% /home
+/dev/mapper/thot--vg-var  ext4   2,0G    1,3G  621M  67% /var
+/dev/sda1                 ext4   719M    127M  540M  19% /boot
+Machine daily 2.7.2 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.7.2 : dpkg --configure -a
+Machine daily 2.7.2 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+Machine daily 2.7.2 : ciWaitTestHttp (1/2): wait..
+Machine daily 2.7.2 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+Machine daily 2.7.2 : ciWaitTestHttp (2/2): wait..
+Machine daily 2.7.2 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+--2024-12-13 19:19:25--  http://ftp.crihan.fr/ubuntu/dists
+Résolution de ftp.crihan.fr (ftp.crihan.fr)… 2001:660:7401:211::36
+Connexion à ftp.crihan.fr (ftp.crihan.fr)|2001:660:7401:211::36|:80… échec : Le réseau n'est pas accessible.
+EOLE_CI_PATH ciDignoseNetwork.log
+ERREUR: ciWaitTestHttp http://ftp.crihan.fr/ubuntu/dists : timeout, service non disponible, STOP ! 2024-12-13 19:19:31

@@ -1,0 +1,42 @@
+Machine aca.eolecitests  : Début ciSambaContextualize
+Machine aca.eolecitests  : Configuration SMB (interface=ens4)
+* testparm NOK
+Machine aca.eolecitests  : Début ciSambaConfiguration
+Machine aca.eolecitests  : Check hostname eolecitest
+127.0.0.1 localhost.localdomain localhost
+127.0.1.1 eolecitests
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+192.168.0.253	eolecitests.ac-test.fr eolecitests
+192.168.0.253 eolecitest
+#Machine aca.eolecitests  : Debut ciConfigureAutomatiqueMinimale
+Machine aca.eolecitests  : Configuration déjà réalisée avec 192.168.0.253
+Machine aca.eolecitests  : hostnamectl set-hostname eolecitest
+Machine aca.eolecitests  : ciSambaRestart
+Machine aca.eolecitests  : Arret SAMBA
+Machine aca.eolecitests  : Démarrage SAMBA
+Machine aca.eolecitests  : ciSambaRestart : ok 0
+Machine aca.eolecitests  : Creation compte samba admin, nobody
+User nobody password set to none.
+usermod : aucun changement
+Nouveau mot de passe : Retapez le nouveau mot de passe : passwd : le mot de passe a été mis à jour avec succès
+Machine aca.eolecitests  : Creation compte samba root
+Machine aca.eolecitests  : Début ciSambaCheckAcces localhost
+Machine aca.eolecitests  : Check smbclient
+Machine aca.eolecitests  : Check SAMBA 1 localhost
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	eolecitests     Disk      
+	wpkg            Disk      
+	sauvegardes     Disk      
+	IPC$            IPC       IPC Service (Samba Server 4.15.13-Ubuntu)
+SMB1 disabled -- no workgroup available
+Machine aca.eolecitests  : ciSambaCheckAcces : Ok
+Machine aca.eolecitests  : Fin ciSambaConfiguration : ok

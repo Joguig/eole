@@ -1,0 +1,2067 @@
+nov. 08 16:37:51 gateway106 dbus-daemon[730]: dbus[730]: Unknown group "power" in message bus configuration file
+nov. 08 16:37:51 gateway106 systemd-logind[744]: New seat seat0.
+░░ Subject: Un nouveau poste (seat) seat0 est disponible
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ Documentation: sd-login(3)
+░░ 
+░░ Un nouveau poste (seat) seat0 a été configuré et est maintenant
+░░ disponible.
+nov. 08 16:37:51 gateway106 systemd-logind[744]: Watching system buttons on /dev/input/event0 (Power Button)
+nov. 08 16:37:51 gateway106 systemd-logind[744]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+nov. 08 16:37:51 gateway106 bash[746]: CheckUpdate.sh: update /root/EoleCiFunctions.sh
+nov. 08 16:37:51 gateway106 udisksd[745]: udisks daemon version 2.9.4 starting
+nov. 08 16:37:51 gateway106 rsyslogd[742]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2112.0]
+nov. 08 16:37:51 gateway106 rsyslogd[742]: rsyslogd's groupid changed to 113
+nov. 08 16:37:51 gateway106 systemd[1]: Started System Logging Service.
+░░ Subject: L'unité (unit) rsyslog.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) rsyslog.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:51 gateway106 rsyslogd[742]: rsyslogd's userid changed to 107
+nov. 08 16:37:51 gateway106 rsyslogd[742]: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="742" x-info="https://www.rsyslog.com"] start
+nov. 08 16:37:51 gateway106 systemd[1]: grub-common.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit grub-common.service has successfully entered the 'dead' state.
+nov. 08 16:37:51 gateway106 systemd[1]: Finished Record successful boot for GRUB.
+░░ Subject: L'unité (unit) grub-common.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) grub-common.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:51 gateway106 systemd[1]: Starting GRUB failed boot detection...
+░░ Subject: L'unité (unit) grub-initrd-fallback.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) grub-initrd-fallback.service a commencé à démarrer.
+nov. 08 16:37:51 gateway106 bash[771]: '/mnt/eole-ci-tests/scripts/EoleCiFunctions.sh' -> '/root/EoleCiFunctions.sh'
+nov. 08 16:37:51 gateway106 bash[746]: CheckUpdate.sh: /root/.EoleCiTestsContext.sh A JOUR
+nov. 08 16:37:51 gateway106 bash[746]: CheckUpdate.sh: /root/.EoleCiTestsDaemon.sh A JOUR
+nov. 08 16:37:51 gateway106 dbus-daemon[730]: [system] AppArmor D-Bus mediation is enabled
+nov. 08 16:37:51 gateway106 systemd[1]: grub-initrd-fallback.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit grub-initrd-fallback.service has successfully entered the 'dead' state.
+nov. 08 16:37:51 gateway106 systemd[1]: Finished GRUB failed boot detection.
+░░ Subject: L'unité (unit) grub-initrd-fallback.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) grub-initrd-fallback.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:51 gateway106 dbus-daemon[730]: [system] Successfully activated service 'org.freedesktop.systemd1'
+nov. 08 16:37:51 gateway106 systemd[1]: Started User Login Management.
+░░ Subject: L'unité (unit) systemd-logind.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-logind.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:51 gateway106 polkitd[741]: started daemon version 0.105 using authority implementation `local' version `0.105'
+nov. 08 16:37:51 gateway106 systemd[1]: Started Authorization Manager.
+░░ Subject: L'unité (unit) polkit.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) polkit.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:51 gateway106 kernel: ISO 9660 Extensions: Microsoft Joliet Level 3
+nov. 08 16:37:51 gateway106 kernel: ISO 9660 Extensions: RRIP_1991A
+nov. 08 16:37:51 gateway106 systemd[1]: Starting Modem Manager...
+░░ Subject: L'unité (unit) ModemManager.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ModemManager.service a commencé à démarrer.
+nov. 08 16:37:51 gateway106 udisksd[745]: failed to load module mdraid: libbd_mdraid.so.2: cannot open shared object file: No such file or directory
+nov. 08 16:37:51 gateway106 udisksd[745]: Failed to load the 'mdraid' libblockdev plugin
+nov. 08 16:37:52 gateway106 ModemManager[806]: <info>  ModemManager (version 1.18.6) starting in system bus...
+nov. 08 16:37:52 gateway106 EOLECITESTS[828]: ciContextualizeMachine: déjà réalisée à
+nov. 08 16:37:52 gateway106 echo[836]: Contextualisation Ok
+nov. 08 16:37:52 gateway106 systemd[1]: EoleCiTestsContext.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit EoleCiTestsContext.service has successfully entered the 'dead' state.
+nov. 08 16:37:52 gateway106 systemd[1]: Finished EOLE Continuous Integration Tests Contextualisation.
+░░ Subject: L'unité (unit) EoleCiTestsContext.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) EoleCiTestsContext.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Reached target Preparation for Network.
+░░ Subject: L'unité (unit) network-pre.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) network-pre.target a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Starting Network Configuration...
+░░ Subject: L'unité (unit) systemd-networkd.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-networkd.service a commencé à démarrer.
+nov. 08 16:37:52 gateway106 systemd[1]: Started Disk Manager.
+░░ Subject: L'unité (unit) udisks2.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) udisks2.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 udisksd[745]: Acquired the name org.freedesktop.UDisks2 on the system message bus
+nov. 08 16:37:52 gateway106 snapd[743]: AppArmor status: apparmor is enabled and all features are available
+nov. 08 16:37:52 gateway106 systemd[1]: Started Modem Manager.
+░░ Subject: L'unité (unit) ModemManager.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ModemManager.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 snapd[743]: overlord.go:263: Acquiring state lock file
+nov. 08 16:37:52 gateway106 snapd[743]: overlord.go:268: Acquired state lock file
+nov. 08 16:37:52 gateway106 systemd-networkd[843]: lo: Link UP
+nov. 08 16:37:52 gateway106 systemd-networkd[843]: lo: Gained carrier
+nov. 08 16:37:52 gateway106 systemd-networkd[843]: Enumeration completed
+nov. 08 16:37:52 gateway106 systemd[1]: Started Network Configuration.
+░░ Subject: L'unité (unit) systemd-networkd.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-networkd.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Reached target Network.
+░░ Subject: L'unité (unit) network.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) network.target a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd-networkd[843]: ens6: Link UP
+nov. 08 16:37:52 gateway106 systemd[1]: Starting chrony, an NTP client/server...
+░░ Subject: L'unité (unit) chrony.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) chrony.service a commencé à démarrer.
+nov. 08 16:37:52 gateway106 networkd-dispatcher[739]: No valid path found for iwconfig
+nov. 08 16:37:52 gateway106 systemd[1]: Starting containerd container runtime...
+░░ Subject: L'unité (unit) containerd.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) containerd.service a commencé à démarrer.
+nov. 08 16:37:52 gateway106 systemd-networkd[843]: ens6: Gained carrier
+nov. 08 16:37:52 gateway106 systemd-networkd[843]: ens5: Link UP
+nov. 08 16:37:52 gateway106 systemd[1]: Starting dnsmasq - A lightweight DHCP and caching DNS server...
+░░ Subject: L'unité (unit) dnsmasq.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dnsmasq.service a commencé à démarrer.
+nov. 08 16:37:52 gateway106 systemd[1]: Started Service for snap application cups.cups-browsed.
+░░ Subject: L'unité (unit) snap.cups.cups-browsed.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snap.cups.cups-browsed.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Started Service for snap application cups.cupsd.
+░░ Subject: L'unité (unit) snap.cups.cupsd.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snap.cups.cupsd.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Starting Service for snap application lxd.activate...
+░░ Subject: L'unité (unit) snap.lxd.activate.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snap.lxd.activate.service a commencé à démarrer.
+nov. 08 16:37:52 gateway106 systemd[1]: Starting Wait for Network to be Configured...
+░░ Subject: L'unité (unit) systemd-networkd-wait-online.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-networkd-wait-online.service a commencé à démarrer.
+nov. 08 16:37:52 gateway106 systemd-networkd[843]: ens5: Gained carrier
+nov. 08 16:37:52 gateway106 systemd-networkd[843]: ens4: Link UP
+nov. 08 16:37:52 gateway106 systemd-networkd[843]: ens4: Gained carrier
+nov. 08 16:37:52 gateway106 snapd[743]: daemon.go:247: started snapd/2.57.5+22.04 (series 16; classic) ubuntu/22.04 (amd64) linux/5.15.0-52-generic.
+nov. 08 16:37:52 gateway106 kernel: loop12: detected capacity change from 0 to 8
+nov. 08 16:37:52 gateway106 systemd[1]: tmp-syscheck\x2dmountpoint\x2d159602208.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit tmp-syscheck\x2dmountpoint\x2d159602208.mount has successfully entered the 'dead' state.
+nov. 08 16:37:52 gateway106 chronyd[903]: chronyd version 4.2 starting (+CMDMON +NTP +REFCLOCK +RTC +PRIVDROP +SCFILTER +SIGND +ASYNCDNS +NTS +SECHASH +IPV6 -DEBUG)
+nov. 08 16:37:52 gateway106 snapd[743]: daemon.go:340: adjusting startup timeout by 1m15s (pessimistic estimate of 30s plus 5s per snap)
+nov. 08 16:37:52 gateway106 chronyd[903]: Frequency -37.068 +/- 0.359 ppm read from /var/lib/chrony/chrony.drift
+nov. 08 16:37:52 gateway106 chronyd[903]: Loaded seccomp filter (level 1)
+nov. 08 16:37:52 gateway106 systemd[1]: Started chrony, an NTP client/server.
+░░ Subject: L'unité (unit) chrony.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) chrony.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Reached target System Time Synchronized.
+░░ Subject: L'unité (unit) time-sync.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) time-sync.target a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Started Daily dpkg database backup timer.
+░░ Subject: L'unité (unit) dpkg-db-backup.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dpkg-db-backup.timer a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Started Periodic ext4 Online Metadata Check for All Filesystems.
+░░ Subject: L'unité (unit) e2scrub_all.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) e2scrub_all.timer a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Started Daily exim4-base housekeeping.
+░░ Subject: L'unité (unit) exim4-base.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) exim4-base.timer a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Started Discard unused blocks once a week.
+░░ Subject: L'unité (unit) fstrim.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fstrim.timer a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Started Refresh fwupd metadata regularly.
+░░ Subject: L'unité (unit) fwupd-refresh.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fwupd-refresh.timer a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Started Daily rotation of log files.
+░░ Subject: L'unité (unit) logrotate.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) logrotate.timer a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Started Daily man-db regeneration.
+░░ Subject: L'unité (unit) man-db.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) man-db.timer a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Started Message of the Day.
+░░ Subject: L'unité (unit) motd-news.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) motd-news.timer a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Started Update the plocate database daily.
+░░ Subject: L'unité (unit) plocate-updatedb.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) plocate-updatedb.timer a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Condition check resulted in Timer to automatically fetch and run repair assertions being skipped.
+░░ Subject: L'unité (unit) snapd.snap-repair.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.snap-repair.timer a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 dnsmasq[910]: dnsmasq: directory /etc/resolv.conf for resolv-file is missing, cannot poll
+nov. 08 16:37:52 gateway106 dnsmasq[910]: directory /etc/resolv.conf for resolv-file is missing, cannot poll
+nov. 08 16:37:52 gateway106 dnsmasq[910]: FAILED to start up
+nov. 08 16:37:52 gateway106 systemd[1]: dnsmasq.service: Control process exited, code=exited, status=5/NOTINSTALLED
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit dnsmasq.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 5.
+nov. 08 16:37:52 gateway106 systemd[1]: dnsmasq.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit dnsmasq.service has entered the 'failed' state with result 'exit-code'.
+nov. 08 16:37:52 gateway106 systemd[1]: Failed to start dnsmasq - A lightweight DHCP and caching DNS server.
+░░ Subject: L'unité (unit) dnsmasq.service a échoué
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dnsmasq.service a échoué, avec le résultat failed.
+nov. 08 16:37:52 gateway106 systemd[1]: Reached target Host and Network Name Lookups.
+░░ Subject: L'unité (unit) nss-lookup.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) nss-lookup.target a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Starting A high performance web server and a reverse proxy server...
+░░ Subject: L'unité (unit) nginx.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) nginx.service a commencé à démarrer.
+nov. 08 16:37:52 gateway106 systemd[1]: Started Snap Daemon.
+░░ Subject: L'unité (unit) snapd.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 dbus-daemon[730]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.12' (uid=0 pid=743 comm="/usr/lib/snapd/snapd " label="unconfined")
+nov. 08 16:37:52 gateway106 systemd[1]: Starting Wait until snapd is fully seeded...
+░░ Subject: L'unité (unit) snapd.seeded.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.seeded.service a commencé à démarrer.
+nov. 08 16:37:52 gateway106 systemd[1]: Started A high performance web server and a reverse proxy server.
+░░ Subject: L'unité (unit) nginx.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) nginx.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:52 gateway106 systemd[1]: Starting Time & Date Service...
+░░ Subject: L'unité (unit) systemd-timedated.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-timedated.service a commencé à démarrer.
+nov. 08 16:37:53 gateway106 dbus-daemon[730]: [system] Successfully activated service 'org.freedesktop.timedate1'
+nov. 08 16:37:53 gateway106 systemd[1]: Started Time & Date Service.
+░░ Subject: L'unité (unit) systemd-timedated.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-timedated.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:53 gateway106 systemd[1]: Finished Wait until snapd is fully seeded.
+░░ Subject: L'unité (unit) snapd.seeded.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.seeded.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:53 gateway106 systemd[1]: Condition check resulted in Auto import assertions from block devices being skipped.
+░░ Subject: L'unité (unit) snapd.autoimport.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.autoimport.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:53 gateway106 systemd[1]: Started Dispatcher daemon for systemd-networkd.
+░░ Subject: L'unité (unit) networkd-dispatcher.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) networkd-dispatcher.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:53 gateway106 systemd-networkd[843]: ens4: Gained IPv6LL
+nov. 08 16:37:53 gateway106 systemd[1]: tmp-snap.rootfs_PBkpZt.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit tmp-snap.rootfs_PBkpZt.mount has successfully entered the 'dead' state.
+nov. 08 16:37:53 gateway106 systemd[1]: tmp-snap.rootfs_oGFxtN.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit tmp-snap.rootfs_oGFxtN.mount has successfully entered the 'dead' state.
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53+01:00" level=warning msg="containerd config version `1` has been deprecated and will be removed in containerd v2.0, please switch to version `2`, see https://github.com/containerd/containerd/blob/main/docs/PLUGINS.md#version-header"
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.491667077+01:00" level=info msg="starting containerd" revision=9cd3357b7fd7218e4aec3eae239db1f68a5a6ec6 version=1.6.8
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.510002458+01:00" level=info msg="loading plugin \"io.containerd.content.v1.content\"..." type=io.containerd.content.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.511219498+01:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.aufs\"..." type=io.containerd.snapshotter.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.514395761+01:00" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.aufs\"..." error="aufs is not supported (modprobe aufs failed: exit status 1 \"modprobe: FATAL: Module aufs not found in directory /lib/modules/5.15.0-52-generic\\n\"): skip plugin" type=io.containerd.snapshotter.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.514546237+01:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.btrfs\"..." type=io.containerd.snapshotter.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.514839340+01:00" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.btrfs\"..." error="path /var/lib/containerd/io.containerd.snapshotter.v1.btrfs (ext4) must be a btrfs filesystem to be used with the btrfs snapshotter: skip plugin" type=io.containerd.snapshotter.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.514942215+01:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.devmapper\"..." type=io.containerd.snapshotter.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.515021458+01:00" level=warning msg="failed to load plugin io.containerd.snapshotter.v1.devmapper" error="devmapper not configured"
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.515092732+01:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.native\"..." type=io.containerd.snapshotter.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.515447767+01:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.overlayfs\"..." type=io.containerd.snapshotter.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.516980045+01:00" level=info msg="loading plugin \"io.containerd.snapshotter.v1.zfs\"..." type=io.containerd.snapshotter.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.517340578+01:00" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.zfs\"..." error="path /var/lib/containerd/io.containerd.snapshotter.v1.zfs must be a zfs filesystem to be used with the zfs snapshotter: skip plugin" type=io.containerd.snapshotter.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.517454658+01:00" level=info msg="loading plugin \"io.containerd.metadata.v1.bolt\"..." type=io.containerd.metadata.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.517564280+01:00" level=warning msg="could not use snapshotter devmapper in metadata plugin" error="devmapper not configured"
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.517646103+01:00" level=info msg="metadata content store policy set" policy=shared
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.522219811+01:00" level=info msg="loading plugin \"io.containerd.differ.v1.walking\"..." type=io.containerd.differ.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.522462757+01:00" level=info msg="loading plugin \"io.containerd.event.v1.exchange\"..." type=io.containerd.event.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.522561928+01:00" level=info msg="loading plugin \"io.containerd.gc.v1.scheduler\"..." type=io.containerd.gc.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.522685227+01:00" level=info msg="loading plugin \"io.containerd.service.v1.introspection-service\"..." type=io.containerd.service.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.522772344+01:00" level=info msg="loading plugin \"io.containerd.service.v1.containers-service\"..." type=io.containerd.service.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.522859497+01:00" level=info msg="loading plugin \"io.containerd.service.v1.content-service\"..." type=io.containerd.service.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.522958770+01:00" level=info msg="loading plugin \"io.containerd.service.v1.diff-service\"..." type=io.containerd.service.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.523047451+01:00" level=info msg="loading plugin \"io.containerd.service.v1.images-service\"..." type=io.containerd.service.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.523130719+01:00" level=info msg="loading plugin \"io.containerd.service.v1.leases-service\"..." type=io.containerd.service.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.523201805+01:00" level=info msg="loading plugin \"io.containerd.service.v1.namespaces-service\"..." type=io.containerd.service.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.523274712+01:00" level=info msg="loading plugin \"io.containerd.service.v1.snapshots-service\"..." type=io.containerd.service.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.523348589+01:00" level=info msg="loading plugin \"io.containerd.runtime.v1.linux\"..." type=io.containerd.runtime.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.523488233+01:00" level=info msg="loading plugin \"io.containerd.runtime.v2.task\"..." type=io.containerd.runtime.v2
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.523626136+01:00" level=info msg="loading plugin \"io.containerd.monitor.v1.cgroups\"..." type=io.containerd.monitor.v1
+nov. 08 16:37:53 gateway106 systemd-networkd[843]: ens6: Gained IPv6LL
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.530838046+01:00" level=info msg="loading plugin \"io.containerd.service.v1.tasks-service\"..." type=io.containerd.service.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.530902263+01:00" level=info msg="loading plugin \"io.containerd.grpc.v1.introspection\"..." type=io.containerd.grpc.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.530919417+01:00" level=info msg="loading plugin \"io.containerd.internal.v1.restart\"..." type=io.containerd.internal.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.533110752+01:00" level=info msg="loading plugin \"io.containerd.grpc.v1.containers\"..." type=io.containerd.grpc.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.533148295+01:00" level=info msg="loading plugin \"io.containerd.grpc.v1.content\"..." type=io.containerd.grpc.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.533178053+01:00" level=info msg="loading plugin \"io.containerd.grpc.v1.diff\"..." type=io.containerd.grpc.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.533195288+01:00" level=info msg="loading plugin \"io.containerd.grpc.v1.events\"..." type=io.containerd.grpc.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.533211556+01:00" level=info msg="loading plugin \"io.containerd.grpc.v1.healthcheck\"..." type=io.containerd.grpc.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.533227377+01:00" level=info msg="loading plugin \"io.containerd.grpc.v1.images\"..." type=io.containerd.grpc.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.533241338+01:00" level=info msg="loading plugin \"io.containerd.grpc.v1.leases\"..." type=io.containerd.grpc.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.533264874+01:00" level=info msg="loading plugin \"io.containerd.grpc.v1.namespaces\"..." type=io.containerd.grpc.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.533281502+01:00" level=info msg="loading plugin \"io.containerd.internal.v1.opt\"..." type=io.containerd.internal.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.541376267+01:00" level=info msg="loading plugin \"io.containerd.grpc.v1.snapshots\"..." type=io.containerd.grpc.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.541570281+01:00" level=info msg="loading plugin \"io.containerd.grpc.v1.tasks\"..." type=io.containerd.grpc.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.541661311+01:00" level=info msg="loading plugin \"io.containerd.grpc.v1.version\"..." type=io.containerd.grpc.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.541746648+01:00" level=info msg="loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." type=io.containerd.tracing.processor.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.541846111+01:00" level=info msg="skip loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." error="no OpenTelemetry endpoint: skip plugin" type=io.containerd.tracing.processor.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.541935070+01:00" level=info msg="loading plugin \"io.containerd.internal.v1.tracing\"..." type=io.containerd.internal.v1
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.542024667+01:00" level=error msg="failed to initialize a tracing processor \"otlp\"" error="no OpenTelemetry endpoint: skip plugin"
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.542422651+01:00" level=info msg=serving... address=/run/containerd/containerd.sock.ttrpc
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.542566931+01:00" level=info msg=serving... address=/run/containerd/containerd.sock
+nov. 08 16:37:53 gateway106 containerd[864]: time="2022-11-08T16:37:53.542708638+01:00" level=info msg="containerd successfully booted in 0.057501s"
+nov. 08 16:37:53 gateway106 systemd[1]: Started containerd container runtime.
+░░ Subject: L'unité (unit) containerd.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) containerd.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + mkdir -p /var/snap/cups/836/var/spool/tmp
+nov. 08 16:37:53 gateway106 cups.cups-browsed[860]: + mkdir -p /var/snap/cups/836/var/log
+nov. 08 16:37:53 gateway106 lxd.activate[862]: => Starting LXD activation
+nov. 08 16:37:53 gateway106 lxd.activate[862]: ==> Loading snap configuration
+nov. 08 16:37:53 gateway106 lxd.activate[862]: ==> Checking for socket activation support
+nov. 08 16:37:53 gateway106 cups.cups-browsed[860]: + mkdir -p /var/snap/cups/836/var/cache
+nov. 08 16:37:53 gateway106 cups.cups-browsed[860]: + mkdir -p /var/snap/cups/836/var/run
+nov. 08 16:37:53 gateway106 cups.cups-browsed[860]: + mkdir -p /var/snap/cups/common/etc/cups
+nov. 08 16:37:53 gateway106 cups.cups-browsed[860]: + CONF=/var/snap/cups/common/etc/cups/cups-browsed.conf
+nov. 08 16:37:53 gateway106 cups.cups-browsed[860]: + CLIENTCONF=/var/snap/cups/common/etc/cups/client.conf
+nov. 08 16:37:53 gateway106 cups.cups-browsed[860]: + DAEMON=cups-browsed
+nov. 08 16:37:53 gateway106 cups.cups-browsed[860]: + export LC_ALL=C.UTF-8
+nov. 08 16:37:53 gateway106 cups.cups-browsed[860]: + export LANG=C.UTF-8
+nov. 08 16:37:53 gateway106 cups.cups-browsed[860]: + TMPDIR=/var/snap/cups/836/tmp
+nov. 08 16:37:53 gateway106 cups.cups-browsed[860]: + mkdir -p /var/snap/cups/836/tmp
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + mkdir -p /var/snap/cups/836/var/run/certs
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + mkdir -p /var/snap/cups/836/var/log
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + mkdir -p /var/snap/cups/836/var/cache/fontconfig
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + mkdir -p /var/snap/cups/common/etc/cups/ppd
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + mkdir -p /var/snap/cups/common/etc/cups/ssl
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + mkdir -p /var/snap/cups/common/run
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + mkdir -m 0755 -p /run/cups
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + export LC_ALL=C.UTF-8
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + export LANG=C.UTF-8
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + export TMPDIR=/var/snap/cups/836/tmp
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + mkdir -p /var/snap/cups/836/tmp
+nov. 08 16:37:53 gateway106 cups.cups-browsed[860]: + CUPSSTARTED=0
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + CUPSTMPDIR=/var/snap/cups/836/var/spool/tmp
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + [ -d /var/snap/cups/836/tmp ]
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + chown -R root.root /var/snap/cups/836/tmp
+nov. 08 16:37:53 gateway106 cups.cups-browsed[1049]: + seq 60
+nov. 08 16:37:53 gateway106 systemd-networkd[843]: ens5: Gained IPv6LL
+nov. 08 16:37:53 gateway106 cups.cups-browsed[860]: + [ -r /var/snap/cups/836/var/run/cupsd.pid ]
+nov. 08 16:37:53 gateway106 cups.cups-browsed[860]: + sleep 1
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + chmod -R u+rwX /var/snap/cups/836/tmp
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + rm -rf /var/snap/cups/836/tmp
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + [ -d /var/snap/cups/836/tmp ]
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + [ -d /var/snap/cups/836/var/spool/tmp ]
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + chown -R root.root /var/snap/cups/836/var/spool/tmp
+nov. 08 16:37:53 gateway106 lxd.activate[862]: ==> Setting LXD socket ownership
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + chmod -R u+rwX /var/snap/cups/836/var/spool/tmp
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + rm -rf /var/snap/cups/836/var/spool/tmp
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + [ -d /var/snap/cups/836/var/spool/tmp ]
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + mkdir -p /var/snap/cups/836/tmp
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + chown -R root.root /var/snap/cups/836/tmp
+nov. 08 16:37:53 gateway106 lxd.activate[862]: ==> Setting LXD user socket ownership
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + chmod -R 1777 /var/snap/cups/836/tmp
+nov. 08 16:37:53 gateway106 lxd.activate[862]: ==> LXD never started on this system, no need to start it now
+nov. 08 16:37:53 gateway106 systemd[1]: snap.lxd.activate.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit snap.lxd.activate.service has successfully entered the 'dead' state.
+nov. 08 16:37:53 gateway106 systemd[1]: Finished Service for snap application lxd.activate.
+░░ Subject: L'unité (unit) snap.lxd.activate.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snap.lxd.activate.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + mkdir -p /var/snap/cups/836/var/spool/tmp
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + chown -R root.snap_daemon /var/snap/cups/836/var/spool/tmp
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + chmod -R 1770 /var/snap/cups/836/var/spool/tmp
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + CUPSUSER=snap_daemon
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + ALTCUPSUSER=root
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + CUPSGROUP=snap_daemon
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + ALTCUPSGROUP=root
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + CUPSSYSTEMGROUP=lpadmin
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + ALTCUPSSYSTEMGROUP=adm
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + TESTFILE=/var/snap/cups/836/tmp/testfile
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + touch /var/snap/cups/836/tmp/testfile
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + chown snap_daemon /var/snap/cups/836/tmp/testfile
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + chgrp snap_daemon /var/snap/cups/836/tmp/testfile
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + rm -f /var/snap/cups/836/tmp/testfile
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + getent group lpadmin
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + CUPSSYSTEMGROUP=adm
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + getent group adm
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + [ ! -f /var/snap/cups/common/etc/cups/cups-files.conf ]
+nov. 08 16:37:53 gateway106 cups.cupsd[861]: + perl -p -i -e s:^(\s*\#)?\s*User\s+\S+\s*$:User snap_daemon\n:; -e s:^(\s*\#)?\s*Group\s+.*$:Group snap_daemon:; -e s:^(\s*\#)?\s*SystemGroup\s+.*$:SystemGroup adm root:; -e s:^(\s*\#)?\s*AccessLog\s+.*$:AccessLog /var/snap/cups/836/var/log/access_log:; -e s:^(\s*\#)?\s*CacheDir\s+.*$:CacheDir /var/snap/cups/836/var/cache:; -e s:^(\s*\#)?\s*DataDir\s+.*$:DataDir /snap/cups/836/share/cups:; -e s:^(\s*\#)?\s*DocumentRoot\s+.*$:DocumentRoot /snap/cups/836/share/cups/doc:; -e s:^(\s*\#)?\s*ErrorLog\s+.*$:ErrorLog /var/snap/cups/836/var/log/error_log:; -e s:^(\s*\#)?\s*FontPath\s+.*$:\#FontPath (NOT SUPPORTED ANY MORE):; -e s:^(\s*\#)?\s*PageLog\s+.*$:PageLog /var/snap/cups/836/var/log/page_log:; -e s:^(\s*\#)?\s*Printcap\s+.*$:Printcap /var/snap/cups/common/etc/printcap:; -e s:^(\s*\#)?\s*RequestRoot\s+.*$:RequestRoot /var/snap/cups/836/var/spool:; -e s:^(\s*\#)?\s*ServerBin\s+.*$:ServerBin /snap/cups/836/lib/cups:; -e s:^(\s*\#)?\s*ServerRoot\s+.*$:ServerRoot /var/snap/cups/common/etc/cups:; -e s:^(\s*\#)?\s*StateDir\s+.*$:StateDir /var/snap/cups/836/var/run:; -e s:^(\s*\#)?\s*TempDir\s+.*$:TempDir /var/snap/cups/836/var/spool/tmp:; /var/snap/cups/common/etc/cups/cups-files.conf
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + PROXY_MODE=NO
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + SYSTEM_CUPS_SERVER=
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + rm -f /var/snap/cups/836/var/run/proxy-mode
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + [ ! -f /var/snap/cups/common/no-proxy ]
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + [ -r /etc/cups/cupsd.conf ]
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + PORT=631
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + ALTPORT=10631
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + DOMAINSOCKET=/run/cups/cups.sock
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + [ ! -d /run/cups ]
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + ALTDOMAINSOCKET=/var/snap/cups/common/run/cups.sock
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + [ NO = YES ]
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + /snap/cups/836/scripts/port-occupied 631
+nov. 08 16:37:54 gateway106 cups.cupsd[1079]: IPv4: Binding to 127.0.0.1:631 ...
+nov. 08 16:37:54 gateway106 cups.cupsd[1079]: IPv4 bind on port 631 succeeded.
+nov. 08 16:37:54 gateway106 cups.cupsd[1079]: IPv4 listen port 631 succeeded.
+nov. 08 16:37:54 gateway106 cups.cupsd[1079]: IPv4: Port 631 released.
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + /snap/cups/836/bin/lpstat -h /run/cups/cups.sock -r
+nov. 08 16:37:54 gateway106 cups.cupsd[1080]: scheduler is not running
+nov. 08 16:37:54 gateway106 cups.cupsd[1081]: + /snap/cups/836/bin/lpstat -h /run/cups/cups.sock -r
+nov. 08 16:37:54 gateway106 cups.cupsd[1082]: + grep -qv  not
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + [ ! -f /var/snap/cups/common/etc/cups/cupsd.conf ]
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + [ NO = YES ]
+nov. 08 16:37:54 gateway106 cups.cupsd[1084]: + cat /var/snap/cups/common/etc/cups/cupsd.conf
+nov. 08 16:37:54 gateway106 cups.cupsd[1086]: + grep -v Port
+nov. 08 16:37:54 gateway106 cups.cupsd[1085]: + grep -v Listen
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + echo Port 631
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + cat /var/snap/cups/common/etc/cups/cupsd.conf.new
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + rm -f /var/snap/cups/common/etc/cups/cupsd.conf.new
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + LISTENLINES=
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + [ /run/cups/cups.sock = /var/snap/cups/common/run/cups.sock ]
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + LISTENLINES=Listen /run/cups/cups.sock\nListen /var/snap/cups/common/run/cups.sock
+nov. 08 16:37:54 gateway106 cups.cupsd[1090]: + cat /var/snap/cups/common/etc/cups/cupsd.conf
+nov. 08 16:37:54 gateway106 cups.cupsd[1091]: + grep -v Listen
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + echo Listen /run/cups/cups.sock\nListen /var/snap/cups/common/run/cups.sock
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + cat /var/snap/cups/common/etc/cups/cupsd.conf.new
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + rm -f /var/snap/cups/common/etc/cups/cupsd.conf.new
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + touch /var/snap/cups/common/etc/cups/client.conf
+nov. 08 16:37:54 gateway106 cups.cupsd[1096]: + cat /var/snap/cups/common/etc/cups/client.conf
+nov. 08 16:37:54 gateway106 cups.cupsd[1097]: + grep -v ServerName
+nov. 08 16:37:54 gateway106 cups.cupsd[1095]: + true
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + echo ServerName /run/cups/cups.sock
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + cat /var/snap/cups/common/etc/cups/client.conf.new
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + rm -f /var/snap/cups/common/etc/cups/client.conf.new
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + [ ! -f /var/snap/cups/common/etc/cups/snmp.conf ]
+nov. 08 16:37:54 gateway106 cups.cupsd[1100]: + yes n
+nov. 08 16:37:54 gateway106 cups.cupsd[1101]: + cp -ri /snap/cups/836/etc/cups/ppd /var/snap/cups/common/etc/cups/
+nov. 08 16:37:54 gateway106 cups.cupsd[1102]: + yes n
+nov. 08 16:37:54 gateway106 cups.cupsd[1103]: + cp -ri /snap/cups/836/etc/cups/ssl /var/snap/cups/common/etc/cups/
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + SCHEDULER=cupsd
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + CUPS_PID=1104
+nov. 08 16:37:54 gateway106 cups.cupsd[1104]: +
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + echo 1104
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + [ NO = YES ]
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + rm -f /var/snap/cups/836/var/run/cups-proxyd.pid
+nov. 08 16:37:54 gateway106 cups.cupsd[1104]: exec cupsd -f -s /var/snap/cups/common/etc/cups/cups-files.conf -c /var/snap/cups/common/etc/cups/cupsd.conf
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + RUNNING=0
+nov. 08 16:37:54 gateway106 cups.cupsd[1106]: + seq 10
+nov. 08 16:37:54 gateway106 cups.cupsd[1107]: + /snap/cups/836/bin/lpstat -h /run/cups/cups.sock -r
+nov. 08 16:37:54 gateway106 cups.cupsd[1108]: + grep -qv  not
+nov. 08 16:37:54 gateway106 cups.cupsd[861]: + sleep 1
+nov. 08 16:37:54 gateway106 ModemManager[806]: <info>  [base-manager] couldn't check support for device '/sys/devices/pci0000:00/0000:00:04.0': not supported by any plugin
+nov. 08 16:37:54 gateway106 ModemManager[806]: <info>  [base-manager] couldn't check support for device '/sys/devices/pci0000:00/0000:00:05.0': not supported by any plugin
+nov. 08 16:37:54 gateway106 ModemManager[806]: <info>  [base-manager] couldn't check support for device '/sys/devices/pci0000:00/0000:00:06.0': not supported by any plugin
+nov. 08 16:37:54 gateway106 audit[1104]: SECCOMP auid=4294967295 uid=0 gid=0 ses=4294967295 subj=? pid=1104 comm="cupsd" exe="/snap/cups/836/sbin/cupsd" sig=0 arch=c000003e syscall=93 compat=0 ip=0x7f45744b939b code=0x50000
+nov. 08 16:37:54 gateway106 cups.cups-browsed[860]: + [ -r /var/snap/cups/836/var/run/cupsd.pid ]
+nov. 08 16:37:54 gateway106 cups.cups-browsed[1112]: + cat /var/snap/cups/836/var/run/cupsd.pid
+nov. 08 16:37:54 gateway106 cups.cups-browsed[860]: + PID=1104
+nov. 08 16:37:54 gateway106 cups.cups-browsed[860]: + [ -n 1104 ]
+nov. 08 16:37:54 gateway106 cups.cups-browsed[860]: + kill -0 1104
+nov. 08 16:37:54 gateway106 cups.cups-browsed[860]: + CUPSSTARTED=1
+nov. 08 16:37:54 gateway106 cups.cups-browsed[860]: + break
+nov. 08 16:37:54 gateway106 cups.cups-browsed[860]: + [ 1 = 0 ]
+nov. 08 16:37:54 gateway106 cups.cups-browsed[860]: + PID=
+nov. 08 16:37:54 gateway106 cups.cups-browsed[860]: + [ ! -e /var/snap/cups/836/var/run/proxy-mode ]
+nov. 08 16:37:54 gateway106 cups.cups-browsed[1115]: +
+nov. 08 16:37:54 gateway106 cups.cups-browsed[1116]: +
+nov. 08 16:37:54 gateway106 cups.cups-browsed[1115]: grep -i ServerName /var/snap/cups/common/etc/cups/client.conf
+nov. 08 16:37:54 gateway106 cups.cups-browsed[1116]: cut -d   -f 2
+nov. 08 16:37:54 gateway106 cups.cups-browsed[860]: + DOMAINSOCKET=/run/cups/cups.sock
+nov. 08 16:37:54 gateway106 cups.cups-browsed[860]: + export CUPS_SERVER=/run/cups/cups.sock
+nov. 08 16:37:54 gateway106 cups.cups-browsed[860]: + [ ! -f /var/snap/cups/common/etc/cups/cups-browsed.conf ]
+nov. 08 16:37:54 gateway106 cups.cups-browsed[860]: + perl -p -i -e s:^(\s*\#)?\s*CacheDir\s+\S+\s*$:CacheDir /var/snap/cups/836/var/cache\n:; -e s:^(\s*\#)?\s*LogDir\s+\S+\s*$:LogDir /var/snap/cups/836/var/log\n:; -e s:^(\s*\#)?\s*DomainSocket\s+/\S+\s*$:DomainSocket /run/cups/cups.sock\n:; /var/snap/cups/common/etc/cups/cups-browsed.conf
+nov. 08 16:37:54 gateway106 cups.cups-browsed[860]: + PID=1118
+nov. 08 16:37:54 gateway106 cups.cups-browsed[1118]: +
+nov. 08 16:37:54 gateway106 cups.cups-browsed[860]: + echo 1118
+nov. 08 16:37:54 gateway106 cups.cups-browsed[1118]: exec cups-browsed -c /var/snap/cups/common/etc/cups/cups-browsed.conf
+nov. 08 16:37:54 gateway106 cups.cups-browsed[860]: + wait 1118
+nov. 08 16:37:55 gateway106 audit[1104]: SECCOMP auid=4294967295 uid=0 gid=0 ses=4294967295 subj=? pid=1104 comm="cupsd" exe="/snap/cups/836/sbin/cupsd" sig=0 arch=c000003e syscall=93 compat=0 ip=0x7f45744b939b code=0x50000
+nov. 08 16:37:55 gateway106 audit[1118]: SECCOMP auid=4294967295 uid=0 gid=0 ses=4294967295 subj=? pid=1118 comm="cups-browsed" exe="/snap/cups/836/sbin/cups-browsed" sig=0 arch=c000003e syscall=314 compat=0 ip=0x7f384e27973d code=0x50000
+nov. 08 16:37:55 gateway106 cups.cupsd[1122]: +
+nov. 08 16:37:55 gateway106 cups.cupsd[1123]: + grep -qv  not
+nov. 08 16:37:55 gateway106 cups.cupsd[1122]: /snap/cups/836/bin/lpstat -h /run/cups/cups.sock -r
+nov. 08 16:37:55 gateway106 cups.cupsd[861]: + RUNNING=1
+nov. 08 16:37:55 gateway106 cups.cupsd[861]: + break
+nov. 08 16:37:55 gateway106 cups.cupsd[861]: + [ 1 = 1 ]
+nov. 08 16:37:55 gateway106 cups.cupsd[1124]: + seq 30
+nov. 08 16:37:55 gateway106 cups.cupsd[861]: + DELETED=0
+nov. 08 16:37:55 gateway106 cups.cupsd[1126]: + lpstat -h
+nov. 08 16:37:55 gateway106 cups.cupsd[1127]: +
+nov. 08 16:37:55 gateway106 cups.cupsd[1126]:  /run/cups/cups.sock
+nov. 08 16:37:55 gateway106 cups.cupsd[1127]: grep : proxy://
+nov. 08 16:37:55 gateway106 cups.cupsd[1128]: +
+nov. 08 16:37:55 gateway106 cups.cupsd[1129]: + cut -d : -f 1
+nov. 08 16:37:55 gateway106 cups.cupsd[1128]: cut -d   -f 3
+nov. 08 16:37:55 gateway106 cups.cupsd[1126]:  -v
+nov. 08 16:37:55 gateway106 cups.cupsd[861]: + [ 0 = 0 ]
+nov. 08 16:37:55 gateway106 cups.cupsd[861]: + break
+nov. 08 16:37:55 gateway106 cups.cupsd[861]: + wait 1104
+nov. 08 16:37:56 gateway106 systemd[1]: dmesg.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit dmesg.service has successfully entered the 'dead' state.
+nov. 08 16:37:56 gateway106 chronyd[903]: Selected source 192.168.232.2
+nov. 08 16:38:05 gateway106 systemd-networkd-wait-online[863]: managing: ens5
+nov. 08 16:38:05 gateway106 systemd-networkd-wait-online[863]: managing: ens6
+nov. 08 16:38:05 gateway106 systemd-networkd-wait-online[863]: managing: ens4
+nov. 08 16:38:05 gateway106 systemd[1]: Finished Wait for Network to be Configured.
+░░ Subject: L'unité (unit) systemd-networkd-wait-online.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-networkd-wait-online.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 systemd[1]: Reached target Network is Online.
+░░ Subject: L'unité (unit) network-online.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) network-online.target a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 systemd[1]: Started Download data for packages that failed at package install time.
+░░ Subject: L'unité (unit) update-notifier-download.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) update-notifier-download.timer a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 systemd[1]: Started Check to see whether there is a new version of Ubuntu available.
+░░ Subject: L'unité (unit) update-notifier-motd.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) update-notifier-motd.timer a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 systemd[1]: Reached target Timer Units.
+░░ Subject: L'unité (unit) timers.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) timers.target a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: L'unité (unit) docker.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) docker.service a commencé à démarrer.
+nov. 08 16:38:05 gateway106 systemd[1]: Condition check resulted in Login to default iSCSI targets being skipped.
+░░ Subject: L'unité (unit) open-iscsi.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) open-iscsi.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 systemd[1]: Reached target Preparation for Remote File Systems.
+░░ Subject: L'unité (unit) remote-fs-pre.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) remote-fs-pre.target a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 systemd[1]: Reached target Remote File Systems.
+░░ Subject: L'unité (unit) remote-fs.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) remote-fs.target a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 systemd[1]: Starting LSB: automatic crash report generation...
+░░ Subject: L'unité (unit) apport.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apport.service a commencé à démarrer.
+nov. 08 16:38:05 gateway106 systemd[1]: Finished Availability of block devices.
+░░ Subject: L'unité (unit) blk-availability.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) blk-availability.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 systemd[1]: Started Regular background program processing daemon.
+░░ Subject: L'unité (unit) cron.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) cron.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 systemd[1]: Starting LSB: exim Mail Transport Agent...
+░░ Subject: L'unité (unit) exim4.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) exim4.service a commencé à démarrer.
+nov. 08 16:38:05 gateway106 systemd[1]: Starting Discard unused blocks on filesystems from /etc/fstab...
+░░ Subject: L'unité (unit) fstrim.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fstrim.service a commencé à démarrer.
+nov. 08 16:38:05 gateway106 systemd[1]: Condition check resulted in Pollinate to seed the pseudo random number generator being skipped.
+░░ Subject: L'unité (unit) pollinate.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) pollinate.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 cron[1153]: (CRON) INFO (pidfile fd = 3)
+nov. 08 16:38:05 gateway106 systemd[1]: Starting OpenBSD Secure Shell server...
+░░ Subject: L'unité (unit) ssh.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ssh.service a commencé à démarrer.
+nov. 08 16:38:05 gateway106 systemd[1]: Starting Permit User Sessions...
+░░ Subject: L'unité (unit) systemd-user-sessions.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-user-sessions.service a commencé à démarrer.
+nov. 08 16:38:05 gateway106 systemd[1]: Condition check resulted in Ubuntu Advantage GCP Auto Attach Daemon being skipped.
+░░ Subject: L'unité (unit) ubuntu-advantage.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ubuntu-advantage.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 cron[1153]: (CRON) INFO (Running @reboot jobs)
+nov. 08 16:38:05 gateway106 systemd[1]: Finished Permit User Sessions.
+░░ Subject: L'unité (unit) systemd-user-sessions.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-user-sessions.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 systemd[1]: Starting Hold until boot process finishes up...
+░░ Subject: L'unité (unit) plymouth-quit-wait.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) plymouth-quit-wait.service a commencé à démarrer.
+nov. 08 16:38:05 gateway106 systemd[1]: Starting Terminate Plymouth Boot Screen...
+░░ Subject: L'unité (unit) plymouth-quit.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) plymouth-quit.service a commencé à démarrer.
+nov. 08 16:38:05 gateway106 systemd[1]: Finished Hold until boot process finishes up.
+░░ Subject: L'unité (unit) plymouth-quit-wait.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) plymouth-quit-wait.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 exim4[1154]:  * Starting MTA
+nov. 08 16:38:05 gateway106 systemd[1]: Starting Set console scheme...
+░░ Subject: L'unité (unit) setvtrgb.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) setvtrgb.service a commencé à démarrer.
+nov. 08 16:38:05 gateway106 apport[1152]:  * Starting automatic crash report generation: apport
+nov. 08 16:38:05 gateway106 systemd[1]: Finished Terminate Plymouth Boot Screen.
+░░ Subject: L'unité (unit) plymouth-quit.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) plymouth-quit.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 systemd[1]: Finished Set console scheme.
+░░ Subject: L'unité (unit) setvtrgb.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) setvtrgb.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 systemd[1]: Created slice Slice /system/getty.
+░░ Subject: L'unité (unit) system-getty.slice a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) system-getty.slice a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 apport[1152]:    ...done.
+nov. 08 16:38:05 gateway106 systemd[1]: Started Getty on tty1.
+░░ Subject: L'unité (unit) getty@tty1.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) getty@tty1.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 systemd[1]: Reached target Login Prompts.
+░░ Subject: L'unité (unit) getty.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) getty.target a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:05 gateway106 systemd[1]: Started LSB: automatic crash report generation.
+░░ Subject: L'unité (unit) apport.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apport.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:06 gateway106 sshd[1401]: Server listening on 0.0.0.0 port 22.
+nov. 08 16:38:06 gateway106 systemd[1]: Started OpenBSD Secure Shell server.
+░░ Subject: L'unité (unit) ssh.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ssh.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:06 gateway106 exim4[1434]: Exim version 4.95 uid=0 gid=0 pid=1434 D=f7715cfd
+nov. 08 16:38:06 gateway106 exim4[1434]: Support for: crypteq iconv() IPv6 GnuTLS TLS_resume move_frozen_messages DANE DKIM DNSSEC Event I18N OCSP PIPE_CONNECT PRDR Experimental_Queue_Ramp SOCKS SRS TCP_Fast_Open
+nov. 08 16:38:06 gateway106 exim4[1434]: Lookups (built-in): lsearch wildlsearch nwildlsearch iplsearch cdb dbm dbmjz dbmnz dnsdb dsearch nis nis0 passwd
+nov. 08 16:38:06 gateway106 exim4[1434]: Authenticators: cram_md5 external plaintext
+nov. 08 16:38:06 gateway106 exim4[1434]: Routers: accept dnslookup ipliteral manualroute queryprogram redirect
+nov. 08 16:38:06 gateway106 exim4[1434]: Transports: appendfile/maildir/mailstore autoreply lmtp pipe smtp
+nov. 08 16:38:06 gateway106 exim4[1434]: Fixed never_users: 0
+nov. 08 16:38:06 gateway106 exim4[1434]: Configure owner: 0:0
+nov. 08 16:38:06 gateway106 exim4[1434]: Size of off_t: 8
+nov. 08 16:38:06 gateway106 exim4[1434]: Compiler: GCC [11.2.0]
+nov. 08 16:38:06 gateway106 exim4[1434]: Library version: Glibc: Compile: 2.35
+nov. 08 16:38:06 gateway106 exim4[1434]:                         Runtime: 2.35
+nov. 08 16:38:06 gateway106 exim4[1434]: Library version: BDB: Compile: Berkeley DB 5.3.28: (September  9, 2013)
+nov. 08 16:38:06 gateway106 exim4[1434]:                       Runtime: Berkeley DB 5.3.28: (September  9, 2013)
+nov. 08 16:38:06 gateway106 exim4[1434]: Library version: GnuTLS: Compile: 3.7.3
+nov. 08 16:38:06 gateway106 exim4[1434]:                          Runtime: 3.7.3
+nov. 08 16:38:06 gateway106 exim4[1434]: Library version: IDN2: Compile: 2.3.2
+nov. 08 16:38:06 gateway106 exim4[1434]:                        Runtime: 2.3.2
+nov. 08 16:38:06 gateway106 exim4[1434]: Library version: Stringprep: Compile: 1.38
+nov. 08 16:38:06 gateway106 exim4[1434]:                              Runtime: 1.38
+nov. 08 16:38:06 gateway106 exim4[1434]: Library version: PCRE: Compile: 8.39
+nov. 08 16:38:06 gateway106 exim4[1434]:                        Runtime: 8.39 2016-06-14
+nov. 08 16:38:06 gateway106 exim4[1434]: Total 14 lookups
+nov. 08 16:38:06 gateway106 exim4[1434]: WHITELIST_D_MACROS: "OUTGOING"
+nov. 08 16:38:06 gateway106 exim4[1434]: TRUSTED_CONFIG_LIST: "/etc/exim4/trusted_configs"
+nov. 08 16:38:06 gateway106 exim4[1434]: changed uid/gid: forcing real = effective
+nov. 08 16:38:06 gateway106 exim4[1434]:   uid=0 gid=0 pid=1434
+nov. 08 16:38:06 gateway106 exim4[1434]:   auxiliary group list: <none>
+nov. 08 16:38:06 gateway106 exim4[1434]: seeking password data for user "uucp": cache not available
+nov. 08 16:38:06 gateway106 exim4[1434]: getpwnam() succeeded uid=10 gid=10
+nov. 08 16:38:06 gateway106 exim4[1434]: configuration file is /var/lib/exim4/config.autogenerated
+nov. 08 16:38:06 gateway106 exim4[1434]: log selectors = 0000cffc 64205022 0000003c
+nov. 08 16:38:06 gateway106 exim4[1434]: cwd=/ 8 args: /usr/sbin/exim4 -bd -q30m -oX 25:587:10025 -oP /run/exim4/exim.pid -d
+nov. 08 16:38:06 gateway106 exim4[1434]: trusted user
+nov. 08 16:38:06 gateway106 exim4[1434]: admin user
+nov. 08 16:38:06 gateway106 exim4[1434]: dropping to exim gid; retaining priv uid
+nov. 08 16:38:06 gateway106 exim4[1434]: seeking password data for user "mail": cache not available
+nov. 08 16:38:06 gateway106 exim4[1434]: getpwnam() succeeded uid=8 gid=8
+nov. 08 16:38:06 gateway106 exim4[1434]: user name "root" extracted from gecos field "root"
+nov. 08 16:38:06 gateway106 exim4[1434]: originator: uid=0 gid=0 login=root name=root
+nov. 08 16:38:06 gateway106 exim4[1434]: LOG: MAIN
+nov. 08 16:38:06 gateway106 exim4[1434]:   Warning: No server certificate defined; will use a selfsigned one.
+nov. 08 16:38:06 gateway106 exim4[1434]:  Suggested action: either install a certificate or change tls_advertise_hosts option
+nov. 08 16:38:06 gateway106 exim4[1434]: fresh-exec forking for cipher-validate
+nov. 08 16:38:06 gateway106 exim4[1434]: fresh-exec forked for cipher-validate: 1436
+nov. 08 16:38:06 gateway106 exim4[1436]: postfork: cipher-validate
+nov. 08 16:38:06 gateway106 exim4[1436]: changed uid/gid: calling tls_validate_require_cipher
+nov. 08 16:38:06 gateway106 exim4[1436]:   uid=113 gid=118 pid=1436
+nov. 08 16:38:06 gateway106 exim4[1436]:   auxiliary group list: <none>
+nov. 08 16:38:06 gateway106 exim4[1436]: >>>>>>>>>>>>>>>> Exim pid=1436 (cipher-validate) terminating with rc=0 >>>>>>>>>>>>>>>>
+nov. 08 16:38:06 gateway106 exim4[1434]: tls_validate_require_cipher child 1436 ended: status=0x0
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 daemon_smtp_port overridden by -oX:
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434   <: 25: 587: 10025
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 creating notifier socket
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434  @/var/spool/exim4/exim_daemon_notify
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 listening on 127.0.0.1 port 25
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 listening on 127.0.0.1 port 587
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 listening on 127.0.0.1 port 10025
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 listening on 192.168.0.1 port 25
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 listening on 192.168.0.1 port 587
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 listening on 192.168.0.1 port 10025
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 listening on 192.168.227.1 port 25
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 listening on 192.168.227.1 port 587
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 listening on 192.168.227.1 port 10025
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 pid written to /run/exim4/exim.pid
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 changed uid/gid: running as a daemon
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434   uid=113 gid=118 pid=1434
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434   auxiliary group list: 118
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 LOG: MAIN
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434   exim 4.95 daemon started: pid=1434, -q30m, listening for SMTP on [127.0.0.1]:{25,587,10025} [192.168.0.1]:{25,587,10025} [192.168.227.1]:{25,587,10025}
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 set_process_info:  1434 daemon(4.95): -q30m, listening for SMTP on [127.0.0.1]:{25,587,10025} [192.168.0.1]:{25,587,10025} [192.168.227.1]:{25,587,10025}
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS global init required
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 TLS: basic cred init, server
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 TLS: generating selfsigned server cert
+nov. 08 16:38:06 gateway106 fstrim[1155]: /boot: 723,3 MiB (758476800 bytes) trimmed on /dev/sda2
+nov. 08 16:38:06 gateway106 fstrim[1155]: /: 7,1 GiB (7584088064 bytes) trimmed on /dev/mapper/ubuntu--vg-ubuntu--lv
+nov. 08 16:38:06 gateway106 systemd[1]: Finished Discard unused blocks on filesystems from /etc/fstab.
+░░ Subject: L'unité (unit) fstrim.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fstrim.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:06 gateway106 dockerd[1151]: time="2022-11-08T16:38:06.543812191+01:00" level=info msg="Starting up"
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 dockerd[1151]: time="2022-11-08T16:38:06.549044183+01:00" level=warning msg="Binding to IP address without --tlsverify is insecure and gives root access on this machine to everyone who has access to your network." host="tcp://0.0.0.0:2375"
+nov. 08 16:38:06 gateway106 dockerd[1151]: time="2022-11-08T16:38:06.549073499+01:00" level=warning msg="Binding to an IP address, even on localhost, can also give access to scripts run in a browser. Be safe out there!" host="tcp://0.0.0.0:2375"
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<2>: Disabling X.509 extensions.
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<2>: signing structure using RSA-SHA256
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/x509/x509_ext.c[gnutls_subject_alt_names_get]:111
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/x509/x509.c[get_alt_name]:1849
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/nettle/mpi.c[wrap_nettle_mpi_print]:60
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 TLS: preloading CA bundle for server
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/x509/dn.c[_gnutls_x509_compare_raw_dn]:1025
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 Added 127 certificate authorities
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 TLS: not preloading CRL for server
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 TLS: preloading cipher list for server: NULL
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS using default session cipher/priority "NORMAL"
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<2>: added 6 protocols, 29 ciphersuites, 19 sig algos and 10 groups into priority list
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 TLS: basic cred init, client
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 TLS: not preloading client certs, for transport 'remote_smtp'
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 TLS: preloading CA bundle for transport 'remote_smtp'
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/x509/dn.c[_gnutls_x509_compare_raw_dn]:1025
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 Added 127 certificate authorities
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 TLS: not preloading CRL, for transport 'remote_smtp'
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 TLS: basic cred init, client
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 TLS: not preloading client certs, for transport 'remote_smtp_smarthost'
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 TLS: preloading CA bundle for transport 'remote_smtp_smarthost'
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 GnuTLS<3>: ASSERT: ../../../lib/x509/dn.c[_gnutls_x509_compare_raw_dn]:1025
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 Added 127 certificate authorities
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 TLS: not preloading CRL, for transport 'remote_smtp_smarthost'
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 daemon running with uid=113 gid=118 euid=113 egid=118
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 SIGALRM received
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 daemon forking for queue-runner
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 daemon forked for queue-runner: 1438
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 1 queue-runner process running
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 Listening...
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 postfork: queue-runner
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 exec /usr/sbin/exim4 -d=0xf7795cfd -MCd queue-runner -q
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 Exim version 4.95 uid=113 gid=118 pid=1438 D=f7795cfd
+nov. 08 16:38:06 gateway106 exim4[1438]: Support for: crypteq iconv() IPv6 GnuTLS TLS_resume move_frozen_messages DANE DKIM DNSSEC Event I18N OCSP PIPE_CONNECT PRDR Experimental_Queue_Ramp SOCKS SRS TCP_Fast_Open
+nov. 08 16:38:06 gateway106 exim4[1438]: Lookups (built-in): lsearch wildlsearch nwildlsearch iplsearch cdb dbm dbmjz dbmnz dnsdb dsearch nis nis0 passwd
+nov. 08 16:38:06 gateway106 exim4[1438]: Authenticators: cram_md5 external plaintext
+nov. 08 16:38:06 gateway106 exim4[1438]: Routers: accept dnslookup ipliteral manualroute queryprogram redirect
+nov. 08 16:38:06 gateway106 exim4[1438]: Transports: appendfile/maildir/mailstore autoreply lmtp pipe smtp
+nov. 08 16:38:06 gateway106 exim4[1438]: Fixed never_users: 0
+nov. 08 16:38:06 gateway106 exim4[1438]: Configure owner: 0:0
+nov. 08 16:38:06 gateway106 exim4[1438]: Size of off_t: 8
+nov. 08 16:38:06 gateway106 exim4[1438]: Compiler: GCC [11.2.0]
+nov. 08 16:38:06 gateway106 exim4[1438]: Library version: Glibc: Compile: 2.35
+nov. 08 16:38:06 gateway106 exim4[1438]:                         Runtime: 2.35
+nov. 08 16:38:06 gateway106 exim4[1438]: Library version: BDB: Compile: Berkeley DB 5.3.28: (September  9, 2013)
+nov. 08 16:38:06 gateway106 exim4[1438]:                       Runtime: Berkeley DB 5.3.28: (September  9, 2013)
+nov. 08 16:38:06 gateway106 exim4[1438]: Library version: GnuTLS: Compile: 3.7.3
+nov. 08 16:38:06 gateway106 exim4[1438]:                          Runtime: 3.7.3
+nov. 08 16:38:06 gateway106 exim4[1438]: Library version: IDN2: Compile: 2.3.2
+nov. 08 16:38:06 gateway106 exim4[1438]:                        Runtime: 2.3.2
+nov. 08 16:38:06 gateway106 exim4[1438]: Library version: Stringprep: Compile: 1.38
+nov. 08 16:38:06 gateway106 exim4[1438]:                              Runtime: 1.38
+nov. 08 16:38:06 gateway106 exim4[1438]: Library version: PCRE: Compile: 8.39
+nov. 08 16:38:06 gateway106 exim4[1438]:                        Runtime: 8.39 2016-06-14
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 Total 14 lookups
+nov. 08 16:38:06 gateway106 exim4[1438]: WHITELIST_D_MACROS: "OUTGOING"
+nov. 08 16:38:06 gateway106 exim4[1438]: TRUSTED_CONFIG_LIST: "/etc/exim4/trusted_configs"
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 changed uid/gid: forcing real = effective
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438   uid=0 gid=118 pid=1438
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438   auxiliary group list: <none>
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 seeking password data for user "uucp": cache not available
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 getpwnam() succeeded uid=10 gid=10
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 configuration file is /var/lib/exim4/config.autogenerated
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 log selectors = 0000cffc 64205022 0000003c
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 cwd=/var/spool/exim4 5 args: /usr/sbin/exim4 -d=0xf7795cfd -MCd queue-runner -q
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 trusted user
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 admin user
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 dropping to exim gid; retaining priv uid
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 seeking password data for user "mail": cache not available
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 getpwnam() succeeded uid=8 gid=8
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 Single queue run
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 set_process_info:  1438 running the queue (single queue run)
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 LOG: queue_run MAIN
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438   Start queue run: pid=1438
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 queue running main directory
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 looking in /var/spool/exim4//input
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 LOG: queue_run MAIN
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438   End queue run: pid=1438
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 search_tidyup called
+nov. 08 16:38:06 gateway106 exim4[1438]:  1438 >>>>>>>>>>>>>>>> Exim pid=1438 (queue-runner) terminating with rc=0 >>>>>>>>>>>>>>>>
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 child 1438 ended: status=0x0
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434   normal exit, 0
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 0 queue-runner processes now running
+nov. 08 16:38:06 gateway106 exim4[1434]:  1434 Listening...
+nov. 08 16:38:07 gateway106 dockerd[1151]: time="2022-11-08T16:38:07.549504393+01:00" level=warning msg="Binding to an IP address without --tlsverify is deprecated. Startup is intentionally being slowed down to show this message" host="tcp://0.0.0.0:2375"
+nov. 08 16:38:07 gateway106 dockerd[1151]: time="2022-11-08T16:38:07.549861588+01:00" level=warning msg="Please consider generating tls certificates with client validation to prevent exposing unauthenticated root access to your network" host="tcp://0.0.0.0:2375"
+nov. 08 16:38:07 gateway106 dockerd[1151]: time="2022-11-08T16:38:07.549910782+01:00" level=warning msg="You can override this by explicitly specifying '--tls=false' or '--tlsverify=false'" host="tcp://0.0.0.0:2375"
+nov. 08 16:38:07 gateway106 dockerd[1151]: time="2022-11-08T16:38:07.549928307+01:00" level=warning msg="Support for listening on TCP without authentication or explicit intent to run without authentication will be removed in the next release" host="tcp://0.0.0.0:2375"
+nov. 08 16:38:20 gateway106 systemd[1]: systemd-fsckd.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit systemd-fsckd.service has successfully entered the 'dead' state.
+nov. 08 16:38:21 gateway106 sshd[1440]: Accepted publickey for root from 192.168.230.152 port 45302 ssh2: RSA SHA256:hXrsIYhTd+QELUeu1xkKg9MPa+It6b7gCuZ9zX0lATM
+nov. 08 16:38:21 gateway106 sshd[1440]: pam_unix(sshd:session): session opened for user root(uid=0) by (uid=0)
+nov. 08 16:38:21 gateway106 systemd[1]: Created slice User Slice of UID 0.
+░░ Subject: L'unité (unit) user-0.slice a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) user-0.slice a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1]: Starting User Runtime Directory /run/user/0...
+░░ Subject: L'unité (unit) user-runtime-dir@0.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) user-runtime-dir@0.service a commencé à démarrer.
+nov. 08 16:38:21 gateway106 systemd-logind[744]: New session 1 of user root.
+░░ Subject: Une nouvelle session 1 a été créée pour l'utilisateur root
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ Documentation: sd-login(3)
+░░ 
+░░ Une nouvelle session a été créée pour l'utilisateur root avec
+░░ l'identifiant (ID) 1.
+░░ 
+░░ Le processus maître de la session est 1440.
+nov. 08 16:38:21 gateway106 systemd[1]: Finished User Runtime Directory /run/user/0.
+░░ Subject: L'unité (unit) user-runtime-dir@0.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) user-runtime-dir@0.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1]: Starting User Manager for UID 0...
+░░ Subject: L'unité (unit) user@0.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) user@0.service a commencé à démarrer.
+nov. 08 16:38:21 gateway106 systemd[1443]: pam_unix(systemd-user:session): session opened for user root(uid=0) by (uid=0)
+nov. 08 16:38:21 gateway106 systemd[1443]: Queued start job for default target Main User Target.
+nov. 08 16:38:21 gateway106 systemd[1443]: Created slice User Application Slice.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: Created slice User Core Session Slice.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: Reached target Paths.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: Reached target Timers.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: Starting D-Bus User Message Bus Socket...
+░░ Subject: L'unité (unit) UNIT a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a commencé à démarrer.
+nov. 08 16:38:21 gateway106 systemd[1443]: Listening on GnuPG network certificate management daemon.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: Listening on GnuPG cryptographic agent and passphrase cache.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: Condition check resulted in PipeWire Multimedia System Socket being skipped.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: Listening on debconf communication socket.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: Listening on REST API socket for snapd user session agent.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: Listening on D-Bus User Message Bus Socket.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: Reached target Sockets.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: Reached target Basic System.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: Condition check resulted in PipeWire Multimedia Service being skipped.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: Reached target Main User Target.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1443]: pipewire-media-session.service: Bound to unit pipewire.service, but unit isn't active.
+nov. 08 16:38:21 gateway106 systemd[1443]: Dependency failed for PipeWire Media Session Manager.
+░░ Subject: L'unité (unit) UNIT a échoué
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a échoué, avec le résultat dependency.
+nov. 08 16:38:21 gateway106 systemd[1443]: pipewire-media-session.service: Job pipewire-media-session.service/start failed with result 'dependency'.
+nov. 08 16:38:21 gateway106 systemd[1443]: Startup finished in 127ms.
+░░ Subject: Le démarrage du gestionnaire utilisateur est terminé
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'instance du gestionnaire d'utilisateurs pour l'utilisateur 0 a été démarrée.
+░░ Tous les services en file d'attente pour démarrer ont été lancés.
+░░ Notez que des services peuvent être encore en train de démarrer,
+░░ ou d'autres être lancés à tout moment ultérieur.
+░░ 
+░░ Le démarrage du gestionnaire a nécéssité 127767 microsecondes.
+nov. 08 16:38:21 gateway106 systemd[1]: Started User Manager for UID 0.
+░░ Subject: L'unité (unit) user@0.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) user@0.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:21 gateway106 systemd[1]: Started Session 1 of User root.
+░░ Subject: L'unité (unit) session-1.scope a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) session-1.scope a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:22 gateway106 audit[1568]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=1568 comm="apparmor_parser"
+nov. 08 16:38:22 gateway106 kernel: kauditd_printk_skb: 61 callbacks suppressed
+nov. 08 16:38:22 gateway106 kernel: audit: type=1400 audit(1667921902.597:73): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=1568 comm="apparmor_parser"
+nov. 08 16:38:22 gateway106 dockerd[1151]: time="2022-11-08T16:38:22.606020398+01:00" level=info msg="parsed scheme: \"unix\"" module=grpc
+nov. 08 16:38:22 gateway106 dockerd[1151]: time="2022-11-08T16:38:22.606116005+01:00" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+nov. 08 16:38:22 gateway106 dockerd[1151]: time="2022-11-08T16:38:22.606186908+01:00" level=info msg="ccResolverWrapper: sending update to cc: {[{unix:///run/containerd/containerd.sock  <nil> 0 <nil>}] <nil> <nil>}" module=grpc
+nov. 08 16:38:22 gateway106 dockerd[1151]: time="2022-11-08T16:38:22.606213990+01:00" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+nov. 08 16:38:22 gateway106 dockerd[1151]: time="2022-11-08T16:38:22.636964604+01:00" level=info msg="parsed scheme: \"unix\"" module=grpc
+nov. 08 16:38:22 gateway106 dockerd[1151]: time="2022-11-08T16:38:22.636996250+01:00" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+nov. 08 16:38:22 gateway106 dockerd[1151]: time="2022-11-08T16:38:22.637032626+01:00" level=info msg="ccResolverWrapper: sending update to cc: {[{unix:///run/containerd/containerd.sock  <nil> 0 <nil>}] <nil> <nil>}" module=grpc
+nov. 08 16:38:22 gateway106 dockerd[1151]: time="2022-11-08T16:38:22.637046035+01:00" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+nov. 08 16:38:22 gateway106 containerd[864]: time="2022-11-08T16:38:22.815274798+01:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+nov. 08 16:38:22 gateway106 containerd[864]: time="2022-11-08T16:38:22.815368732+01:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+nov. 08 16:38:22 gateway106 containerd[864]: time="2022-11-08T16:38:22.815401728+01:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+nov. 08 16:38:22 gateway106 containerd[864]: time="2022-11-08T16:38:22.815603582+01:00" level=info msg="starting signal loop" namespace=plugins.moby path=/run/containerd/io.containerd.runtime.v2.task/plugins.moby/76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227 pid=1591 runtime=io.containerd.runc.v2
+nov. 08 16:38:22 gateway106 systemd[1]: run-docker-runtime\x2drunc-plugins.moby-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227-runc.tink5c.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit run-docker-runtime\x2drunc-plugins.moby-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227-runc.tink5c.mount has successfully entered the 'dead' state.
+nov. 08 16:38:22 gateway106 systemd[1]: Started libcontainer container 76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.
+░░ Subject: L'unité (unit) runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:22 gateway106 systemd[1]: runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope has successfully entered the 'dead' state.
+nov. 08 16:38:22 gateway106 systemd[1]: Stopped libcontainer container 76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.
+░░ Subject: L'unité (unit) runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope a terminé son arrêt
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope a terminé son arrêt.
+nov. 08 16:38:22 gateway106 containerd[864]: time="2022-11-08T16:38:22.950809190+01:00" level=info msg="shim disconnected" id=76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227
+nov. 08 16:38:22 gateway106 containerd[864]: time="2022-11-08T16:38:22.950959450+01:00" level=warning msg="cleaning up after shim disconnected" id=76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227 namespace=plugins.moby
+nov. 08 16:38:22 gateway106 containerd[864]: time="2022-11-08T16:38:22.950978534+01:00" level=info msg="cleaning up dead shim"
+nov. 08 16:38:22 gateway106 containerd[864]: time="2022-11-08T16:38:22.965066170+01:00" level=warning msg="cleanup warnings time=\"2022-11-08T16:38:22+01:00\" level=info msg=\"starting signal loop\" namespace=plugins.moby pid=1620 runtime=io.containerd.runc.v2\ntime=\"2022-11-08T16:38:22+01:00\" level=warning msg=\"failed to read init pid file\" error=\"open /run/containerd/io.containerd.runtime.v2.task/plugins.moby/76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227/init.pid: no such file or directory\" runtime=io.containerd.runc.v2\n"
+nov. 08 16:38:22 gateway106 containerd[864]: time="2022-11-08T16:38:22.965556072+01:00" level=error msg="copy shim log" error="read /proc/self/fd/11: file already closed"
+nov. 08 16:38:22 gateway106 dockerd[1151]: time="2022-11-08T16:38:22.974547301+01:00" level=error msg="failed to enable plugin" error="failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: error mounting \"/etc/resolv.conf\" to rootfs at \"/etc/resolv.conf\": stat /etc/resolv.conf: no such file or directory: unknown" id=76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227
+nov. 08 16:38:22 gateway106 systemd[1]: var-lib-docker-plugins-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227-propagated\x2dmount.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit var-lib-docker-plugins-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227-propagated\x2dmount.mount has successfully entered the 'dead' state.
+nov. 08 16:38:23 gateway106 dockerd[1151]: time="2022-11-08T16:38:23.036531152+01:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+nov. 08 16:38:23 gateway106 dockerd[1151]: panic: runtime error: invalid memory address or nil pointer dereference
+nov. 08 16:38:23 gateway106 dockerd[1151]: [signal SIGSEGV: segmentation violation code=0x1 addr=0x8 pc=0x5608f65b707a]
+nov. 08 16:38:23 gateway106 dockerd[1151]: goroutine 44 [running]:
+nov. 08 16:38:23 gateway106 dockerd[1151]: github.com/docker/docker/pkg/plugins.(*Client).callWithRetry(0x0, {0x5608f797276c, 0x19}, {0x5608f82a24e8, 0xc000833860}, 0x1, {0xc000010338, 0x1, 0x203000?})
+nov. 08 16:38:23 gateway106 dockerd[1151]:         /go/src/github.com/docker/docker/pkg/plugins/client.go:160 +0x15a
+nov. 08 16:38:23 gateway106 dockerd[1151]: github.com/docker/docker/pkg/plugins.(*Client).CallWithOptions(0x7f417d0b5b80?, {0x5608f797276c, 0x19}, {0x5608f7f84ee0, 0x5608f940d4a8}, {0x5608f7e247c0, 0xc000139180}, {0xc000010338, 0x1, 0x1})
+nov. 08 16:38:23 gateway106 dockerd[1151]:         /go/src/github.com/docker/docker/pkg/plugins/client.go:113 +0x185
+nov. 08 16:38:23 gateway106 dockerd[1151]: github.com/docker/docker/volume/drivers.(*volumeDriverProxy).Capabilities(0xc0005579d0)
+nov. 08 16:38:23 gateway106 dockerd[1151]:         /go/src/github.com/docker/docker/volume/drivers/proxy.go:244 +0xfa
+nov. 08 16:38:23 gateway106 dockerd[1151]: github.com/docker/docker/volume/drivers.(*volumeDriverAdapter).getCapabilities(0xc000833830)
+nov. 08 16:38:23 gateway106 dockerd[1151]:         /go/src/github.com/docker/docker/volume/drivers/adapter.go:93 +0x68
+nov. 08 16:38:23 gateway106 dockerd[1151]: github.com/docker/docker/volume/drivers.(*volumeDriverAdapter).Scope(0xc000a18840?)
+nov. 08 16:38:23 gateway106 dockerd[1151]:         /go/src/github.com/docker/docker/volume/drivers/adapter.go:85 +0x19
+nov. 08 16:38:23 gateway106 dockerd[1151]: github.com/docker/docker/volume/drivers.validateDriver({0x5608f82c5178, 0xc000833830})
+nov. 08 16:38:23 gateway106 dockerd[1151]:         /go/src/github.com/docker/docker/volume/drivers/extpoint.go:116 +0x2b
+nov. 08 16:38:23 gateway106 dockerd[1151]: github.com/docker/docker/volume/drivers.(*Store).lookup(0xc000833230, {0xc00082a3a8, 0x12}, 0x0)
+nov. 08 16:38:23 gateway106 dockerd[1151]:         /go/src/github.com/docker/docker/volume/drivers/extpoint.go:95 +0x2cf
+nov. 08 16:38:23 gateway106 dockerd[1151]: github.com/docker/docker/volume/drivers.(*Store).GetDriver(...)
+nov. 08 16:38:23 gateway106 dockerd[1151]:         /go/src/github.com/docker/docker/volume/drivers/extpoint.go:148
+nov. 08 16:38:23 gateway106 dockerd[1151]: github.com/docker/docker/volume/service.lookupVolume({0x0?, 0x0?}, 0x0?, {0xc00082a3a8?, 0x0?}, {0xc00082a390, 0x11})
+nov. 08 16:38:23 gateway106 dockerd[1151]:         /go/src/github.com/docker/docker/volume/service/store.go:739 +0x72
+nov. 08 16:38:23 gateway106 dockerd[1151]: github.com/docker/docker/volume/service.(*VolumeStore).restore.func2({{0xc00082a390, 0x11}, {0xc00082a3a8, 0x12}, 0xc000833710, 0xc000833740})
+nov. 08 16:38:23 gateway106 dockerd[1151]:         /go/src/github.com/docker/docker/volume/service/restore.go:37 +0x186
+nov. 08 16:38:23 gateway106 dockerd[1151]: created by github.com/docker/docker/volume/service.(*VolumeStore).restore
+nov. 08 16:38:23 gateway106 dockerd[1151]:         /go/src/github.com/docker/docker/volume/service/restore.go:31 +0x2c9
+nov. 08 16:38:23 gateway106 systemd[1]: docker.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit docker.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 2.
+nov. 08 16:38:23 gateway106 systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+nov. 08 16:38:23 gateway106 systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: L'unité (unit) docker.service a échoué
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) docker.service a échoué, avec le résultat failed.
+nov. 08 16:38:23 gateway106 systemd[1]: systemd-timedated.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit systemd-timedated.service has successfully entered the 'dead' state.
+nov. 08 16:38:25 gateway106 systemd[1]: docker.service: Scheduled restart job, restart counter is at 1.
+░░ Subject: Le redémarrage automatique d'une unité (unit) a été planifié
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Le redémarrage automatique de l'unité (unit) docker.service a été planifié, en
+░░ raison de sa configuration avec le paramètre Restart=.
+nov. 08 16:38:25 gateway106 systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: L'unité (unit) docker.service a terminé son arrêt
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) docker.service a terminé son arrêt.
+nov. 08 16:38:25 gateway106 systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: L'unité (unit) docker.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) docker.service a commencé à démarrer.
+nov. 08 16:38:25 gateway106 dockerd[1637]: time="2022-11-08T16:38:25.272169131+01:00" level=info msg="Starting up"
+nov. 08 16:38:25 gateway106 dockerd[1637]: time="2022-11-08T16:38:25.272787192+01:00" level=warning msg="Binding to IP address without --tlsverify is insecure and gives root access on this machine to everyone who has access to your network." host="tcp://0.0.0.0:2375"
+nov. 08 16:38:25 gateway106 dockerd[1637]: time="2022-11-08T16:38:25.272807558+01:00" level=warning msg="Binding to an IP address, even on localhost, can also give access to scripts run in a browser. Be safe out there!" host="tcp://0.0.0.0:2375"
+nov. 08 16:38:25 gateway106 snapd[743]: stateengine.go:149: state ensure error: persistent network error: Get "https://api.snapcraft.io/api/v1/snaps/sections": dial tcp: lookup api.snapcraft.io on [::1]:53: dial udp [::1]:53: connect: network is unreachable
+nov. 08 16:38:25 gateway106 dbus-daemon[730]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.12' (uid=0 pid=743 comm="/usr/lib/snapd/snapd " label="unconfined")
+nov. 08 16:38:25 gateway106 systemd[1]: Starting Time & Date Service...
+░░ Subject: L'unité (unit) systemd-timedated.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-timedated.service a commencé à démarrer.
+nov. 08 16:38:25 gateway106 dbus-daemon[730]: [system] Successfully activated service 'org.freedesktop.timedate1'
+nov. 08 16:38:25 gateway106 systemd[1]: Started Time & Date Service.
+░░ Subject: L'unité (unit) systemd-timedated.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-timedated.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:26 gateway106 dockerd[1637]: time="2022-11-08T16:38:26.273441088+01:00" level=warning msg="Binding to an IP address without --tlsverify is deprecated. Startup is intentionally being slowed down to show this message" host="tcp://0.0.0.0:2375"
+nov. 08 16:38:26 gateway106 dockerd[1637]: time="2022-11-08T16:38:26.273597565+01:00" level=warning msg="Please consider generating tls certificates with client validation to prevent exposing unauthenticated root access to your network" host="tcp://0.0.0.0:2375"
+nov. 08 16:38:26 gateway106 dockerd[1637]: time="2022-11-08T16:38:26.273934125+01:00" level=warning msg="You can override this by explicitly specifying '--tls=false' or '--tlsverify=false'" host="tcp://0.0.0.0:2375"
+nov. 08 16:38:26 gateway106 dockerd[1637]: time="2022-11-08T16:38:26.273967640+01:00" level=warning msg="Support for listening on TCP without authentication or explicit intent to run without authentication will be removed in the next release" host="tcp://0.0.0.0:2375"
+nov. 08 16:38:30 gateway106 systemd[1443]: Started D-Bus User Message Bus.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:30 gateway106 dbus-daemon[1669]: [session uid=0 pid=1669] AppArmor D-Bus mediation is enabled
+nov. 08 16:38:30 gateway106 dbus-daemon[1669]: [session uid=0 pid=1669] Activating via systemd: service name='org.freedesktop.portal.Documents' unit='xdg-document-portal.service' requested by ':1.1' (uid=0 pid=1648 comm="/snap/bin/chromium --no-sandbox " label="unconfined")
+nov. 08 16:38:30 gateway106 systemd[1443]: Starting flatpak document portal service...
+░░ Subject: L'unité (unit) UNIT a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a commencé à démarrer.
+nov. 08 16:38:30 gateway106 dbus-daemon[1669]: [session uid=0 pid=1669] Activating via systemd: service name='org.freedesktop.impl.portal.PermissionStore' unit='xdg-permission-store.service' requested by ':1.2' (uid=0 pid=1670 comm="/usr/libexec/xdg-document-portal " label="unconfined")
+nov. 08 16:38:30 gateway106 systemd[1443]: Starting sandboxed app permission store...
+░░ Subject: L'unité (unit) UNIT a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a commencé à démarrer.
+nov. 08 16:38:30 gateway106 dbus-daemon[1669]: [session uid=0 pid=1669] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+nov. 08 16:38:30 gateway106 systemd[1443]: Started sandboxed app permission store.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:30 gateway106 dbus-daemon[1669]: [session uid=0 pid=1669] Successfully activated service 'org.freedesktop.portal.Documents'
+nov. 08 16:38:30 gateway106 systemd[1443]: Started flatpak document portal service.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:30 gateway106 systemd[1443]: Started snap.chromium.chromium.8eac6606-fed6-4dab-8a5d-23c19c26ba79.scope.
+░░ Subject: L'unité (unit) UNIT a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) UNIT a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:30 gateway106 systemd[1]: tmp-snap.rootfs_CIxzMr.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit tmp-snap.rootfs_CIxzMr.mount has successfully entered the 'dead' state.
+nov. 08 16:38:30 gateway106 audit[1686]: AVC apparmor="DENIED" operation="mkdir" profile="snap-update-ns.chromium" name="/usr/share/cups/doc-root/" pid=1686 comm="5" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+nov. 08 16:38:30 gateway106 audit[1686]: AVC apparmor="DENIED" operation="mkdir" profile="snap-update-ns.chromium" name="/usr/share/gimp/2.0/" pid=1686 comm="5" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+nov. 08 16:38:30 gateway106 audit[1686]: AVC apparmor="DENIED" operation="open" profile="snap-update-ns.chromium" name="/var/lib/snapd/" pid=1686 comm="5" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+nov. 08 16:38:30 gateway106 audit[1686]: AVC apparmor="DENIED" operation="mkdir" profile="snap-update-ns.chromium" name="/usr/share/libreoffice/help/" pid=1686 comm="5" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+nov. 08 16:38:30 gateway106 audit[1686]: AVC apparmor="DENIED" operation="open" profile="snap-update-ns.chromium" name="/var/lib/snapd/" pid=1686 comm="5" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+nov. 08 16:38:30 gateway106 kernel: audit: type=1400 audit(1667921910.745:74): apparmor="DENIED" operation="mkdir" profile="snap-update-ns.chromium" name="/usr/share/cups/doc-root/" pid=1686 comm="5" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+nov. 08 16:38:30 gateway106 kernel: audit: type=1400 audit(1667921910.745:75): apparmor="DENIED" operation="mkdir" profile="snap-update-ns.chromium" name="/usr/share/gimp/2.0/" pid=1686 comm="5" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+nov. 08 16:38:30 gateway106 kernel: audit: type=1400 audit(1667921910.745:76): apparmor="DENIED" operation="open" profile="snap-update-ns.chromium" name="/var/lib/snapd/" pid=1686 comm="5" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+nov. 08 16:38:30 gateway106 kernel: audit: type=1400 audit(1667921910.745:77): apparmor="DENIED" operation="mkdir" profile="snap-update-ns.chromium" name="/usr/share/libreoffice/help/" pid=1686 comm="5" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+nov. 08 16:38:30 gateway106 kernel: audit: type=1400 audit(1667921910.745:78): apparmor="DENIED" operation="open" profile="snap-update-ns.chromium" name="/var/lib/snapd/" pid=1686 comm="5" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+nov. 08 16:38:31 gateway106 audit[1648]: AVC apparmor="DENIED" operation="capable" profile="snap.chromium.chromium" pid=1648 comm="chrome" capability=23  capname="sys_nice"
+nov. 08 16:38:31 gateway106 kernel: audit: type=1400 audit(1667921911.421:79): apparmor="DENIED" operation="capable" profile="snap.chromium.chromium" pid=1648 comm="chrome" capability=23  capname="sys_nice"
+nov. 08 16:38:31 gateway106 audit[1734]: AVC apparmor="DENIED" operation="capable" profile="snap.chromium.chromium" pid=1734 comm="chrome" capability=23  capname="sys_nice"
+nov. 08 16:38:31 gateway106 kernel: audit: type=1400 audit(1667921911.653:80): apparmor="DENIED" operation="capable" profile="snap.chromium.chromium" pid=1734 comm="chrome" capability=23  capname="sys_nice"
+nov. 08 16:38:31 gateway106 audit[1735]: AVC apparmor="DENIED" operation="capable" profile="snap.chromium.chromium" pid=1735 comm="chrome" capability=23  capname="sys_nice"
+nov. 08 16:38:31 gateway106 kernel: audit: type=1400 audit(1667921911.669:81): apparmor="DENIED" operation="capable" profile="snap.chromium.chromium" pid=1735 comm="chrome" capability=23  capname="sys_nice"
+nov. 08 16:38:41 gateway106 dockerd[1637]: time="2022-11-08T16:38:41.282764663+01:00" level=info msg="parsed scheme: \"unix\"" module=grpc
+nov. 08 16:38:41 gateway106 dockerd[1637]: time="2022-11-08T16:38:41.282851609+01:00" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+nov. 08 16:38:41 gateway106 dockerd[1637]: time="2022-11-08T16:38:41.282960113+01:00" level=info msg="ccResolverWrapper: sending update to cc: {[{unix:///run/containerd/containerd.sock  <nil> 0 <nil>}] <nil> <nil>}" module=grpc
+nov. 08 16:38:41 gateway106 dockerd[1637]: time="2022-11-08T16:38:41.282979617+01:00" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+nov. 08 16:38:41 gateway106 dockerd[1637]: time="2022-11-08T16:38:41.286756000+01:00" level=info msg="parsed scheme: \"unix\"" module=grpc
+nov. 08 16:38:41 gateway106 dockerd[1637]: time="2022-11-08T16:38:41.286797949+01:00" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+nov. 08 16:38:41 gateway106 dockerd[1637]: time="2022-11-08T16:38:41.286829278+01:00" level=info msg="ccResolverWrapper: sending update to cc: {[{unix:///run/containerd/containerd.sock  <nil> 0 <nil>}] <nil> <nil>}" module=grpc
+nov. 08 16:38:41 gateway106 dockerd[1637]: time="2022-11-08T16:38:41.286856893+01:00" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+nov. 08 16:38:41 gateway106 containerd[864]: time="2022-11-08T16:38:41.362513124+01:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+nov. 08 16:38:41 gateway106 containerd[864]: time="2022-11-08T16:38:41.362613868+01:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+nov. 08 16:38:41 gateway106 containerd[864]: time="2022-11-08T16:38:41.362630599+01:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+nov. 08 16:38:41 gateway106 containerd[864]: time="2022-11-08T16:38:41.363609108+01:00" level=info msg="starting signal loop" namespace=plugins.moby path=/run/containerd/io.containerd.runtime.v2.task/plugins.moby/76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227 pid=1758 runtime=io.containerd.runc.v2
+nov. 08 16:38:41 gateway106 systemd[1]: Started libcontainer container 76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.
+░░ Subject: L'unité (unit) runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:41 gateway106 systemd[1]: runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope has successfully entered the 'dead' state.
+nov. 08 16:38:41 gateway106 systemd[1]: Stopped libcontainer container 76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.
+░░ Subject: L'unité (unit) runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope a terminé son arrêt
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope a terminé son arrêt.
+nov. 08 16:38:41 gateway106 containerd[864]: time="2022-11-08T16:38:41.415939996+01:00" level=info msg="shim disconnected" id=76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227
+nov. 08 16:38:41 gateway106 containerd[864]: time="2022-11-08T16:38:41.416080862+01:00" level=warning msg="cleaning up after shim disconnected" id=76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227 namespace=plugins.moby
+nov. 08 16:38:41 gateway106 containerd[864]: time="2022-11-08T16:38:41.416103696+01:00" level=info msg="cleaning up dead shim"
+nov. 08 16:38:41 gateway106 containerd[864]: time="2022-11-08T16:38:41.428476993+01:00" level=warning msg="cleanup warnings time=\"2022-11-08T16:38:41+01:00\" level=info msg=\"starting signal loop\" namespace=plugins.moby pid=1787 runtime=io.containerd.runc.v2\ntime=\"2022-11-08T16:38:41+01:00\" level=warning msg=\"failed to read init pid file\" error=\"open /run/containerd/io.containerd.runtime.v2.task/plugins.moby/76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227/init.pid: no such file or directory\" runtime=io.containerd.runc.v2\n"
+nov. 08 16:38:41 gateway106 containerd[864]: time="2022-11-08T16:38:41.428855401+01:00" level=error msg="copy shim log" error="read /proc/self/fd/11: file already closed"
+nov. 08 16:38:41 gateway106 dockerd[1637]: time="2022-11-08T16:38:41.437363746+01:00" level=error msg="failed to enable plugin" error="failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: error mounting \"/etc/resolv.conf\" to rootfs at \"/etc/resolv.conf\": stat /etc/resolv.conf: no such file or directory: unknown" id=76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227
+nov. 08 16:38:41 gateway106 systemd[1]: var-lib-docker-plugins-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227-propagated\x2dmount.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit var-lib-docker-plugins-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227-propagated\x2dmount.mount has successfully entered the 'dead' state.
+nov. 08 16:38:41 gateway106 dockerd[1637]: time="2022-11-08T16:38:41.507471481+01:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+nov. 08 16:38:41 gateway106 dockerd[1637]: panic: runtime error: invalid memory address or nil pointer dereference
+nov. 08 16:38:41 gateway106 dockerd[1637]: [signal SIGSEGV: segmentation violation code=0x1 addr=0x8 pc=0x55bffa8ca07a]
+nov. 08 16:38:41 gateway106 dockerd[1637]: goroutine 16 [running]:
+nov. 08 16:38:41 gateway106 dockerd[1637]: github.com/docker/docker/pkg/plugins.(*Client).callWithRetry(0x0, {0x55bffbc8576c, 0x19}, {0x55bffc5b54e8, 0xc000a87e00}, 0x1, {0xc000900110, 0x1, 0x203000?})
+nov. 08 16:38:41 gateway106 dockerd[1637]:         /go/src/github.com/docker/docker/pkg/plugins/client.go:160 +0x15a
+nov. 08 16:38:41 gateway106 dockerd[1637]: github.com/docker/docker/pkg/plugins.(*Client).CallWithOptions(0x7f3e36a8a6d0?, {0x55bffbc8576c, 0x19}, {0x55bffc297ee0, 0x55bffd7204a8}, {0x55bffc1377c0, 0xc00014a600}, {0xc000900110, 0x1, 0x1})
+nov. 08 16:38:41 gateway106 dockerd[1637]:         /go/src/github.com/docker/docker/pkg/plugins/client.go:113 +0x185
+nov. 08 16:38:41 gateway106 dockerd[1637]: github.com/docker/docker/volume/drivers.(*volumeDriverProxy).Capabilities(0xc00007d120)
+nov. 08 16:38:41 gateway106 dockerd[1637]:         /go/src/github.com/docker/docker/volume/drivers/proxy.go:244 +0xfa
+nov. 08 16:38:41 gateway106 dockerd[1637]: github.com/docker/docker/volume/drivers.(*volumeDriverAdapter).getCapabilities(0xc000a87dd0)
+nov. 08 16:38:41 gateway106 dockerd[1637]:         /go/src/github.com/docker/docker/volume/drivers/adapter.go:93 +0x68
+nov. 08 16:38:41 gateway106 dockerd[1637]: github.com/docker/docker/volume/drivers.(*volumeDriverAdapter).Scope(0xc00044b340?)
+nov. 08 16:38:41 gateway106 dockerd[1637]:         /go/src/github.com/docker/docker/volume/drivers/adapter.go:85 +0x19
+nov. 08 16:38:41 gateway106 dockerd[1637]: github.com/docker/docker/volume/drivers.validateDriver({0x55bffc5d8178, 0xc000a87dd0})
+nov. 08 16:38:41 gateway106 dockerd[1637]:         /go/src/github.com/docker/docker/volume/drivers/extpoint.go:116 +0x2b
+nov. 08 16:38:41 gateway106 dockerd[1637]: github.com/docker/docker/volume/drivers.(*Store).lookup(0xc000a877d0, {0xc000926900, 0x12}, 0x0)
+nov. 08 16:38:41 gateway106 dockerd[1637]:         /go/src/github.com/docker/docker/volume/drivers/extpoint.go:95 +0x2cf
+nov. 08 16:38:41 gateway106 dockerd[1637]: github.com/docker/docker/volume/drivers.(*Store).GetDriver(...)
+nov. 08 16:38:41 gateway106 dockerd[1637]:         /go/src/github.com/docker/docker/volume/drivers/extpoint.go:148
+nov. 08 16:38:41 gateway106 dockerd[1637]: github.com/docker/docker/volume/service.lookupVolume({0x0?, 0x0?}, 0x0?, {0xc000926900?, 0x0?}, {0xc0009268e8, 0x11})
+nov. 08 16:38:41 gateway106 dockerd[1637]:         /go/src/github.com/docker/docker/volume/service/store.go:739 +0x72
+nov. 08 16:38:41 gateway106 dockerd[1637]: github.com/docker/docker/volume/service.(*VolumeStore).restore.func2({{0xc0009268e8, 0x11}, {0xc000926900, 0x12}, 0xc000a87cb0, 0xc000a87ce0})
+nov. 08 16:38:41 gateway106 dockerd[1637]:         /go/src/github.com/docker/docker/volume/service/restore.go:37 +0x186
+nov. 08 16:38:41 gateway106 dockerd[1637]: created by github.com/docker/docker/volume/service.(*VolumeStore).restore
+nov. 08 16:38:41 gateway106 dockerd[1637]:         /go/src/github.com/docker/docker/volume/service/restore.go:31 +0x2c9
+nov. 08 16:38:41 gateway106 systemd[1]: docker.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit docker.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 2.
+nov. 08 16:38:41 gateway106 systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+nov. 08 16:38:41 gateway106 systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: L'unité (unit) docker.service a échoué
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) docker.service a échoué, avec le résultat failed.
+nov. 08 16:38:43 gateway106 systemd[1]: docker.service: Scheduled restart job, restart counter is at 2.
+░░ Subject: Le redémarrage automatique d'une unité (unit) a été planifié
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Le redémarrage automatique de l'unité (unit) docker.service a été planifié, en
+░░ raison de sa configuration avec le paramètre Restart=.
+nov. 08 16:38:43 gateway106 systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: L'unité (unit) docker.service a terminé son arrêt
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) docker.service a terminé son arrêt.
+nov. 08 16:38:43 gateway106 systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: L'unité (unit) docker.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) docker.service a commencé à démarrer.
+nov. 08 16:38:43 gateway106 dockerd[1801]: time="2022-11-08T16:38:43.778905746+01:00" level=info msg="Starting up"
+nov. 08 16:38:43 gateway106 dockerd[1801]: time="2022-11-08T16:38:43.779523889+01:00" level=warning msg="Binding to IP address without --tlsverify is insecure and gives root access on this machine to everyone who has access to your network." host="tcp://0.0.0.0:2375"
+nov. 08 16:38:43 gateway106 dockerd[1801]: time="2022-11-08T16:38:43.779545999+01:00" level=warning msg="Binding to an IP address, even on localhost, can also give access to scripts run in a browser. Be safe out there!" host="tcp://0.0.0.0:2375"
+nov. 08 16:38:44 gateway106 dockerd[1801]: time="2022-11-08T16:38:44.780000585+01:00" level=warning msg="Binding to an IP address without --tlsverify is deprecated. Startup is intentionally being slowed down to show this message" host="tcp://0.0.0.0:2375"
+nov. 08 16:38:44 gateway106 dockerd[1801]: time="2022-11-08T16:38:44.780176917+01:00" level=warning msg="Please consider generating tls certificates with client validation to prevent exposing unauthenticated root access to your network" host="tcp://0.0.0.0:2375"
+nov. 08 16:38:44 gateway106 dockerd[1801]: time="2022-11-08T16:38:44.780197908+01:00" level=warning msg="You can override this by explicitly specifying '--tls=false' or '--tlsverify=false'" host="tcp://0.0.0.0:2375"
+nov. 08 16:38:44 gateway106 dockerd[1801]: time="2022-11-08T16:38:44.780215526+01:00" level=warning msg="Support for listening on TCP without authentication or explicit intent to run without authentication will be removed in the next release" host="tcp://0.0.0.0:2375"
+nov. 08 16:38:55 gateway106 systemd[1]: systemd-timedated.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit systemd-timedated.service has successfully entered the 'dead' state.
+nov. 08 16:38:59 gateway106 dockerd[1801]: time="2022-11-08T16:38:59.788730044+01:00" level=info msg="parsed scheme: \"unix\"" module=grpc
+nov. 08 16:38:59 gateway106 dockerd[1801]: time="2022-11-08T16:38:59.788819122+01:00" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+nov. 08 16:38:59 gateway106 dockerd[1801]: time="2022-11-08T16:38:59.788882695+01:00" level=info msg="ccResolverWrapper: sending update to cc: {[{unix:///run/containerd/containerd.sock  <nil> 0 <nil>}] <nil> <nil>}" module=grpc
+nov. 08 16:38:59 gateway106 dockerd[1801]: time="2022-11-08T16:38:59.788903055+01:00" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+nov. 08 16:38:59 gateway106 dockerd[1801]: time="2022-11-08T16:38:59.791927734+01:00" level=info msg="parsed scheme: \"unix\"" module=grpc
+nov. 08 16:38:59 gateway106 dockerd[1801]: time="2022-11-08T16:38:59.791951282+01:00" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+nov. 08 16:38:59 gateway106 dockerd[1801]: time="2022-11-08T16:38:59.791967328+01:00" level=info msg="ccResolverWrapper: sending update to cc: {[{unix:///run/containerd/containerd.sock  <nil> 0 <nil>}] <nil> <nil>}" module=grpc
+nov. 08 16:38:59 gateway106 dockerd[1801]: time="2022-11-08T16:38:59.791980415+01:00" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+nov. 08 16:38:59 gateway106 containerd[864]: time="2022-11-08T16:38:59.853070608+01:00" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+nov. 08 16:38:59 gateway106 containerd[864]: time="2022-11-08T16:38:59.853187770+01:00" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+nov. 08 16:38:59 gateway106 containerd[864]: time="2022-11-08T16:38:59.853209147+01:00" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+nov. 08 16:38:59 gateway106 containerd[864]: time="2022-11-08T16:38:59.853479818+01:00" level=info msg="starting signal loop" namespace=plugins.moby path=/run/containerd/io.containerd.runtime.v2.task/plugins.moby/76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227 pid=1821 runtime=io.containerd.runc.v2
+nov. 08 16:38:59 gateway106 systemd[1]: run-docker-runtime\x2drunc-plugins.moby-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227-runc.LxILfH.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit run-docker-runtime\x2drunc-plugins.moby-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227-runc.LxILfH.mount has successfully entered the 'dead' state.
+nov. 08 16:38:59 gateway106 systemd[1]: Started libcontainer container 76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.
+░░ Subject: L'unité (unit) runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope a terminé son démarrage, avec le résultat done.
+nov. 08 16:38:59 gateway106 systemd[1]: runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope has successfully entered the 'dead' state.
+nov. 08 16:38:59 gateway106 systemd[1]: Stopped libcontainer container 76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.
+░░ Subject: L'unité (unit) runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope a terminé son arrêt
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) runc-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227.scope a terminé son arrêt.
+nov. 08 16:38:59 gateway106 containerd[864]: time="2022-11-08T16:38:59.919459664+01:00" level=info msg="shim disconnected" id=76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227
+nov. 08 16:38:59 gateway106 containerd[864]: time="2022-11-08T16:38:59.919601091+01:00" level=warning msg="cleaning up after shim disconnected" id=76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227 namespace=plugins.moby
+nov. 08 16:38:59 gateway106 containerd[864]: time="2022-11-08T16:38:59.919613215+01:00" level=info msg="cleaning up dead shim"
+nov. 08 16:38:59 gateway106 containerd[864]: time="2022-11-08T16:38:59.932187266+01:00" level=warning msg="cleanup warnings time=\"2022-11-08T16:38:59+01:00\" level=info msg=\"starting signal loop\" namespace=plugins.moby pid=1850 runtime=io.containerd.runc.v2\ntime=\"2022-11-08T16:38:59+01:00\" level=warning msg=\"failed to read init pid file\" error=\"open /run/containerd/io.containerd.runtime.v2.task/plugins.moby/76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227/init.pid: no such file or directory\" runtime=io.containerd.runc.v2\n"
+nov. 08 16:38:59 gateway106 containerd[864]: time="2022-11-08T16:38:59.932521347+01:00" level=error msg="copy shim log" error="read /proc/self/fd/11: file already closed"
+nov. 08 16:38:59 gateway106 systemd[1]: var-lib-docker-plugins-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227-propagated\x2dmount.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit var-lib-docker-plugins-76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227-propagated\x2dmount.mount has successfully entered the 'dead' state.
+nov. 08 16:38:59 gateway106 dockerd[1801]: time="2022-11-08T16:38:59.942476382+01:00" level=error msg="failed to enable plugin" error="failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: error mounting \"/etc/resolv.conf\" to rootfs at \"/etc/resolv.conf\": stat /etc/resolv.conf: no such file or directory: unknown" id=76dd56657bf45eb23be9b8e7bbdfd3e5da06d72cbaa502a53459630739f44227
+nov. 08 16:38:59 gateway106 dockerd[1801]: time="2022-11-08T16:38:59.970510765+01:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+nov. 08 16:38:59 gateway106 dockerd[1801]: panic: runtime error: invalid memory address or nil pointer dereference
+nov. 08 16:38:59 gateway106 dockerd[1801]: [signal SIGSEGV: segmentation violation code=0x1 addr=0x8 pc=0x558db507807a]
+nov. 08 16:38:59 gateway106 dockerd[1801]: goroutine 76 [running]:
+nov. 08 16:38:59 gateway106 dockerd[1801]: github.com/docker/docker/pkg/plugins.(*Client).callWithRetry(0x0, {0x558db643376c, 0x19}, {0x558db6d634e8, 0xc000b01860}, 0x1, {0xc0000110a0, 0x1, 0x203000?})
+nov. 08 16:38:59 gateway106 dockerd[1801]:         /go/src/github.com/docker/docker/pkg/plugins/client.go:160 +0x15a
+nov. 08 16:38:59 gateway106 dockerd[1801]: github.com/docker/docker/pkg/plugins.(*Client).CallWithOptions(0x7fcac0556cb8?, {0x558db643376c, 0x19}, {0x558db6a45ee0, 0x558db7ece4a8}, {0x558db68e57c0, 0xc000b08240}, {0xc0000110a0, 0x1, 0x1})
+nov. 08 16:38:59 gateway106 dockerd[1801]:         /go/src/github.com/docker/docker/pkg/plugins/client.go:113 +0x185
+nov. 08 16:38:59 gateway106 dockerd[1801]: github.com/docker/docker/volume/drivers.(*volumeDriverProxy).Capabilities(0xc000b0c3a0)
+nov. 08 16:38:59 gateway106 dockerd[1801]:         /go/src/github.com/docker/docker/volume/drivers/proxy.go:244 +0xfa
+nov. 08 16:38:59 gateway106 dockerd[1801]: github.com/docker/docker/volume/drivers.(*volumeDriverAdapter).getCapabilities(0xc000b01830)
+nov. 08 16:38:59 gateway106 dockerd[1801]:         /go/src/github.com/docker/docker/volume/drivers/adapter.go:93 +0x68
+nov. 08 16:38:59 gateway106 dockerd[1801]: github.com/docker/docker/volume/drivers.(*volumeDriverAdapter).Scope(0xc0001c2dc0?)
+nov. 08 16:38:59 gateway106 dockerd[1801]:         /go/src/github.com/docker/docker/volume/drivers/adapter.go:85 +0x19
+nov. 08 16:38:59 gateway106 dockerd[1801]: github.com/docker/docker/volume/drivers.validateDriver({0x558db6d86178, 0xc000b01830})
+nov. 08 16:38:59 gateway106 dockerd[1801]:         /go/src/github.com/docker/docker/volume/drivers/extpoint.go:116 +0x2b
+nov. 08 16:38:59 gateway106 dockerd[1801]: github.com/docker/docker/volume/drivers.(*Store).lookup(0xc000b01230, {0xc00077aa20, 0x12}, 0x0)
+nov. 08 16:38:59 gateway106 dockerd[1801]:         /go/src/github.com/docker/docker/volume/drivers/extpoint.go:95 +0x2cf
+nov. 08 16:38:59 gateway106 dockerd[1801]: github.com/docker/docker/volume/drivers.(*Store).GetDriver(...)
+nov. 08 16:38:59 gateway106 dockerd[1801]:         /go/src/github.com/docker/docker/volume/drivers/extpoint.go:148
+nov. 08 16:38:59 gateway106 dockerd[1801]: github.com/docker/docker/volume/service.lookupVolume({0x0?, 0x0?}, 0x0?, {0xc00077aa20?, 0x0?}, {0xc00077aa08, 0x11})
+nov. 08 16:38:59 gateway106 dockerd[1801]:         /go/src/github.com/docker/docker/volume/service/store.go:739 +0x72
+nov. 08 16:38:59 gateway106 dockerd[1801]: github.com/docker/docker/volume/service.(*VolumeStore).restore.func2({{0xc00077aa08, 0x11}, {0xc00077aa20, 0x12}, 0xc000b01710, 0xc000b01740})
+nov. 08 16:38:59 gateway106 dockerd[1801]:         /go/src/github.com/docker/docker/volume/service/restore.go:37 +0x186
+nov. 08 16:38:59 gateway106 dockerd[1801]: created by github.com/docker/docker/volume/service.(*VolumeStore).restore
+nov. 08 16:38:59 gateway106 dockerd[1801]:         /go/src/github.com/docker/docker/volume/service/restore.go:31 +0x2c9
+nov. 08 16:38:59 gateway106 systemd[1]: docker.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit docker.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 2.
+nov. 08 16:38:59 gateway106 systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+nov. 08 16:38:59 gateway106 systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: L'unité (unit) docker.service a échoué
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) docker.service a échoué, avec le résultat failed.
+nov. 08 16:39:02 gateway106 systemd[1]: docker.service: Scheduled restart job, restart counter is at 3.
+░░ Subject: Le redémarrage automatique d'une unité (unit) a été planifié
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Le redémarrage automatique de l'unité (unit) docker.service a été planifié, en
+░░ raison de sa configuration avec le paramètre Restart=.
+nov. 08 16:39:02 gateway106 systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: L'unité (unit) docker.service a terminé son arrêt
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) docker.service a terminé son arrêt.
+nov. 08 16:39:02 gateway106 systemd[1]: docker.service: Start request repeated too quickly.
+nov. 08 16:39:02 gateway106 systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+nov. 08 16:39:02 gateway106 systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: L'unité (unit) docker.service a échoué
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) docker.service a échoué, avec le résultat failed.
+nov. 08 16:39:02 gateway106 systemd[1]: docker.socket: Failed with result 'service-start-limit-hit'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.socket has entered the 'failed' state with result 'service-start-limit-hit'.
+nov. 08 16:40:11 gateway106 sudo[1889]:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get install -y xvfb
+nov. 08 16:40:11 gateway106 sudo[1889]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+nov. 08 16:40:19 gateway106 sudo[1889]: pam_unix(sudo:session): session closed for user root
+nov. 08 16:40:25 gateway106 systemd[1]: Starting dnsmasq - A lightweight DHCP and caching DNS server...
+░░ Subject: L'unité (unit) dnsmasq.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dnsmasq.service a commencé à démarrer.
+nov. 08 16:40:25 gateway106 dnsmasq[1947]: dnsmasq: directory /etc/resolv.conf for resolv-file is missing, cannot poll
+nov. 08 16:40:25 gateway106 dnsmasq[1947]: directory /etc/resolv.conf for resolv-file is missing, cannot poll
+nov. 08 16:40:25 gateway106 dnsmasq[1947]: FAILED to start up
+nov. 08 16:40:25 gateway106 systemd[1]: dnsmasq.service: Control process exited, code=exited, status=5/NOTINSTALLED
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit dnsmasq.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 5.
+nov. 08 16:40:25 gateway106 systemd[1]: dnsmasq.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit dnsmasq.service has entered the 'failed' state with result 'exit-code'.
+nov. 08 16:40:25 gateway106 systemd[1]: Failed to start dnsmasq - A lightweight DHCP and caching DNS server.
+░░ Subject: L'unité (unit) dnsmasq.service a échoué
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dnsmasq.service a échoué, avec le résultat failed.
+nov. 08 16:41:32 gateway106 systemd[1]: Starting dnsmasq - A lightweight DHCP and caching DNS server...
+░░ Subject: L'unité (unit) dnsmasq.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dnsmasq.service a commencé à démarrer.
+nov. 08 16:41:32 gateway106 dnsmasq[2003]: started, version 2.86 cachesize 150
+nov. 08 16:41:32 gateway106 dnsmasq[2003]: DNS service limited to local subnets
+nov. 08 16:41:32 gateway106 dnsmasq[2003]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset auth cryptohash DNSSEC loop-detect inotify dumpfile
+nov. 08 16:41:32 gateway106 dnsmasq[2003]: no servers found in /etc/resolv.conf, will retry
+nov. 08 16:41:32 gateway106 dnsmasq[2003]: read /etc/hosts - 8 addresses
+nov. 08 16:41:32 gateway106 systemd[1]: Started dnsmasq - A lightweight DHCP and caching DNS server.
+░░ Subject: L'unité (unit) dnsmasq.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dnsmasq.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:42:00 gateway106 dnsmasq[2003]: reading /etc/resolv.conf
+nov. 08 16:42:00 gateway106 dnsmasq[2003]: using nameserver 192.168.232.2#53
+nov. 08 16:42:03 gateway106 systemd[1]: Stopping dnsmasq - A lightweight DHCP and caching DNS server...
+░░ Subject: L'unité (unit) dnsmasq.service a commencé à s'arrêter
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dnsmasq.service a commencé à s'arrêter.
+nov. 08 16:42:03 gateway106 dnsmasq[2003]: exiting on receipt of SIGTERM
+nov. 08 16:42:03 gateway106 systemd[1]: dnsmasq.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit dnsmasq.service has successfully entered the 'dead' state.
+nov. 08 16:42:03 gateway106 systemd[1]: Stopped dnsmasq - A lightweight DHCP and caching DNS server.
+░░ Subject: L'unité (unit) dnsmasq.service a terminé son arrêt
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dnsmasq.service a terminé son arrêt.
+nov. 08 16:42:03 gateway106 systemd[1]: Starting dnsmasq - A lightweight DHCP and caching DNS server...
+░░ Subject: L'unité (unit) dnsmasq.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dnsmasq.service a commencé à démarrer.
+nov. 08 16:42:03 gateway106 dnsmasq[2069]: started, version 2.86 cachesize 150
+nov. 08 16:42:03 gateway106 dnsmasq[2069]: DNS service limited to local subnets
+nov. 08 16:42:03 gateway106 dnsmasq[2069]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset auth cryptohash DNSSEC loop-detect inotify dumpfile
+nov. 08 16:42:03 gateway106 dnsmasq[2069]: reading /etc/resolv.conf
+nov. 08 16:42:03 gateway106 dnsmasq[2069]: using nameserver 192.168.232.2#53
+nov. 08 16:42:03 gateway106 dnsmasq[2069]: read /etc/hosts - 8 addresses
+nov. 08 16:42:03 gateway106 systemd[1]: Started dnsmasq - A lightweight DHCP and caching DNS server.
+░░ Subject: L'unité (unit) dnsmasq.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dnsmasq.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:42:49 gateway106 systemd[1]: Starting Download data for packages that failed at package install time...
+░░ Subject: L'unité (unit) update-notifier-download.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) update-notifier-download.service a commencé à démarrer.
+nov. 08 16:42:49 gateway106 systemd[1]: update-notifier-download.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit update-notifier-download.service has successfully entered the 'dead' state.
+nov. 08 16:42:49 gateway106 systemd[1]: Finished Download data for packages that failed at package install time.
+░░ Subject: L'unité (unit) update-notifier-download.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) update-notifier-download.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:43:05 gateway106 systemd[1]: exim4.service: start operation timed out. Terminating.
+nov. 08 16:43:05 gateway106 systemd[1]: exim4.service: Failed with result 'timeout'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit exim4.service has entered the 'failed' state with result 'timeout'.
+nov. 08 16:43:05 gateway106 systemd[1]: exim4.service: Unit process 1434 (exim4) remains running after unit stopped.
+nov. 08 16:43:05 gateway106 systemd[1]: Failed to start LSB: exim Mail Transport Agent.
+░░ Subject: L'unité (unit) exim4.service a échoué
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) exim4.service a échoué, avec le résultat failed.
+nov. 08 16:43:05 gateway106 systemd[1]: Starting LSB: init-Script for system wide fetchmail daemon...
+░░ Subject: L'unité (unit) fetchmail.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fetchmail.service a commencé à démarrer.
+nov. 08 16:43:05 gateway106 fetchmail[2093]:  * Not starting fetchmail daemon, disabled via /etc/default/fetchmail
+nov. 08 16:43:05 gateway106 systemd[1]: Started LSB: init-Script for system wide fetchmail daemon.
+░░ Subject: L'unité (unit) fetchmail.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fetchmail.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:43:05 gateway106 systemd[1]: Reached target Multi-User System.
+░░ Subject: L'unité (unit) multi-user.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) multi-user.target a terminé son démarrage, avec le résultat done.
+nov. 08 16:43:05 gateway106 systemd[1]: Reached target Graphical Interface.
+░░ Subject: L'unité (unit) graphical.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) graphical.target a terminé son démarrage, avec le résultat done.
+nov. 08 16:43:05 gateway106 systemd[1]: Starting EOLE Continuous Integration Tests Daemon...
+░░ Subject: L'unité (unit) EoleCiTestsDaemon.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) EoleCiTestsDaemon.service a commencé à démarrer.
+nov. 08 16:43:05 gateway106 systemd[1]: Starting Record Runlevel Change in UTMP...
+░░ Subject: L'unité (unit) systemd-update-utmp-runlevel.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-update-utmp-runlevel.service a commencé à démarrer.
+nov. 08 16:43:06 gateway106 systemd[1]: systemd-update-utmp-runlevel.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit systemd-update-utmp-runlevel.service has successfully entered the 'dead' state.
+nov. 08 16:43:06 gateway106 systemd[1]: Finished Record Runlevel Change in UTMP.
+░░ Subject: L'unité (unit) systemd-update-utmp-runlevel.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-update-utmp-runlevel.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:43:06 gateway106 bash[2099]: CheckUpdate.sh: /root/mount.eole-ci-tests A JOUR
+nov. 08 16:43:06 gateway106 bash[2099]: CheckUpdate.sh: /root/getVMContext.sh A JOUR
+nov. 08 16:43:06 gateway106 bash[2099]: CheckUpdate.sh: /root/EoleCiFunctions.sh A JOUR
+nov. 08 16:43:06 gateway106 bash[2099]: CheckUpdate.sh: /root/.EoleCiTestsContext.sh A JOUR
+nov. 08 16:43:06 gateway106 bash[2099]: CheckUpdate.sh: /root/.EoleCiTestsDaemon.sh A JOUR
+nov. 08 16:43:06 gateway106 systemd[1]: Started EOLE Continuous Integration Tests Daemon.
+░░ Subject: L'unité (unit) EoleCiTestsDaemon.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) EoleCiTestsDaemon.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:43:06 gateway106 systemd[1]: Startup finished in 3.466s (kernel) + 5min 16.713s (userspace) = 5min 20.180s.
+░░ Subject: Le démarrage du système est terminé
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Tous les services nécessaires au démarrage du système ont été lancés.
+░░ Notez que cela ne signifie pas que le système est maintenant au repos,
+░░ car des services peuvent encore être en train de terminer leur démarrage.
+░░ 
+░░ Le chargement du noyau a nécessité 3466946 microsecondes.
+░░ 
+░░ Le chargement du « RAM disk » initial a nécessité INITRD_USEC microsecondes.
+░░ 
+░░ Le chargement de l'espace utilisateur a nécessité 316713855 microsecondes.
+nov. 08 16:43:06 gateway106 EOLECITESTS[2163]: systemctl is-active multi-user.target : active
+nov. 08 16:43:06 gateway106 EOLECITESTS[2165]: systemctl is-active network.target : active
+nov. 08 16:43:06 gateway106 EOLECITESTS[2167]: systemctl is-active network-online.target : active
+nov. 08 16:43:06 gateway106 EOLECITESTS[2169]: systemctl is-system-running : degraded
+nov. 08 16:43:06 gateway106 EOLECITESTS[2203]: Configuration Automatique Gateway DNSMASQ 1 (16:43:06)
+nov. 08 16:43:06 gateway106 EOLECITESTS[2205]: * stop old services
+nov. 08 16:43:06 gateway106 EOLECITESTS[2220]: * CURRENT IP = 192.168.230.106 et VM_ETH0_IP=192.168.230.106
+nov. 08 16:43:06 gateway106 EOLECITESTS[2221]: Gateway pour ktjebbes en cours de démarrage sur 'one'
+nov. 08 16:43:06 gateway106 EOLECITESTS[2224]: ***********************************************************
+nov. 08 16:43:06 gateway106 EOLECITESTS[2225]: * IP V4
+nov. 08 16:43:06 gateway106 EOLECITESTS[2226]: ***********************************************************
+nov. 08 16:43:06 gateway106 EOLECITESTS[2227]: * Workaround docker messing up with our firewall
+nov. 08 16:43:06 gateway106 EOLECITESTS[2235]: * Active NAT
+nov. 08 16:43:06 gateway106 EOLECITESTS[2242]: * Active DNS par routage des trames sur l'eth1 !
+nov. 08 16:43:06 gateway106 EOLECITESTS[2246]: * Workaround BUG 'bad udp checksum' du client dhcp sur Debian 8* Voir https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=717217
+nov. 08 16:43:06 gateway106 EOLECITESTS[2249]: * Regle Iptables Filter
+nov. 08 16:43:06 gateway106 EOLECITESTS[2251]: * Regle Iptables NAT
+nov. 08 16:43:06 gateway106 EOLECITESTS[2253]: * Regle Iptables MANGLE
+nov. 08 16:43:06 gateway106 EOLECITESTS[2255]: * Regle Iptables RAW
+nov. 08 16:43:06 gateway106 EOLECITESTS[2257]: * Activation Routeur PERSISTANTE
+nov. 08 16:43:06 gateway106 EOLECITESTS[2258]: * Vérification Routeur (net.ipv4.ip_forward)
+nov. 08 16:43:06 gateway106 EOLECITESTS[2260]: * Déactivation TCP timestamps CVE (net.ipv4.tcp_timestamps)
+nov. 08 16:43:06 gateway106 EOLECITESTS[2263]: ***********************************************************
+nov. 08 16:43:06 gateway106 EOLECITESTS[2264]: * IP V6
+nov. 08 16:43:06 gateway106 EOLECITESTS[2265]: ***********************************************************
+nov. 08 16:43:06 gateway106 EOLECITESTS[2266]: * Regle Ip6tables Filter
+nov. 08 16:43:06 gateway106 EOLECITESTS[2268]: * Regle Ip6tables NAT
+nov. 08 16:43:06 gateway106 EOLECITESTS[2270]: * Regle Ip6tables MANGLE
+nov. 08 16:43:06 gateway106 EOLECITESTS[2272]: * Regle Ip6tables RAW
+nov. 08 16:43:06 gateway106 EOLECITESTS[2274]: * Affiche configuration 'sysctl'
+nov. 08 16:43:06 gateway106 EOLECITESTS[2286]: * Affiche Connectivité
+nov. 08 16:43:06 gateway106 EOLECITESTS[2289]: * Generate keys root/gateway106
+nov. 08 16:43:06 gateway106 EOLECITESTS[2291]: * cles SSHD à jour
+nov. 08 16:43:06 gateway106 EOLECITESTS[2296]: * restauration SSHD keys from /mnt/eole-ci-tests/security/gateway_keys/root@gateway106_ed25519
+nov. 08 16:43:07 gateway106 EOLECITESTS[2301]: * Check /root acl
+nov. 08 16:43:07 gateway106 EOLECITESTS[2304]: * right /root OK
+nov. 08 16:43:07 gateway106 EOLECITESTS[2305]: * Configure SSHD
+nov. 08 16:43:07 gateway106 EOLECITESTS[2307]: * service ssh restart
+nov. 08 16:43:07 gateway106 systemd[1]: Stopping OpenBSD Secure Shell server...
+░░ Subject: L'unité (unit) ssh.service a commencé à s'arrêter
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ssh.service a commencé à s'arrêter.
+nov. 08 16:43:07 gateway106 sshd[1401]: Received signal 15; terminating.
+nov. 08 16:43:07 gateway106 systemd[1]: ssh.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit ssh.service has successfully entered the 'dead' state.
+nov. 08 16:43:07 gateway106 systemd[1]: Stopped OpenBSD Secure Shell server.
+░░ Subject: L'unité (unit) ssh.service a terminé son arrêt
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ssh.service a terminé son arrêt.
+nov. 08 16:43:07 gateway106 systemd[1]: Starting OpenBSD Secure Shell server...
+░░ Subject: L'unité (unit) ssh.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ssh.service a commencé à démarrer.
+nov. 08 16:43:07 gateway106 sshd[2312]: Server listening on 0.0.0.0 port 22.
+nov. 08 16:43:07 gateway106 systemd[1]: Started OpenBSD Secure Shell server.
+░░ Subject: L'unité (unit) ssh.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ssh.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:43:07 gateway106 EOLECITESTS[2313]: * Configure SSH client
+nov. 08 16:43:07 gateway106 EOLECITESTS[2343]: * Vide les exceptions crée par les tests
+nov. 08 16:43:07 gateway106 EOLECITESTS[2346]: * nettoye /etc/dnsmasq.d/*.conf
+nov. 08 16:43:07 gateway106 EOLECITESTS[2349]: * copy /tmp/dnsmasq.d/*.conf -> /etc/dnsmasq.d/*.conf
+nov. 08 16:43:07 gateway106 systemd[1]: Stopping dnsmasq - A lightweight DHCP and caching DNS server...
+░░ Subject: L'unité (unit) dnsmasq.service a commencé à s'arrêter
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dnsmasq.service a commencé à s'arrêter.
+nov. 08 16:43:07 gateway106 dnsmasq[2069]: exiting on receipt of SIGTERM
+nov. 08 16:43:07 gateway106 systemd[1]: dnsmasq.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit dnsmasq.service has successfully entered the 'dead' state.
+nov. 08 16:43:07 gateway106 systemd[1]: Stopped dnsmasq - A lightweight DHCP and caching DNS server.
+░░ Subject: L'unité (unit) dnsmasq.service a terminé son arrêt
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dnsmasq.service a terminé son arrêt.
+nov. 08 16:43:07 gateway106 systemd[1]: Starting dnsmasq - A lightweight DHCP and caching DNS server...
+░░ Subject: L'unité (unit) dnsmasq.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dnsmasq.service a commencé à démarrer.
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: started, version 2.86 cachesize 150
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset auth cryptohash DNSSEC loop-detect inotify dumpfile
+nov. 08 16:43:07 gateway106 dnsmasq-dhcp[2379]: DHCP, IP range 192.168.227.100 -- 192.168.227.250, lease time 2h
+nov. 08 16:43:07 gateway106 dnsmasq-dhcp[2379]: DHCP, IP range 192.168.0.100 -- 192.168.0.199, lease time 2h
+nov. 08 16:43:07 gateway106 dnsmasq-tftp[2379]: TFTP root is /var/lib/tftpboot/
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: using nameserver 192.168.0.73#53 for domain domaca.ac-test.fr
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: using nameserver 192.168.0.29#53 for domain domhorus.ac-test.fr
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: using nameserver 192.168.0.30#53 for domain domscribe.ac-test.fr
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: using nameserver 192.168.0.5#53 for domain domseth.ac-test.fr
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: using nameserver 192.168.0.6#53 for domain domseth.ac-test.fr
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: using nameserver 192.168.0.5#53 for domain 0.168.192.in-addr.arpa
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: using nameserver 192.168.0.6#53 for domain 0.168.192.in-addr.arpa
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: reading /etc/resolv.conf
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: using nameserver 192.168.0.73#53 for domain domaca.ac-test.fr
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: using nameserver 192.168.0.29#53 for domain domhorus.ac-test.fr
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: using nameserver 192.168.0.30#53 for domain domscribe.ac-test.fr
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: using nameserver 192.168.0.5#53 for domain domseth.ac-test.fr
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: using nameserver 192.168.0.6#53 for domain domseth.ac-test.fr
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: using nameserver 192.168.0.5#53 for domain 0.168.192.in-addr.arpa
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: using nameserver 192.168.0.6#53 for domain 0.168.192.in-addr.arpa
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: using nameserver 192.168.232.2#53
+nov. 08 16:43:07 gateway106 dnsmasq[2379]: read /etc/hosts - 8 addresses
+nov. 08 16:43:07 gateway106 systemd[1]: Started dnsmasq - A lightweight DHCP and caching DNS server.
+░░ Subject: L'unité (unit) dnsmasq.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dnsmasq.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:43:09 gateway106 EOLECITESTS[2390]: * Démarrage DNSMASQ
+nov. 08 16:43:09 gateway106 EOLECITESTS[2393]: AGENT_JENKINS non définie dans le context!
+nov. 08 16:43:09 gateway106 EOLECITESTS[2394]: * status systemd-timesyncd
+nov. 08 16:43:09 gateway106 dbus-daemon[730]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.34' (uid=0 pid=2395 comm="timedatectl status " label="unconfined")
+nov. 08 16:43:09 gateway106 systemd[1]: Starting Time & Date Service...
+░░ Subject: L'unité (unit) systemd-timedated.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-timedated.service a commencé à démarrer.
+nov. 08 16:43:09 gateway106 dbus-daemon[730]: [system] Successfully activated service 'org.freedesktop.timedate1'
+nov. 08 16:43:09 gateway106 systemd[1]: Started Time & Date Service.
+░░ Subject: L'unité (unit) systemd-timedated.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-timedated.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:43:09 gateway106 EOLECITESTS[2401]: * Configuration chrony
+nov. 08 16:43:09 gateway106 EOLECITESTS[2403]: * Démarrage Chronyd
+nov. 08 16:43:09 gateway106 chronyd[903]: chronyd exiting
+nov. 08 16:43:09 gateway106 systemd[1]: Stopping chrony, an NTP client/server...
+░░ Subject: L'unité (unit) chrony.service a commencé à s'arrêter
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) chrony.service a commencé à s'arrêter.
+nov. 08 16:43:09 gateway106 systemd[1]: chrony.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit chrony.service has successfully entered the 'dead' state.
+nov. 08 16:43:09 gateway106 systemd[1]: Stopped chrony, an NTP client/server.
+░░ Subject: L'unité (unit) chrony.service a terminé son arrêt
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) chrony.service a terminé son arrêt.
+nov. 08 16:43:09 gateway106 systemd[1]: Starting chrony, an NTP client/server...
+░░ Subject: L'unité (unit) chrony.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) chrony.service a commencé à démarrer.
+nov. 08 16:43:09 gateway106 chronyd[2417]: chronyd version 4.2 starting (+CMDMON +NTP +REFCLOCK +RTC +PRIVDROP +SCFILTER +SIGND +ASYNCDNS +NTS +SECHASH +IPV6 -DEBUG)
+nov. 08 16:43:09 gateway106 chronyd[2417]: Frequency -36.175 +/- 0.973 ppm read from /var/lib/chrony/chrony.drift
+nov. 08 16:43:09 gateway106 chronyd[2417]: Loaded seccomp filter (level 1)
+nov. 08 16:43:09 gateway106 systemd[1]: Started chrony, an NTP client/server.
+░░ Subject: L'unité (unit) chrony.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) chrony.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:43:09 gateway106 EOLECITESTS[2420]: * Démarrage Chrony
+nov. 08 16:43:09 gateway106 EOLECITESTS[2424]: * Test 'chronyc tracking'
+nov. 08 16:43:09 gateway106 EOLECITESTS[2426]: * Test 'chronyc sourcestats'
+nov. 08 16:43:09 gateway106 EOLECITESTS[2431]: * Add roadwarrior GRE tunnel
+nov. 08 16:43:09 gateway106 kernel: gre: GRE over IPv4 demultiplexor driver
+nov. 08 16:43:09 gateway106 kernel: ip_gre: GRE over IPv4 tunneling driver
+nov. 08 16:43:09 gateway106 systemd-udevd[2206]: Using default interface naming scheme 'v249'.
+nov. 08 16:43:09 gateway106 systemd-udevd[2204]: Using default interface naming scheme 'v249'.
+nov. 08 16:43:09 gateway106 networkd-dispatcher[739]: WARNING:Unknown index 5 seen, reloading interface list
+nov. 08 16:43:09 gateway106 systemd-networkd[843]: roadwarrior: Link UP
+nov. 08 16:43:09 gateway106 systemd-networkd[843]: roadwarrior: Gained carrier
+nov. 08 16:43:09 gateway106 systemd-udevd[2207]: Using default interface naming scheme 'v249'.
+nov. 08 16:43:09 gateway106 EOLECITESTS[2446]: * Activation Ecoute tcp DOCKER ?
+nov. 08 16:43:09 gateway106 systemd-udevd[2441]: Using default interface naming scheme 'v249'.
+nov. 08 16:43:09 gateway106 EOLECITESTS[2453]: * création /etc/email-addresses
+nov. 08 16:43:09 gateway106 EOLECITESTS[2455]: * création /etc/aliases
+nov. 08 16:43:09 gateway106 EOLECITESTS[2458]: * création /etc/exim4/update-exim4.conf.conf
+nov. 08 16:43:09 gateway106 EOLECITESTS[2461]: * réécriture des adresses mails (/etc/exim4/conf.d/rewrite/40_exim4-config_rewrite_ac-test)
+nov. 08 16:43:10 gateway106 EOLECITESTS[2839]: * cat /var/log/exim4/paniclog avant reset !
+nov. 08 16:43:10 gateway106 EOLECITESTS[2847]: * restart Exim4
+nov. 08 16:43:10 gateway106 systemd[1]: exim4.service: Found left-over process 1434 (exim4) in control group while starting unit. Ignoring.
+nov. 08 16:43:10 gateway106 systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+nov. 08 16:43:10 gateway106 systemd[1]: Starting LSB: exim Mail Transport Agent...
+░░ Subject: L'unité (unit) exim4.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) exim4.service a commencé à démarrer.
+nov. 08 16:43:10 gateway106 exim4[2849]:  * Starting MTA
+nov. 08 16:43:10 gateway106 exim4[2849]:    ...done.
+nov. 08 16:43:10 gateway106 systemd[1]: Started LSB: exim Mail Transport Agent.
+░░ Subject: L'unité (unit) exim4.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) exim4.service a terminé son démarrage, avec le résultat done.
+nov. 08 16:43:10 gateway106 EOLECITESTS[3108]: * test mail to USER
+nov. 08 16:43:10 gateway106 EOLECITESTS[3113]: AGENT_JENKINS non définit dans le context!
+nov. 08 16:43:10 gateway106 EOLECITESTS[3114]: AGENT_GITLAB non définit dans le context!
+nov. 08 16:43:10 gateway106 EOLECITESTS[3115]: Démarrée sur 'one' pour 'ktjebbes'
+nov. 08 16:43:10 gateway106 EOLECITESTS[3116]: pas de function startup utilisateur 'ciOnStartUp'
+nov. 08 16:43:10 gateway106 EOLECITESTS[3117]: * Fin ok
+nov. 08 16:43:10 gateway106 EOLECITESTS[3121]: Démarrée en 192.168.230.106
+nov. 08 16:43:10 gateway106 EOLECITESTS[3123]: * désactivation updatedb/locate sur /mnt/eole-ci-test présente !
+nov. 08 16:43:10 gateway106 EOLECITESTS[3126]: * pas de lien gateway ici. aller dans le code de la gateway!
+nov. 08 16:43:13 gateway106 chronyd[2417]: Selected source 192.168.232.2
+nov. 08 16:43:39 gateway106 systemd[1]: systemd-timedated.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit systemd-timedated.service has successfully entered the 'dead' state.
+nov. 08 16:43:40 gateway106 EOLECITESTS[3134]: ciExportCurrentStatus : début

@@ -1,0 +1,32 @@
+Machine aca.pc 2.10.0 : Début ciContextualizeMachine : aca.pc, pc
+Machine aca.pc 2.10.0 : Debut ciContextualizePcLinux
+Machine aca.pc 2.10.0 : OS Ubuntu 22.04.5 LTS  Version=22.04
+Machine aca.pc 2.10.0 : machine PcLinux ==> utilise le dhcp!
+Machine aca.pc 2.10.0 : Inject pc-1422934 -> hostnamectl 
+Machine aca.pc 2.10.0 : * Inject  pc-1422934 -> /etc/hosts
+127.0.0.1	localhost
+127.0.1.1	 pc-1422934
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+Machine aca.pc 2.10.0 : * Restart avahi-daemon
+Machine aca.pc 2.10.0 : le PC a pour nom pc-1422934 : pc-1422934
+ Static hostname: pc-1422934
+       Icon name: computer-vm
+         Chassis: vm
+      Machine ID: 2d431f315ec14ef293b85c00685d305a
+         Boot ID: c47770ba66664814b9b6251b53a18bd3
+  Virtualization: kvm
+Operating System: Ubuntu 22.04.5 LTS
+          Kernel: Linux 5.15.0-126-generic
+    Architecture: x86-64
+ Hardware Vendor: QEMU
+  Hardware Model: Standard PC _i440FX + PIIX, 1996_
+Machine aca.pc 2.10.0 : Fin ciContextualizePcLinux
+Machine aca.pc 2.10.0 : Contextualization Machine OK
+Machine aca.pc 2.10.0 : jenkins7 1422934 aca.pc Contextualization Machine : OK
+Machine aca.pc 2.10.0 : Fin ciContextualizeMachine : ok à 2024-12-13 20:22:44

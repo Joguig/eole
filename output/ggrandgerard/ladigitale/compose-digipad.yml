@@ -1,0 +1,128 @@
+version: "3.7"
+
+services:
+  postgresql:
+    image: postgres:9.6
+    environment:
+      POSTGRES_DB: etherpad
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+
+  etherpad:
+    image: 'etherpad/etherpad'
+    restart: always
+    environment:  
+      # Title of the Etherpad Lite instance. Defaults to "Etherpad".
+      - TITLE=Test Digipad
+      # Port of the Etherpad Lite instance. Defaults to 9001.
+      - PORT=9001
+      # If set, an admin account is enabled for Etherpad, and the /admin/ interface is accessible via it.
+      - ADMIN_PASSWORD=CHANGE_ME_ADMIN_PASSWORD
+      # If the admin password is set, this defaults to "admin". Otherwise the user can set it to another username.
+      - ADMIN_USER=CHANGE_ME_ADMIN_USER
+      # Type of databse to use. Defaults to mysql.
+      - DB_TYPE=postgres
+      # Hostname of the database to use. Defaults to mysql.
+      - DB_HOST=postgresql
+      - DB_PORT=5432
+      - DB_NAME=etherpad
+      - DB_USER=admin
+      - DB_PASSWORD=admin
+      - LOGLEVEL=debug
+      - SKIN_NAME=education
+      # if file APIKEY.txt is missing, the variable value is used to provision it
+      - API_KEY=CHANGE_ME_API_KEY
+    ports:
+      - 9001:9001
+    depends_on:
+      - postgresql
+    healthcheck:
+      test: curl -f --retry 5 --retry-delay 3 "http://localhost:9001/api" || kill 1
+      interval: 20s
+      timeout: 1s
+      retries: 5
+
+  redis:
+    image: redis:6
+    restart: always
+    volumes:
+      - /root/redis-data:/data
+    healthcheck:
+      test: "redis-cli ping || kill 1"
+      interval: 10s
+      timeout: 1s
+      retries: 5
+
+  nfs:
+    image: itsthenetwork/nfs-server-alpine:12
+    container_name: nfs
+    restart: unless-stopped
+    privileged: true
+    environment:
+      - SHARED_DIRECTORY=/data
+    volumes:
+      - /root/nfs-storage:/data
+    ports:
+      - 2049:2049
+      
+  digipad:
+    image: hub.eole.education/test/digipad:1.1.3
+    environment:
+      # DOMAIN (protocole + domaine. ex : https://digipad.app)
+      - DOMAIN=https://digipad.app
+      # HOST (IP publique du serveur de production)
+      - HOST=192.168.230.127
+      # PORT (port du serveur local nuxt.js / 3000 par défaut)
+      - PORT=3000
+      # DB_HOST (IP du serveur de base de données Redis)
+      - DB_HOST=redis
+      # DB_PWD (mot de passe de la base de données Redis)
+      - DB_PWD=
+      # DB_PORT (port de la base de données Redis / 6379 par défaut)
+      - DB_PORT=6379
+      # SESSION_KEY (clé de session Express Session)
+      - SESSION_KEY=?
+      # SESSION_DURATION (durée de la session de connexion des utilisateurs en millisecondes)
+      - SESSION_DURATION=3600000
+      # ETHERPAD (lien vers un serveur Etherpad pour les documents collaboratifs)
+      - ETHERPAD=etherpad
+      # ETHERPAD_API_KEY (clé API Etherpad)
+      - ETHERPAD_API_KEY=
+      # UPLOAD_LIMIT (limite de téléversement des fichiers en Mo)
+      - UPLOAD_LIMIT=1000000
+      # UPLOAD_FILE_TYPES (types de fichiers autorisés pour le téléversement / par défaut : .jpg,.jpeg,.png,.gif,.mp4,.m4v,.mp3,.m4a,.ogg,.wav,.pdf,.ppt,.pptx,.odp,.doc,.docx,.odt,.ods,.odg,.xls,.xlsx)
+      - UPLOAD_FILE_TYPES=".jpg,.jpeg,.png,.gif,.mp4,.m4v,.mp3,.m4a,.ogg,.wav,.pdf,.ppt,.pptx,.odp,.doc,.docx,.odt,.ods,.odg,.xls,.xlsx"
+      # PAD_LIMIT (nombre maximum de pads par compte utilisateur)
+      - PAD_LIMIT=10
+      # CRON_TASK_DATE (régularité de la tâche cron pour supprimer les fichiers temporaires / 59 23 * * Saturday par défaut)
+      - CRON_TASK_DATE="59 23 * *"
+      # ADMIN_PASSWORD (mot de passe pour accéder à la page d'administration /admin)
+      - ADMIN_PASSWORD=admin
+      # EMAIL_HOST (hôte pour l'envoi d'emails)
+      - EMAIL_HOST=192.168.230.127
+      # EMAIL_ADDRESS (adresse pour l'envoi d'emails)
+      - EMAIL_ADDRESS=digipad@localhost
+      # EMAIL_PASSWORD (mot de passe de l'adresse emails)
+      - EMAIL_PASSWORD=test
+      # EMAIL_PORT (port pour l'envoi d'emails)
+      - EMAIL_PORT=485
+      # EMAIL_SECURE (true ou false)
+      - EMAIL_SECURE=true
+      # MATOMO (lien vers un serveur Matomo)
+      - MATOMO=matomo
+      # MATOMO_SITE_ID (id de site sur le serveur Matomo / 1 par défaut)
+      - MATOMO_SITE_ID=1
+      # NFS_PAD_NUMBER (id de pad à partir de laquelle les fichiers seront enregistrés dans un dossier monté NFS - environ 200 000 pour 1 To de capacité disque)
+      - NFS_PAD_NUMBER=1000
+      # NFS_FOLDER (nom du dossier monté NFS, obligatoirement situé dans le dossier /static/. ex : /static/nfs)
+      - NFS_FOLDER=digipad_test
+      # NFS2_PAD_NUMBER (id de pad à partir de laquelle les fichiers seront enregistrés dans un 2e dossier monté NFS - environ 200 000 pour 1 To de capacité disque)
+      - NFS2_PAD_NUMBER=2000
+      # NFS2_FOLDER (nom du dossier monté NFS, obligatoirement situé dans le dossier /static/. ex : /static/nfs2)
+      - NFS2_FOLDER=digipad_test2
+      # AUTORIZED_DOMAINS (domaines autorisés pour api serveur. ex : ladigitale.dev,example.com / par défaut *)
+      - AUTORIZED_DOMAINS="*"
+    depends_on:
+      - etherpad
+      - redis
+      - nfs 

@@ -1,0 +1,439 @@
+{
+    "omapi_secret": {
+        "val": "896b8cc303ffd95cdb6685e5274931324cd87db9d7cdb29f2634c63d",
+        "owner": "forced"
+    },
+    "bareos_dir_password": {
+        "val": "cb70d243a6f210dcb840de403a4654cfde96b0336fa8cf65a2982373",
+        "owner": "import"
+    },
+    "bareos_sd_password": {
+        "val": "63b6d6b1c86f5f8f7fdf7cdf3fc69056dec746bd761eb7af0aa3c3f6",
+        "owner": "import"
+    },
+    "numero_etab": {
+        "val": "21700032",
+        "owner": "import"
+    },
+    "libelle_etab": {
+        "val": "LFIK",
+        "owner": "gen_config"
+    },
+    "nom_machine": {
+        "val": "scribe22",
+        "owner": "gen_config"
+    },
+    "nom_domaine_local": {
+        "val": "lfikyoto.local",
+        "owner": "gen_config"
+    },
+    "nom_academie": {
+        "val": "ac-montpellier",
+        "owner": "import"
+    },
+    "adresse_ip_dns": {
+        "val": [
+            "8.8.8.8",
+            "192.168.1.254"
+        ],
+        "owner": "gen_config"
+    },
+    "time_zone": {
+        "val": "Asia/Tokyo",
+        "owner": "import"
+    },
+    "cert_type": {
+        "val": "autosign\u00e9",
+        "owner": "upgrade"
+    },
+    "activer_dhcp": {
+        "val": "oui",
+        "owner": "import"
+    },
+    "acces_distant_backend_ead": {
+        "val": "oui",
+        "owner": "upgrade"
+    },
+    "activer_proftpd": {
+        "val": "non",
+        "owner": "import"
+    },
+    "activer_ead3": {
+        "val": "oui",
+        "owner": "gen_config"
+    },
+    "adresse_ip_eth0": {
+        "val": "192.168.1.221",
+        "owner": "gen_config"
+    },
+    "adresse_ip_gw": {
+        "val": "192.168.1.254",
+        "owner": "import"
+    },
+    "ip_ssh_eth0": {
+        "val": [
+            "192.168.1.208",
+            "192.168.0.0"
+        ],
+        "owner": "gen_config"
+    },
+    "netmask_ssh_eth0": {
+        "val": {
+            "1": "255.255.255.0",
+            "0": "255.255.255.255"
+        },
+        "owner": {
+            "1": "import",
+            "0": "import"
+        }
+    },
+    "ip_admin_eth0": {
+        "val": [
+            "192.168.1.0"
+        ],
+        "owner": "import"
+    },
+    "netmask_admin_eth0": {
+        "val": {
+            "0": "255.255.255.0"
+        },
+        "owner": {
+            "0": "import"
+        }
+    },
+    "adresse_bcast_fichier_link": {
+        "val": "192.168.1.255",
+        "owner": "import"
+    },
+    "frontend_ead_distant_eth0": {
+        "val": "non",
+        "owner": "gen_config"
+    },
+    "ip_frontend_ead_distant_eth0": {
+        "val": [
+            "0.0.0.0"
+        ],
+        "owner": "upgrade"
+    },
+    "netmask_frontend_ead_distant_eth0": {
+        "val": {
+            "0": "0.0.0.0"
+        },
+        "owner": {
+            "0": "upgrade"
+        }
+    },
+    "frontend_ead_distant_eth1": {
+        "val": "oui",
+        "owner": "upgrade"
+    },
+    "ip_frontend_ead_distant_eth1": {
+        "val": [
+            "0.0.0.0"
+        ],
+        "owner": "upgrade"
+    },
+    "netmask_frontend_ead_distant_eth1": {
+        "val": {
+            "0": "0.0.0.0"
+        },
+        "owner": {
+            "0": "upgrade"
+        }
+    },
+    "frontend_ead_distant_eth2": {
+        "val": "oui",
+        "owner": "upgrade"
+    },
+    "ip_frontend_ead_distant_eth2": {
+        "val": [
+            "0.0.0.0"
+        ],
+        "owner": "upgrade"
+    },
+    "netmask_frontend_ead_distant_eth2": {
+        "val": {
+            "0": "0.0.0.0"
+        },
+        "owner": {
+            "0": "upgrade"
+        }
+    },
+    "frontend_ead_distant_eth3": {
+        "val": "oui",
+        "owner": "upgrade"
+    },
+    "ip_frontend_ead_distant_eth3": {
+        "val": [
+            "0.0.0.0"
+        ],
+        "owner": "upgrade"
+    },
+    "netmask_frontend_ead_distant_eth3": {
+        "val": {
+            "0": "0.0.0.0"
+        },
+        "owner": {
+            "0": "upgrade"
+        }
+    },
+    "frontend_ead_distant_eth4": {
+        "val": "oui",
+        "owner": "upgrade"
+    },
+    "ip_frontend_ead_distant_eth4": {
+        "val": [
+            "0.0.0.0"
+        ],
+        "owner": "upgrade"
+    },
+    "netmask_frontend_ead_distant_eth4": {
+        "val": {
+            "0": "0.0.0.0"
+        },
+        "owner": {
+            "0": "upgrade"
+        }
+    },
+    "ssl_organization_unit_name": {
+        "val": [
+            "110 043 015",
+            "ac-montpellier",
+            "21700032"
+        ],
+        "owner": "import"
+    },
+    "ssl_subjectaltname": {
+        "val": [
+        ],
+        "owner": "upgrade"
+    },
+    "smb_min_password_class": {
+        "val": "1",
+        "owner": "import"
+    },
+    "ad_default_min_pwd_age": {
+        "val": 0,
+        "owner": "gen_config"
+    },
+    "ad_default_max_pwd_age": {
+        "val": 0,
+        "owner": "gen_config"
+    },
+    "clam_scan_pdf": {
+        "val": "no",
+        "owner": "import"
+    },
+    "adresse_network_dhcp": {
+        "val": [
+            "192.168.1.0"
+        ],
+        "owner": "import"
+    },
+    "adresse_netmask_dhcp": {
+        "val": {
+            "0": "255.255.255.0"
+        },
+        "owner": {
+            "0": "import"
+        }
+    },
+    "nom_plage_dhcp": {
+        "val": {
+            "0": "plage0"
+        },
+        "owner": {
+            "0": "upgrade"
+        }
+    },
+    "ip_basse_dhcp": {
+        "val": {
+            "0": "192.168.1.240"
+        },
+        "owner": {
+            "0": "gen_config"
+        }
+    },
+    "ip_haute_dhcp": {
+        "val": {
+            "0": "192.168.1.249"
+        },
+        "owner": {
+            "0": "gen_config"
+        }
+    },
+    "adresse_ip_gw_dhcp": {
+        "val": {
+            "0": "192.168.1.254"
+        },
+        "owner": {
+            "0": "import"
+        }
+    },
+    "adresse_ip_dns_dhcp": {
+        "val": {
+            "0": "192.168.1.254"
+        },
+        "owner": {
+            "0": "gen_config"
+        }
+    },
+    "adresse_ip_dns_secondaire_dhcp": {
+        "val": {
+            "0": "8.8.8.8"
+        },
+        "owner": {
+            "0": "gen_config"
+        }
+    },
+    "interdire_hotes_inconnus": {
+        "val": {
+            "0": "oui"
+        },
+        "owner": {
+            "0": "gen_config"
+        }
+    },
+    "dhcp_lease_default": {
+        "val": {
+            "0": 7200
+        },
+        "owner": {
+            "0": "gen_config"
+        }
+    },
+    "ead_support_multietab": {
+        "val": "non",
+        "owner": "forced"
+    },
+    "smb_netbios_name": {
+        "val": "scribe22",
+        "owner": "gen_config"
+    },
+    "smb_workgroup": {
+        "val": "efk",
+        "owner": "import"
+    },
+    "nut_ups_password": {
+        "val": "954fb85c3e3ea07b8f8b843ecb77dcd52fc56fd23bdcdf7b88f803ac",
+        "owner": "import"
+    },
+    "web_url": {
+        "val": "lfikyoto.local",
+        "owner": "gen_config"
+    },
+    "force_envole": {
+        "val": "oui",
+        "owner": "import"
+    },
+    "web_redirection": {
+        "val": "/webmail",
+        "owner": "import"
+    },
+    "php_post_max_size": {
+        "val": 16,
+        "owner": "import"
+    },
+    "php_upload_max_filesize": {
+        "val": 32,
+        "owner": "import"
+    },
+    "eolesso_port": {
+        "val": 8443,
+        "owner": "upgrade"
+    },
+    "activer_sympa": {
+        "val": "non",
+        "owner": "gen_config"
+    },
+    "domaine_messagerie_etab": {
+        "val": "ac-kyoto.fr",
+        "owner": "import"
+    },
+    "exim_relay_smtp": {
+        "val": "192.168.1.254",
+        "owner": "import"
+    },
+    "exim_relay": {
+        "val": "oui",
+        "owner": "upgrade"
+    },
+    "exim_relay_dhcp": {
+        "val": "non",
+        "owner": "import"
+    },
+    "bareos_db_password": {
+        "val": "cf95163aa235c439f3737da4343be681805726b71cd3e200a92bfe4b",
+        "owner": "gen_config"
+    },
+    "bareos_dir_name": {
+        "val": "scribe-dir",
+        "owner": "import"
+    },
+    "bareos_compression": {
+        "val": "GZIP6",
+        "owner": "upgrade"
+    },
+    "bareos_sd_name": {
+        "val": "127.0.0.1-sd",
+        "owner": "import"
+    },
+    "bareos_sd_set_remote_dirs": {
+        "val": "non",
+        "owner": "upgrade"
+    },
+    "cups_loglevel": {
+        "val": "info",
+        "owner": "import"
+    },
+    "sasl_ldap_auth_server": {
+        "val": "scribe22",
+        "owner": "gen_config"
+    },
+    "ad_local": {
+        "val": "oui",
+        "owner": "gen_config"
+    },
+    "ad_public_address": {
+        "val": "192.168.1.13",
+        "owner": "gen_config"
+    },
+    "ad_server": {
+        "val": "scribe22",
+        "owner": "gen_config"
+    },
+    "ad_domain": {
+        "val": "lfikyoto.local",
+        "owner": "forced"
+    },
+    "ad_address": {
+        "val": "192.168.1.221",
+        "owner": "gen_config"
+    },
+    "ad_local_default_bridge_via_internal_ip": {
+        "val": "oui",
+        "owner": "gen_config"
+    },
+    "sonde_pays": {
+        "val": "Japon",
+        "owner": "gen_config"
+    },
+    "eolesso_ldap": {
+        "val": [
+            "localhost"
+        ],
+        "owner": "gen_config"
+    },
+    "bareos_fd_password": {
+        "owner": "import",
+        "val": "51ae6d3a5afba7fc9492a6ca490db3dbbacdb4a4d1909e38038fb0ea"
+    },
+    "adresses_ip_clients_nfs": {
+        "owner": "gen_config",
+        "val": [
+            "192.168.1.139",
+            "192.168.1.159"
+        ]
+    },
+    "___version___": "2.8.1"
+}

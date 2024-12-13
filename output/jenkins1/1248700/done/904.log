@@ -1,0 +1,110 @@
+Début /mnt/eole-ci-tests/tests/etablissement/proxy/check-proxy.sh
+USE_PROXY=non
+****************************************************
+TEST APT-GET : les sites ubuntu sont dans domaines_noauth
+****************************************************
+* cat /etc/apt/apt.conf.d/02eoleproxy
+fichier /etc/apt/apt.conf.d/02eoleproxy absent
+* apt-get update
+Atteint :1 http://fr.archive.ubuntu.com/ubuntu focal InRelease
+Réception de :2 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Réception de :3 http://fr.archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Réception de :4 http://fr.archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Réception de :5 http://security.ubuntu.com/ubuntu focal-security/main i386 Packages [838 kB]
+Réception de :6 http://fr.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3 692 kB]
+Réception de :7 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [3 315 kB]
+Réception de :8 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [486 kB]
+Réception de :9 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [3 265 kB]
+Réception de :10 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [456 kB]
+Réception de :11 http://fr.archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [1 059 kB]
+Réception de :12 http://fr.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [564 kB]
+Réception de :13 http://fr.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [3 412 kB]
+Réception de :14 http://fr.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [477 kB]
+Réception de :15 http://fr.archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [810 kB]
+Réception de :16 http://fr.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1 239 kB]
+20,0 Mo réceptionnés en 4s (5 441 ko/s)
+Lecture des listes de paquets…
+
+*******************************************************************
+TEST bp-eole.ac-dijon.fr : le site est dans domaines_noauth
+WGET=0 : No problems occurred
+checkAccesDenied : ACCES AUTORISÉ (/tmp/bp-eole.ac-dijon.fr.html)
+checkEOLE : OK (/tmp/bp-eole.ac-dijon.fr.html)
+
+*******************************************************************
+TEST http://www.google.fr : le site n'est dans domaines_noauth
+WGET=0 : No problems occurred
+checkAccesDenied : ACCES AUTORISÉ (/tmp/www.google.fr.html)
+checkGoogle : OK (/tmp/www.google.fr.html)
+
+*******************************************************************
+TEST https://www.google.fr : le site n'est dans domaines_noauth
+WGET=0 : No problems occurred
+checkAccesDenied : ACCES AUTORISÉ (/tmp/www.google.fr.html)
+checkGoogle : OK (/tmp/www.google.fr.html)
+
+*******************************************************************
+TEST https://dev-eole.ac-dijon.fr : le site n'est dans domaines_noauth
+WGET=0 : No problems occurred
+checkAccesDenied : ACCES AUTORISÉ (/tmp/dev-eole.ac-dijon.fr.html)
+checkEOLE : OK (/tmp/dev-eole.ac-dijon.fr.html)
+
+*******************************************************************
+Curl eole-proxy.git/info/refs?service=git-upload-pack !
+WGET=0 : No problems occurred
+checkAccesDenied : ACCES AUTORISÉ (/tmp/git-upload-pack)
+
+*******************************************************************
+git clone eole-proxy sans proxy
+Clonage dans 'eole-proxy'...
+* clone OK
+USE_PROXY=oui
+HOST_PROXY_IP=proxy.eole.lan
+HOST_PROXY_PORT=3128
+HOST_PROXY_PREFIX=
+****************************************************
+TEST APT-GET : les sites ubuntu sont dans domaines_noauth
+****************************************************
+* cat /etc/apt/apt.conf.d/02eoleproxy
+Acquire::http::Proxy "http://proxy.eole.lan:3128"\;
+* apt-get update
+Atteint :1 http://fr.archive.ubuntu.com/ubuntu focal InRelease
+Atteint :2 http://fr.archive.ubuntu.com/ubuntu focal-updates InRelease
+Atteint :3 http://fr.archive.ubuntu.com/ubuntu focal-backports InRelease
+Atteint :4 http://security.ubuntu.com/ubuntu focal-security InRelease
+Lecture des listes de paquets…
+
+*******************************************************************
+TEST bp-eole.ac-dijon.fr : le site est dans domaines_noauth
+WGET=0 : No problems occurred
+checkAccesDenied : ACCES AUTORISÉ (/tmp/bp-eole.ac-dijon.fr.html)
+checkEOLE : OK (/tmp/bp-eole.ac-dijon.fr.html)
+
+*******************************************************************
+TEST http://www.google.fr : le site n'est dans domaines_noauth
+WGET=0 : No problems occurred
+checkAccesDenied : ACCES AUTORISÉ (/tmp/www.google.fr.html)
+checkGoogle : OK (/tmp/www.google.fr.html)
+
+*******************************************************************
+TEST https://www.google.fr : le site n'est dans domaines_noauth
+WGET=0 : No problems occurred
+checkAccesDenied : ACCES AUTORISÉ (/tmp/www.google.fr.html)
+checkGoogle : OK (/tmp/www.google.fr.html)
+
+*******************************************************************
+TEST https://dev-eole.ac-dijon.fr : le site n'est dans domaines_noauth
+WGET=0 : No problems occurred
+checkAccesDenied : ACCES AUTORISÉ (/tmp/dev-eole.ac-dijon.fr.html)
+checkEOLE : OK (/tmp/dev-eole.ac-dijon.fr.html)
+
+*******************************************************************
+Curl eole-proxy.git/info/refs?service=git-upload-pack !
+WGET=0 : No problems occurred
+checkAccesDenied : ACCES AUTORISÉ (/tmp/git-upload-pack)
+
+*******************************************************************
+git clone eole-proxy par 3128
+Clonage dans 'eole-proxy'...
+* clone OK
+Fin /mnt/eole-ci-tests/tests/etablissement/proxy/check-proxy.sh CDU=0

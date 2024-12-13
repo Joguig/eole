@@ -1,0 +1,66 @@
+laurent.debay@savoie.fr
+pbertrand@cogitis.fr
+Thierry.ARBEZ-CARME@rhone.fr
+Pascal.BAPTENDIER@hautesavoie.fr
+pjean2@ac-nice.fr
+stephanie.simon@nouvelle-aquitaine.fr
+
+Sondage usage FOG
+
+Bonjour,
+
+Meilleux voeux à tous,
+
+Nous vous envoyons ce mail pour réaliser un sondage...
+
+La bascule d'un module Scribe vers la distribution EOLE 2.7 impose d'utiliser un domaine AD. Dans ce cas, la migration des stations existantes 
+est très compliquée. Avoir la possibilité de réinstaller tout le parc depuis un serveur, nous semble être un outil utile.
+
+Le pôle EOLE souhaite fournir une solution de déploiment des stations de travail à destination de notre communauté.
+Nous avons maquetté l'outil FOG pour l'évaluer, et le résultat est concluant. Un article sur notre Blog a été publié (https://pcll.ac-dijon.fr/eole/installation-de-fog-sur-eolebase-avec-scribe-distant/)  
+
+Mais, nous nous posons des questions... Avant de diffuser une solution, nous souhaitons identifier les cas d'usages pertinents.
+
+Ce mail est à destination de ceux qui utilisent dèjà FOG, ou qui envisagent de l'utiliser 
+
+Pouvez vous prendre quelques minutes pour répondre à ces questions, SVP ? 
+1°) Si vous utilisez déjà FOG : quelle version utilisez vous ?
+2°) Sur quelle distribution avez-vous installé FOG ?
+3°) Où est installé votre serveur FOG sur votre réseau (dmz, pedago) ? En établissement, En central ? Virtualisé / non ?
+4°) Si vous avez installé FOG sur une eolebase, Quelle version de la distribution utilisez-vous (2.6,2.7,2.8) ? Si oui, avez-vous utilisé les paquets eole (eole-web, eole-mysql) ?
+5°) Si vous avez plusieurs FOG (un par établissement), comment les gérez-vous ?
+6°) Si FOG est installé sur un module EOLE, il serait donc disponible depuis Zephir. Nous pourrions utiliser Zéphir pour configurer un serveur FOG par établissement, mais aussi de déployer des images globalement.
+7°) Quels types de déploiement utilisez-vous (groupes, muticast, udpcast) ?
+8°) Avez-vous eu besoin de modifier vos firewalls (Amon), proxy, DNS ?
+9°) Quelles images deployez vous ? (Win7, Win10, 32/64bits, Distribution Linux, Intel/ARM, ... ) ? 
+10°) Quelle est la volumétrie de déploiement d'un serveur FOG (nb d'images, volume sur le serveur) ?
+11°) Avez-vous dû personnaliser vos images (ex.: pour une intégration automatique) ? 
+12°) Utilisez-vous FOG pour la gestion d'énergie du parc (power management/greenfog) ?
+13°) question ouverte : quelles sont les fonctionnalités les plus utilisées de FOG (selon la fréquence d'utilisation) ?
+14°) question ouverte : quelles sont les manques que l'on pourrait compenser ?
+
+
+URL :
+https://github.com/fogproject/fogproject/tarball
+
+mirroir https://fogproject.org
+mirroir https://git.savannah.gnu.org/gitweb/
+mirroir http://internap.dl.sourceforge.net/sourceforge/freeghost/
+mirroir http://voxel.dl.sourceforge.net/sourceforge/freeghost/
+mirroir http://kent.dl.sourceforge.net/sourceforge/freeghost/
+mirroir http://heanet.dl.sourceforge.net/sourceforge/freeghost/
+
+kernel/client binaries: https://github.com/FOGProject/fos/releases/download
+kernel/client binaries: https://github.com/FOGProject/fog-client/releases/download
+kernel/client binaries: https://fogproject.org/
+
+plugin slack: https://slack.com
+plugin pushbullet: https://api.pushbullet.com
+
+git : https://github.com/ipxe/ipxe
+
+
+Autres:
+https://dl.fedoraproject.org/pub/epel
+http://rpms.remirepo.net/enterprise
+http://rpms.remirepo.net/RPM-GPG-KEY-remi

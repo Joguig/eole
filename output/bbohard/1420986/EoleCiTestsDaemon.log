@@ -1,0 +1,17 @@
+Début ciDeamonMain /root/.EoleCiTestsDaemon.sh
+init à 2024-12-12 03:52:23
+* ciAfficheProcess : 2024-12-12 03:52:23
+* ciWaitConteneurs : 2024-12-12 03:52:23
+* ciConfigurationMe : avant 2024-12-12 03:52:23
+* ciConfigurationMe : apres 2024-12-12 03:52:24
+Machine etb1.scribe 2.10.0 : * Creation lien etb1.scribe dans /mnt/eole-ci-tests/output/bbohard/1420986
+Machine etb1.scribe 2.10.0 : Sauvegarde CA etb1.scribe
+-rw-r--r-- 1 9869 9869 1769 déc.  12 03:52 /mnt/eole-ci-tests/output/bbohard//etb1.scribe.crt
+    issuer=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-scribe.dompedago.etb1.lan
+    subject=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-scribe.dompedago.etb1.lan
+    notBefore=Dec 10 23:37:32 2024 GMT
+    notAfter=Dec 11 23:37:32 2027 GMT
+* ciBoucleDExecution : pas d'excution ==> sortie
+ciStopDaemon : 2024-12-12 03:52:24
+nettoyage 'motd' et '/etc/issue'
+Sauvegarde log EoleCiTests

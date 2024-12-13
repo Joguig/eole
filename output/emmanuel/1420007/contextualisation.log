@@ -1,0 +1,64 @@
+Machine aca.pc  : Début ciContextualizeMachine : aca.pc, pc
+Machine aca.pc  : Debut ciContextualizePcLinux
+Machine aca.pc  : OS Ubuntu 22.04.5 LTS  Version=22.04
+Machine aca.pc  : machine PcLinux ==> utilise le dhcp!
+Machine aca.pc  : Inject pc-1420007 -> hostnamectl 
+Machine aca.pc  : * Inject  pc-1420007 -> /etc/hosts
+127.0.0.1	localhost
+127.0.1.1	 pc-1420007
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+Machine aca.pc  : * Restart avahi-daemon
+Machine aca.pc  : le PC a pour nom pc-1420007 : pc-1420007
+ Static hostname: pc-1420007
+       Icon name: computer-vm
+         Chassis: vm
+      Machine ID: 2d431f315ec14ef293b85c00685d305a
+         Boot ID: 9a66a387ebca49f193c21d69f77cf39c
+  Virtualization: kvm
+Operating System: Ubuntu 22.04.5 LTS
+          Kernel: Linux 5.15.0-126-generic
+    Architecture: x86-64
+ Hardware Vendor: QEMU
+  Hardware Model: Standard PC _i440FX + PIIX, 1996_
+Machine aca.pc  : Fin ciContextualizePcLinux
+Machine aca.pc  : Contextualization Machine OK
+Machine aca.pc  : emmanuel 1420007 aca.pc Contextualization Machine : OK
+Machine aca.pc  : Fin ciContextualizeMachine : ok à 2024-12-10 14:40:04
+Machine aca.pc  : Début ciContextualizeMachine : aca.pc, pc
+Machine aca.pc  : Debut ciContextualizePcLinux
+Machine aca.pc  : OS Ubuntu 22.04.5 LTS  Version=22.04
+Machine aca.pc  : machine PcLinux ==> utilise le dhcp!
+Machine aca.pc  : Inject pc-1420007 -> hostnamectl 
+Machine aca.pc  : * Inject  pc-1420007 -> /etc/hosts
+127.0.0.1	localhost
+127.0.1.1	 pc-1420007
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+Machine aca.pc  : * Restart avahi-daemon
+Machine aca.pc  : le PC a pour nom pc-1420007 : pc-1420007
+ Static hostname: pc-1420007
+       Icon name: computer-vm
+         Chassis: vm
+      Machine ID: 2d431f315ec14ef293b85c00685d305a
+         Boot ID: 926d8e39332845ffa947676504ada717
+  Virtualization: kvm
+Operating System: Ubuntu 22.04.5 LTS
+          Kernel: Linux 5.15.0-126-generic
+    Architecture: x86-64
+ Hardware Vendor: QEMU
+  Hardware Model: Standard PC _i440FX + PIIX, 1996_
+Machine aca.pc  : Fin ciContextualizePcLinux
+Machine aca.pc  : Contextualization Machine OK
+Machine aca.pc  : emmanuel 1420007 aca.pc Contextualization Machine : OK
+Machine aca.pc  : Fin ciContextualizeMachine : ok à 2024-12-10 15:01:42

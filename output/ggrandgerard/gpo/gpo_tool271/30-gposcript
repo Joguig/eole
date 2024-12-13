@@ -1,0 +1,205 @@
+#!/bin/bash
+
+set -e
+#CONTEXT=${1:-reconfigure}
+
+# shellcheck disable=SC1091,SC1090
+. /etc/eole/gposcript.conf
+
+# shellcheck disable=SC1091,SC1090
+. /etc/eole/samba4-vars.conf
+if [ "${AD_SERVER_ROLE}" != "controleur de domaine" ]
+then
+    echo "Pas de GPO sur les serveurs membres"
+    exit 0
+fi
+
+if [ "${AD_ADDITIONAL_DC}" != "non" ]
+then
+    echo "Cette commande ne doit pas être éxecutée sur les Dc Secondaires."
+    exit 0
+fi
+
+KEYFILE="/tmp/gpoinit.keytab"
+[ -f "$KEYFILE" ] && rm -f "$KEYFILE"
+USER="$AD_ADMIN@${AD_REALM^^}"
+samba-tool domain exportkeytab "$KEYFILE" --principal="$USER" -P
+kinit "$USER" -k -t "$KEYFILE"
+
+if [ -f /etc/eole/release ]
+then
+    echo "$0 pour module Seth"
+    if [ "$GPOSCRIPT" -eq 0 ]; then
+        echo "Import scripts and Registry.xml files in GPO"
+        if ! gpo-tool importation import_eole_script --container "$BASEDN" -H "ldap://${AD_HOST_NAME}.${AD_REALM}" -k 1 -d 1
+        then
+            echo "Update 'eole_script' Erreur"
+            exit 1
+        else
+            echo "Update OK"
+        fi
+    else
+        if ! gpo-tool importation delete_by_name eole_script -k 1 -H "ldap://${AD_HOST_NAME}.${AD_REALM}" -d 1
+        then
+            echo "Delete 'eole_script' Erreur"
+            # j'ignore si elle a déjà été supprimée !
+        else
+            echo "Delete 'eole_script' OK"
+        fi
+    fi
+    if [ -e "$KEYFILE" ]
+    then
+       # destroy kerberos ticket
+       kdestroy
+       rm -f "$KEYFILE"
+    fi
+    exit 0
+fi
+
+echo "$0 pour module ScribeAD"
+GPONAME="eole_script"
+GPOID=$(ldbsearch -H /var/lib/samba/private/sam.ldb "(&(objectClass=groupPolicyContainer)(displayname=$GPONAME))" cn|grep ^"cn: {"|cut -d " " -f2)
+USER="$AD_ADMIN@"$(echo $AD_REALM | tr a-z A-Z)
+SCRIPTS_DIR="/home/sysvol/$AD_REALM/scripts"
+GPOSCRIPT_DATA_DIR="/var/tmp/gpo-script"
+HASH="$GPOSCRIPT_DATA_DIR/${GPONAME}_hash"
+FLAG="$GPOSCRIPT_DATA_DIR/update_${GPONAME}"
+
+function kinituser()
+{
+    # init kerberos ticket
+    samba-tool domain exportkeytab "$KEYFILE" --principal="$USER" > /dev/null 2>&1
+    kinit "$USER" -k -t "$KEYFILE"
+}
+
+function kdestroyuser()
+{
+    # destroy kerberos ticket
+    kdestroy
+    rm -f "$KEYFILE"
+}
+
+function makedirs()
+{
+    if [ -d $SCRIPTS_DIR ];then
+        for dir in users groups machines os;do
+            [ -d "$SCRIPTS_DIR/$dir" ] || mkdir "$SCRIPTS_DIR/$dir"
+        done
+    fi
+}
+
+function delete_flag()
+{
+    if [ -e "$FLAG" ]
+    then
+        rm -f $FLAG
+        return 0
+    else
+        return 1
+    fi
+}
+
+function gpo_compromised()
+{
+    # if gpo hash do not correspond, return 0
+    if [ -e "$HASH" ]
+    then
+        divergent=$(hashdeep -r -X -k "$HASH" "/home/sysvol/$AD_REALM/Policies/$GPOID")
+        if [ -z "$divergent" ]
+        then
+            return 1
+        else
+            echo "$divergent"
+        fi
+    fi
+    return 0
+}
+
+function delete_gpo()
+{
+    [ -z $GPOID ] && exit 0
+    echo "Suppression du GPO EOLE \"$GPONAME\""
+    kinituser
+    gpo_name=$1
+    samba-tool gpo del "$GPOID" -k 1
+    kdestroyuser
+}
+
+function create_gpo()
+{
+    echo "Enregistrement du GPO EOLE \"$GPONAME\""
+    kinituser
+    msg=$(samba-tool gpo create "$GPONAME" -k 1)
+    GPOID=$(echo $msg | awk -F" created as " '{ print $2 }')
+    samba-tool gpo setlink "$BASEDN" $GPOID -k 1 > /dev/null
+    kdestroyuser
+}
+
+function add_policies()
+{
+    kinituser
+    policy_name="WaitNetwork"
+    policy_cse_guid='{35378EAC-683F-11D2-A89A-00C04FBBCFA2}{D02B1F73-3407-48AE-BA88-E8213C6761F1}'
+    policy_type='Registry.pol'
+    policy_context='User'
+    policy_template='HKLM\Software\Policies\Microsoft\Windows NT\CurrentVersion\Winlogon;SyncForegroundPolicy;REG_DWORD;4;{value}'
+    gpo-tool policy register --update "$policy_name" "$policy_cse_guid" "$policy_type" "$policy_context" "$policy_template"
+    gpo-tool policy add "$GPONAME" "$policy_name" -v "value:1" -k 1
+    kdestroyuser
+}
+
+function gpo_already_exists()
+{
+    kinituser
+    if $(samba-tool gpo listall -k 1 |grep -q "display name : $GPONAME");
+    then
+        kdestroyuser
+        return 0
+    else
+        kdestroyuser
+        return 1
+    fi
+}
+
+if [ $GPOSCRIPT -eq 0 ]; then
+
+    makedirs
+
+    if gpo_already_exists;
+    then
+        if delete_flag || gpo_compromised
+        then
+            echo "Remise à zéro du GPO EOLE \"$GPONAME\""
+            # delete obsolete GPO
+            delete_gpo "$GPONAME"
+
+            # recreate GPO
+            create_gpo "$GPONAME"
+
+            # register policies and configure them
+            add_policies "$GPONAME"
+        fi
+    else
+        delete_flag
+
+        # create GPO
+        create_gpo "$GPONAME"
+
+        # register policies and configure them
+        add_policies "$GPONAME"
+
+        # link to base DN
+    fi
+
+    # Convert regfiles in Registry.xml format
+    /usr/share/eole/gpo/script/reg_to_xml.py
+
+    # import scripts and Registry.xml files in GPO
+    kinituser
+    /usr/share/eole/gpo/script/importation.py
+    kdestroyuser
+    hashdeep -r /home/sysvol/$AD_REALM/Policies/$GPOID > $HASH
+else
+    delete_gpo "$GPONAME"
+fi
+

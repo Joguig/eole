@@ -1,0 +1,12 @@
+. W2012\admin:(F)
+  W2012\admin:(OI)(CI)(IO)(F)
+  BUILTIN\Administrateurs:(F)
+  BUILTIN\Administrateurs:(OI)(CI)(IO)(F)
+  W2012\Administrateur:(I)(OI)(CI)(F)
+  BUILTIN\Administrateurs:(I)(OI)(CI)(F)
+  AUTORITE NT\Syst�me:(I)(OI)(CI)(F)
+
+.\essai.txt W2012\admin:(I)(F)
+            BUILTIN\Administrateurs:(I)(F)
+            W2012\Administrateur:(I)(F)
+            AUTORITE NT\Syst�me:(I)(F)

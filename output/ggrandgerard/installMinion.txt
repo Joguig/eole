@@ -1,0 +1,965 @@
+++ mktemp /tmp/apt_error.XXXXXX
++ APT_ERR=/tmp/apt_error.NLHXwF
++ trap __exit_cleanup EXIT INT
+++ ps -a -o pid,args
+++ grep 5644
+++ grep -v grep
+++ cut -d ' ' -f 3
+++ tr -s ' '
++ CALLER=bash
++ '[' bashx = /tmp/bootstrap-salt.shx ']'
++ echoinfo 'Running version: 2020.10.20'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' 'Running version: 2020.10.20'
+[1;32m *  INFO[0m: Running version: 2020.10.20
++ echoinfo 'Executed by: bash'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' 'Executed by: bash'
+[1;32m *  INFO[0m: Executed by: bash
++ echoinfo 'Command line: '\''/tmp/bootstrap-salt.sh -D -x python3 -P stable'\'''
++ printf '\033[1;32m *  INFO\033[0m: %s\n' 'Command line: '\''/tmp/bootstrap-salt.sh -D -x python3 -P stable'\'''
+[1;32m *  INFO[0m: Command line: '/tmp/bootstrap-salt.sh -D -x python3 -P stable'
++ '[' 1 -gt 0 ']'
++ __check_unparsed_options stable
++ shellopts=stable
++ '[' -f /usr/xpg4/bin/grep ']'
++ grep=grep
+++ echo stable
+++ grep -E '(^|[[:space:]])[-]+[[:alnum:]]'
++ unparsed_options=
++ '[' '' '!=' '' ']'
++ ITYPE=stable
++ shift
+++ echo stable
+++ grep -E '(stable|testing|git)'
++ '[' stable = '' ']'
++ '[' stable = git ']'
++ '[' stable = stable ']'
++ '[' 0 -eq 0 ']'
++ STABLE_REV=latest
++ '[' 0 -gt 0 ']'
++ '[' -f /usr/xpg4/bin/id ']'
++ whoami=whoami
+++ whoami
++ '[' root '!=' root ']'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 0 ']'
++ '[' null '!=' null ']'
++ '[' null '!=' null ']'
++ '[' -n python3 ']'
+++ uname
++ '[' Linux = Darwin ']'
+++ echo python3
+++ sed -E 's/\.//g'
++ _PY_PKG_VER=python3
+++ echo python3
+++ cut -c 7
++ _PY_MAJOR_VERSION=3
++ '[' 3 '!=' 3 ']'
++ echoinfo 'Detected -x option. Using python3 to install Salt.'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' 'Detected -x option. Using python3 to install Salt.'
+[1;32m *  INFO[0m: Detected -x option. Using python3 to install Salt.
++ '[' null '!=' null ']'
++ '[' null '!=' null ']'
++ '[' stable '!=' git ']'
++ '[' 0 -eq 1 ']'
++ '[' null '!=' null ']'
++ '[' null '!=' null ']'
++ '[' 0 -eq 1 ']'
++ HTTP_VAL=https
++ '[' 0 -eq 1 ']'
++ SETUP_PY_INSTALL_ARGS=
++ '[' 0 -eq 1 ']'
++ _GPG_ARGS=' --keyserver-options ca-cert-file=/etc/ssl/certs/ca-certificates.crt'
++ '[' '' '!=' '' ']'
++ '[' 0 -eq 0 ']'
++ '[' -f /tmp/disable_salt_checks ']'
++ '[' 0 -eq 1 ']'
++ '[' -d null ']'
++ __gather_hardware_info
++ '[' -f /proc/cpuinfo ']'
+++ awk '/vendor_id|Processor/ {sub(/-.*$/,"",$3); print $3; exit}' /proc/cpuinfo
++ CPU_VENDOR_ID=GenuineIntel
+++ echo GenuineIntel
+++ tr '[:upper:]' '[:lower:]'
++ CPU_VENDOR_ID_L=genuineintel
+++ uname -m
++ CPU_ARCH=x86_64
+++ echo x86_64
+++ tr '[:upper:]' '[:lower:]'
++ CPU_ARCH_L=x86_64
++ __gather_os_info
+++ uname -s
++ OS_NAME=Linux
+++ echo Linux
+++ tr '[:upper:]' '[:lower:]'
++ OS_NAME_L=linux
+++ uname -r
++ OS_VERSION=5.11.0-18-generic
+++ echo 5.11.0-18-generic
+++ tr '[:upper:]' '[:lower:]'
++ OS_VERSION_L=5.11.0-18-generic
++ __gather_system_info
++ case ${OS_NAME_L} in
++ __gather_linux_system_info
++ DISTRO_NAME=
++ DISTRO_VERSION=
+++ lsb_release
++ rv=
++ '[' 0 -eq 0 ']'
+++ lsb_release -si
++ DISTRO_NAME=Ubuntu
++ '[' Ubuntu = Scientific ']'
+++ echo Ubuntu
+++ grep '^CloudLinux'
++ '[' '' '!=' '' ']'
+++ echo Ubuntu
+++ grep '^RedHat'
++ '[' '' '!=' '' ']'
+++ echo Ubuntu
+++ grep openSUSE
++ '[' '' '!=' '' ']'
++ '[' Ubuntu = 'SUSE LINUX' ']'
++ '[' Ubuntu = EnterpriseEnterpriseServer ']'
++ '[' Ubuntu = OracleServer ']'
++ '[' Ubuntu = AmazonAMI ']'
++ '[' Ubuntu = Amazon ']'
++ '[' Ubuntu = ManjaroLinux ']'
++ '[' Ubuntu = Arch ']'
+++ lsb_release -sr
++ rv=21.04
++ '[' 21.04 '!=' '' ']'
+++ __parse_version_string 21.04
+++ VERSION_STRING=21.04
++++ echo 21.04
++++ sed -e 's/^/#/' -e 's/^#[^0-9]*\([0-9][0-9]*\.[0-9][0-9]*\)\(\.[0-9][0-9]*\).*$/\1/' -e 's/^#[^0-9]*\([0-9][0-9]*\.[0-9][0-9]*\).*$/\1/' -e 's/^#[^0-9]*\([0-9][0-9]*\).*$/\1/' -e 's/^#.*$//'
+++ PARSED_VERSION=21.04
+++ echo 21.04
++ DISTRO_VERSION=21.04
++ '[' Ubuntu '!=' '' ']'
++ '[' 21.04 '!=' '' ']'
++ return
++ echo
+
++ echoinfo 'System Information:'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' 'System Information:'
+[1;32m *  INFO[0m: System Information:
++ echoinfo '  CPU:          GenuineIntel'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' '  CPU:          GenuineIntel'
+[1;32m *  INFO[0m:   CPU:          GenuineIntel
++ echoinfo '  CPU Arch:     x86_64'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' '  CPU Arch:     x86_64'
+[1;32m *  INFO[0m:   CPU Arch:     x86_64
++ echoinfo '  OS Name:      Linux'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' '  OS Name:      Linux'
+[1;32m *  INFO[0m:   OS Name:      Linux
++ echoinfo '  OS Version:   5.11.0-18-generic'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' '  OS Version:   5.11.0-18-generic'
+[1;32m *  INFO[0m:   OS Version:   5.11.0-18-generic
++ echoinfo '  Distribution: Ubuntu 21.04'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' '  Distribution: Ubuntu 21.04'
+[1;32m *  INFO[0m:   Distribution: Ubuntu 21.04
++ echo
+
+++ echo Ubuntu
+++ tr '[:upper:]' '[:lower:]'
+++ sed 's/[^a-zA-Z0-9_ ]//g'
+++ sed -Ee 's/([[:space:]])+/_/g'
+++ sed -Ee s/tumbleweed//
++ DISTRO_NAME_L=ubuntu
++ '[' 21.04 = '' ']'
++ '[' 1 -eq 0 ']'
+++ echo 21.04
+++ sed 's/^\([0-9]*\).*/\1/g'
++ DISTRO_MAJOR_VERSION=21
+++ echo 21.04
+++ sed 's/^\([0-9]*\).\([0-9]*\).*/\2/g'
++ DISTRO_MINOR_VERSION=04
++ PREFIXED_DISTRO_MAJOR_VERSION=_21
++ '[' _21 = _ ']'
++ PREFIXED_DISTRO_MINOR_VERSION=_04
++ '[' _04 = _ ']'
++ __ubuntu_derivatives_translation
++ UBUNTU_DERIVATIVES='(trisquel|linuxmint|linaro|elementary_os|neon)'
++ trisquel_6_ubuntu_base=12.04
++ linuxmint_13_ubuntu_base=12.04
++ linuxmint_17_ubuntu_base=14.04
++ linuxmint_18_ubuntu_base=16.04
++ linuxmint_19_ubuntu_base=18.04
++ linuxmint_20_ubuntu_base=20.04
++ linaro_12_ubuntu_base=12.04
++ elementary_os_02_ubuntu_base=12.04
++ neon_16_ubuntu_base=16.04
++ neon_18_ubuntu_base=18.04
++ neon_20_ubuntu_base=20.04
+++ echo ubuntu
+++ grep -E '(trisquel|linuxmint|linaro|elementary_os|neon)'
++ match=
++ '[' '' '!=' '' ']'
++ __debian_derivatives_translation
++ '[' '!' -f /etc/os-release ']'
++ DEBIAN_DERIVATIVES='(cumulus|devuan|kali|linuxmint|raspbian|bunsenlabs|turnkey)'
++ cumulus_2_debian_base=7.0
++ cumulus_3_debian_base=8.0
++ cumulus_4_debian_base=10.0
++ devuan_1_debian_base=8.0
++ devuan_2_debian_base=9.0
++ kali_1_debian_base=7.0
++ linuxmint_1_debian_base=8.0
++ raspbian_8_debian_base=8.0
++ raspbian_9_debian_base=9.0
++ raspbian_10_debian_base=10.0
++ bunsenlabs_9_debian_base=9.0
++ turnkey_9_debian_base=9.0
+++ echo ubuntu
+++ grep -E '(cumulus|devuan|kali|linuxmint|raspbian|bunsenlabs|turnkey)'
++ match=
++ '[' '' '!=' '' ']'
++ __check_end_of_life_versions
++ case "${DISTRO_NAME_L}" in
++ '[' 21 -lt 14 ']'
++ '[' 21 -eq 15 ']'
++ '[' 21 -eq 17 ']'
++ '[' 21 -eq 16 ']'
++ echodebug 'Binaries will be searched using the following $PATH: /snap/bin:/usr/share/eole:/usr/share/eole/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/eole-ci-tests/scripts'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'Binaries will be searched using the following $PATH: /snap/bin:/usr/share/eole:/usr/share/eole/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/eole-ci-tests/scripts'
+[1;34m * DEBUG[0m: Binaries will be searched using the following $PATH: /snap/bin:/usr/share/eole:/usr/share/eole/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/eole-ci-tests/scripts
++ '[' '' '!=' '' ']'
++ '[' 1 -eq 1 ']'
++ '[' 0 -eq 0 ']'
++ echoinfo 'Installing minion'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' 'Installing minion'
+[1;32m *  INFO[0m: Installing minion
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 1 ']'
++ '[' 1 -eq 0 ']'
++ '[' ubuntu = ubuntu ']'
++ __ubuntu_codename_translation
++ case $DISTRO_MINOR_VERSION in
++ _april=yes
++ case $DISTRO_MAJOR_VERSION in
++ DISTRO_CODENAME=trusty
+++ echo ubuntu
+++ grep -E '(debian|ubuntu|centos|gentoo|red_hat|oracle|scientific|amazon|fedora|macosx)'
++ '[' ubuntu = '' ']'
++ '[' stable = testing ']'
++ '[' ubuntu '!=' ubuntu ']'
++ '[' ubuntu '!=' ubuntu ']'
++ '[' stable = git ']'
++ '[' 0 -eq 0 ']'
++ '[' x3 = x ']'
++ __ZYPPER_REQUIRES_REPLACE_FILES=-1
++ DEP_FUNC_NAMES=
++ '[' 0 -eq 0 ']'
++ DEP_FUNC_NAMES=install_ubuntu_21_stable_deps
++ DEP_FUNC_NAMES='install_ubuntu_21_stable_deps install_ubuntu_21_04_stable_deps'
++ DEP_FUNC_NAMES='install_ubuntu_21_stable_deps install_ubuntu_21_04_stable_deps install_ubuntu_21_deps'
++ DEP_FUNC_NAMES='install_ubuntu_21_stable_deps install_ubuntu_21_04_stable_deps install_ubuntu_21_deps install_ubuntu_21_04_deps'
++ DEP_FUNC_NAMES='install_ubuntu_21_stable_deps install_ubuntu_21_04_stable_deps install_ubuntu_21_deps install_ubuntu_21_04_deps install_ubuntu_stable_deps'
++ DEP_FUNC_NAMES='install_ubuntu_21_stable_deps install_ubuntu_21_04_stable_deps install_ubuntu_21_deps install_ubuntu_21_04_deps install_ubuntu_stable_deps install_ubuntu_deps'
++ DEPS_INSTALL_FUNC=null
+++ __strip_duplicates 'install_ubuntu_21_stable_deps install_ubuntu_21_04_stable_deps install_ubuntu_21_deps install_ubuntu_21_04_deps install_ubuntu_stable_deps install_ubuntu_deps'
+++ echo 'install_ubuntu_21_stable_deps install_ubuntu_21_04_stable_deps install_ubuntu_21_deps install_ubuntu_21_04_deps install_ubuntu_stable_deps install_ubuntu_deps'
+++ tr -s '[:space:]' '\n'
+++ awk '!x[$0]++'
++ for FUNC_NAME in $(__strip_duplicates "$DEP_FUNC_NAMES")
++ __function_defined install_ubuntu_21_stable_deps
++ FUNC_NAME=install_ubuntu_21_stable_deps
+++ command -v install_ubuntu_21_stable_deps
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_stable_deps not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_stable_deps not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_stable_deps not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$DEP_FUNC_NAMES")
++ __function_defined install_ubuntu_21_04_stable_deps
++ FUNC_NAME=install_ubuntu_21_04_stable_deps
+++ command -v install_ubuntu_21_04_stable_deps
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_04_stable_deps not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_04_stable_deps not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_04_stable_deps not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$DEP_FUNC_NAMES")
++ __function_defined install_ubuntu_21_deps
++ FUNC_NAME=install_ubuntu_21_deps
+++ command -v install_ubuntu_21_deps
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_deps not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_deps not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_deps not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$DEP_FUNC_NAMES")
++ __function_defined install_ubuntu_21_04_deps
++ FUNC_NAME=install_ubuntu_21_04_deps
+++ command -v install_ubuntu_21_04_deps
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_04_deps not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_04_deps not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_04_deps not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$DEP_FUNC_NAMES")
++ __function_defined install_ubuntu_stable_deps
++ FUNC_NAME=install_ubuntu_stable_deps
+++ command -v install_ubuntu_stable_deps
++ '[' install_ubuntu_stable_deps '!=' '' ']'
++ echoinfo 'Found function install_ubuntu_stable_deps'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' 'Found function install_ubuntu_stable_deps'
+[1;32m *  INFO[0m: Found function install_ubuntu_stable_deps
++ return 0
++ DEPS_INSTALL_FUNC=install_ubuntu_stable_deps
++ break
++ echodebug DEPS_INSTALL_FUNC=install_ubuntu_stable_deps
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' DEPS_INSTALL_FUNC=install_ubuntu_stable_deps
+[1;34m * DEBUG[0m: DEPS_INSTALL_FUNC=install_ubuntu_stable_deps
++ CONFIG_FUNC_NAMES=config_ubuntu_21_stable_salt
++ CONFIG_FUNC_NAMES='config_ubuntu_21_stable_salt config_ubuntu_21_04_stable_salt'
++ CONFIG_FUNC_NAMES='config_ubuntu_21_stable_salt config_ubuntu_21_04_stable_salt config_ubuntu_21_salt'
++ CONFIG_FUNC_NAMES='config_ubuntu_21_stable_salt config_ubuntu_21_04_stable_salt config_ubuntu_21_salt config_ubuntu_21_04_salt'
++ CONFIG_FUNC_NAMES='config_ubuntu_21_stable_salt config_ubuntu_21_04_stable_salt config_ubuntu_21_salt config_ubuntu_21_04_salt config_ubuntu_stable_salt'
++ CONFIG_FUNC_NAMES='config_ubuntu_21_stable_salt config_ubuntu_21_04_stable_salt config_ubuntu_21_salt config_ubuntu_21_04_salt config_ubuntu_stable_salt config_ubuntu_salt'
++ CONFIG_FUNC_NAMES='config_ubuntu_21_stable_salt config_ubuntu_21_04_stable_salt config_ubuntu_21_salt config_ubuntu_21_04_salt config_ubuntu_stable_salt config_ubuntu_salt config_salt'
++ CONFIG_SALT_FUNC=null
+++ __strip_duplicates 'config_ubuntu_21_stable_salt config_ubuntu_21_04_stable_salt config_ubuntu_21_salt config_ubuntu_21_04_salt config_ubuntu_stable_salt config_ubuntu_salt config_salt'
+++ echo 'config_ubuntu_21_stable_salt config_ubuntu_21_04_stable_salt config_ubuntu_21_salt config_ubuntu_21_04_salt config_ubuntu_stable_salt config_ubuntu_salt config_salt'
+++ tr -s '[:space:]' '\n'
+++ awk '!x[$0]++'
++ for FUNC_NAME in $(__strip_duplicates "$CONFIG_FUNC_NAMES")
++ __function_defined config_ubuntu_21_stable_salt
++ FUNC_NAME=config_ubuntu_21_stable_salt
+++ command -v config_ubuntu_21_stable_salt
++ '[' '' '!=' '' ']'
++ echodebug 'config_ubuntu_21_stable_salt not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'config_ubuntu_21_stable_salt not found....'
+[1;34m * DEBUG[0m: config_ubuntu_21_stable_salt not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$CONFIG_FUNC_NAMES")
++ __function_defined config_ubuntu_21_04_stable_salt
++ FUNC_NAME=config_ubuntu_21_04_stable_salt
+++ command -v config_ubuntu_21_04_stable_salt
++ '[' '' '!=' '' ']'
++ echodebug 'config_ubuntu_21_04_stable_salt not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'config_ubuntu_21_04_stable_salt not found....'
+[1;34m * DEBUG[0m: config_ubuntu_21_04_stable_salt not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$CONFIG_FUNC_NAMES")
++ __function_defined config_ubuntu_21_salt
++ FUNC_NAME=config_ubuntu_21_salt
+++ command -v config_ubuntu_21_salt
++ '[' '' '!=' '' ']'
++ echodebug 'config_ubuntu_21_salt not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'config_ubuntu_21_salt not found....'
+[1;34m * DEBUG[0m: config_ubuntu_21_salt not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$CONFIG_FUNC_NAMES")
++ __function_defined config_ubuntu_21_04_salt
++ FUNC_NAME=config_ubuntu_21_04_salt
+++ command -v config_ubuntu_21_04_salt
++ '[' '' '!=' '' ']'
++ echodebug 'config_ubuntu_21_04_salt not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'config_ubuntu_21_04_salt not found....'
+[1;34m * DEBUG[0m: config_ubuntu_21_04_salt not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$CONFIG_FUNC_NAMES")
++ __function_defined config_ubuntu_stable_salt
++ FUNC_NAME=config_ubuntu_stable_salt
+++ command -v config_ubuntu_stable_salt
++ '[' '' '!=' '' ']'
++ echodebug 'config_ubuntu_stable_salt not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'config_ubuntu_stable_salt not found....'
+[1;34m * DEBUG[0m: config_ubuntu_stable_salt not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$CONFIG_FUNC_NAMES")
++ __function_defined config_ubuntu_salt
++ FUNC_NAME=config_ubuntu_salt
+++ command -v config_ubuntu_salt
++ '[' '' '!=' '' ']'
++ echodebug 'config_ubuntu_salt not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'config_ubuntu_salt not found....'
+[1;34m * DEBUG[0m: config_ubuntu_salt not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$CONFIG_FUNC_NAMES")
++ __function_defined config_salt
++ FUNC_NAME=config_salt
+++ command -v config_salt
++ '[' config_salt '!=' '' ']'
++ echoinfo 'Found function config_salt'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' 'Found function config_salt'
+[1;32m *  INFO[0m: Found function config_salt
++ return 0
++ CONFIG_SALT_FUNC=config_salt
++ break
++ echodebug CONFIG_SALT_FUNC=config_salt
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' CONFIG_SALT_FUNC=config_salt
+[1;34m * DEBUG[0m: CONFIG_SALT_FUNC=config_salt
++ PRESEED_FUNC_NAMES=preseed_ubuntu_21_stable_master
++ PRESEED_FUNC_NAMES='preseed_ubuntu_21_stable_master preseed_ubuntu_21_04_stable_master'
++ PRESEED_FUNC_NAMES='preseed_ubuntu_21_stable_master preseed_ubuntu_21_04_stable_master preseed_ubuntu_21_master'
++ PRESEED_FUNC_NAMES='preseed_ubuntu_21_stable_master preseed_ubuntu_21_04_stable_master preseed_ubuntu_21_master preseed_ubuntu_21_04_master'
++ PRESEED_FUNC_NAMES='preseed_ubuntu_21_stable_master preseed_ubuntu_21_04_stable_master preseed_ubuntu_21_master preseed_ubuntu_21_04_master preseed_ubuntu_stable_master'
++ PRESEED_FUNC_NAMES='preseed_ubuntu_21_stable_master preseed_ubuntu_21_04_stable_master preseed_ubuntu_21_master preseed_ubuntu_21_04_master preseed_ubuntu_stable_master preseed_ubuntu_master'
++ PRESEED_FUNC_NAMES='preseed_ubuntu_21_stable_master preseed_ubuntu_21_04_stable_master preseed_ubuntu_21_master preseed_ubuntu_21_04_master preseed_ubuntu_stable_master preseed_ubuntu_master preseed_master'
++ PRESEED_MASTER_FUNC=null
+++ __strip_duplicates 'preseed_ubuntu_21_stable_master preseed_ubuntu_21_04_stable_master preseed_ubuntu_21_master preseed_ubuntu_21_04_master preseed_ubuntu_stable_master preseed_ubuntu_master preseed_master'
+++ echo 'preseed_ubuntu_21_stable_master preseed_ubuntu_21_04_stable_master preseed_ubuntu_21_master preseed_ubuntu_21_04_master preseed_ubuntu_stable_master preseed_ubuntu_master preseed_master'
+++ tr -s '[:space:]' '\n'
+++ awk '!x[$0]++'
++ for FUNC_NAME in $(__strip_duplicates "$PRESEED_FUNC_NAMES")
++ __function_defined preseed_ubuntu_21_stable_master
++ FUNC_NAME=preseed_ubuntu_21_stable_master
+++ command -v preseed_ubuntu_21_stable_master
++ '[' '' '!=' '' ']'
++ echodebug 'preseed_ubuntu_21_stable_master not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'preseed_ubuntu_21_stable_master not found....'
+[1;34m * DEBUG[0m: preseed_ubuntu_21_stable_master not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$PRESEED_FUNC_NAMES")
++ __function_defined preseed_ubuntu_21_04_stable_master
++ FUNC_NAME=preseed_ubuntu_21_04_stable_master
+++ command -v preseed_ubuntu_21_04_stable_master
++ '[' '' '!=' '' ']'
++ echodebug 'preseed_ubuntu_21_04_stable_master not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'preseed_ubuntu_21_04_stable_master not found....'
+[1;34m * DEBUG[0m: preseed_ubuntu_21_04_stable_master not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$PRESEED_FUNC_NAMES")
++ __function_defined preseed_ubuntu_21_master
++ FUNC_NAME=preseed_ubuntu_21_master
+++ command -v preseed_ubuntu_21_master
++ '[' '' '!=' '' ']'
++ echodebug 'preseed_ubuntu_21_master not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'preseed_ubuntu_21_master not found....'
+[1;34m * DEBUG[0m: preseed_ubuntu_21_master not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$PRESEED_FUNC_NAMES")
++ __function_defined preseed_ubuntu_21_04_master
++ FUNC_NAME=preseed_ubuntu_21_04_master
+++ command -v preseed_ubuntu_21_04_master
++ '[' '' '!=' '' ']'
++ echodebug 'preseed_ubuntu_21_04_master not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'preseed_ubuntu_21_04_master not found....'
+[1;34m * DEBUG[0m: preseed_ubuntu_21_04_master not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$PRESEED_FUNC_NAMES")
++ __function_defined preseed_ubuntu_stable_master
++ FUNC_NAME=preseed_ubuntu_stable_master
+++ command -v preseed_ubuntu_stable_master
++ '[' '' '!=' '' ']'
++ echodebug 'preseed_ubuntu_stable_master not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'preseed_ubuntu_stable_master not found....'
+[1;34m * DEBUG[0m: preseed_ubuntu_stable_master not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$PRESEED_FUNC_NAMES")
++ __function_defined preseed_ubuntu_master
++ FUNC_NAME=preseed_ubuntu_master
+++ command -v preseed_ubuntu_master
++ '[' '' '!=' '' ']'
++ echodebug 'preseed_ubuntu_master not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'preseed_ubuntu_master not found....'
+[1;34m * DEBUG[0m: preseed_ubuntu_master not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$PRESEED_FUNC_NAMES")
++ __function_defined preseed_master
++ FUNC_NAME=preseed_master
+++ command -v preseed_master
++ '[' preseed_master '!=' '' ']'
++ echoinfo 'Found function preseed_master'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' 'Found function preseed_master'
+[1;32m *  INFO[0m: Found function preseed_master
++ return 0
++ PRESEED_MASTER_FUNC=preseed_master
++ break
++ echodebug PRESEED_MASTER_FUNC=preseed_master
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' PRESEED_MASTER_FUNC=preseed_master
+[1;34m * DEBUG[0m: PRESEED_MASTER_FUNC=preseed_master
++ INSTALL_FUNC_NAMES=install_ubuntu_21_stable
++ INSTALL_FUNC_NAMES='install_ubuntu_21_stable install_ubuntu_21_04_stable'
++ INSTALL_FUNC_NAMES='install_ubuntu_21_stable install_ubuntu_21_04_stable install_ubuntu_stable'
++ INSTALL_FUNC=null
+++ __strip_duplicates 'install_ubuntu_21_stable install_ubuntu_21_04_stable install_ubuntu_stable'
+++ echo 'install_ubuntu_21_stable install_ubuntu_21_04_stable install_ubuntu_stable'
+++ tr -s '[:space:]' '\n'
+++ awk '!x[$0]++'
++ for FUNC_NAME in $(__strip_duplicates "$INSTALL_FUNC_NAMES")
++ __function_defined install_ubuntu_21_stable
++ FUNC_NAME=install_ubuntu_21_stable
+++ command -v install_ubuntu_21_stable
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_stable not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_stable not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_stable not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$INSTALL_FUNC_NAMES")
++ __function_defined install_ubuntu_21_04_stable
++ FUNC_NAME=install_ubuntu_21_04_stable
+++ command -v install_ubuntu_21_04_stable
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_04_stable not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_04_stable not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_04_stable not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$INSTALL_FUNC_NAMES")
++ __function_defined install_ubuntu_stable
++ FUNC_NAME=install_ubuntu_stable
+++ command -v install_ubuntu_stable
++ '[' install_ubuntu_stable '!=' '' ']'
++ echoinfo 'Found function install_ubuntu_stable'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' 'Found function install_ubuntu_stable'
+[1;32m *  INFO[0m: Found function install_ubuntu_stable
++ return 0
++ INSTALL_FUNC=install_ubuntu_stable
++ break
++ echodebug INSTALL_FUNC=install_ubuntu_stable
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' INSTALL_FUNC=install_ubuntu_stable
+[1;34m * DEBUG[0m: INSTALL_FUNC=install_ubuntu_stable
++ POST_FUNC_NAMES=install_ubuntu_21_stable_post
++ POST_FUNC_NAMES='install_ubuntu_21_stable_post install_ubuntu_21_04_stable_post'
++ POST_FUNC_NAMES='install_ubuntu_21_stable_post install_ubuntu_21_04_stable_post install_ubuntu_21_post'
++ POST_FUNC_NAMES='install_ubuntu_21_stable_post install_ubuntu_21_04_stable_post install_ubuntu_21_post install_ubuntu_21_04_post'
++ POST_FUNC_NAMES='install_ubuntu_21_stable_post install_ubuntu_21_04_stable_post install_ubuntu_21_post install_ubuntu_21_04_post install_ubuntu_stable_post'
++ POST_FUNC_NAMES='install_ubuntu_21_stable_post install_ubuntu_21_04_stable_post install_ubuntu_21_post install_ubuntu_21_04_post install_ubuntu_stable_post install_ubuntu_post'
++ POST_INSTALL_FUNC=null
+++ __strip_duplicates 'install_ubuntu_21_stable_post install_ubuntu_21_04_stable_post install_ubuntu_21_post install_ubuntu_21_04_post install_ubuntu_stable_post install_ubuntu_post'
+++ echo 'install_ubuntu_21_stable_post install_ubuntu_21_04_stable_post install_ubuntu_21_post install_ubuntu_21_04_post install_ubuntu_stable_post install_ubuntu_post'
+++ tr -s '[:space:]' '\n'
+++ awk '!x[$0]++'
++ for FUNC_NAME in $(__strip_duplicates "$POST_FUNC_NAMES")
++ __function_defined install_ubuntu_21_stable_post
++ FUNC_NAME=install_ubuntu_21_stable_post
+++ command -v install_ubuntu_21_stable_post
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_stable_post not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_stable_post not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_stable_post not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$POST_FUNC_NAMES")
++ __function_defined install_ubuntu_21_04_stable_post
++ FUNC_NAME=install_ubuntu_21_04_stable_post
+++ command -v install_ubuntu_21_04_stable_post
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_04_stable_post not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_04_stable_post not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_04_stable_post not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$POST_FUNC_NAMES")
++ __function_defined install_ubuntu_21_post
++ FUNC_NAME=install_ubuntu_21_post
+++ command -v install_ubuntu_21_post
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_post not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_post not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_post not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$POST_FUNC_NAMES")
++ __function_defined install_ubuntu_21_04_post
++ FUNC_NAME=install_ubuntu_21_04_post
+++ command -v install_ubuntu_21_04_post
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_04_post not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_04_post not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_04_post not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$POST_FUNC_NAMES")
++ __function_defined install_ubuntu_stable_post
++ FUNC_NAME=install_ubuntu_stable_post
+++ command -v install_ubuntu_stable_post
++ '[' install_ubuntu_stable_post '!=' '' ']'
++ echoinfo 'Found function install_ubuntu_stable_post'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' 'Found function install_ubuntu_stable_post'
+[1;32m *  INFO[0m: Found function install_ubuntu_stable_post
++ return 0
++ POST_INSTALL_FUNC=install_ubuntu_stable_post
++ break
++ echodebug POST_INSTALL_FUNC=install_ubuntu_stable_post
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' POST_INSTALL_FUNC=install_ubuntu_stable_post
+[1;34m * DEBUG[0m: POST_INSTALL_FUNC=install_ubuntu_stable_post
++ STARTDAEMONS_FUNC_NAMES=install_ubuntu_21_stable_restart_daemons
++ STARTDAEMONS_FUNC_NAMES='install_ubuntu_21_stable_restart_daemons install_ubuntu_21_04_stable_restart_daemons'
++ STARTDAEMONS_FUNC_NAMES='install_ubuntu_21_stable_restart_daemons install_ubuntu_21_04_stable_restart_daemons install_ubuntu_21_restart_daemons'
++ STARTDAEMONS_FUNC_NAMES='install_ubuntu_21_stable_restart_daemons install_ubuntu_21_04_stable_restart_daemons install_ubuntu_21_restart_daemons install_ubuntu_21_04_restart_daemons'
++ STARTDAEMONS_FUNC_NAMES='install_ubuntu_21_stable_restart_daemons install_ubuntu_21_04_stable_restart_daemons install_ubuntu_21_restart_daemons install_ubuntu_21_04_restart_daemons install_ubuntu_stable_restart_daemons'
++ STARTDAEMONS_FUNC_NAMES='install_ubuntu_21_stable_restart_daemons install_ubuntu_21_04_stable_restart_daemons install_ubuntu_21_restart_daemons install_ubuntu_21_04_restart_daemons install_ubuntu_stable_restart_daemons install_ubuntu_restart_daemons'
++ STARTDAEMONS_INSTALL_FUNC=null
+++ __strip_duplicates 'install_ubuntu_21_stable_restart_daemons install_ubuntu_21_04_stable_restart_daemons install_ubuntu_21_restart_daemons install_ubuntu_21_04_restart_daemons install_ubuntu_stable_restart_daemons install_ubuntu_restart_daemons'
+++ echo 'install_ubuntu_21_stable_restart_daemons install_ubuntu_21_04_stable_restart_daemons install_ubuntu_21_restart_daemons install_ubuntu_21_04_restart_daemons install_ubuntu_stable_restart_daemons install_ubuntu_restart_daemons'
+++ tr -s '[:space:]' '\n'
+++ awk '!x[$0]++'
++ for FUNC_NAME in $(__strip_duplicates "$STARTDAEMONS_FUNC_NAMES")
++ __function_defined install_ubuntu_21_stable_restart_daemons
++ FUNC_NAME=install_ubuntu_21_stable_restart_daemons
+++ command -v install_ubuntu_21_stable_restart_daemons
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_stable_restart_daemons not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_stable_restart_daemons not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_stable_restart_daemons not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$STARTDAEMONS_FUNC_NAMES")
++ __function_defined install_ubuntu_21_04_stable_restart_daemons
++ FUNC_NAME=install_ubuntu_21_04_stable_restart_daemons
+++ command -v install_ubuntu_21_04_stable_restart_daemons
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_04_stable_restart_daemons not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_04_stable_restart_daemons not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_04_stable_restart_daemons not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$STARTDAEMONS_FUNC_NAMES")
++ __function_defined install_ubuntu_21_restart_daemons
++ FUNC_NAME=install_ubuntu_21_restart_daemons
+++ command -v install_ubuntu_21_restart_daemons
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_restart_daemons not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_restart_daemons not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_restart_daemons not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$STARTDAEMONS_FUNC_NAMES")
++ __function_defined install_ubuntu_21_04_restart_daemons
++ FUNC_NAME=install_ubuntu_21_04_restart_daemons
+++ command -v install_ubuntu_21_04_restart_daemons
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_04_restart_daemons not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_04_restart_daemons not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_04_restart_daemons not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$STARTDAEMONS_FUNC_NAMES")
++ __function_defined install_ubuntu_stable_restart_daemons
++ FUNC_NAME=install_ubuntu_stable_restart_daemons
+++ command -v install_ubuntu_stable_restart_daemons
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_stable_restart_daemons not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_stable_restart_daemons not found....'
+[1;34m * DEBUG[0m: install_ubuntu_stable_restart_daemons not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$STARTDAEMONS_FUNC_NAMES")
++ __function_defined install_ubuntu_restart_daemons
++ FUNC_NAME=install_ubuntu_restart_daemons
+++ command -v install_ubuntu_restart_daemons
++ '[' install_ubuntu_restart_daemons '!=' '' ']'
++ echoinfo 'Found function install_ubuntu_restart_daemons'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' 'Found function install_ubuntu_restart_daemons'
+[1;32m *  INFO[0m: Found function install_ubuntu_restart_daemons
++ return 0
++ STARTDAEMONS_INSTALL_FUNC=install_ubuntu_restart_daemons
++ break
++ echodebug STARTDAEMONS_INSTALL_FUNC=install_ubuntu_restart_daemons
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' STARTDAEMONS_INSTALL_FUNC=install_ubuntu_restart_daemons
+[1;34m * DEBUG[0m: STARTDAEMONS_INSTALL_FUNC=install_ubuntu_restart_daemons
++ DAEMONS_RUNNING_FUNC_NAMES=daemons_running_ubuntu_21_stable
++ DAEMONS_RUNNING_FUNC_NAMES='daemons_running_ubuntu_21_stable daemons_running_ubuntu_21_04_stable'
++ DAEMONS_RUNNING_FUNC_NAMES='daemons_running_ubuntu_21_stable daemons_running_ubuntu_21_04_stable daemons_running_ubuntu_21'
++ DAEMONS_RUNNING_FUNC_NAMES='daemons_running_ubuntu_21_stable daemons_running_ubuntu_21_04_stable daemons_running_ubuntu_21 daemons_running_ubuntu_21_04'
++ DAEMONS_RUNNING_FUNC_NAMES='daemons_running_ubuntu_21_stable daemons_running_ubuntu_21_04_stable daemons_running_ubuntu_21 daemons_running_ubuntu_21_04 daemons_running_ubuntu_stable'
++ DAEMONS_RUNNING_FUNC_NAMES='daemons_running_ubuntu_21_stable daemons_running_ubuntu_21_04_stable daemons_running_ubuntu_21 daemons_running_ubuntu_21_04 daemons_running_ubuntu_stable daemons_running_ubuntu'
++ DAEMONS_RUNNING_FUNC_NAMES='daemons_running_ubuntu_21_stable daemons_running_ubuntu_21_04_stable daemons_running_ubuntu_21 daemons_running_ubuntu_21_04 daemons_running_ubuntu_stable daemons_running_ubuntu daemons_running'
++ DAEMONS_RUNNING_FUNC=null
+++ __strip_duplicates 'daemons_running_ubuntu_21_stable daemons_running_ubuntu_21_04_stable daemons_running_ubuntu_21 daemons_running_ubuntu_21_04 daemons_running_ubuntu_stable daemons_running_ubuntu daemons_running'
+++ echo 'daemons_running_ubuntu_21_stable daemons_running_ubuntu_21_04_stable daemons_running_ubuntu_21 daemons_running_ubuntu_21_04 daemons_running_ubuntu_stable daemons_running_ubuntu daemons_running'
+++ tr -s '[:space:]' '\n'
+++ awk '!x[$0]++'
++ for FUNC_NAME in $(__strip_duplicates "$DAEMONS_RUNNING_FUNC_NAMES")
++ __function_defined daemons_running_ubuntu_21_stable
++ FUNC_NAME=daemons_running_ubuntu_21_stable
+++ command -v daemons_running_ubuntu_21_stable
++ '[' '' '!=' '' ']'
++ echodebug 'daemons_running_ubuntu_21_stable not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'daemons_running_ubuntu_21_stable not found....'
+[1;34m * DEBUG[0m: daemons_running_ubuntu_21_stable not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$DAEMONS_RUNNING_FUNC_NAMES")
++ __function_defined daemons_running_ubuntu_21_04_stable
++ FUNC_NAME=daemons_running_ubuntu_21_04_stable
+++ command -v daemons_running_ubuntu_21_04_stable
++ '[' '' '!=' '' ']'
++ echodebug 'daemons_running_ubuntu_21_04_stable not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'daemons_running_ubuntu_21_04_stable not found....'
+[1;34m * DEBUG[0m: daemons_running_ubuntu_21_04_stable not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$DAEMONS_RUNNING_FUNC_NAMES")
++ __function_defined daemons_running_ubuntu_21
++ FUNC_NAME=daemons_running_ubuntu_21
+++ command -v daemons_running_ubuntu_21
++ '[' '' '!=' '' ']'
++ echodebug 'daemons_running_ubuntu_21 not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'daemons_running_ubuntu_21 not found....'
+[1;34m * DEBUG[0m: daemons_running_ubuntu_21 not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$DAEMONS_RUNNING_FUNC_NAMES")
++ __function_defined daemons_running_ubuntu_21_04
++ FUNC_NAME=daemons_running_ubuntu_21_04
+++ command -v daemons_running_ubuntu_21_04
++ '[' '' '!=' '' ']'
++ echodebug 'daemons_running_ubuntu_21_04 not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'daemons_running_ubuntu_21_04 not found....'
+[1;34m * DEBUG[0m: daemons_running_ubuntu_21_04 not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$DAEMONS_RUNNING_FUNC_NAMES")
++ __function_defined daemons_running_ubuntu_stable
++ FUNC_NAME=daemons_running_ubuntu_stable
+++ command -v daemons_running_ubuntu_stable
++ '[' '' '!=' '' ']'
++ echodebug 'daemons_running_ubuntu_stable not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'daemons_running_ubuntu_stable not found....'
+[1;34m * DEBUG[0m: daemons_running_ubuntu_stable not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$DAEMONS_RUNNING_FUNC_NAMES")
++ __function_defined daemons_running_ubuntu
++ FUNC_NAME=daemons_running_ubuntu
+++ command -v daemons_running_ubuntu
++ '[' '' '!=' '' ']'
++ echodebug 'daemons_running_ubuntu not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'daemons_running_ubuntu not found....'
+[1;34m * DEBUG[0m: daemons_running_ubuntu not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$DAEMONS_RUNNING_FUNC_NAMES")
++ __function_defined daemons_running
++ FUNC_NAME=daemons_running
+++ command -v daemons_running
++ '[' daemons_running '!=' '' ']'
++ echoinfo 'Found function daemons_running'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' 'Found function daemons_running'
+[1;32m *  INFO[0m: Found function daemons_running
++ return 0
++ DAEMONS_RUNNING_FUNC=daemons_running
++ break
++ echodebug DAEMONS_RUNNING_FUNC=daemons_running
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' DAEMONS_RUNNING_FUNC=daemons_running
+[1;34m * DEBUG[0m: DAEMONS_RUNNING_FUNC=daemons_running
++ '[' 0 -eq 0 ']'
++ CHECK_SERVICES_FUNC_NAMES=install_ubuntu_21_stable_check_services
++ CHECK_SERVICES_FUNC_NAMES='install_ubuntu_21_stable_check_services install_ubuntu_21_04_stable_check_services'
++ CHECK_SERVICES_FUNC_NAMES='install_ubuntu_21_stable_check_services install_ubuntu_21_04_stable_check_services install_ubuntu_21_check_services'
++ CHECK_SERVICES_FUNC_NAMES='install_ubuntu_21_stable_check_services install_ubuntu_21_04_stable_check_services install_ubuntu_21_check_services install_ubuntu_21_04_check_services'
++ CHECK_SERVICES_FUNC_NAMES='install_ubuntu_21_stable_check_services install_ubuntu_21_04_stable_check_services install_ubuntu_21_check_services install_ubuntu_21_04_check_services install_ubuntu_stable_check_services'
++ CHECK_SERVICES_FUNC_NAMES='install_ubuntu_21_stable_check_services install_ubuntu_21_04_stable_check_services install_ubuntu_21_check_services install_ubuntu_21_04_check_services install_ubuntu_stable_check_services install_ubuntu_check_services'
++ CHECK_SERVICES_FUNC=null
+++ __strip_duplicates 'install_ubuntu_21_stable_check_services install_ubuntu_21_04_stable_check_services install_ubuntu_21_check_services install_ubuntu_21_04_check_services install_ubuntu_stable_check_services install_ubuntu_check_services'
+++ echo 'install_ubuntu_21_stable_check_services install_ubuntu_21_04_stable_check_services install_ubuntu_21_check_services install_ubuntu_21_04_check_services install_ubuntu_stable_check_services install_ubuntu_check_services'
+++ tr -s '[:space:]' '\n'
+++ awk '!x[$0]++'
++ for FUNC_NAME in $(__strip_duplicates "$CHECK_SERVICES_FUNC_NAMES")
++ __function_defined install_ubuntu_21_stable_check_services
++ FUNC_NAME=install_ubuntu_21_stable_check_services
+++ command -v install_ubuntu_21_stable_check_services
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_stable_check_services not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_stable_check_services not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_stable_check_services not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$CHECK_SERVICES_FUNC_NAMES")
++ __function_defined install_ubuntu_21_04_stable_check_services
++ FUNC_NAME=install_ubuntu_21_04_stable_check_services
+++ command -v install_ubuntu_21_04_stable_check_services
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_04_stable_check_services not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_04_stable_check_services not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_04_stable_check_services not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$CHECK_SERVICES_FUNC_NAMES")
++ __function_defined install_ubuntu_21_check_services
++ FUNC_NAME=install_ubuntu_21_check_services
+++ command -v install_ubuntu_21_check_services
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_check_services not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_check_services not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_check_services not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$CHECK_SERVICES_FUNC_NAMES")
++ __function_defined install_ubuntu_21_04_check_services
++ FUNC_NAME=install_ubuntu_21_04_check_services
+++ command -v install_ubuntu_21_04_check_services
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_21_04_check_services not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_21_04_check_services not found....'
+[1;34m * DEBUG[0m: install_ubuntu_21_04_check_services not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$CHECK_SERVICES_FUNC_NAMES")
++ __function_defined install_ubuntu_stable_check_services
++ FUNC_NAME=install_ubuntu_stable_check_services
+++ command -v install_ubuntu_stable_check_services
++ '[' '' '!=' '' ']'
++ echodebug 'install_ubuntu_stable_check_services not found....'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'install_ubuntu_stable_check_services not found....'
+[1;34m * DEBUG[0m: install_ubuntu_stable_check_services not found....
++ return 1
++ for FUNC_NAME in $(__strip_duplicates "$CHECK_SERVICES_FUNC_NAMES")
++ __function_defined install_ubuntu_check_services
++ FUNC_NAME=install_ubuntu_check_services
+++ command -v install_ubuntu_check_services
++ '[' install_ubuntu_check_services '!=' '' ']'
++ echoinfo 'Found function install_ubuntu_check_services'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' 'Found function install_ubuntu_check_services'
+[1;32m *  INFO[0m: Found function install_ubuntu_check_services
++ return 0
++ CHECK_SERVICES_FUNC=install_ubuntu_check_services
++ break
++ echodebug CHECK_SERVICES_FUNC=install_ubuntu_check_services
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' CHECK_SERVICES_FUNC=install_ubuntu_check_services
+[1;34m * DEBUG[0m: CHECK_SERVICES_FUNC=install_ubuntu_check_services
++ '[' 0 -eq 0 ']'
++ '[' install_ubuntu_stable_deps = null ']'
++ '[' install_ubuntu_stable = null ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ echoinfo 'Running install_ubuntu_stable_deps()'
++ printf '\033[1;32m *  INFO\033[0m: %s\n' 'Running install_ubuntu_stable_deps()'
+[1;32m *  INFO[0m: Running install_ubuntu_stable_deps()
++ install_ubuntu_stable_deps
++ '[' 3 -eq 3 ']'
++ '[' 21 -lt 16 ']'
++ '[' 21 -ge 20 ']'
++ '[' xpython3 = x ']'
++ '[' 1 -eq 0 ']'
++ export DEBIAN_FRONTEND=noninteractive
++ DEBIAN_FRONTEND=noninteractive
++ __wait_for_apt apt-get update
++ WAIT_TIMEOUT=900
++ apt-get update
+Atteint :1 http://fr.archive.ubuntu.com/ubuntu hirsute InRelease
+Atteint :2 http://fr.archive.ubuntu.com/ubuntu hirsute-updates InRelease
+Atteint :3 http://fr.archive.ubuntu.com/ubuntu hirsute-backports InRelease
+Atteint :4 http://security.ubuntu.com/ubuntu hirsute-security InRelease
+Atteint :5 https://deb.nodesource.com/node_12.x hirsute InRelease
+Lecture des listes de paquets…
++ APT_RETURN=0
++ '[' 0 -ne 0 ']'
++ return 0
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 0 ']'
++ __check_dpkg_architecture
++ __check_command_exists dpkg
++ command -v dpkg
+++ dpkg --print-architecture
++ DPKG_ARCHITECTURE=amd64
++ __REPO_ARCH=amd64
++ __REPO_ARCH_DEB=deb
++ __return_code=0
++ case $DPKG_ARCHITECTURE in
++ error_msg=
++ '[' '' '!=' '' ']'
++ '[' '' '!=' '' ']'
++ '[' 0 -eq 0 ']'
++ return 0
++ __install_saltstack_ubuntu_repository
++ '[' 21 -eq 19 ']'
++ '[' 21 -eq 18 ']'
++ UBUNTU_VERSION=21.04
++ UBUNTU_CODENAME=trusty
++ __PACKAGES=wget
++ '[' 21 -ge 18 ']'
++ __PACKAGES='wget gnupg'
++ '[' https = https ']'
++ __PACKAGES='wget gnupg apt-transport-https ca-certificates'
++ __apt_get_install_noinput wget gnupg apt-transport-https ca-certificates
++ __wait_for_apt apt-get install -y -o DPkg::Options::=--force-confold wget gnupg apt-transport-https ca-certificates
++ WAIT_TIMEOUT=900
++ apt-get install -y -o DPkg::Options::=--force-confold wget gnupg apt-transport-https ca-certificates
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+ca-certificates est déjà la version la plus récente (20210119build1).
+gnupg est déjà la version la plus récente (2.2.20-1ubuntu3).
+wget est déjà la version la plus récente (1.21-1ubuntu3).
+apt-transport-https est déjà la version la plus récente (2.2.3).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 1 non mis à jour.
++ APT_RETURN=0
++ '[' 0 -ne 0 ']'
++ return 0
++ return 0
++ __PY_VERSION_REPO=apt
++ '[' -n python3 ']'
++ '[' 3 -eq 3 ']'
++ __PY_VERSION_REPO=py3
++ SALTSTACK_UBUNTU_URL=https://repo.saltstack.com/py3/ubuntu/21.04/amd64/latest
++ __apt_key_fetch https://repo.saltstack.com/py3/ubuntu/21.04/amd64/latest/SALTSTACK-GPG-KEY.pub
++ url=https://repo.saltstack.com/py3/ubuntu/21.04/amd64/latest/SALTSTACK-GPG-KEY.pub
+++ __temp_gpg_pub
+++ __check_command_exists mktemp
+++ command -v mktemp
++++ mktemp /tmp/salt-gpg-XXXXXXXX.pub
+++ tempfile=/tmp/salt-gpg-OrWf0K7I.pub
+++ '[' -z /tmp/salt-gpg-OrWf0K7I.pub ']'
+++ echo /tmp/salt-gpg-OrWf0K7I.pub
++ tempfile=/tmp/salt-gpg-OrWf0K7I.pub
++ __fetch_url /tmp/salt-gpg-OrWf0K7I.pub https://repo.saltstack.com/py3/ubuntu/21.04/amd64/latest/SALTSTACK-GPG-KEY.pub
++ curl -L -s -f -o /tmp/salt-gpg-OrWf0K7I.pub https://repo.saltstack.com/py3/ubuntu/21.04/amd64/latest/SALTSTACK-GPG-KEY.pub
++ wget -q -O /tmp/salt-gpg-OrWf0K7I.pub https://repo.saltstack.com/py3/ubuntu/21.04/amd64/latest/SALTSTACK-GPG-KEY.pub
++ fetch -q -o /tmp/salt-gpg-OrWf0K7I.pub https://repo.saltstack.com/py3/ubuntu/21.04/amd64/latest/SALTSTACK-GPG-KEY.pub
++ fetch -q -o /tmp/salt-gpg-OrWf0K7I.pub https://repo.saltstack.com/py3/ubuntu/21.04/amd64/latest/SALTSTACK-GPG-KEY.pub
++ ftp -o /tmp/salt-gpg-OrWf0K7I.pub https://repo.saltstack.com/py3/ubuntu/21.04/amd64/latest/SALTSTACK-GPG-KEY.pub
++ echoerror 'https://repo.saltstack.com/py3/ubuntu/21.04/amd64/latest/SALTSTACK-GPG-KEY.pub failed to download to /tmp/salt-gpg-OrWf0K7I.pub'
++ printf '\033[1;31m * ERROR\033[0m: %s\n' 'https://repo.saltstack.com/py3/ubuntu/21.04/amd64/latest/SALTSTACK-GPG-KEY.pub failed to download to /tmp/salt-gpg-OrWf0K7I.pub'
+[1;31m * ERROR[0m: https://repo.saltstack.com/py3/ubuntu/21.04/amd64/latest/SALTSTACK-GPG-KEY.pub failed to download to /tmp/salt-gpg-OrWf0K7I.pub
++ exit 1
++ return 1
++ return 1
++ return 1
++ echoerror 'Failed to run install_ubuntu_stable_deps()!!!'
++ printf '\033[1;31m * ERROR\033[0m: %s\n' 'Failed to run install_ubuntu_stable_deps()!!!'
+[1;31m * ERROR[0m: Failed to run install_ubuntu_stable_deps()!!!
++ exit 1
++ __exit_cleanup
++ EXIT_CODE=1
++ '[' stable = git ']'
++ '[' -p /tmp/bootstrap-salt.logpipe ']'
++ echodebug 'Removing the logging pipe /tmp/bootstrap-salt.logpipe'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'Removing the logging pipe /tmp/bootstrap-salt.logpipe'
+[1;34m * DEBUG[0m: Removing the logging pipe /tmp/bootstrap-salt.logpipe
++ rm -f /tmp/bootstrap-salt.logpipe
++ '[' -f /tmp/apt_error.NLHXwF ']'
++ echodebug 'Removing the temporary apt error file /tmp/apt_error.NLHXwF'
++ '[' 1 -eq 1 ']'
++ printf '\033[1;34m * DEBUG\033[0m: %s\n' 'Removing the temporary apt error file /tmp/apt_error.NLHXwF'
+[1;34m * DEBUG[0m: Removing the temporary apt error file /tmp/apt_error.NLHXwF
++ rm -f /tmp/apt_error.NLHXwF
+++ ps ax
+++ grep tee
+++ grep /tmp/bootstrap-salt.log
+++ awk '{print $1}'
++ TEE_PID=5656

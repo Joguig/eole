@@ -1,0 +1,327 @@
+# file: .
+# owner: DOMPEDAGO/domain\040admins
+# group: DOMPEDAGO/domain\040admins
+user::rwx
+user:NT\040AUTHORITY/system:rwx
+user:NT\040AUTHORITY/authenticated\040users:r-x
+user:DOMPEDAGO/enterprise\040admins:rwx
+user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+group::rwx
+group:NT\040AUTHORITY/system:rwx
+group:NT\040AUTHORITY/authenticated\040users:r-x
+group:DOMPEDAGO/domain\040admins:rwx
+group:DOMPEDAGO/enterprise\040admins:rwx
+group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:NT\040AUTHORITY/system:rwx
+default:user:NT\040AUTHORITY/authenticated\040users:r-x
+default:user:DOMPEDAGO/domain\040admins:rwx
+default:user:DOMPEDAGO/enterprise\040admins:rwx
+default:user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+default:group::---
+default:group:NT\040AUTHORITY/system:rwx
+default:group:NT\040AUTHORITY/authenticated\040users:r-x
+default:group:DOMPEDAGO/domain\040admins:rwx
+default:group:DOMPEDAGO/enterprise\040admins:rwx
+default:group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+default:mask::rwx
+default:other::---
+
+# file: GPT.INI
+# owner: BUILTIN/administrators
+# group: users
+user::rwx
+user:NT\040AUTHORITY/system:rwx
+user:NT\040AUTHORITY/authenticated\040users:r-x
+user:DOMPEDAGO/domain\040admins:rwx
+user:DOMPEDAGO/enterprise\040admins:rwx
+user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+group::---
+group:users:---
+group:BUILTIN/administrators:rwx
+group:NT\040AUTHORITY/system:rwx
+group:NT\040AUTHORITY/authenticated\040users:r-x
+group:DOMPEDAGO/domain\040admins:rwx
+group:DOMPEDAGO/enterprise\040admins:rwx
+group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+mask::rwx
+other::---
+
+# file: User
+# owner: BUILTIN/administrators
+# group: users
+user::rwx
+user:NT\040AUTHORITY/system:rwx
+user:NT\040AUTHORITY/authenticated\040users:r-x
+user:DOMPEDAGO/domain\040admins:rwx
+user:DOMPEDAGO/enterprise\040admins:rwx
+user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+group::---
+group:users:---
+group:BUILTIN/administrators:rwx
+group:NT\040AUTHORITY/system:rwx
+group:NT\040AUTHORITY/authenticated\040users:r-x
+group:DOMPEDAGO/domain\040admins:rwx
+group:DOMPEDAGO/enterprise\040admins:rwx
+group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:BUILTIN/administrators:rwx
+default:user:NT\040AUTHORITY/system:rwx
+default:user:NT\040AUTHORITY/authenticated\040users:r-x
+default:user:DOMPEDAGO/domain\040admins:rwx
+default:user:DOMPEDAGO/enterprise\040admins:rwx
+default:user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+default:group::---
+default:group:users:---
+default:group:NT\040AUTHORITY/system:rwx
+default:group:NT\040AUTHORITY/authenticated\040users:r-x
+default:group:DOMPEDAGO/domain\040admins:rwx
+default:group:DOMPEDAGO/enterprise\040admins:rwx
+default:group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+default:mask::rwx
+default:other::---
+
+# file: User/Scripts
+# owner: BUILTIN/administrators
+# group: users
+user::rwx
+user:NT\040AUTHORITY/system:rwx
+user:NT\040AUTHORITY/authenticated\040users:r-x
+user:DOMPEDAGO/domain\040admins:rwx
+user:DOMPEDAGO/enterprise\040admins:rwx
+user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+group::---
+group:users:---
+group:BUILTIN/administrators:rwx
+group:NT\040AUTHORITY/system:rwx
+group:NT\040AUTHORITY/authenticated\040users:r-x
+group:DOMPEDAGO/domain\040admins:rwx
+group:DOMPEDAGO/enterprise\040admins:rwx
+group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:BUILTIN/administrators:rwx
+default:user:NT\040AUTHORITY/system:rwx
+default:user:NT\040AUTHORITY/authenticated\040users:r-x
+default:user:DOMPEDAGO/domain\040admins:rwx
+default:user:DOMPEDAGO/enterprise\040admins:rwx
+default:user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+default:group::---
+default:group:users:---
+default:group:NT\040AUTHORITY/system:rwx
+default:group:NT\040AUTHORITY/authenticated\040users:r-x
+default:group:DOMPEDAGO/domain\040admins:rwx
+default:group:DOMPEDAGO/enterprise\040admins:rwx
+default:group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+default:mask::rwx
+default:other::---
+
+# file: User/Scripts/psscripts.ini
+# owner: BUILTIN/administrators
+# group: users
+user::rwx
+user:NT\040AUTHORITY/system:rwx
+user:NT\040AUTHORITY/authenticated\040users:r-x
+user:DOMPEDAGO/domain\040admins:rwx
+user:DOMPEDAGO/enterprise\040admins:rwx
+user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+group::---
+group:users:---
+group:BUILTIN/administrators:rwx
+group:NT\040AUTHORITY/system:rwx
+group:NT\040AUTHORITY/authenticated\040users:r-x
+group:DOMPEDAGO/domain\040admins:rwx
+group:DOMPEDAGO/enterprise\040admins:rwx
+group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+mask::rwx
+other::---
+
+# file: User/Scripts/Logon
+# owner: BUILTIN/administrators
+# group: users
+user::rwx
+user:NT\040AUTHORITY/system:rwx
+user:NT\040AUTHORITY/authenticated\040users:r-x
+user:DOMPEDAGO/domain\040admins:rwx
+user:DOMPEDAGO/enterprise\040admins:rwx
+user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+group::---
+group:users:---
+group:BUILTIN/administrators:rwx
+group:NT\040AUTHORITY/system:rwx
+group:NT\040AUTHORITY/authenticated\040users:r-x
+group:DOMPEDAGO/domain\040admins:rwx
+group:DOMPEDAGO/enterprise\040admins:rwx
+group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:BUILTIN/administrators:rwx
+default:user:NT\040AUTHORITY/system:rwx
+default:user:NT\040AUTHORITY/authenticated\040users:r-x
+default:user:DOMPEDAGO/domain\040admins:rwx
+default:user:DOMPEDAGO/enterprise\040admins:rwx
+default:user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+default:group::---
+default:group:users:---
+default:group:NT\040AUTHORITY/system:rwx
+default:group:NT\040AUTHORITY/authenticated\040users:r-x
+default:group:DOMPEDAGO/domain\040admins:rwx
+default:group:DOMPEDAGO/enterprise\040admins:rwx
+default:group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+default:mask::rwx
+default:other::---
+
+# file: User/Scripts/Logon/ps.ps1
+# owner: BUILTIN/administrators
+# group: users
+user::rwx
+user:NT\040AUTHORITY/system:rwx
+user:NT\040AUTHORITY/authenticated\040users:r-x
+user:DOMPEDAGO/domain\040admins:rwx
+user:DOMPEDAGO/enterprise\040admins:rwx
+user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+group::---
+group:users:---
+group:BUILTIN/administrators:rwx
+group:NT\040AUTHORITY/system:rwx
+group:NT\040AUTHORITY/authenticated\040users:r-x
+group:DOMPEDAGO/domain\040admins:rwx
+group:DOMPEDAGO/enterprise\040admins:rwx
+group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+mask::rwx
+other::---
+
+# file: User/Scripts/Logoff
+# owner: BUILTIN/administrators
+# group: users
+user::rwx
+user:NT\040AUTHORITY/system:rwx
+user:NT\040AUTHORITY/authenticated\040users:r-x
+user:DOMPEDAGO/domain\040admins:rwx
+user:DOMPEDAGO/enterprise\040admins:rwx
+user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+group::---
+group:users:---
+group:BUILTIN/administrators:rwx
+group:NT\040AUTHORITY/system:rwx
+group:NT\040AUTHORITY/authenticated\040users:r-x
+group:DOMPEDAGO/domain\040admins:rwx
+group:DOMPEDAGO/enterprise\040admins:rwx
+group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:BUILTIN/administrators:rwx
+default:user:NT\040AUTHORITY/system:rwx
+default:user:NT\040AUTHORITY/authenticated\040users:r-x
+default:user:DOMPEDAGO/domain\040admins:rwx
+default:user:DOMPEDAGO/enterprise\040admins:rwx
+default:user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+default:group::---
+default:group:users:---
+default:group:NT\040AUTHORITY/system:rwx
+default:group:NT\040AUTHORITY/authenticated\040users:r-x
+default:group:DOMPEDAGO/domain\040admins:rwx
+default:group:DOMPEDAGO/enterprise\040admins:rwx
+default:group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+default:mask::rwx
+default:other::---
+
+# file: User/Scripts/scripts.ini
+# owner: BUILTIN/administrators
+# group: users
+user::rwx
+user:NT\040AUTHORITY/system:rwx
+user:NT\040AUTHORITY/authenticated\040users:r-x
+user:DOMPEDAGO/domain\040admins:rwx
+user:DOMPEDAGO/enterprise\040admins:rwx
+user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+group::---
+group:users:---
+group:BUILTIN/administrators:rwx
+group:NT\040AUTHORITY/system:rwx
+group:NT\040AUTHORITY/authenticated\040users:r-x
+group:DOMPEDAGO/domain\040admins:rwx
+group:DOMPEDAGO/enterprise\040admins:rwx
+group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+mask::rwx
+other::---
+
+# file: User/Documents & Settings
+# owner: BUILTIN/administrators
+# group: users
+user::rwx
+user:NT\040AUTHORITY/system:rwx
+user:NT\040AUTHORITY/authenticated\040users:r-x
+user:DOMPEDAGO/domain\040admins:rwx
+user:DOMPEDAGO/enterprise\040admins:rwx
+user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+group::---
+group:users:---
+group:BUILTIN/administrators:rwx
+group:NT\040AUTHORITY/system:rwx
+group:NT\040AUTHORITY/authenticated\040users:r-x
+group:DOMPEDAGO/domain\040admins:rwx
+group:DOMPEDAGO/enterprise\040admins:rwx
+group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:BUILTIN/administrators:rwx
+default:user:NT\040AUTHORITY/system:rwx
+default:user:NT\040AUTHORITY/authenticated\040users:r-x
+default:user:DOMPEDAGO/domain\040admins:rwx
+default:user:DOMPEDAGO/enterprise\040admins:rwx
+default:user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+default:group::---
+default:group:users:---
+default:group:NT\040AUTHORITY/system:rwx
+default:group:NT\040AUTHORITY/authenticated\040users:r-x
+default:group:DOMPEDAGO/domain\040admins:rwx
+default:group:DOMPEDAGO/enterprise\040admins:rwx
+default:group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+default:mask::rwx
+default:other::---
+
+# file: Machine
+# owner: BUILTIN/administrators
+# group: users
+user::rwx
+user:NT\040AUTHORITY/system:rwx
+user:NT\040AUTHORITY/authenticated\040users:r-x
+user:DOMPEDAGO/domain\040admins:rwx
+user:DOMPEDAGO/enterprise\040admins:rwx
+user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+group::---
+group:users:---
+group:BUILTIN/administrators:rwx
+group:NT\040AUTHORITY/system:rwx
+group:NT\040AUTHORITY/authenticated\040users:r-x
+group:DOMPEDAGO/domain\040admins:rwx
+group:DOMPEDAGO/enterprise\040admins:rwx
+group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:BUILTIN/administrators:rwx
+default:user:NT\040AUTHORITY/system:rwx
+default:user:NT\040AUTHORITY/authenticated\040users:r-x
+default:user:DOMPEDAGO/domain\040admins:rwx
+default:user:DOMPEDAGO/enterprise\040admins:rwx
+default:user:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+default:group::---
+default:group:users:---
+default:group:NT\040AUTHORITY/system:rwx
+default:group:NT\040AUTHORITY/authenticated\040users:r-x
+default:group:DOMPEDAGO/domain\040admins:rwx
+default:group:DOMPEDAGO/enterprise\040admins:rwx
+default:group:NT\040AUTHORITY/enterprise\040domain\040controllers:r-x
+default:mask::rwx
+default:other::---
+

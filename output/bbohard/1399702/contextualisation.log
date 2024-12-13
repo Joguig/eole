@@ -1,0 +1,21 @@
+Machine aca.pc  : Début ciContextualizeMachine : aca.pc, pc
+Machine aca.pc  : Debut ciContextualizePcLinux
+Machine aca.pc  : OS Linux Mint 22  Version=22
+Machine aca.pc  : machine PcLinux ==> utilise le dhcp!
+Machine aca.pc  : Inject pc-1399702 -> /etc/hostname
+Machine aca.pc  : * Inject  pc-1399702 -> /etc/hosts
+127.0.0.1	localhost
+127.0.1.1	 pc-1399702
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+Machine aca.pc  : * Restart avahi-daemon
+Machine aca.pc  : le PC a pour nom pc-1399702 : pclinuxmint
+Machine aca.pc  : Fin ciContextualizePcLinux
+Machine aca.pc  : Contextualization Machine OK
+Machine aca.pc  : bbohard 1399702 aca.pc Contextualization Machine : OK
+Machine aca.pc  : Fin ciContextualizeMachine : ok à 2024-11-13 11:48:27

@@ -1,0 +1,146 @@
+Machine daily 2.10.0 : ciDiagnoseNetwork:
+** ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: enp2s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 02:00:c0:a8:00:67 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.0.156/24 metric 100 brd 192.168.0.255 scope global dynamic enp2s0
+       valid_lft 6845sec preferred_lft 6845sec
+    inet6 fe80::c0ff:fea8:67/64 scope link dadfailed tentative 
+       valid_lft forever preferred_lft forever
+** ip route
+default via 192.168.0.1 dev enp2s0 proto dhcp src 192.168.0.156 metric 100 
+192.168.0.0/24 dev enp2s0 proto kernel scope link src 192.168.0.156 metric 100 
+192.168.0.1 dev enp2s0 proto dhcp scope link src 192.168.0.156 metric 100 
+192.168.232.2 via 192.168.0.1 dev enp2s0 proto dhcp src 192.168.0.156 metric 100 
+** GW_ACTUEL : 192.168.0.1
+total 8
+-rw------- 1 root root 112 sept. 19 16:20 01-netcfg.yaml
+-rw------- 1 root root  65 sept. 19 13:49 50-cloud-init.yaml
+--------------------------------------------
+cat /etc/netplan/01-netcfg.yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp2s0:
+      dhcp4: yes
+      dhcp-identifier: mac
+--------------------------------------------
+--------------------------------------------
+cat /etc/netplan/50-cloud-init.yaml
+network:
+  version: 2
+  ethernets:
+    enp2s0:
+      dhcp4: true
+--------------------------------------------
+--------------------------------------------
+cat /etc/network/interfaces
+# interfaces(5) file used by ifup(8) and ifdown(8)
+# Include files from /etc/network/interfaces.d:
+source /etc/network/interfaces.d/*
+--------------------------------------------
+--------------------------------------------
+cat /etc/resolv.conf
+# This is /run/systemd/resolve/stub-resolv.conf managed by man:systemd-resolved(8).
+# Do not edit.
+#
+# This file might be symlinked as /etc/resolv.conf. If you're looking at
+# /etc/resolv.conf and seeing this text, you have followed the symlink.
+#
+# This is a dynamic resolv.conf file for connecting local clients to the
+# internal DNS stub resolver of systemd-resolved. This file lists all
+# configured search domains.
+#
+# Run "resolvectl status" to see details about the uplink DNS servers
+# currently in use.
+#
+# Third party programs should typically not access this file directly, but only
+# through the symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a
+# different way, replace this symlink by a static file or a different symlink.
+#
+# See man:systemd-resolved.service(8) for details about the supported modes of
+# operation for /etc/resolv.conf.
+
+nameserver 127.0.0.53
+options edns0 trust-ad
+search ac-test.fr
+--------------------------------------------
+--------------------------------------------
+cat /etc/systemd/resolved.conf
+#  This file is part of systemd.
+#
+#  systemd is free software; you can redistribute it and/or modify it under the
+#  terms of the GNU Lesser General Public License as published by the Free
+#  Software Foundation; either version 2.1 of the License, or (at your option)
+#  any later version.
+#
+# Entries in this file show the compile time defaults. Local configuration
+# should be created by either modifying this file (or a copy of it placed in
+# /etc/ if the original file is shipped in /usr/), or by creating "drop-ins" in
+# the /etc/systemd/resolved.conf.d/ directory. The latter is generally
+# recommended. Defaults can be restored by simply deleting the main
+# configuration file and all drop-ins located in /etc/.
+#
+# Use 'systemd-analyze cat-config systemd/resolved.conf' to display the full config.
+#
+# See resolved.conf(5) for details.
+
+[Resolve]
+# Some examples of DNS servers which may be used for DNS= and FallbackDNS=:
+# Cloudflare: 1.1.1.1#cloudflare-dns.com 1.0.0.1#cloudflare-dns.com 2606:4700:4700::1111#cloudflare-dns.com 2606:4700:4700::1001#cloudflare-dns.com
+# Google:     8.8.8.8#dns.google 8.8.4.4#dns.google 2001:4860:4860::8888#dns.google 2001:4860:4860::8844#dns.google
+# Quad9:      9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::fe#dns.quad9.net 2620:fe::9#dns.quad9.net
+#DNS=
+#FallbackDNS=
+#Domains=
+#DNSSEC=no
+#DNSOverTLS=no
+#MulticastDNS=no
+#LLMNR=no
+#Cache=no-negative
+#CacheFromLocalhost=no
+#DNSStubListener=yes
+#DNSStubListenerExtra=
+#ReadEtcHosts=yes
+#ResolveUnicastSingleLabel=no
+#StaleRetentionSec=0
+--------------------------------------------
+--------------------------------------------
+cat /run/systemd/resolve/stub-resolv.conf
+# This is /run/systemd/resolve/stub-resolv.conf managed by man:systemd-resolved(8).
+# Do not edit.
+#
+# This file might be symlinked as /etc/resolv.conf. If you're looking at
+# /etc/resolv.conf and seeing this text, you have followed the symlink.
+#
+# This is a dynamic resolv.conf file for connecting local clients to the
+# internal DNS stub resolver of systemd-resolved. This file lists all
+# configured search domains.
+#
+# Run "resolvectl status" to see details about the uplink DNS servers
+# currently in use.
+#
+# Third party programs should typically not access this file directly, but only
+# through the symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a
+# different way, replace this symlink by a static file or a different symlink.
+#
+# See man:systemd-resolved.service(8) for details about the supported modes of
+# operation for /etc/resolv.conf.
+
+nameserver 127.0.0.53
+options edns0 trust-ad
+search ac-test.fr
+--------------------------------------------
+lrwxrwxrwx 1 root            root              39 août  27 14:21 /etc/resolv.conf -> ../run/systemd/resolve/stub-resolv.conf
+-rw-r--r-- 1 root            root            1551 août   8 14:51 /etc/systemd/resolved.conf
+-rw-r--r-- 1 systemd-resolve systemd-resolve  929 déc.  13 18:25 /run/systemd/resolve/stub-resolv.conf
+Machine daily 2.10.0 : systemctl is-active network.target : active
+Machine daily 2.10.0 : systemctl is-active network-online.target : active
+Machine daily 2.10.0 : systemctl is-system-running : degraded
+Machine daily 2.10.0 : ciPingHost enp2s0 => 192.168.0.1 ping=0 ==> OK (exit 0)

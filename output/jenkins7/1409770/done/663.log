@@ -1,0 +1,34 @@
+liste *.conf différentes!
+Machine gateway-mensr  : * Vide les exceptions crée par les tests
+removed '/etc/dnsmasq-hostsdir/salt.conf'
+Machine gateway-mensr  : * nettoye /etc/dnsmasq.d/*.conf
+removed '/etc/dnsmasq.d/agent_jenkins.conf'
+removed '/etc/dnsmasq.d/dhcp_academie.conf'
+removed '/etc/dnsmasq.d/dhcp_rie.conf'
+removed '/etc/dnsmasq.d/domaca.conf'
+removed '/etc/dnsmasq.d/domhorus.conf'
+removed '/etc/dnsmasq.d/domscribe.conf'
+removed '/etc/dnsmasq.d/domseth.conf'
+removed '/etc/dnsmasq.d/k3d.conf'
+removed '/etc/dnsmasq.d/logging.conf'
+removed '/etc/dnsmasq.d/pxe.conf'
+Machine gateway-mensr  : * copy /tmp/dnsmasq.d/*.conf -> /etc/dnsmasq.d/*.conf
+dnsmasq: syntax check OK.
+* efface logs gateway
+192.168.0.6 dev enp3s0  used 83/324/80probes 6 FAILED 
+192.168.0.5 dev enp3s0  used 83/328/80probes 6 FAILED 
+192.168.0.7 dev enp3s0 lladdr 02:00:c0:a8:00:68  used 463/463/438probes 1 STALE 
+192.168.230.254 dev enp2s0 lladdr d4:ae:52:ce:2f:16  used 64/17/1probes 1 STALE 
+192.168.230.43 dev enp2s0  used 1371/1431/1368probes 6 FAILED 
+192.168.0.24 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 137/137/113probes 1 STALE 
+192.168.0.253 dev enp3s0 lladdr 02:00:c0:a8:00:65  used 837/837/820probes 1 STALE 
+
+*** Round 1, deleting 7 entries ***
+*** Flush is complete after 1 round ***
+* Verification 'gateway.ac-test.fr'        : 192.168.0.1
+* Vérification du Forward vers Hestia      : 192.168.232.2
+PING hestia.eole.lan (192.168.232.2) 56(84) bytes of data.
+
+--- hestia.eole.lan ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+

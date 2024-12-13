@@ -1,0 +1,178 @@
+Machine aca.eolebase 2.10.0 : Début ciConfigurationModuleEole
+Machine aca.eolebase 2.10.0 : Le fichier config.eol existe : je ne fais rien !
+Machine aca.eolebase 2.10.0 : ciSetHttpProxy, pas de proxy pour les machines 'academie'
+*********************************************
+* Affiche connectivité
+*********************************************
+    inet 127.0.0.1/8 scope host lo
+    inet 192.168.0.24/24 brd 192.168.0.255 scope global enp2s0
+*********************************************
+* Ping Gateway 192.168.0.1
+*********************************************
+[3172mMachine aca.eolebase 2.10.0 : ATTENTION: ciPingHost enp2s0 => 192.168.0.1 ping=0 ==> K.O. (exit 1)
+(B[m[3172mMachine aca.eolebase 2.10.0 : ATTENTION: ciPingHost enp2s0 => 192.168.232.2 ping=1 ==> K.O. (exit 1)
+(B[m[3172mMachine aca.eolebase 2.10.0 : ATTENTION: Ping DNS EOLE !!!!!!!!!!!!!! ==> RETVAL=1
+(B[mMachine aca.eolebase 2.10.0 : ciDiagnoseNetwork:
+** ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: enp2s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 02:00:c0:a8:00:66 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.0.24/24 brd 192.168.0.255 scope global enp2s0
+       valid_lft forever preferred_lft forever
+** ip route
+default via 192.168.0.1 dev enp2s0 proto static 
+192.168.0.0/24 dev enp2s0 proto kernel scope link src 192.168.0.24 
+** GW_ACTUEL : 192.168.0.1
+total 8
+-rw------- 1 root root 195 déc.   2 02:52 00-eole.yaml
+-rw------- 1 root root 156 déc.   2 02:52 01-extras-routes.yaml
+--------------------------------------------
+cat /etc/network/interfaces
+--------------------------------------------
+--------------------------------------------
+cat /etc/resolv.conf
+#-------------------------------------------------------------------------
+## resolv.conf pour EOLE
+#-------------------------------------------------------------------------
+# vi:syntax=conf
+# level:full
+
+# For eole-ad
+search ac-test.fr
+# General DNS server
+nameserver 192.168.0.1
+--------------------------------------------
+--------------------------------------------
+cat /etc/systemd/resolved.conf
+#  This file is part of systemd.
+#
+#  systemd is free software; you can redistribute it and/or modify it
+#  under the terms of the GNU Lesser General Public License as published by
+#  the Free Software Foundation; either version 2.1 of the License, or
+#  (at your option) any later version.
+#
+# Entries in this file show the compile time defaults.
+# You can change settings by editing this file.
+# Defaults can be restored by simply deleting this file.
+#
+# See resolved.conf(5) for details
+
+[Resolve]
+#DNS=
+#FallbackDNS=
+#Domains=dompedago.etb1.lan
+#LLMNR=no
+#MulticastDNS=no
+#DNSSEC=no
+#Cache=yes
+DNSStubListener=no
+--------------------------------------------
+--------------------------------------------
+cat /run/systemd/resolve/stub-resolv.conf
+# This is /run/systemd/resolve/resolv.conf managed by man:systemd-resolved(8).
+# Do not edit.
+#
+# This file might be symlinked as /etc/resolv.conf. If you're looking at
+# /etc/resolv.conf and seeing this text, you have followed the symlink.
+#
+# This is a dynamic resolv.conf file for connecting local clients directly to
+# all known uplink DNS servers. This file lists all configured search domains.
+#
+# Third party programs should typically not access this file directly, but only
+# through the symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a
+# different way, replace this symlink by a static file or a different symlink.
+#
+# See man:systemd-resolved.service(8) for details about the supported modes of
+# operation for /etc/resolv.conf.
+
+nameserver 192.168.0.1
+search ac-test.fr
+--------------------------------------------
+-rw-r--r-- 1 root            root            282 déc.   2 02:52 /etc/resolv.conf
+-rw-r--r-- 1 root            root            617 déc.   2 02:52 /etc/systemd/resolved.conf
+lrwxrwxrwx 1 systemd-resolve systemd-resolve  11 déc.   2 02:53 /run/systemd/resolve/stub-resolv.conf -> resolv.conf
+Machine aca.eolebase 2.10.0 : systemctl is-active network.target : active
+Machine aca.eolebase 2.10.0 : systemctl is-active network-online.target : active
+Machine aca.eolebase 2.10.0 : systemctl is-system-running : degraded
+[3172mMachine aca.eolebase 2.10.0 : ATTENTION: ciPingHost enp2s0 => 192.168.0.1 ping=0 ==> K.O. (exit 1)
+(B[m** iptables
+-P INPUT DROP
+-P FORWARD DROP
+-P OUTPUT ACCEPT
+-N eth0-root
+-A INPUT -i lo -j ACCEPT
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -i enp2s0 -j eth0-root
+-A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A OUTPUT -o lo -j ACCEPT
+-A eth0-root -p icmp -m icmp --icmp-type 3 -j ACCEPT
+-A eth0-root -p icmp -m icmp --icmp-type 3/0 -j ACCEPT
+-A eth0-root -p icmp -m icmp --icmp-type 4 -j ACCEPT
+-A eth0-root -p icmp -m icmp --icmp-type 3/4 -j ACCEPT
+-A eth0-root -p icmp -m icmp --icmp-type 11 -j ACCEPT
+-A eth0-root -p icmp -m icmp --icmp-type 12 -j ACCEPT
+-A eth0-root -p icmp -m icmp --icmp-type 0 -j ACCEPT
+-A eth0-root -p icmp -m icmp --icmp-type 8 -j ACCEPT
+-A eth0-root -p tcp -m tcp --dport 22 --tcp-flags FIN,SYN,RST,ACK SYN -j ACCEPT
+-A eth0-root -p tcp -m tcp --dport 7000 --tcp-flags FIN,SYN,RST,ACK SYN -j ACCEPT
+-A eth0-root -p tcp -m tcp --dport 4201 --tcp-flags FIN,SYN,RST,ACK SYN -j ACCEPT
+-A eth0-root -p tcp -m tcp --dport 4202 --tcp-flags FIN,SYN,RST,ACK SYN -j ACCEPT
+-A eth0-root -p tcp -m tcp --dport 4200 --tcp-flags FIN,SYN,RST,ACK SYN -j ACCEPT
+-A eth0-root -p tcp -m tcp --dport 80 --tcp-flags FIN,SYN,RST,ACK SYN -j ACCEPT
+-A eth0-root -p tcp -m tcp --dport 443 --tcp-flags FIN,SYN,RST,ACK SYN -j ACCEPT
+-A eth0-root -p tcp -m tcp --dport 8090 --tcp-flags FIN,SYN,RST,ACK SYN -j ACCEPT
+-A eth0-root -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A eth0-root -j DROP
+-P PREROUTING ACCEPT
+-P INPUT ACCEPT
+-P OUTPUT ACCEPT
+-P POSTROUTING ACCEPT
+-P PREROUTING ACCEPT
+-P INPUT ACCEPT
+-P FORWARD ACCEPT
+-P OUTPUT ACCEPT
+-P POSTROUTING ACCEPT
+-P PREROUTING ACCEPT
+-P OUTPUT ACCEPT
+** systemd-resolved status 
+● systemd-resolved.service - Network Name Resolution
+     Loaded: loaded (/usr/lib/systemd/system/systemd-resolved.service; enabled; preset: enabled)
+     Active: active (running) since Mon 2024-12-02 02:53:09 CET; 19s ago
+       Docs: man:systemd-resolved.service(8)
+             man:org.freedesktop.resolve1(5)
+             https://www.freedesktop.org/wiki/Software/systemd/writing-network-configuration-managers
+             https://www.freedesktop.org/wiki/Software/systemd/writing-resolver-clients
+   Main PID: 698 (systemd-resolve)
+     Status: "Processing requests..."
+      Tasks: 1 (limit: 2263)
+     Memory: 7.4M (peak: 7.9M)
+        CPU: 86ms
+     CGroup: /system.slice/systemd-resolved.service
+             └─698 /usr/lib/systemd/systemd-resolved
+
+déc. 02 02:53:09 eolebase systemd[1]: Starting systemd-resolved.service - Network Name Resolution...
+déc. 02 02:53:09 eolebase systemd-resolved[698]: Positive Trust Anchors:
+déc. 02 02:53:09 eolebase systemd-resolved[698]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+déc. 02 02:53:09 eolebase systemd-resolved[698]: Negative trust anchors: home.arpa 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 170.0.0.192.in-addr.arpa 171.0.0.192.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa ipv4only.arpa corp home internal intranet lan local private test
+déc. 02 02:53:09 eolebase systemd-resolved[698]: Using system hostname 'eolebase'.
+déc. 02 02:53:09 eolebase systemd[1]: Started systemd-resolved.service - Network Name Resolution.
+/usr/bin/resolvectl
+** resolvectl
+Global
+         Protocols: -LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+  resolv.conf mode: foreign
+Current DNS Server: 192.168.0.1
+       DNS Servers: 192.168.0.1
+        DNS Domain: ac-test.fr
+
+Link 2 (enp2s0)
+    Current Scopes: none
+         Protocols: -DefaultRoute -LLMNR -mDNS -DNSOverTLS DNSSEC=no/unsupported
+Machine aca.eolebase 2.10.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+Machine aca.eolebase 2.10.0 : ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine aca.eolebase 2.10.0 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+/usr/bin/updatedb
+Machine aca.eolebase 2.10.0 : * désactivation updatedb/locate sur /mnt/eole-ci-test présente !

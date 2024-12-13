@@ -1,0 +1,238 @@
+Machine daily 2.10.0 : ciUpdateDaily BUILD_DAILY
+Machine daily 2.10.0 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.10.0 : liste des noyaux
+-rw------- 1 root root 14956936 nov.   1 11:41 /boot/vmlinuz-6.8.0-49-generic
+-rw------- 1 root root 14973320 nov.   9 16:00 /boot/vmlinuz-6.8.0-50-generic
+Machine daily 2.10.0 : * espaces disponibles
+Sys. de fichiers            Type     Taille Utilisé Dispo Uti% Monté sur
+efivarfs                    efivarfs    58k     17k   36k  33% /sys/firmware/efi/efivars
+/dev/mapper/seshat--vg-root ext4        11G    4,3G  5,7G  44% /
+/dev/mapper/seshat--vg-home ext4       2,1G     50k  2,1G   1% /home
+/dev/mapper/seshat--vg-var  ext4       4,2G    819M  3,1G  21% /var
+/dev/sda3                   ext4       756M    205M  496M  30% /boot
+/dev/sda1                   vfat        67M    6,4M   60M  10% /boot/efi
+Machine daily 2.10.0 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.10.0 : dpkg --configure -a
+Machine daily 2.10.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+Machine daily 2.10.0 : ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 2.10.0 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 2.10.0 : Maj-Auto DEV
+*********************************************
+Machine daily 2.10.0 : (py3) ciMonitor maj_auto
+
+monitor_maj_auto: pas de config.eol, donc utilise '-i' !
+
+MONITOR: Maj-Auto  -i -S test-eole.ac-dijon.fr -V test-eole.ac-dijon.fr  -D
+Mise à jour le vendredi 13 décembre 2024 17:58:23
+Exécution des scripts /usr/share/eole/majauto_pre
+run-parts: executing /usr/share/eole/majauto_pre/clean
+run-parts: executing /usr/share/eole/majauto_pre/mitm
+run-parts: executing /usr/share/eole/majauto_pre/update_containers
+
+Gestion des images de conteneur
+
+Toutes les images sont à jour
+
+*** seshat 2.10.0 ***
+
+[33mMaj-Auto - (VERSION DE DEVELOPPEMENT) - Augmenter le niveau de mise à jour est irréversible.[0m
+Voulez-vous continuer ? [oui/non]
+[non] : 
+MONITOR: maj_auto_241a action:oui
+oui
+Configuration du dépôt Ubuntu avec la source eole.ac-dijon.fr
+Configuration du dépôt EOLE avec la source test-eole.ac-dijon.fr
+Action update pour root                                                   [|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]   
+Action list-upgrade pour root
+0 nouveau, 21 mis à jour, 0 à enlever
+Paquets à mettre à jour : 
+    cpp-13 (13.3.0-6ubuntu2~24.04) (root)
+    cpp-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) (root)
+    gcc-13 (13.3.0-6ubuntu2~24.04) (root)
+    gcc-13-base (13.3.0-6ubuntu2~24.04) (root)
+    gcc-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) (root)
+    libapache2-mod-php8.3 (8.3.6-0ubuntu0.24.04.3) (root)
+    libgcc-13-dev (13.3.0-6ubuntu2~24.04) (root)
+    php8.3 (8.3.6-0ubuntu0.24.04.3) (root)
+    php8.3-cli (8.3.6-0ubuntu0.24.04.3) (root)
+    php8.3-common (8.3.6-0ubuntu0.24.04.3) (root)
+    php8.3-curl (8.3.6-0ubuntu0.24.04.3) (root)
+    php8.3-gd (8.3.6-0ubuntu0.24.04.3) (root)
+    php8.3-imap (8.3.6-0ubuntu0.24.04.3) (root)
+    php8.3-intl (8.3.6-0ubuntu0.24.04.3) (root)
+    php8.3-ldap (8.3.6-0ubuntu0.24.04.3) (root)
+    php8.3-mysql (8.3.6-0ubuntu0.24.04.3) (root)
+    php8.3-opcache (8.3.6-0ubuntu0.24.04.3) (root)
+    php8.3-pgsql (8.3.6-0ubuntu0.24.04.3) (root)
+    php8.3-readline (8.3.6-0ubuntu0.24.04.3) (root)
+    php8.3-sqlite3 (8.3.6-0ubuntu0.24.04.3) (root)
+    php8.3-xml (8.3.6-0ubuntu0.24.04.3) (root)
+Action download-upgrade pour root
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+Les paquets suivants seront mis à jour :
+  cpp-13 cpp-13-x86-64-linux-gnu gcc-13 gcc-13-base gcc-13-x86-64-linux-gnu
+  libapache2-mod-php8.3 libgcc-13-dev php8.3 php8.3-cli php8.3-common
+  php8.3-curl php8.3-gd php8.3-imap php8.3-intl php8.3-ldap php8.3-mysql
+  php8.3-opcache php8.3-pgsql php8.3-readline php8.3-sqlite3 php8.3-xml
+21 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Il est nécessaire de prendre 40,6 Mo dans les archives.
+Après cette opération, 15,5 Mo d'espace disque seront libérés.
+Ign :1 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 gcc-13 amd64 13.3.0-6ubuntu2~24.04
+Ign :2 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 gcc-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04
+Ign :3 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 libgcc-13-dev amd64 13.3.0-6ubuntu2~24.04
+Ign :4 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 cpp-13 amd64 13.3.0-6ubuntu2~24.04
+Ign :5 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 cpp-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04
+Ign :6 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 gcc-13-base amd64 13.3.0-6ubuntu2~24.04
+Ign :7 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-xml amd64 8.3.6-0ubuntu0.24.04.3
+Ign :8 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-sqlite3 amd64 8.3.6-0ubuntu0.24.04.3
+Ign :9 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-readline amd64 8.3.6-0ubuntu0.24.04.3
+Ign :10 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-pgsql amd64 8.3.6-0ubuntu0.24.04.3
+Ign :11 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-opcache amd64 8.3.6-0ubuntu0.24.04.3
+Ign :12 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-mysql amd64 8.3.6-0ubuntu0.24.04.3
+Ign :13 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-ldap amd64 8.3.6-0ubuntu0.24.04.3
+Ign :14 http://eole.ac-dijon.fr/ubuntu noble-security/universe amd64 php8.3-intl amd64 8.3.6-0ubuntu0.24.04.3
+Ign :15 http://eole.ac-dijon.fr/ubuntu noble-security/universe amd64 php8.3-imap amd64 8.3.6-0ubuntu0.24.04.3
+Ign :16 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-gd amd64 8.3.6-0ubuntu0.24.04.3
+Ign :17 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-curl amd64 8.3.6-0ubuntu0.24.04.3
+Ign :18 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 libapache2-mod-php8.3 amd64 8.3.6-0ubuntu0.24.04.3
+Ign :19 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-cli amd64 8.3.6-0ubuntu0.24.04.3
+Ign :20 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-common amd64 8.3.6-0ubuntu0.24.04.3
+Ign :21 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3 all 8.3.6-0ubuntu0.24.04.3
+Ign :1 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 gcc-13 amd64 13.3.0-6ubuntu2~24.04
+Ign :2 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 gcc-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04
+Ign :3 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 libgcc-13-dev amd64 13.3.0-6ubuntu2~24.04
+Ign :4 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 cpp-13 amd64 13.3.0-6ubuntu2~24.04
+Ign :5 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 cpp-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04
+Ign :6 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 gcc-13-base amd64 13.3.0-6ubuntu2~24.04
+Ign :7 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-xml amd64 8.3.6-0ubuntu0.24.04.3
+Ign :8 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-sqlite3 amd64 8.3.6-0ubuntu0.24.04.3
+Ign :9 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-readline amd64 8.3.6-0ubuntu0.24.04.3
+Ign :10 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-pgsql amd64 8.3.6-0ubuntu0.24.04.3
+Ign :11 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-opcache amd64 8.3.6-0ubuntu0.24.04.3
+Ign :12 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-mysql amd64 8.3.6-0ubuntu0.24.04.3
+Ign :13 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-ldap amd64 8.3.6-0ubuntu0.24.04.3
+Ign :14 http://eole.ac-dijon.fr/ubuntu noble-security/universe amd64 php8.3-intl amd64 8.3.6-0ubuntu0.24.04.3
+Ign :15 http://eole.ac-dijon.fr/ubuntu noble-security/universe amd64 php8.3-imap amd64 8.3.6-0ubuntu0.24.04.3
+Ign :16 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-gd amd64 8.3.6-0ubuntu0.24.04.3
+Ign :17 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-curl amd64 8.3.6-0ubuntu0.24.04.3
+Ign :18 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 libapache2-mod-php8.3 amd64 8.3.6-0ubuntu0.24.04.3
+Ign :19 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-cli amd64 8.3.6-0ubuntu0.24.04.3
+Ign :20 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-common amd64 8.3.6-0ubuntu0.24.04.3
+Ign :21 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3 all 8.3.6-0ubuntu0.24.04.3
+Ign :1 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 gcc-13 amd64 13.3.0-6ubuntu2~24.04
+Ign :2 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 gcc-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04
+Ign :3 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 libgcc-13-dev amd64 13.3.0-6ubuntu2~24.04
+Ign :4 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 cpp-13 amd64 13.3.0-6ubuntu2~24.04
+Ign :5 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 cpp-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04
+Ign :6 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 gcc-13-base amd64 13.3.0-6ubuntu2~24.04
+Ign :7 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-xml amd64 8.3.6-0ubuntu0.24.04.3
+Ign :8 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-sqlite3 amd64 8.3.6-0ubuntu0.24.04.3
+Ign :9 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-readline amd64 8.3.6-0ubuntu0.24.04.3
+Ign :10 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-pgsql amd64 8.3.6-0ubuntu0.24.04.3
+Ign :11 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-opcache amd64 8.3.6-0ubuntu0.24.04.3
+Ign :12 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-mysql amd64 8.3.6-0ubuntu0.24.04.3
+Ign :13 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-ldap amd64 8.3.6-0ubuntu0.24.04.3
+Ign :14 http://eole.ac-dijon.fr/ubuntu noble-security/universe amd64 php8.3-intl amd64 8.3.6-0ubuntu0.24.04.3
+Ign :15 http://eole.ac-dijon.fr/ubuntu noble-security/universe amd64 php8.3-imap amd64 8.3.6-0ubuntu0.24.04.3
+Ign :16 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-gd amd64 8.3.6-0ubuntu0.24.04.3
+Ign :17 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-curl amd64 8.3.6-0ubuntu0.24.04.3
+Ign :18 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 libapache2-mod-php8.3 amd64 8.3.6-0ubuntu0.24.04.3
+Ign :19 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-cli amd64 8.3.6-0ubuntu0.24.04.3
+Ign :20 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-common amd64 8.3.6-0ubuntu0.24.04.3
+Ign :21 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3 all 8.3.6-0ubuntu0.24.04.3
+Ign :1 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 gcc-13 amd64 13.3.0-6ubuntu2~24.04
+Ign :2 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 gcc-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04
+Err :1 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 gcc-13 amd64 13.3.0-6ubuntu2~24.04
+  Connexion à eole.ac-dijon.fr: 80 (194.167.18.18) impossible, délai de connexion dépassé
+Err :2 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 gcc-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Ign :3 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 libgcc-13-dev amd64 13.3.0-6ubuntu2~24.04
+Ign :4 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 cpp-13 amd64 13.3.0-6ubuntu2~24.04
+Ign :5 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 cpp-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04
+Err :3 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 libgcc-13-dev amd64 13.3.0-6ubuntu2~24.04
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Err :4 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 cpp-13 amd64 13.3.0-6ubuntu2~24.04
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Ign :6 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 gcc-13-base amd64 13.3.0-6ubuntu2~24.04
+Ign :7 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-xml amd64 8.3.6-0ubuntu0.24.04.3
+Err :5 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 cpp-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Ign :8 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-sqlite3 amd64 8.3.6-0ubuntu0.24.04.3
+Err :6 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 gcc-13-base amd64 13.3.0-6ubuntu2~24.04
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Err :7 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-xml amd64 8.3.6-0ubuntu0.24.04.3
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Ign :9 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-readline amd64 8.3.6-0ubuntu0.24.04.3
+Ign :10 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-pgsql amd64 8.3.6-0ubuntu0.24.04.3
+Err :8 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-sqlite3 amd64 8.3.6-0ubuntu0.24.04.3
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Ign :11 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-opcache amd64 8.3.6-0ubuntu0.24.04.3
+Ign :12 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-mysql amd64 8.3.6-0ubuntu0.24.04.3
+Ign :13 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-ldap amd64 8.3.6-0ubuntu0.24.04.3
+Ign :14 http://eole.ac-dijon.fr/ubuntu noble-security/universe amd64 php8.3-intl amd64 8.3.6-0ubuntu0.24.04.3
+Ign :15 http://eole.ac-dijon.fr/ubuntu noble-security/universe amd64 php8.3-imap amd64 8.3.6-0ubuntu0.24.04.3
+Ign :16 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-gd amd64 8.3.6-0ubuntu0.24.04.3
+Ign :17 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-curl amd64 8.3.6-0ubuntu0.24.04.3
+Ign :18 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 libapache2-mod-php8.3 amd64 8.3.6-0ubuntu0.24.04.3
+Err :9 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-readline amd64 8.3.6-0ubuntu0.24.04.3
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Err :10 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-pgsql amd64 8.3.6-0ubuntu0.24.04.3
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Ign :19 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-cli amd64 8.3.6-0ubuntu0.24.04.3
+Err :11 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-opcache amd64 8.3.6-0ubuntu0.24.04.3
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Err :12 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-mysql amd64 8.3.6-0ubuntu0.24.04.3
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Err :13 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-ldap amd64 8.3.6-0ubuntu0.24.04.3
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Err :14 http://eole.ac-dijon.fr/ubuntu noble-security/universe amd64 php8.3-intl amd64 8.3.6-0ubuntu0.24.04.3
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Err :15 http://eole.ac-dijon.fr/ubuntu noble-security/universe amd64 php8.3-imap amd64 8.3.6-0ubuntu0.24.04.3
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Err :16 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-gd amd64 8.3.6-0ubuntu0.24.04.3
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Err :17 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-curl amd64 8.3.6-0ubuntu0.24.04.3
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Err :18 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 libapache2-mod-php8.3 amd64 8.3.6-0ubuntu0.24.04.3
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Ign :20 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-common amd64 8.3.6-0ubuntu0.24.04.3
+Ign :21 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3 all 8.3.6-0ubuntu0.24.04.3
+Err :19 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-cli amd64 8.3.6-0ubuntu0.24.04.3
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Err :20 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3-common amd64 8.3.6-0ubuntu0.24.04.3
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+Err :21 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 php8.3 all 8.3.6-0ubuntu0.24.04.3
+  Impossible de se connecter à eole.ac-dijon.fr:http :
+[31mMaj-Auto - l'appel à apt-get (-c /etc/apt/apt-eole.conf -d dist-upgrade) a retourné une erreur (code 100). Voir /var/log/apt/term.log[0m
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/g/gcc-13/gcc-13_13.3.0-6ubuntu2%7e24.04_amd64.deb  Connexion à eole.ac-dijon.fr: 80 (194.167.18.18) impossible, délai de connexion dépassé
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/g/gcc-13/gcc-13-x86-64-linux-gnu_13.3.0-6ubuntu2%7e24.04_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/g/gcc-13/libgcc-13-dev_13.3.0-6ubuntu2%7e24.04_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/g/gcc-13/cpp-13_13.3.0-6ubuntu2%7e24.04_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/g/gcc-13/cpp-13-x86-64-linux-gnu_13.3.0-6ubuntu2%7e24.04_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/g/gcc-13/gcc-13-base_13.3.0-6ubuntu2%7e24.04_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-xml_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-sqlite3_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-readline_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-pgsql_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-opcache_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-mysql_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-ldap_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/universe/p/php8.3/php8.3-intl_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/universe/p/php8.3/php8.3-imap_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-gd_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-curl_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/libapache2-mod-php8.3_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-cli_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-common_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3_8.3.6-0ubuntu0.24.04.3_all.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+E: Certains fichiers n'ont pu être téléchargés.
+
+
+MONITOR: ATTENTION: Pexpect Exit=0, PexpectExit=1, Status=256, Signalstatus=None
+Sauvegarde des logs suite a erreur dans 'maj_auto' pour la VM '1422893' 
+sauvegardeFichier: Erreur '/etc/resolv.conf' cas 1 lien !
+Machine daily 2.10.0 : Export journalctl entre Daily - maintenant (moins polution salt)
+Machine daily 2.10.0 : ciMonitor python3 ==> RESULT=1

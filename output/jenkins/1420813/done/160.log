@@ -1,0 +1,57 @@
+liste *.conf différentes!
+Machine gateway-mensr  : * Vide les exceptions crée par les tests
+Machine gateway-mensr  : * nettoye /etc/dnsmasq.d/*.conf
+removed '/etc/dnsmasq.d/agent_jenkins.conf'
+removed '/etc/dnsmasq.d/dhcp_academie.conf'
+removed '/etc/dnsmasq.d/dhcp_rie.conf'
+removed '/etc/dnsmasq.d/domaca.conf'
+removed '/etc/dnsmasq.d/domhorus.conf'
+removed '/etc/dnsmasq.d/domscribe.conf'
+removed '/etc/dnsmasq.d/domseth.conf'
+removed '/etc/dnsmasq.d/k3d.conf'
+removed '/etc/dnsmasq.d/logging.conf'
+removed '/etc/dnsmasq.d/pxe.conf'
+Machine gateway-mensr  : * copy /tmp/dnsmasq.d/*.conf -> /etc/dnsmasq.d/*.conf
+dnsmasq: syntax check OK.
+* efface logs gateway
+192.168.0.154 dev enp3s0 lladdr 02:00:c0:a8:00:67  used 73398/73398/73360probes 1 STALE 
+192.168.0.19 dev enp3s0 lladdr 02:00:c0:a8:00:68  used 2166/2166/2145probes 1 STALE 
+192.168.0.18 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 24076/24076/24054probes 2 STALE 
+192.168.0.33 dev enp3s0 lladdr 02:00:c0:a8:00:6d  used 686/686/668probes 1 STALE 
+192.168.0.115 dev enp3s0 lladdr 02:00:c0:a8:00:68  used 1117/1117/1078probes 1 STALE 
+192.168.230.254 dev enp2s0 lladdr d4:ae:52:ce:2f:16  ref 1 used 1863/11/1861probes 1 REACHABLE 
+192.168.0.32 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 9378/9378/9348probes 1 STALE 
+192.168.0.11 dev enp3s0 lladdr 02:00:c0:a8:00:6b  used 725/725/706probes 1 STALE 
+192.168.0.31 dev enp3s0 lladdr 02:00:c0:a8:00:67  ref 1 used 21/21/21probes 1 REACHABLE 
+192.168.0.30 dev enp3s0 lladdr 92:30:f4:b7:e0:47  used 602/602/584probes 1 STALE 
+192.168.0.10 dev enp3s0  used 81669/81723/81661probes 3 FAILED 
+192.168.0.151 dev enp3s0 lladdr 02:00:c0:a8:00:65  used 63/63/33probes 1 STALE 
+192.168.0.24 dev enp3s0 lladdr 02:00:c0:a8:00:68  used 405/405/374probes 1 STALE 
+192.168.0.27 dev enp3s0 lladdr 02:00:c0:a8:00:68  used 7292/7292/7268probes 1 STALE 
+192.168.0.200 dev enp3s0 lladdr 02:00:c0:a8:00:c8  used 7353/7353/7330probes 1 STALE 
+192.168.0.26 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 602/602/584probes 1 STALE 
+192.168.0.5 dev enp3s0 lladdr 02:00:c0:a8:00:6a  ref 1 used 7/7/7probes 1 REACHABLE 
+192.168.0.7 dev enp3s0 lladdr 02:00:c0:a8:00:6e  ref 1 used 15/15/15probes 1 REACHABLE 
+192.168.0.6 dev enp3s0 lladdr 02:00:c0:a8:00:6c  used 43/43/13probes 1 STALE 
+192.168.0.253 dev enp3s0 lladdr 02:00:c0:a8:00:65  used 471/471/440probes 1 STALE 
+192.168.0.20 dev enp3s0 lladdr 02:00:c0:a8:00:67  used 1124/1124/1086probes 1 STALE 
+192.168.0.23 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 14603/14603/14562probes 1 STALE 
+192.168.0.153 dev enp3s0 lladdr 02:00:c0:a8:00:67  used 81/132/72probes 3 STALE 
+192.168.0.22 dev enp3s0 lladdr 02:00:c0:a8:00:67  used 4000/4000/3983probes 1 STALE 
+192.168.230.43 dev enp2s0  used 465/85768/462probes 6 FAILED 
+192.168.0.73 dev enp3s0  used 7721/19004/7718probes 6 FAILED 
+192.168.0.37 dev enp3s0 lladdr 0a:06:a2:75:de:57  used 7245/7245/7221probes 1 STALE 
+192.168.0.152 dev enp3s0 lladdr 02:00:c0:a8:00:66  ref 1 used 28/28/28probes 1 REACHABLE 
+192.168.0.155 dev enp3s0 lladdr 02:00:c0:a8:00:68  used 20625/20625/20602probes 1 STALE 
+fe80::2204:fff:fea7:6f4c dev enp2s0 lladdr 20:04:0f:a7:6f:4c router  used 4563/4563/4539probes 1 STALE 
+fe80::2204:fff:fea7:674c dev enp2s0 lladdr 20:04:0f:a7:67:4c router  used 2683/2683/2646probes 1 STALE 
+
+*** Round 1, deleting 31 entries ***
+*** Flush is complete after 1 round ***
+* Verification 'gateway.ac-test.fr'        : 192.168.0.1
+* Vérification du Forward vers Hestia      : 192.168.232.2
+PING hestia.eole.lan (192.168.232.2) 56(84) bytes of data.
+
+--- hestia.eole.lan ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+

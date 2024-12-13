@@ -1,0 +1,334 @@
+sudo -s
+
+cat /etc/machine-id
+
+apt-get remove -y cloud-init
+rm -f /etc/netplan/50-cloud-init.yaml
+
+apt-get remove unattended-upgrades 
+ 
+cat >/etc/netplan/99-k8s.yaml <EOF 
+# This file describes the network interfaces available on your system
+# For more information, see netplan(5).
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens192:
+      dhcp4: no
+      dhcp6: no
+      addresses: [172.29.32.71/26]
+      gateway4: 172.29.32.126
+      nameservers:
+          search: [in.apps.education.fr]
+          addresses: [172.29.32.17]
+EOF
+
+hostnamectl set-hostname k8sG1 --static
+dig k8sG1
+
+ip addr
+ip route
+systemd-resolve --status
+ping k8sG1
+
+cat >/etc/docker/daemon.json <<EOF 
+{
+  "exec-opts": ["native.cgroupdriver=systemd"],
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "100m"
+  },
+  "storage-driver": "overlay2"
+}
+EOF
+
+mkdir -p /etc/systemd/system/docker.service.d/
+cat >/etc/systemd/system/docker.service.d/override.conf <<EOF
+[Service]
+Environment="HTTP_PROXY=http://proxy01.in.apps.education.fr:3128/"
+Environment="HTTPS_PROXY=http://proxy01.in.apps.education.fr:3128/"
+Environment="NO_PROXY=localhost,127.0.0.0/8,172.29.32.64/26,10.96.0.0/12,*.in.apps.education.fr"
+EOF
+
+systemctl daemon-reload
+systemctl restart docker
+
+# pour IPVS
+modprobe -- ip_vs_rr
+modprobe -- ip_vs_wrr
+modprobe -- ip_vs_sh
+modprobe -- ip_vs
+
+# pour glusterfs
+modprobe -- dm_snapshot
+modprobe -- dm_mirror
+modprobe -- dm_thin_pool
+
+cat >>/etc/profile <<EOF
+export http_proxy=http://proxy01.in.apps.education.fr:3128/
+export https_proxy=http://proxy01.in.apps.education.fr:3128/
+echo "depuis /etc/profile"
+echo "export http_proxy=\$http_proxy"
+echo "export https_proxy=\$https_proxy"
+export NO_PROXY=localhost,127.0.0.0/8,172.29.32.64/26,10.96.0.0/12,*.in.apps.education.fr,*.cluster.local
+echo "export NO_PROXY=\$NO_PROXY"
+EOF
+
+# extends /
+lvextend -L +30g /dev/ubuntu-vg/ubuntu-lv 
+resize2fs /dev/ubuntu-vg/ubuntu-lv
+
+# espace libre ...
+fdisk /dev/sda
+type p - to list all your partitions (sda4 ==> 924G)
+type n - to create a new partition (sda4)
+type t - to change type + ENTER + 31 (Linux LVM)
+type p - to list the new partition table
+type w - to write changes 
+(exit)  
+
+reboot
+sudo -s
+ls -l /dev/sda4
+vgcreate glusterfs-vg /dev/sda4
+lvcreate -n glusterfs-lv1 -L 100g glusterfs-vg
+mkdir /mnt/glusterfs-lv1
+mount /dev/glusterfs-vg/glusterfs-lv1 /mnt/glusterfs-lv1
+
+
+cat /etc/systemd/timesyncd.conf <<EOF
+[Time]
+NTP=
+FallbackNTP=0.fr.pool.ntp.org 1.fr.pool.ntp.org 2.fr.pool.ntp.org 3.fr.pool.ntp.org 
+EOF
+timedatectl set-timezone UTC
+timedatectl set-ntp true
+
+cat >>/etc/sudoers <<EOF
+admsnp  ALL= NOPASSWD: ALL
+EOF
+
+
+cat >/var/lib/kubelet/kubeadm-flags.env <<EOF
+KUBELET_KUBEADM_ARGS="--cgroup-driver=systemd --network-plugin=cni --pod-infra-container-image=k8s.gcr.io/pause:3.1 --resolv-conf=/run/systemd/resolve/resolv.conf"
+EOF
+
+. /etc/profile
+kubeadm join 172.29.32.70:6443 --token 1el7h2.wd7igs4gqagbrjn3     --discovery-token-ca-cert-hash sha256:b1236b81dfcfd8b0c5ee6355c8b044535048c055ec1a9b4c3a3c4ee00868c0ce 
+# -v=6 pour debug !
+
+
+#install heketi-client
+cd /home/admsnp/
+wget https://github.com/heketi/heketi/releases/download/v9.0.0/heketi-client-v9.0.0.linux.amd64.tar.gz
+tar xvfz heketi-client-v9.0.0.linux.amd64.tar.gz
+export HEKETI_CLI=/home/admsnp/heketi-client/bin/heketi-cli
+${HEKETI_CLI} -v
+alias heketi-cli='/home/admsnp/heketi-client/bin/heketi-cli'
+
+# se connecter sur admsnp@k8s01
+# verifier que tous les noeuds K8sGx sont accessible en SSH admsnp@k8sgx... + sudo fonctionnelle sans mot de passe
+cd
+git clone https://github.com/gluster/gluster-kubernetes.git
+cd /home/admsnp/gluster-kubernetes/
+# je choisi cette version !
+#git checkout v1.2.0
+cd deploy/
+
+cat >topology.json <<EOF
+{
+  "clusters": [
+    {
+      "nodes": [
+        {
+          "node": {
+            "hostnames": {
+              "manage": [
+                "k8sG1"
+              ],
+              "storage": [
+                "1172.29.32.80"
+              ]
+            },
+            "zone": 1
+          },
+          "devices": [
+            "/dev/glusterfs-vg/glusterfs-lv1"
+          ]
+        },
+        {
+          "node": {
+            "hostnames": {
+              "manage": [
+                "k8sG2"
+              ],
+              "storage": [
+                "1172.29.32.81"
+              ]
+            },
+            "zone": 1
+          },
+          "devices": [
+            "/dev/glusterfs-vg/glusterfs-lv1"
+          ]
+        },
+        {
+          "node": {
+            "hostnames": {
+              "manage": [
+                "k8sG3"
+              ],
+              "storage": [
+                "1172.29.32.82"
+              ]
+            },
+            "zone": 1
+          },
+          "devices": [
+            "/dev/glusterfs-vg/glusterfs-lv1"
+          ]
+        }
+      ]
+    }
+  ]
+}
+EOF
+
+#./gk-deploy --deploy-gluster --ssh-user admsnp --namespace glusterfs --daemonset-label glusterfs-lv1 --no-object --log-file /home/admsnp/gk-deploy.log --verbose topology.json 
+
+
+cd /home/admsnp/gluster-kubernetes/
+
+#create namespace
+cat >deploy/glusterfs-namespace.yaml <<EOF 
+apiVersion: v1
+kind: Namespace
+metadata:
+ name: glusterfs
+EOF
+
+kubectl apply -f deploy/glusterfs-namespace.yaml
+
+# bascule namespace ==> glusterfs
+kubectl config set-context --current --namespace=glusterfs
+kubectl config view | grep namespace:
+
+cat >deploy/heketi-config-secret.yaml <<EOF
+apiVersion: v1
+kind: Secret
+metadata:
+  name: heketi-config-secret
+  namespace: default
+data:
+  # base64 encoded password. E.g.: echo -n "password" | base64
+  key: cGFzc3dvcmQ=
+type: kubernetes.io/glusterfs
+EOF
+kubectl apply -f deploy/heketi-config-secret.yaml
+
+# deploiement daemonset 
+# ps: ne s'installe sur aucun car il a besoin d'selector !
+kubectl apply -f deploy/kube-templates/glusterfs-daemonset.yaml
+
+# modiification des nodes pour que le daemonset se deploie...
+kubectl label node k8sg1 storagenode=glusterfs
+kubectl label node k8sg2 storagenode=glusterfs
+kubectl label node k8sg3 storagenode=glusterfs
+
+# verification : les 3 doivent se déployer 
+kubectl get pods
+
+kubectl create -f deploy/kube-templates/heketi-service-account.yaml
+
+export HEKETI_SECRET=$(kubectl get sa heketi-service-account -o="go-template" --template="{{(index .secrets 0).name}}")
+echo $HEKETI_SECRET
+
+cat >deploy/deploy-heketi-deployment.yaml <<EOF 
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: deploy-heketi
+  labels:
+    glusterfs: heketi-service
+    deploy-heketi: service
+  annotations:
+    description: Exposes Heketi Service
+spec:
+  selector:
+    deploy-heketi: pod
+  type: NodePort
+  ports:
+  - name: deploy-heketi
+    port: 8080
+    targetPort: 8080
+    nodePort: 30625
+---
+kind: Deployment
+apiVersion: extensions/v1beta1
+metadata:
+  name: deploy-heketi
+  labels:
+    glusterfs: heketi-deployment
+    deploy-heketi: deployment
+  annotations:
+    description: Defines how to deploy Heketi
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: deploy-heketi
+      labels:
+        glusterfs: heketi-pod
+        deploy-heketi: pod
+    spec:
+      serviceAccountName: heketi-service-account
+      containers:
+      - image: heketi/heketi:dev
+        imagePullPolicy: IfNotPresent
+        name: deploy-heketi
+        env:
+        - name: HEKETI_USER_KEY
+          value: ${HEKETI_USER_KEY}
+        - name: HEKETI_ADMIN_KEY
+          value: ${HEKETI_ADMIN_KEY}
+        - name: HEKETI_EXECUTOR
+          value: ${HEKETI_EXECUTOR}
+        - name: HEKETI_FSTAB
+          value: ${HEKETI_FSTAB}
+        - name: HEKETI_SNAPSHOT_LIMIT
+          value: '14'
+        - name: HEKETI_KUBE_GLUSTER_DAEMONSET
+          value: "y"
+        - name: HEKETI_IGNORE_STALE_OPERATIONS
+          value: "true"
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - name: db
+          mountPath: "/var/lib/heketi"
+        - name: config
+          mountPath: /etc/heketi
+        readinessProbe:
+          timeoutSeconds: 3
+          initialDelaySeconds: 3
+          httpGet:
+            path: "/hello"
+            port: 8080
+        livenessProbe:
+          timeoutSeconds: 3
+          initialDelaySeconds: 30
+          httpGet:
+            path: "/hello"
+            port: 8080
+      volumes:
+      - name: db
+      - name: config
+        secret:
+          secretName: heketi-config-secret
+EOF
+# attention : ici on peut editer le fichier pour ajouter un NodePort si on veut un accès depuis le poste ...
+# je ne le fais pas...
+kubectl create -f deploy/deploy-heketi-deployment.yaml
+

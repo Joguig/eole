@@ -1,0 +1,23 @@
+Debut ciWaitConteneurs 2024-12-12 11:03:24
+ls -l /opt/lxc /var/lib/lxc
+lrwxrwxrwx 1 root root    8 oct.  16 15:56 /var/lib/lxc -> /opt/lxc
+
+/opt/lxc:
+total 20
+drwxrwx--- 4 root root 4096 déc.   5 16:54 addc
+drwxrwx--- 4 root root 4096 déc.   5 16:54 bdd
+drwxrwx--- 4 root root 4096 déc.   5 16:54 internet
+drwxrwx--- 4 root root 4096 déc.   5 16:54 partage
+drwxrwx--- 4 root root 4096 déc.   5 16:54 reseau
+ciWaitConteneurs test no 1 à 2024-12-12 11:03:24
+/usr/bin/lxc-info
+addc : OK, active
+/usr/bin/lxc-info
+bdd : OK, active
+/usr/bin/lxc-info
+internet : OK, active
+/usr/bin/lxc-info
+partage : OK, active
+/usr/bin/lxc-info
+reseau : OK, active
+Fin ciWaitConteneurs : OK 2024-12-12 11:03:24

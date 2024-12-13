@@ -1,0 +1,100 @@
+Machine daily 2.8.1 : ciUpdateDaily BUILD_DAILY
+Machine daily 2.8.1 : 'proposed-update' déjà actif!
+Machine daily 2.8.1 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.8.1 : liste des noyaux
+-rw------- 1 root root 13701896 sept. 27 14:56 /boot/vmlinuz-5.4.0-200-generic
+-rw------- 1 root root 13705992 nov.   8 15:31 /boot/vmlinuz-5.4.0-202-generic
+Machine daily 2.8.1 : * espaces disponibles
+Sys. de fichiers          Type Taille Utilisé Dispo Uti% Monté sur
+/dev/mapper/vgzephir-root ext4   9,8G    3,4G  5,9G  37% /
+/dev/mapper/vgzephir-tmp  ext4   2,0G     78k  1,9G   1% /tmp
+/dev/mapper/vgzephir-var  ext4   2,0G    682M  1,2G  37% /var
+/dev/mapper/vgzephir-home ext4   964M     54k  937M   1% /home
+/dev/sda1                 ext4   719M    163M  504M  25% /boot
+Machine daily 2.8.1 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.8.1 : dpkg --configure -a
+Machine daily 2.8.1 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+Machine daily 2.8.1 : ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 2.8.1 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 2.8.1 : Maj-Auto RC
+*********************************************
+Machine daily 2.8.1 : (py3) ciMonitor maj_auto
+
+monitor_maj_auto: pas de config.eol, donc utilise '-i' !
+
+MONITOR: Maj-Auto  -i -S test-eole.ac-dijon.fr -V test-eole.ac-dijon.fr  -C
+Mise à jour le vendredi 13 décembre 2024 19:44:48
+Exécution des scripts /usr/share/eole/majauto_pre
+run-parts: executing /usr/share/eole/majauto_pre/mitm
+*** zephir 2.8.1 ***
+
+[33mMaj-Auto - (VERSION CANDIDATE) - Augmenter le niveau de mise à jour est irréversible.[0m
+Voulez-vous continuer ? [oui/non]
+[non] : 
+MONITOR: maj_auto_241a action:oui
+oui
+Configuration du dépôt Ubuntu avec la source eole.ac-dijon.fr
+Configuration du dépôt EOLE avec la source test-eole.ac-dijon.fr
+Action update pour root                                                   [|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]   
+Action list-upgrade pour root
+Mise à jour OK
+Aucun paquet à installer.
+Machine daily 2.8.1 : ciMonitor python3 ==> RESULT=0
+--------------------------------------------
+cat /etc/apt/sources.list
+
+# Ubuntu
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu focal main universe multiverse restricted
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu focal-security main universe multiverse restricted
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu focal-updates main universe multiverse restricted
+
+# EOLE
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.8.1 main cloud python2
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.8.1-security main cloud python2
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.8.1-updates main cloud python2
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.8.1-proposed-updates main cloud python2
+
+
+--------------------------------------------
+--------------------------------------------
+cat /etc/apt/sources.list.d/additional.list
+#template genere par Maj-Auto
+#
+--------------------------------------------
+--------------------------------------------
+cat /etc/apt/sources.list.d/ubuntu-proposed.list
+deb http://test-eole.ac-dijon.fr/ubuntu focal-proposed main universe multiverse restricted
+--------------------------------------------
+Machine daily 2.8.1 : GenConteneur
+*********************************************
+* Pas de conteneurs pour ce module.
+*********************************************
+Machine daily 2.8.1 : Pas de fichier startup '/mnt/eole-ci-tests/module/UpdateDaily-zephir.sh' 
+Machine daily 2.8.1 : Test CVE Noyau
+0
+Machine daily 2.8.1 : autoremove pour les anciens noyaux
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+/usr/bin/updatedb
+Machine daily 2.8.1 : * Execute updatedb
+/usr/bin/shellcheck
+Machine daily 2.8.1 : Tag l'Image Daily
+DAILY_CONTAINER=non
+DAILY_DATEUPDATE=1734115510
+DAILY_DATE='2024-12-13 19:45'
+DAILY_MAJAUTO=RC
+Machine daily 2.8.1 : Check Update Service
+/etc/systemd/system/EoleCiTestsContext.service A JOUR
+CheckUpdateService.sh: systemctl enable 'EoleCiTestsContext.service'
+Removed /etc/systemd/system/network.target.wants/EoleCiTestsContext.service.
+Created symlink /etc/systemd/system/network.target.wants/EoleCiTestsContext.service → /etc/systemd/system/EoleCiTestsContext.service.
+CheckUpdateService.sh: systemctl daemon-reload
+/etc/systemd/system/EoleCiTestsDaemon.service A JOUR
+CheckUpdateService.sh: systemctl enable 'EoleCiTestsDaemon.service'
+Removed /etc/systemd/system/multi-user.target.wants/EoleCiTestsDaemon.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/EoleCiTestsDaemon.service → /etc/systemd/system/EoleCiTestsDaemon.service.
+CheckUpdateService.sh: systemctl daemon-reload
+Machine daily 2.8.1 : Trim disk
+Machine daily 2.8.1 : ciUpdateDaily RC : OK

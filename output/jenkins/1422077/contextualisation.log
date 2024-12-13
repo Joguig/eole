@@ -1,0 +1,20 @@
+Machine update  : Début ciContextualizeMachine : update, 
+Machine update  : Debut ciContextualizeUpdate
+Machine update  : OS Ubuntu 22.04.5 LTS  Version=22.04
+Machine update  : machine Update ==> utilise le dhcp!
+--------------------------------------------
+cat /etc/machine-id
+19d912df452d40dcaf1d654162ae6efc
+--------------------------------------------
+Inject minlen=4 dans /etc/pam.d/common-password
+Inject minlen dans /etc/security/pwquality.conf
+passwd: user 'pcadmin' does not exist
+mdp pcadmin/Eole12345!
+mdp eole/eole OK
+New password: Retype new password: passwd: password updated successfully
+mdp root/eole OK
+Machine update  : * /etc/ssh/sshd_config à jour
+Machine update  : Fin ciContextualizeUpdate
+Machine update  : Contextualization Machine OK
+Machine update  : jenkins 1422077 update Contextualization Machine : OK
+Machine update  : Fin ciContextualizeMachine : ok à 2024-12-12 20:50:50

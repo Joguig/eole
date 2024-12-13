@@ -1,0 +1,17 @@
+Début ciDeamonMain /root/.EoleCiTestsDaemon.sh
+init à 2024-09-13 09:40:55
+* ciAfficheProcess : 2024-09-13 09:40:55
+* ciWaitConteneurs : 2024-09-13 09:40:55
+* ciConfigurationMe : avant 2024-09-13 09:40:55
+* ciConfigurationMe : apres 2024-09-13 09:40:59
+Machine aca.horus 2.6.2 : * Creation lien aca.horus dans /mnt/eole-ci-tests/output/ktjebbes/1349078
+Machine aca.horus 2.6.2 : Sauvegarde CA aca.horus
+-rw-r--r-- 1 9869 9869 1732 sept. 13 09:40 /mnt/eole-ci-tests/output/ktjebbes//aca.horus.crt
+    issuer= /C=FR/O=Ministere Education Nationale (MENESR)/OU=110 043 015/OU=ac-test/CN=CA-horus.ac-test.fr
+    subject= /C=FR/O=Ministere Education Nationale (MENESR)/OU=110 043 015/OU=ac-test/CN=CA-horus.ac-test.fr
+    notBefore=Jan 12 20:35:18 2024 GMT
+    notAfter=Jan 12 20:35:18 2027 GMT
+* ciBoucleDExecution : pas d'excution ==> sortie
+ciStopDaemon : 2024-09-13 09:40:59
+nettoyage 'motd' et '/etc/issue'
+Sauvegarde log EoleCiTests

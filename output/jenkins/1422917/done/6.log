@@ -1,0 +1,18 @@
+/mnt/eole-ci-tests/tests/importation/check-importation-compte.sh personnels profpo 
+OK: le repertoire '/home/p/profpo' existe
+OK: le repertoire '/home/mail/profpo' existe
+* requete Ldap sur OpenLDAP
+OK: profpo a le bon Dn
+dn: uid=profpo,ou=local,ou=personnels,ou=utilisateurs,ou=0000000A,ou=ac-test,ou=education,o=gouv,c=fr
+cn: profpo printoperator
+sn: printoperator
+
+OK: 'getent passwd profpo' a répondu
+profpo:*:11162:10513::/home/adhomes/profpo:/bin/false 
+***************** Groupes de profpo ****************************************
+*** Attendu    ****************************************   Importé **********
+domain users							domain users
+professeurs							professeurs
+profpo								profpo
+result sans Users=0
+La liste des groupes de l'utilisateur profpo est correcte

@@ -1,0 +1,50 @@
+Machine etb3.amonecole 2.10.0 : Début ciContextualizeMachine : etb3.amonecole, amonecole
+Machine etb3.amonecole 2.10.0 : Début ciContextualizeModuleEole
+Machine etb3.amonecole 2.10.0 : ciContextualisationMinimale:
+Machine etb3.amonecole 2.10.0 : rm /etc/netplan/* désactivé !
+Machine etb3.amonecole 2.10.0 : Inject /etc/hosts
+Machine etb3.amonecole 2.10.0 : lsb_release -a -cs -rs
+Distributor ID:	Ubuntu
+Description:	Ubuntu 24.04.1 LTS
+Release:	24.04
+Codename:	noble
+noble
+24.04
+Machine etb3.amonecole 2.10.0 : ciContextualisationMinimaleSystemd
+Machine etb3.amonecole 2.10.0 : Inject /etc/hostname
+Machine etb3.amonecole 2.10.0 : ls -l /etc/netplan/
+total 8
+-rw------- 1 root root 112 oct.  16 15:51 01-netcfg.yaml
+-rw------- 1 root root  65 sept. 19 13:49 50-cloud-init.yaml
+Machine etb3.amonecole 2.10.0 : ciContextualisationMinimaleSystemdServer
+Machine etb3.amonecole 2.10.0 : Inject /etc/resolv.conf
+Machine etb3.amonecole 2.10.0 : /bin/rm -f /etc/resolv.conf (pour casser le lien!)
+Machine etb3.amonecole 2.10.0 : ls -l /etc/netplan
+total 8
+-rw------- 1 root root 112 oct.  16 15:51 01-netcfg.yaml
+-rw------- 1 root root  65 sept. 19 13:49 50-cloud-init.yaml
+Machine etb3.amonecole 2.10.0 : netoyage si besoin /etc/network/interfaces /etc/netplan/01-network-manager-all.yaml /etc/netplan/00-installer-config.yaml /etc/netplan/50-cloud-init.yaml
+Machine etb3.amonecole 2.10.0 : Inject /etc/netplan/01-netcfg-2204.yaml dans /etc/netplan/01-netcfg.yaml
+Machine etb3.amonecole 2.10.0 : netplan generate --debug
+DEBUG:command generate: running ['/usr/libexec/netplan/generate']
+** (generate:1447): DEBUG: 11:03:01.665: starting new processing pass
+** (generate:1447): DEBUG: 11:03:01.666: enp2s0: adding new route
+** (generate:1447): DEBUG: 11:03:01.667: We have some netdefs, pass them through a final round of validation
+** (generate:1447): DEBUG: 11:03:01.667: enp2s0: setting default backend to 1
+** (generate:1447): DEBUG: 11:03:01.668: Configuration is valid
+** (generate:1447): DEBUG: 11:03:01.668: enp3s0: setting default backend to 1
+** (generate:1447): DEBUG: 11:03:01.668: Configuration is valid
+** (generate:1447): DEBUG: 11:03:01.669: Generating output files..
+** (generate:1447): DEBUG: 11:03:01.673: Open vSwitch: definition enp2s0 is not for us (backend 1)
+** (generate:1447): DEBUG: 11:03:01.673: NetworkManager: definition enp2s0 is not for us (backend 1)
+** (generate:1447): DEBUG: 11:03:01.674: Open vSwitch: definition enp3s0 is not for us (backend 1)
+** (generate:1447): DEBUG: 11:03:01.674: NetworkManager: definition enp3s0 is not for us (backend 1)
+Machine etb3.amonecole 2.10.0 : Inject authorized_keys
+Machine etb3.amonecole 2.10.0 : Actualisation /root/.ssh/authorized_keys
+Machine etb3.amonecole 2.10.0 : Inject bash_history
+Machine etb3.amonecole 2.10.0 : Contextualisation minimale OK
+Machine etb3.amonecole 2.10.0 : Fin ciContextualisationMinimale
+Machine etb3.amonecole 2.10.0 : Fin ciContextualizeModuleEole
+Machine etb3.amonecole 2.10.0 : Contextualization Machine OK
+Machine etb3.amonecole 2.10.0 : jojo 1421842 etb3.amonecole Contextualization Machine : OK
+Machine etb3.amonecole 2.10.0 : Fin ciContextualizeMachine : ok à 2024-12-12 11:03:02

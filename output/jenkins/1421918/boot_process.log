@@ -1,0 +1,21 @@
+Debut ciAfficheProcess 2024-12-12 17:12:50
+****************************************************************************************************************
+Machine daily 2.10.0 : systemctl is-active multi-user.target : active
+Machine daily 2.10.0 : systemctl is-active network.target : active
+Machine daily 2.10.0 : systemctl is-active network-online.target : active
+Machine daily 2.10.0 : systemctl is-system-running : degraded
+**************************************
+systemctl --state=failed
+  UNIT                                 LOAD   ACTIVE SUB    DESCRIPTION
+● isc-dhcp-relay.service               loaded failed failed ISC DHCP IPv4 relay
+● networking.service                   loaded failed failed Raise network interfaces
+● squid3-2.service                     loaded failed failed Squid HTTP Proxy 3.x - 2
+● systemd-networkd-wait-online.service loaded failed failed Wait for Network to be Configured
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+4 loaded units listed.
+**************************************
+Fin ciAfficheProcess : RESULT = 0    2024-12-12 17:12:50

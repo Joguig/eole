@@ -1,0 +1,52 @@
+Machine etb1.pcprofs  : Debut ciConfigurationPcLinux
+Machine etb1.pcprofs  : ciConfigurationMinimale: 1er fois, à faire...
+Machine etb1.pcprofs  : GW actuelle : 10.1.2.1 OK
+Machine etb1.pcprofs  : pas de fichier startup '/mnt/eole-ci-tests/configuration/etb1.pcprofs//minimale/startup.sh' 
+Machine etb1.pcprofs  : Configurer sysctl.swapiness=0
+Machine etb1.pcprofs  : Configuration minimale OK
+Machine etb1.pcprofs  : Fin ciConfigurationMinimale : 1415306 le 2024-12-03 12:28:27
+GW actuelle : 10.1.2.1 OK, attendu: 10.1.2.1
+** Test GW 10.1.2.1
+[3172mMachine etb1.pcprofs  : ATTENTION: ciPingHost enp2s0 => 10.1.2.1 ping=1 ==> K.O. (exit 1)
+(B[mciConfigurationPcLinux : PROXY=10.1.2.1
+ciConfigurationPcLinux : set proxy /etc/apt/apt.conf.d/proxy 
+Acquire::http::Proxy "http://admin:eole@10.1.2.1:3128";
+[3172mMachine etb1.pcprofs  : ATTENTION: ciSetHttpProxy, Injection 'http_proxy=http://admin:eole@10.1.2.1:3128' 
+(B[mMachine etb1.pcprofs  : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/eole/' : OK
+Machine etb1.pcprofs  : Liste des applications active
+/etc/xdg/autostart/at-spi-dbus-bus.desktop:NoDisplay=true
+/etc/xdg/autostart/caribou-autostart.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-a11y-settings.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-automount.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-background.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-clipboard.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-color.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-housekeeping.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-keyboard.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-media-keys.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-power.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-print-notifications.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-screensaver-proxy.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-settings-remap.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-smartcard.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-wacom.desktop:NoDisplay=true
+/etc/xdg/autostart/cinnamon-settings-daemon-xsettings.desktop:NoDisplay=true
+/etc/xdg/autostart/geoclue-demo-agent.desktop:NoDisplay=true
+/etc/xdg/autostart/gnome-keyring-pkcs11.desktop:NoDisplay=true
+/etc/xdg/autostart/gnome-keyring-secrets.desktop:NoDisplay=true
+/etc/xdg/autostart/im-launch.desktop:NoDisplay=true
+/etc/xdg/autostart/nm-applet.desktop:NoDisplay=true
+/etc/xdg/autostart/onboard-autostart.desktop:NoDisplay=true
+/etc/xdg/autostart/orca-autostart.desktop:NoDisplay=true
+/etc/xdg/autostart/org.gnome.Evolution-alarm-notify.desktop:NoDisplay=true
+/etc/xdg/autostart/org.gnome.SettingsDaemon.DiskUtilityNotify.desktop:NoDisplay=true
+/etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop:NoDisplay=true
+/etc/xdg/autostart/polkit-mate-authentication-agent-1.desktop:NoDisplay=true
+/etc/xdg/autostart/sticky.desktop:NoDisplay=true
+/etc/xdg/autostart/touchegg.desktop:NoDisplay=true
+/etc/xdg/autostart/user-dirs-update-gtk.desktop:NoDisplay=true
+/etc/xdg/autostart/warpinator-autostart.desktop:NoDisplay=true
+/etc/xdg/autostart/xdg-user-dirs.desktop:NoDisplay=true
+Fin ciConfigurationPcLinux
+/usr/bin/updatedb
+Machine etb1.pcprofs  : * désactivation updatedb/locate sur /mnt/eole-ci-test présente !

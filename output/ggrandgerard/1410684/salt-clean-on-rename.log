@@ -1,0 +1,36 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20200629182729
+Username: WORKGROUP\Système
+RunAs User: WORKGROUP\Système
+Machine: PC-256741 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NoProfile -File C:\eole\EoleCiTestContext.ps1
+Process ID: 1784
+PSVersion: 5.1.14409.1012
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.14409.1012
+BuildVersion: 10.0.14409.1012
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is c:\eole\salt-clean-on-rename.log
+Stop-Service salt-minion
+status minion
+
+Status   Name               DisplayName
+------   ----               -----------
+Stopped  salt-minion        salt-minion
+remove minion_id
+* remove c:\salt\conf\minion_id : to do
+* remove c:\salt\conf\minion_id : OK
+Start-Service salt-minion
+WARNING: Waiting for service 'salt-minion (salt-minion)' to start...
+salt-call saltutils.regen_keys
+
+* checkSaltMinionId : OK tag image
+**********************
+Windows PowerShell transcript end
+End time: 20200629183004
+**********************

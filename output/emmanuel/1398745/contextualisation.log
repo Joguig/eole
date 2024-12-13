@@ -1,0 +1,35 @@
+Machine aca.pc  : Début ciContextualizeMachine : aca.pc, pc
+Machine aca.pc  : Debut ciContextualizePcLinux
+Machine aca.pc  : OS Ubuntu 24.04.1 LTS  Version=24.04
+Machine aca.pc  : machine PcLinux ==> utilise le dhcp!
+Machine aca.pc  : Inject pc-1398745 -> hostnamectl 
+Machine aca.pc  : * Inject  pc-1398745 -> /etc/hosts
+127.0.0.1 localhost
+127.0.1.1 pcubuntumate
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+Machine aca.pc  : * Restart avahi-daemon
+Machine aca.pc  : le PC a pour nom pc-1398745 : pc-1398745
+ Static hostname: pc-1398745
+       Icon name: computer-vm
+         Chassis: vm 🖴
+      Machine ID: 2d060e0f63a04c34a9555b371f4b161c
+         Boot ID: 60c09a343f0f4ccd98a77e7f2d8b70bd
+  Virtualization: kvm
+Operating System: Ubuntu 24.04.1 LTS
+          Kernel: Linux 6.8.0-48-generic
+    Architecture: x86-64
+ Hardware Vendor: QEMU
+  Hardware Model: Standard PC _Q35 + ICH9, 2009_
+Firmware Version: 0.0.0
+   Firmware Date: Fri 2015-02-06
+    Firmware Age: 9y 9month 6d
+Machine aca.pc  : Fin ciContextualizePcLinux
+Machine aca.pc  : Contextualization Machine OK
+Machine aca.pc  : emmanuel 1398745 aca.pc Contextualization Machine : OK
+Machine aca.pc  : Fin ciContextualizeMachine : ok à 2024-11-12 11:15:07

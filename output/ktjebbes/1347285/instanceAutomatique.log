@@ -1,0 +1,20 @@
+Machine etb1.amon 2.7.2 : Début ciConfigurationModuleEole
+Machine etb1.amon 2.7.2 : Le fichier config.eol existe et l'image est instanciée : je ne fais rien !
+Machine etb1.amon 2.7.2 : ciSetHttpProxy, la machine a une patte sur 'academie', pas de proxy
+*********************************************
+* Affiche connectivité
+*********************************************
+    inet 127.0.0.1/8 scope host lo
+    inet 192.168.0.31/24 brd 192.168.0.255 scope global ens4
+    inet 10.1.1.1/24 brd 10.1.1.255 scope global ens5
+    inet 10.1.15.1/24 brd 10.1.15.255 scope global ens5
+    inet 10.1.16.1/24 brd 10.1.16.255 scope global ens5
+    inet 10.1.2.1/24 brd 10.1.2.255 scope global ens6
+    inet 10.1.3.1/24 brd 10.1.3.255 scope global ens7
+    inet 10.1.21.1/24 brd 10.1.21.255 scope global vlan21
+    inet 10.1.22.1/24 brd 10.1.22.255 scope global vlan22
+Machine etb1.amon 2.7.2 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+Machine etb1.amon 2.7.2 : ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine etb1.amon 2.7.2 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+/usr/bin/updatedb
+Machine etb1.amon 2.7.2 : * désactivation updatedb/locate sur /mnt/eole-ci-test présente !

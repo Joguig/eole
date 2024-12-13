@@ -1,0 +1,198 @@
+Machine daily 2.10.0 : ciUpdateDaily BUILD_DAILY
+Machine daily 2.10.0 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.10.0 : liste des noyaux
+-rw------- 1 root root 14956936 nov.   1 11:41 /boot/vmlinuz-6.8.0-49-generic
+-rw------- 1 root root 14973320 nov.   9 16:00 /boot/vmlinuz-6.8.0-50-generic
+Machine daily 2.10.0 : * espaces disponibles
+Sys. de fichiers             Type     Taille Utilisé Dispo Uti% Monté sur
+efivarfs                     efivarfs    58k     17k   36k  33% /sys/firmware/efi/efivars
+/dev/mapper/amon--vg-root    ext4        11G    4,3G  5,7G  44% /
+/dev/mapper/amon--vg-home    ext4       1,1G     50k  994M   1% /home
+/dev/mapper/amon--vg-var     ext4       8,4G    660M  7,3G   9% /var
+/dev/mapper/amon--vg-var+log ext4       5,2G     44M  4,9G   1% /var/log
+/dev/sda3                    ext4       756M    205M  496M  30% /boot
+/dev/sda1                    vfat        67M    6,4M   60M  10% /boot/efi
+Machine daily 2.10.0 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.10.0 : dpkg --configure -a
+Machine daily 2.10.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+Machine daily 2.10.0 : ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 2.10.0 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 2.10.0 : Maj-Auto DEV
+*********************************************
+Machine daily 2.10.0 : (py3) ciMonitor maj_auto
+
+monitor_maj_auto: pas de config.eol, donc utilise '-i' !
+
+MONITOR: Maj-Auto  -i -S test-eole.ac-dijon.fr -V test-eole.ac-dijon.fr  -D
+Mise à jour le vendredi 13 décembre 2024 17:11:27
+Exécution des scripts /usr/share/eole/majauto_pre
+run-parts: executing /usr/share/eole/majauto_pre/clean
+run-parts: executing /usr/share/eole/majauto_pre/mitm
+run-parts: executing /usr/share/eole/majauto_pre/update_containers
+
+Gestion des images de conteneur
+
+Toutes les images sont à jour
+
+*** amon 2.10.0 ***
+
+[33mMaj-Auto - (VERSION DE DEVELOPPEMENT) - Augmenter le niveau de mise à jour est irréversible.[0m
+Voulez-vous continuer ? [oui/non]
+[non] : 
+MONITOR: maj_auto_241a action:oui
+oui
+Configuration du dépôt Ubuntu avec la source eole.ac-dijon.fr
+Configuration du dépôt EOLE avec la source test-eole.ac-dijon.fr
+Action update pour root                                                   [|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]   
+Action list-upgrade pour root
+0 nouveau, 3 mis à jour, 0 à enlever
+Paquets à mettre à jour : 
+    cpp-13 (13.3.0-6ubuntu2~24.04) (root)
+    cpp-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) (root)
+    gcc-13-base (13.3.0-6ubuntu2~24.04) (root)
+Action download-upgrade pour root
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+Les paquets suivants seront mis à jour :
+  cpp-13 cpp-13-x86-64-linux-gnu gcc-13-base
+3 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Il est nécessaire de prendre 10,8 Mo dans les archives.
+Après cette opération, 4 314 ko d'espace disque seront libérés.
+Réception de :1 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 cpp-13 amd64 13.3.0-6ubuntu2~24.04 [1 038 B]
+Réception de :2 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 cpp-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04 [10,7 MB]
+Réception de :3 http://eole.ac-dijon.fr/ubuntu noble-security/main amd64 gcc-13-base amd64 13.3.0-6ubuntu2~24.04 [51,5 kB]
+10,8 Mo réceptionnés en 0s (62,0 Mo/s)
+Téléchargement achevé et dans le mode téléchargement uniquement
+Action dist-upgrade pour root
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+Les paquets suivants seront mis à jour :
+  cpp-13 cpp-13-x86-64-linux-gnu gcc-13-base
+3 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Il est nécessaire de prendre 0 o/10,8 Mo dans les archives.
+Après cette opération, 4 314 ko d'espace disque seront libérés.
+(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 198590 fichiers et répertoires déjà installés.)
+Préparation du dépaquetage de .../cpp-13_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Dépaquetage de cpp-13 (13.3.0-6ubuntu2~24.04) sur (13.2.0-23ubuntu4) ...
+Préparation du dépaquetage de .../cpp-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Dépaquetage de cpp-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) sur (13.2.0-23ubuntu4) ...
+Préparation du dépaquetage de .../gcc-13-base_13.3.0-6ubuntu2~24.04_amd64.deb ...
+Dépaquetage de gcc-13-base:amd64 (13.3.0-6ubuntu2~24.04) sur (13.2.0-23ubuntu4) ...
+Paramétrage de gcc-13-base:amd64 (13.3.0-6ubuntu2~24.04) ...
+Paramétrage de cpp-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
+Paramétrage de cpp-13 (13.3.0-6ubuntu2~24.04) ...
+Traitement des actions différées (« triggers ») pour man-db (2.12.0-4build2) ...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Mise à jour OK
+[33mMaj-Auto - Un ou plusieurs paquets ont été mis à jour, utilisez la commande [reconfigure] pour que les modifications soient prises en compte.[0m
+Machine daily 2.10.0 : ciMonitor python3 ==> RESULT=0
+--------------------------------------------
+cat /etc/apt/sources.list
+
+# Ubuntu
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu noble main universe multiverse restricted
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu noble-security main universe multiverse restricted
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu noble-updates main universe multiverse restricted
+
+# EOLE
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.10-unstable main cloud
+
+--------------------------------------------
+--------------------------------------------
+cat /etc/apt/sources.list.d/additional.list
+#template genere par Maj-Auto
+#
+--------------------------------------------
+--------------------------------------------
+cat /etc/apt/sources.list.d/ubuntu.sources.curtin.orig
+# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+
+## Ubuntu distribution repository
+##
+## The following settings can be adjusted to configure which packages to use from Ubuntu.
+## Mirror your choices (except for URIs and Suites) in the security section below to
+## ensure timely security updates.
+##
+## Types: Append deb-src to enable the fetching of source package.
+## URIs: A URL to the repository (you may add multiple URLs)
+## Suites: The following additional suites can be configured
+##   <name>-updates   - Major bug fix updates produced after the final release of the
+##                      distribution.
+##   <name>-backports - software from this repository may not have been tested as
+##                      extensively as that contained in the main release, although it includes
+##                      newer versions of some applications which may provide useful features.
+##                      Also, please note that software in backports WILL NOT receive any review
+##                      or updates from the Ubuntu security team.
+## Components: Aside from main, the following components can be added to the list
+##   restricted  - Software that may not be under a free license, or protected by patents.
+##   universe    - Community maintained packages. Software in this repository receives maintenance
+##                 from volunteers in the Ubuntu community, or a 10 year security maintenance
+##                 commitment from Canonical when an Ubuntu Pro subscription is attached.
+##   multiverse  - Community maintained of restricted. Software from this repository is
+##                 ENTIRELY UNSUPPORTED by the Ubuntu team, and may not be under a free
+##                 licence. Please satisfy yourself as to your rights to use the software.
+##                 Also, please note that software in multiverse WILL NOT receive any
+##                 review or updates from the Ubuntu security team.
+##
+## See the sources.list(5) manual page for further settings.
+Types: deb
+URIs: http://archive.ubuntu.com/ubuntu/
+Suites: noble noble-updates noble-backports
+Components: main universe restricted multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+
+## Ubuntu security updates. Aside from URIs and Suites,
+## this should mirror your choices in the previous section.
+Types: deb
+URIs: http://security.ubuntu.com/ubuntu/
+Suites: noble-security
+Components: main universe restricted multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+--------------------------------------------
+Machine daily 2.10.0 : GenConteneur
+*********************************************
+* Pas de conteneurs pour ce module.
+*********************************************
+Machine daily 2.10.0 : Pas de fichier startup '/mnt/eole-ci-tests/module/UpdateDaily-amon.sh' 
+Machine daily 2.10.0 : Test CVE Noyau
+0
+Machine daily 2.10.0 : autoremove pour les anciens noyaux
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+/usr/bin/updatedb
+Machine daily 2.10.0 : * Execute updatedb
+/usr/bin/shellcheck
+Machine daily 2.10.0 : Tag l'Image Daily
+DAILY_CONTAINER=non
+DAILY_DATEUPDATE=1734109926
+DAILY_DATE='2024-12-13 17:12'
+DAILY_MAJAUTO=DEV
+Machine daily 2.10.0 : Check Update Service
+/etc/systemd/system/EoleCiTestsContext.service A JOUR
+CheckUpdateService.sh: systemctl enable 'EoleCiTestsContext.service'
+Removed "/etc/systemd/system/network.target.wants/EoleCiTestsContext.service".
+Created symlink /etc/systemd/system/network.target.wants/EoleCiTestsContext.service → /etc/systemd/system/EoleCiTestsContext.service.
+CheckUpdateService.sh: systemctl daemon-reload
+/etc/systemd/system/EoleCiTestsDaemon.service A JOUR
+CheckUpdateService.sh: systemctl enable 'EoleCiTestsDaemon.service'
+Removed "/etc/systemd/system/multi-user.target.wants/EoleCiTestsDaemon.service".
+Created symlink /etc/systemd/system/multi-user.target.wants/EoleCiTestsDaemon.service → /etc/systemd/system/EoleCiTestsDaemon.service.
+CheckUpdateService.sh: systemctl daemon-reload
+Machine daily 2.10.0 : Trim disk
+Machine daily 2.10.0 : ciUpdateDaily DEV : OK

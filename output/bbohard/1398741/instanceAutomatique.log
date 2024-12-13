@@ -1,0 +1,18 @@
+Machine aca.file 2.9.0 : Début ciConfigurationModuleEole
+Machine aca.file 2.9.0 : Le fichier config.eol existe et l'image est instanciée : je ne fais rien !
+Machine aca.file 2.9.0 : ciSetHttpProxy, pas de proxy pour les machines 'academie'
+*********************************************
+* Affiche connectivité
+*********************************************
+    inet 127.0.0.1/8 scope host lo
+    inet 192.168.0.7/24 brd 192.168.0.255 scope global enp2s0
+*********************************************
+* Ping Gateway 192.168.0.1
+*********************************************
+Machine aca.file 2.9.0 : ciPingHost enp2s0 => 192.168.0.1 ping=0 ==> OK (exit 0)
+Ping Gateway ==> RETVAL=0
+Machine aca.file 2.9.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+Machine aca.file 2.9.0 : ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine aca.file 2.9.0 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+/usr/bin/updatedb
+Machine aca.file 2.9.0 : * désactivation updatedb/locate sur /mnt/eole-ci-test présente !

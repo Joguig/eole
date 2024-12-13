@@ -1,0 +1,147 @@
+    PID ---User--- ----------CGroup------------ COMMAND
+      2 root       -                            [kthreadd]
+      3 root       -                             \_ [rcu_gp]
+      4 root       -                             \_ [rcu_par_gp]
+      5 root       -                             \_ [netns]
+      7 root       -                             \_ [kworker/0:0H-events_highpri]
+      8 root       -                             \_ [kworker/u8:0-flush-253:0]
+      9 root       -                             \_ [kworker/0:1H-events_highpri]
+     10 root       -                             \_ [mm_percpu_wq]
+     11 root       -                             \_ [rcu_tasks_rude_]
+     12 root       -                             \_ [rcu_tasks_trace]
+     13 root       -                             \_ [ksoftirqd/0]
+     14 root       -                             \_ [rcu_sched]
+     15 root       -                             \_ [migration/0]
+     16 root       -                             \_ [idle_inject/0]
+     17 root       -                             \_ [kworker/0:1-mm_percpu_wq]
+     18 root       -                             \_ [cpuhp/0]
+     19 root       -                             \_ [cpuhp/1]
+     20 root       -                             \_ [idle_inject/1]
+     21 root       -                             \_ [migration/1]
+     22 root       -                             \_ [ksoftirqd/1]
+     24 root       -                             \_ [kworker/1:0H-events_highpri]
+     25 root       -                             \_ [cpuhp/2]
+     26 root       -                             \_ [idle_inject/2]
+     27 root       -                             \_ [migration/2]
+     28 root       -                             \_ [ksoftirqd/2]
+     29 root       -                             \_ [kworker/2:0-events]
+     30 root       -                             \_ [kworker/2:0H-events_highpri]
+     31 root       -                             \_ [cpuhp/3]
+     32 root       -                             \_ [idle_inject/3]
+     33 root       -                             \_ [migration/3]
+     34 root       -                             \_ [ksoftirqd/3]
+     36 root       -                             \_ [kworker/3:0H-events_highpri]
+     37 root       -                             \_ [kdevtmpfs]
+     38 root       -                             \_ [inet_frag_wq]
+     39 root       -                             \_ [kauditd]
+     40 root       -                             \_ [khungtaskd]
+     41 root       -                             \_ [oom_reaper]
+     42 root       -                             \_ [writeback]
+     43 root       -                             \_ [kcompactd0]
+     44 root       -                             \_ [ksmd]
+     45 root       -                             \_ [khugepaged]
+     52 root       -                             \_ [kworker/1:1-events]
+     55 root       -                             \_ [kworker/2:1-events]
+     93 root       -                             \_ [kintegrityd]
+     94 root       -                             \_ [kblockd]
+     95 root       -                             \_ [blkcg_punt_bio]
+     96 root       -                             \_ [tpm_dev_wq]
+     97 root       -                             \_ [ata_sff]
+     98 root       -                             \_ [md]
+     99 root       -                             \_ [edac-poller]
+    100 root       -                             \_ [devfreq_wq]
+    101 root       -                             \_ [watchdogd]
+    102 root       -                             \_ [kworker/3:1-cgroup_destroy]
+    103 root       -                             \_ [kworker/u8:1-flush-253:0]
+    105 root       -                             \_ [kswapd0]
+    106 root       -                             \_ [ecryptfs-kthrea]
+    108 root       -                             \_ [kthrotld]
+    109 root       -                             \_ [acpi_thermal_pm]
+    110 root       -                             \_ [kworker/u8:2-events_unbound]
+    111 root       -                             \_ [scsi_eh_0]
+    112 root       -                             \_ [scsi_tmf_0]
+    113 root       -                             \_ [scsi_eh_1]
+    114 root       -                             \_ [scsi_tmf_1]
+    115 root       -                             \_ [kworker/u8:3-events_power_efficient]
+    116 root       -                             \_ [vfio-irqfd-clea]
+    117 root       -                             \_ [kworker/1:1H-events_highpri]
+    118 root       -                             \_ [mld]
+    119 root       -                             \_ [kworker/2:1H-events_highpri]
+    120 root       -                             \_ [ipv6_addrconf]
+    121 root       -                             \_ [kworker/u8:4-ext4-rsv-conversion]
+    123 root       -                             \_ [kworker/u8:5-flush-253:0]
+    124 root       -                             \_ [kworker/1:2-events]
+    125 root       -                             \_ [kworker/3:1H-events_highpri]
+    133 root       -                             \_ [kstrp]
+    136 root       -                             \_ [zswap-shrink]
+    137 root       -                             \_ [kworker/u9:0]
+    142 root       -                             \_ [charger_manager]
+    176 root       -                             \_ [scsi_eh_2]
+    177 root       -                             \_ [scsi_tmf_2]
+    178 root       -                             \_ [cryptd]
+    182 root       -                             \_ [kworker/2:2-cgroup_destroy]
+    228 root       -                             \_ [kdmflush]
+    251 root       -                             \_ [kworker/3:2-rcu_gp]
+    260 root       -                             \_ [raid5wq]
+    311 root       -                             \_ [jbd2/dm-0-8]
+    312 root       -                             \_ [ext4-rsv-conver]
+    404 root       -                             \_ [kworker/0:2-events]
+    405 root       -                             \_ [ipmi-msghandler]
+    415 root       -                             \_ [kaluad]
+    416 root       -                             \_ [kworker/0:3-cgroup_destroy]
+    418 root       -                             \_ [kmpath_rdacd]
+    419 root       -                             \_ [kmpathd]
+    420 root       -                             \_ [kmpath_handlerd]
+    514 root       -                             \_ [kworker/u8:6-flush-253:0]
+    539 root       -                             \_ [jbd2/sda2-8]
+    540 root       -                             \_ [ext4-rsv-conver]
+    618 root       -                             \_ [nfit]
+    643 root       -                             \_ [kworker/3:3-events]
+   1954 root       -                             \_ [kworker/2:3-mm_percpu_wq]
+   2434 root       -                             \_ [kworker/1:0-events]
+   3133 root       -                             \_ [kworker/3:0-cgroup_destroy]
+      1 root       0::/init.scope               /sbin/init
+    371 root       0::/system.slice/systemd-jou /lib/systemd/systemd-journald
+    372 root       0::/system.slice/debug-shell /bin/bash
+    421 root       0::/system.slice/multipathd. /sbin/multipathd -d -s
+    431 root       0::/system.slice/systemd-ude /lib/systemd/systemd-udevd
+    730 messagebus 0::/system.slice/dbus.servic @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    738 root       0::/system.slice/irqbalance. /usr/sbin/irqbalance --foreground
+    739 root       0::/system.slice/networkd-di /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+    741 root       0::/system.slice/polkit.serv /usr/libexec/polkitd --no-debug
+    742 syslog     0::/system.slice/rsyslog.ser /usr/sbin/rsyslogd -n -iNONE
+    743 root       0::/system.slice/snapd.servi /usr/lib/snapd/snapd
+    744 root       0::/system.slice/systemd-log /lib/systemd/systemd-logind
+    745 root       0::/system.slice/udisks2.ser /usr/libexec/udisks2/udisksd
+    806 root       0::/system.slice/ModemManage /usr/sbin/ModemManager
+    843 systemd-n+ 0::/system.slice/systemd-net /lib/systemd/systemd-networkd
+    860 root       0::/system.slice/snap.cups.c /bin/sh /snap/cups/836/scripts/run-cups-browsed
+   1118 root       0::/system.slice/snap.cups.c  \_ cups-browsed -c /var/snap/cups/common/etc/cups/cups-browsed.conf
+    861 root       0::/system.slice/snap.cups.c /bin/sh /snap/cups/836/scripts/run-cupsd
+   1104 root       0::/system.slice/snap.cups.c  \_ cupsd -f -s /var/snap/cups/common/etc/cups/cups-files.conf -c /var/snap/cups/common/etc/cups/cupsd.conf
+   1111 snap_daem+ 0::/system.slice/snap.cups.c      \_ /snap/cups/836/lib/cups/notifier/dbus dbus://
+   1746 snap_daem+ 0::/system.slice/snap.cups.c      \_ /snap/cups/836/lib/cups/notifier/dbus dbus://
+    864 root       0::/system.slice/containerd. /usr/bin/containerd
+    944 root       0::/system.slice/nginx.servi nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+    945 www-data   0::/system.slice/nginx.servi  \_ nginx: worker process
+    946 www-data   0::/system.slice/nginx.servi  \_ nginx: worker process
+    947 www-data   0::/system.slice/nginx.servi  \_ nginx: worker process
+    948 www-data   0::/system.slice/nginx.servi  \_ nginx: worker process
+   1153 root       0::/system.slice/cron.servic /usr/sbin/cron -f -P
+   1174 root       0::/system.slice/system-gett /sbin/agetty -o -p -- \u --noclear tty1 linux
+   1434 Debian-ex+ 0::/system.slice/exim4.servi /usr/sbin/exim4 -bd -q30m -oX 25:587:10025 -oP /run/exim4/exim.pid -d
+   1440 root       0::/user.slice/user-0.slice/ sshd: root@pts/0
+   1569 root       0::/user.slice/user-0.slice/  \_ -bash
+   1443 root       0::/user.slice/user-0.slice/ /lib/systemd/systemd --user
+   1444 root       0::/user.slice/user-0.slice/  \_ (sd-pam)
+   1669 root       0::/user.slice/user-0.slice/  \_ /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   1670 root       0::/user.slice/user-0.slice/  \_ /usr/libexec/xdg-document-portal
+   1679 root       0::/user.slice/user-0.slice/  |   \_ fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/0/doc
+   1673 root       0::/user.slice/user-0.slice/  \_ /usr/libexec/xdg-permission-store
+   2131 root       0::/system.slice/EoleCiTests /bin/bash /root/.EoleCiTestsDaemon.sh
+   3135 root       0::/system.slice/EoleCiTests  \_ ps xawf -eo pid,user=---User---,cgroup=----------CGroup------------,args
+   2312 root       0::/system.slice/ssh.service sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+   2379 dnsmasq    0::/system.slice/dnsmasq.ser /usr/sbin/dnsmasq -x /run/dnsmasq/dnsmasq.pid -u dnsmasq -7 /etc/dnsmasq.d,.dpkg-dist,.dpkg-old,.dpkg-new --local-service --trust-anchor=.,20326,8,2,e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+   2380 root       0::/system.slice/dnsmasq.ser  \_ /usr/sbin/dnsmasq -x /run/dnsmasq/dnsmasq.pid -u dnsmasq -7 /etc/dnsmasq.d,.dpkg-dist,.dpkg-old,.dpkg-new --local-service --trust-anchor=.,20326,8,2,e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+   2417 _chrony    0::/system.slice/chrony.serv /usr/sbin/chronyd -F 1
+   2418 _chrony    0::/system.slice/chrony.serv  \_ /usr/sbin/chronyd -F 1

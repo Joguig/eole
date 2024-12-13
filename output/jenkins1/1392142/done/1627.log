@@ -1,0 +1,44 @@
+liste *.conf différentes!
+Machine gateway-mensr  : * Vide les exceptions crée par les tests
+removed '/etc/dnsmasq-hostsdir/salt.conf'
+Machine gateway-mensr  : * nettoye /etc/dnsmasq.d/*.conf
+removed '/etc/dnsmasq.d/agent_jenkins.conf'
+removed '/etc/dnsmasq.d/dhcp_academie.conf'
+removed '/etc/dnsmasq.d/dhcp_rie.conf'
+removed '/etc/dnsmasq.d/domaca.conf'
+removed '/etc/dnsmasq.d/domhorus.conf'
+removed '/etc/dnsmasq.d/domscribe.conf'
+removed '/etc/dnsmasq.d/domseth.conf'
+removed '/etc/dnsmasq.d/k3d.conf'
+removed '/etc/dnsmasq.d/logging.conf'
+removed '/etc/dnsmasq.d/pxe.conf'
+Machine gateway-mensr  : * copy /tmp/dnsmasq.d/*.conf -> /etc/dnsmasq.d/*.conf
+dnsmasq: syntax check OK.
+* efface logs gateway
+192.168.0.115 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 2664/2664/2618probes 1 STALE 
+192.168.0.26 dev enp3s0 lladdr 02:00:c0:a8:00:66  ref 1 used 12/12/12probes 1 REACHABLE 
+192.168.230.43 dev enp2s0  used 11/10592/8probes 6 FAILED 
+192.168.0.10 dev enp3s0 lladdr 02:00:c0:a8:00:67  ref 1 used 18/18/18probes 1 REACHABLE 
+192.168.230.254 dev enp2s0 lladdr d4:ae:52:ce:2f:16  ref 1 used 2/2/4probes 1 DELAY 
+192.168.0.31 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 1443/1443/1397probes 1 STALE 
+192.168.0.20 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 3635/3635/3615probes 1 STALE 
+192.168.0.5 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 506/506/482probes 1 STALE 
+192.168.0.30 dev enp3s0 lladdr 42:81:f1:46:4f:d6  used 8/68/8probes 1 STALE 
+192.168.0.154 dev enp3s0  used 9923/10439/9920probes 6 FAILED 
+192.168.0.253 dev enp3s0 lladdr 02:00:c0:a8:00:65  used 1559/1559/1516probes 1 STALE 
+192.168.0.33 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 4537/4537/4498probes 1 STALE 
+192.168.0.200 dev enp3s0 lladdr 02:00:c0:a8:00:c8  used 2960/2960/2915probes 1 STALE 
+fe80::2204:fff:fea7:6f4c dev enp2s0 lladdr 20:04:0f:a7:6f:4c router  used 1817/1817/1791probes 1 STALE 
+fe80::2204:fff:fea7:674c dev enp2s0 lladdr 20:04:0f:a7:67:4c router  used 3857/3857/3814probes 1 STALE 
+
+*** Round 1, deleting 15 entries ***
+*** Flush is complete after 1 round ***
+* Verification 'salt.domscribe.ac-test.fr' : 192.168.0.26
+* Vérification résolution 'salt'           : 192.168.0.30
+* Vérification du Forward vers les DC      : 192.168.0.30
+PING domscribe.ac-test.fr (192.168.0.30) 56(84) bytes of data.
+64 bytes from salt.ac-test.fr (192.168.0.30): icmp_seq=1 ttl=64 time=0.098 ms
+
+--- domscribe.ac-test.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.098/0.098/0.098/0.000 ms

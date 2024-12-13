@@ -1,0 +1,618 @@
+Machine gateway-mensr  : Configuration Automatique Gateway DNSMASQ AGENT_JENKINS (10:47:33)
+Machine gateway-mensr  : * stop old services
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Les paquets supplémentaires suivants seront installés : 
+  isc-dhcp-common
+Paquets suggérés :
+  avahi-autoipd isc-dhcp-client-ddns
+Les NOUVEAUX paquets suivants seront installés :
+  isc-dhcp-client isc-dhcp-common
+0 mis à jour, 2 nouvellement installés, 0 à enlever et 2 non mis à jour.
+Il est nécessaire de prendre 375 ko dans les archives.
+Après cette opération, 1 011 ko d'espace disque supplémentaires seront utilisés.
+Réception de :1 http://fr.archive.ubuntu.com/ubuntu noble/universe amd64 isc-dhcp-client amd64 4.4.3-P1-4ubuntu2 [329 kB]
+Réception de :2 http://fr.archive.ubuntu.com/ubuntu noble/universe amd64 isc-dhcp-common amd64 4.4.3-P1-4ubuntu2 [45,8 kB]
+debconf: Impossible d'initialiser l'interface : Dialog
+debconf: (La variable TERM n'a pas de valeur, l'interface dialog est donc inutilisable.)
+debconf: Utilisation de l'interface Readline en remplacement
+debconf: Impossible d'initialiser l'interface : Readline
+debconf: (Cette interface a besoin d'un terminal de contrôle.)
+debconf: Utilisation de l'interface Teletype en remplacement
+dpkg-preconfigure: impossible de réouvrir stdin : 
+375 ko réceptionnés en 0s (1 507 ko/s)
+Sélection du paquet isc-dhcp-client précédemment désélectionné.
+(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 131464 fichiers et répertoires déjà installés.)
+Préparation du dépaquetage de .../isc-dhcp-client_4.4.3-P1-4ubuntu2_amd64.deb ...
+Dépaquetage de isc-dhcp-client (4.4.3-P1-4ubuntu2) ...
+Sélection du paquet isc-dhcp-common précédemment désélectionné.
+Préparation du dépaquetage de .../isc-dhcp-common_4.4.3-P1-4ubuntu2_amd64.deb ...
+Dépaquetage de isc-dhcp-common (4.4.3-P1-4ubuntu2) ...
+Paramétrage de isc-dhcp-client (4.4.3-P1-4ubuntu2) ...
+Paramétrage de isc-dhcp-common (4.4.3-P1-4ubuntu2) ...
+Traitement des actions différées (« triggers ») pour man-db (2.12.0-4build2) ...
+debconf: Impossible d'initialiser l'interface : Dialog
+debconf: (La variable TERM n'a pas de valeur, l'interface dialog est donc inutilisable.)
+debconf: Utilisation de l'interface Readline en remplacement
+debconf: Impossible d'initialiser l'interface : Readline
+debconf: (Cette interface a besoin d'un terminal de contrôle.)
+debconf: Utilisation de l'interface Teletype en remplacement
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+ systemctl is-active systemd-resolved.service ?  pas de systemd-resolved sur les gateway car c'est DNSMASQ qui fait le job
+active
+ systemd-resolved.service désactivation ? 
+Removed "/etc/systemd/system/dbus-org.freedesktop.resolve1.service".
+Removed "/etc/systemd/system/sysinit.target.wants/systemd-resolved.service".
+Machine gateway-mensr  : * CURRENT IP = 192.168.230.140 et VM_ETH0_IP=192.168.230.128
+Machine gateway-mensr  : * Affiche Connectivité avant 
+    inet 127.0.0.1/8 scope host lo
+    inet 192.168.230.140/24 metric 100 brd 192.168.230.255 scope global dynamic enp2s0
+    inet6 fe80::c0ff:fea8:e6d4/64 scope link 
+    inet 192.168.0.1/24 brd 192.168.0.255 scope global enp3s0
+    inet6 fe80::c0ff:fea8:64/64 scope link 
+    inet 192.168.227.1/24 brd 192.168.227.255 scope global enp4s0
+    inet6 fe80::c0ff:fea8:e364/64 scope link 
+    inet 192.168.253.1/24 brd 192.168.253.255 scope global enp5s0
+    inet6 fe80::c0ff:fea8:fd64/64 scope link 
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+* detach DHCP
+Machine gateway-mensr  : * Affiche Connectivité après 
+    inet 127.0.0.1/8 scope host lo
+    inet 192.168.230.140/24 metric 100 brd 192.168.230.255 scope global dynamic enp2s0
+    inet6 fe80::c0ff:fea8:e6d4/64 scope link 
+    inet 192.168.0.1/24 brd 192.168.0.255 scope global enp3s0
+    inet6 fe80::c0ff:fea8:64/64 scope link 
+    inet 192.168.227.1/24 brd 192.168.227.255 scope global enp4s0
+    inet6 fe80::c0ff:fea8:e364/64 scope link 
+    inet 192.168.253.1/24 brd 192.168.253.255 scope global enp5s0
+    inet6 fe80::c0ff:fea8:fd64/64 scope link 
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+Machine gateway-mensr  : * daemon reload  !
+Machine gateway-mensr  : * redémarrage network !
+Machine gateway-mensr  : * CURRENT IP = 192.168.230.128
+Machine gateway-mensr  : Gateway pour jenkins en cours de démarrage sur 'one'
+inactive
+Machine gateway-mensr  : ***********************************************************
+Machine gateway-mensr  : * IP V4
+Machine gateway-mensr  : ***********************************************************
+Machine gateway-mensr  : * Workaround docker messing up with our firewall
+Machine gateway-mensr  : * Active NAT
+Machine gateway-mensr  : * Active DNS par routage des trames sur l'eth1 !
+Machine gateway-mensr  : * Workaround BUG 'bad udp checksum' du client dhcp sur Debian 8* Voir https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=717217
+iptables -A POSTROUTING -t mangle -o enp3s0 -p udp --dport bootpc -j CHECKSUM --checksum-fill
+Machine gateway-mensr  : * Regle Iptables Filter
+-P INPUT ACCEPT
+-P FORWARD DROP
+-P OUTPUT ACCEPT
+-N DOCKER
+-N DOCKER-ISOLATION-STAGE-1
+-N DOCKER-ISOLATION-STAGE-2
+-N DOCKER-USER
+-A FORWARD -j DOCKER-USER
+-A FORWARD -j DOCKER-ISOLATION-STAGE-1
+-A FORWARD -o docker0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -o docker0 -j DOCKER
+-A FORWARD -i docker0 ! -o docker0 -j ACCEPT
+-A FORWARD -i docker0 -o docker0 -j ACCEPT
+-A FORWARD -i enp2s0 ! -o enp2s0 -j ACCEPT
+-A FORWARD ! -i enp2s0 -o enp2s0 -j ACCEPT
+-A FORWARD -i roadwarrior -j ACCEPT
+-A FORWARD -o roadwarrior -j ACCEPT
+-A DOCKER-ISOLATION-STAGE-1 -i docker0 ! -o docker0 -j DOCKER-ISOLATION-STAGE-2
+-A DOCKER-ISOLATION-STAGE-1 -j RETURN
+-A DOCKER-ISOLATION-STAGE-2 -o docker0 -j DROP
+-A DOCKER-ISOLATION-STAGE-2 -j RETURN
+-A DOCKER-USER -j RETURN
+Machine gateway-mensr  : * Regle Iptables NAT
+-P PREROUTING ACCEPT
+-P INPUT ACCEPT
+-P OUTPUT ACCEPT
+-P POSTROUTING ACCEPT
+-N DOCKER
+-A PREROUTING -i enp2s0 -p udp -m udp --dport 53 -j DNAT --to-destination 192.168.227.1
+-A PREROUTING -i enp2s0 -p udp -m udp --dport 53 -j DNAT --to-destination 192.168.0.1
+-A PREROUTING -m addrtype --dst-type LOCAL -j DOCKER
+-A OUTPUT ! -d 127.0.0.0/8 -m addrtype --dst-type LOCAL -j DOCKER
+-A POSTROUTING -s 172.17.0.0/16 ! -o docker0 -j MASQUERADE
+-A POSTROUTING -d 192.168.230.254/32 -o enp2s0 -j SNAT --to-source 192.168.230.128
+-A POSTROUTING -d 192.168.230.125/32 -o enp2s0 -j SNAT --to-source 192.168.230.128
+-A POSTROUTING ! -d 192.168.230.0/24 -o enp2s0 -j SNAT --to-source 192.168.230.128
+-A DOCKER -i docker0 -j RETURN
+Machine gateway-mensr  : * Regle Iptables MANGLE
+-P PREROUTING ACCEPT
+-P INPUT ACCEPT
+-P FORWARD ACCEPT
+-P OUTPUT ACCEPT
+-P POSTROUTING ACCEPT
+-A POSTROUTING -o enp3s0 -p udp -m udp --dport 68 -j CHECKSUM --checksum-fill
+Machine gateway-mensr  : * Regle Iptables RAW
+-P PREROUTING ACCEPT
+-P OUTPUT ACCEPT
+Machine gateway-mensr  : * Activation Routeur PERSISTANTE
+Machine gateway-mensr  : * Vérification Routeur (net.ipv4.ip_forward)
+net.ipv4.ip_forward = 1
+Machine gateway-mensr  : * Déactivation TCP timestamps CVE (net.ipv4.tcp_timestamps)
+net.ipv4.tcp_timestamps = 0
+Machine gateway-mensr  : ***********************************************************
+Machine gateway-mensr  : * IP V6
+Machine gateway-mensr  : ***********************************************************
+Machine gateway-mensr  : * Regle Ip6tables Filter
+-P INPUT ACCEPT
+-P FORWARD DROP
+-P OUTPUT ACCEPT
+-N DOCKER
+-N DOCKER-ISOLATION-STAGE-1
+-N DOCKER-ISOLATION-STAGE-2
+-N DOCKER-USER
+-A FORWARD -j DOCKER-USER
+-A DOCKER-ISOLATION-STAGE-1 -i docker0 ! -o docker0 -j DOCKER-ISOLATION-STAGE-2
+-A DOCKER-ISOLATION-STAGE-1 -j RETURN
+-A DOCKER-ISOLATION-STAGE-2 -o docker0 -j DROP
+-A DOCKER-ISOLATION-STAGE-2 -j RETURN
+-A DOCKER-USER -j RETURN
+Machine gateway-mensr  : * Regle Ip6tables NAT
+-P PREROUTING ACCEPT
+-P INPUT ACCEPT
+-P OUTPUT ACCEPT
+-P POSTROUTING ACCEPT
+-N DOCKER
+Machine gateway-mensr  : * Regle Ip6tables MANGLE
+-P PREROUTING ACCEPT
+-P INPUT ACCEPT
+-P FORWARD ACCEPT
+-P OUTPUT ACCEPT
+-P POSTROUTING ACCEPT
+Machine gateway-mensr  : * Regle Ip6tables RAW
+-P PREROUTING ACCEPT
+-P OUTPUT ACCEPT
+Machine gateway-mensr  : * Affiche configuration 'sysctl'
+kernel.kptr_restrict = 1                 #/etc/sysctl.d/10-kernel-hardening.conf
+kernel.printk = 4 4 1 7                  #/etc/sysctl.d/10-console-messages.conf
+kernel.sysrq = 176                       #/etc/sysctl.d/10-magic-sysrq.conf
+kernel.yama.ptrace_scope = 1             #/etc/sysctl.d/10-ptrace.conf
+-net.core.default_qdisc = fq_codel       #/etc/sysctl.d/10-bufferbloat.conf
+net.ipv4.conf.all.rp_filter=2            #/etc/sysctl.d/10-network-security.conf
+net.ipv4.conf.default.rp_filter=2        #/etc/sysctl.d/10-network-security.conf
+net.ipv4.ip_forward=1                    #/etc/sysctl.d/routeur.conf
+net.ipv6.conf.all.disable_ipv6=1         #/etc/sysctl.d/60-disable-ipv6.conf
+net.ipv6.conf.all.use_tempaddr = 2       #/etc/sysctl.d/10-ipv6-privacy.conf
+net.ipv6.conf.default.disable_ipv6=1     #/etc/sysctl.d/60-disable-ipv6.conf
+net.ipv6.conf.default.use_tempaddr = 2   #/etc/sysctl.d/10-ipv6-privacy.conf
+net.ipv6.conf.lo.disable_ipv6=1          #/etc/sysctl.d/60-disable-ipv6.conf
+vm.max_map_count=1048576                 #/etc/sysctl.d/10-map-count.conf
+vm.mmap_min_addr = 65536                 #/etc/sysctl.d/10-zeropage.conf
+               total        used        free      shared  buff/cache   available
+Mem:            3910         537        3131           1         468        3373
+Swap:           3910           0        3910
+* ip route add 172.31.20.0/24 via 192.168.0.39 a ajouter
+* ip route add 172.31.21.0/24 via 192.168.0.39 a ajouter
+Machine gateway-mensr  : * Affiche Connectivité
+    inet 127.0.0.1/8 scope host lo
+    inet 192.168.230.128/24 brd 192.168.230.255 scope global enp2s0
+    inet6 fe80::c0ff:fea8:e6d4/64 scope link 
+    inet 192.168.0.1/24 brd 192.168.0.255 scope global enp3s0
+    inet6 fe80::c0ff:fea8:64/64 scope link 
+    inet 192.168.227.1/24 brd 192.168.227.255 scope global enp4s0
+    inet6 fe80::c0ff:fea8:e364/64 scope link 
+    inet 192.168.253.1/24 brd 192.168.253.255 scope global enp5s0
+    inet6 fe80::c0ff:fea8:fd64/64 scope link 
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+Machine gateway-mensr  : * Generate keys root/gateway128
+Machine gateway-mensr  : * restauration SSHD keys from /mnt/eole-ci-tests/security/gateway_keys/root@gateway128
+Machine gateway-mensr  : * restauration SSHD keys from /mnt/eole-ci-tests/security/gateway_keys/root@gateway128_ed25519
+Machine gateway-mensr  : * Check /root acl
+drwx------
+root
+root
+Machine gateway-mensr  : * right /root OK
+Machine gateway-mensr  : * Configure SSHD
+Machine gateway-mensr  : * service ssh restart
+Machine gateway-mensr  : * Configure SSH client
+liste *.conf différentes!
+Machine gateway-mensr  : * Vide les exceptions crée par les tests
+Machine gateway-mensr  : * nettoye /etc/dnsmasq.d/*.conf
+Machine gateway-mensr  : * copy /tmp/dnsmasq.d/*.conf -> /etc/dnsmasq.d/*.conf
+dnsmasq.conf différent! 
+'/tmp/dnsmasq.conf' -> '/etc/dnsmasq.conf'
+dnsmasq: syntax check OK.
+* efface logs gateway
+fe80::2204:fff:fea7:674c dev enp2s0 lladdr 20:04:0f:a7:67:4c router  ref 1 used 22/22/22probes 1 REACHABLE 
+
+*** Round 1, deleting 1 entries ***
+*** Flush is complete after 1 round ***
+* Verification 'gateway.ac-test.fr'        : 192.168.0.1
+* Vérification du Forward vers Hestia      : 192.168.232.2
+PING hestia.eole.lan (192.168.232.2) 56(84) bytes of data.
+
+--- hestia.eole.lan ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+Machine gateway-mensr  : * Inject resolv.conf
+Machine gateway-mensr  : * Démarrage DNSMASQ
+active
+● dnsmasq.service - dnsmasq - A lightweight DHCP and caching DNS server
+     Loaded: loaded (/usr/lib/systemd/system/dnsmasq.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2024-12-11 10:47:42 CET; 12s ago
+    Process: 2412 ExecStartPre=/usr/share/dnsmasq/systemd-helper checkconfig (code=exited, status=0/SUCCESS)
+    Process: 2417 ExecStart=/usr/share/dnsmasq/systemd-helper exec (code=exited, status=0/SUCCESS)
+    Process: 2425 ExecStartPost=/usr/share/dnsmasq/systemd-helper start-resolvconf (code=exited, status=0/SUCCESS)
+   Main PID: 2423 (dnsmasq)
+      Tasks: 2 (limit: 4607)
+     Memory: 1.2M (peak: 2.8M)
+        CPU: 40ms
+     CGroup: /system.slice/dnsmasq.service
+             ├─2423 /usr/sbin/dnsmasq -x /run/dnsmasq/dnsmasq.pid -u dnsmasq -r /run/dnsmasq/resolv.conf -7 /etc/dnsmasq.d,.dpkg-dist,.dpkg-old,.dpkg-new --local-service --trust-anchor=.,20326,8,2,e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+             └─2424 /usr/sbin/dnsmasq -x /run/dnsmasq/dnsmasq.pid -u dnsmasq -r /run/dnsmasq/resolv.conf -7 /etc/dnsmasq.d,.dpkg-dist,.dpkg-old,.dpkg-new --local-service --trust-anchor=.,20326,8,2,e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+
+déc. 11 10:47:42 gateway128 dnsmasq[2423]: using nameserver 192.168.232.2#53(via enp2s0)
+déc. 11 10:47:42 gateway128 dnsmasq[2423]: read /etc/hosts - 62 names
+déc. 11 10:47:42 gateway128 resolvconf[2432]: Dropped protocol specifier '.dnsmasq' from 'lo.dnsmasq'. Using 'lo' (ifindex=1).
+déc. 11 10:47:42 gateway128 resolvconf[2432]: Failed to set DNS configuration: Unit dbus-org.freedesktop.resolve1.service not found.
+déc. 11 10:47:42 gateway128 systemd[1]: Started dnsmasq.service - dnsmasq - A lightweight DHCP and caching DNS server.
+déc. 11 10:47:44 gateway128 dnsmasq[2423]: query[A] gateway.ac-test.fr from 192.168.0.1
+déc. 11 10:47:44 gateway128 dnsmasq[2423]: /etc/hosts gateway.ac-test.fr is 192.168.0.1
+déc. 11 10:47:45 gateway128 dnsmasq[2423]: query[A] hestia.eole.lan from 192.168.0.1
+déc. 11 10:47:45 gateway128 dnsmasq[2423]: forwarded hestia.eole.lan to 192.168.232.2
+déc. 11 10:47:45 gateway128 dnsmasq[2423]: reply hestia.eole.lan is 192.168.232.2
+Failed to get link data for 2: Unit dbus-org.freedesktop.resolve1.service not found.
+* Update enp2s0 vers Dnsmasq local
+Machine gateway-mensr  : * Redémarrage DNSMASQ
+● dnsmasq.service - dnsmasq - A lightweight DHCP and caching DNS server
+     Loaded: loaded (/usr/lib/systemd/system/dnsmasq.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2024-12-11 10:47:55 CET; 9ms ago
+    Process: 2468 ExecStartPre=/usr/share/dnsmasq/systemd-helper checkconfig (code=exited, status=0/SUCCESS)
+    Process: 2474 ExecStart=/usr/share/dnsmasq/systemd-helper exec (code=exited, status=0/SUCCESS)
+    Process: 2481 ExecStartPost=/usr/share/dnsmasq/systemd-helper start-resolvconf (code=exited, status=0/SUCCESS)
+   Main PID: 2479 (dnsmasq)
+      Tasks: 2 (limit: 4607)
+     Memory: 1.0M (peak: 3.5M)
+        CPU: 38ms
+     CGroup: /system.slice/dnsmasq.service
+             ├─2479 /usr/sbin/dnsmasq -x /run/dnsmasq/dnsmasq.pid -u dnsmasq -r /run/dnsmasq/resolv.conf -7 /etc/dnsmasq.d,.dpkg-dist,.dpkg-old,.dpkg-new --local-service --trust-anchor=.,20326,8,2,e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+             └─2480 /usr/sbin/dnsmasq -x /run/dnsmasq/dnsmasq.pid -u dnsmasq -r /run/dnsmasq/resolv.conf -7 /etc/dnsmasq.d,.dpkg-dist,.dpkg-old,.dpkg-new --local-service --trust-anchor=.,20326,8,2,e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+
+déc. 11 10:47:55 gateway128 dnsmasq[2479]: using nameserver 192.168.0.73#53 for domain domaca.ac-test.fr
+déc. 11 10:47:55 gateway128 dnsmasq[2479]: using nameserver 192.168.0.29#53 for domain domhorus.ac-test.fr
+déc. 11 10:47:55 gateway128 dnsmasq[2479]: using nameserver 192.168.0.30#53 for domain domscribe.ac-test.fr
+déc. 11 10:47:55 gateway128 dnsmasq[2479]: using nameserver 192.168.0.5#53 for domain domseth.ac-test.fr
+déc. 11 10:47:55 gateway128 dnsmasq[2479]: using nameserver 192.168.0.6#53 for domain domseth.ac-test.fr
+déc. 11 10:47:55 gateway128 dnsmasq[2479]: using nameserver 192.168.232.2#53(via enp2s0)
+déc. 11 10:47:55 gateway128 dnsmasq[2479]: read /etc/hosts - 62 names
+déc. 11 10:47:55 gateway128 resolvconf[2488]: Dropped protocol specifier '.dnsmasq' from 'lo.dnsmasq'. Using 'lo' (ifindex=1).
+déc. 11 10:47:55 gateway128 resolvconf[2488]: Failed to set DNS configuration: Unit dbus-org.freedesktop.resolve1.service not found.
+déc. 11 10:47:55 gateway128 systemd[1]: Started dnsmasq.service - dnsmasq - A lightweight DHCP and caching DNS server.
+dns local NOK
+Machine gateway-mensr  : * status systemd-timesyncd
+               Local time: mer. 2024-12-11 10:47:55 CET
+           Universal time: mer. 2024-12-11 09:47:55 UTC
+                 RTC time: mer. 2024-12-11 09:47:55
+                Time zone: Europe/Paris (CET, +0100)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+Machine gateway-mensr  : * Configuration chrony
+Machine gateway-mensr  : * Démarrage Chronyd
+alias
+● chrony.service - chrony, an NTP client/server
+     Loaded: loaded (/usr/lib/systemd/system/chrony.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2024-12-11 10:47:55 CET; 9ms ago
+       Docs: man:chronyd(8)
+             man:chronyc(1)
+             man:chrony.conf(5)
+    Process: 2509 ExecStart=/usr/lib/systemd/scripts/chronyd-starter.sh $DAEMON_OPTS (code=exited, status=0/SUCCESS)
+   Main PID: 2518 (chronyd)
+      Tasks: 2 (limit: 4607)
+     Memory: 1.3M (peak: 2.5M)
+        CPU: 35ms
+     CGroup: /system.slice/chrony.service
+             ├─2518 /usr/sbin/chronyd -F 1
+             └─2519 /usr/sbin/chronyd -F 1
+
+déc. 11 10:47:55 gateway128 systemd[1]: Starting chrony.service - chrony, an NTP client/server...
+déc. 11 10:47:55 gateway128 chronyd[2518]: chronyd version 4.5 starting (+CMDMON +NTP +REFCLOCK +RTC +PRIVDROP +SCFILTER +SIGND +ASYNCDNS +NTS +SECHASH +IPV6 -DEBUG)
+déc. 11 10:47:55 gateway128 chronyd[2518]: Loaded 0 symmetric keys
+déc. 11 10:47:55 gateway128 chronyd[2518]: Frequency -41.575 +/- 1.690 ppm read from /var/lib/chrony/chrony.drift
+déc. 11 10:47:55 gateway128 chronyd[2518]: Loaded seccomp filter (level 1)
+déc. 11 10:47:55 gateway128 systemd[1]: Started chrony.service - chrony, an NTP client/server.
+Machine gateway-mensr  : * Démarrage Chrony
+enabled
+● chrony.service - chrony, an NTP client/server
+     Loaded: loaded (/usr/lib/systemd/system/chrony.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2024-12-11 10:47:55 CET; 37ms ago
+       Docs: man:chronyd(8)
+             man:chronyc(1)
+             man:chrony.conf(5)
+    Process: 2509 ExecStart=/usr/lib/systemd/scripts/chronyd-starter.sh $DAEMON_OPTS (code=exited, status=0/SUCCESS)
+   Main PID: 2518 (chronyd)
+      Tasks: 2 (limit: 4607)
+     Memory: 1.2M (peak: 2.5M)
+        CPU: 35ms
+     CGroup: /system.slice/chrony.service
+             ├─2518 /usr/sbin/chronyd -F 1
+             └─2519 /usr/sbin/chronyd -F 1
+
+déc. 11 10:47:55 gateway128 systemd[1]: Starting chrony.service - chrony, an NTP client/server...
+déc. 11 10:47:55 gateway128 chronyd[2518]: chronyd version 4.5 starting (+CMDMON +NTP +REFCLOCK +RTC +PRIVDROP +SCFILTER +SIGND +ASYNCDNS +NTS +SECHASH +IPV6 -DEBUG)
+déc. 11 10:47:55 gateway128 chronyd[2518]: Loaded 0 symmetric keys
+déc. 11 10:47:55 gateway128 chronyd[2518]: Frequency -41.575 +/- 1.690 ppm read from /var/lib/chrony/chrony.drift
+déc. 11 10:47:55 gateway128 chronyd[2518]: Loaded seccomp filter (level 1)
+déc. 11 10:47:55 gateway128 systemd[1]: Started chrony.service - chrony, an NTP client/server.
+Machine gateway-mensr  : * Test 'chronyc tracking'
+Reference ID    : 7F7F0101 ()
+Stratum         : 10
+Ref time (UTC)  : Wed Dec 11 09:47:53 2024
+System time     : 0.000000000 seconds slow of NTP time
+Last offset     : +0.000000000 seconds
+RMS offset      : 0.000000000 seconds
+Frequency       : 41.575 ppm slow
+Residual freq   : +0.000 ppm
+Skew            : 0.000 ppm
+Root delay      : 0.000000000 seconds
+Root dispersion : 0.000000000 seconds
+Update interval : 0.0 seconds
+Leap status     : Normal
+Machine gateway-mensr  : * Test 'chronyc sourcestats'
+Name/IP Address            NP  NR  Span  Frequency  Freq Skew  Offset  Std Dev
+==============================================================================
+192.168.232.2               0   0     0     +0.000   2000.000     +0ns  4000ms
+Machine gateway-mensr  : * Add roadwarrior GRE tunnel
+Machine gateway-mensr  : * Activation Ecoute tcp DOCKER ?
+ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375 --dns 192.168.0.1 --dns 192.168.232.2
+root        1354  0.6  1.9 1988148 76416 ?       Ssl  10:47   0:00 /usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375 --dns 192.168.0.1 --dns 192.168.232.2
+root        2558  0.0  0.0   6688  2432 ?        S    10:47   0:00 grep dockerd
+Machine gateway-mensr  : * création /etc/email-addresses
+Machine gateway-mensr  : * création /etc/aliases
+Machine gateway-mensr  : * création /etc/exim4/update-exim4.conf.conf
+Machine gateway-mensr  : * réécriture des adresses mails (/etc/exim4/conf.d/rewrite/40_exim4-config_rewrite_ac-test)
+Machine gateway-mensr  : * cat /var/log/exim4/paniclog avant reset !
+cat: /var/log/exim4/paniclog: No such file or directory
+/bin/rm: cannot remove '/var/log/exim4/paniclog': No such file or directory
+Machine gateway-mensr  : * restart Exim4
+/usr/bin/mail
+Machine gateway-mensr  : * test mail to USER
+Machine gateway-mensr  : * netstat 
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      3206/exim4          
+tcp        0      0 192.168.230.128:25      0.0.0.0:*               LISTEN      3206/exim4          
+tcp        0      0 192.168.227.1:25        0.0.0.0:*               LISTEN      3206/exim4          
+tcp        0      0 192.168.0.1:25          0.0.0.0:*               LISTEN      3206/exim4          
+Machine gateway-mensr  : * ecoute :25 ok
+Machine gateway-mensr  : * exchange agent -> jenkins
+Machine gateway-mensr  : * Inject projet eclipse pour montage direct ide / gateway
+Machine gateway-mensr  : * ssh test 
+Warning: Permanently added 'jenkins.eole.lan' (ED25519) to the list of known hosts.
+Machine gateway-mensr  : * scp .one 
+total 68
+-rw-r--r-- 1 root root 20 déc.  11 10:47 one_auth
+-rw-r--r-- 1 root root 20 déc.  11 10:47 one_auth.freebsd11-1
+-rw-r--r-- 1 root root 20 déc.  11 10:47 one_auth.freebsd12-1
+-rw-r--r-- 1 root root 24 déc.  11 10:47 one_auth.ggrandgerard
+-rw-r--r-- 1 root root 20 déc.  11 10:47 one_auth.jenkins
+-rw-r--r-- 1 root root 22 déc.  11 10:47 one_auth.jenkins1
+-rw-r--r-- 1 root root 22 déc.  11 10:47 one_auth.jenkins2
+-rw-r--r-- 1 root root 22 déc.  11 10:47 one_auth.jenkins3
+-rw-r--r-- 1 root root 22 déc.  11 10:47 one_auth.jenkins4
+-rw-r--r-- 1 root root 22 déc.  11 10:47 one_auth.jenkins5
+-rw-r--r-- 1 root root 22 déc.  11 10:47 one_auth.jenkins6
+-rw-r--r-- 1 root root 22 déc.  11 10:47 one_auth.jenkins7
+-rw-r--r-- 1 root root 22 déc.  11 10:47 one_auth.jenkins8
+-rw-r--r-- 1 root root 22 déc.  11 10:47 one_auth.jenkins9
+-rw-r--r-- 1 root root 20 déc.  11 10:47 one_auth.win10-1
+-rw-r--r-- 1 root root 20 déc.  11 10:47 one_auth.win7-1
+-rw-r--r-- 1 root root 65 déc.  11 10:47 token
+Machine gateway-mensr  : * extract user from one_auth 
+jenkins
+Machine gateway-mensr  : * connexion avec agent JNPL car token trouvé 
+inactive
+Machine gateway-mensr  : * Téléchargement Jenkins agent
+--2024-12-11 10:47:57--  http://jenkins.eole.lan/jenkins/jnlpJars/jenkins-cli.jar
+Resolving jenkins.eole.lan (jenkins.eole.lan)... 192.168.10.141
+Connecting to jenkins.eole.lan (jenkins.eole.lan)|192.168.10.141|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://dev-eole.ac-dijon.fr/jenkins/jnlpJars/jenkins-cli.jar [following]
+--2024-12-11 10:47:57--  https://dev-eole.ac-dijon.fr/jenkins/jnlpJars/jenkins-cli.jar
+Resolving dev-eole.ac-dijon.fr (dev-eole.ac-dijon.fr)... 194.167.18.22
+Connecting to dev-eole.ac-dijon.fr (dev-eole.ac-dijon.fr)|194.167.18.22|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3638838 (3,5M) [application/java-archive]
+Saving to: ‘/home/jenkins/jenkins-cli1.jar’
+
+     0K .......... .......... .......... .......... ..........  1% 4,54M 1s
+    50K .......... .......... .......... .......... ..........  2% 4,37M 1s
+   100K .......... .......... .......... .......... ..........  4% 4,45M 1s
+   150K .......... .......... .......... .......... ..........  5% 4,49M 1s
+   200K .......... .......... .......... .......... ..........  7% 4,60M 1s
+   250K .......... .......... .......... .......... ..........  8% 4,49M 1s
+   300K .......... .......... .......... .......... ..........  9% 4,53M 1s
+   350K .......... .......... .......... .......... .......... 11% 3,54M 1s
+   400K .......... .......... .......... .......... .......... 12% 4,56M 1s
+   450K .......... .......... .......... .......... .......... 14% 4,49M 1s
+   500K .......... .......... .......... .......... .......... 15% 4,52M 1s
+   550K .......... .......... .......... .......... .......... 16% 4,47M 1s
+   600K .......... .......... .......... .......... .......... 18% 4,47M 1s
+   650K .......... .......... .......... .......... .......... 19% 3,68M 1s
+   700K .......... .......... .......... .......... .......... 21% 4,41M 1s
+   750K .......... .......... .......... .......... .......... 22% 3,48M 1s
+   800K .......... .......... .......... .......... .......... 23% 4,49M 1s
+   850K .......... .......... .......... .......... .......... 25% 4,56M 1s
+   900K .......... .......... .......... .......... .......... 26% 4,50M 1s
+   950K .......... .......... .......... .......... .......... 28% 4,48M 1s
+  1000K .......... .......... .......... .......... .......... 29% 4,61M 1s
+  1050K .......... .......... .......... .......... .......... 30% 4,59M 1s
+  1100K .......... .......... .......... .......... .......... 32% 4,50M 1s
+  1150K .......... .......... .......... .......... .......... 33% 3,44M 1s
+  1200K .......... .......... .......... .......... .......... 35% 4,56M 1s
+  1250K .......... .......... .......... .......... .......... 36% 4,61M 1s
+  1300K .......... .......... .......... .......... .......... 37% 4,54M 0s
+  1350K .......... .......... .......... .......... .......... 39% 4,57M 0s
+  1400K .......... .......... .......... .......... .......... 40% 4,64M 0s
+  1450K .......... .......... .......... .......... .......... 42% 4,59M 0s
+  1500K .......... .......... .......... .......... .......... 43% 4,61M 0s
+  1550K .......... .......... .......... .......... .......... 45% 3,34M 0s
+  1600K .......... .......... .......... .......... .......... 46% 4,48M 0s
+  1650K .......... .......... .......... .......... .......... 47% 4,39M 0s
+  1700K .......... .......... .......... .......... .......... 49% 4,63M 0s
+  1750K .......... .......... .......... .......... .......... 50% 4,45M 0s
+  1800K .......... .......... .......... .......... .......... 52% 4,63M 0s
+  1850K .......... .......... .......... .......... .......... 53% 4,36M 0s
+  1900K .......... .......... .......... .......... .......... 54% 4,55M 0s
+  1950K .......... .......... .......... .......... .......... 56% 2,17M 0s
+  2000K .......... .......... .......... .......... .......... 57% 4,08M 0s
+  2050K .......... .......... .......... .......... .......... 59% 4,20M 0s
+  2100K .......... .......... .......... .......... .......... 60% 4,21M 0s
+  2150K .......... .......... .......... .......... .......... 61% 4,23M 0s
+  2200K .......... .......... .......... .......... .......... 63% 4,27M 0s
+  2250K .......... .......... .......... .......... .......... 64% 4,24M 0s
+  2300K .......... .......... .......... .......... .......... 66% 4,23M 0s
+  2350K .......... .......... .......... .......... .......... 67% 3,27M 0s
+  2400K .......... .......... .......... .......... .......... 68% 4,26M 0s
+  2450K .......... .......... .......... .......... .......... 70% 4,29M 0s
+  2500K .......... .......... .......... .......... .......... 71% 4,21M 0s
+  2550K .......... .......... .......... .......... .......... 73% 4,27M 0s
+  2600K .......... .......... .......... .......... .......... 74% 4,30M 0s
+  2650K .......... .......... .......... .......... .......... 75% 4,22M 0s
+  2700K .......... .......... .......... .......... .......... 77% 4,30M 0s
+  2750K .......... .......... .......... .......... .......... 78% 3,29M 0s
+  2800K .......... .......... .......... .......... .......... 80% 4,31M 0s
+  2850K .......... .......... .......... .......... .......... 81% 4,31M 0s
+  2900K .......... .......... .......... .......... .......... 83% 4,25M 0s
+  2950K .......... .......... .......... .......... .......... 84% 4,31M 0s
+  3000K .......... .......... .......... .......... .......... 85% 4,34M 0s
+  3050K .......... .......... .......... .......... .......... 87% 4,18M 0s
+  3100K .......... .......... .......... .......... .......... 88% 4,20M 0s
+  3150K .......... .......... .......... .......... .......... 90% 3,29M 0s
+  3200K .......... .......... .......... .......... .......... 91% 4,24M 0s
+  3250K .......... .......... .......... .......... .......... 92% 2,79M 0s
+  3300K .......... .......... .......... .......... .......... 94% 4,28M 0s
+  3350K .......... .......... .......... .......... .......... 95% 4,27M 0s
+  3400K .......... .......... .......... .......... .......... 97% 4,36M 0s
+  3450K .......... .......... .......... .......... .......... 98% 4,06M 0s
+  3500K .......... .......... .......... .......... .......... 99% 4,35M 0s
+  3550K ...                                                   100%  839K=0,8s
+
+2024-12-11 10:47:58 (4,15 MB/s) - ‘/home/jenkins/jenkins-cli1.jar’ saved [3638838/3638838]
+
+--2024-12-11 10:47:58--  http://jenkins.eole.lan/jenkins/jnlpJars/agent.jar
+Resolving jenkins.eole.lan (jenkins.eole.lan)... 192.168.10.141
+Connecting to jenkins.eole.lan (jenkins.eole.lan)|192.168.10.141|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://dev-eole.ac-dijon.fr/jenkins/jnlpJars/agent.jar [following]
+--2024-12-11 10:47:58--  https://dev-eole.ac-dijon.fr/jenkins/jnlpJars/agent.jar
+Resolving dev-eole.ac-dijon.fr (dev-eole.ac-dijon.fr)... 194.167.18.22
+Connecting to dev-eole.ac-dijon.fr (dev-eole.ac-dijon.fr)|194.167.18.22|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1393029 (1,3M) [application/java-archive]
+Saving to: ‘/home/jenkins/agent1.jar’
+
+     0K .......... .......... .......... .......... ..........  3% 4,18M 0s
+    50K .......... .......... .......... .......... ..........  7% 4,17M 0s
+   100K .......... .......... .......... .......... .......... 11% 4,20M 0s
+   150K .......... .......... .......... .......... .......... 14% 4,22M 0s
+   200K .......... .......... .......... .......... .......... 18% 4,32M 0s
+   250K .......... .......... .......... .......... .......... 22% 4,16M 0s
+   300K .......... .......... .......... .......... .......... 25% 4,18M 0s
+   350K .......... .......... .......... .......... .......... 29% 3,28M 0s
+   400K .......... .......... .......... .......... .......... 33% 3,87M 0s
+   450K .......... .......... .......... .......... .......... 36% 4,21M 0s
+   500K .......... .......... .......... .......... .......... 40% 4,24M 0s
+   550K .......... .......... .......... .......... .......... 44% 4,30M 0s
+   600K .......... .......... .......... .......... .......... 47% 4,28M 0s
+   650K .......... .......... .......... .......... .......... 51% 3,12M 0s
+   700K .......... .......... .......... .......... .......... 55% 3,92M 0s
+   750K .......... .......... .......... .......... .......... 58% 3,13M 0s
+   800K .......... .......... .......... .......... .......... 62% 4,05M 0s
+   850K .......... .......... .......... .......... .......... 66% 4,14M 0s
+   900K .......... .......... .......... .......... .......... 69% 4,14M 0s
+   950K .......... .......... .......... .......... .......... 73% 4,17M 0s
+  1000K .......... .......... .......... .......... .......... 77% 4,38M 0s
+  1050K .......... .......... .......... .......... .......... 80% 4,38M 0s
+  1100K .......... .......... .......... .......... .......... 84% 4,32M 0s
+  1150K .......... .......... .......... .......... .......... 88% 3,38M 0s
+  1200K .......... .......... .......... .......... .......... 91% 4,31M 0s
+  1250K .......... .......... .......... .......... .......... 95% 4,34M 0s
+  1300K .......... .......... .......... .......... .......... 99% 4,28M 0s
+  1350K ..........                                            100% 2,51M=0,3s
+
+2024-12-11 10:47:59 (4,00 MB/s) - ‘/home/jenkins/agent1.jar’ saved [1393029/1393029]
+
+Machine gateway-mensr  : * Install Jenkins Slave Agent Services
+Machine gateway-mensr  : * Creation service jenkins slave
+[Unit]
+Description=Jenkins Slave Agent Services
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+EnvironmentFile=/etc/default/JenkinsSlave
+ExecStart=/usr/lib/jvm/java-21-openjdk-amd64/bin/java -Djenkins.slaves.DefaultJnlpSlaveReceiver.disableStrictVerification=true -jar /home/jenkins/agent.jar -jnlpUrl http://jenkins.eole.lan:8080/jenkins/computer/gw-jenkins/slave-agent.jnlp -secret ******************** -workDir /home/jenkins
+RestartSec=5min
+TimeoutStartSec=1min
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target
+Machine gateway-mensr  : * enable service systemd : JenkinsSlave
+Created symlink /etc/systemd/system/multi-user.target.wants/JenkinsSlave.service → /etc/systemd/system/JenkinsSlave.service.
+Machine gateway-mensr  : * Start service systemd : JenkinsSlave
+0
+Machine gateway-mensr  : * Attente 30 secondes
+active
+Machine gateway-mensr  : * Affiche log
+déc. 11 10:47:59 gateway128 systemd[1]: Started JenkinsSlave.service - Jenkins Slave Agent Services.
+░░ Subject: L'unité (unit) JenkinsSlave.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) JenkinsSlave.service a terminé son démarrage, avec le résultat done.
+déc. 11 10:48:00 gateway128 java[3378]: WARNING: The "-jnlpUrl" argument is deprecated. Use "-url" and "-name" instead, potentially also passing in "-webSocket", "-tunnel", and/or work directory options as needed.
+déc. 11 10:48:00 gateway128 java[3378]: déc. 11, 2024 9:48:00 AM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+déc. 11 10:48:00 gateway128 java[3378]: INFOS: Using /home/jenkins/remoting as a remoting work directory
+déc. 11 10:48:00 gateway128 java[3378]: déc. 11, 2024 9:48:00 AM org.jenkinsci.remoting.engine.WorkDirManager setupLogging
+déc. 11 10:48:00 gateway128 java[3378]: INFOS: Both error and output logs will be printed to /home/jenkins/remoting
+déc. 11 10:48:00 gateway128 java[3378]: déc. 11, 2024 9:48:00 AM hudson.remoting.Launcher createEngine
+déc. 11 10:48:00 gateway128 java[3378]: INFOS: Setting up agent: gw-jenkins
+déc. 11 10:48:00 gateway128 java[3378]: déc. 11, 2024 9:48:00 AM hudson.remoting.Engine startEngine
+déc. 11 10:48:00 gateway128 java[3378]: INFOS: Using Remoting version: 3248.3250.v3277a_8e88c9b_
+déc. 11 10:48:00 gateway128 java[3378]: déc. 11, 2024 9:48:00 AM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+déc. 11 10:48:00 gateway128 java[3378]: INFOS: Using /home/jenkins/remoting as a remoting work directory
+déc. 11 10:48:00 gateway128 java[3378]: déc. 11, 2024 9:48:00 AM hudson.remoting.Launcher$CuiListener status
+déc. 11 10:48:00 gateway128 java[3378]: INFOS: Locating server among [https://dev-eole.ac-dijon.fr/jenkins/]
+déc. 11 10:48:00 gateway128 java[3378]: déc. 11, 2024 9:48:00 AM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+déc. 11 10:48:00 gateway128 java[3378]: INFOS: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+déc. 11 10:48:00 gateway128 java[3378]: déc. 11, 2024 9:48:00 AM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+déc. 11 10:48:00 gateway128 java[3378]: INFOS: Remoting TCP connection tunneling is enabled. Skipping the TCP Agent Listener Port availability check
+déc. 11 10:48:00 gateway128 java[3378]: déc. 11, 2024 9:48:00 AM hudson.remoting.Launcher$CuiListener status
+déc. 11 10:48:00 gateway128 java[3378]: INFOS: Agent discovery successful
+déc. 11 10:48:00 gateway128 java[3378]:   Agent address: jenkins.eole.lan
+déc. 11 10:48:00 gateway128 java[3378]:   Agent port:    50000
+déc. 11 10:48:00 gateway128 java[3378]:   Identity:      87:89:3a:c2:a0:f4:c5:55:5d:d4:05:25:50:31:3d:a3
+déc. 11 10:48:00 gateway128 java[3378]: déc. 11, 2024 9:48:00 AM hudson.remoting.Launcher$CuiListener status
+déc. 11 10:48:00 gateway128 java[3378]: INFOS: Handshaking
+déc. 11 10:48:00 gateway128 java[3378]: déc. 11, 2024 9:48:00 AM hudson.remoting.Launcher$CuiListener status
+déc. 11 10:48:00 gateway128 java[3378]: INFOS: Connecting to jenkins.eole.lan:50000
+déc. 11 10:48:00 gateway128 java[3378]: déc. 11, 2024 9:48:00 AM hudson.remoting.Launcher$CuiListener status
+déc. 11 10:48:00 gateway128 java[3378]: INFOS: Server reports protocol JNLP4-connect-proxy not supported, skipping
+déc. 11 10:48:00 gateway128 java[3378]: déc. 11, 2024 9:48:00 AM hudson.remoting.Launcher$CuiListener status
+déc. 11 10:48:00 gateway128 java[3378]: INFOS: Trying protocol: JNLP4-connect
+déc. 11 10:48:00 gateway128 java[3378]: déc. 11, 2024 9:48:00 AM org.jenkinsci.remoting.protocol.impl.BIONetworkLayer$Reader run
+déc. 11 10:48:00 gateway128 java[3378]: INFOS: Waiting for ProtocolStack to start.
+déc. 11 10:48:01 gateway128 java[3378]: déc. 11, 2024 9:48:01 AM hudson.remoting.Launcher$CuiListener status
+déc. 11 10:48:01 gateway128 java[3378]: INFOS: Remote identity confirmed: 87:89:3a:c2:a0:f4:c5:55:5d:d4:05:25:50:31:3d:a3
+déc. 11 10:48:01 gateway128 java[3378]: déc. 11, 2024 9:48:01 AM hudson.remoting.Launcher$CuiListener status
+déc. 11 10:48:01 gateway128 java[3378]: INFOS: Connected
+Machine gateway-mensr  : * Attente 10 secondes
+Machine gateway-mensr  : * exchange agent -> gitlab
+Machine gateway-mensr  : Démarrée sur 'one' pour 'jenkins'
+Machine gateway-mensr  : pas de function startup utilisateur 'ciOnStartUp' 
+Machine gateway-mensr  : * Fin ok
+Machine gateway-mensr  : Démarrée en 192.168.230.128

@@ -1,0 +1,16 @@
+* Verification 'salt.domseth.ac-test.fr'   : 
+* Vérification résolution 'salt'           : 192.168.0.5
+* Vérification du Forward vers les DC      : 192.168.0.5
+PING domseth.ac-test.fr (192.168.0.5) 56(84) bytes of data.
+64 bytes from salt.ac-test.fr (192.168.0.5): icmp_seq=1 ttl=64 time=0.292 ms
+
+--- domseth.ac-test.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.292/0.292/0.292/0.000 ms
+PING domseth.ac-test.fr (192.168.0.5) 56(84) bytes of data.
+64 bytes from salt.ac-test.fr (192.168.0.5): icmp_seq=1 ttl=64 time=0.234 ms
+
+--- domseth.ac-test.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.234/0.234/0.234/0.000 ms
+dnsmasq ok, pas de reload

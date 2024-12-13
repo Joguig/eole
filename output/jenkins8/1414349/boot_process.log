@@ -1,0 +1,18 @@
+Debut ciAfficheProcess 2024-12-02 14:32:41
+****************************************************************************************************************
+Machine gateway-mensr  : systemctl is-active multi-user.target : active
+Machine gateway-mensr  : systemctl is-active network.target : active
+Machine gateway-mensr  : systemctl is-active network-online.target : active
+Machine gateway-mensr  : systemctl is-system-running : degraded
+**************************************
+systemctl --state=failed
+  UNIT            LOAD   ACTIVE SUB    DESCRIPTION
+● dnsmasq.service loaded failed failed dnsmasq - A lightweight DHCP and caching DNS server
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+1 loaded units listed.
+**************************************
+Fin ciAfficheProcess : RESULT = 0    2024-12-02 14:32:41

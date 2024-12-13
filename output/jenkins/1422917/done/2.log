@@ -1,0 +1,131 @@
+Debut /mnt/eole-ci-tests/tests/importation/importation_envole_eleves_et_responsables.sh
+Copie des fichiers a importer
+Definition des preférences
+Importation des fichiers
+INFO:scribe.importation:## Lecture des élèves... ##
+INFO:scribe.importation:TOTAL : 18 élèves
+
+Lecture des élèves...
+TOTAL : 18 élèves
+importation.py = 0
+--------------------------------------------
+cat /var/lib/eole/reports/importation.txt
+2024-12-13 20:16:10 - INFO ## Lecture des élèves... ##
+2024-12-13 20:16:10 - INFO TOTAL : 18 élèves
+--------------------------------------------
+Importation des comptes ELEVE
+DEBUG:scribe.importation:mise en place du lock eoleimport
+DEBUG:scribe.importation:Arrêt de LSC...
+INFO:scribe.importation:## Nettoyage des options ##
+INFO:scribe.importation:## Intégration des niveaux... ##
+DEBUG:scribe.importation:création du niveau n6
+DEBUG:scribe.importation:création du niveau n5
+DEBUG:scribe.importation:création du niveau n4
+DEBUG:scribe.importation:création du niveau n3
+DEBUG:scribe.importation:création du niveau 3eme
+INFO:scribe.importation:TOTAL : 5 niveaux traités
+INFO:scribe.importation:## Intégration des classes... ##
+DEBUG:scribe.importation:création de la classe 6a
+DEBUG:scribe.importation:création de la classe 6b
+DEBUG:scribe.importation:création de la classe 5a
+DEBUG:scribe.importation:création de la classe 5b
+DEBUG:scribe.importation:création de la classe 4a
+DEBUG:scribe.importation:création de la classe 4b
+DEBUG:scribe.importation:création de la classe 3a
+DEBUG:scribe.importation:création de la classe 3b
+DEBUG:scribe.importation:création de la classe c31
+INFO:scribe.importation:Génération des partages classe
+DEBUG:scribe.importation:Création des partages pour 6a
+DEBUG:scribe.importation:Création des partages pour 6b
+DEBUG:scribe.importation:Création des partages pour 5a
+DEBUG:scribe.importation:Création des partages pour 5b
+DEBUG:scribe.importation:Création des partages pour 4a
+DEBUG:scribe.importation:Création des partages pour 4b
+DEBUG:scribe.importation:Création des partages pour 3a
+DEBUG:scribe.importation:Création des partages pour 3b
+DEBUG:scribe.importation:Création des partages pour c31
+INFO:scribe.importation:TOTAL : 9 classes traitées
+INFO:scribe.importation:## Intégration des options... ##
+INFO:scribe.importation:TOTAL : 0 options traitées
+INFO:scribe.importation:## Intégration des élèves... ##
+DEBUG:scribe.importation:nouvel élève : 6a.01
+DEBUG:scribe.importation:nouvel élève : 6a.02
+DEBUG:scribe.importation:nouvel élève : 6b.01
+DEBUG:scribe.importation:nouvel élève : 6b.02
+DEBUG:scribe.importation:nouvel élève : 5a.01
+DEBUG:scribe.importation:nouvel élève : 5a.02
+DEBUG:scribe.importation:nouvel élève : 5b.01
+DEBUG:scribe.importation:nouvel élève : 5b.02
+DEBUG:scribe.importation:nouvel élève : 4a.01
+DEBUG:scribe.importation:nouvel élève : 4a.02
+DEBUG:scribe.importation:nouvel élève : 4b.01
+DEBUG:scribe.importation:nouvel élève : 4b.02
+DEBUG:scribe.importation:nouvel élève : 3a.01
+DEBUG:scribe.importation:nouvel élève : 3a.02
+DEBUG:scribe.importation:nouvel élève : 3b.01
+DEBUG:scribe.importation:nouvel élève : 3b.02
+DEBUG:scribe.importation:nouvel élève : prenom.eleve107
+DEBUG:scribe.importation:nouvel élève : prenom.eleve112
+INFO:scribe.importation:Synchronisation des comptes utilisateurs AD...
+INFO:scribe.importation:Synchronisation des mots de passe AD...
+DEBUG:scribe.importation:Initialisation du mot de passe pour : 6a.01
+DEBUG:scribe.importation:Initialisation du mot de passe pour : 6a.02
+DEBUG:scribe.importation:Initialisation du mot de passe pour : 6b.01
+DEBUG:scribe.importation:Initialisation du mot de passe pour : 6b.02
+DEBUG:scribe.importation:Initialisation du mot de passe pour : 5a.01
+DEBUG:scribe.importation:Initialisation du mot de passe pour : 5a.02
+DEBUG:scribe.importation:Initialisation du mot de passe pour : 5b.01
+DEBUG:scribe.importation:Initialisation du mot de passe pour : 5b.02
+DEBUG:scribe.importation:Initialisation du mot de passe pour : 4a.01
+DEBUG:scribe.importation:Initialisation du mot de passe pour : 4a.02
+DEBUG:scribe.importation:Initialisation du mot de passe pour : 4b.01
+DEBUG:scribe.importation:Initialisation du mot de passe pour : 4b.02
+DEBUG:scribe.importation:Initialisation du mot de passe pour : 3a.01
+DEBUG:scribe.importation:Initialisation du mot de passe pour : 3a.02
+DEBUG:scribe.importation:Initialisation du mot de passe pour : 3b.01
+DEBUG:scribe.importation:Initialisation du mot de passe pour : 3b.02
+DEBUG:scribe.importation:Initialisation du mot de passe pour : prenom.eleve107
+DEBUG:scribe.importation:Initialisation du mot de passe pour : prenom.eleve112
+INFO:scribe.importation:Mise à jour des répertoires...
+INFO:scribe.importation:TOTAL : 18 élèves
+INFO:scribe.importation:fichier des comptes copié dans :
+INFO:scribe.importation:/home/a/admin/perso/importation/eleves_20241213_201655.csv
+INFO:scribe.importation:Synchronisation des partages Samba...
+DEBUG:scribe.importation:Démarrage de LSC...
+DEBUG:scribe.importation:suppression du lock eoleimport
+INFO:scribe.importation:#########################################
+INFO:scribe.importation: Fin de l'importation en mode EAD
+INFO:scribe.importation:#########################################
+INFO:scribe.importation:fichier importation_20241213_201700.txt copié dans :
+INFO:scribe.importation:/home/a/admin/perso/importation/importation_20241213_201700.txt
+mise en place du lock eoleimport
+
+Arrêt de LSC...
+
+Nettoyage des options
+
+Intégration des niveaux...
+TOTAL : 5 niveaux traités
+
+Intégration des classes...
+Génération des partages classe
+TOTAL : 9 classes traitées
+
+Intégration des options...
+TOTAL : 0 options traitées
+
+Intégration des élèves...
+Synchronisation des comptes utilisateurs AD...
+Synchronisation des mots de passe AD...
+Mise à jour des répertoires...
+TOTAL : 18 élèves
+fichier des comptes copié dans :
+/home/a/admin/perso/importation/eleves_20241213_201655.csv
+Synchronisation des partages Samba...
+
+Démarrage de LSC...
+suppression du lock eoleimport
+fichier importation_20241213_201700.txt copié dans :
+/home/a/admin/perso/importation/importation_20241213_201700.txt
+importation.py = 0
+Temps importation : 00 hr 00 min 54 sec

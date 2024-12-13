@@ -1,0 +1,145 @@
+﻿* VersionWindows= 10.21H1
+REALM=domseth.ac-test.fr
+COMPUTERNAME=PC-763293
+test-veyon: Query DN of me
+DN = CN=PC-763293,OU=Computers,OU=ETB1,DC=domseth,DC=ac-test,DC=fr
+test-veyon: Query AD Computers (REALM=domseth.ac-test.fr)
+
+Name                           Value                                                                                                          
+----                           -----                                                                                                          
+ridsetreferences               {CN=RID Set,CN=DC2,OU=Domain Controllers,DC=domseth,DC=ac-test,DC=fr}                                          
+logoncount                     {6}                                                                                                            
+codepage                       {0}                                                                                                            
+objectcategory                 {CN=Computer,CN=Schema,CN=Configuration,DC=domseth,DC=ac-test,DC=fr}                                           
+usnchanged                     {4014}                                                                                                         
+displayname                    {DC2$}                                                                                                         
+name                           {DC2}                                                                                                          
+msds-supportedencryptiontypes  {28}                                                                                                           
+pwdlastset                     {132888924421185040}                                                                                           
+serviceprincipalname           {HOST/DC2, GC/dc2.domseth.ac-test.fr/domseth.ac-test.fr, E3514235-4B06-11D1-AB04-00C04FC2DCD2/e64def42-434e-...
+objectclass                    {top, person, organizationalPerson, user...}                                                                   
+iscriticalsystemobject         {True}                                                                                                         
+lastlogontimestamp             {132888924509941500}                                                                                           
+usncreated                     {3479}                                                                                                         
+objectguid                     {76 149 205 193 129 11 49 79 171 155 83 226 156 109 122 174}                                                   
+whencreated                    {09/02/2022 15:00:41}                                                                                          
+adspath                        {LDAP://domseth.ac-test.fr/CN=DC2,OU=Domain Controllers,DC=domseth,DC=ac-test,DC=fr}                           
+useraccountcontrol             {532480}                                                                                                       
+cn                             {DC2}                                                                                                          
+countrycode                    {0}                                                                                                            
+primarygroupid                 {516}                                                                                                          
+whenchanged                    {09/02/2022 15:00:51}                                                                                          
+dnshostname                    {dc2.domseth.ac-test.fr}                                                                                       
+instancetype                   {4}                                                                                                            
+lastlogon                      {132888924785540700}                                                                                           
+distinguishedname              {CN=DC2,OU=Domain Controllers,DC=domseth,DC=ac-test,DC=fr}                                                     
+samaccountname                 {DC2$}                                                                                                         
+objectsid                      {1 5 0 0 0 0 0 5 21 0 0 0 241 247 86 190 239 58 109 116 33 231 77 223 127 4 0 0}                               
+serverreferencebl              {CN=DC2,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=domseth,DC=ac-test,DC=fr}           
+samaccounttype                 {805306369}                                                                                                    
+accountexpires                 {9223372036854775807}                                                                                          
+DC2: dn='CN=DC2,OU=Domain Controllers,DC=domseth,DC=ac-test,DC=fr'
+--------------------
+logoncount                     {4}                                                                                                            
+codepage                       {0}                                                                                                            
+objectcategory                 {CN=Computer,CN=Schema,CN=Configuration,DC=domseth,DC=ac-test,DC=fr}                                           
+operatingsystem                {Windows 10 Éducation N}                                                                                       
+usnchanged                     {4168}                                                                                                         
+instancetype                   {4}                                                                                                            
+name                           {PC-763293}                                                                                                    
+badpasswordtime                {0}                                                                                                            
+pwdlastset                     {132890472079181720}                                                                                           
+serviceprincipalname           {HOST/PC-763293.domseth.ac-test.fr, RestrictedKrbHost/PC-763293.domseth.ac-test.fr, HOST/PC-763293, Restrict...
+objectclass                    {top, person, organizationalPerson, user...}                                                                   
+badpwdcount                    {0}                                                                                                            
+iscriticalsystemobject         {False}                                                                                                        
+lastlogontimestamp             {132890472144450720}                                                                                           
+usncreated                     {4156}                                                                                                         
+objectguid                     {103 78 244 152 61 220 118 73 139 61 92 77 27 207 163 176}                                                     
+whencreated                    {11/02/2022 10:00:07}                                                                                          
+adspath                        {LDAP://domseth.ac-test.fr/CN=PC-763293,OU=Computers,OU=ETB1,DC=domseth,DC=ac-test,DC=fr}                      
+useraccountcontrol             {4096}                                                                                                         
+cn                             {PC-763293}                                                                                                    
+countrycode                    {0}                                                                                                            
+primarygroupid                 {515}                                                                                                          
+whenchanged                    {11/02/2022 10:02:10}                                                                                          
+operatingsystemversion         {10.0 (19044)}                                                                                                 
+dnshostname                    {PC-763293.domseth.ac-test.fr}                                                                                 
+lastlogon                      {132890472644015720}                                                                                           
+distinguishedname              {CN=PC-763293,OU=Computers,OU=ETB1,DC=domseth,DC=ac-test,DC=fr}                                                
+msds-supportedencryptiontypes  {28}                                                                                                           
+samaccountname                 {PC-763293$}                                                                                                   
+objectsid                      {1 5 0 0 0 0 0 5 21 0 0 0 241 247 86 190 239 58 109 116 33 231 77 223 66 6 0 0}                                
+lastlogoff                     {0}                                                                                                            
+samaccounttype                 {805306369}                                                                                                    
+accountexpires                 {9223372036854775807}                                                                                          
+PC-763293: dn='CN=PC-763293,OU=Computers,OU=ETB1,DC=domseth,DC=ac-test,DC=fr'
+--------------------
+ridsetreferences               {CN=RID Set,CN=DC1,OU=Domain Controllers,DC=domseth,DC=ac-test,DC=fr}                                          
+codepage                       {0}                                                                                                            
+objectcategory                 {CN=Computer,CN=Schema,CN=Configuration,DC=domseth,DC=ac-test,DC=fr}                                           
+iscriticalsystemobject         {True}                                                                                                         
+operatingsystem                {Samba}                                                                                                        
+usnchanged                     {3650}                                                                                                         
+instancetype                   {4}                                                                                                            
+name                           {DC1}                                                                                                          
+msds-supportedencryptiontypes  {28}                                                                                                           
+pwdlastset                     {132888204628869870}                                                                                           
+serviceprincipalname           {HOST/DC1, HOST/dc1.domseth.ac-test.fr/dc1.domseth.ac-test.fr, host/dc1.domseth.ac-test.fr, HOST/dc1.domseth...
+objectclass                    {top, person, organizationalPerson, user...}                                                                   
+samaccounttype                 {805306369}                                                                                                    
+lastlogontimestamp             {132888204734155730}                                                                                           
+usncreated                     {3476}                                                                                                         
+objectguid                     {127 10 100 128 103 42 183 76 172 35 214 177 201 229 217 250}                                                  
+localpolicyflags               {0}                                                                                                            
+whencreated                    {08/02/2022 19:01:02}                                                                                          
+adspath                        {LDAP://domseth.ac-test.fr/CN=DC1,OU=Domain Controllers,DC=domseth,DC=ac-test,DC=fr}                           
+useraccountcontrol             {532480}                                                                                                       
+cn                             {DC1}                                                                                                          
+countrycode                    {0}                                                                                                            
+primarygroupid                 {516}                                                                                                          
+whenchanged                    {08/02/2022 19:01:13}                                                                                          
+operatingsystemversion         {4.13.17-Ubuntu}                                                                                               
+dnshostname                    {dc1.domseth.ac-test.fr}                                                                                       
+distinguishedname              {CN=DC1,OU=Domain Controllers,DC=domseth,DC=ac-test,DC=fr}                                                     
+samaccountname                 {DC1$}                                                                                                         
+objectsid                      {1 5 0 0 0 0 0 5 21 0 0 0 241 247 86 190 239 58 109 116 33 231 77 223 232 3 0 0}                               
+serverreferencebl              {CN=DC1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=domseth,DC=ac-test,DC=fr}           
+accountexpires                 {9223372036854775807}                                                                                          
+DC1: dn='CN=DC1,OU=Domain Controllers,DC=domseth,DC=ac-test,DC=fr'
+--------------------
+logoncount                     {8}                                                                                                            
+codepage                       {0}                                                                                                            
+objectcategory                 {CN=Computer,CN=Schema,CN=Configuration,DC=domseth,DC=ac-test,DC=fr}                                           
+operatingsystem                {Windows 11 Professionnel}                                                                                     
+usnchanged                     {4171}                                                                                                         
+instancetype                   {4}                                                                                                            
+name                           {PC-761315}                                                                                                    
+msds-supportedencryptiontypes  {28}                                                                                                           
+pwdlastset                     {132888949287539510}                                                                                           
+serviceprincipalname           {HOST/PC-761315.domseth.ac-test.fr, RestrictedKrbHost/PC-761315.domseth.ac-test.fr, HOST/PC-761315, Restrict...
+objectclass                    {top, person, organizationalPerson, user...}                                                                   
+iscriticalsystemobject         {False}                                                                                                        
+lastlogontimestamp             {132888949293231390}                                                                                           
+usncreated                     {4073}                                                                                                         
+objectguid                     {230 244 7 142 244 129 165 71 162 138 244 49 96 19 55 186}                                                     
+whencreated                    {09/02/2022 15:42:08}                                                                                          
+adspath                        {LDAP://domseth.ac-test.fr/CN=PC-761315,CN=Computers,DC=domseth,DC=ac-test,DC=fr}                              
+useraccountcontrol             {4096}                                                                                                         
+cn                             {PC-761315}                                                                                                    
+countrycode                    {0}                                                                                                            
+primarygroupid                 {515}                                                                                                          
+whenchanged                    {11/02/2022 10:34:41}                                                                                          
+operatingsystemversion         {10.0 (22000)}                                                                                                 
+dnshostname                    {PC-761315.domseth.ac-test.fr}                                                                                 
+lastlogon                      {132890448891265250}                                                                                           
+distinguishedname              {CN=PC-761315,CN=Computers,DC=domseth,DC=ac-test,DC=fr}                                                        
+samaccountname                 {PC-761315$}                                                                                                   
+objectsid                      {1 5 0 0 0 0 0 5 21 0 0 0 241 247 86 190 239 58 109 116 33 231 77 223 131 4 0 0}                               
+samaccounttype                 {805306369}                                                                                                    
+accountexpires                 {9223372036854775807}                                                                                          
+PC-761315: dn='CN=PC-761315,CN=Computers,DC=domseth,DC=ac-test,DC=fr'
+--------------------
+test-salt-minion: fin
+
+

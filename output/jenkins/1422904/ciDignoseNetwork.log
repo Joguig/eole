@@ -1,0 +1,151 @@
+Machine daily 2.7.2 : ciDiagnoseNetwork:
+** ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ens4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 02:00:c0:a8:00:66 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.0.153/24 brd 192.168.0.255 scope global dynamic ens4
+       valid_lft 6993sec preferred_lft 6993sec
+    inet6 fe80::c0ff:fea8:66/64 scope link dadfailed tentative 
+       valid_lft forever preferred_lft forever
+** ip route
+default via 192.168.0.1 dev ens4 proto dhcp src 192.168.0.153 metric 100 
+192.168.0.0/24 dev ens4 proto kernel scope link src 192.168.0.153 
+192.168.0.1 dev ens4 proto dhcp scope link src 192.168.0.153 metric 100 
+** GW_ACTUEL : 192.168.0.1
+total 4
+-rw-r--r-- 1 root root 110 janv. 23  2023 01-netcfg.yaml
+--------------------------------------------
+cat /etc/netplan/01-netcfg.yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens4:
+      dhcp4: yes
+      dhcp-identifier: mac
+--------------------------------------------
+--------------------------------------------
+cat /etc/network/interfaces
+# interfaces(5) file used by ifup(8) and ifdown(8)
+# Include files from /etc/network/interfaces.d:
+source-directory /etc/network/interfaces.d
+--------------------------------------------
+--------------------------------------------
+cat /etc/resolv.conf
+# This file is managed by man:systemd-resolved(8). Do not edit.
+#
+# This is a dynamic resolv.conf file for connecting local clients to the
+# internal DNS stub resolver of systemd-resolved. This file lists all
+# configured search domains.
+#
+# Run "systemd-resolve --status" to see details about the uplink DNS servers
+# currently in use.
+#
+# Third party programs must not access this file directly, but only through the
+# symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a different way,
+# replace this symlink by a static file or a different symlink.
+#
+# See man:systemd-resolved.service(8) for details about the supported modes of
+# operation for /etc/resolv.conf.
+
+nameserver 127.0.0.53
+options edns0
+search ac-test.fr
+--------------------------------------------
+--------------------------------------------
+cat /etc/systemd/resolved.conf
+#  This file is part of systemd.
+#
+#  systemd is free software; you can redistribute it and/or modify it
+#  under the terms of the GNU Lesser General Public License as published by
+#  the Free Software Foundation; either version 2.1 of the License, or
+#  (at your option) any later version.
+#
+# Entries in this file show the compile time defaults.
+# You can change settings by editing this file.
+# Defaults can be restored by simply deleting this file.
+#
+# See resolved.conf(5) for details
+
+[Resolve]
+#DNS=
+#FallbackDNS=
+#Domains=
+#LLMNR=no
+#MulticastDNS=no
+#DNSSEC=no
+#Cache=yes
+#DNSStubListener=yes
+--------------------------------------------
+--------------------------------------------
+cat /run/systemd/resolve/stub-resolv.conf
+# This file is managed by man:systemd-resolved(8). Do not edit.
+#
+# This is a dynamic resolv.conf file for connecting local clients to the
+# internal DNS stub resolver of systemd-resolved. This file lists all
+# configured search domains.
+#
+# Run "systemd-resolve --status" to see details about the uplink DNS servers
+# currently in use.
+#
+# Third party programs must not access this file directly, but only through the
+# symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a different way,
+# replace this symlink by a static file or a different symlink.
+#
+# See man:systemd-resolved.service(8) for details about the supported modes of
+# operation for /etc/resolv.conf.
+
+nameserver 127.0.0.53
+options edns0
+search ac-test.fr
+--------------------------------------------
+lrwxrwxrwx 1 root            root             39 juil.  2  2020 /etc/resolv.conf -> ../run/systemd/resolve/stub-resolv.conf
+-rw-r--r-- 1 root            root            601 mai    3  2020 /etc/systemd/resolved.conf
+-rw-r--r-- 1 systemd-resolve systemd-resolve 733 déc.  13 19:15 /run/systemd/resolve/stub-resolv.conf
+Machine daily 2.7.2 : systemctl is-active network.target : active
+Machine daily 2.7.2 : systemctl is-active network-online.target : active
+Machine daily 2.7.2 : systemctl is-system-running : degraded
+[3172mMachine daily 2.7.2 : ATTENTION: ciPingHost ens4 => 192.168.0.1 ping=0 ==> K.O. (exit 1)
+(B[m** iptables
+-P INPUT ACCEPT
+-P FORWARD ACCEPT
+-P OUTPUT ACCEPT
+-P PREROUTING ACCEPT
+-P INPUT ACCEPT
+-P OUTPUT ACCEPT
+-P POSTROUTING ACCEPT
+-P PREROUTING ACCEPT
+-P INPUT ACCEPT
+-P FORWARD ACCEPT
+-P OUTPUT ACCEPT
+-P POSTROUTING ACCEPT
+-P PREROUTING ACCEPT
+-P OUTPUT ACCEPT
+** systemd-resolved status 
+● systemd-resolved.service - Network Name Resolution
+   Loaded: loaded (/lib/systemd/system/systemd-resolved.service; enabled; vendor preset: enabled)
+   Active: active (running) since Fri 2024-12-13 19:15:57 CET; 3min 33s ago
+     Docs: man:systemd-resolved.service(8)
+           https://www.freedesktop.org/wiki/Software/systemd/resolved
+           https://www.freedesktop.org/wiki/Software/systemd/writing-network-configuration-managers
+           https://www.freedesktop.org/wiki/Software/systemd/writing-resolver-clients
+ Main PID: 737 (systemd-resolve)
+   Status: "Processing requests..."
+    Tasks: 1 (limit: 4672)
+   CGroup: /system.slice/systemd-resolved.service
+           └─737 /lib/systemd/systemd-resolved
+
+déc. 13 19:15:57 thot systemd[1]: Starting Network Name Resolution...
+déc. 13 19:15:57 thot systemd-resolved[737]: Positive Trust Anchors:
+déc. 13 19:15:57 thot systemd-resolved[737]: . IN DS 19036 8 2 49aac11d7b6f6446702e54a1607371607a1a41855200fd2ce1cdde32f24e8fb5
+déc. 13 19:15:57 thot systemd-resolved[737]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+déc. 13 19:15:57 thot systemd-resolved[737]: Negative trust anchors: 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa corp home internal intranet lan local private test
+déc. 13 19:15:57 thot systemd-resolved[737]: Using system hostname 'thot'.
+déc. 13 19:15:57 thot systemd[1]: Started Network Name Resolution.
+déc. 13 19:17:59 thot systemd-resolved[737]: Using degraded feature set (UDP) for DNS server 192.168.0.1.
+déc. 13 19:18:04 thot systemd-resolved[737]: Using degraded feature set (TCP) for DNS server 192.168.0.1.

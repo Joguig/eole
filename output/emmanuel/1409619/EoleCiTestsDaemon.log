@@ -1,0 +1,17 @@
+Début ciDeamonMain /root/.EoleCiTestsDaemon.sh
+init à 2024-12-10 09:32:59
+* ciAfficheProcess : 2024-12-10 09:32:59
+* ciWaitConteneurs : 2024-12-10 09:32:59
+* ciConfigurationMe : avant 2024-12-10 09:33:01
+* ciConfigurationMe : apres 2024-12-10 09:33:05
+Machine aca.scribe 2.10.0 : * Creation lien aca.scribe dans /mnt/eole-ci-tests/output/emmanuel/1409619
+Machine aca.scribe 2.10.0 : Sauvegarde CA aca.scribe
+-rw-r--r-- 1 9869 9869 1777 déc.  10 09:33 /mnt/eole-ci-tests/output/emmanuel//aca.scribe.crt
+    issuer=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-scribe.domscribe.ac-test.fr
+    subject=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-scribe.domscribe.ac-test.fr
+    notBefore=Nov 22 20:18:20 2024 GMT
+    notAfter=Nov 23 20:18:20 2027 GMT
+* ciBoucleDExecution : pas d'excution ==> sortie
+ciStopDaemon : 2024-12-10 09:33:05
+nettoyage 'motd' et '/etc/issue'
+Sauvegarde log EoleCiTests

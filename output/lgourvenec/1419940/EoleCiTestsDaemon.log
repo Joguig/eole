@@ -1,0 +1,18 @@
+Début ciDeamonMain /root/.EoleCiTestsDaemon.sh
+init à 2024-12-10 10:26:25
+* ciAfficheProcess : 2024-12-10 10:26:25
+* ciWaitConteneurs : 2024-12-10 10:26:26
+* ciConfigurationMe : avant 2024-12-10 10:26:26
+* ciConfigurationMe : apres 2024-12-10 10:26:27
+Machine etb1.amon 2.9.0 : * Creation lien etb1.amon dans /mnt/eole-ci-tests/output/lgourvenec/1419940
+unlink: impossible de supprimer '/mnt/eole-ci-tests/output/lgourvenec//etb1.amon': Aucun fichier ou dossier de ce nom
+Machine etb1.amon 2.9.0 : Sauvegarde CA etb1.amon
+-rw-r--r-- 1 9869 9869 1720 déc.  10 10:26 /mnt/eole-ci-tests/output/lgourvenec//etb1.amon.crt
+    issuer=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-amon.etb1.lan
+    subject=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-amon.etb1.lan
+    notBefore=Dec  9 20:47:56 2024 GMT
+    notAfter=Dec 10 20:47:56 2027 GMT
+* ciBoucleDExecution : pas d'excution ==> sortie
+ciStopDaemon : 2024-12-10 10:26:27
+nettoyage 'motd' et '/etc/issue'
+Sauvegarde log EoleCiTests

@@ -1,0 +1,17 @@
+Start Context début... 
+Monte CDROM de CONTEXT dans /mnt/cdrom (Ubuntu)
+ciCreateDir: /mnt/eole-ci-tests/output/bbohard/1399702
+ciCreateDir: /mnt/eole-ci-tests/output/bbohard/1399702/todo
+ciCreateDir: /mnt/eole-ci-tests/output/bbohard/1399702/running
+ciCreateDir: /mnt/eole-ci-tests/output/bbohard/1399702/done
+TEMPLATE : VM_ONE=one, VM_ID=1399702, VM_OWNER=bbohard, VM_DAEMON=once, VM_MACHINE=aca.pc
+TEMPLATE : VM_VERSIONMAJEUR=, VM_MAJAUTO=
+ONBOOT   : VM_METHODE=instance, VM_CONFIGURATION=default
+USER     : IP_GW=98, GW=192.168.230.98, IP_UTILISATEUR=192.168.230.204, MAIL=bbohard@cadoles.com
+FI       : IMAGE=linuxmint-22-cinnamon-amd64.fi, ISO=linuxmint-22-cinnamon-amd64.iso, MODULE=
+DAILY    : DATE=2024-11-09 04:03, MAJAUTO=
+MODELE   : VM_MODULE=, VM_CONTAINER=, VM_ETABLISSEMENT=aca
+ETH0     : NAME=academie, DHCP=oui, IP=, GW=192.168.0.1, DNS=192.168.0.1
+Début ciContextualizeMe
+Machine aca.pc  : ciContextualizeMachine: réalisée pour 1396580, à refaire
+Fin ciContextualizeMe

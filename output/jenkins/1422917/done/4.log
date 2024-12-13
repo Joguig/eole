@@ -1,0 +1,123 @@
+Debut /mnt/eole-ci-tests/tests/importation/importation_envole_professeurs_et_administratifs.sh
+Copie des fichiers a importer
+Definition des preférences
+Importation des fichiers
+INFO:scribe.importation:## Lecture des enseignants... ##
+INFO:scribe.importation:TOTAL : 12 enseignants
+
+Lecture des enseignants...
+TOTAL : 12 enseignants
+importation.py = 0
+--------------------------------------------
+cat /var/lib/eole/reports/importation.txt
+2024-12-13 20:18:42 - INFO ## Lecture des enseignants... ##
+2024-12-13 20:18:42 - INFO TOTAL : 12 enseignants
+--------------------------------------------
+Importation des comptes PROFESSEURS
+DEBUG:scribe.importation:mise en place du lock eoleimport
+DEBUG:scribe.importation:Arrêt de LSC...
+INFO:scribe.importation:## Nettoyage des équipes pédagogiques ##
+INFO:scribe.importation:## Vérification des classes... ##
+DEBUG:scribe.importation:Classe 6a existante : OK
+DEBUG:scribe.importation:Classe 6b existante : OK
+DEBUG:scribe.importation:Classe 5a existante : OK
+DEBUG:scribe.importation:Classe 5b existante : OK
+DEBUG:scribe.importation:Classe 4a existante : OK
+DEBUG:scribe.importation:Classe 4b existante : OK
+DEBUG:scribe.importation:Classe 3a existante : OK
+DEBUG:scribe.importation:Classe 3b existante : OK
+INFO:scribe.importation:Classe po non trouvée
+DEBUG:scribe.importation:Classe c31 existante : OK
+INFO:scribe.importation:TOTAL : 9 équipes pédagogiques traitées
+INFO:scribe.importation:## Intégration des matières... ##
+INFO:scribe.importation:TOTAL : 0 matières traitées
+INFO:scribe.importation:## Vérification des Options... ##
+INFO:scribe.importation:TOTAL : 0 options traitées
+INFO:scribe.importation:## Intégration des enseignants... ##
+DEBUG:scribe.importation:nouvel enseignant : prof.6a
+DEBUG:scribe.importation:nouvel enseignant : prof.6b
+DEBUG:scribe.importation:nouvel enseignant : prof.5a
+DEBUG:scribe.importation:nouvel enseignant : prof.5b
+DEBUG:scribe.importation:nouvel enseignant : prof.4a
+DEBUG:scribe.importation:nouvel enseignant : prof.4b
+DEBUG:scribe.importation:nouvel enseignant : prof.3a
+DEBUG:scribe.importation:nouvel enseignant : prof.3b
+DEBUG:scribe.importation:nouvel enseignant : profpo
+DEBUG:scribe.importation:nouvel enseignant : prenom.prof26
+DEBUG:scribe.importation:nouvel enseignant : prenom.prof21
+DEBUG:scribe.importation:nouvel enseignant : test.prof
+INFO:scribe.importation:Synchronisation des comptes utilisateurs AD...
+INFO:scribe.importation:Synchronisation des mots de passe AD...
+DEBUG:scribe.importation:Initialisation du mot de passe pour : prof.6a
+DEBUG:scribe.importation:Initialisation du mot de passe pour : prof.6b
+DEBUG:scribe.importation:Initialisation du mot de passe pour : prof.5a
+DEBUG:scribe.importation:Initialisation du mot de passe pour : prof.5b
+DEBUG:scribe.importation:Initialisation du mot de passe pour : prof.4a
+DEBUG:scribe.importation:Initialisation du mot de passe pour : prof.4b
+DEBUG:scribe.importation:Initialisation du mot de passe pour : prof.3a
+DEBUG:scribe.importation:Initialisation du mot de passe pour : prof.3b
+DEBUG:scribe.importation:Initialisation du mot de passe pour : profpo
+DEBUG:scribe.importation:Initialisation du mot de passe pour : prenom.prof26
+DEBUG:scribe.importation:Initialisation du mot de passe pour : prenom.prof21
+DEBUG:scribe.importation:Initialisation du mot de passe pour : test.prof
+INFO:scribe.importation:Mise à jour des répertoires...
+INFO:scribe.importation:TOTAL : 12 enseignants
+INFO:scribe.importation:fichier des comptes copié dans :
+INFO:scribe.importation:/home/a/admin/perso/importation/enseignants_20241213_201904.csv
+INFO:scribe.importation:## Intégration des services administratifs... ##
+INFO:scribe.importation:TOTAL : 0 services traités
+INFO:scribe.importation:## Intégration des personnels administratifs... ##
+INFO:scribe.importation:Synchronisation des comptes utilisateurs AD...
+INFO:scribe.importation:Synchronisation des mots de passe AD...
+INFO:scribe.importation:Mise à jour des répertoires...
+INFO:scribe.importation:TOTAL : 0 personnels administratif
+INFO:scribe.importation:Synchronisation des partages Samba...
+DEBUG:scribe.importation:Démarrage de LSC...
+DEBUG:scribe.importation:suppression du lock eoleimport
+INFO:scribe.importation:#########################################
+INFO:scribe.importation: Fin de l'importation en mode EAD
+INFO:scribe.importation:#########################################
+INFO:scribe.importation:fichier importation_20241213_201916.txt copié dans :
+INFO:scribe.importation:/home/a/admin/perso/importation/importation_20241213_201916.txt
+mise en place du lock eoleimport
+
+Arrêt de LSC...
+
+Nettoyage des équipes pédagogiques
+
+Vérification des classes...
+Classe po non trouvée
+TOTAL : 9 équipes pédagogiques traitées
+
+Intégration des matières...
+TOTAL : 0 matières traitées
+
+Vérification des Options...
+TOTAL : 0 options traitées
+
+Intégration des enseignants...
+Synchronisation des comptes utilisateurs AD...
+Synchronisation des mots de passe AD...
+Mise à jour des répertoires...
+TOTAL : 12 enseignants
+fichier des comptes copié dans :
+/home/a/admin/perso/importation/enseignants_20241213_201904.csv
+
+Intégration des services administratifs...
+TOTAL : 0 services traités
+
+Intégration des personnels administratifs...
+Synchronisation des comptes utilisateurs AD...
+Synchronisation des mots de passe AD...
+Mise à jour des répertoires...
+TOTAL : 0 personnels administratif
+Synchronisation des partages Samba...
+
+Démarrage de LSC...
+suppression du lock eoleimport
+fichier importation_20241213_201916.txt copié dans :
+/home/a/admin/perso/importation/importation_20241213_201916.txt
+importation.py = 0
+Inject PROFPO comme PrintOperators
+smbldap-groupmod = 0
+Temps importation : 00 hr 00 min 41 sec

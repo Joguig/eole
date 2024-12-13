@@ -1,0 +1,121 @@
+    PID ---User--- ----------CGroup------------ COMMAND
+      2 root       -                            [kthreadd]
+      3 root       -                             \_ [rcu_gp]
+      4 root       -                             \_ [rcu_par_gp]
+      6 root       -                             \_ [kworker/0:0H-kblockd]
+      7 root       -                             \_ [kworker/u8:0-events_power_efficient]
+      8 root       -                             \_ [mm_percpu_wq]
+      9 root       -                             \_ [ksoftirqd/0]
+     10 root       -                             \_ [rcu_sched]
+     11 root       -                             \_ [migration/0]
+     12 root       -                             \_ [idle_inject/0]
+     13 root       -                             \_ [kworker/0:1-cgroup_destroy]
+     14 root       -                             \_ [cpuhp/0]
+     15 root       -                             \_ [cpuhp/1]
+     16 root       -                             \_ [idle_inject/1]
+     17 root       -                             \_ [migration/1]
+     18 root       -                             \_ [ksoftirqd/1]
+     20 root       -                             \_ [kworker/1:0H-kblockd]
+     21 root       -                             \_ [cpuhp/2]
+     22 root       -                             \_ [idle_inject/2]
+     23 root       -                             \_ [migration/2]
+     24 root       -                             \_ [ksoftirqd/2]
+     26 root       -                             \_ [kworker/2:0H]
+     27 root       -                             \_ [cpuhp/3]
+     28 root       -                             \_ [idle_inject/3]
+     29 root       -                             \_ [migration/3]
+     30 root       -                             \_ [ksoftirqd/3]
+     32 root       -                             \_ [kworker/3:0H-kblockd]
+     33 root       -                             \_ [kdevtmpfs]
+     34 root       -                             \_ [netns]
+     35 root       -                             \_ [rcu_tasks_kthre]
+     36 root       -                             \_ [kauditd]
+     37 root       -                             \_ [khungtaskd]
+     38 root       -                             \_ [oom_reaper]
+     39 root       -                             \_ [writeback]
+     40 root       -                             \_ [kcompactd0]
+     41 root       -                             \_ [ksmd]
+     42 root       -                             \_ [khugepaged]
+     48 root       -                             \_ [kworker/3:1-events]
+     89 root       -                             \_ [kintegrityd]
+     90 root       -                             \_ [kblockd]
+     91 root       -                             \_ [blkcg_punt_bio]
+     92 root       -                             \_ [tpm_dev_wq]
+     93 root       -                             \_ [ata_sff]
+     94 root       -                             \_ [md]
+     95 root       -                             \_ [edac-poller]
+     96 root       -                             \_ [devfreq_wq]
+     97 root       -                             \_ [watchdogd]
+     98 root       -                             \_ [kworker/1:1-mm_percpu_wq]
+     99 root       -                             \_ [kworker/u8:1-events_power_efficient]
+    100 root       -                             \_ [kworker/2:1-events]
+    101 root       -                             \_ [kswapd0]
+    102 root       -                             \_ [ecryptfs-kthrea]
+    104 root       -                             \_ [kthrotld]
+    105 root       -                             \_ [acpi_thermal_pm]
+    106 root       -                             \_ [scsi_eh_0]
+    107 root       -                             \_ [scsi_tmf_0]
+    108 root       -                             \_ [scsi_eh_1]
+    109 root       -                             \_ [scsi_tmf_1]
+    111 root       -                             \_ [vfio-irqfd-clea]
+    113 root       -                             \_ [ipv6_addrconf]
+    122 root       -                             \_ [kstrp]
+    125 root       -                             \_ [kworker/u9:0]
+    138 root       -                             \_ [charger_manager]
+    139 root       -                             \_ [kworker/1:2-events]
+    187 root       -                             \_ [scsi_eh_2]
+    188 root       -                             \_ [scsi_tmf_2]
+    189 root       -                             \_ [kworker/1:1H-kblockd]
+    207 root       -                             \_ [ttm_swap]
+    210 root       -                             \_ [kworker/0:1H-kblockd]
+    211 root       -                             \_ [kworker/0:2-mm_percpu_wq]
+    222 root       -                             \_ [kdmflush]
+    223 root       -                             \_ [kdmflush]
+    255 root       -                             \_ [raid5wq]
+    283 root       -                             \_ [kworker/2:1H-kblockd]
+    308 root       -                             \_ [jbd2/dm-0-8]
+    309 root       -                             \_ [ext4-rsv-conver]
+    345 root       -                             \_ [kworker/2:2-mm_percpu_wq]
+    383 root       -                             \_ [kworker/3:1H-kblockd]
+    392 root       -                             \_ [ipmi-msghandler]
+    522 root       -                             \_ [kaluad]
+    523 root       -                             \_ [kmpath_rdacd]
+    524 root       -                             \_ [kmpathd]
+    525 root       -                             \_ [kmpath_handlerd]
+    692 root       -                             \_ [kworker/3:4-mm_percpu_wq]
+   1366 root       -                             \_ bpfilter_umh
+   2569 root       -                             \_ [kworker/u8:2-events_power_efficient]
+      1 root       11:cpu,cpuacct:/init.scope,1 /sbin/init
+    369 root       11:cpu,cpuacct:/system.slice /lib/systemd/systemd-journald
+    370 root       11:cpu,cpuacct:/system.slice /bin/bash
+    403 root       11:cpu,cpuacct:/system.slice /lib/systemd/systemd-udevd
+    526 root       11:cpu,cpuacct:/system.slice /sbin/multipathd -d -s
+    607 root       11:cpu,cpuacct:/system.slice /usr/lib/accountsservice/accounts-daemon
+    608 messagebus 11:cpu,cpuacct:/system.slice /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    616 root       11:cpu,cpuacct:/system.slice /usr/sbin/irqbalance --foreground
+    620 root       11:cpu,cpuacct:/system.slice /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+    621 root       11:cpu,cpuacct:/system.slice /usr/lib/policykit-1/polkitd --no-debug
+    622 syslog     11:cpu,cpuacct:/system.slice /usr/sbin/rsyslogd -n -iNONE
+    623 root       11:cpu,cpuacct:/system.slice /lib/systemd/systemd-logind
+    625 root       11:cpu,cpuacct:/system.slice /usr/lib/udisks2/udisksd
+    686 root       11:cpu,cpuacct:/system.slice /usr/sbin/ModemManager
+    947 systemd-r+ 11:cpu,cpuacct:/system.slice /lib/systemd/systemd-resolved
+    981 root       11:cpu,cpuacct:/system.slice /usr/bin/containerd
+   1003 root       11:cpu,cpuacct:/system.slice nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+   1004 www-data   11:cpu,cpuacct:/system.slice  \_ nginx: worker process
+   1005 www-data   11:cpu,cpuacct:/system.slice  \_ nginx: worker process
+   1006 www-data   11:cpu,cpuacct:/system.slice  \_ nginx: worker process
+   1007 www-data   11:cpu,cpuacct:/system.slice  \_ nginx: worker process
+   1054 root       11:cpu,cpuacct:/system.slice /usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375 --dns 192.168.0.1 --dns 192.168.232.2
+   1058 root       11:cpu,cpuacct:/system.slice /usr/sbin/cron -f
+   1067 daemon     11:cpu,cpuacct:/system.slice /usr/sbin/atd -f
+   1081 root       11:cpu,cpuacct:/system.slice /sbin/agetty -o -p -- \u --noclear tty1 linux
+   1550 root       11:cpu,cpuacct:/system.slice /bin/bash /root/.EoleCiTestsDaemon.sh
+   2599 root       11:cpu,cpuacct:/system.slice  \_ ps xawf -eo pid,user=---User---,cgroup=----------CGroup------------,args
+   1653 systemd-n+ 11:cpu,cpuacct:/system.slice /lib/systemd/systemd-networkd
+   1774 root       11:cpu,cpuacct:/system.slice sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+   1812 dnsmasq    11:cpu,cpuacct:/system.slice /usr/sbin/dnsmasq -x /run/dnsmasq/dnsmasq.pid -u dnsmasq -7 /etc/dnsmasq.d,.dpkg-dist,.dpkg-old,.dpkg-new --local-service --trust-anchor=.,20326,8,2,e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+   1813 root       11:cpu,cpuacct:/system.slice  \_ /usr/sbin/dnsmasq -x /run/dnsmasq/dnsmasq.pid -u dnsmasq -7 /etc/dnsmasq.d,.dpkg-dist,.dpkg-old,.dpkg-new --local-service --trust-anchor=.,20326,8,2,e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+   1840 _chrony    11:cpu,cpuacct:/system.slice /usr/sbin/chronyd -F -1
+   1841 _chrony    11:cpu,cpuacct:/system.slice  \_ /usr/sbin/chronyd -F -1
+   2529 Debian-ex+ 11:cpu,cpuacct:/system.slice /usr/sbin/exim4 -bd -q30m -oX 25:587:10025 -oP /run/exim4/exim.pid -d

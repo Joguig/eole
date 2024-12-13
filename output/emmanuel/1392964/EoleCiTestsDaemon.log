@@ -1,0 +1,18 @@
+Début ciDeamonMain /root/.EoleCiTestsDaemon.sh
+init à 2024-11-05 09:24:16
+* ciAfficheProcess : 2024-11-05 09:24:16
+* ciWaitConteneurs : 2024-11-05 09:24:18
+* ciConfigurationMe : avant 2024-11-05 09:24:19
+* ciConfigurationMe : apres 2024-11-05 09:24:34
+Machine aca.eolebase 2.7.1 : * Creation lien aca.eolebase dans /mnt/eole-ci-tests/output/emmanuel/1392964
+unlink: impossible de supprimer '/mnt/eole-ci-tests/output/emmanuel//aca.eolebase': Aucun fichier ou dossier de ce type
+Machine aca.eolebase 2.7.1 : Sauvegarde CA aca.eolebase
+-rw-r--r-- 1 9869 9869 1777 nov.   5 09:24 /mnt/eole-ci-tests/output/emmanuel//aca.eolebase.crt
+    issuer=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-eolebase.ac-test.fr
+    subject=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-eolebase.ac-test.fr
+    notBefore=Jun 25 16:38:24 2020 GMT
+    notAfter=Jun 26 16:38:24 2023 GMT
+* ciBoucleDExecution : pas d'excution ==> sortie
+ciStopDaemon : 2024-11-05 09:24:34
+nettoyage 'motd' et '/etc/issue'
+Sauvegarde log EoleCiTests

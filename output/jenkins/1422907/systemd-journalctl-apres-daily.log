@@ -1,0 +1,1762 @@
+-- Logs begin at Wed 2024-03-06 07:30:17 CET, end at Fri 2024-12-13 19:25:14 CET. --
+déc. 11 19:37:15 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:15] "GET /reload_config HTTP/1.1" 200 31 "" "python-requests/2.22.0"
+déc. 11 19:37:15 thot systemd[1]: Stopping Eole flask server...
+déc. 11 19:37:15 thot systemd[1]: eoleflask.service: Succeeded.
+déc. 11 19:37:15 thot systemd[1]: Stopped Eole flask server.
+déc. 11 19:37:15 thot systemd[1]: Starting Eole flask server...
+déc. 11 19:37:15 thot systemd[1]: eoleflask.service: Can't open PID file /run/eoleflask.pid (yet?) after start: Operation not permitted
+déc. 11 19:37:16 thot systemd[1]: Started Eole flask server.
+déc. 11 19:37:16 thot zephir[1435]: MAJ => FIN : 2 paquets mis à jour en candidate
+déc. 11 19:37:16 thot zephir[1435]: MAJ => MSG : Reconfiguration du serveur à planifier
+déc. 11 19:37:16 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:16] "GET /get/creole/interface_0/nom_zone_eth0 HTTP/1.1" 200 33 "" "python-requests/2.22.0"
+déc. 11 19:37:16 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:16] "GET /get/creole/interface_0/nom_zone_eth0 HTTP/1.1" 200 33 "" "python-requests/2.22.0"
+déc. 11 19:37:16 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:16] "GET /get/creole?variable=eole_release HTTP/1.1" 200 34 "" "python-requests/2.22.0"
+déc. 11 19:37:16 thot zephir[8849]: MAJ => INIT : Début en devel
+déc. 11 19:37:16 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:16] "GET /get/creole?variable=eole_module HTTP/1.1" 200 33 "" "python-requests/2.22.0"
+déc. 11 19:37:16 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:16] "GET /get/creole?variable=numero_etab HTTP/1.1" 200 31 "" "python-requests/2.22.0"
+déc. 11 19:37:17 thot zephir[8849]: MAJ => MSG : Mise à jour en devel forcée par l'utilisateur
+déc. 11 19:37:17 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:17] "GET /get/creole?variable=mode_conteneur_actif HTTP/1.1" 200 32 "" "python-requests/2.22.0"
+déc. 11 19:37:20 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:20] "GET /get/creole HTTP/1.1" 200 9799 "" "python-requests/2.22.0"
+déc. 11 19:37:20 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:20] "GET /get/creole?variable=mode_conteneur_actif HTTP/1.1" 200 32 "" "python-requests/2.22.0"
+déc. 11 19:37:20 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:20] "GET /get/containers/containers HTTP/1.1" 200 1233 "" "python-requests/2.22.0"
+déc. 11 19:37:20 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:20] "GET /get/containers?withoption=real_container&withvalue=root HTTP/1.1" 200 102558 "" "python-requests/2.22.0"
+déc. 11 19:37:20 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:20] "GET /get/creole?variable=ubuntu_update_mirrors HTTP/1.1" 200 64 "" "python-requests/2.22.0"
+déc. 11 19:37:20 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:20] "GET /get/creole?variable=envole_version HTTP/1.1" 200 201 "" "python-requests/2.22.0"
+déc. 11 19:37:20 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:20] "GET /get/creole?variable=additional_repository_name HTTP/1.1" 200 29 "" "python-requests/2.22.0"
+déc. 11 19:37:20 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:20] "GET /get/creole?variable=additional_repository_source HTTP/1.1" 200 29 "" "python-requests/2.22.0"
+déc. 11 19:37:20 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:20] "GET /get/creole?variable=additional_repository_key_type HTTP/1.1" 200 29 "" "python-requests/2.22.0"
+déc. 11 19:37:20 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:20] "GET /get/creole?variable=additional_repository_key_url HTTP/1.1" 200 29 "" "python-requests/2.22.0"
+déc. 11 19:37:20 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:20] "GET /get/creole?variable=additional_repository_key_signserver HTTP/1.1" 200 29 "" "python-requests/2.22.0"
+déc. 11 19:37:20 thot creoled[848]: 127.0.0.1 - - [11/Dec/2024:19:37:20] "GET /get/creole?variable=additional_repository_key_fingerprint HTTP/1.1" 200 29 "" "python-requests/2.22.0"
+déc. 11 19:37:23 thot systemd[1]: Starting Update APT News...
+déc. 11 19:37:23 thot systemd[1]: Starting Update the local ESM caches...
+déc. 11 19:37:23 thot audit[9166]: AVC apparmor="DENIED" operation="open" profile="ubuntu_pro_esm_cache//apt_methods_gpgv" name="/dev/tty" pid=9166 comm="apt-key" requested_mask="wr" denied_mask="wr" fsuid=105 ouid=0
+déc. 11 19:37:23 thot kernel: audit: type=1400 audit(1733942243.604:30): apparmor="DENIED" operation="open" profile="ubuntu_pro_esm_cache//apt_methods_gpgv" name="/dev/tty" pid=9166 comm="apt-key" requested_mask="wr" denied_mask="wr" fsuid=105 ouid=0
+déc. 11 19:37:23 thot audit[9244]: AVC apparmor="DENIED" operation="open" profile="ubuntu_pro_esm_cache//apt_methods_gpgv" name="/dev/tty" pid=9244 comm="apt-key" requested_mask="wr" denied_mask="wr" fsuid=105 ouid=0
+déc. 11 19:37:23 thot kernel: audit: type=1400 audit(1733942243.668:31): apparmor="DENIED" operation="open" profile="ubuntu_pro_esm_cache//apt_methods_gpgv" name="/dev/tty" pid=9244 comm="apt-key" requested_mask="wr" denied_mask="wr" fsuid=105 ouid=0
+déc. 11 19:37:23 thot systemd[1]: esm-cache.service: Succeeded.
+déc. 11 19:37:23 thot systemd[1]: Finished Update the local ESM caches.
+déc. 11 19:37:25 thot systemd[1]: apt-news.service: Succeeded.
+déc. 11 19:37:25 thot systemd[1]: Finished Update APT News.
+déc. 11 19:37:32 thot zephir[8849]: MAJ => FIN : Aucun paquet à installer en devel
+déc. 11 19:37:32 thot EOLECITESTS[10181]: ciMonitor python3 ==> RESULT=0
+déc. 11 19:37:32 thot EOLECITESTS[10185]: GenConteneur
+déc. 11 19:37:32 thot EOLECITESTS[10186]: Pas de fichier startup '/mnt/eole-ci-tests/module/UpdateDaily-thot.sh'
+déc. 11 19:37:32 thot EOLECITESTS[10187]: Test CVE Noyau
+déc. 11 19:37:32 thot EOLECITESTS[10191]: autoremove pour les anciens noyaux
+déc. 11 19:37:33 thot EOLECITESTS[10196]: * Execute updatedb
+déc. 11 19:37:34 thot EOLECITESTS[10198]: Tag l'Image Daily
+déc. 11 19:37:34 thot EOLECITESTS[10202]: Check Update Service
+déc. 11 19:37:34 thot systemd[1]: Reloading.
+déc. 11 19:37:34 thot systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+déc. 11 19:37:34 thot systemd[1]: Reloading.
+déc. 11 19:37:35 thot systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+déc. 11 19:37:35 thot systemd[1]: Reloading.
+déc. 11 19:37:35 thot systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+déc. 11 19:37:35 thot systemd[1]: Reloading.
+déc. 11 19:37:35 thot systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+déc. 11 19:37:35 thot systemd[1]: Reloading.
+déc. 11 19:37:35 thot systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+déc. 11 19:37:36 thot systemd[1]: Reloading.
+déc. 11 19:37:36 thot systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+déc. 11 19:37:36 thot EOLECITESTS[10345]: Trim disk
+déc. 11 19:37:36 thot EOLECITESTS[10347]: ciUpdateDaily RC : OK
+déc. 11 19:37:51 thot systemd-logind[529]: Power key pressed.
+déc. 11 19:37:51 thot systemd-logind[529]: Powering Off...
+déc. 11 19:37:51 thot systemd-logind[529]: System is powering down.
+déc. 11 19:37:51 thot systemd[1]: Removed slice system-modprobe.slice.
+déc. 11 19:37:51 thot systemd[1]: Stopped target Graphical Interface.
+déc. 11 19:37:51 thot systemd[1]: Stopped target Timers.
+déc. 11 19:37:51 thot systemd[1]: certbot.timer: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Run certbot twice daily.
+déc. 11 19:37:51 thot systemd[1]: e2scrub_all.timer: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Periodic ext4 Online Metadata Check for All Filesystems.
+déc. 11 19:37:51 thot systemd[1]: logrotate.timer: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Daily rotation of log files.
+déc. 11 19:37:51 thot systemd[1]: exim4-base.timer: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Daily exim4-base housekeeping.
+déc. 11 19:37:51 thot systemd[1]: man-db.timer: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Daily man-db regeneration.
+déc. 11 19:37:51 thot systemd[1]: motd-news.timer: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Message of the Day.
+déc. 11 19:37:51 thot systemd[1]: phpsessionclean.timer: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Clean PHP session files every 30 mins.
+déc. 11 19:37:51 thot systemd[1]: systemd-tmpfiles-clean.timer: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Daily Cleanup of Temporary Directories.
+déc. 11 19:37:51 thot systemd[1]: lvm2-lvmpolld.socket: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Closed LVM2 poll daemon socket.
+déc. 11 19:37:51 thot systemd[1]: systemd-rfkill.socket: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Closed Load/Save RF Kill Switch Status /dev/rfkill Watch.
+déc. 11 19:37:51 thot systemd[1]: Stopping EOLE Continuous Integration Tests Daemon...
+déc. 11 19:37:51 thot systemd[1]: Stopping Accounts Service...
+déc. 11 19:37:51 thot systemd[1]: Stopping Availability of block devices...
+déc. 11 19:37:51 thot systemd[1]: Stopping Discard unused blocks on filesystems from /etc/fstab...
+déc. 11 19:37:51 thot systemd[1]: Stopping LVM event activation on device 8:2...
+déc. 11 19:37:51 thot systemd[1]: Stopping Add entropy to /dev/random 's pool a hardware RNG...
+déc. 11 19:37:51 thot creoled[848]:  ENGINE Caught signal SIGTERM.
+déc. 11 19:37:51 thot creoled[848]:  ENGINE Bus STOPPING
+déc. 11 19:37:51 thot freshclam[875]: Wed Dec 11 19:37:51 2024 -> Update process terminated
+déc. 11 19:37:51 thot systemd[1]: Stopping Load/Save Random Seed...
+déc. 11 19:37:51 thot systemd[1]: rng-tools.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Add entropy to /dev/random 's pool a hardware RNG.
+déc. 11 19:37:51 thot systemd[1]: EoleCiTestsDaemon.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped EOLE Continuous Integration Tests Daemon.
+déc. 11 19:37:51 thot systemd[1]: Stopped target Multi-User System.
+déc. 11 19:37:51 thot systemd[1]: Stopped target Login Prompts.
+déc. 11 19:37:51 thot systemd[1]: Stopping The Apache HTTP Server...
+déc. 11 19:37:51 thot systemd[1]: Stopping Deferred execution scheduler...
+déc. 11 19:37:51 thot systemd[1]: Stopping ClamAV virus database updater...
+déc. 11 19:37:51 thot systemd[1]: Stopping EOLE Creole server...
+déc. 11 19:37:51 thot systemd[1]: Stopping Regular background program processing daemon...
+déc. 11 19:37:51 thot systemd[1]: Stopping D-Bus System Message Bus...
+déc. 11 19:37:51 thot blkdeactivate[10364]: Deactivating block devices:
+déc. 11 19:37:51 thot creoled[848]:  ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8000)) shut down
+déc. 11 19:37:51 thot creoled[848]:  ENGINE Stop InotifyMonitor thread
+déc. 11 19:37:51 thot systemd[1]: Stopping Eole flask server...
+déc. 11 19:37:51 thot systemd[1]: Stopping LSB: exim Mail Transport Agent...
+déc. 11 19:37:51 thot systemd[1]: Stopping Getty on tty1...
+déc. 11 19:37:51 thot blkdeactivate[10364]:   [SKIP]: unmount of vgthot-var (dm-3) mounted on /var
+déc. 11 19:37:51 thot systemd[1]: Stopping LSB: gpm sysv init script...
+déc. 11 19:37:51 thot systemd[1]: Stopping Internet superserver...
+déc. 11 19:37:51 thot systemd[1]: Stopping irqbalance daemon...
+déc. 11 19:37:51 thot systemd[1]: Stopping Dispatcher daemon for systemd-networkd...
+déc. 11 19:37:51 thot lvm[10366]:   pvscan[10366] PV /dev/sda2 online.
+déc. 11 19:37:51 thot systemd[1]: Stopping A high performance web server and a reverse proxy server...
+déc. 11 19:37:51 thot ntpd[1082]: ntpd exiting on signal 15 (Terminated)
+déc. 11 19:37:51 thot ntpd[1082]: 192.168.232.2 local addr 192.168.0.155 -> <null>
+déc. 11 19:37:51 thot creoled[848]:  ENGINE Stopped thread '_TimeoutMonitor'.
+déc. 11 19:37:51 thot creoled[848]:  ENGINE Bus STOPPED
+déc. 11 19:37:51 thot creoled[848]:  ENGINE Bus EXITING
+déc. 11 19:37:51 thot creoled[848]:  ENGINE PID file removed: '/run/creoled.pid'.
+déc. 11 19:37:51 thot creoled[848]:  ENGINE Bus EXITED
+déc. 11 19:37:51 thot systemd[1]: Stopping Network Time Service...
+déc. 11 19:37:51 thot blkdeactivate[10364]:   [UMOUNT]: unmounting vgthot-tmp (dm-2) mounted on /tmp... skipping
+déc. 11 19:37:51 thot blkdeactivate[10364]:   [SKIP]: unmount of vgthot-swap_1 (dm-0) mounted on [SWAP]
+déc. 11 19:37:51 thot systemd[1]: Stopping System Logging Service...
+déc. 11 19:37:51 thot rsyslogd[527]: [origin software="rsyslogd" swVersion="8.2001.0" x-pid="527" x-info="https://www.rsyslog.com"] exiting on signal 15.
+déc. 11 19:37:51 thot systemd[1]: Stopping LSB: OpenLDAP standalone server (Lightweight Directory Access Protocol)...
+déc. 11 19:37:51 thot vnstatd[866]: Info: SIGTERM received, exiting.
+déc. 11 19:37:51 thot sshd[941]: Received signal 15; terminating.
+déc. 11 19:37:51 thot systemd[1]: Stopping OpenBSD Secure Shell server...
+déc. 11 19:37:51 thot systemd[1]: Stopping Login Service...
+déc. 11 19:37:51 thot systemd[1]: Stopping vnStat network traffic monitor...
+déc. 11 19:37:51 thot blkdeactivate[10364]:   [UMOUNT]: unmounting vgthot-home (dm-4) mounted on /home... done
+déc. 11 19:37:51 thot blkdeactivate[10364]:   [SKIP]: unmount of vgthot-root (dm-1) mounted on /
+déc. 11 19:37:51 thot creoled[848]:  ENGINE Waiting for child threads to terminate...
+déc. 11 19:37:51 thot systemd[1]: home.mount: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Unmounted /home.
+déc. 11 19:37:51 thot systemd[1]: accounts-daemon.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Accounts Service.
+déc. 11 19:37:51 thot systemd[1]: cron.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Regular background program processing daemon.
+déc. 11 19:37:51 thot systemd[1]: irqbalance.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped irqbalance daemon.
+déc. 11 19:37:51 thot systemd[1]: networkd-dispatcher.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Dispatcher daemon for systemd-networkd.
+déc. 11 19:37:51 thot systemd[1]: rsyslog.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped System Logging Service.
+déc. 11 19:37:51 thot systemd[1]: atd.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Deferred execution scheduler.
+déc. 11 19:37:51 thot systemd[1]: vnstat.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped vnStat network traffic monitor.
+déc. 11 19:37:51 thot systemd[1]: clamav-freshclam.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped ClamAV virus database updater.
+déc. 11 19:37:51 thot systemd[1]: inetd.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Internet superserver.
+déc. 11 19:37:51 thot systemd[1]: getty@tty1.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Getty on tty1.
+déc. 11 19:37:51 thot systemd[1]: ssh.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped OpenBSD Secure Shell server.
+déc. 11 19:37:51 thot systemd[1]: ntp.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Network Time Service.
+déc. 11 19:37:51 thot systemd[1]: lvm2-pvscan@8:2.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped LVM event activation on device 8:2.
+déc. 11 19:37:51 thot systemd[1]: systemd-random-seed.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped Load/Save Random Seed.
+déc. 11 19:37:51 thot systemd[1]: dbus.service: Succeeded.
+déc. 11 19:37:51 thot systemd[1]: Stopped D-Bus System Message Bus.
+déc. 11 19:37:52 thot systemd[1]: blk-availability.service: Succeeded.
+déc. 11 19:37:52 thot systemd[1]: Stopped Availability of block devices.
+déc. 11 19:37:52 thot gpm[10394]:  * Stopping mouse interface server gpm
+déc. 11 19:37:52 thot gpm[10394]:    ...done.
+déc. 11 19:37:52 thot exim4[10393]:  * Stopping MTA
+déc. 11 19:37:52 thot systemd[1]: gpm.service: Succeeded.
+déc. 11 19:37:52 thot systemd[1]: Stopped LSB: gpm sysv init script.
+déc. 11 19:37:52 thot systemd[1]: nginx.service: Succeeded.
+déc. 11 19:37:52 thot systemd[1]: Stopped A high performance web server and a reverse proxy server.
+déc. 11 19:37:52 thot systemd[1]: Removed slice system-getty.slice.
+déc. 11 19:37:52 thot systemd[1]: Removed slice system-lvm2\x2dpvscan.slice.
+déc. 11 19:37:52 thot systemd[1]: Condition check resulted in Show Plymouth Power Off Screen being skipped.
+déc. 11 19:37:52 thot systemd[1]: rc-local.service: Succeeded.
+déc. 11 19:37:52 thot systemd[1]: Stopped /etc/rc.local Compatibility.
+déc. 11 19:37:52 thot slapd[10409]:  * Stopping OpenLDAP slapd
+déc. 11 19:37:52 thot systemd[1]: systemd-fsck@dev-mapper-vgthot\x2dhome.service: Succeeded.
+déc. 11 19:37:52 thot slapd[963]: daemon: shutdown requested and initiated.
+déc. 11 19:37:52 thot slapd[963]: slapd shutdown: waiting for 0 operations/tasks to finish
+déc. 11 19:37:52 thot systemd[1]: Stopped File System Check on /dev/mapper/vgthot-home.
+déc. 11 19:37:52 thot systemd[1]: Stopping Permit User Sessions...
+déc. 11 19:37:52 thot systemd[1]: systemd-logind.service: Succeeded.
+déc. 11 19:37:52 thot slapd[963]: slapd stopped.
+déc. 11 19:37:52 thot systemd[1]: Stopped Login Service.
+déc. 11 19:37:52 thot systemd[1]: apache2.service: Succeeded.
+déc. 11 19:37:52 thot systemd[1]: Stopped The Apache HTTP Server.
+déc. 11 19:37:52 thot systemd[1]: systemd-user-sessions.service: Succeeded.
+déc. 11 19:37:52 thot systemd[1]: Stopped Permit User Sessions.
+déc. 11 19:37:52 thot systemd[1]: Stopped target User and Group Name Lookups.
+déc. 11 19:37:52 thot exim4[10393]:    ...done.
+déc. 11 19:37:52 thot systemd[1]: exim4.service: Succeeded.
+déc. 11 19:37:52 thot systemd[1]: Stopped LSB: exim Mail Transport Agent.
+déc. 11 19:37:52 thot systemd[1]: Stopped target Host and Network Name Lookups.
+déc. 11 19:37:52 thot systemd[1]: Stopping Clam AntiVirus userspace daemon...
+déc. 11 19:37:52 thot slapd[10409]:    ...done.
+déc. 11 19:37:52 thot systemd[1]: Stopping MySQL Community Server...
+déc. 11 19:37:52 thot systemd[1]: slapd.service: Succeeded.
+déc. 11 19:37:52 thot systemd[1]: Stopped LSB: OpenLDAP standalone server (Lightweight Directory Access Protocol).
+déc. 11 19:37:52 thot systemd[1]: creoled.service: Succeeded.
+déc. 11 19:37:52 thot systemd[1]: Stopped EOLE Creole server.
+déc. 11 19:37:52 thot fstrim[10365]: /boot: 181,7 MiB (190521344 bytes) trimmed on /dev/sda1
+déc. 11 19:37:52 thot fstrim[10365]: /tmp: 220,2 MiB (230879232 bytes) trimmed on /dev/mapper/vgthot-tmp
+déc. 11 19:37:52 thot fstrim[10365]: /var: 566,6 MiB (594063360 bytes) trimmed on /dev/mapper/vgthot-var
+déc. 11 19:37:52 thot fstrim[10365]: /: 174,2 MiB (182628352 bytes) trimmed on /dev/mapper/vgthot-root
+déc. 11 19:37:52 thot systemd[1]: fstrim.service: Succeeded.
+déc. 11 19:37:52 thot systemd[1]: Stopped Discard unused blocks on filesystems from /etc/fstab.
+déc. 11 19:37:52 thot systemd[1]: fstrim.timer: Succeeded.
+déc. 11 19:37:52 thot systemd[1]: Stopped Discard unused blocks once a week.
+déc. 11 19:37:52 thot systemd[1]: Stopped target Remote File Systems.
+déc. 11 19:37:52 thot systemd[1]: eoleflask.service: Succeeded.
+déc. 11 19:37:52 thot systemd[1]: Stopped Eole flask server.
+déc. 11 19:37:53 thot systemd[1]: mysql.service: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped MySQL Community Server.
+déc. 11 19:37:53 thot systemd[1]: Stopped target System Time Synchronized.
+déc. 11 19:37:53 thot systemd[1]: Stopped target System Time Set.
+déc. 11 19:37:53 thot systemd[1]: ntpdate.service: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped Force synchronisation of time.
+déc. 11 19:37:53 thot systemd[1]: Stopped target Network is Online.
+déc. 11 19:37:53 thot systemd[1]: Stopped target Network.
+déc. 11 19:37:53 thot systemd[1]: netplan-wait-online.service: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped Wait for Network to be Configured by Netplan.
+déc. 11 19:37:53 thot systemd[1]: netplan-apply.service: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped Apply netplan config.
+déc. 11 19:37:53 thot systemd[1]: Stopping Raise network interfaces...
+déc. 11 19:37:53 thot systemd[1]: systemd-networkd-wait-online.service: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped Wait for Network to be Configured.
+déc. 11 19:37:53 thot systemd[1]: Stopping Network Name Resolution...
+déc. 11 19:37:53 thot systemd[1]: systemd-resolved.service: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped Network Name Resolution.
+déc. 11 19:37:53 thot systemd[1]: Stopping Network Service...
+déc. 11 19:37:53 thot systemd-networkd[641]: ens4: DHCP lease lost
+déc. 11 19:37:53 thot systemd[1]: networking.service: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped Raise network interfaces.
+déc. 11 19:37:53 thot systemd[1]: systemd-networkd.service: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped Network Service.
+déc. 11 19:37:53 thot systemd[1]: Stopped target Network (Pre).
+déc. 11 19:37:53 thot clamd[540]: Wed Dec 11 19:37:53 2024 -> --- Stopped at Wed Dec 11 19:37:53 2024
+déc. 11 19:37:53 thot clamd[540]: Wed Dec 11 19:37:53 2024 -> Socket file removed.
+déc. 11 19:37:53 thot systemd[1]: clamav-daemon.service: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped Clam AntiVirus userspace daemon.
+déc. 11 19:37:53 thot systemd[1]: Stopped target Basic System.
+déc. 11 19:37:53 thot systemd[1]: Stopped target Paths.
+déc. 11 19:37:53 thot systemd[1]: acpid.path: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped ACPI Events Check.
+déc. 11 19:37:53 thot systemd[1]: Stopped target Slices.
+déc. 11 19:37:53 thot systemd[1]: Removed slice User and Session Slice.
+déc. 11 19:37:53 thot systemd[1]: Stopped target Sockets.
+déc. 11 19:37:53 thot systemd[1]: acpid.socket: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Closed ACPID Listen Socket.
+déc. 11 19:37:53 thot systemd[1]: dbus.socket: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Closed D-Bus System Message Bus Socket.
+déc. 11 19:37:53 thot systemd[1]: syslog.socket: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Closed Syslog Socket.
+déc. 11 19:37:53 thot systemd[1]: uuidd.socket: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Closed UUID daemon activation socket.
+déc. 11 19:37:53 thot systemd[1]: Stopped target System Initialization.
+déc. 11 19:37:53 thot systemd[1]: Stopped target Local Encrypted Volumes.
+déc. 11 19:37:53 thot systemd[1]: systemd-ask-password-console.path: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped Dispatch Password Requests to Console Directory Watch.
+déc. 11 19:37:53 thot systemd[1]: systemd-ask-password-wall.path: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped Forward Password Requests to Wall Directory Watch.
+déc. 11 19:37:53 thot systemd[1]: Stopped target Swap.
+déc. 11 19:37:53 thot systemd[1]: Deactivating swap /dev/disk/by-id/dm-name-vgthot-swap_1...
+déc. 11 19:37:53 thot systemd[1]: Stopping Load AppArmor profiles...
+déc. 11 19:37:53 thot systemd[1]: systemd-sysctl.service: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped Apply Kernel Variables.
+déc. 11 19:37:53 thot systemd[1]: systemd-modules-load.service: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped Load Kernel Modules.
+déc. 11 19:37:53 thot systemd[1]: Stopping Update UTMP about System Boot/Shutdown...
+déc. 11 19:37:53 thot systemd[1]: apparmor.service: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped Load AppArmor profiles.
+déc. 11 19:37:53 thot systemd[1]: systemd-update-utmp.service: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped Update UTMP about System Boot/Shutdown.
+déc. 11 19:37:53 thot systemd[1]: dev-disk-by\x2did-dm\x2dname\x2dvgthot\x2dswap_1.swap: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Deactivated swap /dev/disk/by-id/dm-name-vgthot-swap_1.
+déc. 11 19:37:53 thot systemd[1]: dev-vgthot-swap_1.swap: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Deactivated swap /dev/vgthot/swap_1.
+déc. 11 19:37:53 thot systemd[1]: dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dT5d2qU7Mb7uos2bapd1druKj08lxjxk0VetGf5gM7m177zjDklvie7SUyQMFZCbM.swap: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Deactivated swap /dev/disk/by-id/dm-uuid-LVM-T5d2qU7Mb7uos2bapd1druKj08lxjxk0VetGf5gM7m177zjDklvie7SUyQMFZCbM.
+déc. 11 19:37:53 thot systemd[1]: dev-disk-by\x2duuid-06937d7a\x2d3ca9\x2d45a6\x2db9c3\x2db25a1596e9eb.swap: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Deactivated swap /dev/disk/by-uuid/06937d7a-3ca9-45a6-b9c3-b25a1596e9eb.
+déc. 11 19:37:53 thot systemd[1]: dev-dm\x2d0.swap: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Deactivated swap /dev/dm-0.
+déc. 11 19:37:53 thot systemd[1]: dev-mapper-vgthot\x2dswap_1.swap: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Deactivated swap /dev/mapper/vgthot-swap_1.
+déc. 11 19:37:53 thot systemd[1]: systemd-tmpfiles-setup.service: Succeeded.
+déc. 11 19:37:53 thot systemd[1]: Stopped Create Volatile Files and Directories.
+déc. 11 19:37:53 thot systemd[1]: Stopped target Local File Systems.
+déc. 11 19:37:53 thot systemd[1]: Unmounting /boot...
+déc. 11 19:37:53 thot systemd[1]: Unmounting /mnt/cdrom...
+déc. 11 19:37:53 thot systemd[1]: Unmounting /mnt/eole-ci-tests...
+déc. 11 19:37:53 thot systemd[1]: Unmounting /tmp...
+déc. 11 19:37:53 thot systemd[1]: Stopping Flush Journal to Persistent Storage...
+déc. 11 19:37:53 thot systemd[1]: boot.mount: Succeeded.
+-- Reboot --
+déc. 13 19:20:43 thot kernel: Linux version 5.4.0-202-generic (buildd@lcy02-amd64-104) (gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2)) #222-Ubuntu SMP Fri Nov 8 14:45:04 UTC 2024 (Ubuntu 5.4.0-202.222-generic 5.4.284)
+déc. 13 19:20:43 thot kernel: Command line: BOOT_IMAGE=/vmlinuz-5.4.0-202-generic root=/dev/mapper/vgthot-root ro rootdelay=90
+déc. 13 19:20:43 thot kernel: KERNEL supported cpus:
+déc. 13 19:20:43 thot kernel:   Intel GenuineIntel
+déc. 13 19:20:43 thot kernel:   AMD AuthenticAMD
+déc. 13 19:20:43 thot kernel:   Hygon HygonGenuine
+déc. 13 19:20:43 thot kernel:   Centaur CentaurHauls
+déc. 13 19:20:43 thot kernel:   zhaoxin   Shanghai  
+déc. 13 19:20:43 thot kernel: BIOS-provided physical RAM map:
+déc. 13 19:20:43 thot kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+déc. 13 19:20:43 thot kernel: BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+déc. 13 19:20:43 thot kernel: BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+déc. 13 19:20:43 thot kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000bffdbfff] usable
+déc. 13 19:20:43 thot kernel: BIOS-e820: [mem 0x00000000bffdc000-0x00000000bfffffff] reserved
+déc. 13 19:20:43 thot kernel: BIOS-e820: [mem 0x00000000feffc000-0x00000000feffffff] reserved
+déc. 13 19:20:43 thot kernel: BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+déc. 13 19:20:43 thot kernel: BIOS-e820: [mem 0x0000000100000000-0x000000013fffffff] usable
+déc. 13 19:20:43 thot kernel: NX (Execute Disable) protection: active
+déc. 13 19:20:43 thot kernel: SMBIOS 2.8 present.
+déc. 13 19:20:43 thot kernel: DMI: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.12.0-1 04/01/2014
+déc. 13 19:20:43 thot kernel: Hypervisor detected: KVM
+déc. 13 19:20:43 thot kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+déc. 13 19:20:43 thot kernel: kvm-clock: cpu 0, msr a1201001, primary cpu clock
+déc. 13 19:20:43 thot kernel: kvm-clock: using sched offset of 8828256174 cycles
+déc. 13 19:20:43 thot kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+déc. 13 19:20:43 thot kernel: tsc: Detected 2194.776 MHz processor
+déc. 13 19:20:43 thot kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+déc. 13 19:20:43 thot kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+déc. 13 19:20:43 thot kernel: last_pfn = 0x140000 max_arch_pfn = 0x400000000
+déc. 13 19:20:43 thot kernel: MTRR default type: write-back
+déc. 13 19:20:43 thot kernel: MTRR fixed ranges enabled:
+déc. 13 19:20:43 thot kernel:   00000-9FFFF write-back
+déc. 13 19:20:43 thot kernel:   A0000-BFFFF uncachable
+déc. 13 19:20:43 thot kernel:   C0000-FFFFF write-protect
+déc. 13 19:20:43 thot kernel: MTRR variable ranges enabled:
+déc. 13 19:20:43 thot kernel:   0 base 00C0000000 mask FFC0000000 uncachable
+déc. 13 19:20:43 thot kernel:   1 disabled
+déc. 13 19:20:43 thot kernel:   2 disabled
+déc. 13 19:20:43 thot kernel:   3 disabled
+déc. 13 19:20:43 thot kernel:   4 disabled
+déc. 13 19:20:43 thot kernel:   5 disabled
+déc. 13 19:20:43 thot kernel:   6 disabled
+déc. 13 19:20:43 thot kernel:   7 disabled
+déc. 13 19:20:43 thot kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+déc. 13 19:20:43 thot kernel: last_pfn = 0xbffdc max_arch_pfn = 0x400000000
+déc. 13 19:20:43 thot kernel: found SMP MP-table at [mem 0x000f5a30-0x000f5a3f]
+déc. 13 19:20:43 thot kernel: check: Scanning 1 areas for low memory corruption
+déc. 13 19:20:43 thot kernel: Using GB pages for direct mapping
+déc. 13 19:20:43 thot kernel: RAMDISK: [mem 0x3101d000-0x34805fff]
+déc. 13 19:20:43 thot kernel: ACPI: Early table checksum verification disabled
+déc. 13 19:20:43 thot kernel: ACPI: RSDP 0x00000000000F59E0 000014 (v00 BOCHS )
+déc. 13 19:20:43 thot kernel: ACPI: RSDT 0x00000000BFFE13D2 000030 (v01 BOCHS  BXPCRSDT 00000001 BXPC 00000001)
+déc. 13 19:20:43 thot kernel: ACPI: FACP 0x00000000BFFE1296 000074 (v01 BOCHS  BXPCFACP 00000001 BXPC 00000001)
+déc. 13 19:20:43 thot kernel: ACPI: DSDT 0x00000000BFFDFDC0 0014D6 (v01 BOCHS  BXPCDSDT 00000001 BXPC 00000001)
+déc. 13 19:20:43 thot kernel: ACPI: FACS 0x00000000BFFDFD80 000040
+déc. 13 19:20:43 thot kernel: ACPI: APIC 0x00000000BFFE130A 000090 (v01 BOCHS  BXPCAPIC 00000001 BXPC 00000001)
+déc. 13 19:20:43 thot kernel: ACPI: HPET 0x00000000BFFE139A 000038 (v01 BOCHS  BXPCHPET 00000001 BXPC 00000001)
+déc. 13 19:20:43 thot kernel: ACPI: Reserving FACP table memory at [mem 0xbffe1296-0xbffe1309]
+déc. 13 19:20:43 thot kernel: ACPI: Reserving DSDT table memory at [mem 0xbffdfdc0-0xbffe1295]
+déc. 13 19:20:43 thot kernel: ACPI: Reserving FACS table memory at [mem 0xbffdfd80-0xbffdfdbf]
+déc. 13 19:20:43 thot kernel: ACPI: Reserving APIC table memory at [mem 0xbffe130a-0xbffe1399]
+déc. 13 19:20:43 thot kernel: ACPI: Reserving HPET table memory at [mem 0xbffe139a-0xbffe13d1]
+déc. 13 19:20:43 thot kernel: ACPI: Local APIC address 0xfee00000
+déc. 13 19:20:43 thot kernel: No NUMA configuration found
+déc. 13 19:20:43 thot kernel: Faking a node at [mem 0x0000000000000000-0x000000013fffffff]
+déc. 13 19:20:43 thot kernel: NODE_DATA(0) allocated [mem 0x13ffd3000-0x13fffdfff]
+déc. 13 19:20:43 thot kernel: Zone ranges:
+déc. 13 19:20:43 thot kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+déc. 13 19:20:43 thot kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+déc. 13 19:20:43 thot kernel:   Normal   [mem 0x0000000100000000-0x000000013fffffff]
+déc. 13 19:20:43 thot kernel:   Device   empty
+déc. 13 19:20:43 thot kernel: Movable zone start for each node
+déc. 13 19:20:43 thot kernel: Early memory node ranges
+déc. 13 19:20:43 thot kernel:   node   0: [mem 0x0000000000001000-0x000000000009efff]
+déc. 13 19:20:43 thot kernel:   node   0: [mem 0x0000000000100000-0x00000000bffdbfff]
+déc. 13 19:20:43 thot kernel:   node   0: [mem 0x0000000100000000-0x000000013fffffff]
+déc. 13 19:20:43 thot kernel: Zeroed struct page in unavailable ranges: 134 pages
+déc. 13 19:20:43 thot kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000013fffffff]
+déc. 13 19:20:43 thot kernel: On node 0 totalpages: 1048442
+déc. 13 19:20:43 thot kernel:   DMA zone: 64 pages used for memmap
+déc. 13 19:20:43 thot kernel:   DMA zone: 21 pages reserved
+déc. 13 19:20:43 thot kernel:   DMA zone: 3998 pages, LIFO batch:0
+déc. 13 19:20:43 thot kernel:   DMA32 zone: 12224 pages used for memmap
+déc. 13 19:20:43 thot kernel:   DMA32 zone: 782300 pages, LIFO batch:63
+déc. 13 19:20:43 thot kernel:   Normal zone: 4096 pages used for memmap
+déc. 13 19:20:43 thot kernel:   Normal zone: 262144 pages, LIFO batch:63
+déc. 13 19:20:43 thot kernel: ACPI: PM-Timer IO Port: 0x608
+déc. 13 19:20:43 thot kernel: ACPI: Local APIC address 0xfee00000
+déc. 13 19:20:43 thot kernel: ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+déc. 13 19:20:43 thot kernel: IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+déc. 13 19:20:43 thot kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+déc. 13 19:20:43 thot kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+déc. 13 19:20:43 thot kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+déc. 13 19:20:43 thot kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+déc. 13 19:20:43 thot kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+déc. 13 19:20:43 thot kernel: ACPI: IRQ0 used by override.
+déc. 13 19:20:43 thot kernel: ACPI: IRQ5 used by override.
+déc. 13 19:20:43 thot kernel: ACPI: IRQ9 used by override.
+déc. 13 19:20:43 thot kernel: ACPI: IRQ10 used by override.
+déc. 13 19:20:43 thot kernel: ACPI: IRQ11 used by override.
+déc. 13 19:20:43 thot kernel: Using ACPI (MADT) for SMP configuration information
+déc. 13 19:20:43 thot kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+déc. 13 19:20:43 thot kernel: TSC deadline timer available
+déc. 13 19:20:43 thot kernel: smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+déc. 13 19:20:43 thot kernel: PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+déc. 13 19:20:43 thot kernel: PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+déc. 13 19:20:43 thot kernel: PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+déc. 13 19:20:43 thot kernel: PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+déc. 13 19:20:43 thot kernel: PM: Registered nosave memory: [mem 0xbffdc000-0xbfffffff]
+déc. 13 19:20:43 thot kernel: PM: Registered nosave memory: [mem 0xc0000000-0xfeffbfff]
+déc. 13 19:20:43 thot kernel: PM: Registered nosave memory: [mem 0xfeffc000-0xfeffffff]
+déc. 13 19:20:43 thot kernel: PM: Registered nosave memory: [mem 0xff000000-0xfffbffff]
+déc. 13 19:20:43 thot kernel: PM: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+déc. 13 19:20:43 thot kernel: [mem 0xc0000000-0xfeffbfff] available for PCI devices
+déc. 13 19:20:43 thot kernel: Booting paravirtualized kernel on KVM
+déc. 13 19:20:43 thot kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+déc. 13 19:20:43 thot kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:4 nr_cpu_ids:4 nr_node_ids:1
+déc. 13 19:20:43 thot kernel: percpu: Embedded 60 pages/cpu s208896 r8192 d28672 u524288
+déc. 13 19:20:43 thot kernel: pcpu-alloc: s208896 r8192 d28672 u524288 alloc=1*2097152
+déc. 13 19:20:43 thot kernel: pcpu-alloc: [0] 0 1 2 3 
+déc. 13 19:20:43 thot kernel: setup async PF for cpu 0
+déc. 13 19:20:43 thot kernel: kvm-stealtime: cpu 0, msr 13ba32040
+déc. 13 19:20:43 thot kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes, linear)
+déc. 13 19:20:43 thot kernel: Built 1 zonelists, mobility grouping on.  Total pages: 1032037
+déc. 13 19:20:43 thot kernel: Policy zone: Normal
+déc. 13 19:20:43 thot kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-5.4.0-202-generic root=/dev/mapper/vgthot-root ro rootdelay=90
+déc. 13 19:20:43 thot kernel: Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+déc. 13 19:20:43 thot kernel: Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+déc. 13 19:20:43 thot kernel: mem auto-init: stack:off, heap alloc:on, heap free:off
+déc. 13 19:20:43 thot kernel: Calgary: detecting Calgary via BIOS EBDA area
+déc. 13 19:20:43 thot kernel: Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+déc. 13 19:20:43 thot kernel: Memory: 3948396K/4193768K available (14339K kernel code, 2396K rwdata, 9316K rodata, 2772K init, 17220K bss, 245372K reserved, 0K cma-reserved)
+déc. 13 19:20:43 thot kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+déc. 13 19:20:43 thot kernel: Kernel/User page tables isolation: enabled
+déc. 13 19:20:43 thot kernel: ftrace: allocating 44747 entries in 175 pages
+déc. 13 19:20:43 thot kernel: ftrace: allocated 175 pages with 6 groups
+déc. 13 19:20:43 thot kernel: rcu: Hierarchical RCU implementation.
+déc. 13 19:20:43 thot kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=4.
+déc. 13 19:20:43 thot kernel:         Tasks RCU enabled.
+déc. 13 19:20:43 thot kernel: rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+déc. 13 19:20:43 thot kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+déc. 13 19:20:43 thot kernel: NR_IRQS: 524544, nr_irqs: 456, preallocated irqs: 16
+déc. 13 19:20:43 thot kernel: random: crng init done
+déc. 13 19:20:43 thot kernel: Console: colour dummy device 80x25
+déc. 13 19:20:43 thot kernel: printk: console [tty0] enabled
+déc. 13 19:20:43 thot kernel: ACPI: Core revision 20190816
+déc. 13 19:20:43 thot kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+déc. 13 19:20:43 thot kernel: APIC: Switch to symmetric I/O mode setup
+déc. 13 19:20:43 thot kernel: x2apic enabled
+déc. 13 19:20:43 thot kernel: Switched APIC routing to physical x2apic.
+déc. 13 19:20:43 thot kernel: KVM setup pv IPIs
+déc. 13 19:20:43 thot kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+déc. 13 19:20:43 thot kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x1fa2ebd9b85, max_idle_ns: 440795259329 ns
+déc. 13 19:20:43 thot kernel: Calibrating delay loop (skipped) preset value.. 4389.55 BogoMIPS (lpj=8779104)
+déc. 13 19:20:43 thot kernel: x86/cpu: User Mode Instruction Prevention (UMIP) activated
+déc. 13 19:20:43 thot kernel: Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+déc. 13 19:20:43 thot kernel: Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+déc. 13 19:20:43 thot kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+déc. 13 19:20:43 thot kernel: Spectre V2 : Spectre BHI mitigation: SW BHB clearing on vm exit
+déc. 13 19:20:43 thot kernel: Spectre V2 : Spectre BHI mitigation: SW BHB clearing on syscall
+déc. 13 19:20:43 thot kernel: Spectre V2 : Mitigation: IBRS
+déc. 13 19:20:43 thot kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+déc. 13 19:20:43 thot kernel: Spectre V2 : Spectre v2 / SpectreRSB : Filling RSB on VMEXIT
+déc. 13 19:20:43 thot kernel: RETBleed: Mitigation: IBRS
+déc. 13 19:20:43 thot kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+déc. 13 19:20:43 thot kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+déc. 13 19:20:43 thot kernel: MDS: Mitigation: Clear CPU buffers
+déc. 13 19:20:43 thot kernel: TAA: Mitigation: Clear CPU buffers
+déc. 13 19:20:43 thot kernel: MMIO Stale Data: Vulnerable: Clear CPU buffers attempted, no microcode
+déc. 13 19:20:43 thot kernel: GDS: Unknown: Dependent on hypervisor status
+déc. 13 19:20:43 thot kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+déc. 13 19:20:43 thot kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+déc. 13 19:20:43 thot kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+déc. 13 19:20:43 thot kernel: x86/fpu: Supporting XSAVE feature 0x008: 'MPX bounds registers'
+déc. 13 19:20:43 thot kernel: x86/fpu: Supporting XSAVE feature 0x010: 'MPX CSR'
+déc. 13 19:20:43 thot kernel: x86/fpu: Supporting XSAVE feature 0x020: 'AVX-512 opmask'
+déc. 13 19:20:43 thot kernel: x86/fpu: Supporting XSAVE feature 0x040: 'AVX-512 Hi256'
+déc. 13 19:20:43 thot kernel: x86/fpu: Supporting XSAVE feature 0x080: 'AVX-512 ZMM_Hi256'
+déc. 13 19:20:43 thot kernel: x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+déc. 13 19:20:43 thot kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+déc. 13 19:20:43 thot kernel: x86/fpu: xstate_offset[3]:  832, xstate_sizes[3]:   64
+déc. 13 19:20:43 thot kernel: x86/fpu: xstate_offset[4]:  896, xstate_sizes[4]:   64
+déc. 13 19:20:43 thot kernel: x86/fpu: xstate_offset[5]:  960, xstate_sizes[5]:   64
+déc. 13 19:20:43 thot kernel: x86/fpu: xstate_offset[6]: 1024, xstate_sizes[6]:  512
+déc. 13 19:20:43 thot kernel: x86/fpu: xstate_offset[7]: 1536, xstate_sizes[7]: 1024
+déc. 13 19:20:43 thot kernel: x86/fpu: xstate_offset[9]: 2560, xstate_sizes[9]:    8
+déc. 13 19:20:43 thot kernel: x86/fpu: Enabled xstate features 0x2ff, context size is 2568 bytes, using 'compacted' format.
+déc. 13 19:20:43 thot kernel: Freeing SMP alternatives memory: 40K
+déc. 13 19:20:43 thot kernel: pid_max: default: 32768 minimum: 301
+déc. 13 19:20:43 thot kernel: LSM: Security Framework initializing
+déc. 13 19:20:43 thot kernel: Yama: becoming mindful.
+déc. 13 19:20:43 thot kernel: AppArmor: AppArmor initialized
+déc. 13 19:20:43 thot kernel: Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+déc. 13 19:20:43 thot kernel: Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+déc. 13 19:20:43 thot kernel: *** VALIDATE tmpfs ***
+déc. 13 19:20:43 thot kernel: *** VALIDATE proc ***
+déc. 13 19:20:43 thot kernel: *** VALIDATE cgroup1 ***
+déc. 13 19:20:43 thot kernel: *** VALIDATE cgroup2 ***
+déc. 13 19:20:43 thot kernel: smpboot: CPU0: Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz (family: 0x6, model: 0x55, stepping: 0x7)
+déc. 13 19:20:43 thot kernel: Performance Events: Skylake events, Intel PMU driver.
+déc. 13 19:20:43 thot kernel: ... version:                2
+déc. 13 19:20:43 thot kernel: ... bit width:              48
+déc. 13 19:20:43 thot kernel: ... generic registers:      4
+déc. 13 19:20:43 thot kernel: ... value mask:             0000ffffffffffff
+déc. 13 19:20:43 thot kernel: ... max period:             000000007fffffff
+déc. 13 19:20:43 thot kernel: ... fixed-purpose events:   3
+déc. 13 19:20:43 thot kernel: ... event mask:             000000070000000f
+déc. 13 19:20:43 thot kernel: rcu: Hierarchical SRCU implementation.
+déc. 13 19:20:43 thot kernel: smp: Bringing up secondary CPUs ...
+déc. 13 19:20:43 thot kernel: x86: Booting SMP configuration:
+déc. 13 19:20:43 thot kernel: .... node  #0, CPUs:      #1
+déc. 13 19:20:43 thot kernel: kvm-clock: cpu 1, msr a1201041, secondary cpu clock
+déc. 13 19:20:43 thot kernel: smpboot: CPU 1 Converting physical 0 to logical die 1
+déc. 13 19:20:43 thot kernel: setup async PF for cpu 1
+déc. 13 19:20:43 thot kernel: kvm-stealtime: cpu 1, msr 13bab2040
+déc. 13 19:20:43 thot kernel:  #2
+déc. 13 19:20:43 thot kernel: kvm-clock: cpu 2, msr a1201081, secondary cpu clock
+déc. 13 19:20:43 thot kernel: smpboot: CPU 2 Converting physical 0 to logical die 2
+déc. 13 19:20:43 thot kernel: setup async PF for cpu 2
+déc. 13 19:20:43 thot kernel: kvm-stealtime: cpu 2, msr 13bb32040
+déc. 13 19:20:43 thot kernel:  #3
+déc. 13 19:20:43 thot kernel: kvm-clock: cpu 3, msr a12010c1, secondary cpu clock
+déc. 13 19:20:43 thot kernel: smpboot: CPU 3 Converting physical 0 to logical die 3
+déc. 13 19:20:43 thot kernel: setup async PF for cpu 3
+déc. 13 19:20:43 thot kernel: kvm-stealtime: cpu 3, msr 13bbb2040
+déc. 13 19:20:43 thot kernel: smp: Brought up 1 node, 4 CPUs
+déc. 13 19:20:43 thot kernel: smpboot: Max logical packages: 4
+déc. 13 19:20:43 thot kernel: smpboot: Total of 4 processors activated (17558.20 BogoMIPS)
+déc. 13 19:20:43 thot kernel: devtmpfs: initialized
+déc. 13 19:20:43 thot kernel: x86/mm: Memory block size: 128MB
+déc. 13 19:20:43 thot kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+déc. 13 19:20:43 thot kernel: futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+déc. 13 19:20:43 thot kernel: pinctrl core: initialized pinctrl subsystem
+déc. 13 19:20:43 thot kernel: PM: RTC time: 18:20:42, date: 2024-12-13
+déc. 13 19:20:43 thot kernel: NET: Registered protocol family 16
+déc. 13 19:20:43 thot kernel: audit: initializing netlink subsys (disabled)
+déc. 13 19:20:43 thot kernel: audit: type=2000 audit(1734114042.889:1): state=initialized audit_enabled=0 res=1
+déc. 13 19:20:43 thot kernel: EISA bus registered
+déc. 13 19:20:43 thot kernel: cpuidle: using governor ladder
+déc. 13 19:20:43 thot kernel: cpuidle: using governor menu
+déc. 13 19:20:43 thot kernel: KVM setup pv remote TLB flush
+déc. 13 19:20:43 thot kernel: ACPI: bus type PCI registered
+déc. 13 19:20:43 thot kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+déc. 13 19:20:43 thot kernel: PCI: Using configuration type 1 for base access
+déc. 13 19:20:43 thot kernel: HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+déc. 13 19:20:43 thot kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+déc. 13 19:20:43 thot kernel: fbcon: Taking over console
+déc. 13 19:20:43 thot kernel: ACPI: Added _OSI(Module Device)
+déc. 13 19:20:43 thot kernel: ACPI: Added _OSI(Processor Device)
+déc. 13 19:20:43 thot kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+déc. 13 19:20:43 thot kernel: ACPI: Added _OSI(Processor Aggregator Device)
+déc. 13 19:20:43 thot kernel: ACPI: Added _OSI(Linux-Dell-Video)
+déc. 13 19:20:43 thot kernel: ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+déc. 13 19:20:43 thot kernel: ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+déc. 13 19:20:43 thot kernel: ACPI: 1 ACPI AML tables successfully acquired and loaded
+déc. 13 19:20:43 thot kernel: ACPI: Interpreter enabled
+déc. 13 19:20:43 thot kernel: ACPI: (supports S0 S3 S4 S5)
+déc. 13 19:20:43 thot kernel: ACPI: Using IOAPIC for interrupt routing
+déc. 13 19:20:43 thot kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+déc. 13 19:20:43 thot kernel: ACPI: Enabled 2 GPEs in block 00 to 0F
+déc. 13 19:20:43 thot kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+déc. 13 19:20:43 thot kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI HPX-Type3]
+déc. 13 19:20:43 thot kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [3] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [4] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [5] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [6] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [7] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [8] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [9] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [10] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [11] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [12] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [13] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [14] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [15] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [16] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [17] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [18] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [19] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [20] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [21] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [22] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [23] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [24] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [25] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [26] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [27] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [28] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [29] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [30] registered
+déc. 13 19:20:43 thot kernel: acpiphp: Slot [31] registered
+déc. 13 19:20:43 thot kernel: PCI host bridge to bus 0000:00
+déc. 13 19:20:43 thot kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+déc. 13 19:20:43 thot kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+déc. 13 19:20:43 thot kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+déc. 13 19:20:43 thot kernel: pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfffff window]
+déc. 13 19:20:43 thot kernel: pci_bus 0000:00: root bus resource [mem 0x140000000-0x1bfffffff window]
+déc. 13 19:20:43 thot kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+déc. 13 19:20:43 thot kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+déc. 13 19:20:43 thot kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+déc. 13 19:20:43 thot kernel: pci 0000:00:01.1: [8086:7010] type 00 class 0x010180
+déc. 13 19:20:43 thot kernel: pci 0000:00:01.1: reg 0x20: [io  0xc120-0xc12f]
+déc. 13 19:20:43 thot kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+déc. 13 19:20:43 thot kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+déc. 13 19:20:43 thot kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+déc. 13 19:20:43 thot kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+déc. 13 19:20:43 thot kernel: pci 0000:00:01.2: [8086:7020] type 00 class 0x0c0300
+déc. 13 19:20:43 thot kernel: pci 0000:00:01.2: reg 0x20: [io  0xc0c0-0xc0df]
+déc. 13 19:20:43 thot kernel: pci 0000:00:01.3: [8086:7113] type 00 class 0x068000
+déc. 13 19:20:43 thot kernel: pci 0000:00:01.3: quirk: [io  0x0600-0x063f] claimed by PIIX4 ACPI
+déc. 13 19:20:43 thot kernel: pci 0000:00:01.3: quirk: [io  0x0700-0x070f] claimed by PIIX4 SMB
+déc. 13 19:20:43 thot kernel: pci 0000:00:02.0: [1234:1111] type 00 class 0x030000
+déc. 13 19:20:43 thot kernel: pci 0000:00:02.0: reg 0x10: [mem 0xfd000000-0xfdffffff pref]
+déc. 13 19:20:43 thot kernel: pci 0000:00:02.0: reg 0x18: [mem 0xfebd0000-0xfebd0fff]
+déc. 13 19:20:43 thot kernel: pci 0000:00:02.0: reg 0x30: [mem 0xfebc0000-0xfebcffff pref]
+déc. 13 19:20:43 thot kernel: pci 0000:00:02.0: BAR 0: assigned to efifb
+déc. 13 19:20:43 thot kernel: pci 0000:00:03.0: [1af4:1009] type 00 class 0x000200
+déc. 13 19:20:43 thot kernel: pci 0000:00:03.0: reg 0x10: [io  0xc000-0xc03f]
+déc. 13 19:20:43 thot kernel: pci 0000:00:03.0: reg 0x14: [mem 0xfebd1000-0xfebd1fff]
+déc. 13 19:20:43 thot kernel: pci 0000:00:03.0: reg 0x20: [mem 0xfe000000-0xfe003fff 64bit pref]
+déc. 13 19:20:43 thot kernel: pci 0000:00:04.0: [1af4:1000] type 00 class 0x020000
+déc. 13 19:20:43 thot kernel: pci 0000:00:04.0: reg 0x10: [io  0xc0e0-0xc0ff]
+déc. 13 19:20:43 thot kernel: pci 0000:00:04.0: reg 0x14: [mem 0xfebd2000-0xfebd2fff]
+déc. 13 19:20:43 thot kernel: pci 0000:00:04.0: reg 0x20: [mem 0xfe004000-0xfe007fff 64bit pref]
+déc. 13 19:20:43 thot kernel: pci 0000:00:04.0: reg 0x30: [mem 0xfeb80000-0xfebbffff pref]
+déc. 13 19:20:43 thot kernel: pci 0000:00:05.0: [1af4:1004] type 00 class 0x010000
+déc. 13 19:20:43 thot kernel: pci 0000:00:05.0: reg 0x10: [io  0xc040-0xc07f]
+déc. 13 19:20:43 thot kernel: pci 0000:00:05.0: reg 0x14: [mem 0xfebd3000-0xfebd3fff]
+déc. 13 19:20:43 thot kernel: pci 0000:00:05.0: reg 0x20: [mem 0xfe008000-0xfe00bfff 64bit pref]
+déc. 13 19:20:43 thot kernel: pci 0000:00:06.0: [1af4:1003] type 00 class 0x078000
+déc. 13 19:20:43 thot kernel: pci 0000:00:06.0: reg 0x10: [io  0xc080-0xc0bf]
+déc. 13 19:20:43 thot kernel: pci 0000:00:06.0: reg 0x14: [mem 0xfebd4000-0xfebd4fff]
+déc. 13 19:20:43 thot kernel: pci 0000:00:06.0: reg 0x20: [mem 0xfe00c000-0xfe00ffff 64bit pref]
+déc. 13 19:20:43 thot kernel: pci 0000:00:07.0: [1af4:1002] type 00 class 0x00ff00
+déc. 13 19:20:43 thot kernel: pci 0000:00:07.0: reg 0x10: [io  0xc100-0xc11f]
+déc. 13 19:20:43 thot kernel: pci 0000:00:07.0: reg 0x20: [mem 0xfe010000-0xfe013fff 64bit pref]
+déc. 13 19:20:43 thot kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 5 *10 11)
+déc. 13 19:20:43 thot kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+déc. 13 19:20:43 thot kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+déc. 13 19:20:43 thot kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 5 10 *11)
+déc. 13 19:20:43 thot kernel: ACPI: PCI Interrupt Link [LNKS] (IRQs *9)
+déc. 13 19:20:43 thot kernel: iommu: Default domain type: Translated 
+déc. 13 19:20:43 thot kernel: SCSI subsystem initialized
+déc. 13 19:20:43 thot kernel: libata version 3.00 loaded.
+déc. 13 19:20:43 thot kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+déc. 13 19:20:43 thot kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+déc. 13 19:20:43 thot kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+déc. 13 19:20:43 thot kernel: vgaarb: loaded
+déc. 13 19:20:43 thot kernel: ACPI: bus type USB registered
+déc. 13 19:20:43 thot kernel: usbcore: registered new interface driver usbfs
+déc. 13 19:20:43 thot kernel: usbcore: registered new interface driver hub
+déc. 13 19:20:43 thot kernel: usbcore: registered new device driver usb
+déc. 13 19:20:43 thot kernel: pps_core: LinuxPPS API ver. 1 registered
+déc. 13 19:20:43 thot kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+déc. 13 19:20:43 thot kernel: PTP clock support registered
+déc. 13 19:20:43 thot kernel: EDAC MC: Ver: 3.0.0
+déc. 13 19:20:43 thot kernel: PCI: Using ACPI for IRQ routing
+déc. 13 19:20:43 thot kernel: PCI: pci_cache_line_size set to 64 bytes
+déc. 13 19:20:43 thot kernel: e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+déc. 13 19:20:43 thot kernel: e820: reserve RAM buffer [mem 0xbffdc000-0xbfffffff]
+déc. 13 19:20:43 thot kernel: NetLabel: Initializing
+déc. 13 19:20:43 thot kernel: NetLabel:  domain hash size = 128
+déc. 13 19:20:43 thot kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+déc. 13 19:20:43 thot kernel: NetLabel:  unlabeled traffic allowed by default
+déc. 13 19:20:43 thot kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+déc. 13 19:20:43 thot kernel: hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+déc. 13 19:20:43 thot kernel: clocksource: Switched to clocksource kvm-clock
+déc. 13 19:20:43 thot kernel: *** VALIDATE bpf ***
+déc. 13 19:20:43 thot kernel: VFS: Disk quotas dquot_6.6.0
+déc. 13 19:20:43 thot kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+déc. 13 19:20:43 thot kernel: *** VALIDATE ramfs ***
+déc. 13 19:20:43 thot kernel: *** VALIDATE hugetlbfs ***
+déc. 13 19:20:43 thot kernel: AppArmor: AppArmor Filesystem Enabled
+déc. 13 19:20:43 thot kernel: pnp: PnP ACPI init
+déc. 13 19:20:43 thot kernel: pnp 00:00: Plug and Play ACPI device, IDs PNP0b00 (active)
+déc. 13 19:20:43 thot kernel: pnp 00:01: Plug and Play ACPI device, IDs PNP0303 (active)
+déc. 13 19:20:43 thot kernel: pnp 00:02: Plug and Play ACPI device, IDs PNP0f13 (active)
+déc. 13 19:20:43 thot kernel: pnp 00:03: [dma 2]
+déc. 13 19:20:43 thot kernel: pnp 00:03: Plug and Play ACPI device, IDs PNP0700 (active)
+déc. 13 19:20:43 thot kernel: pnp: PnP ACPI: found 4 devices
+déc. 13 19:20:43 thot kernel: thermal_sys: Registered thermal governor 'fair_share'
+déc. 13 19:20:43 thot kernel: thermal_sys: Registered thermal governor 'bang_bang'
+déc. 13 19:20:43 thot kernel: thermal_sys: Registered thermal governor 'step_wise'
+déc. 13 19:20:43 thot kernel: thermal_sys: Registered thermal governor 'user_space'
+déc. 13 19:20:43 thot kernel: thermal_sys: Registered thermal governor 'power_allocator'
+déc. 13 19:20:43 thot kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+déc. 13 19:20:43 thot kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+déc. 13 19:20:43 thot kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+déc. 13 19:20:43 thot kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+déc. 13 19:20:43 thot kernel: pci_bus 0000:00: resource 7 [mem 0xc0000000-0xfebfffff window]
+déc. 13 19:20:43 thot kernel: pci_bus 0000:00: resource 8 [mem 0x140000000-0x1bfffffff window]
+déc. 13 19:20:43 thot kernel: NET: Registered protocol family 2
+déc. 13 19:20:43 thot kernel: IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+déc. 13 19:20:43 thot kernel: tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+déc. 13 19:20:43 thot kernel: TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+déc. 13 19:20:43 thot kernel: TCP bind hash table entries: 32768 (order: 7, 524288 bytes, linear)
+déc. 13 19:20:43 thot kernel: TCP: Hash tables configured (established 32768 bind 32768)
+déc. 13 19:20:43 thot kernel: UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+déc. 13 19:20:43 thot kernel: UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+déc. 13 19:20:43 thot kernel: NET: Registered protocol family 1
+déc. 13 19:20:43 thot kernel: NET: Registered protocol family 44
+déc. 13 19:20:43 thot kernel: pci 0000:00:01.0: PIIX3: Enabling Passive Release
+déc. 13 19:20:43 thot kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+déc. 13 19:20:43 thot kernel: pci 0000:00:01.0: Activating ISA DMA hang workarounds
+déc. 13 19:20:43 thot kernel: PCI Interrupt Link [LNKD] enabled at IRQ 11
+déc. 13 19:20:43 thot kernel: pci 0000:00:01.2: quirk_usb_early_handoff+0x0/0x670 took 52064 usecs
+déc. 13 19:20:43 thot kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+déc. 13 19:20:43 thot kernel: PCI: CLS 0 bytes, default 64
+déc. 13 19:20:43 thot kernel: Trying to unpack rootfs image as initramfs...
+déc. 13 19:20:43 thot kernel: Freeing initrd memory: 57252K
+déc. 13 19:20:43 thot kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+déc. 13 19:20:43 thot kernel: software IO TLB: mapped [mem 0xbbfdc000-0xbffdc000] (64MB)
+déc. 13 19:20:43 thot kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1fa2ebd9b85, max_idle_ns: 440795259329 ns
+déc. 13 19:20:43 thot kernel: check: Scanning for low memory corruption every 60 seconds
+déc. 13 19:20:43 thot kernel: Initialise system trusted keyrings
+déc. 13 19:20:43 thot kernel: Key type blacklist registered
+déc. 13 19:20:43 thot kernel: workingset: timestamp_bits=36 max_order=20 bucket_order=0
+déc. 13 19:20:43 thot kernel: zbud: loaded
+déc. 13 19:20:43 thot kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+déc. 13 19:20:43 thot kernel: fuse: init (API version 7.31)
+déc. 13 19:20:43 thot kernel: *** VALIDATE fuse ***
+déc. 13 19:20:43 thot kernel: *** VALIDATE fuse ***
+déc. 13 19:20:43 thot kernel: Platform Keyring initialized
+déc. 13 19:20:43 thot kernel: Key type asymmetric registered
+déc. 13 19:20:43 thot kernel: Asymmetric key parser 'x509' registered
+déc. 13 19:20:43 thot kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+déc. 13 19:20:43 thot kernel: io scheduler mq-deadline registered
+déc. 13 19:20:43 thot kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+déc. 13 19:20:43 thot kernel: efifb: probing for efifb
+déc. 13 19:20:43 thot kernel: efifb: No BGRT, not showing boot graphics
+déc. 13 19:20:43 thot kernel: efifb: framebuffer at 0xfd000000, using 1408k, total 1408k
+déc. 13 19:20:43 thot kernel: efifb: mode is 800x600x24, linelength=2400, pages=1
+déc. 13 19:20:43 thot kernel: efifb: scrolling: redraw
+déc. 13 19:20:43 thot kernel: efifb: Truecolor: size=0:8:8:8, shift=0:16:8:0
+déc. 13 19:20:43 thot kernel: Console: switching to colour frame buffer device 100x37
+déc. 13 19:20:43 thot kernel: fb0: EFI VGA frame buffer device
+déc. 13 19:20:43 thot kernel: intel_idle: Please enable MWAIT in BIOS SETUP
+déc. 13 19:20:43 thot kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+déc. 13 19:20:43 thot kernel: ACPI: Power Button [PWRF]
+déc. 13 19:20:43 thot kernel: PCI Interrupt Link [LNKC] enabled at IRQ 10
+déc. 13 19:20:43 thot kernel: PCI Interrupt Link [LNKA] enabled at IRQ 10
+déc. 13 19:20:43 thot kernel: PCI Interrupt Link [LNKB] enabled at IRQ 11
+déc. 13 19:20:43 thot kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+déc. 13 19:20:43 thot kernel: Linux agpgart interface v0.103
+déc. 13 19:20:43 thot kernel: loop: module loaded
+déc. 13 19:20:43 thot kernel: ata_piix 0000:00:01.1: version 2.13
+déc. 13 19:20:43 thot kernel: scsi host0: ata_piix
+déc. 13 19:20:43 thot kernel: scsi host1: ata_piix
+déc. 13 19:20:43 thot kernel: ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc120 irq 14
+déc. 13 19:20:43 thot kernel: ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc128 irq 15
+déc. 13 19:20:43 thot kernel: tun: Universal TUN/TAP device driver, 1.6
+déc. 13 19:20:43 thot kernel: PPP generic driver version 2.4.2
+déc. 13 19:20:43 thot kernel: VFIO - User Level meta-driver version: 0.3
+déc. 13 19:20:43 thot kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+déc. 13 19:20:43 thot kernel: ehci-pci: EHCI PCI platform driver
+déc. 13 19:20:43 thot kernel: ehci-platform: EHCI generic platform driver
+déc. 13 19:20:43 thot kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+déc. 13 19:20:43 thot kernel: ohci-pci: OHCI PCI platform driver
+déc. 13 19:20:43 thot kernel: ohci-platform: OHCI generic platform driver
+déc. 13 19:20:43 thot kernel: uhci_hcd: USB Universal Host Controller Interface driver
+déc. 13 19:20:43 thot kernel: uhci_hcd 0000:00:01.2: UHCI Host Controller
+déc. 13 19:20:43 thot kernel: uhci_hcd 0000:00:01.2: new USB bus registered, assigned bus number 1
+déc. 13 19:20:43 thot kernel: uhci_hcd 0000:00:01.2: detected 2 ports
+déc. 13 19:20:43 thot kernel: uhci_hcd 0000:00:01.2: irq 11, io base 0x0000c0c0
+déc. 13 19:20:43 thot kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.04
+déc. 13 19:20:43 thot kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+déc. 13 19:20:43 thot kernel: usb usb1: Product: UHCI Host Controller
+déc. 13 19:20:43 thot kernel: usb usb1: Manufacturer: Linux 5.4.0-202-generic uhci_hcd
+déc. 13 19:20:43 thot kernel: usb usb1: SerialNumber: 0000:00:01.2
+déc. 13 19:20:43 thot kernel: hub 1-0:1.0: USB hub found
+déc. 13 19:20:43 thot kernel: hub 1-0:1.0: 2 ports detected
+déc. 13 19:20:43 thot kernel: i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+déc. 13 19:20:43 thot kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+déc. 13 19:20:43 thot kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+déc. 13 19:20:43 thot kernel: mousedev: PS/2 mouse device common for all mice
+déc. 13 19:20:43 thot kernel: rtc_cmos 00:00: RTC can wake from S4
+déc. 13 19:20:43 thot kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+déc. 13 19:20:43 thot kernel: rtc_cmos 00:00: registered as rtc0
+déc. 13 19:20:43 thot kernel: rtc_cmos 00:00: alarms up to one day, y3k, 114 bytes nvram, hpet irqs
+déc. 13 19:20:43 thot kernel: i2c /dev entries driver
+déc. 13 19:20:43 thot kernel: device-mapper: uevent: version 1.0.3
+déc. 13 19:20:43 thot kernel: device-mapper: ioctl: 4.41.0-ioctl (2019-09-16) initialised: dm-devel@redhat.com
+déc. 13 19:20:43 thot kernel: platform eisa.0: Probing EISA bus 0
+déc. 13 19:20:43 thot kernel: platform eisa.0: EISA: Cannot allocate resource for mainboard
+déc. 13 19:20:43 thot kernel: platform eisa.0: Cannot allocate resource for EISA slot 1
+déc. 13 19:20:43 thot kernel: platform eisa.0: Cannot allocate resource for EISA slot 2
+déc. 13 19:20:43 thot kernel: platform eisa.0: Cannot allocate resource for EISA slot 3
+déc. 13 19:20:43 thot kernel: platform eisa.0: Cannot allocate resource for EISA slot 4
+déc. 13 19:20:43 thot kernel: platform eisa.0: Cannot allocate resource for EISA slot 5
+déc. 13 19:20:43 thot kernel: platform eisa.0: Cannot allocate resource for EISA slot 6
+déc. 13 19:20:43 thot kernel: platform eisa.0: Cannot allocate resource for EISA slot 7
+déc. 13 19:20:43 thot kernel: platform eisa.0: Cannot allocate resource for EISA slot 8
+déc. 13 19:20:43 thot kernel: platform eisa.0: EISA: Detected 0 cards
+déc. 13 19:20:43 thot kernel: intel_pstate: CPU model not supported
+déc. 13 19:20:43 thot kernel: ledtrig-cpu: registered to indicate activity on CPUs
+déc. 13 19:20:43 thot kernel: drop_monitor: Initializing network drop monitor service
+déc. 13 19:20:43 thot kernel: NET: Registered protocol family 10
+déc. 13 19:20:43 thot kernel: Segment Routing with IPv6
+déc. 13 19:20:43 thot kernel: NET: Registered protocol family 17
+déc. 13 19:20:43 thot kernel: Key type dns_resolver registered
+déc. 13 19:20:43 thot kernel: RAS: Correctable Errors collector initialized.
+déc. 13 19:20:43 thot kernel: IPI shorthand broadcast: enabled
+déc. 13 19:20:43 thot kernel: sched_clock: Marking stable (794333119, -2199414)->(851944021, -59810316)
+déc. 13 19:20:43 thot kernel: registered taskstats version 1
+déc. 13 19:20:43 thot kernel: Loading compiled-in X.509 certificates
+déc. 13 19:20:43 thot kernel: Loaded X.509 cert 'Build time autogenerated kernel key: c8141c267d67db517e45f7c652a033acaf0b2f06'
+déc. 13 19:20:43 thot kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+déc. 13 19:20:43 thot kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+déc. 13 19:20:43 thot kernel: blacklist: Loading compiled-in revocation X.509 certificates
+déc. 13 19:20:43 thot kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+déc. 13 19:20:43 thot kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+déc. 13 19:20:43 thot kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+déc. 13 19:20:43 thot kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+déc. 13 19:20:43 thot kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+déc. 13 19:20:43 thot kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+déc. 13 19:20:43 thot kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+déc. 13 19:20:43 thot kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+déc. 13 19:20:43 thot kernel: zswap: loaded using pool lzo/zbud
+déc. 13 19:20:43 thot kernel: Key type ._fscrypt registered
+déc. 13 19:20:43 thot kernel: Key type .fscrypt registered
+déc. 13 19:20:43 thot kernel: Key type big_key registered
+déc. 13 19:20:43 thot kernel: Key type encrypted registered
+déc. 13 19:20:43 thot kernel: AppArmor: AppArmor sha1 policy hashing enabled
+déc. 13 19:20:43 thot kernel: ima: No TPM chip found, activating TPM-bypass!
+déc. 13 19:20:43 thot kernel: ima: Allocated hash algorithm: sha1
+déc. 13 19:20:43 thot kernel: ima: No architecture policies found
+déc. 13 19:20:43 thot kernel: evm: Initialising EVM extended attributes:
+déc. 13 19:20:43 thot kernel: evm: security.selinux
+déc. 13 19:20:43 thot kernel: evm: security.SMACK64
+déc. 13 19:20:43 thot kernel: evm: security.SMACK64EXEC
+déc. 13 19:20:43 thot kernel: evm: security.SMACK64TRANSMUTE
+déc. 13 19:20:43 thot kernel: evm: security.SMACK64MMAP
+déc. 13 19:20:43 thot kernel: evm: security.apparmor
+déc. 13 19:20:43 thot kernel: evm: security.ima
+déc. 13 19:20:43 thot kernel: evm: security.capability
+déc. 13 19:20:43 thot kernel: evm: HMAC attrs: 0x1
+déc. 13 19:20:43 thot kernel: PM:   Magic number: 4:196:342
+déc. 13 19:20:43 thot kernel: rtc_cmos 00:00: setting system clock to 2024-12-13T18:20:42 UTC (1734114042)
+déc. 13 19:20:43 thot kernel: clk: Disabling unused clocks
+déc. 13 19:20:43 thot kernel: ata1.01: NODEV after polling detection
+déc. 13 19:20:43 thot kernel: ata1.00: ATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+déc. 13 19:20:43 thot kernel: scsi 0:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     2.5+ PQ: 0 ANSI: 5
+déc. 13 19:20:43 thot kernel: sr 0:0:0:0: [sr0] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+déc. 13 19:20:43 thot kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+déc. 13 19:20:43 thot kernel: sr 0:0:0:0: Attached scsi CD-ROM sr0
+déc. 13 19:20:43 thot kernel: sr 0:0:0:0: Attached scsi generic sg0 type 5
+déc. 13 19:20:43 thot kernel: Freeing unused decrypted memory: 2040K
+déc. 13 19:20:43 thot kernel: Freeing unused kernel image memory: 2772K
+déc. 13 19:20:43 thot kernel: Write protecting the kernel read-only data: 26624k
+déc. 13 19:20:43 thot kernel: Freeing unused kernel image memory: 2036K
+déc. 13 19:20:43 thot kernel: Freeing unused kernel image memory: 924K
+déc. 13 19:20:43 thot kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+déc. 13 19:20:43 thot kernel: x86/mm: Checking user space page tables
+déc. 13 19:20:43 thot kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+déc. 13 19:20:43 thot kernel: Run /init as init process
+déc. 13 19:20:43 thot kernel: usb 1-1: new full-speed USB device number 2 using uhci_hcd
+déc. 13 19:20:43 thot kernel: piix4_smbus 0000:00:01.3: SMBus Host Controller at 0x700, revision 0
+déc. 13 19:20:43 thot kernel: input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input4
+déc. 13 19:20:43 thot kernel: input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input3
+déc. 13 19:20:43 thot kernel: scsi host2: Virtio SCSI HBA
+déc. 13 19:20:43 thot kernel: scsi 2:0:0:0: Direct-Access     QEMU     QEMU HARDDISK    2.5+ PQ: 0 ANSI: 5
+déc. 13 19:20:43 thot kernel: FDC 0 is a S82078B
+déc. 13 19:20:43 thot kernel: virtio_net virtio1 ens4: renamed from eth0
+déc. 13 19:20:43 thot kernel: sd 2:0:0:0: Power-on or device reset occurred
+déc. 13 19:20:43 thot kernel: sd 2:0:0:0: Attached scsi generic sg1 type 0
+déc. 13 19:20:43 thot kernel: sd 2:0:0:0: [sda] 104857600 512-byte logical blocks: (53.7 GB/50.0 GiB)
+déc. 13 19:20:43 thot kernel: sd 2:0:0:0: [sda] Write Protect is off
+déc. 13 19:20:43 thot kernel: sd 2:0:0:0: [sda] Mode Sense: 63 00 00 08
+déc. 13 19:20:43 thot kernel: sd 2:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+déc. 13 19:20:43 thot kernel:  sda: sda1 sda2
+déc. 13 19:20:43 thot kernel: sd 2:0:0:0: [sda] Attached SCSI disk
+déc. 13 19:20:43 thot kernel: usb 1-1: New USB device found, idVendor=0627, idProduct=0001, bcdDevice= 0.00
+déc. 13 19:20:43 thot kernel: usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=5
+déc. 13 19:20:43 thot kernel: usb 1-1: Product: QEMU USB Tablet
+déc. 13 19:20:43 thot kernel: usb 1-1: Manufacturer: QEMU
+déc. 13 19:20:43 thot kernel: usb 1-1: SerialNumber: 42
+déc. 13 19:20:43 thot kernel: hidraw: raw HID events driver (C) Jiri Kosina
+déc. 13 19:20:43 thot kernel: usbcore: registered new interface driver usbhid
+déc. 13 19:20:43 thot kernel: usbhid: USB HID core driver
+déc. 13 19:20:43 thot kernel: input: QEMU QEMU USB Tablet as /devices/pci0000:00/0000:00:01.2/usb1/1-1/1-1:1.0/0003:0627:0001.0001/input/input5
+déc. 13 19:20:43 thot kernel: hid-generic 0003:0627:0001.0001: input,hidraw0: USB HID v0.01 Mouse [QEMU QEMU USB Tablet] on usb-0000:00:01.2-1/input0
+déc. 13 19:20:43 thot kernel: EXT4-fs (dm-1): mounted filesystem with ordered data mode. Opts: (null)
+déc. 13 19:20:43 thot systemd[1]: Inserted module 'autofs4'
+déc. 13 19:20:43 thot systemd[1]: systemd 245.4-4ubuntu3.24 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+déc. 13 19:20:43 thot systemd[1]: Detected virtualization kvm.
+déc. 13 19:20:43 thot systemd[1]: Detected architecture x86-64.
+déc. 13 19:20:43 thot systemd[1]: Set hostname to <thot>.
+déc. 13 19:20:43 thot systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+déc. 13 19:20:43 thot systemd[1]: Created slice system-modprobe.slice.
+déc. 13 19:20:43 thot systemd[1]: Created slice system-systemd\x2dfsck.slice.
+déc. 13 19:20:43 thot systemd[1]: Created slice User and Session Slice.
+déc. 13 19:20:43 thot systemd[1]: Started ntp-systemd-netif.path.
+déc. 13 19:20:43 thot systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+déc. 13 19:20:43 thot systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+déc. 13 19:20:43 thot systemd[1]: Reached target User and Group Name Lookups.
+déc. 13 19:20:43 thot systemd[1]: Reached target Slices.
+déc. 13 19:20:43 thot systemd[1]: Reached target System Time Set.
+déc. 13 19:20:43 thot systemd[1]: Listening on Device-mapper event daemon FIFOs.
+déc. 13 19:20:43 thot systemd[1]: Listening on LVM2 poll daemon socket.
+déc. 13 19:20:43 thot systemd[1]: Listening on Syslog Socket.
+déc. 13 19:20:43 thot systemd[1]: Listening on fsck to fsckd communication Socket.
+déc. 13 19:20:43 thot systemd[1]: Listening on initctl Compatibility Named Pipe.
+déc. 13 19:20:43 thot systemd[1]: Listening on Journal Audit Socket.
+déc. 13 19:20:43 thot systemd[1]: Listening on Journal Socket (/dev/log).
+déc. 13 19:20:43 thot systemd[1]: Listening on Journal Socket.
+déc. 13 19:20:43 thot systemd[1]: Listening on udev Control Socket.
+déc. 13 19:20:43 thot systemd[1]: Listening on udev Kernel Socket.
+déc. 13 19:20:43 thot systemd[1]: Mounting Huge Pages File System...
+déc. 13 19:20:43 thot systemd[1]: Mounting POSIX Message Queue File System...
+déc. 13 19:20:43 thot systemd[1]: Mounting Kernel Debug File System...
+déc. 13 19:20:43 thot systemd[1]: Mounting Kernel Trace File System...
+déc. 13 19:20:43 thot systemd[1]: Starting Journal Service...
+déc. 13 19:20:43 thot systemd[1]: Starting Availability of block devices...
+déc. 13 19:20:43 thot systemd[1]: Starting Set the console keyboard layout...
+déc. 13 19:20:43 thot systemd[1]: Starting Create list of static device nodes for the current kernel...
+déc. 13 19:20:43 thot systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+déc. 13 19:20:43 thot systemd[1]: Starting Load Kernel Module chromeos_pstore...
+déc. 13 19:20:43 thot systemd[1]: Starting Load Kernel Module drm...
+déc. 13 19:20:43 thot systemd[1]: Starting Load Kernel Module efi_pstore...
+déc. 13 19:20:43 thot systemd[1]: Starting Load Kernel Module pstore_blk...
+déc. 13 19:20:43 thot systemd[1]: Starting Load Kernel Module pstore_zone...
+déc. 13 19:20:43 thot systemd[1]: Starting Load Kernel Module ramoops...
+déc. 13 19:20:43 thot systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+déc. 13 19:20:43 thot systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+déc. 13 19:20:43 thot systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+déc. 13 19:20:43 thot systemd[1]: Starting Load Kernel Modules...
+déc. 13 19:20:43 thot systemd[1]: Starting Remount Root and Kernel File Systems...
+déc. 13 19:20:43 thot systemd[1]: Starting udev Coldplug all Devices...
+déc. 13 19:20:43 thot systemd[1]: Mounted Huge Pages File System.
+déc. 13 19:20:43 thot systemd[1]: Mounted POSIX Message Queue File System.
+déc. 13 19:20:43 thot kernel: EXT4-fs (dm-1): re-mounted. Opts: errors=remount-ro
+déc. 13 19:20:43 thot systemd[1]: Mounted Kernel Debug File System.
+déc. 13 19:20:43 thot systemd[1]: Mounted Kernel Trace File System.
+déc. 13 19:20:43 thot systemd[1]: Finished Availability of block devices.
+déc. 13 19:20:43 thot systemd[1]: Finished Create list of static device nodes for the current kernel.
+déc. 13 19:20:43 thot systemd-journald[288]: Journal started
+déc. 13 19:20:43 thot systemd-journald[288]: Runtime Journal (/run/log/journal/a4199e5286f240239fbf24aef6228a2e) is 4.9M, max 39.1M, 34.2M free.
+déc. 13 19:20:43 thot lvm[293]:   5 logical volume(s) in volume group "vgthot" monitored
+déc. 13 19:20:43 thot systemd[1]: modprobe@drm.service: Succeeded.
+déc. 13 19:20:43 thot systemd[1]: Started Journal Service.
+déc. 13 19:20:43 thot systemd[1]: Finished Load Kernel Module drm.
+déc. 13 19:20:43 thot systemd[1]: modprobe@efi_pstore.service: Succeeded.
+déc. 13 19:20:43 thot systemd[1]: Finished Load Kernel Module efi_pstore.
+déc. 13 19:20:43 thot systemd[1]: modprobe@pstore_blk.service: Succeeded.
+déc. 13 19:20:43 thot systemd[1]: Finished Load Kernel Module pstore_blk.
+déc. 13 19:20:43 thot systemd[1]: modprobe@pstore_zone.service: Succeeded.
+déc. 13 19:20:43 thot systemd[1]: Finished Load Kernel Module pstore_zone.
+déc. 13 19:20:43 thot systemd[1]: modprobe@ramoops.service: Succeeded.
+déc. 13 19:20:43 thot systemd[1]: Finished Load Kernel Module ramoops.
+déc. 13 19:20:43 thot systemd[1]: Finished Load Kernel Modules.
+déc. 13 19:20:43 thot systemd[1]: Finished Remount Root and Kernel File Systems.
+déc. 13 19:20:43 thot systemd[1]: Mounting FUSE Control File System...
+déc. 13 19:20:43 thot systemd[1]: Mounting Kernel Configuration File System...
+déc. 13 19:20:43 thot systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+déc. 13 19:20:43 thot systemd[1]: Starting Apply Kernel Variables...
+déc. 13 19:20:43 thot systemd[1]: Starting Create System Users...
+déc. 13 19:20:43 thot systemd[1]: Finished Set the console keyboard layout.
+déc. 13 19:20:43 thot systemd[1]: Mounted FUSE Control File System.
+déc. 13 19:20:43 thot systemd[1]: Finished Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+déc. 13 19:20:43 thot systemd[1]: Mounted Kernel Configuration File System.
+déc. 13 19:20:43 thot systemd-sysctl[310]: Not setting net/ipv4/conf/all/promote_secondaries (explicit setting exists).
+déc. 13 19:20:43 thot systemd-sysctl[310]: Not setting net/ipv4/conf/default/promote_secondaries (explicit setting exists).
+déc. 13 19:20:43 thot systemd[1]: Finished Create System Users.
+déc. 13 19:20:43 thot systemd[1]: Starting Create Static Device Nodes in /dev...
+déc. 13 19:20:43 thot systemd[1]: modprobe@chromeos_pstore.service: Succeeded.
+déc. 13 19:20:43 thot systemd[1]: Finished Load Kernel Module chromeos_pstore.
+déc. 13 19:20:43 thot systemd[1]: Finished Apply Kernel Variables.
+déc. 13 19:20:43 thot systemd[1]: Finished udev Coldplug all Devices.
+déc. 13 19:20:43 thot systemd[1]: Starting Helper to synchronize boot up for ifupdown...
+déc. 13 19:20:43 thot systemd[1]: Starting udev Wait for Complete Device Initialization...
+déc. 13 19:20:43 thot systemd[1]: Finished Create Static Device Nodes in /dev.
+déc. 13 19:20:43 thot systemd[1]: Reached target Local File Systems (Pre).
+déc. 13 19:20:43 thot systemd[1]: Starting udev Kernel Device Manager...
+déc. 13 19:20:43 thot systemd[1]: Finished Helper to synchronize boot up for ifupdown.
+déc. 13 19:20:43 thot systemd[1]: Started udev Kernel Device Manager.
+déc. 13 19:20:43 thot systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+déc. 13 19:20:43 thot systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+déc. 13 19:20:43 thot systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+déc. 13 19:20:43 thot systemd[1]: Reached target Local Encrypted Volumes.
+déc. 13 19:20:44 thot systemd-udevd[322]: Using default interface naming scheme 'v245'.
+déc. 13 19:20:44 thot kernel: 9pnet: Installing 9P2000 support
+déc. 13 19:20:44 thot systemd-udevd[322]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+déc. 13 19:20:44 thot systemd-udevd[326]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+déc. 13 19:20:44 thot systemd[1]: Starting Load Kernel Module chromeos_pstore...
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Load Kernel Module efi_pstore being skipped.
+déc. 13 19:20:44 thot systemd[1]: Starting Load Kernel Module pstore_blk...
+déc. 13 19:20:44 thot systemd[1]: Starting Load Kernel Module pstore_zone...
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Load Kernel Module ramoops being skipped.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+déc. 13 19:20:44 thot systemd[1]: modprobe@pstore_blk.service: Succeeded.
+déc. 13 19:20:44 thot systemd[1]: Finished Load Kernel Module pstore_blk.
+déc. 13 19:20:44 thot kernel: cryptd: max_cpu_qlen set to 1000
+déc. 13 19:20:44 thot systemd[1]: modprobe@pstore_zone.service: Succeeded.
+déc. 13 19:20:44 thot systemd[1]: Finished Load Kernel Module pstore_zone.
+déc. 13 19:20:44 thot systemd[1]: Found device /dev/mapper/vgthot-home.
+déc. 13 19:20:44 thot systemd[1]: modprobe@chromeos_pstore.service: Succeeded.
+déc. 13 19:20:44 thot systemd[1]: Finished Load Kernel Module chromeos_pstore.
+déc. 13 19:20:44 thot systemd[1]: Starting File System Check on /dev/mapper/vgthot-home...
+déc. 13 19:20:44 thot systemd[1]: Found device /dev/mapper/vgthot-swap_1.
+déc. 13 19:20:44 thot systemd[1]: Found device /dev/mapper/vgthot-tmp.
+déc. 13 19:20:44 thot systemd[1]: Activating swap /dev/mapper/vgthot-swap_1...
+déc. 13 19:20:44 thot systemd[1]: Starting File System Check on /dev/mapper/vgthot-tmp...
+déc. 13 19:20:44 thot systemd[1]: Started File System Check Daemon to report status.
+déc. 13 19:20:44 thot systemd[1]: Created slice system-lvm2\x2dpvscan.slice.
+déc. 13 19:20:44 thot systemd[1]: Starting LVM event activation on device 8:2...
+déc. 13 19:20:44 thot kernel: AVX2 version of gcm_enc/dec engaged.
+déc. 13 19:20:44 thot kernel: AES CTR mode by8 optimization enabled
+déc. 13 19:20:44 thot kernel: bochs-drm 0000:00:02.0: remove_conflicting_pci_framebuffers: bar 0: 0xfd000000 -> 0xfdffffff
+déc. 13 19:20:44 thot kernel: bochs-drm 0000:00:02.0: remove_conflicting_pci_framebuffers: bar 2: 0xfebd0000 -> 0xfebd0fff
+déc. 13 19:20:44 thot kernel: checking generic (fd000000 160000) vs hw (fd000000 1000000)
+déc. 13 19:20:44 thot kernel: fb0: switching to bochsdrmfb from EFI VGA
+déc. 13 19:20:44 thot kernel: Console: switching to colour dummy device 80x25
+déc. 13 19:20:44 thot kernel: bochs-drm 0000:00:02.0: vgaarb: deactivate vga console
+déc. 13 19:20:44 thot kernel: [drm] Found bochs VGA, ID 0xb0c0.
+déc. 13 19:20:44 thot kernel: [drm] Framebuffer size 16384 kB @ 0xfd000000, mmio @ 0xfebd0000.
+déc. 13 19:20:44 thot systemd[1]: Found device QEMU_HARDDISK /boot.
+déc. 13 19:20:44 thot systemd[1]: Found device /dev/mapper/vgthot-var.
+déc. 13 19:20:44 thot systemd[1]: Starting File System Check on /dev/disk/by-uuid/0825b058-8f7d-4d35-a745-aec5bf7d43e9...
+déc. 13 19:20:44 thot kernel: [TTM] Zone  kernel: Available graphics memory: 2006730 KiB
+déc. 13 19:20:44 thot kernel: [TTM] Initializing pool allocator
+déc. 13 19:20:44 thot kernel: [TTM] Initializing DMA pool allocator
+déc. 13 19:20:44 thot kernel: [drm] Initialized bochs-drm 1.0.0 20130925 for 0000:00:02.0 on minor 0
+déc. 13 19:20:44 thot systemd[1]: Starting File System Check on /dev/mapper/vgthot-var...
+déc. 13 19:20:44 thot kernel: fbcon: bochs-drmdrmfb (fb0) is primary device
+déc. 13 19:20:44 thot lvm[417]:   pvscan[417] PV /dev/sda2 online, VG vgthot is complete.
+déc. 13 19:20:44 thot lvm[417]:   pvscan[417] VG vgthot skip autoactivation.
+déc. 13 19:20:44 thot kernel: Adding 1703932k swap on /dev/mapper/vgthot-swap_1.  Priority:-2 extents:1 across:1703932k FS
+déc. 13 19:20:44 thot kernel: Console: switching to colour frame buffer device 128x48
+déc. 13 19:20:44 thot kernel: bochs-drm 0000:00:02.0: fb0: bochs-drmdrmfb frame buffer device
+déc. 13 19:20:44 thot systemd[1]: Activated swap /dev/mapper/vgthot-swap_1.
+déc. 13 19:20:44 thot systemd[1]: Reached target Swap.
+déc. 13 19:20:44 thot systemd-fsck[414]: /tmp : propre, 18/121920 fichiers, 17289/487424 blocs
+déc. 13 19:20:44 thot systemd-fsck[408]: /home : propre, 18/124928 fichiers, 17515/499712 blocs
+déc. 13 19:20:44 thot systemd-fsck[436]: /var : propre, 5966/124928 fichiers, 349595/499712 blocs
+déc. 13 19:20:44 thot systemd-fsck[440]: /boot : propre, 319/45696 fichiers, 47038/182784 blocs
+déc. 13 19:20:44 thot systemd[1]: Finished File System Check on /dev/mapper/vgthot-tmp.
+déc. 13 19:20:44 thot systemd[1]: Finished File System Check on /dev/mapper/vgthot-home.
+déc. 13 19:20:44 thot systemd[1]: Finished LVM event activation on device 8:2.
+déc. 13 19:20:44 thot systemd[1]: Mounting /home...
+déc. 13 19:20:44 thot systemd[1]: Mounting /tmp...
+déc. 13 19:20:44 thot systemd[1]: Finished File System Check on /dev/mapper/vgthot-var.
+déc. 13 19:20:44 thot systemd[1]: Mounting /var...
+déc. 13 19:20:44 thot systemd[1]: Finished File System Check on /dev/disk/by-uuid/0825b058-8f7d-4d35-a745-aec5bf7d43e9.
+déc. 13 19:20:44 thot systemd[1]: Mounting /boot...
+déc. 13 19:20:44 thot kernel: EXT4-fs (dm-4): mounted filesystem with ordered data mode. Opts: usrquota,grpquota
+déc. 13 19:20:44 thot systemd[1]: Mounted /home.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in File System Quota Check being skipped.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Enable File System Quotas being skipped.
+déc. 13 19:20:44 thot systemd[1]: Reached target Remote File Systems.
+déc. 13 19:20:44 thot systemd[1]: Mounted /var.
+déc. 13 19:20:44 thot kernel: EXT4-fs (dm-3): mounted filesystem with ordered data mode. Opts: (null)
+déc. 13 19:20:44 thot systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+déc. 13 19:20:44 thot systemd[1]: Starting Flush Journal to Persistent Storage...
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+déc. 13 19:20:44 thot systemd[1]: Starting Load/Save Random Seed...
+déc. 13 19:20:44 thot kernel: EXT4-fs (dm-2): mounted filesystem with ordered data mode. Opts: (null)
+déc. 13 19:20:44 thot kernel: EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+déc. 13 19:20:44 thot systemd-journald[288]: Time spent on flushing to /var/log/journal/a4199e5286f240239fbf24aef6228a2e is 228.276ms for 763 entries.
+déc. 13 19:20:44 thot systemd-journald[288]: System Journal (/var/log/journal/a4199e5286f240239fbf24aef6228a2e) is 181.7M, max 188.3M, 6.5M free.
+déc. 13 19:20:44 thot kernel: audit: type=1400 audit(1734114044.552:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/clamd" pid=479 comm="apparmor_parser"
+déc. 13 19:20:44 thot kernel: audit: type=1400 audit(1734114044.556:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_apt_news" pid=480 comm="apparmor_parser"
+déc. 13 19:20:44 thot kernel: audit: type=1400 audit(1734114044.556:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/ntpd" pid=483 comm="apparmor_parser"
+déc. 13 19:20:44 thot kernel: audit: type=1400 audit(1734114044.560:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=482 comm="apparmor_parser"
+déc. 13 19:20:44 thot kernel: audit: type=1400 audit(1734114044.560:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=482 comm="apparmor_parser"
+déc. 13 19:20:44 thot kernel: audit: type=1400 audit(1734114044.560:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=482 comm="apparmor_parser"
+déc. 13 19:20:44 thot kernel: audit: type=1400 audit(1734114044.560:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/{,usr/}sbin/dhclient" pid=482 comm="apparmor_parser"
+déc. 13 19:20:44 thot kernel: audit: type=1400 audit(1734114044.560:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=484 comm="apparmor_parser"
+déc. 13 19:20:44 thot kernel: audit: type=1400 audit(1734114044.560:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=484 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[479]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/clamd" pid=479 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[480]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_apt_news" pid=480 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[483]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/ntpd" pid=483 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[482]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=482 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[482]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=482 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[482]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=482 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[482]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/{,usr/}sbin/dhclient" pid=482 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[484]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=484 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[484]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=484 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[485]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=485 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[486]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/slapd" pid=486 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[487]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/mysqld" pid=487 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[488]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/freshclam" pid=488 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[491]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=491 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[491]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=491 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[491]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=491 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[492]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=492 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[490]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache" pid=490 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[490]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//apt_methods" pid=490 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[490]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//apt_methods_gpgv" pid=490 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[490]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//cloud_id" pid=490 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[490]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//dpkg" pid=490 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[490]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//ps" pid=490 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[490]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//ubuntu_distro_info" pid=490 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[490]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache_systemctl" pid=490 comm="apparmor_parser"
+déc. 13 19:20:44 thot audit[490]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache_systemd_detect_virt" pid=490 comm="apparmor_parser"
+déc. 13 19:20:44 thot udevadm[315]: systemd-udev-settle.service is deprecated.
+déc. 13 19:20:44 thot systemd[1]: Mounted /tmp.
+déc. 13 19:20:44 thot systemd[1]: Mounted /boot.
+déc. 13 19:20:44 thot apparmor.systemd[456]: Restarting AppArmor
+déc. 13 19:20:44 thot apparmor.systemd[456]: Reloading AppArmor profiles
+déc. 13 19:20:44 thot systemd[1]: Reached target Local File Systems.
+déc. 13 19:20:44 thot apparmor.systemd[481]: Skipping profile in /etc/apparmor.d/disable: usr.sbin.rsyslogd
+déc. 13 19:20:44 thot systemd[1]: Starting Load AppArmor profiles...
+déc. 13 19:20:44 thot apparmor.systemd[489]: Skipping profile in /etc/apparmor.d/disable: usr.bin.firefox
+déc. 13 19:20:44 thot systemd[1]: Starting Set console font and keymap...
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Copie libnss sans support de LDAP being skipped.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Fermeture du firewall being skipped.
+déc. 13 19:20:44 thot systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+déc. 13 19:20:44 thot systemd[1]: Finished Set console font and keymap.
+déc. 13 19:20:44 thot systemd[1]: Finished Load/Save Random Seed.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+déc. 13 19:20:44 thot systemd[1]: plymouth-read-write.service: Succeeded.
+déc. 13 19:20:44 thot systemd[1]: Finished Tell Plymouth To Write Out Runtime Data.
+déc. 13 19:20:44 thot systemd[1]: Finished udev Wait for Complete Device Initialization.
+déc. 13 19:20:44 thot systemd[1]: Finished Load AppArmor profiles.
+déc. 13 19:20:44 thot systemd[1]: Finished Flush Journal to Persistent Storage.
+déc. 13 19:20:44 thot systemd[1]: Starting Create Volatile Files and Directories...
+déc. 13 19:20:44 thot systemd[1]: Finished Create Volatile Files and Directories.
+déc. 13 19:20:44 thot systemd[1]: Starting Load Kernel Module chromeos_pstore...
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Load Kernel Module efi_pstore being skipped.
+déc. 13 19:20:44 thot systemd[1]: Starting Load Kernel Module pstore_blk...
+déc. 13 19:20:44 thot systemd[1]: Starting Load Kernel Module pstore_zone...
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Load Kernel Module ramoops being skipped.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+déc. 13 19:20:44 thot systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+déc. 13 19:20:44 thot systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+déc. 13 19:20:44 thot systemd[1]: modprobe@pstore_blk.service: Succeeded.
+déc. 13 19:20:44 thot systemd[1]: Finished Load Kernel Module pstore_blk.
+déc. 13 19:20:44 thot systemd[1]: modprobe@pstore_zone.service: Succeeded.
+déc. 13 19:20:44 thot systemd[1]: Finished Load Kernel Module pstore_zone.
+déc. 13 19:20:44 thot systemd[1]: plymouth-read-write.service: Succeeded.
+déc. 13 19:20:44 thot systemd[1]: Finished Tell Plymouth To Write Out Runtime Data.
+déc. 13 19:20:44 thot systemd[1]: Finished Update UTMP about System Boot/Shutdown.
+déc. 13 19:20:44 thot systemd[1]: modprobe@chromeos_pstore.service: Succeeded.
+déc. 13 19:20:44 thot systemd[1]: Finished Load Kernel Module chromeos_pstore.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+déc. 13 19:20:44 thot systemd[1]: Reached target System Initialization.
+déc. 13 19:20:44 thot systemd[1]: Started ACPI Events Check.
+déc. 13 19:20:44 thot systemd[1]: Started Daily Cleanup of Temporary Directories.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Ubuntu Pro Timer for running repeated jobs being skipped.
+déc. 13 19:20:44 thot systemd[1]: Reached target Paths.
+déc. 13 19:20:44 thot systemd[1]: Listening on ACPID Listen Socket.
+déc. 13 19:20:44 thot systemd[1]: Listening on D-Bus System Message Bus Socket.
+déc. 13 19:20:44 thot systemd[1]: Listening on UUID daemon activation socket.
+déc. 13 19:20:44 thot systemd[1]: Reached target Sockets.
+déc. 13 19:20:44 thot systemd[1]: Reached target Basic System.
+déc. 13 19:20:44 thot systemd[1]: Starting EOLE Continuous Integration Tests Contextualisation...
+déc. 13 19:20:44 thot systemd[1]: Starting Accounts Service...
+déc. 13 19:20:44 thot systemd[1]: Starting Deferred execution scheduler...
+déc. 13 19:20:44 thot systemd[1]: Starting Clam AntiVirus userspace daemon...
+déc. 13 19:20:44 thot systemd[1]: Started Regular background program processing daemon.
+déc. 13 19:20:44 thot cron[507]: (CRON) INFO (pidfile fd = 3)
+déc. 13 19:20:44 thot systemd[1]: Started D-Bus System Message Bus.
+déc. 13 19:20:44 thot systemd[1]: Started Save initial kernel messages after boot.
+déc. 13 19:20:44 thot kernel: FS-Cache: Loaded
+déc. 13 19:20:44 thot systemd[1]: Starting Remove Stale Online ext4 Metadata Check Snapshots...
+déc. 13 19:20:44 thot bash[500]: wait mount 9P (1/6): ok
+déc. 13 19:20:44 thot kernel: 9p: Installing v9fs 9p2000 file system support
+déc. 13 19:20:44 thot kernel: FS-Cache: Netfs '9p' registered for caching
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in EAD backend server being skipped.
+déc. 13 19:20:44 thot cron[507]: (CRON) INFO (Running @reboot jobs)
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in EAD web server being skipped.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Copie libnss avec support de LDAP being skipped.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in getty on tty2-tty6 if dbus and logind are not available being skipped.
+déc. 13 19:20:44 thot systemd[1]: Starting LSB: gpm sysv init script...
+déc. 13 19:20:44 thot systemd[1]: Starting Record successful boot for GRUB...
+déc. 13 19:20:44 thot systemd[1]: Started irqbalance daemon.
+déc. 13 19:20:44 thot systemd[1]: Starting Dispatcher daemon for systemd-networkd...
+déc. 13 19:20:44 thot systemd[1]: Started ntp-systemd-netif.service.
+déc. 13 19:20:44 thot systemd[1]: Condition check resulted in Set the CPU Frequency Scaling governor being skipped.
+déc. 13 19:20:45 thot systemd[1]: Started Add entropy to /dev/random 's pool a hardware RNG.
+déc. 13 19:20:45 thot systemd[1]: Starting System Logging Service...
+déc. 13 19:20:45 thot rngd[524]: read error
+déc. 13 19:20:45 thot rngd[524]: read error
+déc. 13 19:20:45 thot systemd[1]: Starting Login Service...
+déc. 13 19:20:45 thot systemd[1]: Condition check resulted in Ubuntu Pro reboot cmds being skipped.
+déc. 13 19:20:45 thot systemd[1]: Started Deferred execution scheduler.
+déc. 13 19:20:45 thot systemd[1]: e2scrub_reap.service: Succeeded.
+déc. 13 19:20:45 thot systemd[1]: Finished Remove Stale Online ext4 Metadata Check Snapshots.
+déc. 13 19:20:45 thot systemd[1]: ntp-systemd-netif.service: Succeeded.
+déc. 13 19:20:45 thot systemd[1]: Started Clam AntiVirus userspace daemon.
+déc. 13 19:20:45 thot bash[530]: CheckUpdate.sh: /root/mount.eole-ci-tests A JOUR
+déc. 13 19:20:45 thot dbus-daemon[508]: [system] AppArmor D-Bus mediation is enabled
+déc. 13 19:20:45 thot systemd-logind[529]: New seat seat0.
+déc. 13 19:20:45 thot systemd-logind[529]: Watching system buttons on /dev/input/event0 (Power Button)
+déc. 13 19:20:45 thot systemd-logind[529]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+déc. 13 19:20:45 thot systemd[1]: Started Login Service.
+déc. 13 19:20:45 thot bash[530]: CheckUpdate.sh: /root/getVMContext.sh A JOUR
+déc. 13 19:20:45 thot systemd[1]: grub-common.service: Succeeded.
+déc. 13 19:20:45 thot systemd[1]: Finished Record successful boot for GRUB.
+déc. 13 19:20:45 thot systemd[1]: Starting GRUB failed boot detection...
+déc. 13 19:20:45 thot gpm[513]:  * Starting mouse interface server gpm
+déc. 13 19:20:45 thot bash[530]: CheckUpdate.sh: /root/EoleCiFunctions.sh A JOUR
+déc. 13 19:20:45 thot rsyslogd[525]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2001.0]
+déc. 13 19:20:45 thot rsyslogd[525]: rsyslogd's groupid changed to 110
+déc. 13 19:20:45 thot systemd[1]: Started System Logging Service.
+déc. 13 19:20:45 thot rsyslogd[525]: rsyslogd's userid changed to 104
+déc. 13 19:20:45 thot rsyslogd[525]: [origin software="rsyslogd" swVersion="8.2001.0" x-pid="525" x-info="https://www.rsyslog.com"] start
+déc. 13 19:20:45 thot accounts-daemon[501]: started daemon version 0.6.55
+déc. 13 19:20:45 thot systemd[1]: Started Accounts Service.
+déc. 13 19:20:45 thot bash[530]: CheckUpdate.sh: /root/.EoleCiTestsContext.sh A JOUR
+déc. 13 19:20:45 thot systemd[1]: grub-initrd-fallback.service: Succeeded.
+déc. 13 19:20:45 thot systemd[1]: Finished GRUB failed boot detection.
+déc. 13 19:20:45 thot bash[530]: CheckUpdate.sh: /root/.EoleCiTestsDaemon.sh A JOUR
+déc. 13 19:20:45 thot gpm[513]:    ...done.
+déc. 13 19:20:45 thot systemd[1]: Started LSB: gpm sysv init script.
+déc. 13 19:20:45 thot /usr/sbin/gpm[593]: *** info [daemon/startup.c(131)]:
+déc. 13 19:20:45 thot /usr/sbin/gpm[593]: Started gpm successfully. Entered daemon mode.
+déc. 13 19:20:45 thot kernel: ISO 9660 Extensions: Microsoft Joliet Level 3
+déc. 13 19:20:45 thot kernel: ISO 9660 Extensions: RRIP_1991A
+déc. 13 19:20:45 thot EOLECITESTS[613]: ciContextualizeMachine: réalisée pour 1421063, à refaire
+déc. 13 19:20:45 thot EOLECITESTS[614]: Début ciContextualizeMachine : daily,
+déc. 13 19:20:45 thot EOLECITESTS[615]: Debut ciContextualizeDaily
+déc. 13 19:20:45 thot networkd-dispatcher[519]: No valid path found for iwconfig
+déc. 13 19:20:45 thot networkd-dispatcher[619]: WARNING: systemd-networkd is not running, output will be incomplete.
+déc. 13 19:20:45 thot networkd-dispatcher[519]: ERROR:Unknown state for interface NetworkctlListState(idx=1, name='lo', type='loopback', operational='n/a', administrative='unmanaged'): n/a
+déc. 13 19:20:45 thot networkd-dispatcher[519]: Traceback (most recent call last):
+déc. 13 19:20:45 thot networkd-dispatcher[519]:   File "/usr/bin/networkd-dispatcher", line 298, in trigger_all
+déc. 13 19:20:45 thot networkd-dispatcher[519]:     self.handle_state(iface_name,
+déc. 13 19:20:45 thot networkd-dispatcher[519]:   File "/usr/bin/networkd-dispatcher", line 348, in handle_state
+déc. 13 19:20:45 thot networkd-dispatcher[519]:     raise UnknownState(operational_state)
+déc. 13 19:20:45 thot networkd-dispatcher[519]: UnknownState: n/a
+déc. 13 19:20:45 thot networkd-dispatcher[519]: ERROR:Unknown state for interface NetworkctlListState(idx=2, name='ens4', type='ether', operational='n/a', administrative='unmanaged'): n/a
+déc. 13 19:20:45 thot networkd-dispatcher[519]: Traceback (most recent call last):
+déc. 13 19:20:45 thot networkd-dispatcher[519]:   File "/usr/bin/networkd-dispatcher", line 298, in trigger_all
+déc. 13 19:20:45 thot networkd-dispatcher[519]:     self.handle_state(iface_name,
+déc. 13 19:20:45 thot networkd-dispatcher[519]:   File "/usr/bin/networkd-dispatcher", line 348, in handle_state
+déc. 13 19:20:45 thot networkd-dispatcher[519]:     raise UnknownState(operational_state)
+déc. 13 19:20:45 thot networkd-dispatcher[519]: UnknownState: n/a
+déc. 13 19:20:45 thot systemd[1]: Started Dispatcher daemon for systemd-networkd.
+déc. 13 19:20:45 thot EOLECITESTS[628]: 01-netcfg ok, on ne fait rien !
+déc. 13 19:20:45 thot EOLECITESTS[629]: Fin ciContextualizeDaily
+déc. 13 19:20:45 thot EOLECITESTS[630]: Contextualization Machine OK
+déc. 13 19:20:45 thot EOLECITESTS[634]: jenkins 1422907 daily Contextualization Machine : OK
+déc. 13 19:20:45 thot EOLECITESTS[635]: Fin ciContextualizeMachine : ok à 2024-12-13 19:20:45
+déc. 13 19:20:45 thot echo[636]: Contextualisation Ok
+déc. 13 19:20:45 thot systemd[1]: EoleCiTestsContext.service: Succeeded.
+déc. 13 19:20:45 thot systemd[1]: Finished EOLE Continuous Integration Tests Contextualisation.
+déc. 13 19:20:45 thot systemd[1]: Reached target Network (Pre).
+déc. 13 19:20:45 thot systemd[1]: Starting Apply netplan config...
+déc. 13 19:20:45 thot systemd[1]: Starting Raise network interfaces...
+déc. 13 19:20:45 thot systemd[1]: Starting Network Service...
+déc. 13 19:20:45 thot eole-purge-interfaces[637]: Purge all interfaces...
+déc. 13 19:20:45 thot systemd-networkd[641]: Enumeration completed
+déc. 13 19:20:45 thot systemd[1]: Started Network Service.
+déc. 13 19:20:45 thot systemd-networkd[641]: ens4: IPv6 successfully enabled
+déc. 13 19:20:45 thot systemd-networkd[641]: ens4: Link UP
+déc. 13 19:20:45 thot systemd[1]: Starting Wait for Network to be Configured...
+déc. 13 19:20:45 thot systemd[1]: Starting Network Name Resolution...
+déc. 13 19:20:45 thot systemd-networkd[641]: ens4: Gained carrier
+déc. 13 19:20:45 thot systemd[1]: Finished Raise network interfaces.
+déc. 13 19:20:45 thot systemd-networkd[641]: ens4: DHCPv4 address 192.168.0.153/24 via 192.168.0.1
+déc. 13 19:20:45 thot dbus-daemon[508]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.4' (uid=100 pid=641 comm="/lib/systemd/systemd-networkd " label="unconfined")
+déc. 13 19:20:45 thot systemd[1]: Started ntp-systemd-netif.service.
+déc. 13 19:20:45 thot systemd[1]: Starting Hostname Service...
+déc. 13 19:20:45 thot dbus-daemon[508]: [system] Successfully activated service 'org.freedesktop.hostname1'
+déc. 13 19:20:45 thot systemd[1]: Started Hostname Service.
+déc. 13 19:20:45 thot systemd-resolved[669]: Positive Trust Anchors:
+déc. 13 19:20:45 thot systemd-resolved[669]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+déc. 13 19:20:45 thot systemd-resolved[669]: Negative trust anchors: 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa corp home internal intranet lan local private test
+déc. 13 19:20:45 thot systemd[1]: ntp-systemd-netif.service: Succeeded.
+déc. 13 19:20:45 thot systemd-resolved[669]: Using system hostname 'thot'.
+déc. 13 19:20:45 thot systemd[1]: Started Network Name Resolution.
+déc. 13 19:20:45 thot systemd[1]: Reached target Host and Network Name Lookups.
+déc. 13 19:20:45 thot systemd[1]: Reloading.
+déc. 13 19:20:45 thot networkd-dispatcher[718]: openssh-server: SSH daemon is not running, exit
+déc. 13 19:20:46 thot systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+déc. 13 19:20:46 thot kernel: IPv6: ens4: IPv6 duplicate address fe80::c0ff:fea8:66 used by 02:00:c0:a8:00:66 detected!
+déc. 13 19:20:46 thot systemd-networkd[641]: ens4: Re-configuring with /run/systemd/network/10-netplan-ens4.network
+déc. 13 19:20:46 thot systemd-networkd[641]: ens4: DHCP lease lost
+déc. 13 19:20:46 thot systemd-networkd[641]: ens4: IPv6 successfully enabled
+déc. 13 19:20:46 thot systemd-networkd[641]: ens4: DHCPv4 address 192.168.0.153/24 via 192.168.0.1
+déc. 13 19:20:46 thot systemd[1]: Started ntp-systemd-netif.service.
+déc. 13 19:20:46 thot networkd-dispatcher[770]: openssh-server: SSH daemon is not running, exit
+déc. 13 19:20:46 thot systemd[1]: ntp-systemd-netif.service: Succeeded.
+déc. 13 19:20:50 thot systemd[1]: dmesg.service: Succeeded.
+déc. 13 19:20:51 thot systemd-networkd[641]: ens4: Re-configuring with /run/systemd/network/10-netplan-ens4.network
+déc. 13 19:20:51 thot systemd-networkd[641]: ens4: DHCP lease lost
+déc. 13 19:20:51 thot systemd[1]: Started ntp-systemd-netif.service.
+déc. 13 19:20:51 thot systemd-networkd[641]: ens4: IPv6 successfully enabled
+déc. 13 19:20:51 thot systemd[1]: Starting EOLE Continuous Integration Tests Contextualisation...
+déc. 13 19:20:51 thot systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+déc. 13 19:20:51 thot systemd[1]: Finished Apply netplan config.
+déc. 13 19:20:51 thot systemd[1]: Reached target Network.
+déc. 13 19:20:51 thot systemd[1]: Starting EOLE Creole server...
+déc. 13 19:20:51 thot systemd-networkd[641]: ens4: DHCPv4 address 192.168.0.153/24 via 192.168.0.1
+déc. 13 19:20:51 thot systemd[1]: Starting Eole flask server...
+déc. 13 19:20:51 thot systemd[1]: Starting Wait for Network to be Configured by Netplan...
+déc. 13 19:20:51 thot bash[833]: CheckUpdate.sh: /root/mount.eole-ci-tests A JOUR
+déc. 13 19:20:51 thot systemd[1]: Starting A high performance web server and a reverse proxy server...
+déc. 13 19:20:51 thot systemd[1]: Starting Network UPS Tools - power device driver controller...
+déc. 13 19:20:51 thot systemd[1]: Condition check resulted in fast remote file copy program daemon being skipped.
+déc. 13 19:20:51 thot systemd[1]: Starting OpenBSD Secure Shell server...
+déc. 13 19:20:51 thot upsdrvctl[853]: Error: no UPS definitions found in ups.conf
+déc. 13 19:20:51 thot upsdrvctl[853]: Network UPS Tools - UPS driver controller 2.7.4
+déc. 13 19:20:51 thot systemd[1]: Starting Permit User Sessions...
+déc. 13 19:20:51 thot networkd-dispatcher[854]: openssh-server: SSH daemon is not running, exit
+déc. 13 19:20:51 thot bash[833]: CheckUpdate.sh: /root/getVMContext.sh A JOUR
+déc. 13 19:20:51 thot systemd[1]: Started vnStat network traffic monitor.
+déc. 13 19:20:51 thot systemd[1]: nut-driver.service: Control process exited, code=exited, status=1/FAILURE
+déc. 13 19:20:51 thot systemd[1]: nut-driver.service: Failed with result 'exit-code'.
+déc. 13 19:20:51 thot systemd[1]: Failed to start Network UPS Tools - power device driver controller.
+déc. 13 19:20:51 thot systemd[1]: Finished Permit User Sessions.
+déc. 13 19:20:51 thot systemd[1]: Starting Network UPS Tools - power devices information server...
+déc. 13 19:20:51 thot upsd[866]: upsd disabled, please adjust the configuration to your needs
+déc. 13 19:20:51 thot upsd[866]: Then set MODE to a suitable value in /etc/nut/nut.conf to enable it
+déc. 13 19:20:51 thot systemd[1]: nut-server.service: Succeeded.
+déc. 13 19:20:51 thot systemd[1]: Started Network UPS Tools - power devices information server.
+déc. 13 19:20:51 thot systemd[1]: Starting Network UPS Tools - power device monitor and shutdown controller...
+déc. 13 19:20:51 thot bash[833]: CheckUpdate.sh: /root/EoleCiFunctions.sh A JOUR
+déc. 13 19:20:51 thot systemd[1]: ntp-systemd-netif.service: Succeeded.
+déc. 13 19:20:51 thot bash[833]: CheckUpdate.sh: /root/.EoleCiTestsContext.sh A JOUR
+déc. 13 19:20:51 thot upsmon[878]: upsmon disabled, please adjust the configuration to your needs
+déc. 13 19:20:51 thot upsmon[878]: Then set MODE to a suitable value in /etc/nut/nut.conf to enable it
+déc. 13 19:20:51 thot bash[833]: CheckUpdate.sh: /root/.EoleCiTestsDaemon.sh A JOUR
+déc. 13 19:20:51 thot systemd[1]: nut-monitor.service: Can't open PID file /run/nut/upsmon.pid (yet?) after start: Operation not permitted
+déc. 13 19:20:51 thot systemd[1]: nut-monitor.service: Failed with result 'protocol'.
+déc. 13 19:20:51 thot systemd[1]: Failed to start Network UPS Tools - power device monitor and shutdown controller.
+déc. 13 19:20:51 thot sshd[902]: Server listening on 0.0.0.0 port 22.
+déc. 13 19:20:51 thot sshd[902]: Server listening on :: port 22.
+déc. 13 19:20:51 thot systemd[1]: Started OpenBSD Secure Shell server.
+déc. 13 19:20:51 thot vnstatd[859]: Info: vnStat daemon 2.6 started. (pid:859 uid:111 gid:120 64-bit)
+déc. 13 19:20:51 thot vnstatd[859]: Info: Monitoring (1): ens4 (1000 Mbit)
+déc. 13 19:20:51 thot EOLECITESTS[920]: ciContextualizeMachine: déjà réalisée à
+déc. 13 19:20:51 thot echo[922]: Contextualisation Ok
+déc. 13 19:20:51 thot systemd[1]: EoleCiTestsContext.service: Succeeded.
+déc. 13 19:20:51 thot systemd[1]: Finished EOLE Continuous Integration Tests Contextualisation.
+déc. 13 19:20:51 thot systemd[1]: Started A high performance web server and a reverse proxy server.
+déc. 13 19:20:52 thot systemd[1]: eoleflask.service: Can't open PID file /run/eoleflask.pid (yet?) after start: Operation not permitted
+déc. 13 19:20:52 thot systemd[1]: Started Eole flask server.
+déc. 13 19:20:52 thot systemd[1]: Condition check resulted in Eole flask server being skipped.
+déc. 13 19:20:53 thot creoled[842]:  ENGINE Listening for SIGTERM.
+déc. 13 19:20:53 thot creoled[842]:  ENGINE Listening for SIGHUP.
+déc. 13 19:20:53 thot creoled[842]:  ENGINE Listening for SIGUSR1.
+déc. 13 19:20:53 thot creoled[842]:  ENGINE Listening for SIGINT.
+déc. 13 19:20:53 thot creoled[842]:  ENGINE Bus STARTING
+déc. 13 19:20:53 thot creoled[842]:  ENGINE Start InotifyMonitor thread
+déc. 13 19:20:53 thot creoled[842]:  ENGINE PID 842 written to '/run/creoled.pid'.
+déc. 13 19:20:53 thot creoled[842]:  ENGINE Started monitor thread '_TimeoutMonitor'.
+déc. 13 19:20:53 thot creoled[842]:  ENGINE Serving on http://127.0.0.1:8000
+déc. 13 19:20:53 thot creoled[842]:  ENGINE Bus STARTED
+déc. 13 19:20:53 thot systemd[1]: Started EOLE Creole server.
+déc. 13 19:20:53 thot systemd[1]: Condition check resulted in Eole Single Sign On server being skipped.
+déc. 13 19:20:53 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:20:53] "GET /get/creole/interface_0/nom_zone_eth0 HTTP/1.1" 200 33 "" "python-requests/2.22.0"
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Limits: Global time limit set to 120000 milliseconds.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Limits: Global size limit set to 104857600 bytes.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Limits: File size limit set to 26214400 bytes.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Limits: Recursion level limit set to 16.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Limits: Files limit set to 10000.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Limits: MaxScriptNormalize limit set to 5242880 bytes.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Limits: MaxPartitions limit set to 50.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Limits: MaxIconsPE limit set to 100.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Limits: MaxRecHWP3 limit set to 16.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Limits: PCREMatchLimit limit set to 10000.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Limits: PCRERecMatchLimit limit set to 5000.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Limits: PCREMaxFileSize limit set to 26214400.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Archive support enabled.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> AlertExceedsMax heuristic detection disabled.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Heuristic alerts enabled.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Portable Executable support enabled.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> ELF support enabled.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Mail files support enabled.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> OLE2 support enabled.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> PDF support enabled.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> SWF support enabled.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> HTML support enabled.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> XMLDOCS support enabled.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> HWP3 support enabled.
+déc. 13 19:21:07 thot clamd[539]: Fri Dec 13 19:21:07 2024 -> Self checking every 3600 seconds.
+déc. 13 19:21:14 thot systemd[1]: systemd-fsckd.service: Succeeded.
+déc. 13 19:21:21 thot systemd[1]: systemd-hostnamed.service: Succeeded.
+déc. 13 19:22:45 thot systemd-networkd-wait-online[668]: Event loop failed: Connection timed out
+déc. 13 19:22:45 thot systemd[1]: systemd-networkd-wait-online.service: Main process exited, code=exited, status=1/FAILURE
+déc. 13 19:22:45 thot systemd[1]: systemd-networkd-wait-online.service: Failed with result 'exit-code'.
+déc. 13 19:22:45 thot systemd[1]: Failed to start Wait for Network to be Configured.
+déc. 13 19:22:51 thot systemd-networkd-wait-online[846]: Event loop failed: Connection timed out
+déc. 13 19:22:51 thot systemd[1]: netplan-wait-online.service: Main process exited, code=exited, status=1/FAILURE
+déc. 13 19:22:51 thot systemd[1]: netplan-wait-online.service: Failed with result 'exit-code'.
+déc. 13 19:22:51 thot systemd[1]: Failed to start Wait for Network to be Configured by Netplan.
+déc. 13 19:22:51 thot systemd[1]: Reached target Network is Online.
+déc. 13 19:22:51 thot systemd[1]: Starting The Apache HTTP Server...
+déc. 13 19:22:51 thot systemd[1]: Started ClamAV virus database updater.
+déc. 13 19:22:51 thot systemd[1]: Starting Internet superserver...
+déc. 13 19:22:51 thot systemd[1]: Starting Force synchronisation of time...
+déc. 13 19:22:51 thot systemd[1]: Starting /etc/rc.local Compatibility...
+déc. 13 19:22:51 thot systemd[1]: Starting LSB: OpenLDAP standalone server (Lightweight Directory Access Protocol)...
+déc. 13 19:22:51 thot systemd[1]: Condition check resulted in Ubuntu Pro Background Auto Attach being skipped.
+déc. 13 19:22:51 thot systemd[1]: Started /etc/rc.local Compatibility.
+déc. 13 19:22:51 thot ntpdate[1028]: 13 Dec 19:22:51 ntpdate[1028]: ntpdate 4.2.8p12@1.3728-o (1)
+déc. 13 19:22:51 thot systemd[1]: Starting Hold until boot process finishes up...
+déc. 13 19:22:51 thot systemd[1]: Starting Terminate Plymouth Boot Screen...
+déc. 13 19:22:51 thot systemd[1]: Started Internet superserver.
+déc. 13 19:22:51 thot systemd[1]: plymouth-quit-wait.service: Succeeded.
+déc. 13 19:22:51 thot systemd[1]: Finished Hold until boot process finishes up.
+déc. 13 19:22:51 thot slapd[1035]:  * Starting OpenLDAP slapd
+déc. 13 19:22:51 thot systemd[1]: Starting Set console scheme...
+déc. 13 19:22:51 thot systemd[1]: plymouth-quit.service: Succeeded.
+déc. 13 19:22:51 thot systemd[1]: Finished Terminate Plymouth Boot Screen.
+déc. 13 19:22:51 thot systemd[1]: Finished Set console scheme.
+déc. 13 19:22:51 thot systemd[1]: Created slice system-getty.slice.
+déc. 13 19:22:51 thot systemd[1]: Started Getty on tty1.
+déc. 13 19:22:51 thot systemd[1]: Reached target Login Prompts.
+déc. 13 19:22:51 thot slapd[1067]: @(#) $OpenLDAP: slapd  (Ubuntu) (Jan 25 2024 18:43:43) $
+                                            Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>
+déc. 13 19:22:51 thot freshclam[1007]: Fri Dec 13 19:22:51 2024 -> ClamAV update process started at Fri Dec 13 19:22:51 2024
+déc. 13 19:22:51 thot slapd[1071]: slapd starting
+déc. 13 19:22:51 thot slapd[1035]:    ...done.
+déc. 13 19:22:51 thot systemd[1]: Started LSB: OpenLDAP standalone server (Lightweight Directory Access Protocol).
+déc. 13 19:22:51 thot systemd[1]: Started The Apache HTTP Server.
+déc. 13 19:22:56 thot systemd-resolved[669]: Using degraded feature set (UDP) for DNS server 192.168.0.1.
+déc. 13 19:23:01 thot ntpdate[1028]: Exiting, name server cannot be used: Temporary failure in name resolution (-3)13 Dec 19:23:01 ntpdate[1028]: name server cannot be used: Temporary failure in name resolution (-3)
+déc. 13 19:23:01 thot systemd[1]: ntpdate.service: Main process exited, code=exited, status=1/FAILURE
+déc. 13 19:23:01 thot systemd[1]: ntpdate.service: Failed with result 'exit-code'.
+déc. 13 19:23:01 thot systemd[1]: Failed to start Force synchronisation of time.
+déc. 13 19:23:01 thot systemd[1]: Reached target System Time Synchronized.
+déc. 13 19:23:01 thot systemd[1]: Started Run certbot twice daily.
+déc. 13 19:23:01 thot systemd[1]: Started Periodic ext4 Online Metadata Check for All Filesystems.
+déc. 13 19:23:01 thot systemd[1]: Started Daily exim4-base housekeeping.
+déc. 13 19:23:01 thot systemd[1]: Started Discard unused blocks once a week.
+déc. 13 19:23:01 thot systemd[1]: Started Daily rotation of log files.
+déc. 13 19:23:01 thot systemd[1]: Started Daily man-db regeneration.
+déc. 13 19:23:01 thot systemd[1]: Started Message of the Day.
+déc. 13 19:23:01 thot systemd[1]: Started Clean PHP session files every 30 mins.
+déc. 13 19:23:01 thot systemd[1]: Reached target Timers.
+déc. 13 19:23:01 thot systemd[1]: Starting Discard unused blocks on filesystems from /etc/fstab...
+déc. 13 19:23:01 thot systemd[1]: Starting MySQL Community Server...
+déc. 13 19:23:01 thot systemd[1]: Starting Network Time Service...
+déc. 13 19:23:01 thot systemd[1]: Starting Clean php session files...
+déc. 13 19:23:01 thot systemd[1]: Starting exim4-base housekeeping...
+déc. 13 19:23:01 thot systemd[1]: Starting Daily man-db regeneration...
+déc. 13 19:23:01 thot freshclam[1007]: Fri Dec 13 19:23:01 2024 -> daily database available for update (local version: 27484, remote version: 27486)
+déc. 13 19:23:01 thot ntpd[1133]: ntpd 4.2.8p12@1.3728-o (1): Starting
+déc. 13 19:23:01 thot ntpd[1133]: Command line: /usr/sbin/ntpd -p /var/run/ntpd.pid -g -c /run/ntp.conf.dhcp -u 109:117
+déc. 13 19:23:01 thot systemd[1]: Started Network Time Service.
+déc. 13 19:23:01 thot ntpd[1144]: proto: precision = 0.061 usec (-24)
+déc. 13 19:23:01 thot ntpd[1144]: leapsecond file ('/usr/share/zoneinfo/leap-seconds.list'): good hash signature
+déc. 13 19:23:01 thot ntpd[1144]: leapsecond file ('/usr/share/zoneinfo/leap-seconds.list'): loaded, expire=2025-06-28T00:00:00Z last=2017-01-01T00:00:00Z ofs=37
+déc. 13 19:23:01 thot ntpd[1144]: Listen and drop on 0 v6wildcard [::]:123
+déc. 13 19:23:01 thot ntpd[1144]: Listen and drop on 1 v4wildcard 0.0.0.0:123
+déc. 13 19:23:01 thot ntpd[1144]: Listen normally on 2 lo 127.0.0.1:123
+déc. 13 19:23:01 thot ntpd[1144]: Listen normally on 3 ens4 192.168.0.153:123
+déc. 13 19:23:01 thot ntpd[1144]: Listen normally on 4 lo [::1]:123
+déc. 13 19:23:01 thot ntpd[1144]: bind(21) AF_INET6 fe80::c0ff:fea8:66%2#123 flags 0x11 failed: Cannot assign requested address
+déc. 13 19:23:01 thot ntpd[1144]: unable to create socket on ens4 (5) for fe80::c0ff:fea8:66%2#123
+déc. 13 19:23:01 thot ntpd[1144]: failed to init interface for address fe80::c0ff:fea8:66%2
+déc. 13 19:23:01 thot ntpd[1144]: Listening on routing socket on fd #21 for interface updates
+déc. 13 19:23:01 thot ntpd[1144]: kernel reports TIME_ERROR: 0x41: Clock Unsynchronized
+déc. 13 19:23:01 thot ntpd[1144]: kernel reports TIME_ERROR: 0x41: Clock Unsynchronized
+déc. 13 19:23:01 thot systemd[1]: exim4-base.service: Succeeded.
+déc. 13 19:23:01 thot systemd[1]: Finished exim4-base housekeeping.
+déc. 13 19:23:01 thot systemd[1]: Starting Rotate log files...
+déc. 13 19:23:02 thot systemd[1]: phpsessionclean.service: Succeeded.
+déc. 13 19:23:02 thot systemd[1]: Finished Clean php session files.
+déc. 13 19:23:02 thot fstrim[1089]: /boot: 524,3 MiB (549736448 bytes) trimmed on /dev/sda1
+déc. 13 19:23:02 thot fstrim[1089]: /tmp: 1,8 GiB (1925636096 bytes) trimmed on /dev/mapper/vgthot-tmp
+déc. 13 19:23:02 thot fstrim[1089]: /var: 580,1 MiB (608325632 bytes) trimmed on /dev/mapper/vgthot-var
+déc. 13 19:23:02 thot fstrim[1089]: /: 5,8 GiB (6218620928 bytes) trimmed on /dev/mapper/vgthot-root
+déc. 13 19:23:02 thot systemd[1]: Finished Discard unused blocks on filesystems from /etc/fstab.
+déc. 13 19:23:02 thot systemd[1]: Reloading The Apache HTTP Server.
+déc. 13 19:23:02 thot systemd[1]: man-db.service: Succeeded.
+déc. 13 19:23:02 thot systemd[1]: Finished Daily man-db regeneration.
+déc. 13 19:23:02 thot systemd[1]: Reloaded The Apache HTTP Server.
+déc. 13 19:23:02 thot clamd[539]: Fri Dec 13 19:23:02 2024 -> SIGHUP caught: re-opening log file.
+déc. 13 19:23:02 thot logrotate[1178]: error: error running shared postrotate script for '/var/log/mysql.log /var/log/mysql/*log '
+déc. 13 19:23:02 thot rsyslogd[525]: [origin software="rsyslogd" swVersion="8.2001.0" x-pid="525" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
+déc. 13 19:23:02 thot ntpd[1144]: bind(24) AF_INET6 fe80::c0ff:fea8:66%2#123 flags 0x11 failed: Cannot assign requested address
+déc. 13 19:23:02 thot ntpd[1144]: unable to create socket on ens4 (6) for fe80::c0ff:fea8:66%2#123
+déc. 13 19:23:02 thot ntpd[1144]: failed to init interface for address fe80::c0ff:fea8:66%2
+déc. 13 19:23:03 thot freshclam[1007]: Fri Dec 13 19:23:03 2024 -> Testing database: '/var/lib/clamav/tmp.7c5f43f30a/clamav-9b35239540b41240185ae6cf08e53fe8.tmp-daily.cld' ...
+déc. 13 19:23:03 thot systemd[1]: logrotate.service: Main process exited, code=exited, status=1/FAILURE
+déc. 13 19:23:03 thot systemd[1]: logrotate.service: Failed with result 'exit-code'.
+déc. 13 19:23:03 thot systemd[1]: Failed to start Rotate log files.
+déc. 13 19:23:05 thot systemd[1]: Started MySQL Community Server.
+déc. 13 19:23:05 thot systemd[1]: Starting LSB: exim Mail Transport Agent...
+déc. 13 19:23:05 thot exim4[1291]:  * Starting MTA
+déc. 13 19:23:05 thot exim4[1300]: 2024-12-13 19:23:05 Warning: No server certificate defined; will use a selfsigned one.
+déc. 13 19:23:05 thot exim4[1300]:  Suggested action: either install a certificate or change tls_advertise_hosts option
+déc. 13 19:23:05 thot exim4[1291]:    ...done.
+déc. 13 19:23:05 thot systemd[1]: Started LSB: exim Mail Transport Agent.
+déc. 13 19:23:05 thot systemd[1]: Reached target Multi-User System.
+déc. 13 19:23:05 thot systemd[1]: Reached target Graphical Interface.
+déc. 13 19:23:05 thot systemd[1]: Starting EOLE Continuous Integration Tests Daemon...
+déc. 13 19:23:05 thot systemd[1]: Condition check resulted in Bastion firewall manager being skipped.
+déc. 13 19:23:05 thot systemd[1]: Starting Update UTMP about System Runlevel Changes...
+déc. 13 19:23:05 thot systemd[1]: Condition check resulted in Agent zephir being skipped.
+déc. 13 19:23:05 thot systemd[1]: systemd-update-utmp-runlevel.service: Succeeded.
+déc. 13 19:23:05 thot systemd[1]: Finished Update UTMP about System Runlevel Changes.
+déc. 13 19:23:05 thot bash[1310]: CheckUpdate.sh: /root/mount.eole-ci-tests A JOUR
+déc. 13 19:23:05 thot bash[1310]: CheckUpdate.sh: /root/getVMContext.sh A JOUR
+déc. 13 19:23:05 thot bash[1310]: CheckUpdate.sh: /root/EoleCiFunctions.sh A JOUR
+déc. 13 19:23:05 thot bash[1310]: CheckUpdate.sh: /root/.EoleCiTestsContext.sh A JOUR
+déc. 13 19:23:05 thot bash[1310]: CheckUpdate.sh: /root/.EoleCiTestsDaemon.sh A JOUR
+déc. 13 19:23:05 thot systemd[1]: Started EOLE Continuous Integration Tests Daemon.
+déc. 13 19:23:05 thot systemd[1]: Startup finished in 1.590s (kernel) + 2min 22.726s (userspace) = 2min 24.317s.
+déc. 13 19:23:06 thot EOLECITESTS[1384]: systemctl is-active multi-user.target : active
+déc. 13 19:23:06 thot EOLECITESTS[1386]: systemctl is-active network.target : active
+déc. 13 19:23:06 thot EOLECITESTS[1388]: systemctl is-active network-online.target : active
+déc. 13 19:23:06 thot EOLECITESTS[1390]: systemctl is-system-running : degraded
+déc. 13 19:23:06 thot EOLECITESTS[1406]: Debut ciConfigurationDaily
+déc. 13 19:23:06 thot EOLECITESTS[1408]: systemctl is-active network.target : active
+déc. 13 19:23:06 thot EOLECITESTS[1410]: systemctl is-active network-online.target : active
+déc. 13 19:23:06 thot EOLECITESTS[1412]: systemctl is-system-running : degraded
+déc. 13 19:23:06 thot EOLECITESTS[1413]: ls -l /etc/netplan/
+déc. 13 19:23:11 thot EOLECITESTS[1421]: ciPingHost ens4 => 192.168.0.1 ping=0 ==> OK (exit 0)
+déc. 13 19:23:11 thot EOLECITESTS[1428]: GW actuelle : 192.168.0.1 OK
+déc. 13 19:23:11 thot EOLECITESTS[1430]: * désactivation updatedb/locate sur /mnt/eole-ci-test présente !
+déc. 13 19:23:11 thot EOLECITESTS[1433]: * Creation lien daily dans /mnt/eole-ci-tests/output/jenkins/1422907
+déc. 13 19:23:11 thot freshclam[1007]: Fri Dec 13 19:23:11 2024 -> Database test passed.
+déc. 13 19:23:11 thot freshclam[1007]: Fri Dec 13 19:23:11 2024 -> daily.cld updated (version: 27486, sigs: 2070186, f-level: 90, builder: raynman)
+déc. 13 19:23:11 thot freshclam[1007]: Fri Dec 13 19:23:11 2024 -> main.cvd database is up-to-date (version: 62, sigs: 6647427, f-level: 90, builder: sigmgr)
+déc. 13 19:23:11 thot freshclam[1007]: Fri Dec 13 19:23:11 2024 -> bytecode.cld database is up-to-date (version: 335, sigs: 86, f-level: 90, builder: raynman)
+déc. 13 19:23:11 thot freshclam[1007]: Fri Dec 13 19:23:11 2024 -> Clamd successfully notified about the update.
+déc. 13 19:23:11 thot clamd[539]: Fri Dec 13 19:23:11 2024 -> Reading databases from /var/lib/clamav
+déc. 13 19:23:32 thot clamd[539]: Fri Dec 13 19:23:32 2024 -> Database correctly reloaded (8701691 signatures)
+déc. 13 19:23:32 thot clamd[539]: Fri Dec 13 19:23:32 2024 -> Activating the newly loaded database...
+déc. 13 19:23:41 thot EOLECITESTS[1449]: Adresse(s) ip changée de  vers 192.168.0.153
+déc. 13 19:23:42 thot EOLECITESTS[1470]: ciUpdateDaily BUILD_DAILY
+déc. 13 19:23:42 thot EOLECITESTS[1471]: 'proposed-update' déjà actif!
+déc. 13 19:23:42 thot EOLECITESTS[1472]: ciSetHttpProxy, pas de proxy pour les Daily
+déc. 13 19:23:42 thot EOLECITESTS[1473]: liste des noyaux
+déc. 13 19:23:42 thot EOLECITESTS[1475]: * espaces disponibles
+déc. 13 19:23:42 thot EOLECITESTS[1477]: ciSetHttpProxy, pas de proxy pour les Daily
+déc. 13 19:23:42 thot EOLECITESTS[1478]: dpkg --configure -a
+déc. 13 19:23:42 thot EOLECITESTS[1484]: ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+déc. 13 19:23:42 thot EOLECITESTS[1487]: ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+déc. 13 19:23:42 thot EOLECITESTS[1490]: ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+déc. 13 19:23:42 thot EOLECITESTS[1491]: Maj-Auto RC
+déc. 13 19:23:42 thot EOLECITESTS[1492]: (py3) ciMonitor maj_auto
+déc. 13 19:23:43 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:43] "GET /get/creole/interface_0/nom_zone_eth0 HTTP/1.1" 200 33 "" "python-requests/2.22.0"
+déc. 13 19:23:43 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:43] "GET /get/creole?variable=eole_release HTTP/1.1" 200 34 "" "python-requests/2.22.0"
+déc. 13 19:23:43 thot zephir[1494]: MAJ => INIT : Début en candidate
+déc. 13 19:23:43 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:43] "GET /get/creole?variable=eole_module HTTP/1.1" 200 33 "" "python-requests/2.22.0"
+déc. 13 19:23:43 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:43] "GET /get/creole?variable=numero_etab HTTP/1.1" 200 31 "" "python-requests/2.22.0"
+déc. 13 19:23:44 thot zephir[1494]: MAJ => MSG : Mise à jour en candidate forcée par l'utilisateur
+déc. 13 19:23:44 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:44] "GET /get/creole?variable=mode_conteneur_actif HTTP/1.1" 200 32 "" "python-requests/2.22.0"
+déc. 13 19:23:45 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:45] "GET /get/creole HTTP/1.1" 200 9799 "" "python-requests/2.22.0"
+déc. 13 19:23:45 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:45] "GET /get/creole?variable=mode_conteneur_actif HTTP/1.1" 200 32 "" "python-requests/2.22.0"
+déc. 13 19:23:45 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:45] "GET /get/containers/containers HTTP/1.1" 200 1233 "" "python-requests/2.22.0"
+déc. 13 19:23:46 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:46] "GET /get/containers?withoption=real_container&withvalue=root HTTP/1.1" 200 102558 "" "python-requests/2.22.0"
+déc. 13 19:23:46 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:46] "GET /get/creole?variable=ubuntu_update_mirrors HTTP/1.1" 200 64 "" "python-requests/2.22.0"
+déc. 13 19:23:56 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:56] "GET /get/creole?variable=envole_version HTTP/1.1" 200 201 "" "python-requests/2.22.0"
+déc. 13 19:23:56 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:56] "GET /get/creole?variable=additional_repository_name HTTP/1.1" 200 29 "" "python-requests/2.22.0"
+déc. 13 19:23:56 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:56] "GET /get/creole?variable=additional_repository_source HTTP/1.1" 200 29 "" "python-requests/2.22.0"
+déc. 13 19:23:56 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:56] "GET /get/creole?variable=additional_repository_key_type HTTP/1.1" 200 29 "" "python-requests/2.22.0"
+déc. 13 19:23:56 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:56] "GET /get/creole?variable=additional_repository_key_url HTTP/1.1" 200 29 "" "python-requests/2.22.0"
+déc. 13 19:23:56 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:56] "GET /get/creole?variable=additional_repository_key_signserver HTTP/1.1" 200 29 "" "python-requests/2.22.0"
+déc. 13 19:23:56 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:23:56] "GET /get/creole?variable=additional_repository_key_fingerprint HTTP/1.1" 200 29 "" "python-requests/2.22.0"
+déc. 13 19:24:00 thot systemd[1]: Starting Update APT News...
+déc. 13 19:24:00 thot systemd[1]: Starting Update the local ESM caches...
+déc. 13 19:24:00 thot audit[2007]: AVC apparmor="DENIED" operation="open" profile="ubuntu_pro_esm_cache//apt_methods_gpgv" name="/dev/tty" pid=2007 comm="apt-key" requested_mask="wr" denied_mask="wr" fsuid=105 ouid=0
+déc. 13 19:24:00 thot kernel: kauditd_printk_skb: 17 callbacks suppressed
+déc. 13 19:24:00 thot kernel: audit: type=1400 audit(1734114240.763:28): apparmor="DENIED" operation="open" profile="ubuntu_pro_esm_cache//apt_methods_gpgv" name="/dev/tty" pid=2007 comm="apt-key" requested_mask="wr" denied_mask="wr" fsuid=105 ouid=0
+déc. 13 19:24:00 thot audit[2078]: AVC apparmor="DENIED" operation="open" profile="ubuntu_pro_esm_cache//apt_methods_gpgv" name="/dev/tty" pid=2078 comm="apt-key" requested_mask="wr" denied_mask="wr" fsuid=105 ouid=0
+déc. 13 19:24:00 thot kernel: audit: type=1400 audit(1734114240.859:29): apparmor="DENIED" operation="open" profile="ubuntu_pro_esm_cache//apt_methods_gpgv" name="/dev/tty" pid=2078 comm="apt-key" requested_mask="wr" denied_mask="wr" fsuid=105 ouid=0
+déc. 13 19:24:01 thot systemd[1]: esm-cache.service: Succeeded.
+déc. 13 19:24:01 thot systemd[1]: Finished Update the local ESM caches.
+déc. 13 19:24:07 thot systemd[1]: apt-news.service: Succeeded.
+déc. 13 19:24:07 thot systemd[1]: Finished Update APT News.
+déc. 13 19:24:18 thot ntpd[1144]: receive: Unexpected origin timestamp 0xeb06fa52.407693bc does not match aorg 0000000000.00000000 from server@192.168.232.2 xmt 0xeb06fa52.40a08fab
+déc. 13 19:24:21 thot php7.4-common[6007]: php_invoke calendar: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:21 thot php7.4-common[6039]: php_invoke calendar: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:22 thot php7.4-common[6198]: php_invoke ctype: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:22 thot php7.4-common[6230]: php_invoke ctype: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:22 thot php7.4-common[6389]: php_invoke exif: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:22 thot php7.4-common[6421]: php_invoke exif: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:23 thot php7.4-common[6580]: php_invoke fileinfo: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:23 thot php7.4-common[6612]: php_invoke fileinfo: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:23 thot php7.4-common[6771]: php_invoke ffi: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:23 thot php7.4-common[6803]: php_invoke ffi: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:23 thot php7.4-common[6962]: php_invoke ftp: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:23 thot php7.4-common[6994]: php_invoke ftp: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:24 thot php7.4-common[7153]: php_invoke gettext: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:24 thot php7.4-common[7185]: php_invoke gettext: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:24 thot php7.4-common[7344]: php_invoke iconv: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:24 thot php7.4-common[7376]: php_invoke iconv: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:24 thot php7.4-common[7535]: php_invoke pdo: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:24 thot php7.4-common[7567]: php_invoke pdo: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:25 thot php7.4-common[7726]: php_invoke phar: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:25 thot php7.4-common[7758]: php_invoke phar: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:25 thot php7.4-common[7917]: php_invoke posix: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:25 thot php7.4-common[7949]: php_invoke posix: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:26 thot php7.4-common[8108]: php_invoke shmop: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:26 thot php7.4-common[8140]: php_invoke shmop: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:26 thot php7.4-common[8299]: php_invoke sockets: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:26 thot php7.4-common[8331]: php_invoke sockets: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:26 thot php7.4-common[8490]: php_invoke sysvmsg: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:26 thot php7.4-common[8522]: php_invoke sysvmsg: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:27 thot php7.4-common[8681]: php_invoke sysvsem: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:27 thot php7.4-common[8713]: php_invoke sysvsem: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:27 thot php7.4-common[8872]: php_invoke sysvshm: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:27 thot php7.4-common[8904]: php_invoke sysvshm: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:28 thot php7.4-common[9063]: php_invoke tokenizer: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:28 thot php7.4-common[9095]: php_invoke tokenizer: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:28 thot php7.4-curl[9255]: php_invoke curl: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:28 thot php7.4-curl[9287]: php_invoke curl: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:28 thot php7.4-mysql[9447]: php_invoke mysqlnd: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:28 thot php7.4-mysql[9479]: php_invoke mysqlnd: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:29 thot php7.4-mysql[9638]: php_invoke mysqli: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:29 thot php7.4-mysql[9670]: php_invoke mysqli: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:29 thot php7.4-mysql[9829]: php_invoke pdo_mysql: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:29 thot php7.4-mysql[9861]: php_invoke pdo_mysql: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:30 thot php7.4-imap[10021]: php_invoke imap: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:30 thot php7.4-imap[10053]: php_invoke imap: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:30 thot php7.4-readline[10213]: php_invoke readline: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:30 thot php7.4-readline[10245]: php_invoke readline: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:30 thot php7.4-intl[10405]: php_invoke intl: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:30 thot php7.4-intl[10437]: php_invoke intl: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:31 thot php7.4-ldap[10597]: php_invoke ldap: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:31 thot php7.4-ldap[10629]: php_invoke ldap: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:31 thot php7.4-opcache[10789]: php_invoke opcache: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:31 thot php7.4-opcache[10821]: php_invoke opcache: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:32 thot php7.4-sqlite3[10981]: php_invoke sqlite3: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:32 thot php7.4-sqlite3[11013]: php_invoke sqlite3: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:32 thot php7.4-sqlite3[11172]: php_invoke pdo_sqlite: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:32 thot php7.4-sqlite3[11204]: php_invoke pdo_sqlite: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:32 thot php7.4-gd[11364]: php_invoke gd: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:32 thot php7.4-gd[11396]: php_invoke gd: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:33 thot php7.4-json[11556]: php_invoke json: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:33 thot php7.4-json[11588]: php_invoke json: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:33 thot php7.4-xml[11753]: php_invoke dom: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:33 thot php7.4-xml[11785]: php_invoke dom: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:33 thot php7.4-xml[11944]: php_invoke simplexml: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:34 thot php7.4-xml[11976]: php_invoke simplexml: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:34 thot php7.4-xml[12135]: php_invoke xml: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:34 thot php7.4-xml[12167]: php_invoke xml: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:34 thot php7.4-xml[12326]: php_invoke xmlreader: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:34 thot php7.4-xml[12358]: php_invoke xmlreader: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:35 thot php7.4-xml[12517]: php_invoke xmlwriter: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:35 thot php7.4-xml[12549]: php_invoke xmlwriter: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:35 thot php7.4-xml[12708]: php_invoke xsl: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:35 thot php7.4-xml[12740]: php_invoke xsl: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:35 thot php7.4-cli[12862]: php_invoke dom: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:35 thot php7.4-cli[12895]: php_invoke intl: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:35 thot php7.4-cli[12928]: php_invoke iconv: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:35 thot php7.4-cli[12961]: php_invoke pdo_mysql: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[12994]: php_invoke sysvshm: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13027]: php_invoke phar: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13060]: php_invoke sysvmsg: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13093]: php_invoke shmop: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13126]: php_invoke mysqli: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13159]: php_invoke readline: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13192]: php_invoke ctype: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13225]: php_invoke xsl: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13258]: php_invoke json: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13291]: php_invoke simplexml: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13324]: php_invoke calendar: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13357]: php_invoke xml: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13390]: php_invoke gettext: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13423]: php_invoke pdo_sqlite: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13456]: php_invoke sysvsem: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13489]: php_invoke curl: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13522]: php_invoke gd: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13555]: php_invoke xmlreader: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13588]: php_invoke ftp: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13621]: php_invoke pdo: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13654]: php_invoke mysqlnd: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13687]: php_invoke sockets: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13720]: php_invoke posix: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13753]: php_invoke tokenizer: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13786]: php_invoke exif: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13819]: php_invoke sqlite3: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:36 thot php7.4-cli[13852]: php_invoke ffi: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:37 thot php7.4-cli[13885]: php_invoke imap: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:37 thot php7.4-cli[13918]: php_invoke ldap: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:37 thot php7.4-cli[13951]: php_invoke xmlwriter: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:37 thot php7.4-cli[13984]: php_invoke fileinfo: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:37 thot php7.4-cli[14017]: php_invoke opcache: already enabled for PHP 7.4 cli sapi
+déc. 13 19:24:37 thot libapache2-mod-php7.4[14140]: php_invoke dom: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:37 thot libapache2-mod-php7.4[14173]: php_invoke intl: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:37 thot libapache2-mod-php7.4[14206]: php_invoke iconv: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:37 thot libapache2-mod-php7.4[14239]: php_invoke pdo_mysql: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:37 thot libapache2-mod-php7.4[14272]: php_invoke sysvshm: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:37 thot libapache2-mod-php7.4[14305]: php_invoke phar: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:37 thot libapache2-mod-php7.4[14338]: php_invoke sysvmsg: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:37 thot libapache2-mod-php7.4[14371]: php_invoke shmop: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:37 thot libapache2-mod-php7.4[14404]: php_invoke mysqli: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:37 thot libapache2-mod-php7.4[14437]: php_invoke readline: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:37 thot libapache2-mod-php7.4[14470]: php_invoke ctype: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:37 thot libapache2-mod-php7.4[14503]: php_invoke xsl: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:37 thot libapache2-mod-php7.4[14536]: php_invoke json: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[14569]: php_invoke simplexml: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[14602]: php_invoke calendar: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[14635]: php_invoke xml: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[14668]: php_invoke gettext: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[14701]: php_invoke pdo_sqlite: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[14734]: php_invoke sysvsem: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[14767]: php_invoke curl: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[14800]: php_invoke gd: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[14833]: php_invoke xmlreader: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[14866]: php_invoke ftp: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[14899]: php_invoke pdo: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[14932]: php_invoke mysqlnd: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[14965]: php_invoke sockets: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[14998]: php_invoke posix: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[15031]: php_invoke tokenizer: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[15064]: php_invoke exif: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[15097]: php_invoke sqlite3: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[15130]: php_invoke ffi: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[15163]: php_invoke imap: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[15196]: php_invoke ldap: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[15229]: php_invoke xmlwriter: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[15262]: php_invoke fileinfo: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[15295]: php_invoke opcache: already enabled for PHP 7.4 apache2 sapi
+déc. 13 19:24:38 thot libapache2-mod-php7.4[15303]: libapache2-mod-php7.4: not switching MPM - already enabled
+déc. 13 19:24:39 thot systemd[1]: Reloading.
+déc. 13 19:24:39 thot systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+déc. 13 19:24:39 thot systemd[1]: Stopping The Apache HTTP Server...
+déc. 13 19:24:39 thot systemd[1]: apache2.service: Succeeded.
+déc. 13 19:24:39 thot systemd[1]: Stopped The Apache HTTP Server.
+déc. 13 19:24:39 thot systemd[1]: Starting The Apache HTTP Server...
+déc. 13 19:24:39 thot systemd[1]: Started The Apache HTTP Server.
+déc. 13 19:24:40 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:24:40] "GET /reload_config HTTP/1.1" 200 31 "" "python-requests/2.22.0"
+déc. 13 19:24:41 thot systemd[1]: Stopping Eole flask server...
+déc. 13 19:24:42 thot systemd[1]: eoleflask.service: Succeeded.
+déc. 13 19:24:42 thot systemd[1]: Stopped Eole flask server.
+déc. 13 19:24:42 thot systemd[1]: Starting Eole flask server...
+déc. 13 19:24:42 thot systemd[1]: eoleflask.service: Can't open PID file /run/eoleflask.pid (yet?) after start: Operation not permitted
+déc. 13 19:24:42 thot systemd[1]: Started Eole flask server.
+déc. 13 19:24:42 thot zephir[1494]: MAJ => FIN : 15 paquets mis à jour en candidate
+déc. 13 19:24:42 thot zephir[1494]: MAJ => MSG : Reconfiguration du serveur à planifier
+déc. 13 19:24:42 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:24:42] "GET /get/creole/interface_0/nom_zone_eth0 HTTP/1.1" 200 33 "" "python-requests/2.22.0"
+déc. 13 19:24:43 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:24:43] "GET /get/creole/interface_0/nom_zone_eth0 HTTP/1.1" 200 33 "" "python-requests/2.22.0"
+déc. 13 19:24:43 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:24:43] "GET /get/creole?variable=eole_release HTTP/1.1" 200 34 "" "python-requests/2.22.0"
+déc. 13 19:24:43 thot zephir[15501]: MAJ => INIT : Début en devel
+déc. 13 19:24:43 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:24:43] "GET /get/creole?variable=eole_module HTTP/1.1" 200 33 "" "python-requests/2.22.0"
+déc. 13 19:24:43 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:24:43] "GET /get/creole?variable=numero_etab HTTP/1.1" 200 31 "" "python-requests/2.22.0"
+déc. 13 19:24:44 thot zephir[15501]: MAJ => MSG : Mise à jour en devel forcée par l'utilisateur
+déc. 13 19:24:44 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:24:44] "GET /get/creole?variable=mode_conteneur_actif HTTP/1.1" 200 32 "" "python-requests/2.22.0"
+déc. 13 19:24:46 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:24:46] "GET /get/creole HTTP/1.1" 200 9799 "" "python-requests/2.22.0"
+déc. 13 19:24:46 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:24:46] "GET /get/creole?variable=mode_conteneur_actif HTTP/1.1" 200 32 "" "python-requests/2.22.0"
+déc. 13 19:24:46 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:24:46] "GET /get/containers/containers HTTP/1.1" 200 1233 "" "python-requests/2.22.0"
+déc. 13 19:24:47 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:24:47] "GET /get/containers?withoption=real_container&withvalue=root HTTP/1.1" 200 102558 "" "python-requests/2.22.0"
+déc. 13 19:24:47 thot creoled[842]: 127.0.0.1 - - [13/Dec/2024:19:24:47] "GET /get/creole?variable=ubuntu_update_mirrors HTTP/1.1" 200 64 "" "python-requests/2.22.0"
+déc. 13 19:25:12 thot zephir[15501]: MAJ => ERR : Impossible de configurer les sources APT pour Ubuntu
+déc. 13 19:25:14 thot EOLECITESTS[15540]: Export journalctl entre Daily - maintenant (moins polution salt)

@@ -1,0 +1,31 @@
+# record 1
+dn: CN=G3,OU=ETAB2,DC=ac-test,DC=fr
+objectClass: top
+objectClass: group
+cn: G3
+instanceType: 4
+whenCreated: 20170926142028.0Z
+whenChanged: 20170926142028.0Z
+uSNCreated: 4091
+uSNChanged: 4091
+name: G3
+objectGUID: 91ad6d5c-a3a5-49ae-a7e4-b63a6db66281
+objectSid: S-1-5-21-3455065370-3996089814-4257709216-1187
+sAMAccountName: G3
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=ac-test,DC=fr
+distinguishedName: CN=G3,OU=ETAB2,DC=ac-test,DC=fr
+
+# Referral
+ref: ldap://ac-test.fr/CN=Configuration,DC=ac-test,DC=fr
+
+# Referral
+ref: ldap://ac-test.fr/DC=DomainDnsZones,DC=ac-test,DC=fr
+
+# Referral
+ref: ldap://ac-test.fr/DC=ForestDnsZones,DC=ac-test,DC=fr
+
+# returned 4 records
+# 1 entries
+# 3 referrals

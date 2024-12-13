@@ -1,0 +1,31 @@
+#!/bin/bash
+
+set -e
+
+# shellcheck disable=SC1091,SC1090
+. /etc/eole/gposcript.conf
+
+# shellcheck disable=SC1091,SC1090
+. /etc/eole/samba4-vars.conf
+
+# shellcheck disable=SC1091,SC1090
+. /usr/lib/eole/samba4.sh
+
+GPO_NAME="eole_script"
+if [ "$GPOSCRIPT" -eq 0 ]; then
+    if samba_import_gpo "$GPO_NAME" "/usr/share/eole/gpo/${GPO_NAME}.tar.gz" "${BASEDN}" >>/var/log/samba/import-gpo.log
+    then
+        echo "* Import GPO $GPO_NAME : OK"
+    else
+        echo "* Import GPO $GPO_NAME : Erreur ($?)"
+    fi
+else
+    if ! samba_delete_gpo "$GPO_NAME" >>/var/log/samba/import-gpo.log
+    then
+        echo "Delete '$GPO_NAME' Erreur"
+        # j'ignore si elle a déjà été supprimée !
+    else
+        echo "Delete '$GPO_NAME' OK"
+    fi
+fi
+exit 0

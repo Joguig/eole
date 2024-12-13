@@ -1,0 +1,23 @@
+
+; <<>> DiG 9.18.28-0ubuntu0.24.04.1-Ubuntu <<>> @192.168.0.30 salt.domscribe.ac-test.fr
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 52801
+;; flags: qr aa rd ra ad; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;salt.domscribe.ac-test.fr.	IN	A
+
+;; ANSWER SECTION:
+salt.domscribe.ac-test.fr. 900	IN	A	192.168.0.26
+
+;; AUTHORITY SECTION:
+domscribe.ac-test.fr.	3600	IN	SOA	addc.domscribe.ac-test.fr. hostmaster.domscribe.ac-test.fr. 4 900 600 86400 3600
+
+;; Query time: 1 msec
+;; SERVER: 192.168.0.30#53(192.168.0.30) (UDP)
+;; WHEN: Fri Dec 13 08:39:49 CET 2024
+;; MSG SIZE  rcvd: 111
+
+192.168.0.30

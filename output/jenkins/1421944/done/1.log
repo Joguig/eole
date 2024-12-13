@@ -1,0 +1,154 @@
+Machine daily 2.9.0 : ciUpdateDaily BUILD_DAILY
+Machine daily 2.9.0 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.9.0 : liste des noyaux
+-rw------- 1 root root 11712616 sept. 27 13:23 /boot/vmlinuz-5.15.0-125-generic
+-rw------- 1 root root 11711784 nov.   6 09:47 /boot/vmlinuz-5.15.0-126-generic
+Machine daily 2.9.0 : * espaces disponibles
+Sys. de fichiers                       Type Taille Utilisé Dispo Uti% Monté sur
+/dev/mapper/hapy--node--vg-root        ext4    11G    4,8G  5,2G  49% /
+/dev/sda3                              ext4   756M    268M  434M  39% /boot
+/dev/mapper/hapy--node--vg-var         ext4    11G    1,5G  8,5G  15% /var
+/dev/mapper/hapy--node--vg-var+lib+one ext4   2,1G     46k  2,0G   1% /var/lib/one
+/dev/sda1                              vfat    67M     11M   56M  17% /boot/efi
+Machine daily 2.9.0 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.9.0 : dpkg --configure -a
+Machine daily 2.9.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+Machine daily 2.9.0 : ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 2.9.0 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 2.9.0 : Maj-Auto RC
+*********************************************
+Machine daily 2.9.0 : (py3) ciMonitor maj_auto
+
+monitor_maj_auto: pas de config.eol, donc utilise '-i' !
+
+MONITOR: Maj-Auto  -i -S test-eole.ac-dijon.fr -V test-eole.ac-dijon.fr  -C
+Mise à jour le jeudi 12 décembre 2024 17:43:33
+Exécution des scripts /usr/share/eole/majauto_pre
+run-parts: executing /usr/share/eole/majauto_pre/clean
+run-parts: executing /usr/share/eole/majauto_pre/mitm
+*** hapy-node 2.9.0 ***
+
+[33mMaj-Auto - (VERSION CANDIDATE) - Augmenter le niveau de mise à jour est irréversible.[0m
+Voulez-vous continuer ? [oui/non]
+[non] : 
+MONITOR: maj_auto_241a action:oui
+oui
+Configuration du dépôt Ubuntu avec la source eole.ac-dijon.fr
+Configuration du dépôt EOLE avec la source test-eole.ac-dijon.fr
+Action update pour root                                                   [|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]   
+Action list-upgrade pour root
+0 nouveau, 5 mis à jour, 0 à enlever
+Paquets à mettre à jour : 
+    dmidecode (3.3-3ubuntu0.2) (root)
+    gir1.2-packagekitglib-1.0 (1.2.5-2ubuntu3) (root)
+    libpackagekit-glib2-18 (1.2.5-2ubuntu3) (root)
+    packagekit (1.2.5-2ubuntu3) (root)
+    packagekit-tools (1.2.5-2ubuntu3) (root)
+Action download-upgrade pour root
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+Les paquets suivants seront mis à jour :
+  dmidecode gir1.2-packagekitglib-1.0 libpackagekit-glib2-18 packagekit
+  packagekit-tools
+5 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Il est nécessaire de prendre 688 ko dans les archives.
+Après cette opération, 4 096 o d'espace disque supplémentaires seront utilisés.
+Réception de :1 http://eole.ac-dijon.fr/ubuntu jammy-updates/main amd64 dmidecode amd64 3.3-3ubuntu0.2 [68,5 kB]
+Réception de :2 http://eole.ac-dijon.fr/ubuntu jammy-updates/main amd64 libpackagekit-glib2-18 amd64 1.2.5-2ubuntu3 [124 kB]
+Réception de :3 http://eole.ac-dijon.fr/ubuntu jammy-updates/main amd64 gir1.2-packagekitglib-1.0 amd64 1.2.5-2ubuntu3 [25,3 kB]
+Réception de :4 http://eole.ac-dijon.fr/ubuntu jammy-updates/main amd64 packagekit-tools amd64 1.2.5-2ubuntu3 [28,8 kB]
+Réception de :5 http://eole.ac-dijon.fr/ubuntu jammy-updates/main amd64 packagekit amd64 1.2.5-2ubuntu3 [442 kB]
+688 ko réceptionnés en 5s (136 ko/s)
+Téléchargement achevé et dans le mode téléchargement uniquement
+Action dist-upgrade pour root
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+Les paquets suivants seront mis à jour :
+  dmidecode gir1.2-packagekitglib-1.0 libpackagekit-glib2-18 packagekit
+  packagekit-tools
+5 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Il est nécessaire de prendre 0 o/688 ko dans les archives.
+Après cette opération, 4 096 o d'espace disque supplémentaires seront utilisés.
+(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 190035 fichiers et répertoires déjà installés.)
+Préparation du dépaquetage de .../dmidecode_3.3-3ubuntu0.2_amd64.deb ...
+Dépaquetage de dmidecode (3.3-3ubuntu0.2) sur (3.3-3ubuntu0.1) ...
+Préparation du dépaquetage de .../libpackagekit-glib2-18_1.2.5-2ubuntu3_amd64.deb ...
+Dépaquetage de libpackagekit-glib2-18:amd64 (1.2.5-2ubuntu3) sur (1.2.5-2ubuntu2) ...
+Préparation du dépaquetage de .../gir1.2-packagekitglib-1.0_1.2.5-2ubuntu3_amd64.deb ...
+Dépaquetage de gir1.2-packagekitglib-1.0 (1.2.5-2ubuntu3) sur (1.2.5-2ubuntu2) ...
+Préparation du dépaquetage de .../packagekit-tools_1.2.5-2ubuntu3_amd64.deb ...
+Dépaquetage de packagekit-tools (1.2.5-2ubuntu3) sur (1.2.5-2ubuntu2) ...
+Préparation du dépaquetage de .../packagekit_1.2.5-2ubuntu3_amd64.deb ...
+Dépaquetage de packagekit (1.2.5-2ubuntu3) sur (1.2.5-2ubuntu2) ...
+Paramétrage de libpackagekit-glib2-18:amd64 (1.2.5-2ubuntu3) ...
+Paramétrage de gir1.2-packagekitglib-1.0 (1.2.5-2ubuntu3) ...
+Paramétrage de packagekit (1.2.5-2ubuntu3) ...
+Paramétrage de dmidecode (3.3-3ubuntu0.2) ...
+Paramétrage de packagekit-tools (1.2.5-2ubuntu3) ...
+Traitement des actions différées (« triggers ») pour man-db (2.10.2-1) ...
+Traitement des actions différées (« triggers ») pour dbus (1.12.20-2ubuntu4.1) ...
+Traitement des actions différées (« triggers ») pour libc-bin (2.35-0ubuntu3.8) ...
+NEEDRESTART-VER: 3.5
+NEEDRESTART-KCUR: 5.15.0-126-generic
+NEEDRESTART-KEXP: 5.15.0-126-generic
+NEEDRESTART-KSTA: 1
+Mise à jour OK
+[33mMaj-Auto - Un ou plusieurs paquets ont été mis à jour, utilisez la commande [reconfigure] pour que les modifications soient prises en compte.[0m
+Machine daily 2.9.0 : ciMonitor python3 ==> RESULT=0
+--------------------------------------------
+cat /etc/apt/sources.list
+
+# Ubuntu
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu jammy main universe multiverse restricted
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu jammy-security main universe multiverse restricted
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu jammy-updates main universe multiverse restricted
+
+# EOLE
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.9.0 main cloud
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.9.0-security main cloud
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.9.0-updates main cloud
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.9.0-proposed-updates main cloud
+
+--------------------------------------------
+--------------------------------------------
+cat /etc/apt/sources.list.d/additional.list
+#template genere par Maj-Auto
+#
+--------------------------------------------
+Machine daily 2.9.0 : GenConteneur
+*********************************************
+* Pas de conteneurs pour ce module.
+*********************************************
+Machine daily 2.9.0 : Pas de fichier startup '/mnt/eole-ci-tests/module/UpdateDaily-hapy-node.sh' 
+Machine daily 2.9.0 : Test CVE Noyau
+0
+Machine daily 2.9.0 : autoremove pour les anciens noyaux
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+/usr/bin/updatedb
+Machine daily 2.9.0 : * Execute updatedb
+/usr/bin/shellcheck
+Machine daily 2.9.0 : Tag l'Image Daily
+DAILY_CONTAINER=non
+DAILY_DATEUPDATE=1734025455
+DAILY_DATE='2024-12-12 17:44'
+DAILY_MAJAUTO=RC
+Machine daily 2.9.0 : Check Update Service
+/etc/systemd/system/EoleCiTestsContext.service A JOUR
+CheckUpdateService.sh: systemctl enable 'EoleCiTestsContext.service'
+Removed /etc/systemd/system/network.target.wants/EoleCiTestsContext.service.
+Created symlink /etc/systemd/system/network.target.wants/EoleCiTestsContext.service → /etc/systemd/system/EoleCiTestsContext.service.
+CheckUpdateService.sh: systemctl daemon-reload
+/etc/systemd/system/EoleCiTestsDaemon.service A JOUR
+CheckUpdateService.sh: systemctl enable 'EoleCiTestsDaemon.service'
+Removed /etc/systemd/system/multi-user.target.wants/EoleCiTestsDaemon.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/EoleCiTestsDaemon.service → /etc/systemd/system/EoleCiTestsDaemon.service.
+CheckUpdateService.sh: systemctl daemon-reload
+Machine daily 2.9.0 : Trim disk
+Machine daily 2.9.0 : ciUpdateDaily RC : OK

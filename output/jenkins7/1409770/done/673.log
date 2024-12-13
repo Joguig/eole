@@ -1,0 +1,23 @@
+
+; <<>> DiG 9.18.28-0ubuntu0.24.04.1-Ubuntu <<>> @192.168.0.30 salt.domscribe.ac-test.fr
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 20815
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 72612a5cd9469fdd01000000675be6030ee54ad3ae8668b4 (good)
+;; QUESTION SECTION:
+;salt.domscribe.ac-test.fr.	IN	A
+
+;; ANSWER SECTION:
+salt.domscribe.ac-test.fr. 900	IN	A	192.168.0.26
+
+;; Query time: 2 msec
+;; SERVER: 192.168.0.30#53(192.168.0.30) (UDP)
+;; WHEN: Fri Dec 13 08:45:07 CET 2024
+;; MSG SIZE  rcvd: 98
+
+192.168.0.30

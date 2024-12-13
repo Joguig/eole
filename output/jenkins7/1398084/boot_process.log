@@ -1,0 +1,18 @@
+Debut ciAfficheProcess 2024-11-25 02:52:46
+****************************************************************************************************************
+Machine aca.eolebase 2.10.0 : systemctl is-active multi-user.target : active
+Machine aca.eolebase 2.10.0 : systemctl is-active network.target : active
+Machine aca.eolebase 2.10.0 : systemctl is-active network-online.target : active
+Machine aca.eolebase 2.10.0 : systemctl is-system-running : degraded
+**************************************
+systemctl --state=failed
+  UNIT                          LOAD   ACTIVE SUB    DESCRIPTION
+● nut-driver-enumerator.service loaded failed failed Network UPS Tools - enumeration of configure-file devices into systemd unit instances
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+1 loaded units listed.
+**************************************
+Fin ciAfficheProcess : RESULT = 0    2024-11-25 02:52:47

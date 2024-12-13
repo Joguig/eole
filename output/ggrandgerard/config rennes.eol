@@ -1,0 +1,201 @@
+{
+    "ip_haute_dhcp": {
+        "owner": {
+            "0": "gen_config"
+        },
+        "val": {
+            "0": "192.168.10.199"
+        }
+    },
+    "check_passwd": {
+        "owner": "gen_config",
+        "val": "non"
+    },
+    "nom_domaine_local": {
+        "owner": "gen_config",
+        "val": "j-monnet.lan"
+    },
+    "proxy_client_adresse": {
+        "owner": "gen_config",
+        "val": "192.168.10.2"
+    },
+    "ad_force_domain_sid": {
+        "owner": "gen_config",
+        "val": "non"
+    },
+    "adresse_network_dhcp": {
+        "owner": "gen_config",
+        "val": [
+            "192.168.10.0"
+        ]
+    },
+    "nom_machine": {
+        "owner": "gen_config",
+        "val": "seth"
+    },
+    "ad_server_role": {
+        "owner": "forced",
+        "val": "controleur de domaine"
+    },
+    "adresse_netmask_dhcp": {
+        "owner": {
+            "0": "gen_config"
+        },
+        "val": {
+            "0": "255.255.255.0"
+        }
+    },
+    "ad_plaintext_secrets": {
+        "owner": "gen_config",
+        "val": "non"
+    },
+    "ad_backend_store": {
+        "owner": "gen_config",
+        "val": "tdb"
+    },
+    "___version___": "2.7.2",
+    "exim_relay_smtp": {
+        "owner": "gen_config",
+        "val": "smtp.ac-rennes.fr"
+    },
+    "activer_dhcp": {
+        "owner": "gen_config",
+        "val": "oui"
+    },
+    "tls_smtp": {
+        "owner": "gen_config",
+        "val": "port 465"
+    },
+    "adressage_statique": {
+        "owner": {
+            "0": "gen_config"
+        },
+        "val": {
+            "0": "oui"
+        }
+    },
+    "nom_academie": {
+        "owner": "gen_config",
+        "val": "ac-rennes"
+    },
+    "libelle_etab": {
+        "owner": "gen_config",
+        "val": "jean-monnet"
+    },
+    "nom_plage_dhcp": {
+        "owner": {
+            "0": "gen_config"
+        },
+        "val": {
+            "0": "dhcp-static-jean-monnet"
+        }
+    },
+    "system_mail_to": {
+        "owner": "gen_config",
+        "val": "cyrille.derory@ac-rennes.fr"
+    },
+    "ip_basse_dhcp": {
+        "owner": {
+            "0": "gen_config"
+        },
+        "val": {
+            "0": "192.168.10.100"
+        }
+    },
+    "ip_admin_eth0": {
+        "owner": "gen_config",
+        "val": [
+            "0.0.0.0"
+        ]
+    },
+    "numero_etab": {
+        "owner": "gen_config",
+        "val": "0291926L"
+    },
+    "netmask_admin_eth0": {
+        "owner": {
+            "0": "gen_config"
+        },
+        "val": {
+            "0": "0.0.0.0"
+        }
+    },
+    "adresse_ip_gw_dhcp": {
+        "owner": {
+            "0": "gen_config"
+        },
+        "val": {
+            "0": "192.168.10.2"
+        }
+    },
+    "ad_additional_share": {
+        "owner": "gen_config",
+        "val": "oui"
+    },
+    "activer_proxy_client": {
+        "owner": "gen_config",
+        "val": "oui"
+    },
+    "ip_ssh_eth0": {
+        "owner": "gen_config",
+        "val": [
+            "0.0.0.0"
+        ]
+    },
+    "activer_clam": {
+        "owner": "gen_config",
+        "val": "oui"
+    },
+    "ad_server_netbios_name": {
+        "owner": "gen_config",
+        "val": "seth-ad"
+    },
+    "netmask_ssh_eth0": {
+        "owner": {
+            "0": "gen_config"
+        },
+        "val": {
+            "0": "0.0.0.0"
+        }
+    },
+    "omapi_secret": {
+        "owner": "forced",
+        "val": "367c5523f9f36db99e408f2167b6273a1d7ea74d53c2af379126c8fc"
+    },
+    "adresse_ip_eth0": {
+        "owner": "gen_config",
+        "val": "192.168.10.3"
+    },
+    "ad_additional_share_path": {
+        "owner": {
+            "0": "gen_config"
+        },
+        "val": {
+            "0": "/home/partages"
+        }
+    },
+    "ad_additional_share_name": {
+        "owner": "gen_config",
+        "val": [
+            "partages"
+        ]
+    },
+    "activer_ead3": {
+        "owner": "gen_config",
+        "val": "oui"
+    },
+    "adresse_ip_gw": {
+        "owner": "gen_config",
+        "val": "192.168.10.2"
+    },
+    "adresse_netmask_eth0": {
+        "owner": "gen_config",
+        "val": "255.255.248.0"
+    },
+    "adresse_ip_dns": {
+        "owner": "gen_config",
+        "val": [
+            "8.8.8.8"
+        ]
+    }
+}

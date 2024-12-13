@@ -1,0 +1,111 @@
+Machine gateway-mensr-docker  : Début ciContextualizeMachine : gateway-mensr-docker, 
+TEMPLATE : VM_ONE=one, VM_ID=787886, VM_OWNER=lflori, VM_DAEMON=start, VM_MACHINE=gateway-mensr-docker
+TEMPLATE : VM_VERSIONMAJEUR=, VM_MAJAUTO=
+USER     : IP_GW=85, GW=192.168.230.85, IP_UTILISATEUR=, MAIL=laurent.flori@ac-dijon.fr
+FI       : IMAGE=ubuntu-20.04-server-amd64.fi, ISO=ubuntu-20.04-server-amd64.iso, MODULE=
+DAILY    : DATE=2022-03-12 00:21, MAJAUTO=
+MODELE   : VM_MODULE=, VM_CONTAINER=, VM_ETABLISSEMENT=
+ciExtendsLvmRoot
+LVM_FREE1=30,87g
+  Rounding size to boundary between physical extents: 30,87 GiB.
+  Size of logical volume vgubuntu/root changed from 17,67 GiB (4524 extents) to 48,54 GiB (12427 extents).
+  Logical volume vgubuntu/root successfully resized.
+Étendre le système de fichier pour occuper tout l’espace ajouté
+resize2fs 1.45.5 (07-Jan-2020)
+Le système de fichiers de /dev/vgubuntu/root est monté sur / ; le changement de taille doit être effectué en ligne
+old_desc_blocks = 3, new_desc_blocks = 7
+Le système de fichiers sur /dev/vgubuntu/root a maintenant une taille de 12725248 blocs (4k).
+
+30,87g ajouter à /dev/vgubuntu/root
+Machine gateway-mensr-docker  : Contextualisation gateway DNSMASQ 1 (10:40:04)
+Machine gateway-mensr-docker  : Gateway pour lflori en cours de démarrage sur 'one'
+Machine gateway-mensr-docker  :  * HACk snapd mal déinstallé
+Machine gateway-mensr-docker  : * Set Hostname
+gateway85
+Machine gateway-mensr-docker  : * /etc/hosts avant modification
+127.0.0.1	localhost
+127.0.1.1	ubuntu
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+Machine gateway-mensr-docker  : * Désactive IPV6
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+Machine gateway-mensr-docker  : * Definition de /etc/hosts NON AGENTS
+127.0.0.1   localhost.localdomain localhost
+127.0.1.1   gateway85.eole.lan gateway85
+192.168.230.85   gateway85.ac-test.fr gateway85
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+* cat /etc/netplan/01-netcfg.yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens4:
+      dhcp4: yes
+      dhcp-identifier: mac
+* /bin/rm -f /etc/netplan/01-netcfg.yaml
+* /bin/rm -f /etc/network/interfaces
+* detach DHCP 1647423604
+* apres detach DHCP => 0 date=1647423604
+* set ip static for ens4
+* set ip static for ens5
+* set ip static for ens6
+ * is-enabled systemd-networkd.service ?
+enabled-runtime
+ * systemd-networkd.service is enable
+inactive
+ * systemd-networkd.service is NOT ACTIVE
+Machine gateway-mensr-docker  : * Définition /etc/hosts.allow
+sshd:0.0.0.0/0.0.0.0
+Machine gateway-mensr-docker  : * Création /root/.ssh/authorized_keys
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/antoine@ratatosk.pub'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/arno@arno-desktop'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/barco@barco-zotac'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/bbohard@isk'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/bruno@bruno-zotac'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/carre-p@pcarre-debian'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/Clement21000@eole-TravelMate-P238-M'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/dad@daniel'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/edouard@edouard-MS-B09611'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/gilles@gilles-G10AJ'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/gilles@gilles-Mint'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/gilles@gilles-nuc'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/gilles@gilles-nuc.ed25519'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/gilles@gilles-thinkpad'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/gilles@gilles-thinkpad.ed25519'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/gloaec@ghis-K55VJ'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/jenkins@jenkins-one'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/jojo@jojo-zotac'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/k@kls'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/lgourvenec@debiang'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/lolo@laurent'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/lseys@lseys-W65-W67RZ1'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/luc@luc-nuc'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/mlamalle@cadoles.com.pub'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/noe@stagiaire'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/pcaseiro@volantis'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/root@gateway106'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/teebee44@hoth'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/thijamb@thierryj'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/vfebvre@asus'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/wpetit@cadoles.com.pub'
+Machine gateway-mensr-docker  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/yo@yo-desktop'
+Machine gateway-mensr-docker  : * Creation lien gateway dans VM_DIR 
+Machine gateway-mensr-docker  : * disable old services
+Machine gateway-mensr-docker  : * Notify utilisateur
+Machine gateway-mensr-docker  : Contextualisation sur 'one' pour 'lflori' OK
+Machine gateway-mensr-docker  : * Fin ok
+Machine gateway-mensr-docker  : Démarrée en 
+Machine gateway-mensr-docker  : Contextualization Machine OK
+Machine gateway-mensr-docker  : lflori 787886 gateway-mensr-docker Contextualization Machine : OK
+Machine gateway-mensr-docker  : Fin ciContextualizeMachine : ok à 2022-03-16 10:40:05

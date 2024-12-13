@@ -1,0 +1,17 @@
+Début ciDeamonMain /root/.EoleCiTestsDaemon.sh
+init à 2024-12-10 15:23:20
+* ciAfficheProcess : 2024-12-10 15:23:20
+* ciWaitConteneurs : 2024-12-10 15:23:20
+* ciConfigurationMe : avant 2024-12-10 15:23:20
+* ciConfigurationMe : apres 2024-12-10 15:23:25
+Machine aca.eolebase 2.8.0 : * Creation lien aca.eolebase dans /mnt/eole-ci-tests/output/jojo/1420010
+Machine aca.eolebase 2.8.0 : Sauvegarde CA aca.eolebase
+-rw-r--r-- 1 9869 9869 1777 déc.  10 15:23 /mnt/eole-ci-tests/output/jojo//aca.eolebase.crt
+    issuer=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-eolebase.ac-test.fr
+    subject=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-eolebase.ac-test.fr
+    notBefore=Dec  6 18:59:49 2024 GMT
+    notAfter=Dec  7 18:59:49 2027 GMT
+* ciBoucleDExecution : pas d'excution ==> sortie
+ciStopDaemon : 2024-12-10 15:23:25
+nettoyage 'motd' et '/etc/issue'
+Sauvegarde log EoleCiTests

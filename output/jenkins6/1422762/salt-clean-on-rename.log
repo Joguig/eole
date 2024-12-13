@@ -1,0 +1,70 @@
+﻿**********************
+Début de la transcription Windows PowerShell
+Heure de début : 20230113163327
+Nom d'utilisateur : WORKGROUP\Système
+Utilisateur runAs :  WORKGROUP\Système
+Nom de la configuration : 
+Ordinateur : DESKTOP-7N0P6Q2 (Microsoft Windows NT 10.0.22000.0)
+Application hôte : C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NoProfile -File C:\eole\EoleCiTestContext.ps1
+ID de processus : 2892
+PSVersion: 5.1.22000.832
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.832
+BuildVersion: 10.0.22000.832
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcription démarrée, le fichier de sortie est c:\eole\salt-clean-on-rename.log
+Stop-Service salt-minion
+Stop-Service : Impossible de trouver un service assorti du nom « salt-minion ».
+Au caractère D:\EoleCiTestsCommon.ps1:968 : 9
++         Stop-Service salt-minion -Force
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (salt-minion:String) [Stop-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.StopServiceCommand
+Stop-Service : Impossible de trouver un service assorti du nom « salt-minion ».
+Au caractère D:\EoleCiTestsCommon.ps1:968 : 9
++         Stop-Service salt-minion -Force
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (salt-minion:String) [Stop-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.StopServiceCommand
+
+status minion
+Get-Service : Impossible de trouver un service assorti du nom « salt-minion ».
+Au caractère D:\EoleCiTestsCommon.ps1:971 : 9
++         Get-Service salt-minion
++         ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (salt-minion:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand
+Get-Service : Impossible de trouver un service assorti du nom « salt-minion ».
+Au caractère D:\EoleCiTestsCommon.ps1:971 : 9
++         Get-Service salt-minion
++         ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (salt-minion:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand
+
+remove minion_id
+* remove C:\ProgramData\conf\minion_id : OK
+Start-Service salt-minion
+Start-Service : Impossible de trouver un service assorti du nom « salt-minion ».
+Au caractère D:\EoleCiTestsCommon.ps1:977 : 9
++         Start-Service salt-minion
++         ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (salt-minion:String) [Start-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.StartServiceCommand
+Start-Service : Impossible de trouver un service assorti du nom « salt-minion ».
+Au caractère D:\EoleCiTestsCommon.ps1:977 : 9
++         Start-Service salt-minion
++         ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (salt-minion:String) [Start-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.StartServiceCommand
+
+salt-call saltutils.regen_keys
+
+* checkSaltMinionId : OK tag image
+**********************
+Fin de la transcription Windows PowerShell
+Heure de fin : 20230113163329
+**********************

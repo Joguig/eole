@@ -1,0 +1,2700 @@
+-- Logs begin at Mon 2022-09-12 17:55:54 CEST, end at Fri 2024-12-13 18:50:09 CET. --
+déc. 13 18:45:41 hapy-node kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+déc. 13 18:45:41 hapy-node kernel: pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfffff window]
+déc. 13 18:45:41 hapy-node kernel: pci_bus 0000:00: root bus resource [mem 0x140000000-0x1bfffffff window]
+déc. 13 18:45:41 hapy-node kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:01.1: [8086:7010] type 00 class 0x010180
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:01.1: reg 0x20: [io  0xc120-0xc12f]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:01.2: [8086:7020] type 00 class 0x0c0300
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:01.2: reg 0x20: [io  0xc0c0-0xc0df]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:01.3: [8086:7113] type 00 class 0x068000
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:01.3: quirk: [io  0x0600-0x063f] claimed by PIIX4 ACPI
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:01.3: quirk: [io  0x0700-0x070f] claimed by PIIX4 SMB
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:02.0: [1234:1111] type 00 class 0x030000
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:02.0: reg 0x10: [mem 0xfd000000-0xfdffffff pref]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:02.0: reg 0x18: [mem 0xfebd0000-0xfebd0fff]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:02.0: reg 0x30: [mem 0xfebc0000-0xfebcffff pref]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:02.0: BAR 0: assigned to efifb
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:03.0: [1af4:1009] type 00 class 0x000200
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:03.0: reg 0x10: [io  0xc000-0xc03f]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:03.0: reg 0x14: [mem 0xfebd1000-0xfebd1fff]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:03.0: reg 0x20: [mem 0xfe000000-0xfe003fff 64bit pref]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:04.0: [1af4:1000] type 00 class 0x020000
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:04.0: reg 0x10: [io  0xc0e0-0xc0ff]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:04.0: reg 0x14: [mem 0xfebd2000-0xfebd2fff]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:04.0: reg 0x20: [mem 0xfe004000-0xfe007fff 64bit pref]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:04.0: reg 0x30: [mem 0xfeb80000-0xfebbffff pref]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:05.0: [1af4:1004] type 00 class 0x010000
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:05.0: reg 0x10: [io  0xc040-0xc07f]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:05.0: reg 0x14: [mem 0xfebd3000-0xfebd3fff]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:05.0: reg 0x20: [mem 0xfe008000-0xfe00bfff 64bit pref]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:06.0: [1af4:1003] type 00 class 0x078000
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:06.0: reg 0x10: [io  0xc080-0xc0bf]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:06.0: reg 0x14: [mem 0xfebd4000-0xfebd4fff]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:06.0: reg 0x20: [mem 0xfe00c000-0xfe00ffff 64bit pref]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:07.0: [1af4:1002] type 00 class 0x00ff00
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:07.0: reg 0x10: [io  0xc100-0xc11f]
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:07.0: reg 0x20: [mem 0xfe010000-0xfe013fff 64bit pref]
+déc. 13 18:45:41 hapy-node kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 5 *10 11)
+déc. 13 18:45:41 hapy-node kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+déc. 13 18:45:41 hapy-node kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+déc. 13 18:45:41 hapy-node kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 5 10 *11)
+déc. 13 18:45:41 hapy-node kernel: ACPI: PCI Interrupt Link [LNKS] (IRQs *9)
+déc. 13 18:45:41 hapy-node kernel: iommu: Default domain type: Translated 
+déc. 13 18:45:41 hapy-node kernel: SCSI subsystem initialized
+déc. 13 18:45:41 hapy-node kernel: libata version 3.00 loaded.
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+déc. 13 18:45:41 hapy-node kernel: vgaarb: loaded
+déc. 13 18:45:41 hapy-node kernel: ACPI: bus type USB registered
+déc. 13 18:45:41 hapy-node kernel: usbcore: registered new interface driver usbfs
+déc. 13 18:45:41 hapy-node kernel: usbcore: registered new interface driver hub
+déc. 13 18:45:41 hapy-node kernel: usbcore: registered new device driver usb
+déc. 13 18:45:41 hapy-node kernel: pps_core: LinuxPPS API ver. 1 registered
+déc. 13 18:45:41 hapy-node kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+déc. 13 18:45:41 hapy-node kernel: PTP clock support registered
+déc. 13 18:45:41 hapy-node kernel: EDAC MC: Ver: 3.0.0
+déc. 13 18:45:41 hapy-node kernel: PCI: Using ACPI for IRQ routing
+déc. 13 18:45:41 hapy-node kernel: PCI: pci_cache_line_size set to 64 bytes
+déc. 13 18:45:41 hapy-node kernel: e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+déc. 13 18:45:41 hapy-node kernel: e820: reserve RAM buffer [mem 0xbffdc000-0xbfffffff]
+déc. 13 18:45:41 hapy-node kernel: NetLabel: Initializing
+déc. 13 18:45:41 hapy-node kernel: NetLabel:  domain hash size = 128
+déc. 13 18:45:41 hapy-node kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+déc. 13 18:45:41 hapy-node kernel: NetLabel:  unlabeled traffic allowed by default
+déc. 13 18:45:41 hapy-node kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+déc. 13 18:45:41 hapy-node kernel: hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+déc. 13 18:45:41 hapy-node kernel: clocksource: Switched to clocksource kvm-clock
+déc. 13 18:45:41 hapy-node kernel: *** VALIDATE bpf ***
+déc. 13 18:45:41 hapy-node kernel: VFS: Disk quotas dquot_6.6.0
+déc. 13 18:45:41 hapy-node kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+déc. 13 18:45:41 hapy-node kernel: *** VALIDATE ramfs ***
+déc. 13 18:45:41 hapy-node kernel: *** VALIDATE hugetlbfs ***
+déc. 13 18:45:41 hapy-node kernel: AppArmor: AppArmor Filesystem Enabled
+déc. 13 18:45:41 hapy-node kernel: pnp: PnP ACPI init
+déc. 13 18:45:41 hapy-node kernel: pnp 00:00: Plug and Play ACPI device, IDs PNP0b00 (active)
+déc. 13 18:45:41 hapy-node kernel: pnp 00:01: Plug and Play ACPI device, IDs PNP0303 (active)
+déc. 13 18:45:41 hapy-node kernel: pnp 00:02: Plug and Play ACPI device, IDs PNP0f13 (active)
+déc. 13 18:45:41 hapy-node kernel: pnp 00:03: [dma 2]
+déc. 13 18:45:41 hapy-node kernel: pnp 00:03: Plug and Play ACPI device, IDs PNP0700 (active)
+déc. 13 18:45:41 hapy-node kernel: pnp: PnP ACPI: found 4 devices
+déc. 13 18:45:41 hapy-node kernel: thermal_sys: Registered thermal governor 'fair_share'
+déc. 13 18:45:41 hapy-node kernel: thermal_sys: Registered thermal governor 'bang_bang'
+déc. 13 18:45:41 hapy-node kernel: thermal_sys: Registered thermal governor 'step_wise'
+déc. 13 18:45:41 hapy-node kernel: thermal_sys: Registered thermal governor 'user_space'
+déc. 13 18:45:41 hapy-node kernel: thermal_sys: Registered thermal governor 'power_allocator'
+déc. 13 18:45:41 hapy-node kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+déc. 13 18:45:41 hapy-node kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+déc. 13 18:45:41 hapy-node kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+déc. 13 18:45:41 hapy-node kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+déc. 13 18:45:41 hapy-node kernel: pci_bus 0000:00: resource 7 [mem 0xc0000000-0xfebfffff window]
+déc. 13 18:45:41 hapy-node kernel: pci_bus 0000:00: resource 8 [mem 0x140000000-0x1bfffffff window]
+déc. 13 18:45:41 hapy-node kernel: NET: Registered protocol family 2
+déc. 13 18:45:41 hapy-node kernel: IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+déc. 13 18:45:41 hapy-node kernel: tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+déc. 13 18:45:41 hapy-node kernel: TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+déc. 13 18:45:41 hapy-node kernel: TCP bind hash table entries: 32768 (order: 7, 524288 bytes, linear)
+déc. 13 18:45:41 hapy-node kernel: TCP: Hash tables configured (established 32768 bind 32768)
+déc. 13 18:45:41 hapy-node kernel: UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+déc. 13 18:45:41 hapy-node kernel: UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+déc. 13 18:45:41 hapy-node kernel: NET: Registered protocol family 1
+déc. 13 18:45:41 hapy-node kernel: NET: Registered protocol family 44
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:01.0: PIIX3: Enabling Passive Release
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:01.0: Activating ISA DMA hang workarounds
+déc. 13 18:45:41 hapy-node kernel: PCI Interrupt Link [LNKD] enabled at IRQ 11
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:01.2: quirk_usb_early_handoff+0x0/0x670 took 51416 usecs
+déc. 13 18:45:41 hapy-node kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+déc. 13 18:45:41 hapy-node kernel: PCI: CLS 0 bytes, default 64
+déc. 13 18:45:41 hapy-node kernel: Trying to unpack rootfs image as initramfs...
+déc. 13 18:45:41 hapy-node kernel: Freeing initrd memory: 57252K
+déc. 13 18:45:41 hapy-node kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+déc. 13 18:45:41 hapy-node kernel: software IO TLB: mapped [mem 0xbbfdc000-0xbffdc000] (64MB)
+déc. 13 18:45:41 hapy-node kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1fa2ebd9b85, max_idle_ns: 440795259329 ns
+déc. 13 18:45:41 hapy-node kernel: check: Scanning for low memory corruption every 60 seconds
+déc. 13 18:45:41 hapy-node kernel: Initialise system trusted keyrings
+déc. 13 18:45:41 hapy-node kernel: Key type blacklist registered
+déc. 13 18:45:41 hapy-node kernel: workingset: timestamp_bits=36 max_order=20 bucket_order=0
+déc. 13 18:45:41 hapy-node kernel: zbud: loaded
+déc. 13 18:45:41 hapy-node kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+déc. 13 18:45:41 hapy-node kernel: fuse: init (API version 7.31)
+déc. 13 18:45:41 hapy-node kernel: *** VALIDATE fuse ***
+déc. 13 18:45:41 hapy-node kernel: *** VALIDATE fuse ***
+déc. 13 18:45:41 hapy-node kernel: Platform Keyring initialized
+déc. 13 18:45:41 hapy-node kernel: Key type asymmetric registered
+déc. 13 18:45:41 hapy-node kernel: Asymmetric key parser 'x509' registered
+déc. 13 18:45:41 hapy-node kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+déc. 13 18:45:41 hapy-node kernel: io scheduler mq-deadline registered
+déc. 13 18:45:41 hapy-node kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+déc. 13 18:45:41 hapy-node kernel: efifb: probing for efifb
+déc. 13 18:45:41 hapy-node kernel: efifb: No BGRT, not showing boot graphics
+déc. 13 18:45:41 hapy-node kernel: efifb: framebuffer at 0xfd000000, using 1408k, total 1408k
+déc. 13 18:45:41 hapy-node kernel: efifb: mode is 800x600x24, linelength=2400, pages=1
+déc. 13 18:45:41 hapy-node kernel: efifb: scrolling: redraw
+déc. 13 18:45:41 hapy-node kernel: efifb: Truecolor: size=0:8:8:8, shift=0:16:8:0
+déc. 13 18:45:41 hapy-node kernel: Console: switching to colour frame buffer device 100x37
+déc. 13 18:45:41 hapy-node kernel: fb0: EFI VGA frame buffer device
+déc. 13 18:45:41 hapy-node kernel: intel_idle: Please enable MWAIT in BIOS SETUP
+déc. 13 18:45:41 hapy-node kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+déc. 13 18:45:41 hapy-node kernel: ACPI: Power Button [PWRF]
+déc. 13 18:45:41 hapy-node kernel: PCI Interrupt Link [LNKC] enabled at IRQ 10
+déc. 13 18:45:41 hapy-node kernel: PCI Interrupt Link [LNKA] enabled at IRQ 10
+déc. 13 18:45:41 hapy-node kernel: PCI Interrupt Link [LNKB] enabled at IRQ 11
+déc. 13 18:45:41 hapy-node kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+déc. 13 18:45:41 hapy-node kernel: Linux agpgart interface v0.103
+déc. 13 18:45:41 hapy-node kernel: loop: module loaded
+déc. 13 18:45:41 hapy-node kernel: ata_piix 0000:00:01.1: version 2.13
+déc. 13 18:45:41 hapy-node kernel: scsi host0: ata_piix
+déc. 13 18:45:41 hapy-node kernel: scsi host1: ata_piix
+déc. 13 18:45:41 hapy-node kernel: ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc120 irq 14
+déc. 13 18:45:41 hapy-node kernel: ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc128 irq 15
+déc. 13 18:45:41 hapy-node kernel: tun: Universal TUN/TAP device driver, 1.6
+déc. 13 18:45:41 hapy-node kernel: PPP generic driver version 2.4.2
+déc. 13 18:45:41 hapy-node kernel: VFIO - User Level meta-driver version: 0.3
+déc. 13 18:45:41 hapy-node kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+déc. 13 18:45:41 hapy-node kernel: ehci-pci: EHCI PCI platform driver
+déc. 13 18:45:41 hapy-node kernel: ehci-platform: EHCI generic platform driver
+déc. 13 18:45:41 hapy-node kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+déc. 13 18:45:41 hapy-node kernel: ohci-pci: OHCI PCI platform driver
+déc. 13 18:45:41 hapy-node kernel: ohci-platform: OHCI generic platform driver
+déc. 13 18:45:41 hapy-node kernel: uhci_hcd: USB Universal Host Controller Interface driver
+déc. 13 18:45:41 hapy-node kernel: uhci_hcd 0000:00:01.2: UHCI Host Controller
+déc. 13 18:45:41 hapy-node kernel: uhci_hcd 0000:00:01.2: new USB bus registered, assigned bus number 1
+déc. 13 18:45:41 hapy-node kernel: uhci_hcd 0000:00:01.2: detected 2 ports
+déc. 13 18:45:41 hapy-node kernel: uhci_hcd 0000:00:01.2: irq 11, io base 0x0000c0c0
+déc. 13 18:45:41 hapy-node kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.04
+déc. 13 18:45:41 hapy-node kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+déc. 13 18:45:41 hapy-node kernel: usb usb1: Product: UHCI Host Controller
+déc. 13 18:45:41 hapy-node kernel: usb usb1: Manufacturer: Linux 5.4.0-202-generic uhci_hcd
+déc. 13 18:45:41 hapy-node kernel: usb usb1: SerialNumber: 0000:00:01.2
+déc. 13 18:45:41 hapy-node kernel: hub 1-0:1.0: USB hub found
+déc. 13 18:45:41 hapy-node kernel: hub 1-0:1.0: 2 ports detected
+déc. 13 18:45:41 hapy-node kernel: i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+déc. 13 18:45:41 hapy-node kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+déc. 13 18:45:41 hapy-node kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+déc. 13 18:45:41 hapy-node kernel: mousedev: PS/2 mouse device common for all mice
+déc. 13 18:45:41 hapy-node kernel: rtc_cmos 00:00: RTC can wake from S4
+déc. 13 18:45:41 hapy-node kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+déc. 13 18:45:41 hapy-node kernel: rtc_cmos 00:00: registered as rtc0
+déc. 13 18:45:41 hapy-node kernel: rtc_cmos 00:00: alarms up to one day, y3k, 114 bytes nvram, hpet irqs
+déc. 13 18:45:41 hapy-node kernel: i2c /dev entries driver
+déc. 13 18:45:41 hapy-node kernel: device-mapper: uevent: version 1.0.3
+déc. 13 18:45:41 hapy-node kernel: device-mapper: ioctl: 4.41.0-ioctl (2019-09-16) initialised: dm-devel@redhat.com
+déc. 13 18:45:41 hapy-node kernel: platform eisa.0: Probing EISA bus 0
+déc. 13 18:45:41 hapy-node kernel: platform eisa.0: EISA: Cannot allocate resource for mainboard
+déc. 13 18:45:41 hapy-node kernel: platform eisa.0: Cannot allocate resource for EISA slot 1
+déc. 13 18:45:41 hapy-node kernel: platform eisa.0: Cannot allocate resource for EISA slot 2
+déc. 13 18:45:41 hapy-node kernel: platform eisa.0: Cannot allocate resource for EISA slot 3
+déc. 13 18:45:41 hapy-node kernel: platform eisa.0: Cannot allocate resource for EISA slot 4
+déc. 13 18:45:41 hapy-node kernel: platform eisa.0: Cannot allocate resource for EISA slot 5
+déc. 13 18:45:41 hapy-node kernel: platform eisa.0: Cannot allocate resource for EISA slot 6
+déc. 13 18:45:41 hapy-node kernel: platform eisa.0: Cannot allocate resource for EISA slot 7
+déc. 13 18:45:41 hapy-node kernel: platform eisa.0: Cannot allocate resource for EISA slot 8
+déc. 13 18:45:41 hapy-node kernel: platform eisa.0: EISA: Detected 0 cards
+déc. 13 18:45:41 hapy-node kernel: intel_pstate: CPU model not supported
+déc. 13 18:45:41 hapy-node kernel: ledtrig-cpu: registered to indicate activity on CPUs
+déc. 13 18:45:41 hapy-node kernel: drop_monitor: Initializing network drop monitor service
+déc. 13 18:45:41 hapy-node kernel: NET: Registered protocol family 10
+déc. 13 18:45:41 hapy-node kernel: Segment Routing with IPv6
+déc. 13 18:45:41 hapy-node kernel: NET: Registered protocol family 17
+déc. 13 18:45:41 hapy-node kernel: Key type dns_resolver registered
+déc. 13 18:45:41 hapy-node kernel: RAS: Correctable Errors collector initialized.
+déc. 13 18:45:41 hapy-node kernel: IPI shorthand broadcast: enabled
+déc. 13 18:45:41 hapy-node kernel: sched_clock: Marking stable (776372232, -2231482)->(831804581, -57663831)
+déc. 13 18:45:41 hapy-node kernel: registered taskstats version 1
+déc. 13 18:45:41 hapy-node kernel: Loading compiled-in X.509 certificates
+déc. 13 18:45:41 hapy-node kernel: Loaded X.509 cert 'Build time autogenerated kernel key: c8141c267d67db517e45f7c652a033acaf0b2f06'
+déc. 13 18:45:41 hapy-node kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+déc. 13 18:45:41 hapy-node kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+déc. 13 18:45:41 hapy-node kernel: blacklist: Loading compiled-in revocation X.509 certificates
+déc. 13 18:45:41 hapy-node kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+déc. 13 18:45:41 hapy-node kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+déc. 13 18:45:41 hapy-node kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+déc. 13 18:45:41 hapy-node kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+déc. 13 18:45:41 hapy-node kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+déc. 13 18:45:41 hapy-node kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+déc. 13 18:45:41 hapy-node kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+déc. 13 18:45:41 hapy-node kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+déc. 13 18:45:41 hapy-node kernel: zswap: loaded using pool lzo/zbud
+déc. 13 18:45:41 hapy-node kernel: Key type ._fscrypt registered
+déc. 13 18:45:41 hapy-node kernel: Key type .fscrypt registered
+déc. 13 18:45:41 hapy-node kernel: Key type big_key registered
+déc. 13 18:45:41 hapy-node kernel: Key type encrypted registered
+déc. 13 18:45:41 hapy-node kernel: AppArmor: AppArmor sha1 policy hashing enabled
+déc. 13 18:45:41 hapy-node kernel: ima: No TPM chip found, activating TPM-bypass!
+déc. 13 18:45:41 hapy-node kernel: ima: Allocated hash algorithm: sha1
+déc. 13 18:45:41 hapy-node kernel: ima: No architecture policies found
+déc. 13 18:45:41 hapy-node kernel: evm: Initialising EVM extended attributes:
+déc. 13 18:45:41 hapy-node kernel: evm: security.selinux
+déc. 13 18:45:41 hapy-node kernel: evm: security.SMACK64
+déc. 13 18:45:41 hapy-node kernel: evm: security.SMACK64EXEC
+déc. 13 18:45:41 hapy-node kernel: evm: security.SMACK64TRANSMUTE
+déc. 13 18:45:41 hapy-node kernel: evm: security.SMACK64MMAP
+déc. 13 18:45:41 hapy-node kernel: evm: security.apparmor
+déc. 13 18:45:41 hapy-node kernel: evm: security.ima
+déc. 13 18:45:41 hapy-node kernel: evm: security.capability
+déc. 13 18:45:41 hapy-node kernel: evm: HMAC attrs: 0x1
+déc. 13 18:45:41 hapy-node kernel: PM:   Magic number: 4:55:795
+déc. 13 18:45:41 hapy-node kernel: rtc_cmos 00:00: setting system clock to 2024-12-13T17:45:40 UTC (1734111940)
+déc. 13 18:45:41 hapy-node kernel: clk: Disabling unused clocks
+déc. 13 18:45:41 hapy-node kernel: ata1.01: NODEV after polling detection
+déc. 13 18:45:41 hapy-node kernel: ata1.00: ATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+déc. 13 18:45:41 hapy-node kernel: scsi 0:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     2.5+ PQ: 0 ANSI: 5
+déc. 13 18:45:41 hapy-node kernel: sr 0:0:0:0: [sr0] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+déc. 13 18:45:41 hapy-node kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+déc. 13 18:45:41 hapy-node kernel: sr 0:0:0:0: Attached scsi CD-ROM sr0
+déc. 13 18:45:41 hapy-node kernel: sr 0:0:0:0: Attached scsi generic sg0 type 5
+déc. 13 18:45:41 hapy-node kernel: Freeing unused decrypted memory: 2040K
+déc. 13 18:45:41 hapy-node kernel: Freeing unused kernel image memory: 2772K
+déc. 13 18:45:41 hapy-node kernel: Write protecting the kernel read-only data: 26624k
+déc. 13 18:45:41 hapy-node kernel: Freeing unused kernel image memory: 2036K
+déc. 13 18:45:41 hapy-node kernel: Freeing unused kernel image memory: 924K
+déc. 13 18:45:41 hapy-node kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+déc. 13 18:45:41 hapy-node kernel: x86/mm: Checking user space page tables
+déc. 13 18:45:41 hapy-node kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+déc. 13 18:45:41 hapy-node kernel: Run /init as init process
+déc. 13 18:45:41 hapy-node kernel: usb 1-1: new full-speed USB device number 2 using uhci_hcd
+déc. 13 18:45:41 hapy-node kernel: piix4_smbus 0000:00:01.3: SMBus Host Controller at 0x700, revision 0
+déc. 13 18:45:41 hapy-node kernel: scsi host2: Virtio SCSI HBA
+déc. 13 18:45:41 hapy-node kernel: scsi 2:0:0:0: Direct-Access     QEMU     QEMU HARDDISK    2.5+ PQ: 0 ANSI: 5
+déc. 13 18:45:41 hapy-node kernel: input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input4
+déc. 13 18:45:41 hapy-node kernel: input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input3
+déc. 13 18:45:41 hapy-node kernel: sd 2:0:0:0: Attached scsi generic sg1 type 0
+déc. 13 18:45:41 hapy-node kernel: sd 2:0:0:0: Power-on or device reset occurred
+déc. 13 18:45:41 hapy-node kernel: sd 2:0:0:0: [sda] 209715200 512-byte logical blocks: (107 GB/100 GiB)
+déc. 13 18:45:41 hapy-node kernel: sd 2:0:0:0: [sda] Write Protect is off
+déc. 13 18:45:41 hapy-node kernel: sd 2:0:0:0: [sda] Mode Sense: 63 00 00 08
+déc. 13 18:45:41 hapy-node kernel: sd 2:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+déc. 13 18:45:41 hapy-node kernel: virtio_net virtio1 ens4: renamed from eth0
+déc. 13 18:45:41 hapy-node kernel:  sda: sda1 sda2
+déc. 13 18:45:41 hapy-node kernel: FDC 0 is a S82078B
+déc. 13 18:45:41 hapy-node kernel: sd 2:0:0:0: [sda] Attached SCSI disk
+déc. 13 18:45:41 hapy-node kernel: usb 1-1: New USB device found, idVendor=0627, idProduct=0001, bcdDevice= 0.00
+déc. 13 18:45:41 hapy-node kernel: usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=5
+déc. 13 18:45:41 hapy-node kernel: usb 1-1: Product: QEMU USB Tablet
+déc. 13 18:45:41 hapy-node kernel: usb 1-1: Manufacturer: QEMU
+déc. 13 18:45:41 hapy-node kernel: usb 1-1: SerialNumber: 42
+déc. 13 18:45:41 hapy-node kernel: hidraw: raw HID events driver (C) Jiri Kosina
+déc. 13 18:45:41 hapy-node kernel: usbcore: registered new interface driver usbhid
+déc. 13 18:45:41 hapy-node kernel: usbhid: USB HID core driver
+déc. 13 18:45:41 hapy-node kernel: input: QEMU QEMU USB Tablet as /devices/pci0000:00/0000:00:01.2/usb1/1-1/1-1:1.0/0003:0627:0001.0001/input/input5
+déc. 13 18:45:41 hapy-node kernel: hid-generic 0003:0627:0001.0001: input,hidraw0: USB HID v0.01 Mouse [QEMU QEMU USB Tablet] on usb-0000:00:01.2-1/input0
+déc. 13 18:45:41 hapy-node kernel: EXT4-fs (dm-1): mounted filesystem with ordered data mode. Opts: (null)
+déc. 13 18:45:41 hapy-node systemd[1]: Inserted module 'autofs4'
+déc. 13 18:45:41 hapy-node systemd[1]: systemd 245.4-4ubuntu3.24 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+déc. 13 18:45:41 hapy-node systemd[1]: Detected virtualization kvm.
+déc. 13 18:45:41 hapy-node systemd[1]: Detected architecture x86-64.
+déc. 13 18:45:41 hapy-node systemd[1]: Set hostname to <hapy-node>.
+déc. 13 18:45:41 hapy-node systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+déc. 13 18:45:41 hapy-node systemd[1]: Created slice Virtual Machine and Container Slice.
+déc. 13 18:45:42 hapy-node systemd[1]: Created slice system-modprobe.slice.
+déc. 13 18:45:42 hapy-node systemd[1]: Created slice system-systemd\x2dfsck.slice.
+déc. 13 18:45:42 hapy-node systemd[1]: Created slice User and Session Slice.
+déc. 13 18:45:42 hapy-node systemd[1]: Started ntp-systemd-netif.path.
+déc. 13 18:45:42 hapy-node systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+déc. 13 18:45:42 hapy-node systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+déc. 13 18:45:42 hapy-node systemd[1]: Reached target User and Group Name Lookups.
+déc. 13 18:45:42 hapy-node systemd[1]: Reached target Remote File Systems.
+déc. 13 18:45:42 hapy-node systemd[1]: Reached target Slices.
+déc. 13 18:45:42 hapy-node systemd[1]: Reached target System Time Set.
+déc. 13 18:45:42 hapy-node systemd[1]: Reached target Libvirt guests shutdown.
+déc. 13 18:45:42 hapy-node systemd[1]: Listening on Device-mapper event daemon FIFOs.
+déc. 13 18:45:42 hapy-node systemd[1]: Listening on LVM2 poll daemon socket.
+déc. 13 18:45:42 hapy-node systemd[1]: Listening on Syslog Socket.
+déc. 13 18:45:42 hapy-node systemd[1]: Listening on fsck to fsckd communication Socket.
+déc. 13 18:45:42 hapy-node systemd[1]: Listening on initctl Compatibility Named Pipe.
+déc. 13 18:45:42 hapy-node systemd[1]: Listening on Journal Audit Socket.
+déc. 13 18:45:42 hapy-node systemd[1]: Listening on Journal Socket (/dev/log).
+déc. 13 18:45:42 hapy-node systemd[1]: Listening on Journal Socket.
+déc. 13 18:45:42 hapy-node systemd[1]: Listening on udev Control Socket.
+déc. 13 18:45:42 hapy-node systemd[1]: Listening on udev Kernel Socket.
+déc. 13 18:45:42 hapy-node systemd[1]: Mounting Huge Pages File System...
+déc. 13 18:45:42 hapy-node systemd[1]: Mounting POSIX Message Queue File System...
+déc. 13 18:45:42 hapy-node systemd[1]: Mounting Kernel Debug File System...
+déc. 13 18:45:42 hapy-node systemd[1]: Mounting Kernel Trace File System...
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Journal Service...
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Availability of block devices...
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Set the console keyboard layout...
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Create list of static device nodes for the current kernel...
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Load Kernel Module chromeos_pstore...
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Load Kernel Module drm...
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Load Kernel Module efi_pstore...
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Load Kernel Module pstore_blk...
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Load Kernel Module pstore_zone...
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Load Kernel Module ramoops...
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Load Kernel Modules...
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Remount Root and Kernel File Systems...
+déc. 13 18:45:42 hapy-node systemd[1]: Starting udev Coldplug all Devices...
+déc. 13 18:45:42 hapy-node systemd[1]: Mounted Huge Pages File System.
+déc. 13 18:45:42 hapy-node systemd[1]: Mounted POSIX Message Queue File System.
+déc. 13 18:45:42 hapy-node systemd-journald[288]: Journal started
+-- Subject: Le journal a été démarré
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Le processus du journal système a démarré, ouvert ses fichiers en écriture
+-- et est prêt à traiter les requêtes.
+déc. 13 18:45:42 hapy-node systemd-journald[288]: Runtime Journal (/run/log/journal/b31eaab15a724c2697468621c5c99474) is 4.9M, max 39.1M, 34.2M free.
+-- Subject: Espace disque utilisé par le journal
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: man:journald.conf(5)
+-- 
+-- Runtime Journal (/run/log/journal/b31eaab15a724c2697468621c5c99474) utilise actuellement 4.9M.
+-- Le maximum autorisé est défini à 39.1M.
+-- Au moins 19.5M doivent être laissés libres
+-- (sur 386.8M d'espace disque actuellement libre).
+-- La limite appliquée est donc 39.1M, dont 34.2M
+-- sont toujours disponibles.
+-- 
+-- Les limites définissant la quantité d'espace disque que peut utiliser le
+-- journal peuvent être configurées avec les paramètres SystemMaxUse=,
+-- SystemKeepFree=, SystemMaxFileSize=, RuntimeMaxUse=, RuntimeKeepFree=,
+-- RuntimeMaxFileSize= dans le fichier /etc/systemd/journald.conf.
+-- Voir journald.conf(5) pour plus de détails.
+déc. 13 18:45:42 hapy-node lvm[292]:   5 logical volume(s) in volume group "vghapy-node" monitored
+déc. 13 18:45:42 hapy-node kernel: EXT4-fs (dm-1): re-mounted. Opts: errors=remount-ro
+déc. 13 18:45:42 hapy-node systemd[1]: Started Journal Service.
+déc. 13 18:45:42 hapy-node systemd[1]: Mounted Kernel Debug File System.
+-- Subject: L'unité (unit) sys-kernel-debug.mount a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) sys-kernel-debug.mount a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Mounted Kernel Trace File System.
+-- Subject: L'unité (unit) sys-kernel-tracing.mount a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) sys-kernel-tracing.mount a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Availability of block devices.
+-- Subject: L'unité (unit) blk-availability.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) blk-availability.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Create list of static device nodes for the current kernel.
+-- Subject: L'unité (unit) kmod-static-nodes.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) kmod-static-nodes.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: modprobe@drm.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit modprobe@drm.service has successfully entered the 'dead' state.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Load Kernel Module drm.
+-- Subject: L'unité (unit) modprobe@drm.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@drm.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: modprobe@efi_pstore.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit modprobe@efi_pstore.service has successfully entered the 'dead' state.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Load Kernel Module efi_pstore.
+-- Subject: L'unité (unit) modprobe@efi_pstore.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@efi_pstore.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: modprobe@pstore_blk.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit modprobe@pstore_blk.service has successfully entered the 'dead' state.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Load Kernel Module pstore_blk.
+-- Subject: L'unité (unit) modprobe@pstore_blk.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@pstore_blk.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+-- Subject: L'unité (unit) lvm2-monitor.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) lvm2-monitor.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: modprobe@pstore_zone.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit modprobe@pstore_zone.service has successfully entered the 'dead' state.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Load Kernel Module pstore_zone.
+-- Subject: L'unité (unit) modprobe@pstore_zone.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@pstore_zone.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: modprobe@ramoops.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit modprobe@ramoops.service has successfully entered the 'dead' state.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Load Kernel Module ramoops.
+-- Subject: L'unité (unit) modprobe@ramoops.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@ramoops.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Load Kernel Modules.
+-- Subject: L'unité (unit) systemd-modules-load.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-modules-load.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Remount Root and Kernel File Systems.
+-- Subject: L'unité (unit) systemd-remount-fs.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-remount-fs.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Set the console keyboard layout.
+-- Subject: L'unité (unit) keyboard-setup.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) keyboard-setup.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: modprobe@chromeos_pstore.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit modprobe@chromeos_pstore.service has successfully entered the 'dead' state.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Load Kernel Module chromeos_pstore.
+-- Subject: L'unité (unit) modprobe@chromeos_pstore.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@chromeos_pstore.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Mounting FUSE Control File System...
+-- Subject: L'unité (unit) sys-fs-fuse-connections.mount a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) sys-fs-fuse-connections.mount a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Mounting Kernel Configuration File System...
+-- Subject: L'unité (unit) sys-kernel-config.mount a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) sys-kernel-config.mount a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+-- Subject: L'unité (unit) systemd-hwdb-update.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-hwdb-update.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Apply Kernel Variables...
+-- Subject: L'unité (unit) systemd-sysctl.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-sysctl.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Create System Users...
+-- Subject: L'unité (unit) systemd-sysusers.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-sysusers.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Mounted FUSE Control File System.
+-- Subject: L'unité (unit) sys-fs-fuse-connections.mount a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) sys-fs-fuse-connections.mount a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Mounted Kernel Configuration File System.
+-- Subject: L'unité (unit) sys-kernel-config.mount a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) sys-kernel-config.mount a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished udev Coldplug all Devices.
+-- Subject: L'unité (unit) systemd-udev-trigger.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-udev-trigger.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Helper to synchronize boot up for ifupdown...
+-- Subject: L'unité (unit) ifupdown-pre.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ifupdown-pre.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd-sysctl[310]: Not setting net/ipv4/conf/all/promote_secondaries (explicit setting exists).
+déc. 13 18:45:42 hapy-node systemd-sysctl[310]: Not setting net/ipv4/conf/default/promote_secondaries (explicit setting exists).
+déc. 13 18:45:42 hapy-node systemd[1]: Starting udev Wait for Complete Device Initialization...
+-- Subject: L'unité (unit) systemd-udev-settle.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-udev-settle.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Create System Users.
+-- Subject: L'unité (unit) systemd-sysusers.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-sysusers.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Create Static Device Nodes in /dev...
+-- Subject: L'unité (unit) systemd-tmpfiles-setup-dev.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-tmpfiles-setup-dev.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Helper to synchronize boot up for ifupdown.
+-- Subject: L'unité (unit) ifupdown-pre.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ifupdown-pre.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd-sysctl[310]: Couldn't write '1' to 'net/bridge/bridge-nf-call-arptables', ignoring: No such file or directory
+déc. 13 18:45:42 hapy-node systemd-sysctl[310]: Couldn't write '1' to 'net/bridge/bridge-nf-call-ip6tables', ignoring: No such file or directory
+déc. 13 18:45:42 hapy-node systemd-sysctl[310]: Couldn't write '1' to 'net/bridge/bridge-nf-call-iptables', ignoring: No such file or directory
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Apply Kernel Variables.
+-- Subject: L'unité (unit) systemd-sysctl.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-sysctl.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Create Static Device Nodes in /dev.
+-- Subject: L'unité (unit) systemd-tmpfiles-setup-dev.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-tmpfiles-setup-dev.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Reached target Local File Systems (Pre).
+-- Subject: L'unité (unit) local-fs-pre.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) local-fs-pre.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting udev Kernel Device Manager...
+-- Subject: L'unité (unit) systemd-udevd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-udevd.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Started udev Kernel Device Manager.
+-- Subject: L'unité (unit) systemd-udevd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-udevd.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+-- Subject: L'unité (unit) plymouth-start.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-start.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+-- Subject: L'unité (unit) systemd-ask-password-console.path a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-ask-password-console.path a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+-- Subject: L'unité (unit) systemd-ask-password-plymouth.path a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-ask-password-plymouth.path a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Reached target Local Encrypted Volumes.
+-- Subject: L'unité (unit) cryptsetup.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) cryptsetup.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd-udevd[328]: Using default interface naming scheme 'v245'.
+déc. 13 18:45:42 hapy-node kernel: 9pnet: Installing 9P2000 support
+déc. 13 18:45:42 hapy-node systemd-udevd[328]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+déc. 13 18:45:42 hapy-node systemd-udevd[337]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Load Kernel Module chromeos_pstore...
+-- Subject: L'unité (unit) modprobe@chromeos_pstore.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@chromeos_pstore.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in Load Kernel Module efi_pstore being skipped.
+-- Subject: L'unité (unit) modprobe@efi_pstore.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@efi_pstore.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Load Kernel Module pstore_blk...
+-- Subject: L'unité (unit) modprobe@pstore_blk.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@pstore_blk.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Load Kernel Module pstore_zone...
+-- Subject: L'unité (unit) modprobe@pstore_zone.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@pstore_zone.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in Load Kernel Module ramoops being skipped.
+-- Subject: L'unité (unit) modprobe@ramoops.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@ramoops.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+-- Subject: L'unité (unit) plymouth-start.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-start.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+-- Subject: L'unité (unit) systemd-ask-password-plymouth.path a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-ask-password-plymouth.path a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+-- Subject: L'unité (unit) systemd-binfmt.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-binfmt.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+-- Subject: L'unité (unit) systemd-fsck-root.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck-root.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+-- Subject: L'unité (unit) systemd-hwdb-update.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-hwdb-update.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: modprobe@pstore_blk.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit modprobe@pstore_blk.service has successfully entered the 'dead' state.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Load Kernel Module pstore_blk.
+-- Subject: L'unité (unit) modprobe@pstore_blk.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@pstore_blk.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: modprobe@pstore_zone.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit modprobe@pstore_zone.service has successfully entered the 'dead' state.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Load Kernel Module pstore_zone.
+-- Subject: L'unité (unit) modprobe@pstore_zone.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@pstore_zone.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node kernel: cryptd: max_cpu_qlen set to 1000
+déc. 13 18:45:42 hapy-node systemd[1]: modprobe@chromeos_pstore.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit modprobe@chromeos_pstore.service has successfully entered the 'dead' state.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Load Kernel Module chromeos_pstore.
+-- Subject: L'unité (unit) modprobe@chromeos_pstore.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@chromeos_pstore.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Found device /dev/mapper/vghapy--node-swap_1.
+-- Subject: L'unité (unit) dev-mapper-vghapy\x2d\x2dnode\x2dswap_1.device a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dev-mapper-vghapy\x2d\x2dnode\x2dswap_1.device a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Activating swap /dev/mapper/vghapy--node-swap_1...
+-- Subject: L'unité (unit) dev-mapper-vghapy\x2d\x2dnode\x2dswap_1.swap a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dev-mapper-vghapy\x2d\x2dnode\x2dswap_1.swap a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Found device /dev/mapper/vghapy--node-var+lib+one.
+-- Subject: L'unité (unit) dev-mapper-vghapy\x2d\x2dnode\x2dvar\x2blib\x2bone.device a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dev-mapper-vghapy\x2d\x2dnode\x2dvar\x2blib\x2bone.device a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting File System Check on /dev/mapper/vghapy--node-var+lib+one...
+-- Subject: L'unité (unit) systemd-fsck@dev-mapper-vghapy\x2d\x2dnode\x2dvar\x2blib\x2bone.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck@dev-mapper-vghapy\x2d\x2dnode\x2dvar\x2blib\x2bone.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Found device /dev/mapper/vghapy--node-tmp.
+-- Subject: L'unité (unit) dev-mapper-vghapy\x2d\x2dnode\x2dtmp.device a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dev-mapper-vghapy\x2d\x2dnode\x2dtmp.device a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Found device /dev/mapper/vghapy--node-var.
+-- Subject: L'unité (unit) dev-mapper-vghapy\x2d\x2dnode\x2dvar.device a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dev-mapper-vghapy\x2d\x2dnode\x2dvar.device a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Created slice system-lvm2\x2dpvscan.slice.
+-- Subject: L'unité (unit) system-lvm2\x2dpvscan.slice a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) system-lvm2\x2dpvscan.slice a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting LVM event activation on device 8:2...
+-- Subject: L'unité (unit) lvm2-pvscan@8:2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) lvm2-pvscan@8:2.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting File System Check on /dev/mapper/vghapy--node-tmp...
+-- Subject: L'unité (unit) systemd-fsck@dev-mapper-vghapy\x2d\x2dnode\x2dtmp.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck@dev-mapper-vghapy\x2d\x2dnode\x2dtmp.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting File System Check on /dev/mapper/vghapy--node-var...
+-- Subject: L'unité (unit) systemd-fsck@dev-mapper-vghapy\x2d\x2dnode\x2dvar.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck@dev-mapper-vghapy\x2d\x2dnode\x2dvar.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node kernel: AVX2 version of gcm_enc/dec engaged.
+déc. 13 18:45:42 hapy-node kernel: AES CTR mode by8 optimization enabled
+déc. 13 18:45:42 hapy-node systemd[1]: Activated swap /dev/mapper/vghapy--node-swap_1.
+-- Subject: L'unité (unit) dev-mapper-vghapy\x2d\x2dnode\x2dswap_1.swap a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dev-mapper-vghapy\x2d\x2dnode\x2dswap_1.swap a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node kernel: Adding 1998844k swap on /dev/mapper/vghapy--node-swap_1.  Priority:-2 extents:1 across:1998844k FS
+déc. 13 18:45:42 hapy-node systemd[1]: Reached target Swap.
+-- Subject: L'unité (unit) swap.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) swap.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node lvm[404]:   pvscan[404] PV /dev/sda2 online, VG vghapy-node is complete.
+déc. 13 18:45:42 hapy-node lvm[404]:   pvscan[404] VG vghapy-node skip autoactivation.
+déc. 13 18:45:42 hapy-node systemd[1]: Started File System Check Daemon to report status.
+-- Subject: L'unité (unit) systemd-fsckd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsckd.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Found device QEMU_HARDDISK /boot.
+-- Subject: L'unité (unit) dev-disk-by\x2duuid-d539e8bc\x2d5feb\x2d4310\x2dab62\x2dc3462944f164.device a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dev-disk-by\x2duuid-d539e8bc\x2d5feb\x2d4310\x2dab62\x2dc3462944f164.device a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting File System Check on /dev/disk/by-uuid/d539e8bc-5feb-4310-ab62-c3462944f164...
+-- Subject: L'unité (unit) systemd-fsck@dev-disk-by\x2duuid-d539e8bc\x2d5feb\x2d4310\x2dab62\x2dc3462944f164.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck@dev-disk-by\x2duuid-d539e8bc\x2d5feb\x2d4310\x2dab62\x2dc3462944f164.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd-fsck[414]: /var : propre, 5251/549440 fichiers, 410754/2196480 blocs
+déc. 13 18:45:42 hapy-node systemd-fsck[406]: /var/lib/one : propre, 15/124928 fichiers, 17512/499712 blocs
+déc. 13 18:45:42 hapy-node systemd-fsck[411]: /tmp : propre, 18/121920 fichiers, 17289/487424 blocs
+déc. 13 18:45:42 hapy-node kernel: bochs-drm 0000:00:02.0: remove_conflicting_pci_framebuffers: bar 0: 0xfd000000 -> 0xfdffffff
+déc. 13 18:45:42 hapy-node kernel: bochs-drm 0000:00:02.0: remove_conflicting_pci_framebuffers: bar 2: 0xfebd0000 -> 0xfebd0fff
+déc. 13 18:45:42 hapy-node kernel: checking generic (fd000000 160000) vs hw (fd000000 1000000)
+déc. 13 18:45:42 hapy-node kernel: fb0: switching to bochsdrmfb from EFI VGA
+déc. 13 18:45:42 hapy-node kernel: Console: switching to colour dummy device 80x25
+déc. 13 18:45:42 hapy-node kernel: bochs-drm 0000:00:02.0: vgaarb: deactivate vga console
+déc. 13 18:45:42 hapy-node kernel: [drm] Found bochs VGA, ID 0xb0c0.
+déc. 13 18:45:42 hapy-node kernel: [drm] Framebuffer size 16384 kB @ 0xfd000000, mmio @ 0xfebd0000.
+déc. 13 18:45:42 hapy-node kernel: [TTM] Zone  kernel: Available graphics memory: 2006732 KiB
+déc. 13 18:45:42 hapy-node kernel: [TTM] Initializing pool allocator
+déc. 13 18:45:42 hapy-node kernel: [TTM] Initializing DMA pool allocator
+déc. 13 18:45:42 hapy-node kernel: [drm] Initialized bochs-drm 1.0.0 20130925 for 0000:00:02.0 on minor 0
+déc. 13 18:45:42 hapy-node kernel: fbcon: bochs-drmdrmfb (fb0) is primary device
+déc. 13 18:45:42 hapy-node kernel: Console: switching to colour frame buffer device 128x48
+déc. 13 18:45:42 hapy-node systemd[1]: Finished File System Check on /dev/mapper/vghapy--node-var+lib+one.
+-- Subject: L'unité (unit) systemd-fsck@dev-mapper-vghapy\x2d\x2dnode\x2dvar\x2blib\x2bone.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck@dev-mapper-vghapy\x2d\x2dnode\x2dvar\x2blib\x2bone.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node kernel: bochs-drm 0000:00:02.0: fb0: bochs-drmdrmfb frame buffer device
+déc. 13 18:45:42 hapy-node systemd[1]: Finished File System Check on /dev/mapper/vghapy--node-tmp.
+-- Subject: L'unité (unit) systemd-fsck@dev-mapper-vghapy\x2d\x2dnode\x2dtmp.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck@dev-mapper-vghapy\x2d\x2dnode\x2dtmp.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished File System Check on /dev/mapper/vghapy--node-var.
+-- Subject: L'unité (unit) systemd-fsck@dev-mapper-vghapy\x2d\x2dnode\x2dvar.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck@dev-mapper-vghapy\x2d\x2dnode\x2dvar.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Mounting /tmp...
+-- Subject: L'unité (unit) tmp.mount a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) tmp.mount a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Mounting /var...
+-- Subject: L'unité (unit) var.mount a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) var.mount a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished LVM event activation on device 8:2.
+-- Subject: L'unité (unit) lvm2-pvscan@8:2.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) lvm2-pvscan@8:2.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd-fsck[445]: /boot : propre, 319/45696 fichiers, 47038/182784 blocs
+déc. 13 18:45:42 hapy-node systemd[1]: Finished File System Check on /dev/disk/by-uuid/d539e8bc-5feb-4310-ab62-c3462944f164.
+-- Subject: L'unité (unit) systemd-fsck@dev-disk-by\x2duuid-d539e8bc\x2d5feb\x2d4310\x2dab62\x2dc3462944f164.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-fsck@dev-disk-by\x2duuid-d539e8bc\x2d5feb\x2d4310\x2dab62\x2dc3462944f164.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Mounting /boot...
+-- Subject: L'unité (unit) boot.mount a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) boot.mount a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Mounted /var.
+-- Subject: L'unité (unit) var.mount a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) var.mount a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node kernel: EXT4-fs (dm-3): mounted filesystem with ordered data mode. Opts: (null)
+déc. 13 18:45:42 hapy-node systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+-- Subject: L'unité (unit) systemd-rfkill.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-rfkill.socket a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node kernel: EXT4-fs (dm-2): mounted filesystem with ordered data mode. Opts: (null)
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in Virtual Machine and Container Storage (Compatibility) being skipped.
+-- Subject: L'unité (unit) var-lib-machines.mount a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) var-lib-machines.mount a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Reached target Containers.
+-- Subject: L'unité (unit) machines.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) machines.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Mounting /var/lib/one...
+-- Subject: L'unité (unit) var-lib-one.mount a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) var-lib-one.mount a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Flush Journal to Persistent Storage...
+-- Subject: L'unité (unit) systemd-journal-flush.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-journal-flush.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+-- Subject: L'unité (unit) systemd-pstore.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-pstore.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Load/Save Random Seed...
+-- Subject: L'unité (unit) systemd-random-seed.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-random-seed.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Mounted /tmp.
+-- Subject: L'unité (unit) tmp.mount a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) tmp.mount a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node kernel: EXT4-fs (dm-4): mounted filesystem with ordered data mode. Opts: (null)
+déc. 13 18:45:42 hapy-node systemd[1]: Mounted /var/lib/one.
+-- Subject: L'unité (unit) var-lib-one.mount a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) var-lib-one.mount a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd-journald[288]: Time spent on flushing to /var/log/journal/b31eaab15a724c2697468621c5c99474 is 368.572ms for 766 entries.
+déc. 13 18:45:42 hapy-node systemd-journald[288]: System Journal (/var/log/journal/b31eaab15a724c2697468621c5c99474) is 824.1M, max 834.5M, 10.3M free.
+-- Subject: Espace disque utilisé par le journal
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: man:journald.conf(5)
+-- 
+-- System Journal (/var/log/journal/b31eaab15a724c2697468621c5c99474) utilise actuellement 824.1M.
+-- Le maximum autorisé est défini à 834.5M.
+-- Au moins 417.2M doivent être laissés libres
+-- (sur 6.3G d'espace disque actuellement libre).
+-- La limite appliquée est donc 834.5M, dont 10.3M
+-- sont toujours disponibles.
+-- 
+-- Les limites définissant la quantité d'espace disque que peut utiliser le
+-- journal peuvent être configurées avec les paramètres SystemMaxUse=,
+-- SystemKeepFree=, SystemMaxFileSize=, RuntimeMaxUse=, RuntimeKeepFree=,
+-- RuntimeMaxFileSize= dans le fichier /etc/systemd/journald.conf.
+-- Voir journald.conf(5) pour plus de détails.
+déc. 13 18:45:44 hapy-node kernel: EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+déc. 13 18:45:44 hapy-node kernel: audit: type=1400 audit(1734111942.856:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=490 comm="apparmor_parser"
+déc. 13 18:45:44 hapy-node kernel: audit: type=1400 audit(1734111942.856:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libvirtd" pid=486 comm="apparmor_parser"
+déc. 13 18:45:44 hapy-node kernel: audit: type=1400 audit(1734111942.856:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libvirtd//qemu_bridge_helper" pid=486 comm="apparmor_parser"
+déc. 13 18:45:44 hapy-node kernel: audit: type=1400 audit(1734111942.864:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="virt-aa-helper" pid=487 comm="apparmor_parser"
+déc. 13 18:45:44 hapy-node kernel: audit: type=1400 audit(1734111942.864:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=491 comm="apparmor_parser"
+déc. 13 18:45:44 hapy-node kernel: audit: type=1400 audit(1734111942.864:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=491 comm="apparmor_parser"
+déc. 13 18:45:44 hapy-node kernel: audit: type=1400 audit(1734111942.864:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=491 comm="apparmor_parser"
+déc. 13 18:45:44 hapy-node kernel: audit: type=1400 audit(1734111942.864:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=492 comm="apparmor_parser"
+déc. 13 18:45:44 hapy-node kernel: audit: type=1400 audit(1734111942.864:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=492 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[490]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=490 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[486]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="libvirtd" pid=486 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[486]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="libvirtd//qemu_bridge_helper" pid=486 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[487]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="virt-aa-helper" pid=487 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[491]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=491 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[491]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=491 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[491]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=491 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[492]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=492 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[492]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=492 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[493]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/ntpd" pid=493 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[494]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_apt_news" pid=494 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[489]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache" pid=489 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[489]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//apt_methods" pid=489 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[489]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//apt_methods_gpgv" pid=489 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[489]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//cloud_id" pid=489 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[489]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//dpkg" pid=489 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[489]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//ps" pid=489 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[489]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//ubuntu_distro_info" pid=489 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[489]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache_systemctl" pid=489 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[489]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache_systemd_detect_virt" pid=489 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[495]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=495 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[497]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=497 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[497]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=497 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[497]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=497 comm="apparmor_parser"
+déc. 13 18:45:42 hapy-node audit[497]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/{,usr/}sbin/dhclient" pid=497 comm="apparmor_parser"
+déc. 13 18:45:44 hapy-node udevadm[314]: systemd-udev-settle.service is deprecated.
+déc. 13 18:45:42 hapy-node systemd[1]: Mounted /boot.
+-- Subject: L'unité (unit) boot.mount a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) boot.mount a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Reached target Local File Systems.
+-- Subject: L'unité (unit) local-fs.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) local-fs.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node apparmor.systemd[458]: Restarting AppArmor
+déc. 13 18:45:44 hapy-node apparmor.systemd[458]: Reloading AppArmor profiles
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Load AppArmor profiles...
+-- Subject: L'unité (unit) apparmor.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apparmor.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node apparmor.systemd[488]: Skipping profile in /etc/apparmor.d/disable: usr.bin.firefox
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Set console font and keymap...
+-- Subject: L'unité (unit) console-setup.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) console-setup.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node apparmor.systemd[496]: Skipping profile in /etc/apparmor.d/disable: usr.sbin.rsyslogd
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in Fermeture du firewall being skipped.
+-- Subject: L'unité (unit) ferme-firewall.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ferme-firewall.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+-- Subject: L'unité (unit) plymouth-read-write.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-read-write.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Starting QEMU KVM preparation - module, ksm, hugepages...
+-- Subject: L'unité (unit) qemu-kvm.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) qemu-kvm.service a commencé à démarrer.
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+-- Subject: L'unité (unit) systemd-machine-id-commit.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-machine-id-commit.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Set console font and keymap.
+-- Subject: L'unité (unit) console-setup.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) console-setup.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Load/Save Random Seed.
+-- Subject: L'unité (unit) systemd-random-seed.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-random-seed.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+-- Subject: L'unité (unit) systemd-boot-system-token.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-boot-system-token.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: plymouth-read-write.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit plymouth-read-write.service has successfully entered the 'dead' state.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Tell Plymouth To Write Out Runtime Data.
+-- Subject: L'unité (unit) plymouth-read-write.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-read-write.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished QEMU KVM preparation - module, ksm, hugepages.
+-- Subject: L'unité (unit) qemu-kvm.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) qemu-kvm.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished udev Wait for Complete Device Initialization.
+-- Subject: L'unité (unit) systemd-udev-settle.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-udev-settle.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:42 hapy-node systemd[1]: Finished Load AppArmor profiles.
+-- Subject: L'unité (unit) apparmor.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apparmor.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Finished Flush Journal to Persistent Storage.
+-- Subject: L'unité (unit) systemd-journal-flush.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-journal-flush.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Starting Create Volatile Files and Directories...
+-- Subject: L'unité (unit) systemd-tmpfiles-setup.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-tmpfiles-setup.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node systemd[1]: Finished Create Volatile Files and Directories.
+-- Subject: L'unité (unit) systemd-tmpfiles-setup.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-tmpfiles-setup.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Starting Load Kernel Module chromeos_pstore...
+-- Subject: L'unité (unit) modprobe@chromeos_pstore.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@chromeos_pstore.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node systemd[1]: Condition check resulted in Load Kernel Module efi_pstore being skipped.
+-- Subject: L'unité (unit) modprobe@efi_pstore.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@efi_pstore.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Starting Load Kernel Module pstore_blk...
+-- Subject: L'unité (unit) modprobe@pstore_blk.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@pstore_blk.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node systemd[1]: Starting Load Kernel Module pstore_zone...
+-- Subject: L'unité (unit) modprobe@pstore_zone.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@pstore_zone.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node systemd[1]: Condition check resulted in Load Kernel Module ramoops being skipped.
+-- Subject: L'unité (unit) modprobe@ramoops.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@ramoops.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+-- Subject: L'unité (unit) plymouth-read-write.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-read-write.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+-- Subject: L'unité (unit) plymouth-start.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-start.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+-- Subject: L'unité (unit) systemd-ask-password-plymouth.path a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-ask-password-plymouth.path a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+-- Subject: L'unité (unit) systemd-binfmt.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-binfmt.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+-- Subject: L'unité (unit) systemd-boot-system-token.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-boot-system-token.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+-- Subject: L'unité (unit) systemd-hwdb-update.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-hwdb-update.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+-- Subject: L'unité (unit) systemd-machine-id-commit.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-machine-id-commit.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+-- Subject: L'unité (unit) systemd-update-utmp.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-update-utmp.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node systemd[1]: modprobe@pstore_blk.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit modprobe@pstore_blk.service has successfully entered the 'dead' state.
+déc. 13 18:45:44 hapy-node systemd[1]: Finished Load Kernel Module pstore_blk.
+-- Subject: L'unité (unit) modprobe@pstore_blk.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@pstore_blk.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: modprobe@pstore_zone.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit modprobe@pstore_zone.service has successfully entered the 'dead' state.
+déc. 13 18:45:44 hapy-node systemd[1]: Finished Load Kernel Module pstore_zone.
+-- Subject: L'unité (unit) modprobe@pstore_zone.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@pstore_zone.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: plymouth-read-write.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit plymouth-read-write.service has successfully entered the 'dead' state.
+déc. 13 18:45:44 hapy-node systemd[1]: Finished Tell Plymouth To Write Out Runtime Data.
+-- Subject: L'unité (unit) plymouth-read-write.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-read-write.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Finished Update UTMP about System Boot/Shutdown.
+-- Subject: L'unité (unit) systemd-update-utmp.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-update-utmp.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: modprobe@chromeos_pstore.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit modprobe@chromeos_pstore.service has successfully entered the 'dead' state.
+déc. 13 18:45:44 hapy-node systemd[1]: Finished Load Kernel Module chromeos_pstore.
+-- Subject: L'unité (unit) modprobe@chromeos_pstore.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) modprobe@chromeos_pstore.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+-- Subject: L'unité (unit) systemd-pstore.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-pstore.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Reached target System Initialization.
+-- Subject: L'unité (unit) sysinit.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) sysinit.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Started ACPI Events Check.
+-- Subject: L'unité (unit) acpid.path a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) acpid.path a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Started Daily Cleanup of Temporary Directories.
+-- Subject: L'unité (unit) systemd-tmpfiles-clean.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-tmpfiles-clean.timer a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Condition check resulted in Ubuntu Pro Timer for running repeated jobs being skipped.
+-- Subject: L'unité (unit) ua-timer.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ua-timer.timer a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Reached target Paths.
+-- Subject: L'unité (unit) paths.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) paths.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Listening on ACPID Listen Socket.
+-- Subject: L'unité (unit) acpid.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) acpid.socket a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Listening on D-Bus System Message Bus Socket.
+-- Subject: L'unité (unit) dbus.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dbus.socket a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Starting Libvirt local socket.
+-- Subject: L'unité (unit) libvirtd.socket a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) libvirtd.socket a commencé à démarrer.
+déc. 13 18:45:44 hapy-node systemd[1]: Listening on UUID daemon activation socket.
+-- Subject: L'unité (unit) uuidd.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) uuidd.socket a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Listening on Virtual machine lock manager socket.
+-- Subject: L'unité (unit) virtlockd.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) virtlockd.socket a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Listening on Virtual machine lock manager admin socket.
+-- Subject: L'unité (unit) virtlockd-admin.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) virtlockd-admin.socket a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Listening on Virtual machine log manager socket.
+-- Subject: L'unité (unit) virtlogd.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) virtlogd.socket a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Listening on Virtual machine log manager socket.
+-- Subject: L'unité (unit) virtlogd-admin.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) virtlogd-admin.socket a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Listening on Libvirt local socket.
+-- Subject: L'unité (unit) libvirtd.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) libvirtd.socket a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Listening on Libvirt admin socket.
+-- Subject: L'unité (unit) libvirtd-admin.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) libvirtd-admin.socket a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Listening on Libvirt local read-only socket.
+-- Subject: L'unité (unit) libvirtd-ro.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) libvirtd-ro.socket a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Listening on Libvirt non-TLS IP socket.
+-- Subject: L'unité (unit) libvirtd-tcp.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) libvirtd-tcp.socket a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Reached target Sockets.
+-- Subject: L'unité (unit) sockets.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) sockets.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Reached target Basic System.
+-- Subject: L'unité (unit) basic.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) basic.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Starting EOLE Continuous Integration Tests Contextualisation...
+-- Subject: L'unité (unit) EoleCiTestsContext.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) EoleCiTestsContext.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node systemd[1]: Starting Accounts Service...
+-- Subject: L'unité (unit) accounts-daemon.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) accounts-daemon.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node systemd[1]: Starting Deferred execution scheduler...
+-- Subject: L'unité (unit) atd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) atd.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node systemd[1]: Started Regular background program processing daemon.
+-- Subject: L'unité (unit) cron.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) cron.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node cron[510]: (CRON) INFO (pidfile fd = 3)
+déc. 13 18:45:44 hapy-node systemd[1]: Started D-Bus System Message Bus.
+-- Subject: L'unité (unit) dbus.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dbus.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Started Save initial kernel messages after boot.
+-- Subject: L'unité (unit) dmesg.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dmesg.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Starting Remove Stale Online ext4 Metadata Check Snapshots...
+-- Subject: L'unité (unit) e2scrub_reap.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) e2scrub_reap.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node cron[510]: (CRON) INFO (Running @reboot jobs)
+déc. 13 18:45:44 hapy-node kernel: FS-Cache: Loaded
+déc. 13 18:45:44 hapy-node systemd[1]: Condition check resulted in EAD backend server being skipped.
+-- Subject: L'unité (unit) ead-server.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ead-server.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Condition check resulted in EAD web server being skipped.
+-- Subject: L'unité (unit) ead-web.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ead-web.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Condition check resulted in getty on tty2-tty6 if dbus and logind are not available being skipped.
+-- Subject: L'unité (unit) getty-static.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) getty-static.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Starting LSB: gpm sysv init script...
+-- Subject: L'unité (unit) gpm.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) gpm.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node bash[507]: wait mount 9P (1/6): ok
+déc. 13 18:45:44 hapy-node kernel: 9p: Installing v9fs 9p2000 file system support
+déc. 13 18:45:44 hapy-node kernel: FS-Cache: Netfs '9p' registered for caching
+déc. 13 18:45:44 hapy-node systemd[1]: Starting Record successful boot for GRUB...
+-- Subject: L'unité (unit) grub-common.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) grub-common.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node systemd[1]: Started irqbalance daemon.
+-- Subject: L'unité (unit) irqbalance.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) irqbalance.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Starting Dispatcher daemon for systemd-networkd...
+-- Subject: L'unité (unit) networkd-dispatcher.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) networkd-dispatcher.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node systemd[1]: Started ntp-systemd-netif.service.
+-- Subject: L'unité (unit) ntp-systemd-netif.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ntp-systemd-netif.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Condition check resulted in Set the CPU Frequency Scaling governor being skipped.
+-- Subject: L'unité (unit) ondemand.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ondemand.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Started Add entropy to /dev/random 's pool a hardware RNG.
+-- Subject: L'unité (unit) rng-tools.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) rng-tools.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Starting System Logging Service...
+-- Subject: L'unité (unit) rsyslog.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) rsyslog.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node systemd[1]: Starting Login Service...
+-- Subject: L'unité (unit) systemd-logind.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-logind.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node rngd[528]: read error
+déc. 13 18:45:44 hapy-node rngd[528]: read error
+déc. 13 18:45:44 hapy-node systemd[1]: Starting Virtual Machine and Container Registration Service...
+-- Subject: L'unité (unit) systemd-machined.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-machined.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node systemd[1]: Condition check resulted in Ubuntu Pro reboot cmds being skipped.
+-- Subject: L'unité (unit) ua-reboot-cmds.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ua-reboot-cmds.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Started Deferred execution scheduler.
+-- Subject: L'unité (unit) atd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) atd.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: e2scrub_reap.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit e2scrub_reap.service has successfully entered the 'dead' state.
+déc. 13 18:45:44 hapy-node systemd[1]: Finished Remove Stale Online ext4 Metadata Check Snapshots.
+-- Subject: L'unité (unit) e2scrub_reap.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) e2scrub_reap.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: ntp-systemd-netif.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit ntp-systemd-netif.service has successfully entered the 'dead' state.
+déc. 13 18:45:44 hapy-node bash[538]: CheckUpdate.sh: /root/mount.eole-ci-tests A JOUR
+déc. 13 18:45:44 hapy-node systemd-logind[534]: New seat seat0.
+-- Subject: Un nouveau poste (seat) seat0 est disponible
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- Un nouveau poste (seat) seat0 a été configuré et est maintenant
+-- disponible.
+déc. 13 18:45:44 hapy-node systemd-logind[534]: Watching system buttons on /dev/input/event0 (Power Button)
+déc. 13 18:45:44 hapy-node systemd-logind[534]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+déc. 13 18:45:44 hapy-node systemd[1]: grub-common.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit grub-common.service has successfully entered the 'dead' state.
+déc. 13 18:45:44 hapy-node systemd[1]: Finished Record successful boot for GRUB.
+-- Subject: L'unité (unit) grub-common.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) grub-common.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Starting GRUB failed boot detection...
+-- Subject: L'unité (unit) grub-initrd-fallback.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) grub-initrd-fallback.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node bash[538]: CheckUpdate.sh: /root/getVMContext.sh A JOUR
+déc. 13 18:45:44 hapy-node gpm[518]:  * Starting mouse interface server gpm
+déc. 13 18:45:44 hapy-node rsyslogd[532]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2001.0]
+déc. 13 18:45:44 hapy-node systemd[1]: Started System Logging Service.
+-- Subject: L'unité (unit) rsyslog.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) rsyslog.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node rsyslogd[532]: rsyslogd's groupid changed to 110
+déc. 13 18:45:44 hapy-node rsyslogd[532]: rsyslogd's userid changed to 104
+déc. 13 18:45:44 hapy-node rsyslogd[532]: [origin software="rsyslogd" swVersion="8.2001.0" x-pid="532" x-info="https://www.rsyslog.com"] start
+déc. 13 18:45:44 hapy-node CRON[517]: pam_unix(cron:session): session opened for user oneadmin by (uid=0)
+déc. 13 18:45:44 hapy-node CRON[577]: (oneadmin) CMD (test -x /var/tmp/one/tm/fs_lvm/activate && /var/tmp/one/tm/fs_lvm/activate >/dev/null 2>&1)
+déc. 13 18:45:44 hapy-node CRON[517]: pam_unix(cron:session): session closed for user oneadmin
+déc. 13 18:45:44 hapy-node bash[538]: CheckUpdate.sh: /root/EoleCiFunctions.sh A JOUR
+déc. 13 18:45:44 hapy-node dbus-daemon[513]: [system] AppArmor D-Bus mediation is enabled
+déc. 13 18:45:44 hapy-node systemd[1]: grub-initrd-fallback.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit grub-initrd-fallback.service has successfully entered the 'dead' state.
+déc. 13 18:45:44 hapy-node systemd[1]: Finished GRUB failed boot detection.
+-- Subject: L'unité (unit) grub-initrd-fallback.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) grub-initrd-fallback.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Started Login Service.
+-- Subject: L'unité (unit) systemd-logind.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-logind.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node systemd[1]: Started Virtual Machine and Container Registration Service.
+-- Subject: L'unité (unit) systemd-machined.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-machined.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node gpm[518]:    ...done.
+déc. 13 18:45:44 hapy-node /usr/sbin/gpm[582]: *** info [daemon/startup.c(131)]:
+déc. 13 18:45:44 hapy-node /usr/sbin/gpm[582]: Started gpm successfully. Entered daemon mode.
+déc. 13 18:45:44 hapy-node systemd[1]: Started LSB: gpm sysv init script.
+-- Subject: L'unité (unit) gpm.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) gpm.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node bash[538]: CheckUpdate.sh: /root/.EoleCiTestsContext.sh A JOUR
+déc. 13 18:45:44 hapy-node bash[538]: CheckUpdate.sh: /root/.EoleCiTestsDaemon.sh A JOUR
+déc. 13 18:45:44 hapy-node dbus-daemon[513]: [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkit.service' requested by ':1.3' (uid=0 pid=508 comm="/usr/lib/accountsservice/accounts-daemon " label="unconfined")
+déc. 13 18:45:44 hapy-node systemd[1]: Starting Authorization Manager...
+-- Subject: L'unité (unit) polkit.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) polkit.service a commencé à démarrer.
+déc. 13 18:45:44 hapy-node kernel: ISO 9660 Extensions: Microsoft Joliet Level 3
+déc. 13 18:45:44 hapy-node kernel: ISO 9660 Extensions: RRIP_1991A
+déc. 13 18:45:44 hapy-node polkitd[609]: started daemon version 0.105 using authority implementation `local' version `0.105'
+déc. 13 18:45:44 hapy-node dbus-daemon[513]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+déc. 13 18:45:44 hapy-node systemd[1]: Started Authorization Manager.
+-- Subject: L'unité (unit) polkit.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) polkit.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:44 hapy-node accounts-daemon[508]: started daemon version 0.6.55
+déc. 13 18:45:44 hapy-node systemd[1]: Started Accounts Service.
+-- Subject: L'unité (unit) accounts-daemon.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) accounts-daemon.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:45 hapy-node networkd-dispatcher[526]: No valid path found for iwconfig
+déc. 13 18:45:45 hapy-node networkd-dispatcher[625]: WARNING: systemd-networkd is not running, output will be incomplete.
+déc. 13 18:45:45 hapy-node networkd-dispatcher[526]: ERROR:Unknown state for interface NetworkctlListState(idx=1, name='lo', type='loopback', operational='n/a', administrative='unmanaged'): n/a
+déc. 13 18:45:45 hapy-node networkd-dispatcher[526]: Traceback (most recent call last):
+déc. 13 18:45:45 hapy-node networkd-dispatcher[526]:   File "/usr/bin/networkd-dispatcher", line 298, in trigger_all
+déc. 13 18:45:45 hapy-node networkd-dispatcher[526]:     self.handle_state(iface_name,
+déc. 13 18:45:45 hapy-node networkd-dispatcher[526]:   File "/usr/bin/networkd-dispatcher", line 348, in handle_state
+déc. 13 18:45:45 hapy-node networkd-dispatcher[526]:     raise UnknownState(operational_state)
+déc. 13 18:45:45 hapy-node networkd-dispatcher[526]: UnknownState: n/a
+déc. 13 18:45:45 hapy-node networkd-dispatcher[526]: ERROR:Unknown state for interface NetworkctlListState(idx=2, name='ens4', type='ether', operational='n/a', administrative='unmanaged'): n/a
+déc. 13 18:45:45 hapy-node networkd-dispatcher[526]: Traceback (most recent call last):
+déc. 13 18:45:45 hapy-node networkd-dispatcher[526]:   File "/usr/bin/networkd-dispatcher", line 298, in trigger_all
+déc. 13 18:45:45 hapy-node networkd-dispatcher[526]:     self.handle_state(iface_name,
+déc. 13 18:45:45 hapy-node networkd-dispatcher[526]:   File "/usr/bin/networkd-dispatcher", line 348, in handle_state
+déc. 13 18:45:45 hapy-node networkd-dispatcher[526]:     raise UnknownState(operational_state)
+déc. 13 18:45:45 hapy-node networkd-dispatcher[526]: UnknownState: n/a
+déc. 13 18:45:45 hapy-node systemd[1]: Started Dispatcher daemon for systemd-networkd.
+-- Subject: L'unité (unit) networkd-dispatcher.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) networkd-dispatcher.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:45 hapy-node EOLECITESTS[629]: ciContextualizeMachine: réalisée pour 1421022, à refaire
+déc. 13 18:45:45 hapy-node EOLECITESTS[630]: Début ciContextualizeMachine : daily,
+déc. 13 18:45:45 hapy-node EOLECITESTS[631]: Debut ciContextualizeDaily
+déc. 13 18:45:45 hapy-node EOLECITESTS[643]: 01-netcfg ok, on ne fait rien !
+déc. 13 18:45:45 hapy-node EOLECITESTS[644]: Fin ciContextualizeDaily
+déc. 13 18:45:45 hapy-node EOLECITESTS[645]: Contextualization Machine OK
+déc. 13 18:45:45 hapy-node EOLECITESTS[649]: jenkins 1422892 daily Contextualization Machine : OK
+déc. 13 18:45:45 hapy-node EOLECITESTS[650]: Fin ciContextualizeMachine : ok à 2024-12-13 18:45:45
+déc. 13 18:45:45 hapy-node echo[651]: Contextualisation Ok
+déc. 13 18:45:45 hapy-node systemd[1]: EoleCiTestsContext.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit EoleCiTestsContext.service has successfully entered the 'dead' state.
+déc. 13 18:45:45 hapy-node systemd[1]: Finished EOLE Continuous Integration Tests Contextualisation.
+-- Subject: L'unité (unit) EoleCiTestsContext.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) EoleCiTestsContext.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:45 hapy-node systemd[1]: Reached target Network (Pre).
+-- Subject: L'unité (unit) network-pre.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) network-pre.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:45 hapy-node systemd[1]: Starting Apply netplan config...
+-- Subject: L'unité (unit) netplan-apply.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) netplan-apply.service a commencé à démarrer.
+déc. 13 18:45:45 hapy-node systemd[1]: Starting Open vSwitch Database Unit...
+-- Subject: L'unité (unit) ovsdb-server.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ovsdb-server.service a commencé à démarrer.
+déc. 13 18:45:45 hapy-node systemd[1]: Starting Network Service...
+-- Subject: L'unité (unit) systemd-networkd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-networkd.service a commencé à démarrer.
+déc. 13 18:45:45 hapy-node eole-purge-interfaces[652]: Purge all interfaces...
+déc. 13 18:45:45 hapy-node systemd-networkd[654]: Enumeration completed
+déc. 13 18:45:45 hapy-node systemd[1]: Started Network Service.
+-- Subject: L'unité (unit) systemd-networkd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-networkd.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:45 hapy-node systemd-networkd[654]: ens4: IPv6 successfully enabled
+déc. 13 18:45:45 hapy-node systemd[1]: Starting Wait for Network to be Configured...
+-- Subject: L'unité (unit) systemd-networkd-wait-online.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-networkd-wait-online.service a commencé à démarrer.
+déc. 13 18:45:45 hapy-node systemd-networkd[654]: ens4: Link UP
+déc. 13 18:45:45 hapy-node systemd[1]: Starting Network Name Resolution...
+-- Subject: L'unité (unit) systemd-resolved.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-resolved.service a commencé à démarrer.
+déc. 13 18:45:45 hapy-node systemd-networkd[654]: ens4: Gained carrier
+déc. 13 18:45:45 hapy-node ovs-ctl[694]: 2024-12-13T17:45:45Z|00001|dns_resolve|WARN|Failed to read /etc/resolv.conf: No such file or directory
+déc. 13 18:45:45 hapy-node ovsdb-server[694]: ovs|00001|dns_resolve|WARN|Failed to read /etc/resolv.conf: No such file or directory
+déc. 13 18:45:45 hapy-node systemd-resolved[691]: Positive Trust Anchors:
+déc. 13 18:45:45 hapy-node systemd-resolved[691]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+déc. 13 18:45:45 hapy-node systemd-resolved[691]: Negative trust anchors: 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa corp home internal intranet lan local private test
+déc. 13 18:45:45 hapy-node ovs-ctl[653]:  * Starting ovsdb-server
+déc. 13 18:45:45 hapy-node ovs-vsctl[697]: ovs|00001|vsctl|INFO|Called as ovs-vsctl --no-wait -- init -- set Open_vSwitch . db-version=8.2.0
+déc. 13 18:45:45 hapy-node systemd-resolved[691]: Using system hostname 'hapy-node'.
+déc. 13 18:45:45 hapy-node systemd[1]: Started Network Name Resolution.
+-- Subject: L'unité (unit) systemd-resolved.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-resolved.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:45 hapy-node ovs-vsctl[702]: ovs|00001|vsctl|INFO|Called as ovs-vsctl --no-wait set Open_vSwitch . ovs-version=2.13.8 "external-ids:system-id=\"29af5bdd-b255-4cf0-9171-4ecf010d980d\"" "external-ids:rundir=\"/var/run/openvswitch\"" "system-type=\"ubuntu\"" "system-version=\"20.04\""
+déc. 13 18:45:45 hapy-node ovs-ctl[653]:  * Configuring Open vSwitch system IDs
+déc. 13 18:45:45 hapy-node ovs-ctl[653]:  * Enabling remote OVSDB managers
+déc. 13 18:45:45 hapy-node systemd[1]: Started Open vSwitch Database Unit.
+-- Subject: L'unité (unit) ovsdb-server.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ovsdb-server.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:45 hapy-node systemd[1]: Starting OpenVSwitch configuration for cleanup...
+-- Subject: L'unité (unit) netplan-ovs-cleanup.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) netplan-ovs-cleanup.service a commencé à démarrer.
+déc. 13 18:45:45 hapy-node systemd[1]: Starting Open vSwitch Forwarding Unit...
+-- Subject: L'unité (unit) ovs-vswitchd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ovs-vswitchd.service a commencé à démarrer.
+déc. 13 18:45:45 hapy-node systemd[1]: Reloading.
+déc. 13 18:45:45 hapy-node systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+déc. 13 18:45:45 hapy-node kernel: IPv6: ens4: IPv6 duplicate address fe80::c0ff:fea8:66 used by 02:00:c0:a8:00:66 detected!
+déc. 13 18:45:45 hapy-node systemd[1]: netplan-ovs-cleanup.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit netplan-ovs-cleanup.service has successfully entered the 'dead' state.
+déc. 13 18:45:45 hapy-node systemd[1]: Finished OpenVSwitch configuration for cleanup.
+-- Subject: L'unité (unit) netplan-ovs-cleanup.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) netplan-ovs-cleanup.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:45 hapy-node ovs-ctl[794]:  * Inserting openvswitch module
+déc. 13 18:45:45 hapy-node kernel: openvswitch: Open vSwitch switching datapath
+déc. 13 18:45:45 hapy-node systemd-networkd[654]: ens4: Re-configuring with /run/systemd/network/10-netplan-ens4.network
+déc. 13 18:45:45 hapy-node ovs-ctl[709]:  * Starting ovs-vswitchd
+déc. 13 18:45:45 hapy-node ovs-ctl[709]:  * Enabling remote OVSDB managers
+déc. 13 18:45:45 hapy-node systemd[1]: Started Open vSwitch Forwarding Unit.
+-- Subject: L'unité (unit) ovs-vswitchd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ovs-vswitchd.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:45 hapy-node systemd[1]: Starting Raise network interfaces...
+-- Subject: L'unité (unit) networking.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) networking.service a commencé à démarrer.
+déc. 13 18:45:45 hapy-node systemd[1]: Starting Open vSwitch...
+-- Subject: L'unité (unit) openvswitch-switch.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) openvswitch-switch.service a commencé à démarrer.
+déc. 13 18:45:45 hapy-node systemd-networkd[654]: ens4: IPv6 successfully enabled
+déc. 13 18:45:45 hapy-node systemd[1]: Finished Open vSwitch.
+-- Subject: L'unité (unit) openvswitch-switch.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) openvswitch-switch.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:45 hapy-node systemd-networkd[654]: ens4: DHCPv4 address 192.168.0.153/24 via 192.168.0.1
+déc. 13 18:45:45 hapy-node dbus-daemon[513]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.6' (uid=100 pid=654 comm="/lib/systemd/systemd-networkd " label="unconfined")
+déc. 13 18:45:45 hapy-node systemd[1]: Started ntp-systemd-netif.service.
+-- Subject: L'unité (unit) ntp-systemd-netif.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ntp-systemd-netif.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:45 hapy-node systemd[1]: Starting Hostname Service...
+-- Subject: L'unité (unit) systemd-hostnamed.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-hostnamed.service a commencé à démarrer.
+déc. 13 18:45:45 hapy-node systemd[1]: Finished Raise network interfaces.
+-- Subject: L'unité (unit) networking.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) networking.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:45 hapy-node systemd[1]: ntp-systemd-netif.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit ntp-systemd-netif.service has successfully entered the 'dead' state.
+déc. 13 18:45:45 hapy-node dbus-daemon[513]: [system] Successfully activated service 'org.freedesktop.hostname1'
+déc. 13 18:45:45 hapy-node systemd[1]: Started Hostname Service.
+-- Subject: L'unité (unit) systemd-hostnamed.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-hostnamed.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:46 hapy-node networkd-dispatcher[906]: openssh-server: SSH daemon is not running, exit
+déc. 13 18:45:49 hapy-node systemd[1]: dmesg.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit dmesg.service has successfully entered the 'dead' state.
+déc. 13 18:45:50 hapy-node systemd-networkd[654]: ens4: Re-configuring with /run/systemd/network/10-netplan-ens4.network
+déc. 13 18:45:50 hapy-node systemd-networkd[654]: ens4: DHCP lease lost
+déc. 13 18:45:50 hapy-node systemd[1]: Started ntp-systemd-netif.service.
+-- Subject: L'unité (unit) ntp-systemd-netif.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ntp-systemd-netif.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:50 hapy-node systemd[1]: Starting EOLE Continuous Integration Tests Contextualisation...
+-- Subject: L'unité (unit) EoleCiTestsContext.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) EoleCiTestsContext.service a commencé à démarrer.
+déc. 13 18:45:50 hapy-node systemd-networkd[654]: ens4: IPv6 successfully enabled
+déc. 13 18:45:50 hapy-node systemd[1]: Starting OpenVSwitch configuration for cleanup...
+-- Subject: L'unité (unit) netplan-ovs-cleanup.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) netplan-ovs-cleanup.service a commencé à démarrer.
+déc. 13 18:45:50 hapy-node bash[947]: CheckUpdate.sh: /root/mount.eole-ci-tests A JOUR
+déc. 13 18:45:51 hapy-node bash[947]: CheckUpdate.sh: /root/getVMContext.sh A JOUR
+déc. 13 18:45:51 hapy-node systemd[1]: ntp-systemd-netif.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit ntp-systemd-netif.service has successfully entered the 'dead' state.
+déc. 13 18:45:51 hapy-node bash[947]: CheckUpdate.sh: /root/EoleCiFunctions.sh A JOUR
+déc. 13 18:45:51 hapy-node bash[947]: CheckUpdate.sh: /root/.EoleCiTestsContext.sh A JOUR
+déc. 13 18:45:51 hapy-node bash[947]: CheckUpdate.sh: /root/.EoleCiTestsDaemon.sh A JOUR
+déc. 13 18:45:51 hapy-node systemd[1]: netplan-ovs-cleanup.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit netplan-ovs-cleanup.service has successfully entered the 'dead' state.
+déc. 13 18:45:51 hapy-node systemd[1]: Finished OpenVSwitch configuration for cleanup.
+-- Subject: L'unité (unit) netplan-ovs-cleanup.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) netplan-ovs-cleanup.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:51 hapy-node systemd[1]: Finished Apply netplan config.
+-- Subject: L'unité (unit) netplan-apply.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) netplan-apply.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:51 hapy-node systemd[1]: Reached target Network.
+-- Subject: L'unité (unit) network.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) network.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:51 hapy-node systemd[1]: Starting EOLE Creole server...
+-- Subject: L'unité (unit) creoled.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) creoled.service a commencé à démarrer.
+déc. 13 18:45:51 hapy-node systemd[1]: Starting dnsmasq - A lightweight DHCP and caching DNS server...
+-- Subject: L'unité (unit) dnsmasq.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dnsmasq.service a commencé à démarrer.
+déc. 13 18:45:51 hapy-node systemd[1]: Starting Eole flask server...
+-- Subject: L'unité (unit) eoleflask.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) eoleflask.service a commencé à démarrer.
+déc. 13 18:45:51 hapy-node systemd[1]: Starting Wait for Network to be Configured by Netplan...
+-- Subject: L'unité (unit) netplan-wait-online.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) netplan-wait-online.service a commencé à démarrer.
+déc. 13 18:45:51 hapy-node systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: L'unité (unit) nginx.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nginx.service a commencé à démarrer.
+déc. 13 18:45:51 hapy-node systemd[1]: Starting Network UPS Tools - power device driver controller...
+-- Subject: L'unité (unit) nut-driver.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nut-driver.service a commencé à démarrer.
+déc. 13 18:45:51 hapy-node systemd[1]: Condition check resulted in fast remote file copy program daemon being skipped.
+-- Subject: L'unité (unit) rsync.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) rsync.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:51 hapy-node systemd[1]: Starting OpenBSD Secure Shell server...
+-- Subject: L'unité (unit) ssh.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ssh.service a commencé à démarrer.
+déc. 13 18:45:51 hapy-node systemd[1]: Starting Permit User Sessions...
+-- Subject: L'unité (unit) systemd-user-sessions.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-user-sessions.service a commencé à démarrer.
+déc. 13 18:45:51 hapy-node systemd[1]: Started vnStat network traffic monitor.
+-- Subject: L'unité (unit) vnstat.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vnstat.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:51 hapy-node upsdrvctl[1019]: Error: no UPS definitions found in ups.conf
+déc. 13 18:45:51 hapy-node upsdrvctl[1019]: Network UPS Tools - UPS driver controller 2.7.4
+déc. 13 18:45:51 hapy-node dnsmasq[1015]: dnsmasq: vérification de syntaxe OK.
+déc. 13 18:45:51 hapy-node systemd[1]: nut-driver.service: Control process exited, code=exited, status=1/FAILURE
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit nut-driver.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+déc. 13 18:45:51 hapy-node systemd[1]: nut-driver.service: Failed with result 'exit-code'.
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nut-driver.service has entered the 'failed' state with result 'exit-code'.
+déc. 13 18:45:51 hapy-node systemd[1]: Failed to start Network UPS Tools - power device driver controller.
+-- Subject: L'unité (unit) nut-driver.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nut-driver.service a échoué, avec le résultat failed.
+déc. 13 18:45:51 hapy-node systemd[1]: Finished Permit User Sessions.
+-- Subject: L'unité (unit) systemd-user-sessions.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-user-sessions.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:51 hapy-node systemd[1]: Starting Network UPS Tools - power devices information server...
+-- Subject: L'unité (unit) nut-server.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nut-server.service a commencé à démarrer.
+déc. 13 18:45:51 hapy-node upsd[1027]: upsd disabled, please adjust the configuration to your needs
+déc. 13 18:45:51 hapy-node upsd[1027]: Then set MODE to a suitable value in /etc/nut/nut.conf to enable it
+déc. 13 18:45:51 hapy-node systemd[1]: nut-server.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nut-server.service has successfully entered the 'dead' state.
+déc. 13 18:45:51 hapy-node systemd[1]: Started Network UPS Tools - power devices information server.
+-- Subject: L'unité (unit) nut-server.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nut-server.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:51 hapy-node systemd[1]: Starting Network UPS Tools - power device monitor and shutdown controller...
+-- Subject: L'unité (unit) nut-monitor.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nut-monitor.service a commencé à démarrer.
+déc. 13 18:45:51 hapy-node upsmon[1030]: upsmon disabled, please adjust the configuration to your needs
+déc. 13 18:45:51 hapy-node upsmon[1030]: Then set MODE to a suitable value in /etc/nut/nut.conf to enable it
+déc. 13 18:45:51 hapy-node systemd[1]: nut-monitor.service: Can't open PID file /run/nut/upsmon.pid (yet?) after start: Operation not permitted
+déc. 13 18:45:51 hapy-node systemd[1]: nut-monitor.service: Failed with result 'protocol'.
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nut-monitor.service has entered the 'failed' state with result 'protocol'.
+déc. 13 18:45:51 hapy-node systemd[1]: Failed to start Network UPS Tools - power device monitor and shutdown controller.
+-- Subject: L'unité (unit) nut-monitor.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nut-monitor.service a échoué, avec le résultat failed.
+déc. 13 18:45:51 hapy-node dnsmasq[1039]: demarré, version 2.90 (taille de cache 150)
+déc. 13 18:45:51 hapy-node dnsmasq[1039]: options à la compilation : IPv6 GNU-getopt DBus no-UBus i18n IDN DHCP DHCPv6 no-Lua TFTP conntrack ipset no-nftset auth cryptohash DNSSEC loop-detect inotify dumpfile
+déc. 13 18:45:51 hapy-node dnsmasq[1039]: Lecture de /etc/resolv.conf
+déc. 13 18:45:51 hapy-node dnsmasq[1039]: utilise le serveur de nom 127.0.0.53#53
+déc. 13 18:45:51 hapy-node dnsmasq[1039]: read /etc/hosts - 8 names
+déc. 13 18:45:51 hapy-node systemd[1]: Started dnsmasq - A lightweight DHCP and caching DNS server.
+-- Subject: L'unité (unit) dnsmasq.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dnsmasq.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:51 hapy-node systemd[1]: Reached target Host and Network Name Lookups.
+-- Subject: L'unité (unit) nss-lookup.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nss-lookup.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:51 hapy-node EOLECITESTS[1054]: ciContextualizeMachine: déjà réalisée à
+déc. 13 18:45:51 hapy-node echo[1055]: Contextualisation Ok
+déc. 13 18:45:51 hapy-node systemd[1]: EoleCiTestsContext.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit EoleCiTestsContext.service has successfully entered the 'dead' state.
+déc. 13 18:45:51 hapy-node systemd[1]: Finished EOLE Continuous Integration Tests Contextualisation.
+-- Subject: L'unité (unit) EoleCiTestsContext.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) EoleCiTestsContext.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:51 hapy-node sshd[1056]: Server listening on 0.0.0.0 port 22.
+déc. 13 18:45:51 hapy-node sshd[1056]: Server listening on :: port 22.
+déc. 13 18:45:51 hapy-node systemd[1]: Started OpenBSD Secure Shell server.
+-- Subject: L'unité (unit) ssh.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ssh.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:51 hapy-node vnstatd[1024]: Info: vnStat daemon 2.6 started. (pid:1024 uid:110 gid:119 64-bit)
+déc. 13 18:45:51 hapy-node vnstatd[1024]: Info: Monitoring (1): ens4 (1000 Mbit)
+déc. 13 18:45:51 hapy-node systemd[1]: Started A high performance web server and a reverse proxy server.
+-- Subject: L'unité (unit) nginx.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nginx.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:51 hapy-node systemd[1]: eoleflask.service: Can't open PID file /run/eoleflask.pid (yet?) after start: Operation not permitted
+déc. 13 18:45:52 hapy-node systemd[1]: Started Eole flask server.
+-- Subject: L'unité (unit) eoleflask.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) eoleflask.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:52 hapy-node creoled[1014]:  ENGINE Listening for SIGTERM.
+déc. 13 18:45:52 hapy-node creoled[1014]:  ENGINE Listening for SIGHUP.
+déc. 13 18:45:52 hapy-node creoled[1014]:  ENGINE Listening for SIGUSR1.
+déc. 13 18:45:52 hapy-node creoled[1014]:  ENGINE Listening for SIGINT.
+déc. 13 18:45:52 hapy-node creoled[1014]:  ENGINE Bus STARTING
+déc. 13 18:45:52 hapy-node creoled[1014]:  ENGINE Started monitor thread '_TimeoutMonitor'.
+déc. 13 18:45:52 hapy-node creoled[1014]:  ENGINE Start InotifyMonitor thread
+déc. 13 18:45:52 hapy-node creoled[1014]:  ENGINE PID 1014 written to '/run/creoled.pid'.
+déc. 13 18:45:52 hapy-node creoled[1014]:  ENGINE Serving on http://127.0.0.1:8000
+déc. 13 18:45:52 hapy-node creoled[1014]:  ENGINE Bus STARTED
+déc. 13 18:45:52 hapy-node systemd[1]: Started EOLE Creole server.
+-- Subject: L'unité (unit) creoled.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) creoled.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:52 hapy-node creoled[1014]: 127.0.0.1 - - [13/Dec/2024:18:45:52] "GET /get/creole/interface_0/nom_zone_eth0 HTTP/1.1" 200 33 "" "python-requests/2.22.0"
+déc. 13 18:45:55 hapy-node systemd-networkd[654]: ens4: DHCPv4 address 192.168.0.153/24 via 192.168.0.1
+déc. 13 18:45:55 hapy-node dnsmasq[1039]: Lecture de /etc/resolv.conf
+déc. 13 18:45:55 hapy-node dnsmasq[1039]: utilise le serveur de nom 127.0.0.53#53
+déc. 13 18:45:55 hapy-node systemd[1]: Started ntp-systemd-netif.service.
+-- Subject: L'unité (unit) ntp-systemd-netif.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ntp-systemd-netif.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:45:55 hapy-node networkd-dispatcher[1111]: openssh-server: reload OpenSSH service
+déc. 13 18:45:55 hapy-node systemd[1]: Reloading OpenBSD Secure Shell server.
+-- Subject: L'unité (unit) ssh.service a commencé à recharger sa configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ssh.service a commencé à recharger sa configuration.
+déc. 13 18:45:55 hapy-node sshd[1056]: Received SIGHUP; restarting.
+déc. 13 18:45:55 hapy-node systemd[1]: Reloaded OpenBSD Secure Shell server.
+-- Subject: L'unité (unit) ssh.service a terminé de recharger configuration
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ssh.service a terminé de recharger configuration,
+-- avec le résultat done.
+déc. 13 18:45:55 hapy-node systemd[1]: ntp-systemd-netif.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit ntp-systemd-netif.service has successfully entered the 'dead' state.
+déc. 13 18:45:55 hapy-node sshd[1056]: Server listening on 0.0.0.0 port 22.
+déc. 13 18:45:55 hapy-node sshd[1056]: Server listening on :: port 22.
+déc. 13 18:46:12 hapy-node systemd[1]: systemd-fsckd.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit systemd-fsckd.service has successfully entered the 'dead' state.
+déc. 13 18:46:25 hapy-node systemd[1]: systemd-hostnamed.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit systemd-hostnamed.service has successfully entered the 'dead' state.
+déc. 13 18:47:45 hapy-node systemd-networkd-wait-online[690]: Event loop failed: Connection timed out
+déc. 13 18:47:45 hapy-node systemd[1]: systemd-networkd-wait-online.service: Main process exited, code=exited, status=1/FAILURE
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit systemd-networkd-wait-online.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+déc. 13 18:47:45 hapy-node systemd[1]: systemd-networkd-wait-online.service: Failed with result 'exit-code'.
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit systemd-networkd-wait-online.service has entered the 'failed' state with result 'exit-code'.
+déc. 13 18:47:45 hapy-node systemd[1]: Failed to start Wait for Network to be Configured.
+-- Subject: L'unité (unit) systemd-networkd-wait-online.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-networkd-wait-online.service a échoué, avec le résultat failed.
+déc. 13 18:47:51 hapy-node systemd-networkd-wait-online[1017]: Event loop failed: Connection timed out
+déc. 13 18:47:51 hapy-node systemd[1]: netplan-wait-online.service: Main process exited, code=exited, status=1/FAILURE
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit netplan-wait-online.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+déc. 13 18:47:51 hapy-node systemd[1]: netplan-wait-online.service: Failed with result 'exit-code'.
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit netplan-wait-online.service has entered the 'failed' state with result 'exit-code'.
+déc. 13 18:47:51 hapy-node systemd[1]: Failed to start Wait for Network to be Configured by Netplan.
+-- Subject: L'unité (unit) netplan-wait-online.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) netplan-wait-online.service a échoué, avec le résultat failed.
+déc. 13 18:47:51 hapy-node systemd[1]: Reached target Network is Online.
+-- Subject: L'unité (unit) network-online.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) network-online.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:47:51 hapy-node systemd[1]: Starting Internet superserver...
+-- Subject: L'unité (unit) inetd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) inetd.service a commencé à démarrer.
+déc. 13 18:47:51 hapy-node systemd[1]: Starting Force synchronisation of time...
+-- Subject: L'unité (unit) ntpdate.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ntpdate.service a commencé à démarrer.
+déc. 13 18:47:51 hapy-node systemd[1]: Starting Open vSwitch Record Hostname...
+-- Subject: L'unité (unit) ovs-record-hostname.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ovs-record-hostname.service a commencé à démarrer.
+déc. 13 18:47:51 hapy-node systemd[1]: Starting /etc/rc.local Compatibility...
+-- Subject: L'unité (unit) rc-local.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) rc-local.service a commencé à démarrer.
+déc. 13 18:47:51 hapy-node systemd[1]: Condition check resulted in Ubuntu Pro Background Auto Attach being skipped.
+-- Subject: L'unité (unit) ubuntu-advantage.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ubuntu-advantage.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:47:51 hapy-node systemd[1]: Started Internet superserver.
+-- Subject: L'unité (unit) inetd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) inetd.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:47:51 hapy-node ntpdate[1167]: 13 Dec 18:47:51 ntpdate[1167]: ntpdate 4.2.8p12@1.3728-o (1)
+déc. 13 18:47:51 hapy-node systemd[1]: Started /etc/rc.local Compatibility.
+-- Subject: L'unité (unit) rc-local.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) rc-local.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:47:51 hapy-node systemd[1]: Starting Hold until boot process finishes up...
+-- Subject: L'unité (unit) plymouth-quit-wait.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-quit-wait.service a commencé à démarrer.
+déc. 13 18:47:51 hapy-node systemd[1]: Starting Terminate Plymouth Boot Screen...
+-- Subject: L'unité (unit) plymouth-quit.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-quit.service a commencé à démarrer.
+déc. 13 18:47:51 hapy-node systemd[1]: plymouth-quit-wait.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit plymouth-quit-wait.service has successfully entered the 'dead' state.
+déc. 13 18:47:51 hapy-node systemd[1]: Finished Hold until boot process finishes up.
+-- Subject: L'unité (unit) plymouth-quit-wait.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-quit-wait.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:47:51 hapy-node ovs-vsctl[1204]: ovs|00001|vsctl|INFO|Called as ovs-vsctl --no-wait add Open_vSwitch . external-ids hostname=hapy-node.example.net
+déc. 13 18:47:51 hapy-node systemd[1]: Starting Set console scheme...
+-- Subject: L'unité (unit) setvtrgb.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) setvtrgb.service a commencé à démarrer.
+déc. 13 18:47:51 hapy-node systemd[1]: Finished Set console scheme.
+-- Subject: L'unité (unit) setvtrgb.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) setvtrgb.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:47:51 hapy-node systemd[1]: Finished Open vSwitch Record Hostname.
+-- Subject: L'unité (unit) ovs-record-hostname.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ovs-record-hostname.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:47:51 hapy-node systemd[1]: plymouth-quit.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit plymouth-quit.service has successfully entered the 'dead' state.
+déc. 13 18:47:51 hapy-node systemd[1]: Finished Terminate Plymouth Boot Screen.
+-- Subject: L'unité (unit) plymouth-quit.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-quit.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:47:51 hapy-node systemd[1]: Created slice system-getty.slice.
+-- Subject: L'unité (unit) system-getty.slice a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) system-getty.slice a terminé son démarrage, avec le résultat done.
+déc. 13 18:47:51 hapy-node systemd[1]: Started Getty on tty1.
+-- Subject: L'unité (unit) getty@tty1.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) getty@tty1.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:47:51 hapy-node systemd[1]: Reached target Login Prompts.
+-- Subject: L'unité (unit) getty.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) getty.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:01 hapy-node systemd-resolved[691]: Using degraded feature set (UDP) for DNS server 192.168.0.1.
+déc. 13 18:48:06 hapy-node systemd-resolved[691]: Using degraded feature set (TCP) for DNS server 192.168.0.1.
+déc. 13 18:48:11 hapy-node ntpdate[1167]: Exiting, name server cannot be used: Temporary failure in name resolution (-3)13 Dec 18:48:11 ntpdate[1167]: name server cannot be used: Temporary failure in name resolution (-3)
+déc. 13 18:48:11 hapy-node systemd[1]: ntpdate.service: Main process exited, code=exited, status=1/FAILURE
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStart= process belonging to unit ntpdate.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+déc. 13 18:48:11 hapy-node systemd[1]: ntpdate.service: Failed with result 'exit-code'.
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit ntpdate.service has entered the 'failed' state with result 'exit-code'.
+déc. 13 18:48:11 hapy-node systemd[1]: Failed to start Force synchronisation of time.
+-- Subject: L'unité (unit) ntpdate.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ntpdate.service a échoué, avec le résultat failed.
+déc. 13 18:48:11 hapy-node systemd[1]: Reached target System Time Synchronized.
+-- Subject: L'unité (unit) time-sync.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) time-sync.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:11 hapy-node systemd[1]: Started Run certbot twice daily.
+-- Subject: L'unité (unit) certbot.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) certbot.timer a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:11 hapy-node systemd[1]: Started Periodic ext4 Online Metadata Check for All Filesystems.
+-- Subject: L'unité (unit) e2scrub_all.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) e2scrub_all.timer a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:11 hapy-node systemd[1]: Started Daily exim4-base housekeeping.
+-- Subject: L'unité (unit) exim4-base.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) exim4-base.timer a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:11 hapy-node systemd[1]: Started Discard unused blocks once a week.
+-- Subject: L'unité (unit) fstrim.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) fstrim.timer a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:11 hapy-node systemd[1]: Started Daily rotation of log files.
+-- Subject: L'unité (unit) logrotate.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) logrotate.timer a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:11 hapy-node systemd[1]: Started Daily man-db regeneration.
+-- Subject: L'unité (unit) man-db.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) man-db.timer a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:11 hapy-node systemd[1]: Started Message of the Day.
+-- Subject: L'unité (unit) motd-news.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) motd-news.timer a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:11 hapy-node systemd[1]: Reached target Timers.
+-- Subject: L'unité (unit) timers.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) timers.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:11 hapy-node systemd[1]: Starting LSB: exim Mail Transport Agent...
+-- Subject: L'unité (unit) exim4.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) exim4.service a commencé à démarrer.
+déc. 13 18:48:11 hapy-node systemd[1]: Starting Discard unused blocks on filesystems from /etc/fstab...
+-- Subject: L'unité (unit) fstrim.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) fstrim.service a commencé à démarrer.
+déc. 13 18:48:11 hapy-node systemd[1]: Starting Network Time Service...
+-- Subject: L'unité (unit) ntp.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ntp.service a commencé à démarrer.
+déc. 13 18:48:11 hapy-node systemd[1]: Starting exim4-base housekeeping...
+-- Subject: L'unité (unit) exim4-base.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) exim4-base.service a commencé à démarrer.
+déc. 13 18:48:11 hapy-node systemd[1]: Starting Daily man-db regeneration...
+-- Subject: L'unité (unit) man-db.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) man-db.service a commencé à démarrer.
+déc. 13 18:48:11 hapy-node exim4[1219]:  * Starting MTA
+déc. 13 18:48:11 hapy-node ntpd[1261]: ntpd 4.2.8p12@1.3728-o (1): Starting
+déc. 13 18:48:11 hapy-node ntpd[1261]: Command line: /usr/sbin/ntpd -p /var/run/ntpd.pid -g -c /run/ntp.conf.dhcp -u 108:116
+déc. 13 18:48:11 hapy-node systemd[1]: Started Network Time Service.
+-- Subject: L'unité (unit) ntp.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ntp.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:11 hapy-node ntpd[1268]: proto: precision = 0.061 usec (-24)
+déc. 13 18:48:11 hapy-node ntpd[1268]: leapsecond file ('/usr/share/zoneinfo/leap-seconds.list'): good hash signature
+déc. 13 18:48:11 hapy-node ntpd[1268]: leapsecond file ('/usr/share/zoneinfo/leap-seconds.list'): loaded, expire=2025-06-28T00:00:00Z last=2017-01-01T00:00:00Z ofs=37
+déc. 13 18:48:11 hapy-node ntpd[1268]: Listen and drop on 0 v6wildcard [::]:123
+déc. 13 18:48:11 hapy-node ntpd[1268]: Listen and drop on 1 v4wildcard 0.0.0.0:123
+déc. 13 18:48:11 hapy-node ntpd[1268]: Listen normally on 2 lo 127.0.0.1:123
+déc. 13 18:48:11 hapy-node ntpd[1268]: Listen normally on 3 ens4 192.168.0.153:123
+déc. 13 18:48:11 hapy-node ntpd[1268]: Listen normally on 4 lo [::1]:123
+déc. 13 18:48:11 hapy-node ntpd[1268]: bind(21) AF_INET6 fe80::c0ff:fea8:66%2#123 flags 0x11 failed: Cannot assign requested address
+déc. 13 18:48:11 hapy-node ntpd[1268]: unable to create socket on ens4 (5) for fe80::c0ff:fea8:66%2#123
+déc. 13 18:48:11 hapy-node ntpd[1268]: failed to init interface for address fe80::c0ff:fea8:66%2
+déc. 13 18:48:11 hapy-node ntpd[1268]: Listening on routing socket on fd #21 for interface updates
+déc. 13 18:48:11 hapy-node ntpd[1268]: kernel reports TIME_ERROR: 0x41: Clock Unsynchronized
+déc. 13 18:48:11 hapy-node ntpd[1268]: kernel reports TIME_ERROR: 0x41: Clock Unsynchronized
+déc. 13 18:48:12 hapy-node systemd[1]: man-db.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit man-db.service has successfully entered the 'dead' state.
+déc. 13 18:48:12 hapy-node systemd[1]: Finished Daily man-db regeneration.
+-- Subject: L'unité (unit) man-db.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) man-db.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:12 hapy-node fstrim[1220]: /boot: 524,3 MiB (549736448 bytes) trimmed on /dev/sda1
+déc. 13 18:48:12 hapy-node fstrim[1220]: /tmp: 1,8 GiB (1923555328 bytes) trimmed on /dev/mapper/vghapy--node-tmp
+déc. 13 18:48:12 hapy-node fstrim[1220]: /var/lib/one: 1,9 GiB (1975091200 bytes) trimmed on /dev/mapper/vghapy--node-var+lib+one
+déc. 13 18:48:12 hapy-node fstrim[1220]: /var: 6,8 GiB (7307792384 bytes) trimmed on /dev/mapper/vghapy--node-var
+déc. 13 18:48:12 hapy-node fstrim[1220]: /: 5,9 GiB (6319702016 bytes) trimmed on /dev/mapper/vghapy--node-root
+déc. 13 18:48:12 hapy-node systemd[1]: Finished Discard unused blocks on filesystems from /etc/fstab.
+-- Subject: L'unité (unit) fstrim.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) fstrim.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:12 hapy-node ntpd[1268]: bind(24) AF_INET6 fe80::c0ff:fea8:66%2#123 flags 0x11 failed: Cannot assign requested address
+déc. 13 18:48:12 hapy-node ntpd[1268]: unable to create socket on ens4 (6) for fe80::c0ff:fea8:66%2#123
+déc. 13 18:48:12 hapy-node ntpd[1268]: failed to init interface for address fe80::c0ff:fea8:66%2
+déc. 13 18:48:21 hapy-node exim4[1266]: 2024-12-13 18:48:21 Warning: No server certificate defined; will use a selfsigned one.
+déc. 13 18:48:21 hapy-node exim4[1266]:  Suggested action: either install a certificate or change tls_advertise_hosts option
+déc. 13 18:48:26 hapy-node exim4[1219]:    ...done.
+déc. 13 18:48:26 hapy-node systemd[1]: Started LSB: exim Mail Transport Agent.
+-- Subject: L'unité (unit) exim4.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) exim4.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:26 hapy-node systemd[1]: Reached target Multi-User System.
+-- Subject: L'unité (unit) multi-user.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) multi-user.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:26 hapy-node systemd[1]: Reached target Graphical Interface.
+-- Subject: L'unité (unit) graphical.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) graphical.target a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:26 hapy-node systemd[1]: Starting EOLE Continuous Integration Tests Daemon...
+-- Subject: L'unité (unit) EoleCiTestsDaemon.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) EoleCiTestsDaemon.service a commencé à démarrer.
+déc. 13 18:48:26 hapy-node systemd[1]: Condition check resulted in Bastion firewall manager being skipped.
+-- Subject: L'unité (unit) bastion.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) bastion.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:26 hapy-node systemd[1]: Starting Virtualization daemon...
+-- Subject: L'unité (unit) libvirtd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) libvirtd.service a commencé à démarrer.
+déc. 13 18:48:26 hapy-node systemd[1]: Condition check resulted in OpenNebula Node starter being skipped.
+-- Subject: L'unité (unit) onenode.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) onenode.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:26 hapy-node systemd[1]: Starting Update UTMP about System Runlevel Changes...
+-- Subject: L'unité (unit) systemd-update-utmp-runlevel.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-update-utmp-runlevel.service a commencé à démarrer.
+déc. 13 18:48:26 hapy-node systemd[1]: Condition check resulted in Agent zephir being skipped.
+-- Subject: L'unité (unit) z_stats.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) z_stats.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:26 hapy-node systemd[1]: exim4-base.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit exim4-base.service has successfully entered the 'dead' state.
+déc. 13 18:48:26 hapy-node systemd[1]: Finished exim4-base housekeeping.
+-- Subject: L'unité (unit) exim4-base.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) exim4-base.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:26 hapy-node systemd[1]: Starting Rotate log files...
+-- Subject: L'unité (unit) logrotate.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) logrotate.service a commencé à démarrer.
+déc. 13 18:48:26 hapy-node systemd[1]: systemd-update-utmp-runlevel.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit systemd-update-utmp-runlevel.service has successfully entered the 'dead' state.
+déc. 13 18:48:26 hapy-node systemd[1]: Finished Update UTMP about System Runlevel Changes.
+-- Subject: L'unité (unit) systemd-update-utmp-runlevel.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-update-utmp-runlevel.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:26 hapy-node bash[1298]: CheckUpdate.sh: /root/mount.eole-ci-tests A JOUR
+déc. 13 18:48:26 hapy-node bash[1298]: CheckUpdate.sh: /root/getVMContext.sh A JOUR
+déc. 13 18:48:26 hapy-node bash[1298]: CheckUpdate.sh: /root/EoleCiFunctions.sh A JOUR
+déc. 13 18:48:26 hapy-node bash[1298]: CheckUpdate.sh: /root/.EoleCiTestsContext.sh A JOUR
+déc. 13 18:48:26 hapy-node bash[1298]: CheckUpdate.sh: /root/.EoleCiTestsDaemon.sh A JOUR
+déc. 13 18:48:26 hapy-node systemd[1]: Started EOLE Continuous Integration Tests Daemon.
+-- Subject: L'unité (unit) EoleCiTestsDaemon.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) EoleCiTestsDaemon.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:26 hapy-node rsyslogd[532]: [origin software="rsyslogd" swVersion="8.2001.0" x-pid="532" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
+déc. 13 18:48:26 hapy-node systemd[1]: Started Virtualization daemon.
+-- Subject: L'unité (unit) libvirtd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) libvirtd.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:26 hapy-node systemd[1]: Starting Suspend/Resume Running libvirt Guests...
+-- Subject: L'unité (unit) libvirt-guests.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) libvirt-guests.service a commencé à démarrer.
+déc. 13 18:48:26 hapy-node systemd[1]: logrotate.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit logrotate.service has successfully entered the 'dead' state.
+déc. 13 18:48:26 hapy-node systemd[1]: Finished Rotate log files.
+-- Subject: L'unité (unit) logrotate.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) logrotate.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:26 hapy-node systemd[1]: Finished Suspend/Resume Running libvirt Guests.
+-- Subject: L'unité (unit) libvirt-guests.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) libvirt-guests.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:48:26 hapy-node systemd[1]: Startup finished in 1.719s (kernel) + 2min 45.354s (userspace) = 2min 47.074s.
+-- Subject: Le démarrage du système est terminé
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Tous les services nécessaires au démarrage du système ont été lancés.
+-- Notez que cela ne signifie pas que le système est maintenant au repos,
+-- car des services peuvent encore être en train de terminer leur démarrage.
+-- 
+-- Le chargement du noyau a nécessité 1719963 microsecondes.
+-- 
+-- Le chargement du « RAM disk » initial a nécessité INITRD_USEC microsecondes.
+-- 
+-- Le chargement de l'espace utilisateur a nécessité 165354521 microsecondes.
+déc. 13 18:48:26 hapy-node kernel: bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+déc. 13 18:48:26 hapy-node systemd-networkd[654]: rtnl: received neighbor for link '3' we don't know about, ignoring.
+déc. 13 18:48:26 hapy-node systemd-networkd[654]: rtnl: received neighbor for link '3' we don't know about, ignoring.
+déc. 13 18:48:26 hapy-node systemd-networkd[654]: rtnl: received neighbor for link '3' we don't know about, ignoring.
+déc. 13 18:48:26 hapy-node systemd-networkd[654]: rtnl: received neighbor for link '3' we don't know about, ignoring.
+déc. 13 18:48:26 hapy-node systemd-udevd[1306]: Using default interface naming scheme 'v245'.
+déc. 13 18:48:26 hapy-node systemd-udevd[1306]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+déc. 13 18:48:26 hapy-node systemd-networkd[654]: virbr0-nic: Link UP
+déc. 13 18:48:26 hapy-node systemd-networkd[654]: virbr0-nic: Gained carrier
+déc. 13 18:48:26 hapy-node kernel: virbr0: port 1(virbr0-nic) entered blocking state
+déc. 13 18:48:26 hapy-node kernel: virbr0: port 1(virbr0-nic) entered disabled state
+déc. 13 18:48:26 hapy-node kernel: device virbr0-nic entered promiscuous mode
+déc. 13 18:48:26 hapy-node systemd-udevd[1285]: Using default interface naming scheme 'v245'.
+déc. 13 18:48:26 hapy-node networkd-dispatcher[526]: WARNING:Unknown index 3 seen, reloading interface list
+déc. 13 18:48:26 hapy-node systemd-udevd[1285]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+déc. 13 18:48:26 hapy-node unknown: Started bpfilter
+déc. 13 18:48:26 hapy-node kernel: bpfilter: Loaded bpfilter_umh pid 1429
+déc. 13 18:48:26 hapy-node EOLECITESTS[1495]: systemctl is-active multi-user.target : active
+déc. 13 18:48:26 hapy-node EOLECITESTS[1501]: systemctl is-active network.target : active
+déc. 13 18:48:26 hapy-node EOLECITESTS[1506]: systemctl is-active network-online.target : active
+déc. 13 18:48:26 hapy-node EOLECITESTS[1511]: systemctl is-system-running : degraded
+déc. 13 18:48:26 hapy-node EOLECITESTS[1549]: Debut ciConfigurationDaily
+déc. 13 18:48:26 hapy-node EOLECITESTS[1554]: systemctl is-active network.target : active
+déc. 13 18:48:26 hapy-node systemd-networkd[654]: virbr0: Link UP
+déc. 13 18:48:26 hapy-node kernel: virbr0: port 1(virbr0-nic) entered blocking state
+déc. 13 18:48:26 hapy-node kernel: virbr0: port 1(virbr0-nic) entered listening state
+déc. 13 18:48:26 hapy-node EOLECITESTS[1558]: systemctl is-active network-online.target : active
+déc. 13 18:48:26 hapy-node EOLECITESTS[1563]: systemctl is-system-running : degraded
+déc. 13 18:48:26 hapy-node EOLECITESTS[1564]: ls -l /etc/netplan/
+déc. 13 18:48:27 hapy-node dnsmasq[1570]: started, version 2.90 cachesize 150
+déc. 13 18:48:27 hapy-node dnsmasq[1570]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN DHCP DHCPv6 no-Lua TFTP conntrack ipset no-nftset auth cryptohash DNSSEC loop-detect inotify dumpfile
+déc. 13 18:48:27 hapy-node dnsmasq-dhcp[1570]: DHCP, IP range 192.168.122.2 -- 192.168.122.254, lease time 1h
+déc. 13 18:48:27 hapy-node dnsmasq-dhcp[1570]: DHCP, sockets bound exclusively to interface virbr0
+déc. 13 18:48:27 hapy-node dnsmasq[1570]: reading /etc/resolv.conf
+déc. 13 18:48:27 hapy-node dnsmasq[1570]: using nameserver 127.0.0.53#53
+déc. 13 18:48:27 hapy-node dnsmasq[1570]: read /etc/hosts - 8 names
+déc. 13 18:48:27 hapy-node dnsmasq[1570]: read /var/lib/libvirt/dnsmasq/default.addnhosts - 0 names
+déc. 13 18:48:27 hapy-node dnsmasq-dhcp[1570]: read /var/lib/libvirt/dnsmasq/default.hostsfile
+déc. 13 18:48:27 hapy-node systemd-networkd[654]: virbr0-nic: Link DOWN
+déc. 13 18:48:27 hapy-node systemd-networkd[654]: virbr0-nic: Lost carrier
+déc. 13 18:48:27 hapy-node kernel: virbr0: port 1(virbr0-nic) entered disabled state
+déc. 13 18:48:28 hapy-node ntpd[1268]: bind(24) AF_INET6 fe80::c0ff:fea8:66%2#123 flags 0x11 failed: Cannot assign requested address
+déc. 13 18:48:28 hapy-node ntpd[1268]: unable to create socket on ens4 (7) for fe80::c0ff:fea8:66%2#123
+déc. 13 18:48:28 hapy-node ntpd[1268]: failed to init interface for address fe80::c0ff:fea8:66%2
+déc. 13 18:48:32 hapy-node EOLECITESTS[1581]: ATTENTION: ciPingHost ens4 => 192.168.0.1 ping=1 ==> K.O. (exit 1)
+déc. 13 18:48:32 hapy-node EOLECITESTS[1589]: GW actuelle : 192.168.0.1 OK
+déc. 13 18:48:32 hapy-node EOLECITESTS[1591]: * désactivation updatedb/locate sur /mnt/eole-ci-test présente !
+déc. 13 18:48:32 hapy-node EOLECITESTS[1594]: * Creation lien daily dans /mnt/eole-ci-tests/output/jenkins/1422892
+déc. 13 18:49:02 hapy-node EOLECITESTS[1611]: Adresse(s) ip changée de  vers 192.168.0.153
+déc. 13 18:49:02 hapy-node EOLECITESTS[1632]: ciUpdateDaily BUILD_DAILY
+déc. 13 18:49:02 hapy-node EOLECITESTS[1633]: 'proposed-update' déjà actif!
+déc. 13 18:49:02 hapy-node EOLECITESTS[1634]: ciSetHttpProxy, pas de proxy pour les Daily
+déc. 13 18:49:02 hapy-node EOLECITESTS[1635]: liste des noyaux
+déc. 13 18:49:02 hapy-node EOLECITESTS[1637]: * espaces disponibles
+déc. 13 18:49:02 hapy-node EOLECITESTS[1639]: ciSetHttpProxy, pas de proxy pour les Daily
+déc. 13 18:49:02 hapy-node EOLECITESTS[1640]: dpkg --configure -a
+déc. 13 18:49:22 hapy-node EOLECITESTS[1644]: ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+déc. 13 18:49:22 hapy-node EOLECITESTS[1645]: ciWaitTestHttp (1/2): wait..
+déc. 13 18:49:22 hapy-node systemd-resolved[691]: Using degraded feature set (UDP) for DNS server 192.168.0.1.
+déc. 13 18:49:37 hapy-node systemd-resolved[691]: Using degraded feature set (TCP) for DNS server 192.168.0.1.
+déc. 13 18:49:50 hapy-node EOLECITESTS[1649]: ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+déc. 13 18:49:50 hapy-node EOLECITESTS[1650]: ciWaitTestHttp (2/2): wait..
+déc. 13 18:50:00 hapy-node EOLECITESTS[1655]: ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+déc. 13 18:50:00 hapy-node EOLECITESTS[1657]: ciDiagnoseNetwork:
+déc. 13 18:50:00 hapy-node EOLECITESTS[1674]: systemctl is-active network.target : active
+déc. 13 18:50:00 hapy-node EOLECITESTS[1676]: systemctl is-active network-online.target : active
+déc. 13 18:50:00 hapy-node EOLECITESTS[1678]: systemctl is-system-running : degraded
+déc. 13 18:50:01 hapy-node CRON[1680]: pam_unix(cron:session): session opened for user root by (uid=0)
+déc. 13 18:50:01 hapy-node CRON[1681]: (root) CMD (   /usr/share/zephir/scripts/cron-zephir.sh &>/dev/null)
+déc. 13 18:50:02 hapy-node creoled[1014]: 127.0.0.1 - - [13/Dec/2024:18:50:02] "GET /get/creole?variable=module_instancie HTTP/1.1" 200 32 "" "python-requests/2.22.0"
+déc. 13 18:50:02 hapy-node CRON[1680]: pam_unix(cron:session): session closed for user root
+déc. 13 18:50:04 hapy-node EOLECITESTS[1687]: ciPingHost ens4 => 192.168.0.1 ping=0 ==> OK (exit 0)
+déc. 13 18:50:08 hapy-node EOLECITESTS[1695]: ciExportCurrentStatus: (on exit 1.sh)
+déc. 13 18:50:08 hapy-node dbus-daemon[513]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.14' (uid=0 pid=1698 comm="systemd-analyze plot " label="unconfined")
+déc. 13 18:50:08 hapy-node systemd[1]: Starting Hostname Service...
+-- Subject: L'unité (unit) systemd-hostnamed.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-hostnamed.service a commencé à démarrer.
+déc. 13 18:50:09 hapy-node dbus-daemon[513]: [system] Successfully activated service 'org.freedesktop.hostname1'
+déc. 13 18:50:09 hapy-node systemd[1]: Started Hostname Service.
+-- Subject: L'unité (unit) systemd-hostnamed.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-hostnamed.service a terminé son démarrage, avec le résultat done.
+déc. 13 18:50:09 hapy-node systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.

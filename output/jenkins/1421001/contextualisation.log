@@ -1,0 +1,42 @@
+Machine aca.eolecitests  : Début ciContextualizeMachine : aca.eolecitests, eolecitests
+Machine aca.eolecitests  : Début ciContextualizeEoleCiTests
+Machine aca.eolecitests  : ciContextualisationMinimale:
+Machine aca.eolecitests  : Contextualisation minimale réalisée pour 973431, à refaire
+Machine aca.eolecitests  : Inject /etc/hosts
+Machine aca.eolecitests  : ciContextualisationMinimaleSystemd
+Machine aca.eolecitests  : Inject /etc/hostname
+Machine aca.eolecitests  : ls -l /etc/netplan/
+total 4
+-rw------- 1 root root 110 déc.   7 01:55 01-netcfg.yaml
+Machine aca.eolecitests  : ciContextualisationMinimaleSystemdServer
+Machine aca.eolecitests  : Inject /etc/resolv.conf
+Machine aca.eolecitests  : /bin/rm -f /etc/resolv.conf (pour casser le lien!)
+Machine aca.eolecitests  : ls -l /etc/netplan
+total 4
+-rw------- 1 root root 110 déc.   7 01:55 01-netcfg.yaml
+Machine aca.eolecitests  : netoyage si besoin /etc/network/interfaces /etc/netplan/01-network-manager-all.yaml /etc/netplan/00-installer-config.yaml /etc/netplan/50-cloud-init.yaml
+Machine aca.eolecitests  : Inject /etc/netplan/01-netcfg.yaml avant 22.04
+Machine aca.eolecitests  : netplan generate --debug
+DEBUG:command generate: running ['/lib/netplan/generate']
+** (generate:887): DEBUG: 18:05:49.631: starting new processing pass
+** (generate:887): DEBUG: 18:05:49.632: We have some netdefs, pass them through a final round of validation
+** (generate:887): DEBUG: 18:05:49.632: ens4: setting default backend to 1
+** (generate:887): DEBUG: 18:05:49.633: Configuration is valid
+** (generate:887): DEBUG: 18:05:49.633: Generating output files..
+** (generate:887): DEBUG: 18:05:49.634: openvswitch: definition ens4 is not for us (backend 1)
+** (generate:887): DEBUG: 18:05:49.634: NetworkManager: definition ens4 is not for us (backend 1)
+(generate:887): GLib-DEBUG: 18:05:49.634: posix_spawn avoided (fd close requested) 
+(generate:887): GLib-DEBUG: 18:05:49.643: posix_spawn avoided (fd close requested) 
+Machine aca.eolecitests  : Inject authorized_keys
+Machine aca.eolecitests  : Actualisation /root/.ssh/authorized_keys
+Machine aca.eolecitests  : Inject bash_history
+Machine aca.eolecitests  : Contextualisation minimale OK
+Machine aca.eolecitests  : Fin ciContextualisationMinimale
+* timedatectl set-timezone
+Machine aca.eolecitests  : Début ciSambaContextualize
+Machine aca.eolecitests  : Configuration SMB (interface=ens4)
+* testparm NOK
+Machine aca.eolecitests  : Fin ciContextualizeEoleCiTests : ok (5)
+Machine aca.eolecitests  : Contextualization Machine OK
+Machine aca.eolecitests  : jenkins 1421001 aca.eolecitests Contextualization Machine : OK
+Machine aca.eolecitests  : Fin ciContextualizeMachine : ok à 2024-12-11 18:05:50

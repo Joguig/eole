@@ -1,0 +1,54 @@
+liste *.conf différentes!
+Machine gateway-mensr  : * Vide les exceptions crée par les tests
+removed '/etc/dnsmasq-hostsdir/salt.conf'
+Machine gateway-mensr  : * nettoye /etc/dnsmasq.d/*.conf
+removed '/etc/dnsmasq.d/agent_jenkins.conf'
+removed '/etc/dnsmasq.d/dhcp_academie.conf'
+removed '/etc/dnsmasq.d/dhcp_rie.conf'
+removed '/etc/dnsmasq.d/domaca.conf'
+removed '/etc/dnsmasq.d/domhorus.conf'
+removed '/etc/dnsmasq.d/domscribe.conf'
+removed '/etc/dnsmasq.d/domseth.conf'
+removed '/etc/dnsmasq.d/k3d.conf'
+removed '/etc/dnsmasq.d/logging.conf'
+removed '/etc/dnsmasq.d/pxe.conf'
+Machine gateway-mensr  : * copy /tmp/dnsmasq.d/*.conf -> /etc/dnsmasq.d/*.conf
+dnsmasq: syntax check OK.
+* efface logs gateway
+192.168.0.151 dev enp3s0 lladdr 02:00:c0:a8:00:67  used 6048/6048/6020probes 1 STALE 
+192.168.0.73 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 30053/30053/30026probes 1 STALE 
+192.168.0.30 dev enp3s0 lladdr ba:1a:2d:67:5b:16  used 420/420/397probes 1 STALE 
+192.168.0.11 dev enp3s0 lladdr 02:00:c0:a8:00:69  used 474/474/451probes 1 STALE 
+192.168.0.22 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 17700/17700/17677probes 1 STALE 
+192.168.0.24 dev enp3s0 lladdr 02:00:c0:a8:00:67  used 458/458/435probes 1 STALE 
+192.168.0.6 dev enp3s0  used 820/2952/817probes 6 FAILED 
+192.168.0.5 dev enp3s0 lladdr 02:00:c0:a8:00:66  ref 1 used 23/23/23probes 1 REACHABLE 
+192.168.0.31 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 6609/6609/6582probes 1 STALE 
+192.168.0.33 dev enp3s0 lladdr 02:00:c0:a8:00:67  used 7551/7551/7534probes 1 STALE 
+192.168.0.26 dev enp3s0 lladdr 02:00:c0:a8:00:68  used 414/414/391probes 1 STALE 
+192.168.0.253 dev enp3s0 lladdr 02:00:c0:a8:00:65  used 892/892/847probes 1 STALE 
+192.168.230.254 dev enp2s0 lladdr d4:ae:52:ce:2f:16  ref 1 used 10/5/10probes 1 REACHABLE 
+192.168.0.7 dev enp3s0 lladdr 02:00:c0:a8:00:68  used 4249/4249/4232probes 1 STALE 
+192.168.0.9 dev enp3s0 lladdr 02:00:c0:a8:00:68  used 3049/3049/3025probes 1 STALE 
+192.168.0.20 dev enp3s0 lladdr 02:00:c0:a8:00:66  used 371/371/340probes 1 STALE 
+192.168.230.43 dev enp2s0  used 11/72922/8probes 6 FAILED 
+fe80::2204:fff:fea7:674c dev enp2s0 lladdr 20:04:0f:a7:67:4c router  used 484/484/437probes 1 STALE 
+fe80::2204:fff:fea7:6f4c dev enp2s0 lladdr 20:04:0f:a7:6f:4c router  used 3675/3675/3646probes 1 STALE 
+
+*** Round 1, deleting 19 entries ***
+*** Flush is complete after 1 round ***
+* Verification 'salt.domseth.ac-test.fr'   : 
+* Vérification résolution 'salt'           : 192.168.0.5
+* Vérification du Forward vers les DC      : 192.168.0.5
+PING domseth.ac-test.fr (192.168.0.5) 56(84) bytes of data.
+64 bytes from salt.ac-test.fr (192.168.0.5): icmp_seq=1 ttl=64 time=0.224 ms
+
+--- domseth.ac-test.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.224/0.224/0.224/0.000 ms
+PING domseth.ac-test.fr (192.168.0.5) 56(84) bytes of data.
+64 bytes from salt.ac-test.fr (192.168.0.5): icmp_seq=1 ttl=64 time=0.160 ms
+
+--- domseth.ac-test.fr ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.160/0.160/0.160/0.000 ms

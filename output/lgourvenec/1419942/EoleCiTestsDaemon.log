@@ -1,0 +1,18 @@
+Début ciDeamonMain /root/.EoleCiTestsDaemon.sh
+init à 2024-12-10 10:27:32
+* ciAfficheProcess : 2024-12-10 10:27:32
+* ciWaitConteneurs : 2024-12-10 10:27:33
+* ciConfigurationMe : avant 2024-12-10 10:27:33
+* ciConfigurationMe : apres 2024-12-10 10:27:33
+Machine etb1.scribe 2.9.0 : * Creation lien etb1.scribe dans /mnt/eole-ci-tests/output/lgourvenec/1419942
+unlink: impossible de supprimer '/mnt/eole-ci-tests/output/lgourvenec//etb1.scribe': Aucun fichier ou dossier de ce nom
+Machine etb1.scribe 2.9.0 : Sauvegarde CA etb1.scribe
+-rw-r--r-- 1 9869 9869 1769 déc.  10 10:27 /mnt/eole-ci-tests/output/lgourvenec//etb1.scribe.crt
+    issuer=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-scribe.dompedago.etb1.lan
+    subject=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-scribe.dompedago.etb1.lan
+    notBefore=Dec  9 23:21:07 2024 GMT
+    notAfter=Dec 10 23:21:07 2027 GMT
+* ciBoucleDExecution : pas d'excution ==> sortie
+ciStopDaemon : 2024-12-10 10:27:33
+nettoyage 'motd' et '/etc/issue'
+Sauvegarde log EoleCiTests

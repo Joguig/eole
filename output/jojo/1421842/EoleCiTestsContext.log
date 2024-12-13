@@ -1,0 +1,17 @@
+Start Context début... 
+Monte CDROM de CONTEXT dans /mnt/cdrom (Ubuntu)
+ciCreateDir: /mnt/eole-ci-tests/output/jojo/1421842
+ciCreateDir: /mnt/eole-ci-tests/output/jojo/1421842/todo
+ciCreateDir: /mnt/eole-ci-tests/output/jojo/1421842/running
+ciCreateDir: /mnt/eole-ci-tests/output/jojo/1421842/done
+TEMPLATE : VM_ONE=one, VM_ID=1421842, VM_OWNER=jojo, VM_DAEMON=once, VM_MACHINE=etb3.amonecole
+TEMPLATE : VM_VERSIONMAJEUR=2.10.0, VM_MAJAUTO=DEV
+USER     : IP_GW=80, GW=192.168.230.80, IP_UTILISATEUR=, MAIL=joel.cuissinat@ac-dijon.fr
+FI       : IMAGE=amonecole-2.10.0a0-amd64.fi, ISO=eole-2.10.0a0-amd64.iso, MODULE=amonecole
+DAILY    : DATE=2024-11-26 16:57, MAJAUTO=DEV
+MODELE   : VM_MODULE=amonecole, VM_CONTAINER=oui, VM_ETABLISSEMENT=etb3
+ETH0     : NAME=academie, DHCP=non, IP=192.168.0.33, GW=192.168.0.1, DNS=192.168.0.1
+ETH1     : NAME=pedago3, DHCP=non, IP=10.3.2.1, GW=10.3.2.1, DNS=10.3.2.1
+Début ciContextualizeMe
+Machine etb3.amonecole 2.10.0 : ciContextualizeMachine: réalisée pour 1421005, à refaire
+Fin ciContextualizeMe

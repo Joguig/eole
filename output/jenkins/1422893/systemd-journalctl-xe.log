@@ -1,0 +1,2757 @@
+déc. 13 17:55:40 seshat kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+déc. 13 17:55:40 seshat kernel: TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+déc. 13 17:55:40 seshat kernel: TCP bind hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+déc. 13 17:55:40 seshat kernel: TCP: Hash tables configured (established 32768 bind 32768)
+déc. 13 17:55:40 seshat kernel: MPTCP token hash table entries: 4096 (order: 4, 98304 bytes, linear)
+déc. 13 17:55:40 seshat kernel: UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+déc. 13 17:55:40 seshat kernel: UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+déc. 13 17:55:40 seshat kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+déc. 13 17:55:40 seshat kernel: NET: Registered PF_XDP protocol family
+déc. 13 17:55:40 seshat kernel: pci 0000:02:00.0: ROM [mem 0xfffc0000-0xffffffff pref]: can't claim; no compatible bridge window
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.3: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 04] add_size 200000 add_align 100000
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.6: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 07] add_size 200000 add_align 100000
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.3: bridge window [mem 0x800500000-0x8006fffff 64bit pref]: assigned
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.6: bridge window [mem 0x800700000-0x8008fffff 64bit pref]: assigned
+déc. 13 17:55:40 seshat kernel: pci 0000:00:1f.3: BAR 4 [io  0x1000-0x103f]: assigned
+déc. 13 17:55:40 seshat kernel: pci 0000:00:1f.2: BAR 4 [io  0x1040-0x105f]: assigned
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.0: PCI bridge to [bus 01]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.0:   bridge window [io  0xc000-0xcfff]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.0:   bridge window [mem 0xc1c00000-0xc1dfffff]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.0:   bridge window [mem 0x800000000-0x8000fffff 64bit pref]
+déc. 13 17:55:40 seshat kernel: pci 0000:02:00.0: ROM [mem 0xc1a40000-0xc1a7ffff pref]: assigned
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.1: PCI bridge to [bus 02]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.1:   bridge window [io  0xb000-0xbfff]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.1:   bridge window [mem 0xc1a00000-0xc1bfffff]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.1:   bridge window [mem 0x800100000-0x8001fffff 64bit pref]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.2: PCI bridge to [bus 03]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.2:   bridge window [io  0xa000-0xafff]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.2:   bridge window [mem 0xc1800000-0xc19fffff]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.2:   bridge window [mem 0x800200000-0x8002fffff 64bit pref]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.3: PCI bridge to [bus 04]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.3:   bridge window [io  0x9000-0x9fff]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.3:   bridge window [mem 0xc1600000-0xc17fffff]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.3:   bridge window [mem 0x800500000-0x8006fffff 64bit pref]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.4: PCI bridge to [bus 05]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.4:   bridge window [io  0x8000-0x8fff]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.4:   bridge window [mem 0xc1400000-0xc15fffff]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.4:   bridge window [mem 0x800300000-0x8003fffff 64bit pref]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.5: PCI bridge to [bus 06]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.5:   bridge window [io  0x7000-0x7fff]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.5:   bridge window [mem 0xc1200000-0xc13fffff]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.5:   bridge window [mem 0x800400000-0x8004fffff 64bit pref]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.6: PCI bridge to [bus 07]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.6:   bridge window [io  0x6000-0x6fff]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.6:   bridge window [mem 0xc1000000-0xc11fffff]
+déc. 13 17:55:40 seshat kernel: pci 0000:00:02.6:   bridge window [mem 0x800700000-0x8008fffff 64bit pref]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:00: resource 7 [mem 0xc0000000-0xfebfffff window]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:00: resource 8 [mem 0x800000000-0xfffffffff window]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:01: resource 0 [io  0xc000-0xcfff]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:01: resource 1 [mem 0xc1c00000-0xc1dfffff]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:01: resource 2 [mem 0x800000000-0x8000fffff 64bit pref]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:02: resource 0 [io  0xb000-0xbfff]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:02: resource 1 [mem 0xc1a00000-0xc1bfffff]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:02: resource 2 [mem 0x800100000-0x8001fffff 64bit pref]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:03: resource 0 [io  0xa000-0xafff]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:03: resource 1 [mem 0xc1800000-0xc19fffff]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:03: resource 2 [mem 0x800200000-0x8002fffff 64bit pref]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:04: resource 0 [io  0x9000-0x9fff]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:04: resource 1 [mem 0xc1600000-0xc17fffff]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:04: resource 2 [mem 0x800500000-0x8006fffff 64bit pref]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:05: resource 0 [io  0x8000-0x8fff]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:05: resource 1 [mem 0xc1400000-0xc15fffff]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:05: resource 2 [mem 0x800300000-0x8003fffff 64bit pref]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:06: resource 0 [io  0x7000-0x7fff]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:06: resource 1 [mem 0xc1200000-0xc13fffff]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:06: resource 2 [mem 0x800400000-0x8004fffff 64bit pref]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:07: resource 0 [io  0x6000-0x6fff]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:07: resource 1 [mem 0xc1000000-0xc11fffff]
+déc. 13 17:55:40 seshat kernel: pci_bus 0000:07: resource 2 [mem 0x800700000-0x8008fffff 64bit pref]
+déc. 13 17:55:40 seshat kernel: ACPI: \_SB_.GSIG: Enabled at IRQ 22
+déc. 13 17:55:40 seshat kernel: PCI: CLS 0 bytes, default 64
+déc. 13 17:55:40 seshat kernel: Trying to unpack rootfs image as initramfs...
+déc. 13 17:55:40 seshat kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+déc. 13 17:55:40 seshat kernel: software IO TLB: mapped [mem 0x0000000070add000-0x0000000074add000] (64MB)
+déc. 13 17:55:40 seshat kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1fa2ebd9b85, max_idle_ns: 440795259329 ns
+déc. 13 17:55:40 seshat kernel: Initialise system trusted keyrings
+déc. 13 17:55:40 seshat kernel: Key type blacklist registered
+déc. 13 17:55:40 seshat kernel: workingset: timestamp_bits=36 max_order=20 bucket_order=0
+déc. 13 17:55:40 seshat kernel: zbud: loaded
+déc. 13 17:55:40 seshat kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+déc. 13 17:55:40 seshat kernel: fuse: init (API version 7.39)
+déc. 13 17:55:40 seshat kernel: integrity: Platform Keyring initialized
+déc. 13 17:55:40 seshat kernel: integrity: Machine keyring initialized
+déc. 13 17:55:40 seshat kernel: Key type asymmetric registered
+déc. 13 17:55:40 seshat kernel: Asymmetric key parser 'x509' registered
+déc. 13 17:55:40 seshat kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 243)
+déc. 13 17:55:40 seshat kernel: io scheduler mq-deadline registered
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.0: PME: Signaling with IRQ 24
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.0: AER: enabled with IRQ 24
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.0: pciehp: Slot #0 AttnBtn+ PwrCtrl+ MRL- AttnInd+ PwrInd+ HotPlug+ Surprise+ Interlock+ NoCompl- IbPresDis- LLActRep-
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.1: PME: Signaling with IRQ 25
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.1: AER: enabled with IRQ 25
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.1: pciehp: Slot #0 AttnBtn+ PwrCtrl+ MRL- AttnInd+ PwrInd+ HotPlug+ Surprise+ Interlock+ NoCompl- IbPresDis- LLActRep-
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.2: PME: Signaling with IRQ 26
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.2: AER: enabled with IRQ 26
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.2: pciehp: Slot #0 AttnBtn+ PwrCtrl+ MRL- AttnInd+ PwrInd+ HotPlug+ Surprise+ Interlock+ NoCompl- IbPresDis- LLActRep-
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.3: PME: Signaling with IRQ 27
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.3: AER: enabled with IRQ 27
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.3: pciehp: Slot #0 AttnBtn+ PwrCtrl+ MRL- AttnInd+ PwrInd+ HotPlug+ Surprise+ Interlock+ NoCompl- IbPresDis- LLActRep-
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.4: PME: Signaling with IRQ 28
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.4: AER: enabled with IRQ 28
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.4: pciehp: Slot #0 AttnBtn+ PwrCtrl+ MRL- AttnInd+ PwrInd+ HotPlug+ Surprise+ Interlock+ NoCompl- IbPresDis- LLActRep-
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.5: PME: Signaling with IRQ 29
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.5: AER: enabled with IRQ 29
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.5: pciehp: Slot #0 AttnBtn+ PwrCtrl+ MRL- AttnInd+ PwrInd+ HotPlug+ Surprise+ Interlock+ NoCompl- IbPresDis- LLActRep-
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.6: PME: Signaling with IRQ 30
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.6: AER: enabled with IRQ 30
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.6: pciehp: Slot #0 AttnBtn+ PwrCtrl+ MRL- AttnInd+ PwrInd+ HotPlug+ Surprise+ Interlock+ NoCompl- IbPresDis- LLActRep-
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.6: pciehp: Slot(0-6): Link Up
+déc. 13 17:55:40 seshat kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+déc. 13 17:55:40 seshat kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+déc. 13 17:55:40 seshat kernel: ACPI: button: Power Button [PWRF]
+déc. 13 17:55:40 seshat kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+déc. 13 17:55:40 seshat kernel: Linux agpgart interface v0.103
+déc. 13 17:55:40 seshat kernel: loop: module loaded
+déc. 13 17:55:40 seshat kernel: virtio_scsi virtio2: 4/0/0 default/read/poll queues
+déc. 13 17:55:40 seshat kernel: scsi host0: Virtio SCSI HBA
+déc. 13 17:55:40 seshat kernel: ACPI: bus type drm_connector registered
+déc. 13 17:55:40 seshat kernel: tun: Universal TUN/TAP device driver, 1.6
+déc. 13 17:55:40 seshat kernel: scsi 0:0:0:0: Direct-Access     QEMU     QEMU HARDDISK    2.5+ PQ: 0 ANSI: 5
+déc. 13 17:55:40 seshat kernel: PPP generic driver version 2.4.2
+déc. 13 17:55:40 seshat kernel: i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+déc. 13 17:55:40 seshat kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+déc. 13 17:55:40 seshat kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+déc. 13 17:55:40 seshat kernel: mousedev: PS/2 mouse device common for all mice
+déc. 13 17:55:40 seshat kernel: rtc_cmos 00:00: RTC can wake from S4
+déc. 13 17:55:40 seshat kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+déc. 13 17:55:40 seshat kernel: rtc_cmos 00:00: registered as rtc0
+déc. 13 17:55:40 seshat kernel: rtc_cmos 00:00: setting system clock to 2024-12-13T17:55:38 UTC (1734112538)
+déc. 13 17:55:40 seshat kernel: rtc_cmos 00:00: alarms up to one day, y3k, 114 bytes nvram
+déc. 13 17:55:40 seshat kernel: i2c_dev: i2c /dev entries driver
+déc. 13 17:55:40 seshat kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+déc. 13 17:55:40 seshat kernel: device-mapper: uevent: version 1.0.3
+déc. 13 17:55:40 seshat kernel: device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+déc. 13 17:55:40 seshat kernel: platform eisa.0: Probing EISA bus 0
+déc. 13 17:55:40 seshat kernel: platform eisa.0: EISA: Cannot allocate resource for mainboard
+déc. 13 17:55:40 seshat kernel: platform eisa.0: Cannot allocate resource for EISA slot 1
+déc. 13 17:55:40 seshat kernel: platform eisa.0: Cannot allocate resource for EISA slot 2
+déc. 13 17:55:40 seshat kernel: platform eisa.0: Cannot allocate resource for EISA slot 3
+déc. 13 17:55:40 seshat kernel: platform eisa.0: Cannot allocate resource for EISA slot 4
+déc. 13 17:55:40 seshat kernel: platform eisa.0: Cannot allocate resource for EISA slot 5
+déc. 13 17:55:40 seshat kernel: platform eisa.0: Cannot allocate resource for EISA slot 6
+déc. 13 17:55:40 seshat kernel: platform eisa.0: Cannot allocate resource for EISA slot 7
+déc. 13 17:55:40 seshat kernel: platform eisa.0: Cannot allocate resource for EISA slot 8
+déc. 13 17:55:40 seshat kernel: platform eisa.0: EISA: Detected 0 cards
+déc. 13 17:55:40 seshat kernel: intel_pstate: CPU model not supported
+déc. 13 17:55:40 seshat kernel: ledtrig-cpu: registered to indicate activity on CPUs
+déc. 13 17:55:40 seshat kernel: [drm] Initialized simpledrm 1.0.0 20200625 for simple-framebuffer.0 on minor 0
+déc. 13 17:55:40 seshat kernel: Console: switching to colour frame buffer device 100x37
+déc. 13 17:55:40 seshat kernel: simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device
+déc. 13 17:55:40 seshat kernel: drop_monitor: Initializing network drop monitor service
+déc. 13 17:55:40 seshat kernel: NET: Registered PF_INET6 protocol family
+déc. 13 17:55:40 seshat kernel: scsi 0:0:0:0: Attached scsi generic sg0 type 0
+déc. 13 17:55:40 seshat kernel: sd 0:0:0:0: Power-on or device reset occurred
+déc. 13 17:55:40 seshat kernel: sd 0:0:0:0: [sda] 104857600 512-byte logical blocks: (53.7 GB/50.0 GiB)
+déc. 13 17:55:40 seshat kernel: sd 0:0:0:0: [sda] Write Protect is off
+déc. 13 17:55:40 seshat kernel: sd 0:0:0:0: [sda] Mode Sense: 63 00 00 08
+déc. 13 17:55:40 seshat kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+déc. 13 17:55:40 seshat kernel:  sda: sda1 sda2 sda3 sda4
+déc. 13 17:55:40 seshat kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+déc. 13 17:55:40 seshat kernel: Freeing initrd memory: 71892K
+déc. 13 17:55:40 seshat kernel: Segment Routing with IPv6
+déc. 13 17:55:40 seshat kernel: In-situ OAM (IOAM) with IPv6
+déc. 13 17:55:40 seshat kernel: NET: Registered PF_PACKET protocol family
+déc. 13 17:55:40 seshat kernel: Key type dns_resolver registered
+déc. 13 17:55:40 seshat kernel: No MBM correction factor available
+déc. 13 17:55:40 seshat kernel: IPI shorthand broadcast: enabled
+déc. 13 17:55:40 seshat kernel: sched_clock: Marking stable (733004440, 1239961)->(796951683, -62707282)
+déc. 13 17:55:40 seshat kernel: registered taskstats version 1
+déc. 13 17:55:40 seshat kernel: Loading compiled-in X.509 certificates
+déc. 13 17:55:40 seshat kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 9d76b0f3745ed5c22877992df254ac7ac05c9668'
+déc. 13 17:55:40 seshat kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+déc. 13 17:55:40 seshat kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+déc. 13 17:55:40 seshat kernel: blacklist: Loading compiled-in revocation X.509 certificates
+déc. 13 17:55:40 seshat kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+déc. 13 17:55:40 seshat kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+déc. 13 17:55:40 seshat kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+déc. 13 17:55:40 seshat kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+déc. 13 17:55:40 seshat kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+déc. 13 17:55:40 seshat kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+déc. 13 17:55:40 seshat kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+déc. 13 17:55:40 seshat kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+déc. 13 17:55:40 seshat kernel: Key type .fscrypt registered
+déc. 13 17:55:40 seshat kernel: Key type fscrypt-provisioning registered
+déc. 13 17:55:40 seshat kernel: cryptd: max_cpu_qlen set to 1000
+déc. 13 17:55:40 seshat kernel: AVX2 version of gcm_enc/dec engaged.
+déc. 13 17:55:40 seshat kernel: AES CTR mode by8 optimization enabled
+déc. 13 17:55:40 seshat kernel: Key type encrypted registered
+déc. 13 17:55:40 seshat kernel: AppArmor: AppArmor sha256 policy hashing enabled
+déc. 13 17:55:40 seshat kernel: ima: No TPM chip found, activating TPM-bypass!
+déc. 13 17:55:40 seshat kernel: Loading compiled-in module X.509 certificates
+déc. 13 17:55:40 seshat kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 9d76b0f3745ed5c22877992df254ac7ac05c9668'
+déc. 13 17:55:40 seshat kernel: ima: Allocated hash algorithm: sha256
+déc. 13 17:55:40 seshat kernel: ima: No architecture policies found
+déc. 13 17:55:40 seshat kernel: evm: Initialising EVM extended attributes:
+déc. 13 17:55:40 seshat kernel: evm: security.selinux
+déc. 13 17:55:40 seshat kernel: evm: security.SMACK64
+déc. 13 17:55:40 seshat kernel: evm: security.SMACK64EXEC
+déc. 13 17:55:40 seshat kernel: evm: security.SMACK64TRANSMUTE
+déc. 13 17:55:40 seshat kernel: evm: security.SMACK64MMAP
+déc. 13 17:55:40 seshat kernel: evm: security.apparmor
+déc. 13 17:55:40 seshat kernel: evm: security.ima
+déc. 13 17:55:40 seshat kernel: evm: security.capability
+déc. 13 17:55:40 seshat kernel: evm: HMAC attrs: 0x1
+déc. 13 17:55:40 seshat kernel: PM:   Magic number: 4:708:946
+déc. 13 17:55:40 seshat kernel: tty tty3: hash matches
+déc. 13 17:55:40 seshat kernel: processor cpu1: hash matches
+déc. 13 17:55:40 seshat kernel: RAS: Correctable Errors collector initialized.
+déc. 13 17:55:40 seshat kernel: clk: Disabling unused clocks
+déc. 13 17:55:40 seshat kernel: Freeing unused decrypted memory: 2028K
+déc. 13 17:55:40 seshat kernel: Freeing unused kernel image (initmem) memory: 4976K
+déc. 13 17:55:40 seshat kernel: Write protecting the kernel read-only data: 36864k
+déc. 13 17:55:40 seshat kernel: Freeing unused kernel image (rodata/data gap) memory: 4K
+déc. 13 17:55:40 seshat kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+déc. 13 17:55:40 seshat kernel: x86/mm: Checking user space page tables
+déc. 13 17:55:40 seshat kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+déc. 13 17:55:40 seshat kernel: Run /init as init process
+déc. 13 17:55:40 seshat kernel:   with arguments:
+déc. 13 17:55:40 seshat kernel:     /init
+déc. 13 17:55:40 seshat kernel:   with environment:
+déc. 13 17:55:40 seshat kernel:     HOME=/
+déc. 13 17:55:40 seshat kernel:     TERM=linux
+déc. 13 17:55:40 seshat kernel:     BOOT_IMAGE=/vmlinuz-6.8.0-50-generic
+déc. 13 17:55:40 seshat kernel: virtio_net virtio1 enp2s0: renamed from eth0
+déc. 13 17:55:40 seshat kernel: xhci_hcd 0000:04:00.0: xHCI Host Controller
+déc. 13 17:55:40 seshat kernel: xhci_hcd 0000:04:00.0: new USB bus registered, assigned bus number 1
+déc. 13 17:55:40 seshat kernel: xhci_hcd 0000:04:00.0: hcc params 0x00087001 hci version 0x100 quirks 0x0000000000000010
+déc. 13 17:55:40 seshat kernel: Console: switching to colour dummy device 80x25
+déc. 13 17:55:40 seshat kernel: xhci_hcd 0000:04:00.0: xHCI Host Controller
+déc. 13 17:55:40 seshat kernel: xhci_hcd 0000:04:00.0: new USB bus registered, assigned bus number 2
+déc. 13 17:55:40 seshat kernel: xhci_hcd 0000:04:00.0: Host supports USB 3.0 SuperSpeed
+déc. 13 17:55:40 seshat kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.08
+déc. 13 17:55:40 seshat kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+déc. 13 17:55:40 seshat kernel: usb usb1: Product: xHCI Host Controller
+déc. 13 17:55:40 seshat kernel: usb usb1: Manufacturer: Linux 6.8.0-50-generic xhci-hcd
+déc. 13 17:55:40 seshat kernel: usb usb1: SerialNumber: 0000:04:00.0
+déc. 13 17:55:40 seshat kernel: ahci 0000:00:1f.2: version 3.0
+déc. 13 17:55:40 seshat kernel: hub 1-0:1.0: USB hub found
+déc. 13 17:55:40 seshat kernel: hub 1-0:1.0: 4 ports detected
+déc. 13 17:55:40 seshat kernel: usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+déc. 13 17:55:40 seshat kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.08
+déc. 13 17:55:40 seshat kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+déc. 13 17:55:40 seshat kernel: usb usb2: Product: xHCI Host Controller
+déc. 13 17:55:40 seshat kernel: usb usb2: Manufacturer: Linux 6.8.0-50-generic xhci-hcd
+déc. 13 17:55:40 seshat kernel: usb usb2: SerialNumber: 0000:04:00.0
+déc. 13 17:55:40 seshat kernel: hub 2-0:1.0: USB hub found
+déc. 13 17:55:40 seshat kernel: hub 2-0:1.0: 4 ports detected
+déc. 13 17:55:40 seshat kernel: ACPI: \_SB_.GSIA: Enabled at IRQ 16
+déc. 13 17:55:40 seshat kernel: input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input5
+déc. 13 17:55:40 seshat kernel: input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input4
+déc. 13 17:55:40 seshat kernel: ahci 0000:00:1f.2: AHCI 0001.0000 32 slots 6 ports 1.5 Gbps 0x3f impl SATA mode
+déc. 13 17:55:40 seshat kernel: ahci 0000:00:1f.2: flags: 64bit ncq only 
+déc. 13 17:55:40 seshat kernel: bochs-drm 0000:00:01.0: vgaarb: deactivate vga console
+déc. 13 17:55:40 seshat kernel: [drm] Found bochs VGA, ID 0xb0c5.
+déc. 13 17:55:40 seshat kernel: [drm] Framebuffer size 16384 kB @ 0xc0000000, mmio @ 0xc1e48000.
+déc. 13 17:55:40 seshat kernel: [drm] Initialized bochs-drm 1.0.0 20130925 for 0000:00:01.0 on minor 0
+déc. 13 17:55:40 seshat kernel: fbcon: bochs-drmdrmfb (fb0) is primary device
+déc. 13 17:55:40 seshat kernel: Console: switching to colour frame buffer device 128x48
+déc. 13 17:55:40 seshat kernel: bochs-drm 0000:00:01.0: [drm] fb0: bochs-drmdrmfb frame buffer device
+déc. 13 17:55:40 seshat kernel: scsi host1: ahci
+déc. 13 17:55:40 seshat kernel: scsi host2: ahci
+déc. 13 17:55:40 seshat kernel: scsi host3: ahci
+déc. 13 17:55:40 seshat kernel: scsi host4: ahci
+déc. 13 17:55:40 seshat kernel: scsi host5: ahci
+déc. 13 17:55:40 seshat kernel: scsi host6: ahci
+déc. 13 17:55:40 seshat kernel: ata1: SATA max UDMA/133 abar m4096@0xc1e40000 port 0xc1e40100 irq 48 lpm-pol 0
+déc. 13 17:55:40 seshat kernel: ata2: SATA max UDMA/133 abar m4096@0xc1e40000 port 0xc1e40180 irq 48 lpm-pol 0
+déc. 13 17:55:40 seshat kernel: ata3: SATA max UDMA/133 abar m4096@0xc1e40000 port 0xc1e40200 irq 48 lpm-pol 0
+déc. 13 17:55:40 seshat kernel: ata4: SATA max UDMA/133 abar m4096@0xc1e40000 port 0xc1e40280 irq 48 lpm-pol 0
+déc. 13 17:55:40 seshat kernel: ata5: SATA max UDMA/133 abar m4096@0xc1e40000 port 0xc1e40300 irq 48 lpm-pol 0
+déc. 13 17:55:40 seshat kernel: ata6: SATA max UDMA/133 abar m4096@0xc1e40000 port 0xc1e40380 irq 48 lpm-pol 0
+déc. 13 17:55:40 seshat kernel: usb 1-1: new high-speed USB device number 2 using xhci_hcd
+déc. 13 17:55:40 seshat kernel: ata2: SATA link down (SStatus 0 SControl 300)
+déc. 13 17:55:40 seshat kernel: ata6: SATA link down (SStatus 0 SControl 300)
+déc. 13 17:55:40 seshat kernel: ata5: SATA link down (SStatus 0 SControl 300)
+déc. 13 17:55:40 seshat kernel: ata1: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+déc. 13 17:55:40 seshat kernel: ata3: SATA link down (SStatus 0 SControl 300)
+déc. 13 17:55:40 seshat kernel: ata4: SATA link down (SStatus 0 SControl 300)
+déc. 13 17:55:40 seshat kernel: ata1.00: ATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+déc. 13 17:55:40 seshat kernel: ata1.00: applying bridge limits
+déc. 13 17:55:40 seshat kernel: ata1.00: configured for UDMA/100
+déc. 13 17:55:40 seshat kernel: scsi 1:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     2.5+ PQ: 0 ANSI: 5
+déc. 13 17:55:40 seshat kernel: sr 1:0:0:0: [sr0] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+déc. 13 17:55:40 seshat kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+déc. 13 17:55:40 seshat kernel: sr 1:0:0:0: Attached scsi CD-ROM sr0
+déc. 13 17:55:40 seshat kernel: sr 1:0:0:0: Attached scsi generic sg1 type 5
+déc. 13 17:55:40 seshat kernel: usb 1-1: New USB device found, idVendor=0627, idProduct=0001, bcdDevice= 0.00
+déc. 13 17:55:40 seshat kernel: usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=5
+déc. 13 17:55:40 seshat kernel: usb 1-1: Product: QEMU USB Tablet
+déc. 13 17:55:40 seshat kernel: usb 1-1: Manufacturer: QEMU
+déc. 13 17:55:40 seshat kernel: usb 1-1: SerialNumber: 42
+déc. 13 17:55:40 seshat kernel: hid: raw HID events driver (C) Jiri Kosina
+déc. 13 17:55:40 seshat kernel: usbcore: registered new interface driver usbhid
+déc. 13 17:55:40 seshat kernel: usbhid: USB HID core driver
+déc. 13 17:55:40 seshat kernel: input: QEMU QEMU USB Tablet as /devices/pci0000:00/0000:00:02.3/0000:04:00.0/usb1/1-1/1-1:1.0/0003:0627:0001.0001/input/input6
+déc. 13 17:55:40 seshat kernel: hid-generic 0003:0627:0001.0001: input,hidraw0: USB HID v0.01 Mouse [QEMU QEMU USB Tablet] on usb-0000:04:00.0-1/input0
+déc. 13 17:55:40 seshat kernel: raid6: avx512x4 gen() 30851 MB/s
+déc. 13 17:55:40 seshat kernel: raid6: avx512x2 gen() 30897 MB/s
+déc. 13 17:55:40 seshat kernel: raid6: avx512x1 gen() 29830 MB/s
+déc. 13 17:55:40 seshat kernel: raid6: avx2x4   gen() 22927 MB/s
+déc. 13 17:55:40 seshat kernel: raid6: avx2x2   gen() 22812 MB/s
+déc. 13 17:55:40 seshat kernel: raid6: avx2x1   gen() 20131 MB/s
+déc. 13 17:55:40 seshat kernel: raid6: using algorithm avx512x2 gen() 30897 MB/s
+déc. 13 17:55:40 seshat kernel: raid6: .... xor() 23666 MB/s, rmw enabled
+déc. 13 17:55:40 seshat kernel: raid6: using avx512x2 recovery algorithm
+déc. 13 17:55:40 seshat kernel: xor: automatically using best checksumming function   avx       
+déc. 13 17:55:40 seshat kernel: async_tx: api initialized (async)
+déc. 13 17:55:40 seshat kernel: Btrfs loaded, zoned=yes, fsverity=yes
+déc. 13 17:55:40 seshat kernel: PM: Image not found (code -22)
+déc. 13 17:55:40 seshat kernel: EXT4-fs (dm-0): mounted filesystem 4a19176b-9acd-4820-95f0-21d6e8fbcc40 ro with ordered data mode. Quota mode: none.
+déc. 13 17:55:40 seshat systemd[1]: Inserted module 'autofs4'
+déc. 13 17:55:40 seshat systemd[1]: systemd 255.4-1ubuntu8.4 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+déc. 13 17:55:40 seshat systemd[1]: Detected virtualization kvm.
+déc. 13 17:55:40 seshat systemd[1]: Detected architecture x86-64.
+déc. 13 17:55:40 seshat systemd[1]: Hostname set to <seshat>.
+déc. 13 17:55:40 seshat systemd[1]: Configuration file /run/systemd/system/systemd-networkd-wait-online.service.d/10-netplan.conf is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+déc. 13 17:55:40 seshat systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+déc. 13 17:55:40 seshat systemd[1]: Queued start job for default target graphical.target.
+déc. 13 17:55:40 seshat systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+déc. 13 17:55:40 seshat systemd[1]: Created slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+déc. 13 17:55:40 seshat systemd[1]: Created slice user.slice - User and Session Slice.
+déc. 13 17:55:40 seshat systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+déc. 13 17:55:40 seshat systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+déc. 13 17:55:40 seshat systemd[1]: Expecting device dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDIIJEDN9eisqDtztwcOpAj5u8RPYFqMFJ.device - /dev/disk/by-id/dm-uuid-LVM-LCMnSReBweQHG0QIs6qK5PtK4cQzHdBDIIJEDN9eisqDtztwcOpAj5u8RPYFqMFJ...
+déc. 13 17:55:40 seshat systemd[1]: Expecting device dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDSG8fyQ62n3mpyowdS7XtV1sgdXmL31eF.device - /dev/disk/by-id/dm-uuid-LVM-LCMnSReBweQHG0QIs6qK5PtK4cQzHdBDSG8fyQ62n3mpyowdS7XtV1sgdXmL31eF...
+déc. 13 17:55:40 seshat systemd[1]: Expecting device dev-disk-by\x2duuid-6fd6df85\x2d1177\x2d4ed3\x2dace0\x2d76e06e5c25e5.device - /dev/disk/by-uuid/6fd6df85-1177-4ed3-ace0-76e06e5c25e5...
+déc. 13 17:55:40 seshat systemd[1]: Expecting device dev-disk-by\x2duuid-EEC2\x2dAB3E.device - /dev/disk/by-uuid/EEC2-AB3E...
+déc. 13 17:55:40 seshat systemd[1]: Expecting device dev-disk-by\x2duuid-cdd9a911\x2d5f55\x2d4dd7\x2daed2\x2d1114799a632d.device - /dev/disk/by-uuid/cdd9a911-5f55-4dd7-aed2-1114799a632d...
+déc. 13 17:55:40 seshat systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+déc. 13 17:55:40 seshat systemd[1]: Reached target slices.target - Slice Units.
+déc. 13 17:55:40 seshat systemd[1]: Reached target snapd.mounts-pre.target - Mounting snaps.
+déc. 13 17:55:40 seshat systemd[1]: Reached target snapd.mounts.target - Mounted snaps.
+déc. 13 17:55:40 seshat systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+déc. 13 17:55:40 seshat systemd[1]: Listening on dm-event.socket - Device-mapper event daemon FIFOs.
+déc. 13 17:55:40 seshat systemd[1]: Listening on lvm2-lvmpolld.socket - LVM2 poll daemon socket.
+déc. 13 17:55:40 seshat systemd[1]: Listening on multipathd.socket - multipathd control socket.
+déc. 13 17:55:40 seshat systemd[1]: Listening on syslog.socket - Syslog Socket.
+déc. 13 17:55:40 seshat systemd[1]: Listening on systemd-fsckd.socket - fsck to fsckd communication Socket.
+déc. 13 17:55:40 seshat systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+déc. 13 17:55:40 seshat systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+déc. 13 17:55:40 seshat systemd[1]: Listening on systemd-journald.socket - Journal Socket.
+déc. 13 17:55:40 seshat systemd[1]: Listening on systemd-networkd.socket - Network Service Netlink Socket.
+déc. 13 17:55:40 seshat systemd[1]: systemd-pcrextend.socket - TPM2 PCR Extension (Varlink) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+déc. 13 17:55:40 seshat systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+déc. 13 17:55:40 seshat systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+déc. 13 17:55:40 seshat systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+déc. 13 17:55:40 seshat systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+déc. 13 17:55:40 seshat systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+déc. 13 17:55:40 seshat systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+déc. 13 17:55:40 seshat kernel: pcieport 0000:00:02.6: pciehp: Slot(0-6): No device found
+déc. 13 17:55:40 seshat systemd[1]: Starting systemd-journald.service - Journal Service...
+déc. 13 17:55:40 seshat systemd[1]: Starting keyboard-setup.service - Set the console keyboard layout...
+déc. 13 17:55:40 seshat systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+déc. 13 17:55:40 seshat systemd[1]: Starting lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+déc. 13 17:55:40 seshat systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+déc. 13 17:55:40 seshat systemd[1]: Starting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+déc. 13 17:55:40 seshat systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+déc. 13 17:55:40 seshat systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+déc. 13 17:55:40 seshat systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+déc. 13 17:55:40 seshat systemd[1]: Starting modprobe@loop.service - Load Kernel Module loop...
+déc. 13 17:55:40 seshat systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+déc. 13 17:55:40 seshat systemd[1]: systemd-fsck-root.service - File System Check on Root Device was skipped because of an unmet condition check (ConditionPathExists=!/run/initramfs/fsck-root).
+déc. 13 17:55:40 seshat kernel: pstore: Using crash dump compression: deflate
+déc. 13 17:55:40 seshat systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+déc. 13 17:55:40 seshat systemd[1]: systemd-pcrmachine.service - TPM2 PCR Machine ID Measurement was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+déc. 13 17:55:40 seshat systemd-journald[395]: Collecting audit messages is disabled.
+déc. 13 17:55:40 seshat systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+déc. 13 17:55:40 seshat systemd[1]: systemd-tpm2-setup-early.service - TPM2 SRK Setup (Early) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+déc. 13 17:55:40 seshat systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+déc. 13 17:55:40 seshat kernel: pstore: Registered efi_pstore as persistent store backend
+déc. 13 17:55:40 seshat systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.
+déc. 13 17:55:40 seshat systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+déc. 13 17:55:40 seshat systemd[1]: Mounted sys-kernel-debug.mount - Kernel Debug File System.
+déc. 13 17:55:40 seshat systemd[1]: Mounted sys-kernel-tracing.mount - Kernel Trace File System.
+déc. 13 17:55:40 seshat systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+déc. 13 17:55:40 seshat systemd[1]: modprobe@configfs.service: Deactivated successfully.
+déc. 13 17:55:40 seshat systemd[1]: Finished modprobe@configfs.service - Load Kernel Module configfs.
+déc. 13 17:55:40 seshat kernel: EXT4-fs (dm-0): re-mounted 4a19176b-9acd-4820-95f0-21d6e8fbcc40 r/w. Quota mode: none.
+déc. 13 17:55:40 seshat systemd[1]: modprobe@dm_mod.service: Deactivated successfully.
+déc. 13 17:55:40 seshat systemd[1]: Finished modprobe@dm_mod.service - Load Kernel Module dm_mod.
+déc. 13 17:55:40 seshat systemd[1]: modprobe@drm.service: Deactivated successfully.
+déc. 13 17:55:40 seshat systemd[1]: Finished modprobe@drm.service - Load Kernel Module drm.
+déc. 13 17:55:40 seshat systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+déc. 13 17:55:40 seshat systemd[1]: Finished modprobe@efi_pstore.service - Load Kernel Module efi_pstore.
+déc. 13 17:55:40 seshat systemd[1]: modprobe@fuse.service: Deactivated successfully.
+déc. 13 17:55:40 seshat systemd[1]: Finished modprobe@fuse.service - Load Kernel Module fuse.
+déc. 13 17:55:40 seshat systemd[1]: modprobe@loop.service: Deactivated successfully.
+déc. 13 17:55:40 seshat systemd[1]: Finished modprobe@loop.service - Load Kernel Module loop.
+déc. 13 17:55:40 seshat systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+déc. 13 17:55:40 seshat systemd[1]: Finished systemd-remount-fs.service - Remount Root and Kernel File Systems.
+déc. 13 17:55:40 seshat systemd-journald[395]: Journal started
+░░ Subject: Le journal a été démarré
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Le processus du journal système a démarré, ouvert ses fichiers en écriture
+░░ et est prêt à traiter les requêtes.
+déc. 13 17:55:40 seshat systemd-journald[395]: Runtime Journal (/run/log/journal/5d0d25e8725b4ab588c95ec9716c5091) is 3.6M, max 29.0M, 25.4M free.
+░░ Subject: Espace disque utilisé par le journal
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ Documentation: man:journald.conf(5)
+░░ 
+░░ Runtime Journal (/run/log/journal/5d0d25e8725b4ab588c95ec9716c5091) utilise actuellement 3.6M.
+░░ Le maximum autorisé est défini à 29.0M.
+░░ Au moins 14.5M doivent être laissés libres
+░░ (sur 286.3M d'espace disque actuellement libre).
+░░ La limite appliquée est donc 29.0M, dont 25.4M
+░░ sont toujours disponibles.
+░░ 
+░░ Les limites définissant la quantité d'espace disque que peut utiliser le
+░░ journal peuvent être configurées avec les paramètres SystemMaxUse=,
+░░ SystemKeepFree=, SystemMaxFileSize=, RuntimeMaxUse=, RuntimeKeepFree=,
+░░ RuntimeMaxFileSize= dans le fichier /etc/systemd/journald.conf.
+░░ Voir journald.conf(5) pour plus de détails.
+déc. 13 17:55:40 seshat systemd-modules-load[407]: Inserted module 'msr'
+déc. 13 17:55:40 seshat systemd-modules-load[407]: Inserted module 'dm_multipath'
+déc. 13 17:55:40 seshat systemd[1]: Mounting sys-fs-fuse-connections.mount - FUSE Control File System...
+déc. 13 17:55:40 seshat systemd[1]: Mounting sys-kernel-config.mount - Kernel Configuration File System...
+déc. 13 17:55:40 seshat lvm[398]:   3 logical volume(s) in volume group "seshat-vg" monitored
+déc. 13 17:55:40 seshat systemd[1]: Starting multipathd.service - Device-Mapper Multipath Device Controller...
+déc. 13 17:55:40 seshat systemd[1]: systemd-hwdb-update.service - Rebuild Hardware Database was skipped because of an unmet condition check (ConditionNeedsUpdate=/etc).
+déc. 13 17:55:40 seshat systemd[1]: systemd-repart.service - Repartition Root Disk was skipped because no trigger condition checks were met.
+déc. 13 17:55:40 seshat systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...
+déc. 13 17:55:40 seshat systemd[1]: Starting systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully...
+déc. 13 17:55:40 seshat systemd[1]: Started systemd-journald.service - Journal Service.
+déc. 13 17:55:40 seshat systemd[1]: Finished lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+░░ Subject: L'unité (unit) lvm2-monitor.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) lvm2-monitor.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:40 seshat systemd[1]: Finished keyboard-setup.service - Set the console keyboard layout.
+░░ Subject: L'unité (unit) keyboard-setup.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) keyboard-setup.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:40 seshat systemd[1]: Mounted sys-fs-fuse-connections.mount - FUSE Control File System.
+░░ Subject: L'unité (unit) sys-fs-fuse-connections.mount a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sys-fs-fuse-connections.mount a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:40 seshat systemd[1]: Mounted sys-kernel-config.mount - Kernel Configuration File System.
+░░ Subject: L'unité (unit) sys-kernel-config.mount a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sys-kernel-config.mount a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:40 seshat systemd[1]: Finished systemd-sysctl.service - Apply Kernel Variables.
+░░ Subject: L'unité (unit) systemd-sysctl.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-sysctl.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:40 seshat systemd[1]: Finished systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully.
+░░ Subject: L'unité (unit) systemd-tmpfiles-setup-dev-early.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-tmpfiles-setup-dev-early.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:40 seshat systemd[1]: systemd-sysusers.service - Create System Users was skipped because no trigger condition checks were met.
+░░ Subject: L'unité (unit) systemd-sysusers.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-sysusers.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:40 seshat multipathd[431]: multipathd v0.9.4: start up
+déc. 13 17:55:40 seshat systemd[1]: Starting systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev...
+░░ Subject: L'unité (unit) systemd-tmpfiles-setup-dev.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-tmpfiles-setup-dev.service a commencé à démarrer.
+déc. 13 17:55:40 seshat multipathd[431]: reconfigure: setting up paths and maps
+déc. 13 17:55:40 seshat systemd[1]: Finished systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev.
+░░ Subject: L'unité (unit) systemd-tmpfiles-setup-dev.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-tmpfiles-setup-dev.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:40 seshat systemd[1]: Starting systemd-udevd.service - Rule-based Manager for Device Events and Files...
+░░ Subject: L'unité (unit) systemd-udevd.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-udevd.service a commencé à démarrer.
+déc. 13 17:55:40 seshat systemd[1]: Started multipathd.service - Device-Mapper Multipath Device Controller.
+░░ Subject: L'unité (unit) multipathd.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) multipathd.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:40 seshat systemd[1]: Finished systemd-udev-trigger.service - Coldplug All udev Devices.
+░░ Subject: L'unité (unit) systemd-udev-trigger.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-udev-trigger.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:40 seshat systemd[1]: Reached target local-fs-pre.target - Preparation for Local File Systems.
+░░ Subject: L'unité (unit) local-fs-pre.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) local-fs-pre.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:40 seshat systemd[1]: Starting ifupdown-pre.service - Helper to synchronize boot up for ifupdown...
+░░ Subject: L'unité (unit) ifupdown-pre.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ifupdown-pre.service a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: Finished ifupdown-pre.service - Helper to synchronize boot up for ifupdown.
+░░ Subject: L'unité (unit) ifupdown-pre.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ifupdown-pre.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd-udevd[465]: Using default interface naming scheme 'v255'.
+déc. 13 17:55:41 seshat systemd[1]: Started systemd-udevd.service - Rule-based Manager for Device Events and Files.
+░░ Subject: L'unité (unit) systemd-udevd.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-udevd.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: plymouth-start.service - Show Plymouth Boot Screen was skipped because of an unmet condition check (ConditionKernelCommandLine=splash).
+░░ Subject: L'unité (unit) plymouth-start.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) plymouth-start.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Started systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+░░ Subject: L'unité (unit) systemd-ask-password-console.path a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-ask-password-console.path a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: systemd-ask-password-plymouth.path - Forward Password Requests to Plymouth Directory Watch was skipped because of an unmet condition check (ConditionPathExists=/run/plymouth/pid).
+░░ Subject: L'unité (unit) systemd-ask-password-plymouth.path a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-ask-password-plymouth.path a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Reached target cryptsetup.target - Local Encrypted Volumes.
+░░ Subject: L'unité (unit) cryptsetup.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) cryptsetup.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat (udev-worker)[471]: dm-2: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/dm-2' failed with exit code 1.
+déc. 13 17:55:41 seshat (udev-worker)[475]: dm-1: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/dm-1' failed with exit code 1.
+déc. 13 17:55:41 seshat (udev-worker)[481]: dm-0: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/dm-0' failed with exit code 1.
+déc. 13 17:55:41 seshat systemd[1]: Found device dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDSG8fyQ62n3mpyowdS7XtV1sgdXmL31eF.device - /dev/disk/by-id/dm-uuid-LVM-LCMnSReBweQHG0QIs6qK5PtK4cQzHdBDSG8fyQ62n3mpyowdS7XtV1sgdXmL31eF.
+░░ Subject: L'unité (unit) dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDSG8fyQ62n3mpyowdS7XtV1sgdXmL31eF.device a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDSG8fyQ62n3mpyowdS7XtV1sgdXmL31eF.device a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Found device dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDIIJEDN9eisqDtztwcOpAj5u8RPYFqMFJ.device - /dev/disk/by-id/dm-uuid-LVM-LCMnSReBweQHG0QIs6qK5PtK4cQzHdBDIIJEDN9eisqDtztwcOpAj5u8RPYFqMFJ.
+░░ Subject: L'unité (unit) dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDIIJEDN9eisqDtztwcOpAj5u8RPYFqMFJ.device a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDIIJEDN9eisqDtztwcOpAj5u8RPYFqMFJ.device a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Starting systemd-fsck@dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDIIJEDN9eisqDtztwcOpAj5u8RPYFqMFJ.service - File System Check on /dev/disk/by-id/dm-uuid-LVM-LCMnSReBweQHG0QIs6qK5PtK4cQzHdBDIIJEDN9eisqDtztwcOpAj5u8RPYFqMFJ...
+░░ Subject: L'unité (unit) systemd-fsck@dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDIIJEDN9eisqDtztwcOpAj5u8RPYFqMFJ.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-fsck@dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDIIJEDN9eisqDtztwcOpAj5u8RPYFqMFJ.service a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: Starting systemd-fsck@dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDSG8fyQ62n3mpyowdS7XtV1sgdXmL31eF.service - File System Check on /dev/disk/by-id/dm-uuid-LVM-LCMnSReBweQHG0QIs6qK5PtK4cQzHdBDSG8fyQ62n3mpyowdS7XtV1sgdXmL31eF...
+░░ Subject: L'unité (unit) systemd-fsck@dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDSG8fyQ62n3mpyowdS7XtV1sgdXmL31eF.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-fsck@dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDSG8fyQ62n3mpyowdS7XtV1sgdXmL31eF.service a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: Started systemd-fsckd.service - File System Check Daemon to report status.
+░░ Subject: L'unité (unit) systemd-fsckd.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-fsckd.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat (udev-worker)[485]: sr0: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sr0' failed with exit code 1.
+déc. 13 17:55:41 seshat systemd-fsck[564]: /var : propre, 8032/262144 fichiers, 232655/1048576 blocs
+déc. 13 17:55:41 seshat systemd-fsck[565]: /home : propre, 18/131072 fichiers, 26162/524288 blocs
+déc. 13 17:55:41 seshat systemd[1]: Finished systemd-fsck@dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDIIJEDN9eisqDtztwcOpAj5u8RPYFqMFJ.service - File System Check on /dev/disk/by-id/dm-uuid-LVM-LCMnSReBweQHG0QIs6qK5PtK4cQzHdBDIIJEDN9eisqDtztwcOpAj5u8RPYFqMFJ.
+░░ Subject: L'unité (unit) systemd-fsck@dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDIIJEDN9eisqDtztwcOpAj5u8RPYFqMFJ.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-fsck@dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDIIJEDN9eisqDtztwcOpAj5u8RPYFqMFJ.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Finished systemd-fsck@dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDSG8fyQ62n3mpyowdS7XtV1sgdXmL31eF.service - File System Check on /dev/disk/by-id/dm-uuid-LVM-LCMnSReBweQHG0QIs6qK5PtK4cQzHdBDSG8fyQ62n3mpyowdS7XtV1sgdXmL31eF.
+░░ Subject: L'unité (unit) systemd-fsck@dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDSG8fyQ62n3mpyowdS7XtV1sgdXmL31eF.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-fsck@dev-disk-by\x2did-dm\x2duuid\x2dLVM\x2dLCMnSReBweQHG0QIs6qK5PtK4cQzHdBDSG8fyQ62n3mpyowdS7XtV1sgdXmL31eF.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Mounting home.mount - /home...
+░░ Subject: L'unité (unit) home.mount a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) home.mount a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: Mounting var.mount - /var...
+░░ Subject: L'unité (unit) var.mount a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) var.mount a commencé à démarrer.
+déc. 13 17:55:41 seshat (udev-worker)[474]: sda: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sda' failed with exit code 1.
+déc. 13 17:55:41 seshat kernel: EXT4-fs (dm-2): mounted filesystem e75e5a5a-8d98-430d-adfb-db40e6dfdf9c r/w with ordered data mode. Quota mode: writeback.
+déc. 13 17:55:41 seshat systemd[1]: Mounted home.mount - /home.
+░░ Subject: L'unité (unit) home.mount a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) home.mount a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat kernel: 9pnet: Installing 9P2000 support
+déc. 13 17:55:41 seshat kernel: lpc_ich 0000:00:1f.0: I/O space for GPIO uninitialized
+déc. 13 17:55:41 seshat kernel: EXT4-fs (dm-1): mounted filesystem dd2f15ba-e764-457b-8271-ff98f75084bd r/w with ordered data mode. Quota mode: none.
+déc. 13 17:55:41 seshat systemd[1]: Mounted var.mount - /var.
+░░ Subject: L'unité (unit) var.mount a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) var.mount a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Starting systemd-journal-flush.service - Flush Journal to Persistent Storage...
+░░ Subject: L'unité (unit) systemd-journal-flush.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-journal-flush.service a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: systemd-pstore.service - Platform Persistent Storage Archival was skipped because of an unmet condition check (ConditionDirectoryNotEmpty=/sys/fs/pstore).
+░░ Subject: L'unité (unit) systemd-pstore.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-pstore.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Starting systemd-random-seed.service - Load/Save OS Random Seed...
+░░ Subject: L'unité (unit) systemd-random-seed.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-random-seed.service a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: systemd-tpm2-setup.service - TPM2 SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+░░ Subject: L'unité (unit) systemd-tpm2-setup.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-tpm2-setup.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd-journald[395]: Time spent on flushing to /var/log/journal/5d0d25e8725b4ab588c95ec9716c5091 is 100.582ms for 891 entries.
+déc. 13 17:55:41 seshat systemd-journald[395]: System Journal (/var/log/journal/5d0d25e8725b4ab588c95ec9716c5091) is 43.0M, max 395.1M, 352.1M free.
+░░ Subject: Espace disque utilisé par le journal
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ Documentation: man:journald.conf(5)
+░░ 
+░░ System Journal (/var/log/journal/5d0d25e8725b4ab588c95ec9716c5091) utilise actuellement 43.0M.
+░░ Le maximum autorisé est défini à 395.1M.
+░░ Au moins 197.5M doivent être laissés libres
+░░ (sur 2.8G d'espace disque actuellement libre).
+░░ La limite appliquée est donc 395.1M, dont 352.1M
+░░ sont toujours disponibles.
+░░ 
+░░ Les limites définissant la quantité d'espace disque que peut utiliser le
+░░ journal peuvent être configurées avec les paramètres SystemMaxUse=,
+░░ SystemKeepFree=, SystemMaxFileSize=, RuntimeMaxUse=, RuntimeKeepFree=,
+░░ RuntimeMaxFileSize= dans le fichier /etc/systemd/journald.conf.
+░░ Voir journald.conf(5) pour plus de détails.
+déc. 13 17:55:41 seshat systemd-journald[395]: Received client request to flush runtime journal.
+déc. 13 17:55:41 seshat kernel: i801_smbus 0000:00:1f.3: Enabling SMBus device
+déc. 13 17:55:41 seshat kernel: i801_smbus 0000:00:1f.3: SMBus using PCI interrupt
+déc. 13 17:55:41 seshat kernel: i2c i2c-0: 1/1 memory slots populated (from DMI)
+déc. 13 17:55:41 seshat kernel: i2c i2c-0: Memory type 0x07 not supported yet, not instantiating SPD
+déc. 13 17:55:41 seshat kernel: Adding 2097148k swap on /dev/sda2.  Priority:-2 extents:1 across:2097148k 
+déc. 13 17:55:41 seshat systemd-journald[395]: /var/log/journal/5d0d25e8725b4ab588c95ec9716c5091/system.journal: Journal file uses a different sequence number ID, rotating.
+déc. 13 17:55:41 seshat systemd-journald[395]: Rotating system journal.
+déc. 13 17:55:41 seshat kernel: EXT4-fs (sda3): mounted filesystem 6fd6df85-1177-4ed3-ace0-76e06e5c25e5 r/w with ordered data mode. Quota mode: none.
+déc. 13 17:55:41 seshat lvm[600]: PV /dev/sda4 online, VG seshat-vg is complete.
+déc. 13 17:55:41 seshat lvm[600]: VG seshat-vg finished
+déc. 13 17:55:41 seshat (udev-worker)[475]: sda2: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sda2' failed with exit code 1.
+déc. 13 17:55:41 seshat systemd[1]: Found device dev-disk-by\x2duuid-cdd9a911\x2d5f55\x2d4dd7\x2daed2\x2d1114799a632d.device - QEMU_HARDDISK 2.
+░░ Subject: L'unité (unit) dev-disk-by\x2duuid-cdd9a911\x2d5f55\x2d4dd7\x2daed2\x2d1114799a632d.device a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dev-disk-by\x2duuid-cdd9a911\x2d5f55\x2d4dd7\x2daed2\x2d1114799a632d.device a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Listening on systemd-rfkill.socket - Load/Save RF Kill Switch Status /dev/rfkill Watch.
+░░ Subject: L'unité (unit) systemd-rfkill.socket a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-rfkill.socket a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd-fsck[629]: /boot : propre, 317/48000 fichiers, 57530/192000 blocs
+déc. 13 17:55:41 seshat (udev-worker)[489]: sda3: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sda3' failed with exit code 1.
+déc. 13 17:55:41 seshat systemd-fsck[644]: fsck.fat 4.2 (2021-01-31)
+déc. 13 17:55:41 seshat systemd-fsck[644]: /dev/sda1: 12 files, 12491/129022 clusters
+déc. 13 17:55:41 seshat systemd[1]: Activating swap dev-disk-by\x2duuid-cdd9a911\x2d5f55\x2d4dd7\x2daed2\x2d1114799a632d.swap - /dev/disk/by-uuid/cdd9a911-5f55-4dd7-aed2-1114799a632d...
+░░ Subject: L'unité (unit) dev-disk-by\x2duuid-cdd9a911\x2d5f55\x2d4dd7\x2daed2\x2d1114799a632d.swap a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dev-disk-by\x2duuid-cdd9a911\x2d5f55\x2d4dd7\x2daed2\x2d1114799a632d.swap a commencé à démarrer.
+déc. 13 17:55:41 seshat (udev-worker)[474]: sda1: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sda1' failed with exit code 1.
+déc. 13 17:55:41 seshat (udev-worker)[472]: sda4: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sda4' failed with exit code 1.
+déc. 13 17:55:41 seshat systemd[1]: Found device dev-disk-by\x2duuid-6fd6df85\x2d1177\x2d4ed3\x2dace0\x2d76e06e5c25e5.device - QEMU_HARDDISK /boot.
+░░ Subject: L'unité (unit) dev-disk-by\x2duuid-6fd6df85\x2d1177\x2d4ed3\x2dace0\x2d76e06e5c25e5.device a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dev-disk-by\x2duuid-6fd6df85\x2d1177\x2d4ed3\x2dace0\x2d76e06e5c25e5.device a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Finished systemd-random-seed.service - Load/Save OS Random Seed.
+░░ Subject: L'unité (unit) systemd-random-seed.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-random-seed.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Found device dev-disk-by\x2duuid-EEC2\x2dAB3E.device - QEMU_HARDDISK ESP.
+░░ Subject: L'unité (unit) dev-disk-by\x2duuid-EEC2\x2dAB3E.device a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dev-disk-by\x2duuid-EEC2\x2dAB3E.device a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Starting systemd-fsck@dev-disk-by\x2duuid-6fd6df85\x2d1177\x2d4ed3\x2dace0\x2d76e06e5c25e5.service - File System Check on /dev/disk/by-uuid/6fd6df85-1177-4ed3-ace0-76e06e5c25e5...
+░░ Subject: L'unité (unit) systemd-fsck@dev-disk-by\x2duuid-6fd6df85\x2d1177\x2d4ed3\x2dace0\x2d76e06e5c25e5.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-fsck@dev-disk-by\x2duuid-6fd6df85\x2d1177\x2d4ed3\x2dace0\x2d76e06e5c25e5.service a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: Starting systemd-fsck@dev-disk-by\x2duuid-EEC2\x2dAB3E.service - File System Check on /dev/disk/by-uuid/EEC2-AB3E...
+░░ Subject: L'unité (unit) systemd-fsck@dev-disk-by\x2duuid-EEC2\x2dAB3E.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-fsck@dev-disk-by\x2duuid-EEC2\x2dAB3E.service a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: Activated swap dev-disk-by\x2duuid-cdd9a911\x2d5f55\x2d4dd7\x2daed2\x2d1114799a632d.swap - /dev/disk/by-uuid/cdd9a911-5f55-4dd7-aed2-1114799a632d.
+░░ Subject: L'unité (unit) dev-disk-by\x2duuid-cdd9a911\x2d5f55\x2d4dd7\x2daed2\x2d1114799a632d.swap a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dev-disk-by\x2duuid-cdd9a911\x2d5f55\x2d4dd7\x2daed2\x2d1114799a632d.swap a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Reached target swap.target - Swaps.
+░░ Subject: L'unité (unit) swap.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) swap.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Mounting tmp.mount - /tmp...
+░░ Subject: L'unité (unit) tmp.mount a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) tmp.mount a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: Finished systemd-fsck@dev-disk-by\x2duuid-6fd6df85\x2d1177\x2d4ed3\x2dace0\x2d76e06e5c25e5.service - File System Check on /dev/disk/by-uuid/6fd6df85-1177-4ed3-ace0-76e06e5c25e5.
+░░ Subject: L'unité (unit) systemd-fsck@dev-disk-by\x2duuid-6fd6df85\x2d1177\x2d4ed3\x2dace0\x2d76e06e5c25e5.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-fsck@dev-disk-by\x2duuid-6fd6df85\x2d1177\x2d4ed3\x2dace0\x2d76e06e5c25e5.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Mounting boot.mount - /boot...
+░░ Subject: L'unité (unit) boot.mount a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) boot.mount a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: Mounted tmp.mount - /tmp.
+░░ Subject: L'unité (unit) tmp.mount a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) tmp.mount a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Mounted boot.mount - /boot.
+░░ Subject: L'unité (unit) boot.mount a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) boot.mount a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Finished systemd-fsck@dev-disk-by\x2duuid-EEC2\x2dAB3E.service - File System Check on /dev/disk/by-uuid/EEC2-AB3E.
+░░ Subject: L'unité (unit) systemd-fsck@dev-disk-by\x2duuid-EEC2\x2dAB3E.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-fsck@dev-disk-by\x2duuid-EEC2\x2dAB3E.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: systemd-quotacheck.service - File System Quota Check was skipped because of an unmet condition check (ConditionPathExists=/usr/sbin/quotacheck).
+░░ Subject: L'unité (unit) systemd-quotacheck.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-quotacheck.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: quotaon.service - Enable File System Quotas was skipped because of an unmet condition check (ConditionPathExists=/usr/sbin/quotaon).
+░░ Subject: L'unité (unit) quotaon.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) quotaon.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Finished systemd-journal-flush.service - Flush Journal to Persistent Storage.
+░░ Subject: L'unité (unit) systemd-journal-flush.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-journal-flush.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Mounting boot-efi.mount - /boot/efi...
+░░ Subject: L'unité (unit) boot-efi.mount a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) boot-efi.mount a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: Mounted boot-efi.mount - /boot/efi.
+░░ Subject: L'unité (unit) boot-efi.mount a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) boot-efi.mount a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Reached target local-fs.target - Local File Systems.
+░░ Subject: L'unité (unit) local-fs.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) local-fs.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Listening on systemd-sysext.socket - System Extension Image Management (Varlink).
+░░ Subject: L'unité (unit) systemd-sysext.socket a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-sysext.socket a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Starting apparmor.service - Load AppArmor profiles...
+░░ Subject: L'unité (unit) apparmor.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apparmor.service a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: Starting console-setup.service - Set console font and keymap...
+░░ Subject: L'unité (unit) console-setup.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) console-setup.service a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: eole-nsswitch.service - Copie libnss sans support de LDAP was skipped because of an unmet condition check (ConditionPathExists=/etc/nsswitch.conf.noldap).
+░░ Subject: L'unité (unit) eole-nsswitch.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) eole-nsswitch.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: ferme-firewall.service - Fermeture du firewall was skipped because of an unmet condition check (ConditionPathExists=/usr/lib/eole/forteresse.sh).
+░░ Subject: L'unité (unit) ferme-firewall.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ferme-firewall.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Starting finalrd.service - Create final runtime dir for shutdown pivot root...
+░░ Subject: L'unité (unit) finalrd.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) finalrd.service a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: ldconfig.service - Rebuild Dynamic Linker Cache was skipped because no trigger condition checks were met.
+░░ Subject: L'unité (unit) ldconfig.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ldconfig.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Starting plymouth-read-write.service - Tell Plymouth To Write Out Runtime Data...
+░░ Subject: L'unité (unit) plymouth-read-write.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) plymouth-read-write.service a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: Starting systemd-binfmt.service - Set Up Additional Binary Formats...
+░░ Subject: L'unité (unit) systemd-binfmt.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-binfmt.service a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: Starting systemd-tmpfiles-setup.service - Create Volatile Files and Directories...
+░░ Subject: L'unité (unit) systemd-tmpfiles-setup.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-tmpfiles-setup.service a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: Starting ufw.service - Uncomplicated firewall...
+░░ Subject: L'unité (unit) ufw.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ufw.service a commencé à démarrer.
+déc. 13 17:55:41 seshat apparmor.systemd[678]: Restarting AppArmor
+déc. 13 17:55:41 seshat systemd[1]: Finished console-setup.service - Set console font and keymap.
+░░ Subject: L'unité (unit) console-setup.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) console-setup.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Finished finalrd.service - Create final runtime dir for shutdown pivot root.
+░░ Subject: L'unité (unit) finalrd.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) finalrd.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: proc-sys-fs-binfmt_misc.automount: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 683 (systemd-binfmt)
+déc. 13 17:55:41 seshat apparmor.systemd[678]: Reloading AppArmor profiles
+déc. 13 17:55:41 seshat systemd-tmpfiles[687]: /usr/lib/tmpfiles.d/nut-common-tmpfiles.conf:8: Duplicate line for path "/run/nut", ignoring.
+déc. 13 17:55:41 seshat systemd[1]: Mounting proc-sys-fs-binfmt_misc.mount - Arbitrary Executable File Formats File System...
+░░ Subject: L'unité (unit) proc-sys-fs-binfmt_misc.mount a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) proc-sys-fs-binfmt_misc.mount a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: Finished plymouth-read-write.service - Tell Plymouth To Write Out Runtime Data.
+░░ Subject: L'unité (unit) plymouth-read-write.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) plymouth-read-write.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Finished ufw.service - Uncomplicated firewall.
+░░ Subject: L'unité (unit) ufw.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ufw.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Mounted proc-sys-fs-binfmt_misc.mount - Arbitrary Executable File Formats File System.
+░░ Subject: L'unité (unit) proc-sys-fs-binfmt_misc.mount a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) proc-sys-fs-binfmt_misc.mount a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Finished systemd-binfmt.service - Set Up Additional Binary Formats.
+░░ Subject: L'unité (unit) systemd-binfmt.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-binfmt.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Finished systemd-tmpfiles-setup.service - Create Volatile Files and Directories.
+░░ Subject: L'unité (unit) systemd-tmpfiles-setup.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-tmpfiles-setup.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: systemd-firstboot.service - First Boot Wizard was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+░░ Subject: L'unité (unit) systemd-firstboot.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-firstboot.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: first-boot-complete.target - First Boot Complete was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+░░ Subject: L'unité (unit) first-boot-complete.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) first-boot-complete.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: systemd-journal-catalog-update.service - Rebuild Journal Catalog was skipped because of an unmet condition check (ConditionNeedsUpdate=/var).
+░░ Subject: L'unité (unit) systemd-journal-catalog-update.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-journal-catalog-update.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: systemd-machine-id-commit.service - Commit a transient machine-id on disk was skipped because of an unmet condition check (ConditionPathIsMountPoint=/etc/machine-id).
+░░ Subject: L'unité (unit) systemd-machine-id-commit.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-machine-id-commit.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat kernel: audit: type=1400 audit(1734112541.902:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name=4D6F6E676F444220436F6D70617373 pid=708 comm="apparmor_parser"
+déc. 13 17:55:41 seshat kernel: audit: type=1400 audit(1734112541.903:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="QtWebEngineProcess" pid=709 comm="apparmor_parser"
+déc. 13 17:55:41 seshat kernel: audit: type=1400 audit(1734112541.903:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="1password" pid=706 comm="apparmor_parser"
+déc. 13 17:55:41 seshat kernel: audit: type=1400 audit(1734112541.903:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Discord" pid=707 comm="apparmor_parser"
+déc. 13 17:55:41 seshat kernel: audit: type=1400 audit(1734112541.906:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="balena-etcher" pid=711 comm="apparmor_parser"
+déc. 13 17:55:41 seshat kernel: audit: type=1400 audit(1734112541.906:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="busybox" pid=714 comm="apparmor_parser"
+déc. 13 17:55:41 seshat kernel: audit: type=1400 audit(1734112541.907:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="buildah" pid=713 comm="apparmor_parser"
+déc. 13 17:55:41 seshat kernel: audit: type=1400 audit(1734112541.907:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="brave" pid=712 comm="apparmor_parser"
+déc. 13 17:55:41 seshat kernel: audit: type=1400 audit(1734112541.909:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="cam" pid=716 comm="apparmor_parser"
+déc. 13 17:55:41 seshat systemd[1]: Starting systemd-resolved.service - Network Name Resolution...
+░░ Subject: L'unité (unit) systemd-resolved.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-resolved.service a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: Starting systemd-timesyncd.service - Network Time Synchronization...
+░░ Subject: L'unité (unit) systemd-timesyncd.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-timesyncd.service a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: systemd-update-done.service - Update is Completed was skipped because no trigger condition checks were met.
+░░ Subject: L'unité (unit) systemd-update-done.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-update-done.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Starting systemd-update-utmp.service - Record System Boot/Shutdown in UTMP...
+░░ Subject: L'unité (unit) systemd-update-utmp.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-update-utmp.service a commencé à démarrer.
+déc. 13 17:55:41 seshat systemd[1]: Finished systemd-update-utmp.service - Record System Boot/Shutdown in UTMP.
+░░ Subject: L'unité (unit) systemd-update-utmp.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-update-utmp.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd-resolved[715]: Positive Trust Anchors:
+déc. 13 17:55:41 seshat systemd-resolved[715]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+déc. 13 17:55:41 seshat systemd-resolved[715]: Negative trust anchors: home.arpa 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 170.0.0.192.in-addr.arpa 171.0.0.192.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa ipv4only.arpa corp home internal intranet lan local private test
+déc. 13 17:55:41 seshat systemd[1]: Started systemd-timesyncd.service - Network Time Synchronization.
+░░ Subject: L'unité (unit) systemd-timesyncd.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-timesyncd.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Reached target time-set.target - System Time Set.
+░░ Subject: L'unité (unit) time-set.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) time-set.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:41 seshat systemd[1]: Reached target time-sync.target - System Time Synchronized.
+░░ Subject: L'unité (unit) time-sync.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) time-sync.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Finished apparmor.service - Load AppArmor profiles.
+░░ Subject: L'unité (unit) apparmor.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apparmor.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Starting snapd.apparmor.service - Load AppArmor profiles managed internally by snapd...
+░░ Subject: L'unité (unit) snapd.apparmor.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.apparmor.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: vgauth.service - Authentication service for virtual machines hosted on VMware was skipped because of an unmet condition check (ConditionVirtualization=vmware).
+░░ Subject: L'unité (unit) vgauth.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) vgauth.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: open-vm-tools.service - Service for virtual machines hosted on VMware was skipped because of an unmet condition check (ConditionVirtualization=vmware).
+░░ Subject: L'unité (unit) open-vm-tools.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) open-vm-tools.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat snapd-apparmor[822]: main.go:143: No profiles to load
+déc. 13 17:55:42 seshat systemd[1]: Finished snapd.apparmor.service - Load AppArmor profiles managed internally by snapd.
+░░ Subject: L'unité (unit) snapd.apparmor.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.apparmor.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd-resolved[715]: Using system hostname 'seshat'.
+déc. 13 17:55:42 seshat systemd[1]: Started systemd-resolved.service - Network Name Resolution.
+░░ Subject: L'unité (unit) systemd-resolved.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-resolved.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Reached target nss-lookup.target - Host and Network Name Lookups.
+░░ Subject: L'unité (unit) nss-lookup.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) nss-lookup.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Reached target sysinit.target - System Initialization.
+░░ Subject: L'unité (unit) sysinit.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysinit.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started acpid.path - ACPI Events Check.
+░░ Subject: L'unité (unit) acpid.path a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) acpid.path a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: apport-autoreport.path - Process error reports when automatic reporting is enabled (file watch) was skipped because of an unmet condition check (ConditionPathExists=/var/lib/apport/autoreport).
+░░ Subject: L'unité (unit) apport-autoreport.path a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apport-autoreport.path a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started nut-driver-enumerator.path.
+░░ Subject: L'unité (unit) nut-driver-enumerator.path a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) nut-driver-enumerator.path a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: tpm-udev.path - Handle dynamically added tpm devices was skipped because of an unmet condition check (ConditionVirtualization=container).
+░░ Subject: L'unité (unit) tpm-udev.path a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) tpm-udev.path a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: apport-autoreport.timer - Process error reports when automatic reporting is enabled (timer based) was skipped because of an unmet condition check (ConditionPathExists=/var/lib/apport/autoreport).
+░░ Subject: L'unité (unit) apport-autoreport.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apport-autoreport.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started apt-show-versions.timer - Daily apt-show-versions index rebuild.
+░░ Subject: L'unité (unit) apt-show-versions.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apt-show-versions.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started certbot.timer - Run certbot twice daily.
+░░ Subject: L'unité (unit) certbot.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) certbot.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started dpkg-db-backup.timer - Daily dpkg database backup timer.
+░░ Subject: L'unité (unit) dpkg-db-backup.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dpkg-db-backup.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started e2scrub_all.timer - Periodic ext4 Online Metadata Check for All Filesystems.
+░░ Subject: L'unité (unit) e2scrub_all.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) e2scrub_all.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started exim4-base.timer - Daily exim4-base housekeeping.
+░░ Subject: L'unité (unit) exim4-base.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) exim4-base.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started fstrim.timer - Discard unused filesystem blocks once a week.
+░░ Subject: L'unité (unit) fstrim.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fstrim.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started fwupd-refresh.timer - Refresh fwupd metadata regularly.
+░░ Subject: L'unité (unit) fwupd-refresh.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fwupd-refresh.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started logrotate.timer - Daily rotation of log files.
+░░ Subject: L'unité (unit) logrotate.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) logrotate.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started man-db.timer - Daily man-db regeneration.
+░░ Subject: L'unité (unit) man-db.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) man-db.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started motd-news.timer - Message of the Day.
+░░ Subject: L'unité (unit) motd-news.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) motd-news.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started phpsessionclean.timer - Clean PHP session files every 30 mins.
+░░ Subject: L'unité (unit) phpsessionclean.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) phpsessionclean.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started plocate-updatedb.timer - Update the plocate database daily.
+░░ Subject: L'unité (unit) plocate-updatedb.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) plocate-updatedb.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started podman-auto-update.timer - Podman auto-update timer.
+░░ Subject: L'unité (unit) podman-auto-update.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) podman-auto-update.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: snapd.snap-repair.timer - Timer to automatically fetch and run repair assertions was skipped because no trigger condition checks were met.
+░░ Subject: L'unité (unit) snapd.snap-repair.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.snap-repair.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started sysstat-collect.timer - Run system activity accounting tool every 10 minutes.
+░░ Subject: L'unité (unit) sysstat-collect.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started sysstat-summary.timer - Generate summary of yesterday's process accounting.
+░░ Subject: L'unité (unit) sysstat-summary.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-summary.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started systemd-tmpfiles-clean.timer - Daily Cleanup of Temporary Directories.
+░░ Subject: L'unité (unit) systemd-tmpfiles-clean.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-tmpfiles-clean.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: ua-timer.timer - Ubuntu Pro Timer for running repeated jobs was skipped because of an unmet condition check (ConditionPathExists=/var/lib/ubuntu-advantage/private/machine-token.json).
+░░ Subject: L'unité (unit) ua-timer.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ua-timer.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Reached target boot-complete.target - Boot Completion Check.
+░░ Subject: L'unité (unit) boot-complete.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) boot-complete.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Reached target paths.target - Path Units.
+░░ Subject: L'unité (unit) paths.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) paths.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Listening on acpid.socket - ACPID Listen Socket.
+░░ Subject: L'unité (unit) acpid.socket a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) acpid.socket a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: apport-forward.socket - Unix socket for apport crash forwarding was skipped because of an unmet condition check (ConditionVirtualization=container).
+░░ Subject: L'unité (unit) apport-forward.socket a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apport-forward.socket a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: clamav-daemon.socket - Socket for Clam AntiVirus userspace daemon was skipped because of an unmet condition check (ConditionPathExistsGlob=/var/lib/clamav/daily.{c[vl]d,inc}).
+░░ Subject: L'unité (unit) clamav-daemon.socket a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) clamav-daemon.socket a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Listening on dbus.socket - D-Bus System Message Bus Socket.
+░░ Subject: L'unité (unit) dbus.socket a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dbus.socket a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Listening on iscsid.socket - Open-iSCSI iscsid Socket.
+░░ Subject: L'unité (unit) iscsid.socket a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) iscsid.socket a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Starting lxd-installer.socket - Helper to install lxd snap on demand...
+░░ Subject: L'unité (unit) lxd-installer.socket a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) lxd-installer.socket a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: Listening on podman.socket - Podman API Socket.
+░░ Subject: L'unité (unit) podman.socket a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) podman.socket a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Starting snapd.socket - Socket activation for snappy daemon...
+░░ Subject: L'unité (unit) snapd.socket a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.socket a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: Listening on ssh.socket - OpenBSD Secure Shell server socket.
+░░ Subject: L'unité (unit) ssh.socket a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ssh.socket a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Listening on uuidd.socket - UUID daemon activation socket.
+░░ Subject: L'unité (unit) uuidd.socket a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) uuidd.socket a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: systemd-pcrphase-sysinit.service - TPM2 PCR Barrier (Initialization) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+░░ Subject: L'unité (unit) systemd-pcrphase-sysinit.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-pcrphase-sysinit.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Listening on lxd-installer.socket - Helper to install lxd snap on demand.
+░░ Subject: L'unité (unit) lxd-installer.socket a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) lxd-installer.socket a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Listening on snapd.socket - Socket activation for snappy daemon.
+░░ Subject: L'unité (unit) snapd.socket a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.socket a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Reached target sockets.target - Socket Units.
+░░ Subject: L'unité (unit) sockets.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sockets.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Reached target basic.target - Basic System.
+░░ Subject: L'unité (unit) basic.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) basic.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Starting EoleCiTestsContext.service - EOLE Continuous Integration Tests Contextualisation...
+░░ Subject: L'unité (unit) EoleCiTestsContext.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) EoleCiTestsContext.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: Started change-password-rpc.service - RPC Server for eole-sso task delegation.
+░░ Subject: L'unité (unit) change-password-rpc.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) change-password-rpc.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: clamav-daemon.service - Clam AntiVirus userspace daemon was skipped because of an unmet condition check (ConditionPathExistsGlob=/var/lib/clamav/daily.{c[vl]d,inc}).
+░░ Subject: L'unité (unit) clamav-daemon.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) clamav-daemon.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Starting dbus.service - D-Bus System Message Bus...
+░░ Subject: L'unité (unit) dbus.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dbus.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: Started dmesg.service - Save initial kernel messages after boot.
+░░ Subject: L'unité (unit) dmesg.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dmesg.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Starting dpkg-db-backup.service - Daily dpkg database backup service...
+░░ Subject: L'unité (unit) dpkg-db-backup.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dpkg-db-backup.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: Starting e2scrub_reap.service - Remove Stale Online ext4 Metadata Check Snapshots...
+░░ Subject: L'unité (unit) e2scrub_reap.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) e2scrub_reap.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: ead-server.service - EAD backend server was skipped because of an unmet condition check (ConditionPathExists=/var/lib/eole/config/ead.cfg).
+░░ Subject: L'unité (unit) ead-server.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ead-server.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: ead-web.service - EAD web server was skipped because of an unmet condition check (ConditionPathExists=/var/lib/eole/config/ead.cfg).
+░░ Subject: L'unité (unit) ead-web.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ead-web.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: eole-nsswitch-ldap.service - Copie libnss avec support de LDAP was skipped because of an unmet condition check (ConditionPathExists=/etc/nsswitch.conf.default).
+░░ Subject: L'unité (unit) eole-nsswitch-ldap.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) eole-nsswitch-ldap.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+░░ Subject: L'unité (unit) getty-static.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) getty-static.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Starting gpm.service - Console Mouse manager...
+░░ Subject: L'unité (unit) gpm.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) gpm.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: Starting grub-common.service - Record successful boot for GRUB...
+░░ Subject: L'unité (unit) grub-common.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) grub-common.service a commencé à démarrer.
+déc. 13 17:55:42 seshat kernel: netfs: FS-Cache loaded
+déc. 13 17:55:42 seshat /usr/sbin/gpm[847]: *** info [daemon/startup.c(131)]:
+déc. 13 17:55:42 seshat /usr/sbin/gpm[847]: Started gpm successfully. Entered daemon mode.
+déc. 13 17:55:42 seshat kernel: 9p: Installing v9fs 9p2000 file system support
+déc. 13 17:55:42 seshat bash[833]: wait mount 9P (1/6): ok
+déc. 13 17:55:42 seshat dbus-daemon[835]: dbus[835]: Unknown group "power" in message bus configuration file
+déc. 13 17:55:42 seshat systemd[1]: Starting networkd-dispatcher.service - Dispatcher daemon for systemd-networkd...
+░░ Subject: L'unité (unit) networkd-dispatcher.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) networkd-dispatcher.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: Starting nut-driver-enumerator.service - Network UPS Tools - enumeration of configure-file devices into systemd unit instances...
+░░ Subject: L'unité (unit) nut-driver-enumerator.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) nut-driver-enumerator.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: Starting phpsessionclean.service - Clean php session files...
+░░ Subject: L'unité (unit) phpsessionclean.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) phpsessionclean.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: Starting podman-clean-transient.service - Clean up podman transient data...
+░░ Subject: L'unité (unit) podman-clean-transient.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) podman-clean-transient.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: Starting podman.service - Podman API Service...
+░░ Subject: L'unité (unit) podman.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) podman.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: Starting polkit.service - Authorization Manager...
+░░ Subject: L'unité (unit) polkit.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) polkit.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: Starting rsyslog.service - System Logging Service...
+░░ Subject: L'unité (unit) rsyslog.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) rsyslog.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: secureboot-db.service - Secure Boot updates for DB and DBX was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/db-d719b2cb-3d3a-4596-a3bc-dad00e67656f).
+░░ Subject: L'unité (unit) secureboot-db.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) secureboot-db.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: snapd.core-fixup.service - Automatically repair incorrect owner/permissions on core devices was skipped because no trigger condition checks were met.
+░░ Subject: L'unité (unit) snapd.core-fixup.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.core-fixup.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: snapd.recovery-chooser-trigger.service - Wait for the Ubuntu Core chooser trigger was skipped because of an unmet condition check (ConditionKernelCommandLine=snapd_recovery_mode).
+░░ Subject: L'unité (unit) snapd.recovery-chooser-trigger.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.recovery-chooser-trigger.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Reached target getty-pre.target - Preparation for Logins.
+░░ Subject: L'unité (unit) getty-pre.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) getty-pre.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Starting snapd.seeded.service - Wait until snapd is fully seeded...
+░░ Subject: L'unité (unit) snapd.seeded.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.seeded.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: Starting snapd.service - Snap Daemon...
+░░ Subject: L'unité (unit) snapd.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: ssl-cert.service - Generate snakeoil SSL keypair was skipped because of an unmet condition check (ConditionPathExists=!/etc/ssl/private/ssl-cert-snakeoil.key).
+░░ Subject: L'unité (unit) ssl-cert.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ssl-cert.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Starting sysstat.service - Resets System Activity Logs...
+░░ Subject: L'unité (unit) sysstat.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: Starting systemd-logind.service - User Login Management...
+░░ Subject: L'unité (unit) systemd-logind.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-logind.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: thermald.service - Thermal Daemon Service was skipped because of an unmet condition check (ConditionVirtualization=no).
+░░ Subject: L'unité (unit) thermald.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) thermald.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: ua-reboot-cmds.service - Ubuntu Pro reboot cmds was skipped because of an unmet condition check (ConditionPathExists=/var/lib/ubuntu-advantage/private/machine-token.json).
+░░ Subject: L'unité (unit) ua-reboot-cmds.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ua-reboot-cmds.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Starting udisks2.service - Disk Manager...
+░░ Subject: L'unité (unit) udisks2.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) udisks2.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: Starting apt-show-versions.service - Daily apt-show-versions index rebuild...
+░░ Subject: L'unité (unit) apt-show-versions.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apt-show-versions.service a commencé à démarrer.
+déc. 13 17:55:42 seshat systemd[1]: Starting exim4-base.service - exim4-base housekeeping...
+░░ Subject: L'unité (unit) exim4-base.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) exim4-base.service a commencé à démarrer.
+déc. 13 17:55:42 seshat dbus-daemon[835]: [system] AppArmor D-Bus mediation is enabled
+déc. 13 17:55:42 seshat systemd[1]: Started dbus.service - D-Bus System Message Bus.
+░░ Subject: L'unité (unit) dbus.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dbus.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: e2scrub_reap.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit e2scrub_reap.service has successfully entered the 'dead' state.
+déc. 13 17:55:42 seshat systemd[1]: Finished e2scrub_reap.service - Remove Stale Online ext4 Metadata Check Snapshots.
+░░ Subject: L'unité (unit) e2scrub_reap.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) e2scrub_reap.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Started podman.service - Podman API Service.
+░░ Subject: L'unité (unit) podman.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) podman.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat bash[892]: CheckUpdate.sh: /root/mount.eole-ci-tests A JOUR
+déc. 13 17:55:42 seshat systemd[1]: Finished sysstat.service - Resets System Activity Logs.
+░░ Subject: L'unité (unit) sysstat.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat bash[892]: CheckUpdate.sh: /root/getVMContext.sh A JOUR
+déc. 13 17:55:42 seshat nut-driver-enumerator[899]: Error reading the '/etc/nut/ups.conf' file or it does not declare any device configurations: nothing left after normalization
+déc. 13 17:55:42 seshat systemd-logind[877]: New seat seat0.
+░░ Subject: Un nouveau poste (seat) seat0 est disponible
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ Documentation: sd-login(3)
+░░ 
+░░ Un nouveau poste (seat) seat0 a été configuré et est maintenant
+░░ disponible.
+déc. 13 17:55:42 seshat systemd-logind[877]: Watching system buttons on /dev/input/event0 (Power Button)
+déc. 13 17:55:42 seshat systemd-logind[877]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+déc. 13 17:55:42 seshat systemd[1]: Started systemd-logind.service - User Login Management.
+░░ Subject: L'unité (unit) systemd-logind.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-logind.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat bash[892]: CheckUpdate.sh: /root/EoleCiFunctions.sh A JOUR
+déc. 13 17:55:42 seshat bash[892]: CheckUpdate.sh: /root/.EoleCiTestsContext.sh A JOUR
+déc. 13 17:55:42 seshat bash[892]: CheckUpdate.sh: /root/.EoleCiTestsDaemon.sh A JOUR
+déc. 13 17:55:42 seshat systemd[1]: grub-common.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit grub-common.service has successfully entered the 'dead' state.
+déc. 13 17:55:42 seshat systemd[1]: Finished grub-common.service - Record successful boot for GRUB.
+░░ Subject: L'unité (unit) grub-common.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) grub-common.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Starting grub-initrd-fallback.service - GRUB failed boot detection...
+░░ Subject: L'unité (unit) grub-initrd-fallback.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) grub-initrd-fallback.service a commencé à démarrer.
+déc. 13 17:55:42 seshat polkitd[863]: Started polkitd version 124
+déc. 13 17:55:42 seshat udisksd[880]: udisks daemon version 2.10.1 starting
+déc. 13 17:55:42 seshat nut-driver-enumerator[899]: Error reading the list of systemd service instances for UPS drivers, or none are defined - before manipulations
+déc. 13 17:55:42 seshat nut-driver-enumerator[1001]: Error reading the '/etc/nut/ups.conf' file or it does not declare any device configurations: nothing left after normalization
+déc. 13 17:55:42 seshat nut-driver-enumerator[899]: Error reading the list of systemd service instances for UPS drivers, or none are defined
+déc. 13 17:55:42 seshat nut-driver-enumerator[899]: ven. 13 déc. 2024 17:55:42 UTC : OK: No more changes to reconcile between systemd service instances and device configurations in '/etc/nut/ups.conf'
+déc. 13 17:55:42 seshat systemd[1]: nut-driver-enumerator.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit nut-driver-enumerator.service has successfully entered the 'dead' state.
+déc. 13 17:55:42 seshat systemd[1]: Finished nut-driver-enumerator.service - Network UPS Tools - enumeration of configure-file devices into systemd unit instances.
+░░ Subject: L'unité (unit) nut-driver-enumerator.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) nut-driver-enumerator.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: grub-initrd-fallback.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit grub-initrd-fallback.service has successfully entered the 'dead' state.
+déc. 13 17:55:42 seshat systemd[1]: Finished grub-initrd-fallback.service - GRUB failed boot detection.
+░░ Subject: L'unité (unit) grub-initrd-fallback.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) grub-initrd-fallback.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat systemd[1]: Reached target nut-driver.target - Network UPS Tools - target for power device drivers on this system.
+░░ Subject: L'unité (unit) nut-driver.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) nut-driver.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat kernel: ISO 9660 Extensions: Microsoft Joliet Level 3
+déc. 13 17:55:42 seshat kernel: ISO 9660 Extensions: RRIP_1991A
+déc. 13 17:55:42 seshat rsyslogd[953]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2312.0]
+déc. 13 17:55:42 seshat rsyslogd[953]: rsyslogd's groupid changed to 104
+déc. 13 17:55:42 seshat systemd[1]: Started rsyslog.service - System Logging Service.
+░░ Subject: L'unité (unit) rsyslog.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) rsyslog.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat rsyslogd[953]: rsyslogd's userid changed to 103
+déc. 13 17:55:42 seshat rsyslogd[953]: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="953" x-info="https://www.rsyslog.com"] start
+déc. 13 17:55:42 seshat polkitd[863]: Loading rules from directory /etc/polkit-1/rules.d
+déc. 13 17:55:42 seshat polkitd[863]: Loading rules from directory /usr/share/polkit-1/rules.d
+déc. 13 17:55:42 seshat polkitd[863]: Finished loading, compiling and executing 6 rules
+déc. 13 17:55:42 seshat systemd[1]: Started polkit.service - Authorization Manager.
+░░ Subject: L'unité (unit) polkit.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) polkit.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:42 seshat polkitd[863]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+déc. 13 17:55:42 seshat systemd[1]: Starting ModemManager.service - Modem Manager...
+░░ Subject: L'unité (unit) ModemManager.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ModemManager.service a commencé à démarrer.
+déc. 13 17:55:42 seshat EOLECITESTS[1122]: ciContextualizeMachine: réalisée pour 1421948, à refaire
+déc. 13 17:55:42 seshat EOLECITESTS[1125]: Début ciContextualizeMachine : daily,
+déc. 13 17:55:42 seshat EOLECITESTS[1126]: Debut ciContextualizeDaily
+déc. 13 17:55:43 seshat ModemManager[1106]: <msg> ModemManager (version 1.23.4) starting in system bus...
+déc. 13 17:55:43 seshat udisksd[880]: Error probing device: Error sending ATA command IDENTIFY PACKET DEVICE to '/dev/sr0': Unexpected sense data returned:
+                                       0000: f0 00 05 00  58 00 01 0a  00 00 00 00  21 04 00 00    ....X.......!...
+                                       0010: 00 00 00 00  00 00 00 00  00 00 00 00  00 00 00 00    ................
+                                        (g-io-error-quark, 0)
+déc. 13 17:55:43 seshat systemd[1]: Started udisks2.service - Disk Manager.
+░░ Subject: L'unité (unit) udisks2.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) udisks2.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:43 seshat systemd[1]: dpkg-db-backup.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit dpkg-db-backup.service has successfully entered the 'dead' state.
+déc. 13 17:55:43 seshat systemd[1]: Finished dpkg-db-backup.service - Daily dpkg database backup service.
+░░ Subject: L'unité (unit) dpkg-db-backup.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) dpkg-db-backup.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:43 seshat udisksd[880]: Acquired the name org.freedesktop.UDisks2 on the system message bus
+déc. 13 17:55:43 seshat EOLECITESTS[1145]: 01-netcfg ok, on ne fait rien !
+déc. 13 17:55:43 seshat EOLECITESTS[1146]: Fin ciContextualizeDaily
+déc. 13 17:55:43 seshat EOLECITESTS[1147]: Contextualization Machine OK
+déc. 13 17:55:43 seshat systemd[1]: Started gpm.service - Console Mouse manager.
+░░ Subject: L'unité (unit) gpm.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) gpm.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:43 seshat EOLECITESTS[1152]: jenkins 1422893 daily Contextualization Machine : OK
+déc. 13 17:55:43 seshat EOLECITESTS[1153]: Fin ciContextualizeMachine : ok à 2024-12-13 17:55:43
+déc. 13 17:55:43 seshat echo[1155]: Contextualisation Ok
+déc. 13 17:55:43 seshat systemd[1]: EoleCiTestsContext.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit EoleCiTestsContext.service has successfully entered the 'dead' state.
+déc. 13 17:55:43 seshat systemd[1]: Finished EoleCiTestsContext.service - EOLE Continuous Integration Tests Contextualisation.
+░░ Subject: L'unité (unit) EoleCiTestsContext.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) EoleCiTestsContext.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:43 seshat systemd[1]: Reached target network-pre.target - Preparation for Network.
+░░ Subject: L'unité (unit) network-pre.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) network-pre.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:43 seshat systemd[1]: Starting networking.service - Raise network interfaces...
+░░ Subject: L'unité (unit) networking.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) networking.service a commencé à démarrer.
+déc. 13 17:55:43 seshat systemd[1]: Starting systemd-networkd.service - Network Configuration...
+░░ Subject: L'unité (unit) systemd-networkd.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-networkd.service a commencé à démarrer.
+déc. 13 17:55:43 seshat ifup[1175]: /etc/network/if-up.d/resolved: line 18: return: can only `return' from a function or sourced script
+déc. 13 17:55:43 seshat ifup[1170]: run-parts: /etc/network/if-up.d/resolved exited with return code 2
+déc. 13 17:55:43 seshat ifup[1157]: ifup: failed to bring up lo
+déc. 13 17:55:43 seshat systemd[1]: exim4-base.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit exim4-base.service has successfully entered the 'dead' state.
+déc. 13 17:55:43 seshat systemd[1]: Finished exim4-base.service - exim4-base housekeeping.
+░░ Subject: L'unité (unit) exim4-base.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) exim4-base.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:43 seshat systemd[1]: Starting logrotate.service - Rotate log files...
+░░ Subject: L'unité (unit) logrotate.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) logrotate.service a commencé à démarrer.
+déc. 13 17:55:43 seshat kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+déc. 13 17:55:43 seshat kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+déc. 13 17:55:43 seshat kernel: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+déc. 13 17:55:43 seshat systemd[1]: networking.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit networking.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+déc. 13 17:55:43 seshat systemd[1]: networking.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit networking.service has entered the 'failed' state with result 'exit-code'.
+déc. 13 17:55:43 seshat systemd[1]: Failed to start networking.service - Raise network interfaces.
+░░ Subject: L'unité (unit) networking.service a échoué
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) networking.service a échoué, avec le résultat failed.
+déc. 13 17:55:43 seshat systemd-networkd[1159]: lo: Link UP
+déc. 13 17:55:43 seshat systemd-networkd[1159]: lo: Gained carrier
+déc. 13 17:55:43 seshat systemd-networkd[1159]: Enumeration completed
+déc. 13 17:55:43 seshat systemd[1]: Started systemd-networkd.service - Network Configuration.
+░░ Subject: L'unité (unit) systemd-networkd.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-networkd.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:43 seshat systemd[1]: Reached target network.target - Network.
+░░ Subject: L'unité (unit) network.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) network.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:43 seshat systemd-networkd[1159]: enp2s0: Configuring with /run/systemd/network/10-netplan-enp2s0.network.
+déc. 13 17:55:43 seshat systemd[1]: Starting creoled.service - EOLE Creole server...
+░░ Subject: L'unité (unit) creoled.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) creoled.service a commencé à démarrer.
+déc. 13 17:55:43 seshat systemd-networkd[1159]: enp2s0: Link UP
+déc. 13 17:55:43 seshat systemd-networkd[1159]: enp2s0: Gained carrier
+déc. 13 17:55:43 seshat systemd[1]: Starting eoleflask.service - Eole flask server...
+░░ Subject: L'unité (unit) eoleflask.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) eoleflask.service a commencé à démarrer.
+déc. 13 17:55:43 seshat systemd[1]: Starting nut-server.service - Network UPS Tools - power devices information server...
+░░ Subject: L'unité (unit) nut-server.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) nut-server.service a commencé à démarrer.
+déc. 13 17:55:43 seshat systemd[1]: Starting systemd-networkd-wait-online.service - Wait for Network to be Configured...
+░░ Subject: L'unité (unit) systemd-networkd-wait-online.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-networkd-wait-online.service a commencé à démarrer.
+déc. 13 17:55:43 seshat systemd[1]: Started unattended-upgrades.service - Unattended Upgrades Shutdown.
+░░ Subject: L'unité (unit) unattended-upgrades.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) unattended-upgrades.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:43 seshat systemd-networkd[1159]: enp2s0: DHCPv4 address 192.168.0.153/24, gateway 192.168.0.1 acquired from 192.168.0.1
+déc. 13 17:55:43 seshat dbus-daemon[835]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.7' (uid=998 pid=1159 comm="/usr/lib/systemd/systemd-networkd" label="unconfined")
+déc. 13 17:55:43 seshat systemd[1]: Started vnstat.service - vnStat network traffic monitor.
+░░ Subject: L'unité (unit) vnstat.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) vnstat.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:43 seshat systemd[1]: Cannot find unit for notify message of PID 1221, ignoring.
+déc. 13 17:55:43 seshat systemd-timesyncd[731]: Network configuration changed, trying to establish connection.
+déc. 13 17:55:43 seshat systemd[1]: Started nut-server.service - Network UPS Tools - power devices information server.
+░░ Subject: L'unité (unit) nut-server.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) nut-server.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:43 seshat systemd[1]: Starting nut-monitor.service - Network UPS Tools - power device monitor and shutdown controller...
+░░ Subject: L'unité (unit) nut-monitor.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) nut-monitor.service a commencé à démarrer.
+déc. 13 17:55:43 seshat nut-server[1224]: upsd disabled, please adjust the configuration to your needs
+déc. 13 17:55:43 seshat nut-server[1224]: Then set MODE to a suitable value in /etc/nut/nut.conf to enable it
+déc. 13 17:55:43 seshat systemd[1]: Starting systemd-hostnamed.service - Hostname Service...
+░░ Subject: L'unité (unit) systemd-hostnamed.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-hostnamed.service a commencé à démarrer.
+déc. 13 17:55:43 seshat systemd[1]: Cannot find unit for notify message of PID 1225, ignoring.
+déc. 13 17:55:43 seshat systemd[1]: nut-server.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit nut-server.service has successfully entered the 'dead' state.
+déc. 13 17:55:43 seshat kernel: NET: Registered PF_QIPCRTR protocol family
+déc. 13 17:55:43 seshat systemd[1]: Started ModemManager.service - Modem Manager.
+░░ Subject: L'unité (unit) ModemManager.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ModemManager.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:43 seshat systemd[1]: Started nut-monitor.service - Network UPS Tools - power device monitor and shutdown controller.
+░░ Subject: L'unité (unit) nut-monitor.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) nut-monitor.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:43 seshat systemd[1]: Reached target nut.target - Network UPS Tools - target for power device drivers, data server and monitoring client (if enabled) on this system.
+░░ Subject: L'unité (unit) nut.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) nut.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:43 seshat nut-monitor[1236]: upsmon disabled, please adjust the configuration to your needs
+déc. 13 17:55:43 seshat nut-monitor[1236]: Then set MODE to a suitable value in /etc/nut/nut.conf to enable it
+déc. 13 17:55:43 seshat systemd[1]: nut-monitor.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit nut-monitor.service has successfully entered the 'dead' state.
+déc. 13 17:55:43 seshat snapd[869]: overlord.go:274: Acquiring state lock file
+déc. 13 17:55:43 seshat snapd[869]: overlord.go:279: Acquired state lock file
+déc. 13 17:55:43 seshat dbus-daemon[835]: [system] Successfully activated service 'org.freedesktop.hostname1'
+déc. 13 17:55:43 seshat systemd[1]: Started systemd-hostnamed.service - Hostname Service.
+░░ Subject: L'unité (unit) systemd-hostnamed.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-hostnamed.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:43 seshat networkd-dispatcher[852]: No valid path found for iwconfig
+déc. 13 17:55:43 seshat networkd-dispatcher[852]: No valid path found for iw
+déc. 13 17:55:43 seshat systemd[1]: Cannot find unit for notify message of PID 1260, ignoring.
+déc. 13 17:55:43 seshat systemd[1]: networkd-dispatcher.service: Got notification message from PID 1263, but reception only permitted for main PID 852
+déc. 13 17:55:43 seshat networkd-dispatcher[1265]: openssh-server: SSH daemon is not running, exit
+déc. 13 17:55:43 seshat systemd[1]: Started networkd-dispatcher.service - Dispatcher daemon for systemd-networkd.
+░░ Subject: L'unité (unit) networkd-dispatcher.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) networkd-dispatcher.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:43 seshat systemd-hostnamed[1230]: Hostname set to <seshat> (static)
+déc. 13 17:55:44 seshat vnstatd[1223]: Info: vnStat daemon 2.12 (pid:1223 uid:113 gid:116 64-bit, SQLite 3.45.1)
+déc. 13 17:55:44 seshat vnstatd[1223]: Info: Data retention: 48 5MinuteHours, 4 HourlyDays, 62 DailyDays, 25 MonthlyMonths, -1 YearlyYears, 20 TopDayEntries
+déc. 13 17:55:44 seshat vnstatd[1223]: Info: Monitoring (1): enp2s0 (1000 Mbit)
+déc. 13 17:55:44 seshat snapd[869]: daemon.go:250: started snapd/2.66.1+24.04 (series 16; classic) ubuntu/24.04 (amd64) linux/6.8.0-50-generic.
+déc. 13 17:55:44 seshat kernel: loop0: detected capacity change from 0 to 8
+déc. 13 17:55:44 seshat systemd[1]: tmp-syscheck\x2dmountpoint\x2d925743667.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit tmp-syscheck\x2dmountpoint\x2d925743667.mount has successfully entered the 'dead' state.
+déc. 13 17:55:44 seshat snapd[869]: daemon.go:353: adjusting startup timeout by 30s (pessimistic estimate of 30s plus 5s per snap)
+déc. 13 17:55:44 seshat snapd[869]: backends.go:58: AppArmor status: apparmor is enabled and all features are available
+déc. 13 17:55:44 seshat systemd[1]: logrotate.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit logrotate.service has successfully entered the 'dead' state.
+déc. 13 17:55:44 seshat systemd[1]: Finished logrotate.service - Rotate log files.
+░░ Subject: L'unité (unit) logrotate.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) logrotate.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:44 seshat podman[860]: time="2024-12-13T17:55:44Z" level=info msg="/usr/bin/podman filtering at log level info"
+déc. 13 17:55:44 seshat podman[860]: time="2024-12-13T17:55:44Z" level=info msg="Using sqlite as database backend"
+déc. 13 17:55:44 seshat systemd[1]: var-lib-containers-storage-overlay-compat3739280773-merged.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit var-lib-containers-storage-overlay-compat3739280773-merged.mount has successfully entered the 'dead' state.
+déc. 13 17:55:44 seshat kernel: IPv6: enp2s0: IPv6 duplicate address fe80::c0ff:fea8:66 used by 02:00:c0:a8:00:66 detected!
+déc. 13 17:55:44 seshat kernel: kauditd_printk_skb: 116 callbacks suppressed
+déc. 13 17:55:44 seshat kernel: audit: type=1400 audit(1734112544.350:127): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=1304 comm="apparmor_parser"
+déc. 13 17:55:44 seshat kernel: audit: type=1400 audit(1734112544.356:128): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1304 comm="apparmor_parser"
+déc. 13 17:55:44 seshat systemd[1]: Cannot find unit for notify message of PID 1314, ignoring.
+déc. 13 17:55:44 seshat systemd[1]: Started snapd.service - Snap Daemon.
+░░ Subject: L'unité (unit) snapd.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:44 seshat dbus-daemon[835]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.13' (uid=0 pid=869 comm="/usr/lib/snapd/snapd" label="unconfined")
+déc. 13 17:55:44 seshat systemd[1]: Starting systemd-timedated.service - Time & Date Service...
+░░ Subject: L'unité (unit) systemd-timedated.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-timedated.service a commencé à démarrer.
+déc. 13 17:55:44 seshat dbus-daemon[835]: [system] Successfully activated service 'org.freedesktop.timedate1'
+déc. 13 17:55:44 seshat systemd[1]: Started systemd-timedated.service - Time & Date Service.
+░░ Subject: L'unité (unit) systemd-timedated.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-timedated.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:44 seshat systemd[1]: phpsessionclean.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit phpsessionclean.service has successfully entered the 'dead' state.
+déc. 13 17:55:44 seshat systemd[1]: Finished phpsessionclean.service - Clean php session files.
+░░ Subject: L'unité (unit) phpsessionclean.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) phpsessionclean.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:44 seshat systemd[1]: Finished snapd.seeded.service - Wait until snapd is fully seeded.
+░░ Subject: L'unité (unit) snapd.seeded.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.seeded.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:44 seshat kernel: evm: overlay not supported
+déc. 13 17:55:44 seshat systemd[1]: snapd.autoimport.service - Auto import assertions from block devices was skipped because no trigger condition checks were met.
+░░ Subject: L'unité (unit) snapd.autoimport.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) snapd.autoimport.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:45 seshat systemd[1]: var-lib-containers-storage-overlay-metacopy\x2dcheck1609017678-merged.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit var-lib-containers-storage-overlay-metacopy\x2dcheck1609017678-merged.mount has successfully entered the 'dead' state.
+déc. 13 17:55:45 seshat podman[860]: time="2024-12-13T17:55:45Z" level=info msg="[graphdriver] using prior storage driver: overlay"
+déc. 13 17:55:45 seshat podman[859]: 2024-12-13 17:55:45.213388565 +0000 UTC m=+2.074897441 system refresh
+déc. 13 17:55:45 seshat podman[860]: time="2024-12-13T17:55:45Z" level=info msg="Setting parallel job count to 13"
+déc. 13 17:55:45 seshat podman[860]: time="2024-12-13T17:55:45Z" level=info msg="Using systemd socket activation to determine API endpoint"
+déc. 13 17:55:45 seshat podman[860]: time="2024-12-13T17:55:45Z" level=info msg="API service listening on \"/run/podman/podman.sock\". URI: \"/run/podman/podman.sock\""
+déc. 13 17:55:45 seshat systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit var-lib-containers-storage-overlay.mount has successfully entered the 'dead' state.
+déc. 13 17:55:45 seshat systemd[1]: podman-clean-transient.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit podman-clean-transient.service has successfully entered the 'dead' state.
+déc. 13 17:55:45 seshat systemd[1]: Finished podman-clean-transient.service - Clean up podman transient data.
+░░ Subject: L'unité (unit) podman-clean-transient.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) podman-clean-transient.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:45 seshat systemd[1]: Started eoleflask.service - Eole flask server.
+░░ Subject: L'unité (unit) eoleflask.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) eoleflask.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:45 seshat systemd[1]: eoleapps.service - Eole flask server was skipped because of an unmet condition check (ConditionPathExists=/etc/eole/flask/eoleapps.py).
+░░ Subject: L'unité (unit) eoleapps.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) eoleapps.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:46 seshat creoled[1217]:  ENGINE Listening for SIGTERM.
+déc. 13 17:55:46 seshat creoled[1217]:  ENGINE Listening for SIGHUP.
+déc. 13 17:55:46 seshat creoled[1217]:  ENGINE Listening for SIGUSR1.
+déc. 13 17:55:46 seshat creoled[1217]:  ENGINE Listening for SIGINT.
+déc. 13 17:55:46 seshat creoled[1217]:  ENGINE Bus STARTING
+déc. 13 17:55:46 seshat creoled[1217]:  ENGINE PID 1217 written to '/run/creoled.pid'.
+déc. 13 17:55:46 seshat creoled[1217]:  ENGINE Start InotifyMonitor thread
+déc. 13 17:55:46 seshat creoled[1217]:  ENGINE Serving on http://127.0.0.1:8000
+déc. 13 17:55:46 seshat creoled[1217]:  ENGINE Bus STARTED
+déc. 13 17:55:46 seshat systemd[1]: Started creoled.service - EOLE Creole server.
+░░ Subject: L'unité (unit) creoled.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) creoled.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:46 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:55:46] "GET /get/creole/interface_0/nom_zone_eth0 HTTP/1.1" 200 35 "" "python-requests/2.31.0"
+déc. 13 17:55:47 seshat systemd[1]: dmesg.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit dmesg.service has successfully entered the 'dead' state.
+déc. 13 17:55:47 seshat ModemManager[1106]: <msg> [base-manager] couldn't check support for device '/sys/devices/pci0000:00/0000:00:02.1/0000:02:00.0': not supported by any plugin
+déc. 13 17:55:48 seshat systemd[1]: apt-show-versions.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apt-show-versions.service has successfully entered the 'dead' state.
+déc. 13 17:55:48 seshat systemd[1]: Finished apt-show-versions.service - Daily apt-show-versions index rebuild.
+░░ Subject: L'unité (unit) apt-show-versions.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apt-show-versions.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:55:48 seshat systemd[1]: apt-show-versions.service: Consumed 3.538s CPU time.
+░░ Subject: Ressources consommées durant l'éxécution de l'unité (unit)
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apt-show-versions.service s'est arrêtée et a consommé les ressources indiquées.
+déc. 13 17:55:49 seshat snapd[869]: daemon.go:548: gracefully waiting for running hooks
+déc. 13 17:55:49 seshat snapd[869]: daemon.go:550: done waiting for running hooks
+déc. 13 17:55:50 seshat systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit var-lib-containers-storage-overlay.mount has successfully entered the 'dead' state.
+déc. 13 17:55:50 seshat systemd[1]: podman.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit podman.service has successfully entered the 'dead' state.
+déc. 13 17:55:52 seshat snapd[869]: overlord.go:518: Released state lock file
+déc. 13 17:55:52 seshat snapd[869]: daemon stop requested to wait for socket activation
+déc. 13 17:55:52 seshat systemd[1]: snapd.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit snapd.service has successfully entered the 'dead' state.
+déc. 13 17:56:11 seshat systemd[1]: systemd-fsckd.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit systemd-fsckd.service has successfully entered the 'dead' state.
+déc. 13 17:56:14 seshat systemd-resolved[715]: Clock change detected. Flushing caches.
+déc. 13 17:56:14 seshat systemd-timesyncd[731]: Contacted time server 192.168.232.2:123 (192.168.232.2).
+déc. 13 17:56:14 seshat systemd-timesyncd[731]: Initial clock synchronization to Fri 2024-12-13 17:56:14.612456 UTC.
+░░ Subject: Initial clock synchronization
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ For the first time during the current boot an NTP synchronization has been
+░░ acquired and the local system clock adjustment has been initiated.
+déc. 13 17:56:14 seshat systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit systemd-hostnamed.service has successfully entered the 'dead' state.
+déc. 13 17:56:15 seshat systemd[1]: systemd-timedated.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit systemd-timedated.service has successfully entered the 'dead' state.
+déc. 13 17:57:32 seshat systemd-timesyncd[731]: Timed out waiting for reply from 192.168.232.2:123 (192.168.232.2).
+déc. 13 17:57:44 seshat systemd-networkd-wait-online[1220]: Timeout occurred while waiting for network connectivity.
+déc. 13 17:57:44 seshat systemd[1]: systemd-networkd-wait-online.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit systemd-networkd-wait-online.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+déc. 13 17:57:44 seshat systemd[1]: systemd-networkd-wait-online.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit systemd-networkd-wait-online.service has entered the 'failed' state with result 'exit-code'.
+déc. 13 17:57:44 seshat systemd[1]: Failed to start systemd-networkd-wait-online.service - Wait for Network to be Configured.
+░░ Subject: L'unité (unit) systemd-networkd-wait-online.service a échoué
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-networkd-wait-online.service a échoué, avec le résultat failed.
+déc. 13 17:57:44 seshat systemd[1]: Reached target network-online.target - Network is Online.
+░░ Subject: L'unité (unit) network-online.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) network-online.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Started update-notifier-download.timer - Download data for packages that failed at package install time.
+░░ Subject: L'unité (unit) update-notifier-download.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) update-notifier-download.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Started update-notifier-motd.timer - Check to see whether there is a new version of Ubuntu available.
+░░ Subject: L'unité (unit) update-notifier-motd.timer a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) update-notifier-motd.timer a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Reached target timers.target - Timer Units.
+░░ Subject: L'unité (unit) timers.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) timers.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Starting exim4.service - exim Mail Transport Agent...
+░░ Subject: L'unité (unit) exim4.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) exim4.service a commencé à démarrer.
+déc. 13 17:57:44 seshat systemd[1]: Starting inetd.service - Internet superserver...
+░░ Subject: L'unité (unit) inetd.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) inetd.service a commencé à démarrer.
+déc. 13 17:57:44 seshat systemd[1]: Starting mysql.service - MySQL Community Server...
+░░ Subject: L'unité (unit) mysql.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) mysql.service a commencé à démarrer.
+déc. 13 17:57:44 seshat systemd[1]: open-iscsi.service - Login to default iSCSI targets was skipped because no trigger condition checks were met.
+░░ Subject: L'unité (unit) open-iscsi.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) open-iscsi.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Reached target remote-fs-pre.target - Preparation for Remote File Systems.
+░░ Subject: L'unité (unit) remote-fs-pre.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) remote-fs-pre.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Reached target remote-fs.target - Remote File Systems.
+░░ Subject: L'unité (unit) remote-fs.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) remote-fs.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Starting apache2.service - The Apache HTTP Server...
+░░ Subject: L'unité (unit) apache2.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apache2.service a commencé à démarrer.
+déc. 13 17:57:44 seshat systemd[1]: Starting apport.service - automatic crash report generation...
+░░ Subject: L'unité (unit) apport.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apport.service a commencé à démarrer.
+déc. 13 17:57:44 seshat systemd[1]: Starting atd.service - Deferred execution scheduler...
+░░ Subject: L'unité (unit) atd.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) atd.service a commencé à démarrer.
+déc. 13 17:57:44 seshat systemd[1]: Finished blk-availability.service - Availability of block devices.
+░░ Subject: L'unité (unit) blk-availability.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) blk-availability.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Started cron.service - Regular background program processing daemon.
+░░ Subject: L'unité (unit) cron.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) cron.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: eole-sso.service - Eole Single Sign On server was skipped because of an unmet condition check (ConditionPathExists=/etc/eolesso/sso.conf).
+░░ Subject: L'unité (unit) eole-sso.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) eole-sso.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Starting fstrim.service - Discard unused blocks on filesystems from /etc/fstab...
+░░ Subject: L'unité (unit) fstrim.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fstrim.service a commencé à démarrer.
+déc. 13 17:57:44 seshat systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+░░ Subject: L'unité (unit) nginx.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) nginx.service a commencé à démarrer.
+déc. 13 17:57:44 seshat systemd[1]: Starting podman-auto-update.service - Podman auto-update service...
+░░ Subject: L'unité (unit) podman-auto-update.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) podman-auto-update.service a commencé à démarrer.
+déc. 13 17:57:44 seshat (cron)[1423]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+déc. 13 17:57:44 seshat systemd[1]: Starting podman-restart.service - Podman Start All Containers With Restart Policy Set To Always...
+░░ Subject: L'unité (unit) podman-restart.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) podman-restart.service a commencé à démarrer.
+déc. 13 17:57:44 seshat systemd[1]: pollinate.service - Pollinate to seed the pseudo random number generator was skipped because of an unmet condition check (ConditionPathExists=!/var/cache/pollinate/seeded).
+░░ Subject: L'unité (unit) pollinate.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) pollinate.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat cron[1423]: (CRON) INFO (pidfile fd = 3)
+déc. 13 17:57:44 seshat systemd[1]: Starting rc-local.service - /etc/rc.local Compatibility...
+░░ Subject: L'unité (unit) rc-local.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) rc-local.service a commencé à démarrer.
+déc. 13 17:57:44 seshat systemd[1]: Starting rng-tools-debian.service - LSB: rng-tools (Debian variant)...
+░░ Subject: L'unité (unit) rng-tools-debian.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) rng-tools-debian.service a commencé à démarrer.
+déc. 13 17:57:44 seshat systemd[1]: Starting slapd.service - LSB: OpenLDAP standalone server (Lightweight Directory Access Protocol)...
+░░ Subject: L'unité (unit) slapd.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) slapd.service a commencé à démarrer.
+déc. 13 17:57:44 seshat cron[1423]: (CRON) INFO (Running @reboot jobs)
+déc. 13 17:57:44 seshat systemd[1]: Started spamd.service - Perl-based spam filter using text analysis.
+░░ Subject: L'unité (unit) spamd.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) spamd.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: systemd-pcrphase.service - TPM2 PCR Barrier (User) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+░░ Subject: L'unité (unit) systemd-pcrphase.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-pcrphase.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Starting systemd-user-sessions.service - Permit User Sessions...
+░░ Subject: L'unité (unit) systemd-user-sessions.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-user-sessions.service a commencé à démarrer.
+déc. 13 17:57:44 seshat systemd[1]: ubuntu-advantage.service - Ubuntu Pro Background Auto Attach was skipped because no trigger condition checks were met.
+░░ Subject: L'unité (unit) ubuntu-advantage.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) ubuntu-advantage.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Started inetd.service - Internet superserver.
+░░ Subject: L'unité (unit) inetd.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) inetd.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Started atd.service - Deferred execution scheduler.
+░░ Subject: L'unité (unit) atd.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) atd.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Finished systemd-user-sessions.service - Permit User Sessions.
+░░ Subject: L'unité (unit) systemd-user-sessions.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-user-sessions.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
+░░ Subject: L'unité (unit) nginx.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) nginx.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat podman[1429]: time="2024-12-13T17:57:44Z" level=info msg="/usr/bin/podman filtering at log level info"
+déc. 13 17:57:44 seshat podman[1429]: time="2024-12-13T17:57:44Z" level=info msg="Using sqlite as database backend"
+déc. 13 17:57:44 seshat systemd[1]: Started rc-local.service - /etc/rc.local Compatibility.
+░░ Subject: L'unité (unit) rc-local.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) rc-local.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat podman[1429]: time="2024-12-13T17:57:44Z" level=info msg="[graphdriver] using prior storage driver: overlay"
+déc. 13 17:57:44 seshat podman[1429]: time="2024-12-13T17:57:44Z" level=info msg="Setting parallel job count to 13"
+déc. 13 17:57:44 seshat systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit var-lib-containers-storage-overlay.mount has successfully entered the 'dead' state.
+déc. 13 17:57:44 seshat systemd[1]: Started exim4.service - exim Mail Transport Agent.
+░░ Subject: L'unité (unit) exim4.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) exim4.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat slapd[1440]:  * No configuration file was found for slapd at /etc/ldap/slapd.conf.
+déc. 13 17:57:44 seshat systemd[1]: Starting plymouth-quit-wait.service - Hold until boot process finishes up...
+░░ Subject: L'unité (unit) plymouth-quit-wait.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) plymouth-quit-wait.service a commencé à démarrer.
+déc. 13 17:57:44 seshat rng-tools-debian[1518]: found /dev/hwrng but could not use it
+déc. 13 17:57:44 seshat systemd[1]: Starting plymouth-quit.service - Terminate Plymouth Boot Screen...
+░░ Subject: L'unité (unit) plymouth-quit.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) plymouth-quit.service a commencé à démarrer.
+déc. 13 17:57:44 seshat rng-tools-debian[1520]: not starting: no hardware RNG device found
+déc. 13 17:57:44 seshat rng-tools-debian[1434]:  * Configuring Hardware RNG entropy gatherer daemon
+déc. 13 17:57:44 seshat rng-tools-debian[1434]:    ...fail!
+déc. 13 17:57:44 seshat systemd[1]: Finished podman-restart.service - Podman Start All Containers With Restart Policy Set To Always.
+░░ Subject: L'unité (unit) podman-restart.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) podman-restart.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Started rng-tools-debian.service - LSB: rng-tools (Debian variant).
+░░ Subject: L'unité (unit) rng-tools-debian.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) rng-tools-debian.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: slapd.service: Control process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit slapd.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+déc. 13 17:57:44 seshat systemd[1]: slapd.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit slapd.service has entered the 'failed' state with result 'exit-code'.
+déc. 13 17:57:44 seshat systemd[1]: Failed to start slapd.service - LSB: OpenLDAP standalone server (Lightweight Directory Access Protocol).
+░░ Subject: L'unité (unit) slapd.service a échoué
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) slapd.service a échoué, avec le résultat failed.
+déc. 13 17:57:44 seshat systemd[1]: Finished plymouth-quit-wait.service - Hold until boot process finishes up.
+░░ Subject: L'unité (unit) plymouth-quit-wait.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) plymouth-quit-wait.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Starting setvtrgb.service - Set console scheme...
+░░ Subject: L'unité (unit) setvtrgb.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) setvtrgb.service a commencé à démarrer.
+déc. 13 17:57:44 seshat systemd[1]: Finished plymouth-quit.service - Terminate Plymouth Boot Screen.
+░░ Subject: L'unité (unit) plymouth-quit.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) plymouth-quit.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Finished setvtrgb.service - Set console scheme.
+░░ Subject: L'unité (unit) setvtrgb.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) setvtrgb.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Created slice system-getty.slice - Slice /system/getty.
+░░ Subject: L'unité (unit) system-getty.slice a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) system-getty.slice a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Started getty@tty1.service - Getty on tty1.
+░░ Subject: L'unité (unit) getty@tty1.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) getty@tty1.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: Reached target getty.target - Login Prompts.
+░░ Subject: L'unité (unit) getty.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) getty.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:44 seshat systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit var-lib-containers-storage-overlay.mount has successfully entered the 'dead' state.
+déc. 13 17:57:44 seshat systemd[1]: podman-auto-update.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit podman-auto-update.service has successfully entered the 'dead' state.
+déc. 13 17:57:44 seshat systemd[1]: Finished podman-auto-update.service - Podman auto-update service.
+░░ Subject: L'unité (unit) podman-auto-update.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) podman-auto-update.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:45 seshat apachectl[1517]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+déc. 13 17:57:45 seshat systemd[1]: Started apache2.service - The Apache HTTP Server.
+░░ Subject: L'unité (unit) apache2.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apache2.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:45 seshat systemd[1]: Finished apport.service - automatic crash report generation.
+░░ Subject: L'unité (unit) apport.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apport.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:45 seshat fstrim[1424]: /boot/efi: 56,9 MiB (59663872 bytes) trimmed on /dev/sda1
+déc. 13 17:57:45 seshat fstrim[1424]: /boot: 521,3 MiB (546607104 bytes) trimmed on /dev/sda3
+déc. 13 17:57:45 seshat fstrim[1424]: /var: 3,1 GiB (3330416640 bytes) trimmed on /dev/mapper/seshat--vg-var
+déc. 13 17:57:45 seshat fstrim[1424]: /home: 1,9 GiB (2040324096 bytes) trimmed on /dev/mapper/seshat--vg-home
+déc. 13 17:57:45 seshat fstrim[1424]: /: 5,8 GiB (6179028992 bytes) trimmed on /dev/mapper/seshat--vg-root
+déc. 13 17:57:45 seshat systemd[1]: Finished fstrim.service - Discard unused blocks on filesystems from /etc/fstab.
+░░ Subject: L'unité (unit) fstrim.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fstrim.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:46 seshat spamd[1442]: zoom: able to use 388/388 'body_0' compiled rules (100%)
+déc. 13 17:57:46 seshat systemd[1]: Started mysql.service - MySQL Community Server.
+░░ Subject: L'unité (unit) mysql.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) mysql.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:46 seshat systemd[1]: Reached target multi-user.target - Multi-User System.
+░░ Subject: L'unité (unit) multi-user.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) multi-user.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:46 seshat systemd[1]: Reached target graphical.target - Graphical Interface.
+░░ Subject: L'unité (unit) graphical.target a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) graphical.target a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:46 seshat systemd[1]: Starting EoleCiTestsDaemon.service - EOLE Continuous Integration Tests Daemon...
+░░ Subject: L'unité (unit) EoleCiTestsDaemon.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) EoleCiTestsDaemon.service a commencé à démarrer.
+déc. 13 17:57:46 seshat systemd[1]: bastion.service - Bastion firewall manager was skipped because of an unmet condition check (ConditionPathExists=/usr/lib/eole/forteresse.sh).
+░░ Subject: L'unité (unit) bastion.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) bastion.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:46 seshat systemd[1]: Starting systemd-update-utmp-runlevel.service - Record Runlevel Change in UTMP...
+░░ Subject: L'unité (unit) systemd-update-utmp-runlevel.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-update-utmp-runlevel.service a commencé à démarrer.
+déc. 13 17:57:46 seshat systemd[1]: z_stats.service - Agent zephir was skipped because of an unmet condition check (ConditionPathExists=/etc/eole/config.eol).
+░░ Subject: L'unité (unit) z_stats.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) z_stats.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:46 seshat systemd[1]: systemd-update-utmp-runlevel.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit systemd-update-utmp-runlevel.service has successfully entered the 'dead' state.
+déc. 13 17:57:46 seshat systemd[1]: Finished systemd-update-utmp-runlevel.service - Record Runlevel Change in UTMP.
+░░ Subject: L'unité (unit) systemd-update-utmp-runlevel.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-update-utmp-runlevel.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:46 seshat bash[1602]: CheckUpdate.sh: /root/mount.eole-ci-tests A JOUR
+déc. 13 17:57:46 seshat bash[1602]: CheckUpdate.sh: /root/getVMContext.sh A JOUR
+déc. 13 17:57:46 seshat bash[1602]: CheckUpdate.sh: /root/EoleCiFunctions.sh A JOUR
+déc. 13 17:57:46 seshat bash[1602]: CheckUpdate.sh: /root/.EoleCiTestsContext.sh A JOUR
+déc. 13 17:57:46 seshat bash[1602]: CheckUpdate.sh: /root/.EoleCiTestsDaemon.sh A JOUR
+déc. 13 17:57:46 seshat systemd[1]: Started EoleCiTestsDaemon.service - EOLE Continuous Integration Tests Daemon.
+░░ Subject: L'unité (unit) EoleCiTestsDaemon.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) EoleCiTestsDaemon.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:57:46 seshat systemd[1]: Startup finished in 2.152s (kernel) + 2min 5.767s (userspace) = 2min 7.920s.
+░░ Subject: Le démarrage du système est terminé
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Tous les services nécessaires au démarrage du système ont été lancés.
+░░ Notez que cela ne signifie pas que le système est maintenant au repos,
+░░ car des services peuvent encore être en train de terminer leur démarrage.
+░░ 
+░░ Le chargement du noyau a nécessité 2152807 microsecondes.
+░░ 
+░░ Le chargement du « RAM disk » initial a nécessité INITRD_USEC microsecondes.
+░░ 
+░░ Le chargement de l'espace utilisateur a nécessité 125767511 microsecondes.
+déc. 13 17:57:46 seshat EOLECITESTS[1676]: systemctl is-active multi-user.target : active
+déc. 13 17:57:47 seshat EOLECITESTS[1678]: systemctl is-active network.target : active
+déc. 13 17:57:47 seshat EOLECITESTS[1680]: systemctl is-active network-online.target : active
+déc. 13 17:57:47 seshat EOLECITESTS[1682]: systemctl is-system-running : degraded
+déc. 13 17:57:47 seshat EOLECITESTS[1698]: Debut ciConfigurationDaily
+déc. 13 17:57:47 seshat EOLECITESTS[1700]: systemctl is-active network.target : active
+déc. 13 17:57:47 seshat EOLECITESTS[1702]: systemctl is-active network-online.target : active
+déc. 13 17:57:47 seshat EOLECITESTS[1704]: systemctl is-system-running : degraded
+déc. 13 17:57:47 seshat EOLECITESTS[1705]: ls -l /etc/netplan/
+déc. 13 17:57:52 seshat EOLECITESTS[1715]: ATTENTION: ciPingHost enp2s0 => 192.168.0.1 ping=1 ==> K.O. (exit 1)
+déc. 13 17:57:52 seshat EOLECITESTS[1723]: GW actuelle : 192.168.0.1 OK
+déc. 13 17:57:52 seshat EOLECITESTS[1725]: * désactivation updatedb/locate sur /mnt/eole-ci-test présente !
+déc. 13 17:57:52 seshat EOLECITESTS[1728]: * Creation lien daily dans /mnt/eole-ci-tests/output/jenkins/1422893
+déc. 13 17:57:54 seshat systemd-resolved[715]: Using degraded feature set UDP instead of UDP+EDNS0 for DNS server 192.168.0.1.
+déc. 13 17:57:56 seshat spamd[1442]: spamd: server started on IO::Socket::IP [::1]:783, IO::Socket::IP [127.0.0.1]:783 (running version 4.0.0)
+déc. 13 17:57:56 seshat spamd[1442]: spamd: server pid: 1442
+déc. 13 17:57:56 seshat spamd[1442]: spamd: server successfully spawned child process, pid 1738
+déc. 13 17:57:56 seshat spamd[1442]: spamd: server successfully spawned child process, pid 1739
+déc. 13 17:57:56 seshat spamd[1442]: prefork: child states: IS
+déc. 13 17:57:56 seshat spamd[1442]: prefork: child states: II
+déc. 13 17:58:04 seshat systemd-timesyncd[731]: Contacted time server 192.168.232.2:123 (192.168.232.2).
+déc. 13 17:58:22 seshat EOLECITESTS[1747]: Adresse(s) ip changée de  vers 192.168.0.153
+déc. 13 17:58:22 seshat EOLECITESTS[1768]: ciUpdateDaily BUILD_DAILY
+déc. 13 17:58:22 seshat EOLECITESTS[1769]: ciSetHttpProxy, pas de proxy pour les Daily
+déc. 13 17:58:22 seshat EOLECITESTS[1770]: liste des noyaux
+déc. 13 17:58:22 seshat EOLECITESTS[1772]: * espaces disponibles
+déc. 13 17:58:22 seshat EOLECITESTS[1774]: ciSetHttpProxy, pas de proxy pour les Daily
+déc. 13 17:58:22 seshat EOLECITESTS[1775]: dpkg --configure -a
+déc. 13 17:58:22 seshat EOLECITESTS[1783]: ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+déc. 13 17:58:22 seshat EOLECITESTS[1786]: ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+déc. 13 17:58:22 seshat EOLECITESTS[1789]: ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+déc. 13 17:58:22 seshat EOLECITESTS[1790]: Maj-Auto DEV
+déc. 13 17:58:22 seshat EOLECITESTS[1791]: (py3) ciMonitor maj_auto
+déc. 13 17:58:23 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:23] "GET /get/creole/interface_0/nom_zone_eth0 HTTP/1.1" 200 35 "" "python-requests/2.31.0"
+déc. 13 17:58:23 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:23] "GET /get/creole?variable=eole_release HTTP/1.1" 200 35 "" "python-requests/2.31.0"
+déc. 13 17:58:23 seshat zephir[1793]: MAJ => INIT : Début en devel
+déc. 13 17:58:23 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:23] "GET /get/creole?variable=activer_proxy_client_mitm HTTP/1.1" 200 274 "" "python-requests/2.31.0"
+déc. 13 17:58:24 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:24] "GET /get/creole?variable=activer_proxy_client HTTP/1.1" 200 32 "" "python-requests/2.31.0"
+déc. 13 17:58:24 seshat systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit var-lib-containers-storage-overlay.mount has successfully entered the 'dead' state.
+déc. 13 17:58:24 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:24] "GET /get/creole?variable=eole_module HTTP/1.1" 200 35 "" "python-requests/2.31.0"
+déc. 13 17:58:24 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:24] "GET /get/creole?variable=numero_etab HTTP/1.1" 200 31 "" "python-requests/2.31.0"
+déc. 13 17:58:25 seshat zephir[1793]: MAJ => MSG : Mise à jour en devel forcée par l'utilisateur
+déc. 13 17:58:25 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:25] "GET /get/creole?variable=mode_conteneur_actif HTTP/1.1" 200 32 "" "python-requests/2.31.0"
+déc. 13 17:58:25 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:25] "GET /get/creole?variable=mode_conteneur_actif HTTP/1.1" 200 32 "" "python-requests/2.31.0"
+déc. 13 17:58:25 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:25] "GET /get/containers/containers HTTP/1.1" 200 1443 "" "python-requests/2.31.0"
+déc. 13 17:58:25 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:25] "GET /get/containers?withoption=real_container&withvalue=root HTTP/1.1" 200 105984 "" "python-requests/2.31.0"
+déc. 13 17:58:26 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:26] "GET /get/creole HTTP/1.1" 200 12526 "" "python-requests/2.31.0"
+déc. 13 17:58:26 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:26] "GET /get/creole?variable=ubuntu_update_mirrors HTTP/1.1" 200 64 "" "python-requests/2.31.0"
+déc. 13 17:58:26 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:26] "GET /get/creole?variable=envole_version HTTP/1.1" 200 201 "" "python-requests/2.31.0"
+déc. 13 17:58:26 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:26] "GET /get/creole?variable=additional_repository_name HTTP/1.1" 200 29 "" "python-requests/2.31.0"
+déc. 13 17:58:26 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:26] "GET /get/creole?variable=additional_repository_source HTTP/1.1" 200 29 "" "python-requests/2.31.0"
+déc. 13 17:58:26 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:26] "GET /get/creole?variable=additional_repository_key_type HTTP/1.1" 200 29 "" "python-requests/2.31.0"
+déc. 13 17:58:26 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:26] "GET /get/creole?variable=additional_repository_key_url HTTP/1.1" 200 29 "" "python-requests/2.31.0"
+déc. 13 17:58:26 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:26] "GET /get/creole?variable=additional_repository_key_signserver HTTP/1.1" 200 29 "" "python-requests/2.31.0"
+déc. 13 17:58:26 seshat creoled[1217]: 127.0.0.1 - - [13/Dec/2024:17:58:26] "GET /get/creole?variable=additional_repository_key_fingerprint HTTP/1.1" 200 29 "" "python-requests/2.31.0"
+déc. 13 17:58:28 seshat systemd[1]: Starting apt-news.service - Update APT News...
+░░ Subject: L'unité (unit) apt-news.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apt-news.service a commencé à démarrer.
+déc. 13 17:58:29 seshat systemd[1]: Starting esm-cache.service - Update the local ESM caches...
+░░ Subject: L'unité (unit) esm-cache.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) esm-cache.service a commencé à démarrer.
+déc. 13 17:58:29 seshat kernel: audit: type=1400 audit(1734112709.683:129): apparmor="DENIED" operation="open" class="file" profile="ubuntu_pro_esm_cache//apt_methods_gpgv" name="/dev/tty" pid=2268 comm="apt-key" requested_mask="wr" denied_mask="wr" fsuid=42 ouid=0
+déc. 13 17:58:29 seshat kernel: audit: type=1400 audit(1734112709.769:130): apparmor="DENIED" operation="open" class="file" profile="ubuntu_pro_esm_cache//apt_methods_gpgv" name="/dev/tty" pid=2359 comm="apt-key" requested_mask="wr" denied_mask="wr" fsuid=42 ouid=0
+déc. 13 17:58:29 seshat systemd[1]: esm-cache.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit esm-cache.service has successfully entered the 'dead' state.
+déc. 13 17:58:29 seshat systemd[1]: Finished esm-cache.service - Update the local ESM caches.
+░░ Subject: L'unité (unit) esm-cache.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) esm-cache.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:58:35 seshat dbus-daemon[835]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.15' (uid=0 pid=2568 comm="/usr/bin/gdbus call --system --dest org.freedeskto" label="unconfined")
+déc. 13 17:58:35 seshat systemd[1]: Starting packagekit.service - PackageKit Daemon...
+░░ Subject: L'unité (unit) packagekit.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) packagekit.service a commencé à démarrer.
+déc. 13 17:58:35 seshat PackageKit[2572]: daemon start
+déc. 13 17:58:35 seshat dbus-daemon[835]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+déc. 13 17:58:35 seshat systemd[1]: Started packagekit.service - PackageKit Daemon.
+░░ Subject: L'unité (unit) packagekit.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) packagekit.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:58:38 seshat python3[1837]: /usr/lib/python3/dist-packages/uaclient/apt_news.py:207: Warning: W:Download is performed unsandboxed as root as file '/run/ubuntu-advantage/aptnews.json' couldn't be accessed by user '_apt'. - pkgAcquire::Run (13: Permission denied)
+déc. 13 17:58:38 seshat python3[1837]:   acq.run()
+déc. 13 17:58:38 seshat systemd[1]: apt-news.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit apt-news.service has successfully entered the 'dead' state.
+déc. 13 17:58:38 seshat systemd[1]: Finished apt-news.service - Update APT News.
+░░ Subject: L'unité (unit) apt-news.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) apt-news.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:59:17 seshat systemd[1]: Starting podman-auto-update.service - Podman auto-update service...
+░░ Subject: L'unité (unit) podman-auto-update.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) podman-auto-update.service a commencé à démarrer.
+déc. 13 17:59:17 seshat systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit var-lib-containers-storage-overlay.mount has successfully entered the 'dead' state.
+déc. 13 17:59:17 seshat systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit var-lib-containers-storage-overlay.mount has successfully entered the 'dead' state.
+déc. 13 17:59:17 seshat systemd[1]: podman-auto-update.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit podman-auto-update.service has successfully entered the 'dead' state.
+déc. 13 17:59:17 seshat systemd[1]: Finished podman-auto-update.service - Podman auto-update service.
+░░ Subject: L'unité (unit) podman-auto-update.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) podman-auto-update.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:59:44 seshat zephir[1793]: MAJ => ERR : l'appel à apt-get (-c /etc/apt/apt-eole.conf -d dist-upgrade) a retourné une erreur (code 100). Voir /var/log/apt/term.log
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/g/gcc-13/gcc-13_13.3.0-6ubuntu2%7e24.04_amd64.deb  Connexion à eole.ac-dijon.fr: 80 (194.167.18.18) impossible, délai de connexion dépassé
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/g/gcc-13/gcc-13-x86-64-linux-gnu_13.3.0-6ubuntu2%7e24.04_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/g/gcc-13/libgcc-13-dev_13.3.0-6ubuntu2%7e24.04_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/g/gcc-13/cpp-13_13.3.0-6ubuntu2%7e24.04_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/g/gcc-13/cpp-13-x86-64-linux-gnu_13.3.0-6ubuntu2%7e24.04_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/g/gcc-13/gcc-13-base_13.3.0-6ubuntu2%7e24.04_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-xml_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-sqlite3_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-readline_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-pgsql_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-opcache_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-mysql_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-ldap_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/universe/p/php8.3/php8.3-intl_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/universe/p/php8.3/php8.3-imap_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-gd_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-curl_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/libapache2-mod-php8.3_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-cli_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3-common_8.3.6-0ubuntu0.24.04.3_amd64.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Impossible de récupérer http://eole.ac-dijon.fr/ubuntu/pool/main/p/php8.3/php8.3_8.3.6-0ubuntu0.24.04.3_all.deb  Impossible de se connecter à eole.ac-dijon.fr:http :
+                                       E: Certains fichiers n'ont pu être téléchargés.
+déc. 13 17:59:46 seshat EOLECITESTS[2671]: Export journalctl entre Daily - maintenant (moins polution salt)
+déc. 13 17:59:47 seshat EOLECITESTS[2675]: ciMonitor python3 ==> RESULT=1
+déc. 13 17:59:51 seshat EOLECITESTS[2682]: ciExportCurrentStatus: (on exit 1.sh)
+déc. 13 17:59:51 seshat dbus-daemon[835]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.18' (uid=0 pid=2685 comm="systemd-analyze plot" label="unconfined")
+déc. 13 17:59:51 seshat systemd[1]: Starting systemd-hostnamed.service - Hostname Service...
+░░ Subject: L'unité (unit) systemd-hostnamed.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-hostnamed.service a commencé à démarrer.
+déc. 13 17:59:51 seshat dbus-daemon[835]: [system] Successfully activated service 'org.freedesktop.hostname1'
+déc. 13 17:59:51 seshat systemd[1]: Started systemd-hostnamed.service - Hostname Service.
+░░ Subject: L'unité (unit) systemd-hostnamed.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) systemd-hostnamed.service a terminé son démarrage, avec le résultat done.
+déc. 13 17:59:51 seshat systemd[1]: Configuration file /run/systemd/system/systemd-networkd-wait-online.service.d/10-netplan.conf is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+déc. 13 17:59:52 seshat systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.

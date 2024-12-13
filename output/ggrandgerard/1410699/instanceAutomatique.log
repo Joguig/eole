@@ -1,0 +1,118 @@
+Machine aca.eolecitests  : Début ciConfigurationMachineEoleCiTests
+total 4
+-rw------- 1 root root 272 nov.  27 10:04 01-netcfg.yaml
+* netplan --debug apply
+** (generate:1460): DEBUG: 10:04:34.959: starting new processing pass
+** (generate:1460): DEBUG: 10:04:34.960: We have some netdefs, pass them through a final round of validation
+** (generate:1460): DEBUG: 10:04:34.961: ens4: setting default backend to 1
+** (generate:1460): DEBUG: 10:04:34.961: Configuration is valid
+** (generate:1460): DEBUG: 10:04:34.961: Generating output files..
+** (generate:1460): DEBUG: 10:04:34.962: openvswitch: definition ens4 is not for us (backend 1)
+** (generate:1460): DEBUG: 10:04:34.962: NetworkManager: definition ens4 is not for us (backend 1)
+(generate:1460): GLib-DEBUG: 10:04:34.962: posix_spawn avoided (fd close requested) 
+(generate:1460): GLib-DEBUG: 10:04:34.989: posix_spawn avoided (fd close requested) 
+DEBUG:netplan generated networkd configuration changed, reloading networkd
+DEBUG:ens4 not found in {}
+DEBUG:Merged config:
+network:
+  ethernets:
+    ens4:
+      addresses:
+      - 192.168.0.253/24
+      dhcp4: false
+      dhcp6: false
+      gateway4: 192.168.0.1
+  renderer: networkd
+  version: 2
+
+DEBUG:no netplan generated NM configuration exists
+DEBUG:ens4 not found in {}
+DEBUG:Merged config:
+network:
+  ethernets:
+    ens4:
+      addresses:
+      - 192.168.0.253/24
+      dhcp4: false
+      dhcp6: false
+      gateway4: 192.168.0.1
+  renderer: networkd
+  version: 2
+
+DEBUG:Link changes: {}
+DEBUG:netplan triggering .link rules for lo
+DEBUG:netplan triggering .link rules for ens4
+** (process:1458): DEBUG: 10:04:35.321: starting new processing pass
+** (process:1458): DEBUG: 10:04:35.322: We have some netdefs, pass them through a final round of validation
+** (process:1458): DEBUG: 10:04:35.322: ens4: setting default backend to 1
+** (process:1458): DEBUG: 10:04:35.322: Configuration is valid
+DEBUG:ens4 not found in {}
+DEBUG:Merged config:
+network:
+  ethernets:
+    ens4:
+      addresses:
+      - 192.168.0.253/24
+      dhcp4: false
+      dhcp6: false
+      gateway4: 192.168.0.1
+  renderer: networkd
+  version: 2
+
+* ciCheckSSHDConfig
+Machine aca.eolecitests  : * /etc/ssh/sshd_config à jour
+* timedatectl
+               Local time: mer. 2024-11-27 10:04:35 CET
+           Universal time: mer. 2024-11-27 09:04:35 UTC
+                 RTC time: mer. 2024-11-27 09:04:35    
+                Time zone: Europe/Paris (CET, +0100)   
+System clock synchronized: no                          
+              NTP service: active                      
+          RTC in local TZ: no                          
+Machine aca.eolecitests  : Redémarrage SSH !
+Machine aca.eolecitests  : Installation SAMBA
+/usr/sbin/smbd
+Machine aca.eolecitests  : Début ciSambaConfiguration
+Machine aca.eolecitests  : Check hostname eolecitest
+127.0.0.1 localhost.localdomain localhost
+127.0.1.1 eolecitests
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+192.168.0.253	eolecitests.ac-test.fr eolecitests
+192.168.0.253 eolecitest
+#Machine aca.eolecitests  : Debut ciConfigureAutomatiqueMinimale
+Machine aca.eolecitests  : Configuration déjà réalisée avec 192.168.0.253
+Machine aca.eolecitests  : hostnamectl set-hostname eolecitest
+Machine aca.eolecitests  : ciSambaRestart
+Machine aca.eolecitests  : Arret SAMBA
+Machine aca.eolecitests  : Démarrage SAMBA
+Machine aca.eolecitests  : ciSambaRestart : ok 0
+Machine aca.eolecitests  : Creation compte samba admin, nobody
+Added user nobody.
+id: «pcadmin» : utilisateur inexistant
+Nouveau mot de passe : Retapez le nouveau mot de passe : passwd : le mot de passe a été mis à jour avec succès
+Added user pcadmin.
+Machine aca.eolecitests  : Creation compte samba root
+Added user root.
+Machine aca.eolecitests  : Début ciSambaCheckAcces localhost
+Machine aca.eolecitests  : Check smbclient
+Machine aca.eolecitests  : Check SAMBA 1 localhost
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	eolecitests     Disk      
+	wpkg            Disk      
+	sauvegardes     Disk      
+	IPC$            IPC       IPC Service (Samba Server 4.15.13-Ubuntu)
+SMB1 disabled -- no workgroup available
+Machine aca.eolecitests  : ciSambaCheckAcces : Ok
+Machine aca.eolecitests  : Fin ciSambaConfiguration : ok
+Machine aca.eolecitests  : Fin ciConfigurationMachineEoleCiTests : ok
+/usr/bin/updatedb
+Machine aca.eolecitests  : * désactivation updatedb/locate sur /mnt/eole-ci-test présente !

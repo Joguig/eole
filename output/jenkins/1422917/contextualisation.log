@@ -1,0 +1,36 @@
+Machine aca.envole 2.7.2 : Début ciContextualizeMachine : aca.envole, envole
+Machine aca.envole 2.7.2 : Début ciContextualizeModuleEole
+Machine aca.envole 2.7.2 : ciContextualisationMinimale:
+Machine aca.envole 2.7.2 : rm /etc/netplan/* désactivé !
+Machine aca.envole 2.7.2 : Inject /etc/hosts
+Machine aca.envole 2.7.2 : ciContextualisationMinimaleSystemd
+Machine aca.envole 2.7.2 : Inject /etc/hostname
+Machine aca.envole 2.7.2 : ls -l /etc/netplan/
+total 4
+-rw------- 1 root root 110 janv.  5  2024 01-netcfg.yaml
+Machine aca.envole 2.7.2 : ciContextualisationMinimaleSystemdServer
+Machine aca.envole 2.7.2 : Inject /etc/resolv.conf
+Machine aca.envole 2.7.2 : /bin/rm -f /etc/resolv.conf (pour casser le lien!)
+Machine aca.envole 2.7.2 : ls -l /etc/netplan
+total 4
+-rw------- 1 root root 110 janv.  5  2024 01-netcfg.yaml
+Machine aca.envole 2.7.2 : netoyage si besoin /etc/network/interfaces /etc/netplan/01-network-manager-all.yaml /etc/netplan/00-installer-config.yaml /etc/netplan/50-cloud-init.yaml
+Machine aca.envole 2.7.2 : Inject /etc/netplan/01-netcfg.yaml avant 22.04
+Machine aca.envole 2.7.2 : netplan generate --debug
+DEBUG:command generate: running ['/lib/netplan/generate']
+** (generate:1149): DEBUG: 19:51:35.461: Processing input file /etc/netplan/01-netcfg.yaml..
+** (generate:1149): DEBUG: 19:51:35.463: starting new processing pass
+** (generate:1149): DEBUG: 19:51:35.463: We have some netdefs, pass them through a final round of validation
+** (generate:1149): DEBUG: 19:51:35.463: ens4: setting default backend to 1
+** (generate:1149): DEBUG: 19:51:35.463: Configuration is valid
+** (generate:1149): DEBUG: 19:51:35.464: Generating output files..
+** (generate:1149): DEBUG: 19:51:35.464: NetworkManager: definition ens4 is not for us (backend 1)
+Machine aca.envole 2.7.2 : Inject authorized_keys
+Machine aca.envole 2.7.2 : Actualisation /root/.ssh/authorized_keys
+Machine aca.envole 2.7.2 : Inject bash_history
+Machine aca.envole 2.7.2 : Contextualisation minimale OK
+Machine aca.envole 2.7.2 : Fin ciContextualisationMinimale
+Machine aca.envole 2.7.2 : Fin ciContextualizeModuleEole
+Machine aca.envole 2.7.2 : Contextualization Machine OK
+Machine aca.envole 2.7.2 : jenkins 1422917 aca.envole Contextualization Machine : OK
+Machine aca.envole 2.7.2 : Fin ciContextualizeMachine : ok à 2024-12-13 19:51:35

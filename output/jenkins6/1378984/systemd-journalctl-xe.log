@@ -1,0 +1,1115 @@
+déc. 13 06:41:42 gateway116 dnsmasq[1804322]: forwarded _http._tcp.test-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 06:41:42 gateway116 dnsmasq[1804322]: reply _http._tcp.test-eole.ac-dijon.fr is NXDOMAIN
+déc. 13 06:42:20 gateway116 dnsmasq[1804322]: query[AAAA] gateway116.eole.lan from 127.0.0.1
+déc. 13 06:42:20 gateway116 dnsmasq[1804322]: forwarded gateway116.eole.lan to 192.168.232.2
+déc. 13 06:42:20 gateway116 dnsmasq[1804322]: reply gateway116.eole.lan is NODATA-IPv6
+déc. 13 06:42:20 gateway116 dnsmasq[1804322]: query[AAAA] gateway116 from 127.0.0.1
+déc. 13 06:42:20 gateway116 dnsmasq[1804322]: config gateway116 is NODATA-IPv6
+déc. 13 06:42:51 gateway116 systemd[1]: Starting fwupd-refresh.service - Refresh fwupd metadata and update motd...
+░░ Subject: L'unité (unit) fwupd-refresh.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fwupd-refresh.service a commencé à démarrer.
+déc. 13 06:42:51 gateway116 dbus-daemon[747]: [system] Activating via systemd: service name='org.freedesktop.fwupd' unit='fwupd.service' requested by ':1.3009' (uid=989 pid=1808280 comm="/usr/bin/fwupdmgr refresh" label="unconfined")
+déc. 13 06:42:51 gateway116 systemd[1]: Starting fwupd.service - Firmware update daemon...
+░░ Subject: L'unité (unit) fwupd.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fwupd.service a commencé à démarrer.
+déc. 13 06:42:51 gateway116 fwupd[1808285]: 05:42:51.966 FuMain               Daemon ready for requests (locale fr_FR.UTF-8)
+déc. 13 06:42:51 gateway116 dbus-daemon[747]: [system] Successfully activated service 'org.freedesktop.fwupd'
+déc. 13 06:42:51 gateway116 systemd[1]: Started fwupd.service - Firmware update daemon.
+░░ Subject: L'unité (unit) fwupd.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fwupd.service a terminé son démarrage, avec le résultat done.
+déc. 13 06:42:51 gateway116 systemd[1]: fwupd-refresh.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit fwupd-refresh.service has successfully entered the 'dead' state.
+déc. 13 06:42:51 gateway116 systemd[1]: Finished fwupd-refresh.service - Refresh fwupd metadata and update motd.
+░░ Subject: L'unité (unit) fwupd-refresh.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fwupd-refresh.service a terminé son démarrage, avec le résultat done.
+déc. 13 06:43:36 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 06:43:36 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 06:45:01 gateway116 CRON[1808337]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+déc. 13 06:45:01 gateway116 CRON[1808338]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+déc. 13 06:45:01 gateway116 CRON[1808337]: pam_unix(cron:session): session closed for user root
+déc. 13 06:46:36 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 06:46:36 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: query[A] dev-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: forwarded dev-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: reply dev-eole.ac-dijon.fr is <CNAME>
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: reply adonis.ac-dijon.fr is 194.167.18.22
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: reply adonis.ac-dijon.fr is <RRSIG>
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: query[A] adonis.ac-dijon.fr from 192.168.0.33
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: forwarded adonis.ac-dijon.fr to 192.168.232.2
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: reply adonis.ac-dijon.fr is 194.167.18.22
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: reply adonis.ac-dijon.fr is <RRSIG>
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: query[A] multi-ip-dn.eole.lan from 192.168.0.33
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: forwarded multi-ip-dn.eole.lan to 192.168.232.2
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: reply multi-ip-dn.eole.lan is <CNAME>
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: reply multi-ip.eole.lan is 192.168.230.122
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: reply multi-ip.eole.lan is 192.168.230.120
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: reply multi-ip.eole.lan is 192.168.230.121
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: query[A] multi-ip.eole.lan from 192.168.0.33
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: forwarded multi-ip.eole.lan to 192.168.232.2
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: reply multi-ip.eole.lan is 192.168.230.121
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: reply multi-ip.eole.lan is 192.168.230.122
+déc. 13 06:46:58 gateway116 dnsmasq[1804322]: reply multi-ip.eole.lan is 192.168.230.120
+déc. 13 06:47:51 gateway116 systemd[1]: fwupd.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit fwupd.service has successfully entered the 'dead' state.
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[A] addc.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded addc.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply addc.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[CNAME] 82ea5beb-833c-46d1-b45d-077d38c03fe7._msdcs.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded 82ea5beb-833c-46d1-b45d-077d38c03fe7._msdcs.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply 82ea5beb-833c-46d1-b45d-077d38c03fe7._msdcs.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[NS] etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[NS] _msdcs.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _msdcs.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _msdcs.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[A] etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _ldap._tcp.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.dc._msdcs.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.dc._msdcs.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _ldap._tcp.dc._msdcs.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.47877002-b4a2-4a41-bb4c-5d39bf56c71c.domains._msdcs.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.47877002-b4a2-4a41-bb4c-5d39bf56c71c.domains._msdcs.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _ldap._tcp.47877002-b4a2-4a41-bb4c-5d39bf56c71c.domains._msdcs.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _kerberos._tcp.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _kerberos._tcp.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _kerberos._tcp.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _kerberos._udp.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _kerberos._udp.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _kerberos._udp.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _kerberos._tcp.dc._msdcs.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _kerberos._tcp.dc._msdcs.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _kerberos._tcp.dc._msdcs.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _kpasswd._tcp.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _kpasswd._tcp.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _kpasswd._tcp.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _kpasswd._udp.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _kpasswd._udp.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _kpasswd._udp.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.Default-First-Site-Name._sites.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.Default-First-Site-Name._sites.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _ldap._tcp.Default-First-Site-Name._sites.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _kerberos._tcp.Default-First-Site-Name._sites.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _kerberos._tcp.Default-First-Site-Name._sites.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _kerberos._tcp.Default-First-Site-Name._sites.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.pdc._msdcs.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.pdc._msdcs.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _ldap._tcp.pdc._msdcs.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[A] gc._msdcs.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded gc._msdcs.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply gc._msdcs.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _gc._tcp.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _gc._tcp.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _gc._tcp.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.gc._msdcs.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.gc._msdcs.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _ldap._tcp.gc._msdcs.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _gc._tcp.Default-First-Site-Name._sites.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _gc._tcp.Default-First-Site-Name._sites.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _gc._tcp.Default-First-Site-Name._sites.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[A] DomainDnsZones.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded DomainDnsZones.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply DomainDnsZones.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.DomainDnsZones.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.DomainDnsZones.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _ldap._tcp.DomainDnsZones.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[A] ForestDnsZones.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded ForestDnsZones.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply ForestDnsZones.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.ForestDnsZones.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.ForestDnsZones.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _ldap._tcp.ForestDnsZones.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.etb3.lan is NXDOMAIN
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: query[SOA] etb3.lan from 192.168.0.33
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: forwarded etb3.lan to 192.168.232.2
+déc. 13 06:49:21 gateway116 dnsmasq[1804322]: reply etb3.lan is NXDOMAIN
+déc. 13 06:49:36 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 06:49:36 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 06:49:47 gateway116 dnsmasq[1804322]: query[AAAA] reseau from 192.168.0.33
+déc. 13 06:49:47 gateway116 dnsmasq[1804322]: config reseau is NXDOMAIN
+déc. 13 06:49:47 gateway116 dnsmasq[1804322]: query[AAAA] reseau from 192.168.0.33
+déc. 13 06:49:47 gateway116 dnsmasq[1804322]: config reseau is NXDOMAIN
+déc. 13 06:49:48 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:49:48 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 06:49:48 gateway116 dnsmasq[1804322]: query[A] eole.orion.education.fr from 192.168.0.33
+déc. 13 06:49:48 gateway116 dnsmasq[1804322]: forwarded eole.orion.education.fr to 192.168.232.2
+déc. 13 06:49:48 gateway116 dnsmasq[1804322]: reply eole.orion.education.fr is 194.167.18.15
+déc. 13 06:49:48 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:49:48 gateway116 dnsmasq[1804322]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 06:49:48 gateway116 dnsmasq[1804322]: query[AAAA] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:49:48 gateway116 dnsmasq[1804322]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 06:49:48 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 06:49:48 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is <RRSIG>
+déc. 13 06:49:48 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is NODATA-IPv6
+déc. 13 06:49:48 gateway116 dnsmasq[1804322]: query[A] compiling.spamassassin.taint.org.fresh.fmb.la from 192.168.0.33
+déc. 13 06:49:48 gateway116 dnsmasq[1804322]: forwarded compiling.spamassassin.taint.org.fresh.fmb.la to 192.168.232.2
+déc. 13 06:49:48 gateway116 dnsmasq[1804322]: reply compiling.spamassassin.taint.org.fresh.fmb.la is NXDOMAIN
+déc. 13 06:50:04 gateway116 systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+░░ Subject: L'unité (unit) sysstat-collect.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.service a commencé à démarrer.
+déc. 13 06:50:04 gateway116 systemd[1]: sysstat-collect.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit sysstat-collect.service has successfully entered the 'dead' state.
+déc. 13 06:50:04 gateway116 systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+░░ Subject: L'unité (unit) sysstat-collect.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.service a terminé son démarrage, avec le résultat done.
+déc. 13 06:50:05 gateway116 dnsmasq[1804322]: query[A] hestia.eole.lan from 192.168.0.33
+déc. 13 06:50:05 gateway116 dnsmasq[1804322]: forwarded hestia.eole.lan to 192.168.232.2
+déc. 13 06:50:05 gateway116 dnsmasq[1804322]: query[AAAA] hestia.eole.lan from 192.168.0.33
+déc. 13 06:50:05 gateway116 dnsmasq[1804322]: forwarded hestia.eole.lan to 192.168.232.2
+déc. 13 06:50:05 gateway116 dnsmasq[1804322]: reply hestia.eole.lan is 192.168.232.2
+déc. 13 06:50:05 gateway116 dnsmasq[1804322]: reply hestia.eole.lan is NODATA-IPv6
+déc. 13 06:50:06 gateway116 dnsmasq[1804322]: query[A] europe.pool.ntp.org from 192.168.0.33
+déc. 13 06:50:06 gateway116 dnsmasq[1804322]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 13 06:50:06 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 185.34.151.142
+déc. 13 06:50:06 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 217.170.87.229
+déc. 13 06:50:06 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 193.52.136.2
+déc. 13 06:50:06 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 192.36.143.130
+déc. 13 06:50:06 gateway116 dnsmasq[1804322]: query[AAAA] europe.pool.ntp.org from 192.168.0.33
+déc. 13 06:50:06 gateway116 dnsmasq[1804322]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 13 06:50:06 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is NODATA-IPv6
+déc. 13 06:50:18 gateway116 dnsmasq[1804322]: query[PTR] 53.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 06:50:18 gateway116 dnsmasq[1804322]: config 192.0.2.53 is NXDOMAIN
+déc. 13 06:50:19 gateway116 dnsmasq[1804322]: query[PTR] 51.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 06:50:19 gateway116 dnsmasq[1804322]: config 192.0.2.51 is NXDOMAIN
+déc. 13 06:50:20 gateway116 dnsmasq[1804322]: query[PTR] 50.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 06:50:20 gateway116 dnsmasq[1804322]: config 192.0.2.50 is NXDOMAIN
+déc. 13 06:50:21 gateway116 dnsmasq[1804322]: query[PTR] 52.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 06:50:21 gateway116 dnsmasq[1804322]: config 192.0.2.52 is NXDOMAIN
+déc. 13 06:51:43 gateway116 dnsmasq[1804322]: query[PTR] 53.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 06:51:43 gateway116 dnsmasq[1804322]: config 192.0.2.53 is NXDOMAIN
+déc. 13 06:52:32 gateway116 dnsmasq[1804322]: query[A] envole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:52:32 gateway116 dnsmasq[1804322]: forwarded envole.ac-dijon.fr to 192.168.232.2
+déc. 13 06:52:32 gateway116 dnsmasq[1804322]: query[AAAA] envole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:52:32 gateway116 dnsmasq[1804322]: forwarded envole.ac-dijon.fr to 192.168.232.2
+déc. 13 06:52:32 gateway116 dnsmasq[1804322]: reply envole.ac-dijon.fr is <CNAME>
+déc. 13 06:52:32 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is 195.221.237.19
+déc. 13 06:52:32 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is <RRSIG>
+déc. 13 06:52:32 gateway116 dnsmasq[1804322]: reply envole.ac-dijon.fr is <CNAME>
+déc. 13 06:52:32 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is NODATA-IPv6
+déc. 13 06:52:33 gateway116 dnsmasq[1804322]: query[A] envole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:52:33 gateway116 dnsmasq[1804322]: forwarded envole.ac-dijon.fr to 192.168.232.2
+déc. 13 06:52:33 gateway116 dnsmasq[1804322]: query[AAAA] envole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:52:33 gateway116 dnsmasq[1804322]: forwarded envole.ac-dijon.fr to 192.168.232.2
+déc. 13 06:52:33 gateway116 dnsmasq[1804322]: reply is truncated
+déc. 13 06:52:33 gateway116 dnsmasq[1804322]: reply is truncated
+déc. 13 06:52:34 gateway116 dnsmasq[1804322]: query[A] envole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:52:34 gateway116 dnsmasq[1804322]: forwarded envole.ac-dijon.fr to 192.168.232.2
+déc. 13 06:52:34 gateway116 dnsmasq[1804322]: query[AAAA] envole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:52:34 gateway116 dnsmasq[1804322]: forwarded envole.ac-dijon.fr to 192.168.232.2
+déc. 13 06:52:34 gateway116 dnsmasq[1804322]: reply envole.ac-dijon.fr is <CNAME>
+déc. 13 06:52:34 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is 195.221.237.19
+déc. 13 06:52:34 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is <RRSIG>
+déc. 13 06:52:34 gateway116 dnsmasq[1804322]: reply envole.ac-dijon.fr is <CNAME>
+déc. 13 06:52:34 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is NODATA-IPv6
+déc. 13 06:52:34 gateway116 dnsmasq[1804322]: query[A] lab19-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:52:34 gateway116 dnsmasq[1804322]: forwarded lab19-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 06:52:34 gateway116 dnsmasq[1804322]: query[AAAA] lab19-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:52:34 gateway116 dnsmasq[1804322]: forwarded lab19-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 06:52:34 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is 195.221.237.19
+déc. 13 06:52:34 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is <RRSIG>
+déc. 13 06:52:34 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is NODATA-IPv6
+déc. 13 06:52:36 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 06:52:36 gateway116 dnsmasq[1804322]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 06:52:36 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 06:52:38 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 06:52:38 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 06:52:48 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:52:48 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 06:52:50 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:52:50 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 06:52:50 gateway116 dnsmasq[1804322]: query[A] eole.orion.education.fr from 192.168.0.33
+déc. 13 06:52:50 gateway116 dnsmasq[1804322]: forwarded eole.orion.education.fr to 192.168.232.2
+déc. 13 06:52:50 gateway116 dnsmasq[1804322]: reply eole.orion.education.fr is 194.167.18.15
+déc. 13 06:52:50 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:52:50 gateway116 dnsmasq[1804322]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 06:52:50 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 06:52:50 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is <RRSIG>
+déc. 13 06:52:50 gateway116 dnsmasq[1804322]: query[AAAA] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:52:50 gateway116 dnsmasq[1804322]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 06:52:50 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is NODATA-IPv6
+déc. 13 06:53:02 gateway116 dnsmasq[1804322]: query[A] etb3.ac-test.fr from 127.0.0.1
+déc. 13 06:53:02 gateway116 dnsmasq[1804322]: forwarded etb3.ac-test.fr to 192.168.232.2
+déc. 13 06:53:02 gateway116 dnsmasq[1804322]: query[AAAA] etb3.ac-test.fr from 127.0.0.1
+déc. 13 06:53:02 gateway116 dnsmasq[1804322]: forwarded etb3.ac-test.fr to 192.168.232.2
+déc. 13 06:53:02 gateway116 dnsmasq[1804322]: reply etb3.ac-test.fr is <CNAME>
+déc. 13 06:53:02 gateway116 dnsmasq[1804322]: reply amonecole.etb3.ac-test.fr is 192.168.0.33
+déc. 13 06:53:02 gateway116 dnsmasq[1804322]: reply etb3.ac-test.fr is <CNAME>
+déc. 13 06:53:02 gateway116 dnsmasq[1804322]: reply amonecole.etb3.ac-test.fr is NODATA-IPv6
+déc. 13 06:53:06 gateway116 EOLECITESTS[1808507]: ciExportCurrentStatus: (on exit 2092.sh)
+déc. 13 06:53:06 gateway116 EOLECITESTS[1808512]: ciExportCurrentStatus: fin
+déc. 13 06:54:22 gateway116 dnsmasq[1804322]: query[A] europe.pool.ntp.org from 192.168.0.33
+déc. 13 06:54:22 gateway116 dnsmasq[1804322]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 13 06:54:22 gateway116 dnsmasq[1804322]: query[AAAA] europe.pool.ntp.org from 192.168.0.33
+déc. 13 06:54:22 gateway116 dnsmasq[1804322]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 13 06:54:22 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 5.178.87.15
+déc. 13 06:54:22 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 212.227.232.161
+déc. 13 06:54:22 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 130.89.170.87
+déc. 13 06:54:22 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 51.210.104.72
+déc. 13 06:54:22 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is NODATA-IPv6
+déc. 13 06:55:01 gateway116 CRON[1808547]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+déc. 13 06:55:01 gateway116 CRON[1808548]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+déc. 13 06:55:01 gateway116 CRON[1808547]: pam_unix(cron:session): session closed for user root
+déc. 13 06:55:03 gateway116 dnsmasq[1804322]: query[A] one.eole.lan from 127.0.0.1
+déc. 13 06:55:03 gateway116 dnsmasq[1804322]: cached one.eole.lan is 192.168.10.140
+déc. 13 06:55:32 gateway116 dnsmasq[1804322]: query[AAAA] dc1 from 192.168.0.5
+déc. 13 06:55:32 gateway116 dnsmasq[1804322]: config dc1 is NXDOMAIN
+déc. 13 06:55:33 gateway116 dnsmasq[1804322]: query[AAAA] dc1 from 192.168.0.5
+déc. 13 06:55:33 gateway116 dnsmasq[1804322]: config dc1 is NXDOMAIN
+déc. 13 06:55:34 gateway116 dnsmasq[1804322]: query[A] one.eole.lan from 127.0.0.1
+déc. 13 06:55:34 gateway116 dnsmasq[1804322]: cached one.eole.lan is 192.168.10.140
+déc. 13 06:55:34 gateway116 dnsmasq[1804322]: query[AAAA] dc1 from 192.168.0.5
+déc. 13 06:55:34 gateway116 dnsmasq[1804322]: config dc1 is NXDOMAIN
+déc. 13 06:55:36 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 06:55:36 gateway116 dnsmasq[1804322]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 06:55:36 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 06:55:48 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:55:48 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 06:55:50 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 06:55:50 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 06:56:36 gateway116 dnsmasq[1804322]: query[A] one.eole.lan from 127.0.0.1
+déc. 13 06:56:36 gateway116 dnsmasq[1804322]: cached one.eole.lan is 192.168.10.140
+déc. 13 06:56:37 gateway116 java[3337]: déc. 13, 2024 5:56:37 AM hudson.plugins.logparser.ParsingStrategyLocator get
+déc. 13 06:56:37 gateway116 java[3337]: INFOS: Defaulting to hudson.plugins.logparser.ClassicParsingStrategy
+déc. 13 06:56:37 gateway116 java[3337]: déc. 13, 2024 5:56:37 AM hudson.plugins.logparser.ClassicParsingStrategy parse
+déc. 13 06:56:37 gateway116 java[3337]: INFOS: Local temp file:/tmp/log-parser_test-etb3-revproxy-2.10.0-amd64_build_58
+déc. 13 06:56:37 gateway116 java[3337]: déc. 13, 2024 5:56:37 AM hudson.plugins.logparser.LogParserReader readLogPart
+déc. 13 06:56:37 gateway116 java[3337]: INFOS: Start reading log part 0 in thread #0
+déc. 13 06:56:37 gateway116 java[3337]: déc. 13, 2024 5:56:37 AM hudson.plugins.logparser.LogParserReader readLogPart
+déc. 13 06:56:37 gateway116 java[3337]: INFOS: Done reading log part 0
+déc. 13 06:56:37 gateway116 java[3337]: déc. 13, 2024 5:56:37 AM hudson.plugins.logparser.LogParserThread getLineStatuses
+déc. 13 06:56:37 gateway116 java[3337]: INFOS: LogParserThread: Start parsing log part 0
+déc. 13 06:56:37 gateway116 java[3337]: déc. 13, 2024 5:56:37 AM hudson.plugins.logparser.LogParserThread getLineStatuses
+déc. 13 06:56:37 gateway116 java[3337]: INFOS: LogParserThread: Done parsing log part 0
+déc. 13 06:58:36 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 06:58:36 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:00:04 gateway116 systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+░░ Subject: L'unité (unit) sysstat-collect.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.service a commencé à démarrer.
+déc. 13 07:00:04 gateway116 systemd[1]: sysstat-collect.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit sysstat-collect.service has successfully entered the 'dead' state.
+déc. 13 07:00:04 gateway116 systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+░░ Subject: L'unité (unit) sysstat-collect.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.service a terminé son démarrage, avec le résultat done.
+déc. 13 07:00:04 gateway116 dnsmasq[1804322]: query[A] one.eole.lan from 127.0.0.1
+déc. 13 07:00:04 gateway116 dnsmasq[1804322]: cached one.eole.lan is 192.168.10.140
+déc. 13 07:00:49 gateway116 dnsmasq[1804322]: query[A] gateway.ac-test.fr from 192.168.0.1
+déc. 13 07:00:49 gateway116 dnsmasq[1804322]: /etc/hosts gateway.ac-test.fr is 192.168.0.1
+déc. 13 07:00:49 gateway116 dnsmasq[1804322]: query[A] hestia.eole.lan from 192.168.0.1
+déc. 13 07:00:49 gateway116 dnsmasq[1804322]: forwarded hestia.eole.lan to 192.168.232.2
+déc. 13 07:00:49 gateway116 dnsmasq[1804322]: reply hestia.eole.lan is 192.168.232.2
+déc. 13 07:00:49 gateway116 dnsmasq[1804322]: query[A] hestia.eole.lan from 127.0.0.1
+déc. 13 07:00:49 gateway116 dnsmasq[1804322]: cached hestia.eole.lan is 192.168.232.2
+déc. 13 07:00:49 gateway116 dnsmasq[1804322]: query[AAAA] hestia.eole.lan from 127.0.0.1
+déc. 13 07:00:49 gateway116 dnsmasq[1804322]: forwarded hestia.eole.lan to 192.168.232.2
+déc. 13 07:00:49 gateway116 dnsmasq[1804322]: reply hestia.eole.lan is NODATA-IPv6
+déc. 13 07:00:56 gateway116 dnsmasq-dhcp[1804322]: no address range available for DHCP request via enp2s0
+déc. 13 07:01:16 gateway116 dnsmasq[1804322]: query[A] one.eole.lan from 127.0.0.1
+déc. 13 07:01:16 gateway116 dnsmasq[1804322]: cached one.eole.lan is 192.168.10.140
+déc. 13 07:01:36 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 07:01:36 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:03:44 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:03:44 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:03:49 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:03:49 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:03:50 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:03:50 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:03:50 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:03:50 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:03:51 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:03:51 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:03:51 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:03:51 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:03:57 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:03:57 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:03:58 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:03:58 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:03:58 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:03:58 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:04:02 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:02 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:04:02 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:02 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:04:07 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:07 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:04:07 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:07 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:04:18 gateway116 dnsmasq[1804322]: query[AAAA] hestia.eole.lan from 192.168.0.33
+déc. 13 07:04:18 gateway116 dnsmasq[1804322]: forwarded hestia.eole.lan to 192.168.232.2
+déc. 13 07:04:18 gateway116 dnsmasq[1804322]: query[A] hestia.eole.lan from 192.168.0.33
+déc. 13 07:04:18 gateway116 dnsmasq[1804322]: cached hestia.eole.lan is 192.168.232.2
+déc. 13 07:04:18 gateway116 dnsmasq[1804322]: reply hestia.eole.lan is NODATA-IPv6
+déc. 13 07:04:23 gateway116 dnsmasq[1804322]: query[A] europe.pool.ntp.org from 192.168.0.33
+déc. 13 07:04:23 gateway116 dnsmasq[1804322]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 13 07:04:23 gateway116 dnsmasq[1804322]: query[AAAA] europe.pool.ntp.org from 192.168.0.33
+déc. 13 07:04:23 gateway116 dnsmasq[1804322]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 13 07:04:23 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 162.159.200.123
+déc. 13 07:04:23 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 85.254.217.5
+déc. 13 07:04:23 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 109.74.206.120
+déc. 13 07:04:23 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 129.250.35.250
+déc. 13 07:04:23 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is NODATA-IPv6
+déc. 13 07:04:24 gateway116 dnsmasq[1804322]: query[PTR] 50.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:24 gateway116 dnsmasq[1804322]: config 192.0.2.50 is NXDOMAIN
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: query[A] hestia.eole.lan from 192.168.0.33
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: forwarded hestia.eole.lan to 192.168.232.2
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: query[AAAA] hestia.eole.lan from 192.168.0.33
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: forwarded hestia.eole.lan to 192.168.232.2
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: reply hestia.eole.lan is 192.168.232.2
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: reply hestia.eole.lan is NODATA-IPv6
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: query[A] europe.pool.ntp.org from 192.168.0.33
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: query[AAAA] europe.pool.ntp.org from 192.168.0.33
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 129.250.35.250
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 162.159.200.123
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 85.254.217.5
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 109.74.206.120
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is NODATA-IPv6
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:25 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:04:26 gateway116 dnsmasq[1804322]: query[PTR] 50.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:26 gateway116 dnsmasq[1804322]: config 192.0.2.50 is NXDOMAIN
+déc. 13 07:04:26 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:26 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:04:26 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:26 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:04:26 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:26 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:04:26 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:26 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:04:26 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:26 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:04:26 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:26 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:04:36 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 07:04:36 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:04:38 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 07:04:38 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:04:39 gateway116 dnsmasq[1804322]: query[PTR] 53.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:39 gateway116 dnsmasq[1804322]: config 192.0.2.53 is NXDOMAIN
+déc. 13 07:04:40 gateway116 dnsmasq[1804322]: query[PTR] 53.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:40 gateway116 dnsmasq[1804322]: config 192.0.2.53 is NXDOMAIN
+déc. 13 07:04:45 gateway116 dnsmasq[1804322]: query[PTR] 53.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:45 gateway116 dnsmasq[1804322]: config 192.0.2.53 is NXDOMAIN
+déc. 13 07:04:49 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:49 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:04:50 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:04:50 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:05:01 gateway116 CRON[1808848]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+déc. 13 07:05:01 gateway116 CRON[1808849]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+déc. 13 07:05:01 gateway116 CRON[1808848]: pam_unix(cron:session): session closed for user root
+déc. 13 07:05:08 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:05:08 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:05:09 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:05:09 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:05:13 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:05:13 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:05:13 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:05:13 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:05:15 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:05:15 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:05:17 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:05:17 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:05:17 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:05:17 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:05:36 gateway116 dnsmasq[1804322]: query[PTR] 52.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:05:36 gateway116 dnsmasq[1804322]: config 192.0.2.52 is NXDOMAIN
+déc. 13 07:05:49 gateway116 dnsmasq[1804322]: query[PTR] 51.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:05:49 gateway116 dnsmasq[1804322]: config 192.0.2.51 is NXDOMAIN
+déc. 13 07:06:19 gateway116 dnsmasq[1804322]: query[A] compiling.spamassassin.taint.org.fresh.fmb.la from 192.168.0.33
+déc. 13 07:06:19 gateway116 dnsmasq[1804322]: forwarded compiling.spamassassin.taint.org.fresh.fmb.la to 192.168.232.2
+déc. 13 07:06:19 gateway116 dnsmasq[1804322]: reply compiling.spamassassin.taint.org.fresh.fmb.la is NXDOMAIN
+déc. 13 07:06:24 gateway116 dnsmasq[1804322]: query[AAAA] reseau from 192.168.0.33
+déc. 13 07:06:24 gateway116 dnsmasq[1804322]: config reseau is NXDOMAIN
+déc. 13 07:06:25 gateway116 dnsmasq[1804322]: query[AAAA] reseau from 192.168.0.33
+déc. 13 07:06:25 gateway116 dnsmasq[1804322]: config reseau is NXDOMAIN
+déc. 13 07:06:27 gateway116 dnsmasq[1804322]: query[AAAA] reseau from 192.168.0.33
+déc. 13 07:06:27 gateway116 dnsmasq[1804322]: config reseau is NXDOMAIN
+déc. 13 07:06:44 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:06:44 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:06:45 gateway116 dnsmasq[1804322]: query[AAAA] reseau from 192.168.0.33
+déc. 13 07:06:45 gateway116 dnsmasq[1804322]: config reseau is NXDOMAIN
+déc. 13 07:06:46 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:06:46 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:06:47 gateway116 dnsmasq[1804322]: query[AAAA] reseau from 192.168.0.33
+déc. 13 07:06:47 gateway116 dnsmasq[1804322]: config reseau is NXDOMAIN
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: query[A] ftp.crihan.fr from 192.168.0.33
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: forwarded ftp.crihan.fr to 192.168.232.2
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: query[AAAA] ftp.crihan.fr from 192.168.0.33
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: forwarded ftp.crihan.fr to 192.168.232.2
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: reply ftp.crihan.fr is 195.221.21.36
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: reply ftp.crihan.fr is 2001:660:7401:211::36
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: query[A] eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: forwarded eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: query[AAAA] eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: forwarded eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: reply eole.ac-dijon.fr is <CNAME>
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: reply thor.ac-dijon.fr is 194.167.18.18
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: reply thor.ac-dijon.fr is <RRSIG>
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: reply eole.ac-dijon.fr is <CNAME>
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: reply thor.ac-dijon.fr is NODATA-IPv6
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: query[A] thor.ac-dijon.fr from 192.168.0.33
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: forwarded thor.ac-dijon.fr to 192.168.232.2
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: reply thor.ac-dijon.fr is 194.167.18.18
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: reply thor.ac-dijon.fr is <RRSIG>
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: query[AAAA] thor.ac-dijon.fr from 192.168.0.33
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: forwarded thor.ac-dijon.fr to 192.168.232.2
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: reply thor.ac-dijon.fr is NODATA-IPv6
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: query[A] test-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: forwarded test-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: reply test-eole.ac-dijon.fr is <CNAME>
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: reply thor.ac-dijon.fr is 194.167.18.18
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: reply thor.ac-dijon.fr is <RRSIG>
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: query[AAAA] test-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: forwarded test-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: reply test-eole.ac-dijon.fr is <CNAME>
+déc. 13 07:07:06 gateway116 dnsmasq[1804322]: reply thor.ac-dijon.fr is NODATA-IPv6
+déc. 13 07:07:13 gateway116 dnsmasq[1804322]: query[A] one.eole.lan from 127.0.0.1
+déc. 13 07:07:13 gateway116 dnsmasq[1804322]: cached one.eole.lan is 192.168.10.140
+déc. 13 07:07:20 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:07:20 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:07:20 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:07:20 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:07:36 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 07:07:36 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:07:39 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:07:39 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:07:41 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:07:41 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:07:41 gateway116 dnsmasq[1804322]: query[A] eole.orion.education.fr from 192.168.0.33
+déc. 13 07:07:41 gateway116 dnsmasq[1804322]: forwarded eole.orion.education.fr to 192.168.232.2
+déc. 13 07:07:41 gateway116 dnsmasq[1804322]: reply eole.orion.education.fr is 194.167.18.15
+déc. 13 07:07:41 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:07:41 gateway116 dnsmasq[1804322]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:07:41 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:07:41 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is <RRSIG>
+déc. 13 07:07:41 gateway116 dnsmasq[1804322]: query[AAAA] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:07:41 gateway116 dnsmasq[1804322]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:07:41 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is NODATA-IPv6
+déc. 13 07:08:22 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:08:22 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:08:22 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:08:22 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:08:57 gateway116 dnsmasq[1804322]: query[A] europe.pool.ntp.org from 192.168.0.33
+déc. 13 07:08:57 gateway116 dnsmasq[1804322]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 13 07:08:57 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 5.188.119.216
+déc. 13 07:08:57 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 193.106.93.116
+déc. 13 07:08:57 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 31.131.251.6
+déc. 13 07:08:57 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 91.212.242.20
+déc. 13 07:09:23 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:09:23 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:09:23 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:09:23 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:09:58 gateway116 dnsmasq[1804322]: query[A] one.eole.lan from 127.0.0.1
+déc. 13 07:09:58 gateway116 dnsmasq[1804322]: cached one.eole.lan is 192.168.10.140
+déc. 13 07:10:14 gateway116 systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+░░ Subject: L'unité (unit) sysstat-collect.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.service a commencé à démarrer.
+déc. 13 07:10:14 gateway116 systemd[1]: sysstat-collect.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit sysstat-collect.service has successfully entered the 'dead' state.
+déc. 13 07:10:14 gateway116 systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+░░ Subject: L'unité (unit) sysstat-collect.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.service a terminé son démarrage, avec le résultat done.
+déc. 13 07:10:23 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:10:23 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:10:23 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:10:23 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:10:24 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:10:24 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:10:24 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:10:24 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:10:25 gateway116 dnsmasq[1804322]: query[AAAA] daisy.ubuntu.com from 192.168.0.33
+déc. 13 07:10:25 gateway116 dnsmasq[1804322]: forwarded daisy.ubuntu.com to 192.168.232.2
+déc. 13 07:10:25 gateway116 dnsmasq[1804322]: query[A] daisy.ubuntu.com from 192.168.0.33
+déc. 13 07:10:25 gateway116 dnsmasq[1804322]: forwarded daisy.ubuntu.com to 192.168.232.2
+déc. 13 07:10:25 gateway116 dnsmasq[1804322]: reply daisy.ubuntu.com is NODATA-IPv6
+déc. 13 07:10:25 gateway116 dnsmasq[1804322]: reply daisy.ubuntu.com is 162.213.35.24
+déc. 13 07:10:25 gateway116 dnsmasq[1804322]: reply daisy.ubuntu.com is 162.213.35.25
+déc. 13 07:10:34 gateway116 dnsmasq[1804322]: query[PTR] 6.6.2.0.3.0.e.f.f.f.a.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa from 192.168.0.33
+déc. 13 07:10:34 gateway116 dnsmasq[1804322]: config fe80::aff:fe03:266 is NXDOMAIN
+déc. 13 07:10:36 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 07:10:36 gateway116 dnsmasq[1804322]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:10:36 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:10:38 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 07:10:38 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:10:39 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:10:39 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:10:41 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:10:41 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:10:44 gateway116 dnsmasq[1804322]: query[PTR] 6.6.2.0.3.0.e.f.f.f.a.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa from 192.168.0.33
+déc. 13 07:10:44 gateway116 dnsmasq[1804322]: config fe80::aff:fe03:266 is NXDOMAIN
+déc. 13 07:10:49 gateway116 dnsmasq[1804322]: query[AAAA] ntp.ubuntu.com from 192.168.0.33
+déc. 13 07:10:49 gateway116 dnsmasq[1804322]: forwarded ntp.ubuntu.com to 192.168.232.2
+déc. 13 07:10:49 gateway116 dnsmasq[1804322]: query[A] ntp.ubuntu.com from 192.168.0.33
+déc. 13 07:10:49 gateway116 dnsmasq[1804322]: forwarded ntp.ubuntu.com to 192.168.232.2
+déc. 13 07:10:49 gateway116 dnsmasq[1804322]: reply ntp.ubuntu.com is 185.125.190.58
+déc. 13 07:10:49 gateway116 dnsmasq[1804322]: reply ntp.ubuntu.com is 91.189.91.157
+déc. 13 07:10:49 gateway116 dnsmasq[1804322]: reply ntp.ubuntu.com is 185.125.190.57
+déc. 13 07:10:49 gateway116 dnsmasq[1804322]: reply ntp.ubuntu.com is 185.125.190.56
+déc. 13 07:10:49 gateway116 dnsmasq[1804322]: reply ntp.ubuntu.com is 2620:2d:4000:1::41
+déc. 13 07:10:49 gateway116 dnsmasq[1804322]: reply ntp.ubuntu.com is 2620:2d:4000:1::40
+déc. 13 07:10:49 gateway116 dnsmasq[1804322]: reply ntp.ubuntu.com is 2620:2d:4000:1::3f
+déc. 13 07:10:59 gateway116 dnsmasq[1804322]: query[PTR] 6.6.2.0.3.0.e.f.f.f.a.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa from 192.168.0.33
+déc. 13 07:10:59 gateway116 dnsmasq[1804322]: config fe80::aff:fe03:266 is NXDOMAIN
+déc. 13 07:11:01 gateway116 dnsmasq[1804322]: query[PTR] 6.6.2.0.3.0.e.f.f.f.a.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa from 192.168.0.33
+déc. 13 07:11:01 gateway116 dnsmasq[1804322]: config fe80::aff:fe03:266 is NXDOMAIN
+déc. 13 07:11:02 gateway116 dnsmasq[1804322]: query[PTR] 6.6.2.0.3.0.e.f.f.f.a.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa from 192.168.0.33
+déc. 13 07:11:02 gateway116 dnsmasq[1804322]: config fe80::aff:fe03:266 is NXDOMAIN
+déc. 13 07:11:03 gateway116 dnsmasq[1804322]: query[PTR] 6.6.2.0.3.0.e.f.f.f.a.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa from 192.168.0.33
+déc. 13 07:11:03 gateway116 dnsmasq[1804322]: config fe80::aff:fe03:266 is NXDOMAIN
+déc. 13 07:11:05 gateway116 dnsmasq[1804322]: query[PTR] 6.6.2.0.3.0.e.f.f.f.a.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa from 192.168.0.33
+déc. 13 07:11:05 gateway116 dnsmasq[1804322]: config fe80::aff:fe03:266 is NXDOMAIN
+déc. 13 07:11:08 gateway116 dnsmasq[1804322]: query[PTR] 6.6.2.0.3.0.e.f.f.f.a.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa from 192.168.0.33
+déc. 13 07:11:08 gateway116 dnsmasq[1804322]: config fe80::aff:fe03:266 is NXDOMAIN
+déc. 13 07:11:24 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:11:24 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:11:24 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:11:24 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:11:35 gateway116 dnsmasq[1804322]: query[AAAA] eolecitests.ac-test.fr from 192.168.0.253
+déc. 13 07:11:35 gateway116 dnsmasq[1804322]: forwarded eolecitests.ac-test.fr to 192.168.232.2
+déc. 13 07:11:35 gateway116 dnsmasq[1804322]: reply eolecitests.ac-test.fr is NXDOMAIN
+déc. 13 07:11:35 gateway116 dnsmasq[1804322]: query[AAAA] eolecitests from 192.168.0.253
+déc. 13 07:11:35 gateway116 dnsmasq[1804322]: config eolecitests is NXDOMAIN
+déc. 13 07:12:12 gateway116 dnsmasq[1804322]: query[SRV] _http._tcp.test-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:12:12 gateway116 dnsmasq[1804322]: forwarded _http._tcp.test-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:12:12 gateway116 dnsmasq[1804322]: reply _http._tcp.test-eole.ac-dijon.fr is NXDOMAIN
+déc. 13 07:12:19 gateway116 dnsmasq[1804322]: query[AAAA] gateway116.eole.lan from 127.0.0.1
+déc. 13 07:12:19 gateway116 dnsmasq[1804322]: forwarded gateway116.eole.lan to 192.168.232.2
+déc. 13 07:12:19 gateway116 dnsmasq[1804322]: reply gateway116.eole.lan is NODATA-IPv6
+déc. 13 07:12:19 gateway116 dnsmasq[1804322]: query[AAAA] gateway116 from 127.0.0.1
+déc. 13 07:12:19 gateway116 dnsmasq[1804322]: config gateway116 is NODATA-IPv6
+déc. 13 07:12:25 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:12:25 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:12:25 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:12:25 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:12:58 gateway116 dnsmasq[1804322]: query[A] api.snapcraft.io from 192.168.0.33
+déc. 13 07:12:58 gateway116 dnsmasq[1804322]: forwarded api.snapcraft.io to 192.168.232.2
+déc. 13 07:12:58 gateway116 dnsmasq[1804322]: query[AAAA] api.snapcraft.io from 192.168.0.33
+déc. 13 07:12:58 gateway116 dnsmasq[1804322]: forwarded api.snapcraft.io to 192.168.232.2
+déc. 13 07:12:58 gateway116 dnsmasq[1804322]: reply api.snapcraft.io is 185.125.188.58
+déc. 13 07:12:58 gateway116 dnsmasq[1804322]: reply api.snapcraft.io is 185.125.188.59
+déc. 13 07:12:58 gateway116 dnsmasq[1804322]: reply api.snapcraft.io is 185.125.188.54
+déc. 13 07:12:58 gateway116 dnsmasq[1804322]: reply api.snapcraft.io is 185.125.188.55
+déc. 13 07:12:58 gateway116 dnsmasq[1804322]: reply api.snapcraft.io is 2620:2d:4000:1010::42
+déc. 13 07:12:58 gateway116 dnsmasq[1804322]: reply api.snapcraft.io is 2620:2d:4000:1010::2e6
+déc. 13 07:12:58 gateway116 dnsmasq[1804322]: reply api.snapcraft.io is 2620:2d:4000:1010::117
+déc. 13 07:12:58 gateway116 dnsmasq[1804322]: reply api.snapcraft.io is 2620:2d:4000:1010::6d
+déc. 13 07:13:19 gateway116 dnsmasq[1804322]: query[A] europe.pool.ntp.org from 192.168.0.33
+déc. 13 07:13:19 gateway116 dnsmasq[1804322]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 13 07:13:19 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 98.128.175.45
+déc. 13 07:13:19 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 46.102.157.67
+déc. 13 07:13:19 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 144.76.66.157
+déc. 13 07:13:19 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 144.76.218.252
+déc. 13 07:13:30 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:13:30 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:13:30 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:13:30 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:13:36 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 07:13:36 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:13:38 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 07:13:38 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:13:39 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:13:39 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:13:40 gateway116 dnsmasq[1804322]: query[A] archive.ubuntu.com from 192.168.0.5
+déc. 13 07:13:40 gateway116 dnsmasq[1804322]: forwarded archive.ubuntu.com to 192.168.232.2
+déc. 13 07:13:40 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 91.189.91.82
+déc. 13 07:13:40 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 185.125.190.83
+déc. 13 07:13:40 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 185.125.190.82
+déc. 13 07:13:40 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 91.189.91.83
+déc. 13 07:13:40 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 185.125.190.81
+déc. 13 07:13:41 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:13:41 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:13:42 gateway116 dnsmasq[1804322]: query[A] archive.ubuntu.com from 192.168.0.5
+déc. 13 07:13:42 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 91.189.91.82
+déc. 13 07:13:42 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 185.125.190.83
+déc. 13 07:13:42 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 185.125.190.82
+déc. 13 07:13:42 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 91.189.91.83
+déc. 13 07:13:42 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 185.125.190.81
+déc. 13 07:13:43 gateway116 dnsmasq[1804322]: query[A] archive.ubuntu.com from 192.168.0.33
+déc. 13 07:13:43 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 185.125.190.81
+déc. 13 07:13:43 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 91.189.91.82
+déc. 13 07:13:43 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 185.125.190.83
+déc. 13 07:13:43 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 185.125.190.82
+déc. 13 07:13:43 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 91.189.91.83
+déc. 13 07:13:45 gateway116 dnsmasq[1804322]: query[A] archive.ubuntu.com from 192.168.0.33
+déc. 13 07:13:45 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 91.189.91.83
+déc. 13 07:13:45 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 185.125.190.81
+déc. 13 07:13:45 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 91.189.91.82
+déc. 13 07:13:45 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 185.125.190.83
+déc. 13 07:13:45 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 185.125.190.82
+déc. 13 07:13:51 gateway116 dnsmasq[1804322]: query[A] archive.ubuntu.com from 192.168.0.5
+déc. 13 07:13:51 gateway116 dnsmasq[1804322]: forwarded archive.ubuntu.com to 192.168.232.2
+déc. 13 07:13:51 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 185.125.190.81
+déc. 13 07:13:51 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 91.189.91.82
+déc. 13 07:13:51 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 185.125.190.83
+déc. 13 07:13:51 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 185.125.190.82
+déc. 13 07:13:51 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 91.189.91.83
+déc. 13 07:13:51 gateway116 dnsmasq[1804322]: query[AAAA] archive.ubuntu.com from 192.168.0.5
+déc. 13 07:13:51 gateway116 dnsmasq[1804322]: forwarded archive.ubuntu.com to 192.168.232.2
+déc. 13 07:13:51 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 2620:2d:4000:1::102
+déc. 13 07:13:51 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 2620:2d:4002:1::103
+déc. 13 07:13:51 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 2620:2d:4002:1::101
+déc. 13 07:13:51 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 2620:2d:4002:1::102
+déc. 13 07:13:51 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 2620:2d:4000:1::101
+déc. 13 07:13:51 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 2620:2d:4000:1::103
+déc. 13 07:15:01 gateway116 CRON[1809089]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+déc. 13 07:15:01 gateway116 CRON[1809090]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+déc. 13 07:15:01 gateway116 CRON[1809089]: pam_unix(cron:session): session closed for user root
+déc. 13 07:16:36 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 07:16:36 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:17:01 gateway116 CRON[1809125]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+déc. 13 07:17:01 gateway116 CRON[1809126]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+déc. 13 07:17:01 gateway116 CRON[1809125]: pam_unix(cron:session): session closed for user root
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: query[A] dev-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: forwarded dev-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: reply dev-eole.ac-dijon.fr is <CNAME>
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: reply adonis.ac-dijon.fr is 194.167.18.22
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: reply adonis.ac-dijon.fr is <RRSIG>
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: query[A] adonis.ac-dijon.fr from 192.168.0.33
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: forwarded adonis.ac-dijon.fr to 192.168.232.2
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: reply adonis.ac-dijon.fr is 194.167.18.22
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: reply adonis.ac-dijon.fr is <RRSIG>
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: query[A] multi-ip-dn.eole.lan from 192.168.0.33
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: forwarded multi-ip-dn.eole.lan to 192.168.232.2
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: reply multi-ip-dn.eole.lan is <CNAME>
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: reply multi-ip.eole.lan is 192.168.230.121
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: reply multi-ip.eole.lan is 192.168.230.122
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: reply multi-ip.eole.lan is 192.168.230.120
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: query[A] multi-ip.eole.lan from 192.168.0.33
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: forwarded multi-ip.eole.lan to 192.168.232.2
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: reply multi-ip.eole.lan is 192.168.230.120
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: reply multi-ip.eole.lan is 192.168.230.121
+déc. 13 07:18:16 gateway116 dnsmasq[1804322]: reply multi-ip.eole.lan is 192.168.230.122
+déc. 13 07:19:36 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 07:19:36 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:20:14 gateway116 systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+░░ Subject: L'unité (unit) sysstat-collect.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.service a commencé à démarrer.
+déc. 13 07:20:14 gateway116 systemd[1]: sysstat-collect.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit sysstat-collect.service has successfully entered the 'dead' state.
+déc. 13 07:20:14 gateway116 systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+░░ Subject: L'unité (unit) sysstat-collect.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) sysstat-collect.service a terminé son démarrage, avec le résultat done.
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: query[A] addc.etb3.lan from 192.168.0.33
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: forwarded addc.etb3.lan to 192.168.232.2
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: reply addc.etb3.lan is NXDOMAIN
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: query[CNAME] 588d31ac-5d06-444a-b7b2-0d0f0abcc057._msdcs.etb3.lan from 192.168.0.33
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: forwarded 588d31ac-5d06-444a-b7b2-0d0f0abcc057._msdcs.etb3.lan to 192.168.232.2
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: reply 588d31ac-5d06-444a-b7b2-0d0f0abcc057._msdcs.etb3.lan is NXDOMAIN
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: query[NS] etb3.lan from 192.168.0.33
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: forwarded etb3.lan to 192.168.232.2
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: reply etb3.lan is NXDOMAIN
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: query[NS] _msdcs.etb3.lan from 192.168.0.33
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: forwarded _msdcs.etb3.lan to 192.168.232.2
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: reply _msdcs.etb3.lan is NXDOMAIN
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: query[A] etb3.lan from 192.168.0.33
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: forwarded etb3.lan to 192.168.232.2
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: reply etb3.lan is NXDOMAIN
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.etb3.lan from 192.168.0.33
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.etb3.lan to 192.168.232.2
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: reply _ldap._tcp.etb3.lan is NXDOMAIN
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.dc._msdcs.etb3.lan from 192.168.0.33
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.dc._msdcs.etb3.lan to 192.168.232.2
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: reply _ldap._tcp.dc._msdcs.etb3.lan is NXDOMAIN
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.040b8ddc-8a25-464f-9fa0-b47866053d9e.domains._msdcs.etb3.lan from 192.168.0.33
+déc. 13 07:21:07 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.040b8ddc-8a25-464f-9fa0-b47866053d9e.domains._msdcs.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _ldap._tcp.040b8ddc-8a25-464f-9fa0-b47866053d9e.domains._msdcs.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _kerberos._tcp.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _kerberos._tcp.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _kerberos._tcp.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _kerberos._udp.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _kerberos._udp.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _kerberos._udp.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _kerberos._tcp.dc._msdcs.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _kerberos._tcp.dc._msdcs.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _kerberos._tcp.dc._msdcs.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _kpasswd._tcp.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _kpasswd._tcp.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _kpasswd._tcp.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _kpasswd._udp.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _kpasswd._udp.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _kpasswd._udp.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.Default-First-Site-Name._sites.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.Default-First-Site-Name._sites.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _ldap._tcp.Default-First-Site-Name._sites.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _kerberos._tcp.Default-First-Site-Name._sites.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _kerberos._tcp.Default-First-Site-Name._sites.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _kerberos._tcp.Default-First-Site-Name._sites.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.pdc._msdcs.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.pdc._msdcs.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _ldap._tcp.pdc._msdcs.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[A] gc._msdcs.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded gc._msdcs.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply gc._msdcs.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _gc._tcp.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _gc._tcp.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _gc._tcp.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.gc._msdcs.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.gc._msdcs.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _ldap._tcp.gc._msdcs.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _gc._tcp.Default-First-Site-Name._sites.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _gc._tcp.Default-First-Site-Name._sites.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _gc._tcp.Default-First-Site-Name._sites.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[A] DomainDnsZones.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded DomainDnsZones.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply DomainDnsZones.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.DomainDnsZones.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.DomainDnsZones.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _ldap._tcp.DomainDnsZones.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[A] ForestDnsZones.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded ForestDnsZones.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply ForestDnsZones.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.ForestDnsZones.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.ForestDnsZones.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _ldap._tcp.ForestDnsZones.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SRV] _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.etb3.lan is NXDOMAIN
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: query[SOA] etb3.lan from 192.168.0.33
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: forwarded etb3.lan to 192.168.232.2
+déc. 13 07:21:08 gateway116 dnsmasq[1804322]: reply etb3.lan is NXDOMAIN
+déc. 13 07:21:41 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:21:41 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:21:41 gateway116 dnsmasq[1804322]: query[A] archive.ubuntu.com from 192.168.0.33
+déc. 13 07:21:41 gateway116 dnsmasq[1804322]: forwarded archive.ubuntu.com to 192.168.232.2
+déc. 13 07:21:41 gateway116 dnsmasq[1804322]: query[A] archive.ubuntu.com from 192.168.0.33
+déc. 13 07:21:41 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:21:41 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:21:41 gateway116 dnsmasq[1804322]: query[A] compiling.spamassassin.taint.org.fresh.fmb.la from 192.168.0.33
+déc. 13 07:21:41 gateway116 dnsmasq[1804322]: forwarded compiling.spamassassin.taint.org.fresh.fmb.la to 192.168.232.2
+déc. 13 07:21:41 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:21:41 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:21:41 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:21:41 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: reply compiling.spamassassin.taint.org.fresh.fmb.la is NXDOMAIN
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 185.125.190.82
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 185.125.190.83
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 91.189.91.82
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 91.189.91.83
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 185.125.190.81
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: query[A] eole.orion.education.fr from 192.168.0.33
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: forwarded eole.orion.education.fr to 192.168.232.2
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: reply eole.orion.education.fr is 194.167.18.15
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is <RRSIG>
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: query[AAAA] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is NODATA-IPv6
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: query[AAAA] reseau from 192.168.0.33
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: config reseau is NXDOMAIN
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: query[AAAA] reseau from 192.168.0.33
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: config reseau is NXDOMAIN
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: query[AAAA] reseau from 192.168.0.33
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: config reseau is NXDOMAIN
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: query[PTR] 50.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: config 192.0.2.50 is NXDOMAIN
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: query[PTR] 51.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: config 192.0.2.51 is NXDOMAIN
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: query[PTR] 52.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: config 192.0.2.52 is NXDOMAIN
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:21:42 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:21:43 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:21:43 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:21:43 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:21:43 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:21:43 gateway116 dnsmasq[1804322]: query[PTR] 53.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:21:43 gateway116 dnsmasq[1804322]: config 192.0.2.53 is NXDOMAIN
+déc. 13 07:21:46 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:21:46 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:21:46 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:21:46 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:21:51 gateway116 dnsmasq[1804322]: query[A] hestia.eole.lan from 192.168.0.33
+déc. 13 07:21:51 gateway116 dnsmasq[1804322]: forwarded hestia.eole.lan to 192.168.232.2
+déc. 13 07:21:51 gateway116 dnsmasq[1804322]: query[AAAA] hestia.eole.lan from 192.168.0.33
+déc. 13 07:21:51 gateway116 dnsmasq[1804322]: forwarded hestia.eole.lan to 192.168.232.2
+déc. 13 07:21:51 gateway116 dnsmasq[1804322]: reply hestia.eole.lan is 192.168.232.2
+déc. 13 07:21:51 gateway116 dnsmasq[1804322]: reply hestia.eole.lan is NODATA-IPv6
+déc. 13 07:21:52 gateway116 dnsmasq[1804322]: query[A] europe.pool.ntp.org from 192.168.0.33
+déc. 13 07:21:52 gateway116 dnsmasq[1804322]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 13 07:21:52 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 193.52.136.2
+déc. 13 07:21:52 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 93.93.131.118
+déc. 13 07:21:52 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 89.111.47.132
+déc. 13 07:21:52 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 185.177.149.33
+déc. 13 07:21:52 gateway116 dnsmasq[1804322]: query[AAAA] europe.pool.ntp.org from 192.168.0.33
+déc. 13 07:21:52 gateway116 dnsmasq[1804322]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 13 07:21:52 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is NODATA-IPv6
+déc. 13 07:22:06 gateway116 dnsmasq[1804322]: query[PTR] 53.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:22:06 gateway116 dnsmasq[1804322]: config 192.0.2.53 is NXDOMAIN
+déc. 13 07:22:07 gateway116 dnsmasq[1804322]: query[PTR] 50.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:22:07 gateway116 dnsmasq[1804322]: config 192.0.2.50 is NXDOMAIN
+déc. 13 07:22:08 gateway116 dnsmasq[1804322]: query[PTR] 51.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:22:08 gateway116 dnsmasq[1804322]: config 192.0.2.51 is NXDOMAIN
+déc. 13 07:22:09 gateway116 dnsmasq[1804322]: query[PTR] 52.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:22:09 gateway116 dnsmasq[1804322]: config 192.0.2.52 is NXDOMAIN
+déc. 13 07:22:22 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:22:22 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:22:22 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:22:22 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:22:36 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 07:22:36 gateway116 dnsmasq[1804322]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:22:36 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:22:53 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:22:53 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:22:53 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:22:53 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:22:57 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:22:57 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:22:57 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:22:57 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:23:23 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:23:23 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:23:23 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:23:23 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:23:29 gateway116 dnsmasq[1804322]: query[PTR] 53.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:23:29 gateway116 dnsmasq[1804322]: config 192.0.2.53 is NXDOMAIN
+déc. 13 07:24:20 gateway116 dnsmasq[1804322]: query[SOA] nextcloud.com from 192.168.0.33
+déc. 13 07:24:20 gateway116 dnsmasq[1804322]: forwarded nextcloud.com to 192.168.232.2
+déc. 13 07:24:20 gateway116 dnsmasq[1804322]: reply nextcloud.com is <SOA>
+déc. 13 07:24:20 gateway116 dnsmasq[1804322]: query[A] apps.nextcloud.com from 192.168.0.33
+déc. 13 07:24:20 gateway116 dnsmasq[1804322]: forwarded apps.nextcloud.com to 192.168.232.2
+déc. 13 07:24:20 gateway116 dnsmasq[1804322]: reply apps.nextcloud.com is 65.21.231.50
+déc. 13 07:24:20 gateway116 dnsmasq[1804322]: query[AAAA] apps.nextcloud.com from 192.168.0.33
+déc. 13 07:24:20 gateway116 dnsmasq[1804322]: forwarded apps.nextcloud.com to 192.168.232.2
+déc. 13 07:24:20 gateway116 dnsmasq[1804322]: reply apps.nextcloud.com is 2a01:4f9:6a:1de8::2
+déc. 13 07:24:20 gateway116 dnsmasq[1804322]: query[CNAME] apps.nextcloud.com from 192.168.0.33
+déc. 13 07:24:20 gateway116 dnsmasq[1804322]: forwarded apps.nextcloud.com to 192.168.232.2
+déc. 13 07:24:20 gateway116 dnsmasq[1804322]: reply apps.nextcloud.com is NODATA
+déc. 13 07:24:23 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:24:23 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:24:23 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:24:23 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:24:35 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:24:35 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:24:35 gateway116 dnsmasq[1804322]: query[A] eole.orion.education.fr from 192.168.0.33
+déc. 13 07:24:35 gateway116 dnsmasq[1804322]: forwarded eole.orion.education.fr to 192.168.232.2
+déc. 13 07:24:35 gateway116 dnsmasq[1804322]: reply eole.orion.education.fr is 194.167.18.15
+déc. 13 07:24:35 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:24:35 gateway116 dnsmasq[1804322]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:24:35 gateway116 dnsmasq[1804322]: query[AAAA] bp-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:24:35 gateway116 dnsmasq[1804322]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:24:35 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:24:35 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is <RRSIG>
+déc. 13 07:24:35 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is NODATA-IPv6
+déc. 13 07:25:01 gateway116 CRON[1809267]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+déc. 13 07:25:01 gateway116 CRON[1809268]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+déc. 13 07:25:01 gateway116 CRON[1809267]: pam_unix(cron:session): session closed for user root
+déc. 13 07:25:01 gateway116 systemd[1]: Starting fwupd-refresh.service - Refresh fwupd metadata and update motd...
+░░ Subject: L'unité (unit) fwupd-refresh.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fwupd-refresh.service a commencé à démarrer.
+déc. 13 07:25:01 gateway116 dbus-daemon[747]: [system] Activating via systemd: service name='org.freedesktop.fwupd' unit='fwupd.service' requested by ':1.3011' (uid=989 pid=1809270 comm="/usr/bin/fwupdmgr refresh" label="unconfined")
+déc. 13 07:25:01 gateway116 systemd[1]: Starting fwupd.service - Firmware update daemon...
+░░ Subject: L'unité (unit) fwupd.service a commencé à démarrer
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fwupd.service a commencé à démarrer.
+déc. 13 07:25:01 gateway116 fwupd[1809275]: 06:25:01.654 FuMain               Daemon ready for requests (locale fr_FR.UTF-8)
+déc. 13 07:25:01 gateway116 dbus-daemon[747]: [system] Successfully activated service 'org.freedesktop.fwupd'
+déc. 13 07:25:01 gateway116 systemd[1]: Started fwupd.service - Firmware update daemon.
+░░ Subject: L'unité (unit) fwupd.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fwupd.service a terminé son démarrage, avec le résultat done.
+déc. 13 07:25:01 gateway116 systemd[1]: fwupd-refresh.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit fwupd-refresh.service has successfully entered the 'dead' state.
+déc. 13 07:25:01 gateway116 systemd[1]: Finished fwupd-refresh.service - Refresh fwupd metadata and update motd.
+░░ Subject: L'unité (unit) fwupd-refresh.service a terminé son démarrage
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ L'unité (unit) fwupd-refresh.service a terminé son démarrage, avec le résultat done.
+déc. 13 07:25:24 gateway116 dnsmasq[1804322]: query[PTR] 1.0.88.10.in-addr.arpa from 192.168.0.33
+déc. 13 07:25:24 gateway116 dnsmasq[1804322]: config 10.88.0.1 is NXDOMAIN
+déc. 13 07:25:24 gateway116 dnsmasq[1804322]: query[PTR] 1.2.0.192.in-addr.arpa from 192.168.0.33
+déc. 13 07:25:24 gateway116 dnsmasq[1804322]: config 192.0.2.1 is NXDOMAIN
+déc. 13 07:25:32 gateway116 dnsmasq[1804322]: query[AAAA] dc1 from 192.168.0.5
+déc. 13 07:25:32 gateway116 dnsmasq[1804322]: config dc1 is NXDOMAIN
+déc. 13 07:25:33 gateway116 dnsmasq[1804322]: query[AAAA] dc1 from 192.168.0.5
+déc. 13 07:25:33 gateway116 dnsmasq[1804322]: config dc1 is NXDOMAIN
+déc. 13 07:25:36 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 07:25:36 gateway116 dnsmasq[1804322]: forwarded bp-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:25:36 gateway116 dnsmasq[1804322]: reply bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:25:37 gateway116 dnsmasq[1804322]: query[A] envole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:25:37 gateway116 dnsmasq[1804322]: forwarded envole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:25:37 gateway116 dnsmasq[1804322]: query[AAAA] envole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:25:37 gateway116 dnsmasq[1804322]: forwarded envole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:25:37 gateway116 dnsmasq[1804322]: reply envole.ac-dijon.fr is <CNAME>
+déc. 13 07:25:37 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is 195.221.237.19
+déc. 13 07:25:37 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is <RRSIG>
+déc. 13 07:25:37 gateway116 dnsmasq[1804322]: reply envole.ac-dijon.fr is <CNAME>
+déc. 13 07:25:37 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is NODATA-IPv6
+déc. 13 07:25:38 gateway116 dnsmasq[1804322]: query[A] envole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:25:38 gateway116 dnsmasq[1804322]: forwarded envole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:25:38 gateway116 dnsmasq[1804322]: query[AAAA] envole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:25:38 gateway116 dnsmasq[1804322]: forwarded envole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:25:38 gateway116 dnsmasq[1804322]: reply envole.ac-dijon.fr is <CNAME>
+déc. 13 07:25:38 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is 195.221.237.19
+déc. 13 07:25:38 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is <RRSIG>
+déc. 13 07:25:38 gateway116 dnsmasq[1804322]: reply envole.ac-dijon.fr is <CNAME>
+déc. 13 07:25:38 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is NODATA-IPv6
+déc. 13 07:25:38 gateway116 dnsmasq[1804322]: query[A] bp-eole.ac-dijon.fr from 192.168.0.5
+déc. 13 07:25:38 gateway116 dnsmasq[1804322]: cached bp-eole.ac-dijon.fr is 194.167.18.21
+déc. 13 07:25:39 gateway116 dnsmasq[1804322]: query[A] envole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:25:39 gateway116 dnsmasq[1804322]: forwarded envole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:25:39 gateway116 dnsmasq[1804322]: query[AAAA] envole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:25:39 gateway116 dnsmasq[1804322]: forwarded envole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:25:39 gateway116 dnsmasq[1804322]: reply envole.ac-dijon.fr is <CNAME>
+déc. 13 07:25:39 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is 195.221.237.19
+déc. 13 07:25:39 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is <RRSIG>
+déc. 13 07:25:39 gateway116 dnsmasq[1804322]: reply envole.ac-dijon.fr is <CNAME>
+déc. 13 07:25:39 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is NODATA-IPv6
+déc. 13 07:25:39 gateway116 dnsmasq[1804322]: query[A] lab19-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:25:39 gateway116 dnsmasq[1804322]: forwarded lab19-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:25:39 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is 195.221.237.19
+déc. 13 07:25:39 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is <RRSIG>
+déc. 13 07:25:39 gateway116 dnsmasq[1804322]: query[AAAA] lab19-eole.ac-dijon.fr from 192.168.0.33
+déc. 13 07:25:39 gateway116 dnsmasq[1804322]: forwarded lab19-eole.ac-dijon.fr to 192.168.232.2
+déc. 13 07:25:39 gateway116 dnsmasq[1804322]: reply lab19-eole.ac-dijon.fr is NODATA-IPv6
+déc. 13 07:25:40 gateway116 dnsmasq[1804322]: query[A] archive.ubuntu.com from 192.168.0.5
+déc. 13 07:25:40 gateway116 dnsmasq[1804322]: forwarded archive.ubuntu.com to 192.168.232.2
+déc. 13 07:25:40 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 185.125.190.82
+déc. 13 07:25:40 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 91.189.91.82
+déc. 13 07:25:40 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 185.125.190.81
+déc. 13 07:25:40 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 91.189.91.83
+déc. 13 07:25:40 gateway116 dnsmasq[1804322]: reply archive.ubuntu.com is 185.125.190.83
+déc. 13 07:25:42 gateway116 dnsmasq[1804322]: query[A] archive.ubuntu.com from 192.168.0.5
+déc. 13 07:25:42 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 185.125.190.82
+déc. 13 07:25:42 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 91.189.91.82
+déc. 13 07:25:42 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 185.125.190.81
+déc. 13 07:25:42 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 91.189.91.83
+déc. 13 07:25:42 gateway116 dnsmasq[1804322]: cached archive.ubuntu.com is 185.125.190.83
+déc. 13 07:26:09 gateway116 dnsmasq[1804322]: query[A] etb3.ac-test.fr from 127.0.0.1
+déc. 13 07:26:09 gateway116 dnsmasq[1804322]: forwarded etb3.ac-test.fr to 192.168.232.2
+déc. 13 07:26:09 gateway116 dnsmasq[1804322]: query[AAAA] etb3.ac-test.fr from 127.0.0.1
+déc. 13 07:26:09 gateway116 dnsmasq[1804322]: forwarded etb3.ac-test.fr to 192.168.232.2
+déc. 13 07:26:09 gateway116 dnsmasq[1804322]: reply etb3.ac-test.fr is <CNAME>
+déc. 13 07:26:09 gateway116 dnsmasq[1804322]: reply amonecole.etb3.ac-test.fr is 192.168.0.33
+déc. 13 07:26:09 gateway116 dnsmasq[1804322]: reply etb3.ac-test.fr is <CNAME>
+déc. 13 07:26:09 gateway116 dnsmasq[1804322]: reply amonecole.etb3.ac-test.fr is NODATA-IPv6
+déc. 13 07:26:12 gateway116 dnsmasq[1804322]: query[A] europe.pool.ntp.org from 192.168.0.33
+déc. 13 07:26:12 gateway116 dnsmasq[1804322]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 13 07:26:12 gateway116 dnsmasq[1804322]: query[AAAA] europe.pool.ntp.org from 192.168.0.33
+déc. 13 07:26:12 gateway116 dnsmasq[1804322]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 13 07:26:12 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 156.106.214.48
+déc. 13 07:26:12 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 178.239.19.59
+déc. 13 07:26:12 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 31.209.85.243
+déc. 13 07:26:12 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 193.226.12.21
+déc. 13 07:26:12 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is NODATA-IPv6
+déc. 13 07:26:13 gateway116 dnsmasq[1804322]: query[A] europe.pool.ntp.org from 192.168.0.33
+déc. 13 07:26:13 gateway116 dnsmasq[1804322]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 13 07:26:13 gateway116 dnsmasq[1804322]: query[AAAA] europe.pool.ntp.org from 192.168.0.33
+déc. 13 07:26:13 gateway116 dnsmasq[1804322]: forwarded europe.pool.ntp.org to 192.168.232.2
+déc. 13 07:26:13 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 193.226.12.21
+déc. 13 07:26:13 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 156.106.214.48
+déc. 13 07:26:13 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 178.239.19.59
+déc. 13 07:26:13 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is 31.209.85.243
+déc. 13 07:26:13 gateway116 dnsmasq[1804322]: reply europe.pool.ntp.org is NODATA-IPv6
+déc. 13 07:26:17 gateway116 EOLECITESTS[1809337]: ciExportCurrentStatus: (on exit 2094.sh)

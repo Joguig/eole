@@ -1,0 +1,377 @@
+Machine daily 2.8.1 : ciUpdateDaily BUILD_DAILY
+Machine daily 2.8.1 : 'proposed-update' déjà actif!
+Machine daily 2.8.1 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.8.1 : liste des noyaux
+-rw------- 1 root root 13685000 avril 18  2023 /boot/vmlinuz-5.4.0-149-generic
+-rw------- 1 root root 13705992 nov.   8 15:31 /boot/vmlinuz-5.4.0-202-generic
+Machine daily 2.8.1 : * espaces disponibles
+Sys. de fichiers             Type Taille Utilisé Dispo Uti% Monté sur
+/dev/mapper/vgamonecole-root ext4   9,8G    3,8G  5,6G  41% /
+/dev/mapper/vgamonecole-opt  ext4    16G    8,0G  6,3G  56% /opt
+/dev/mapper/vgamonecole-var  ext4    20G    2,0G   17G  11% /var
+/dev/mapper/vgamonecole-home ext4   2,0G     58k  2,0G   1% /home
+/dev/sda1                    ext4   719M    162M  505M  25% /boot
+/dev/mapper/vgamonecole-tmp  ext4   2,0G     78k  1,9G   1% /tmp
+Machine daily 2.8.1 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 2.8.1 : dpkg --configure -a
+Machine daily 2.8.1 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : ERREUR
+Machine daily 2.8.1 : ciWaitTestHttp (1/2): wait..
+Machine daily 2.8.1 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+Machine daily 2.8.1 : ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 2.8.1 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 2.8.1 : Maj-Auto RC
+*********************************************
+Machine daily 2.8.1 : (py3) ciMonitor maj_auto
+
+monitor_maj_auto: pas de config.eol, donc utilise '-i' !
+
+MONITOR: Maj-Auto  -i -S test-eole.ac-dijon.fr -V test-eole.ac-dijon.fr  -C
+Mise à jour le vendredi 13 décembre 2024 18:29:29
+Exécution des scripts /usr/share/eole/majauto_pre
+run-parts: executing /usr/share/eole/majauto_pre/mitm
+*** amonecole 2.8.1 ***
+
+[33mMaj-Auto - (VERSION CANDIDATE) - Augmenter le niveau de mise à jour est irréversible.[0m
+Voulez-vous continuer ? [oui/non]
+[non] : 
+MONITOR: maj_auto_241a action:oui
+oui
+Action check pour le conteneur internet                                   [|]/]-]\]|]   
+Action check pour le conteneur bdd                                        [|]/]-]\]|]   
+Action check pour le conteneur reseau                                     [|]/]-]\]|]   
+Action check pour le conteneur partage                                    [|]/]-]\]|]   
+Action check pour le conteneur addc                                       [|]/]-]\]|]   
+Configuration du dépôt Ubuntu avec la source eole.ac-dijon.fr
+Configuration du dépôt EOLE avec la source test-eole.ac-dijon.fr
+Configuration du dépôt Envole avec la source test-eole.ac-dijon.fr
+Action update pour root                                                   [|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]   
+Action update pour le conteneur internet                                  [|]/]-]\]   
+Action update pour le conteneur bdd                                       [|]/]-]   
+Action update pour le conteneur reseau                                    [|]/]-]   
+Action update pour le conteneur partage                                   [|]/]-]\]   
+Action update pour le conteneur addc                                      [|]/]-]   
+Action list-upgrade pour root
+Action list-upgrade pour le conteneur internet                            [|]/]-]\]|]/]-]\]|]/]-]\]   
+Action list-upgrade pour le conteneur bdd                                 [|]/]-]\]|]/]-]\]|]/]   
+Action list-upgrade pour le conteneur reseau                              [|]/]-]\]|]/]-]\]|]/]   
+Action list-upgrade pour le conteneur partage                             [|]/]-]\]|]/]-]\]|]/]   
+Action list-upgrade pour le conteneur addc                                [|]/]-]\]|]/]-]\]|]/]   
+0 nouveau, 19 mis à jour, 0 à enlever
+Paquets à mettre à jour : 
+    libapache2-mod-php7.4 (7.4.3-4ubuntu2.26) (reseau)
+    php7.4 (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-cli (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-common (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-curl (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-gd (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-imap (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-intl (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-json (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-ldap (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-mbstring (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-mysql (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-opcache (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-readline (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-soap (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-sqlite3 (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-xml (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-xmlrpc (7.4.3-4ubuntu2.26) (reseau)
+    php7.4-zip (7.4.3-4ubuntu2.26) (reseau)
+Action download-upgrade pour root
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Action download-upgrade pour le conteneur internet
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Action download-upgrade pour le conteneur bdd
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Action download-upgrade pour le conteneur reseau
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+Le paquet suivant a été installé automatiquement et n'est plus nécessaire :
+  libgnutls-openssl27
+Veuillez utiliser « apt autoremove » pour le supprimer.
+Les paquets suivants seront mis à jour :
+  libapache2-mod-php7.4 php7.4 php7.4-cli php7.4-common php7.4-curl php7.4-gd
+  php7.4-imap php7.4-intl php7.4-json php7.4-ldap php7.4-mbstring php7.4-mysql
+  php7.4-opcache php7.4-readline php7.4-soap php7.4-sqlite3 php7.4-xml
+  php7.4-xmlrpc php7.4-zip
+19 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Il est nécessaire de prendre 5 057 ko dans les archives.
+Après cette opération, 1 024 o d'espace disque supplémentaires seront utilisés.
+Réception de :1 http://eole.ac-dijon.fr/ubuntu focal-security/universe amd64 php7.4-zip amd64 7.4.3-4ubuntu2.26 [21,5 kB]
+Réception de :2 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-xmlrpc amd64 7.4.3-4ubuntu2.26 [13,0 kB]
+Réception de :3 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-xml amd64 7.4.3-4ubuntu2.26 [98,8 kB]
+Réception de :4 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-sqlite3 amd64 7.4.3-4ubuntu2.26 [27,0 kB]
+Réception de :5 http://eole.ac-dijon.fr/ubuntu focal-security/universe amd64 php7.4-soap amd64 7.4.3-4ubuntu2.26 [115 kB]
+Réception de :6 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-readline amd64 7.4.3-4ubuntu2.26 [12,6 kB]
+Réception de :7 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-opcache amd64 7.4.3-4ubuntu2.26 [198 kB]
+Réception de :8 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-mysql amd64 7.4.3-4ubuntu2.26 [122 kB]
+Réception de :9 http://eole.ac-dijon.fr/ubuntu focal-security/universe amd64 php7.4-mbstring amd64 7.4.3-4ubuntu2.26 [396 kB]
+Réception de :10 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-ldap amd64 7.4.3-4ubuntu2.26 [29,6 kB]
+Réception de :11 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-json amd64 7.4.3-4ubuntu2.26 [19,2 kB]
+Réception de :12 http://eole.ac-dijon.fr/ubuntu focal-security/universe amd64 php7.4-intl amd64 7.4.3-4ubuntu2.26 [126 kB]
+Réception de :13 http://eole.ac-dijon.fr/ubuntu focal-security/universe amd64 php7.4-imap amd64 7.4.3-4ubuntu2.26 [29,9 kB]
+Réception de :14 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-gd amd64 7.4.3-4ubuntu2.26 [28,0 kB]
+Réception de :15 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-curl amd64 7.4.3-4ubuntu2.26 [30,9 kB]
+Réception de :16 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 libapache2-mod-php7.4 amd64 7.4.3-4ubuntu2.26 [1 369 kB]
+Réception de :17 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-cli amd64 7.4.3-4ubuntu2.26 [1 427 kB]
+Réception de :18 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4-common amd64 7.4.3-4ubuntu2.26 [984 kB]
+Réception de :19 http://eole.ac-dijon.fr/ubuntu focal-security/main amd64 php7.4 all 7.4.3-4ubuntu2.26 [9 236 B]
+5 057 ko réceptionnés en 0s (35,0 Mo/s)
+Téléchargement achevé et dans le mode téléchargement uniquement
+Action download-upgrade pour le conteneur partage
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Action download-upgrade pour le conteneur addc
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Action dist-upgrade pour root
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Action dist-upgrade pour le conteneur internet
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Action dist-upgrade pour le conteneur bdd
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Action dist-upgrade pour le conteneur reseau
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+Le paquet suivant a été installé automatiquement et n'est plus nécessaire :
+  libgnutls-openssl27
+Veuillez utiliser « apt autoremove » pour le supprimer.
+Les paquets suivants seront mis à jour :
+  libapache2-mod-php7.4 php7.4 php7.4-cli php7.4-common php7.4-curl php7.4-gd
+  php7.4-imap php7.4-intl php7.4-json php7.4-ldap php7.4-mbstring php7.4-mysql
+  php7.4-opcache php7.4-readline php7.4-soap php7.4-sqlite3 php7.4-xml
+  php7.4-xmlrpc php7.4-zip
+19 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Il est nécessaire de prendre 0 o/5 057 ko dans les archives.
+Après cette opération, 1 024 o d'espace disque supplémentaires seront utilisés.
+(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 45831 fichiers et répertoires déjà installés.)
+Préparation du dépaquetage de .../00-php7.4-zip_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-zip (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../01-php7.4-xmlrpc_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-xmlrpc (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../02-php7.4-xml_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-xml (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../03-php7.4-sqlite3_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-sqlite3 (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../04-php7.4-soap_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-soap (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../05-php7.4-readline_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-readline (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../06-php7.4-opcache_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-opcache (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../07-php7.4-mysql_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-mysql (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../08-php7.4-mbstring_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-mbstring (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../09-php7.4-ldap_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-ldap (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../10-php7.4-json_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-json (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../11-php7.4-intl_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-intl (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../12-php7.4-imap_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-imap (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../13-php7.4-gd_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-gd (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../14-php7.4-curl_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-curl (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../15-libapache2-mod-php7.4_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de libapache2-mod-php7.4 (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../16-php7.4-cli_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-cli (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../17-php7.4-common_7.4.3-4ubuntu2.26_amd64.deb ...
+Dépaquetage de php7.4-common (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Préparation du dépaquetage de .../18-php7.4_7.4.3-4ubuntu2.26_all.deb ...
+Dépaquetage de php7.4 (7.4.3-4ubuntu2.26) sur (7.4.3-4ubuntu2.24) ...
+Paramétrage de php7.4-common (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-xmlrpc (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-curl (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-mysql (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-imap (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-readline (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-mbstring (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-intl (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-zip (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-ldap (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-opcache (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-sqlite3 (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-soap (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-gd (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-json (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-xml (7.4.3-4ubuntu2.26) ...
+Paramétrage de php7.4-cli (7.4.3-4ubuntu2.26) ...
+Paramétrage de libapache2-mod-php7.4 (7.4.3-4ubuntu2.26) ...
+libapache2-mod-php7.4: not switching MPM - already enabled
+Paramétrage de php7.4 (7.4.3-4ubuntu2.26) ...
+Traitement des actions différées (« triggers ») pour php7.4-cli (7.4.3-4ubuntu2.26) ...
+Traitement des actions différées (« triggers ») pour libapache2-mod-php7.4 (7.4.3-4ubuntu2.26) ...
+Action dist-upgrade pour le conteneur partage
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Action dist-upgrade pour le conteneur addc
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Mise à jour OK
+[33mMaj-Auto - Un ou plusieurs paquets ont été mis à jour, utilisez la commande [reconfigure] pour que les modifications soient prises en compte.[0m
+
+MONITOR: Maj-Auto  -i -S test-eole.ac-dijon.fr -V test-eole.ac-dijon.fr  -C eole -D envole
+Mise à jour le vendredi 13 décembre 2024 18:31:10
+Exécution des scripts /usr/share/eole/majauto_pre
+run-parts: executing /usr/share/eole/majauto_pre/mitm
+*** amonecole 2.8.1 ***
+
+[33mMaj-Auto -  envole (VERSION DE DEVELOPPEMENT) eole (VERSION CANDIDATE) - Augmenter le niveau de mise à jour est irréversible.[0m
+Voulez-vous continuer ? [oui/non]
+[non] : 
+MONITOR: maj_auto_241a action:oui
+oui
+Action check pour le conteneur internet                                   [|]/]-]\]|]/]-]\]   
+Action check pour le conteneur bdd                                        [|]/]-]\]|]/]-]   
+Action check pour le conteneur reseau                                     [|]/]-]\]|]/]-]   
+Action check pour le conteneur partage                                    [|]/]-]\]|]/]-]   
+Action check pour le conteneur addc                                       [|]/]-]\]|]/]-]\]   
+Configuration du dépôt Ubuntu avec la source eole.ac-dijon.fr
+Configuration du dépôt EOLE avec la source test-eole.ac-dijon.fr
+Configuration du dépôt Envole avec la source test-eole.ac-dijon.fr
+Action update pour root                                                   [|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]   
+Action update pour le conteneur internet                                  [|]/]   
+Action update pour le conteneur bdd                                       [|]/]   
+Action update pour le conteneur reseau                                    [|]/]   
+Action update pour le conteneur partage                                   [|]/]   
+Action update pour le conteneur addc                                      [|]/]   
+Action list-upgrade pour root
+Action list-upgrade pour le conteneur internet                            [|]/]-]\]|]/]-]\]|]   
+Action list-upgrade pour le conteneur bdd                                 [|]/]-]\]|]/]-]\]|]   
+Action list-upgrade pour le conteneur reseau                              [|]/]-]\]|]/]-]\]|]   
+Action list-upgrade pour le conteneur partage                             [|]/]-]\]|]/]-]\]|]   
+Action list-upgrade pour le conteneur addc                                [|]/]-]\]|]/]-]\]|]   
+Mise à jour OK
+Aucun paquet à installer.
+Machine daily 2.8.1 : ciMonitor python3 ==> RESULT=0
+--------------------------------------------
+cat /etc/apt/sources.list
+
+# Ubuntu
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu focal main universe multiverse restricted
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu focal-security main universe multiverse restricted
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu focal-updates main universe multiverse restricted
+
+# EOLE
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.8.1 main cloud python2
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.8.1-security main cloud python2
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.8.1-updates main cloud python2
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.8.1-proposed-updates main cloud python2
+
+# Envole
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/envole envole-8-unstable main
+
+--------------------------------------------
+--------------------------------------------
+cat /etc/apt/sources.list.d/additional.list
+#template genere par Maj-Auto
+#
+--------------------------------------------
+--------------------------------------------
+cat /etc/apt/sources.list.d/ubuntu-proposed.list
+deb http://test-eole.ac-dijon.fr/ubuntu focal-proposed main universe multiverse restricted
+--------------------------------------------
+Machine daily 2.8.1 : GenConteneur
+*********************************************
+* Test conteneurs ? 
+*********************************************
+* /opt/lxc ? 
+total 20
+drwxrwx--- 3 root root 4096 déc.   9 16:35 addc
+drwxrwx--- 3 root root 4096 déc.   9 16:35 bdd
+drwxrwx--- 3 root root 4096 déc.   9 16:34 internet
+drwxrwx--- 3 root root 4096 déc.   9 16:35 partage
+drwxrwx--- 3 root root 4096 déc.   9 16:35 reseau
+* /var/lib/lxc ? 
+lrwxrwxrwx 1 root root 8 déc.   9 16:30 /var/lib/lxc -> /opt/lxc
+LIST_CONTENEUR=addc    
+bdd     
+internet
+partage 
+reseau  
+*********************************************
+* Conteneurs déjà installé dans /opt/lxc ? 
+*********************************************
+[32mconteneur internet accessible
+[39;49m[32mconteneur bdd accessible
+[39;49m[32mconteneur reseau accessible
+[39;49m[32mconteneur partage accessible
+[39;49m[32mconteneur addc accessible
+[39;49m* source list ubuntu-proposed.list déjà présent
+* source list ubuntu-proposed.list déjà présent
+* source list ubuntu-proposed.list déjà présent
+* source list ubuntu-proposed.list déjà présent
+* source list ubuntu-proposed.list déjà présent
+Machine daily 2.8.1 : Pas de fichier startup '/mnt/eole-ci-tests/module/UpdateDaily-amonecole.sh' 
+Machine daily 2.8.1 : Test CVE Noyau
+0
+Machine daily 2.8.1 : autoremove pour les anciens noyaux
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+/usr/bin/updatedb
+Machine daily 2.8.1 : * Execute updatedb
+/usr/bin/shellcheck
+Machine daily 2.8.1 : Tag l'Image Daily
+DAILY_CONTAINER=oui
+DAILY_DATEUPDATE=1734111140
+DAILY_DATE='2024-12-13 18:32'
+DAILY_MAJAUTO=RC
+Machine daily 2.8.1 : Check Update Service
+/etc/systemd/system/EoleCiTestsContext.service A JOUR
+CheckUpdateService.sh: systemctl enable 'EoleCiTestsContext.service'
+Removed /etc/systemd/system/network.target.wants/EoleCiTestsContext.service.
+Created symlink /etc/systemd/system/network.target.wants/EoleCiTestsContext.service → /etc/systemd/system/EoleCiTestsContext.service.
+CheckUpdateService.sh: systemctl daemon-reload
+/etc/systemd/system/EoleCiTestsDaemon.service A JOUR
+CheckUpdateService.sh: systemctl enable 'EoleCiTestsDaemon.service'
+Removed /etc/systemd/system/multi-user.target.wants/EoleCiTestsDaemon.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/EoleCiTestsDaemon.service → /etc/systemd/system/EoleCiTestsDaemon.service.
+CheckUpdateService.sh: systemctl daemon-reload
+Machine daily 2.8.1 : Trim disk
+Machine daily 2.8.1 : ciUpdateDaily RC : OK

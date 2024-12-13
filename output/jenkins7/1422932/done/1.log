@@ -1,0 +1,225 @@
+* Maj Auto
+Machine aca.eolebase 2.10.0 : ciMajAuto : à mettre à jour car MAJAUTO = DEV
+Machine aca.eolebase 2.10.0 : ciSetHttpProxy, pas de proxy pour les machines 'academie'
+Machine aca.eolebase 2.10.0 : dpkg --configure -a
+Machine aca.eolebase 2.10.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+Machine aca.eolebase 2.10.0 : ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine aca.eolebase 2.10.0 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine aca.eolebase 2.10.0 : Maj-Auto DEV
+*********************************************
+Machine aca.eolebase 2.10.0 : (py3) ciMonitor maj_auto
+
+config.eol existe !
+
+MONITOR: Maj-Auto  -S test-eole.ac-dijon.fr -V test-eole.ac-dijon.fr  -D
+Mise à jour le vendredi 13 décembre 2024 20:23:07
+Exécution des scripts /usr/share/eole/majauto_pre
+run-parts: executing /usr/share/eole/majauto_pre/clean
+run-parts: executing /usr/share/eole/majauto_pre/mitm
+*** eolebase 2.10.0 (0000000A) ***
+
+[33mMaj-Auto - (VERSION DE DEVELOPPEMENT) - Augmenter le niveau de mise à jour est irréversible.[0m
+Voulez-vous continuer ? [oui/non]
+[non] : 
+MONITOR: maj_auto_241a action:oui
+oui
+Configuration du dépôt Ubuntu avec la source test-eole.ac-dijon.fr
+Configuration du dépôt EOLE avec la source test-eole.ac-dijon.fr
+Action update pour root                                                   [|]/]-]\]|]/]-]\]|]/]-]\]|]/]-]\]|]   
+Action list-upgrade pour root
+Mise à jour OK
+Aucun paquet à installer.
+Machine aca.eolebase 2.10.0 : ciMonitor python3 ==> RESULT=0
+* Install EAD3
+Machine aca.eolebase 2.10.0 : Installation paquets : eole-ead3
+Action install pour root
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+eole-ead3 est déjà la version la plus récente (2.10.0-4).
+eole-ead3 passé en « installé manuellement ».
+Les paquets suivants ont été installés automatiquement et ne sont plus nécessaires :
+  docbook-xml enchant-2 glib-networking glib-networking-common
+  glib-networking-services gstreamer1.0-gl gstreamer1.0-plugins-base
+  gstreamer1.0-plugins-good gstreamer1.0-x hunspell-en-us libaa1 libasyncns0
+  libatomic1 libavc1394-0 libcaca0 libcdparanoia0 libdv4t64 libenchant-2-2
+  libflac12t64 libgles2 libgraphene-1.0-0 libgstreamer-gl1.0-0
+  libgstreamer-plugins-base1.0-0 libgstreamer-plugins-good1.0-0 libhandy-1-0
+  libharfbuzz-icu0 libhunspell-1.7-0 libhyphen0 libiec61883-0
+  libjavascriptcoregtk-4.1-0 libmanette-0.2-0 libmp3lame0 libmpg123-0t64
+  libnautilus-extension4 libopus0 liborc-0.4-0t64 libproxy1v5 libpulse0
+  libraw1394-11 libshout3 libsndfile1 libsoup-3.0-0 libsoup-3.0-common
+  libspeex1 libtag1v5 libtag1v5-vanilla libtheora0 libtwolame0 libv4l-0t64
+  libv4lconvert0t64 libvisual-0.4-0 libvorbisenc2 libvpx9 libvte-2.91-0
+  libvte-2.91-common libwavpack1 libwebkit2gtk-4.1-0 libwebpdemux2 libwebpmux3
+  libwoff1 libyelp0 sgml-data xdg-dbus-proxy yelp yelp-xsl
+Veuillez utiliser « apt autoremove » pour les supprimer.
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+Machine aca.eolebase 2.10.0 : ----
+* Activer EAD3
+* reconfigure
+*********************************************
+Machine aca.eolebase 2.10.0 : (py3) ciMonitor reconfigure
+
+MONITOR: reconfigure
+[34m--------------------------------------------------------------------------------
+[39;49m[34m                             Début de configuration                             
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49m[34m                          Préparation pour reconfigure                          
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49mRestart Systemd service creoled                                         [  [92mOK[0m  ]
+[34m--------------------------------------------------------------------------------
+[39;49m[34m                              Gestion des paquets                               
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49mSuppression des paquets                                                         
+Action remove pour root
+Pas de paquet pour l'action remove
+Installation des paquets                                                        
+Vérification des paquets pour le conteneur root: eole-exim-pkg                  
+Action install pour root
+Pas de paquet pour l'action install
+[34m--------------------------------------------------------------------------------
+[39;49m[34m                        Exécution des scripts preservice                        
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49mrun-parts: executing /usr/share/eole/preservice/00-anetwork reconfigure
+run-parts: executing /usr/share/eole/preservice/00-snap-proxy reconfigure
+Exécuter la configuration du point d'accroche du paquet Snap "core"            /[0m[?25h[KExécuter la configuration du point d'accroche du paquet Snap "core"            /[0m[?25h[K[34m--------------------------------------------------------------------------------
+[39;49m[34m                               Arrêt des services                               
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49mStop Systemd services                                                     [|]/]-]\]|]   
+Service z_stats is not running                                          [  [92mOK[0m  ]
+Service bastion is not running                                          [  [92mOK[0m  ]
+Service nginx is not running                                            [  [92mOK[0m  ]
+Service eoleflask is not running                                        [  [92mOK[0m  ]
+Service exim4 is not running                                            [  [92mOK[0m  ]
+Service ead-web is not running                                          [  [92mOK[0m  ]
+Service ead-server is not running                                       [  [92mOK[0m  ]
+Service salt-minion-ead3 is not running                                 [  [92mOK[0m  ]
+Service salt-master-ead3 is not running                                 [  [92mOK[0m  ]
+Service salt-api-ead3 is not running                                    [  [92mOK[0m  ]
+Service nut-monitor is not running                                      [  [92mOK[0m  ]
+Service nut-server is not running                                       [  [92mOK[0m  ]
+Service systemd-timesyncd is not running                                [  [92mOK[0m  ]
+Service rng-tools is not running                                        [  [92mOK[0m  ]
+[34m--------------------------------------------------------------------------------
+[39;49m[34m                       Exécution des scripts pretemplate                        
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49mrun-parts: executing /usr/share/eole/pretemplate/00-letsencrypt reconfigure
+run-parts: executing /usr/share/eole/pretemplate/00-network reconfigure
+run-parts: executing /usr/share/eole/pretemplate/00-partitioning reconfigure
+run-parts: executing /usr/share/eole/pretemplate/00-resolvconf reconfigure
+run-parts: executing /usr/share/eole/pretemplate/00-reverseproxy reconfigure
+run-parts: executing /usr/share/eole/pretemplate/00-timezone reconfigure
+run-parts: executing /usr/share/eole/pretemplate/01-uucp reconfigure
+usermod : aucun changement
+[34m--------------------------------------------------------------------------------
+[39;49m[34m                             Redémarrage du réseau                              
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49mPurge de toutes les interfaces…
+Désactivation de l’interface 'enp2s0'…OK
+Purge des adresses IP de l’interface 'enp2s0'…OK
+Restart Systemd service systemd-networkd                                [  [92mOK[0m  ]
+[34m--------------------------------------------------------------------------------
+[39;49m[34m                   Génération des fichiers de configuration.                    
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49m[34m                           Configuration des services                           
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49mEnable Restart only service cron systemd-resolved ssh rsyslog
+Disable Systemd service rng-tools nut-server nut-monitor
+Enable Systemd service systemd-timesyncd salt-api-ead3 salt-master-ead3 salt-minion-ead3 ead-server ead-web exim4 eoleflask nginx bastion z_stats
+[34m--------------------------------------------------------------------------------
+[39;49m[34m                           Génération des certificats                           
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49mUpdating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+[34m--------------------------------------------------------------------------------
+[39;49m[34m                       Exécution des scripts posttemplate                       
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49mrun-parts: executing /usr/share/eole/posttemplate/00-alogs reconfigure
+run-parts: executing /usr/share/eole/posttemplate/00-backport-patches reconfigure
+run-parts: executing /usr/share/eole/posttemplate/00-eole-common reconfigure
+Purge log files with non-conventional names
+Erased files:
+	 
+Renamed files:
+	 
+Untouched files:
+	 
+Génération des règles de pare-feu
+Activation du mode forteresse sur enp2s0
+Le serveur est protégé. Pour relancer le pare-feu, exécuter "CreoleService bastion restart"
+run-parts: executing /usr/share/eole/posttemplate/00-filter-motd reconfigure
+run-parts: executing /usr/share/eole/posttemplate/00-systemd-resolved reconfigure
+run-parts: executing /usr/share/eole/posttemplate/00-upgrade-messages reconfigure
+run-parts: executing /usr/share/eole/posttemplate/01-ead reconfigure
+run-parts: executing /usr/share/eole/posttemplate/01-eoleflask-nginx reconfigure
+run-parts: executing /usr/share/eole/posttemplate/03-mail reconfigure
+run-parts: executing /usr/share/eole/posttemplate/10-eole-salt-dependencies reconfigure
+Install creole library to salt extras modules
+run-parts: executing /usr/share/eole/posttemplate/30-ewt-portal reconfigure
+run-parts: executing /usr/share/eole/posttemplate/51-ead3fileserver reconfigure
+run-parts: executing /usr/share/eole/posttemplate/70-eoleflask reconfigure
+[34m--------------------------------------------------------------------------------
+[39;49m[34m                        Application des paramètres Noyau                        
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49m[34m                             Démarrage des services                             
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49mStart Restart only services                                               [|]/]   
+Service cron is running                                                 [  [92mOK[0m  ]
+Service systemd-resolved is running                                     [  [92mOK[0m  ]
+Service ssh is running                                                  [  [92mOK[0m  ]
+Service rsyslog is running                                              [  [92mOK[0m  ]
+Start Systemd services                                                    [|]/]-]\]   
+Service systemd-timesyncd is running                                    [  [92mOK[0m  ]
+Service salt-api-ead3 is running                                        [  [92mOK[0m  ]
+Service salt-master-ead3 is running                                     [  [92mOK[0m  ]
+Service salt-minion-ead3 is running                                     [  [92mOK[0m  ]
+Service ead-server is running                                           [  [92mOK[0m  ]
+Service ead-web is running                                              [  [92mOK[0m  ]
+Service exim4 is running                                                [  [92mOK[0m  ]
+Service eoleflask is running                                            [  [92mOK[0m  ]
+Service nginx is running                                                [  [92mOK[0m  ]
+Service bastion is running                                              [  [92mOK[0m  ]
+Service z_stats is running                                              [  [92mOK[0m  ]
+[34m--------------------------------------------------------------------------------
+[39;49m[34m                       Gestion des utilisateurs systèmes                        
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49m[34m                       Exécution des scripts postservice                        
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49mrun-parts: executing /usr/share/eole/postservice/00-eole-common reconfigure
+run-parts: executing /usr/share/eole/postservice/00-letsencrypt reconfigure
+run-parts: executing /usr/share/eole/postservice/00-systemd-networkd reconfigure
+run-parts: executing /usr/share/eole/postservice/00-ubuntu-motd reconfigure
+run-parts: executing /usr/share/eole/postservice/26-actions reconfigure
+
+## Acceptation de la clé du minion local ##
+
+## Synchronisation des modules SaltStack ##
+[0;36mlocal[0;0m:
+run-parts: executing /usr/share/eole/postservice/99-check-console-setup reconfigure
+[34m--------------------------------------------------------------------------------
+[39;49m[34m                             Planificateur de tâche                             
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49m[33mTâches planifiées EOLE :
+[39;49m[33m * les tâches hebdomadaires se feront le lundi à 02:50 (hors sauvegarde)
+[39;49m[33m  - après sauvegarde
+[39;49m   + Mise à jour du serveur (majauto)
+[33mTâches désactivées EOLE :
+[39;49m   + Renouvellement du certificat Let's Encrypt (renew_lets_encrypt)
+   + Redémarrage du serveur (z_rebootauto)
+   + Arrêt du serveur (z_shutdownauto)
+   + Liste des mises à jour disponibles (queryauto)
+   + Reconfigure du serveur (y_reconfigureauto)
+[34m--------------------------------------------------------------------------------
+[39;49m[34m                        Finalisation de la configuration                        
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49m[34m                               Reconfiguration OK                               
+[39;49m[34m--------------------------------------------------------------------------------
+[39;49mMachine aca.eolebase 2.10.0 : ciMonitor python3 ==> RESULT=0

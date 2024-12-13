@@ -1,0 +1,176 @@
+Machine gateway-mensr  : Début ciContextualizeMachine : gateway-mensr, 
+TEMPLATE : VM_ONE=one, VM_ID=1271005, VM_OWNER=jenkins4, VM_DAEMON=start, VM_MACHINE=gateway-mensr
+TEMPLATE : VM_VERSIONMAJEUR=, VM_MAJAUTO=
+USER     : IP_GW=113, GW=192.168.230.113, IP_UTILISATEUR=192.168.230.43, MAIL=gilles.grandgerard@ac-dijon.fr
+FI       : IMAGE=ubuntu-24.04-server-amd64.fi, ISO=ubuntu-24.04-server-amd64.iso, MODULE=
+DAILY    : DATE=2024-05-10 21:38, MAJAUTO=
+MODELE   : VM_MODULE=, VM_CONTAINER=, VM_ETABLISSEMENT=
+ciExtendsLvmRoot
+*****************************************************************
+EOLE_CI_WARNING: impossible de trouver le dev LVM
+*****************************************************************
+Machine gateway-mensr  : Contextualisation gateway DNSMASQ AGENT_JENKINS (11:41:30)
+Machine gateway-mensr  : Gateway pour jenkins4 en cours de démarrage sur 'one'
+Machine gateway-mensr  :  * HACk snapd mal déinstallé
+Machine gateway-mensr  :  * Attention: systemd-resolved est actif, ce n'est pas normal
+Machine gateway-mensr  : * Set Hostname
+gateway113
+Machine gateway-mensr  : * /etc/hosts avant modification
+127.0.0.1 localhost
+127.0.1.1 ubuntu
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+Machine gateway-mensr  : * Désactive IPV6
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+* Correction timezone
+timedatectl = 0
+Etc/UTC
+Machine gateway-mensr  : * Definition de /etc/hosts AGENT JENKINS
+127.0.0.1   localhost.localdomain localhost
+127.0.1.1   gateway113
+192.168.230.113   gateway113.eole.lan gateway113
+192.168.230.113   gateway113.ac-test.fr gateway113
+192.168.0.1   gateway.ac-test.fr gateway
+192.168.227.1  gateway.eole.e2.rie.gouv.fr gatewayrie
+192.168.0.10   wpad.ac-test.fr
+192.168.230.70  gw-jenkins1.eole.lan
+192.168.230.82  gw-jenkins2.eole.lan
+192.168.230.112 gw-jenkins3.eole.lan
+192.168.230.113 gw-jenkins4.eole.lan
+192.168.230.114 gw-jenkins5.eole.lan
+192.168.230.116 gw-jenkins6.eole.lan
+192.168.230.117 gw-jenkins7.eole.lan
+192.168.230.118 gw-jenkins8.eole.lan
+192.168.230.119 gw-jenkins9.eole.lan
+192.168.230.128 gw-jenkins.eole.lan
+192.168.230.127 gw-ggrandgerard.eole.lan
+
+192.168.0.200 k8s.ac-test.fr k8s
+192.168.0.200 kubernetes-master.ac-test.fr kubernetes-master
+192.168.0.201 kubernetes-node201.ac-test.fr kubernetes-node201
+192.168.0.202 kubernetes-node202.ac-test.fr kubernetes-node202
+192.168.0.203 kubernetes-node203.ac-test.fr kubernetes-node203
+192.168.0.204 kubernetes-node204.ac-test.fr kubernetes-node204
+192.168.0.205 kubernetes-node205.ac-test.fr kubernetes-node205
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+* cat /etc/netplan/01-netcfg.yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp2s0:
+      dhcp4: yes
+      dhcp-identifier: mac
+* /bin/rm -f /etc/netplan/01-netcfg.yaml
+* cat /etc/netplan/50-cloud-init.yaml
+# This file is generated from information provided by the datasource.  Changes
+# to it will not persist across an instance reboot.  To disable cloud-init's
+# network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+network:
+    ethernets:
+        enp2s0:
+            dhcp4: true
+    version: 2
+* /bin/rm -f /etc/netplan/50-cloud-init.yaml
+ * /etc/netplan/00-installer-config.yaml n'existe pas, OK
+ * /etc/network/interfaces n'existe pas, OK
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Les paquets supplémentaires suivants seront installés : 
+  isc-dhcp-common
+Paquets suggérés :
+  avahi-autoipd isc-dhcp-client-ddns
+Les NOUVEAUX paquets suivants seront installés :
+  isc-dhcp-client isc-dhcp-common
+0 mis à jour, 2 nouvellement installés, 0 à enlever et 4 non mis à jour.
+Il est nécessaire de prendre 375 ko dans les archives.
+Après cette opération, 1 011 ko d'espace disque supplémentaires seront utilisés.
+Ign :1 http://fr.archive.ubuntu.com/ubuntu noble/universe amd64 isc-dhcp-client amd64 4.4.3-P1-4ubuntu2
+Ign :2 http://fr.archive.ubuntu.com/ubuntu noble/universe amd64 isc-dhcp-common amd64 4.4.3-P1-4ubuntu2
+Ign :1 http://fr.archive.ubuntu.com/ubuntu noble/universe amd64 isc-dhcp-client amd64 4.4.3-P1-4ubuntu2
+Ign :2 http://fr.archive.ubuntu.com/ubuntu noble/universe amd64 isc-dhcp-common amd64 4.4.3-P1-4ubuntu2
+Ign :1 http://fr.archive.ubuntu.com/ubuntu noble/universe amd64 isc-dhcp-client amd64 4.4.3-P1-4ubuntu2
+Ign :2 http://fr.archive.ubuntu.com/ubuntu noble/universe amd64 isc-dhcp-common amd64 4.4.3-P1-4ubuntu2
+Err :1 http://fr.archive.ubuntu.com/ubuntu noble/universe amd64 isc-dhcp-client amd64 4.4.3-P1-4ubuntu2
+  Erreur temporaire de résolution de « fr.archive.ubuntu.com »
+Err :2 http://fr.archive.ubuntu.com/ubuntu noble/universe amd64 isc-dhcp-common amd64 4.4.3-P1-4ubuntu2
+  Erreur temporaire de résolution de « fr.archive.ubuntu.com »
+E: Impossible de récupérer http://fr.archive.ubuntu.com/ubuntu/pool/universe/i/isc-dhcp/isc-dhcp-client_4.4.3-P1-4ubuntu2_amd64.deb  Erreur temporaire de résolution de « fr.archive.ubuntu.com »
+E: Impossible de récupérer http://fr.archive.ubuntu.com/ubuntu/pool/universe/i/isc-dhcp/isc-dhcp-common_4.4.3-P1-4ubuntu2_amd64.deb  Erreur temporaire de résolution de « fr.archive.ubuntu.com »
+E: Impossible de récupérer certaines archives, peut-être devrez-vous lancer apt-get update ou essayer avec --fix-missing ?
+* detach DHCP 1715946098
+/mnt/eole-ci-tests/configuration/gateway/contextualize_routeur_ubuntu_dnsmasq.sh: line 209: dhclient: command not found
+* apres detach DHCP => 127 date=1715946098
+* set ip static for enp2s0
+* set ip static for enp3s0
+* set ip static for enp4s0
+* set ip static for enp5s0
+ * is-enabled systemd-networkd.service ?
+enabled
+ * systemd-networkd.service is enable
+inactive
+ * systemd-networkd.service is NOT ACTIVE
+Machine gateway-mensr  : * Définition /etc/hosts.allow
+sshd:0.0.0.0/0.0.0.0
+Machine gateway-mensr  : * Création /root/.ssh/authorized_keys
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/antoine@ratatosk.pub'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/arno@arno-desktop'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/barco@barco-zotac'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/bbohard@isk'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/bruno@bruno-zotac'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/carre-p@pcarre-debian'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/Clement21000@eole-TravelMate-P238-M'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/corentin@corentin-ThinkPad-L390-Yoga'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/dad@daniel'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/edouard@edouard-MS-B09611'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/emonnot.pub'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/Emonnot.pub'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/gilles@gilles-nuc.ed25519'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/gilles@gilles-thinkpad.ed25519'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/hamza.pub'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/jason@vincent-ThinkPad-X13'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/jenkins@jenkins-one'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/jojo@chablis'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/jojo@jojo-zotac'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/julien@abydos'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/k@kls'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/lgourvenec@debiang'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/lolo@laurent'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/lseys@lseys-W65-W67RZ1'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/luc@luc-nuc'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/mlamalle@cadoles.com.pub'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/pcaseiro@volantis'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/root@gateway106'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/spaillet@laptop.pub'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/teebee44@hoth'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/thijamb@thierryj'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/vfebvre@asus'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/vincent.fontesse@inetum.com'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/vincenttsacalides@inetum.com'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/wpetit@cadoles.com.pub'
+Machine gateway-mensr  :   Ajout '/mnt/eole-ci-tests/security/authorized_keys/yo@yo-desktop'
+Machine gateway-mensr  : * Creation lien gateway dans VM_DIR 
+Machine gateway-mensr  : * disable old services
+Machine gateway-mensr  : * Notify utilisateur
+Machine gateway-mensr  : Contextualisation sur 'one' pour 'jenkins4' OK
+Machine gateway-mensr  : * Fin ok
+Machine gateway-mensr  : Démarrée en 
+Machine gateway-mensr  : Contextualization Machine OK
+Machine gateway-mensr  : jenkins4 1271005 gateway-mensr Contextualization Machine : OK
+Machine gateway-mensr  : Fin ciContextualizeMachine : ok à 2024-05-17 13:41:38

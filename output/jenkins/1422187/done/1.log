@@ -1,0 +1,143 @@
+Machine daily 3.0 : ciUpdateDaily BUILD_DAILY
+Machine daily 3.0 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 3.0 : liste des noyaux
+-rw------- 1 root root 11619464 oct.  30  2023 /boot/vmlinuz-5.15.0-89-generic
+-rw------- 1 root root 11615272 nov.  14  2023 /boot/vmlinuz-5.15.0-91-generic
+Machine daily 3.0 : * espaces disponibles
+Filesystem                        Type  Size  Used Avail Use% Mounted on
+/dev/mapper/ubuntu--vg-ubuntu--lv ext4   26G   23G  1,6G  94% /
+/dev/mapper/ubuntu--vg-home       ext4   13G   54k   13G   1% /home
+/dev/sda2                         ext4  1,1G  254M  698M  27% /boot
+Machine daily 3.0 : ciSetHttpProxy, pas de proxy pour les Daily
+Machine daily 3.0 : dpkg --configure -a
+Machine daily 3.0 : ciTestHttp : Test accés dépot 'http://ftp.crihan.fr/ubuntu/dists' : OK
+Machine daily 3.0 : ciTestHttp : Test accés dépot 'http://eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 3.0 : ciTestHttp : Test accés dépot 'http://test-eole.ac-dijon.fr/ubuntu/dists' : OK
+Machine daily 3.0 : Maj-Auto DEV
+*********************************************
+Machine daily 3.0 : (py3) ciMonitor maj_auto
+
+monitor_maj_auto: pas de config.eol, donc utilise '-i' !
+
+MONITOR: apt-get update
+0% [Working]            Hit:1 http://fr.archive.ubuntu.com/ubuntu jammy InRelease
+0% [Working]            Get:2 http://fr.archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+0% [2 InRelease 12.3 kB/128 kB 10%]                                   0% [Working]            Get:3 http://fr.archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+0% [3 InRelease 7047 B/127 kB 6%]0% [3 InRelease 127 kB/127 kB 100%]                                   0% [Waiting for headers]                        Get:4 http://fr.archive.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+0% [4 InRelease 6114 B/129 kB 5%]                                 0% [Working]0% [Working]            Get:5 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [2193 kB]
+0% [5 Packages 8064 B/2193 kB 0%]0% [5 Packages 2060 kB/2193 kB 94%]                                   0% [Working]0% [5 Packages store 0 B] [Waiting for headers]                                               Get:6 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [374 kB]
+0% [5 Packages store 0 B] [6 Translation-en 36.0 kB/374 kB 10%]                                                               0% [5 Packages store 0 B] [Waiting for headers]                                               Get:7 http://fr.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [2733 kB]
+0% [5 Packages store 0 B] [7 Packages 77.8 kB/2733 kB 3%]                                                         0% [5 Packages store 0 B] [Waiting for headers]                                               Get:8 http://fr.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [477 kB]
+0% [5 Packages store 0 B] [8 Translation-en 80.6 kB/477 kB 17%]                                                               Get:9 http://fr.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1180 kB]
+                                                               0% [5 Packages store 0 B] [9 Packages 62.7 kB/1180 kB 5%]                                                         Get:10 http://fr.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [288 kB]
+0% [5 Packages store 0 B] [10 Translation-en 288 kB/288 kB 100%]                                                                0% [5 Packages store 0 B]61% [5 Packages store 0 B]                          Get:11 http://fr.archive.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1968 kB]
+62% [5 Packages store 0 B] [11 Packages 28.7 kB/1968 kB 1%]                                                           73% [5 Packages store 0 B]                          Get:12 http://fr.archive.ubuntu.com/ubuntu jammy-security/main Translation-en [314 kB]
+73% [5 Packages store 0 B] [12 Translation-en 34.3 kB/314 kB 11%]                                                                 75% [5 Packages store 0 B] [Waiting for headers]                                                Get:13 http://fr.archive.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [2644 kB]
+75% [5 Packages store 0 B] [13 Packages 47.5 kB/2644 kB 2%]                                                           Get:14 http://fr.archive.ubuntu.com/ubuntu jammy-security/restricted Translation-en [460 kB]
+90% [5 Packages store 0 B] [14 Translation-en 70.8 kB/460 kB 15%]                                                                 Get:15 http://fr.archive.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [958 kB]
+                                                                 93% [5 Packages store 0 B] [15 Packages 44.6 kB/958 kB 5%]                                                          98% [5 Packages store 0 B]                          98% [Working]98% [6 Translation-en store 0 B]                                98% [Working]98% [7 Packages store 0 B]                          98% [Working]98% [8 Translation-en store 0 B]                                99% [Working]99% [9 Packages store 0 B]                          99% [Working]99% [10 Translation-en store 0 B]                                 99% [Working]99% [11 Packages store 0 B]                           99% [Working]99% [12 Translation-en store 0 B]                                 99% [Working]99% [13 Packages store 0 B]                           100% [Working]100% [14 Translation-en store 0 B]                                  100% [Working]100% [15 Packages store 0 B]                            100% [Working]              Fetched 14.0 MB in 3s (5034 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 2%Reading package lists... 2%Reading package lists... 4%Reading package lists... 4%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 32%Reading package lists... 32%Reading package lists... 45%Reading package lists... 45%Reading package lists... 53%Reading package lists... 53%Reading package lists... 54%Reading package lists... 54%Reading package lists... 54%Reading package lists... 54%Reading package lists... 54%Reading package lists... 54%Reading package lists... 56%Reading package lists... 59%Reading package lists... 59%Reading package lists... 63%Reading package lists... 63%Reading package lists... 69%Reading package lists... 69%Reading package lists... 73%Reading package lists... 73%Reading package lists... 76%Reading package lists... 76%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 82%Reading package lists... 82%Reading package lists... 86%Reading package lists... 86%Reading package lists... 92%Reading package lists... 92%Reading package lists... 96%Reading package lists... 96%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+
+MONITOR: apt-get upgrade -y
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+Calculating upgrade... 0%Calculating upgrade... 50%Calculating upgrade... Done
+The following packages have been kept back:
+  dmidecode gir1.2-packagekitglib-1.0 libpackagekit-glib2-18 linux-generic
+  linux-headers-generic linux-image-generic packagekit packagekit-tools
+  sosreport ubuntu-advantage-tools ubuntu-pro-client-l10n
+0 upgraded, 0 newly installed, 0 to remove and 11 not upgraded.
+Lecture des listes de paquets… 0%Lecture des listes de paquets… 100%Lecture des listes de paquets... Fait
+Construction de l'arbre des dépendances… 0%Construction de l'arbre des dépendances… 0%Construction de l'arbre des dépendances… 50%Construction de l'arbre des dépendances… 50%Construction de l'arbre des dépendances... Fait
+Lecture des informations d'état… 0%          Lecture des informations d'état… 0%Lecture des informations d'état... Fait
+Calcul de la mise à jour… 0%Calcul de la mise à jour… 50%Calcul de la mise à jour... Fait
+Les paquets suivants ont été conservés :
+  dmidecode gir1.2-packagekitglib-1.0 libpackagekit-glib2-18 linux-generic
+  linux-headers-generic linux-image-generic packagekit packagekit-tools
+  sosreport ubuntu-advantage-tools ubuntu-pro-client-l10n
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 11 non mis à jour.
+Machine daily 3.0 : ciMonitor python3 ==> RESULT=0
+--------------------------------------------
+cat /etc/apt/sources.list
+# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+deb http://fr.archive.ubuntu.com/ubuntu jammy main restricted
+# deb-src http://fr.archive.ubuntu.com/ubuntu jammy main restricted
+
+## Major bug fix updates produced after the final release of the
+## distribution.
+deb http://fr.archive.ubuntu.com/ubuntu jammy-updates main restricted
+# deb-src http://fr.archive.ubuntu.com/ubuntu jammy-updates main restricted
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team. Also, please note that software in universe WILL NOT receive any
+## review or updates from the Ubuntu security team.
+deb http://fr.archive.ubuntu.com/ubuntu jammy universe
+# deb-src http://fr.archive.ubuntu.com/ubuntu jammy universe
+deb http://fr.archive.ubuntu.com/ubuntu jammy-updates universe
+# deb-src http://fr.archive.ubuntu.com/ubuntu jammy-updates universe
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team, and may not be under a free licence. Please satisfy yourself as to
+## your rights to use the software. Also, please note that software in
+## multiverse WILL NOT receive any review or updates from the Ubuntu
+## security team.
+deb http://fr.archive.ubuntu.com/ubuntu jammy multiverse
+# deb-src http://fr.archive.ubuntu.com/ubuntu jammy multiverse
+deb http://fr.archive.ubuntu.com/ubuntu jammy-updates multiverse
+# deb-src http://fr.archive.ubuntu.com/ubuntu jammy-updates multiverse
+
+## N.B. software from this repository may not have been tested as
+## extensively as that contained in the main release, although it includes
+## newer versions of some applications which may provide useful features.
+## Also, please note that software in backports WILL NOT receive any review
+## or updates from the Ubuntu security team.
+deb http://fr.archive.ubuntu.com/ubuntu jammy-backports main restricted universe multiverse
+# deb-src http://fr.archive.ubuntu.com/ubuntu jammy-backports main restricted universe multiverse
+
+## Uncomment the following two lines to add software from Canonical's
+## 'partner' repository.
+## This software is not part of Ubuntu, but is offered by Canonical and the
+## respective vendors as a service to Ubuntu users.
+# deb http://archive.canonical.com/ubuntu jammy partner
+# deb-src http://archive.canonical.com/ubuntu jammy partner
+
+deb http://fr.archive.ubuntu.com/ubuntu jammy-security main restricted
+# deb-src http://fr.archive.ubuntu.com/ubuntu jammy-security main restricted
+deb http://fr.archive.ubuntu.com/ubuntu jammy-security universe
+# deb-src http://fr.archive.ubuntu.com/ubuntu jammy-security universe
+deb http://fr.archive.ubuntu.com/ubuntu jammy-security multiverse
+# deb-src http://fr.archive.ubuntu.com/ubuntu jammy-security multiverse
+--------------------------------------------
+Machine daily 3.0 : GenConteneur
+*********************************************
+* Pas de conteneurs pour ce module.
+*********************************************
+Machine daily 3.0 : Pas de fichier startup '/mnt/eole-ci-tests/module/UpdateDaily-base.sh' 
+Machine daily 3.0 : Test CVE Noyau
+0
+Machine daily 3.0 : autoremove pour les anciens noyaux
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 11 non mis à jour.
+/usr/bin/shellcheck
+Machine daily 3.0 : Tag l'Image Daily
+DAILY_CONTAINER=non
+DAILY_DATEUPDATE=1734044019
+DAILY_DATE='2024-12-12 22:53'
+DAILY_MAJAUTO=DEV
+Machine daily 3.0 : Check Update Service
+/etc/systemd/system/EoleCiTestsContext.service A JOUR
+CheckUpdateService.sh: systemctl enable 'EoleCiTestsContext.service'
+Removed /etc/systemd/system/network.target.wants/EoleCiTestsContext.service.
+Created symlink /etc/systemd/system/network.target.wants/EoleCiTestsContext.service → /etc/systemd/system/EoleCiTestsContext.service.
+CheckUpdateService.sh: systemctl daemon-reload
+/etc/systemd/system/EoleCiTestsDaemon.service A JOUR
+CheckUpdateService.sh: systemctl enable 'EoleCiTestsDaemon.service'
+Removed /etc/systemd/system/multi-user.target.wants/EoleCiTestsDaemon.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/EoleCiTestsDaemon.service → /etc/systemd/system/EoleCiTestsDaemon.service.
+CheckUpdateService.sh: systemctl daemon-reload
+Machine daily 3.0 : Trim disk
+Machine daily 3.0 : ciUpdateDaily DEV : OK

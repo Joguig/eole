@@ -1,0 +1,87 @@
+Machine aca.dc1 2.8.0 : ciRunPython(3) /usr/bin/CreoleLint
+
+DTD Non valide (valid_dtd:ERROR:error)
+
+Lint wrong_dicos_name désactivé (niveau info)
+
+Tabulation dans le dictionnaire au lieu de 4 espaces (tabs_in_dicos:NAME:warning)
+ \-- /usr/share/eole/creole/dicos/25_smb_ad.xml
+
+Libellé de variable non valide dans un dictionnaire (valid_var_label:NAME:warning)
+ \-- %%activer_apache : phrase sans majuscule
+ \-- %%activer_sso : phrase sans majuscule
+ \-- %%activer_web_behind_revproxy : phrase sans majuscule
+ \-- %%activer_winbind : phrase sans majuscule
+ \-- %%test_activer_genconfig_nginx : nginx => Nginx
+ \-- %%test_activer_minimal_nginx : nginx => Nginx
+ \-- %%web_behind_revproxy_ip : phrase sans majuscule
+
+Libellé de séparateur non valide dans un dictionnaire (valid_separator_label:NAME:warning)
+ \-- %%activer_exim_relay_smtp : Relai => relai
+
+Libellé d'aide non valide dans un dictionnaire (valid_help_label:NAME:warning)
+ \-- %%test_activer_minimal_nginx : nginx => Nginx
+
+Variable d'activation sans balise d'aide (activation_var_without_help:NAME:warning)
+ \-- activer_antispoofing
+ \-- activer_apache
+ \-- activer_bonding_eth0
+ \-- activer_bonding_eth1
+ \-- activer_bonding_eth2
+ \-- activer_bonding_eth3
+ \-- activer_bonding_eth4
+ \-- activer_envoi_logs
+ \-- activer_firewall
+ \-- activer_log_distant
+ \-- activer_reception_logs
+ \-- activer_reception_logs_relp
+ \-- activer_reception_logs_tcp
+ \-- activer_reception_logs_udp
+ \-- activer_revprox_ead
+ \-- activer_revprox_rewrite
+ \-- activer_scandir
+ \-- activer_sso
+ \-- activer_web_behind_revproxy
+ \-- activer_winbind
+
+Famille sans balise d'aide (family_without_help:NAME:warning)
+ \-- applications_web
+ \-- clamav
+ \-- containers
+ \-- eole_sso
+ \-- machine_virtuelle
+ \-- mots_de_passe
+ \-- reseau_avance
+
+Famille sans icône spécifique (family_without_icon:NAME:warning)
+ \-- applications_web
+ \-- eole_sso
+
+Template Non valide (valid_parse_tmpl:ERROR:error)
+ \-- template desactivé : /usr/share/eole/creole/distrib/hosts
+ \-- template desactivé : /usr/share/eole/creole/distrib/named.conf
+ \-- template desactivé : /usr/share/eole/creole/distrib/zstats.cfg
+ \-- template desactivé : /usr/share/eole/creole/distrib/dhcpd.conf
+ \-- /usr/share/eole/creole/distrib/nginx-minimal.conf
+ \-- /usr/share/eole/creole/distrib/hosts.allow
+ \-- /usr/share/eole/creole/distrib/container.lockfile
+ \-- fichier non présent dans un dictionnaire /usr/share/eole/creole/distrib/mirrors_eole.cfg
+ \-- /usr/share/eole/creole/distrib/ead.cfg
+ \-- /usr/share/eole/creole/distrib/exim-rewrite.conf
+ \-- /usr/share/eole/creole/distrib/dhclient.conf
+pas de templating !
+ \-- /usr/share/eole/creole/distrib/eolerc.sh
+ \-- /usr/share/eole/creole/distrib/nginx.index.html
+ \-- /usr/share/eole/creole/distrib/clamd.conf
+ \-- /usr/share/eole/creole/distrib/ups.conf
+ \-- /usr/share/eole/creole/distrib/minion
+pas de templating !
+ \-- /usr/share/eole/creole/distrib/hosts.deny
+ \-- /usr/share/eole/creole/distrib/bareos-mail.conf
+pas de templating !
+ \-- /usr/share/eole/creole/distrib/interface_3.conf
+ \-- /usr/share/eole/creole/distrib/ead3.nginx.conf
+ \-- /usr/share/eole/creole/distrib/ead3.apache_nginx.conf
+ \-- /usr/share/eole/creole/distrib/02eoleproxy
+ \-- /usr/share/eole/creole/distrib/ouvre.firewall
+ \-- /usr/share/eole/creole/distrib/samba4-vars.conf

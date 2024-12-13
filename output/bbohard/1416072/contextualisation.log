@@ -1,0 +1,42 @@
+Machine etb3.amonecole 2.8.1 : Début ciContextualizeMachine : etb3.amonecole, amonecole
+Machine etb3.amonecole 2.8.1 : Début ciContextualizeModuleEole
+Machine etb3.amonecole 2.8.1 : ciContextualisationMinimale:
+Machine etb3.amonecole 2.8.1 : rm /etc/netplan/* désactivé !
+Machine etb3.amonecole 2.8.1 : Inject /etc/hosts
+Machine etb3.amonecole 2.8.1 : ciContextualisationMinimaleSystemd
+Machine etb3.amonecole 2.8.1 : Inject /etc/hostname
+Machine etb3.amonecole 2.8.1 : ls -l /etc/netplan/
+total 4
+-rw------- 1 root root 110 nov.  21 17:46 01-netcfg.yaml
+Machine etb3.amonecole 2.8.1 : ciContextualisationMinimaleSystemdServer
+Machine etb3.amonecole 2.8.1 : Inject /etc/resolv.conf
+Machine etb3.amonecole 2.8.1 : /bin/rm -f /etc/resolv.conf (pour casser le lien!)
+Machine etb3.amonecole 2.8.1 : ls -l /etc/netplan
+total 4
+-rw------- 1 root root 110 nov.  21 17:46 01-netcfg.yaml
+Machine etb3.amonecole 2.8.1 : netoyage si besoin /etc/network/interfaces /etc/netplan/01-network-manager-all.yaml /etc/netplan/00-installer-config.yaml /etc/netplan/50-cloud-init.yaml
+Machine etb3.amonecole 2.8.1 : Inject /etc/netplan/01-netcfg.yaml avant 22.04
+Machine etb3.amonecole 2.8.1 : netplan generate --debug
+DEBUG:command generate: running ['/lib/netplan/generate']
+** (generate:731): DEBUG: 15:44:04.973: starting new processing pass
+** (generate:731): DEBUG: 15:44:04.973: We have some netdefs, pass them through a final round of validation
+** (generate:731): DEBUG: 15:44:04.974: ens5: setting default backend to 1
+** (generate:731): DEBUG: 15:44:04.974: Configuration is valid
+** (generate:731): DEBUG: 15:44:04.974: ens4: setting default backend to 1
+** (generate:731): DEBUG: 15:44:04.974: Configuration is valid
+** (generate:731): DEBUG: 15:44:04.974: Generating output files..
+** (generate:731): DEBUG: 15:44:04.975: openvswitch: definition ens4 is not for us (backend 1)
+** (generate:731): DEBUG: 15:44:04.975: NetworkManager: definition ens4 is not for us (backend 1)
+** (generate:731): DEBUG: 15:44:04.975: openvswitch: definition ens5 is not for us (backend 1)
+** (generate:731): DEBUG: 15:44:04.975: NetworkManager: definition ens5 is not for us (backend 1)
+(generate:731): GLib-DEBUG: 15:44:04.976: posix_spawn avoided (fd close requested) 
+(generate:731): GLib-DEBUG: 15:44:04.999: posix_spawn avoided (fd close requested) 
+Machine etb3.amonecole 2.8.1 : Inject authorized_keys
+Machine etb3.amonecole 2.8.1 : Actualisation /root/.ssh/authorized_keys
+Machine etb3.amonecole 2.8.1 : Inject bash_history
+Machine etb3.amonecole 2.8.1 : Contextualisation minimale OK
+Machine etb3.amonecole 2.8.1 : Fin ciContextualisationMinimale
+Machine etb3.amonecole 2.8.1 : Fin ciContextualizeModuleEole
+Machine etb3.amonecole 2.8.1 : Contextualization Machine OK
+Machine etb3.amonecole 2.8.1 : bbohard 1416072 etb3.amonecole Contextualization Machine : OK
+Machine etb3.amonecole 2.8.1 : Fin ciContextualizeMachine : ok à 2024-12-04 15:44:05

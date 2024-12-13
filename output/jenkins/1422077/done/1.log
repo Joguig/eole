@@ -1,0 +1,394 @@
+* Kubernetes 
+Machine update  : * doUbuntu
+Machine update  : * waitAptStopped
+10, lock : 
+Ok, Stop 
+Machine update  : * removeServicesGenant
+* --------------------------------------------------------------------
+* doAptGet remove -y ufw (11)
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Le paquet « ufw » n'est pas installé, et ne peut donc être supprimé
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 1 non mis à jour.
+* doAptGet remove -y ufw --> 0
+* --------------------------------------------------------------------
+* --------------------------------------------------------------------
+* doAptGet remove -y unattended-upgrades (11)
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Le paquet « unattended-upgrades » n'est pas installé, et ne peut donc être supprimé
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 1 non mis à jour.
+* doAptGet remove -y unattended-upgrades --> 0
+* --------------------------------------------------------------------
+* --------------------------------------------------------------------
+* doAptGet remove -y linux-kvm (12)
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Le paquet « linux-kvm » n'est pas installé, et ne peut donc être supprimé
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 1 non mis à jour.
+* doAptGet remove -y linux-kvm --> 0
+* --------------------------------------------------------------------
+* --------------------------------------------------------------------
+* doAptGet remove -y cloud-init (13)
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Le paquet « cloud-init » n'est pas installé, et ne peut donc être supprimé
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 1 non mis à jour.
+* doAptGet remove -y cloud-init --> 0
+* --------------------------------------------------------------------
+* --------------------------------------------------------------------
+* doAptGet -y --purge autoremove (13)
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 1 non mis à jour.
+* doAptGet -y --purge autoremove --> 0
+* --------------------------------------------------------------------
+Machine update  : * conf Grub to 1024x768
+Machine update  : * doUpgrade
+* cat /etc/apt/sources.list
+deb http://fr.archive.ubuntu.com/ubuntu jammy main restricted
+
+deb http://fr.archive.ubuntu.com/ubuntu jammy-updates main restricted
+
+deb http://fr.archive.ubuntu.com/ubuntu jammy universe
+deb http://fr.archive.ubuntu.com/ubuntu jammy-updates universe
+
+deb http://fr.archive.ubuntu.com/ubuntu jammy multiverse
+deb http://fr.archive.ubuntu.com/ubuntu jammy-updates multiverse
+
+deb http://fr.archive.ubuntu.com/ubuntu jammy-backports main restricted universe multiverse
+
+
+deb http://fr.archive.ubuntu.com/ubuntu jammy-security main restricted
+deb http://fr.archive.ubuntu.com/ubuntu jammy-security universe
+deb http://fr.archive.ubuntu.com/ubuntu jammy-security multiverse
+Machine update  : * waitAptStopped
+10, lock : 
+Ok, Stop 
+Machine update  : * doAptGetWithRetry with retry : update
+* --------------------------------------------------------------------
+* doAptGet update (0)
+Atteint :1 http://fr.archive.ubuntu.com/ubuntu jammy InRelease
+Réception de :2 http://fr.archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Réception de :4 http://fr.archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+Réception de :5 http://fr.archive.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Réception de :6 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [2 193 kB]
+Ign :3 https://packages.cloud.google.com/apt kubernetes-xenial InRelease
+Réception de :7 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [374 kB]
+Réception de :8 http://fr.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [2 733 kB]
+Réception de :10 http://fr.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [477 kB]
+Réception de :11 http://fr.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1 180 kB]
+Err :9 https://packages.cloud.google.com/apt kubernetes-xenial Release
+  404  Not Found [IP : 142.251.37.206 443]
+Réception de :12 http://fr.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [288 kB]
+Réception de :13 http://fr.archive.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1 968 kB]
+Réception de :14 http://fr.archive.ubuntu.com/ubuntu jammy-security/main Translation-en [314 kB]
+Réception de :15 http://fr.archive.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [2 644 kB]
+Réception de :16 http://fr.archive.ubuntu.com/ubuntu jammy-security/restricted Translation-en [460 kB]
+Réception de :17 http://fr.archive.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [958 kB]
+Lecture des listes de paquets…
+E: Le dépôt http://apt.kubernetes.io kubernetes-xenial Release ne contient plus de fichier Release.
+* doAptGet update --> 100
+* --------------------------------------------------------------------
+Ok, Stop 
+Machine update  : * doAptGetWithRetry with retry : -y --force-yes upgrade
+* --------------------------------------------------------------------
+* doAptGet -y --force-yes upgrade (0)
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+Les paquets suivants ont été conservés :
+  dmidecode gir1.2-packagekitglib-1.0 libpackagekit-glib2-18 packagekit
+  packagekit-tools
+Les paquets suivants seront mis à jour :
+  sosreport
+1 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Il est nécessaire de prendre 352 ko dans les archives.
+Après cette opération, 3 072 o d'espace disque supplémentaires seront utilisés.
+Réception de :1 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 sosreport amd64 4.7.2-0ubuntu1~22.04.2 [352 kB]
+352 ko réceptionnés en 0s (2 192 ko/s)
+(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 116051 fichiers et répertoires déjà installés.)
+Préparation du dépaquetage de .../sosreport_4.7.2-0ubuntu1~22.04.2_amd64.deb ...
+Dépaquetage de sosreport (4.7.2-0ubuntu1~22.04.2) sur (4.7.2-0ubuntu1~22.04.1) ...
+Paramétrage de sosreport (4.7.2-0ubuntu1~22.04.2) ...
+Traitement des actions différées (« triggers ») pour man-db (2.10.2-1) ...
+packages have been installed but needrestart is suspended
+W: --force-yes est obsolète, veuillez plutôt utiliser l'une des options commençant par --allow.
+* doAptGet -y --force-yes upgrade --> 0
+* --------------------------------------------------------------------
+Ok, Stop 
+Machine update  : * doAptGetWithRetry with retry : -y --force-yes dist-upgrade
+* --------------------------------------------------------------------
+* doAptGet -y --force-yes dist-upgrade (0)
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Calcul de la mise à jour…
+Les paquets suivants ont été conservés :
+  dmidecode gir1.2-packagekitglib-1.0 libpackagekit-glib2-18 packagekit
+  packagekit-tools
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+W: --force-yes est obsolète, veuillez plutôt utiliser l'une des options commençant par --allow.
+* doAptGet -y --force-yes dist-upgrade --> 0
+* --------------------------------------------------------------------
+Ok, Stop 
+** doAptGet -y --purge autoremove
+* --------------------------------------------------------------------
+* doAptGet -y --purge autoremove (1)
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+* doAptGet -y --purge autoremove --> 0
+* --------------------------------------------------------------------
+Machine update  : * removeServicesGenant
+* --------------------------------------------------------------------
+* doAptGet remove -y ufw (2)
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Le paquet « ufw » n'est pas installé, et ne peut donc être supprimé
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+* doAptGet remove -y ufw --> 0
+* --------------------------------------------------------------------
+* --------------------------------------------------------------------
+* doAptGet remove -y unattended-upgrades (2)
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Le paquet « unattended-upgrades » n'est pas installé, et ne peut donc être supprimé
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+* doAptGet remove -y unattended-upgrades --> 0
+* --------------------------------------------------------------------
+* --------------------------------------------------------------------
+* doAptGet remove -y linux-kvm (3)
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Le paquet « linux-kvm » n'est pas installé, et ne peut donc être supprimé
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+* doAptGet remove -y linux-kvm --> 0
+* --------------------------------------------------------------------
+* --------------------------------------------------------------------
+* doAptGet remove -y cloud-init (3)
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Le paquet « cloud-init » n'est pas installé, et ne peut donc être supprimé
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+* doAptGet remove -y cloud-init --> 0
+* --------------------------------------------------------------------
+* --------------------------------------------------------------------
+* doAptGet -y --purge autoremove (4)
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+* doAptGet -y --purge autoremove --> 0
+* --------------------------------------------------------------------
+Impose ubuntu pour 127.0.1.1
+Machine update  : * sshAccesRoot
+PermitRootLogin yes
+# the setting of "PermitRootLogin without-password".
+Machine update  : * AllowAgentForwarding
+Machine update  : * sshAccesRoot
+PermitRootLogin yes
+# the setting of "PermitRootLogin without-password".
+Machine update  : * AllowAgentForwarding
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+hwinfo est déjà la version la plus récente (21.72-1).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+less est déjà la version la plus récente (590-1ubuntu0.22.04.3).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+xauth est déjà la version la plus récente (1:1.1-1build2).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+iputils-ping est déjà la version la plus récente (3:20211215-1).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+dnsutils est déjà la version la plus récente (1:9.18.28-0ubuntu0.22.04.1).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+openssl est déjà la version la plus récente (3.0.2-0ubuntu1.18).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+python-pip est déjà la version la plus récente (20.3.4+dfsg-4).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+Le paquet « lighttpd » n'est pas installé, et ne peut donc être supprimé
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+jq est déjà la version la plus récente (1.6-2.1ubuntu3).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+apt-transport-https est déjà la version la plus récente (2.4.13).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+curl est déjà la version la plus récente (7.81.0-1ubuntu1.19).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+ca-certificates est déjà la version la plus récente (20240203~22.04.1).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+gnupg est déjà la version la plus récente (2.2.27-3ubuntu2.1).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+lsb-release est déjà la version la plus récente (11.1.0ubuntu4).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+software-properties-common est déjà la version la plus récente (0.99.22.9).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Installation Docker depuis Ubuntu !
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+docker.io est déjà la version la plus récente (24.0.7-0ubuntu2~22.04.1).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+* docker version
+Client:
+ Version:           24.0.7
+ API version:       1.43
+ Go version:        go1.21.1
+ Git commit:        24.0.7-0ubuntu2~22.04.1
+ Built:             Wed Mar 13 20:23:54 2024
+ OS/Arch:           linux/amd64
+ Context:           default
+
+Server:
+ Engine:
+  Version:          24.0.7
+  API version:      1.43 (minimum version 1.12)
+  Go version:       go1.21.1
+  Git commit:       24.0.7-0ubuntu2~22.04.1
+  Built:            Wed Mar 13 20:23:54 2024
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.7.12
+  GitCommit:        
+ runc:
+  Version:          1.1.12-0ubuntu2~22.04.1
+  GitCommit:        
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        
+Installation de Kubernetes
+Désactive le swap ([voir les prérequis officiels](https://kubernetes.io/docs/setup/independent/install-kubeadm/#before-you-begin))
+Commenter la ligne swap dans /etc/fstab
+Check /etc/fstab
+/swap.img	none	swap	sw	0	0
+Installer kubeadm, kubelet et kubectl
+Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+OK
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   138  100   138    0     0    560      0 --:--:-- --:--:-- --:--:--   563
+  8 54.6M    8 4938k    0     0  6264k      0  0:00:08 --:--:--  0:00:08 6264k 74 54.6M   74 40.5M    0     0  22.3M      0  0:00:02  0:00:01  0:00:01 34.8M100 54.6M  100 54.6M    0     0  24.4M      0  0:00:02  0:00:02 --:--:-- 34.4M
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   138  100   138    0     0    570      0 --:--:-- --:--:-- --:--:--   570
+100    64  100    64    0     0    171      0 --:--:-- --:--:-- --:--:--   171
+kubectl: OK
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+ipvsadm est déjà la version la plus récente (1:1.31-1build2).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+kubelet est déjà la version la plus récente (1.28.2-00).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+kubeadm est déjà la version la plus récente (1.28.2-00).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+kubectl est déjà la version la plus récente (1.28.2-00).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+kubernetes-cni est déjà la version la plus récente (1.2.0-00).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+pré télécharger les images 'system' Kubernetes
+I1212 20:55:14.306867    2744 version.go:256] remote version is much newer: v1.32.0; falling back to: stable-1.28
+[config/images] Pulled registry.k8s.io/kube-apiserver:v1.28.15
+[config/images] Pulled registry.k8s.io/kube-controller-manager:v1.28.15
+[config/images] Pulled registry.k8s.io/kube-scheduler:v1.28.15
+[config/images] Pulled registry.k8s.io/kube-proxy:v1.28.15
+[config/images] Pulled registry.k8s.io/pause:3.9
+[config/images] Pulled registry.k8s.io/etcd:3.5.9-0
+[config/images] Pulled registry.k8s.io/coredns/coredns:v1.10.1
+Installer Nginx pour exposer l'interface web de Kubernetes
+Lecture des listes de paquets…
+Construction de l'arbre des dépendances…
+Lecture des informations d'état…
+ssl-cert est déjà la version la plus récente (1.1.2).
+nginx est déjà la version la plus récente (1.18.0-6ubuntu14.5).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 5 non mis à jour.
+Ajout completion bash for kubectl
+Téléchargement CNI
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0 34.6M    0  7845    0     0   8530      0  1:10:59 --:--:--  1:10:59  8530 27 34.6M   27 9609k    0     0  5885k      0  0:00:06  0:00:01  0:00:05 13.1M100 34.6M  100 34.6M    0     0  15.2M      0  0:00:02  0:00:02 --:--:-- 25.7M
+./
+./macvlan
+./static
+./vlan
+./portmap
+./host-local
+./vrf
+./bridge
+./tuning
+./firewall
+./host-device
+./sbr
+./loopback
+./dhcp
+./ptp
+./ipvlan
+./bandwidth
+Machine update  : * Tag l'Image

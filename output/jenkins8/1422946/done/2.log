@@ -1,0 +1,86 @@
+Machine aca.hapy 2.7.2 : ciRunPython /usr/bin/CreoleLint
+
+DTD Non valide (valid_dtd:ERROR:error)
+
+Lint wrong_dicos_name désactivé (niveau info)
+
+Tabulation dans le dictionnaire au lieu de 4 espaces (tabs_in_dicos:NAME:warning)
+ \-- /usr/share/eole/creole/dicos/97_libvirt.xml
+ \-- /usr/share/eole/creole/dicos/29_one-master.xml
+
+Libellé de variable non valide dans un dictionnaire (valid_var_label:NAME:warning)
+ \-- %%test_activer_minimal_nginx : nginx => Nginx
+ \-- %%activer_web_behind_revproxy : phrase sans majuscule
+ \-- %%activer_apache : phrase sans majuscule
+ \-- %%test_activer_genconfig_nginx : nginx => Nginx
+ \-- %%web_behind_revproxy_ip : phrase sans majuscule
+ \-- %%activer_sso : phrase sans majuscule
+
+Libellé de séparateur non valide dans un dictionnaire (valid_separator_label:NAME:warning)
+ \-- %%activer_exim_relay_smtp : Relai => relai
+
+Libellé d'aide non valide dans un dictionnaire (valid_help_label:NAME:warning)
+ \-- %%test_activer_minimal_nginx : nginx => Nginx
+
+Variable d'activation sans balise d'aide (activation_var_without_help:NAME:warning)
+ \-- activer_log_distant
+ \-- activer_openvswitch
+ \-- activer_reception_logs_relp
+ \-- activer_acces_xmlrpc
+ \-- activer_envoi_logs
+ \-- activer_hooks
+ \-- activer_revprox_ead
+ \-- activer_bonding_eth4
+ \-- activer_bonding_eth0
+ \-- activer_bonding_eth1
+ \-- activer_bonding_eth2
+ \-- activer_bonding_eth3
+ \-- activer_reception_logs_tcp
+ \-- activer_web_behind_revproxy
+ \-- activer_firewall
+ \-- activer_apache
+ \-- activer_oned
+ \-- activer_reception_logs
+ \-- activer_revprox_rewrite
+ \-- activer_onenode
+ \-- activer_onefrontend
+ \-- activer_multinode
+ \-- activer_antispoofing
+ \-- activer_reception_logs_udp
+ \-- activer_deploiement_automatique
+ \-- activer_sso
+
+Famille sans balise d'aide (family_without_help:NAME:warning)
+ \-- containers
+ \-- ntp
+ \-- machine_virtuelle
+ \-- logs
+ \-- reseau_avance
+ \-- certificats_ssl
+ \-- eole_sso
+ \-- applications_web
+ \-- clamav
+ \-- virtualisation
+ \-- deploiement_automatique
+
+Famille sans icône spécifique (family_without_icon:NAME:warning)
+ \-- eole_sso
+ \-- applications_web
+ \-- clamav
+
+Template Non valide (valid_parse_tmpl:ERROR:error)
+ \-- template desactivé : /usr/share/eole/creole/distrib/zstats.cfg
+ \-- template desactivé : /usr/share/eole/creole/distrib/hosts
+ \-- /usr/share/eole/creole/distrib/one_backup_env.conf
+ \-- /usr/share/eole/creole/distrib/eolerc.sh
+ \-- fichier non présent dans un dictionnaire /usr/share/eole/creole/distrib/00-container
+ \-- /usr/share/eole/creole/distrib/ntpdate.if-up
+ \-- /usr/share/eole/creole/distrib/openssh-server
+ \-- /usr/share/eole/creole/distrib/ldap_auth.conf
+ \-- /usr/share/eole/creole/distrib/ldap.conf
+pas de templating !
+ \-- /usr/share/eole/creole/distrib/genconfig.nginx.conf
+ \-- /usr/share/eole/creole/distrib/rsyslog_traps_eole.conf
+ \-- /usr/share/eole/creole/distrib/forteresse.sh
+ \-- /usr/share/eole/creole/distrib/resolved.conf
+ \-- /usr/share/eole/creole/distrib/rsyslog.conf

@@ -1,0 +1,17 @@
+Début ciDeamonMain /root/.EoleCiTestsDaemon.sh
+init à 2024-12-09 16:08:25
+* ciAfficheProcess : 2024-12-09 16:08:25
+* ciWaitConteneurs : 2024-12-09 16:08:26
+* ciConfigurationMe : avant 2024-12-09 16:08:26
+* ciConfigurationMe : apres 2024-12-09 16:08:31
+Machine aca.dc1 2.9.0 : * Creation lien aca.dc1 dans /mnt/eole-ci-tests/output/ktjebbes/1419137
+Machine aca.dc1 2.9.0 : Sauvegarde CA aca.dc1
+-rw-r--r-- 1 9869 9869 1757 déc.   9 16:08 /mnt/eole-ci-tests/output/ktjebbes//aca.dc1.crt
+    issuer=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-dc1.domseth.ac-test.fr
+    subject=C = FR, O = Ministere Education Nationale (MENESR), OU = 110 043 015, OU = ac-test, CN = CA-dc1.domseth.ac-test.fr
+    notBefore=Dec  6 19:31:14 2024 GMT
+    notAfter=Dec  7 19:31:14 2027 GMT
+* ciBoucleDExecution : pas d'excution ==> sortie
+ciStopDaemon : 2024-12-09 16:08:31
+nettoyage 'motd' et '/etc/issue'
+Sauvegarde log EoleCiTests

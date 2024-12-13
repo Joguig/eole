@@ -1,0 +1,54 @@
+Machine daily 2.10.0 : Debut ciConfigurationDaily
+Machine daily 2.10.0 : systemctl is-active network.target : active
+Machine daily 2.10.0 : systemctl is-active network-online.target : active
+Machine daily 2.10.0 : systemctl is-system-running : starting
+Machine daily 2.10.0 : ls -l /etc/netplan/
+total 8
+-rw------- 1 root root 112 nov.  29 09:08 01-netcfg.yaml
+-rw------- 1 root root  65 sept. 19 16:59 50-cloud-init.yaml
+--------------------------------------------
+cat /etc/netplan/01-netcfg.yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp2s0:
+      dhcp4: yes
+      dhcp-identifier: mac
+--------------------------------------------
+--------------------------------------------
+cat /etc/netplan/50-cloud-init.yaml
+network:
+  version: 2
+  ethernets:
+    enp2s0:
+      dhcp4: true
+--------------------------------------------
+** ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: enp2s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 02:00:c0:a8:00:67 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.0.153/24 metric 100 brd 192.168.0.255 scope global dynamic enp2s0
+       valid_lft 7077sec preferred_lft 7077sec
+    inet6 fe80::c0ff:fea8:67/64 scope link dadfailed tentative 
+       valid_lft forever preferred_lft forever
+3: lxcbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
+    link/ether 00:16:3e:00:00:00 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.3.1/24 brd 10.0.3.255 scope global lxcbr0
+       valid_lft forever preferred_lft forever
+** ip route
+default via 192.168.0.1 dev enp2s0 proto dhcp src 192.168.0.153 metric 100 
+10.0.3.0/24 dev lxcbr0 proto kernel scope link src 10.0.3.1 linkdown 
+192.168.0.0/24 dev enp2s0 proto kernel scope link src 192.168.0.153 metric 100 
+192.168.0.1 dev enp2s0 proto dhcp scope link src 192.168.0.153 metric 100 
+192.168.232.2 via 192.168.0.1 dev enp2s0 proto dhcp src 192.168.0.153 metric 100 
+Machine daily 2.10.0 : ciPingHost enp2s0 => 192.168.0.1 ping=0 ==> OK (exit 0)
+Machine daily 2.10.0 : GW actuelle : 192.168.0.1 OK
+Fin ciConfigurationDaily
+/usr/bin/updatedb
+Machine daily 2.10.0 : * désactivation updatedb/locate sur /mnt/eole-ci-test présente !

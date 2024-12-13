@@ -1,0 +1,451 @@
+Debut ciAfficheProcess 2024-12-12 11:03:11
+****************************************************************************************************************
+Machine etb3.amonecole 2.10.0 : systemctl is-active multi-user.target : active
+Machine etb3.amonecole 2.10.0 : systemctl is-active network.target : active
+Machine etb3.amonecole 2.10.0 : systemctl is-active network-online.target : active
+Machine etb3.amonecole 2.10.0 : systemctl is-system-running : starting
+CreoleD attend en 8000 ==> test creoleget ...
+root - Erreur creole 3 : Pas de configuration chargée
+CreoleD ne m'a pas répondu : j'attends
+1 : 1/200, 1/30 Zzz.............. 2024-12-12 11:03:14
+2a3,5
+> 0 (agetty)
+> 0 (agetty)
+> 0 (agetty)
+5,6c8,11
+< 0 /bin/sh /lib/console-setup/keyboard-setup.sh
+< 0 /bin/sh /usr/bin/setupcon -k
+---
+> 0 /bin/bash /usr/share/mysql/mysql-systemd-start pre
+> 0 /bin/sh /etc/cron.daily/exim4-base systemd-timer
+> 0 /bin/sh /etc/cron.daily/exim4-base systemd-timer
+> 0 /bin/sh /usr/libexec/dpkg/dpkg-db-backup
+10c15
+< 0 cmp -s dpkg.status.0 /var/lib/dpkg/status
+---
+> 0 /bin/sh /usr/share/samba/is-configured winbind
+17a23,25
+> 0 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+> 0 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+> 0 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+19a28
+> 0 exim4 -bP spool_directory
+46d54
+< 0 journalctl --flush
+63c71
+< 0 [kworker/0:2-events]
+---
+> 0 [kworker/0:2-cgroup_destroy]
+74c82
+< 0 [kworker/2:1-events]
+---
+> 0 [kworker/2:1-cgroup_destroy]
+77c85
+< 0 [kworker/2:3-cgroup_destroy]
+---
+> 0 [kworker/2:3-events]
+82,83c90,91
+< 0 [kworker/3:2-cgroup_destroy]
+< 0 [kworker/3:3-events]
+---
+> 0 [kworker/3:2+events]
+> 0 [kworker/3:3-mm_percpu_wq]
+131,134c139,142
+< 0 [kworker/u10:1-events_unbound]
+< 0 [kworker/u10:2-events_unbound]
+< 0 [kworker/u10:3-events_power_efficient]
+< 0 [kworker/u11:0-events_unbound]
+---
+> 0 [kworker/u10:1-flush-252:0]
+> 0 [kworker/u10:2-flush-252:0]
+> 0 [kworker/u10:3-flush-252:0]
+> 0 [kworker/u11:0-flush-252:0]
+136c144
+< 0 [kworker/u11:2-events_unbound]
+---
+> 0 [kworker/u11:2-flush-252:0]
+138c146
+< 0 [kworker/u12:0-flush-252:1]
+---
+> 0 [kworker/u12:0-events_unbound]
+140c148
+< 0 [kworker/u12:2-flush-252:1]
+---
+> 0 [kworker/u12:2-flush-252:0]
+143c151
+< 0 [kworker/u12:5-events_unbound]
+---
+> 0 [kworker/u12:5-flush-252:0]
+154c162
+< 0 [kworker/u9:0-events_unbound]
+---
+> 0 [kworker/u9:0-events_power_efficient]
+166a175
+> 0 mysqld --verbose --help --innodb-read-only
+167a177,181
+> 0 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+> 0 nginx: worker process
+> 0 nginx: worker process
+> 0 nginx: worker process
+> 0 nginx: worker process
+179a194,195
+> 0 [psimon]
+> 0 [psimon]
+181d196
+< 0 python3 /usr/share/eole/sbin/del_expired_users.py
+187a203,205
+> 0 (savelog)
+> 0 (savelog)
+> 0 (savelog)
+201a220,223
+> 0 sed s/.*=[[:space:]]\(.*\)/\1/
+> 0 tar -df alternatives.tar.0 -C /var/lib/dpkg alternatives
+> 0 tar -df alternatives.tar.0 -C /var/lib/dpkg alternatives
+> 0 testparm -s --parameter-name=server role
+204,211d225
+< 0 (udev-worker)
+< 0 (udev-worker)
+< 0 (udev-worker)
+< 0 (udev-worker)
+< 0 (udev-worker)
+< 0 (udev-worker)
+< 0 (udev-worker)
+< 0 (udev-worker)
+218a233,235
+> 0 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+> 0 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+> 0 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+226a244,245
+> 0 /usr/lib/postgresql/16/bin/pg_ctl start -D /var/lib/postgresql/16/main -l /var/log/postgresql/postgresql-16-main.log -s -o  -c config_file="/etc/postgresql/16/main/postgresql.conf" 
+> 0 /usr/lib/postgresql/16/bin/postgres -D /var/lib/postgresql/16/main -c config_file=/etc/postgresql/16/main/postgresql.conf
+232a252,253
+> 0 /usr/lib/systemd/systemd-journald
+> 0 /usr/lib/systemd/systemd-journald
+235a257,261
+> 0 /usr/lib/systemd/systemd-logind
+> 0 /usr/lib/systemd/systemd-logind
+> 0 /usr/lib/systemd/systemd-logind
+> 0 /usr/lib/systemd/systemd-networkd
+> 0 /usr/lib/systemd/systemd-networkd
+251a278,281
+> 0 /usr/sbin/cron -f -P
+> 0 /usr/sbin/cron -f -P
+> 0 /usr/sbin/cron -f -P
+> 0 /usr/sbin/cupsd -l
+254a285
+> 0 /usr/sbin/in.tftpd --listen --user tftp --address :69 --secure /srv/tftp
+256a288,289
+> 0 /usr/sbin/nmbd --foreground --no-process-group
+> 0 /usr/sbin/proftpd --configtest -c /etc/proftpd/proftpd.conf
+259a293,296
+> 0 /usr/sbin/rsyslogd -n -iNONE
+> 0 /usr/sbin/rsyslogd -n -iNONE
+> 0 /usr/sbin/rsyslogd -n -iNONE
+> 0 /usr/sbin/squid --foreground -sYC
+261a299
+> 0 /usr/sbin/winbindd --foreground --no-process-group
+263a302
+> 1 python3 /usr/share/eole/sbin/del_expired_users.py
+reset counter_termine = 0
+****************************************************************************************************************
+Machine etb3.amonecole 2.10.0 : systemctl is-active multi-user.target : active
+Machine etb3.amonecole 2.10.0 : systemctl is-active network.target : active
+Machine etb3.amonecole 2.10.0 : systemctl is-active network-online.target : active
+Machine etb3.amonecole 2.10.0 : systemctl is-system-running : starting
+CreoleD attend en 8000 ==> test creoleget ...
+root - Erreur creole 3 : Pas de configuration chargée
+CreoleD ne m'a pas répondu : j'attends
+1 : 2/200, 1/30 Zzz.............. 2024-12-12 11:03:17
+2,5d1
+< 0 (agetty)
+< 0 (agetty)
+< 0 (agetty)
+< 0 (agetty)
+7,15c3
+< 0 /bin/bash /usr/share/mysql/mysql-systemd-start pre
+< 0 /bin/bash /usr/share/mysql/mysql-systemd-start pre
+< 0 /bin/sh /etc/cron.daily/exim4-base systemd-timer
+< 0 /bin/sh /etc/cron.daily/exim4-base systemd-timer
+< 0 /bin/sh /usr/libexec/dpkg/dpkg-db-backup
+< 0 /bin/sh /usr/libexec/dpkg/dpkg-db-backup
+< 0 /bin/sh /usr/share/samba/is-configured nmb
+< 0 /bin/sh /usr/share/samba/is-configured samba
+< 0 /bin/sh /usr/share/samba/is-configured winbind
+---
+> 0 /bin/journalctl --boot 0 --dmesg --output short-monotonic --quiet --no-pager --no-hostname
+28d15
+< 0 exim4 -bP spool_directory
+69c56
+< 0 [kworker/0:1-events]
+---
+> 0 [kworker/0:1-cgroup_destroy]
+73c60
+< 0 [kworker/1:0-events]
+---
+> 0 [kworker/1:0-cgroup_destroy]
+75c62
+< 0 [kworker/1:1-events]
+---
+> 0 [kworker/1:1+events]
+77c64
+< 0 [kworker/1:2-events]
+---
+> 0 [kworker/1:2-cgroup_destroy]
+82c69
+< 0 [kworker/2:1-cgroup_destroy]
+---
+> 0 [kworker/2:1-events]
+84c71
+< 0 [kworker/2:2-cgroup_destroy]
+---
+> 0 [kworker/2:2-events]
+86c73
+< 0 [kworker/3:0-events]
+---
+> 0 [kworker/3:0-cgroup_destroy]
+90,91c77,78
+< 0 [kworker/3:2+events]
+< 0 [kworker/3:3-mm_percpu_wq]
+---
+> 0 [kworker/3:2-cgroup_destroy]
+> 0 [kworker/3:3-events]
+139,144c126,133
+< 0 [kworker/u10:1-flush-252:0]
+< 0 [kworker/u10:2-flush-252:0]
+< 0 [kworker/u10:3-flush-252:0]
+< 0 [kworker/u11:0-flush-252:0]
+< 0 [kworker/u11:1-events_unbound]
+< 0 [kworker/u11:2-flush-252:0]
+---
+> 0 [kworker/u10:1-events_unbound]
+> 0 [kworker/u10:2-writeback]
+> 0 [kworker/u10:3-events_unbound]
+> 0 [kworker/u10:4-events_unbound]
+> 0 [kworker/u10:5]
+> 0 [kworker/u11:0-events_unbound]
+> 0 [kworker/u11:1-flush-252:0]
+> 0 [kworker/u11:2-flush-252:2]
+145a135
+> 0 [kworker/u11:4-events_unbound]
+148c138
+< 0 [kworker/u12:2-flush-252:0]
+---
+> 0 [kworker/u12:2-events_unbound]
+150,151c140,141
+< 0 [kworker/u12:4-events_unbound]
+< 0 [kworker/u12:5-flush-252:0]
+---
+> 0 [kworker/u12:4-flush-9p-1]
+> 0 [kworker/u12:5-events_power_efficient]
+162,163c152,153
+< 0 [kworker/u9:0-events_power_efficient]
+< 0 [kworker/u9:1-flush-252:0]
+---
+> 0 [kworker/u9:0-flush-252:2]
+> 0 [kworker/u9:1-flush-252:2]
+165c155,156
+< 0 [kworker/u9:3-flush-252:0]
+---
+> 0 [kworker/u9:3-flush-252:2]
+> 0 (logfile-daemon) /var/log/squid/access.log
+175d165
+< 0 mysqld --verbose --help --innodb-read-only
+186a177
+> 0 (pinger)
+187a179,184
+> 0 postgres: 16/main: autovacuum launcher 
+> 0 postgres: 16/main: background writer 
+> 0 postgres: 16/main: checkpointer 
+> 0 postgres: 16/main: logical replication launcher 
+> 0 postgres: 16/main: walwriter 
+> 0 proftpd: (accepting connections)
+201,205d197
+< 0 (savelog)
+< 0 (savelog)
+< 0 (savelog)
+< 0 (savelog)
+< 0 (savelog)
+220,225c212,216
+< 0 sed s/.*=[[:space:]]\(.*\)/\1/
+< 0 tar -df alternatives.tar.0 -C /var/lib/dpkg alternatives
+< 0 tar -df alternatives.tar.0 -C /var/lib/dpkg alternatives
+< 0 testparm -s --parameter-name=server role
+< 0 testparm -s --parameter-name=server role
+< 0 testparm -s --parameter-name=server role
+---
+> 0 smbd: cleanupd 
+> 0 smbd: cleanupd 
+> 0 smbd: notifyd .
+> 0 smbd: notifyd .
+> 0 (squid-1) --kid squid-1 --foreground -sYC
+237a229,230
+> 0 /usr/lib/cups/notifier/dbus dbus://
+> 0 /usr/lib/cups/notifier/dbus dbus://
+240a234,242
+> 0 /usr/libexec/samba/rpcd_lsad --configfile=/etc/samba/smb.conf --worker-group=5 --worker-index=5 --debuglevel=0
+> 0 /usr/libexec/samba/rpcd_lsad --configfile=/etc/samba/smb.conf --worker-group=5 --worker-index=5 --debuglevel=0
+> 0 /usr/libexec/samba/rpcd_lsad --configfile=/etc/samba/smb.conf --worker-group=5 --worker-index=6 --debuglevel=0
+> 0 /usr/libexec/samba/rpcd_lsad --configfile=/etc/samba/smb.conf --worker-group=5 --worker-index=6 --debuglevel=0
+> 0 /usr/libexec/samba/rpcd_lsad --configfile=/etc/samba/smb.conf --worker-group=6 --worker-index=5 --debuglevel=0
+> 0 /usr/libexec/samba/rpcd_lsad --configfile=/etc/samba/smb.conf --worker-group=6 --worker-index=6 --debuglevel=0
+> 0 /usr/libexec/samba/samba-dcerpcd --libexec-rpcds --ready-signal-fd=22 --np-helper --debuglevel=0
+> 0 /usr/libexec/samba/samba-dcerpcd --libexec-rpcds --ready-signal-fd=22 --np-helper --debuglevel=0
+> 0 /usr/libexec/samba/samba-dcerpcd --libexec-rpcds --ready-signal-fd=22 --np-helper --debuglevel=0
+244d245
+< 0 /usr/lib/postgresql/16/bin/pg_ctl start -D /var/lib/postgresql/16/main -l /var/log/postgresql/postgresql-16-main.log -s -o  -c config_file="/etc/postgresql/16/main/postgresql.conf" 
+280a282
+> 0 /usr/sbin/cups-browsed
+286a289
+> 0 /usr/sbin/mysqld
+289c292
+< 0 /usr/sbin/proftpd --configtest -c /etc/proftpd/proftpd.conf
+---
+> 0 /usr/sbin/nmbd --foreground --no-process-group
+295a299,300
+> 0 /usr/sbin/smbd --foreground --no-process-group
+> 0 /usr/sbin/smbd --foreground --no-process-group
+299a305,306
+> 0 /usr/sbin/winbindd --foreground --no-process-group
+> 0 /usr/sbin/winbindd --foreground --no-process-group
+300a308
+> 0 winbindd: domain child [ADDC]
+301a310,313
+> 0 winbindd: domain child [INTERNET]
+> 0 winbindd: domain child [PARTAGE]
+> 0 winbindd: idmap child
+> 0 winbindd: idmap child
+reset counter_termine = 0
+****************************************************************************************************************
+Machine etb3.amonecole 2.10.0 : systemctl is-active multi-user.target : active
+Machine etb3.amonecole 2.10.0 : systemctl is-active network.target : active
+Machine etb3.amonecole 2.10.0 : systemctl is-active network-online.target : active
+Machine etb3.amonecole 2.10.0 : systemctl is-system-running : starting
+CreoleD attend en 8000 ==> test creoleget ...
+root - Erreur creole 3 : Pas de configuration chargée
+CreoleD ne m'a pas répondu : j'attends
+1 : 3/200, 1/30 Zzz.............. 2024-12-12 11:03:21
+1d0
+< 0 (agetty)
+3d1
+< 0 /bin/journalctl --boot 0 --dmesg --output short-monotonic --quiet --no-pager --no-hostname
+56d53
+< 0 [kworker/0:1-cgroup_destroy]
+57a55
+> 0 [kworker/0:1-rcu_gp]
+62c60
+< 0 [kworker/1:1+events]
+---
+> 0 [kworker/1:1-events]
+69c67
+< 0 [kworker/2:1-events]
+---
+> 0 [kworker/2:1-cgroup_destroy]
+78c76
+< 0 [kworker/3:3-events]
+---
+> 0 [kworker/3:3-kdmflush/252:2]
+125c123
+< 0 [kworker/u10:0-events_unbound]
+---
+> 0 [kworker/u10:0-flush-252:2]
+127c125
+< 0 [kworker/u10:2-writeback]
+---
+> 0 [kworker/u10:2-flush-252:0]
+129c127
+< 0 [kworker/u10:4-events_unbound]
+---
+> 0 [kworker/u10:4-flush-252:2]
+131c129
+< 0 [kworker/u11:0-events_unbound]
+---
+> 0 [kworker/u11:0-writeback]
+134c132
+< 0 [kworker/u11:3-flush-252:0]
+---
+> 0 [kworker/u11:3-flush-252:2]
+136c134
+< 0 [kworker/u12:0-events_unbound]
+---
+> 0 [kworker/u12:0-flush-252:2]
+138,141c136,139
+< 0 [kworker/u12:2-events_unbound]
+< 0 [kworker/u12:3-flush-252:1]
+< 0 [kworker/u12:4-flush-9p-1]
+< 0 [kworker/u12:5-events_power_efficient]
+---
+> 0 [kworker/u12:2-flush-252:2]
+> 0 [kworker/u12:3-events_power_efficient]
+> 0 [kworker/u12:4-flush-252:2]
+> 0 [kworker/u12:5-events_unbound]
+152c150
+< 0 [kworker/u9:0-flush-252:2]
+---
+> 0 [kworker/u9:0-flush-252:0]
+155a154
+> 0 [kworker/u9:4]
+218d216
+< 0 /usr/bin/perl -wT /usr/bin/pg_ctlcluster --skip-systemctl-redirect 16-main start
+289d286
+< 0 /usr/sbin/mysqld
+314c311,312
+< 1 python3 /usr/share/eole/sbin/del_expired_users.py
+---
+> 1 /usr/sbin/mysqld
+> 2 python3 /usr/share/eole/sbin/del_expired_users.py
+reset counter_termine = 0
+****************************************************************************************************************
+Machine etb3.amonecole 2.10.0 : systemctl is-active multi-user.target : active
+Machine etb3.amonecole 2.10.0 : systemctl is-active network.target : active
+Machine etb3.amonecole 2.10.0 : systemctl is-active network-online.target : active
+Machine etb3.amonecole 2.10.0 : systemctl is-system-running : starting
+CreoleD attend en 8000 ==> test creoleget ...
+root - Erreur creole 3 : Pas de configuration chargée
+CreoleD ne m'a pas répondu : j'attends
+1 : 4/200, 1/30 Zzz.............. 2024-12-12 11:03:23
+76c76
+< 0 [kworker/3:3-kdmflush/252:2]
+---
+> 0 [kworker/3:3-events]
+133c133
+< 0 [kworker/u11:4-events_unbound]
+---
+> 0 [kworker/u11:4-flush-252:2]
+136,137c136,137
+< 0 [kworker/u12:2-flush-252:2]
+< 0 [kworker/u12:3-events_power_efficient]
+---
+> 0 [kworker/u12:2-writeback]
+> 0 [kworker/u12:3-flush-252:1]
+151,152c151,152
+< 0 [kworker/u9:1-flush-252:2]
+< 0 [kworker/u9:2-flush-252:0]
+---
+> 0 [kworker/u9:1-events_power_efficient]
+> 0 [kworker/u9:2-flush-252:2]
+154c154
+< 0 [kworker/u9:4]
+---
+> 0 [kworker/u9:4-events_unbound]
+312d311
+< 2 python3 /usr/share/eole/sbin/del_expired_users.py
+reset counter_termine = 0
+****************************************************************************************************************
+Machine etb3.amonecole 2.10.0 : systemctl is-active multi-user.target : active
+Machine etb3.amonecole 2.10.0 : systemctl is-active network.target : active
+Machine etb3.amonecole 2.10.0 : systemctl is-active network-online.target : active
+Machine etb3.amonecole 2.10.0 : systemctl is-system-running : degraded
+**************************************
+systemctl --state=failed
+  UNIT                   LOAD   ACTIVE SUB    DESCRIPTION
+● expireuser.service     loaded failed failed Deletes expired account in AD
+● isc-dhcp-relay.service loaded failed failed ISC DHCP IPv4 relay
+● networking.service     loaded failed failed Raise network interfaces
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+3 loaded units listed.
+**************************************
+Fin ciAfficheProcess : RESULT = 0    2024-12-12 11:03:24

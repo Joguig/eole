@@ -1,0 +1,31 @@
+Début ciDeamonMain /root/.EoleCiTestsDaemon.sh
+init à 2024-12-13 19:23:06
+* ciAfficheProcess : 2024-12-13 19:23:06
+* ciWaitConteneurs : 2024-12-13 19:23:06
+* ciConfigurationMe : avant 2024-12-13 19:23:06
+* ciConfigurationMe : apres 2024-12-13 19:23:11
+Machine daily 2.8.0 : * Creation lien daily dans /mnt/eole-ci-tests/output/jenkins/1422907
+* ciBoucleDExecution : 2024-12-13 19:23:11
+Machine daily 2.8.0 : Adresse(s) ip changée de  vers 192.168.0.153
+Changement IP : 192.168.0.153
+shell : /mnt/eole-ci-tests/output/jenkins/1422907/todo/1.sh
+Commande TODO : /mnt/eole-ci-tests/output/jenkins/1422907/running/1.sh vers 1.log
+############################################################################################
+#!/bin/bash
+export VM_HOME_EOLE_CI_TEST=/mnt/eole-ci-tests
+export VM_TIMEOUT=1200
+export LANG=fr_FR.UTF-8
+export HOME=/root
+export TERM=xterm
+[ -f /etc/profile.d/eolerc.sh ] && . /etc/profile.d/eolerc.sh
+export VM_HOME_TEST=/mnt/eole-ci-tests/scripts
+export PATH=$PATH:/mnt/eole-ci-tests/scripts
+export PYTHONPATH=$PYTHONPATH:/mnt/eole-ci-tests/scripts
+source /root/getVMContext.sh NO_DISPLAY NO_UPDATE
+cd /mnt/eole-ci-tests/scripts
+(
+ciUpdateDaily BUILD_DAILY 
+) 2>&1
+exit $?
+
+--------------------------------------------------------------------------------------------
