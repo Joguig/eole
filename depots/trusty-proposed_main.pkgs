@@ -1,0 +1,433 @@
+Package: gnutls-bin
+Architecture: amd64
+Version: 3.0.11+really2.12.23-12ubuntu2.10
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: gnutls26 (2.12.23-12ubuntu2.10)
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 748
+Depends: libc6 (>= 2.15), libgnutls26 (>= 2.12.17-0)
+Filename: pool/main/g/gnutls26/gnutls-bin_3.0.11+really2.12.23-12ubuntu2.10_amd64.deb
+Size: 113508
+MD5sum: cfe1bb6059fb7a49b5ac671394ab4568
+SHA1: 06eac9249c26d86c6a0c938bdae2c3ebb95c4598
+SHA256: fc73bb400c437c46abd5f88e94503c19e4af326204d54ab0fd78d9bcd89e0d17
+SHA512: 0d028ea27b4ebb0a7b074ebfce42cf53028af365e5f3922b683ef24de240dd117e7cf9e8ec9d3d5ff83be1ac06f04fd752b304f22616a790ca1f6cabfaaab54a
+Homepage: http://www.gnutls.org/
+Description: GNU TLS library - commandline utilities
+Description-md5: 33f669c0eda9ac17638870658371c713
+Supported: 3y
+
+Package: gnutls26-doc
+Architecture: all
+Version: 2.12.23-12ubuntu2.10
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: gnutls26
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 5885
+Filename: pool/main/g/gnutls26/gnutls26-doc_2.12.23-12ubuntu2.10_all.deb
+Size: 2361184
+MD5sum: 49b8f6c8645945c127ad086a79561b6d
+SHA1: c42e3b01574f61614981085cc26c30954c385431
+SHA256: 721d0040bd97b57772718fd79bab679accd495b94cacee2e35a8e2c58f3afcfa
+SHA512: 62132a565522feee95698511b0a4db1888d0de72e5277f2b685b509499330e71f93bebec68229229f91b1444bf97da90d71c71245d1b7e2054d53d9b4f88c8fc
+Homepage: http://www.gnutls.org/
+Description: GNU TLS library 2.x - documentation and examples
+Description-md5: b01a1eff3c9deeb4182f891e4e7c9467
+Supported: 3y
+
+Package: libgnutls-dev
+Architecture: amd64
+Version: 2.12.23-12ubuntu2.10
+Priority: optional
+Section: libdevel
+Source: gnutls26
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 2333
+Provides: gnutls-dev, libgnutls-openssl-dev
+Depends: libgnutls26 (= 2.12.23-12ubuntu2.10), libgnutlsxx27 (= 2.12.23-12ubuntu2.10), libgnutls-openssl27 (= 2.12.23-12ubuntu2.10), libgcrypt11-dev (>= 1.4.0), libc6-dev | libc-dev, zlib1g-dev, libtasn1-6-dev, libp11-kit-dev (>= 0.4)
+Suggests: gnutls26-doc, gnutls-bin
+Conflicts: gnutls-dev
+Replaces: gnutls-dev
+Filename: pool/main/g/gnutls26/libgnutls-dev_2.12.23-12ubuntu2.10_amd64.deb
+Size: 371870
+MD5sum: 94d59530d5d535e8548d1011541f2ee3
+SHA1: ab1d6136bb65ff23923a310e4a81e1252849519e
+SHA256: e4eeb04f38707887dd99795a7ed988e63f549c2819ebf7483fcfda06ce3fd418
+SHA512: d12659d91f756502783e78dc2087b062ef972bcd93730058345fa728da2044c68f1d8865e0d46aa8b6caf3d4b72c143fed0662d1d5df7ab3d71620bb285c3bbe
+Homepage: http://www.gnutls.org/
+Description: GNU TLS library - development files
+Description-md5: e2a3e8bac6f6874ae5a4bc8e489881a6
+Supported: 3y
+
+Package: libgnutls-openssl27
+Architecture: amd64
+Version: 2.12.23-12ubuntu2.10
+Multi-Arch: same
+Priority: important
+Section: libs
+Source: gnutls26
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 277
+Pre-Depends: multiarch-support
+Depends: libgnutls26 (= 2.12.23-12ubuntu2.10), libc6 (>= 2.14)
+Filename: pool/main/g/gnutls26/libgnutls-openssl27_2.12.23-12ubuntu2.10_amd64.deb
+Size: 18320
+MD5sum: bb1db5bde8efe02677109cb9ca2c6a30
+SHA1: 4c559dd485a3d85809e39c8a99c69b7e23d8a783
+SHA256: 1c39f6b4ecc35933b0774a552013e45c5f1d90ed32fb93c81534411c0b46af7c
+SHA512: 4261e6220f1963f7c80c851e83375baeb1491a771bac061de35f1387704990b91cec81512e750a7ffb926f392d89db4522f0791d2141f5f93a6f834b4876ae15
+Homepage: http://www.gnutls.org/
+Description: GNU TLS library - OpenSSL wrapper
+Task: minimal
+Description-md5: ed7bc845df883f3776627eaef9179481
+Supported: 3y
+
+Package: libgnutls26
+Architecture: amd64
+Version: 2.12.23-12ubuntu2.10
+Multi-Arch: same
+Priority: important
+Section: libs
+Source: gnutls26
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1072
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.14), libgcrypt11 (>= 1.5.1), libp11-kit0 (>= 0.11), libtasn1-6 (>= 3.4-0), zlib1g (>= 1:1.1.4)
+Suggests: gnutls-bin
+Conflicts: gnutls0, gnutls0.4
+Breaks: ccbuild (<= 2.0.1-1), csync2 (<= 1.34-2.2), freewheeling (<= 0.6-1.1), gkrellm (<= 2.3.4-1), libsoup2.4-1 (= 2.31.2-1), libsoup2.4-1 (<= 2.30.1-1), macopix-gtk2 (<= 1.7.4-3), pokerth (<= 0.8.3-3+b1), pokerth-server (<= 0.8.3-3+b1), sipsak (<= 0.9.6-2.1), slrn (<= 1.0.0~pre18-1.1), slrnpull (<= 1.0.0~pre18-1.1), snowdrop (<= 0.02b-9), ssmtp (<= 2.64-4), tf5 (<= 5.0beta8-4), wput (<= 0.6.2-2), zoneminder (<= 1.24.4-1)
+Replaces: gnutls0, gnutls0.4, gnutls3
+Filename: pool/main/g/gnutls26/libgnutls26_2.12.23-12ubuntu2.10_amd64.deb
+Size: 393890
+MD5sum: 9bf78ec3778157db32f8614026c185d7
+SHA1: 72605441b4dd66804adbd3e83e1024d4221ce105
+SHA256: 35827d2ee6b61c2c4b4a90e405a842e6124e10466bda7ab20c66633da04aa0b7
+SHA512: 2a70d5dbcbb67b7b9b63baaabc98e245c367fe175500d4796259f18392e3def9649c5dc129e5651b7f55bcfb7c1301f8f95adc098602569095b15ef2dd1378f9
+Homepage: http://www.gnutls.org/
+Description: GNU TLS library - runtime library
+Task: minimal
+Description-md5: 07e0914117156d2b3fcf0d63e9ef8ac2
+Supported: 3y
+
+Package: libgnutls26-dbg
+Architecture: amd64
+Version: 2.12.23-12ubuntu2.10
+Multi-Arch: same
+Priority: extra
+Section: devel
+Source: gnutls26
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1925
+Depends: libgnutls26 (= 2.12.23-12ubuntu2.10)
+Conflicts: libgnutls13-dbg, libgnutls28-dbg
+Filename: pool/main/g/gnutls26/libgnutls26-dbg_2.12.23-12ubuntu2.10_amd64.deb
+Size: 1426578
+MD5sum: 1255e7dce6489575d673dfc67d0c90c8
+SHA1: b776d36f646e6b3024615e744d330392ed1fb51b
+SHA256: 99f94e0f7730a474efa0f6c590513118433596db377b4923e3a24c07de0f8982
+SHA512: f94eaff8903badc5a274cc2427bdf6ca0e0fab493d10149a3de5f42f1bdec65b2154e1fc26758de75eb8a7c58b4c70ce311069af5ab07fdf35d1e91ceb954725
+Homepage: http://www.gnutls.org/
+Description: GNU TLS library - debugger symbols
+Description-md5: 49ef95a26f6727eeaa8d2c979d728b2d
+Supported: 3y
+
+Package: libgnutlsxx27
+Architecture: amd64
+Version: 2.12.23-12ubuntu2.10
+Multi-Arch: same
+Priority: extra
+Section: libs
+Source: gnutls26
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 298
+Pre-Depends: multiarch-support
+Depends: libgnutls26 (= 2.12.23-12ubuntu2.10), libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Filename: pool/main/g/gnutls26/libgnutlsxx27_2.12.23-12ubuntu2.10_amd64.deb
+Size: 17336
+MD5sum: 0890fff8a0f61160c2c15e18eb0ed799
+SHA1: 0e575662e35c8d73921182786d0b106ab6184132
+SHA256: 649b9271b3ae876310e233d840023df70774b6cadcdaf9b1510e9d15176d565d
+SHA512: a27fb9632857482579a217e80bd4925501f5be4346201edffcf5592672770753cc79349779dc05db921f2fc15f836baee8be68cb4b8948be70bfbf5d3268be2e
+Homepage: http://www.gnutls.org/
+Description: GNU TLS library - C++ runtime library
+Description-md5: afe5e834531764319ee8050592126f1d
+Supported: 3y
+
+Package: linux-azure-cloud-tools-4.15.0-1043
+Architecture: amd64
+Version: 4.15.0-1043.47~14.04.1
+Priority: optional
+Section: devel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 538
+Depends: libc6 (>= 2.14), linux-cloud-tools-common
+Filename: pool/main/l/linux-azure/linux-azure-cloud-tools-4.15.0-1043_4.15.0-1043.47~14.04.1_amd64.deb
+Size: 61866
+MD5sum: 9f5b530df5d59fa5fdb7074a3691c79e
+SHA1: e5acdbc21abd11ee00958264403426c7be95ab55
+SHA256: 42518f8c7ac64eaa4a820b2060888154b585f7959b4bba116daf9b66914b5dec
+SHA512: 675d47626b444e5b2c4b3b7aab7264e48767999d2a28a001f2bb13e50b9ea7626f3eb06c3cae9bf38ed247063aa5bb3bfc73cf5c35f1ff32d54a72c39c321017
+Description: Linux kernel version specific cloud tools for version 4.15.0-1043
+Description-md5: c8b0e093787a9dbbdc4a318292b6fbc0
+
+Package: linux-azure-headers-4.15.0-1043
+Architecture: all
+Version: 4.15.0-1043.47~14.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 77445
+Depends: coreutils
+Filename: pool/main/l/linux-azure/linux-azure-headers-4.15.0-1043_4.15.0-1043.47~14.04.1_all.deb
+Size: 11038504
+MD5sum: a8ee84ed1d36f0adf652d86f33d1ec90
+SHA1: ecc571a3349c5aa3d5158a7a8354275acd1153b5
+SHA256: 97da6a20802cfc35ec40a61380870fa419eca3d05cfb18f933d0b326d690feab
+SHA512: d90d8fa1c8cfe7e46334032984e9e7a22ef8f634754a471c8666d2713dba464399d4e0531abcbaaaa83e20a2b295d404915b15af33768d9d8b7dee1716146050
+Description: Header files related to Linux kernel version 4.15.0
+Description-md5: 9664ca8a5046acb60710259693d3a4da
+
+Package: linux-azure-tools-4.15.0-1043
+Architecture: amd64
+Version: 4.15.0-1043.47~14.04.1
+Priority: optional
+Section: devel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 17080
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.14), libdw1 (>= 0.157), libelf1 (>= 0.144), liblzma5 (>= 5.1.1alpha+20120614), libnuma1, libpci3 (>= 1:3.2.1-1), libslang2 (>= 2.2.4), libudev1 (>= 183), libunwind8, zlib1g (>= 1:1.1.4), linux-tools-common
+Filename: pool/main/l/linux-azure/linux-azure-tools-4.15.0-1043_4.15.0-1043.47~14.04.1_amd64.deb
+Size: 3828202
+MD5sum: 66c65c43d5a697a2b4af7be2d6c8c425
+SHA1: 790b8fb9d2c916437145a7c25f80af146f37bcd3
+SHA256: 1e8580e09de73db45eb5be5ebf1d138583c8fd03e82f4d6b83a6c9d9d678a191
+SHA512: 2cb3ddbdb5d641ef1b7fd0222cca254a5aff8a96a0a922121749d6c9f5ca54d3ed13df41561fa4afb55f3abe230d1ce5ba4fc7664a972a119abbff101bdd8eef
+Description: Linux kernel version specific tools for version 4.15.0-1043
+Description-md5: 5bf674821890c9325e6d21aa6b7a05d1
+
+Package: linux-buildinfo-4.15.0-1043-azure
+Architecture: amd64
+Version: 4.15.0-1043.47~14.04.1
+Priority: optional
+Section: kernel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1557
+Filename: pool/main/l/linux-azure/linux-buildinfo-4.15.0-1043-azure_4.15.0-1043.47~14.04.1_amd64.deb
+Size: 170234
+MD5sum: 9a54ac18a5771e85cefbf399f12175b8
+SHA1: 6120afac6f201c9577da5e92e94ca79f033cf6d1
+SHA256: 46696b954f5adeb8c3cdb5ab515b77f40d6e0ddf6f7ac3f1abce027c3b61c63c
+SHA512: a8ff37d7fb4baa0423866672e5b370af49afd1c4e983c853c75d97fa22262e59a6b6e4fa194d59013f0979d151968fbfabccdcc4591f81c7c33a751abf6f6a6a
+Description: Linux kernel buildinfo for version 4.15.0 on 64 bit x86 SMP
+Description-md5: ec6b9a317bc4aefc4bb8618c8c2a11bc
+
+Package: linux-cloud-tools-4.15.0-1043-azure
+Architecture: amd64
+Version: 4.15.0-1043.47~14.04.1
+Priority: optional
+Section: devel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 478
+Depends: linux-azure-cloud-tools-4.15.0-1043
+Filename: pool/main/l/linux-azure/linux-cloud-tools-4.15.0-1043-azure_4.15.0-1043.47~14.04.1_amd64.deb
+Size: 1810
+MD5sum: 87df8faa961ad3b020d775a4c7fbca10
+SHA1: 73e5d7cb5f80718316fa03f5f6c5356b61793312
+SHA256: c3e28a9a0c52909b68a7185bc5ac24a58f820cbaabdd28d502f3a01ac984274b
+SHA512: 8edb1b642c9cc55a65c20fed9aceb8249929684f1cce6b3f0f0f7e0e0af6e008c4ceea75c93a67b06500ea8e9d3428a32464df382d7719c3aa37a43777e88d3b
+Description: Linux kernel version specific cloud tools for version 4.15.0-1043
+Description-md5: aa52a9decbc1e935905d7186e4c50341
+
+Package: linux-headers-4.15.0-1043-azure
+Architecture: amd64
+Version: 4.15.0-1043.47~14.04.1
+Priority: optional
+Section: devel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 15725
+Provides: linux-headers, linux-headers-3.0
+Depends: linux-azure-headers-4.15.0-1043, libc6 (>= 2.14), libelf1 (>= 0.142), libssl1.0.0 (>= 1.0.0)
+Filename: pool/main/l/linux-azure/linux-headers-4.15.0-1043-azure_4.15.0-1043.47~14.04.1_amd64.deb
+Size: 917988
+MD5sum: de11e7cbf8613051415c9440c9329ca8
+SHA1: 2e2765abfb9b2a91d8101ac1b1fb0bdde44ec8a4
+SHA256: a7a6bbed1ff861926644dfccf61d3f385f60f134286721f4f7ea3dc75713530b
+SHA512: 15d08737f669e079d1901b77731d5c93edb85686a2297b82cce4018d460ec06f728ded98400bb3c5cc9ab8d2d9cac22e891e73b496cf974cfe9e56b92088cab9
+Description: Linux kernel headers for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 63aa36367ee68c0e25a78296199a46b8
+
+Package: linux-image-4.15.0-1043-azure
+Architecture: amd64
+Version: 4.15.0-1043.47~14.04.1
+Built-Using: linux-azure (= 4.15.0-1043.47~14.04.1)
+Priority: optional
+Section: kernel
+Source: linux-signed-azure
+Origin: Ubuntu
+Maintainer: Canonical Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 7853
+Provides: aufs-dkms, fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, virtualbox-guest-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~14.04.1), linux-modules-4.15.0-1043-azure
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub
+Suggests: fdutils, linux-azure-doc-4.15.0 | linux-azure-source-4.15.0, linux-azure-tools, linux-headers-4.15.0-1043-azure, initramfs-tools | linux-initramfs-tool
+Conflicts: linux-image-unsigned-4.15.0-1043-azure
+Filename: pool/main/l/linux-signed-azure/linux-image-4.15.0-1043-azure_4.15.0-1043.47~14.04.1_amd64.deb
+Size: 7789618
+MD5sum: a463a58ebb51a9f7644d9b6c6166a47b
+SHA1: 4513af3b44b7b3187aea140fb372cadb7a65c57b
+SHA256: 4520856dc9055b783933ad5794d4ae2589fa63c4f962ca792b5528a8d54cc8c7
+SHA512: 1bee30bbac0505f9768f6fae0c83e1d02a5440a2674cc46b73bb14c35162d85f6a352177a8bea91e65e498085552d400abd62cba9d13b341e770f34278be79e2
+Description: Signed kernel image azure
+Description-md5: 4f10ee54ba011a7f5b60c437e681a38d
+
+Package: linux-image-unsigned-4.15.0-1043-azure
+Architecture: amd64
+Version: 4.15.0-1043.47~14.04.1
+Priority: optional
+Section: kernel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 8302
+Provides: aufs-dkms, fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, virtualbox-guest-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~14.04.1), linux-modules-4.15.0-1043-azure
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub
+Suggests: fdutils, linux-azure-doc-4.15.0 | linux-azure-source-4.15.0, linux-azure-tools, linux-headers-4.15.0-1043-azure, initramfs-tools | linux-initramfs-tool
+Conflicts: linux-image-4.15.0-1043-azure
+Filename: pool/main/l/linux-azure/linux-image-unsigned-4.15.0-1043-azure_4.15.0-1043.47~14.04.1_amd64.deb
+Size: 7830640
+MD5sum: 53b8333fff678ce9d9c3cca0475ca2a9
+SHA1: 3379e66602be769c7d666d7a5e6b4e1e5851b431
+SHA256: 0c1d6e30b3419fdbb6ad54200628bf17175caf2bb4c2e2faed11358e941005c5
+SHA512: ae90d63ec980f657bfb796a71096c1e16c35559396a9f7742dbc9fc739d7a5b6dedb16fe554672ace9efb6c5cde605deff3f9869997cfc13e70dba983a844cca
+Description: Linux kernel image for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 7aba52fe21d535ba71e2c0cfe30e5811
+
+Package: linux-modules-4.15.0-1043-azure
+Architecture: amd64
+Version: 4.15.0-1043.47~14.04.1
+Priority: optional
+Section: kernel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 50964
+Filename: pool/main/l/linux-azure/linux-modules-4.15.0-1043-azure_4.15.0-1043.47~14.04.1_amd64.deb
+Size: 10144786
+MD5sum: 26f21022ecc7f8172618b4b2a34e0fcf
+SHA1: 27b1a4d3b8df41810bf62df68175cb60c88a0f89
+SHA256: e2279b6da97af8d953694dfd95c849cd86f1ca0e09fb5665a609391f87f87295
+SHA512: 263bd02f3b75ea47b0e8ae9ade387cf4d99241c274dad45bc0f46701a06323ecf98e065060407704b1ff89dae04c8a1db40fffe814caa561ba24dedad5fa93e8
+Description: Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 26f777826b44d7c350500e086941d146
+
+Package: linux-modules-extra-4.15.0-1043-azure
+Architecture: amd64
+Version: 4.15.0-1043.47~14.04.1
+Priority: optional
+Section: kernel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 50992
+Depends: linux-image-4.15.0-1043-azure | linux-image-unsigned-4.15.0-1043-azure, crda | wireless-crda
+Filename: pool/main/l/linux-azure/linux-modules-extra-4.15.0-1043-azure_4.15.0-1043.47~14.04.1_amd64.deb
+Size: 10214574
+MD5sum: ba4f03387c359508fadc0c891eb2286b
+SHA1: 4daa5faff29bc1e2200adca82caf9b40ad758072
+SHA256: 79e416da26f1416185ae97a57e82fccdabc4c45fd4eee7505de7d461f4c68fd9
+SHA512: fa9827a2a859a25467fd3aea158d7c7da8b9aefd2cad78c29c4ab5138e5c48f06bd6246b19c51e98ac73e4a033aa5963cf198e1a6ed262492e1bcc3bae3da25d
+Description: Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 3b62513675e063ae02e1cac15b7f874b
+
+Package: linux-tools-4.15.0-1043-azure
+Architecture: amd64
+Version: 4.15.0-1043.47~14.04.1
+Priority: optional
+Section: devel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 478
+Depends: linux-azure-tools-4.15.0-1043
+Filename: pool/main/l/linux-azure/linux-tools-4.15.0-1043-azure_4.15.0-1043.47~14.04.1_amd64.deb
+Size: 1884
+MD5sum: 8b1eeff34ed598901f6fff444bbc2b6e
+SHA1: 629048307493d3dee2cf1b7ba88aa93f6156a49a
+SHA256: 6ac1861ea09620d0540508197ec1342a64ec9775e1cdd54a988e70f23eef3079
+SHA512: e1af83d0982b04da9b592ddc3f9e92bc348701392ebb33c4826445640856754d7a381e7710ce022b736b8464470ecec0e530a6d3e1e7f4b48fb0a96243e550fa
+Description: Linux kernel version specific tools for version 4.15.0-1043
+Description-md5: 780e70da864921d9de85211c9e52f343
+
+Package: wireless-regdb
+Architecture: all
+Version: 2024.07.04-0ubuntu1~14.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Seth Forshee <seth@forshee.me>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 69
+Suggests: crda
+Filename: pool/main/w/wireless-regdb/wireless-regdb_2024.07.04-0ubuntu1~14.04.1_all.deb
+Size: 9946
+MD5sum: 8045ded4299037b604267941af9dd9d4
+SHA1: 4626889e7593bedcd259b49ee10f3f48d6152388
+SHA256: 8f18400dd2be6f89b78708423b1c5f9da304cc5cae22e3b958765d897591f32a
+SHA512: d7f6053f97e5fdf055bf2aacb59b7d1f8b2861ac19f408ead333787909378d734412bee6a062de227adcd5336b5a4bac5e1fa919db3012dc7358d4711c6f36d2
+Homepage: https://wireless.wiki.kernel.org/en/developers/regulatory/wireless-regdb
+Description: wireless regulatory database
+Task: ubuntu-desktop, ubuntu-usb, kubuntu-desktop, kubuntu-full, kubuntu-active, kubuntu-active-desktop, kubuntu-active-full, kubuntu-active, edubuntu-desktop, edubuntu-usb, xubuntu-desktop, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, lubuntu-live, ubuntustudio-desktop, ubuntu-gnome-desktop
+Description-md5: 9b699ccc910634888e4cf21e28a9467b
+Supported: 3y
+

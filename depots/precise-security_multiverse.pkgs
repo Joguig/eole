@@ -1,0 +1,227 @@
+Package: flashplugin-installer
+Priority: optional
+Section: multiverse/web
+Installed-Size: 137
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Bart Martens <bartm@knars.be>
+Architecture: amd64
+Source: flashplugin-nonfree
+Version: 25.0.0.148ubuntu0.12.04.1
+Replaces: flashplugin (<< 6), flashplugin-downloader (<< 11.1.102.55ubuntu3), flashplugin-nonfree (<< 11.0.1.152ubuntu1)
+Provides: flashplugin-nonfree
+Depends: debconf (>= 0.5) | debconf-2.0, wget, libgtk2.0-0, fontconfig, libxt6, libxext6, libatk1.0-0, libc6, libcairo2, libexpat1, libfontconfig1, libfreetype6, libglib2.0-0, libice6, libpango1.0-0, libpng12-0, libsm6, libx11-6, libxau6, libxcursor1, libxdmcp6, libxfixes3, libxi6, libxinerama1, libxrandr2, libxrender1, zlib1g, libnss3-1d, libnspr4-0d, libcurl3 | libcurl3-gnutls, libasound2, update-notifier-common (>= 0.119ubuntu2)
+Recommends: libasound2-plugins (>= 1.0.16)
+Suggests: firefox, x-ttcidfont-conf, ttf-mscorefonts-installer, ttf-bitstream-vera | ttf-dejavu, ttf-xfree86-nonfree, xfs
+Conflicts: flashplayer-mozilla, flashplugin (<< 6), flashplugin-nonfree (<< 11.0.1.152ubuntu1), libflashsupport
+Breaks: flashplugin-downloader (<< 11.1.102.55ubuntu3)
+Filename: pool/multiverse/f/flashplugin-nonfree/flashplugin-installer_25.0.0.148ubuntu0.12.04.1_amd64.deb
+Size: 6988
+MD5sum: 3bbf2a4fb8257da5a90058f28ea70c77
+SHA1: 570b06c858fdf02401a858fecd649e20fcb9a25b
+SHA256: b3e33e4f60f36416ca3e90c9ba0905e6aacb00c56462e52049be4d47589e8088
+Description: Adobe Flash Player plugin installer
+Multi-Arch: foreign
+Homepage: http://www.adobe.com/products/flashplayer.html
+Npp-Applications: ec8030f7-c20a-464f-9b0e-13a3a9e97384, 92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a, aa5ca914-c309-495d-91cf-3141bbb04115
+Npp-Description: Adobe Flash SWF Player (http://www.adobe.com)
+Npp-File: libflashplayer.so
+Npp-Mimetype: application/x-shockwave-flash
+Npp-Name: Adobe Flash Player (installer)
+Description-md5: a03e9ebc20ce82c05567d088e79bf750
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: intel-microcode
+Priority: extra
+Section: multiverse/admin
+Installed-Size: 1709
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Giacomo Catenazzi <cate@debian.org>
+Architecture: amd64
+Version: 0.20130808-p-1ubuntu1
+Depends: microcode.ctl
+Filename: pool/multiverse/i/intel-microcode/intel-microcode_0.20130808-p-1ubuntu1_amd64.deb
+Size: 716664
+MD5sum: dc97075ad9ca12dfa1addece30878d1a
+SHA1: 53556143b4357908f1adf2f3d2e18e76674e4d5a
+SHA256: 70907e25c7c2f518e86195f4c7f708d2bdf561132ddb91af2be4af3817eebec7
+Description: Processor microcode data file for Intel CPUs
+Homepage: http://feeds.downloadcenter.intel.com/rss/?p=483&lang=eng
+Description-md5: cbcc9fe584a3392576463d76507fb857
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libclamunrar7
+Priority: extra
+Section: multiverse/libs
+Installed-Size: 97
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: libclamunrar
+Version: 0.99-0ubuntu0.12.04.1
+Depends: libclamav7, libc6 (>= 2.14)
+Filename: pool/multiverse/libc/libclamunrar/libclamunrar7_0.99-0ubuntu0.12.04.1_amd64.deb
+Size: 37134
+MD5sum: 82bd7cb247cbb8f7736cd81d3ac2203d
+SHA1: b7f577748dc01b00ae4e4421ba65591c791b5d28
+SHA256: 7c12aedaa93b9318c37acd0c588d7f76db7102c108821a1004eba080c5d01441
+Description: anti-virus utility for Unix - unrar support
+Homepage: http://www.clamav.net/
+Description-md5: cc91b3ee0883ae72d88576f9ca8c850e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: redeclipse
+Priority: optional
+Section: multiverse/games
+Installed-Size: 4202
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.2-2ubuntu0.1
+Depends: redeclipse-data (>= 1.2), libc6 (>= 2.15), libenet1a, libgl1-mesa-glx | libgl1, libsdl-image1.2 (>= 1.2.10), libsdl-mixer1.2, libsdl1.2debian (>= 1.2.10-1), libstdc++6 (>= 4.1.1), libx11-6, zlib1g (>= 1:1.2.0)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/multiverse/r/redeclipse/redeclipse_1.2-2ubuntu0.1_amd64.deb
+Size: 1477736
+MD5sum: 96a5d404779fbbb6bed4930ee878fb2e
+SHA1: a46eaac5ac70c79f4374df36cd203efaf302a645
+SHA256: 547464949731c1465d14682be0738dd72b3228ad91fbc842363beebdddfaf325
+Description: single-player and multi-player first-person ego-shooter
+Homepage: http://www.redeclipse.net
+Description-md5: 5c2008bbe98e70a350dc2e5ff41c2edb
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: redeclipse-dbg
+Priority: extra
+Section: multiverse/debug
+Installed-Size: 17994
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: redeclipse
+Version: 1.2-2ubuntu0.1
+Depends: redeclipse (= 1.2-2ubuntu0.1)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/multiverse/r/redeclipse/redeclipse-dbg_1.2-2ubuntu0.1_amd64.deb
+Size: 3795634
+MD5sum: a5f66affb529c1600e1e71a42db547cf
+SHA1: 61f4fcdda9745d0f811f707e4732db13446a4299
+SHA256: 3d4a626c475a8e1117bfecef2802feb3efcdf20c84998fc6a76f039255fb4747
+Description: debug symbols for the Red Eclipse FPS game
+Homepage: http://www.redeclipse.net
+Description-md5: 472a3994437308850b2d85085b11423f
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: redeclipse-server
+Priority: optional
+Section: multiverse/games
+Installed-Size: 800
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: redeclipse
+Version: 1.2-2ubuntu0.1
+Depends: libc6 (>= 2.15), libenet1a, libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/multiverse/r/redeclipse/redeclipse-server_1.2-2ubuntu0.1_amd64.deb
+Size: 262922
+MD5sum: 423ff13f35e7f9cc9dd1e3f015692e37
+SHA1: b15510cf344a47b4702bba8eaa10aef043c9cec2
+SHA256: 0d134c6036e4d0b816726f071e00ed85bbd92e10b01e98616f21a450bdf595ea
+Description: server for the Red Eclipse FPS game
+Homepage: http://www.redeclipse.net
+Description-md5: 315338a2439def5a06eb51a250e84e31
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: redeclipse-server-dbg
+Priority: extra
+Section: multiverse/debug
+Installed-Size: 2525
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: redeclipse
+Version: 1.2-2ubuntu0.1
+Depends: redeclipse-server (= 1.2-2ubuntu0.1)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/multiverse/r/redeclipse/redeclipse-server-dbg_1.2-2ubuntu0.1_amd64.deb
+Size: 551948
+MD5sum: 08fda7b4ecf5eb168d4c2f249e4249f7
+SHA1: 863c5f033d2bc671cda9c134089e08b0eb5586b8
+SHA256: 5a573e6e88687cc25180a4136114ed05900adef57a4004b6cd47bc07858094b7
+Description: debug symbols for the Red Eclipse dedicated server
+Homepage: http://www.redeclipse.net
+Description-md5: 845a03d775cde2c92ef0a0d918bdbf50
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: unrar
+Priority: optional
+Section: multiverse/utils
+Installed-Size: 239
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Martin Meredith <mez@debian.org>
+Architecture: amd64
+Source: unrar-nonfree
+Version: 1:4.0.3-1ubuntu0.1
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Conflicts: rar (<= 2.60-1)
+Filename: pool/multiverse/u/unrar-nonfree/unrar_4.0.3-1ubuntu0.1_amd64.deb
+Size: 105942
+MD5sum: 4aa80cd8a3aabad5dfff73dd708549f9
+SHA1: 001737b35ca3bdbc24846dde75ad1ce878350aa4
+SHA256: 0261773e8e25e1e4616ee98520aca0375c301f1bdb145e78577f75e209749a83
+Description: Unarchiver for .rar files (non-free version)
+Homepage: http://www.rarlabs.com/
+Description-md5: 363f696bb115028ffafb265ccc9f32fb
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: virtualbox-guest-additions
+Priority: extra
+Section: multiverse/misc
+Installed-Size: 36
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: all
+Source: virtualbox-guest-additions-iso
+Version: 4.1.44-1ubuntu1.12.04.1
+Depends: virtualbox-guest-additions-iso
+Filename: pool/multiverse/v/virtualbox-guest-additions-iso/virtualbox-guest-additions_4.1.44-1ubuntu1.12.04.1_all.deb
+Size: 5604
+MD5sum: 25039c482a22dd781bf4097bf2336ad4
+SHA1: 7b4a396df8c00dca0b93496e7fca3e1c707e4872
+SHA256: afd82d0f5157aa4f4a8ce0a256e36b5176391bbcd580739454aa7e268b56f4b1
+Description: transitional package for virtualbox-guest-additions-iso
+Homepage: http://www.virtualbox.org/
+Description-md5: 5beaa29575092d4b0482b8859cb2ab91
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: virtualbox-guest-additions-iso
+Priority: extra
+Section: multiverse/misc
+Installed-Size: 52376
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 4.1.44-1ubuntu1.12.04.1
+Replaces: virtualbox-guest-additions (<< 4.0.6-1~)
+Recommends: virtualbox (>= 4.1.44)
+Conflicts: virtualbox-2.0, virtualbox-2.1, virtualbox-2.2, virtualbox-3.0, virtualbox-3.1, virtualbox-3.2, virtualbox-4.0, virtualbox-4.1, virtualbox-4.2, virtualbox-4.3, virtualbox-5.0
+Breaks: virtualbox-guest-additions (<< 4.0.6-1~)
+Filename: pool/multiverse/v/virtualbox-guest-additions-iso/virtualbox-guest-additions-iso_4.1.44-1ubuntu1.12.04.1_all.deb
+Size: 43384928
+MD5sum: 09c9cba2ffaa04f5a19ecc3edb717d8c
+SHA1: 97cccef609ca6e3e234f4ad81889099b6fd08ba2
+SHA256: 9dc0e5c95d89951c5108169127d489b732be4f00065de7a3c3f972994ac9cb81
+Description: guest additions iso image for VirtualBox
+Homepage: http://www.virtualbox.org/
+Description-md5: 11a9eaac064138ec238f7c2ee4c018df
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+

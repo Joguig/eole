@@ -1,0 +1,244 @@
+Package: eole-break
+Source: python-pyeole
+Version: 2.10.0-10
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 19
+Priority: optional
+Section: metapackages
+Filename: pool/main/p/python-pyeole/eole-break_2.10.0-10_all.deb
+Size: 12974
+SHA256: 5d859b6ecfcdde7b7dddf4e74c1efd0e3da9d00e0afbb424214c694696555806
+SHA1: be427ef727cee8f6a6c6c60ee346651719937d66
+MD5sum: d6ba5e11cb70e0b2fb5ac432fec30152
+Description: Paquet en erreur pour les tests
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-fake
+Source: python-pyeole
+Version: 2.10.0-10
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 18
+Priority: optional
+Section: metapackages
+Filename: pool/main/p/python-pyeole/eole-fake_2.10.0-10_all.deb
+Size: 12306
+SHA256: 5d8a5b52c9376ce977cea7c9e28d4974894732108d29ba3ccf199954b3b612be
+SHA1: 36325176552c9c589e3aaac1daf558f7eb32170c
+MD5sum: 6ff929f877f6a4a158d90c2c898525e0
+Description: Paquet bidon pour les tests
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-flask
+Version: 2.10.0-1
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 22
+Depends: eole-flask-admin (= 2.10.0-1)
+Breaks: eole-flask-server (<< 2.4.1-16)
+Replaces: eole-flask-server (<< 2.4.1-16)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-flask/eole-flask_2.10.0-1_all.deb
+Size: 8776
+SHA256: 984adb154da8bf84411bdf4e8f487d3041bc4922b9d3ed3a60243547f609c3e4
+SHA1: 2ae1a0be2fe9c59f619e317a0b42e0b8d929b36e
+MD5sum: 01ab88a4f1d1aab3bd54e7e7dbcae901
+Description: configuration files for eole application server
+ This package provides configuration files to start
+ eole application server.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-flask-admin
+Source: eole-flask
+Version: 2.10.0-1
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 30
+Depends: eole-flask-server (= 2.10.0-1), nginx-light | nginx
+Conflicts: eole-flask-server (<= 2.4.1-1)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-flask/eole-flask-admin_2.10.0-1_all.deb
+Size: 10942
+SHA256: da7549c3419e23f3b870837aa4eb2f0772d3a044d29e47fc916e214d5e41c331
+SHA1: f6d3d5ef0ea2fbf8d5152593174b30cee7f01b34
+MD5sum: f38c073b940da16b5c44fd3425fce61a
+Description: configuration files for eole-flask admin instance
+ This package provides configuration files to start
+ eoleflask service.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-flask-apps
+Source: eole-flask
+Version: 2.10.0-1
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 25
+Depends: eole-flask-server (= 2.10.0-1)
+Conflicts: eole-flask-server (<= 2.4.1-1)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-flask/eole-flask-apps_2.10.0-1_all.deb
+Size: 8160
+SHA256: 96911ff26298d83a56b33e93d0c38c585e8d42b6ad0aae1b060bb04f6ef27225
+SHA1: f968544a748cc18e42e02d40e60583f0e12f3021
+MD5sum: d0a52573ee700cb0748b640cb3411a8b
+Description: configuration files for eole-flask eoleapps instance
+ This package provides configuration files to start
+ eoleapps service.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-flask-server
+Source: eole-flask
+Version: 2.10.0-1
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 26
+Depends: python-eoleflask (= 2.10.0-1), gunicorn, python3-eventlet
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-flask/eole-flask-server_2.10.0-1_all.deb
+Size: 8768
+SHA256: f347be569d4842ff55c7db85f6e8ae9eeeebf307eda5b0ff483f9fd26729cf81
+SHA1: bd4668db9a184da2711a596e8d2de462d62e03fc
+MD5sum: cf504e36e754aab6caeb506fcb10456d
+Description: application server for EOLE
+ This package provides an init script and a configuration to start
+ gunicorn.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-gpo-joineole
+Source: eole-workstation-joineole
+Version: 2.10.0-2
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 38
+Homepage: http://pcll.ac-dijon.fr/eole
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-workstation-joineole/eole-gpo-joineole_2.10.0-2_all.deb
+Size: 19126
+SHA256: 99523f6339e2bbaceec42c8cf4ba87799308785931a20fffe04013f66a41046f
+SHA1: e461777037f5732279d2c5df0a3ff2ffdc139fc3
+MD5sum: 2c56825b2e3b1c35e81e4b1620e3b3ee
+Description: Install scripts for eole-gpo-script
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-workstation-joineole
+Version: 2.10.0-2
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 513
+Depends: nginx
+Homepage: http://pcll.ac-dijon.fr/eole
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-workstation-joineole/eole-workstation-joineole_2.10.0-2_all.deb
+Size: 291732
+SHA256: 6f12f934f0d520d2beeb403a0cab0a7a852db00ea89fe607e22c881aa8b38cd7
+SHA1: 2a882f8296e520c9039aa68fe3271e1fb75dfbf2
+MD5sum: 14b040cb0f71cb0300d8c255c35aa0a4
+Description: Install scripts for eole-workstation
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: pyeole-data
+Source: python-pyeole
+Version: 2.10.0-10
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 53
+Depends: gettext
+Priority: optional
+Section: python
+Filename: pool/main/p/python-pyeole/pyeole-data_2.10.0-10_all.deb
+Size: 30746
+SHA256: ed1ed20659e0d92f7146697553779c8a8b24232579dc644d3016e2949471df3b
+SHA1: f98897368375a931c211026c03442e489bcb9ba3
+MD5sum: 60ab85a05b986950dab9c9c14ab466f6
+Description: Fichiers supplémentaires de la librairie pyeole
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet Eole a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: pyeole-tests
+Source: python-pyeole
+Version: 2.10.0-10
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 129
+Depends: python3-pyeole, python3-pytest
+Priority: optional
+Section: python
+Filename: pool/main/p/python-pyeole/pyeole-tests_2.10.0-10_all.deb
+Size: 78460
+SHA256: b122dbf77cc3da2c004453cea0bd83ae29a701bf95448066ae5778033713e983
+SHA1: 8376e8c35644dd776faec8a8ec0a9b0f62794160
+MD5sum: 12d4223a00431172364ff5e6c8bd5726
+Description: Tests py.test pour pyeole
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: python-eoleflask
+Source: eole-flask
+Version: 2.10.0-1
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 35
+Depends: python3-flask, python3:any
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-flask/python-eoleflask_2.10.0-1_all.deb
+Size: 14896
+SHA256: a8ffd7286284b5b0385367ab8d892db491dbc0496a7ed3fc3d65be1aaa7b9a98
+SHA1: dc1152f145ce1eea169b0b9f845cf71eac13cef9
+MD5sum: e644b81ccb1ffea24dad7fba40cb95f8
+Description: application server for EOLE
+ This package provides python library of EOLE application server.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: python3-pyeole
+Source: python-pyeole
+Version: 2.10.0-10
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 410
+Depends: python3:any (>= 3.2~), pyeole-data, python3-creole-client | python3-creole, python3-apt, python3-dpkt, python3-packaging, python3-pyinotify, python3-pyudev
+Priority: optional
+Section: python
+Filename: pool/main/p/python-pyeole/python3-pyeole_2.10.0-10_all.deb
+Size: 223988
+SHA256: 94ab1ec089b42ec4f17ada85a95954130ca94ac9d79e899fd2444f510f4c2d7c
+SHA1: 004a638865c89f1364e71643d130668552b404a2
+MD5sum: f8c32fb3e57c9c40ddfbc3b2e3a11dde
+Description: Librairie commune Eole pour Python3
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet Eole a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+

@@ -1,0 +1,484 @@
+Package: docker-machine-opennebula
+Source: opennebula
+Version: 6.8.0-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 13391
+Filename: pool/cloud/o/opennebula/docker-machine-opennebula_6.8.0-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 6014172
+SHA256: 396dc3b4241468e57dc1f41e03e98d620d9cca7c3db6fb80f632310017fc07e3
+SHA1: f3487983d4bc6dc614f0f34acfaa04ff5914c070
+MD5sum: 29449633295fb8b54b42f7367ef5077e
+Description: OpenNebula driver for Docker Machine (Community Edition)
+
+Package: libopennebula-java
+Source: opennebula
+Version: 6.8.0-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 117
+Filename: pool/cloud/o/opennebula/libopennebula-java_6.8.0-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 88952
+SHA256: 966a9c7b2b1ae5687ca63658f04579da96063b8d5d77b7ca5c9dafdfc3409b8b
+SHA1: 0a996c9142c594600414783260dec80dc01cdfef
+MD5sum: c02b2c9b48b7cb4b518940416b7ffb86
+Description: Java bindings for OpenNebula Cloud API, OCA (Community Edition)
+
+Package: libopennebula-java-doc
+Source: opennebula
+Version: 6.8.0-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 29
+Filename: pool/cloud/o/opennebula/libopennebula-java-doc_6.8.0-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 9528
+SHA256: 56f0371b24fa1e04632c8e002225281d0adbe7543575162d38e115db9219669b
+SHA1: 10a40471ce4dbf9479f062f1d16895fdcb35faab
+MD5sum: 7970d9b6c3afd03ccba68d3ad28eaaa3
+Description: Documentation for Java bindings for OpenNebula Cloud API, OCA (Community Edition)
+
+Package: one-context
+Version: 6.6.0-1
+License: Apache 2.0
+Vendor: OpenNebula Systems
+Architecture: all
+Maintainer: OpenNebula Systems <contact@opennebula.io>
+Installed-Size: 246
+Depends: util-linux, bash, curl, bind9-host, cloud-utils, parted, ruby, ifupdown|ifupdown2, acpid|systemd, sudo, passwd, dbus, openssh-server, open-vm-tools, qemu-guest-agent, gawk, virt-what
+Conflicts: cloud-init, one-context-ec2
+Replaces: cloud-init
+Homepage: http://opennebula.org
+Priority: optional
+Section: default
+Filename: pool/cloud/o/one-context/one-context_6.6.0-1_all.deb
+Size: 56542
+SHA256: aa8ebccbbb2d723e45e0798ef99fad82b57227215f1933322a37c6256aeab66b
+SHA1: 36a926c54262937a525347d85a9226c79a969ee4
+MD5sum: ffd9994c4ec864b8d9763e3d8ec98b23
+Description: 
+ Contextualization tools for the virtual machine running in the OpenNebula
+ cloud. Based on parameters provided by the cloud controller configures the
+ networking, initial user password, SSH keys, runs custom start scripts,
+ resizes the root filesystem, and provides tools to communicate with
+ OneGate service.
+ .
+ Check the OpenNebula web page (http://opennebula.org) to get the support.
+
+Package: opennebula
+Version: 6.8.0-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 11792
+Pre-Depends: opennebula-common-onecfg (= 6.8.0-1)
+Depends: apg, genisoimage, opennebula-common (= 6.8.0-1), opennebula-tools (= 6.8.0-1), opennebula-libs (= 6.8.0-1), opennebula-rubygems (= 6.8.0-1), wget, curl, rsync, tar, sqlite3, qemu-utils, libcurl4 (>= 7.16.2), iputils-arping, file, procps, sudo, uuid-runtime, libaugeas0, diffutils, git, patch, jq, libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libmysqlclient21 (>= 8.0.11), libpq5 (>= 9.1~), libsqlite3-0 (>= 3.6.23), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12), libsystemd0, libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Suggests: mysql-server
+Breaks: onescape (<< 5.13.80), opennebula-addon-markets (<< 5.10.2), opennebula-common (<< 5.5.80), opennebula-flow (<< 5.0.2), opennebula-gate (<< 5.0.2), opennebula-sunstone (<< 5.0.2), ruby-opennebula (<< 5.5.80)
+Replaces: onescape (<< 5.13.80), opennebula-addon-markets (<< 5.10.2), opennebula-common (<< 5.5.80), opennebula-flow (<< 5.0.2), opennebula-gate (<< 5.0.2), opennebula-sunstone (<< 5.0.2), ruby-opennebula (<< 5.5.80)
+Filename: pool/cloud/o/opennebula/opennebula_6.8.0-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 2825090
+SHA256: 4dbe42394a4a75b4a104332accf4c0f293ee2d40d90f0eed8516a21496d35a2f
+SHA1: d4579c53451c13851da9eaddb951bd48cb0cbcc5
+MD5sum: 1d685a0eb433d16bb961d213222f17e6
+Description: OpenNebula Server and Scheduler (Community Edition)
+
+Package: opennebula-common
+Source: opennebula
+Version: 6.8.0-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 59
+Pre-Depends: opennebula-common-onecfg (= 6.8.0-1)
+Depends: adduser, openssh-client, jq
+Recommends: lvm2, sudo (>= 1.7.2p1)
+Breaks: opennebula (<< 5.11.90), opennebula-node (<< 5.11.90), opennebula-node-firecracker (<< 5.11.90)
+Replaces: opennebula (<< 5.11.90), opennebula-node (<< 5.11.90), opennebula-node-firecracker (<< 5.11.90)
+Filename: pool/cloud/o/opennebula/opennebula-common_6.8.0-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 21550
+SHA256: 7f557a996cf36355d7739cd91f487c9315d4b93483fd93495cabdfdba2ece83d
+SHA1: 1784dac6532a7e1d347c05e3ed3068242b07a614
+MD5sum: 2b6b3f3d1c1e0aa10bd0a31a51bdf77c
+Description: Common OpenNebula package shared by various components (Community Edition)
+
+Package: opennebula-common-onecfg
+Source: opennebula
+Version: 6.8.0-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 21
+Conflicts: opennebula-common-onescape
+Filename: pool/cloud/o/opennebula/opennebula-common-onecfg_6.8.0-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 5440
+SHA256: cd35c4e9ebba2218a230d5b336953afbb34c99abde4e7702a274ea695049eeea
+SHA1: 9b2aceff8900ecf937a8fba55521d67a3db2885d
+MD5sum: 76d6280b7c63e184fb967aa40b2b5bce
+Description: Helpers for OpenNebula onecfg (Community Edition)
+
+Package: opennebula-dbgsym
+Source: opennebula
+Version: 6.8.0-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 46059
+Depends: opennebula (= 6.8.0-1)
+Filename: pool/cloud/o/opennebula/opennebula-dbgsym_6.8.0-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 44870830
+SHA256: e9b5795afbd728baa76b9072a8aab2427279d9e98531c2cef62b435ce565a631
+SHA1: 747f2f1f8d147b03dda7849d8c819db57960fd7c
+MD5sum: 78440389805af4e524b352ab10149c31
+Description: Debug symbols for package opennebula (Community Edition)
+Build-Ids: 0f7e285eb8394c36f91d49e4d60702a89df818f1 2fc56ed63e02b0eb57aa65b67fa2629035a62373 f331375ea3dddb9df6c703bde3a82e5050fe7b47
+
+Package: opennebula-fireedge
+Source: opennebula
+Version: 6.8.0-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 274086
+Pre-Depends: opennebula-common-onecfg (= 6.8.0-1)
+Depends: opennebula-common (= 6.8.0-1), opennebula-provision-data (= 6.8.0-1), nodejs (>= 10), libc6 (>= 2.4), libgcc-s1 (>= 3.3.1), libnode72 (>= 12.22.9~dfsg), libstdc++6 (>= 5), libzmq5 (>= 4.0.1+dfsg)
+Recommends: opennebula-guacd (= 6.8.0-1)
+Conflicts: opennebula (<< 6.8.0-1)
+Filename: pool/cloud/o/opennebula/opennebula-fireedge_6.8.0-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 25240638
+SHA256: 891a02d8287dade0faa373cfeecfe4dda2444f3af51a0407a455d5b2b683ad2c
+SHA1: adc7b5783e210318fd1e5ec9aac787c2fb982571
+MD5sum: c61977e34e934b52b94a8dc94dfa07b4
+Description: OpenNebula web interface FireEdge (Community Edition)
+ Browser based UI for OpenNebula application management.
+
+Package: opennebula-flow
+Source: opennebula
+Version: 6.8.0-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 257
+Pre-Depends: opennebula-common-onecfg (= 6.8.0-1)
+Depends: opennebula-common (= 6.8.0-1), opennebula-libs (= 6.8.0-1), opennebula-rubygems (= 6.8.0-1), curl
+Conflicts: opennebula (<< 6.8.0-1)
+Filename: pool/cloud/o/opennebula/opennebula-flow_6.8.0-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 35326
+SHA256: 4ceb3ec9ced523f6018d82bbf2a47ee9fee4cb9b2436cdd316a9f2353e39b460
+SHA1: bb5ac1ff2e2629435377fcff77a080f169b36c8a
+MD5sum: be58c91bdc4c87730718dfaef6282de2
+Description: OpenNebula Flow server (Community Edition)
+ Server for multi-VM orchestration.
+
+Package: opennebula-gate
+Source: opennebula
+Version: 6.8.0-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 100
+Pre-Depends: opennebula-common-onecfg (= 6.8.0-1)
+Depends: opennebula-common (= 6.8.0-1), opennebula-libs (= 6.8.0-1), opennebula-rubygems (= 6.8.0-1)
+Conflicts: opennebula (<< 6.8.0-1)
+Filename: pool/cloud/o/opennebula/opennebula-gate_6.8.0-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 18922
+SHA256: 958242f7a33f7d85369f55e833f5f5594ea953f75b0c5c906b08dbcbd1e97b1a
+SHA1: 137850b48af01df84919fc9e04ad091b5972a36a
+MD5sum: e7536fe3d483731a4fceff40751a4297
+Description: OpenNebula Gate server (Community Edition)
+ Server for information exchange between Virtual Machines and OpenNebula.
+
+Package: opennebula-guacd
+Source: opennebula
+Version: 6.8.0-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 1205
+Depends: libc6 (>= 2.34), libcairo2 (>= 1.6.0), libfreerdp-client2-2 (>= 2.0.0~git20160317.1.75ae3f5+dfsg1), libfreerdp2-2 (>= 2.0.0~git20161130.1.e60d0d5+dfsg1), libglib2.0-0 (>= 2.12.0), libjpeg8 (>= 8c), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.14.0), libpng16-16 (>= 1.6.2-1), libssh2-1 (>= 1.2.8), libssl3 (>= 3.0.0~~alpha1), libuuid1 (>= 2.16), libvncclient1 (>= 0.9.10), libwebp7, libwinpr2-2 (>= 2.1.0+dfsg1)
+Filename: pool/cloud/o/opennebula/opennebula-guacd_6.8.0-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 228648
+SHA256: 01fbd838ad39a798b71220b970ff4f9a880a2ef519d8b5704dd2de9cd8bd38c1
+SHA1: 3da71ad6061a43fba9fc50d7067ab8ba24c673ef
+MD5sum: 442b82ccde5445b106cb20553dbaeb57
+Description: Provides Guacamole server for Fireedge to be used in Sunstone (Community Edition)
+
+Package: opennebula-libs
+Source: opennebula
+Version: 6.8.0-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 1412
+Depends: ruby, libzmq5, libzmq3-dev, opennebula-rubygems (= 6.8.0-1)
+Breaks: opennebula (<< 5.13.80), opennebula-gate (<< 4.90.5), opennebula-sunstone (<< 4.90.5), opennebula-tools (<< 5.13.80), ruby-opennebula (<< 5.13.80)
+Replaces: opennebula (<< 5.13.80), opennebula-gate (<< 4.90.5), opennebula-sunstone (<< 4.90.5), opennebula-tools (<< 5.13.80), ruby-opennebula (<< 5.13.80)
+Filename: pool/cloud/o/opennebula/opennebula-libs_6.8.0-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 180646
+SHA256: 5a923a818fe935748744b36d686cf647833b1d622aebd5edc974be9a590cbc48
+SHA1: 9bcb9b1652144c203663996b928328ed2c2c804b
+MD5sum: 255aa25cfd01fa0fce1ef4f09deda9ef
+Description: OpenNebula libraries (Community Edition)
+
+Package: opennebula-node-firecracker
+Source: opennebula
+Version: 6.8.0-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 250
+Depends: adduser, opennebula-common (= 6.8.0-1), ruby, vlan, ipset, pciutils, rsync, tar, cron, augeas-tools, ruby-sqlite3, libarchive-tools, screen, libvncserver1, e2fsprogs, lsof, qemu-utils, iptables
+Conflicts: opennebula-node-kvm, opennebula-node-lxc, opennebula-node-lxd
+Filename: pool/cloud/o/opennebula/opennebula-node-firecracker_6.8.0-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 30092
+SHA256: 39c500996201026b904695a6ab831d8f744d5bd7a2fcbae5eb5cd803d98db8eb
+SHA1: 9bdbe04e0049aac39745bc83a34245495e1ca34a
+MD5sum: cd17a9033b4a5d8a0c1b5120f19846ac
+Description: Services for OpenNebula Firecracker node (Community Edition)
+
+Package: opennebula-node-kvm
+Source: opennebula
+Version: 6.8.0-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 61
+Depends: adduser, libvirt-daemon-system, qemu-kvm | pve-qemu-kvm, qemu-utils, opennebula-common (= 6.8.0-1), ruby, vlan, ipset, pciutils, rsync, tar, cron, augeas-tools, ruby-sqlite3, libxml2-utils, iptables, libnbd-bin
+Recommends: openssh-server | ssh-server
+Conflicts: opennebula-node-firecracker, opennebula-node-lxc, opennebula-node-lxd
+Breaks: opennebula-node (<< 5.13.80)
+Replaces: opennebula-node (<< 5.13.80)
+Provides: opennebula-node
+Filename: pool/cloud/o/opennebula/opennebula-node-kvm_6.8.0-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 11938
+SHA256: 3d135767260126d3c9c421ea20980f0d3863792d92ebe9a9a2bba8db1d1ddba0
+SHA1: fcaefff60e58b4b72112c4ad4c164fccceed681b
+MD5sum: 9055f40fb9546e122b96538ad3f0e522
+Description: Services for OpenNebula KVM node (Community Edition)
+
+Package: opennebula-node-lxc
+Source: opennebula
+Version: 6.8.0-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 241
+Depends: adduser, opennebula-common (= 6.8.0-1), ruby, vlan, ipset, pciutils, rsync, tar, cron, augeas-tools, ruby-sqlite3, libarchive-tools, libvncserver1, qemu-utils, bindfs, lxc, xfsprogs, e2fsprogs, passwd, iptables
+Suggests: rbd-nbd
+Conflicts: opennebula-node-firecracker, opennebula-node-kvm, opennebula-node-lxd
+Filename: pool/cloud/o/opennebula/opennebula-node-lxc_6.8.0-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 28688
+SHA256: abcc4a1e113f70d180d8c4dd5398375be4c09febd8d7434b07a194d973c55386
+SHA1: 5f8bf6a7efeb65520bec9342027b493b612ebb86
+MD5sum: 6e4ef4a2c47bd3f565cf16a1e47558a7
+Description: Services for OpenNebula LXC node (Community Edition)
+
+Package: opennebula-node-lxd
+Source: opennebula
+Version: 6.8.0-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 214
+Pre-Depends: snapd
+Depends: opennebula-common (= 6.8.0-1), kpartx, libvncserver1, e2fsprogs, xfsprogs, qemu-utils, adduser, ruby, vlan, ipset, pciutils, rsync, tar, cron, ruby-sqlite3, iptables
+Suggests: rbd-nbd
+Conflicts: lxd, lxd-client, opennebula-lxd-snap, opennebula-node-firecracker, opennebula-node-kvm, opennebula-node-lxc
+Replaces: lxd, lxd-client, opennebula-lxd-snap
+Filename: pool/cloud/o/opennebula/opennebula-node-lxd_6.8.0-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 25332
+SHA256: ac899801864bacbdf32806eff425d0be62395b304c6342d096f2e70b635020d3
+SHA1: 91024cec7fc8aa0058bf3655d0db6bf3a52ccf8a
+MD5sum: 163e899df3761dcbc510aa87e1848eb0
+Description: Services for OpenNebula LXD node (Community Edition)
+
+Package: opennebula-provision
+Source: opennebula
+Version: 6.8.0-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 380
+Pre-Depends: opennebula-common-onecfg (= 6.8.0-1)
+Depends: opennebula (= 6.8.0-1), opennebula-common (= 6.8.0-1), opennebula-tools (= 6.8.0-1), opennebula-libs (= 6.8.0-1), opennebula-provision-data (= 6.8.0-1), python3-netaddr, opennebula-rubygems (= 6.8.0-1)
+Filename: pool/cloud/o/opennebula/opennebula-provision_6.8.0-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 53928
+SHA256: f770776b43575034f84d2d601bbb207a2468cad60bae694a6998684d990d87dd
+SHA1: 0c71e3db6c5ee0edd431af720ae7baf1f59834a8
+MD5sum: 8d027298bd3cded7f7272b27898a7b64
+Description: OpenNebula infrastructure provisioning (Community Edition)
+
+Package: opennebula-provision-data
+Source: opennebula
+Version: 6.8.0-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 395
+Pre-Depends: opennebula-common-onecfg (= 6.8.0-1)
+Breaks: opennebula-provision (<< 5.13.80)
+Replaces: opennebula-provision (<< 5.13.80)
+Filename: pool/cloud/o/opennebula/opennebula-provision-data_6.8.0-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 29660
+SHA256: 934bddfd1821006d9a7505661f82923842715582146749a0eae6b3803caa136a
+SHA1: ef25055c8b59a7915b3361d0f5ac703012fcabfc
+MD5sum: f28f86a0419fd58a9d5082a62f358156
+Description: OpenNebula infrastructure provisioning data (Community Edition)
+
+Package: opennebula-rubygems
+Source: opennebula
+Version: 6.8.0-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 260103
+Depends: ruby, libaugeas0 (>= 1.0.0), libc6 (>= 2.34), libcurl4 (>= 7.16.2), libffi8 (>= 3.4), libgcc-s1 (>= 3.0), libmysqlclient21 (>= 8.0.11), libpq5 (>= 14~beta3), libruby3.0 (>= 3.0.0~preview2), libsqlite3-0 (>= 3.7.10), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 11), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.2.0)
+Conflicts: opennebula (<< 6.8.0-1), opennebula-rubygem-activesupport, opennebula-rubygem-addressable, opennebula-rubygem-amazon-ec2, opennebula-rubygem-augeas, opennebula-rubygem-aws-eventstream, opennebula-rubygem-aws-sdk, opennebula-rubygem-aws-sdk-core, opennebula-rubygem-aws-sdk-resources, opennebula-rubygem-aws-sigv4, opennebula-rubygem-azure, opennebula-rubygem-azure-core, opennebula-rubygem-builder, opennebula-rubygem-chunky-png, opennebula-rubygem-concurrent-ruby, opennebula-rubygem-configparser, opennebula-rubygem-curb, opennebula-rubygem-daemons, opennebula-rubygem-dalli, opennebula-rubygem-eventmachine, opennebula-rubygem-faraday, opennebula-rubygem-faraday-middleware, opennebula-rubygem-ffi, opennebula-rubygem-ffi-rzmq, opennebula-rubygem-ffi-rzmq-core, opennebula-rubygem-hashie, opennebula-rubygem-highline, opennebula-rubygem-i18n, opennebula-rubygem-inflection, opennebula-rubygem-ipaddress, opennebula-rubygem-jmespath, opennebula-rubygem-memcache-client, opennebula-rubygem-mime-types, opennebula-rubygem-mime-types-data, opennebula-rubygem-mini-portile2, opennebula-rubygem-minitest, opennebula-rubygem-multipart-post, opennebula-rubygem-mustermann, opennebula-rubygem-mysql2, opennebula-rubygem-net-ldap, opennebula-rubygem-nokogiri, opennebula-rubygem-ox, opennebula-rubygem-parse-cron, opennebula-rubygem-polyglot, opennebula-rubygem-public-suffix, opennebula-rubygem-rack, opennebula-rubygem-rack-protection, opennebula-rubygem-rotp, opennebula-rubygem-rqrcode, opennebula-rubygem-rqrcode-core, opennebula-rubygem-scrub-rb, opennebula-rubygem-sequel, opennebula-rubygem-sinatra, opennebula-rubygem-sqlite3, opennebula-rubygem-systemu, opennebula-rubygem-thin, opennebula-rubygem-thor, opennebula-rubygem-thread-safe, opennebula-rubygem-tilt, opennebula-rubygem-treetop, opennebula-rubygem-trollop, opennebula-rubygem-tzinfo, opennebula-rubygem-uuidtools, opennebula-rubygem-xml-simple, opennebula-rubygem-xmlrpc, opennebula-rubygem-zendesk-api
+Filename: pool/cloud/o/opennebula/opennebula-rubygems_6.8.0-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 33127008
+SHA256: 01507ad443666912bc184071128b0c3d9914abf6b5c703e102501a653bf24566
+SHA1: c39efa1aeecda6174de7f8977201a7d2c60d1dfb
+MD5sum: 6d232278c8c2dac0c777eaf983f300ef
+Description: Ruby dependencies for OpenNebula (Community Edition)
+
+Package: opennebula-sunstone
+Source: opennebula
+Version: 6.8.0-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 205685
+Pre-Depends: opennebula-common-onecfg (= 6.8.0-1)
+Depends: opennebula-common (= 6.8.0-1), opennebula-libs (= 6.8.0-1), opennebula-tools (= 6.8.0-1), opennebula (= 6.8.0-1), opennebula-rubygems (= 6.8.0-1), python3, python3-numpy
+Conflicts: opennebula (<< 6.8.0-1)
+Breaks: opennebula-tools (<< 5.13.80), ruby-opennebula (<< 5.13.80)
+Replaces: opennebula-tools (<< 5.13.80), ruby-opennebula (<< 5.13.80)
+Filename: pool/cloud/o/opennebula/opennebula-sunstone_6.8.0-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 27310408
+SHA256: 31ef9d8b30d478bbf8fa3a0b3b518454a8b767159930c36fb5eaf1e4e67ff005
+SHA1: b40eaeb2bf76e1345d2f474c74e7f071c361f7f1
+MD5sum: c91b028c012a185db61054a4a235c7a7
+Description: OpenNebula web interface Sunstone (Community Edition)
+ Browser based UI for OpenNebula cloud management and usage.
+
+Package: opennebula-tools
+Source: opennebula
+Version: 6.8.0-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 985
+Pre-Depends: opennebula-common-onecfg (= 6.8.0-1)
+Depends: opennebula-common (= 6.8.0-1), opennebula-libs (= 6.8.0-1), opennebula-rubygems (= 6.8.0-1), util-linux
+Recommends: bash-completion
+Suggests: gnuplot-nox
+Breaks: opennebula (<< 5.5.90), opennebula-addon-tools (<< 5.10.2)
+Replaces: opennebula (<< 5.5.90), opennebula-addon-tools (<< 5.10.2)
+Filename: pool/cloud/o/opennebula/opennebula-tools_6.8.0-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 176950
+SHA256: 3761d135fb454698885812b9a995b87da4f82f5a8bcc32850275473ea384d20e
+SHA1: 8bd19723239d1ef1bd4211884ca45c3149453b1d
+MD5sum: 8320fa0fdd3fd26afee22911e2bca2f2
+Description: OpenNebula command line tools (Community Edition)
+
+Package: python-pyone
+Source: opennebula
+Version: 5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 3509
+Depends: python, python-pip
+Filename: pool/cloud/o/opennebula/python-pyone_5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 146092
+SHA256: f2acdd6b12e47d173aab847aed99280b4a8665b795ba90a0e608c60be586821d
+SHA1: 47eabdc9c17156c939fea15fda3029c8ae41a518
+MD5sum: 8e5337500e656c820e9f1d0508252d78
+Description: Python bindings for OpenNebula Cloud API (OCA)
+
+Package: python3-pyone
+Source: opennebula
+Version: 6.8.0-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 4116
+Depends: python3, python3-pip
+Filename: pool/cloud/o/opennebula/python3-pyone_6.8.0-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 283258
+SHA256: 87cb88a0b9588d8a169f483fa27930f5bfb1c912fb1fbe22d226ddd23d6dec0d
+SHA1: aed7f481b85e6df647da21d1f8ac1885bfb9c116
+MD5sum: 6f7a9924d048fd10527b3358e0d644b8
+Description: Python 3 bindings for OpenNebula Cloud API, OCA (Community Edition)
+
+Package: ruby-xmlrpc
+Version: 0.3.0-2
+Installed-Size: 104
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Architecture: all
+Size: 23712
+SHA256: 09606c91eb7be0bbd5e66a4a9e7fc473726fd699b010551e084f89c9c544a428
+SHA1: 47834f521850a5022155b9bb3896c41536cdbbdc
+MD5sum: ed35c72e949a16bf014b9b780c6e9b38
+Description: XMLRPC library for Ruby
+ XMLRPC is a lightweight protocol that enables remote procedure calls over
+ HTTP.  It is defined at http://www.xmlrpc.com.
+ .
+ This package enables you to create a server that implements remote procedures
+ and a client that calls them.  Very little code is required to achieve either
+ of these.
+Multi-Arch: foreign
+Homepage: https://github.com/ruby/xmlrpc
+Ruby-Versions: all
+Section: ruby
+Priority: optional
+Filename: pool/cloud/r/ruby-xmlrpc/ruby-xmlrpc_0.3.0-2_all.deb
+

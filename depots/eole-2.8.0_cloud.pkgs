@@ -1,0 +1,1675 @@
+Package: docker-machine-opennebula
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 12174
+Filename: pool/cloud/o/opennebula/docker-machine-opennebula_5.12.0.3-1.ce_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 5379872
+SHA256: 0473ba52fc07791384745499226401d6938f04b97f22fd448514ee1a1fd053ad
+SHA1: 5b0e4a7ddbf0551019b7979f74f684a4e4d962f9
+MD5sum: 2a2ce74ff02a349bf269d9161ca325e2
+Description: OpenNebula driver for Docker Machine (Community Edition)
+
+Package: libopennebula-java
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 109
+Filename: pool/cloud/o/opennebula/libopennebula-java_5.12.0.3-1.ce_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 82420
+SHA256: dc29d23133f5a05036aa84147df5e8741f1a139bcb309a3fb01cd4be13f3d060
+SHA1: 3ea4f9a0157e58a5021a61a3731514701c5e31d1
+MD5sum: fafada75539152c697169f907ae0d360
+Description: Java bindings for OpenNebula Cloud API, OCA (Community Edition)
+
+Package: libopennebula-java-doc
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 29
+Filename: pool/cloud/o/opennebula/libopennebula-java-doc_5.12.0.3-1.ce_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 9380
+SHA256: affc4649f947520c7ecedb1d62ca1e0a0240f1f310b64a44523ae2538b93ad70
+SHA1: 06f034721288007afc7ea415e95042f27f422986
+MD5sum: d3555f34cc92b0f4d803f39d4386b2db
+Description: Documentation for Java bindings for OpenNebula Cloud API, OCA (Community Edition)
+
+Package: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 11135
+Pre-Depends: opennebula-common-onescape (= 5.12.0.3-1.ce)
+Depends: apg, genisoimage, opennebula-common (= 5.12.0.3-1.ce), opennebula-tools (= 5.12.0.3-1.ce), ruby-opennebula (= 5.12.0.3-1.ce), opennebula-rubygems (= 5.12.0.3-1.ce), wget, curl, rsync, sqlite3, qemu-utils, libcurl4 (>= 7.16.2), iputils-arping, libzmq5, libzmq3-dev, libc6 (>= 2.29), libgcc-s1 (>= 3.0), libmysqlclient21 (>= 8.0.11), libpq5 (>= 9.1~), libsqlite3-0 (>= 3.6.23), libssl1.1 (>= 1.1.0), libstdc++6 (>= 9), libsystemd0, libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Suggests: mysql-server
+Breaks: opennebula-addon-markets (<< 5.10.2), opennebula-common (<< 5.5.80), opennebula-flow (<< 5.0.2), opennebula-gate (<< 5.0.2), opennebula-sunstone (<< 5.0.2), ruby-opennebula (<< 5.5.80)
+Replaces: opennebula-addon-markets (<< 5.10.2), opennebula-common (<< 5.5.80), opennebula-flow (<< 5.0.2), opennebula-gate (<< 5.0.2), opennebula-sunstone (<< 5.0.2), ruby-opennebula (<< 5.5.80)
+Filename: pool/cloud/o/opennebula/opennebula_5.12.0.3-1.ce_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 2194740
+SHA256: 6eafc95cd7a20058c6180aa31fb56c9d1061ade445a9f485f1dd4e64e1b454f9
+SHA1: 3709bc3198923c38ec5db5b2c1b8ff47b4c5cde6
+MD5sum: 2e33ecfc22682f11e7d78fe5500f88e1
+Description: OpenNebula Server and Scheduler (Community Edition)
+
+Package: opennebula-common
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 59
+Pre-Depends: opennebula-common-onescape (= 5.12.0.3-1.ce)
+Depends: adduser, openssh-client
+Recommends: lvm2, sudo (>= 1.7.2p1)
+Breaks: opennebula (<< 5.11.90), opennebula-node (<< 5.11.90), opennebula-node-firecracker (<< 5.11.90)
+Replaces: opennebula (<< 5.11.90), opennebula-node (<< 5.11.90), opennebula-node-firecracker (<< 5.11.90)
+Filename: pool/cloud/o/opennebula/opennebula-common_5.12.0.3-1.ce_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 21548
+SHA256: 16508fbbec280e4ad9551eda413eb2578b6c31b51327756a32ffeea6a7bf584c
+SHA1: 385016bef86fd5c5ce2f0f7d34618551c6107796
+MD5sum: e6d2547f2153e48b7b8dfd6e912f5d0b
+Description: Common OpenNebula package shared by various components (Community Edition)
+
+Package: opennebula-common-onescape
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 21
+Filename: pool/cloud/o/opennebula/opennebula-common-onescape_5.12.0.3-1.ce_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 5364
+SHA256: 5656a0f901becf6521210eecbc48b9c2a47c381a51b401cba13341471b072702
+SHA1: 2fba568ef86b2346af2c7c3488af96492f4656d7
+MD5sum: 5f561f385ee700c358fe5ad91f1c3a1a
+Description: Helpers for OpenNebula OneScape project (Community Edition)
+
+Package: opennebula-dbgsym
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 53213
+Depends: opennebula (= 5.12.0.3-1.ce)
+Filename: pool/cloud/o/opennebula/opennebula-dbgsym_5.12.0.3-1.ce_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 52586428
+SHA256: e23916c6ef0581dfd589e430d86ba0161158f4c3108ce6108f6c17661d3db736
+SHA1: 3a74b8c54e62c35f98f3ec9d7885a7a3ad905d7e
+MD5sum: a5f087f2415ccd22e5fbadee127afe19
+Description: Debug symbols for package opennebula (Community Edition)
+Build-Ids: 5e50c795c138329a841704c46d4349fe6fb53354 60498a8e156d45524ebd48196e1c87f7280e34f1 75125ad567335805baa510ab98a18bd1a1510837
+
+Package: opennebula-flow
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 280
+Pre-Depends: opennebula-common-onescape (= 5.12.0.3-1.ce)
+Depends: opennebula-common (= 5.12.0.3-1.ce), ruby-opennebula (= 5.12.0.3-1.ce), opennebula-rubygems (= 5.12.0.3-1.ce), curl
+Conflicts: opennebula (<< 5.12.0.3-1.ce)
+Filename: pool/cloud/o/opennebula/opennebula-flow_5.12.0.3-1.ce_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 37092
+SHA256: f18a9d377828cbbdee8e1cbcf40a02b746d089bf79c2fd99c6e9c7556f9af88f
+SHA1: 5aacd604d16d9d5e084647fc4eac7d38c5208232
+MD5sum: d68f9cffb8b87b52f0a497b2a6b9a6a9
+Description: OpenNebula Flow server (Community Edition)
+ Server for multi-VM orchestration.
+
+Package: opennebula-gate
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 64
+Pre-Depends: opennebula-common-onescape (= 5.12.0.3-1.ce)
+Depends: opennebula-common (= 5.12.0.3-1.ce), ruby-opennebula (= 5.12.0.3-1.ce), opennebula-rubygems (= 5.12.0.3-1.ce)
+Conflicts: opennebula (<< 5.12.0.3-1.ce)
+Filename: pool/cloud/o/opennebula/opennebula-gate_5.12.0.3-1.ce_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 11804
+SHA256: b0148e7780c77fb530b95db375e251da3b5aabdb10c8fc2adf6075ba1ea08e39
+SHA1: 98826df29c8f774fcd213ecf634d264347f78a65
+MD5sum: f9f43c80d202370e9a85695ad329262f
+Description: OpenNebula Gate server (Community Edition)
+ Server for information exchange between Virtual Machines and OpenNebula.
+
+Package: opennebula-node
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 32
+Depends: adduser, libvirt-daemon-system, qemu-kvm | pve-qemu-kvm, qemu-utils, opennebula-common (= 5.12.0.3-1.ce), ruby, vlan, ipset, pciutils, rsync, cron, augeas-tools, ruby-sqlite3
+Recommends: openssh-server | ssh-server
+Filename: pool/cloud/o/opennebula/opennebula-node_5.12.0.3-1.ce_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 6556
+SHA256: 73d95368be245dd06ede0f20bb6a5a399e1ad78ffd6c93bc01a9c0653ef5bf5b
+SHA1: 9168486879adcda7971947f9a883b972eca9c7d4
+MD5sum: ee43b5e526e5108d01c3c157dcee3e57
+Description: Services for OpenNebula KVM node (Community Edition)
+
+Package: opennebula-node-firecracker
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 228
+Depends: adduser, opennebula-common (= 5.12.0.3-1.ce), ruby, vlan, ipset, pciutils, rsync, cron, augeas-tools, ruby-sqlite3, libarchive-tools, screen, libvncserver1, e2fsprogs, lsof, qemu-utils
+Filename: pool/cloud/o/opennebula/opennebula-node-firecracker_5.12.0.3-1.ce_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 24300
+SHA256: 8f9fca982a108e22076e6dd480137383108ae703f3789260bc1693aceb4e10c8
+SHA1: df7e432a79556ca9ac3667b9ef6ee440e7b6d724
+MD5sum: df1df8d86f44cae0a48d98e349fa06ab
+Description: Services for OpenNebula Firecracker node (Community Edition)
+
+Package: opennebula-node-lxd
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 215
+Pre-Depends: snapd
+Depends: opennebula-common (= 5.12.0.3-1.ce), kpartx, libvncserver1, e2fsprogs, xfsprogs, qemu-utils, adduser, ruby, vlan, ipset, pciutils, rsync, cron, ruby-sqlite3
+Suggests: rbd-nbd
+Conflicts: lxd, lxd-client, opennebula-lxd-snap
+Replaces: lxd, lxd-client, opennebula-lxd-snap
+Filename: pool/cloud/o/opennebula/opennebula-node-lxd_5.12.0.3-1.ce_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 23776
+SHA256: 80201f421dd8040362604e6311e0849ce7f876eb9b70a4ea60eec32e54d8f5d0
+SHA1: 015496a82a37dcfc0b9d4aacce28d9c0e2670e8d
+MD5sum: f1a0abc3ac56cb723baed8dc65244be8
+Description: Services for OpenNebula LXD node (Community Edition)
+
+Package: opennebula-provision
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 348
+Pre-Depends: opennebula-common-onescape (= 5.12.0.3-1.ce)
+Depends: opennebula (= 5.12.0.3-1.ce), opennebula-common (= 5.12.0.3-1.ce), opennebula-tools (= 5.12.0.3-1.ce), ruby-opennebula (= 5.12.0.3-1.ce), opennebula-rubygems (= 5.12.0.3-1.ce)
+Filename: pool/cloud/o/opennebula/opennebula-provision_5.12.0.3-1.ce_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 43080
+SHA256: e91a5ba9f3904b3f873d8cdd6712b3d90bbbcf944a84077cb40a279f74b05ff5
+SHA1: 42c826f3f458e5c040007988608ade17186d908c
+MD5sum: ea3dcae3d17e0f630766258e673e30ee
+Description: OpenNebula infrastructure provisioning (Community Edition)
+
+Package: opennebula-rubygem-activesupport
+Version: 4.2.11.1-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 1583
+Depends: opennebula-rubygem-i18n (>= 0.7), opennebula-rubygem-i18n (<< 1.0), opennebula-rubygem-tzinfo (>= 1.1), opennebula-rubygem-tzinfo (<< 2.0), opennebula-rubygem-minitest (>= 5.1), opennebula-rubygem-minitest (<< 6.0), opennebula-rubygem-thread-safe (>= 0.3.4), opennebula-rubygem-thread-safe (>= 0.3), opennebula-rubygem-thread-safe (<< 1.0)
+Provides: opennebula-rubygem-activesupport
+Filename: pool/cloud/o/opennebula-rubygem-activesupport/opennebula-rubygem-activesupport_4.2.11.1-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://www.rubyonrails.org
+Size: 340202
+SHA256: b562bb3253bb964b543c299f7b88e44c1a44bc57684e3e4700d30b5e51768910
+SHA1: f393221d43711f7db12c593778009846e5dbeed4
+MD5sum: 51d3b180eb0698112f1a2bd88af5fb08
+Description: A toolkit of support libraries and Ruby core extensions extracted from the Rails framework. Rich support for multibyte strings, internationalization, time zones, and testing.
+License: MIT
+Vendor: David Heinemeier Hansson
+
+Package: opennebula-rubygem-addressable
+Version: 2.7.0-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 530
+Depends: opennebula-rubygem-public-suffix (<< 5.0), opennebula-rubygem-public-suffix (>= 2.0.2)
+Provides: opennebula-rubygem-addressable
+Filename: pool/cloud/o/opennebula-rubygem-addressable/opennebula-rubygem-addressable_2.7.0-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/sporkmonger/addressable
+Size: 106068
+SHA256: f9cf09849426b9b156dddddf7626d2ccbb362af33ecf4f117a19e30e10b4e345
+SHA1: 1752e2d302784ca790b1c2ff5fb187514dfb40e2
+MD5sum: dfe506645e72dea83a2343b8f286ca1b
+Description: Addressable is an alternative implementation to the URI implementation that is
+ part of Ruby's standard library. It is flexible, offers heuristic parsing, and
+ additionally provides extensive support for IRIs and URI templates.
+License: Apache-2.0
+Vendor: Bob Aman
+
+Package: opennebula-rubygem-amazon-ec2
+Version: 0.9.17-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 977
+Depends: opennebula-rubygem-xml-simple (>= 1.0.12)
+Provides: opennebula-rubygem-amazon-ec2
+Filename: pool/cloud/o/opennebula-rubygem-amazon-ec2/opennebula-rubygem-amazon-ec2_0.9.17-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/grempe/amazon-ec2
+Size: 128106
+SHA256: 6556ddefbfcf31629c6e3ef918bac0545f92d81e476e05019500d043ff301656
+SHA1: c1ea07429bcf026f47da45354d08a2e68f420916
+MD5sum: 22f3cc09057e91eab1e72456d0406be5
+Description: A Ruby library for accessing the Amazon Web Services EC2, ELB, RDS, Cloudwatch, and Autoscaling APIs.
+License: no license listed in amazon-ec2-0.9.17.gem
+Vendor: Glenn Rempe
+
+Package: opennebula-rubygem-aws-eventstream
+Version: 1.0.3-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 18
+Provides: opennebula-rubygem-aws-eventstream
+Filename: pool/cloud/o/opennebula-rubygem-aws-eventstream/opennebula-rubygem-aws-eventstream_1.0.3-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/aws/aws-sdk-ruby
+Size: 6936
+SHA256: 941ffe27ca300e0347f556110a65e248a78119ec5ba247e33ad229ebd245bab4
+SHA1: 6253407be23fa85737573399db48b5092f403743
+MD5sum: 92c50cc4ce8c2f469d779d60d265edb9
+Description: Amazon Web Services event stream library. Decodes and encodes binary stream under `vnd.amazon.event-stream` content-type
+License: Apache-2.0
+Vendor: Amazon Web Services
+
+Package: opennebula-rubygem-aws-sdk
+Version: 2.11.387-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 1
+Depends: opennebula-rubygem-aws-sdk-resources (>= 2.11.387), opennebula-rubygem-aws-sdk-resources (<< 2.11.388)
+Provides: opennebula-rubygem-aws-sdk
+Filename: pool/cloud/o/opennebula-rubygem-aws-sdk/opennebula-rubygem-aws-sdk_2.11.387-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/aws/aws-sdk-ruby
+Size: 2084
+SHA256: ce9df10fcedbe1e4b0003d5b8f0c791e289320db1fa6601116669c8922948e89
+SHA1: bc13e8ad7ddc4aba82e6ecc4773d427b645fe89f
+MD5sum: 5ea3ee12dd2fceb9d557858f3b3e6490
+Description: The official AWS SDK for Ruby. Provides both resource oriented interfaces and API clients for AWS services.
+License: Apache 2.0
+Vendor: Amazon Web Services
+
+Package: opennebula-rubygem-aws-sdk-core
+Version: 2.11.387-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 16473
+Depends: opennebula-rubygem-jmespath (>= 1.0), opennebula-rubygem-jmespath (<< 2.0), opennebula-rubygem-aws-sigv4 (>= 1.0), opennebula-rubygem-aws-sigv4 (<< 2.0)
+Provides: opennebula-rubygem-aws-sdk-core
+Filename: pool/cloud/o/opennebula-rubygem-aws-sdk-core/opennebula-rubygem-aws-sdk-core_2.11.387-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/aws/aws-sdk-ruby
+Size: 1755406
+SHA256: 755cd681b1cb579b1aac15b6e72f04af472f79e04c995cdc2b744b7e351d8ed2
+SHA1: 1203d2eefc744cf13e52ecd252adbce396c0e3b9
+MD5sum: e96d33006aae3c68e28dad71a8d273b7
+Description: Provides API clients for AWS. This gem is part of the official AWS SDK for Ruby.
+License: Apache 2.0
+Vendor: Amazon Web Services
+
+Package: opennebula-rubygem-aws-sdk-resources
+Version: 2.11.387-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 192
+Depends: opennebula-rubygem-aws-sdk-core (>= 2.11.387), opennebula-rubygem-aws-sdk-core (<< 2.11.388)
+Provides: opennebula-rubygem-aws-sdk-resources
+Filename: pool/cloud/o/opennebula-rubygem-aws-sdk-resources/opennebula-rubygem-aws-sdk-resources_2.11.387-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/aws/aws-sdk-ruby
+Size: 50598
+SHA256: 4a2e97822dcc3d126cbe653a25541f2e5287e961574dc95ffa444e0470890a16
+SHA1: 5330e6c19082b8179682620cb7a8af62eed04082
+MD5sum: a422f27045b9796b0bd31a11f44af4e9
+Description: Provides resource oriented interfaces and other higher-level abstractions for many AWS services. This gem is part of the official AWS SDK for Ruby.
+License: Apache 2.0
+Vendor: Amazon Web Services
+
+Package: opennebula-rubygem-aws-sigv4
+Version: 1.1.0-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 30
+Depends: opennebula-rubygem-aws-eventstream (>= 1.0.2), opennebula-rubygem-aws-eventstream (>= 1.0), opennebula-rubygem-aws-eventstream (<< 2.0)
+Provides: opennebula-rubygem-aws-sigv4
+Filename: pool/cloud/o/opennebula-rubygem-aws-sigv4/opennebula-rubygem-aws-sigv4_1.1.0-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/aws/aws-sdk-ruby
+Size: 9578
+SHA256: 390801ed6944ecbc935fda8a6b6f4bc1af87472e27913959896ab1cbec56cb11
+SHA1: 2453b740d71db42cb31969f6ece5942f2b37e2ee
+MD5sum: f4fc429228f7d0ffd14d2760f9f76386
+Description: Amazon Web Services Signature Version 4 signing ligrary. Generates sigv4 signature for HTTP requests.
+License: Apache-2.0
+Vendor: Amazon Web Services
+
+Package: opennebula-rubygem-azure
+Version: 0.7.10-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 518
+Depends: opennebula-rubygem-addressable (>= 2.3), opennebula-rubygem-addressable (<< 3.0), opennebula-rubygem-azure-core (>= 0.1), opennebula-rubygem-azure-core (<< 1.0), opennebula-rubygem-faraday (>= 0.9), opennebula-rubygem-faraday (<< 1.0), opennebula-rubygem-faraday-middleware (>= 0.10), opennebula-rubygem-faraday-middleware (<< 1.0), opennebula-rubygem-mime-types (<< 4.0), opennebula-rubygem-mime-types (>= 1), opennebula-rubygem-nokogiri (>= 1.6), opennebula-rubygem-nokogiri (<< 2.0), opennebula-rubygem-systemu (>= 2.6), opennebula-rubygem-systemu (<< 3.0), opennebula-rubygem-thor (>= 0.19), opennebula-rubygem-thor (<< 1.0)
+Provides: opennebula-rubygem-azure
+Filename: pool/cloud/o/opennebula-rubygem-azure/opennebula-rubygem-azure_0.7.10-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/azure/azure-sdk-for-ruby
+Size: 98924
+SHA256: 3afcec2916f51ff1c2261480b455149994a85a7e3324d7eb80c663ec322edc04
+SHA1: a94503c7d00519c377a453228efd70b1669eaeb3
+MD5sum: 997f800872c9bfc33d22725b9a70ebea
+Description: Microsoft Azure Client Library for Ruby
+License: Apache License, Version 2.0
+Vendor: Microsoft Corporation
+
+Package: opennebula-rubygem-azure-core
+Version: 0.1.15-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 69
+Depends: opennebula-rubygem-faraday (>= 0.9), opennebula-rubygem-faraday (<< 1.0), opennebula-rubygem-faraday-middleware (>= 0.10), opennebula-rubygem-faraday-middleware (<< 1.0), opennebula-rubygem-nokogiri (>= 1.6), opennebula-rubygem-nokogiri (<< 2.0)
+Provides: opennebula-rubygem-azure-core
+Filename: pool/cloud/o/opennebula-rubygem-azure-core/opennebula-rubygem-azure-core_0.1.15-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/Azure/azure-ruby-asm-core
+Size: 22110
+SHA256: e706e28f4858c95b42409b16396c845131be6ca546d59212b2ed3d23a294680a
+SHA1: 5c446de613fbb61a9bce84109214817e42708dfe
+MD5sum: 8be6c7db6fb73629607dba0ca3608540
+Description: Microsoft Azure Client Core Library for Ruby SDK
+License: Apache License, Version 2.0
+Vendor: Microsoft Corporation
+
+Package: opennebula-rubygem-builder
+Version: 3.2.3-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 93
+Provides: opennebula-rubygem-builder
+Filename: pool/cloud/o/opennebula-rubygem-builder/opennebula-rubygem-builder_3.2.3-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://onestepback.org
+Size: 30408
+SHA256: c813e3fceacc1bee533a5cb42cd598ee08cc02a7c6d50016e3f190815a19b07f
+SHA1: 8aeebb23c8018c8992c35d2e6bed3b692197b65f
+MD5sum: 7774ab303a73902236de8fb4d0ba0b67
+Description: Builder provides a number of builder objects that make creating structured data
+ simple to do.  Currently the following builder objects are supported:
+ .
+ * XML Markup
+ * XML Events
+License: MIT
+Vendor: Jim Weirich
+
+Package: opennebula-rubygem-chunky-png
+Version: 1.3.11-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 1151
+Provides: opennebula-rubygem-chunky-png
+Filename: pool/cloud/o/opennebula-rubygem-chunky-png/opennebula-rubygem-chunky-png_1.3.11-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/wvanbergen/chunky_png/wiki
+Size: 358920
+SHA256: 0feb04ef87ff7537509d1e13674c4eb2d51c971a8a82b5e4f38f2e9dcc1d196a
+SHA1: bea027c3cfcee821cd6e1cf9f8646051cf7a9129
+MD5sum: e12cb5392ac1f04c3db00acacf4cf996
+Description: This pure Ruby library can read and write PNG images without depending on an external
+     image library, like RMagick. It tries to be memory efficient and reasonably fast.
+ .
+     It supports reading and writing all PNG variants that are defined in the specification,
+     with one limitation: only 8-bit color depth is supported. It supports all transparency,
+     interlacing and filtering options the PNG specifications allows. It can also read and
+     write textual metadata from PNG files. Low-level read/write access to PNG chunks is
+     also possible.
+ .
+     This library supports simple drawing on the image canvas and simple operations like
+     alpha composition and cropping. Finally, it can import from and export to RMagick for
+     interoperability.
+ .
+     Also, have a look at OilyPNG at http://github.com/wvanbergen/oily_png. OilyPNG is a
+     drop in mixin module that implements some of the ChunkyPNG algorithms in C, which
+     provides a massive speed boost to encoding and decoding.
+License: MIT
+Vendor: Willem van Bergen
+
+Package: opennebula-rubygem-concurrent-ruby
+Version: 1.1.5-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 743
+Provides: opennebula-rubygem-concurrent-ruby
+Filename: pool/cloud/o/opennebula-rubygem-concurrent-ruby/opennebula-rubygem-concurrent-ruby_1.1.5-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://www.concurrent-ruby.com
+Size: 277822
+SHA256: 2c8b9a751278f7afaa8230ae7123b5b37f29fa2ebef898f7ef0c6fbca0910f26
+SHA1: cdb230ae0d26d79fbc2897ac16316e470399371b
+MD5sum: 38f5f96c45dd8e68d832a803d4a404ee
+Description: Modern concurrency tools including agents, futures, promises, thread pools, actors, supervisors, and more.
+ Inspired by Erlang, Clojure, Go, JavaScript, actors, and classic concurrency patterns.
+License: MIT
+Vendor: Jerry D'Antonio
+
+Package: opennebula-rubygem-configparser
+Version: 0.1.7-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 16
+Provides: opennebula-rubygem-configparser
+Filename: pool/cloud/o/opennebula-rubygem-configparser/opennebula-rubygem-configparser_0.1.7-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/chrislee35/configparser
+Size: 7692
+SHA256: b568dcfe8cbbf1b75d7efd200ffab99fb641bb51ee0ff0339c5d867e56a6f42e
+SHA1: c0ee2a6333c39726bb0c9f9b37127d989246380d
+MD5sum: 227cd6ec8ea1cbded6482eae04d8b13d
+Description: parses configuration files compatable with Python's ConfigParser
+License: MIT
+Vendor: chrislee35
+
+Package: opennebula-rubygem-curb
+Version: 0.9.10-5.10.1-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 1454
+Provides: opennebula-rubygem-curb
+Filename: pool/cloud/o/opennebula-rubygem-curb/opennebula-rubygem-curb_0.9.10-5.10.1-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/taf2/curb
+Size: 454986
+SHA256: 825ba4cc8b95eb860aa128594c725bf36d9c2e8f9e48094223506583ca13059c
+SHA1: 1a5f9fdcc1d310ee3f61ab437cebe9890f995808
+MD5sum: 9dc7bed5533082f7525a0c34b8f0c07d
+Description: Curb (probably CUrl-RuBy or something) provides Ruby-language bindings for the libcurl(3), a fully-featured client-side URL transfer library. cURL and libcurl live at http://curl.haxx.se/
+License: MIT
+Vendor: Ross Bamford
+
+Package: opennebula-rubygem-daemons
+Version: 1.3.1-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 89
+Provides: opennebula-rubygem-daemons
+Filename: pool/cloud/o/opennebula-rubygem-daemons/opennebula-rubygem-daemons_1.3.1-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/thuehlinger/daemons
+Size: 28018
+SHA256: 586d1caf00453b4e23c89499b4d9c29eb7bb0ca015070fd88be62cd9d6eb96dd
+SHA1: afb0455c52c5c5a7b0f2b4a6a6e06930bfb30142
+MD5sum: e475d8e21b292d8926bdb679b64a8a55
+Description: Daemons provides an easy way to wrap existing ruby scripts (for example a
+     self-written server)  to be run as a daemon and to be controlled by simple
+     start/stop/restart commands.
+ .
+     You can also call blocks as daemons and control them from the parent or just
+     daemonize the current process.
+ .
+     Besides this basic functionality, daemons offers many advanced features like
+     exception backtracing and logging (in case your ruby script crashes) and
+     monitoring and automatic restarting of your processes if they crash.
+License: MIT
+Vendor: Thomas Uehlinger
+
+Package: opennebula-rubygem-dalli
+Version: 2.7.10-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 103
+Provides: opennebula-rubygem-dalli
+Filename: pool/cloud/o/opennebula-rubygem-dalli/opennebula-rubygem-dalli_2.7.10-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/petergoldstein/dalli
+Size: 33876
+SHA256: d6bdc314901c1585634d9a03a2c203a4cd41da57fb793a633b8d37a33c7890ed
+SHA1: dbaee795ca3ea7c40ad968dbb67dcf19e30431ec
+MD5sum: 5d44b88b1b50e0e2541ef3252ab92440
+Description: High performance memcached client for Ruby
+License: MIT
+Vendor: Peter M. Goldstein
+
+Package: opennebula-rubygem-eventmachine
+Version: 1.2.7-5.10.1-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 3949
+Provides: opennebula-rubygem-eventmachine
+Filename: pool/cloud/o/opennebula-rubygem-eventmachine/opennebula-rubygem-eventmachine_1.2.7-5.10.1-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://rubyeventmachine.com
+Size: 1322590
+SHA256: e8d2ad153c31eff2f7f190b77fb1298b9c6cb3db6a5b01aecd22c08a05a05841
+SHA1: a4039b385c541896339cfdd09b6a7bd3ae51553b
+MD5sum: ed272a0ea29648919ee8725fa59aa358
+Description: EventMachine implements a fast, single-threaded engine for arbitrary network
+ communications. It's extremely easy to use in Ruby. EventMachine wraps all
+ interactions with IP sockets, allowing programs to concentrate on the
+ implementation of network protocols. It can be used to create both network
+ servers and clients. To create a server or client, a Ruby program only needs
+ to specify the IP address and port, and provide a Module that implements the
+ communications protocol. Implementations of several standard network protocols
+ are provided with the package, primarily to serve as examples. The real goal
+ of EventMachine is to enable programs to easily interface with other programs
+ using TCP/IP, especially if custom protocols are required.
+License: Ruby
+Vendor: Francis Cianfrocca
+
+Package: opennebula-rubygem-faraday
+Version: 0.17.0-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 132
+Depends: opennebula-rubygem-multipart-post (<< 3), opennebula-rubygem-multipart-post (>= 1.2)
+Provides: opennebula-rubygem-faraday
+Filename: pool/cloud/o/opennebula-rubygem-faraday/opennebula-rubygem-faraday_0.17.0-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/lostisland/faraday
+Size: 39392
+SHA256: 7a974de4f64045740c55ee864447dfe4da6eba7168341171866623127fa62403
+SHA1: 0307ae6ef9e494c54327120a20cd71476535114b
+MD5sum: ca1bcd600793a23938b95e89d95cb4a2
+Description: HTTP/REST API client library.
+License: MIT
+Vendor: Rick Olson
+
+Package: opennebula-rubygem-faraday-middleware
+Version: 0.13.1-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 40
+Depends: opennebula-rubygem-faraday (<< 1.0), opennebula-rubygem-faraday (>= 0.7.4)
+Provides: opennebula-rubygem-faraday-middleware
+Filename: pool/cloud/o/opennebula-rubygem-faraday-middleware/opennebula-rubygem-faraday-middleware_0.13.1-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/lostisland/faraday_middleware
+Size: 15306
+SHA256: 3af3f4a2c8730f9de17af4fe4f1efb022c72a903274945edefa438f10ada2289
+SHA1: d1edbb993019a05d369739726b506cfc1415c4f8
+MD5sum: 393438d7ed398e617efc898606eadfb0
+Description: Various middleware for Faraday
+License: MIT
+Vendor: Erik Michaels-Ober
+
+Package: opennebula-rubygem-ffi
+Version: 1.11.1-5.10.1-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 1963
+Provides: opennebula-rubygem-ffi
+Filename: pool/cloud/o/opennebula-rubygem-ffi/opennebula-rubygem-ffi_1.11.1-5.10.1-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://wiki.github.com/ffi/ffi
+Size: 600246
+SHA256: 9c82500bbe138e491f3ec302bc7c448d111370023e45ad3acfbfd863e1874599
+SHA1: 9b0aedb33fa1ad33fd8aee9b3816db64a6b92d49
+MD5sum: a62a018040078e50a59fdfc8bd208c0b
+Description: Ruby FFI library
+License: BSD-3-Clause
+Vendor: Wayne Meissner
+
+Package: opennebula-rubygem-ffi-rzmq
+Version: 2.0.7-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 170
+Depends: opennebula-rubygem-ffi-rzmq-core (>= 1.0.7)
+Provides: opennebula-rubygem-ffi-rzmq
+Filename: pool/cloud/o/opennebula-rubygem-ffi-rzmq/opennebula-rubygem-ffi-rzmq_2.0.7-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/chuckremes/ffi-rzmq
+Size: 51072
+SHA256: a3f239a4964cb27dcd145078f9308f1fbbad5d8d2c2d7c8ba7b2e171d62b1ee1
+SHA1: 8aca9f7e4fdc2abb015ac8a536b872999c71f213
+MD5sum: 802e5e490e962a5582f3a1b01c346327
+Description: This gem wraps the ZeroMQ networking library using the ruby FFI (foreign
+ function interface). It's a pure ruby wrapper so this gem can be loaded
+ and run by any ruby runtime that supports FFI. That's all of the major ones - MRI, Rubinius and JRuby.
+License: MIT
+Vendor: Chuck Remes
+
+Package: opennebula-rubygem-ffi-rzmq-core
+Version: 1.0.7-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 30
+Depends: opennebula-rubygem-ffi (>= 0)
+Provides: opennebula-rubygem-ffi-rzmq-core
+Filename: pool/cloud/o/opennebula-rubygem-ffi-rzmq-core/opennebula-rubygem-ffi-rzmq-core_1.0.7-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/chuckremes/ffi-rzmq-core
+Size: 12522
+SHA256: fd5192892256c0df4cb2d6cc787e34c5bfbdee8f6ad7d1831076f537dbeabc53
+SHA1: 011d28745eef34cf582c7be3e9485303301d72b6
+MD5sum: 817311f6f828a27a23b68891d2940dd3
+Description: This gem provides only the FFI wrapper for the ZeroMQ (0mq) networking library.
+     Project can be used by any other zeromq gems that want to provide their own high-level Ruby API.
+License: MIT
+Vendor: Chuck Remes
+
+Package: opennebula-rubygem-hashie
+Version: 3.6.0-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 296
+Provides: opennebula-rubygem-hashie
+Filename: pool/cloud/o/opennebula-rubygem-hashie/opennebula-rubygem-hashie_3.6.0-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/intridea/hashie
+Size: 76938
+SHA256: 2b960a6dcf3bdb06dfe9bd59e4e47e5500322633ef31177eb70cf3980536e94c
+SHA1: 22ecffbcb9a08e3615fa24a5d2fa2d02f3fac483
+MD5sum: c5ef5e3f3f867abf214dcd8afddd485e
+Description: Hashie is a collection of classes and mixins that make hashes more powerful.
+License: MIT
+Vendor: Michael Bleigh
+
+Package: opennebula-rubygem-highline
+Version: 1.7.10-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 418
+Provides: opennebula-rubygem-highline
+Filename: pool/cloud/o/opennebula-rubygem-highline/opennebula-rubygem-highline_1.7.10-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/JEG2/highline
+Size: 224764
+SHA256: d069490a384beed806087464e081b3e9573985ee72f6c3393c03aaef0fb3a4b4
+SHA1: dcc01e415df81d18a55e6553452cb67f61baf7f2
+MD5sum: 745540b2fb61a93a35c0e2ee29813edc
+Description: A high-level IO library that provides validation, type conversion, and more for
+ command-line interfaces. HighLine also includes a complete menu system that can
+ crank out anything from simple list selection to complete shells with just
+ minutes of work.
+License: Ruby
+Vendor: James Edward Gray II
+
+Package: opennebula-rubygem-i18n
+Version: 0.9.5-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 252
+Depends: opennebula-rubygem-concurrent-ruby (>= 1.0), opennebula-rubygem-concurrent-ruby (<< 2.0)
+Provides: opennebula-rubygem-i18n
+Filename: pool/cloud/o/opennebula-rubygem-i18n/opennebula-rubygem-i18n_0.9.5-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/svenfuchs/i18n
+Size: 63368
+SHA256: d60af698eb7a9d3d5208d0d400c4f1275e6e0090215c8f02e14f43bd13a584cc
+SHA1: 5ed593e2b41a931b3a79c2a7c25c31376b3e4167
+MD5sum: 3489ad887b591f1f801db4abf42501f9
+Description: New wave Internationalization support for Ruby.
+License: MIT
+Vendor: Sven Fuchs
+
+Package: opennebula-rubygem-inflection
+Version: 1.0.0-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 16
+Provides: opennebula-rubygem-inflection
+Filename: pool/cloud/o/opennebula-rubygem-inflection/opennebula-rubygem-inflection_1.0.0-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/Tass/extlib/tree/inflection
+Size: 7490
+SHA256: 65a237b70074658f0427b99d422b024c0c184bb860c88b04126636d39b41690b
+SHA1: 9e21c8f090c086c087490507e1663d4af7858002
+MD5sum: 2bebfc0f6dde6051bd77aecec690a42c
+Description: Support library for inflections
+License: no license listed in inflection-1.0.0.gem
+Vendor: Dan Kubb
+
+Package: opennebula-rubygem-ipaddress
+Version: 0.8.3-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 139
+Provides: opennebula-rubygem-ipaddress
+Filename: pool/cloud/o/opennebula-rubygem-ipaddress/opennebula-rubygem-ipaddress_0.8.3-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/bluemonk/ipaddress
+Size: 37986
+SHA256: 641495ec06bca257ea702a3d66433e674966bb2c74ee9cc785977d52b0bfb95f
+SHA1: e09d513b017e990280430f8bc11ee8f2b8c1d6b9
+MD5sum: 22d79d51d41c820f048d6178e7a17dad
+Description: IPAddress is a Ruby library designed to make manipulation
+       of IPv4 and IPv6 addresses both powerful and simple. It mantains
+       a layer of compatibility with Ruby's own IPAddr, while
+       addressing many of its issues.
+License: MIT
+Vendor: bluemonk
+
+Package: opennebula-rubygem-jmespath
+Version: 1.4.0-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 72
+Provides: opennebula-rubygem-jmespath
+Filename: pool/cloud/o/opennebula-rubygem-jmespath/opennebula-rubygem-jmespath_1.4.0-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/trevorrowe/jmespath.rb
+Size: 18970
+SHA256: 9d03b33b4346d1f7681a1f6660daba0b3ee719a5887a53e179abc03e69b645cf
+SHA1: a3de75b2b8d771fb99399990f928110c3c46f945
+MD5sum: 037c643633d391a52b56a345773ca22a
+Description: Implements JMESPath for Ruby
+License: Apache-2.0
+Vendor: Trevor Rowe
+
+Package: opennebula-rubygem-memcache-client
+Version: 1.8.5-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 108
+Provides: opennebula-rubygem-memcache-client
+Filename: pool/cloud/o/opennebula-rubygem-memcache-client/opennebula-rubygem-memcache-client_1.8.5-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/mperham/memcache-client
+Size: 31626
+SHA256: 34b81ce60711e2cf743c7e0f7a9755345a2bada192e1dc2aeaa3265ac49425a5
+SHA1: ee5be6e16b4a7397f06f00d0fa4abf8109c1d729
+MD5sum: e9f2882bad7e24120be1739793bfa2e0
+Description: A Ruby library for accessing memcached.
+License: no license listed in memcache-client-1.8.5.gem
+Vendor: Eric Hodel
+
+Package: opennebula-rubygem-mime-types
+Version: 3.3.0-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 117
+Depends: opennebula-rubygem-mime-types-data (>= 3.2015), opennebula-rubygem-mime-types-data (<< 4.0)
+Provides: opennebula-rubygem-mime-types
+Filename: pool/cloud/o/opennebula-rubygem-mime-types/opennebula-rubygem-mime-types_3.3.0-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/mime-types/ruby-mime-types/
+Size: 35876
+SHA256: 65835fb7262db4d64843bef3b598d6abc04f6c46d3019897110dd59452d94138
+SHA1: 1bf3746f67a7e1678a9ef3edd2b4076d7584cdff
+MD5sum: f6c39176235069ffd59f86faee05874b
+Description: The mime-types library provides a library and registry for information about
+ MIME content type definitions. It can be used to determine defined filename
+ extensions for MIME types, or to use filename extensions to look up the likely
+ MIME type definitions.
+ .
+ Version 3.0 is a major release that requires Ruby 2.0 compatibility and removes
+ deprecated functions. The columnar registry format introduced in 2.6 has been
+ made the primary format; the registry data has been extracted from this library
+ and put into {mime-types-data}[https://github.com/mime-types/mime-types-data].
+ Additionally, mime-types is now licensed exclusively under the MIT licence and
+ there is a code of conduct in effect. There are a number of other smaller
+ changes described in the History file.
+License: MIT
+Vendor: Austin Ziegler
+
+Package: opennebula-rubygem-mime-types-data
+Version: 3.2019.1009-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 1110
+Provides: opennebula-rubygem-mime-types-data
+Filename: pool/cloud/o/opennebula-rubygem-mime-types-data/opennebula-rubygem-mime-types-data_3.2019.1009-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/mime-types/mime-types-data/
+Size: 162868
+SHA256: bf3d250ae23c39dc272266fa1c47ae26b7a03398c9219f616b3447e03e761c61
+SHA1: 835cc972a3a76ad75c3a7a09a881a821ae1c49fa
+MD5sum: ffda1f9c4c1668b10fac1c31f49fd7b3
+Description: mime-types-data provides a registry for information about MIME media type
+ definitions. It can be used with the Ruby mime-types library or other software
+ to determine defined filename extensions for MIME types, or to use filename
+ extensions to look up the likely MIME type definitions.
+License: MIT
+Vendor: Austin Ziegler
+
+Package: opennebula-rubygem-mini-portile2
+Version: 2.4.0-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 61
+Provides: opennebula-rubygem-mini-portile2
+Filename: pool/cloud/o/opennebula-rubygem-mini-portile2/opennebula-rubygem-mini-portile2_2.4.0-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/flavorjones/mini_portile
+Size: 24658
+SHA256: 94c041c201983e187b58fb51d80678384805058c40b38248c6609cfbc5d3d68d
+SHA1: 897a4566ca1ea4a457837a4797029d2b1311be52
+MD5sum: a3c5026a4fcff22063ae5acd01ff3faa
+Description: Simplistic port-like solution for developers. It provides a standard and simplified way to compile against dependency libraries without messing up your system.
+License: MIT
+Vendor: Luis Lavena
+
+Package: opennebula-rubygem-minitest
+Version: 5.13.0-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 284
+Provides: opennebula-rubygem-minitest
+Filename: pool/cloud/o/opennebula-rubygem-minitest/opennebula-rubygem-minitest_5.13.0-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/seattlerb/minitest
+Size: 80450
+SHA256: 5294bd4de778f8a8619a608199359a47760abbb134b63c52b6e8c96d9ae7bab2
+SHA1: 5e4487c610dec74d76c0b6a11ba3a5556c9bfe7e
+MD5sum: 62fda5edcd80befd05213fc31720815c
+Description: minitest provides a complete suite of testing facilities supporting
+ TDD, BDD, mocking, and benchmarking.
+ .
+     "I had a class with Jim Weirich on testing last week and we were
+      allowed to choose our testing frameworks. Kirk Haines and I were
+      paired up and we cracked open the code for a few test
+      frameworks...
+ .
+      I MUST say that minitest is *very* readable / understandable
+      compared to the 'other two' options we looked at. Nicely done and
+      thank you for helping us keep our mental sanity."
+ .
+     -- Wayne E. Seguin
+ .
+ minitest/test is a small and incredibly fast unit testing framework.
+ It provides a rich set of assertions to make your tests clean and
+ readable.
+ .
+ minitest/spec is a functionally complete spec engine. It hooks onto
+ minitest/test and seamlessly bridges test assertions over to spec
+ expectations.
+ .
+ minitest/benchmark is an awesome way to assert the performance of your
+ algorithms in a repeatable manner. Now you can assert that your newb
+ co-worker doesn't replace your linear algorithm with an exponential
+ one!
+ .
+ minitest/mock by Steven Baker, is a beautifully tiny mock (and stub)
+ object framework.
+ .
+ minitest/pride shows pride in testing and adds coloring to your test
+ output. I guess it is an example of how to write IO pipes too. :P
+ .
+ minitest/test is meant to have a clean implementation for language
+ implementors that need a minimal set of methods to bootstrap a working
+ test suite. For example, there is no magic involved for test-case
+ discovery.
+ .
+     "Again, I can't praise enough the idea of a testing/specing
+      framework that I can actually read in full in one sitting!"
+ .
+     -- Piotr Szotkowski
+ .
+ Comparing to rspec:
+ .
+     rspec is a testing DSL. minitest is ruby.
+ .
+     -- Adam Hawkins, "Bow Before MiniTest"
+ .
+ minitest doesn't reinvent anything that ruby already provides, like:
+ classes, modules, inheritance, methods. This means you only have to
+ learn ruby to use minitest and all of your regular OO practices like
+ extract-method refactorings still apply.
+License: MIT
+Vendor: Ryan Davis
+
+Package: opennebula-rubygem-multipart-post
+Version: 2.1.1-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 31
+Provides: opennebula-rubygem-multipart-post
+Filename: pool/cloud/o/opennebula-rubygem-multipart-post/opennebula-rubygem-multipart-post_2.1.1-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/nicksieger/multipart-post
+Size: 12022
+SHA256: 681570776f02f7d3de505aa1e7ec6f2eec5d26218118faa95ea3d457ae5f600e
+SHA1: 1bd251074a5c82003c422e020e955fcc354c2373
+MD5sum: a20a86c2adef927d650b2614944578b4
+Description: Use with Net::HTTP to do multipart form postspec. IO values that have #content_type, #original_filename, and #local_path will be posted as a binary file.
+License: MIT
+Vendor: Nick Sieger
+
+Package: opennebula-rubygem-mustermann
+Version: 1.0.3-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 221
+Provides: opennebula-rubygem-mustermann
+Filename: pool/cloud/o/opennebula-rubygem-mustermann/opennebula-rubygem-mustermann_1.0.3-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/sinatra/mustermann
+Size: 52104
+SHA256: c83405246f22534860478fdbdc50f27f82aed96a686eb32313ac4a24aa1ea8a6
+SHA1: af677c4c38ec07153b3611e005cff47f51c8491f
+MD5sum: 5fa64fc7537d74ebb720fb73aa0da774
+Description: A library implementing patterns that behave like regular expressions.
+License: MIT
+Vendor: Konstantin Haase
+
+Package: opennebula-rubygem-mysql2
+Version: 0.5.2-5.10.1-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 806
+Provides: opennebula-rubygem-mysql2
+Filename: pool/cloud/o/opennebula-rubygem-mysql2/opennebula-rubygem-mysql2_0.5.2-5.10.1-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/brianmario/mysql2
+Size: 297830
+SHA256: cb24b37b362b7afb332be26e9d04ae62e99b20e3bf313a4be6ce38e16e940382
+SHA1: e2a59f1345fcb08ff428ae447145da2cfc35ede8
+MD5sum: da7c58caf45a41e0b0811c2189b71bb3
+Description: A simple, fast Mysql library for Ruby, binding to libmysql
+License: MIT
+Vendor: Brian Lopez
+
+Package: opennebula-rubygem-net-ldap
+Version: 0.16.1-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 345
+Provides: opennebula-rubygem-net-ldap
+Filename: pool/cloud/o/opennebula-rubygem-net-ldap/opennebula-rubygem-net-ldap_0.16.1-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/ruby-ldap/ruby-net-ldap
+Size: 104950
+SHA256: 49a47f90b6decb3faabbdeb65145683d8198f1e859e810996975c19e43fbdc44
+SHA1: b966f55d9db8ffab407be01f216b1910b9df2ba5
+MD5sum: 428ce69a74ca9f092ec86d96b173f723
+Description: Net::LDAP for Ruby (also called net-ldap) implements client access for the
+ Lightweight Directory Access Protocol (LDAP), an IETF standard protocol for
+ accessing distributed directory services. Net::LDAP is written completely in
+ Ruby with no external dependencies. It supports most LDAP client features and a
+ subset of server features as well.
+ .
+ Net::LDAP has been tested against modern popular LDAP servers including
+ OpenLDAP and Active Directory. The current release is mostly compliant with
+ earlier versions of the IETF LDAP RFCs (2251-2256, 2829-2830, 3377, and 3771).
+ Our roadmap for Net::LDAP 1.0 is to gain full <em>client</em> compliance with
+ the most recent LDAP RFCs (4510-4519, plutions of 4520-4532).
+License: MIT
+Vendor: Francis Cianfrocca
+
+Package: opennebula-rubygem-nokogiri
+Version: 1.10.5-5.10.1-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 6547
+Depends: opennebula-rubygem-mini-portile2 (>= 2.4.0), opennebula-rubygem-mini-portile2 (<< 2.5.0)
+Provides: opennebula-rubygem-nokogiri
+Filename: pool/cloud/o/opennebula-rubygem-nokogiri/opennebula-rubygem-nokogiri_1.10.5-5.10.1-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://example.com/no-uri-given
+Size: 2152844
+SHA256: bcdd8e49618d40dd5ef721d9a9c0ebe99cf89e91076fbb55e2aab77d2a9b03f6
+SHA1: 280f5b76495b2651dca4b1fdde56c9a033c2931b
+MD5sum: 72fc70e340135460577bed20a14f66c8
+Description: Nokogiri (鋸) is an HTML, XML, SAX, and Reader parser.  Among
+ Nokogiri's many features is the ability to search documents via XPath
+ or CSS3 selectors.
+License: MIT
+Vendor: Aaron Patterson
+
+Package: opennebula-rubygem-ox
+Version: 2.11.0-5.10.1-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 1740
+Provides: opennebula-rubygem-ox
+Filename: pool/cloud/o/opennebula-rubygem-ox/opennebula-rubygem-ox_2.11.0-5.10.1-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://www.ohler.com/ox
+Size: 616144
+SHA256: d8b2d4bd2767d3855bd1f20c8e7a8fe0401aa5d1a513e05635f2359bc1244d64
+SHA1: bee1fe07b47da157e8927873481525f7868fb8bf
+MD5sum: 074f193a6eafdf3931c27f3538ab2ef5
+Description: A fast XML parser and object serializer that uses only standard C lib.
+ .
+ Optimized XML (Ox), as the name implies was written to provide speed optimized
+ XML handling. It was designed to be an alternative to Nokogiri and other Ruby
+ XML parsers for generic XML parsing and as an alternative to Marshal for Object
+ serialization.
+License: MIT
+Vendor: Peter Ohler
+
+Package: opennebula-rubygem-parse-cron
+Version: 0.1.4-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 20
+Provides: opennebula-rubygem-parse-cron
+Filename: pool/cloud/o/opennebula-rubygem-parse-cron/opennebula-rubygem-parse-cron_0.1.4-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/siebertm/parse-cron
+Size: 8042
+SHA256: ac2e6a99113038b408e5e407a0926275ad16c1c76c47eaa50da0a4eb4606df57
+SHA1: 5e6e233ac2de72c2b9d4283e55e72b390eab4881
+MD5sum: 0870e0628252e208a77ef36e4758ae14
+Description: Parses cron expressions and calculates the next occurence
+License: no license listed in parse-cron-0.1.4.gem
+Vendor: Michael Siebert
+
+Package: opennebula-rubygem-polyglot
+Version: 0.3.5-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 9
+Provides: opennebula-rubygem-polyglot
+Filename: pool/cloud/o/opennebula-rubygem-polyglot/opennebula-rubygem-polyglot_0.3.5-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/cjheath/polyglot
+Size: 5576
+SHA256: 67180d012a334ee61c0e61a550caa7b6b9bc3859f6bd1eaf2c9935027ec38160
+SHA1: 7e40c16f851cc8ca1efd2f73effbdd1c2802654e
+MD5sum: 403577ab2c5b25dc9b5bc5fbdb78b52d
+Description:
+ The Polyglot library allows a Ruby module to register a loader
+ for the file type associated with a filename extension, and it
+ augments 'require' to find and load matching files.
+License: MIT
+Vendor: Clifford Heath
+
+Package: opennebula-rubygem-public-suffix
+Version: 4.0.1-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 316
+Provides: opennebula-rubygem-public-suffix
+Filename: pool/cloud/o/opennebula-rubygem-public-suffix/opennebula-rubygem-public-suffix_4.0.1-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://simonecarletti.com/code/publicsuffix-ruby
+Size: 100674
+SHA256: d2bfc3fb187c1928e8bdd01a868ec2404f9d5b42ac515c0924955b87f2378b69
+SHA1: be97ccce44e75ef653c532e5674fbe94bdcb9f4f
+MD5sum: 7d1e8e071e1c9e757d283f6423ecaade
+Description: PublicSuffix can parse and decompose a domain name into top level domain, domain and subdomains.
+License: MIT
+Vendor: Simone Carletti
+
+Package: opennebula-rubygem-rack
+Version: 2.0.7-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 809
+Provides: opennebula-rubygem-rack
+Filename: pool/cloud/o/opennebula-rubygem-rack/opennebula-rubygem-rack_2.0.7-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://rack.github.io/
+Size: 262658
+SHA256: 8b9d6756f200007002905abcad7563609129ccee6e91416e96a3c8c52507d63b
+SHA1: 91cf4b80441903eda59c9615264e3f0eef4d350e
+MD5sum: 5dae977b13c4c190f6295d3688681b9c
+Description: Rack provides a minimal, modular and adaptable interface for developing
+ web applications in Ruby.  By wrapping HTTP requests and responses in
+ the simplest way possible, it unifies and distills the API for web
+ servers, web frameworks, and software in between (the so-called
+ middleware) into a single method call.
+ .
+ Also see https://rack.github.io/.
+License: MIT
+Vendor: Leah Neukirchen
+
+Package: opennebula-rubygem-rack-protection
+Version: 2.0.7-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 41
+Depends: opennebula-rubygem-rack (>= 0)
+Provides: opennebula-rubygem-rack-protection
+Filename: pool/cloud/o/opennebula-rubygem-rack-protection/opennebula-rubygem-rack-protection_2.0.7-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://sinatrarb.com/protection/
+Size: 15300
+SHA256: c290217f6a7a3ef219f31ce75bf63ca5a1789030b47892159cd5b994400ef3db
+SHA1: aff3d1dfd2eee749f07111a4abc58c86626454d4
+MD5sum: db3468c1493aca1560bee3df3883e5eb
+Description: Protect against typical web attacks, works with all Rack apps, including Rails.
+License: MIT
+Vendor: https://github.com/sinatra/sinatra/graphs/contributors
+
+Package: opennebula-rubygem-rotp
+Version: 5.1.0-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 214
+Depends: opennebula-rubygem-addressable (>= 2.5), opennebula-rubygem-addressable (<< 3.0)
+Provides: opennebula-rubygem-rotp
+Filename: pool/cloud/o/opennebula-rubygem-rotp/opennebula-rubygem-rotp_5.1.0-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/mdp/rotp
+Size: 61338
+SHA256: 53e85d86e8db7e4bfe499d59a6f1b34df56cbac390b493686ce1179f400eb791
+SHA1: e457d4f8959c297bcf2077035d7829c3c29a502b
+MD5sum: 7b1e57475972a9b4c4d090b2958731d5
+Description: Works for both HOTP and TOTP, and includes QR Code provisioning
+License: MIT
+Vendor: Mark Percival
+
+Package: opennebula-rubygem-rqrcode
+Version: 1.1.1-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 128
+Depends: opennebula-rubygem-rqrcode-core (>= 0.1.0), opennebula-rubygem-rqrcode-core (<< 0.2.0), opennebula-rubygem-chunky-png (>= 1.0), opennebula-rubygem-chunky-png (<< 2.0)
+Provides: opennebula-rubygem-rqrcode
+Filename: pool/cloud/o/opennebula-rubygem-rqrcode/opennebula-rubygem-rqrcode_1.1.1-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/whomwah/rqrcode
+Size: 98122
+SHA256: 6ae880795bd904794e68a52a4f8e7b6c2d06ca149dbe3b75c935de43f946796d
+SHA1: 06713f62f0b3f70e5074eb1d52f560afd5c6ca7a
+MD5sum: fd458f8f05b26128f6bd6016d626a4f4
+Description: rqrcode is a library for encoding QR Codes. The simple
+ interface allows you to create QR Code data structures
+ and then render them in the way you choose.
+License: MIT
+Vendor: Duncan Robertson
+
+Package: opennebula-rubygem-rqrcode-core
+Version: 0.1.0-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 46
+Provides: opennebula-rubygem-rqrcode-core
+Filename: pool/cloud/o/opennebula-rubygem-rqrcode-core/opennebula-rubygem-rqrcode-core_0.1.0-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/whomwah/rqrcode_core
+Size: 16864
+SHA256: 48c15155a3e9f3a953489eb8651835c16387e306151673c1fd9516c9160bf221
+SHA1: 26b78e20367085f0d3d66a7755cbc5d5c78d4501
+MD5sum: 8b27aaf281415cf6b6a368fd9277f7ac
+Description: rqrcode_core is a Ruby library for encoding QR Codes. The simple
+ interface (with no runtime dependencies) allows you to create QR Code data structures.
+License: MIT
+Vendor: Duncan Robertson
+
+Package: opennebula-rubygem-sequel
+Version: 5.25.0-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 6315
+Provides: opennebula-rubygem-sequel
+Filename: pool/cloud/o/opennebula-rubygem-sequel/opennebula-rubygem-sequel_5.25.0-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://sequel.jeremyevans.net
+Size: 1302532
+SHA256: 2265d7bae1b22458aaf48b397fbce82a0e2c5bfff40c6858d9b7f701e2235751
+SHA1: d6b9ff2dfa36703ebbcc64a51ce289eb0521dd9f
+MD5sum: fa59f47cb0de6191ca9964f51807809f
+Description: The Database Toolkit for Ruby
+License: MIT
+Vendor: Jeremy Evans
+
+Package: opennebula-rubygem-sinatra
+Version: 2.0.7-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 1074
+Depends: opennebula-rubygem-rack (>= 2.0), opennebula-rubygem-rack (<< 3.0), opennebula-rubygem-tilt (>= 2.0), opennebula-rubygem-tilt (<< 3.0), opennebula-rubygem-rack-protection (>= 2.0.7), opennebula-rubygem-rack-protection (<< 2.0.8), opennebula-rubygem-mustermann (>= 1.0), opennebula-rubygem-mustermann (<< 2.0)
+Provides: opennebula-rubygem-sinatra
+Filename: pool/cloud/o/opennebula-rubygem-sinatra/opennebula-rubygem-sinatra_2.0.7-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://sinatrarb.com/
+Size: 369968
+SHA256: 3d1a030f069f2f22c54abcedb60709fc202e1cf50058d8f2f3890dba3abc453b
+SHA1: 3d7aa9330e0040412c7b8835da0dc23cb47fc83c
+MD5sum: e7d99b1b30dd3583b0d7bf8c66bfbe1f
+Description: Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort.
+License: MIT
+Vendor: Blake Mizerany
+
+Package: opennebula-rubygem-sqlite3
+Version: 1.4.1-5.10.1-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 588
+Provides: opennebula-rubygem-sqlite3
+Filename: pool/cloud/o/opennebula-rubygem-sqlite3/opennebula-rubygem-sqlite3_1.4.1-5.10.1-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/sparklemotion/sqlite3-ruby
+Size: 186040
+SHA256: d8fd5ce2875777579d1e34510070799e2216e0eb9dd9f00a364f051ee5127c81
+SHA1: 9eec0b273b0ffd7e33e0ba03870aec487efff2b4
+MD5sum: 43a16d864e8ac40d48977ed085f031f7
+Description: This module allows Ruby programs to interface with the SQLite3
+ database engine (http://www.sqlite.org).  You must have the
+ SQLite engine installed in order to build this module.
+ .
+ Note that this module is only compatible with SQLite 3.6.16 or newer.
+License: BSD-3-Clause
+Vendor: Jamis Buck
+
+Package: opennebula-rubygem-systemu
+Version: 2.6.5-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 36
+Provides: opennebula-rubygem-systemu
+Filename: pool/cloud/o/opennebula-rubygem-systemu/opennebula-rubygem-systemu_2.6.5-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/ahoward/systemu
+Size: 13668
+SHA256: 593c3350cd83eeea619f87b1ca81d6db42624aa25f05e18a21856e4f753f6ffc
+SHA1: 4af437f7a68bbfa7978a25e35ac4cdaaa385d377
+MD5sum: a9729072f54e6b7cbf84900e4d093ce9
+Description: universal capture of stdout and stderr and handling of child process pid for windows, *nix, etc.
+License: Ruby
+Vendor: Ara T. Howard
+
+Package: opennebula-rubygem-thin
+Version: 1.7.2-5.10.1-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 347
+Depends: opennebula-rubygem-rack (<< 3), opennebula-rubygem-rack (>= 1), opennebula-rubygem-eventmachine (>= 1.0.4), opennebula-rubygem-eventmachine (>= 1.0), opennebula-rubygem-eventmachine (<< 2.0), opennebula-rubygem-daemons (>= 1.0.9), opennebula-rubygem-daemons (>= 1.0), opennebula-rubygem-daemons (<< 2.0)
+Provides: opennebula-rubygem-thin
+Filename: pool/cloud/o/opennebula-rubygem-thin/opennebula-rubygem-thin_1.7.2-5.10.1-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://code.macournoyer.com/thin/
+Size: 117884
+SHA256: ed49934a0dd45f53d3ec3d9c2ffdd420d4922cacc5fd89c6a77b8c2065224d7c
+SHA1: b6d8a65d605d2ec69e4bcd5b3ac9bda064c9e01c
+MD5sum: a1ee33c2fdb3099bbf65f5ab8b7cf3c1
+Description: A thin and fast web server
+License: GPLv2+
+Vendor: Marc-Andre Cournoyer
+
+Package: opennebula-rubygem-thor
+Version: 0.20.3-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 184
+Provides: opennebula-rubygem-thor
+Filename: pool/cloud/o/opennebula-rubygem-thor/opennebula-rubygem-thor_0.20.3-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://whatisthor.com/
+Size: 55528
+SHA256: fa1cde3bce36cccd328f796e952f082143fc36135de1c1d692658e1c23ec2332
+SHA1: 349458ccdf999e544945224c440198866ca98eee
+MD5sum: ae79a9f12005147b288036be44e3acc9
+Description: Thor is a toolkit for building powerful command-line interfaces.
+License: MIT
+Vendor: Yehuda Katz
+
+Package: opennebula-rubygem-thread-safe
+Version: 0.3.6-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 139
+Provides: opennebula-rubygem-thread-safe
+Filename: pool/cloud/o/opennebula-rubygem-thread-safe/opennebula-rubygem-thread-safe_0.3.6-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/ruby-concurrency/thread_safe
+Size: 40826
+SHA256: 8457dfbac0f8a12d20a97c65adb354ca8d55ffaa01fb1dff405b68cd67df7e9e
+SHA1: e12b1c278b004afe6d56c40680b2b8acf0ed8147
+MD5sum: 81ad0e0e0b7f5beae1bc702b6b439855
+Description: A collection of data structures and utilities to make thread-safe programming in Ruby easier
+License: Apache-2.0
+Vendor: Charles Oliver Nutter
+
+Package: opennebula-rubygem-tilt
+Version: 2.0.10-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 62
+Provides: opennebula-rubygem-tilt
+Filename: pool/cloud/o/opennebula-rubygem-tilt/opennebula-rubygem-tilt_2.0.10-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://github.com/rtomayko/tilt/
+Size: 21542
+SHA256: 943ce6ed6fb312b084b7c6bf5e423de01a2abf13da6d9346e4a1bb79983b9248
+SHA1: 6a8187587b06b7d604cf2a67761a9f9890354e6f
+MD5sum: 5f73a32383306d3db1c6d9f4cf04bac9
+Description: Generic interface to multiple Ruby template engines
+License: MIT
+Vendor: Ryan Tomayko
+
+Package: opennebula-rubygem-treetop
+Version: 1.6.10-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 379
+Depends: opennebula-rubygem-polyglot (>= 0.3), opennebula-rubygem-polyglot (<< 1.0)
+Provides: opennebula-rubygem-treetop
+Filename: pool/cloud/o/opennebula-rubygem-treetop/opennebula-rubygem-treetop_1.6.10-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/cjheath/treetop
+Size: 94792
+SHA256: 144eaddb2b7081bbc1c46c335dfb74d1f43db2f76b11aaedfaa01571ec422cc2
+SHA1: b045bff3b6df1d04bee2b44ff718080fb713b38b
+MD5sum: 9ccad0006d4fb3a3a4ab87440ae68c1f
+Description: A Parsing Expression Grammar (PEG) Parser generator DSL for Ruby
+License: MIT
+Vendor: Nathan Sobo
+
+Package: opennebula-rubygem-trollop
+Version: 2.9.9-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 99
+Provides: opennebula-rubygem-trollop
+Filename: pool/cloud/o/opennebula-rubygem-trollop/opennebula-rubygem-trollop_2.9.9-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://manageiq.github.io/optimist/
+Size: 28294
+SHA256: dd92baa256cfe17cd061209ca87494860cadf3d3c2896f08557263f37ec0efbe
+SHA1: 1dcf15dc5aa7b1cda87867546aa638ff6dec7484
+MD5sum: f08a854d4680a33f7303d06ec772a9cc
+Description: Trollop is a commandline option parser for Ruby that just gets out of your way.
+ .
+ **DEPRECATION** This gem has been renamed to optimist and will no longer be supported. Please switch to optimist as soon as possible.
+License: MIT
+Vendor: William Morgan
+
+Package: opennebula-rubygem-tzinfo
+Version: 1.2.5-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 802
+Depends: opennebula-rubygem-thread-safe (>= 0.1), opennebula-rubygem-thread-safe (<< 1.0)
+Provides: opennebula-rubygem-tzinfo
+Filename: pool/cloud/o/opennebula-rubygem-tzinfo/opennebula-rubygem-tzinfo_1.2.5-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://tzinfo.github.io
+Size: 156518
+SHA256: 859eed499cc71ddfca8204a927216a61ca4890610d08a3de769ed9c686ca1bfd
+SHA1: 7db357dfa1a5ff5d00076f85ccf79b5b6bccb3f4
+MD5sum: 1bab2e4f6a6da1ed59d7d10f67176628
+Description: TZInfo provides daylight savings aware transformations between times in different time zones.
+License: MIT
+Vendor: Philip Ross
+
+Package: opennebula-rubygem-uuidtools
+Version: 2.1.5-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 79
+Provides: opennebula-rubygem-uuidtools
+Filename: pool/cloud/o/opennebula-rubygem-uuidtools/opennebula-rubygem-uuidtools_2.1.5-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/sporkmonger/uuidtools
+Size: 24506
+SHA256: 84b00080f7c8f51f1b4335f2eb3fa64beeff389ab7a7103ca0640ee5a1161b12
+SHA1: 057e90f1c89f347f0ba105d25223056f7f82e92b
+MD5sum: 70efa470b74315a0767ba6679402b89b
+Description: A simple universally unique ID generation library.
+License: no license listed in uuidtools-2.1.5.gem
+Vendor: Bob Aman
+
+Package: opennebula-rubygem-xml-simple
+Version: 1.1.5-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 30
+Provides: opennebula-rubygem-xml-simple
+Filename: pool/cloud/o/opennebula-rubygem-xml-simple/opennebula-rubygem-xml-simple_1.1.5-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/maik/xml-simple
+Size: 9766
+SHA256: d6c68ee991843deb0f355b95c7b7211c110972c440ee3bfc31d6614822675708
+SHA1: b5ca9b84b7498276a24bdf4a4b757e4b405f5640
+MD5sum: 4664ceb30c7d29e4907c0683a94d65eb
+Description: A simple API for XML processing.
+License: Ruby
+Vendor: Maik Schmidt
+
+Package: opennebula-rubygem-xmlrpc
+Version: 0.3.0-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 87
+Provides: opennebula-rubygem-xmlrpc
+Filename: pool/cloud/o/opennebula-rubygem-xmlrpc/opennebula-rubygem-xmlrpc_0.3.0-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://github.com/ruby/xmlrpc
+Size: 26704
+SHA256: 6bd35a4c72faff66737e4405a4509a19a91a85a310954e2e2725e2b03b8c9113
+SHA1: 922230db1cb375afbabb98b292ffe10c4ac74bbf
+MD5sum: 10ca39f50860facb9363565257ae9e19
+Description: XMLRPC is a lightweight protocol that enables remote procedure calls over HTTP.
+License: Ruby
+Vendor: SHIBATA Hiroshi
+
+Package: opennebula-rubygem-zendesk-api
+Version: 1.21.0-5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 99
+Depends: opennebula-rubygem-faraday (>= 0.9), opennebula-rubygem-faraday (<< 1.0), opennebula-rubygem-hashie (<< 4.0.0), opennebula-rubygem-hashie (>= 3.5.2), opennebula-rubygem-inflection (>= 0), opennebula-rubygem-multipart-post (>= 2.0), opennebula-rubygem-multipart-post (<< 3.0), opennebula-rubygem-mime-types (>= 0)
+Provides: opennebula-rubygem-zendesk-api
+Filename: pool/cloud/o/opennebula-rubygem-zendesk-api/opennebula-rubygem-zendesk-api_1.21.0-5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: https://developer.zendesk.com
+Size: 27448
+SHA256: d2d875d44b7c399b5bfc4af731a2a8e28bb808da25d8d88637e7723390b331e0
+SHA1: 57e1a893f42fb4f616ace778e9ff86aa96acbf74
+MD5sum: 5608dd0658f1716c78ff8020a0a24f17
+Description: Ruby wrapper for the REST API at https://www.zendesk.com. Documentation at https://developer.zendesk.com.
+License: Apache License Version 2.0
+Vendor: Steven Davidovitz
+
+Package: opennebula-rubygems
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 192092
+Depends: ruby, libaugeas0 (>= 1.0.0), libc6 (>= 2.29), libcurl4 (>= 7.16.2), libffi7 (>= 3.3~20180313), libgcc-s1 (>= 3.0), libmysqlclient21 (>= 8.0.11), libpq5 (>= 12~~), libruby2.7 (>= 2.7.0), libsqlite3-0 (>= 3.7.10), libssl1.1 (>= 1.1.1), libstdc++6 (>= 5.2), zlib1g (>= 1:1.2.3.3)
+Conflicts: opennebula (<< 5.12.0.3-1.ce), opennebula-rubygem-activesupport, opennebula-rubygem-addressable, opennebula-rubygem-amazon-ec2, opennebula-rubygem-augeas, opennebula-rubygem-aws-eventstream, opennebula-rubygem-aws-sdk, opennebula-rubygem-aws-sdk-core, opennebula-rubygem-aws-sdk-resources, opennebula-rubygem-aws-sigv4, opennebula-rubygem-azure, opennebula-rubygem-azure-core, opennebula-rubygem-builder, opennebula-rubygem-chunky-png, opennebula-rubygem-concurrent-ruby, opennebula-rubygem-configparser, opennebula-rubygem-curb, opennebula-rubygem-daemons, opennebula-rubygem-dalli, opennebula-rubygem-eventmachine, opennebula-rubygem-faraday, opennebula-rubygem-faraday-middleware, opennebula-rubygem-ffi, opennebula-rubygem-ffi-rzmq, opennebula-rubygem-ffi-rzmq-core, opennebula-rubygem-hashie, opennebula-rubygem-highline, opennebula-rubygem-i18n, opennebula-rubygem-inflection, opennebula-rubygem-ipaddress, opennebula-rubygem-jmespath, opennebula-rubygem-memcache-client, opennebula-rubygem-mime-types, opennebula-rubygem-mime-types-data, opennebula-rubygem-mini-portile2, opennebula-rubygem-minitest, opennebula-rubygem-multipart-post, opennebula-rubygem-mustermann, opennebula-rubygem-mysql2, opennebula-rubygem-net-ldap, opennebula-rubygem-nokogiri, opennebula-rubygem-ox, opennebula-rubygem-parse-cron, opennebula-rubygem-polyglot, opennebula-rubygem-public-suffix, opennebula-rubygem-rack, opennebula-rubygem-rack-protection, opennebula-rubygem-rotp, opennebula-rubygem-rqrcode, opennebula-rubygem-rqrcode-core, opennebula-rubygem-scrub-rb, opennebula-rubygem-sequel, opennebula-rubygem-sinatra, opennebula-rubygem-sqlite3, opennebula-rubygem-systemu, opennebula-rubygem-thin, opennebula-rubygem-thor, opennebula-rubygem-thread-safe, opennebula-rubygem-tilt, opennebula-rubygem-treetop, opennebula-rubygem-trollop, opennebula-rubygem-tzinfo, opennebula-rubygem-uuidtools, opennebula-rubygem-xml-simple, opennebula-rubygem-xmlrpc, opennebula-rubygem-zendesk-api
+Filename: pool/cloud/o/opennebula/opennebula-rubygems_5.12.0.3-1.ce_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 15950052
+SHA256: f6a12f510befd5936dcbdea5406083cc5c2f8971f12696e4be6c702b8ea23ac1
+SHA1: 4a23e4944230badaa88d45e1f9d6776cad4da56c
+MD5sum: 825436b2f5b2be7889683b1d90a9739b
+Description: Ruby dependencies for OpenNebula (Community Edition)
+
+Package: opennebula-sunstone
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 159692
+Pre-Depends: opennebula-common-onescape (= 5.12.0.3-1.ce)
+Depends: opennebula-common (= 5.12.0.3-1.ce), ruby-opennebula (= 5.12.0.3-1.ce), opennebula-tools (= 5.12.0.3-1.ce), opennebula-rubygems (= 5.12.0.3-1.ce), python3, python3-numpy
+Conflicts: opennebula (<< 5.12.0.3-1.ce)
+Filename: pool/cloud/o/opennebula/opennebula-sunstone_5.12.0.3-1.ce_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 20192996
+SHA256: c621642d2829e6848c322f59e09a56243192d9300374976cfb571b7bc4409e13
+SHA1: eee3e7d6c7f8dcda581087438fdd13ca8a59cfab
+MD5sum: f91e83a582d5e8349577d0a5ea7af3d1
+Description: OpenNebula web interface Sunstone (Community Edition)
+ Browser based UI for OpenNebula cloud management and usage.
+
+Package: opennebula-tools
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 928
+Pre-Depends: opennebula-common-onescape (= 5.12.0.3-1.ce)
+Depends: opennebula-common (= 5.12.0.3-1.ce), ruby-opennebula (= 5.12.0.3-1.ce), opennebula-rubygems (= 5.12.0.3-1.ce), less
+Recommends: gnuplot-nox, bash-completion
+Breaks: opennebula (<< 5.5.90), opennebula-addon-tools (<< 5.10.2)
+Replaces: opennebula (<< 5.5.90), opennebula-addon-tools (<< 5.10.2)
+Filename: pool/cloud/o/opennebula/opennebula-tools_5.12.0.3-1.ce_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 178140
+SHA256: 7d3c78717bcf426a97cdfee7b91c7f61081ab553d4d63e6dfbe95b6bed4294cf
+SHA1: fa02cba47120c00dbaae2ed72eddafc934d9d2aa
+MD5sum: 2a2092b2ac96d53f5f844dfce1435330
+Description: OpenNebula command line tools (Community Edition)
+
+Package: python-pyone
+Source: opennebula
+Version: 5.10.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 3509
+Depends: python, python-pip
+Filename: pool/cloud/o/opennebula/python-pyone_5.10.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 146092
+SHA256: f2acdd6b12e47d173aab847aed99280b4a8665b795ba90a0e608c60be586821d
+SHA1: 47eabdc9c17156c939fea15fda3029c8ae41a518
+MD5sum: 8e5337500e656c820e9f1d0508252d78
+Description: Python bindings for OpenNebula Cloud API (OCA)
+
+Package: python3-pyone
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 3949
+Depends: python3, python3-pip
+Filename: pool/cloud/o/opennebula/python3-pyone_5.12.0.3-1.ce_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 232448
+SHA256: a0191ebcd60b86bfbdf73aecd4bb5c50ce4caf233a696c58d9dffc1fc76c087b
+SHA1: 16ed1d021c21f93181a21051f7e977817b8e0d80
+MD5sum: a45016f43446a917f3287801f172dc87
+Description: Python 3 bindings for OpenNebula Cloud API, OCA (Community Edition)
+
+Package: ruby-opennebula
+Source: opennebula
+Version: 5.12.0.3-1.ce
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.io>
+Installed-Size: 710
+Depends: ruby, opennebula-rubygems (= 5.12.0.3-1.ce)
+Breaks: opennebula-gate (<< 4.90.5), opennebula-sunstone (<< 4.90.5)
+Replaces: opennebula-gate (<< 4.90.5), opennebula-sunstone (<< 4.90.5)
+Filename: pool/cloud/o/opennebula/ruby-opennebula_5.12.0.3-1.ce_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 83412
+SHA256: 2195f434921c5d2f4c626dfa5a0dfa727a508fb53216dc743fca19708301277a
+SHA1: e2c285de172a990c81455d77093d6df84c4078e1
+MD5sum: 6fb3f25023c848a34ae915771235cf30
+Description: OpenNebula Ruby libraries (Community Edition)
+
+Package: ruby-xmlrpc
+Version: 0.3.0-2
+Installed-Size: 104
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Architecture: all
+Size: 23712
+SHA256: 09606c91eb7be0bbd5e66a4a9e7fc473726fd699b010551e084f89c9c544a428
+SHA1: 47834f521850a5022155b9bb3896c41536cdbbdc
+MD5sum: ed35c72e949a16bf014b9b780c6e9b38
+Description: XMLRPC library for Ruby
+Multi-Arch: foreign
+Homepage: https://github.com/ruby/xmlrpc
+Description-md5: a699c0febe59dc1e77be860a907fff8c
+Ruby-Versions: all
+Section: ruby
+Priority: optional
+Filename: pool/cloud/r/ruby-xmlrpc/ruby-xmlrpc_0.3.0-2_all.deb
+

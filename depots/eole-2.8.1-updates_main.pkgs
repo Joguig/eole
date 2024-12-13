@@ -1,0 +1,5136 @@
+Package: arv
+Version: 2.8.1-16
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 1813
+Depends: python-arv, resource-agents, strongswan-starter, python3-pyeole
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/a/arv/arv_2.8.1-16_all.deb
+Size: 432756
+SHA256: b110ad7e2357327d048092a8007132e749ac2827f0c1310f65117db5a29b20f2
+SHA1: 5ebb37c581809119331c536c5c80961aa9d0b186
+MD5sum: 48bc77c499a8f06a2894574d85b3d4ba
+Description: Administration de Réseaux Virtuels privés (ARV)
+ ARV est un outil web permettant de gerer les configurations VPN
+ pour les modules Eole.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: arv-doc
+Source: arv
+Version: 2.8.1-16
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 123
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: doc
+Filename: pool/main/a/arv/arv-doc_2.8.1-16_all.deb
+Size: 105024
+SHA256: ed72951fba4276a7a2ac35319280af6e967d8af2a10fbd8b6fd13ae9db8d4ef1
+SHA1: f12a20cd106c3b27f88461bd27c9fc7b8abbf713
+MD5sum: 9912ec27e9ba67cf0913a346942bdfb7
+Description: Documentation pour ARV
+ ARV est un outil web permettant de gerer les configurations VPN
+ pour les modules Eole.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: controle-vnc-server
+Source: controle-vnc
+Version: 2.8.1-23
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 177
+Depends: python3-lxml, python3-twisted, python3-ldap, eole-scribe-backend
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/c/controle-vnc/controle-vnc-server_2.8.1-23_all.deb
+Size: 42612
+SHA256: aa51dfa586b7236173e7f238040070db63b754ade8f75c3decec29e30b46c824
+SHA1: 9c3f5067e0ba13aadfcdd04cefb4d883a1c28d0b
+MD5sum: b78a2bb76c938aec009f33ba33a32fe0
+Description: Serveur controle-vnc
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: courier-eolecas
+Version: 2.8.1-3
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 33
+Depends: courier-authlib-pipe, eole-php-cas, php-cli, php-sqlite3, php-ldap
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/c/courier-eolecas/courier-eolecas_2.8.1-3_all.deb
+Size: 8028
+SHA256: 37fc4d52aa9bfae1be18dc3286113b50eb5fbe1a29127de6a0d470f9e87fe53c
+SHA1: cddfa428c391c95efa966b9cd26ef048b93a4e77
+MD5sum: 084efe4d9eca591a2c8de66dfaeea201
+Description: Module d'authentification authpipe
+ pour la cassification imap
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: creole
+Version: 2.8.1-132
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 370
+Depends: python3:any (>= 3.2~), python3-creole (= 2.8.1-132), dialog, httping, mutt, ethtool, iputils-arping, fping, bind9-host, openssl, update-manager-core
+Breaks: eole-server (<< 2.4.0-70)
+Replaces: eole-server (<< 2.4.0-70)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/c/creole/creole_2.8.1-132_all.deb
+Size: 169020
+SHA256: 96e7f1adf88e1a4bf6cfad857e6b0c50fa717989aa484b1d6829fa315de2ed34
+SHA1: 44f01245ac836c05f1b901f65bfcab48f34b032a
+MD5sum: 0cb130e86fa0e6c2a5fb5076858d0d5d
+Description: gestion de configuration Creole
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: creole-client
+Source: creole
+Version: 2.8.1-132
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 123
+Depends: python3:any (>= 3.2~)
+Breaks: python-creole (<= 2.7.0-40)
+Replaces: python-creole (<= 2.7.0-40)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/c/creole/creole-client_2.8.1-132_all.deb
+Size: 117484
+SHA256: 98606fe9584d9311803be7ca02ea72b331696bbfbab6ee2878c8641df547e45c
+SHA1: 02cc8b3db4adc840bb5c913585740b9d72a88ddb
+MD5sum: 54ba61b7f8cad8fb641808e5da512a19
+Description: gestion de configuration Creole - fichiers communs (client)
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: creole-common
+Source: creole
+Version: 2.8.1-132
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 291
+Breaks: creole (<= 2.4.0-137)
+Replaces: creole (<= 2.4.0-137)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/c/creole/creole-common_2.8.1-132_all.deb
+Size: 144692
+SHA256: 49ddc67d63c97b0bab65867e97260f508c4e26edfe156e0a3bd721b88d29984d
+SHA1: 27d46f1867c987f39a540b9d78b492f5f0efe217
+MD5sum: c8b3471bf34cdd46e366ad1890d40bd2
+Description: gestion de configuration Creole - fichier commun
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: creole-tests
+Source: creole
+Version: 2.8.1-132
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 2692
+Depends: creole, python3-pytest
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/c/creole/creole-tests_2.8.1-132_all.deb
+Size: 181064
+SHA256: 59d185632a3515c2f7dcfcc255c9d61f4ab2981c729076bdc7e893d945428aa0
+SHA1: f744265e7c1132908914c105c1b16624cb8e8f63
+MD5sum: 2ff8f5e409bac3c6d5c6294d48703440
+Description: Creole unit tests
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: eole-ad
+Version: 2.8.1-35
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 119
+Depends: eole-scribe | eole-horus, krb5-config, krb5-user, lsc, openjdk-8-jre, libcrypt-saltedhash-perl, recode, eole-saslauthd
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ad/eole-ad_2.8.1-35_all.deb
+Size: 28092
+SHA256: f0fb96bdf5ef04e262ba5eff33623f986e535b25d06b0522f8d47802050df43e
+SHA1: 49ae9072ead7a8010eba15406b78a6253a85857c
+MD5sum: 581d8798466e13ad1f7b7d475a350091
+Description: Intégration d'un module EOLE à un domaine Active Directory
+ Cette fonctionnalité est le fruit d'une contribution de
+ la Région Rhône-Alpes
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ad-dc
+Version: 2.8.1-153
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 204
+Depends: eole-server, eole-fichier-quota, quota, libnss-winbind, eole-ad-dc-pso, acl
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ad-dc/eole-ad-dc_2.8.1-153_all.deb
+Size: 67184
+SHA256: 30119beda0b9643782ca69c9731fb979271ba87969f8d75491e89a367b452fee
+SHA1: 3a136a2905f7a34aaec6df9626e3782b62042a15
+MD5sum: 403637642f6e6a0d676c35881a9acea5
+Description: configuration du service Samba AD-DC
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ad-dc-bareos
+Source: eole-ad-dc
+Version: 2.8.1-153
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 54
+Depends: eole-bareos
+Conflicts: eole-ad-dc
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ad-dc/eole-ad-dc-bareos_2.8.1-153_all.deb
+Size: 42764
+SHA256: caed8c9a4ec735c2fad84fab819c1e8c67f66d9552aec5a99312cb371225b284
+SHA1: ceff9d4192d63b89908c58980aebd2a8a351f03c
+MD5sum: bc52f150c5015a5b44fb3c803cff1654
+Description: configuration bareos pour Samba AD-DC
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ad-dc-gpos
+Version: 2.8.1-11
+Architecture: amd64
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 32
+Conflicts: eole-scribe-gpos
+Replaces: eole-scribe-gpos
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ad-dc-gpos/eole-ad-dc-gpos_2.8.1-11_amd64.deb
+Size: 6980
+SHA256: af658453211f189125fe3414ec1d95593792769599abdb798134b978d372e960
+SHA1: 4bee8506273b09c59b6092b01898274586810e55
+MD5sum: 68c7b248f8a122ec4f1bf14b176cb542
+Description: Script GPO divers
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ad-dc-gpos-pkg
+Source: eole-ad-dc-gpos
+Version: 2.8.1-11
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 8811
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-ad-dc-gpos/eole-ad-dc-gpos-pkg_2.8.1-11_all.deb
+Size: 2744296
+SHA256: b1a5c6874a62eb0ac3cbdeee6abb29d9b7b455e28baac72bf0d888be1f62ac7c
+SHA1: a4ddb93b96cc9caa3da440841c1dd8100f67a837
+MD5sum: 31293a3cd8fb57518061137cb0de9457
+Description: Dépendances des scripts GPO
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ad-dc-member-pkg
+Source: eole-ad-dc
+Version: 2.8.1-153
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 47
+Depends: acl, cifs-utils, bind9-dnsutils, krb5-user, ldb-tools, libnss-winbind, lmdb-utils, python3-samba, quota, quotatool, rsync, samba, samba-common, samba-dsdb-modules, samba-libs, samba-vfs-modules, smbclient, winbind
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-ad-dc/eole-ad-dc-member-pkg_2.8.1-153_all.deb
+Size: 41768
+SHA256: 871d573bd7f0083f73d19e7d4c882e7aff27bebafcd0f3a671046197a6b6b626
+SHA1: 90cf8f4bb8394049278d58c3ca00886d4b56abd0
+MD5sum: f25b2d6d38f5f7a55ab62312ad7dca65
+Description: dependency package for Samba AD-DC
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ad-dc-ou
+Version: 2.8.1-12
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 50
+Depends: eole-server
+Homepage: https://pcll.ac-dijon.fr/eole/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ad-dc-ou/eole-ad-dc-ou_2.8.1-12_all.deb
+Size: 10684
+SHA256: cb72608e0762a97e905224b7067dc95fd4050725ae00e087bff8209139a76b23
+SHA1: e7d2238b7107e87900af9d9407ec2091435349c1
+MD5sum: ebbf04a8a18443e810ff80c5f7b7d5b8
+Description: Génération automatique d'une structure d'UO
+ Ce paquet permet de créer automatiquement une structure d'UO
+ dans un domaine AD (Seth/ScribeAD)
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ad-dc-pkg
+Source: eole-ad-dc
+Version: 2.8.1-153
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 49
+Depends: eole-ad-dc-member-pkg, bind9, ntp
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-ad-dc/eole-ad-dc-pkg_2.8.1-153_all.deb
+Size: 42148
+SHA256: 59bf8410f11a6796ecdc7cb0e755438c20c8ee0cf73e3294c3a928b876d15da4
+SHA1: 3df9aa45b0b42b286571a2064f4bbcbfc55fca29
+MD5sum: 1aee5fb351a718ae149e8b4cf9979303
+Description: dependency package for Samba AD-DC
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ad-dc-pso
+Version: 2.8.1-12
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 25
+Depends: eole-ad-dc | eole-scribe-module
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ad-dc-pso/eole-ad-dc-pso_2.8.1-12_all.deb
+Size: 5520
+SHA256: 16c987ee254f87aa7b3283859366d8aa62f93d78ef0c05627e1968527b6ed362
+SHA1: e6fa549835f272d6cee43b486be17b418ad218b1
+MD5sum: 99ef5617cabe95a4d520ee075bedc1a8
+Description: configuration PSO pour Samba AD-DC
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ad-dc-scribe
+Source: eole-ad-dc
+Version: 2.8.1-153
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 71
+Depends: eole-bareos
+Conflicts: eole-ad-dc
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ad-dc/eole-ad-dc-scribe_2.8.1-153_all.deb
+Size: 44544
+SHA256: 0cbe6c42bdb9c7b65415c9398c8c6aa863ad716cc6288d0d251f6e3e94b48af7
+SHA1: 4c134d5ebb23595b45e8f09bc8df753bc20e5b37
+MD5sum: 51e411e929cd53b8cecefafe67a6915d
+Description: Fichier commun entre eole-ad-dc et scribe
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ad-dc-scripts
+Source: eole-ad-dc
+Version: 2.8.1-153
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 177
+Depends: python3-configobj, pwgen, psmisc, rsync, gpo-tool
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ad-dc/eole-ad-dc-scripts_2.8.1-153_all.deb
+Size: 66796
+SHA256: 6d0b29f78716c85a25a53a410b1e4d8ed479c1a760894afeec22d55378e15013
+SHA1: e40b37822c474b7963070cddd478f2d4df01283b
+MD5sum: 381129d5ec2bc992c128c9ce1c37c9c9
+Description: scripts et librairies pour Samba AD-DC
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ad-pkg
+Source: scribe-ad
+Version: 2.8.1-42
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 20
+Depends: acl, dnsutils, samba, samba-dsdb-modules, samba-vfs-modules, ldb-tools, krb5-user, smbclient, cifs-utils, libnss-winbind, eole-ad-dc-scripts, eolead-gpo-script-pkg, eole-ad-scripts, eole-resolvconf, ntp, ubuntu-minimal
+Homepage: https://pcll.ac-dijon.fr/eole/
+Priority: optional
+Section: metapackages
+Filename: pool/main/s/scribe-ad/eole-ad-pkg_2.8.1-42_all.deb
+Size: 12860
+SHA256: 7c96a521fff536c0876a2f9c121111ba87f98dfd7498744594eeaf04e2187c39
+SHA1: da0f5a8c75934ecb1c74a002eb664cd7dd2d0897
+MD5sum: 0eaf5f03427b4f9e2b63ed870fc5d444
+Description: dependency package for eole-ad container
+ La liste des dépendances est largement inspirée de celle
+ du paquet eole-ad-dc
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ad-scripts
+Source: scribe-ad
+Version: 2.8.1-42
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 20
+Homepage: https://pcll.ac-dijon.fr/eole/
+Priority: optional
+Section: admin
+Filename: pool/main/s/scribe-ad/eole-ad-scripts_2.8.1-42_all.deb
+Size: 12588
+SHA256: 4ddfe33bc31c87e5d823a7da4fc7caa8eb517a5f697b451da02b273f9ef0450b
+SHA1: 4e48d8781a65d709501aa1aee715c1ce99536df9
+MD5sum: f05f469393d413b244a40438015a9968
+Description: Scripts à installer dans le conteneur addc
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-amon
+Source: conf-amon
+Version: 2.8.1-9
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 71
+Depends: conntrack, eole-antivirus, eole-dhcrelay, eole-dns | eole-ad-dc, eole-era, era-actions, eole-proxy, eole-radius, eole-reverseproxy, eole-sso, eole-vpn, eole-wpad, eole-server
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/c/conf-amon/eole-amon_2.8.1-9_all.deb
+Size: 16264
+SHA256: dd4b2d294747e6039f80af586cfff55573af2bf37d335a82370680226a3b3ef7
+SHA1: 21ba7bf6f2c101df1aaa3447b69390fdff06682c
+MD5sum: 94ff832dbb68829ccbb0f36d85a071b3
+Description: configuration du module EOLE : Amon
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-amon-all
+Source: conf-amon
+Version: 2.8.1-9
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 14
+Depends: eole-antivirus-pkg, eole-cntlm-pkg, eole-dns-pkg, eole-exim-pkg, eole-proxy-pkg, eole-amon-module
+Conflicts: all-amon
+Replaces: all-amon
+Provides: all-amon
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/c/conf-amon/eole-amon-all_2.8.1-9_all.deb
+Size: 7724
+SHA256: e9bd40c31e959428cc822c0013dd1451b676f8e4c7d42c014a4870dcffde592d
+SHA1: 95191f854629ff1625108c74caa54c9d10835bea
+MD5sum: f9277d63ae6f1cf13132195135f3b2ec
+Description: Module Amon (metapackage)
+ Tous les paquets pour un module Amon sans mode conteneur
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-amon-backend3
+Source: amon-backend
+Version: 2.8.1-10
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 135
+Depends: python3:any, python3-pyeole, python3-netaddr, ipset
+Conflicts: amon-backend, eole-amon-backend
+Replaces: amon-backend, eole-amon-backend
+Provides: amon-backend, eole-amon-backend
+Priority: optional
+Section: python
+Filename: pool/main/a/amon-backend/eole-amon-backend3_2.8.1-10_all.deb
+Size: 31480
+SHA256: afd482f93f34d5eeadecb61165a2a69aff2a521c63ca20aa61b7094bb95d9000
+SHA1: 3663be8ba42c317522c9db9ecf5fbd928fd26014
+MD5sum: 5d85fb9566e68c1f22d0817b1e954150
+Description: Librairie Python pour Amon
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet Eole a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: eole-amon-module
+Source: conf-amon
+Version: 2.8.1-9
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 14
+Depends: eole-amon
+Conflicts: eole-module
+Provides: eole-module
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/c/conf-amon/eole-amon-module_2.8.1-9_all.deb
+Size: 7664
+SHA256: 75ecbbb93c9e63302caa6c0489922af7ee719dfc0fc919b6b8dac3397fc7306d
+SHA1: 5486591028fd970d86b6941f18bd5b95276d445e
+MD5sum: 6c29c08b5467bcfa20afcbe476800737
+Description: Module Amon (metapackage)
+ Méta-paquet du module Horus
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-amon-tests
+Source: amon-backend
+Version: 2.8.1-10
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 31
+Depends: eole-amon-backend3, python3-pytest
+Priority: optional
+Section: python
+Filename: pool/main/a/amon-backend/eole-amon-tests_2.8.1-10_all.deb
+Size: 11528
+SHA256: e2aaec43055fe15e851828a79994b677769fdf5f8672c88b17028c3ed210a68b
+SHA1: 62ce367423512723e25b87b3f68bbf4ace098960
+MD5sum: 76920926ef46aedf062e4eb60377b006
+Description: Tests unitaires pour le module Amon
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: eole-amonecole
+Source: conf-amonecole
+Version: 2.8.1-64
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 53
+Depends: eole-lxc-controller, eole-amon, eole-seth-education, eole-workstation, eole-roundcube, eole-nextcloud, eole-adminer, eole-bareoswebui, eole-spamassassin, eole-sympa, eole-dns-ad-dc
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/c/conf-amonecole/eole-amonecole_2.8.1-64_all.deb
+Size: 15268
+SHA256: 64a48b99cacca21bbcc13ee9518fa52ab0ea7e029d0e79acee44e95b1e32f86b
+SHA1: d330b4965a867eace9d740bbb5d16a4dad432a19
+MD5sum: b6730a2d3e4b070029ac48ff6b31b623
+Description: configuration du module EOLE : AmonEcole
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-amonecole-module
+Source: conf-amonecole
+Version: 2.8.1-64
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 16
+Depends: eole-amonecole
+Conflicts: eole-module
+Provides: eole-module
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/c/conf-amonecole/eole-amonecole-module_2.8.1-64_all.deb
+Size: 10000
+SHA256: 98e542ec3fc5e871bebf9fcdbfe88dd7c20de93c25c9461d48bbe5ebb21f17d1
+SHA1: 18d41e0e0051f922b565a28efd67b5ba45287ee2
+MD5sum: c66b0033d5d24764c84ca587082b4ace
+Description: Module AmonEcole (metapackage)
+ Méta-paquet du module AmonEcole
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-archive-keyring
+Source: eole-keyring
+Version: 2023.01.01-1
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 168
+Homepage: http://eole.orion.education.fr/diff
+Priority: important
+Section: misc
+Filename: pool/main/e/eole-keyring/eole-archive-keyring_2023.01.01-1_all.deb
+Size: 120450
+SHA256: a127d8545ea98597cd2840698421d2fabb0fe9c0812bc967bc9f5462f815a20c
+SHA1: dcce068c5d6c6d6002b10c224c6c46c004969453
+MD5sum: a9abcf7f9dcf89bd76f80b96786f41cc
+Description: GnuPG archive keys of EOLE repository
+ The EOLE repository digitally signs its Release files. This package
+ contains the repository key used for that.
+
+Package: eole-asgard
+Version: 2.8.1-5
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 27
+Depends: lftp
+Homepage: https://dev-eole.ac-dijon.fr/projects/eole-asgard
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-asgard/eole-asgard_2.8.1-5_all.deb
+Size: 5384
+SHA256: 8b56914156d6f604c378922d2f920a03ad1eff7f5fb9fbd6ccaa941eb40069a1
+SHA1: 3b807e6302a488fde91e0e9ef2223b2e8211883d
+MD5sum: 9e79c0cb9a2cf07dbc3168ce1e6bf16d
+Description: Templates et dictionnaires de configuration de l’application asgard
+ Cette application est utilisée sur les serveurs géomatique MTES
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-bareos
+Version: 2.8.1-64
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 264
+Depends: eole-bareos-pkg, creole, python3-pyeole, eole-db
+Conflicts: eole-bacula
+Replaces: eole-bacula
+Provides: eole-bacula
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-bareos/eole-bareos_2.8.1-64_all.deb
+Size: 46456
+SHA256: f8d0ba5566e50f0cc00e686caa315086c3a762f53bcd007b472dd7aba1385cab
+SHA1: 03082e9a179eb63bb0d521c959b4566ff7cdcacf
+MD5sum: cd8012918d6cabbffb0f5629f7fcdde9
+Description: Configuration (dictionnaire et templates) et Scripts bareos pour les modules Eole
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-bareos-pkg
+Source: eole-bareos
+Version: 2.8.1-64
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 23
+Depends: mtx, cifs-utils, eole-postgresql, bareos-tools, bareos, bareos-common, bareos-database-postgresql, python3-bareos
+Conflicts: bacula-pkg, eole-bacula-pkg, eole-bareos-mysql
+Replaces: bacula-pkg, eole-bacula-pkg, eole-bareos-mysql
+Provides: bacula-pkg, eole-bacula-pkg, eole-bareos-mysql
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-bareos/eole-bareos-pkg_2.8.1-64_all.deb
+Size: 17636
+SHA256: e3f4f48880a575344bb48c7a8ec013be8d9143de1163ce78804087110d5a6b38
+SHA1: c6dab5dadc8609a978aa31badfe173c8e2c9f0bd
+MD5sum: 353617d92718d92eee36c7677d7083d7
+Description: (metapackage) Gestion des dépendances de eole-bareos.
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-break
+Source: python-pyeole
+Version: 2.8.1-35
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 47
+Priority: optional
+Section: metapackages
+Filename: pool/main/p/python-pyeole/eole-break_2.8.1-35_all.deb
+Size: 39936
+SHA256: 8d563643a17f91901af2828ee18263832765dfa28e956e668657711c8977877d
+SHA1: 772b91773954fb8b1df4e34b12cd2b43a8708a81
+MD5sum: 6026ed88aa13a3b4f1baceb225795eb0
+Description: Paquet en erreur pour les tests
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-common-pkg
+Source: eole-common
+Version: 2.8.1-91
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 224
+Depends: ca-certificates, certbot, ifenslave, iptables, less, molly-guard, nano, openssh-client, openssh-server, rsyslog, rsyslog-gnutls, rsyslog-relp, s-nail, vim, eole-archive-keyring, eole-debsums, eole-resolvconf, eole-ssmtp-pkg | eole-mail-pkg, apt-transport-https, debconf (>= 0.5) | debconf-2.0
+Breaks: creole (<= 2.4.0-128), supervision-psin (<< 2.6.1-12)
+Replaces: creole (<= 2.4.0-128), supervision-psin (<< 2.6.1-12)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-common/eole-common-pkg_2.8.1-91_all.deb
+Size: 105568
+SHA256: b9df9efc69054db87ab96656ba26a8549d3959ee8a92467e9bbb6609dadf4969
+SHA1: 5bbdcb9c046cd3b4662387ba6fa762b9f359900d
+MD5sum: c81660430e7bd4ddbe67f60122e20afd
+Description: Dépendance commune à tous les serveurs EOLE
+ Ce paquet installe les dépendances communes à tous les serveurs et
+ conteneurs EOLE.
+
+Package: eole-controle-vnc
+Source: controle-vnc
+Version: 2.8.1-23
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 30
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/c/controle-vnc/eole-controle-vnc_2.8.1-23_all.deb
+Size: 14304
+SHA256: 63ecfbed9d1e7be3446b047210d9805f3065bf571e768611b82b2a0c5eb52100
+SHA1: c93eefe8e30db6f1f39f124964ffd9bc352481d4
+MD5sum: 296b1d9eb70ab09fc0b4ebd3d154802f
+Description: Templates et dictionnaires pour controle-vnc
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-controle-vnc-pkg
+Source: controle-vnc
+Version: 2.8.1-23
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 19
+Depends: controle-vnc-server
+Conflicts: controle-vnc
+Replaces: controle-vnc
+Provides: controle-vnc
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/c/controle-vnc/eole-controle-vnc-pkg_2.8.1-23_all.deb
+Size: 12976
+SHA256: f09d1c1c8af5f2533105496d372a96570689a246ce46752c68510ebde97b8e31
+SHA1: 0636e5c5e6e3ddf64f2528bee284facf66f2e3e4
+MD5sum: c4be8ed872b02aba39e710c6c2e8d9fa
+Description: Metapackage pour l'installation des outils Windows
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-courier
+Version: 2.8.1-7
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 85
+Depends: eole-courier-client, creole-common (>= 2.8.1-118)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-courier/eole-courier_2.8.1-7_all.deb
+Size: 20776
+SHA256: 793d603c5673131ae2e0177a21f237084331b8a92ac50d62f1050993cc388cbb
+SHA1: bdf07b550d3650d75234324d7fa166905cfef683
+MD5sum: f7dd8d575c7c90a64304ffadd6e67881
+Description: Templates et dictionnaires pour Courier
+ Configuration courier-pop et courier-imap pour EOLE.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-courier-client
+Source: eole-courier
+Version: 2.8.1-7
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 17
+Depends: eole-sso-client
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-courier/eole-courier-client_2.8.1-7_all.deb
+Size: 6192
+SHA256: 30b6a5771cbc3eb3433a466139f4ede254475a9a2e5ae88db007b42b2e48a3ba
+SHA1: f28a191f67d3ecc5b9acbb4da5561dd06295c78c
+MD5sum: 909b5afa88814d8da8025b38e8e3e7d2
+Description: Templates et dictionnaires pour client IMAP
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-courier-pkg
+Source: eole-courier
+Version: 2.8.1-7
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 12
+Depends: courier-authlib-ldap, courier-eolecas, courier-imap, courier-pop, fam
+Conflicts: courier-pkg
+Replaces: courier-pkg
+Provides: courier-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-courier/eole-courier-pkg_2.8.1-7_all.deb
+Size: 5680
+SHA256: 93636862e648e1f5dbe1b76e3fe1126bf244bc7476608db7f5d26c8d85b7cc65
+SHA1: bf6aa31e5c9c90923a72d058202977bc72a8cc7c
+MD5sum: 4e676270d30a16c8e2f08017c4a5ade5
+Description: Meta paquet pour Courier
+ dependency package for eole-courier.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-cups
+Version: 2.8.1-2
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 69
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-cups/eole-cups_2.8.1-2_all.deb
+Size: 15880
+SHA256: d2708332e541882d9c949e3148b74e7b12dbe8942bf4ce6e2973296d4ae4fae7
+SHA1: 683d1ed4d1870459e62ed0029d8b72ad6eab038f
+MD5sum: 7b40e7713c0d47b19239f7d76e1b1bc5
+Description: Templates et dictionnaires pour CUPS
+ Configuration du serveur d'impressions CUPS
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-cups-pkg
+Source: eole-cups
+Version: 2.8.1-2
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 11
+Depends: cups, cups-pdf, cups-browsed
+Conflicts: cups-pkg
+Replaces: cups-pkg
+Provides: cups-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-cups/eole-cups-pkg_2.8.1-2_all.deb
+Size: 5160
+SHA256: ca4fc08a982b5c6ac3284029bf93ac81f2bb6b3e24f5b03b116b4444c0340fe5
+SHA1: 5f22b6db42541748c70c29bfd4eb3a0d5cfe3959
+MD5sum: 079cd7a7325d8532023bf62fca2eca17
+Description: dependency package for eole-cups
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-db
+Version: 2.8.1-17
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 88
+Depends: python3:any, python3-eoledb
+Homepage: http://eole.orion.education.fr/diff/
+Priority: extra
+Section: python
+Filename: pool/main/e/eole-db/eole-db_2.8.1-17_all.deb
+Size: 24500
+SHA256: 8b1991126b1ee384855b0556e0a228c8e2581d19815f6cf030353d230487b9e1
+SHA1: c592d501b1d9fa2d9fa4932deccb5ddea7d7bd9a
+MD5sum: bbb4061c37c22652ce8e1681c38be346
+Description: Database  management tool and library
+ It's a pretty small, local (that is, straight on the operating
+ system) databases manager. Supports SQLITE, MySQL and PostgresSQL
+
+Package: eole-debsums
+Version: 2.8.1-6
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 35
+Depends: debsums, python3-pyeole
+Homepage: http://eole.orion.education.fr/diff/
+Priority: extra
+Section: admin
+Filename: pool/main/e/eole-debsums/eole-debsums_2.8.1-6_all.deb
+Size: 10116
+SHA256: 7faeb36aa6d0a655d257445ac93292ca91b90e07483ebab31916ea02d09e75f5
+SHA1: 3e31f1b032b11bc303c22372d0ea952cdc9b3337
+MD5sum: da50c8bcca316a7d78a519c1d5fb6a75
+Description: Check MD5 checksums of debian packages
+ A report of modified packages with their files is automatically
+ generated.
+ .
+ Configuration files are ignored.
+ .
+ This package provides a script and a cron task to check MD5 checksums
+ of debian packages with debsums.
+
+Package: eole-debsums-zephir-agent
+Source: eole-debsums
+Version: 2.8.1-6
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 27
+Depends: eole-debsums (= 2.8.1-6), zephir-client
+Homepage: http://eole.orion.education.fr/diff/
+Priority: extra
+Section: admin
+Filename: pool/main/e/eole-debsums/eole-debsums-zephir-agent_2.8.1-6_all.deb
+Size: 7732
+SHA256: 1fae4a65ce58e96775023688767408ab97404d0b1a16720e3ad13a02ee418235
+SHA1: 3aeba2ace4e801365b11b41bc794f1f968325a3f
+MD5sum: 0aa23d1c2629e8f15f9692810cf6149e
+Description: Check MD5 checksums of debian packages - zéphir agent
+ A report of modified packages with their files is automatically
+ generated.
+ .
+ Configuration files are ignored.
+ .
+ This package provide an agent for the EOLE zéphir infrastructure.
+
+Package: eole-dhcp
+Version: 2.8.1-35
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 9483
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-dhcp/eole-dhcp_2.8.1-35_all.deb
+Size: 2549920
+SHA256: 9f2d9fe217e4601f01dc2557b22ff4c51b1f6807ba5253297e9d16722cb700f6
+SHA1: 595d1043661e07077e4219e28dc313fd442cecfb
+MD5sum: 19a62782487bb1964dafb9409aa8756c
+Description: Templates et dictionnaires pour DHCP/TFTP EOLE
+ Configuration des services dhcp3-server et tftpd-hpa
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-dhcp-pkg
+Source: eole-dhcp
+Version: 2.8.1-35
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 23
+Depends: isc-dhcp-server, tftpd-hpa
+Conflicts: dhcp-pkg
+Replaces: dhcp-pkg
+Provides: dhcp-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-dhcp/eole-dhcp-pkg_2.8.1-35_all.deb
+Size: 18176
+SHA256: 67fc9a8dfee771824861e332926ead7ac5cbc8094e17a789a9003275a9a22d36
+SHA1: 749b149c4be147a6a7dcb05006b84b96c4ec8de4
+MD5sum: e9ef45e32eb8372c665fe81b9237587e
+Description: dependency package for eole-dhcp
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-dns
+Version: 2.8.1-17
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 508
+Conflicts: eole-ad-dc, eole-server (<= 2.4.0-145)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-dns/eole-dns_2.8.1-17_all.deb
+Size: 103124
+SHA256: 274a6ea583d259b02bc43edd66194fa28ec2b9abd8356cc4fe4b2dc575e0b6b0
+SHA1: 33beb802f4dbf2cddfe8ea9c975836235b44b006
+MD5sum: 21eb9e1e4dd7419fe1fe7abb61fc8e1c
+Description: Templates et dictionnaires pour le service DNS
+ Configuration du serveur DNS : bind9
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-dns-ad-dc
+Source: eole-dns
+Version: 2.8.1-17
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 43
+Depends: eole-ad-dc
+Conflicts: eole-dns
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-dns/eole-dns-ad-dc_2.8.1-17_all.deb
+Size: 10992
+SHA256: 9a4f93ae04a7cc7722bfebccc2e2a3e773693bb58985d4190a4210cd5889fc60
+SHA1: 85a74d6cc08da9d7e019c4116a11981bcf113c2e
+MD5sum: 3eb1a0d47dd9bbea9119b79f380c01c1
+Description: Templates et dictionnaires pour le service Safesearch pour le DNS
+ Configuration du serveur DNS bind pour AD DC pour gérer le Safesearch
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-dns-pkg
+Source: eole-dns
+Version: 2.8.1-17
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 15
+Depends: bind9
+Conflicts: dns-pkg
+Replaces: dns-pkg
+Provides: dns-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-dns/eole-dns-pkg_2.8.1-17_all.deb
+Size: 8840
+SHA256: 976c8103a7b86db6b627df42474adf92d79eb714337b206281b09d9a3266df75
+SHA1: d47aa7030d90a721e9c62aef5c22472484908157
+MD5sum: 9eb5db7efbb60cb053e3d99e431df613
+Description: dependency package for eole-dns
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ead
+Version: 2.8.1-55
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 31
+Depends: eole-ead-server, eole-ead-web
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-ead/eole-ead_2.8.1-55_all.deb
+Size: 26496
+SHA256: b2aa92b9a469114fb661d39f3b0d6e52d48147a530c084fa0f7953568e1268d6
+SHA1: 68360f2b86e74698dce589a3e71b312fe357272d
+MD5sum: b9e076cd55f1036f538208da8dc13b12
+Description: Installation complète de l'outil EAD (Metapackage)
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: eole-ead-common
+Source: eole-ead
+Version: 2.8.1-55
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 122
+Depends: python3-nevow, python3-openssl
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ead/eole-ead-common_2.8.1-55_all.deb
+Size: 43140
+SHA256: 2fe7f4c714771e4d4a285bdc4513d0b3f248620f90ba2140fcdeead4fc32fa7d
+SHA1: 7b5c1a5c6bd745b693e15a245031a01c69b76cd3
+MD5sum: 6ea2b4ea47aef7246b486e77d3cb8c1a
+Description: Librairies communes pour l'outil EAD
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: eole-ead-server
+Source: eole-ead
+Version: 2.8.1-55
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 2139
+Depends: eole-ead-common, lshw, python3-pam, python3-lxml, python3-pyeole (>= 2.4.0-113)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ead/eole-ead-server_2.8.1-55_all.deb
+Size: 521724
+SHA256: c582827b5021adcb0a47a5d1ad4f0c162e26e69469566fd2da61d09e658f2024
+SHA1: 697110f2d5868754857c1be7f2e63df147ab889c
+MD5sum: e0656e58287a7d4af40df6332cd8bd0e
+Description: Backend pour l'outil EAD
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: eole-ead-web
+Source: eole-ead
+Version: 2.8.1-55
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 675
+Depends: eole-ead-common
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ead/eole-ead-web_2.8.1-55_all.deb
+Size: 358692
+SHA256: d71cf143096845ea0de0974fd683c465b219bc4d9372c02f64c14cb27ff3f185
+SHA1: 88616d32a01ec8aea42422e86c889bfcdfd9928f
+MD5sum: b0b931e29620afd1714956100b38909a
+Description: Frontend Web pour l'outil EAD
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: eole-ead3
+Version: 2.8.1-7
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 18982
+Depends: python-ead3fileserver (= 2.8.1-7), ewt-portal, eole-server, python3-salt.states.eole, eole-reverseproxy | eole-web, nginx-full, python3-creole
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-ead3/eole-ead3_2.8.1-7_all.deb
+Size: 2818020
+SHA256: 0399ed42b3c71ebf793c71cd4749253395ce086dccb12ced898f2284547ec1a1
+SHA1: 91a6e8023b33a77ffa2c93a85757d22fc8d9f8f6
+MD5sum: c0e8065b524a41aa31016d8ddd2cb135
+Description: EAD3 actions and configuration files for ewt-portal.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ead3-saltstack
+Source: eole-saltstack
+Version: 2.8.1-8
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 215
+Depends: eole-common, salt-api (>= 3004.1), salt-master (>= 3004.1), salt-minion (>= 3004.1), python3-m2crypto
+Conflicts: eole-saltstack
+Replaces: eole-saltstack
+Provides: eole-saltstack
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-saltstack/eole-ead3-saltstack_2.8.1-8_all.deb
+Size: 49144
+SHA256: 5680c6a72739182ea3d960363936c80ed6ecbc226ea935a9a65361974cf6c9cd
+SHA1: a304274ce40c883336c4badc2eabfe583dbfc6ee
+MD5sum: 48640578b1d939c3bf9fb50a90ec0cd0
+Description: saltstack's EOLE configuration and integration for EAD3
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ecostations
+Version: 2.8.1-5
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 1140
+Depends: wakeonlan, eole-ecostations-apps
+Conflicts: eole-lxc-controller
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-ecostations/eole-ecostations_2.8.1-5_all.deb
+Size: 645372
+SHA256: d4374754d4c5db57771dac7473d53950175b5ae810780832f908df652e664edb
+SHA1: 27b705a4ce910f8ed71acfec8f5fca4aa2094813
+MD5sum: 818e83cdd80a4db202a605c225ae117f
+Description: Configuration EOLE pour ecoStations
+ ecoStations est un outil qui permet d'éteindre le parc informatique
+ d'un établissement suivant une procédure assez souple pour permettre
+ d'intégrer la notion d'internat par exemple ou de station à laisser
+ allumée constamment.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ecostations-apps
+Source: eole-ecostations
+Version: 2.8.1-5
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 3086
+Depends: perl:any
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-ecostations/eole-ecostations-apps_2.8.1-5_all.deb
+Size: 982432
+SHA256: 4c17153af63ba9b46319a68d7e91da9bf342444d56fe062bcf4ed47bb5e86028
+SHA1: 8890f1feabbcb781ff887f4ec7dcab793f79d887
+MD5sum: b43c288c07de477a16934d0533014b5a
+Description: Application web ecoStations
+ ecoStations est un outil qui permet d'éteindre le parc informatique
+ d'un établissement suivant une procédure assez souple pour permettre
+ d'intégrer la notion d'internat par exemple ou de station à laisser
+ allumée constamment.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ejabberd
+Version: 2.8.1-7
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 46
+Depends: eole-client-annuaire
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ejabberd/eole-ejabberd_2.8.1-7_all.deb
+Size: 13144
+SHA256: f9207df75aec5ca96610dec33682488c1833d2878238b55f3ee5dbca5b97a85d
+SHA1: 30cc555a252175c3cfe57c98d5f7d5c247b7430f
+MD5sum: b1bc7c526fce86bbe0f01ba4008fa6c7
+Description: Dictionnaire, templates et utilitaires pour Ejabberd
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ejabberd-pkg
+Source: eole-ejabberd
+Version: 2.8.1-7
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 20
+Depends: ejabberd, libpam-cas-eole, eole-client-annuaire-pkg, erlang-p1-pam
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-ejabberd/eole-ejabberd-pkg_2.8.1-7_all.deb
+Size: 7892
+SHA256: 9e30708bedb4aeb464f082d80275e78acf5d98fc23ed23db70dcc5f809dba50b
+SHA1: dd9f636ab0c140254c96fb107dfbb65534c3c426
+MD5sum: 0d4195043a8366430d04beed3509c34a
+Description: Dépendances pour eole-ejabberd (metapackage)
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-eoe
+Version: 2.8.1-3
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 26
+Depends: eole-web, eole-controle-vnc, eole-flask
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-eoe/eole-eoe_2.8.1-3_all.deb
+Size: 6136
+SHA256: c34e5b4d2db0d0388b48f506e8dd49fc9218d5b563a2429227f365a78bd6834f
+SHA1: 2f30b5f5cb6b2e28c78f81f92f215f7e812694b4
+MD5sum: 6796000e91b34adfbfa89bc75090da33
+Description: Templates et dictionnaires pour EOE (outils élèves).
+ Application web indépendante pour le changement
+ de mot de passe des élèves.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-eoe-apps
+Source: eole-eoe
+Version: 2.8.1-3
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 1829
+Depends: python-eole-eoe, eole-flask-server, eoleflask-aaa
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-eoe/eole-eoe-apps_2.8.1-3_all.deb
+Size: 670252
+SHA256: 964e21c0b56947054c65134a673b3526ebf490aaf23706abca5229aa546eb684
+SHA1: eae2bc668ba6bd3fd414a8660a88dcc91ccea745
+MD5sum: 8fdf4033d9307c0306d02a33bc85d7b9
+Description: Sources pour EOE (outils élèves).
+ Application web indépendante pour le changement
+ de mot de passe des élèves.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-eop
+Version: 2.8.1-40
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 60
+Depends: eole-web, eole-controle-vnc, eole-flask
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-eop/eole-eop_2.8.1-40_all.deb
+Size: 21160
+SHA256: 01676ab63d69dd54b878eca927615406c89116eb0bc509d9662a55246d1ecbe0
+SHA1: 5b1ddcf8c2b1e9935096dc4d7fc663257e49839e
+MD5sum: 2614df130a04b63b9beb3ac015552032
+Description: Templates et dictionnaires pour EOP (gestion de devoir).
+ Application indépendante de l'EAD dont l'objectif est de proposer une
+ interface simple pour la gestion des devoirs à destination des
+ professeurs.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-eop-apps
+Source: eole-eop
+Version: 2.8.1-40
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 3068
+Depends: python-eole-eop, eole-flask-server, python3-flaskext.wtf, eoleflask-aaa, eole-scribe-backend
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-eop/eole-eop-apps_2.8.1-40_all.deb
+Size: 1162976
+SHA256: c23ba9fa5e9c15e47945068ba39bfac966443387a6455cfd5f38d9033683d3d0
+SHA1: 2b64f8dd9125468cfc030ac36f9c6e059c68584a
+MD5sum: 2f58770b6f5584324ff4397b098ca00d
+Description: Sources pour EOP (gestion de devoir).
+ Application indépendante de l'EAD dont l'objectif est de proposer une
+ interface simple pour la gestion des devoirs à destination des
+ professeurs.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-era
+Source: era
+Version: 2.8.1-28
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 46
+Depends: eole-proxy-bypass, era
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/era/eole-era_2.8.1-28_all.deb
+Size: 26144
+SHA256: 88a90c2bf3e1dda98f82327ac1343acc4717bc66ee08ae2b34e2508cdaea152a
+SHA1: a3a82470c770309f84bdfc83a7705232fa62d62b
+MD5sum: 4996ca1c5e132ce2022ca7a549f3b3b9
+Description: Configuration EOLE pour Era
+ Era est un outil GTK permettant de gérer les règles de firewall
+ pour les modules Eole.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-esbl-glpi
+Source: eole-glpi
+Version: 2.8.1-12
+Architecture: all
+Maintainer: Equipe Eole <eole@ac-dijon.fr>
+Installed-Size: 11
+Depends: eole-glpi
+Priority: optional
+Section: oldlibs
+Filename: pool/main/e/eole-glpi/eole-esbl-glpi_2.8.1-12_all.deb
+Size: 4428
+SHA256: 879cbbc5e499ecb210a6399d555db17296066630301704f400a009ec32008256
+SHA1: 3f483e9df051d329d3792698c1f9f83fbdb72b57
+MD5sum: 25e7c11087dbff86506a4a5759e46353
+Description: Transitional package. It can safely be removed.
+
+Package: eole-esbl-ocs
+Source: esbl-ocs
+Version: 2.8.1-3
+Architecture: all
+Maintainer: Yves Guimard <yves.guimard@developpement-durable.gouv.fr>
+Installed-Size: 141
+Depends: eole-web, eole-mysql, eole-db, eole-ocsinventory-agent
+Priority: extra
+Section: web
+Filename: pool/main/e/esbl-ocs/eole-esbl-ocs_2.8.1-3_all.deb
+Size: 30268
+SHA256: 404cb9f907fd761f6a276c1cf5016c1c52a86534389aaeb6601357f9a9f0400a
+SHA1: f0fb4234e259be65efec19f0b7b642229f7019a2
+MD5sum: c74394b9b0fa1a0c4d1ecb3591c80752
+Description: Templates et dictionnaires pour la configuration du paquet OCS Inventory EOLE
+
+Package: eole-exim
+Version: 2.8.1-19
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 93
+Suggests: eole-exim-auth (>= 2.4.1-10)
+Conflicts: eole-mail
+Replaces: eole-mail (<= 2.3-eole314~8), eole-ssmtp
+Provides: eole-mail
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-exim/eole-exim_2.8.1-19_all.deb
+Size: 26628
+SHA256: e929c66743092e8d046a8976e2df324d4849f628b4005efc0b23f249feb75217
+SHA1: 0426727a5de66989822da3477f33a752ac127564
+MD5sum: 0b586c8c620bc6ff8260f963465b52c7
+Description: Configuration EOLE pour Exim
+ Ce paquet fourni les templates et dictionnaires EOLE pour la
+ configuration d’exim.
+ .
+ Cinq modes de fonctionnements sont supportés:
+ - Pas sur un réseau, distribution locale uniquement (local)
+ - Envois via relais sans mail local (satellite)
+ - Envois via relais avec gestion des boites locales et domaine privé (smarthost)
+ - Envois par routes manuelles et via relais sans mail local (mailhub)
+ - Relais (internet)
+
+Package: eole-exim-auth
+Source: eole-exim
+Version: 2.8.1-19
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 27
+Depends: eole-exim, eole-client-annuaire, eole-sso-client
+Breaks: eole-exim (<< 2.4.1-9)
+Replaces: eole-exim (<< 2.4.1-9)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-exim/eole-exim-auth_2.8.1-19_all.deb
+Size: 15260
+SHA256: e0f8a2c2777609eaf34c7f8178647f0897755f2b0b1cd30badda001b2a787f90
+SHA1: c4f15b9972737deab1d4a6f4c3cd087d228c704c
+MD5sum: 3a184e7e7cd2ef1c973de66bf2758d48
+Description: Configuration EOLE pour Exim
+ Ce paquet fournit les templates et dictionnaires EOLE pour la
+ configuration de l’authentification SMTP d’exim.
+
+Package: eole-exim-auth-pkg
+Source: eole-exim
+Version: 2.8.1-19
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 20
+Depends: libpam-ldap, libpam-cas-eole
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-exim/eole-exim-auth-pkg_2.8.1-19_all.deb
+Size: 14636
+SHA256: 00f1d19c652110b5c15408fbe6844526ccc54e600f456b614f0cc02e9cbaa69b
+SHA1: 784ef923bd8ec883ecc16ff40c0edcafa68f006d
+MD5sum: f8f47def4e6679ca5130192efe3b8958
+Description: EOLE exim4 authentication configuration (metapackage)
+ Exim (v4) is a mail transport agent. exim4 is the metapackage depending
+ on the essential components for a basic exim4 installation.
+ .
+ This metapackage pulls the exim4 binary and EOLE configuration.
+
+Package: eole-exim-pkg
+Source: eole-exim
+Version: 2.8.1-19
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 20
+Depends: exim4, exim4-daemon-heavy, eole-exim4-config
+Conflicts: eole-mail-pkg, exim-pkg
+Replaces: eole-mail-pkg, exim-pkg
+Provides: eole-mail-pkg, exim-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-exim/eole-exim-pkg_2.8.1-19_all.deb
+Size: 14660
+SHA256: 5b3ff852bcc1280caae501d62e7733f5553a19a130eef33c7804334179bcde22
+SHA1: e3a5ebd4eef3cd564642d5d2645b057bd3d56c1a
+MD5sum: 58ea2623fa11f1ca72a2b8bd4bee3259
+Description: EOLE exim4 configuration (metapackage)
+ Exim (v4) is a mail transport agent. exim4 is the metapackage depending
+ on the essential components for a basic exim4 installation.
+ .
+ This metapackage pulls the exim4 binary and EOLE configuration.
+
+Package: eole-exim-tests
+Source: eole-exim
+Version: 2.8.1-19
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 25
+Depends: eole-exim, python3-pytest
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-exim/eole-exim-tests_2.8.1-19_all.deb
+Size: 15456
+SHA256: 06b7a88f953b184c3d83a9723bbc0712bdb6d2241575af42427f55a6188500fd
+SHA1: af8cd9977a92cd9a72f5e2e1c1f3fecd75b8eb86
+MD5sum: 48c2ade790dfc305b42d8ab670d366c6
+Description: Tests py.test pour eole-exim
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: eole-exim4-config
+Source: eole-exim
+Version: 2.8.1-19
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 86
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-exim/eole-exim4-config_2.8.1-19_all.deb
+Size: 30052
+SHA256: b2c75d7b680a1244def630af2f6dccfb58272b9be95a097394ea0a3a56cf4e90
+SHA1: e3f2e46695414ca784fa307ceb80ded2264528c3
+MD5sum: 157e58ef84de21f64572c56677664a58
+Description: Configuration for the Exim MTA (v4)
+ Exim (v4) is a mail transport agent. exim4-config-eole provides the
+ configuration for the exim4 daemon packages on EOLE systems in
+ replacement of the exim4-config package.
+
+Package: eole-fake
+Source: python-pyeole
+Version: 2.8.1-35
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 46
+Priority: optional
+Section: metapackages
+Filename: pool/main/p/python-pyeole/eole-fake_2.8.1-35_all.deb
+Size: 39484
+SHA256: 2419a6662bd7106e906f20f28d56fa72e4c931091e2bff6889bef3a31bed8c94
+SHA1: 4af27f62da4dc1eec9a272f99ed75c44c780636a
+MD5sum: 0c3c11ff0261e9cfb78dfde34484b415
+Description: Paquet bidon pour les tests
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-fichier-actions
+Source: eole-fichier
+Version: 2.8.1-36
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 11590
+Depends: quota, acl, python3-pylibacl, python3-tabulate
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-fichier/eole-fichier-actions_2.8.1-36_all.deb
+Size: 1836408
+SHA256: beab792f95b7efb06919c6979e6da5c88f44cc56c663b1cc6e900c793c735307
+SHA1: 04b2904c38ce52a180f634e202f6b3b65bd11f10
+MD5sum: aeb4d91cd47076ae74d082296ce4cddc
+Description: Actions génériques sur les fichiers
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-fichier-common
+Source: eole-fichier
+Version: 2.8.1-36
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 91
+Depends: acl, eole-antivirus, eole-fichier-quota
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-fichier/eole-fichier-common_2.8.1-36_all.deb
+Size: 33456
+SHA256: 3048fa787b7e5b519e84069dfb6dcd53e55103fca0cf0f23e0dd6bf3e1589fc2
+SHA1: 3032e5f1fd6d6d7606abc019ba38e989428c0ea6
+MD5sum: 4336f434737311b6133783951956fc4c
+Description: Templates et dictionnaires pour serveur de fichier EOLE
+ Templates et dictionnaires communs à
+ fichier-primaire et fichier-membre
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-fichier-common-pkg
+Source: eole-fichier
+Version: 2.8.1-36
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 35
+Depends: acl, quota, quotatool, samba, samba-common-bin, smbclient, winbind, libpam-winbind, tdb-tools, samba-vfs-modules, samba-dsdb-modules
+Conflicts: nscd
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-fichier/eole-fichier-common-pkg_2.8.1-36_all.deb
+Size: 24572
+SHA256: 80074f62a8c5d72b25b1753c3a66e121361af92e0b71e5b991c5b8f861792892
+SHA1: 3250cb73d4dbe1488d9b483e78d2ee12d71d07cf
+MD5sum: 8845d7dac895f220562859e9a2ca0e1a
+Description: serveur de fichier EOLE (metapackage)
+ Dépendances pour eole-fichier-common
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-fichier-membre
+Source: eole-fichier
+Version: 2.8.1-36
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 39
+Depends: eole-fichier-common, eole-nsswitch
+Conflicts: eole-fichier-primaire
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-fichier/eole-fichier-membre_2.8.1-36_all.deb
+Size: 25844
+SHA256: 3df1597a479f8fc37bb5798107106a5541c86be80a7530d82065f5265180e549
+SHA1: 5409c334ba58984db7f37b395e9ce83a35a9c7aa
+MD5sum: c72cab7bc05f6dfac538d226dbcaecec
+Description: Templates et dictionnaires pour serveur de fichier EOLE
+ Templates et dictionnaires pour un serveur membre
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-fichier-membre-pkg
+Source: eole-fichier
+Version: 2.8.1-36
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 29
+Depends: krb5-config, krb5-user, libnss-winbind, eole-python3-fichier
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-fichier/eole-fichier-membre-pkg_2.8.1-36_all.deb
+Size: 24220
+SHA256: c249b7769607080713bf8dc2946604b81a7f6ae9549b8424f6f68b13f0093ba1
+SHA1: a34af1c4643b10ae70b16ad79cedf6f22d5d0ad9
+MD5sum: 933dac21e760ea7de48ded21c2e14df5
+Description: serveur de fichier membre EOLE (metapackage)
+ Dépendances pour eole-fichier-membre
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-fichier-primaire
+Source: eole-fichier
+Version: 2.8.1-36
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 51
+Depends: eole-fichier-common, eole-client-annuaire, eole-userpassword
+Conflicts: eole-fichier-membre
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-fichier/eole-fichier-primaire_2.8.1-36_all.deb
+Size: 29348
+SHA256: 7bd36ebc4fda2cc03363e958ca14b0bd4d8a771c0163a98fd0888f8867cd8d99
+SHA1: 534ae8cc55013c86e37dc4c7cf6a19b9ed4c68f8
+MD5sum: aed5e55837c5449f082e66b14cd4ff80
+Description: Templates et dictionnaires pour serveur de fichier EOLE
+ Templates et dictionnaires pour un contrôleur de domaine principal
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-fichier-primaire-pkg
+Source: eole-fichier
+Version: 2.8.1-36
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 29
+Depends: client-annuaire-pkg, smbldap-tools, libnss-winbind, eole-python3-fichier
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-fichier/eole-fichier-primaire-pkg_2.8.1-36_all.deb
+Size: 24236
+SHA256: 6811e44c05a023901acbdbe4ddde13adc276d83c552fe0f081c8254c915feb6a
+SHA1: 9ca413e496bf48ca0e6d137413a4fd63e62df857
+MD5sum: eec2e20b237dc24ca8d28a662447fdcf
+Description: serveur de fichier EOLE (metapackage)
+ Dépendances pour eole-fichier-primaire
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-fichier-quota
+Source: eole-fichier
+Version: 2.8.1-36
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 52
+Depends: quota, quotatool
+Breaks: eole-fichier-common (<< 2.8.1-4)
+Replaces: eole-fichier-common (<< 2.8.1-4)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-fichier/eole-fichier-quota_2.8.1-36_all.deb
+Size: 27804
+SHA256: 153f6bae6117df0666f57b2ced02ccc61f698aea3f22798a18f1672e5e743f46
+SHA1: 6ca44eb4424d94bec2428546ff4cf9c6354bc81d
+MD5sum: 481d3314b7162e24fb723c4d4a9d109f
+Description: Gestion des quotas
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-flag
+Version: 2.8.1-3
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 59
+Depends: eole-server, python3-icalendar
+Homepage: https://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-flag/eole-flag_2.8.1-3_all.deb
+Size: 10488
+SHA256: d932fb57544561bd70135083ae4c449697ee8cedf77f0f707297129ac433c4b2
+SHA1: b2f6c6de97fd60d401534697172c55f65ef5be50
+MD5sum: 253d03e015a9cba7920ba57155918e30
+Description: Gestion de drapeaux
+ Déclaration de fichiers pouvant servir de drapeaux
+ avec support d’une transcription depuis les événements
+ d'un fichier.
+ .
+ Un drapeau est créé au début d’un événement donné puis supprimé
+ à la fin de l’événement.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-fog
+Version: 2.8.1-5
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 27
+Depends: eole-server, eole-mysql, eole-web
+Homepage: https://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-fog/eole-fog_2.8.1-5_all.deb
+Size: 6752
+SHA256: 829b919ba0ce509c9e0a5c409f514acf799597009e2de38f08634abc45a8efc7
+SHA1: dd306e0f7100e54d54c0147c0d4cdacc807316ce
+MD5sum: efb8c7d95ecc58b407e8f3d82b32cc09
+Description: configuration du service FOG pour EOLE
+ Dictionnaire et template de configuration pour FOG.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-fog-pkg
+Source: eole-fog
+Version: 2.8.1-5
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 10
+Depends: bc, build-essential, gawk, genisoimage, gzip, htmldoc, isolinux, lftp, mysql-client, nfs-kernel-server, tftp-hpa, tftpd-hpa, unzip, vsftpd, wget, xinetd, zlib1g
+Homepage: https://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-fog/eole-fog-pkg_2.8.1-5_all.deb
+Size: 3428
+SHA256: af754a9d1675e2dc549e4b83513dcc0041e7f35b62e12e88b517b01c8b347133
+SHA1: 3fb4f1d3faa0aefe7ff1b8a6c1c792a78ce0ecb7
+MD5sum: 799c1175157e1ddf7f099ebf7bc4c5cf
+Description: dépendances utilisées par FOG
+ Ce paquet pré-installe les dépendances nécessaires à l’utilisation de
+ FOG.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-genconfig
+Version: 2.8.1-25
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 5213
+Depends: python-eolegenconfig (= 2.8.1-25), eole-flask, eoleflask-aaa
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-genconfig/eole-genconfig_2.8.1-25_all.deb
+Size: 1674976
+SHA256: a2096066f93d77745ae0f5df911da4b19eb2c0663aca1219eb47efe1890bb307
+SHA1: 091fb28fea448b7e8103b34d71641fab387cc6f8
+MD5sum: 05249099e42c3346fff7458a2a7d0575
+Description: manage EOLE configuration
+ eole-genconfig permit to manage configuration of EOLE servers through
+ a web application.
+ .
+ This package provides the configuration for eole-flask-server and the
+ web application files.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-genconfig-client
+Source: eole-genconfig
+Version: 2.8.1-25
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 42
+Depends: eole-genconfig, firefox, sux, xserver-xorg, xinit, xserver-xorg-video-all, matchbox-window-manager, libcanberra-gtk-module
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-genconfig/eole-genconfig-client_2.8.1-25_all.deb
+Size: 29740
+SHA256: 7a0370e450ead7a3cb9d0b48dbb42ba8a5d9e83c573a22023751b6796b8df278
+SHA1: 0dabaf35709ad4e9033a7796e69f5b1415c1df27
+MD5sum: 1ab96ca21a8fa83a35b4cfcb7d1cf5c5
+Description: manage EOLE configuration
+ eole-genconfig permit to manage configuration of EOLE servers through
+ a web application.
+ .
+ This package provides the configuration for eole-flask-server and the
+ web application files.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-genconfig-noclient
+Source: eole-genconfig
+Version: 2.7.0-5
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 29
+Conflicts: eole-genconfig-client
+Replaces: eole-genconfig-client
+Provides: eole-genconfig-client
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-genconfig/eole-genconfig-noclient_2.7.0-5_all.deb
+Size: 23272
+SHA256: fb1b53c49b4013caf8398317c4b92ced90dcac961d5bd8ac48ad71ca7e9460d1
+SHA1: a0f8f354960c1bb94e7a6f18c81c86f85ed79fa9
+MD5sum: 552aa5f6b6a5320e6b17ce37a606cac3
+Description: fake eole-genconfig-client
+
+Package: eole-geo-ide-base
+Version: 2.8.1-1
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 81
+Depends: geo-ide-base-php, watcher, php-mbstring, php-pgsql, php-redis, php-xmlrpc, php-json, php-yii, redis-server, postgresql, mitab, make
+Homepage: http://eole.orion.education.fr/diff/
+Priority: extra
+Section: misc
+Filename: pool/main/e/eole-geo-ide-base/eole-geo-ide-base_2.8.1-1_all.deb
+Size: 24652
+SHA256: 21b0e568095fbab4450a412404e1c58e3e1c313cad22b521a8649ed9666cf2f1
+SHA1: 6aaadb9caf3bf879267579a383fea71f632339ad
+MD5sum: 4ffa1f4a045ce1805c3b9e48e08e4a91
+Description: Geo-IDE-base
+ fonctionnalité base du projet geo-IDE
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-geo-ide-distribution
+Version: 2.8.1-2
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 28
+Conflicts: eole-geoide
+Replaces: eole-geoide
+Provides: eole-geoide
+Homepage: http://eole.orion.education.fr/diff/
+Priority: extra
+Section: misc
+Filename: pool/main/e/eole-geo-ide-distribution/eole-geo-ide-distribution_2.8.1-2_all.deb
+Size: 5776
+SHA256: c81caff9a5b57963cc6c14656cb6f78b986a7c242dcffe7afd58a81cbf6e7105
+SHA1: 52b98b23a4cd2f7e1abb4edfcb9cceaab3489c84
+MD5sum: 5307b98aa54ff564950a7e6259b6ce1e
+Description: Geo-IDE-distribution
+ fonctionnalité distribution du projet geo-ide
+
+Package: eole-glpi
+Version: 2.8.1-12
+Architecture: all
+Maintainer: Equipe Eole <eole@ac-dijon.fr>
+Installed-Size: 371
+Depends: eole-web, eole-mysql, eole-db, eole-client-annuaire
+Conflicts: eole-esbl-glpi
+Replaces: eole-esbl-glpi
+Provides: eole-esbl-glpi
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-glpi/eole-glpi_2.8.1-12_all.deb
+Size: 39780
+SHA256: 3dc764c35df9d25342c9e083ab2bb4ebc04db97b1efc40d90e9ef155508a99de
+SHA1: 631ca20b4aefec0711d39617f29d7adedadb565a
+MD5sum: 902a8c45c3582a8af891b1c56f8877fa
+Description: Eolisation de l'application glpi.
+
+Package: eole-glpi-pkg
+Source: eole-glpi
+Version: 2.8.1-12
+Architecture: all
+Maintainer: Equipe Eole <eole@ac-dijon.fr>
+Installed-Size: 231516
+Depends: eole-web-pkg, eole-client-annuaire-pkg, php-bz2
+Conflicts: glpi, glpi-plugin-ocsinventoryng
+Replaces: glpi, glpi-plugin-ocsinventoryng
+Provides: glpi, glpi-plugin-ocsinventoryng
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-glpi/eole-glpi-pkg_2.8.1-12_all.deb
+Size: 35768736
+SHA256: 292b6065dbc684eb19104ac2222c7776fc5ce0a33709ce97ccf938a580ae8b47
+SHA1: bec2b11d2b1e59e38c9c4b3f5cbc915efb016792
+MD5sum: eb3234a460f06865369343cebec38423
+Description: Sources pour glpi "EOLE".
+
+Package: eole-gpo-joineole
+Source: eole-workstation-joineole
+Version: 2.8.1-23
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 37
+Homepage: http://pcll.ac-dijon.fr/eole
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-workstation-joineole/eole-gpo-joineole_2.8.1-23_all.deb
+Size: 11400
+SHA256: ea334c552bf66ce502587718d716cd09a451f033d8725d9ef8a19f7a68b07eea
+SHA1: 27a44ac0e341109e11942265ec44bade6da9adbf
+MD5sum: f5a8943e9cde28842e426031ab0247de
+Description: Install scripts for eole-gpo-script
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-gpo-script
+Version: 2.8.1-34
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 60
+Depends: eole-gpo-script-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-gpo-script/eole-gpo-script_2.8.1-34_all.deb
+Size: 25912
+SHA256: 7929a23b3ab1d71afe13456657b26de9fbaa8f281d4b3f74469876571d2e5f9f
+SHA1: c9f1d84f27228815d3f622bfd7adea454dc49a47
+MD5sum: 1649265bd165b4876b74f112e3a8ba0e
+Description: Script GPO de connexion des utilisateurs
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-gpo-script-pkg
+Source: eole-gpo-script
+Version: 2.8.1-34
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 14
+Depends: gpo-tool, eole-gpo-joineole, python3-lxml, hashdeep, attr
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-gpo-script/eole-gpo-script-pkg_2.8.1-34_all.deb
+Size: 8240
+SHA256: b2eeff0aeee644af57f31b4130894b93964d41788912bb71092201da8ca06907
+SHA1: 4c2276049760ae4850a789d1cec84c450771ac6f
+MD5sum: 9dc0027a10008a9d6f8c922818a404f2
+Description: Dépendance du script GPO
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-hapy-deployment
+Version: 2.8.1-60
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 111
+Depends: eole-server
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-hapy-deployment/eole-hapy-deployment_2.8.1-60_all.deb
+Size: 30124
+SHA256: e69133227736b9c5af699fc64b9372e87c82e4e7cdcfae7c22f0356f5e4ba6bd
+SHA1: a31a7775410fe19975cc4b91e6844e03d3d09847
+MD5sum: bd4bc29f8a60f1a378036c7fd357e68f
+Description: outillage de déploiement automatique de VM
+ Ce paquet fournit les variables et outils permettant le déploiment
+ automatique de machines virtuelles déclarées dans Zéphir.
+ .
+ Ce paquet est destiné à tous les serveurs.
+
+Package: eole-infosquota
+Version: 4.1.5-5
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 380
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-infosquota/eole-infosquota_4.1.5-5_all.deb
+Size: 303212
+SHA256: 7dda5463b7f773327673a8aa67c49e322cd83005cfce40d4f091b621939b0968
+SHA1: 868632dd5ae00bb4c456f4f6f3903847dbfc9549
+MD5sum: 84c127850004edf497fd0abe63ba6202
+Description: Configuration EOLE pour Infosquota
+ Informations Quota est un outil qui permet de mettre en place
+ les quotas de manière très souple et très pédagogique.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-infosquota-apps
+Source: eole-infosquota
+Version: 4.1.5-5
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 1665
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-infosquota/eole-infosquota-apps_4.1.5-5_all.deb
+Size: 270688
+SHA256: de1586950036b70616d05bbd8c027e3628f2f8768b57faf98b37d4216a1a079a
+SHA1: 0cbe22c0d2c59baea15585874adf31e22f8cf622
+MD5sum: a14175ef8b7ea0df39bd8e1e1896a357
+Description: Application web Infosquota
+ Informations Quota est un outil qui permet de mettre en place
+ les quotas de manière très souple et très pédagogique.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-lemonldap-ng
+Version: 2.8.1-43
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 105
+Homepage: https://dev-eole.ac-dijon.fr/projects/sso
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-lemonldap-ng/eole-lemonldap-ng_2.8.1-43_all.deb
+Size: 25872
+SHA256: 278a2b814f25bfc2c524a05a23e8a23bc0f7858d700d88e81a91e227c2babf06
+SHA1: 6076c254458c0d897bcf680d3d2a0451a55a91e8
+MD5sum: de665d1076103b2ec0bf6afb01f95339
+Description: Dictionnaires et templates pour la configuration d'un serveur LemonLDAP::NG
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-lemonldap-ng-amonecole
+Source: eole-lemonldap-ng
+Version: 2.8.1-43
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 20
+Depends: eole-lemonldap-ng, eole-seth-education
+Homepage: https://dev-eole.ac-dijon.fr/projects/sso
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-lemonldap-ng/eole-lemonldap-ng-amonecole_2.8.1-43_all.deb
+Size: 8080
+SHA256: 364993d5e1ef52af298e0161184bf8e188b1cb8253389deba03616e558ad7e23
+SHA1: a0fdc1402e7947b4f4c3fe49c195f1d040ea6add
+MD5sum: 5edad7c51dfd99c2a41dc6c3a714897d
+Description: Dictionnaire pour calculer les valeurs automatiquement sur AmonEcole
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-lemonldap-ng-pkg
+Source: eole-lemonldap-ng
+Version: 2.8.1-43
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 31
+Depends: lemonldap-ng, lemonldap-ng-doc, lemonldap-ng-fastcgi-server, lemonldap-ng-handler, liblemonldap-ng-handler-perl, liblemonldap-ng-manager-perl, liblemonldap-ng-portal-perl, libauthen-captcha-perl, libauthen-sasl-perl, libemail-sender-perl, libgd-securityimage-perl, libimage-magick-perl, libio-string-perl, liblasso-perl, libnet-ldap-perl, libunicode-string-perl, libapache2-mod-perl2, libapache2-mod-fcgid, libmime-tools-perl, libnet-openid-server-perl, patch
+Breaks: eole-lemonldap-ng (<< 2.8.1-41)
+Replaces: eole-lemonldap-ng (<< 2.8.1-41)
+Homepage: https://dev-eole.ac-dijon.fr/projects/sso
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-lemonldap-ng/eole-lemonldap-ng-pkg_2.8.1-43_all.deb
+Size: 9516
+SHA256: 0c9e360c30e86345b5a0058754643b60dd046eb1566aa89767a476b7ac2faf65
+SHA1: 45ab8416318c0cddd5ff0eacdb09326eed3e8857
+MD5sum: 6119917f08cb04b4e93991fb372bb9fc
+Description: Paquet de dépendances pour eole-lemonldap.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur la forge Cadoles.
+
+Package: eole-lemonldap-ng-scribe
+Source: eole-lemonldap-ng
+Version: 2.8.1-43
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 22
+Depends: eole-scribe, eole-lemonldap-ng, libapache2-mod-perl2
+Homepage: https://dev-eole.ac-dijon.fr/projects/sso
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-lemonldap-ng/eole-lemonldap-ng-scribe_2.8.1-43_all.deb
+Size: 8504
+SHA256: 1c73e4059ae126c4943cb691451eab7742b63e39206a2bb6c567865b7eeb9fe9
+SHA1: 02badad9d33c4f7d43792ad0089f371aa9d79798
+MD5sum: 1d4bb9b3e4fce2fb8bb2d440b5166e5c
+Description: Dictionnaire pour calculer les valeurs automatiquement sur Scribe
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-lemonldap-ng-seth
+Source: eole-lemonldap-ng
+Version: 2.8.1-43
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 20
+Depends: eole-lemonldap-ng, eole-seth-education
+Homepage: https://dev-eole.ac-dijon.fr/projects/sso
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-lemonldap-ng/eole-lemonldap-ng-seth_2.8.1-43_all.deb
+Size: 8072
+SHA256: 845e914d078cc0a79d6c0834cc93590c99afd392596b662157e6dd48f733d341
+SHA1: b4bc80bb6e300f53e504912dec058ff0175b7c09
+MD5sum: 6b59fe5299954ed2c099d25a209f0c98
+Description: Dictionnaire pour calculer les valeurs automatiquement sur Seth
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-libvirt
+Version: 2.8.1-1
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 60
+Depends: libvirt-daemon-system, qemu-kvm, dnsmasq
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-libvirt/eole-libvirt_2.8.1-1_all.deb
+Size: 15160
+SHA256: 8fcdb8ee3fba23e670e4658df62ace7ab9f72bfe5aadfe46f43b7559cdbf6dd8
+SHA1: 654ded31167fc9f6af462330d517474328d5cf6b
+MD5sum: 7a26aed048d6197975b2b532b402b8a1
+Description: Dictionnaires et templates  pour libvirt, un logiciel libre de gestion de plateformes de virtualisation. Elle supporte  Linux KVM, Xen, VMware ESX, QEMU entre autres
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ltsp-server
+Version: 2.8.1-41
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 34
+Depends: eole-nfs, eole-dhcp
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ltsp-server/eole-ltsp-server_2.8.1-41_all.deb
+Size: 15348
+SHA256: 70f7d28465fae391f163488b0401985f5c44e5c7d2dfa5b77e918e0cbf45b488
+SHA1: 4728dec23b0923c81e6f91136f8594adc117528e
+MD5sum: ee459c6a6dc603ef6102953de2a3db13
+Description: configuration du module Eole : Eclair
+ Pour toute information complementaire,
+ veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: eole-ltsp-server-pkg
+Source: eole-ltsp-server
+Version: 2.8.1-41
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 19
+Depends: ltsp, ipxe, nbd-server, squashfs-tools
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-ltsp-server/eole-ltsp-server-pkg_2.8.1-41_all.deb
+Size: 12852
+SHA256: ae9bed3ba5e1fd07ccd05c06b4c253797ccc423a140374b139778ee4aa3ed731
+SHA1: 221194887346d1dde8e07637fcea9c83ff8b5f41
+MD5sum: 897c508ea099df49cacf363fb41b2e0d
+Description: Eclair serveur (metapackage)
+ Gestion des dependances pour Eclair
+ .
+ Pour toute information complémentaire,
+ veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-lxc-container-apps
+Source: eole-common
+Version: 2.8.1-91
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 98
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-common/eole-lxc-container-apps_2.8.1-91_all.deb
+Size: 79752
+SHA256: 30ca7a4dae5b258bcb68fe12806bd21d55b9f5c089d90c2d21204d6e28e15786
+SHA1: a4b746539feec2f16cbfa0217110e8e91ee26974
+MD5sum: d4647c6079d2d8950a25192c79364223
+Description: Outil de base pour les conteneurs LXC
+ Ce paquet s'installe dans tous les conteneurs
+ LXC, appelés « serveurs conteneurs » dans la documentation EOLE.
+
+Package: eole-lxc-container-pkg
+Source: eole-common
+Version: 2.8.1-91
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 81
+Depends: eole-common-pkg, eole-lxc-container-apps
+Breaks: eolebase-conteneur (<< 2.4)
+Replaces: eolebase-conteneur (<< 2.4)
+Provides: eolebase-conteneur
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-common/eole-lxc-container-pkg_2.8.1-91_all.deb
+Size: 77336
+SHA256: 106f5a5416f0c4a2778fbc697951dd1785ac931509973af2eda8d2d03a13a7f4
+SHA1: d67e5822bab340e391d3d5c9c7d47a085383760c
+MD5sum: 099b18c68a333285690e2bb53f0094f4
+Description: Dépendances de base pour les conteneurs LXC
+ Ce paquet installe les dépendances communes à tous les conteneurs
+ LXC, appelés « serveurs conteneurs » dans la documentation EOLE.
+
+Package: eole-lxc-controller
+Source: eole-common
+Version: 2.8.1-91
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 151
+Depends: lxc1, lxc-templates, debootstrap, cgroup-lite, eole-ssmtp-pkg, eole-apt-cacher-ng, eole-server
+Breaks: eole-conteneur (<< 2.4)
+Replaces: eole-conteneur (<< 2.4)
+Provides: eole-conteneur
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-common/eole-lxc-controller_2.8.1-91_all.deb
+Size: 93980
+SHA256: f320d5586cf5c70f347b0a71434ad995522c6ba0130e321e0c4c9d3b721d9347
+SHA1: 5219435bd9ccadb6597f9fa9d884c2b8d0b30b3b
+MD5sum: 7bf5d45518ecb4ab1a688f3ee30dc1a1
+Description: Utilitaire pour la mise en place des conteneurs EOLE
+ Ce paquet fourni la base commune à tous les modules EOLE.
+ .
+ Ce paquet n’est destiné qu’au contrôleur LXC, appelé « serveur
+ maître » dans la documentation EOLE.
+
+Package: eole-mode-zephir
+Source: eole-common
+Version: 2.8.1-91
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 85
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-common/eole-mode-zephir_2.8.1-91_all.deb
+Size: 77620
+SHA256: 83dcef4b75f8121fc48f49ea131dc501c2c2c1513530f38bc1fbbb4f70c7fbfe
+SHA1: f4f76a5bc85752546d2b809cb48c78ee56698863
+MD5sum: 35dbbe643dc4a9f88edebfcf2f9b5ebb
+Description: Enable the Zephir mode
+ This package enable the Zephir mode by providing a dedicated EOLE
+ XML schema file.
+ .
+ This package is only used by the “dl-schemas” tool in “zephir-parc”
+ to update the EOLE XML schema files for the Zephir module.
+
+Package: eole-modele-vm
+Version: 2.8.1-22
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 60
+Depends: eole-server, python3-pexpect, expect, ruby-rsync
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-modele-vm/eole-modele-vm_2.8.1-22_all.deb
+Size: 13436
+SHA256: cfa97b15e43ee8307a962ebdb2542ac8a27893bef7fe8d615026184532384f7e
+SHA1: 234b840713af04917deb3e1ad3019d7ad8953c23
+MD5sum: 4f7ff9b64688962eb19a2a2af0a299fa
+Description: déclaration des ressources de machine virtuelle
+ Ce paquet fournit les variables déclarant les resources nécessaire à
+ une machine virtuelle.
+ .
+ Ce paquet est destiné à tous les serveurs.
+
+Package: eole-mysql
+Version: 2.8.1-10
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 57
+Depends: eole-db
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-mysql/eole-mysql_2.8.1-10_all.deb
+Size: 15188
+SHA256: f9463332e14f4c6a43ba2e4fff69f8e9e5905a6dfd06e7ed23fe87e8a77cf74d
+SHA1: 296e7142a2457918aec63e6f51161c2b3e8c7afe
+MD5sum: 0f618f04b91f2766a44442c5b3e20f5b
+Description: Templates et dictionnaires pour le service MySQL
+ Configuration du serveur MySQL
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-mysql-pkg
+Source: eole-mysql
+Version: 2.8.1-10
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 22
+Depends: mysql-server
+Conflicts: mysql-pkg
+Replaces: mysql-pkg
+Provides: mysql-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-mysql/eole-mysql-pkg_2.8.1-10_all.deb
+Size: 9188
+SHA256: ac5409553f7c56432f51d05538e116dbce14f964efcc9b2e2e8aea4b79628edb
+SHA1: ad25a3b646a4c303d25269f2baa1a7b1912595ba
+MD5sum: c13d84440e4bfa969ec4b3e91cc121f3
+Description: dependency package for eole-mysql
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-nfs
+Version: 2.8.1-4
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 29
+Depends: nfs-kernel-server, nfs-common, nfs4-acl-tools
+Homepage: http://eole.orion.education.fr/diff
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-nfs/eole-nfs_2.8.1-4_all.deb
+Size: 6392
+SHA256: 99b28a787c637250fe102dfcd3cf9e9759ecbcd5245c7e60f8751b7786226ebf
+SHA1: 90217ddbb1a67066e3e792d1f44db4772c720ae0
+MD5sum: 47274afa430638a409cd9877d13d584d
+Description: Paramètrage du serveur NFS pour EOLE
+ Dictionnaires et templates pour faciliter la mise en place
+ de la communication entre les modules Scribe et Eclair
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-one-flow
+Version: 2.8.1-1
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 22
+Depends: opennebula-flow, ruby-treetop, ruby-polyglot, ruby-parse-cron
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-one-flow/eole-one-flow_2.8.1-1_all.deb
+Size: 5500
+SHA256: eadca2db133cdbfebd07b446cf5122e90cd43ab81d4baaad6967b3b40d30a836
+SHA1: b5d5f663b6c77228f30bbf2e93d51f08ab3d12f0
+MD5sum: 64b3aeeeb44f0f27845c87cd8809e48e
+Description: Dictionnaires et templates pour configurer le serveur OpenNebula Flow
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-one-frontend
+Version: 2.8.1-5
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 354
+Depends: eole-client-annuaire, memcached, opennebula-gate, opennebula-sunstone, python-numpy, ruby-dalli, ruby-net-ldap
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-one-frontend/eole-one-frontend_2.8.1-5_all.deb
+Size: 23364
+SHA256: 1af9ab80ae7704e3f36354a4f4aebc3cc706ad6d292829e2cbeec90efa249410
+SHA1: 990137c2fb599af6399779ed73edc5f1e827c1eb
+MD5sum: 46d14e25abc039d19d3b168b5e5f9dc3
+Description: Dictionnaires et templates  pour configurer OpenNebula Sunstone
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-one-master
+Version: 2.8.1-33
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 251
+Depends: sqlite3, ruby-xmlrpc, eole-ovs, eole-libvirt, opennebula
+Conflicts: appmarket-sunstone, eole-one-singlenode
+Breaks: eole-one-frontend (<< 2.6.2-1)
+Replaces: eole-one-frontend (<< 2.6.2-1), eole-one-singlenode
+Provides: eole-one-singlenode
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-one-master/eole-one-master_2.8.1-33_all.deb
+Size: 52680
+SHA256: 4b607dd4e54254daf914775f32946fdca3f024375125bebd1fda6bf4de5b7bbe
+SHA1: 31125528e14f5d99786acf81a94fd224a8049e21
+MD5sum: ecf0d43afab80ae3a144c8ce131a0552
+Description: Dictionnaires et templates  pour configurer OpenNebula en mode Single Node
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-one-singlenode
+Source: eole-one-master
+Version: 2.8.1-33
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 20
+Homepage: http://eole.orion.education.fr/diff/
+Priority: extra
+Section: admin
+Filename: pool/main/e/eole-one-master/eole-one-singlenode_2.8.1-33_all.deb
+Size: 13924
+SHA256: dd07f58d9ad1500c560fb32630ca6dc7e17a086a4c0780eabee2fe99cade43a3
+SHA1: ccf4537d84fd1e3f57f9ceb988527434b4a6f630
+MD5sum: 9e24172a165b48ae1dada2da492989ea
+Description: transitional dummy package
+ .
+ This is a transitional dummy package. It can safely be removed.
+
+Package: eole-pgadmin
+Version: 2.8.1-11
+Architecture: amd64
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 88
+Depends: eole-web, eole-db, eole-ead3, libapache2-mod-wsgi-py3, pgadmin4-server, pgadmin4-web
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-pgadmin/eole-pgadmin_2.8.1-11_amd64.deb
+Size: 18920
+SHA256: 43aa50ed55db416b6f49314d080a5897309635ecb9dc50d65c8a7d445791a65a
+SHA1: caabf0e338b8fd2bdb3fd7e1b0fa36ef2dfea44f
+MD5sum: ee1239e7ab6640a69fdbb6da4b357c4d
+Description: Scripts et configuration d’intégration de pgadmin pour
+ EOLE
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-postgis
+Source: eole-postgresql
+Version: 2.8.1-19
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 27
+Depends: eole-postgresql, eole-db
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-postgresql/eole-postgis_2.8.1-19_all.deb
+Size: 9948
+SHA256: 519559fa45f41455124f16fb3b22f56aaa53f47e179455413c25c09705fae7d1
+SHA1: 0ca5e175531a282d57608426d88d3ad08bcdfcaa
+MD5sum: 5d7343189c6f8b0822be0e37e40d1c46
+Description: Configuration EOLE pour le service PostgreSQL
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-postgis-pkg
+Source: eole-postgresql
+Version: 2.8.1-19
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 15
+Depends: postgresql-12-postgis-3, postgresql-12-postgis-3-scripts
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-postgresql/eole-postgis-pkg_2.8.1-19_all.deb
+Size: 8912
+SHA256: 83a33cdc9638bfe34f866d5d13976ea44a49dd74c3d50b987b7150bb1374cdab
+SHA1: ca0ed38b0ebb4f670de5467b0fcb98f0f51b591a
+MD5sum: 3f1db072409d9c2fdbde29277e5d09b2
+Description: dependency package for eole-postgis
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-postgresql
+Version: 2.8.1-19
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 106
+Depends: creole-common (>= 2.8.1-118)
+Breaks: eole-zephir (<< 2.5.0~1-9)
+Replaces: eole-zephir (<< 2.5.0~1-9)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-postgresql/eole-postgresql_2.8.1-19_all.deb
+Size: 26080
+SHA256: 82885572c486cfc00ba0e37fb98255d5a230f3415b14e3faadbe2013619dfd94
+SHA1: e49fb2803eb6be8ef285a431831e93251ca3be07
+MD5sum: a701639da955eec250c54fbb0775bf78
+Description: Configuration EOLE pour le service PostgreSQL
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-postgresql-pkg
+Source: eole-postgresql
+Version: 2.8.1-19
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 15
+Depends: postgresql
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-postgresql/eole-postgresql-pkg_2.8.1-19_all.deb
+Size: 8892
+SHA256: 13b3516566025411f5ef06e70d8b7efc0a7f119eeb646ce8bb2483c98c07073a
+SHA1: f6fd94b54a99e57116e18585bdfba15894bcb915
+MD5sum: 1042f62c9688549d577a7314306d8368
+Description: dependency package for eole-postgresql
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-proxy
+Version: 2.8.1-61
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 1471
+Depends: eole-amon-backend, eole-amon-backend3, eole-cntlm, eole-wpad, lightsquid, snmp, xz-utils
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-proxy/eole-proxy_2.8.1-61_all.deb
+Size: 299828
+SHA256: 91f7bf598fe3f65f12e034a747b79bba6f024f53388a57d1a2621c156ff748dd
+SHA1: 3ec4b229fe0fd2aa51b6c08f1cbd13e973654b71
+MD5sum: f27d6d440bfccb45eba41120af318a66
+Description: Templates et dictionnaires pour le Proxy
+ Services proxy et filtrage web basés sur Squid et DansGuardian
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-proxy-bypass
+Source: era
+Version: 2.8.1-28
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 53
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/era/eole-proxy-bypass_2.8.1-28_all.deb
+Size: 24708
+SHA256: 62773096efdc17a2616347a4a7e449311927d5a8c5b728b55d1323830883971f
+SHA1: adb2fc9755e5910783b287a777ffb6568fd127b5
+MD5sum: 6875835e2a8000920e2847afe00f58f5
+Description: Configuration EOLE pour les exceptions de proxy
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-proxy-pkg
+Source: eole-proxy
+Version: 2.8.1-61
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 41
+Depends: squid, eole-proxy-scripts, apache2-utils, iptables, e2guardian (>= 3.2.0-3), eole-blacklists, winbind, wget, ipset, lsof
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-proxy/eole-proxy-pkg_2.8.1-61_all.deb
+Size: 34296
+SHA256: 82383a6b78c4a12fe45791cfe788f00b4cb79d93d7f5068304a61f25965c39de
+SHA1: 1005f338e586eed87f413c2754d13a80084cbbed
+MD5sum: 2baca643e9959affd588fac419443859
+Description: dependency package for eole-proxy
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-proxy-scripts
+Source: eole-proxy
+Version: 2.8.1-61
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 52
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-proxy/eole-proxy-scripts_2.8.1-61_all.deb
+Size: 35292
+SHA256: 272aa7195f6d8cba2c6cc76fb94e2994f6a643fffc3c338b978f3ea340f9e4bf
+SHA1: 0f7a0239810ec1cfdc1052e821dcf9675d6dafd8
+MD5sum: 635e93266e123a9c5b0b77d385d36a04
+Description: Scripts à installer dans le conteneur proxy
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-python-fichier
+Source: python-fichier
+Version: 2.8.1-3
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 40
+Depends: python2:any (<< 2.8), python2:any (>= 2.7~), python-pyeole
+Conflicts: python-fichier
+Replaces: python-fichier
+Provides: python-fichier
+Priority: optional
+Section: python
+Filename: pool/main/p/python-fichier/eole-python-fichier_2.8.1-3_all.deb
+Size: 10996
+SHA256: fb81b369a89f9c94a1c08afd7e89d4843eec4918fb1aedbf08249803b4aa99aa
+SHA1: 2ede3472344f6aeb089f4d50e32d4a117099bd67
+MD5sum: f497ac56c9b275c75abe8592eb6266c1
+Description: Librairie et scripts python pour eole-fichier
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet Eole a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: eole-python3-fichier
+Source: python-fichier
+Version: 2.8.1-3
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 49
+Depends: python3-pyeole
+Priority: optional
+Section: python
+Filename: pool/main/p/python-fichier/eole-python3-fichier_2.8.1-3_all.deb
+Size: 11496
+SHA256: a711b9f77fa122df04ee94376170748b7123dc645920c7f0a39f09087ed9c87e
+SHA1: d7b477b66c87325d9986068ce5d644f54757946a
+MD5sum: 71128929679ece3d91eeb7f12b807b47
+Description: Librairie et scripts python pour eole-fichier
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet Eole a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: eole-resolvconf
+Source: eole-common
+Version: 2.8.1-91
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 81
+Conflicts: resolvconf
+Replaces: resolvconf
+Provides: resolvconf
+Homepage: http://eole.orion.education.fr/diff/
+Priority: important
+Section: admin
+Filename: pool/main/e/eole-common/eole-resolvconf_2.8.1-91_all.deb
+Size: 77216
+SHA256: 955627284149d30926ce9915d07403227f27e5c0fce671c390f69ad56cdb987f
+SHA1: 9aa0ab2cc11e105fa17f1f0035a9a456d47ad640
+MD5sum: 950b21dbc81611aa73daf5153c5d2fda
+Description: Metapaquet pour supprimer/remplacer resolvconf
+
+Package: eole-reverseproxy
+Version: 2.8.1-13
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 75
+Depends: eole-reverseproxy-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-reverseproxy/eole-reverseproxy_2.8.1-13_all.deb
+Size: 17976
+SHA256: 1f3a473568b020369395e612c460bbaaa4017b794db4065e9d91fae19a944b9a
+SHA1: 05089df38fd648bd4b7d11def95e7b392a3ef1f8
+MD5sum: a5373d79fb8696299709d2fa51ec543b
+Description: Templates et dictionnaires pour le service reverseproxy
+ Configuration du serveur web et reverseproxy nginX
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-reverseproxy-pkg
+Source: eole-reverseproxy
+Version: 2.8.1-13
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 16
+Depends: nginx-full
+Conflicts: reverseproxy-pkg
+Replaces: reverseproxy-pkg
+Provides: reverseproxy-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-reverseproxy/eole-reverseproxy-pkg_2.8.1-13_all.deb
+Size: 10628
+SHA256: f035d48538f0a975e1efaab3993f2ba774513dd9f9a38ae6b17562004cc875f6
+SHA1: c532940eb3166bbdba7064a963807c1940f2cfa1
+MD5sum: 1e3b1c2496ece7cc07fb10678643a4f2
+Description: dependency package for eole-reverseproxy
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-scribe
+Source: conf-scribe
+Version: 2.8.1-27
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 60
+Depends: eole-annuaire, eole-antivirus, eole-ad-dc-ou, eole-ad-dc-scribe, eole-bareos, eole-bareoswebui, eole-controle-vnc, eole-courier | eole-zarafa, eole-cups, eole-dhcp, eole-eoe, eole-eop, eole-exim, eole-exim-auth, eole-mysql, eole-proftpd, eole-spamassassin, eole-sso, eole-sympa, eole-web, eole-fichier-primaire, eole-scribe-backend, eole-scribe-scripts, eole-scribe-web, eole-scribehorus, scribe-ad, eole-server
+Conflicts: controle-vnc-applis, controle-vnc-client, eole-esu, eole-esu-rules, eole-reverseproxy, eole-reverseproxy-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/c/conf-scribe/eole-scribe_2.8.1-27_all.deb
+Size: 16624
+SHA256: e61acfaf804496720d4f991649cf363d8e0eb98fa13fa4c25258388100953838
+SHA1: 5b7ab41688b7c5213ae52e79a1dc321a315beb4e
+MD5sum: 60cc9d9e939c3991470aa43e92941c96
+Description: configuration du module EOLE : Scribe
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-scribe-all
+Source: conf-scribe
+Version: 2.8.1-27
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 17
+Depends: eole-annuaire-pkg, eole-antivirus-pkg, eole-bareoswebui-pkg, eole-controle-vnc-pkg, eole-courier-pkg, eole-cups-pkg, eole-dhcp-pkg, eole-eoe-apps, eole-eop-apps, eole-exim-auth-pkg, eole-exim-pkg, eole-mysql-pkg, eole-postgresql-pkg, eole-proftpd-pkg, eole-spamassassin-pkg, eole-sympa-pkg, eole-web-pkg, eole-websockify-pkg, eole-workstation-pkg, eole-fichier-common-pkg, eole-fichier-primaire-pkg, eole-scribe-web-pkg, eole-scribe-module
+Conflicts: all-scribe
+Replaces: all-scribe
+Provides: all-scribe
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/c/conf-scribe/eole-scribe-all_2.8.1-27_all.deb
+Size: 11264
+SHA256: bb2d73cbe7510000f31a7e5e50764df94eb476b3f48498a1f29684ffa142c064
+SHA1: 598cef18f40ceef084c32d88881d6dd32e924172
+MD5sum: 082f5bba03eac7afa50610e2eb9ea361
+Description: Module Scribe (metapackage)
+ Tous les paquets pour un module Scribe sans mode conteneur
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-scribe-backend
+Source: scribe-backend
+Version: 2.8.1-102
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 418
+Depends: python3:any, python3-pyeole, python3-ldap, python3-configobj, eole-python3-fichier
+Conflicts: eole-horus-backend, eole-scribe-backend3, horus-backend, scribe-backend
+Replaces: eole-scribe-backend3
+Priority: optional
+Section: python
+Filename: pool/main/s/scribe-backend/eole-scribe-backend_2.8.1-102_all.deb
+Size: 91556
+SHA256: c15a8c200ff4b87b45b3752b09a6e9604445ef1650b2641259550b1f63f6828e
+SHA1: 3f947fb432fa15f1edc8c2ddda02ef1e07bb3319
+MD5sum: d24bf79168e39b5bcccaa0ad824273b1
+Description: Backend de gestion des comptes Scribe en python 3
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet Eole a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: eole-scribe-gpos
+Source: eole-ad-dc-gpos
+Version: 2.8.1-11
+Architecture: amd64
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 33
+Conflicts: eole-ad-dc-gpos
+Replaces: eole-ad-dc-gpos
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ad-dc-gpos/eole-scribe-gpos_2.8.1-11_amd64.deb
+Size: 7060
+SHA256: 5d7421193064528f08b898dfffb8d56f78e80591f906e0d393a9a82ceb21aa7f
+SHA1: e2715e3b25594b359e34d75260f53c9facd2356a
+MD5sum: 13116ded957f09e30cd4b445686abff3
+Description: Script GPO divers
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-scribe-module
+Source: conf-scribe
+Version: 2.8.1-27
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 17
+Depends: eole-scribe
+Conflicts: eole-module
+Provides: eole-module
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/c/conf-scribe/eole-scribe-module_2.8.1-27_all.deb
+Size: 11088
+SHA256: e43a3989924cbe6654bac7caefa741328daf62d39bedf25f4f3553d5a54c84c8
+SHA1: 5f80ef678cf036e449874aaefedfb320d12e2df4
+MD5sum: 1b7320f54f2ea4c93c34a9983b1f549a
+Description: Module Scribe (metapackage)
+ Méta-paquet du module Scribe
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-scribe-scripts
+Source: scribe-backend
+Version: 2.8.1-102
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 144
+Depends: python3:any, eole-scribe-backend, python3-sqlalchemy, zenity, python3-libxml2, libxml2-utils, python3-lxml
+Conflicts: scribe-scripts
+Replaces: scribe-scripts
+Priority: optional
+Section: python
+Filename: pool/main/s/scribe-backend/eole-scribe-scripts_2.8.1-102_all.deb
+Size: 46536
+SHA256: 118406b24eb17e4c09819943810ae8bda33136cf84d9b2db1c5d5072709317d7
+SHA1: 25b3b0f38235286ef8ea59f63f91795a1e53180a
+MD5sum: 96b071fabc265598b0e266ddc9faa38a
+Description: Scripts pour la gestion des comptes scribe
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: eole-scribe-tests
+Source: scribe-backend
+Version: 2.8.1-102
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 111
+Depends: eole-scribe-backend, python3-pytest, cifs-utils, python3-pylibacl
+Priority: optional
+Section: python
+Filename: pool/main/s/scribe-backend/eole-scribe-tests_2.8.1-102_all.deb
+Size: 40008
+SHA256: 097748fd4233e48ceb5a7ede128771afc05db5661878bb4fe97533e06bdf46e3
+SHA1: a59614741629f03ec644d5ddec831c5a2070bd2c
+MD5sum: d61509227a2086a370a0326ac3017dbe
+Description: Tests unitaires pour le module Scribe
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: eole-scribe-web
+Source: conf-scribe
+Version: 2.8.1-27
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 17
+Depends: eole-adminer, eole-roundcube, eole-nextcloud
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/c/conf-scribe/eole-scribe-web_2.8.1-27_all.deb
+Size: 11140
+SHA256: 4ba0705337621997694d13497f21f2ced4f72917c6d2031a3b21c1c655c64daf
+SHA1: 40f5c09085044317f2e82291805d03823bcb4add
+MD5sum: c4a0d6ccdb60766e7b0c5248918b75b9
+Description: Applications pré-installées sur un module Scribe (metapackage)
+ Templates, dictionnaires et scripts des applications web
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-scribe-web-pkg
+Source: conf-scribe
+Version: 2.8.1-27
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 17
+Depends: eole-adminer-pkg, roundcube-apps, nextcloud-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/c/conf-scribe/eole-scribe-web-pkg_2.8.1-27_all.deb
+Size: 11160
+SHA256: b1265bd430f085177d40315bcf3c097db46b2dbbc4817625c38244d1609316bc
+SHA1: 130584e24e43b48e5b7aefaa7391db901903cecb
+MD5sum: ae78a1eebd29a82f9e9679f97026a0ea
+Description: Applications pré-installées sur un module Scribe (metapackage)
+ Applications en elles-même normalement installées dans le conteneur web
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-scribehorus
+Version: 2.8.1-16
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 50
+Conflicts: eole-fichier-primaire (<= 2.4.0-21)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-scribehorus/eole-scribehorus_2.8.1-16_all.deb
+Size: 13600
+SHA256: b629d70fe03c6ef641591d8a1135b594b4dfb1bc1cf37bf3e8eabe04f7289911
+SHA1: c1f0e091ecd95f11c43e9b1267dea530654ee2d7
+MD5sum: 12dd5eec26fc13354be703fa8be3ecb7
+Description: Configuration commune pour les modules Scribe et Horus
+ Dictionnaires, templates et scripts communs
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-server
+Source: eole-common
+Version: 2.8.1-91
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 658
+Depends: acpid, apparmor, apt-show-versions, at, console-data, convmv, elinks, fdisk, fping, gnutls-bin, gpm, htop, language-pack-fr, language-pack-gnome-fr, libpam-passwdqc, lvm2, manpages-fr, memtest86+, mlocate, networkd-dispatcher, net-tools, ntp, ntpdate, ntpstat, numlockx, pwgen, rng-tools, screen, tcptraceroute, tofrodos, traceroute, tree, unzip, update-manager-core, vlan, vnstat, vnstati, w3m, zephir-stats | zephir-backend, zip, creole (>= 2.5.0~1-6), creole-common (>= 2.8.1-118), plymouth-theme-eole-logo, plymouth-theme-eole-text, eole-common-pkg, eole-debsums-zephir-agent, eole-ead, eole-ead3, eole-exim | eole-mail, eole-exim-pkg | eole-mail-pkg, eole-genconfig, eole-genconfig-client, eole-modele-vm, eole-nut, ubuntu-minimal, ubuntu-standard
+Breaks: eole-common (<= 2.4.0-1), eole-kernel-version, eole-scribehorus (<< 2.8.1-8), eolebase (<< 2.4), eolebase-minimal (<< 2.4)
+Replaces: eole-common (<= 2.4.0-1), eole-kernel-version, eole-scribehorus (<< 2.8.1-8), eolebase (<< 2.4), eolebase-minimal (<< 2.4)
+Provides: eole-common, eole-kernel-version, eolebase, eolebase-minimal
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-common/eole-server_2.8.1-91_all.deb
+Size: 154372
+SHA256: 17e484a9a6f72a2ae2312213a0e3d96eb4f1870389b0670a041e1534654ba48e
+SHA1: d21a22ae0a93c037fd845f2c96f9470e6364ecbf
+MD5sum: 1bfa52f89fde39d44b243939491b25d1
+Description: Dictionnaires et templates communs pour EOLE
+ Ce paquet fournit la base commune à tous les modules EOLE.
+ .
+ Ce paquet est destiné à tous les serveurs, qu’ils soient contrôleur
+ LXC ou pas.
+
+Package: eole-seshat-backend
+Source: seshat-backend
+Version: 2.8.1-1
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 36
+Depends: python3:any, python3-sqlalchemy, python3-ldap
+Conflicts: seshat-backend
+Replaces: seshat-backend
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: python
+Filename: pool/main/s/seshat-backend/eole-seshat-backend_2.8.1-1_all.deb
+Size: 8376
+SHA256: 4fd0e2a70697917f83bc6934b14d8a92639d1eb7b0493c51f1553f30d80637c5
+SHA1: f362a254766388b5b5cbb93152c1b545885ec500
+MD5sum: 46820932b8c030c8de9462d982271c8e
+Description: backend de gestion du module Seshat
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-seth
+Source: eole-ad-dc
+Version: 2.8.1-153
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 52
+Depends: eole-dhcp, eole-ad-dc, eole-antivirus
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ad-dc/eole-seth_2.8.1-153_all.deb
+Size: 42176
+SHA256: fa832a5ff9bd34d8fb6e4695952900ba51e1aa9fd2f6c8c31330cbb1c7686c6d
+SHA1: 60330046eaed2c3ef862c83056c56c87c1f1b394
+MD5sum: 9d91a7c496502b29890b4bff31fa345a
+Description: Module EOLE Seth
+ Configuration du module EOLE Seth.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-seth-aaf
+Source: seth-aaf
+Version: 2.8.1-25
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 68
+Depends: mongodb, mongo-tools, python3-sethaaf, eole-seth-education
+Homepage: https://pcll.ac-dijon.fr/pcll/
+Priority: optional
+Section: admin
+Filename: pool/main/s/seth-aaf/eole-seth-aaf_2.8.1-25_all.deb
+Size: 15064
+SHA256: c4ffd3e701c5c33802dcc8d01b5a644c8e917e2e3c740d1e7dd9d72b7e72efc5
+SHA1: 99f6c177213ce563c445e0f68727d49be7b58084
+MD5sum: 0c8d374ca54c3e6653e90ee48a72e6a3
+Description: Gestion des imports AAF pour le module Seth
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-seth-all
+Source: eole-ad-dc
+Version: 2.8.1-153
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 47
+Depends: eole-ad-dc-pkg, eole-ad-dc-scripts, eole-dhcp-pkg, eole-exim-pkg, eole-antivirus-pkg, eole-seth-module
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-ad-dc/eole-seth-all_2.8.1-153_all.deb
+Size: 41700
+SHA256: d959fd829cb018cf6c6c5bfe47e643eef9f5b3cbb230fadb7e211d0e68d4b9e5
+SHA1: c3c90a926773d7c1f741bb4d5ca85b02c01b6d68
+MD5sum: 24e50827386de7bedc2ee9bacf8f861f
+Description: Module EOLE Seth (metapackage)
+ Tous les paquets pour un module EOLE Seth.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-seth-education
+Source: seth-education
+Version: 2.8.1-106
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 110
+Depends: seth-education
+Breaks: eole-amonecole (<< 2.8.1-62)
+Replaces: eole-amonecole (<< 2.8.1-62)
+Homepage: https://pcll.ac-dijon.fr/eole/
+Priority: optional
+Section: admin
+Filename: pool/main/s/seth-education/eole-seth-education_2.8.1-106_all.deb
+Size: 22792
+SHA256: 3ca7047152ffa0bc8cb4278a40270f5e57cca22075365f28916bfafa4718d104
+SHA1: 286ec1e984f76e2e15bf714d7e1e6d2b2e4f72eb
+MD5sum: e0b902dceac99ba3f53ed339c3e81fef
+Description: Personnalisation MEN du module Seth
+ Dicos, templates et scripts liés à la personnalisation du module Seth
+ pour le ministère de l'éducation nationale.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-seth-module
+Source: eole-ad-dc
+Version: 2.8.1-153
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 47
+Depends: eole-seth
+Conflicts: eole-module
+Provides: eole-module
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-ad-dc/eole-seth-module_2.8.1-153_all.deb
+Size: 41672
+SHA256: b63d24c704b3fb97000530e138f95262bedf6d8dc187462a1ae4e8a72eae3c78
+SHA1: 2177303312f44d802c6280f8d1f8c6910918dea7
+MD5sum: f19f428090a6d1a747ced6698c30b0ff
+Description: Module EOLE Seth (metapackage)
+ Méta-paquet du module EOLE Seth.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-sethaaf-tests
+Source: seth-aaf
+Version: 2.8.1-25
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 585
+Depends: eole-seth-aaf, python3-pytest
+Homepage: https://pcll.ac-dijon.fr/pcll/
+Priority: optional
+Section: admin
+Filename: pool/main/s/seth-aaf/eole-sethaaf-tests_2.8.1-25_all.deb
+Size: 26724
+SHA256: 23c85cb603b47cc0b2eb67d22c4f8674abfffc9ccf10f541416506b3bc1e9ec9
+SHA1: b5527d0318b8b165ae7db9be7a47906da0bdb106
+MD5sum: 958d882fae5524b609b01d7fe66d0aef
+Description: Tests unitaires pour l'import AAF sur le module Seth
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: eole-sphynx
+Source: conf-sphynx
+Version: 2.8.1-2
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 107
+Depends: arv, eole-vpn, quagga, eole-pacemaker, eole-server
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/c/conf-sphynx/eole-sphynx_2.8.1-2_all.deb
+Size: 31200
+SHA256: 221cda29a8bea407474e6d7a7571d7258bb20eab4344b497e17ff7af80a856e3
+SHA1: 8aaf225d64d46c71df9d167092e0e85fb1f1b128
+MD5sum: 628a2f8733637784e889efbc65784bc7
+Description: configuration du module EOLE : Sphynx
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-sphynx-all
+Source: conf-sphynx
+Version: 2.8.1-2
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 16
+Depends: eole-exim-pkg, eole-sphynx-module
+Conflicts: all-sphynx
+Replaces: all-sphynx
+Provides: all-sphynx
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/c/conf-sphynx/eole-sphynx-all_2.8.1-2_all.deb
+Size: 9884
+SHA256: 487720c78dbad66fe9d45762383f201b2a05dfbb5d56c2589cfab64cb1924e8c
+SHA1: 4aa75fd6104c4217a3017470161060b7ac3c4998
+MD5sum: 81fbcb1ec12843683e08e6083911d6f9
+Description: Module Sphynx (metapackage)
+ Tous les paquets pour un module Sphynx sans mode conteneur
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-sphynx-module
+Source: conf-sphynx
+Version: 2.8.1-2
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 16
+Depends: eole-sphynx
+Conflicts: eole-module
+Provides: eole-module
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/c/conf-sphynx/eole-sphynx-module_2.8.1-2_all.deb
+Size: 9848
+SHA256: 8bcaa228d418d5e86f51841516d89bdeba8fdd1010439bcb289febe4cb4295ca
+SHA1: 59826e91792c28067ba574654d402dbbc352dc69
+MD5sum: 0bee55dd810a34cffff0074c757fa968
+Description: Module Sphynx (metapackage)
+ Méta-paquet du module Sphynx
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-ssmtp-pkg
+Source: eole-common
+Version: 2.8.1-91
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 81
+Depends: ssmtp
+Conflicts: eole-exim4-config, eole-mail-pkg, exim4-config
+Replaces: eole-exim4-config, eole-mail-pkg, exim4-config
+Provides: eole-mail-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-common/eole-ssmtp-pkg_2.8.1-91_all.deb
+Size: 77264
+SHA256: 939583dd014324455e8ea95f06008bc981f8143ce3db21ab6f95666c64c6debb
+SHA1: 6666328c8b3b7459be9616a967e8419339f754f0
+MD5sum: f7acf6e06de992fd66653ee24335a91f
+Description: Dépendances sur le MTA ssmtp
+ Ce paquet installe le programme ssmtp.
+
+Package: eole-sso
+Version: 2.8.1-22
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 82
+Depends: eole-sso-server
+Conflicts: eole-sso-client
+Replaces: eole-sso-client
+Provides: eole-sso-client
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-sso/eole-sso_2.8.1-22_all.deb
+Size: 29584
+SHA256: e2cbc80a40f5305a5d83fec0ccd00c279f98b6b24a6b1a1b212a65e86cabbfc1
+SHA1: b8a13534c59185cbc27dfe128a715b1e4bf2b128
+MD5sum: e755cbcb7e07984f6a3978cb0aff0821
+Description: Eolisation du serveur EoleSSO
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-sso-cluster-client
+Source: eole-sso
+Version: 2.8.1-22
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 36
+Depends: eole-sso, eole-sso-cluster-common, python-redis
+Conflicts: eole-sso-cluster-server
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-sso/eole-sso-cluster-client_2.8.1-22_all.deb
+Size: 22012
+SHA256: 473294b896e1adb08d658dbb607e632306151edb64d3da98d672a03814a769b5
+SHA1: c50973fe11453dad19fbb25974ce730d3e745cd9
+MD5sum: e447fc2387ced2585cee843c3c824a67
+Description: Activation d'un client stunnel pour stocker les sessions dans Redis
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-sso-cluster-common
+Source: eole-sso
+Version: 2.8.1-22
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 36
+Depends: stunnel4
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-sso/eole-sso-cluster-common_2.8.1-22_all.deb
+Size: 21280
+SHA256: b4404aed6e51cad158fce8226837d12a9641e07390f7cb3f41005c3fd8416e8e
+SHA1: 03d2987df6d8fb60582d975a7201c222e1b73fb0
+MD5sum: 89a6e0511184d26e19f876ce9115fe74
+Description: Configuration d'EoleSSO pour stockage des sessions dans un base
+ Redis (via stunnel). Fichiers communs au mode serveur et client.
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-sso-cluster-server
+Source: eole-sso
+Version: 2.8.1-22
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 86
+Depends: eole-sso-cluster-common, eole-redis
+Conflicts: eole-sso-cluster-client
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-sso/eole-sso-cluster-server_2.8.1-22_all.deb
+Size: 36692
+SHA256: b87cb1e9f831363bd2f1be83da6c6832972eda0b05f42be986fafac4fd983f00
+SHA1: 7e7a212eb09358e8e432ef833812da129838b3a2
+MD5sum: 4a2cceb9dfeef8d08b60e1fc8553ee3b
+Description: Configuration de Redis pour EoleSSO avec accès par stunnel
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-sso-server
+Source: eole-sso
+Version: 2.8.1-22
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 1064
+Depends: python-eolesso
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-sso/eole-sso-server_2.8.1-22_all.deb
+Size: 306988
+SHA256: dbdcfeb1e2aac882022e9e99bba1f15843d35220ea00278a53017149aa231424
+SHA1: a976dfc011d782a0d4c443af7807fe30d64db0ee
+MD5sum: 9cf7672d82f002871f7c22fc5c772c10
+Description: Serveur EoleSSO pour les module EOLE
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-team-keyring
+Source: eole-keyring
+Version: 2023.01.01-1
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 14
+Recommends: gnupg
+Homepage: http://eole.orion.education.fr/diff
+Priority: important
+Section: misc
+Filename: pool/main/e/eole-keyring/eole-team-keyring_2023.01.01-1_all.deb
+Size: 6660
+SHA256: cd12bccbc9842f78d8170068445bd41b109007178d5d8416d728db450079315c
+SHA1: f76626709b07e4a5e1ca90f45135fcbe6252f384
+MD5sum: 74085bf12a8bb3a19c9ac21746f458fc
+Description: GnuPG keys of EOLE developers
+ The EOLE project wants developers to digitally sign the announcements
+ of their packages with GnuPG, to protect against forgeries.
+ .
+ This package contains keyrings of GnuPG and keys of developers.
+
+Package: eole-userpassword
+Source: eole-fichier
+Version: 2.8.1-36
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 34
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-fichier/eole-userpassword_2.8.1-36_all.deb
+Size: 24912
+SHA256: 7b5eb58ea43c8a8186049a407ba62e4f662343a334842b9d769ce27d4fbbe0e4
+SHA1: 9479d2063742bdf95dcaacfecb3e94a5462f2b0d
+MD5sum: 0e66e45df65cc6cfae0a50d2bd9a2ee9
+Description: Templates et dictionnaires pour le paramètrage des mots de passe
+ Templates et dictionnaires liés à la gestion des mots de passe
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-vpn
+Version: 2.8.1-3
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 115
+Depends: strongswan, libstrongswan-extra-plugins, libstrongswan-standard-plugins, python-arv
+Conflicts: eole-rvp
+Breaks: conf-sphynx (<= 2.3-eole80)
+Replaces: conf-sphynx (<= 2.3-eole80), eole-rvp
+Provides: eole-rvp
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-vpn/eole-vpn_2.8.1-3_all.deb
+Size: 28932
+SHA256: 3f4160ab81c362c94983a67ac442ccea8a3419787f21f607e0e6aaf24f88c81b
+SHA1: 49ebf37ef5b889aee0c57fa21b2f8cec81ac8375
+MD5sum: b8715b5f2d287071fd003efd1dc90eca
+Description: Templates, dictionnaire et scripts pour le gestion du VPN
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-web
+Version: 2.8.1-9
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 146
+Depends: eole-sso-client, eole-mysql, curl, creole-common (>= 2.8.1-118), creole (>= 2.4.1-93)
+Conflicts: eole-flask (<= 2.4.1-2)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-web/eole-web_2.8.1-9_all.deb
+Size: 43068
+SHA256: ba40afa0070eac430bc291ca0ad8497b5ac3e737249c0e358c9cd9f2ee865c70
+SHA1: 47b1fd4de3ed36f5a5306dc51a09b4cf18b5c704
+MD5sum: b2d67554ae52bccf18092cbab353f5d0
+Description: Templates et dictionnaires pour les services web
+ Configuration du serveur web Apache2
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-web-config
+Source: eole-web
+Version: 2.8.1-9
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 23805
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-web/eole-web-config_2.8.1-9_all.deb
+Size: 567912
+SHA256: 79f26be3c6d33bced7ac2fdadcc92e13d9f97459eecef2f2c2d519ba3f028c7f
+SHA1: d06f5238eaa4e8607f6765b6bbe222435ed8a221
+MD5sum: 53a428fec61f66c535c159705361e087
+Description: Configuration additionnelle pour eole-web
+ Fichiers de configuration pour le serveur web Apache2
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-web-pkg
+Source: eole-web
+Version: 2.8.1-9
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 26
+Depends: apache2, libapache2-mod-php, php, php-curl, php-gd, php-imap, php-intl, php-ldap, php-mysql, php-xml, eole-php-cas, eole-web-config, eole-flask-apps
+Conflicts: web-pkg
+Replaces: web-pkg
+Provides: web-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-web/eole-web-pkg_2.8.1-9_all.deb
+Size: 12948
+SHA256: 01252ddc5b71bd141617f72eee2bae1b4c59db99344f5528b14b667a7c767f27
+SHA1: 7097ab61f35c363090833f708cbe700f1f785615
+MD5sum: 868366d6b08b196cdc54fc62d10adb1c
+Description: dependency package for eole-web
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-websockify-pkg
+Source: eole-eop
+Version: 2.8.1-40
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 32
+Depends: websockify
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-eop/eole-websockify-pkg_2.8.1-40_all.deb
+Size: 17700
+SHA256: 6c7cc417f5a0bf33555446a54b3799f2af0f04692e2f787d5d1762c04b780e8f
+SHA1: dd17de9578c993688f24e5e6d81b249f183d0f84
+MD5sum: 8cfd1cfb2b3a458f482a488c718c5543
+Description: Dependency package for websockify
+ websockify was formerly named wsproxy and was part of the noVNC project.
+ .
+ At the most basic level, websockify just translates WebSockets traffic to
+ normal socket traffic. Websockify accepts the WebSockets handshake, parses it,
+ and then begins forwarding traffic between the client and the target in both
+ directions.
+ .
+ Websockify supports all versions of the WebSockets protocol (Hixie and HyBi).
+ The older Hixie versions of the protocol only support UTF-8 text payloads. In
+ order to transport binary data over UTF-8 an encoding must used to encapsulate
+ the data within UTF-8.
+ .
+ With Hixie clients, Websockify uses base64 to encode all traffic to and from
+ the client. This does not affect the data between websockify and the server.
+ .
+ With HyBi clients, websockify negotiates whether to base64 encode traffic to
+ and from the client via the subprotocol header (Sec-WebSocket-Protocol). The
+ valid subprotocol values are 'binary' and 'base64' and if the client sends
+ both then the server (the Python implementation) will prefer 'binary'. The
+ 'binary' subprotocol indicates that the data will be sent raw using binary
+ WebSocket frames. Some HyBi clients (such as the Flash fallback and older
+ Chrome and iOS versions) do not support binary data which is why the
+ negotiation is necessary.
+ .
+ This package is a dependency package used to install the systemd
+ configuration for EOLE websockify.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-workstation
+Source: eole-workstation-manager
+Version: 2.8.1-59
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 16
+Depends: eole-workstation-manager, eole-workstation-binaries
+Homepage: http://pcll.ac-dijon.fr/eole
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-workstation-manager/eole-workstation_2.8.1-59_all.deb
+Size: 9676
+SHA256: 32707755a32420f3cfc030862fea345cd7668f56b6d550148701101b6f613739
+SHA1: 592460b5961973bc5372e5533c7ef5e4ab84d6b9
+MD5sum: 6745726f83eaf285fe5eab88f1fe9759
+Description: Dependency package for workstation management
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-workstation-ead3
+Version: 2.8.1-10
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 17885
+Depends: eole-ead3, eole-workstation-manager (>= 2.8.1-23)
+Breaks: eole-workstation-manager (<< 2.8.0-23)
+Replaces: eole-workstation-manager (<< 2.8.1-23)
+Homepage: https://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-workstation-ead3/eole-workstation-ead3_2.8.1-10_all.deb
+Size: 5160944
+SHA256: d24f49e7611f7184aad1e82b1d4a430ab8f446ed788cd9ca66d39ceba4b0991e
+SHA1: 9416ac5535ffcda0699b4409b853bf801a9746bb
+MD5sum: d4be919fed2d186183205b47a958bd23
+Description: actions to control SaltStack from EAD3
+ It actually only permits to manage keys of minions.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-workstation-formula
+Version: 2.10.2-1
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 177
+Depends: eole-ad-formula, eole-pam-mount-formula
+Homepage: https://pcll.ac-dijon.fr/eole
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-workstation-formula/eole-workstation-formula_2.10.2-1_all.deb
+Size: 31988
+SHA256: 0534513bc8b4ff4183d99583423ff4d1fe283451935ea40a7187510fefb03425
+SHA1: c4ae4b81e6c4a3f03f65ba256055ef42f0d35e6f
+MD5sum: a2c360a9f7a339e42e2252040d68cb86
+Description: SaltStack formula for EOLE workstation
+ This package provides the formula to be used on Microsoft Windows
+ workstations.
+ .
+ It requires the formula to be installed under /srv/salt to be useable
+ on SaltStack.
+
+Package: eole-workstation-joineole
+Version: 2.8.1-23
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 569
+Depends: nginx
+Homepage: http://pcll.ac-dijon.fr/eole
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-workstation-joineole/eole-workstation-joineole_2.8.1-23_all.deb
+Size: 84276
+SHA256: d95ce663a25bf9f12d1a2d90a3716bdca8b5cfaa7421db8470cd60fe3523b742
+SHA1: 86941a2c2f7114c5d0f5e04c78bc4a97dbfd767d
+MD5sum: 021310f6a0b381245bd7d170a20b18e8
+Description: Install scripts for eole-workstation
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-workstation-manager
+Version: 2.8.1-59
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 53
+Depends: python3-ldap, eole-workstation-ead3 (>= 2.8.1-1)
+Conflicts: eole-saltstack (<= 2.7.1)
+Breaks: eole-scribe (<< 2.8.1-13), eole-workstation-binaries (<< 2.7.1-7)
+Replaces: eole-scribe (<< 2.8.1-13), eole-workstation-binaries (<< 2.7.1-7)
+Homepage: http://pcll.ac-dijon.fr/eole
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-workstation-manager/eole-workstation-manager_2.8.1-59_all.deb
+Size: 16644
+SHA256: b4d04a93d56a7c3ad3c5db84ce1aa811ec02f3818ef4e4a9487a7469b06902e4
+SHA1: 97de24892520ed6c891f1959783656ee93d9f1cb
+MD5sum: 46ad1eaf91386f176b40559b0ea522ce
+Description: EOLE SaltMaster server for workstation management
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-workstation-manager-salt
+Source: eole-workstation-manager
+Version: 2.8.1-59
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 40
+Depends: salt-master (>= 3004.1), python3-ldap, python3-m2crypto
+Homepage: http://pcll.ac-dijon.fr/eole
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-workstation-manager/eole-workstation-manager-salt_2.8.1-59_all.deb
+Size: 12748
+SHA256: eba20c110d993f5050b855009edd8728bbd661b070873b82145b3a3367e50861
+SHA1: b1ebbb9ba326d18373c83edf6a63702e74f4590a
+MD5sum: 3be372fcea5cf66ae509e7403800e7f9
+Description: SaltMaster server for workstation management
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-workstation-minion
+Version: 2.8.1-4
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 98973
+Homepage: https://pcll.ac-dijon.fr/eole
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-workstation-minion/eole-workstation-minion_2.8.1-4_all.deb
+Size: 100103672
+SHA256: ade9808c71ecba142d16d0bc4682dc9d9ddaee154def0a6dfd1cc6baafa7ce10
+SHA1: cdb498ae8823c44ac892e34989ac0437fb44ddc0
+MD5sum: 9a2887a1c2489fa1ef597f31c3baab69
+Description: Windows installation executables for SaltStack minion
+ This package provides the AMD64 and x86 windows setup binaries.
+
+Package: eole-workstation-pkg
+Source: eole-workstation-manager
+Version: 2.8.1-59
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 16
+Depends: eole-workstation-formula, eole-workstation-joineole, eole-workstation-minion, eole-workstation-veyon, eole-ad-formula, eole-pam-mount-formula, eole-workstation-manager-salt
+Homepage: http://pcll.ac-dijon.fr/eole
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-workstation-manager/eole-workstation-pkg_2.8.1-59_all.deb
+Size: 9716
+SHA256: 7588904b3c6dcfd97fab1bdffeca3c078aabd16c80a493cf9b762af3de3ab614
+SHA1: ec6449f49d51b1680451bdb61456d7ca0eb7e481
+MD5sum: 453f8bb8f6d79f2a3da167c3b9785231
+Description: Dependency package for workstation in "domaine" container
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-wpad
+Version: 2.8.1-3
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 42
+Depends: eole-proxy-bypass, nginx-full
+Breaks: eole-reverseproxy (<= 2.5.1~1)
+Replaces: eole-reverseproxy (<= 2.5.1~1)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-wpad/eole-wpad_2.8.1-3_all.deb
+Size: 8200
+SHA256: 72d84b7db1a7c3759298a256993b12c8e56eb48e5632a6aa732b5568aa05d10b
+SHA1: dcbd0007c16174af4db2eb1ff97ac71f01bfe605
+MD5sum: 12e6f8abeab6c386941b30cdab37cd17
+Description: Templates et dictionnaires pour la fonctionnalité WPAD
+ Configuration de la distribution des fichiers WPAD
+ sur les modules EOLE
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-zephir
+Source: conf-zephir
+Version: 2.8.1-10
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 136
+Depends: eole-annuaire (>= 2.5.0~1-2), eole-postgresql, eole-sso, python3-apt, python3-ldap, python3-openssl, python3-psycopg2, python3-reportlab, python3-rrdtool, uucp, zephir-parc, eole-server
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/c/conf-zephir/eole-zephir_2.8.1-10_all.deb
+Size: 29576
+SHA256: 733866675ac3440efd4b57db1e2cd5d3ac4c0f95378ea42a5e4175ad9b51286d
+SHA1: ccd115d77b5a0d26a189cb164ef906ee2d791cee
+MD5sum: 07ea885e6797929849433cbb222d443b
+Description: configuration du module EOLE : Zéphir
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-zephir-all
+Source: conf-zephir
+Version: 2.8.1-10
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 15
+Depends: eole-annuaire-pkg, eole-exim-pkg, eole-postgresql-pkg, eole-zephir-module
+Conflicts: all-zephir
+Replaces: all-zephir
+Provides: all-zephir
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/c/conf-zephir/eole-zephir-all_2.8.1-10_all.deb
+Size: 8576
+SHA256: 9ec6775edbf60f29c3b75c7f842f08fceb1c7d34d18c7c9f75d334646540b035
+SHA1: 67a20a7394098b9ffacbe259580b910ed631b4a3
+MD5sum: 786b473f901aa187ac71b088f1305ab4
+Description: Module Zéphir (metapackage)
+ Tous les paquets pour un module Zéphir sans mode conteneur
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-zephir-medde
+Version: 2.8.1-11
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 1071
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-zephir-medde/eole-zephir-medde_2.8.1-11_all.deb
+Size: 36960
+SHA256: 7f253fbd54caa63a78f7ef343914902b7aa53ffac4fd402efc56dcf6b11f2cf4
+SHA1: 8da57e855c458712112e67af7799934a020cb321
+MD5sum: 84404d70c301ac8f2a6f9cd936cb10f0
+Description: Zephir: Dictionnaires eole-2.4 et ultérieurs pour les modules du MEDDE.
+ Mise à disposition, pour les serveurs zephir, des
+ dictionnaires eole-2.4 et ultérieurs pour les modules du MEDDE.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+ .
+ http://eole.orion.education.fr
+
+Package: eole-zephir-module
+Source: conf-zephir
+Version: 2.8.1-10
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 15
+Depends: eole-zephir
+Conflicts: eole-module
+Provides: eole-module
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/c/conf-zephir/eole-zephir-module_2.8.1-10_all.deb
+Size: 8516
+SHA256: 3e2349adbb03951f24609645fcf38ee01ff4e139e5822caa04db199b66866d3d
+SHA1: 8456d7fb45fb959298d30349b119c982dea88b79
+MD5sum: 64ee804fe01cae83492fd7c147371689
+Description: Module Zéphir (metapackage)
+ Méta-paquet du module Zéphir
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eolead-gpo-script
+Source: eole-gpo-script
+Version: 2.8.1-34
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 24
+Conflicts: eole-gpo-script
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-gpo-script/eolead-gpo-script_2.8.1-34_all.deb
+Size: 9368
+SHA256: 5f99a3e6dcdacc30320cecc9d10f2b7824ad1a1313b31105c3a11de93cfcb61d
+SHA1: bdbddf3cb1e25d5235ac20dcd094ca1472599c85
+MD5sum: 3648ab3d8dd43c0b96595e2f7b600af4
+Description: Variante d'eole-gpo-script pour ScribeAD/HorusAD
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eolead-gpo-script-pkg
+Source: eole-gpo-script
+Version: 2.8.1-34
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 54
+Depends: gpo-tool, eole-gpo-joineole, python3-lxml, hashdeep, attr
+Conflicts: eole-gpo-script-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-gpo-script/eolead-gpo-script-pkg_2.8.1-34_all.deb
+Size: 25320
+SHA256: 92af3ca39cb0a66314dc98f85b8d82a75ede807f227c2853922a261b7b2b8bd5
+SHA1: c369e224ca43d8b40e821a0c7cbe5abfa98eef70
+MD5sum: b25ddb29ae365755a67bc162e9a20d63
+Description: Script GPO de connexion des utilisateurs pour ScribeAD/HorusAD
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eoleflask-aaa
+Version: 2.8.1-2
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 1939
+Depends: python-eoleflask-aaa (= 2.8.1-2), eole-flask-server
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eoleflask-aaa/eoleflask-aaa_2.8.1-2_all.deb
+Size: 666472
+SHA256: 6a7c17de0d30cdebe36740c4d8adb4cdd7a9a2915d92325575b5dbc4ccc14442
+SHA1: 8850286446e877dcf5c8231fde18adc0827f12f1
+MD5sum: c2d318a91964c225bde0e9fc96273c22
+Description: authentication and authorization framework for eoleflask applications
+ eolefalsk-aaa can be used to enable authentication in web application managed by
+ eoleflask web server
+ .
+ This package provides the configuration for eole-flask-server and the
+ web application files.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: era
+Version: 2.8.1-28
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 2014
+Depends: ipset, hicolor-icon-theme, python-gtk2, python-glade2
+Conflicts: eole-firewall
+Replaces: eole-firewall
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/era/era_2.8.1-28_all.deb
+Size: 227912
+SHA256: 1637fe37758d54db16f58c0d20b29c292b51a922b6aecbc4b3a8823c25b4f746
+SHA1: dd026bc92b962c4a9eb6c878d18a6f5254fc32c8
+MD5sum: c030d81ee682a3eb200cdae4da5ac1f8
+Description: Editeur de règles pour amon (Era)
+ Era est un outil GTK permettant de gérer les règles de firewall
+ pour les modules Eole.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: era-actions
+Version: 2.8.1-4
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 123581
+Depends: era, python3-iptables
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/era-actions/era-actions_2.8.1-4_all.deb
+Size: 19342292
+SHA256: bd7824263da7e2a44f20c11ed15d281d1bbf228202c6d5ca5169c72524f2c435
+SHA1: 15ea9a44c05c67114dda7f2d19d1bd16ab46c25f
+MD5sum: 2a90420e2396ec0333997f55cdfcb16d
+Description: Actions EAD3 pour la gestion des règles de pare-feu
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: era-doc
+Source: era
+Version: 2.8.1-28
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 1250
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/era/era-doc_2.8.1-28_all.deb
+Size: 810060
+SHA256: d2986572adcca157196ed61a0007ad90543f2dcad8a77fdb343425fb44c15936
+SHA1: 1fa3ab40e68f9f7e4abd891a69ea0f6f14f3ae13
+MD5sum: ad75b3cec435788d70f415fd2496e1bc
+Description: Documentation Era
+ Era est un outil GTK permettant de gérer les règles de firewall
+ pour les modules Eole.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: era-tests
+Source: era
+Version: 2.8.1-28
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 594
+Depends: era, python3-pytest, python-pytest, python-lxml
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/era/era-tests_2.8.1-28_all.deb
+Size: 56452
+SHA256: fb7d829176772158e07a5db0194644a297bcce6d015e9eb2c078acc35fc3b4bc
+SHA1: 5540cea3ee7a1b2b62ee39c8490b3a2e5e338635
+MD5sum: dbab8323bc4d71eecaf587c88bbba872
+Description: Tests unitaires pour le backend Era
+ Era est un outil GTK permettant de gerer les règles de firewall
+ pour les modules Eole.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: esbl-ocs
+Version: 2.8.1-3
+Architecture: all
+Maintainer: Yves Guimard <yves.guimard@developpement-durable.gouv.fr>
+Installed-Size: 12709
+Depends: php-gd, php-mysql, libapache-dbi-perl, libapache2-mod-php, libapache2-mod-perl2, libcompress-raw-zlib-perl, libconvert-binhex-perl, libcrypt-ssleay-perl, libdevel-symdump-perl, libemail-abstract-perl, libemail-date-perl, libemail-simple-perl, libfcgi-perl, libio-compress-perl, libio-stringy-perl, libmailtools-perl, libmime-lite-perl, libmime-tools-perl, libmodule-pluggable-perl, libnet-ip-perl, libnetaddr-ip-perl, libossp-uuid-perl, libossp-uuid16, libsoap-lite-perl, libtimedate-perl, libwww-mechanize-perl, libxml-libxml-perl, libxml-namespacesupport-perl, libxml-sax-perl, libxml-simple-perl, nmap, php-mbstring
+Conflicts: ocsinventory-esbl, ocsinventory-reports, ocsinventory-server
+Replaces: ocsinventory-esbl, ocsinventory-reports, ocsinventory-server
+Priority: extra
+Section: web
+Filename: pool/main/e/esbl-ocs/esbl-ocs_2.8.1-3_all.deb
+Size: 5987604
+SHA256: b4b2d9199a90aa160f53bcc43e0efb82ec69a1913a746f3ab1b8df469cc2d89c
+SHA1: 4f25483d8daf1d9b74ecee6431cc6f61cb39cb1d
+MD5sum: 9862a0c0bca003625d7f8ef856c7d1ec
+Description: Environnement d'inventaire/déploiement basé sur l'application OcsInventory.
+ .
+ Le paquet esbl-ocs permet de réaliser:
+  - les tâches d'inventaires
+  - de déploiement de logiciels automatisés.
+ .
+ Ce paquet contient:
+  - l'application Ocsinventory-server,
+  - l'application Ocsinventory-reports,
+
+Package: esbl-ocs-pkg
+Source: esbl-ocs
+Version: 2.8.1-3
+Architecture: all
+Maintainer: Yves Guimard <yves.guimard@developpement-durable.gouv.fr>
+Installed-Size: 15
+Depends: esbl-ocs
+Priority: extra
+Section: web
+Filename: pool/main/e/esbl-ocs/esbl-ocs-pkg_2.8.1-3_all.deb
+Size: 8956
+SHA256: a9bd386a9182590d214828bcc9fa928b6414a50249471cd616a944a5e8bb2775
+SHA1: aa2fc0d832caaca07610bab5fefc9274c2107167
+MD5sum: f1b82747e521505dd3c3f44ca993fd1d
+Description: Métapaquet pour l'installation de l'environnement d'inventaire sur les modules EOLE.
+
+Package: ewt-portal
+Version: 2.8.1-10
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 6906
+Depends: eole-common, eole-ead3-saltstack, ewt-actions, tango-icon-theme, python3-tiramisu-web (>= 2.8.1-8)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/ewt-portal/ewt-portal_2.8.1-10_all.deb
+Size: 1567856
+SHA256: 5726a31dcb76560400c37005a3df7ba78fb6f494c7e4889c69741f0e48b7ac08
+SHA1: c9756a8f889c0184b7185360089a84bf0d5a0b8a
+MD5sum: 2ebff01e6b96dab5278bdf1f2c8ed37d
+Description: EOLE Web Tools portal entry point
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: gpo-tool
+Source: eole-ad-dc
+Version: 2.8.1-153
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 51
+Depends: python3, python-gpo-utils
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ad-dc/gpo-tool_2.8.1-153_all.deb
+Size: 42340
+SHA256: 22c62b912a3aae2722b3b7243f6bfba4bb95dbbf1ef600f3e950265ab06fe4d1
+SHA1: 3a103b955146b9829306a68027cf6cefb0caed80
+MD5sum: 6ca97cf52ba6f830eba7d8a96f1d84da
+Description: Python command for GPO edition
+
+Package: horus-ad
+Source: scribe-ad
+Version: 2.8.1-42
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 90
+Depends: eole-horus-module, eole-ad, eolead-gpo-script, eole-workstation, lxc-templates, debootstrap, eole-ad-dc-bareos, eole-ad-dc-pso, cgroup-lite
+Homepage: https://pcll.ac-dijon.fr/eole/
+Priority: optional
+Section: admin
+Filename: pool/main/s/scribe-ad/horus-ad_2.8.1-42_all.deb
+Size: 23456
+SHA256: cb8cc44727c27f2570d397313e3fbd42921100c72a270fae6d2fd78ab6063487
+SHA1: 982f8acf3ab5f931ed7ee89bae3c3d8991820adf
+MD5sum: 922d1085b9f1fa14c11d32051b96d114
+Description: Transformation d'un Horus NT en Horus AD
+ Avec ajout du service samba-ad-dc dans un conteneur LXC
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: libpam-cas-eole
+Version: 2.0.7-1
+Architecture: amd64
+Maintainer: Equipe Eole <eole@ac-dijon.fr>
+Installed-Size: 94
+Depends: libc6 (>= 2.7), libpam0g (>= 0.99.7.1), libssl1.1 (>= 1.1.0)
+Priority: optional
+Section: devel
+Filename: pool/main/libp/libpam-cas-eole/libpam-cas-eole_2.0.7-1_amd64.deb
+Size: 17336
+SHA256: 7a7885094c001956bf26bd52e6e377ab3e7971e653f655186d0ff25b6f792746
+SHA1: 272b6ecfb786d0209fee26792f0be5c2576ae2d8
+MD5sum: 65d5695c754917ab2267647bffb3bdf8
+Description: CAS Eole Authentication Module for PAM
+ This package includes a special (but not thoroughly tested) PAM
+ module to provide CAS authentification for Eole 2
+Original-Maintainer: Benjamin Renard <brenard@easter-eggs.com>
+
+Package: one-context
+Version: 6.4.0-1
+License: Apache 2.0
+Vendor: OpenNebula Systems
+Architecture: all
+Maintainer: OpenNebula Systems <contact@opennebula.io>
+Installed-Size: 245
+Depends: util-linux, bash, curl, bind9-host, cloud-utils, parted, ruby, ifupdown|ifupdown2, acpid|systemd, sudo, passwd, dbus, openssh-server, open-vm-tools, qemu-guest-agent, gawk, virt-what
+Conflicts: cloud-init, one-context-ec2
+Replaces: cloud-init
+Homepage: http://opennebula.org
+Priority: extra
+Section: default
+Filename: pool/main/o/one-context/one-context_6.4.0-1_all.deb
+Size: 56154
+SHA256: 397c46ef508d4ae641c78a8abc0864dd0026def3c950a603fb210c73f04f00e6
+SHA1: faddb5c26c8c60617aeefba85df4ae5dd92dfdea
+MD5sum: c38d414cc368f6b1369c23196b95d98a
+Description: 
+ Contextualization tools for the virtual machine running in the OpenNebula
+ cloud. Based on parameters provided by the cloud controller configures the
+ networking, initial user password, SSH keys, runs custom start scripts,
+ resizes the root filesystem, and provides tools to communicate with
+ OneGate service.
+ .
+ Check the OpenNebula web page (http://opennebula.org) to get the support.
+
+Package: pyeole-data
+Source: python-pyeole
+Version: 2.8.1-35
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 81
+Depends: gettext
+Breaks: python-pyeole (<= 2.7.0-10)
+Replaces: python-pyeole (<= 2.7.0-10)
+Priority: optional
+Section: python
+Filename: pool/main/p/python-pyeole/pyeole-data_2.8.1-35_all.deb
+Size: 45280
+SHA256: d48b9bc94db464747cbc9fef78366cd3c8f0db2d73696de09a895ef2b452e144
+SHA1: 44a878b18a88771ad5a36418f1293441e9905a9f
+MD5sum: 7b72c377bf3a4a1db2a33d20ff8a8313
+Description: Fichiers supplémentaires de la librairie pyeole
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet Eole a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: pyeole-tests
+Source: python-pyeole
+Version: 2.8.1-35
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 157
+Depends: python3-pyeole, python3-pytest
+Priority: optional
+Section: python
+Filename: pool/main/p/python-pyeole/pyeole-tests_2.8.1-35_all.deb
+Size: 49780
+SHA256: 5f182f5046c3e7c1d785023c72afc01243915731afea8282ac0fc518aabc90ab
+SHA1: ddae2396d8e670f0939e7b741903bd68371bd5e4
+MD5sum: 17e6f542208f33b6c8cbc78ba91e0866
+Description: Tests py.test pour pyeole
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: python-arv
+Source: arv
+Version: 2.8.1-16
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 333
+Depends: python3-sqlalchemy, python3-formencode, python3-configobj, python3-pyparsing, sqlite3
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: python
+Filename: pool/main/a/arv/python-arv_2.8.1-16_all.deb
+Size: 69772
+SHA256: 493a2d6ccddec730a9fcb8d888004971124872fb0cb7ddd239929b2387c0336b
+SHA1: d685984eee582261872b86f209c231733451fa03
+MD5sum: 6e316a0c8d091a96cdf5802c3af54ec9
+Description: Librairies python pour ARV
+ ARV est un outil web permettant de gerer les configurations VPN
+ pour les modules Eole.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: python-creole
+Source: creole
+Version: 2.8.1-132
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 814
+Depends: creole-common (= 2.8.1-132), python-tiramisu (>= 2.0~13-1), python-cheetah, python-openssl, python-configobj, python-pyeole (>= 2.5.0~1-5), python-cherrypy3, python-cjson, python-formencode, patch, python-lxml, libxml2-utils, python-ipy, python-pyinotify, python-passlib, python-requests, python-dateutil, python-eventlet, python-systemd
+Conflicts: python-creole-base, python-creole-client
+Breaks: creole (<= 2.4.0-137)
+Replaces: creole (<= 2.4.0-137), python-creole-base, python-creole-client
+Provides: python-creole-base, python-creole-client
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/c/creole/python-creole_2.8.1-132_all.deb
+Size: 241008
+SHA256: e5661f46e2633f646bdfe53c2e05381f3797fbca00591cf1d484a249026cfb68
+SHA1: cbdff13fdab29b256150e8455f95ba982ad9b51e
+MD5sum: 80c03dee8cfab4c58cb997849bc61617
+Description: gestion de configuration Creole
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: python-creole-client
+Source: creole
+Version: 2.8.1-132
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 160
+Depends: creole-common (= 2.8.1-132), python-requests, python-tiramisu, python-eventlet, creole-client
+Conflicts: python-creole-base
+Breaks: creole (<= 2.4.0-137)
+Replaces: creole (<= 2.4.0-137), python-creole-base
+Provides: python-creole-base
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/c/creole/python-creole-client_2.8.1-132_all.deb
+Size: 125012
+SHA256: 60521db155268849e484206abeda8d7447a6b0b8a9dc4b23bf6b1787acd19a75
+SHA1: 2e23e65dbb5f3f65d21ccdb785ff44384406c986
+MD5sum: fb8623d8b44a8a6e58356d48da11592a
+Description: gestion de configuration Creole - librairie cliente
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: python-ead3fileserver
+Source: eole-ead3
+Version: 2.8.1-7
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 26
+Depends: python-eoleflask (>= 2.4.0-7), creole (>= 2.4.0-105)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: python
+Filename: pool/main/e/eole-ead3/python-ead3fileserver_2.8.1-7_all.deb
+Size: 11812
+SHA256: 849b2ff35996061351cc8ea8951050505966812569e27c06fb72e55fbb21b68a
+SHA1: 4310a7c77be246399dbcc8c8b2afaa60479f1b0e
+MD5sum: 185b0ff13c215c0cf65529c75add7653
+Description: EAD3 files server.
+
+Package: python-eole-eoe
+Source: eole-eoe
+Version: 2.8.1-3
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 27
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: python
+Filename: pool/main/e/eole-eoe/python-eole-eoe_2.8.1-3_all.deb
+Size: 6884
+SHA256: 78355f8c95b1012b945328bb71245dae9a7f6cb4e086eeb3b0235bb59a73b107
+SHA1: b7377e7c4b00e3d6939e870b2c7c69ec676244de
+MD5sum: 8bdf41a9988bc7924e655786aea1e919
+Description: Sources pour EOE (outils élèves).
+ Application web indépendante pour le changement
+ de mot de passe des élèves.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: python-eole-eop
+Source: eole-eop
+Version: 2.8.1-40
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 123
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: python
+Filename: pool/main/e/eole-eop/python-eole-eop_2.8.1-40_all.deb
+Size: 29904
+SHA256: 2844f99b92ce7b59099f894ca950dc4b899de30b2c83841a813d188e057efada
+SHA1: 068f795e6ec5ba30b6b08b4745b7a33c7ab236f2
+MD5sum: e811deef91393d0d0780d0e563528e1b
+Description: Sources pour EOP (gestion de devoir).
+ Application indépendante de l'EAD dont l'objectif est de proposer une
+ interface simple pour la gestion des devoirs à destination des
+ professeurs.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: python-eoleflask-aaa
+Source: eoleflask-aaa
+Version: 2.8.1-2
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 75
+Depends: python-eoleflask (>= 2.4.0-7), python3-pam
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: python
+Filename: pool/main/e/eoleflask-aaa/python-eoleflask-aaa_2.8.1-2_all.deb
+Size: 16956
+SHA256: 2f403934c3f5a7042df6197247b75c72fa9df76f6c2f5223977c6a1c967f7f42
+SHA1: c21ba195facd39eb1ba6eb25babb9e7660be3d28
+MD5sum: 4ba79e0cfc11a9241fadd0284fea18a7
+Description: python libraries for eoleflask-aaa
+ eoleflask-aaa can be used to enable authentication in web application managed by
+ eoleflask web server. included library is eoleauthlib
+ .
+ This package provides library (eoelauthlib) that can be used in eoleflask
+ applications to provide authentication and session management
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: python-eolegenconfig
+Source: eole-genconfig
+Version: 2.8.1-25
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 105
+Depends: python-eoleflask (>= 2.4.0-7), creole (>= 2.4.0-105)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: python
+Filename: pool/main/e/eole-genconfig/python-eolegenconfig_2.8.1-25_all.deb
+Size: 39216
+SHA256: fa333d9034d073123366a91a213d9890cb3915f3c4be920c79039092b8814684
+SHA1: 419a099c4d05493de7687eac64a0a44c9d392471
+MD5sum: 1f6722baed2ea3446ca67285e2a6feab
+Description: manage EOLE configuration
+ eole-genconfig permit to manage configuration of EOLE servers through
+ a web application.
+ .
+ This package provide a Flask module to manipulate the tiramisu object.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: python-eolesso
+Source: eole-sso
+Version: 2.8.1-22
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 247
+Depends: python-openid, python-twisted-web2, python-ipy, python-xmlsec, python-m2crypto, python-soappy, python-eoleldaptor, python-oic, python-prometheus-client, python-cheetah, python-configobj, python-cjson, python-ldap
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: python
+Filename: pool/main/e/eole-sso/python-eolesso_2.8.1-22_all.deb
+Size: 53724
+SHA256: 9b358aa604c5ac919af6b942b85e37bddb993c8c9a39c4830bd5f81abe3f5b1d
+SHA1: 3483715d7d077faac12bd0308aa676e92e4c604e
+MD5sum: 87e9228f0b0f84957380b81be9bd2faa
+Description: librairie SSO pour les module EOLE
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: python-gpo-utils
+Source: eole-ad-dc
+Version: 2.8.1-153
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 115
+Depends: python3, python3-samba
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/e/eole-ad-dc/python-gpo-utils_2.8.1-153_all.deb
+Size: 55508
+SHA256: 448dcdfb4604a1dbf400e7e2cf421a8c3ccee284b6d0dea0a8d50d55df701636
+SHA1: 3ee1035093bc8363abc9a683bcb1af3a0a57ec4f
+MD5sum: b4a2a3e64cfd50493d6bb5c5e86b1920
+Description: Python commands for GPO edition
+
+Package: python3-creole
+Source: creole
+Version: 2.8.1-132
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 820
+Depends: python3:any (>= 3.2~), creole-common (= 2.8.1-132), python3-tiramisu (>= 2.0~13-1), python3-cheetah, python3-openssl, python3-configobj, python3-pyeole (>= 2.5.0~1-5), python3-cherrypy3, python3-formencode, patch, python3-lxml, libxml2-utils, python3-ipy, python3-pyinotify, python3-passlib, python3-requests, python3-dateutil, python3-eventlet, python3-systemd, python3-pyroute2, python3-distutils
+Conflicts: python3-creole-base, python3-creole-client
+Replaces: python3-creole-base, python3-creole-client
+Provides: python3-creole-base, python3-creole-client
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/c/creole/python3-creole_2.8.1-132_all.deb
+Size: 241664
+SHA256: a89330dd3477c6c6da3cabedea652bf71ad900b75cb5d49d7a92538ed313d73f
+SHA1: bc5f05ca82dd561d7e2559902aa6f920c35ec52a
+MD5sum: 2915ccd18d8447d3ea69970493d34c58
+Description: gestion de configuration Creole (Python3)
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: python3-creole-client
+Source: creole
+Version: 2.8.1-132
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 162
+Depends: python3:any (>= 3.2~), creole-common (= 2.8.1-132), python3-requests, python3-tiramisu, python3-eventlet, creole-client
+Conflicts: python3-creole-base
+Replaces: python-creole-base
+Provides: python3-creole-base
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/c/creole/python3-creole-client_2.8.1-132_all.deb
+Size: 125332
+SHA256: 3193f7ceb0e933f0ad82ef333c092a0df46738be0adf6e4da252aaf2142d06b5
+SHA1: d4eaff699899b2ac6266c92187b7c97afe97c12e
+MD5sum: 9990018e5428eac2d7b26fd83fc41ced
+Description: gestion de configuration Creole -  librairie cliente (Python3)
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: python3-eoledb
+Source: eole-db
+Version: 2.8.1-17
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 97
+Depends: python3:any, python3-yaml, python3-termcolor, python3-mysqldb, python3-psycopg2
+Conflicts: python-eoledb
+Replaces: python-eoledb
+Homepage: http://eole.orion.education.fr/diff/
+Priority: extra
+Section: python
+Filename: pool/main/e/eole-db/python3-eoledb_2.8.1-17_all.deb
+Size: 27904
+SHA256: 732e83f3baad569b81903feece75e108b4fc60d56a35cbc818ee5e6f177208e3
+SHA1: e7f7c304d32f52aa99052829ef74b1c0ecd2bb37
+MD5sum: 76aa7af55733e0c5245be6979e1b49e6
+Description: Database  management tool and library
+ It's a pretty small, local (that is, straight on the operating
+ system) databases manager. Supports SQLITE, MySQL and PostgresSQL
+
+Package: python3-immutables
+Source: immutables
+Version: 0.14-eole280.1
+Architecture: amd64
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 211
+Depends: python3 (<< 3.9), python3 (>= 3.8~), python3:any (>= 3.5~), libc6 (>= 2.4)
+Homepage: https://github.com/MagicStack/immutables
+Priority: optional
+Section: python
+Filename: pool/main/i/immutables/python3-immutables_0.14-eole280.1_amd64.deb
+Size: 41196
+SHA256: 55f9462b8b88da2bb3ddc7f401976b63bca0f5865d79e8f83f1d0f949d5166e9
+SHA1: 43a268949672ef418dacf352d5c047079515e52d
+MD5sum: 4acf4b0e5df1b8d6b996ec415e0695e5
+Description: python immutables library
+ This package installs the library for Python 3.
+Upstream-Maintainer: Salt Stack Packaging <packaging@saltstack.com>
+
+Package: python3-pyeole
+Source: python-pyeole
+Version: 2.8.1-35
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 437
+Depends: python3:any (>= 3.2~), pyeole-data, python3-creole-client | python3-creole, python3-apt, python3-dpkt, python3-packaging, python3-pyinotify, python3-pyudev
+Breaks: python-pyeole
+Replaces: python-pyeole
+Priority: optional
+Section: python
+Filename: pool/main/p/python-pyeole/python3-pyeole_2.8.1-35_all.deb
+Size: 112520
+SHA256: dbf68ed08150b17f641654d7623a1319f985e1a357a24edca75773389716b8c1
+SHA1: 979dd44523556733e53f66f6f41ac5222bb9eb64
+MD5sum: 526a5532692f1e88a5939409db892505
+Description: Librairie commune Eole pour Python3
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet Eole a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: python3-sethaaf
+Source: seth-aaf
+Version: 2.8.1-25
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 160
+Depends: python3-lxml, python3-configobj, python3-pymongo
+Homepage: https://pcll.ac-dijon.fr/pcll/
+Priority: optional
+Section: admin
+Filename: pool/main/s/seth-aaf/python3-sethaaf_2.8.1-25_all.deb
+Size: 32116
+SHA256: ff1da47ac11c8c3dd8f75a3524f3641515cc91158ad904a8fdd721201c917999
+SHA1: b76c91b390af807ea205c66905524804adb590ba
+MD5sum: 4c103ebda0dd836a41ad6ce6574896ac
+Description: Librairies et scripts pour le traitement et l'intégration des données AAF
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: python3-tiramisu-web
+Source: tiramisu-web
+Version: 2.8.1-8
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 70
+Depends: python3:any (>= 3.2~), python3-tiramisu
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/t/tiramisu-web/python3-tiramisu-web_2.8.1-8_all.deb
+Size: 14032
+SHA256: 79a31f16f64d338082ac417a65873076908efcd6584b9368b5fdb1b7f382ebca
+SHA1: 9edfe25504a72179c8f2e06484fb0a27376adf75
+MD5sum: 8f3664277f713cdc0b783bae2fabc398
+Description: json generator for tiramisu web
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: ruby-one-backup
+Version: 2.8.1-14
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 61
+Depends: ruby-rsync, ruby-opennebula
+Homepage: https://pcll.ac-dijon.fr
+Priority: optional
+Section: ruby
+Filename: pool/main/r/ruby-one-backup/ruby-one-backup_2.8.1-14_all.deb
+Size: 10448
+SHA256: caf1a3a8a632599de158290f1edb8ce47ad78b318ee0bf1c01146f56817e1dc3
+SHA1: c129c7b597b02d4a9f17184d715375d7a420f65a
+MD5sum: 4d6623b6286e10314df9fc5230aa42fa
+Description: Simple opennebula vm backup manager
+ This tool is designed to work with OpenNebula KVM and qcow2 images (for now)
+Ruby-Versions: all
+
+Package: salt-api
+Source: salt
+Version: 3004.2+ds-1
+Architecture: all
+Maintainer: Debian Salt Team <pkg-salt-team@lists.alioth.debian.org>
+Installed-Size: 53
+Depends: salt-master, python3:any
+Recommends: python3-cherrypy3
+Homepage: https://saltproject.io/
+Priority: optional
+Section: admin
+Filename: pool/main/s/salt/salt-api_3004.2+ds-1_all.deb
+Size: 13024
+SHA256: d2f5c2ebdb8b753b619344e8b2ec28785bf36d4afa45b2a845eb6b6a3bf8a8b0
+SHA1: 49b20f6fa3acf4e4da39638c5f00e31a6dedaa89
+MD5sum: 92365fd62fdb2418b7dcc6dd7f9ee4d3
+Description: Generic, modular network access system
+ a modular interface on top of Salt that can provide a variety of entry points
+ into a running Salt system. It can start and manage multiple interfaces
+ allowing a REST API to coexist with XMLRPC or even a Websocket API.
+ .
+ The Salt API system is used to expose the fundamental aspects of Salt control
+ to external sources. salt-api acts as the bridge between Salt itself and
+ REST, Websockets, etc.
+
+Package: salt-cloud
+Source: salt
+Version: 3004.2+ds-1
+Architecture: all
+Maintainer: Debian Salt Team <pkg-salt-team@lists.alioth.debian.org>
+Installed-Size: 50
+Depends: python3-libcloud, salt-common (= 3004.2+ds-1), python3:any
+Recommends: python3-netaddr
+Suggests: python3-botocore
+Homepage: https://saltproject.io/
+Priority: optional
+Section: admin
+Filename: pool/main/s/salt/salt-cloud_3004.2+ds-1_all.deb
+Size: 14364
+SHA256: cef871a5c91b051bf2df3ff6d1ea025e6b285d1ae061e2598d9d1a73dec4a296
+SHA1: d6a68a0ab3021f36a86b71671f9ed6a7fadaaef1
+MD5sum: ef5452c8a250e918e1475356c208735f
+Description: public cloud VM management system
+ provision virtual machines on various public clouds via a cleanly
+ controlled profile and mapping system.
+
+Package: salt-common
+Source: salt
+Version: 3004.2+ds-1
+Architecture: all
+Maintainer: Debian Salt Team <pkg-salt-team@lists.alioth.debian.org>
+Installed-Size: 30593
+Depends: python3-apt, python3-dateutil, python3-jinja2, python3-msgpack (>= 0.4), python3-pkg-resources, python3-requests, python3-yaml, python3-systemd, python3-psutil, python3-pycryptodome, python3-gnupg, python3-zmq (>= 17.0.0), python3-distro, python3-markupsafe, python3:any
+Recommends: lsb-release, python3-contextvars, python3-croniter
+Suggests: ifupdown, python3-pycurl, python3-twisted
+Breaks: python3-mako (<< 0.7.0)
+Homepage: https://saltproject.io/
+Priority: optional
+Section: admin
+Filename: pool/main/s/salt/salt-common_3004.2+ds-1_all.deb
+Size: 7176640
+SHA256: 906dd8d4eac3cb776522fe0b41a3f626a72b962f52ea6dc672eedc3462eea919
+SHA1: d64f5e4907ae29ba3173388cfe6be037d247ff03
+MD5sum: e17f7924830d15642c48087548477a54
+Description: shared libraries that salt requires for all packages
+ salt is a powerful remote execution manager that can be used to
+ administer servers in a fast and efficient way.
+ .
+ It allows commands to be executed across large groups of
+ servers. This means systems can be easily managed, but data can
+ also be easily gathered.  Quick introspection into running
+ systems becomes a reality.
+ .
+ Remote execution is usually used to set up a certain state on a
+ remote system. Salt addresses this problem as well, the salt
+ state system uses salt state files to define the state a server
+ needs to be in.
+ .
+ Between the remote execution system, and state management Salt
+ addresses the backbone of cloud and data center management.
+ .
+ This particular package provides shared libraries that
+ salt-master, salt-minion, and salt-syndic require to function.
+
+Package: salt-master
+Source: salt
+Version: 3004.2+ds-1
+Architecture: all
+Maintainer: Debian Salt Team <pkg-salt-team@lists.alioth.debian.org>
+Installed-Size: 128
+Depends: salt-common (= 3004.2+ds-1), python3:any
+Recommends: python3-git
+Homepage: https://saltproject.io/
+Priority: optional
+Section: admin
+Filename: pool/main/s/salt/salt-master_3004.2+ds-1_all.deb
+Size: 40860
+SHA256: 14f87f00828a61cedd98661527e681b2417364194c776e834c319cfa9f14dcd5
+SHA1: 682867316969fa6551c6b1e315065b272a6fbc65
+MD5sum: e9105d13b45e063d159da6fd6e9d5fe2
+Description: remote manager to administer servers via salt
+ salt is a powerful remote execution manager that can be used to
+ administer servers in a fast and efficient way.
+ .
+ It allows commands to be executed across large groups of
+ servers. This means systems can be easily managed, but data can
+ also be easily gathered.  Quick introspection into running
+ systems becomes a reality.
+ .
+ Remote execution is usually used to set up a certain state on a
+ remote system. Salt addresses this problem as well, the salt
+ state system uses salt state files to define the state a server
+ needs to be in.
+ .
+ Between the remote execution system, and state management Salt
+ addresses the backbone of cloud and data center management.
+ .
+ This particular package provides the salt controller.
+
+Package: salt-minion
+Source: salt
+Version: 3004.2+ds-1
+Architecture: all
+Maintainer: Debian Salt Team <pkg-salt-team@lists.alioth.debian.org>
+Installed-Size: 126
+Depends: bsdmainutils, dctrl-tools, salt-common (= 3004.2+ds-1), python3:any
+Recommends: debconf-utils, dmidecode, net-tools
+Suggests: python3-augeas
+Homepage: https://saltproject.io/
+Priority: optional
+Section: admin
+Filename: pool/main/s/salt/salt-minion_3004.2+ds-1_all.deb
+Size: 28448
+SHA256: 96dfb4e0db093909501414e5947154c47844d862338069fbb8737635d1083fee
+SHA1: 927288960e282bda671a2d979006780abb2b5412
+MD5sum: ea0ff17a051b86a29f8e662cecdb75be
+Description: client package for salt, the distributed remote execution system
+ salt is a powerful remote execution manager that can be used to
+ administer servers in a fast and efficient way.
+ .
+ It allows commands to be executed across large groups of
+ servers. This means systems can be easily managed, but data can
+ also be easily gathered.  Quick introspection into running
+ systems becomes a reality.
+ .
+ Remote execution is usually used to set up a certain state on a
+ remote system. Salt addresses this problem as well, the salt
+ state system uses salt state files to define the state a server
+ needs to be in.
+ .
+ Between the remote execution system, and state management Salt
+ addresses the backbone of cloud and data center management.
+ .
+ This particular package provides the worker / agent for salt.
+
+Package: salt-ssh
+Source: salt
+Version: 3004.2+ds-1
+Architecture: all
+Maintainer: Debian Salt Team <pkg-salt-team@lists.alioth.debian.org>
+Installed-Size: 45
+Depends: salt-common (= 3004.2+ds-1), python3:any
+Homepage: https://saltproject.io/
+Priority: optional
+Section: admin
+Filename: pool/main/s/salt/salt-ssh_3004.2+ds-1_all.deb
+Size: 14124
+SHA256: 9d5991461bffa5d6f0ff5e9d062351f674ae68bb2675c07e492286d4fd72efe7
+SHA1: 9fc9686d89d5c3fee88749720537ff1b6c2bfc7b
+MD5sum: d20e8695c64a4ddbc2bc9f906ac841e8
+Description: remote manager to administer servers via Salt SSH
+ salt is a powerful remote execution manager that can be used to
+ administer servers in a fast and efficient way.
+ .
+ It allows commands to be executed across large groups of
+ servers. This means systems can be easily managed, but data can
+ also be easily gathered.  Quick introspection into running
+ systems becomes a reality.
+ .
+ Remote execution is usually used to set up a certain state on a
+ remote system. Salt addresses this problem as well, the salt
+ state system uses salt state files to define the state a server
+ needs to be in.
+ .
+ Between the remote execution system, and state management Salt
+ addresses the backbone of cloud and data center management.
+ .
+ This particular package provides the salt ssh controller. It
+ is able to run salt modules and states on remote hosts via ssh.
+ No minion or other salt specific software needs to be installed
+ on the remote host.
+
+Package: salt-syndic
+Source: salt
+Version: 3004.2+ds-1
+Architecture: all
+Maintainer: Debian Salt Team <pkg-salt-team@lists.alioth.debian.org>
+Installed-Size: 53
+Depends: salt-master (= 3004.2+ds-1), python3:any
+Homepage: https://saltproject.io/
+Priority: optional
+Section: admin
+Filename: pool/main/s/salt/salt-syndic_3004.2+ds-1_all.deb
+Size: 13248
+SHA256: 2914019d75e1664b733305d647ce4ae0d081d728edb156df74a9da5b4e06fef4
+SHA1: bc434941f2b84f4181e284998a1454261b7de204
+MD5sum: 3455319e97f53d18861dd088114755b2
+Description: master-of-masters for salt, the distributed remote execution system
+ salt is a powerful remote execution manager that can be used to
+ administer servers in a fast and efficient way.
+ .
+ It allows commands to be executed across large groups of
+ servers. This means systems can be easily managed, but data can
+ also be easily gathered.  Quick introspection into running
+ systems becomes a reality.
+ .
+ Remote execution is usually used to set up a certain state on a
+ remote system. Salt addresses this problem as well, the salt
+ state system uses salt state files to define the state a server
+ needs to be in.
+ .
+ Between the remote execution system, and state management Salt
+ addresses the backbone of cloud and data center management.
+ .
+ This particular package provides the master of masters for salt
+ - it enables the management of multiple masters at a time.
+
+Package: scribe-ad
+Version: 2.8.1-42
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 91
+Depends: eole-scribe-module, eole-ad, eolead-gpo-script, eole-workstation, lxc-templates, debootstrap, eole-ad-dc-bareos, eole-ad-dc-pso, cgroup-lite
+Homepage: https://pcll.ac-dijon.fr/eole/
+Priority: optional
+Section: admin
+Filename: pool/main/s/scribe-ad/scribe-ad_2.8.1-42_all.deb
+Size: 23492
+SHA256: 7ae6facfe4b0f61beb56236b217dd12f7debec5bdfbbba2289a762a50805eabb
+SHA1: fa0b4db777312f58012eaf0592dab16080eea4c3
+MD5sum: a5a2f4bee76bf0fa987f4aabe343d6b3
+Description: Transformation d'un Scribe NT en Scribe AD
+ Avec ajout du service samba-ad-dc dans un conteneur LXC
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: seth-education
+Version: 2.8.1-106
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 17
+Depends: eole-seth-education, eole-seth, eole-courier, eole-client-annuaire, quotatool, eole-web, eole-db, eole-proftpd, eole-scribehorus, eole-controle-vnc, eolead-gpo-script, eole-sso, eole-sso-server, python-eolesso, gpo-tool, eole-scribe-backend, python-eoleldaptor, eole-scribe-scripts, python-gpo-utils, eole-bareos, eole-bareos-mysql, eole-cups, eole-eop, eole-eoe, libpam-winbind, eole-userpassword
+Homepage: https://pcll.ac-dijon.fr/eole/
+Priority: optional
+Section: metapackages
+Filename: pool/main/s/seth-education/seth-education_2.8.1-106_all.deb
+Size: 11192
+SHA256: 407a3799d3e257945e78506b947fc9d82291072f205f106e8b86cd44975bcf45
+SHA1: 6fa4777b2650a709b3d1267bfa0300045bce01f9
+MD5sum: dbc958814c7473e3881ec79c52ce8e9c
+Description: dependency package
+ Liste des paquets liés à la personnalisation du module Seth
+ pour le ministère de l'éducation nationale.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: seth-education-pkg
+Source: seth-education
+Version: 2.8.1-106
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 17
+Depends: eole-ldapschema, seth-education-tools, eolead-gpo-script-pkg
+Breaks: seth-education-tools (<< 2.8.1-47)
+Replaces: seth-education-tools (<< 2.8.1-47)
+Homepage: https://pcll.ac-dijon.fr/eole/
+Priority: optional
+Section: metapackages
+Filename: pool/main/s/seth-education/seth-education-pkg_2.8.1-106_all.deb
+Size: 11108
+SHA256: 29ef0cbc08f14358953aa2e2091f058812890894556752c97f3447f4ab1216b8
+SHA1: 6110aef8ff49b0c4faae7bc5d734319d5fa9c057
+MD5sum: c6735069c95845ebba707972567509fc
+Description: dependency package
+ Liste des paquets liés à la personnalisation du module Seth
+ pour le ministère de l'éducation nationale.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: seth-education-tools
+Source: seth-education
+Version: 2.8.1-106
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 36
+Homepage: https://pcll.ac-dijon.fr/eole/
+Priority: optional
+Section: admin
+Filename: pool/main/s/seth-education/seth-education-tools_2.8.1-106_all.deb
+Size: 14848
+SHA256: 775849f5c0c2f48c2ff163b04c9bf6262eb87cbd20f89bdc00ad1a42db9a19c6
+SHA1: 81244296964bd61dec9101a86ddbb3b3f75a177e
+MD5sum: bb12f22d687676a3f12a37e664ec3913
+Description: Outil de creation des comptes/groupes
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: seth-education-waitsmb
+Source: seth-education
+Version: 2.8.1-106
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 32
+Homepage: https://pcll.ac-dijon.fr/eole/
+Priority: optional
+Section: admin
+Filename: pool/main/s/seth-education/seth-education-waitsmb_2.8.1-106_all.deb
+Size: 12152
+SHA256: 2c13371de0c33d393e273ef4c2496dfa99f104db4bac99bbbc60305bcd9bb2d5
+SHA1: aa861c35dd9dd9cb7d8298532675b8dda65f5695
+MD5sum: c26bc52b98f7cad41c94e2055045078c
+Description: Outil de creation des comptes/groupes
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: squid
+Version: 4.10-eole281.1.1ubuntu1.13
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 9148
+Pre-Depends: adduser
+Depends: libc6 (>= 2.29), libcap2 (>= 1:2.10), libcom-err2 (>= 1.43.9), libcrypt1 (>= 1:4.1.0), libdb5.3, libecap3 (>= 1.0.1), libexpat1 (>= 2.0.1), libgcc-s1 (>= 3.0), libgssapi-krb5-2 (>= 1.17), libkrb5-3 (>= 1.10+dfsg~), libldap-2.4-2 (>= 2.4.7), libltdl7 (>= 2.4.6), libnetfilter-conntrack3 (>= 1.0.7), libnettle7, libpam0g (>= 0.99.7.1), libsasl2-2 (>= 2.1.27+dfsg), libssl1.1 (>= 1.1.0), libstdc++6 (>= 9), libxml2 (>= 2.7.4), netbase, logrotate (>= 3.5.4-1), squid-common (>= 4.10-eole281.1.1ubuntu1.13), lsb-base, libdbi-perl, ssl-cert
+Recommends: libcap2-bin, ca-certificates
+Suggests: squidclient, squid-cgi, squid-purge, resolvconf (>= 0.40), smbclient, ufw, winbind, apparmor
+Provides: squid3
+Homepage: http://www.squid-cache.org
+Priority: optional
+Section: web
+Filename: pool/main/s/squid/squid_4.10-eole281.1.1ubuntu1.13_amd64.deb
+Size: 2847836
+SHA256: 535b9c8fb45a6ac2a9b599c2ae4575c085edd4c0a4993783273f73100806798d
+SHA1: 863926f3d790dc47229a710e0e5321f9453c6069
+MD5sum: 71df84c49d98987019eb2b6649e30c8a
+Description: Full featured Web Proxy cache (HTTP proxy)
+ Squid is a high-performance proxy caching server for web clients, supporting
+ FTP, gopher, ICY and HTTP data objects.
+Original-Maintainer: Luigi Gangitano <luigi@debian.org>
+
+Package: squid-cgi
+Source: squid
+Version: 4.10-eole281.1.1ubuntu1.13
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 335
+Depends: apache2 | httpd, libc6 (>= 2.14), libgcc-s1 (>= 3.0), libnettle7, libstdc++6 (>= 5.2)
+Provides: squid3-cgi
+Homepage: http://www.squid-cache.org
+Priority: optional
+Section: web
+Filename: pool/main/s/squid/squid-cgi_4.10-eole281.1.1ubuntu1.13_amd64.deb
+Size: 196600
+SHA256: eea22372f6381a75b6d6c4bd45a1297cc7d0117585f9d32e7fab86337c8a4489
+SHA1: 325058205bb64df60c0fab544c65451e874caddc
+MD5sum: 5d4023d8fef03a74c0b6836816ee5059
+Description: Full featured Web Proxy cache (HTTP proxy) - control CGI
+ Squid is a high-performance proxy caching server for web clients, supporting
+ FTP, gopher, ICY and HTTP data objects.
+ .
+ This package contains a CGI program that can be used to query and administrate
+ a `squid' proxy cache through a web browser.
+Original-Maintainer: Luigi Gangitano <luigi@debian.org>
+
+Package: squid-common
+Source: squid
+Version: 4.10-eole281.1.1ubuntu1.13
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 484
+Depends: squid-langpack (>= 20110214-1)
+Provides: squid3-common
+Homepage: http://www.squid-cache.org
+Priority: optional
+Section: web
+Filename: pool/main/s/squid/squid-common_4.10-eole281.1.1ubuntu1.13_all.deb
+Size: 319672
+SHA256: 7b6834f0d9b56141c73726b53e530fbce8f646f5ce1f0b51174737e24b409455
+SHA1: 759a86cc8d7df9e9e3a6616dcf7e02dd0f911b69
+MD5sum: 7eb6a1fed82004d173721129ee9c3092
+Description: Full featured Web Proxy cache (HTTP proxy) - common files
+ Squid is a high-performance proxy caching server for web clients, supporting
+ FTP, gopher, ICY and HTTP data objects.
+ .
+ This package contains common files (MIB and icons)
+Original-Maintainer: Luigi Gangitano <luigi@debian.org>
+
+Package: squid-purge
+Source: squid
+Version: 4.10-eole281.1.1ubuntu1.13
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 301
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 5)
+Homepage: http://www.squid-cache.org
+Priority: optional
+Section: web
+Filename: pool/main/s/squid/squid-purge_4.10-eole281.1.1ubuntu1.13_amd64.deb
+Size: 186360
+SHA256: 50ff63dda4eabac879f94f87d3a8b0041e6a08ebb811f65e10b57a63c4de4066
+SHA1: 434d54470650725af0a7500f0a53a3c215c01a45
+MD5sum: a0f577afbb9c4779bf927e93379a8e1e
+Description: Full featured Web Proxy cache (HTTP proxy) - cache management utility
+ Squid is a high-performance proxy caching server for web clients, supporting
+ FTP, gopher, ICY and HTTP data objects.
+ .
+ This package contains a small utility that can be used to manage the disk cache
+ from the command line.
+Original-Maintainer: Luigi Gangitano <luigi@debian.org>
+
+Package: squidclient
+Source: squid
+Version: 4.10-eole281.1.1ubuntu1.13
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 332
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libgssapi-krb5-2 (>= 1.17), libnettle7, libstdc++6 (>= 9)
+Recommends: ssl-cert, ca-certificates
+Provides: squid3-client
+Homepage: http://www.squid-cache.org
+Priority: optional
+Section: web
+Filename: pool/main/s/squid/squidclient_4.10-eole281.1.1ubuntu1.13_amd64.deb
+Size: 196040
+SHA256: b43e5355f711c69acbb56a344aa684825920e558ad686190f38538984adecb8e
+SHA1: 048f984ce54f13d4fefbd5b9b237638f07aa6c11
+MD5sum: d003c833ffc643e2f297a91c1d9464fa
+Description: Full featured Web Proxy cache (HTTP proxy) - HTTP(S) message utility
+ Squid is a high-performance proxy caching server for web clients, supporting
+ FTP, gopher, ICY and HTTP data objects.
+ .
+ This package contains a small utility that can be used to get URLs from the
+ command line.
+Original-Maintainer: Luigi Gangitano <luigi@debian.org>
+
+Package: supervision-psin
+Version: 2.8.1-8
+Architecture: all
+Maintainer: Équipe Eole <eole-mut@listeseole.ac-dijon.fr>
+Installed-Size: 1650
+Depends: perl:any, nmap, nagios-plugins, tcptraceroute, libdbd-mysql-perl, libtimedate-perl, libnet-snmp-perl, libhtml-template-perl, libxml-simple-perl, libcrypt-ssleay-perl, libnet-dns-resolver-programmable-perl, curl, python3-dns, eole-ocsinventory-agent (>= 2.5.2-5), ipset
+Homepage: http://eole.orion.education.fr/diff/
+Priority: extra
+Section: misc
+Filename: pool/main/s/supervision-psin/supervision-psin_2.8.1-8_all.deb
+Size: 258696
+SHA256: 97dcf85fba7088a7d19968b01cf84857a0d09c49e068f8d3f2f63490afee2b5e
+SHA1: ff2dc22dd9cd4983c73a6d2f2c28579ae563bbb3
+MD5sum: e29ae27b89dc8e312c26c54db4c89db2
+Description: client de supervision Psin
+ Ensemble des plugins nécessaires à la supervision Psin.
+
+Package: tiramisu-web
+Version: 2.8.1-8
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 97
+Depends: python3-tiramisu-web
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/t/tiramisu-web/tiramisu-web_2.8.1-8_all.deb
+Size: 18640
+SHA256: 96bf0af7c3e9a130feb2d84317db9188a639a80a8e9602251644795b7666d532
+SHA1: 7660b6e7f86ff9900af02f116769268ead8c1e50
+MD5sum: dce10abc7a12e2c7c1b30202c1fbefd4
+Description: web components for tiramisu
+ Polymer form builder based on tiramisu serverside
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: zephir-backend
+Source: zephir-parc
+Version: 2.8.1-108
+Architecture: all
+Maintainer: Equipe Eole <eole@ac-dijon.fr>
+Installed-Size: 777
+Depends: zephir-common
+Conflicts: zephir-stats
+Replaces: zephir-stats
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: python
+Filename: pool/main/z/zephir-parc/zephir-backend_2.8.1-108_all.deb
+Size: 153732
+SHA256: 137ee2ae348a4338bedf88bc78c3f6c41c75bab6e1fcab017c7f1037c92a3ff0
+SHA1: 6d99d0dff87f47c2936715d103cab9a9c25b5ed9
+MD5sum: b74076e63566fbf920f270905a211e93
+Description: libs and data for Zephir Backend Server
+ .
+ http://eole.orion.education.fr
+
+Package: zephir-client
+Version: 2.8.1-73
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 952
+Depends: update-inetd, uucp, python3-rrdtool, python3-twisted, snmp-mibs-downloader, language-pack-en, ssl-cert, openssh-server
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/z/zephir-client/zephir-client_2.8.1-73_all.deb
+Size: 168148
+SHA256: 7649ac377cabcd114618c15dd0e4e9cbd70117e747d761cb5c49c614f9c5aec6
+SHA1: 098c42522b95cf5a9474c585785c3ab6766d71e9
+MD5sum: 604fe43ef408bc568fa96d8caddb153a
+Description: programmes d'interconnexion d'un client EOLE avec un Zéphir
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: zephir-common
+Source: zephir-parc
+Version: 2.8.1-108
+Architecture: all
+Maintainer: Equipe Eole <eole@ac-dijon.fr>
+Installed-Size: 222
+Depends: zephir-client (>= 2.5.0~4-3), zephir-dictionnaires
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: python
+Filename: pool/main/z/zephir-parc/zephir-common_2.8.1-108_all.deb
+Size: 75864
+SHA256: 78881e82e95e3e7a2c67deb7694d33f53cf0f8e7561b5cebf0c57822bb267aef
+SHA1: 5eddc29add74885e8587fae1f2827013ced92e3a
+MD5sum: 3ee494cb8aaed7198bc3c02612ce1d0d
+Description: common libs and data for Zephir
+ .
+ http://eole.orion.education.fr
+
+Package: zephir-dictionnaires
+Source: zephir-parc
+Version: 2.8.1-108
+Architecture: all
+Maintainer: Equipe Eole <eole@ac-dijon.fr>
+Installed-Size: 11542
+Breaks: eole-zephir-medde (<< 2.6.1-5)
+Replaces: eole-zephir-medde (<< 2.6.1-5)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: python
+Filename: pool/main/z/zephir-parc/zephir-dictionnaires_2.8.1-108_all.deb
+Size: 248208
+SHA256: cbdd565ce882dd490a715fc515b4ed6555ba44aa1ffdac2147f29cb940c128c3
+SHA1: b63400b9090286f673eb246d1ee311db89ff1778
+MD5sum: 4291ed2dad8df7e9003d72e7fc9fdc8a
+Description: Eole standard modules dictionnaries
+ .
+ http://eole.orion.education.fr
+
+Package: zephir-doc
+Source: zephir-parc
+Version: 2.8.1-108
+Architecture: all
+Maintainer: Equipe Eole <eole@ac-dijon.fr>
+Installed-Size: 7911
+Depends: zephir-common
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: python
+Filename: pool/main/z/zephir-parc/zephir-doc_2.8.1-108_all.deb
+Size: 7714596
+SHA256: 38000921be02fb32a207ebb01a2a8a111b92d872619b2ad08d8ae135e83916c2
+SHA1: 53caa74df10d5409f97fd3f77f96a6c5b21a7e4d
+MD5sum: f6cb0dae03ab45a54e761030e23607c8
+Description: documentation for Zephir
+ .
+ http://eole.orion.education.fr
+
+Package: zephir-parc
+Version: 2.8.1-108
+Architecture: all
+Maintainer: Equipe Eole <eole@ac-dijon.fr>
+Installed-Size: 44
+Depends: zephir-backend, zephir-web
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/z/zephir-parc/zephir-parc_2.8.1-108_all.deb
+Size: 38604
+SHA256: 2d3a67f534c9c174574bc322e8700b37e92cf28e53a8ed0766dccf41e457833f
+SHA1: 3502d04235e69f5d43ec8c954517e1a262b84dae
+MD5sum: 6409ab93f68f085ae49e17afcecf799f
+Description: Installation complète de l'application Zéphir (Metapackage)
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: zephir-scripts
+Version: 2.8.1-12
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 29
+Depends: zephir-scripts-common
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/z/zephir-scripts/zephir-scripts_2.8.1-12_all.deb
+Size: 6256
+SHA256: 1bae4bb31d77270981e1d381053ab58daeb8042b0d133e4c6c0c350b07632ac4
+SHA1: 40a6d5b515f8e4541b10d0a0b13e81858aca724f
+MD5sum: f63dbfdf525cf737167307fbf29c9a02
+Description: Scripts zephir de gestion pour modules eole
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: zephir-scripts-common
+Source: zephir-scripts
+Version: 2.8.1-12
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 21
+Depends: python
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/z/zephir-scripts/zephir-scripts-common_2.8.1-12_all.deb
+Size: 5676
+SHA256: c1bd243447275a9d13ddd2809f462f671806dc25ef1f818357c70544a936958b
+SHA1: 743143a2c78e36835f3bf92c459dc42acbbe1e3c
+MD5sum: 4356e4f1b8677dd76a34737f0a228c0f
+Description: Librairie communes pour zephir-scripts
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: zephir-scripts-module
+Source: zephir-scripts
+Version: 2.8.1-12
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 21
+Depends: zephir-scripts-common
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/z/zephir-scripts/zephir-scripts-module_2.8.1-12_all.deb
+Size: 5588
+SHA256: b08bf6106bbb4b9d8ae50a45b1257aff77df6a7c9c4989d325f5871b6a6a45b0
+SHA1: 3e44f663542d9700c66f52e78d05cb17f57ff1cb
+MD5sum: cd08afd8ee72775f58cc612160eab5aa
+Description: Script d'interaction zephir pour modules eole
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: zephir-stats
+Source: zephir-client
+Version: 2.8.1-73
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 69
+Depends: zephir-client
+Conflicts: eole-ead-server (<< 2.3), zephir-backend, zephir-client (<< 2.3)
+Replaces: zephir-backend
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: admin
+Filename: pool/main/z/zephir-client/zephir-stats_2.8.1-73_all.deb
+Size: 32468
+SHA256: 039d257960b98cef60b6b21198598d5314a075b94f6a008a93c63f36168a87e9
+SHA1: 1fea3a6e20ced9c9286e4e5d470a57c0398ffd94
+MD5sum: 6faefdb587cbec4c9de9003e421d499b
+Description: programmes d'interconnexion d'un client EOLE avec un Zéphir
+ Pour toute information complementaire, veuillez vous rendre
+ sur le site du Projet a l'adresse suivante :
+ .
+ http://eole.orion.education.fr
+
+Package: zephir-web
+Source: zephir-parc
+Version: 2.8.1-108
+Architecture: all
+Maintainer: Equipe Eole <eole@ac-dijon.fr>
+Installed-Size: 19736
+Depends: zephir-common, python3-pil, eole-genconfig
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: python
+Filename: pool/main/z/zephir-parc/zephir-web_2.8.1-108_all.deb
+Size: 1637048
+SHA256: 59e616f973ce2aaa32bf5fb028d7cbcd6f4467c7126c1964dde9fd1d5fb9910a
+SHA1: c81675892cec450cfd8f79155fa851f886eadaf4
+MD5sum: 471d4856c7590282e61d141f8fe4a64c
+Description: libs and data for Zephir Web application
+ .
+ http://eole.orion.education.fr
+

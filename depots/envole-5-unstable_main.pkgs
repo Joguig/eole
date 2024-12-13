@@ -1,0 +1,2324 @@
+Package: balado-apps
+Source: eole-balado
+Version: 1.1.3+2-4
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 44790
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, lame, posh-profil-apps, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-balado/balado-apps_1.1.3+2-4_all.deb
+Size: 21160926
+SHA256: 529a64ca765144f29a0479bff5e85779ba6c0f742d6411e15ea2a5bedf9f0563
+SHA1: 70072680d7c02ba0675b2c449bec074f6547ff0b
+MD5sum: ca4143a2c819205b8161285d8e07e1c2
+Description: Sources pour balado.
+
+Package: balado-sso
+Source: eole-balado
+Version: 1.1.3+2-4
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 39
+Depends: eole-sso
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-balado/balado-sso_1.1.3+2-4_all.deb
+Size: 6956
+SHA256: e4ca36aefd31ee63c9f3cf288c15f61ae54a196ea5c0a99faab8f7c7572387cd
+SHA1: d0a01923d5b32f1b986cb680ee489456e116f1ea
+MD5sum: 28bcef471d9478853684216c1a643e5f
+Description: Filtre SSO pour balado.
+
+Package: bergamote-apps
+Source: bergamote
+Version: 1.0+1-5
+Architecture: all
+Maintainer: Equipe Eole <eole@ac-dijon.fr>
+Installed-Size: 913
+Depends: php5-xapian
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/b/bergamote/bergamote-apps_1.0+1-5_all.deb
+Size: 595010
+SHA256: 582075e2bf70ab68f1dc318f838a0d8aafc59858472b24f855e545e8841e6596
+SHA1: 29acca4b254aa49cc8915f1e459cec27463f25f4
+MD5sum: eb7addb4bb87e6fa693d9c6aa9513763
+Description: Bergamote est une application d'indexation de fichier et
+ un moteur de recherche web pour les retrouver.
+
+Package: bergamote-index
+Source: bergamote
+Version: 1.0+1-5
+Architecture: all
+Maintainer: Equipe Eole <eole@ac-dijon.fr>
+Installed-Size: 35
+Depends: xapian-omega, xapian-tools, unzip, antiword, libwpd-tools, unrtf, xpdf-utils, ghostscript, catdoc, libwps-tools, catdvi, djvulibre-bin, perl
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/b/bergamote/bergamote-index_1.0+1-5_all.deb
+Size: 2844
+SHA256: 2ff6ece9392641ce7f69422b6213fcbc37962d8fece86b2232e95eaafde5d579
+SHA1: 2f8b56c95f6116151253dd77717c57c285a6037d
+MD5sum: 7d5d7b89b439eede1df96777bb7ba0d9
+Description: Bergamote est une application d'indexation de fichier et
+ un moteur de recherche web pour les retrouver.
+
+Package: bergamote-sso
+Source: bergamote
+Version: 1.0+1-5
+Architecture: all
+Maintainer: Equipe Eole <eole@ac-dijon.fr>
+Installed-Size: 38
+Depends: eole-sso
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/b/bergamote/bergamote-sso_1.0+1-5_all.deb
+Size: 2396
+SHA256: 385b5aaa4c8a73990adf642aa4386e5ac9a3acad2b82a99150d8a6f6792e15be
+SHA1: 5412cf348941ce1f675466e466f564892f952b0c
+MD5sum: f10ffa37fe9e0e37d00971cb23e03275
+Description: Bergamote est une application d'indexation de fichier et
+ un moteur de recherche web pour les retrouver.
+
+Package: calendrier-apps
+Source: eole-calendrier
+Version: 4.0+2-14
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 1205
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-calendrier/calendrier-apps_4.0+2-14_all.deb
+Size: 308272
+SHA256: e58241ae4f2141b847fdb7d452bcc6cd63edfcea275d3fe0bac02b4a43c30a46
+SHA1: b5bbfa96a8696e4f6928d9e01d26abd0bb330b31
+MD5sum: 50871699c6fd64358769ee7c6aa691fa
+Description: Sources pour calendrier "EOLE".
+
+Package: cdc-apps
+Source: eole-cdc
+Version: 0.9+1-8
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 4665
+Depends: eole-web-pkg (>= 2.4.2~0), eole-client-annuaire-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-cdc/cdc-apps_0.9+1-8_all.deb
+Size: 1526544
+SHA256: a6bcf011535ff75f5cb4b8f443e2070fc066e5a7be2be92a4368e1b0f430f6bc
+SHA1: 0c647d0ffb3aec6a62745e420c6085272eb51d09
+MD5sum: d2e210394bc1856dfb2369d4a0f0aef9
+Description: Sources pour cdc "EOLE".
+
+Package: cdc-sso
+Source: eole-cdc
+Version: 0.9+1-8
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 40
+Depends: eole-sso
+Breaks: eole-cdc (<< 0.9+1-1)
+Replaces: eole-cdc (<< 0.9+1-1)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-cdc/cdc-sso_0.9+1-8_all.deb
+Size: 3462
+SHA256: 9677695237dfd2a8cd5c281d0536509ae2502c7f68038981bb0cce47dd60e469
+SHA1: 9be1244efe117eeaa4343e51f9bfd777975bc345
+MD5sum: ddfb48352b4c67ea426f9a3f089ff512
+Description: Filtre SSO pour cdc "EOLE".
+
+Package: cdt-apps
+Source: eole-cdt
+Version: 5.5.0.3+2-21
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 13067
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, posh-profil-apps, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-cdt/cdt-apps_5.5.0.3+2-21_all.deb
+Size: 3214634
+SHA256: efd6a2e63ecded411c104523d9433dcdf9b9b8ff33c2c2bbad36e8d762f06dea
+SHA1: 2f7ccbe0a0843a87fe0d2f75d33c2120598c345e
+MD5sum: e410fe9b54be2be7bfa017e8b1dd2a9b
+Description: Sources pour cdt "EOLE".
+
+Package: cdt-sso
+Source: eole-cdt
+Version: 5.5.0.3+2-21
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 47
+Depends: eole-sso
+Breaks: eole-cdt (<< 4.9.4.4-eole4-9)
+Replaces: eole-cdt (<< 4.9.4.4-eole4-9)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-cdt/cdt-sso_5.5.0.3+2-21_all.deb
+Size: 8904
+SHA256: 94ea735d9b197167471132f39a800be21d33e1196883e8c953f51b4a34257de8
+SHA1: 24c5fad2dc6af84fff1327cc49c594d3efc7cca7
+MD5sum: 0ff4be43b926d1d854e685e34d6cc8f0
+Description: Filtre SSO pour cdt "EOLE".
+
+Package: dispatcher-apps
+Source: eole-dispatcher
+Version: 1.0+2-59
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 19994
+Depends: eole-web-pkg (>= 2.4.2~0), eole-client-annuaire-pkg, php5-redis, php5-gd
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-dispatcher/dispatcher-apps_1.0+2-59_all.deb
+Size: 8864768
+SHA256: ec84dcdf76a2cc4e53296b0eebc9f09538c207b281a71c2acf3e3e64bf55df9b
+SHA1: c35c0bfad616f71dabfc3ef0ff4c15079e779af0
+MD5sum: 5576367c96b578c80932534a7aedc749
+Description: Sources pour dispatcher "EOLE".
+
+Package: dispatcher-sso
+Source: eole-dispatcher
+Version: 1.0+2-59
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 61
+Depends: eole-sso
+Breaks: eole-dispatcher (<< 1.0+1-1)
+Replaces: eole-dispatcher (<< 1.0+1-1)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-dispatcher/dispatcher-sso_1.0+2-59_all.deb
+Size: 22164
+SHA256: e9d08dd56ea3733749cf1403c1edc045f4bc77435950f9980ef3fc7f9ffe8fc5
+SHA1: 09ff356b9a2b6704b1abef01b5c1ef10a2514717
+MD5sum: e96bc175576bbea92002f1c6f48e84f0
+Description: Filtre SSO pour dispatcher "EOLE".
+
+Package: dokuwiki-apps
+Source: eole-dokuwiki
+Version: 2014.05.05+1-18
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 16118
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-dokuwiki/dokuwiki-apps_2014.05.05+1-18_all.deb
+Size: 2828140
+SHA256: 762837b8cf66ef134bd4e063b08ab30f6e2499b2b507e8a935024c7b8a3d52c1
+SHA1: 4cf06e96669d3d580fed28223ee1c4d2628d6930
+MD5sum: d2561e3e97c4f07377bc18dd929134a2
+Description: Sources pour dokuwiki "EOLE".
+
+Package: dokuwiki-sso
+Source: eole-dokuwiki
+Version: 2014.05.05+1-18
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 36
+Depends: eole-sso
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-dokuwiki/dokuwiki-sso_2014.05.05+1-18_all.deb
+Size: 4152
+SHA256: ea45a6e9a904884c06d761b41d7908d253510023622245d4ba623701acf7da41
+SHA1: 040f6da1d44c19789aaf392ed97aab3b02162b2f
+MD5sum: 704a6af35846aaf3ebe459ba977ec265
+Description: Filtre SSO pour dokuwiki "EOLE".
+
+Package: envole-connecteur-apps
+Source: eole-envole-connecteur
+Version: 1.2+2-34
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 7234
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-envole-connecteur/envole-connecteur-apps_1.2+2-34_all.deb
+Size: 2573438
+SHA256: 8d331513b2a6f0e7ff625daedad8063bd807ad21bff207e5fbe0717db70d3d24
+SHA1: 1b40781667357d18e4052393eefc1699637596ff
+MD5sum: 3d49571ad85649c5d31c70224ce7f575
+Description: Sources pour envole-connecteur "eole"
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: envole-migration-apps
+Source: eole-envole-migration
+Version: 1.0+2-30
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 247419
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-envole-migration/envole-migration-apps_1.0+2-30_all.deb
+Size: 55750290
+SHA256: 1daafcc7f080bfaec685be20c9856725092d81e949fac6a495c2d80d5d2e9d01
+SHA1: c891feed0ccc8d01a3bb5cf8a0040e44c8da9697
+MD5sum: daade40a6e36087388f4f3388925d5f2
+Description: Sources pour envole-migration "EOLE".
+
+Package: envole-mobile-apps
+Source: eole-envole-mobile
+Version: 2.0+2-2
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 4296
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, xdesktop-apps, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-envole-mobile/envole-mobile-apps_2.0+2-2_all.deb
+Size: 1602392
+SHA256: e448669ccfdf55d2f3ffa1cdf8aa143e8368e0f372397ca14a6e2266ccb1dda6
+SHA1: 50c79641f3ffb098c7596680a00bfc1c4de37259
+MD5sum: 640775f857d2ee05776a15e003409b34
+Description: Sources pour Envole-Mobile "eole"
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: envole-mobile-sso
+Source: eole-envole-mobile
+Version: 2.0+2-2
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 27
+Depends: eole-sso
+Breaks: eole-envole-mobile (<< 1.0.2+1-1)
+Replaces: eole-envole-mobile (<< 1.0.2+1-1)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-envole-mobile/envole-mobile-sso_2.0+2-2_all.deb
+Size: 3028
+SHA256: cac81dcd301d29b0ee851255d235505826b08fb163c54db39d473c3a13adb0df
+SHA1: 624a53294c6e8b91d820b77d54b7c50ae02df3ec
+MD5sum: a1cd4e373e5ebaf13a870d0ce2e9a35c
+Description: Filtre SSO pour envole-mobile.
+
+Package: envole-themes-apps
+Source: eole-envole-themes
+Version: 4.0+2-48
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 33
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-envole-themes/envole-themes-apps_4.0+2-48_all.deb
+Size: 8806
+SHA256: 375a219357e30309b95b839f77247e92c8ea74997c2ef0fc400e8d8be212061b
+SHA1: 0dbaffa09dad68f6824fcb0077633e060ac9f739
+MD5sum: 5b21971cf3a31e8129c27e269952284d
+Description: Sources pour Envole-Themes "EOLE".
+
+Package: eole-balado
+Version: 1.1.3+2-4
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 95
+Depends: eole-web (>= 2.5.2), balado-sso, eole-client-annuaire, eole-db, eole-posh-profil, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-balado/eole-balado_1.1.3+2-4_all.deb
+Size: 15220
+SHA256: fad37e8d20c4640618fda90a6b38232ecd51cad6783a7d4fb27ca69af9fbad4c
+SHA1: 0931cc93d72695d3d53c5a9846fe05af59403eb8
+MD5sum: 62f50a11cfa775d7394d8c4dbf2260ac
+Description: Eolisation de l'application balado.
+
+Package: eole-bergamote
+Version: 1.0+1-6
+Architecture: all
+Maintainer: Equipe Eole <eole@ac-dijon.fr>
+Installed-Size: 62
+Depends: eole-fichier-common, eole-web, eole-sso, bergamote-sso
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-bergamote/eole-bergamote_1.0+1-6_all.deb
+Size: 4044
+SHA256: 593d48cda804c0967a398f8842c9b02a4c4900ac68e80780eca23c38c26a0d2d
+SHA1: deff80ee22572d71ca1e33d1995ac204cb292b06
+MD5sum: 8e21c3b874f607f029f2d0c3d441f939
+Description: EOLisation de Bergamote.
+ Bergamote est une application d'indexation de fichier et
+ un moteur de recherche web pour les retrouver.
+
+Package: eole-calendrier
+Version: 4.0+2-14
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 64
+Depends: eole-web (>= 2.5.2), eole-db, eole-client-annuaire, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-calendrier/eole-calendrier_4.0+2-14_all.deb
+Size: 8626
+SHA256: e5d2379b6ca3fd6b6828b3cce6542a0b4f893598454e3f9972224712d529d83f
+SHA1: 232b7202f2b4d2a77ceebcb0a3153b8f8086c34f
+MD5sum: a637accfc7581c51cdcc94ec9bf9d168
+Description: Eolisation de l'application calendrier.
+
+Package: eole-cdc
+Version: 0.9+1-8
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 90
+Depends: eole-web (>= 2.4.2~0), cdc-sso (>= 0.9+1-1), eole-client-annuaire
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-cdc/eole-cdc_0.9+1-8_all.deb
+Size: 10200
+SHA256: c8f9fd9b3466517dcc8beebb58fb2a7c9c56a0ab2e9ebae14b20b3d1270268bc
+SHA1: 482b53948397ac938321bc6aea80c72f37b13d40
+MD5sum: efc6185b80590e2a45a32dbdc2ed45a1
+Description: Eolisation de l'application cdc.
+
+Package: eole-cdt
+Version: 5.5.0.3+2-21
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 90
+Depends: eole-web (>= 2.5.2), cdt-sso (>= 4.9.4.4-eole4-9), eole-db, eole-client-annuaire, eole-posh-profil, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-cdt/eole-cdt_5.5.0.3+2-21_all.deb
+Size: 15466
+SHA256: a5b00fa54d0f18d20fb0fc3de23a03fef5caef06e62306408277bc0e9d611cf8
+SHA1: c0fb7e363ba6523c19b41d5b8c567464c224d6a7
+MD5sum: 8e37ef6231f9715540abe36a2676207b
+Description: Eolisation de l'application cdt.
+
+Package: eole-dispatcher
+Version: 1.0+2-59
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 105
+Depends: eole-web (>= 2.4.2~0), dispatcher-sso (>= 1.0+1-1), eole-client-annuaire, eole-envole-themes
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-dispatcher/eole-dispatcher_1.0+2-59_all.deb
+Size: 26604
+SHA256: e565f4b5cca5fcf0888ed8dcede0175eead6a35c44a7b216ca46d1581ecebc87
+SHA1: 80c314497b9f4f2180958dd212ad9639f166c462
+MD5sum: 19cd6501071eec74205c055c73e7b418
+Description: Eolisation de l'application dispatcher.
+
+Package: eole-dokuwiki
+Version: 2014.05.05+1-18
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 64
+Depends: eole-web (>= 2.5.2), eole-db, dokuwiki-sso, eole-client-annuaire, eole-envole-themes, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-dokuwiki/eole-dokuwiki_2014.05.05+1-18_all.deb
+Size: 9546
+SHA256: a080f58c7bd6e50812ec39289475b59faeed33d60255c482a6d3a63738fe63b1
+SHA1: d00e4be1aea5fefe7d0263df9fe78731a83aecf3
+MD5sum: 75f66de8ed1630a4b90bffeb88bc1a8b
+Description: Eolisation de l'application dokuwiki.
+
+Package: eole-envole-connecteur
+Version: 1.2+2-34
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 95
+Depends: eole-web (>= 2.5.2), eole-db, eole-client-annuaire, curl, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-envole-connecteur/eole-envole-connecteur_1.2+2-34_all.deb
+Size: 16942
+SHA256: e7ef2c500382616a932da939397eb353c715273415dcd381deca5d4bf534f4dc
+SHA1: 192a67906c489368752827e54c045e2723137f7b
+MD5sum: 09505b01689d4d6d64a2313e427a2a88
+Description: Templates et dictionnaires pour envole-connecteur "EOLE".
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-envole-migration
+Version: 1.0+2-30
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 47
+Depends: eole-web (>= 2.5.2), eole-client-annuaire, eole-db, eole-envole-tools
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-envole-migration/eole-envole-migration_1.0+2-30_all.deb
+Size: 5452
+SHA256: 0a01d300c1e1baa5c50fd0454d72698f651f366daabf7fb3c828331d52723bbf
+SHA1: 1283f9cacf216dc56ca7ec3273582edbfd93ced8
+MD5sum: 822885a18134ac6603473b3cf50e4409
+Description: Eolisation de l'application envole-migration.
+
+Package: eole-envole-mobile
+Version: 2.0+2-2
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 70
+Depends: eole-web (>= 2.5.2), envole-mobile-sso (>= 1.0.2+1-2), eole-client-annuaire, eole-xdesktop, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-envole-mobile/eole-envole-mobile_2.0+2-2_all.deb
+Size: 4848
+SHA256: f47330c2eacaec127983b6c6fce9d523d3143f29bf8a2e34823668ac24719a56
+SHA1: fa194cae1875d7dd6c5ba5148f93707ee5960f2a
+MD5sum: e4cc46eb12db2d634422d96d1d353670
+Description: Templates et dictionnaires pour Envole-Mobil"EOLE".
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-envole-themes
+Version: 4.0+2-48
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 30397
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-envole-themes/eole-envole-themes_4.0+2-48_all.deb
+Size: 9638888
+SHA256: 203e0bb6ef023c53ac5fe684947f5f0438ce38f75929c9c18adc29d4bf900338
+SHA1: 73ce28564ce6684eb22398a5e99e71f466861551
+MD5sum: c9d5d3f4ecebb8a2397aa4a6c080b463
+Description: Eolisation de l'application Envole-Themes
+
+Package: eole-envole-tools
+Version: 1.0+2-25
+Architecture: all
+Maintainer: Arnaud Fornerot <afornerot@cadoles.com>
+Installed-Size: 2056
+Conflicts: composer
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-envole-tools/eole-envole-tools_1.0+2-25_all.deb
+Size: 411712
+SHA256: cc4cb321dd2ddfd80c7f362b3add631d56e953556fe94124e83ddf2d77dc9720
+SHA1: 99d65daec86b9a455959786690a8e9e697fd7ad4
+MD5sum: 629abe6dc29923b1ca53b2d8fca14b8c
+Description: Eolisation de l'application envole-tools
+
+Package: eole-eportail
+Version: 3.0+2-179
+Architecture: all
+Maintainer: Arnaud Fornerot <afornerot@cadoles.com>
+Installed-Size: 209
+Depends: eole-web (>= 2.5.2), eole-db, eportail-sso, eole-client-annuaire, eole-posh-profil
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-eportail/eole-eportail_3.0+2-179_all.deb
+Size: 42358
+SHA256: 01ffe6987ef49a945ab345b693783e0605bca068f4585f99f1c5dabc5019a16e
+SHA1: 95ae4312b785b985b84201a8e6adc4ff0cd30094
+MD5sum: 0db4cadab25d3da7371ae2237b6c81e8
+Description: simplistic and modular web portal
+ posh portal alternative.
+
+Package: eole-ethercalc
+Version: 1.1.0+2-6
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 70
+Depends: eole-web (>= 2.5.2), eole-nodejspkg, eole-php-mod-cas, eole-nodepm2
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-ethercalc/eole-ethercalc_1.1.0+2-6_all.deb
+Size: 9558
+SHA256: db3843873fd8bba16bf1badf2fff8579c73dfd058ab9c94964278a16623d298a
+SHA1: 23bb66232bb7efb31102cbe9ad6cf39c47b6b699
+MD5sum: 9271225214c17b4ac52985a817b80055
+Description: Eolisation de l'application ethecalc.
+
+Package: eole-etherdraw
+Version: 1.0+2-2
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 82
+Depends: eole-web (>= 2.5.2), eole-nodejspkg, eole-etherpad
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-etherdraw/eole-etherdraw_1.0+2-2_all.deb
+Size: 8100
+SHA256: 6bd7581ea90add7ccfa6757ee74f497e12b1033a5ffdde188ee1a4bd998602b6
+SHA1: 0e9aefa7b5c7b5d69eef70fb1362a28695fc7c44
+MD5sum: 5a32db9d176a693b784863c04395c6e7
+Description: Eolisation de l'application etherdraw.
+
+Package: eole-etherhome
+Version: 1.0.1+2-4
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 87
+Depends: eole-web (>= 2.4.2~0), eole-etherpad
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-etherhome/eole-etherhome_1.0.1+2-4_all.deb
+Size: 6374
+SHA256: d894a02f4bbbf098085b96c9b6e06acd479d310ad7c35975effa341482c87461
+SHA1: d0b1130fcd0050d518178bf60374a240f46fe8ff
+MD5sum: 1ebc49debf7a662d8fdff6dc78421e36
+Description: Eolisation de l'application etherhome.
+
+Package: eole-etherpad
+Version: 1.4.1+2-6
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 119
+Depends: eole-web (>= 2.5.2), eole-nodejspkg, eole-php-mod-cas, eole-etherhome, eole-nodepm2, eole-client-annuaire
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-etherpad/eole-etherpad_1.4.1+2-6_all.deb
+Size: 16780
+SHA256: 62648c421f4a857a896a3c2be6ec111b03c43865bcde77564d12245453e92d2b
+SHA1: d2ceeeb7f06b1202742b03ee9db591964e918fb0
+MD5sum: 3f8c27cdbb8559cc3ccbc2a8515d2cdf
+Description: Eolisation de l'application ethperad.
+
+Package: eole-fengoffice
+Version: 3.2rc+2-6
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 210
+Depends: eole-web (>= 2.5.2), fengoffice-sso, eole-db, eole-client-annuaire, eole-posh-profil, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-fengoffice/eole-fengoffice_3.2rc+2-6_all.deb
+Size: 21788
+SHA256: 364f13990b82c10efdcd6f6d9bb808053c2fc54d2402a96d6a7603a0a1a751a7
+SHA1: fbd09ad77404815e85c1e6d9320afaf502bd21de
+MD5sum: 87c57d80eafdbbcc7c37f9721e6ee2e6
+Description: Eolisation de l'application fengoffice.
+
+Package: eole-fluxbb
+Version: 1.5.10+2-11
+Architecture: all
+Maintainer: Arnaud Fornerot <afornerot@cadoles.com>
+Installed-Size: 101
+Depends: eole-web (>= 2.5.2), eole-db, fluxbb-sso, eole-client-annuaire, eole-sondepiwik
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-fluxbb/eole-fluxbb_1.5.10+2-11_all.deb
+Size: 13152
+SHA256: 1988f14c1c532e7c729728e24c7410625652c8830a73de86b7b0a069f6ed6b49
+SHA1: 9dfa5209cfb8b0035b9550f28f5145a654bdc218
+MD5sum: 46e892cb3b31f66de2eef19bd35e6f96
+Description: Eolisation de l'application fluxbb.
+
+Package: eole-gepi
+Version: 1.7.4+2-9
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 320
+Depends: eole-web (>= 2.5.2), eole-db, gepi-sso, eole-client-annuaire, eole-envole-themes, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-gepi/eole-gepi_1.7.4+2-9_all.deb
+Size: 44042
+SHA256: d6424cd19c7cf76a47c69f835803a2ed09c44a8013c05c3ca6aae732585afce5
+SHA1: 1d682bfc2f79b3a655ee1989fe2f034e75644412
+MD5sum: 11b4eb2dec0b9b348878028f85809c1f
+Description: Eolisation de l'application gepi.
+
+Package: eole-grr
+Version: 3.4.2d+2-7
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 86
+Depends: eole-web (>= 2.5.2), grr-sso (>= 2.2.2+1-1), eole-db, eole-client-annuaire, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-grr/eole-grr_3.4.2d+2-7_all.deb
+Size: 14612
+SHA256: b591ac06246bac4e6a14f88be447e7bd8a04149ef96d466fd765cbe76a04c5c1
+SHA1: 5c41b72a8d89fa6446d5fef406964bfc49fe7e8f
+MD5sum: 05b21be932814f0fdd032bbe0859c852
+Description: Eolisation de l'application grr.
+
+Package: eole-iconito
+Version: 201201+2-6
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 630
+Depends: eole-web (>= 2.5.2), eole-db, eole-client-annuaire, eole-posh-profil, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-iconito/eole-iconito_201201+2-6_all.deb
+Size: 129118
+SHA256: ce9c6b4890a8ae3599dc5223b6c5301d51c6d67dc34f7e402aafe4dd13b57155
+SHA1: 52077ed576a6653d7a154916590a2e60cfc1eea9
+MD5sum: 68f4a8e40e7eb93206c95f35b6c7d968
+Description: Eolisation de l'application Iconito
+
+Package: eole-jappix
+Version: 0.9.2+1-3
+Architecture: all
+Maintainer: Equipe Eole <eole@ac-dijon.fr>
+Installed-Size: 47
+Depends: eole-web, eole-ejabberd, eole-sso-client
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-jappix/eole-jappix_0.9.2+1-3_all.deb
+Size: 4860
+SHA256: 6c97e663c85ed4c57411795d402d55bb23c568d329b52118f18b875773cf4603
+SHA1: 9e291f3ee6b71d70acbb3a32b9f1df1f03f1045e
+MD5sum: 4b514d680fe0331b593ae5816dc3b48c
+Description: Templates et dictionnaires pour le webchat Jappix
+ Jappix est un client XMPP libre, basé sur une architecture totalement
+ décentralisée pour son service officiel.
+
+Package: eole-limesurvey
+Version: 3.18.0+2-9
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 108
+Depends: eole-web (>= 2.5.2), limesurvey-sso (>= 2.05+1-1), eole-db, eole-posh-profil, eole-client-annuaire, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-limesurvey/eole-limesurvey_3.18.0+2-9_all.deb
+Size: 16728
+SHA256: 72b1c95cf84fb1d7b528a60878fcf5124084fdb5643715c8177a1a1889884ad8
+SHA1: 98210f858324dd18ece81ecc6a3bcf58d664eff7
+MD5sum: c243cbd5ad7d81687e23cb62ebaf06d9
+Description: Eolisation de l'application limesurvey.
+
+Package: eole-mahara
+Version: 1.8+2-7
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 222
+Depends: eole-web (>= 2.5.2), eole-client-annuaire, eole-db, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-mahara/eole-mahara_1.8+2-7_all.deb
+Size: 28262
+SHA256: e2f553f9f07b1815a4047dd4dad5c5315d3298939a4645d284b9a3fea5172fee
+SHA1: 7f7f75fe1da8cc14f4b072475517bfb476018da9
+MD5sum: f569bd82f409963bfa2268cdfca5efb4
+Description: Eolisation de l'application mahara.
+
+Package: eole-mindmaps
+Version: 1.0+2-3
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 46
+Depends: eole-web (>= 2.4.2~0)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-mindmaps/eole-mindmaps_1.0+2-3_all.deb
+Size: 3696
+SHA256: ee96d4436d7d660ef266aa0e2c649763fd6baba7556fc525e37ed9f08b093529
+SHA1: 4a74da773592eef060fad5d195970e9f48d89ee9
+MD5sum: 0b2d0c495f825534f359d5e523c425bf
+Description: Configuration d'eole-mindmaps
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-moodle-update
+Version: 3.1.2+2-19
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 87
+Depends: eole-web (>= 2.5.1-2), python-eoledb, eole-envole-themes, eole-posh-profil, eole-client-annuaire
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-moodle-update/eole-moodle-update_3.1.2+2-19_all.deb
+Size: 13564
+SHA256: 2ab43232c5568fd3cba2252cd1a8272d1242fa59c791d98676f576603ebf03dc
+SHA1: 13bdc97fecfbf4f753bda2ae10a7868ab23a7bf6
+MD5sum: c5cd95aba7bbdc12d31300077318e8ea
+Description: Eolisation de l'application moodle-update.
+
+Package: eole-nodejspkg
+Version: 1.1+2-1
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 44
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-nodejspkg/eole-nodejspkg_1.1+2-1_all.deb
+Size: 3122
+SHA256: 4857650694a3cf3d9d5df150f4491ecca62f20ba1a781cee95206addfff4bc2d
+SHA1: e198f5743ef6998d9fe49b1be475ba17cfa8db89
+MD5sum: ad9bf51b9d86c2419f95f527483bc05c
+Description: 
+ Package de configuration pour eole-nodejs
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-nodepm2
+Version: 1.1.1+2-1
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 44
+Depends: eole-web (>= 2.5.2), eole-nodejspkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-nodepm2/eole-nodepm2_1.1.1+2-1_all.deb
+Size: 3060
+SHA256: 606e97b81033deb4ac7c3ee0b8f384be83ee5d481a92e49240f8f72e49f961e2
+SHA1: fa1ca1207a3787bb6ddec6589854b46210acee0c
+MD5sum: d31525e009990e287c4688ddde6fa789
+Description: Eolisation de l'application PM2.
+
+Package: eole-opensondage
+Version: 1.0+2-22
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 70
+Depends: eole-web (>= 2.5.2), opensondage-sso (>= 1.0+1-1), eole-client-annuaire, eole-db, eole-envole-themes, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-opensondage/eole-opensondage_1.0+2-22_all.deb
+Size: 9086
+SHA256: e27b9353f36971ed53c5e3a3b71437e17cca9acb5f78e4fb050137c024ce81ea
+SHA1: 6ecc3564008c0e3e209703ee4601f7f9f130c219
+MD5sum: ae05c24d26d668d2e975c5d997b096eb
+Description: Eolisation de l'application opensondage.
+
+Package: eole-owncloud
+Version: 9.0.2+2-16
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 137
+Depends: eole-web (>= 2.5.2), eole-db, owncloud-sso, eole-client-annuaire, eole-sondepiwik, eole-posh-profil
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-owncloud/eole-owncloud_9.0.2+2-16_all.deb
+Size: 22866
+SHA256: 1ceebc0981f105debb7aeb3b5e45676e21b0e7ed596b8bcd2864541d82c7afa9
+SHA1: 0ddf8fa2c11412af5ef385c1d82a88bb62fef0a0
+MD5sum: 4686c8137dbae69d6f5bc55b07981931
+Description: Eolisation de l'application owncloud.
+
+Package: eole-php-mod-cas
+Version: 2.3+2-4
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 44
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-php-mod-cas/eole-php-mod-cas_2.3+2-4_all.deb
+Size: 3454
+SHA256: 2ee0085f923d2404f453990d7c1036023f1df56446748d3f9f81c538a5635411
+SHA1: 522ff8095e57afbdff10d474ab2d3dc08aabae46
+MD5sum: c44aa7170b8208cfd09000322c12a699
+Description: 
+ Package de configuration de mod-auth-cas
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-phpldapadmin
+Version: 1.2.5+2-2
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 45
+Depends: eole-web (>= 2.5.2), eole-client-annuaire, eole-db, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-phpldapadmin/eole-phpldapadmin_1.2.5+2-2_all.deb
+Size: 3516
+SHA256: 1cfdb873f6311157cdd1a5a66b794b5cfdc24fca90ce824d6e8970f3e90f9c70
+SHA1: e8d6c4364396853750c683b15b1176ff72c5c14d
+MD5sum: 80e80195964975e7789c8a047b1f6dbb
+Description: Eolisation de l'application phpldapadmin.
+
+Package: eole-piwigo
+Version: 12.2.0+2-1
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 157
+Depends: eole-web (>= 2.5.2), piwigo-sso (>= 2.6.3+1-6), eole-client-annuaire, eole-db, eole-posh-profil, eole-envole-themes
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-piwigo/eole-piwigo_12.2.0+2-1_all.deb
+Size: 27754
+SHA256: d653b33fd34cfb6f3f51a70dbcdb6a54d2321f3aa3213f172a066f877a2a6644
+SHA1: 78b15208defce1293fe2c093c48aa4a64d2856ec
+MD5sum: 992b1486e0b7d71417681b1eb005b673
+Description: Templates et dictionnaires pour Piwigo "EOLE".
+ Piwigo est un logiciel de galerie photo pour le web.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-piwik
+Version: 3.4.0+2-28
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 192
+Depends: eole-web (>= 2.5.2), piwik-sso (>= 1.12-eole4-8), eole-client-annuaire, eole-db, eole-posh-profil
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-piwik/eole-piwik_3.4.0+2-28_all.deb
+Size: 31986
+SHA256: 30adba163aa911073e083736096669c50d1a1fa33bb881eef8561566c16f8d5c
+SHA1: e45e4509d6fbea9ba000629d16c3b22a4e9a3685
+MD5sum: d478ebe557b0dea7aa034640a8360975
+Description: Eolisation de l'application piwik.
+
+Package: eole-posh
+Version: 4.0+2-54
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 257
+Depends: eole-web (>= 2.5.2), posh-sso (>= 4.0-16), eole-client-annuaire, eole-db, eole-posh-profil, eole-calendrier, eole-xdesktop, eole-envole-themes, eole-envole-mobile, eole-sap (>= 1.1+1-4), eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-posh/eole-posh_4.0+2-54_all.deb
+Size: 42556
+SHA256: 6add3a54e8561da00c87a26d0108a880ffb64f2b39bbbba127cd3bd4d0032559
+SHA1: 1b05d77f7a8ea38a2df1945174293a32fea0c2b5
+MD5sum: 24327382e5cc22c115283edd82de59cd
+Description: Eolisation de l'application Posh.
+
+Package: eole-posh-profil
+Source: posh-profil
+Version: 4.0+2-189
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 181
+Depends: eole-web (>= 2.5.2), eole-client-annuaire, eole-db, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/p/posh-profil/eole-posh-profil_4.0+2-189_all.deb
+Size: 35810
+SHA256: ed9bf21ff6ff16ddf3d9238b9e2a7359d29f189fb42dd99f0ce6a2424ca9fcec
+SHA1: dbb6f113256524b54a216dbd584568b26f4d5e11
+MD5sum: 4562cd10798e8e4f4599ae673e6e85bc
+Description: Eolisation de l'application Posh-Profil
+
+Package: eole-profilcache
+Version: 1.0+2-13
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 81
+Depends: eole-client-annuaire, eole-db, python-ldap
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-profilcache/eole-profilcache_1.0+2-13_all.deb
+Size: 9284
+SHA256: 0035ee786215e602ae0dc8873bae0770e152361062f93b68888a3ab57246bd1f
+SHA1: 877394face4142944b64cd71896d946d5ebcdf3b
+MD5sum: b50e248593ff5fd69cb90fef41c9c51d
+Description: Eolisation de l'application balado.
+
+Package: eole-pydio
+Version: 6.4.2+2-13
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 109
+Depends: eole-web (>= 2.5.2), eole-db, eole-proftpd, eole-client-annuaire
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-pydio/eole-pydio_6.4.2+2-13_all.deb
+Size: 19194
+SHA256: db320e60b835cd11cf1c3883d620ec4f480bdcc0192fcf9902265071a96d7846
+SHA1: 51640c98307d50bfdb92d11f86b296fa83d98f27
+MD5sum: cfd560d8ac17f1fa1af045ca22389498
+Description: Eolisation de l'application Pydio
+
+Package: eole-roundcube
+Version: 2.05+2-30
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 109
+Depends: eole-web (>= 2.5.2), roundcube-sso (>= 2.05+1-4), eole-db, eole-client-annuaire, eole-courier-client, eole-exim-auth
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-roundcube/eole-roundcube_2.05+2-30_all.deb
+Size: 19414
+SHA256: 108b978723295ca6203c9394e70e9dfcf9b26aa34296bc07a7350248ebd73b99
+SHA1: b8e751d16b5cf65ddf3ade9d3da56b45fe40ffba
+MD5sum: 01b7c5e44a5cf8bcaf9321bfc3864e62
+Description: Eolisation de l'application roundcube.
+
+Package: eole-sacoche
+Version: 2023-03-15+2-1
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 557
+Depends: eole-web (>= 2.5.2), sacoche-sso, eole-client-annuaire, eole-db, eole-posh-profil, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-sacoche/eole-sacoche_2023-03-15+2-1_all.deb
+Size: 87228
+SHA256: 6a8de6f9bb24952b680630dc7f58b5c74fdcf22b6d478a2cd5892ce2251323e6
+SHA1: 01f04c5fcd40e67a9abaabe8b1b547e8717fe056
+MD5sum: b6cd233ea9a03140f7ca2c14ec589f23
+Description: Eolisation de l'application sacoche.
+
+Package: eole-sap
+Source: sap
+Version: 1.1+2-12
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 49
+Depends: eole-web (>= 2.5.2), eole-client-annuaire, eole-db, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/s/sap/eole-sap_1.1+2-12_all.deb
+Size: 5584
+SHA256: 82523b8c6fe2af1573c340eb0213f7482896a49e264301b1b9a18a87ed2d4a9b
+SHA1: 1beeb476166c455e96215526b89a1ecde787c5b9
+MD5sum: ca34fb89edf01fd1f99b5cc46badf90a
+Description: Eolisation de l'application SAP
+
+Package: eole-scrumblr
+Version: 0.2.0+2-11
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 54
+Depends: eole-web, eole-nodejspkg, eole-php-mod-cas, eole-etherhome, eole-nodepm2
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-scrumblr/eole-scrumblr_0.2.0+2-11_all.deb
+Size: 4436
+SHA256: 9be1b52fe0f54acd664a87b8423d095f0547b95acd6db96276e71c50392abce7
+SHA1: f305cb81c7c07be57bf91f245dd1497352c2a2fb
+MD5sum: 38bc3c81588746558a37ebb28121c84f
+Description: Templates et dictionnaires pour Scrumblr "EOLE".
+ Scrumblr est un TBI (Tableau Blanc Interactif) collaboratif en ligne
+
+Package: eole-sondepiwik
+Version: 1.0+2-37
+Architecture: all
+Maintainer: Arnaud Fornerot <afornerot@cadoles.com>
+Installed-Size: 61
+Depends: eole-web (>= 2.4.2~0), sondepiwik-sso, eole-client-annuaire
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-sondepiwik/eole-sondepiwik_1.0+2-37_all.deb
+Size: 7486
+SHA256: 63ed64e6fa68117892472a52115bf3ec42cc58e88b34f890c5eaea9052b4c504
+SHA1: 9016377069db6c70da6ead18b98de90c25b2535d
+MD5sum: 0830519546826265b41a55efd1b97f60
+Description: Eolisation de l'application sondepiwik.
+
+Package: eole-spipeva
+Version: 3.0.16+1-13
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 1129
+Depends: eole-web (>= 2.4.2~0), eole-client-annuaire
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-spipeva/eole-spipeva_3.0.16+1-13_all.deb
+Size: 267882
+SHA256: d3e9aa23a325fee3407225eff46086fb89e13678e0187d253325694b624fdc43
+SHA1: 7f7a2a28aac2f0ead1699b0edc67e3232ad4ca63
+MD5sum: cc967c3f271fffafca769b4325fab5db
+Description: Templates et dictionnaires pour SPIP-Eva "EOLE".
+ SPIP est un outil de gestion de contenu (CMS), il est installé avec le squelette Eva.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le site du projet EOLE.
+
+Package: eole-taskfreak
+Version: 0.6.4.2-29
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 86
+Depends: eole-web (>= 2.5.2), taskfreak-sso (>= 0.6.4-eole2-2), eole-client-annuaire, eole-db, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-taskfreak/eole-taskfreak_0.6.4.2-29_all.deb
+Size: 13464
+SHA256: b5179675049be6dd3acc2a597b35cf8dcc2a8e369a6680d7d75b880663b6ead4
+SHA1: 9fba249e0a2b8af0ece46eb003e1f4069135a043
+MD5sum: a9a12256a6684ee8a81ab7640051e34b
+Description: Eolisation de l'application taskfreak.
+
+Package: eole-webcalendar
+Version: 1.2.4-eole3-18
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 187
+Depends: eole-web (>= 2.4.2~0), webcalendar-sso (>= 1.2.4-eole3-3), eole-client-annuaire, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-webcalendar/eole-webcalendar_1.2.4-eole3-18_all.deb
+Size: 32738
+SHA256: 26cbe3e18fd0448b4c2d251a9a343e81b5607a8e0ab5c298b611447fd8d5417c
+SHA1: 217fb69b8dce1643a70cb046ac530c87c8d68440
+MD5sum: 121d59070328665290b22ed0b930ff17
+Description: Templates et dictionnaires pour WebCalendar "EOLE".
+ WebCalendar est une application d'agendas partagés.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: eole-wordpress
+Version: 5.1.1+2-8
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 230
+Depends: eole-web (>= 2.5.2), wordpress-sso (>= 4.0.1-9), eole-db, eole-posh-profil, eole-envole-themes, eole-client-annuaire, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-wordpress/eole-wordpress_5.1.1+2-8_all.deb
+Size: 45312
+SHA256: d5b2fcdf2f4c91f493d37b668ed82d581a915b93068d09da60894081d8d72013
+SHA1: 45fee15430ba2c4a08fb198edce5a354af2da1ea
+MD5sum: 0f7450bda086806a7712ee6d4238f180
+Description: Eolisation de l'application wordpress.
+
+Package: eole-xdesktop
+Version: 1.3+2-16
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 65
+Depends: eole-web (>= 2.5.2), xdesktop-sso (>= 1.2+5-1), eole-db, eole-posh-profil, eole-client-annuaire, eole-sondepiwik
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-xdesktop/eole-xdesktop_1.3+2-16_all.deb
+Size: 9704
+SHA256: 0ed697958211a5c4a239831136fd57e25f66b31ce24bd17c94c357c34264cb38
+SHA1: 4f76ee26894678e13be1f6f03a502cae07bfbbfa
+MD5sum: 4a78eb8f40ad5614e4d9a6f0f7c917d9
+Description: Eolisation de l'application xdesktop.
+
+Package: eole-zephir-racvision
+Version: 1.0+1-3
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 49
+Depends: eole-web (>= 2.4.2~0), eole-client-annuaire
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-zephir-racvision/eole-zephir-racvision_1.0+1-3_all.deb
+Size: 3574
+SHA256: 23301f57bb54c20f0faec7bdb4487cb3eed8eded57dd6cff9f267ccc080d6c32
+SHA1: e5855dfaea8a0fa84ea169f0a21419e9304a5581
+MD5sum: fb1852917e917bc3eff307fb3f159e8b
+Description: Eolisation de l'application zephir-racvision.
+
+Package: eportail-apps
+Source: eole-eportail
+Version: 3.0+2-179
+Architecture: all
+Maintainer: Arnaud Fornerot <afornerot@cadoles.com>
+Installed-Size: 28639
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, posh-profil-apps
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-eportail/eportail-apps_3.0+2-179_all.deb
+Size: 11817494
+SHA256: 4a109b2b0f45561f9adf08b0dc0ce7e93ed84a37d3bd2831bc30db8775b6e49f
+SHA1: bfb5c87b7a449a302f88b0a42475962da56b797e
+MD5sum: b9cb9b822d35b5cc2a3a37c784239b03
+Description: simplistic and modular web portal
+ posh portal alternative.
+
+Package: eportail-sso
+Source: eole-eportail
+Version: 3.0+2-179
+Architecture: all
+Maintainer: Arnaud Fornerot <afornerot@cadoles.com>
+Installed-Size: 56
+Depends: eole-sso
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-eportail/eportail-sso_3.0+2-179_all.deb
+Size: 23618
+SHA256: 50523f3a1cd15dc67ef3368600f5b46fadb5dd8a03603f43ad7dc8fed39ccc0e
+SHA1: 58e33539f4852bc2d557f97ee60421c49b6d4813
+MD5sum: 6970e16a5369087ce426b7871ca8f5da
+Description: simplistic and modular web portal
+ posh portal alternative.
+
+Package: ethercalc-apps
+Source: eole-ethercalc
+Version: 1.1.0+2-6
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 64362
+Depends: eole-web-pkg (>= 2.5.2), nodejs, libapache2-mod-auth-cas, nodepm2-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-ethercalc/ethercalc-apps_1.1.0+2-6_all.deb
+Size: 6593434
+SHA256: 56868f759a12310eadbed844080d5932335dada8f7e505b436d4f4c7d19d551d
+SHA1: 4f4c313ffe404d3bbb417cf9870ad4900965531c
+MD5sum: a9e2302061991b17f4f1c0c0c55e10fa
+Description: Sources pour ethercalc "EOLE".
+
+Package: etherdraw-apps
+Source: eole-etherdraw
+Version: 1.0+2-2
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 41522
+Depends: eole-web-pkg (>= 2.5.2), curl, libpq-dev, nodejs (>= 0.10.38), libcairo2-dev, libjpeg8-dev, libpango1.0-dev, libgif-dev, etherpad-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-etherdraw/etherdraw-apps_1.0+2-2_all.deb
+Size: 7037008
+SHA256: ba0dd235662a43ab94c4c5f187a9a5b0a9e38484ffa474c86b10166c1b83969c
+SHA1: bef2f78152ca2b4a7b948b9800deeb6421b486a8
+MD5sum: 93ba20373cd3c3be845b0f7762dd3d84
+Description: Sources pour etherdraw "EOLE".
+
+Package: etherhome-apps
+Source: eole-etherhome
+Version: 1.0.1+2-4
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 1583
+Depends: eole-web-pkg (>= 2.4.2~0), etherpad-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-etherhome/etherhome-apps_1.0.1+2-4_all.deb
+Size: 357260
+SHA256: a2497af03dd35d2efa6ba9a6c80d53be73f519e513ae9810e45a0075188ac0f8
+SHA1: 572567986134811858648acebbf709ccbfd2af05
+MD5sum: b23e46a635e4d7cc9b6c621dcf7960b4
+Description: Sources pour etherhome "EOLE".
+
+Package: etherpad-apps
+Source: eole-etherpad
+Version: 1.4.1+2-6
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 101417
+Depends: eole-web-pkg (>= 2.5.2), curl, libpq-dev, nodejs (>= 0.10.38), make, g++, libapache2-mod-auth-cas, etherhome-apps, nodepm2-apps, eole-client-annuaire-pkg
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-etherpad/etherpad-apps_1.4.1+2-6_all.deb
+Size: 17019494
+SHA256: 3af44534ef9a089cfdc5e4c52e065e12683b1667367b56a97e12f563fe5b7f8e
+SHA1: 8cc81f4cf10913e1ce92167d7de2bd415082e4e4
+MD5sum: aab0a45c93f42c414844079d99708d58
+Description: Sources pour etherpad "EOLE".
+
+Package: fengoffice-apps
+Source: eole-fengoffice
+Version: 3.2rc+2-6
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 48499
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, posh-profil-apps, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-fengoffice/fengoffice-apps_3.2rc+2-6_all.deb
+Size: 7727452
+SHA256: 63a929e20522dcba717c5e0101d534eed84d4cc7592bd3d6b9ec5c8e02ab05e0
+SHA1: a69e5a9b09edda0faff962c3b302978e16c0145d
+MD5sum: bff72b2351e8d0ef0b39d2f951c4a4eb
+Description: Sources pour fengoffice "EOLE".
+
+Package: fengoffice-sso
+Source: eole-fengoffice
+Version: 3.2rc+2-6
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 37
+Depends: eole-sso
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-fengoffice/fengoffice-sso_3.2rc+2-6_all.deb
+Size: 4036
+SHA256: 356c7b41ec3275ebba60c0b9f2e7aa4928c91e61a8104514ed14e1b38a0321cd
+SHA1: 31cadade51f361358516156fba9d164333649876
+MD5sum: 688e46f2664d11152515fc58079459a9
+Description: Filtre SSO pour fengoffice "EOLE".
+
+Package: fluxbb-apps
+Source: eole-fluxbb
+Version: 1.5.10+2-11
+Architecture: all
+Maintainer: Arnaud Fornerot <afornerot@cadoles.com>
+Installed-Size: 2175
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, sondepiwik-apps
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-fluxbb/fluxbb-apps_1.5.10+2-11_all.deb
+Size: 557866
+SHA256: 9fde3bb09bc2111747ce568c9df4b60730c68795ff48c4417fdc428dd8fb5579
+SHA1: 3db9f2bf373ec5314a7e25fa333e796c82ebbe52
+MD5sum: a6e6a8d858814e6ece4b40f875a7fa2e
+Description: Sources pour fluxbb "EOLE".
+
+Package: fluxbb-sso
+Source: eole-fluxbb
+Version: 1.5.10+2-11
+Architecture: all
+Maintainer: Arnaud Fornerot <afornerot@cadoles.com>
+Installed-Size: 30
+Depends: eole-sso
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-fluxbb/fluxbb-sso_1.5.10+2-11_all.deb
+Size: 5332
+SHA256: 38ea682045d20969681f2e4f10f90d9fd90a71b249dcd7c0ca8f514691f336a3
+SHA1: 95daadc82cfb0ec2aadaada6f07c4b3ef0de20e6
+MD5sum: 0b68ca497fa20380c609d1220b09b137
+Description: Filtre SSO pour fluxbb "EOLE".
+
+Package: gepi-apps
+Source: eole-gepi
+Version: 1.7.4+2-9
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 130951
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-gepi/gepi-apps_1.7.4+2-9_all.deb
+Size: 20647168
+SHA256: a703471a28f72c8d37cd1c9e84b613fe45ed336fd4231f88013e2d58a9853f84
+SHA1: a0dc6cbeb7427774beafc0059f8f967a02ac630c
+MD5sum: 10175dd6ccd0b9bee6eaf93c9eaeadd2
+Description: Sources pour gepi "EOLE".
+
+Package: gepi-sso
+Source: eole-gepi
+Version: 1.7.4+2-9
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 31
+Depends: eole-sso
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-gepi/gepi-sso_1.7.4+2-9_all.deb
+Size: 7140
+SHA256: 7a87150d8e80d88db036dd9873b6ff6424c11cd1c9a6752c094aa453f42fbdc7
+SHA1: 1e763076acf0ffe7f91290144ce7fbc66045281b
+MD5sum: bb6d2f4f594eed73549a63236373fc91
+Description: Filtre SSO pour gepi "EOLE".
+
+Package: grr-apps
+Source: eole-grr
+Version: 3.4.2d+2-7
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 14440
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-grr/grr-apps_3.4.2d+2-7_all.deb
+Size: 2787026
+SHA256: 2d7df0df13f6660501fc1f4c4efce40cb9a4167a3ae32d3641658700f1dc00f4
+SHA1: f94fdfe29489e70b4786e65a4790690587078e29
+MD5sum: 8a40cd1a7821632c702016b123da6b46
+Description: Sources pour grr "EOLE".
+
+Package: grr-sso
+Source: eole-grr
+Version: 3.4.2d+2-7
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 46
+Depends: eole-sso
+Breaks: eole-grr (<< 2.2.2+1-1)
+Replaces: eole-grr (<< 2.2.2+1-1)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-grr/grr-sso_3.4.2d+2-7_all.deb
+Size: 8264
+SHA256: f11b57468257ca93a326e7a3a08f893835798c34130b8def16881b442a8e93f9
+SHA1: da218ade957a555b394220faad53ae57c4deb80c
+MD5sum: 01a9459ff5d0e1d87e7229f07c04c894
+Description: Filtre SSO pour grr "EOLE".
+
+Package: iconito-apps
+Source: eole-iconito
+Version: 201201+2-6
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 65999
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, posh-profil-apps, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-iconito/iconito-apps_201201+2-6_all.deb
+Size: 23695846
+SHA256: 68e60d792609b1e71daf393b2e7f3c13738f092a854cf4a55f2420c920fe2c0d
+SHA1: e4dfe10d3f67c49e385babbb368c8502020174c7
+MD5sum: 379ae9d35868c969de9af7cd5c8c1c50
+Description: Sources pour Iconito "EOLE".
+
+Package: jappix-apps
+Source: eole-jappix
+Version: 0.9.2+1-3
+Architecture: all
+Maintainer: Equipe Eole <eole@ac-dijon.fr>
+Installed-Size: 3709
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-jappix/jappix-apps_0.9.2+1-3_all.deb
+Size: 1217724
+SHA256: a402a1676cd2959284dfe626314140b89f7505dce1771dfc79dcd95deeee7562
+SHA1: 408d42105d0e6b85a0aa7524c3ff29b87baea311
+MD5sum: 8b9abdc16184b2cb841186df527063d1
+Description: Sources de l'application Jappix
+ Jappix est un client XMPP libre, basé sur une architecture totalement
+ décentralisée pour son service officiel.
+
+Package: libxapian-ruby1.8
+Source: xapian-bindings
+Version: 1.2.16-3
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 9
+Depends: ruby-xapian
+Homepage: http://xapian.org/
+Priority: extra
+Section: oldlibs
+Filename: pool/main/x/xapian-bindings/libxapian-ruby1.8_1.2.16-3_all.deb
+Size: 1056
+SHA256: ff4d7efb3f8427b30b83eecb95993629b90d976bd247a214573331c666094730
+SHA1: eea05d1cc5cb8f9fc39052afffbf4480f93c57da
+MD5sum: ac902979f454edfad39ef895b3e00ff4
+Description: Transitional package for ruby-xapian
+ This is a transitional package to ease upgrades to the ruby-xapian package.
+ It can be safely removed.
+Original-Maintainer: Olly Betts <olly@survex.com>
+Original-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/xapian-bindings.git
+Original-Vcs-Git: git://anonscm.debian.org/collab-maint/xapian-bindings.git
+Ubuntu-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: libxapian-ruby1.9.1
+Source: xapian-bindings
+Version: 1.2.16-3
+Architecture: all
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 21
+Depends: ruby-xapian
+Homepage: http://xapian.org/
+Priority: extra
+Section: oldlibs
+Filename: pool/main/x/xapian-bindings/libxapian-ruby1.9.1_1.2.16-3_all.deb
+Size: 1138
+SHA256: b17c1d65958f2705a96de7922e3fa122bec957e5e6dd106a15351d59ec104114
+SHA1: 8b2fb4f18e09ccc0a1203b09937e3c198406a1c9
+MD5sum: 7401c8ff477985049bb01eacaff6cdae
+Description: Transitional package for ruby-xapian
+ This is a transitional package to ease upgrades to the ruby-xapian package.
+ It can be safely removed.
+Original-Maintainer: Olly Betts <olly@survex.com>
+Original-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/xapian-bindings.git
+Original-Vcs-Git: git://anonscm.debian.org/collab-maint/xapian-bindings.git
+Ubuntu-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: limesurvey-apps
+Source: eole-limesurvey
+Version: 3.18.0+2-9
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 210314
+Depends: eole-web-pkg (>= 2.5.2), posh-profil-apps, eole-client-annuaire-pkg, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-limesurvey/limesurvey-apps_3.18.0+2-9_all.deb
+Size: 48809110
+SHA256: ff8b99c1727f7a409ad4a89df20ab05a7e563efa5f0c049eb01e4e9be0d3965a
+SHA1: d229282dc64bdcaa9bdfd8f842f4de9d51978639
+MD5sum: 6014b43a79a8632b9ee4ced8993b2bd7
+Description: Sources pour limesurvey "EOLE".
+
+Package: limesurvey-sso
+Source: eole-limesurvey
+Version: 3.18.0+2-9
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 38
+Depends: eole-sso
+Breaks: eole-limesurvey (<< 2.05+1-1)
+Replaces: eole-limesurvey (<< 2.05+1-1)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-limesurvey/limesurvey-sso_3.18.0+2-9_all.deb
+Size: 6292
+SHA256: 4b66fb949a3da8365f90886f866ee12a2f0dfc24764302a98669e235f3f2b1a7
+SHA1: bb9f6c45e2ee89915f05a19108a59a0409f60e36
+MD5sum: 1a497110a9bf4510004f6f27345f6d55
+Description: Filtre SSO pour limesurvey "EOLE".
+
+Package: mahara-apps
+Source: eole-mahara
+Version: 1.8+2-7
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 32523
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-mahara/mahara-apps_1.8+2-7_all.deb
+Size: 5829510
+SHA256: 8cc6184bd17755c01d76ca9a1eb692126b1bfb550dd7fb3c3953ebb2d093a5e5
+SHA1: 98341480c568f9e7656e916a92b56d41b5b0929f
+MD5sum: d1c3f9309a40f3505d206738ee1dd999
+Description: Sources pour mahara "EOLE".
+
+Package: mindmaps-apps
+Source: eole-mindmaps
+Version: 1.0+2-3
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 1749
+Depends: eole-web-pkg (>= 2.4.2~0)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-mindmaps/mindmaps-apps_1.0+2-3_all.deb
+Size: 704596
+SHA256: 083ae5016fd7274f798b77ad50aae910d37c8aea62abd8d97ae20bd087938dcf
+SHA1: 8e7a28b8f84912ec0a84bb16ae3023baec7c48aa
+MD5sum: 2cb9c5ca0df80fbb0fd35bf56ce5a5b9
+Description: Sources de mindmaps, après compile jake
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: moodle-update-apps
+Source: eole-moodle-update
+Version: 3.1.2+2-19
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 173208
+Depends: eole-web-pkg (>= 2.5.1-2), posh-profil-apps, php5-xmlrpc, php5-intl, eole-client-annuaire-pkg, unoconv
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-moodle-update/moodle-update-apps_3.1.2+2-19_all.deb
+Size: 27547818
+SHA256: 5a1ae2a6f395d439488d66d280f5aea5bd6ac1bcfafb222f55aaaf0988692782
+SHA1: 87c3e4475a2a7857b52e50a2281eee989cfaaec3
+MD5sum: a89454ff5d54424f48c604249d59356f
+Description: Sources pour moodle-update "EOLE".
+
+Package: nodepm2-apps
+Source: eole-nodepm2
+Version: 1.1.1+2-1
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 24866
+Depends: eole-web-pkg (>= 2.5.2), nodejs (>= 0.10.38)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-nodepm2/nodepm2-apps_1.1.1+2-1_all.deb
+Size: 2546994
+SHA256: 0c160635a867e019945836d63679bee2fb85ef3d90d9de6a0b7c350682670de4
+SHA1: 2d3b7cbbfff9cfdf58b248435ff26fa663a7c4ae
+MD5sum: 8c196a849d74e2100568ac47fab02b21
+Description: Sources pour PM2.
+
+Package: opensondage-apps
+Source: eole-opensondage
+Version: 1.0+2-22
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 6290
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-opensondage/opensondage-apps_1.0+2-22_all.deb
+Size: 1247930
+SHA256: d1f7bb633114d7b27098215733f46dc1669e37266a4c692df26707c349e0d51a
+SHA1: 0cd9f1c70eb81cedab814c007a9dbaca47c8ba51
+MD5sum: 36d23c163b655530406b63aab209d7c5
+Description: Sources pour opensondage "EOLE".
+
+Package: opensondage-sso
+Source: eole-opensondage
+Version: 1.0+2-22
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 37
+Depends: eole-sso
+Breaks: eole-opensondage (<< 1.0+1-1)
+Replaces: eole-opensondage (<< 1.0+1-1)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-opensondage/opensondage-sso_1.0+2-22_all.deb
+Size: 5146
+SHA256: 0a420c11b4ac58de7b40114576138ece2a0477ab09e8f91fe6a4690f773c959b
+SHA1: eb4bae114fb3711b65fe5d56aeb384ea0d6be5ef
+MD5sum: a5cfac3094454aef069baedb52535f01
+Description: Filtre SSO pour opensondage "EOLE".
+
+Package: owncloud-apps
+Source: eole-owncloud
+Version: 9.0.2+2-16
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 605939
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, sondepiwik-apps, posh-profil-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-owncloud/owncloud-apps_9.0.2+2-16_all.deb
+Size: 154450496
+SHA256: 4baa8d0667d607905aa8074a7a9ec241d6fdfef5d729cea8fd7d2789494bfab5
+SHA1: 43b3de8f614518395f29f0f15a485adc9ef7f755
+MD5sum: 0cda7cd3cf69e796916b4980705f7748
+Description: Sources pour owncloud "EOLE".
+
+Package: owncloud-sso
+Source: eole-owncloud
+Version: 9.0.2+2-16
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 31
+Depends: eole-sso
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-owncloud/owncloud-sso_9.0.2+2-16_all.deb
+Size: 6612
+SHA256: 0b6940b475299c044a6cf5bd21c299c3a743d2450d777a08f9645b89a244bac4
+SHA1: c7e8b06186a5a292d7382b1a0f77472151f2c069
+MD5sum: e5a4061823688b7863328baca565ded1
+Description: Filtre SSO pour owncloud "EOLE".
+
+Package: php5-xapian
+Source: xapian-bindings
+Version: 1.2.16-3
+Architecture: amd64
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 825
+Depends: phpapi-20121212, php5-common, libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1), libxapian22 (>= 1.2.16)
+Suggests: xapian-doc
+Homepage: http://xapian.org/
+Priority: optional
+Section: php
+Filename: pool/main/x/xapian-bindings/php5-xapian_1.2.16-3_amd64.deb
+Size: 204212
+SHA256: 5902ac161b89d65c7cf8465e99f0f998d6089abfbb826dbb45b7a5062ba0c80b
+SHA1: 79b874917bed03007683f5ed60efb6c6bcda2c31
+MD5sum: f18a655caddf57bcee16f8158dc2ecca
+Description: Xapian search engine interface for PHP5
+ This package provides Xapian PHP bindings built for PHP5.
+ .
+ The Xapian search engine library is a highly adaptable toolkit which allows
+ developers to easily add advanced indexing and search facilities to their own
+ applications.  It implements the probabilistic model of information retrieval,
+ and provides facilities for performing ranked free-text searches, relevance
+ feedback, phrase searching, boolean searching, stemming, and simultaneous
+ update and searching.  It is highly scalable, and is capable of working with
+ collections containing hundreds of millions of documents.
+ .
+ The Xapian PHP bindings provide an interface to the Xapian library from PHP,
+ allowing both indexing and retrieval operations.
+Original-Maintainer: Olly Betts <olly@survex.com>
+Original-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/xapian-bindings.git
+Original-Vcs-Git: git://anonscm.debian.org/collab-maint/xapian-bindings.git
+Ubuntu-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: phpldapadmin-apps
+Source: eole-phpldapadmin
+Version: 1.2.5+2-2
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 3138
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-phpldapadmin/phpldapadmin-apps_1.2.5+2-2_all.deb
+Size: 833580
+SHA256: 04750ca98509f8d06c9d0f9787d29f7b3c135bda3c840767e9503c98807f51d6
+SHA1: 93f778a47cc9b87eda5ebed4f9ea7e1fe8309d01
+MD5sum: e6d89899bebe9185250ba2b6fda5fa88
+Description: Sources pour phpldapadmin "EOLE".
+
+Package: piwigo-apps
+Source: eole-piwigo
+Version: 12.2.0+2-1
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 53398
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, posh-profil-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-piwigo/piwigo-apps_12.2.0+2-1_all.deb
+Size: 12698610
+SHA256: 097c23a22454c896de647ee7dffc66d2f5297534be78a67a4ec96aaba38dfaf9
+SHA1: ed1ffd8dcd4ed470362a138cbbdc2ccb48521d10
+MD5sum: 6eef96a1e12af015ccb586a128b37b67
+Description: Sources pour Piwigo "EOLE".
+ Piwigo est un logiciel de galerie photo pour le web.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: piwigo-sso
+Source: eole-piwigo
+Version: 12.2.0+2-1
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 44
+Depends: eole-sso
+Breaks: eole-piwigo (<< 2.6.3+1-6)
+Replaces: eole-piwigo (<< 2.6.3+1-6)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-piwigo/piwigo-sso_12.2.0+2-1_all.deb
+Size: 7012
+SHA256: aa4fd449d565a63fa1b3bd276399f937979ccdc929035cc1c1bd5ad8f2c12195
+SHA1: 27698bb009e5705cb757cd5be958d4795d1390f3
+MD5sum: a0b34da5e64636637d17e661e954214d
+Description: Filtre SSO pour wordpress "EOLE".
+
+Package: piwik-apps
+Source: eole-piwik
+Version: 3.4.0+2-28
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 49271
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, posh-profil-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-piwik/piwik-apps_3.4.0+2-28_all.deb
+Size: 11418354
+SHA256: b44bc86145319619790928b078d2367f902abdd50c4fd02b614f69c9507d857c
+SHA1: f89468964e307c202c1e5189663212dc82d275b3
+MD5sum: 540979661a7435f8a26b402080c56316
+Description: Sources pour piwik "EOLE".
+
+Package: piwik-sso
+Source: eole-piwik
+Version: 3.4.0+2-28
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 42
+Depends: eole-sso
+Breaks: eole-piwik (<< 1.12-eole4-8)
+Replaces: eole-piwik (<< 1.12-eole4-8)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-piwik/piwik-sso_3.4.0+2-28_all.deb
+Size: 9758
+SHA256: 8265d1e40eb26ec83fd73a8549352fbdc5f359289b671857f16b1fa8c4d2caac
+SHA1: 9e1f160622adf4c7c071ccbff1d39ad035fd44b1
+MD5sum: b230a46db260ee4f44533c55a531eb18
+Description: Filtre SSO pour piwik "EOLE".
+
+Package: posh-apps
+Source: eole-posh
+Version: 4.0+2-54
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 38045
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, posh-profil-apps, calendrier-apps, xdesktop-apps, envole-mobile-apps, sap-apps (>= 1.1+1-4), sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-posh/posh-apps_4.0+2-54_all.deb
+Size: 8280876
+SHA256: 6fcd656757b1bb1c8079f279b824a4b7b0ec1ce57c99d048f0028c762987192a
+SHA1: 68bb913214a7871598114c4fed5c079239990151
+MD5sum: 2d8c7a05d59b0bd338d840175ef14bd5
+Description: Sources pour Posh "EOLE".
+
+Package: posh-profil-apps
+Source: posh-profil
+Version: 4.0+2-189
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 11513
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/p/posh-profil/posh-profil-apps_4.0+2-189_all.deb
+Size: 2420382
+SHA256: d207fb0095fa48ada393150c0675f86bacefc5760907548b650e1782fe111921
+SHA1: 8e7a44c8f74b547acab2179b29edf827b417e5cd
+MD5sum: 8206c50d8e0c397f37476e7199c40b11
+Description: Sources pour Posh-Profil "EOLE".
+
+Package: posh-sso
+Source: eole-posh
+Version: 4.0+2-54
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 41
+Depends: eole-sso
+Breaks: eole-posh (<< 4.0-16)
+Replaces: eole-posh (<< 4.0-16)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-posh/posh-sso_4.0+2-54_all.deb
+Size: 8928
+SHA256: 849d25f5157ee5486cdcf9bf1aca6e8dbcd0cc838c5d3dcf8e158206a8ec7546
+SHA1: e4b9b3554795fe3016fd2688ec8dd3d9995913ed
+MD5sum: f1bcab8a830322b138dd017f55f005d0
+Description: Filtre SSO pour Posh "EOLE".
+
+Package: pydio-apps
+Source: eole-pydio
+Version: 6.4.2+2-13
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 47706
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-pydio/pydio-apps_6.4.2+2-13_all.deb
+Size: 12440540
+SHA256: f29ad6f06df9829a5dc314ba12617bda63c7f15eb885782a137eaae596ccc2c4
+SHA1: eb656c65039cc48a5ebcfad2db064c09b0be87af
+MD5sum: d9384e98550f47bf84d754354fb5f81c
+Description: Sources pour Pydio "EOLE".
+
+Package: python-xapian
+Source: xapian-bindings
+Version: 1.2.16-3
+Architecture: amd64
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 1323
+Depends: python (>= 2.7), python (<< 2.8), python:any (>= 2.7.1-0ubuntu2), libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1), libxapian22 (>= 1.2.16)
+Suggests: xapian-doc
+Provides: python2.7-xapian
+Homepage: http://xapian.org/
+Priority: optional
+Section: python
+Filename: pool/main/x/xapian-bindings/python-xapian_1.2.16-3_amd64.deb
+Size: 291258
+SHA256: b949a297f27c9dd08c6ace98832c6c282401f4f6e3d36cd838a1ea45d1825fc1
+SHA1: d11eba108431de53ef46e86f23abdd8b830553bc
+MD5sum: 18c21a2e409f1cd0efada4f614cacad2
+Description: Xapian search engine interface for Python
+ This package provides Xapian Python bindings for all the packaged versions
+ of Python.
+ .
+ The Xapian search engine library is a highly adaptable toolkit which allows
+ developers to easily add advanced indexing and search facilities to their own
+ applications.  It implements the probabilistic model of information retrieval,
+ and provides facilities for performing ranked free-text searches, relevance
+ feedback, phrase searching, boolean searching, stemming, and simultaneous
+ update and searching.  It is highly scalable, and is capable of working with
+ collections containing hundreds of millions of documents.
+ .
+ The Xapian Python bindings provide an interface to the Xapian library from the
+ Python programming language, allowing both indexing and retrieval operations.
+Original-Maintainer: Olly Betts <olly@survex.com>
+Original-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/xapian-bindings.git
+Original-Vcs-Git: git://anonscm.debian.org/collab-maint/xapian-bindings.git
+Ubuntu-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: roundcube-apps
+Source: eole-roundcube
+Version: 2.05+2-30
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 29637
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-roundcube/roundcube-apps_2.05+2-30_all.deb
+Size: 5171522
+SHA256: 9511afd1a748ddfdd9a122ec35b90f669ceecaeb4224f2c157d60379b263c6bb
+SHA1: d8bdd32a83a7a1e79f0705abd0f0a3752f18409d
+MD5sum: 0fb6bb9d1c66e5244e7ce806472502f0
+Description: Sources pour roundcube "EOLE".
+
+Package: roundcube-sso
+Source: eole-roundcube
+Version: 2.05+2-30
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 41
+Depends: eole-sso
+Breaks: eole-roundcube (<< 2.05+1-4)
+Replaces: eole-roundcube (<< 2.05+1-4)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-roundcube/roundcube-sso_2.05+2-30_all.deb
+Size: 8286
+SHA256: d9b3cc6108922e965fdcda7e25b81e7b390c4524262cf9808a1d16996069743b
+SHA1: 6668b93b897f63c66c9997f2d96a8fae30002b51
+MD5sum: 8236b9aef937044eb2c883ef7a54f08b
+Description: Filtre SSO pour roundcube "EOLE".
+
+Package: ruby-xapian
+Source: xapian-bindings
+Version: 1.2.16-3
+Architecture: amd64
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 1494
+Depends: ruby | ruby-interpeter, libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1), libxapian22 (>= 1.2.16)
+Suggests: xapian-doc
+Breaks: libxapian-ruby1.8 (<< 1.2.15-1~), libxapian-ruby1.9.1 (<< 1.2.15-1~)
+Replaces: libxapian-ruby1.8 (<< 1.2.15-1~), libxapian-ruby1.9.1 (<< 1.2.15-1~)
+Provides: libxapian-ruby1.8, libxapian-ruby1.9.1
+Homepage: http://xapian.org/
+Priority: optional
+Section: ruby
+Filename: pool/main/x/xapian-bindings/ruby-xapian_1.2.16-3_amd64.deb
+Size: 291570
+SHA256: 7e8422e7c451f53166cb469f15812d00cfeeede751e092a53521939cd95b403b
+SHA1: 25df0150f6552a0c2b2449e1901f88c66bf15d55
+MD5sum: 5fcbdeb017764117c322326a27ed49cb
+Description: Xapian search engine interface for Ruby
+ This package provides Xapian Ruby bindings built for Ruby.
+ .
+ The Xapian search engine library is a highly adaptable toolkit which allows
+ developers to easily add advanced indexing and search facilities to their own
+ applications.  It implements the probabilistic model of information retrieval,
+ and provides facilities for performing ranked free-text searches, relevance
+ feedback, phrase searching, boolean searching, stemming, and simultaneous
+ update and searching.  It is highly scalable, and is capable of working with
+ collections containing hundreds of millions of documents.
+ .
+ The Xapian Ruby bindings provide an interface to the Xapian library from the
+ Ruby programming language, allowing both indexing and retrieval operations.
+Original-Maintainer: Olly Betts <olly@survex.com>
+Original-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/xapian-bindings.git
+Original-Vcs-Git: git://anonscm.debian.org/collab-maint/xapian-bindings.git
+Ubuntu-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: sacoche-apps
+Source: eole-sacoche
+Version: 2023-03-15+2-1
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 21804
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, posh-profil-apps, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: metapackages
+Filename: pool/main/e/eole-sacoche/sacoche-apps_2023-03-15+2-1_all.deb
+Size: 3798892
+SHA256: 8cbe67780cfcdd8b256a26b8ffd16d155cf4386e83ad45baac4e10e8b2fd8110
+SHA1: 62587de179fe724c2cf7ca8dcd723cef6aa50140
+MD5sum: ed638a4c6da2f2e0a434d842b49ac0d5
+Description: Sources pour sacoche "EOLE".
+
+Package: sacoche-sso
+Source: eole-sacoche
+Version: 2023-03-15+2-1
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 40
+Depends: eole-sso
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-sacoche/sacoche-sso_2023-03-15+2-1_all.deb
+Size: 7458
+SHA256: c7b3460ffbf6f5327f37d0b376e5b2eb007a126a8a17e4cdaf415665a9565339
+SHA1: f10e0f24a449d093e7f1dca08c365a3e0e21ea93
+MD5sum: fea6f1fd2c8b3a27a94b17915344749e
+Description: Filtre SSO pour sacoche "EOLE".
+
+Package: sandbox
+Version: 2.4.1-4
+Architecture: all
+Maintainer: Équipe Eole <eole@ac-dijon.fr>
+Installed-Size: 36
+Priority: optional
+Section: misc
+Filename: pool/main/s/sandbox/sandbox_2.4.1-4_all.deb
+Size: 4290
+SHA256: 4f6bbd2a93b36725a32f9f5488d639978ebe92d3fae8e4635f3331bfa6f1b4fa
+SHA1: 98bccbd5980fe4327508a5b6f47e4aa15add6b0f
+MD5sum: 2d7c076aa05265fb6a449a3159fdca95
+Description: Ne fait pas grand chose
+ Un paquet qui ne fait pas grand chose si ce n’est mettre du garbage
+ dans /usr/share/eole/sandbox.
+ .
+ Même qu’il ne fait rien d’autre.
+
+Package: sap-apps
+Source: sap
+Version: 1.1+2-12
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 2149
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/s/sap/sap-apps_1.1+2-12_all.deb
+Size: 285596
+SHA256: b3a69311c8c010f55fbb3cdbfb11ac53b89c6875e49943bff54146e769cf53e1
+SHA1: 332f32b2617efd968b3c3cfbf222515589a77a16
+MD5sum: cb76bd73a7d83534b7305d4581957dd8
+Description: Sources pour SAP "EOLE"
+
+Package: scrumblr-apps
+Source: eole-scrumblr
+Version: 0.2.0+2-11
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 24545
+Depends: web-pkg, curl, libpq-dev, nodejs (>= 0.10.38), make, g++, libapache2-mod-auth-cas, etherhome-apps, nodepm2-apps, redis-server, redis-tools
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-scrumblr/scrumblr-apps_0.2.0+2-11_all.deb
+Size: 5313962
+SHA256: 277319ab01f50058c4e03fe89609a6a46bf8e4501608d35692473109876a3563
+SHA1: 8bc2dc599285d5da52cf6ee7a5dbcf29926d474e
+MD5sum: a2c7f0c9b70a7db45738cc06a8929623
+Description: Sources pour Scrumblr "EOLE".
+ Scrumblr est un TBI (Tableau Blanc Interactif) collaboratif en ligne
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le site du projet EOLE.
+
+Package: sondepiwik-apps
+Source: eole-sondepiwik
+Version: 1.0+2-37
+Architecture: all
+Maintainer: Arnaud Fornerot <afornerot@cadoles.com>
+Installed-Size: 212
+Depends: eole-web-pkg (>= 2.4.2~0), eole-client-annuaire-pkg
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-sondepiwik/sondepiwik-apps_1.0+2-37_all.deb
+Size: 50664
+SHA256: cb4693291e0eaa02e76b2663a6be0d3bceb77adde12679e3ea08b424d761afb1
+SHA1: b27b6bbc1da311bc19ad47e95e4c4c888d8feb7a
+MD5sum: 493b5a91dc698130ee5dc2a3c54560c5
+Description: Sources pour sondepiwik "EOLE".
+
+Package: sondepiwik-sso
+Source: eole-sondepiwik
+Version: 1.0+2-37
+Architecture: all
+Maintainer: Arnaud Fornerot <afornerot@cadoles.com>
+Installed-Size: 38
+Depends: eole-sso
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-sondepiwik/sondepiwik-sso_1.0+2-37_all.deb
+Size: 5088
+SHA256: b7145671632ece9fb1aa4c8a715e9993f950f6ee9d533a546e7e71febfca1d87
+SHA1: b3683db8affefd89b3fac0037cad9f83ae2870f1
+MD5sum: dde639040a8645950314a134e9054697
+Description: Filtre SSO pour sondepiwik "EOLE".
+
+Package: spipeva-apps
+Source: eole-spipeva
+Version: 3.0.16+1-13
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 32002
+Depends: eole-web-pkg (>= 2.4.2~0), eole-client-annuaire-pkg
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-spipeva/spipeva-apps_3.0.16+1-13_all.deb
+Size: 13463172
+SHA256: 50f51ec3a9db0012b278443bc5e2d1f1df0d00f845841a54b352e261f5a62a4b
+SHA1: 71b2ea7c00b85d0bc568247138e5f7923832a6cb
+MD5sum: 47e260fe1638f9a3b45fc03585510b5a
+Description: Sources pour SPIP-Eva "EOLE".
+ SPIP est un outil de gestion de contenu (CMS), il est installé avec le squelette Eva.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le site du projet EOLE.
+
+Package: sso-posh
+Source: eole-posh
+Version: 4.0-20
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 35
+Depends: eole-sso
+Breaks: eole-posh (<< 4.0-16)
+Replaces: eole-posh (<< 4.0-16)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-posh/sso-posh_4.0-20_all.deb
+Size: 3376
+SHA256: 7db29e5221b7fa28d3c62fb4e41353277603198938ae5da96ee4765a58b79e60
+SHA1: 3e410e9d9eff6b7508f79620d6a670850208cb6d
+MD5sum: 13aecc63300ad53c260ad45f12be3ecd
+Description: Filtre SSO pour Posh "EOLE".
+
+Package: taskfreak-apps
+Source: eole-taskfreak
+Version: 0.6.4.2-29
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 1534
+Depends: eole-web-pkg (>= 2.5.2), eole-client-annuaire-pkg, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-taskfreak/taskfreak-apps_0.6.4.2-29_all.deb
+Size: 249804
+SHA256: 39e2606c119f6d4c86144770a9adb519c23b74bb9d689a1083e896c668d9c838
+SHA1: bc42a9dd1c493a865f423f6a5774f89e5cd3edfa
+MD5sum: 15b9dd81ef062ad38bdc6c03cd9962cc
+Description: Sources pour taskfreak "EOLE".
+
+Package: taskfreak-sso
+Source: eole-taskfreak
+Version: 0.6.4.2-29
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 44
+Depends: eole-sso
+Breaks: eole-taskfreak (<< 0.6.4-eole2-2)
+Replaces: eole-taskfreak (<< 0.6.4-eole2-2)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-taskfreak/taskfreak-sso_0.6.4.2-29_all.deb
+Size: 6252
+SHA256: a827d5b34309814042c2af02953be2b073e2bd482cd91801989bff4aa7b0780d
+SHA1: 8d26af70c55513d31ccfbf4249619da20ceee218
+MD5sum: e1d9a3bda490c76ae8e419f339b72dc1
+Description: Filtre SSO pour taskfreak "EOLE".
+
+Package: tclxapian
+Source: xapian-bindings
+Version: 1.2.16-3
+Architecture: amd64
+Maintainer: Équipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 826
+Depends: tcl | tclsh, libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1), libxapian22 (>= 1.2.16)
+Suggests: xapian-doc
+Homepage: http://xapian.org/
+Priority: optional
+Section: interpreters
+Filename: pool/main/x/xapian-bindings/tclxapian_1.2.16-3_amd64.deb
+Size: 224756
+SHA256: b4c4e308f995283025e7abd24d3d38e10ccd198dac485d68f1f0f5096687f392
+SHA1: de254704e0916c4a7b30dd5c34dad486092fce15
+MD5sum: e72d7bf7490b01030dabc2b54a408252
+Description: Xapian search engine interface for Tcl
+ This package provides Xapian Tcl bindings which should work with any version
+ of Tcl >= 8.1 (by using Tcl's stubs mechanism.)
+ .
+ The Xapian search engine library is a highly adaptable toolkit which allows
+ developers to easily add advanced indexing and search facilities to their own
+ applications.  It implements the probabilistic model of information retrieval,
+ and provides facilities for performing ranked free-text searches, relevance
+ feedback, phrase searching, boolean searching, stemming, and simultaneous
+ update and searching.  It is highly scalable, and is capable of working with
+ collections containing hundreds of millions of documents.
+ .
+ The Xapian Tcl bindings provide an interface to the Xapian library from the
+ Tcl programming language, allowing both indexing and retrieval operations.
+Original-Maintainer: Olly Betts <olly@survex.com>
+Original-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/xapian-bindings.git
+Original-Vcs-Git: git://anonscm.debian.org/collab-maint/xapian-bindings.git
+Ubuntu-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: webcalendar-apps
+Source: eole-webcalendar
+Version: 1.2.4-eole3-18
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 4956
+Depends: eole-web-pkg (>= 2.4.2~0), eole-client-annuaire, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-webcalendar/webcalendar-apps_1.2.4-eole3-18_all.deb
+Size: 1535930
+SHA256: b5bc363bab5879930eef0ee2f88548d1de9d7dfedc622de3fb35fa5b5046490f
+SHA1: 1a379fbe3023551a25f88e98ad61b413033b9a1d
+MD5sum: 857dd2e3d7ce6d6bf694ffeb1670b687
+Description: Sources pour WebCalendar "EOLE".
+ WebCalendar est une application d'agendas partagés.
+ .
+ Pour toute information complémentaire, veuillez vous rendre sur le
+ site du projet EOLE.
+
+Package: webcalendar-sso
+Source: eole-webcalendar
+Version: 1.2.4-eole3-18
+Architecture: all
+Maintainer: Equipe EOLE <eole@ac-dijon.fr>
+Installed-Size: 42
+Depends: eole-sso
+Breaks: eole-webcalendar (<< 1.2.4-eole3-2)
+Replaces: eole-webcalendar (<< 1.2.4-eole3-2)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-webcalendar/webcalendar-sso_1.2.4-eole3-18_all.deb
+Size: 4552
+SHA256: 2a19492cad8127926b5636e409a0dffb844d9673533a1caa291c5b10f67a9c5a
+SHA1: 72f8c72b0cd741214b3587be01a19200a7f065a4
+MD5sum: dac736879cae3c1e3067efcb37429993
+Description: Filtre SSO pour webcalendar "EOLE".
+
+Package: wordpress-apps
+Source: eole-wordpress
+Version: 5.1.1+2-8
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 142916
+Depends: eole-web-pkg (>= 2.5.2), posh-profil-apps, eole-client-annuaire-pkg, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-wordpress/wordpress-apps_5.1.1+2-8_all.deb
+Size: 35908642
+SHA256: b18780db5431ee50c1ec23241d84290f5c2f019f7c834e2ccfa95859b8701e5b
+SHA1: 178f7f51cdec6a223ffa9762be20795b1c96d0c8
+MD5sum: f22ff4a20b3a415ece0561f38e436a8a
+Description: Sources pour wordpress "EOLE".
+
+Package: wordpress-sso
+Source: eole-wordpress
+Version: 5.1.1+2-8
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 49
+Depends: eole-sso
+Breaks: eole-wordpress (<< 4.0.1-9)
+Replaces: eole-wordpress (<< 4.0.1-9)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-wordpress/wordpress-sso_5.1.1+2-8_all.deb
+Size: 16684
+SHA256: 4ec53350946613e4a5e348bfe653652fd0cf889f42d1993a617533f652dabe0f
+SHA1: 42c4e8c40596b616f9b8a083f5061610dcd0640e
+MD5sum: f88ef6a9360bbd33537cb958bcd077d8
+Description: Filtre SSO pour wordpress "EOLE".
+
+Package: xdesktop-apps
+Source: eole-xdesktop
+Version: 1.3+2-16
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 3442
+Depends: eole-web-pkg (>= 2.5.2), posh-profil-apps, eole-client-annuaire-pkg, sondepiwik-apps
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-xdesktop/xdesktop-apps_1.3+2-16_all.deb
+Size: 935384
+SHA256: e87bc9adac2f1fc34860d4f91d65a0c7cb6c1dfde7b1e9bfc4c82d1934837b8d
+SHA1: c073db455aac6c86292d62fe4e2c4ba065a09a05
+MD5sum: 4c8713a32aca993e7198efa0b20b84f5
+Description: Sources pour xdesktop "EOLE".
+
+Package: xdesktop-sso
+Source: eole-xdesktop
+Version: 1.3+2-16
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 39
+Depends: eole-sso
+Breaks: eole-xdesktop (<< 1.2+5-1)
+Replaces: eole-xdesktop (<< 1.2+5-1)
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-xdesktop/xdesktop-sso_1.3+2-16_all.deb
+Size: 6482
+SHA256: fec16ff3213712f3461c6b4218ba587f7af93c87c90287f8a3fc580390912b9c
+SHA1: 843f44a18d20e5897fad70c1b583d671a2ce8429
+MD5sum: ddbd8900926927b3ab358000b968015a
+Description: Filtre SSO pour xdesktop "EOLE".
+
+Package: zephir-racvision-apps
+Source: eole-zephir-racvision
+Version: 1.0+1-3
+Architecture: all
+Maintainer: Equipe Envole <eole@ac-dijon.fr>
+Installed-Size: 48
+Depends: eole-web-pkg (>= 2.4.2~0), eole-client-annuaire-pkg
+Homepage: http://eole.orion.education.fr/diff/
+Priority: optional
+Section: web
+Filename: pool/main/e/eole-zephir-racvision/zephir-racvision-apps_1.0+1-3_all.deb
+Size: 4212
+SHA256: aa999377a243a99493a5c8a0d5a70dc1b3889cea9fc55814dc57749f1c6dd58c
+SHA1: cfa7f2967fa804a3290177f995f386498ccbac22
+MD5sum: f6d107b4c0dd952e568275f0f33544ae
+Description: Sources pour zephir-racvision "EOLE".
+

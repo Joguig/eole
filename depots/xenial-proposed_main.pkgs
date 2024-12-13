@@ -1,0 +1,2713 @@
+Package: autopkgtest
+Architecture: all
+Version: 3.20.4ubuntu1.1
+Priority: optional
+Section: devel
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Autopkgtest team <autopkgtest-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 495
+Depends: python3, python3-debian, apt-utils, libdpkg-perl, procps
+Recommends: autodep8
+Suggests: schroot, lxc, lxd-client, qemu-system, qemu-utils
+Filename: pool/main/a/autopkgtest/autopkgtest_3.20.4ubuntu1.1_all.deb
+Size: 125334
+MD5sum: ad05876ae47e731e5e261e58cc60c029
+SHA1: 7d78652cb3ab9d08803f2b42436ed2bb01efdef1
+SHA256: 09057891c4d5e08cc2cd6d63c32dc1e93ea59f4af9b3d43c9994d148529f0e73
+SHA512: 5fd04b19d4377be74d91a174a50cb8f84e5904ab9c3fccb9dfdadc673c51df02dd7353c6325f12dd982ad3e7d3cd2efb0f4fa610b9cb35fc1e34e9b37f795af8
+Description: automatic as-installed testing for Debian packages
+Description-md5: d1a3b5cd66ee5520127338964a105bfc
+Supported: 5y
+
+Package: gir1.2-networkmanager-1.0
+Architecture: amd64
+Version: 1.2.6-0ubuntu0.16.04.4
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: network-manager
+Origin: Ubuntu
+Maintainer: Ubuntu Core Dev Team <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 483
+Depends: gir1.2-freedesktop, gir1.2-glib-2.0, libgirepository-1.0-1 (>= 1.41.4-1), libnm-glib4 (>= 1.1.90), libnm-util2 (>= 1.1.90), libnm0 (>= 1.2.6-0ubuntu0.16.04.4)
+Filename: pool/main/n/network-manager/gir1.2-networkmanager-1.0_1.2.6-0ubuntu0.16.04.4_amd64.deb
+Size: 70690
+MD5sum: b1d908430ae8f13f52dd0aae83290bb2
+SHA1: 24eb5729defd182afe8283590362d8c0d64d49fb
+SHA256: 2aba4247ba74e1de00804f7ce587f07a7ac2a951ca2f661c7d9e40e0f0612ca9
+SHA512: 708f2df8606bb1f409d34fc1324563358550eaad3c6c6eea7843d209c38413a2db1c85130521795ae4ed88ee0c2113042fba0493a3e67a119a304abc53e79a52
+Homepage: https://wiki.gnome.org/Projects/NetworkManager
+Description: GObject introspection data for NetworkManager
+Task: ubuntu-gnome-desktop
+Description-md5: 1a7cb995cf66551c57433bbaf46aee25
+Supported: 5y
+
+Package: libnm-dev
+Architecture: amd64
+Version: 1.2.6-0ubuntu0.16.04.4
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: network-manager
+Origin: Ubuntu
+Maintainer: Ubuntu Core Dev Team <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 6088
+Depends: libnm0 (= 1.2.6-0ubuntu0.16.04.4), gir1.2-networkmanager-1.0 (= 1.2.6-0ubuntu0.16.04.4), libglib2.0-dev
+Filename: pool/main/n/network-manager/libnm-dev_1.2.6-0ubuntu0.16.04.4_amd64.deb
+Size: 390440
+MD5sum: 95b851623caed2ce71d5e54f6fd69313
+SHA1: 11b01acf0954ebb463429819c3eefc59abf0d371
+SHA256: 6085a1ac4a9bafb114314bf5bb3612ef7a41054f8efdee969fc3b829084eb559
+SHA512: 30ac019bb8ef9da0ecfad9c946cb4c0f4403d3017005c1877c8b38ccb03fb4159e6de0aa832ef441a073f06d769a02f3536e581a1e8db7b57812012f867691f9
+Homepage: https://wiki.gnome.org/Projects/NetworkManager
+Description: GObject-based client library for NetworkManager (development files)
+Description-md5: 1b717b382fe67c166e11c143d527a631
+Supported: 5y
+
+Package: libnm-glib-dev
+Architecture: amd64
+Version: 1.2.6-0ubuntu0.16.04.4
+Multi-Arch: same
+Priority: optional
+Section: net
+Source: network-manager
+Origin: Ubuntu
+Maintainer: Ubuntu Core Dev Team <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 2118
+Depends: libnm-glib4 (= 1.2.6-0ubuntu0.16.04.4), gir1.2-networkmanager-1.0 (= 1.2.6-0ubuntu0.16.04.4), libnm-util-dev (>= 1.2.6-0ubuntu0.16.04.4), network-manager-dev (>= 1.2.6-0ubuntu0.16.04.4), libglib2.0-dev, libdbus-glib-1-dev
+Filename: pool/main/n/network-manager/libnm-glib-dev_1.2.6-0ubuntu0.16.04.4_amd64.deb
+Size: 172118
+MD5sum: 7aaf824513cd9419b62558eb88c9b316
+SHA1: d374bb44a648c3c52ae853294483235512919523
+SHA256: f5b0f3796c9ad9c5f97e32840a874d8a32254815e5dfe4521d688afb7caa103e
+SHA512: fd99e1971afcc932f94324b02544e45bbb88918407747ce0d0e7116a1d2914e152fa2bcbb76f8a78507cf862438740c6318f3eabe0fce16e26452bda6960555a
+Homepage: https://wiki.gnome.org/Projects/NetworkManager
+Description: network management framework (GLib interface)
+Description-md5: 56d0a34d148547835775f648c283d58f
+Supported: 5y
+
+Package: libnm-glib-vpn-dev
+Architecture: amd64
+Version: 1.2.6-0ubuntu0.16.04.4
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: network-manager
+Origin: Ubuntu
+Maintainer: Ubuntu Core Dev Team <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 125
+Depends: libnm-glib-vpn1 (= 1.2.6-0ubuntu0.16.04.4), libnm-glib-dev (>= 1.2.6-0ubuntu0.16.04.4), network-manager-dev (>= 1.2.6-0ubuntu0.16.04.4)
+Filename: pool/main/n/network-manager/libnm-glib-vpn-dev_1.2.6-0ubuntu0.16.04.4_amd64.deb
+Size: 6400
+MD5sum: e4ffae937971da91e5b0d24eade24ef0
+SHA1: 9b145e7e94667966dfd1d983901db417fabd4104
+SHA256: d6278966be4b411bad5461ff2f5ae566daab8cea413fdf3651e0dfba97e3f40e
+SHA512: 522581b64c4fe2b42620b2be08da399b7a5acb45f7e99a7125980aa234230b5c5434a8d0dab2b025eb1e1c621e3b43e18a6c2608394f5ea0f47f9d357f709a41
+Homepage: https://wiki.gnome.org/Projects/NetworkManager
+Description: network management framework (GLib interface)
+Description-md5: c78ac261b5f6cfbb4c74b78a708c90bc
+Supported: 5y
+
+Package: libnm-glib-vpn1
+Architecture: amd64
+Version: 1.2.6-0ubuntu0.16.04.4
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: network-manager
+Origin: Ubuntu
+Maintainer: Ubuntu Core Dev Team <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 140
+Depends: libc6 (>= 2.4), libdbus-glib-1-2 (>= 0.88), libglib2.0-0 (>= 2.32), libnm-util2 (>= 1.1.93)
+Filename: pool/main/n/network-manager/libnm-glib-vpn1_1.2.6-0ubuntu0.16.04.4_amd64.deb
+Size: 14204
+MD5sum: 3bcd8ec583a9e20422c7456712ea1087
+SHA1: d6236cf631a3e9236950ec21c94615a89d33525e
+SHA256: 39925f78c6b72979f9827e0a0289d48b0eafabab298cf57fb18f220c31ffffaa
+SHA512: 96f6040b1dfda8f7966319a8c211f80676088ba394d5edd16d03ebaa5f61c6b1fa4bd09659df49605fdcf8c7849628cf820e68f4a401ded3d14c1e3641c42981
+Homepage: https://wiki.gnome.org/Projects/NetworkManager
+Description: network management framework (GLib VPN shared library)
+Task: ubuntu-desktop, ubuntu-usb, edubuntu-desktop, edubuntu-usb, xubuntu-desktop, ubuntustudio-desktop, ubuntu-gnome-desktop, ubuntukylin-desktop, ubuntu-mate-core, ubuntu-mate-desktop, ubuntu-mate-cloudtop
+Description-md5: a8d1fc7f276929433320d96cddd81b4b
+Supported: 5y
+
+Package: libnm-glib4
+Architecture: amd64
+Version: 1.2.6-0ubuntu0.16.04.4
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: network-manager
+Origin: Ubuntu
+Maintainer: Ubuntu Core Dev Team <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 397
+Depends: libc6 (>= 2.14), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.88), libglib2.0-0 (>= 2.32), libgudev-1.0-0 (>= 146), libnm-util2 (>= 1.1.93)
+Filename: pool/main/n/network-manager/libnm-glib4_1.2.6-0ubuntu0.16.04.4_amd64.deb
+Size: 84228
+MD5sum: 41104816f9862588b6eb2aa1598e41b9
+SHA1: 1af22009fc8efb7082db6214bc559d737b285731
+SHA256: 477761af188aa3bcf121bc9431b27a299dbf662cf57f1e880cc6436a65cf7eb6
+SHA512: 70fa3da3d15741208621ec166b126cfea8c6ca092ea98591c498964584cad2ec01d51b8a360d9b2d24c3b8a77e208ddc0ecaddda58dc06a38b08a5861c3fcd46
+Homepage: https://wiki.gnome.org/Projects/NetworkManager
+Description: network management framework (GLib shared library)
+Task: ubuntu-desktop, ubuntu-usb, kubuntu-desktop, kubuntu-full, edubuntu-desktop, edubuntu-usb, xubuntu-desktop, ubuntustudio-desktop, ubuntu-gnome-desktop, ubuntu-touch, ubuntukylin-desktop, ubuntu-mate-core, ubuntu-mate-desktop, ubuntu-mate-cloudtop
+Description-md5: 217fbdca65cb15a2066a01b11aa4ed86
+Supported: 5y
+
+Package: libnm-util-dev
+Architecture: amd64
+Version: 1.2.6-0ubuntu0.16.04.4
+Multi-Arch: same
+Priority: optional
+Section: net
+Source: network-manager
+Origin: Ubuntu
+Maintainer: Ubuntu Core Dev Team <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 3845
+Depends: libnm-util2 (= 1.2.6-0ubuntu0.16.04.4), gir1.2-networkmanager-1.0 (= 1.2.6-0ubuntu0.16.04.4), network-manager-dev (>= 1.2.6-0ubuntu0.16.04.4), libglib2.0-dev, libdbus-glib-1-dev
+Filename: pool/main/n/network-manager/libnm-util-dev_1.2.6-0ubuntu0.16.04.4_amd64.deb
+Size: 209216
+MD5sum: f55115b42b4ffc97467a4ad5f049c396
+SHA1: 00ec9bf1e877669ec33bd4ffad3022e8a3eb821d
+SHA256: 071855902cbb85ef2811de530917520f5abfb7f0a1f0e2bd793311877c29f4a1
+SHA512: d81571e0f927306896b9ada00ff6541561b65f552f0b440ca8e6b533de062fc5f8f6f89bb6fb7e6b0a7e2022e90bc3c6ff1cadcc2954b4ee877578e3df2b6304
+Homepage: https://wiki.gnome.org/Projects/NetworkManager
+Description: network management framework (development files)
+Description-md5: 386633658ef6f2e5bd09c1075e48d085
+Supported: 5y
+
+Package: libnm-util2
+Architecture: amd64
+Version: 1.2.6-0ubuntu0.16.04.4
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: network-manager
+Origin: Ubuntu
+Maintainer: Ubuntu Core Dev Team <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 550
+Depends: libc6 (>= 2.14), libdbus-glib-1-2 (>= 0.78), libglib2.0-0 (>= 2.33.14), libgnutls30 (>= 3.4.0), libuuid1 (>= 2.16)
+Filename: pool/main/n/network-manager/libnm-util2_1.2.6-0ubuntu0.16.04.4_amd64.deb
+Size: 125518
+MD5sum: 6bcedc58ab3028b01ddf155a35871ebc
+SHA1: 87f3ffd4f57e98bd6297526f9e395e03813c1778
+SHA256: a41ce5a27b7034c832a2082973f3ba88dc97fdf86cf315413bf5ccbe58db044d
+SHA512: d0cc16aab95cc849b3e52eb8d1c8d12cb2244bb33b7b3e187ad95a208141f995909ac97fca81be54d36a761d1c14d8309554ee0aa54425d88c4c732a7450be83
+Homepage: https://wiki.gnome.org/Projects/NetworkManager
+Description: network management framework (shared library)
+Task: ubuntu-desktop, ubuntu-usb, kubuntu-desktop, kubuntu-full, edubuntu-desktop, edubuntu-usb, xubuntu-desktop, ubuntustudio-desktop, ubuntu-gnome-desktop, ubuntu-touch, ubuntukylin-desktop, ubuntu-mate-core, ubuntu-mate-desktop, ubuntu-mate-cloudtop
+Description-md5: 9206e0c0315bf3dee48dfe5ab4d4bd13
+Supported: 5y
+
+Package: libnm0
+Architecture: amd64
+Version: 1.2.6-0ubuntu0.16.04.4
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: network-manager
+Origin: Ubuntu
+Maintainer: Ubuntu Core Dev Team <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1621
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.37.3), libgnutls30 (>= 3.4.0), libgudev-1.0-0 (>= 146), libuuid1 (>= 2.16)
+Filename: pool/main/n/network-manager/libnm0_1.2.6-0ubuntu0.16.04.4_amd64.deb
+Size: 351844
+MD5sum: 90a20e272330c82274833d75161a5ece
+SHA1: a963488dbad53f4a71df145512d587da353ec3d0
+SHA256: 2344f3968c79b4a510cb1d62996b19e4d89d9b37a9f6da8d295d66d947cb49a7
+SHA512: ef3aeeff73ebb4c4fdb3144b405befb885867c1dca2add8e717de0b6f65ae401a36d9edbd1dcbf63826534f7311857be25c208a15ec8f3e3962e3b32f3298d77
+Homepage: https://wiki.gnome.org/Projects/NetworkManager
+Description: GObject-based client library for NetworkManager
+Task: ubuntu-desktop, ubuntu-usb, kubuntu-desktop, kubuntu-full, edubuntu-desktop, edubuntu-usb, xubuntu-core, xubuntu-desktop, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, lubuntu-desktop, ubuntustudio-desktop-core, ubuntustudio-desktop, ubuntu-gnome-desktop, ubuntu-touch-core, ubuntu-touch, ubuntu-sdk, ubuntukylin-desktop, ubuntu-mate-core, ubuntu-mate-desktop, ubuntu-mate-cloudtop
+Description-md5: 38459a9c4a6d9a0f4df9a5fa423e81fc
+Supported: 5y
+
+Package: linux-aws-cloud-tools-4.4.0-1125
+Architecture: amd64
+Version: 4.4.0-1125.139
+Priority: optional
+Section: devel
+Source: linux-aws
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 443
+Depends: libc6 (>= 2.14), linux-cloud-tools-common
+Filename: pool/main/l/linux-aws/linux-aws-cloud-tools-4.4.0-1125_4.4.0-1125.139_amd64.deb
+Size: 52774
+MD5sum: dee3a8f39a3d05356f483d37d42dbffc
+SHA1: 30777d34a8b43d899859beda891d34db6a7c1328
+SHA256: 094d83f10d4c8d5cec3d5c610fa2930d96408a5804801356f5735c3aee717460
+SHA512: cf6cf3dd5c5003d790eb9f74195ae848c6e74c564051b18737fa865e01a5ece6c085a5093987df9cf519028e32e6a259733dd39081674cfd6e7dbffa23778165
+Description: Linux kernel version specific cloud tools for version 4.4.0-1125
+Description-md5: 50d6b59f55c8f3387a45dca654b90f79
+
+Package: linux-aws-headers-4.15.0-1095
+Architecture: all
+Version: 4.15.0-1095.102~16.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: linux-aws-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 76025
+Depends: coreutils
+Breaks: iscsitarget-dkms (<< 1.4.20.3+svn502-2ubuntu4.4)
+Filename: pool/main/l/linux-aws-hwe/linux-aws-headers-4.15.0-1095_4.15.0-1095.102~16.04.1_all.deb
+Size: 10952544
+MD5sum: 0dabb28634b9be14e214031ba1b43388
+SHA1: 10d1b2dc584c46774f8e09239c06d4cdabb77087
+SHA256: 2a36023da2a5139e7daf7ab2baafd06b648dcfeab14c141268228ec2efd57f63
+SHA512: 776300faea8b32d74352ef989cee013e1be9d410127294e14bf4b5e94cc28f39a82f172b6a3914980349aa7b93eab27982ef3934bcd3b48deedbf249716d151d
+Description: Header files related to Linux kernel version 4.15.0
+Description-md5: 64c4498e6786a13998d52351c2ef8e36
+Supported: 5y
+
+Package: linux-aws-headers-4.15.0-1096
+Architecture: all
+Version: 4.15.0-1096.103~16.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: linux-aws-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 76026
+Depends: coreutils
+Breaks: iscsitarget-dkms (<< 1.4.20.3+svn502-2ubuntu4.4)
+Filename: pool/main/l/linux-aws-hwe/linux-aws-headers-4.15.0-1096_4.15.0-1096.103~16.04.1_all.deb
+Size: 10934716
+MD5sum: c5ec70a43bd7298f08580e057c960999
+SHA1: 50496e17414848504cda1253bb718de6687eae12
+SHA256: 2e32c25171dc1d053710c0a02c0f3b49e2728ad45bd9fd270ff5d2462df4854e
+SHA512: 12aec113e5f0c5115e4cc0f5de1786207d9f6c8b859ce1d4e686036f42860321d16e344fc41163ffa2cc56c530451ccac15df27123275ee788b2eb471d69918d
+Description: Header files related to Linux kernel version 4.15.0
+Description-md5: fd83bf1163791bbf31236e8ed64b4143
+Supported: 5y
+
+Package: linux-aws-headers-4.4.0-1125
+Architecture: all
+Version: 4.4.0-1125.139
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: linux-aws
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 70846
+Depends: coreutils
+Breaks: iscsitarget-dkms (<< 1.4.20.3+svn502-2ubuntu4.4)
+Filename: pool/main/l/linux-aws/linux-aws-headers-4.4.0-1125_4.4.0-1125.139_all.deb
+Size: 10072286
+MD5sum: e28f6c2af265c8fbca1be456eb8ce694
+SHA1: fcae0077b5b963d8543db1a3e36b0b490842aef0
+SHA256: 32e78ef56eb0c18aa8a2f5a8b3ec28bd8301468043d3c1acd8fcbc28b161a9ea
+SHA512: d1a666765da94305baf9156339d26035e503317882e35340043d2cd5fc4ed31feb5321c5a986b2275c54a560bbf17a46cdeee4f51ba507a451f2061675c8aa67
+Description: Header files related to Linux kernel version 4.4.0
+Description-md5: e060ece12bf0df12ed440e8f82cdd909
+
+Package: linux-aws-hwe-tools-4.15.0-1095
+Architecture: amd64
+Version: 4.15.0-1095.102~16.04.1
+Priority: optional
+Section: devel
+Source: linux-aws-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 17292
+Depends: binutils (>= 2.26.1), binutils (<< 2.27), libaudit1 (>= 1:2.2.1), libc6 (>= 2.17), libdw1 (>= 0.157), libelf1 (>= 0.144), liblzma5 (>= 5.1.1alpha+20120614), libnuma1, libpci3 (>= 1:3.3.1-1), libslang2 (>= 2.2.4), libudev1 (>= 183), libunwind8, zlib1g (>= 1:1.1.4), linux-tools-common
+Filename: pool/main/l/linux-aws-hwe/linux-aws-hwe-tools-4.15.0-1095_4.15.0-1095.102~16.04.1_amd64.deb
+Size: 3858194
+MD5sum: 268c8ed5db404d10fed08e6e1acdb115
+SHA1: acba1895849f894bbca6187175312930184cc102
+SHA256: fa36dd6b4ebeac54589aa14b6b9c9b168d99d1e8a9aade7adbc4443d944616c9
+SHA512: 964b176026c6875502f262479f8f621f0804b174b80ebe3705b95a5c008226f943dd292a026aec39e7f5cddb5d0f98107feee3570e57d4e66d2334afd1178d24
+Description: Linux kernel version specific tools for version 4.15.0-1095
+Description-md5: ce24631e237389b3cca98a14c44abe95
+Supported: 5y
+
+Package: linux-aws-hwe-tools-4.15.0-1096
+Architecture: amd64
+Version: 4.15.0-1096.103~16.04.1
+Priority: optional
+Section: devel
+Source: linux-aws-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 17293
+Depends: binutils (>= 2.26.1), binutils (<< 2.27), libaudit1 (>= 1:2.2.1), libc6 (>= 2.17), libdw1 (>= 0.157), libelf1 (>= 0.144), liblzma5 (>= 5.1.1alpha+20120614), libnuma1, libpci3 (>= 1:3.3.1-1), libslang2 (>= 2.2.4), libudev1 (>= 183), libunwind8, zlib1g (>= 1:1.1.4), linux-tools-common
+Filename: pool/main/l/linux-aws-hwe/linux-aws-hwe-tools-4.15.0-1096_4.15.0-1096.103~16.04.1_amd64.deb
+Size: 3873360
+MD5sum: d5d0be85e3a3b45c63bc05caaadd8f47
+SHA1: a9a37abb7cc19faef8f2dc22ed00630708cd75c4
+SHA256: 653a83c1d993657c7131ba093c71a0670a13c080447acb1addff1b85de565c40
+SHA512: 50a9d60a0c364065db62fb3a35d5837e254c05af3b1afdbd51aaefd3ccd23b3c3a203751b59afad50ed9dccf667485ddb8ffd13a2668b209272ddc49815f3a1d
+Description: Linux kernel version specific tools for version 4.15.0-1096
+Description-md5: dec87a48abb77c9f1572bc692c5c2a3b
+Supported: 5y
+
+Package: linux-aws-tools-4.4.0-1125
+Architecture: amd64
+Version: 4.4.0-1125.139
+Priority: optional
+Section: devel
+Source: linux-aws
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 11923
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.14), libdw1 (>= 0.157), libelf1 (>= 0.144), liblzma5 (>= 5.1.1alpha+20120614), libpci3 (>= 1:3.3.1-1), libslang2 (>= 2.2.4), libudev1 (>= 183), libunwind8, zlib1g (>= 1:1.1.4), linux-tools-common
+Filename: pool/main/l/linux-aws/linux-aws-tools-4.4.0-1125_4.4.0-1125.139_amd64.deb
+Size: 2825666
+MD5sum: dde55f97cd2029aa63e692098de618e9
+SHA1: 312eddf1b72b0619c4ceaaf824fcbcd67209f779
+SHA256: c033a72bf4489e4220844cf4c7c9bd61753b5823e2e2a5dbe114f030576c5439
+SHA512: 2e3f12c9bc25dbc298235e5acc5c8529139ef89be89f4d58d00e18cebfcfa840511ddebbc413cbae09830dc7f278b5043882716b0e96a527841eb2276493d0d0
+Description: Linux kernel version specific tools for version 4.4.0-1125
+Description-md5: 7ad1f5e4c399e0c432fcda867f801b93
+
+Package: linux-azure-cloud-tools-4.15.0-1110
+Architecture: amd64
+Version: 4.15.0-1110.122~16.04.1
+Priority: optional
+Section: devel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 899
+Depends: libc6 (>= 2.14), linux-cloud-tools-common
+Filename: pool/main/l/linux-azure/linux-azure-cloud-tools-4.15.0-1110_4.15.0-1110.122~16.04.1_amd64.deb
+Size: 77576
+MD5sum: 39a249f414fcbd080f2de9b42ef2367d
+SHA1: cd662c399145417189ff4d59b60604d1e7746990
+SHA256: 655cc7399deb25dfde463d74cc6da6bb639b9cdb2b95513949563d19db0a7a47
+SHA512: d522cb3498221e7c5651fe9398b07a2505858b3e9bf162918f542cfd2c1dda3c160522f88f8eaa5e25f76a6a783048aaa407b050d2592189dabcc6b02810bb65
+Description: Linux kernel version specific cloud tools for version 4.15.0-1110
+Description-md5: af958809031ffab85a9f95e1c0294410
+Supported: 5y
+
+Package: linux-azure-headers-4.15.0-1110
+Architecture: all
+Version: 4.15.0-1110.122~16.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 74812
+Depends: coreutils
+Filename: pool/main/l/linux-azure/linux-azure-headers-4.15.0-1110_4.15.0-1110.122~16.04.1_all.deb
+Size: 10942324
+MD5sum: b9f3158bd9df407a789f1d81a37c11ba
+SHA1: 7c7562f9d8374e506200370b20576f9f68b24b52
+SHA256: c730d1840d703ea0117c1b47ba57b4a07de0fa2a3d8e38e9afc361382e85531b
+SHA512: d5407b7c455c436dbca02101d3dcbb5962491cb91c8db893fc1d1d60e489e66644f614d0e48cb5d99bda9734db875ba80325b9dbb9cff97630c12d1d8f960ba5
+Description: Header files related to Linux kernel version 4.15.0
+Description-md5: e325b747216fc3c4d428c0ee49c7f9ea
+Supported: 5y
+
+Package: linux-azure-tools-4.15.0-1110
+Architecture: amd64
+Version: 4.15.0-1110.122~16.04.1
+Priority: optional
+Section: devel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 17345
+Depends: binutils (>= 2.26.1), binutils (<< 2.27), libaudit1 (>= 1:2.2.1), libc6 (>= 2.14), libdw1 (>= 0.157), libelf1 (>= 0.144), liblzma5 (>= 5.1.1alpha+20120614), libnuma1, libpci3 (>= 1:3.3.1-1), libslang2 (>= 2.2.4), libudev1 (>= 183), libunwind8, zlib1g (>= 1:1.1.4), linux-tools-common
+Filename: pool/main/l/linux-azure/linux-azure-tools-4.15.0-1110_4.15.0-1110.122~16.04.1_amd64.deb
+Size: 3808700
+MD5sum: abb14cd6785e9ee0ab661533f6378b64
+SHA1: 9477781d1a8102c528b5f2f2bcdf8012c9aec84b
+SHA256: 806260eefed4a2fef0542d11e55f8019912370d8cdf1e641f26f067bbd2f5e81
+SHA512: 51d7699ac67bb23fab462b93cdab8e9efe527ab9ed0c497ebbb03e4b5a2bb7a54315a7dfe315323af809de9e1e1ee521dd1f45ea2cb1b8923305d73f6f58ad3e
+Description: Linux kernel version specific tools for version 4.15.0-1110
+Description-md5: e670ddb65a9edb49bd344ae6d1a25358
+Supported: 5y
+
+Package: linux-buildinfo-4.15.0-1066-oracle
+Architecture: amd64
+Version: 4.15.0-1066.74~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-oracle
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 2412
+Filename: pool/main/l/linux-oracle/linux-buildinfo-4.15.0-1066-oracle_4.15.0-1066.74~16.04.1_amd64.deb
+Size: 269272
+MD5sum: d7403d5d0905b7b0a0b18583bc80e55e
+SHA1: c6f5dc1c35162019b90274f8ba9a7fd6e20319bd
+SHA256: 433c052fb33c4dc7fc8df92436211c98562d3d23e9483f4ed1197a4965ecadef
+SHA512: 8ec481d18b9060a31b662b36fbe3c3ff8a4ffd6beaafc0425d9c90bad63af76e1a88c34114f5e7989dea26006d21b6e191a9d59254d554b4e0e9fb451c280930
+Description: Linux kernel buildinfo for version 4.15.0 on 64 bit x86 SMP
+Description-md5: ec6b9a317bc4aefc4bb8618c8c2a11bc
+Supported: 5y
+
+Package: linux-buildinfo-4.15.0-1067-oracle
+Architecture: amd64
+Version: 4.15.0-1067.75~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-oracle
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 2412
+Filename: pool/main/l/linux-oracle/linux-buildinfo-4.15.0-1067-oracle_4.15.0-1067.75~16.04.1_amd64.deb
+Size: 265674
+MD5sum: 37b9674eb640dcd3e3ce80b86689db18
+SHA1: 78dec1a07dc25aa92a54430f3380986f54065a4f
+SHA256: 712d5b67f304c389adf1d962d376ac617600ae7f1ad7c531404af790bb30df60
+SHA512: e230e990e60ff8b2c63ea2701d203f1e9727cbf586ad621b6c761a384abd6d87b8c730ad0c138c6c5736185bf84e3805667420d02315d01abe294ba397f6864d
+Description: Linux kernel buildinfo for version 4.15.0 on 64 bit x86 SMP
+Description-md5: ec6b9a317bc4aefc4bb8618c8c2a11bc
+Supported: 5y
+
+Package: linux-buildinfo-4.15.0-1095-aws
+Architecture: amd64
+Version: 4.15.0-1095.102~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-aws-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1898
+Filename: pool/main/l/linux-aws-hwe/linux-buildinfo-4.15.0-1095-aws_4.15.0-1095.102~16.04.1_amd64.deb
+Size: 214310
+MD5sum: c8d6b686f2335b57be59f67c351f2061
+SHA1: c032eb8ff7fe820fb7b17c7478e15e73ae09ccd1
+SHA256: 0e3a28aa8573c729c37d67aa0e85221f5bf7bf5d21a7b353ca65af076e9fd0f1
+SHA512: e9d671143c7bf7f24987e932ba5fcf9fc70cecf95d7fe2b8eae40b37258f1bdfd812e1c1983078ded78bc04b2815af08c9ed8883ff1bc829d6e3a9b3753e8545
+Description: Linux kernel buildinfo for version 4.15.0 on 64 bit x86 SMP
+Description-md5: ec6b9a317bc4aefc4bb8618c8c2a11bc
+Supported: 5y
+
+Package: linux-buildinfo-4.15.0-1095-gcp
+Architecture: amd64
+Version: 4.15.0-1095.108~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-gcp
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 2539
+Filename: pool/main/l/linux-gcp/linux-buildinfo-4.15.0-1095-gcp_4.15.0-1095.108~16.04.1_amd64.deb
+Size: 257810
+MD5sum: 493325231a8053d788c96230d179a464
+SHA1: 6ce3f2212887bac52c0212a2e3e373a4fb21a185
+SHA256: d2589d099ba0e8152268743cdb24fbfe55d975369dbf815cae92fca73610419a
+SHA512: 8aea274d8a76ac3f52fff53c4891ae2ea41ff82af857767dcea732048cc006e286765c85197b682a9303bc2f49a772bd2a91301ca478cdf735e811a269ebd091
+Description: Linux kernel buildinfo for version 4.15.0 on 64 bit x86 SMP
+Description-md5: ec6b9a317bc4aefc4bb8618c8c2a11bc
+Supported: 5y
+
+Package: linux-buildinfo-4.15.0-1096-aws
+Architecture: amd64
+Version: 4.15.0-1096.103~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-aws-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1899
+Filename: pool/main/l/linux-aws-hwe/linux-buildinfo-4.15.0-1096-aws_4.15.0-1096.103~16.04.1_amd64.deb
+Size: 213808
+MD5sum: efc530e671478a828959e67e55c9546b
+SHA1: afb920d23468eb717d8448cc9df21aa09aa2cdab
+SHA256: 407c35da95fcb83a04b90a7120223ebeb4f125e22242dcf69bba0ea80d3b60ea
+SHA512: 5144cb2182f590213b1fd8f731aa6a1c7eef423119eeca8451e5c6bd29dee4a246f40b4b6cccb03287d3a94b3d7a389adf883764abfe22901960ee0358503cc3
+Description: Linux kernel buildinfo for version 4.15.0 on 64 bit x86 SMP
+Description-md5: ec6b9a317bc4aefc4bb8618c8c2a11bc
+Supported: 5y
+
+Package: linux-buildinfo-4.15.0-1110-azure
+Architecture: amd64
+Version: 4.15.0-1110.122~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1974
+Filename: pool/main/l/linux-azure/linux-buildinfo-4.15.0-1110-azure_4.15.0-1110.122~16.04.1_amd64.deb
+Size: 195740
+MD5sum: 15858118bdf96b2a9ad11f3315ec40c9
+SHA1: d0d694bdcd6e24bc8545f9741e8bbf4e9b5566dc
+SHA256: 98d6dd3877677a3ba50b46b1477ce13bd2be32dd8014403a23f4954133b16d7d
+SHA512: 6d5f6728558f31760bbae059d1aa749ff67e87dbc302a7ee5fd521a8fa02043a7b092046eb66aa3bc141948829f055c1cb5c5327c1d92a3d39942373dc322db5
+Description: Linux kernel buildinfo for version 4.15.0 on 64 bit x86 SMP
+Description-md5: ec6b9a317bc4aefc4bb8618c8c2a11bc
+Supported: 5y
+
+Package: linux-buildinfo-4.4.0-1125-aws
+Architecture: amd64
+Version: 4.4.0-1125.139
+Priority: optional
+Section: kernel
+Source: linux-aws
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1474
+Filename: pool/main/l/linux-aws/linux-buildinfo-4.4.0-1125-aws_4.4.0-1125.139_amd64.deb
+Size: 252736
+MD5sum: 84d05625b3c9d0bf88b4396c3bf80826
+SHA1: 76b33ffc5c9f405b07045c8fbef202371223644e
+SHA256: 4de032528f418284d4b2f51d7f633fd616482f8607c497810b011134717d9e98
+SHA512: 1dc1131bd4773a1458533547ea9c24184ada0136c2434a8cf414ef7e5ae43681534ccb6b6e047d15732e8d5db776f42a5d25fbd92d2e448273d43f4b6486d47d
+Description: Linux kernel buildinfo for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 6dfcca32cc0a77528ab3ad76b4cbb417
+
+Package: linux-buildinfo-4.4.0-206-generic
+Architecture: amd64
+Version: 4.4.0-206.238
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 2097
+Filename: pool/main/l/linux/linux-buildinfo-4.4.0-206-generic_4.4.0-206.238_amd64.deb
+Size: 312936
+MD5sum: 50562c683d8f28f5bbdc4cba1d8f3ed2
+SHA1: 81e568f60debc13866b9ade19d26707fd5a7ff70
+SHA256: 747f5376681b283ff8afbe5df61af90c7647783162cc36a5869d220c02c4c3f1
+SHA512: c13f241f306078dbed72f61162dcc7daf6c18e79bb9b19a524f8ba2c5f1355b4c1ac11d3e223df34dab2d28dbaf4885d3eac70c66793166fa2c3f07bf55577cd
+Description: Linux kernel buildinfo for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 6dfcca32cc0a77528ab3ad76b4cbb417
+Supported: 5y
+
+Package: linux-buildinfo-4.4.0-206-lowlatency
+Architecture: amd64
+Version: 4.4.0-206.238
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 2095
+Filename: pool/main/l/linux/linux-buildinfo-4.4.0-206-lowlatency_4.4.0-206.238_amd64.deb
+Size: 312980
+MD5sum: 29b39ac29ad7042a93361d47e05959f4
+SHA1: ad546ed4bd3524dc461800222f5b5a88ee4086c4
+SHA256: 3e0eca8536a719bc18f1c43e114cacd2851abe9d5aad6d7afc16bc81c9a8b135
+SHA512: 2d0860f1d92b5da6fd48fab90cdcba2e072ba6924cb0d1d7b6953e2b2bd0497c3aed6da681ce8bfac65b3340aefece4f977307c3f5599628b0ca2d243bdd86f4
+Description: Linux kernel buildinfo for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 6dfcca32cc0a77528ab3ad76b4cbb417
+Supported: 5y
+
+Package: linux-buildinfo-4.4.0-207-generic
+Architecture: amd64
+Version: 4.4.0-207.239
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 2104
+Filename: pool/main/l/linux/linux-buildinfo-4.4.0-207-generic_4.4.0-207.239_amd64.deb
+Size: 313798
+MD5sum: 56ea1755393d11fc30cde63536ff0607
+SHA1: 625829b1e7d556c208c9e12c7be71113f31190ba
+SHA256: 84eba930ad82050a5db697e0b3197d3627731a7fc62b1ca06f55d7b4bc33f432
+SHA512: 9ad2d1436de0d55b5bad931a52129f56a000e8694df25eca19b98308471e8123279120a76959afcafcd27d58fea12e132406c0467379f72cead2635473b4c576
+Description: Linux kernel buildinfo for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 6dfcca32cc0a77528ab3ad76b4cbb417
+
+Package: linux-buildinfo-4.4.0-207-lowlatency
+Architecture: amd64
+Version: 4.4.0-207.239
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 2103
+Filename: pool/main/l/linux/linux-buildinfo-4.4.0-207-lowlatency_4.4.0-207.239_amd64.deb
+Size: 313248
+MD5sum: 3d93f39eaa9966772c6ff5f345a08e92
+SHA1: c1bad39ad98bb3bbff2762e1326c71328111fd6d
+SHA256: 5231daa9cc2f54179b436ac8a59cdf480fc422a723746976bbad8c5ce5e835a9
+SHA512: b2148d3539654bcfabf1c31b0d06aaa6b9df80480fba4ea887460d388d57a745da47076241d4f6aaed3bf97d3a8ce848ba2a54f56705cf14cf1d9313bbe646ed
+Description: Linux kernel buildinfo for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 6dfcca32cc0a77528ab3ad76b4cbb417
+
+Package: linux-cloud-tools-4.15.0-1110-azure
+Architecture: amd64
+Version: 4.15.0-1110.122~16.04.1
+Priority: optional
+Section: devel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 838
+Depends: linux-azure-cloud-tools-4.15.0-1110
+Filename: pool/main/l/linux-azure/linux-cloud-tools-4.15.0-1110-azure_4.15.0-1110.122~16.04.1_amd64.deb
+Size: 1818
+MD5sum: 7bf2ba588b12a625fc0d42034082ba2b
+SHA1: 6fc466993210bc37ef3f9810e231d2489bcb5d0f
+SHA256: 3bf050282c55e5844e54e1f2cd96aad574ade271fd1af6c91544f7508018c5df
+SHA512: 52331c45c0c3eefb2f4c14e24e8cdc7890f4e24373beb7592f41e4295d643bbd3e81c2ebc074d720ca02e4fff851e799870a5136235bc5733fc9456564c90919
+Description: Linux kernel version specific cloud tools for version 4.15.0-1110
+Description-md5: b02138844c6131016ccdc7e9800d194b
+Supported: 5y
+
+Package: linux-cloud-tools-4.4.0-1125-aws
+Architecture: amd64
+Version: 4.4.0-1125.139
+Priority: optional
+Section: devel
+Source: linux-aws
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 383
+Depends: linux-aws-cloud-tools-4.4.0-1125
+Filename: pool/main/l/linux-aws/linux-cloud-tools-4.4.0-1125-aws_4.4.0-1125.139_amd64.deb
+Size: 2550
+MD5sum: 2e3f57080cc3dba0c028ef693e4169c5
+SHA1: 8bc45603a50df81020dde633225b515a35a07367
+SHA256: 18d6d5c79f1d4e4eec105d1ba72244cfae6931afa3cde540c004cae2ac1c85d2
+SHA512: c3df6298594e5cd36bacb9e1ba298d15e7a5fa78d3a18dcfe2363649c492dc0160bbbf7eba3c2f2808f954c03451b71d311d9b902dcab7e3c4654395641f88a2
+Description: Linux kernel version specific cloud tools for version 4.4.0-1125
+Description-md5: 64a744143a01d53ceeedc16f6ab3b588
+
+Package: linux-cloud-tools-4.4.0-206
+Architecture: amd64
+Version: 4.4.0-206.238
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 659
+Depends: libc6 (>= 2.14), linux-cloud-tools-common
+Filename: pool/main/l/linux/linux-cloud-tools-4.4.0-206_4.4.0-206.238_amd64.deb
+Size: 41010
+MD5sum: 9819760aaeb206a18d33d72d01563d00
+SHA1: 9bc1c4650750eaadcf810a8d110e2a9444ebffe5
+SHA256: 91086ad0b3725005f19f4f93bf288224517d6040bea326dc7d0c4e30d23133bd
+SHA512: 4d26448f824ac75f0ecccf8a1a11791b5d8fc7cb07f577ed4f92d1663dc659908a9aff91cc37d739bf0b8a332c62e7f458c44781483f38797bc6b0268afffe99
+Description: Linux kernel version specific cloud tools for version 4.4.0-206
+Description-md5: 32fa7ee3babc8228b638b427a03017e8
+Supported: 5y
+
+Package: linux-cloud-tools-4.4.0-206-generic
+Architecture: amd64
+Version: 4.4.0-206.238
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 599
+Depends: linux-cloud-tools-4.4.0-206
+Filename: pool/main/l/linux/linux-cloud-tools-4.4.0-206-generic_4.4.0-206.238_amd64.deb
+Size: 2556
+MD5sum: bbbbed7fa72903b9ed0f5e38c91841d8
+SHA1: 0982fd1eaab71eefecd57e05a83aef1f27c35f38
+SHA256: fb3998408ef2c6a05f7402bd33b5ff3010b965e2098dc2211191515bd2287175
+SHA512: ad4db4fc29a92e43c3da74741ad9be9fa986b704e17282bc3d85255ebfa2edfa2e445698f928ecdfb31d94923883c04f33b2cd1ebf2da9d9dc464c0ff0ba855d
+Description: Linux kernel version specific cloud tools for version 4.4.0-206
+Description-md5: 68552cfbf2bb8e94bf3143ee9359a300
+Supported: 5y
+
+Package: linux-cloud-tools-4.4.0-206-lowlatency
+Architecture: amd64
+Version: 4.4.0-206.238
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 599
+Depends: linux-cloud-tools-4.4.0-206
+Filename: pool/main/l/linux/linux-cloud-tools-4.4.0-206-lowlatency_4.4.0-206.238_amd64.deb
+Size: 2560
+MD5sum: 377501c7a2c03eb85fee20cbc392d4bb
+SHA1: 9bd0f747c6f10521f4185269f23693bc989e9e61
+SHA256: b5dd09bb5ca2ac3e872770658ffebec9055450972e42032f59e586d78d3e9a9b
+SHA512: 51e549dabec45c41d4639ad08a62db545f7d2399af971bbc6401182876465c2a701f4b0263f8ad63fbaeb03df702362c96d5fac89a156899d26a1c5c575cd4c1
+Description: Linux kernel version specific cloud tools for version 4.4.0-206
+Description-md5: 68552cfbf2bb8e94bf3143ee9359a300
+Supported: 5y
+
+Package: linux-cloud-tools-4.4.0-207
+Architecture: amd64
+Version: 4.4.0-207.239
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 666
+Depends: libc6 (>= 2.14), linux-cloud-tools-common
+Filename: pool/main/l/linux/linux-cloud-tools-4.4.0-207_4.4.0-207.239_amd64.deb
+Size: 40788
+MD5sum: e6d47275dcbfc384e70bc245c3a15e9a
+SHA1: 46adb10128d1af5e5f15c63637ffe4e5c5a355bd
+SHA256: fe8a1e4a549830fcb85f4b2c558ab604a7faeec0508c1e5b1ce8f142ac16f504
+SHA512: 38a198c88be530c3f71bc0c77ba73e569c3b4c85c8458098d6de1b095552ec258957c871ca7ba23034af9538f581dcf85db8044ee3b1a97168fd1b2c24e8e08c
+Description: Linux kernel version specific cloud tools for version 4.4.0-207
+Description-md5: 38b045820b9eb2858d199bec3115eabe
+
+Package: linux-cloud-tools-4.4.0-207-generic
+Architecture: amd64
+Version: 4.4.0-207.239
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 606
+Depends: linux-cloud-tools-4.4.0-207
+Filename: pool/main/l/linux/linux-cloud-tools-4.4.0-207-generic_4.4.0-207.239_amd64.deb
+Size: 2560
+MD5sum: e320440d2f7c2aca64be1a8e18a931ca
+SHA1: cd5f31214574dbf799554d874f0ccd6fb8f01281
+SHA256: 1d063b45106b0ac9bd6d9a584920a1b3f85f39da2850787bdddfeed6cff8c525
+SHA512: d2f5cd4fc9a9d65ac2a899b8b09d3d5627036837e0054f0553f8a060db78b5a1ec33a3de85ec707b98d4fb2c90c11a43b373f91508fbecabda4a6b4bd70acb04
+Description: Linux kernel version specific cloud tools for version 4.4.0-207
+Description-md5: fba7d8afa183bbe8d6f1ab6249d396b4
+
+Package: linux-cloud-tools-4.4.0-207-lowlatency
+Architecture: amd64
+Version: 4.4.0-207.239
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 606
+Depends: linux-cloud-tools-4.4.0-207
+Filename: pool/main/l/linux/linux-cloud-tools-4.4.0-207-lowlatency_4.4.0-207.239_amd64.deb
+Size: 2560
+MD5sum: cb3aa5ba18dbee886892558bc73a2705
+SHA1: 93f0e86453de3bf26074988b20ac8e5c1b7c0341
+SHA256: 411b28d8b52a83347568e241c83a0351da318156c67c89f1879f2525c861c28c
+SHA512: d82ce338e71da6c877b26331ba58b31df8dcbf49c701a0351769acddb22e7a94ff6b0a00c64efb9dbcad9908291f1aeb81036c6ee09f9467e397c16a00add0a7
+Description: Linux kernel version specific cloud tools for version 4.4.0-207
+Description-md5: fba7d8afa183bbe8d6f1ab6249d396b4
+
+Package: linux-cloud-tools-common
+Architecture: all
+Version: 4.4.0-206.238
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 642
+Provides: linux-aws-cloud-tools-common, linux-gke-cloud-tools-common
+Depends: init-system-helpers (>= 1.18~), lsb-base (>= 4.1+Debian11ubuntu7)
+Conflicts: linux-aws-cloud-tools-common, linux-gke-cloud-tools-common
+Replaces: linux-aws-cloud-tools-common, linux-gke-cloud-tools-common
+Filename: pool/main/l/linux/linux-cloud-tools-common_4.4.0-206.238_all.deb
+Size: 32298
+MD5sum: 88a3134c485f8b32cc5f2686c8a96758
+SHA1: 7321be55b0f500745f2be64b2359d3ab36d4ff4c
+SHA256: ad3760dd30df529f3944bb7c1911568fbdf83c3fa66b490479f24bc82824f798
+SHA512: 32e2e19da0e780b4691f20e7f5222f111f60269945a343b5bb1fc4e43d6d649f38a9d6286c82af2b54a860d0529497e29be47dd37147927f98960066b320c4e5
+Description: Linux kernel version specific cloud tools for version 4.4.0
+Description-md5: c46b3f589b3d9c07a66c74de87fb3dc8
+Supported: 5y
+
+Package: linux-cloud-tools-common
+Architecture: all
+Version: 4.4.0-207.239
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 649
+Provides: linux-aws-cloud-tools-common, linux-gke-cloud-tools-common
+Depends: init-system-helpers (>= 1.18~), lsb-base (>= 4.1+Debian11ubuntu7)
+Conflicts: linux-aws-cloud-tools-common, linux-gke-cloud-tools-common
+Replaces: linux-aws-cloud-tools-common, linux-gke-cloud-tools-common
+Filename: pool/main/l/linux/linux-cloud-tools-common_4.4.0-207.239_all.deb
+Size: 31940
+MD5sum: f56425c77a0f4b661e31bd7ed33d0758
+SHA1: f29fd37f1ec6bce789f498b5be1ca628ced33f21
+SHA256: 4f715b1a7b2e13bdcfc5159f2a400200c521af13170ed60b0a4b8a592de180db
+SHA512: 1e974cefc8dc8dbbd85be84d58ed579bba7c0fb9acc748623771459bdef434e57b26cb9c753b4db49a76343fd5ebbc3adbf4b9cb1c0f38b135e0b0fa48a4f5f2
+Description: Linux kernel version specific cloud tools for version 4.4.0
+Description-md5: c46b3f589b3d9c07a66c74de87fb3dc8
+Supported: 5y
+
+Package: linux-doc
+Architecture: all
+Version: 4.4.0-206.238
+Priority: optional
+Section: doc
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 42913
+Filename: pool/main/l/linux/linux-doc_4.4.0-206.238_all.deb
+Size: 11305040
+MD5sum: eb683f27844ee597566dcaaf1dd6be76
+SHA1: b6ad41bb18f634b4df044f35df62311ef40aa097
+SHA256: 560faf69e6a150f8419ad9547aef9a68c15a5cbd3374975c6759d49910f7fa14
+SHA512: 07c14c9bb0fe43c0ad0ade27206cd44d43fa2b037c324ae797efbe4b00d677bdcf6d89e2c4c783b80fe3a6b2d50f0b578c0ccbe07402f890f4dc0d73478255ae
+Description: Linux kernel specific documentation for version 4.4.0
+Description-md5: 62e9693f74b369c25babebdffb092819
+Supported: 5y
+
+Package: linux-doc
+Architecture: all
+Version: 4.4.0-207.239
+Priority: optional
+Section: doc
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 42933
+Filename: pool/main/l/linux/linux-doc_4.4.0-207.239_all.deb
+Size: 11346012
+MD5sum: 80939ac710d2d09d8863a924c635da5b
+SHA1: e872193459234ddb0f71bac693a202abd8b309a7
+SHA256: 978c2c3f64fc7d5194d7fea761485c0d6d7469083bdffe3849b1dea1ec27fbdc
+SHA512: 1f67481792f8464527143ec44a5386f748e23c11ca189c1c2689ccfe2002c23f540a0dddc11595e25d9d674fc2f6951b7c9693a59ce2563b522038d5001d51d5
+Description: Linux kernel specific documentation for version 4.4.0
+Description-md5: 62e9693f74b369c25babebdffb092819
+Supported: 5y
+
+Package: linux-gcp-headers-4.15.0-1095
+Architecture: amd64
+Version: 4.15.0-1095.108~16.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: linux-gcp
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 74668
+Depends: coreutils
+Breaks: iscsitarget-dkms (<< 1.4.20.3+svn502-2ubuntu4.4)
+Filename: pool/main/l/linux-gcp/linux-gcp-headers-4.15.0-1095_4.15.0-1095.108~16.04.1_amd64.deb
+Size: 10930708
+MD5sum: 1acf1198110fb968850ff25ca4cf3bfd
+SHA1: 9afc4c9fa5fc2fa650e3162fcb8cd0fc73457a95
+SHA256: 7c71addd229740e77429dee779f59522fbfa432bc944bf328a44ced87e34590f
+SHA512: b06b48002fc347b8cd9ed3ac713f9538e0d042104abf151cc63a49ce64470e47d656d366e97a739f579337c2c8c543f9594ef887bf0a3203626bad4c1afcfdc9
+Description: Header files related to Linux kernel version 4.15.0
+Description-md5: 10a57ae619f29fd5665a25dc39f47a8e
+Supported: 5y
+
+Package: linux-gcp-tools-4.15.0-1095
+Architecture: amd64
+Version: 4.15.0-1095.108~16.04.1
+Priority: optional
+Section: devel
+Source: linux-gcp
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 17223
+Depends: binutils (>= 2.26.1), binutils (<< 2.27), libaudit1 (>= 1:2.2.1), libc6 (>= 2.14), libdw1 (>= 0.157), libelf1 (>= 0.144), liblzma5 (>= 5.1.1alpha+20120614), libnuma1, libpci3 (>= 1:3.3.1-1), libslang2 (>= 2.2.4), libudev1 (>= 183), libunwind8, zlib1g (>= 1:1.1.4), linux-tools-common
+Filename: pool/main/l/linux-gcp/linux-gcp-tools-4.15.0-1095_4.15.0-1095.108~16.04.1_amd64.deb
+Size: 3804090
+MD5sum: 376f631111ebde469f192bcbe2b63155
+SHA1: 70b2b5b1a2335ae1dc0ddce1ba522b0380122d50
+SHA256: 96beb159f454046423504d3b618faf311b65681f7deffe3b45d8ef4e7b66ac0c
+SHA512: 9342c1c5069d4a5e90a62bd18d25272ec5c2c09cb8a2fd5335087e7df523a81955dea63465768c8651f4cd4e62bb8df8caab474512ee5a998ca79a4d8de19f9f
+Description: Linux kernel version specific tools for version 4.15.0-1095
+Description-md5: ce24631e237389b3cca98a14c44abe95
+Supported: 5y
+
+Package: linux-headers-4.15.0-1066-oracle
+Architecture: amd64
+Version: 4.15.0-1066.74~16.04.1
+Priority: optional
+Section: devel
+Source: linux-oracle
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 12631
+Provides: linux-headers, linux-headers-3.0
+Depends: linux-oracle-headers-4.15.0-1066, libc6 (>= 2.14), libelf1 (>= 0.142), libssl1.0.0 (>= 1.0.0)
+Filename: pool/main/l/linux-oracle/linux-headers-4.15.0-1066-oracle_4.15.0-1066.74~16.04.1_amd64.deb
+Size: 1142694
+MD5sum: 890c4a13f97d14abca1fe2cd5f4c08b8
+SHA1: d6c1c125e42ab0a8a9e58a2d990c564d6243ede6
+SHA256: ea6e913117674d6e3c8cb634311c134fe1604ef48e46aa0d00a45bb5da0bacb0
+SHA512: da5064d2ec64973643cce1acf5aa4c7837eab97a4bab15c4a35e3d7a7c04863de3c83672ff33306ef3bbda5fbb072cb86bff849436449b22011e9f2fb8f69e62
+Description: Oracle Linux kernel headers for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 01ec56f317ac03b7c19e112cb6110170
+Supported: 5y
+
+Package: linux-headers-4.15.0-1067-oracle
+Architecture: amd64
+Version: 4.15.0-1067.75~16.04.1
+Priority: optional
+Section: devel
+Source: linux-oracle
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 12631
+Provides: linux-headers, linux-headers-3.0
+Depends: linux-oracle-headers-4.15.0-1067, libc6 (>= 2.14), libelf1 (>= 0.142), libssl1.0.0 (>= 1.0.0)
+Filename: pool/main/l/linux-oracle/linux-headers-4.15.0-1067-oracle_4.15.0-1067.75~16.04.1_amd64.deb
+Size: 1155700
+MD5sum: 7a5030431aeb3070777e42a98d8ee26f
+SHA1: d84e1ad6c4048d047b44765bfaf711c899cb8e3c
+SHA256: c5d79fbb1ec886257e41e8f6093866a0fd3229b95346171e95f3b98d36a2d5dd
+SHA512: 0bda52c0cfa9e8cde99a6d10c6e7cccc7915746adf4a8afaab319ffceab1e9dea0919b8745f03f81df0d6b928802324c2527cd580fbae75fb0eee3c82a511c16
+Description: Oracle Linux kernel headers for version 4.15.0 on 64 bit x86 SMP
+Description-md5: bb8b90ef6585fb988cb79098245db7c1
+Supported: 5y
+
+Package: linux-headers-4.15.0-1095-aws
+Architecture: amd64
+Version: 4.15.0-1095.102~16.04.1
+Priority: optional
+Section: devel
+Source: linux-aws-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 11222
+Provides: linux-headers, linux-headers-3.0
+Depends: linux-aws-headers-4.15.0-1095, libc6 (>= 2.14), libelf1 (>= 0.142), libssl1.0.0 (>= 1.0.0)
+Filename: pool/main/l/linux-aws-hwe/linux-headers-4.15.0-1095-aws_4.15.0-1095.102~16.04.1_amd64.deb
+Size: 997100
+MD5sum: d5843cd13358cd3c2a35396961302ceb
+SHA1: 8b2f231c914e83f8947712b858692ff9f4ee8a82
+SHA256: 3c13e483f7a00f1d14798ec7f03ba74d4d8ccc9def7d364aeb338a44ec91582e
+SHA512: cd5cb99ba40c49b57bd2697e3d70bfb8693210b98061556709735d1b0bb80dedb0ddd27f320c9f21de8d346137dfe09aba1883cc683304f4b716be993f788930
+Description: Linux kernel headers for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 1838235dc86c7656a38eb27ed56f25bf
+Supported: 5y
+
+Package: linux-headers-4.15.0-1095-gcp
+Architecture: amd64
+Version: 4.15.0-1095.108~16.04.1
+Priority: optional
+Section: devel
+Source: linux-gcp
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 12763
+Provides: linux-headers, linux-headers-3.0
+Depends: linux-gcp-headers-4.15.0-1095, libc6 (>= 2.14), libelf1 (>= 0.142), libssl1.0.0 (>= 1.0.0)
+Filename: pool/main/l/linux-gcp/linux-headers-4.15.0-1095-gcp_4.15.0-1095.108~16.04.1_amd64.deb
+Size: 1150360
+MD5sum: 79c271eaf98c6cdbc4b1bcf8bfb836b4
+SHA1: 0923a22d375991506c9e5de9f313dfad8de03beb
+SHA256: 4951ba1934c12ce5271a04f471184b29b2a8bae632d7e7d349bcf1fc18fb52cf
+SHA512: 798b58497f45f8db7484091cf42da9675e64a4c00ad646ecacefa2acc120d38f1f0ca648cce4865d2c743d8a5e8fd416aa55015623671a4f04d60d8d977d6fe7
+Description: Linux kernel headers for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 1838235dc86c7656a38eb27ed56f25bf
+Supported: 5y
+
+Package: linux-headers-4.15.0-1096-aws
+Architecture: amd64
+Version: 4.15.0-1096.103~16.04.1
+Priority: optional
+Section: devel
+Source: linux-aws-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 11223
+Provides: linux-headers, linux-headers-3.0
+Depends: linux-aws-headers-4.15.0-1096, libc6 (>= 2.14), libelf1 (>= 0.142), libssl1.0.0 (>= 1.0.0)
+Filename: pool/main/l/linux-aws-hwe/linux-headers-4.15.0-1096-aws_4.15.0-1096.103~16.04.1_amd64.deb
+Size: 1012970
+MD5sum: 12409f9529f92dcf055c2dcd75051d92
+SHA1: e4c68929391c107a916f04e7c3b4bc4925370133
+SHA256: d71fba36edb5ade0c5960c0d5e30c00b7b8fc0da4e1dd7d597b7d78870a3310e
+SHA512: 3087797b315754e1ae8ec791cf48e967d315f5ab87cff41e494f17d5c6574d66066465e3940ae76cee7cb4d97598ef7e85390b98fe4477e6214d3ba087df94eb
+Description: Linux kernel headers for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 75da2f31f865e7ea7a7b053f14d34cb2
+Supported: 5y
+
+Package: linux-headers-4.15.0-1110-azure
+Architecture: amd64
+Version: 4.15.0-1110.122~16.04.1
+Priority: optional
+Section: devel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 10685
+Provides: linux-headers, linux-headers-3.0
+Depends: linux-azure-headers-4.15.0-1110, libc6 (>= 2.14), libelf1 (>= 0.142), libssl1.0.0 (>= 1.0.0)
+Filename: pool/main/l/linux-azure/linux-headers-4.15.0-1110-azure_4.15.0-1110.122~16.04.1_amd64.deb
+Size: 952758
+MD5sum: 161b71227c392f937cf69c4f8bfbfff9
+SHA1: 39b17d497de9b6a35069977b8ad33b81fb5e293f
+SHA256: baf492ed5877ae70c00821bcf71bca92fca43f0be85ec1cc440e7769e06ef01b
+SHA512: a39f4a27f548d0a8a2c0401ace785297c5409b84aab7fbe623db2764c31f7ecc42c8ddb0e9fb09ecf20c7d3831b09af09409c0da0650272ce27213f4cc1125c1
+Description: Linux kernel headers for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 941cb1c2d59bde9dac725e394d4dc40e
+Supported: 5y
+
+Package: linux-headers-4.4.0-1125-aws
+Architecture: amd64
+Version: 4.4.0-1125.139
+Priority: optional
+Section: devel
+Source: linux-aws
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 6147
+Provides: linux-headers, linux-headers-3.0
+Depends: linux-aws-headers-4.4.0-1125, libc6 (>= 2.14), libssl1.0.0 (>= 1.0.0)
+Filename: pool/main/l/linux-aws/linux-headers-4.4.0-1125-aws_4.4.0-1125.139_amd64.deb
+Size: 688444
+MD5sum: 07c3b2c592d47546c313a28ebb64fa42
+SHA1: cf3f5ae774a8e0831c82ddced6aaba1b89ed2596
+SHA256: cd55b9d6a79bdad17dc617937135abbbf9cb68325759f949823c1a487e5da0a3
+SHA512: 78194b47505fb1d335c980a1839f08cf1658402ec1331d3fbbad841420594581c150a143b5fcd2822827477c824a6f97e470db793cfc92e323ce07e336f9aae2
+Description: Linux kernel headers for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 424328b9160a99bfb95048d1960b9a92
+
+Package: linux-headers-4.4.0-206
+Architecture: all
+Version: 4.4.0-206.238
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 69624
+Depends: coreutils
+Breaks: iscsitarget-dkms (<< 1.4.20.3+svn502-2ubuntu4.3)
+Filename: pool/main/l/linux/linux-headers-4.4.0-206_4.4.0-206.238_all.deb
+Size: 10042424
+MD5sum: bc580325e1cd596296f83cc3b2e737b0
+SHA1: 831c4a4f28413e0301da80f8db3a1d103ff44797
+SHA256: e3f2908c46117874bd222e0ad992d80015e7d008430fbfb84722fb0761c6114e
+SHA512: bde94c9ff599ec93203174512f88a8fff6eec9ff311ef68ccf3120bdf0d9f497e96997f85f778cf968608ee7e52337006acf9e9082efc885c756f16c7d16ad68
+Description: Header files related to Linux kernel version 4.4.0
+Description-md5: f72ee6b736bd53847a7ecb24634fd6d7
+Supported: 5y
+
+Package: linux-headers-4.4.0-206-generic
+Architecture: amd64
+Version: 4.4.0-206.238
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 7562
+Provides: linux-headers, linux-headers-3.0
+Depends: linux-headers-4.4.0-206, libc6 (>= 2.14), libssl1.0.0 (>= 1.0.0)
+Filename: pool/main/l/linux/linux-headers-4.4.0-206-generic_4.4.0-206.238_amd64.deb
+Size: 786360
+MD5sum: e415910f524f0fc618c19793819444ac
+SHA1: 392f69340b1702789f9f2c31c35e7402182c9d7e
+SHA256: 2f93d61d8104d7b59272cc7c7995c361988117451f5c1a9df9d34679b64237e1
+SHA512: 9efb15087fb525183b480817de4d038a9bb0f7da112bbb71f971ac1f886df86eb470c96ac8858a3960f149f181b2a53451e6fce4c4e6985824010c2b25b4de59
+Description: Linux kernel headers for version 4.4.0 on 64 bit x86 SMP
+Description-md5: e1af056428f0c5dcd225ce2e48dcc7fe
+Supported: 5y
+
+Package: linux-headers-4.4.0-206-lowlatency
+Architecture: amd64
+Version: 4.4.0-206.238
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 7548
+Provides: linux-headers, linux-headers-3.0
+Depends: linux-headers-4.4.0-206, libc6 (>= 2.14), libssl1.0.0 (>= 1.0.0)
+Filename: pool/main/l/linux/linux-headers-4.4.0-206-lowlatency_4.4.0-206.238_amd64.deb
+Size: 785892
+MD5sum: a7d2a7d0804462780b345565b7feda20
+SHA1: c2a7dcf1004b529a2cb04194354092a6e90c9563
+SHA256: 5a048842bb54bbd67e4e32cbb00d0f3ef4700f7263b9a88b6edad310b216cb89
+SHA512: c8f8107e239e3259e5e7f8bd39b2991e5335d0a7b23ee091693f67a865cec8cb0b47f3e17e5ffb9eaeef0bc2a2b39c1a13775b44386a1c046dc3cd16b8fb53e3
+Description: Linux kernel headers for version 4.4.0 on 64 bit x86 SMP
+Description-md5: e1af056428f0c5dcd225ce2e48dcc7fe
+Supported: 5y
+
+Package: linux-headers-4.4.0-207
+Architecture: all
+Version: 4.4.0-207.239
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 69635
+Depends: coreutils
+Breaks: iscsitarget-dkms (<< 1.4.20.3+svn502-2ubuntu4.3)
+Filename: pool/main/l/linux/linux-headers-4.4.0-207_4.4.0-207.239_all.deb
+Size: 10082428
+MD5sum: 34e3374c6ba3d4a2876dbfca95ad8837
+SHA1: 55a2f6da09f4fdf1ffa9ee3e7a404ef74bcfecc6
+SHA256: bb68bf196e33319b6bdb28a3e86e82337681158b44907eb822ce3256b1cd7c20
+SHA512: 0c252b0970c0d333367c73f09d1931ee5f030902867c990f1d6abbcb82a62256ded7e81fab2962b9ec59e8bae6e48fec92c38ae03e4924b4a72b52d917d20c8e
+Description: Header files related to Linux kernel version 4.4.0
+Description-md5: 4ff72de7b6f48893359c8f83abf333e3
+
+Package: linux-headers-4.4.0-207-generic
+Architecture: amd64
+Version: 4.4.0-207.239
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 7568
+Provides: linux-headers, linux-headers-3.0
+Depends: linux-headers-4.4.0-207, libc6 (>= 2.14), libssl1.0.0 (>= 1.0.0)
+Filename: pool/main/l/linux/linux-headers-4.4.0-207-generic_4.4.0-207.239_amd64.deb
+Size: 783206
+MD5sum: ec5f2135097d961d654c1c4441f5fe9a
+SHA1: 538f599c67c69ac7d17241f2011190fbc43ce0c8
+SHA256: 6cc5fdff8859b5b1f7cc99038398857b7f175b6b27aa84a7f7dedf0124b7a106
+SHA512: 3bbc31f21804413944f1cdd31ab5e989e883d17e483bf25db66ab09b75f6c1dd8b5c55e3b8815ac73769d8b09cefb3f8beca2d7925d8e3e7d9444a455df36612
+Description: Linux kernel headers for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 30eef03b83d5a8b5dba1263fd24a372b
+
+Package: linux-headers-4.4.0-207-lowlatency
+Architecture: amd64
+Version: 4.4.0-207.239
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 7555
+Provides: linux-headers, linux-headers-3.0
+Depends: linux-headers-4.4.0-207, libc6 (>= 2.14), libssl1.0.0 (>= 1.0.0)
+Filename: pool/main/l/linux/linux-headers-4.4.0-207-lowlatency_4.4.0-207.239_amd64.deb
+Size: 784912
+MD5sum: 1906940c07ab0805c019535d880187d4
+SHA1: b4f21221fad0ade1d75efc3b94e7be92eca4259a
+SHA256: 43ca00e1df6a8c41d8941a889c686931d2d58ad100e3963b30a79eae6dfa54a0
+SHA512: 6ec277bc9b811818238dd268346467692b7017f84c61553e4bd978c295236080f64da1dd36fd729ef19ca54e1d255eedd7021e0bbf5a302af46a4195fd93a350
+Description: Linux kernel headers for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 30eef03b83d5a8b5dba1263fd24a372b
+
+Package: linux-image-4.15.0-1066-oracle
+Architecture: amd64
+Version: 4.15.0-1066.74~16.04.1
+Built-Using: linux-oracle (= 4.15.0-1066.74~16.04.1)
+Priority: optional
+Section: kernel
+Source: linux-signed-oracle
+Origin: Ubuntu
+Maintainer: Canonical Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 8040
+Provides: aufs-dkms, fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.15.0-1066-oracle
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-oracle-doc-4.15.0 | linux-oracle-source-4.15.0, linux-oracle-tools, linux-headers-4.15.0-1066-oracle
+Conflicts: linux-image-unsigned-4.15.0-1066-oracle
+Breaks: initramfs-tools (<< 0.122ubuntu8.14)
+Filename: pool/main/l/linux-signed-oracle/linux-image-4.15.0-1066-oracle_4.15.0-1066.74~16.04.1_amd64.deb
+Size: 8003126
+MD5sum: c8b10f198bc9847dd5b68eab66459730
+SHA1: bfd0c7e9877b2954383a5ce20198a16630bd1911
+SHA256: dd577ece43ad2c08c03719e097bc44c8ff7837a68f94645417093fb21a6c9a42
+SHA512: 7d0fd1e96feb42f713a092b9deab1c98000927b01a8ca07e42fbfb04bf6d8e9bcab552e3bd9f94958ed7ee8cb2bd14ac0642d3eca3f8e2756c576a735ca1c628
+Description: Signed kernel image oracle
+Description-md5: dac56b784e93dabcafaf01236fed222d
+Supported: 5y
+
+Package: linux-image-4.15.0-1067-oracle
+Architecture: amd64
+Version: 4.15.0-1067.75~16.04.1
+Built-Using: linux-oracle (= 4.15.0-1067.75~16.04.1)
+Priority: optional
+Section: kernel
+Source: linux-signed-oracle
+Origin: Ubuntu
+Maintainer: Canonical Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 8039
+Provides: aufs-dkms, fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.15.0-1067-oracle
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-oracle-doc-4.15.0 | linux-oracle-source-4.15.0, linux-oracle-tools, linux-headers-4.15.0-1067-oracle
+Conflicts: linux-image-unsigned-4.15.0-1067-oracle
+Breaks: initramfs-tools (<< 0.122ubuntu8.14)
+Filename: pool/main/l/linux-signed-oracle/linux-image-4.15.0-1067-oracle_4.15.0-1067.75~16.04.1_amd64.deb
+Size: 8003616
+MD5sum: 68b9b8f418651ce803858aac8b2390f5
+SHA1: f7282375fefd3f0ae00304884a162598dea79126
+SHA256: 09c05fb37d46ff8db61137132fefac135707ab913adc53b31ed45c2cc5ea9abe
+SHA512: 9ca0b93aa907849cb0d3da5d8e5156bdef61fd482f0426e31a8eb9cfb177947f918ff7e8e55e6676344c467650e5b69fd06a085d81b57c3f1c80f1b1fd6327a9
+Description: Signed kernel image oracle
+Description-md5: dac56b784e93dabcafaf01236fed222d
+Supported: 5y
+
+Package: linux-image-4.15.0-1095-aws
+Architecture: amd64
+Version: 4.15.0-1095.102~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-aws-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 8232
+Provides: aufs-dkms, fuse-module, linux-image, spl-dkms, spl-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.15.0-1095-aws
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-aws-hwe-doc-4.15.0 | linux-aws-hwe-source-4.15.0, linux-aws-hwe-tools, linux-headers-4.15.0-1095-aws
+Filename: pool/main/l/linux-aws-hwe/linux-image-4.15.0-1095-aws_4.15.0-1095.102~16.04.1_amd64.deb
+Size: 7708424
+MD5sum: f82802158fae3125e5094ed4869ca0a2
+SHA1: f4812a8ef46ee256d943cb2841c738acde35f9b6
+SHA256: be4bff19d98cefe92cefee5724f5104d43925ee5536513a997624c9ec8deb930
+SHA512: c96e9cf0e7118fa4399af146be19111e6971d683f253b0693652df26c8f73d7cc5d55fd443492423e6d3c81c6c21f8f8f522ae2cb5d722cfc314da46ff73518b
+Description: Linux kernel image for version 4.15.0 on 64 bit x86 SMP
+Description-md5: faf23600882c3d906ab9424476eda056
+Supported: 5y
+
+Package: linux-image-4.15.0-1095-gcp
+Architecture: amd64
+Version: 4.15.0-1095.108~16.04.1
+Built-Using: linux-gcp (= 4.15.0-1095.108~16.04.1)
+Priority: optional
+Section: kernel
+Source: linux-signed-gcp
+Origin: Ubuntu
+Maintainer: Canonical Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 8011
+Provides: aufs-dkms, fuse-module, linux-image, spl-dkms, spl-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.15.0-1095-gcp
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo
+Suggests: fdutils, linux-gcp-doc-4.15.0 | linux-gcp-source-4.15.0, linux-gcp-tools, linux-headers-4.15.0-1095-gcp, initramfs-tools | linux-initramfs-tool
+Conflicts: linux-image-unsigned-4.15.0-1095-gcp
+Filename: pool/main/l/linux-signed-gcp/linux-image-4.15.0-1095-gcp_4.15.0-1095.108~16.04.1_amd64.deb
+Size: 7973108
+MD5sum: 0263a7e00a9708be0be9c6e64f293e89
+SHA1: c9a176f802a16e99ea40444ac90a77741d67c21b
+SHA256: 970f10192924a3bc74eb440e8f8870597aa856a18a283dac5f7c5e76ba75cd0a
+SHA512: 9f0a64071db5ee129c69a39aade09d2c4d0f7c7c88b9085cc107f881645f1373ba3ea5ab3b4bfe901c1a356b221541b1021ee4ad5f972b30f6bf0110c65f238a
+Description: Signed kernel image GCP
+Description-md5: a844e08bb9bc7e5da00eb900399526fd
+Supported: 5y
+
+Package: linux-image-4.15.0-1096-aws
+Architecture: amd64
+Version: 4.15.0-1096.103~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-aws-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 8233
+Provides: aufs-dkms, fuse-module, linux-image, spl-dkms, spl-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.15.0-1096-aws
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-aws-hwe-doc-4.15.0 | linux-aws-hwe-source-4.15.0, linux-aws-hwe-tools, linux-headers-4.15.0-1096-aws
+Filename: pool/main/l/linux-aws-hwe/linux-image-4.15.0-1096-aws_4.15.0-1096.103~16.04.1_amd64.deb
+Size: 7709472
+MD5sum: f7bef061feb5ec724fc07fdf29786c57
+SHA1: a1ddd2fdaf1f59b3dbcd8bd2b1bb5e2d2bced267
+SHA256: ab1f3c717fdef84040c0276d871d3aba49fc95e535bc7542f29ae3489eea05a1
+SHA512: 9b76c947faada7a434408431c94ec9cb3f8e3b67cd5446be8a977b82d2b34d6722d3a52a44c83da02b83e460968d2d44abb23dfd6c023d6538a701735f9d90a0
+Description: Linux kernel image for version 4.15.0 on 64 bit x86 SMP
+Description-md5: faf23600882c3d906ab9424476eda056
+Supported: 5y
+
+Package: linux-image-4.15.0-1110-azure
+Architecture: amd64
+Version: 4.15.0-1110.122~16.04.1
+Built-Using: linux-azure (= 4.15.0-1110.122~16.04.1)
+Priority: optional
+Section: kernel
+Source: linux-signed-azure
+Origin: Ubuntu
+Maintainer: Canonical Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 7511
+Provides: aufs-dkms, fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.15.0-1110-azure
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub
+Suggests: fdutils, linux-azure-doc-4.15.0 | linux-azure-source-4.15.0, linux-azure-tools, linux-headers-4.15.0-1110-azure, initramfs-tools | linux-initramfs-tool
+Conflicts: linux-image-unsigned-4.15.0-1110-azure
+Filename: pool/main/l/linux-signed-azure/linux-image-4.15.0-1110-azure_4.15.0-1110.122~16.04.1_amd64.deb
+Size: 7469706
+MD5sum: d553e5fa74972e5be9937a5abd8bd04a
+SHA1: 6194affde8bb7ab7dd6de918417f70fcd944fa80
+SHA256: 5d9aa5c606992a04cd05376304f209e9a4d553826ca2acc6bcbe04ed056d51f3
+SHA512: 2296250b80fb33721f98ee0991b8c41271d03ff40ab5cd770b5dde44991f1f8201dd09c26feb02d3b04e8e9bec55407a289f052eead146ee0fb0bfe381317e63
+Description: Signed kernel image azure
+Description-md5: 4f10ee54ba011a7f5b60c437e681a38d
+Supported: 5y
+
+Package: linux-image-4.4.0-1125-aws
+Architecture: amd64
+Version: 4.4.0-1125.139
+Priority: optional
+Section: kernel
+Source: linux-aws
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 7312
+Provides: fuse-module, linux-image, spl-dkms, spl-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.4.0-1125-aws
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-aws-doc-4.4.0 | linux-aws-source-4.4.0, linux-aws-tools, linux-headers-4.4.0-1125-aws
+Conflicts: linux-image-unsigned-4.4.0-1125-aws
+Filename: pool/main/l/linux-aws/linux-image-4.4.0-1125-aws_4.4.0-1125.139_amd64.deb
+Size: 6940764
+MD5sum: f8f489747f40e3f3f57d896063e44148
+SHA1: f223c4980b2b51ee6713570addd45a30beefb4a4
+SHA256: bd6e7846a534fc4310bc97c30553a4c7b33b802423e1eb865ab9b38b618811b2
+SHA512: 3853808528c36868288fa61ed3bcd8e5a422c8cb79ac03795bf8c5afad4c175538fd40ccd7063ff2ecc207ac62b6d084f33a340beb15c7d93f5b761a32232ea9
+Description: Linux kernel image for version 4.4.0 on 64 bit x86 SMP
+Description-md5: f7a24cd44f32b892a9c2832d2f93aa75
+
+Package: linux-image-4.4.0-206-generic
+Architecture: amd64
+Version: 4.4.0-206.238
+Built-Using: linux (= 4.4.0-206.238)
+Priority: optional
+Section: kernel
+Source: linux-signed
+Origin: Ubuntu
+Maintainer: Canonical Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 7083
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.4.0-206-generic
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-doc-4.4.0 | linux-source-4.4.0, linux-tools, linux-headers-4.4.0-206-generic
+Conflicts: linux-image-unsigned-4.4.0-206-generic
+Filename: pool/main/l/linux-signed/linux-image-4.4.0-206-generic_4.4.0-206.238_amd64.deb
+Size: 6953324
+MD5sum: d670f106df9f2f90f25910ae99706e48
+SHA1: a6586dd15a070e3c1f4edc89822385bff444311a
+SHA256: a6f778fea643c4754510bde9b74dafb0dd6b644c55cf183d1835e91374ea60ab
+SHA512: db7a08719c9bfaf0f559a3270b6eb2683bcfadf1c1e74c94006fb7ceed4ede5188af164e9e7b229141bda53239e2436b032d5f0c952cd0ba0fa21b3e77deef9a
+Description: Signed kernel image generic
+Description-md5: 54a18b1adebc179da3c9e59a5db5fe77
+Supported: 5y
+
+Package: linux-image-4.4.0-206-lowlatency
+Architecture: amd64
+Version: 4.4.0-206.238
+Built-Using: linux (= 4.4.0-206.238)
+Priority: optional
+Section: kernel
+Source: linux-signed
+Origin: Ubuntu
+Maintainer: Canonical Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 7106
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.4.0-206-lowlatency
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-doc-4.4.0 | linux-source-4.4.0, linux-tools, linux-headers-4.4.0-206-lowlatency
+Conflicts: linux-image-unsigned-4.4.0-206-lowlatency
+Filename: pool/main/l/linux-signed/linux-image-4.4.0-206-lowlatency_4.4.0-206.238_amd64.deb
+Size: 6977538
+MD5sum: b04b1a93e875f5d0bc8683419938c394
+SHA1: a2a39eb21a22547772774e3711111220e8051e31
+SHA256: 787684f22d81660368730870524005b9e78dfc0e26715303d3b51305431ecfd7
+SHA512: da732bf9600863714aaf1ddcac0c387fd3ac6a0a93fcfe26bce7eed654829de83f7f5ba5d37a74c09a285766d38b28ae4568c1fa67c35adb5283972fe627daef
+Description: Signed kernel image lowlatency
+Description-md5: d033c93139790e893a4e35936dd49bc8
+Supported: 5y
+
+Package: linux-image-4.4.0-207-generic
+Architecture: amd64
+Version: 4.4.0-207.239
+Built-Using: linux (= 4.4.0-207.239)
+Priority: optional
+Section: kernel
+Source: linux-signed
+Origin: Ubuntu
+Maintainer: Canonical Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 7084
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.4.0-207-generic
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-doc-4.4.0 | linux-source-4.4.0, linux-tools, linux-headers-4.4.0-207-generic
+Conflicts: linux-image-unsigned-4.4.0-207-generic
+Filename: pool/main/l/linux-signed/linux-image-4.4.0-207-generic_4.4.0-207.239_amd64.deb
+Size: 6954024
+MD5sum: 9cfd26314983892a3ec337e44272aeca
+SHA1: e2d719926adc2ca2878fe53f621c2ad55c2d3058
+SHA256: 51d2a6bde9f5ed14562822d54a18238db9bb850051d30577d53b21ad7a6f02aa
+SHA512: 0795a830d5f0d090d153eb3405d65dfc61182ed6495d1d4f8f268e368bad13e9ca5cbd4fc020fe005b3d6537a6c87ecdde2a009e84f15f38725380b4d81b706c
+Description: Signed kernel image generic
+Description-md5: 54a18b1adebc179da3c9e59a5db5fe77
+
+Package: linux-image-4.4.0-207-lowlatency
+Architecture: amd64
+Version: 4.4.0-207.239
+Built-Using: linux (= 4.4.0-207.239)
+Priority: optional
+Section: kernel
+Source: linux-signed
+Origin: Ubuntu
+Maintainer: Canonical Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 7106
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.4.0-207-lowlatency
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-doc-4.4.0 | linux-source-4.4.0, linux-tools, linux-headers-4.4.0-207-lowlatency
+Conflicts: linux-image-unsigned-4.4.0-207-lowlatency
+Filename: pool/main/l/linux-signed/linux-image-4.4.0-207-lowlatency_4.4.0-207.239_amd64.deb
+Size: 6977764
+MD5sum: b1681cd4e6565571e29cec21d2ba40e0
+SHA1: 6375160e3730b1ebd04e510de50d4eb7826fa55a
+SHA256: 6c3dc220ebe0135d130bd572ba7d42134a094c48266396e743634cd37305b615
+SHA512: b01166adb6cc7619e2d435cf2a5e230ed78994d81a968c65d143c4f41f8592e79374045476325d315f09301933eaf3009b2ed87c92a4401b2c3b33e9a099d003
+Description: Signed kernel image lowlatency
+Description-md5: d033c93139790e893a4e35936dd49bc8
+
+Package: linux-image-unsigned-4.15.0-1066-oracle
+Architecture: amd64
+Version: 4.15.0-1066.74~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-oracle
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 8604
+Provides: aufs-dkms, fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.15.0-1066-oracle
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-oracle-doc-4.15.0 | linux-oracle-source-4.15.0, linux-oracle-tools, linux-headers-4.15.0-1066-oracle
+Conflicts: linux-image-4.15.0-1066-oracle
+Breaks: initramfs-tools (<< 0.122ubuntu8.14)
+Filename: pool/main/l/linux-oracle/linux-image-unsigned-4.15.0-1066-oracle_4.15.0-1066.74~16.04.1_amd64.deb
+Size: 8058544
+MD5sum: 4ee02f0958d13fc36145cc50f6235729
+SHA1: 73cdd538039976f5e73ea7684e175ca3b7eacc75
+SHA256: 3c60e9382811e3a20486597eefc5b6df86cec268bddf5e85f1cb0a5f66671def
+SHA512: 247031008f3f910556f21adf94b604972f7d2b7106f57c8c2c81507e28c8c694431da03b93b6c41676dc2744d21a0af6fa3c42c225e87b479cff8caa9d64df88
+Description: Oracle Linux kernel image for version 4.15.0 on 64 bit x86 SMP
+Description-md5: c54abeefa130a057fcf5255783b60d59
+Supported: 5y
+
+Package: linux-image-unsigned-4.15.0-1067-oracle
+Architecture: amd64
+Version: 4.15.0-1067.75~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-oracle
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 8603
+Provides: aufs-dkms, fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.15.0-1067-oracle
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-oracle-doc-4.15.0 | linux-oracle-source-4.15.0, linux-oracle-tools, linux-headers-4.15.0-1067-oracle
+Conflicts: linux-image-4.15.0-1067-oracle
+Breaks: initramfs-tools (<< 0.122ubuntu8.14)
+Filename: pool/main/l/linux-oracle/linux-image-unsigned-4.15.0-1067-oracle_4.15.0-1067.75~16.04.1_amd64.deb
+Size: 8056260
+MD5sum: c46ec50ee1155207dd9ec2f8c9e1aafe
+SHA1: 4b47bf5001bb6d05cc3015ae5ec3cce85809ac6d
+SHA256: 5cb603aa3321ba4ef87822c9870b08e773600fe83f2f431a1c109c246453223d
+SHA512: 9fbf950b98fb2748a0c1987bc3dd783da897dc42e107d96b59994397847259538369546336f4de6fdabaf0c98080ed8fce93fe91e8e0ecac8884736afabedcc4
+Description: Oracle Linux kernel image for version 4.15.0 on 64 bit x86 SMP
+Description-md5: c54abeefa130a057fcf5255783b60d59
+Supported: 5y
+
+Package: linux-image-unsigned-4.15.0-1095-gcp
+Architecture: amd64
+Version: 4.15.0-1095.108~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-gcp
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 8722
+Provides: aufs-dkms, fuse-module, linux-image, spl-dkms, spl-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.15.0-1095-gcp
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo
+Suggests: fdutils, linux-gcp-doc-4.15.0 | linux-gcp-source-4.15.0, linux-gcp-tools, linux-headers-4.15.0-1095-gcp, initramfs-tools | linux-initramfs-tool
+Conflicts: linux-image-4.15.0-1095-gcp
+Filename: pool/main/l/linux-gcp/linux-image-unsigned-4.15.0-1095-gcp_4.15.0-1095.108~16.04.1_amd64.deb
+Size: 8025712
+MD5sum: 20ed713338ef30ee69f9d3b72b083579
+SHA1: 9009bd781731c771e4829f3fb2ddae133312c0a7
+SHA256: c96c9420322f5ef27d633169a640d50ac94209c89b334998e5cbf50766c5ed6f
+SHA512: 5225efe2e424e631bc8dc7e4c9d9828c9cfab7edce10b354a374fb1d6704e315cd412d3e627d05d2a6acece499e26cc1af2e7bda58a3193fa547d40883918908
+Description: Linux kernel image for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 19716cef7153082e26c9e1965f0cd9f9
+Supported: 5y
+
+Package: linux-image-unsigned-4.15.0-1110-azure
+Architecture: amd64
+Version: 4.15.0-1110.122~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 8332
+Provides: aufs-dkms, fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.15.0-1110-azure
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub
+Suggests: fdutils, linux-azure-doc-4.15.0 | linux-azure-source-4.15.0, linux-azure-tools, linux-headers-4.15.0-1110-azure, initramfs-tools | linux-initramfs-tool
+Conflicts: linux-image-4.15.0-1110-azure
+Filename: pool/main/l/linux-azure/linux-image-unsigned-4.15.0-1110-azure_4.15.0-1110.122~16.04.1_amd64.deb
+Size: 7527232
+MD5sum: d33d97c9985bcdf45a61eab963f25360
+SHA1: 1e658166f8def2d2da927a8491bbe35f86de2cf7
+SHA256: e6ee540691573c77dcfcc9839fa6b7842e5d0830538c4365bd99e397faee4ee9
+SHA512: 814e8433e489afcb49c9a372b2bd8d0b38e15985ad73b0bf59cffd50434d7272adce419d95a39eede82889921a3648bd5650236ce75558190e7e4aa949330d9d
+Description: Linux kernel image for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 7aba52fe21d535ba71e2c0cfe30e5811
+Supported: 5y
+
+Package: linux-image-unsigned-4.4.0-206-generic
+Architecture: amd64
+Version: 4.4.0-206.238
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 7654
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.4.0-206-generic
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-doc-4.4.0 | linux-source-4.4.0, linux-tools, linux-headers-4.4.0-206-generic
+Conflicts: linux-image-4.4.0-206-generic
+Filename: pool/main/l/linux/linux-image-unsigned-4.4.0-206-generic_4.4.0-206.238_amd64.deb
+Size: 7057414
+MD5sum: 3b8eebe3b09b3f35df7144bb96f05719
+SHA1: 88a0d433c41ec44aec2f3a6157dc6cd6e3b18d06
+SHA256: e8d9c745d629e2c50f5f5394b710f225fa785792d0862fce670cfaa4539f8806
+SHA512: 4edc42c6cb91247f5f8ae87f637546af3d1c70ce0e75f054c4ed94d0589689f32ca71dc1de927798797690ece62ed87d4c47bc36bdc2c7aa526355723369cf1a
+Description: Linux kernel image for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 95545462430ef5b7263b1af8fc492796
+Supported: 5y
+
+Package: linux-image-unsigned-4.4.0-206-lowlatency
+Architecture: amd64
+Version: 4.4.0-206.238
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 7677
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.4.0-206-lowlatency
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-doc-4.4.0 | linux-source-4.4.0, linux-tools, linux-headers-4.4.0-206-lowlatency
+Conflicts: linux-image-4.4.0-206-lowlatency
+Filename: pool/main/l/linux/linux-image-unsigned-4.4.0-206-lowlatency_4.4.0-206.238_amd64.deb
+Size: 7079388
+MD5sum: fb36e72b8e28499a0269b002fc35eb5a
+SHA1: e6ad87e166b911ad4599c084a92f2968ec76ce37
+SHA256: 660dbe83067010bc4293ad3036dc07b8d7c0a56ff3b9d48749d0370e103bce84
+SHA512: f3e01b9ad612c2f0c1d07c6e9b2665662d20333e02eb30806203943d682a9b837b382598d0d690bca8a32a5272b60455847da6125228e21cd41a7ceaaf03a7d1
+Description: Linux kernel image for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 9681edbf1fa027e0d51ae03e219df2fc
+Supported: 5y
+
+Package: linux-image-unsigned-4.4.0-207-generic
+Architecture: amd64
+Version: 4.4.0-207.239
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 7663
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.4.0-207-generic
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-doc-4.4.0 | linux-source-4.4.0, linux-tools, linux-headers-4.4.0-207-generic
+Conflicts: linux-image-4.4.0-207-generic
+Filename: pool/main/l/linux/linux-image-unsigned-4.4.0-207-generic_4.4.0-207.239_amd64.deb
+Size: 7052548
+MD5sum: d6c27a5573d59fe977c45849029aab1c
+SHA1: 41548257be7dc7c1dbedb620289c667f1a375c11
+SHA256: 09fdbb38bd293840f9f8cd0dd04d0ffc799daa9002cdc937dfc7de66873d17fb
+SHA512: 1be2fbc2243996ea77c2aa02c3073dc99e69dadce364772d44d9b1c1873612bbadbbf835fb42df9eebe914234074ec10a4a5387d9543f0a364eec441d5a85b69
+Description: Linux kernel image for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 95545462430ef5b7263b1af8fc492796
+
+Package: linux-image-unsigned-4.4.0-207-lowlatency
+Architecture: amd64
+Version: 4.4.0-207.239
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 7684
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.4.0-207-lowlatency
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-doc-4.4.0 | linux-source-4.4.0, linux-tools, linux-headers-4.4.0-207-lowlatency
+Conflicts: linux-image-4.4.0-207-lowlatency
+Filename: pool/main/l/linux/linux-image-unsigned-4.4.0-207-lowlatency_4.4.0-207.239_amd64.deb
+Size: 7078178
+MD5sum: 287bd9e1a037fb5b9d954853b410f46d
+SHA1: 1b0a95ada77d11c589af28fb7b1b463367ea193b
+SHA256: 9d3650bd40aa2e8ab8e455a375633caa3a6d6b7364f274b6c342b22c559ad2a2
+SHA512: 4739a2ba688a0ee37b28253f63867013720e5c3e804382b5c4f9e734239fe5e3aa5dc36d28eb888bc8224a6b54fbf0b62dcf941fe1b1bcaa5d2cfeddf8b87319
+Description: Linux kernel image for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 9681edbf1fa027e0d51ae03e219df2fc
+
+Package: linux-modules-4.15.0-1066-oracle
+Architecture: amd64
+Version: 4.15.0-1066.74~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-oracle
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 63737
+Filename: pool/main/l/linux-oracle/linux-modules-4.15.0-1066-oracle_4.15.0-1066.74~16.04.1_amd64.deb
+Size: 13038540
+MD5sum: 1a0978486d50915445b32266ef6464c7
+SHA1: 3ec1bc7ab5a684ffb1a535e9058000bfdc3cb629
+SHA256: 179e170a6bbced7143869738ec2e2ea7199f480b1099208619cdaf056239c0d5
+SHA512: 05ee5cddd67b1beb057095b1cdbdf1b31948d1d9ea820bf84c7400f6d6ceed1be5b99cc69f20c44acc5a6566b64c59935764942fb1dacdd60f721dc9cf7cbc69
+Description: Oracle Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+Description-md5: d83f1365bb346a7fc8bd6e8f20129488
+Supported: 5y
+
+Package: linux-modules-4.15.0-1067-oracle
+Architecture: amd64
+Version: 4.15.0-1067.75~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-oracle
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 63737
+Filename: pool/main/l/linux-oracle/linux-modules-4.15.0-1067-oracle_4.15.0-1067.75~16.04.1_amd64.deb
+Size: 13032854
+MD5sum: 73c2c8b56651a436e7e138d60c550224
+SHA1: 63013e25ab05f7000fe22e29bec99629d5a88609
+SHA256: 1b9c33524416b66326ba19232ffefd830ca587b96f64f2c40e49567bb6567ded
+SHA512: b5a3961e2e577d99982d5f53b4c659404981d5d404e8bc667dcf3f1af7247abb27620ac692f861efb02b912c53c52c87e14317522d1b30117d79ed488cd59a01
+Description: Oracle Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+Description-md5: d83f1365bb346a7fc8bd6e8f20129488
+Supported: 5y
+
+Package: linux-modules-4.15.0-1095-aws
+Architecture: amd64
+Version: 4.15.0-1095.102~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-aws-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 61345
+Filename: pool/main/l/linux-aws-hwe/linux-modules-4.15.0-1095-aws_4.15.0-1095.102~16.04.1_amd64.deb
+Size: 12547870
+MD5sum: 716e5dbbe1b9af378d7e6fbde561d05f
+SHA1: 6d012f4d24b72fe5db782260ed132370e79bd62b
+SHA256: ebe7d5cd95fb97466f0ca3800222df5faf2aa8ef3bfb0a9079d02765f9f17c07
+SHA512: 556be8bbcb7fe2238db15487235ed18bd3340b7b9b04c0c588f01668691212ac72c9d3df62e9a5fcb0c96af383aa7088c97f98897f867224b3db30098e97dd62
+Description: Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 20a13d07778ebdf4680b184206194be4
+Supported: 5y
+
+Package: linux-modules-4.15.0-1095-gcp
+Architecture: amd64
+Version: 4.15.0-1095.108~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-gcp
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 63467
+Filename: pool/main/l/linux-gcp/linux-modules-4.15.0-1095-gcp_4.15.0-1095.108~16.04.1_amd64.deb
+Size: 12930966
+MD5sum: 393a1e4bf4cc3e47b99593829a47a8ba
+SHA1: 917c3b04a4ad8fe92b931022af84ff92894f4b4b
+SHA256: c77f39202116a88a562ec29ad4404b11ce5737eac9df3e5f68394b01ee0d545b
+SHA512: ef4a48a2959e6a6ded65233be7705575f1b25c46a937944ea6a7a21da7f6588cba44d3fbe141810b8981873b188d4928bc5a13e574503b0f64bff3219ad5ce10
+Description: Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 0c2b75c701ce9d39246729a5be61dd33
+Supported: 5y
+
+Package: linux-modules-4.15.0-1096-aws
+Architecture: amd64
+Version: 4.15.0-1096.103~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-aws-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 61347
+Filename: pool/main/l/linux-aws-hwe/linux-modules-4.15.0-1096-aws_4.15.0-1096.103~16.04.1_amd64.deb
+Size: 12545678
+MD5sum: 35096cef2afa6a2a2eb20530e1f2d30b
+SHA1: 3708ae155e0971854211ef104fd994c76dba3248
+SHA256: 450fbf5245abbcae67799a8abcb7b426d10a0621fbdeb7d52f9aaac1a20034f3
+SHA512: 6910e7553c7436de9f5c086b3d3d7a67bfebf53d7d6af7de9864faa30a55e46067ddb17c9af3038583392a962b9def788f6d9448205c36b601156e1421c7ce74
+Description: Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 20a13d07778ebdf4680b184206194be4
+Supported: 5y
+
+Package: linux-modules-4.15.0-1110-azure
+Architecture: amd64
+Version: 4.15.0-1110.122~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 58630
+Depends: linux-base-sgx
+Filename: pool/main/l/linux-azure/linux-modules-4.15.0-1110-azure_4.15.0-1110.122~16.04.1_amd64.deb
+Size: 11862824
+MD5sum: 67e51915f9b7967afa71d3c6d9ea9139
+SHA1: b68da9ec9acc4f0b4c1734e221d2817a9e51d3b7
+SHA256: c7df4bd28d0803280283a34f8640d1f1c9e140397a25ee282fe6eb1637f002f1
+SHA512: 103110f410670294e7bc3352e4f2dba8aedcb86e9914b528e82b41d37162897e98e77be1935c1a46f54daf66a9a0c9f8d186e82891e8d5790bb409996aacef8a
+Description: Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 26f777826b44d7c350500e086941d146
+Supported: 5y
+
+Package: linux-modules-4.4.0-1125-aws
+Architecture: amd64
+Version: 4.4.0-1125.139
+Priority: optional
+Section: kernel
+Source: linux-aws
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 47660
+Filename: pool/main/l/linux-aws/linux-modules-4.4.0-1125-aws_4.4.0-1125.139_amd64.deb
+Size: 9733824
+MD5sum: d37b3ae73507a09cb3af731078bfc469
+SHA1: c59f76f4ff9c90f4fe43179292cd67a2e5cca816
+SHA256: 9b2c06a0acd7a2d89cf8f1100ab4ad683b7553578f0b2cd9f8c716f260e55a32
+SHA512: 1f1676770e8d8ee370cb32f9d443dbc7f2a9c3f6ab02354ab81b6d8a4606427a88d827486e6fb3bd7171117deaa4eaebf1d3cb6f640e4d715136323ddfee42c3
+Description: Linux kernel extra modules for version 4.4.0 on 64 bit x86 SMP
+Description-md5: ae75d2452e73d091100da3f4211f559d
+
+Package: linux-modules-4.4.0-206-generic
+Architecture: amd64
+Version: 4.4.0-206.238
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 58976
+Filename: pool/main/l/linux/linux-modules-4.4.0-206-generic_4.4.0-206.238_amd64.deb
+Size: 12062776
+MD5sum: 0bf53c36b79a26e3dfd5ac9e5224b230
+SHA1: ba6167f33d8c03b3e8fdbf5d624f07b2b0081e16
+SHA256: c9834c3ba5f1bdd2dd84279446e835f1f96ede6029ec019529e148b452a7ef24
+SHA512: 206ada0b16e1f3be8d36a71b95e3f6e914f051def8030a8470e8e3c96699a921cb7714f8deed862bd184331db5e56001f824d9598d58b34529cc7eb2796edcc8
+Description: Linux kernel extra modules for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 9cf6ff33a9d36298879bfde6fa9783a8
+Supported: 5y
+
+Package: linux-modules-4.4.0-206-lowlatency
+Architecture: amd64
+Version: 4.4.0-206.238
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 210533
+Filename: pool/main/l/linux/linux-modules-4.4.0-206-lowlatency_4.4.0-206.238_amd64.deb
+Size: 41097504
+MD5sum: 84b2f08bbb03a15d0304f647186b760f
+SHA1: 37be19188befa6bbc34cd3c18a21a5b2c4e39f4f
+SHA256: b5c1934e7aa2f2cfc86f5072b6cdf78efe19f3c7ef78b984754cc9ab1bd5ad14
+SHA512: ee9b5865d387e518c8a20cc40248959893fd510573e60636fe54de0fdbc69ab7ef1d29f72ef3ab72409d4de7b5f7b6001a0b8e1b6245003d3cc2ecf0eb39c33a
+Description: Linux kernel extra modules for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 11aee5b14e611d687b61cc4ae177b534
+Supported: 5y
+
+Package: linux-modules-4.4.0-207-generic
+Architecture: amd64
+Version: 4.4.0-207.239
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 58990
+Filename: pool/main/l/linux/linux-modules-4.4.0-207-generic_4.4.0-207.239_amd64.deb
+Size: 12063302
+MD5sum: e0abb11b4fc89115889680322067c341
+SHA1: 2f030697fdf2b23028186627e00b2b7d2f1e3802
+SHA256: 4c36345f88f1fdfc57e4f291b8d04b4095fd47e2a980d7e8bf6588cdab13ffd7
+SHA512: 9fe6f4b340e5780fee7f6e9843a0becd7ad278fec660d8b7ad28f17dbe3364a8c5133aca14bfbf761b2c1f52d9d7cf66e1e9b906193c9e9e186c402ab80e6563
+Description: Linux kernel extra modules for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 9cf6ff33a9d36298879bfde6fa9783a8
+
+Package: linux-modules-4.4.0-207-lowlatency
+Architecture: amd64
+Version: 4.4.0-207.239
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 210552
+Filename: pool/main/l/linux/linux-modules-4.4.0-207-lowlatency_4.4.0-207.239_amd64.deb
+Size: 41117870
+MD5sum: 3b62c8b301623ecd1bd30f97406e2b7d
+SHA1: e08d4b4dcf5e9e525d2073b0cd152757cf985a35
+SHA256: 1e8dc65c1afd36c2a1ecf77a9155af0277eb313154c909838361e1795c6402ff
+SHA512: 9de55d0ae41b9651af196223e5e81c1ba901bb593675b7fa31e3821a66dcf613221bbf21994c8329f1ade32f7a2c6d54878c613b2adae94fca3a7c29d9f8f27f
+Description: Linux kernel extra modules for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 11aee5b14e611d687b61cc4ae177b534
+
+Package: linux-modules-extra-4.15.0-1066-oracle
+Architecture: amd64
+Version: 4.15.0-1066.74~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-oracle
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 167221
+Depends: linux-image-4.15.0-1066-oracle | linux-image-unsigned-4.15.0-1066-oracle, crda | wireless-crda
+Filename: pool/main/l/linux-oracle/linux-modules-extra-4.15.0-1066-oracle_4.15.0-1066.74~16.04.1_amd64.deb
+Size: 32762356
+MD5sum: 10e1adaf231083cc9dc8def5b84c1c2c
+SHA1: a3fee3ff92c8db974a8dda6db43fd59a3a7a4c81
+SHA256: 335ac7bb78e3cb4c6cfe23223916a7c2a3710d6bb9ab13a1f3d80c8eb5214e80
+SHA512: 7b6c678df584f1d2bf86197abe216cccfa51c1aa5fc61389cdd825822ef64585cd929ca654224bf3e6ef4bfa7ccca10dea03eb6147bd3d5b4d29abe84fc98fea
+Description: Oracle Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+Description-md5: ff3f576f48e219e89bf2aa9212dbc471
+Supported: 5y
+
+Package: linux-modules-extra-4.15.0-1067-oracle
+Architecture: amd64
+Version: 4.15.0-1067.75~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-oracle
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 167221
+Depends: linux-image-4.15.0-1067-oracle | linux-image-unsigned-4.15.0-1067-oracle, crda | wireless-crda
+Filename: pool/main/l/linux-oracle/linux-modules-extra-4.15.0-1067-oracle_4.15.0-1067.75~16.04.1_amd64.deb
+Size: 32721786
+MD5sum: 23d382ce09d284d0c7e29aeef4650ff5
+SHA1: bbd3911d423aee869abfee945760115c1cdbc263
+SHA256: 2149b2023715a3a46061199b651eb75ac763fd0a85199fdbf9e2a9418b7b047c
+SHA512: 90e5ea49c9c751a243f64b0f15b7986f18d94b4ce227ea20201aa4c0fe311f4244767ed783d8570f265ed4da25121ec6bcdcadaf8ff1e7cbad26917f52a07525
+Description: Oracle Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+Description-md5: ff3f576f48e219e89bf2aa9212dbc471
+Supported: 5y
+
+Package: linux-modules-extra-4.15.0-1095-aws
+Architecture: amd64
+Version: 4.15.0-1095.102~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-aws-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 92290
+Depends: linux-image-4.15.0-1095-aws, crda | wireless-crda
+Filename: pool/main/l/linux-aws-hwe/linux-modules-extra-4.15.0-1095-aws_4.15.0-1095.102~16.04.1_amd64.deb
+Size: 18430418
+MD5sum: 9479cf2d4cfb67e9dcf45b2a255b3bfa
+SHA1: 2b7c369a9bde3a3817673e4a0adf1e6effd5f1de
+SHA256: 2611c6930ddc68a5000d48d6773402969e1d45be3ceba8d91fe17fea872487dd
+SHA512: c3737b737952148673bbfa5cd46bea73c2462346ed48b76d8ff525d2c64024c2905257f26e7995e5fbe57e88604c515a4228ff16a81240f5f5afb2be7299489c
+Description: Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+Description-md5: a4818cb6efa4ed9d255cae8127080e29
+Supported: 5y
+
+Package: linux-modules-extra-4.15.0-1095-gcp
+Architecture: amd64
+Version: 4.15.0-1095.108~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-gcp
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 166160
+Depends: linux-image-4.15.0-1095-gcp | linux-image-unsigned-4.15.0-1095-gcp, crda | wireless-crda
+Filename: pool/main/l/linux-gcp/linux-modules-extra-4.15.0-1095-gcp_4.15.0-1095.108~16.04.1_amd64.deb
+Size: 32518708
+MD5sum: 703b6a6c64dbe959397be515ea89a328
+SHA1: fcb645522bfd55056769a18ed4aed9e27a507217
+SHA256: 6acd5a1f1d7247358c2199f5c320918af9a0bc87411eb10b4552fb1847c4a967
+SHA512: 25fd966fe108f1ac66eceb13e7324d7d1796695627c4b41030ef9fe574c19f13052cd3c4106978e0ee2f6ef69eefd391255cd0cc23969f250bdf268202eb00a7
+Description: Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 95e2468efba7be918f6aa822cedab467
+Supported: 5y
+
+Package: linux-modules-extra-4.15.0-1096-aws
+Architecture: amd64
+Version: 4.15.0-1096.103~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-aws-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 92291
+Depends: linux-image-4.15.0-1096-aws, crda | wireless-crda
+Filename: pool/main/l/linux-aws-hwe/linux-modules-extra-4.15.0-1096-aws_4.15.0-1096.103~16.04.1_amd64.deb
+Size: 18421494
+MD5sum: 1fbc62eee9d8d3a794c0837a2c30efd5
+SHA1: 5839dc948f892a90be4e6a215a421cad336d9844
+SHA256: 4c90fa63f41f1eb857ca71f351f957932a736574f63cf11e9768e055074ca074
+SHA512: f2929b947f7ee686d40fb8eb37cade8dd2cf08990d628199abb76dcdf84e99b47ebad63afadd845f5e044b487867b243b69cd8784d83de1bbb48dac3c707f065
+Description: Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+Description-md5: a4818cb6efa4ed9d255cae8127080e29
+Supported: 5y
+
+Package: linux-modules-extra-4.15.0-1110-azure
+Architecture: amd64
+Version: 4.15.0-1110.122~16.04.1
+Priority: optional
+Section: kernel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 51002
+Depends: linux-image-4.15.0-1110-azure | linux-image-unsigned-4.15.0-1110-azure, crda | wireless-crda
+Filename: pool/main/l/linux-azure/linux-modules-extra-4.15.0-1110-azure_4.15.0-1110.122~16.04.1_amd64.deb
+Size: 10393622
+MD5sum: db48ae84901ee62bf69cbd064ad1b64d
+SHA1: 20ccbfcb4cc8773cb3ccc506cbacaa7a4ce28c40
+SHA256: d6eb9d9b07ba475a38d196c98cbdd221c566c4c7490fe36f39acd76a07e96174
+SHA512: ec55d4b1659d6f0b9968e614c0cc110f9996cc3cd53cf26b39108a751d32541b3689248c9f3cada7fbea3badae33ab45b002d0282850e4fee5d8bb709cff8089
+Description: Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+Description-md5: 3b62513675e063ae02e1cac15b7f874b
+Supported: 5y
+
+Package: linux-modules-extra-4.4.0-1125-aws
+Architecture: amd64
+Version: 4.4.0-1125.139
+Priority: optional
+Section: kernel
+Source: linux-aws
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 88265
+Depends: linux-image-4.4.0-1125-aws | linux-image-unsigned-4.4.0-1125-aws, crda | wireless-crda
+Filename: pool/main/l/linux-aws/linux-modules-extra-4.4.0-1125-aws_4.4.0-1125.139_amd64.deb
+Size: 21804518
+MD5sum: 75c3b4f54c28312b6a46a48952fd8382
+SHA1: d78097edf09243c20d7a8b024dd48b4a88bbbbbb
+SHA256: f1a90c7ced253adcef28aa8556ab99a224cc102558c794eb93f3bdb638c7fd45
+SHA512: 17058fb7fed30b6f03d076a363d0e1f5febb2fbb4dd320a756bd7f17ba43f78736ab7890518d84848e0993b9374b365e7ca905e6ea0f77c72fa32575bac1f730
+Description: Linux kernel extra modules for version 4.4.0 on 64 bit x86 SMP
+Description-md5: b58db2ef760dd05e2b940db6916bd33f
+
+Package: linux-modules-extra-4.4.0-206-generic
+Architecture: amd64
+Version: 4.4.0-206.238
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 152707
+Depends: linux-image-4.4.0-206-generic | linux-image-unsigned-4.4.0-206-generic, crda | wireless-crda
+Filename: pool/main/l/linux/linux-modules-extra-4.4.0-206-generic_4.4.0-206.238_amd64.deb
+Size: 36615618
+MD5sum: 16a753570563bada4eb318e12a97e188
+SHA1: 7b2d646834cf563586b94626d8ce0639cb08c9a2
+SHA256: 392e0ed965e6a6cbfb7ae785f8fdc277bd12b15a4cae97e5685cfb95582b1bd5
+SHA512: 98342c71d13751892e68a9eb23d0510d1b62b0dece696a43d53d89bf1e2f79e7f81ec7f9910e2ab2f0f2234f904573734e33c2aef83eca68cb26310fcacdde44
+Description: Linux kernel extra modules for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 8ddf4399af85f43e9127757b98ea6afe
+Supported: 5y
+
+Package: linux-modules-extra-4.4.0-207-generic
+Architecture: amd64
+Version: 4.4.0-207.239
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 152714
+Depends: linux-image-4.4.0-207-generic | linux-image-unsigned-4.4.0-207-generic, crda | wireless-crda
+Filename: pool/main/l/linux/linux-modules-extra-4.4.0-207-generic_4.4.0-207.239_amd64.deb
+Size: 36551910
+MD5sum: 61237f40f7c3624e678e62e770a869e9
+SHA1: 7f66e901209e06f01aba2e0290a9257c65f90695
+SHA256: 1d3a5f83946933f7f96c3a347ce2a54b37aa3bb67d602f2b20a1999c663cdc86
+SHA512: e2e4a9c8f29d984c44d8edd699cacc6139beb5d0974819de3049bffb36664a2a7096ae81faf44349204c0d9ada51ad5cc99939e0791fbc1527dd08c2616e3c9c
+Description: Linux kernel extra modules for version 4.4.0 on 64 bit x86 SMP
+Description-md5: 8ddf4399af85f43e9127757b98ea6afe
+
+Package: linux-oracle-headers-4.15.0-1066
+Architecture: all
+Version: 4.15.0-1066.74~16.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: linux-oracle
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 76086
+Depends: coreutils
+Filename: pool/main/l/linux-oracle/linux-oracle-headers-4.15.0-1066_4.15.0-1066.74~16.04.1_all.deb
+Size: 10952636
+MD5sum: 00ff06f79741abb140801d19b9193edc
+SHA1: b5ea52a32ba1f1c6567d5d2b45dc34e4924f5592
+SHA256: 84c2610e622aea205610d8399023b83fffddc78be5330c33a7ffa7d2799d2499
+SHA512: 3ba09a3d4aa0ebb3f8f69502f254db6ba9cad3f5fbd4d7af4796b57484745a598d2c382f294ea229e1a14bcb0eaa60c4e40021f1a8fcb15ac556ebb3b43cf551
+Description: Header files related to Oracle Linux kernel version 4.15.0
+Description-md5: d1da6369162c1d79ab30fd9b66cf5185
+Supported: 5y
+
+Package: linux-oracle-headers-4.15.0-1067
+Architecture: all
+Version: 4.15.0-1067.75~16.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: linux-oracle
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 76086
+Depends: coreutils
+Filename: pool/main/l/linux-oracle/linux-oracle-headers-4.15.0-1067_4.15.0-1067.75~16.04.1_all.deb
+Size: 10930750
+MD5sum: ef0f8138f7679f36a201690510380935
+SHA1: 0c4b2c8d98b5f7562413c267bc2bfe4f51b9ade6
+SHA256: cd452959287d3adb13f4cf37938e624b59fc69ec96a0e1fbdfbf54674026e03b
+SHA512: 4e6e2ce3fe523da31b3306f965f3951dcda3013fd4ecb419027ff2d0f78d6b0d61a90df84f0d122aaac3f1a1ee2290783532932b2166072747de3f32d0d29557
+Description: Header files related to Oracle Linux kernel version 4.15.0
+Description-md5: a666a335a352ef4e977159e82603b668
+Supported: 5y
+
+Package: linux-oracle-tools-4.15.0-1066
+Architecture: amd64
+Version: 4.15.0-1066.74~16.04.1
+Priority: optional
+Section: devel
+Source: linux-oracle
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 18019
+Depends: binutils (>= 2.26.1), binutils (<< 2.27), libaudit1 (>= 1:2.2.1), libc6 (>= 2.14), libdw1 (>= 0.157), libelf1 (>= 0.144), liblzma5 (>= 5.1.1alpha+20120614), libnuma1, libpci3 (>= 1:3.3.1-1), libslang2 (>= 2.2.4), libudev1 (>= 183), libunwind8, zlib1g (>= 1:1.1.4), linux-tools-common
+Filename: pool/main/l/linux-oracle/linux-oracle-tools-4.15.0-1066_4.15.0-1066.74~16.04.1_amd64.deb
+Size: 4119236
+MD5sum: 29f5231dcd1c3af61dd4c33ae69a6628
+SHA1: 93dd8c1e434ab7bc7188aa26ce3fe0b8e201fe65
+SHA256: 58705e10847a58e886badd11bb4086a69646ba9032f8d4e7a9bc64c19479556f
+SHA512: 55d782c2d69a857026456c6456c2aea2a0fb747bad203ccc3fcb647c756a69c65f1051ef53dcf45e9cb6510029a86002f04ddf38a08adc240edc6538e1881315
+Description: Oracle Linux kernel version specific tools for version 4.15.0-1066
+Description-md5: 2739d4e9df75634f953d8e2133ff6fbf
+Supported: 5y
+
+Package: linux-oracle-tools-4.15.0-1067
+Architecture: amd64
+Version: 4.15.0-1067.75~16.04.1
+Priority: optional
+Section: devel
+Source: linux-oracle
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 18019
+Depends: binutils (>= 2.26.1), binutils (<< 2.27), libaudit1 (>= 1:2.2.1), libc6 (>= 2.14), libdw1 (>= 0.157), libelf1 (>= 0.144), liblzma5 (>= 5.1.1alpha+20120614), libnuma1, libpci3 (>= 1:3.3.1-1), libslang2 (>= 2.2.4), libudev1 (>= 183), libunwind8, zlib1g (>= 1:1.1.4), linux-tools-common
+Filename: pool/main/l/linux-oracle/linux-oracle-tools-4.15.0-1067_4.15.0-1067.75~16.04.1_amd64.deb
+Size: 4110492
+MD5sum: ecbebaa41986d3ead83d0863e5fc84ca
+SHA1: eebff308237ca82fbdbe6e6319abe5cedf01dec0
+SHA256: 53cd765ac340944306aff9228b3ccb2e97b749ac5e307ca048634128a6cc48f6
+SHA512: 03967b35530c0918376670cdcf32a31f1e6f7c17052bf84e43add107cb57d846cf10c3911010e5967b480e670d607873d9862d6a87e036cf9989495cf221388b
+Description: Oracle Linux kernel version specific tools for version 4.15.0-1067
+Description-md5: f55e1552b2f1b729fe5d2755d7eb375e
+Supported: 5y
+
+Package: linux-source-4.4.0
+Architecture: all
+Version: 4.4.0-206.238
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 129487
+Provides: linux-source, linux-source-3
+Depends: binutils, bzip2, coreutils
+Recommends: libc-dev, gcc, make
+Suggests: libncurses-dev | ncurses-dev, kernel-package, libqt3-dev
+Filename: pool/main/l/linux/linux-source-4.4.0_4.4.0-206.238_all.deb
+Size: 113446356
+MD5sum: 1652cd6591dbbd154507a0259531b713
+SHA1: 2a86660484a60b3f587efe55ceba99fb6fed4706
+SHA256: b5978f2f63a8493e13ea1535b4476fe3d704e9e9e021026bb7df719b4edc9945
+SHA512: d9b1715424740ccc0e96f3ec003617e675921cbd3e7e3de357ccf6f875c2e11149e7e7d5dbadc4963f65b1da62470daeb236ac091bfc68dd7552b62004074af4
+Description: Linux kernel source for version 4.4.0 with Ubuntu patches
+Description-md5: 23685cba55b02ea33e12d1b1028623a1
+Supported: 5y
+
+Package: linux-source-4.4.0
+Architecture: all
+Version: 4.4.0-207.239
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 129582
+Provides: linux-source, linux-source-3
+Depends: binutils, bzip2, coreutils
+Recommends: libc-dev, gcc, make
+Suggests: libncurses-dev | ncurses-dev, kernel-package, libqt3-dev
+Filename: pool/main/l/linux/linux-source-4.4.0_4.4.0-207.239_all.deb
+Size: 112989890
+MD5sum: 8baabc51bd602f1fbe25ec58c58c0e6c
+SHA1: 59bc210b3bc8d874c6dda594aed22e8439083e37
+SHA256: 73898bfa74b2d7e74a534de20631f311a6cdcbd727a48e6a1219f96a56456efa
+SHA512: f7ef89a5386bfeea032aef31d86f36587100931d34ba0ee63b0787da6c02c62e3987dd9f01a0c0a634312f6ede404b91aed9965421224c12edb960f264ac8542
+Description: Linux kernel source for version 4.4.0 with Ubuntu patches
+Description-md5: 23685cba55b02ea33e12d1b1028623a1
+Supported: 5y
+
+Package: linux-tools-4.15.0-1066-oracle
+Architecture: amd64
+Version: 4.15.0-1066.74~16.04.1
+Priority: optional
+Section: devel
+Source: linux-oracle
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 583
+Depends: linux-oracle-tools-4.15.0-1066
+Filename: pool/main/l/linux-oracle/linux-tools-4.15.0-1066-oracle_4.15.0-1066.74~16.04.1_amd64.deb
+Size: 1914
+MD5sum: 1f4a0cb0f889ad6a852e58f93ef2cbbd
+SHA1: e798a492fc61dd3c9921ea986c391d3e8b3ccaae
+SHA256: be78e0898ed994c279028cee093b8457aec01218534f7d5f28d76ab3d2ef3989
+SHA512: 946775ffd4692241e2277726f8f2077bc09873dfd6d1b6edd13608b19b4f9506b123f9e1e72a58c56c99cf24aa53a66976977136f6a29990d79a634f02c357fb
+Description: Oracle Linux kernel version specific tools for version 4.15.0-1066
+Description-md5: 40224eb4c9c01e8bfb4f2acebbefa2d0
+Supported: 5y
+
+Package: linux-tools-4.15.0-1067-oracle
+Architecture: amd64
+Version: 4.15.0-1067.75~16.04.1
+Priority: optional
+Section: devel
+Source: linux-oracle
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 583
+Depends: linux-oracle-tools-4.15.0-1067
+Filename: pool/main/l/linux-oracle/linux-tools-4.15.0-1067-oracle_4.15.0-1067.75~16.04.1_amd64.deb
+Size: 1910
+MD5sum: 45d222a7adeb6ef1eb5e1a5bff5e76fd
+SHA1: 0e76396551e19371c91e37780495ab7d4c542245
+SHA256: 557e292b921c9d309efaabbae4973a34667d710197b9da01777e13fe0ed00c24
+SHA512: 33dca64e4dd018cdb356f699b140166cc18d26599ddd6f46b1acaf8f80ace441d0cb69d43440be4c6d37ec8503f9bf24e058e354cff2b5ac46ee734bfc78e2f7
+Description: Oracle Linux kernel version specific tools for version 4.15.0-1067
+Description-md5: fd0459d5f1c9f17c13cd28b485c9fbe5
+Supported: 5y
+
+Package: linux-tools-4.15.0-1095-aws
+Architecture: amd64
+Version: 4.15.0-1095.102~16.04.1
+Priority: optional
+Section: devel
+Source: linux-aws-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 562
+Depends: linux-aws-hwe-tools-4.15.0-1095
+Filename: pool/main/l/linux-aws-hwe/linux-tools-4.15.0-1095-aws_4.15.0-1095.102~16.04.1_amd64.deb
+Size: 1922
+MD5sum: caba1ecdb1c72097e6d158ad9fe644ff
+SHA1: 97645496de61d148e73b1511f134a11da129b70c
+SHA256: e8f3bcc6572ea5f1de51c761e92a0c8eea09171a307c38e8d8a10b70d21d7cb5
+SHA512: 947e63cf27720693a95fa40509c6ee767141c9ba78027d57b5795220f9ffb2e43c9fc1a9a4c5dc980b91a90d9d6c825d285bbfe94e19ae2041af8b75c3c9ac50
+Description: Linux kernel version specific tools for version 4.15.0-1095
+Description-md5: 81d1d50bd8370313f11c42d4f7a7053f
+Supported: 5y
+
+Package: linux-tools-4.15.0-1095-gcp
+Architecture: amd64
+Version: 4.15.0-1095.108~16.04.1
+Priority: optional
+Section: devel
+Source: linux-gcp
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 730
+Depends: linux-gcp-tools-4.15.0-1095
+Filename: pool/main/l/linux-gcp/linux-tools-4.15.0-1095-gcp_4.15.0-1095.108~16.04.1_amd64.deb
+Size: 1890
+MD5sum: 3633797bf955e89a570c2a21f3ab6d27
+SHA1: c39e13c92de614263641089cd56708e877c20bc9
+SHA256: 06fce0e5e48f41ec00f6ca1d64c5ee98cda4ff39c4404b40e5654d588ece53e9
+SHA512: 3c39cd18c17076ef30bbffa7e94717a54f89e5c82be6e34b0b3b37b79952f004580062d2ec0ceb0ddeb3933856b9569a294b96b9371e7ab4ed348bc2d7b021b2
+Description: Linux kernel version specific tools for version 4.15.0-1095
+Description-md5: 81d1d50bd8370313f11c42d4f7a7053f
+Supported: 5y
+
+Package: linux-tools-4.15.0-1096-aws
+Architecture: amd64
+Version: 4.15.0-1096.103~16.04.1
+Priority: optional
+Section: devel
+Source: linux-aws-hwe
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 563
+Depends: linux-aws-hwe-tools-4.15.0-1096
+Filename: pool/main/l/linux-aws-hwe/linux-tools-4.15.0-1096-aws_4.15.0-1096.103~16.04.1_amd64.deb
+Size: 1918
+MD5sum: d375bd938a0431c4ceab771a289edd8a
+SHA1: 55ec42e479e52f42c0372e9038a8c79504554ab3
+SHA256: 56d0f96962ec1c44c4d53b0da7dd4098942e807b7b3a60f4951f7a7ad2771c21
+SHA512: 42382dd622161775f5e085e8dcfa4e0515769e7600b6cb53bc5e1f33b3513389313df8cf89b5fcc1b98d6430b2e1a1bbbfec1826be5d17be980190da4eb77103
+Description: Linux kernel version specific tools for version 4.15.0-1096
+Description-md5: 0fbf24377ffe1cd1afb227759eba8bfb
+Supported: 5y
+
+Package: linux-tools-4.15.0-1110-azure
+Architecture: amd64
+Version: 4.15.0-1110.122~16.04.1
+Priority: optional
+Section: devel
+Source: linux-azure
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 840
+Depends: linux-azure-tools-4.15.0-1110
+Filename: pool/main/l/linux-azure/linux-tools-4.15.0-1110-azure_4.15.0-1110.122~16.04.1_amd64.deb
+Size: 1884
+MD5sum: 18447bb0ce7c7037c01cdc9a7b7bf2ad
+SHA1: 37b46e6324fc90e292ed2a23f79f66a6a0630986
+SHA256: 8ddb0676de3ff6e2ead7e0260dcf29d8f850f129d01387c95595c02d15c93542
+SHA512: 5d79a9061d20c9c404d776027c36e3854a54d667ebf96344b3a23033dad55f841cf7a5177aeecbf37b4861cea8c01589ef444013d021f709646457659093d041
+Description: Linux kernel version specific tools for version 4.15.0-1110
+Description-md5: ae71decee7b5e2789ff922f4fe01e285
+Supported: 5y
+
+Package: linux-tools-4.4.0-1125-aws
+Architecture: amd64
+Version: 4.4.0-1125.139
+Priority: optional
+Section: devel
+Source: linux-aws
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 385
+Depends: linux-aws-tools-4.4.0-1125
+Filename: pool/main/l/linux-aws/linux-tools-4.4.0-1125-aws_4.4.0-1125.139_amd64.deb
+Size: 2600
+MD5sum: 5e9a398abd6c52eedaab6616e3ac5e00
+SHA1: e6f99c7a3918b3e22fd2e81e6d9779d3be41dc05
+SHA256: 012d406d26a0bf2b4347af42a489e33c01b44c046a9e2b604c2d241b444f8252
+SHA512: ac02093b291856e6d4945126f43e83b06c888a81ba858dc47e30cf2323ef331ca28902f13e7c2921263555bedd2c79a4a2ef1a61b204621cf7e59340e2f52a4e
+Description: Linux kernel version specific tools for version 4.4.0-1125
+Description-md5: ba5c23f7bfbe3c7605ff5cbd2b0cc9b7
+
+Package: linux-tools-4.4.0-206
+Architecture: amd64
+Version: 4.4.0-206.238
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 12109
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.14), libdw1 (>= 0.157), libelf1 (>= 0.144), liblzma5 (>= 5.1.1alpha+20120614), libpci3 (>= 1:3.3.1-1), libslang2 (>= 2.2.4), libudev1 (>= 183), libunwind8, zlib1g (>= 1:1.1.4), linux-tools-common
+Filename: pool/main/l/linux/linux-tools-4.4.0-206_4.4.0-206.238_amd64.deb
+Size: 2813878
+MD5sum: 1d8cb327049b5587d0d342923e5ab5ad
+SHA1: 0b2fe2e9cb7f8fe811fceb77e803f7485f6e2853
+SHA256: 14a3620705aced4cae4b3eb1f5f141bcf9f21ba802b0f8a68dd851cf3e210d29
+SHA512: 9ed3300cc78a68e75fb54ea06f2f9ddb4791e046e34b1a54a9f7be87431fc33f2e6bcd2e4364c7d93ece04878d438d0cf60cab856c7b11a09eaa125088ad061a
+Description: Linux kernel version specific tools for version 4.4.0-206
+Description-md5: db42cdcfaaf803c605d068d9387b604b
+Supported: 5y
+
+Package: linux-tools-4.4.0-206-generic
+Architecture: amd64
+Version: 4.4.0-206.238
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 601
+Depends: linux-tools-4.4.0-206
+Filename: pool/main/l/linux/linux-tools-4.4.0-206-generic_4.4.0-206.238_amd64.deb
+Size: 2606
+MD5sum: 7a25e4932f177fda5d8ffb04f924caa1
+SHA1: a79e509017dbc38dbf97150288bc2de2be54a2b7
+SHA256: 7e33c025823ceda52dba58e635c891d8b3b0ec908ff7a32a965c9e029ba59685
+SHA512: b877fd7c214d3516d3931de98c026f8710bec81df07df87f6f65676027e6f28d3782398fa6592e1b14933029ffbfde7f177a2475d766ac15df23a9c49f5118ba
+Description: Linux kernel version specific tools for version 4.4.0-206
+Description-md5: 02bc6e6487f153bfe250be4234f5661a
+Supported: 5y
+
+Package: linux-tools-4.4.0-206-lowlatency
+Architecture: amd64
+Version: 4.4.0-206.238
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 601
+Depends: linux-tools-4.4.0-206
+Filename: pool/main/l/linux/linux-tools-4.4.0-206-lowlatency_4.4.0-206.238_amd64.deb
+Size: 2618
+MD5sum: 29726932bf446733d00d378a5f61d761
+SHA1: 2803011f69432dd26e21d98aa093985fbe11deb0
+SHA256: 4431cc579a5a22247a212749eb30c5b564c2c4d944a39f585daa42fc1ebef06e
+SHA512: 79db45d10c4f0fcb7bd799fb61dd1cfdccc1a938cfe6c789a9222627cd785df333cdbc59a658f73813ab721711a649f15cb0a7d2a79651037378c22c1072c54c
+Description: Linux kernel version specific tools for version 4.4.0-206
+Description-md5: 02bc6e6487f153bfe250be4234f5661a
+Supported: 5y
+
+Package: linux-tools-4.4.0-207
+Architecture: amd64
+Version: 4.4.0-207.239
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 12116
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.14), libdw1 (>= 0.157), libelf1 (>= 0.144), liblzma5 (>= 5.1.1alpha+20120614), libpci3 (>= 1:3.3.1-1), libslang2 (>= 2.2.4), libudev1 (>= 183), libunwind8, zlib1g (>= 1:1.1.4), linux-tools-common
+Filename: pool/main/l/linux/linux-tools-4.4.0-207_4.4.0-207.239_amd64.deb
+Size: 2831866
+MD5sum: 5e204da9e08f04efc3a0eb15ae050326
+SHA1: b9f38b45a56721cf22a96477f94bfcb82df34a31
+SHA256: 12bbffe6a2df89737cc127a72c08c19328dfc2d3f8180509abb100c013e02752
+SHA512: 4af68cf03b9a9bd2a76a8138e5f0f3a893cd30ed5a6db222d0ee492e50593879ec778500a66f7e1ee6a8921037de3ca5899c7f18f3fbf2e7356f7aa786fd9873
+Description: Linux kernel version specific tools for version 4.4.0-207
+Description-md5: 888307642515d36540d91ee2b3f70da6
+
+Package: linux-tools-4.4.0-207-generic
+Architecture: amd64
+Version: 4.4.0-207.239
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 608
+Depends: linux-tools-4.4.0-207
+Filename: pool/main/l/linux/linux-tools-4.4.0-207-generic_4.4.0-207.239_amd64.deb
+Size: 2608
+MD5sum: fa1600e067a2bac4e9b35a0e4964a4f1
+SHA1: bd6ae4130f00d8fb3f100159c9f40be029290ca7
+SHA256: a6575cecdff76e3e70e558046f310260a9ed0c88b38a541d7bbaba8e94823837
+SHA512: 4bc43be141bf0e80c26b0bc6d51e9cd26009e4f9ecf659a47069c096e7cf8eabbb5f4188eb901d0d09bf491f638ae98d0ffaeb9cae5d94ab9943d9eb1cfc75f5
+Description: Linux kernel version specific tools for version 4.4.0-207
+Description-md5: 3f3b30405ae62357736506ec48c79ac3
+
+Package: linux-tools-4.4.0-207-lowlatency
+Architecture: amd64
+Version: 4.4.0-207.239
+Priority: optional
+Section: devel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 608
+Depends: linux-tools-4.4.0-207
+Filename: pool/main/l/linux/linux-tools-4.4.0-207-lowlatency_4.4.0-207.239_amd64.deb
+Size: 2614
+MD5sum: c4bee521503df452d363f238eae7f4fb
+SHA1: 6bab8f0cca102dd58e69e023e97c0ad980683217
+SHA256: 0c4b14e98078edfb11d070cfdac458691bff2403fdfcb101020548f14e7d4911
+SHA512: 5461106591390432735ed76e7603f6da70a027940320a784c5efc01cddd1ea4f4ba9302928d6221f296cf1b7374b325dcd40a4d9d6ef0ef6f78a163d0e282c8e
+Description: Linux kernel version specific tools for version 4.4.0-207
+Description-md5: 3f3b30405ae62357736506ec48c79ac3
+
+Package: linux-tools-common
+Architecture: all
+Version: 4.4.0-206.238
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 711
+Provides: linux-aws-tools-common, linux-gke-tools-common
+Depends: lsb-release
+Conflicts: linux-aws-tools-common, linux-gke-tools-common
+Replaces: linux-aws-tools-common, linux-gke-tools-common
+Filename: pool/main/l/linux/linux-tools-common_4.4.0-206.238_all.deb
+Size: 114872
+MD5sum: 188c20b759f1e48c0e0af9666cb2b5fd
+SHA1: 4483a109f51669bd61bfc4e6d13ebbc45243e4a2
+SHA256: 4df4cec17c41a3f121ddd746bde2518c2284a214d9eb7ecf2902f9dcab408c68
+SHA512: f551dc9ceb4217ef7c85331db8527236ba5c53588c364fd1bf6da84512b1d2bde1dda587ed3c487d6166edcb7cf23bd4039987994d986d63e1531b9348535917
+Description: Linux kernel version specific tools for version 4.4.0
+Description-md5: 7e37c6ad3f9ac97c3d7b6b43826feb00
+Supported: 5y
+
+Package: linux-tools-common
+Architecture: all
+Version: 4.4.0-207.239
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 718
+Provides: linux-aws-tools-common, linux-gke-tools-common
+Depends: lsb-release
+Conflicts: linux-aws-tools-common, linux-gke-tools-common
+Replaces: linux-aws-tools-common, linux-gke-tools-common
+Filename: pool/main/l/linux/linux-tools-common_4.4.0-207.239_all.deb
+Size: 114614
+MD5sum: 08c3ec30ad53df35b90d18bc4ef98713
+SHA1: be0d185c2c336e0ecfdf584eb755c09e435666c3
+SHA256: c71bfc41663d15f9f820f5bdaf776e176eaa5f47216b16190440987866aede54
+SHA512: e80bcc5dd4a8ec5f58c8232370ba08d7358b3e49937a7a047ce794f946d89f4d8d3c2ff562e1fb6b63073ce53da39cf02fef122983873ac9bd73bbf8bf25ebc2
+Description: Linux kernel version specific tools for version 4.4.0
+Description-md5: 7e37c6ad3f9ac97c3d7b6b43826feb00
+Supported: 5y
+
+Package: linux-tools-host
+Architecture: all
+Version: 4.4.0-206.238
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 592
+Depends: python3
+Filename: pool/main/l/linux/linux-tools-host_4.4.0-206.238_all.deb
+Size: 24754
+MD5sum: 431617817087cd704fba7f4a166d897f
+SHA1: 28cdcac470a349bc29d9910f459e39f4ff53f0e7
+SHA256: 5e4c808d4822741ba972f4e44db09dd45c8f3855a9ad767dd07c95f29eaab35f
+SHA512: b732992c822ab0d163f3121ef5b868e771a1895ed228c7fd9fcb716d8dc33afe1b6140c1659ca24676a49ccdfb050164e3e369f3c7a1de76a1a0b182082a8103
+Description: Linux kernel VM host tools
+Description-md5: d29120b11150b79af4338241d0a5dc74
+Supported: 5y
+
+Package: linux-tools-host
+Architecture: all
+Version: 4.4.0-207.239
+Multi-Arch: foreign
+Priority: optional
+Section: kernel
+Source: linux
+Origin: Ubuntu
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 599
+Depends: python3
+Filename: pool/main/l/linux/linux-tools-host_4.4.0-207.239_all.deb
+Size: 24434
+MD5sum: f59b6b3c797a7d366ff821776f56442a
+SHA1: 22ab7a74d5da56b749b7e61d494dce0e9c362d6c
+SHA256: 250286e13c11a0e6f7368fcdce0da2289a0a1fbf908cb4847231b8db8b0e7fc3
+SHA512: 9daee6fdfffad91f3de6d5f7400cec1e1cae2f41997a056e6eff8978b215a85bc47c984e4438fba66abdd6e6e0781d1f7eb51b51b280ca3e80aca0361cb8cea1
+Description: Linux kernel VM host tools
+Description-md5: d29120b11150b79af4338241d0a5dc74
+Supported: 5y
+
+Package: network-manager
+Architecture: amd64
+Version: 1.2.6-0ubuntu0.16.04.4
+Priority: optional
+Section: net
+Origin: Ubuntu
+Maintainer: Ubuntu Core Dev Team <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 9592
+Depends: libbluetooth3 (>= 4.91), libc6 (>= 2.17), libglib2.0-0 (>= 2.39.4), libgnutls30 (>= 3.4.0), libgudev-1.0-0 (>= 165), libmm-glib0 (>= 1.0.0), libndp0 (>= 1.2), libnewt0.52, libnl-3-200 (>= 3.2.7), libnm0 (>= 1.1.93), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.104), libreadline6 (>= 6.0), libsoup2.4-1 (>= 2.40), libsystemd0, libuuid1 (>= 2.16), init-system-helpers (>= 1.18~), lsb-base (>= 4.1+Debian11ubuntu7), dnsmasq-base, wpasupplicant (>= 0.7.3-1), dbus (>= 1.1.2), udev, adduser, isc-dhcp-client (>= 4.3.1-5ubuntu1), libpam-systemd, policykit-1
+Recommends: ppp (>= 2.4.6), iptables, modemmanager, crda, iputils-arping, network-manager-pptp, network-manager-gnome | plasma-widget-networkmanagement | plasma-nm
+Suggests: avahi-autoipd, python
+Conflicts: connman
+Breaks: network-manager-gnome (<< 0.9), network-manager-kde (<< 1:0.9), network-manager-openconnect (<< 0.9), network-manager-openvpn (<< 0.9), network-manager-pptp (<< 0.9), network-manager-vpnc (<< 0.9), plasma-widget-networkmanagement (<< 0.9~), ppp (<< 2.4.6)
+Filename: pool/main/n/network-manager/network-manager_1.2.6-0ubuntu0.16.04.4_amd64.deb
+Size: 1968304
+MD5sum: 68848ae2cf495b3f902ffffc74591010
+SHA1: b90a945324b8d302aa28956b1b0407f636ced1cf
+SHA256: 84935cb9a52d356e30172b991c7583f3406c45601ee0284f38a0a758bdca4c45
+SHA512: abe94c9425202077abdf02e29cba34e626081a23579ac430d6b16de560e47be5f1c63d582c4111bacf53cb00d8d79dd2c65e5c60426c87e4a26ce1dbcf6f152e
+Homepage: https://wiki.gnome.org/Projects/NetworkManager
+Description: network management framework (daemon and userspace tools)
+Task: ubuntu-desktop, ubuntu-usb, kubuntu-desktop, kubuntu-full, edubuntu-desktop, edubuntu-usb, xubuntu-core, xubuntu-desktop, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, lubuntu-desktop, ubuntustudio-desktop-core, ubuntustudio-desktop, ubuntu-gnome-desktop, ubuntu-touch-core, ubuntu-touch, ubuntu-sdk, ubuntukylin-desktop, ubuntu-mate-core, ubuntu-mate-desktop, ubuntu-mate-cloudtop
+Description-md5: 8f6f8b56b77097ec1e2134d2c9189882
+Supported: 5y
+
+Package: network-manager-dev
+Architecture: amd64
+Version: 1.2.6-0ubuntu0.16.04.4
+Multi-Arch: same
+Priority: optional
+Section: net
+Source: network-manager
+Origin: Ubuntu
+Maintainer: Ubuntu Core Dev Team <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1377
+Filename: pool/main/n/network-manager/network-manager-dev_1.2.6-0ubuntu0.16.04.4_amd64.deb
+Size: 129500
+MD5sum: 33f1ddaa4d6555fee323aed56ac8a760
+SHA1: 15174ac0ccf7bc4f301675a5abc97b7f059fa387
+SHA256: 20b2c6cc6c26ffc19453e97484b525f8f9cdb28b3b1873a7123cfc2c1fca13d8
+SHA512: 2905571b7783ca71679c7ecb7d57bab77b70aea905ab77c2a35b48cebf2ee99b04a3f02ed9c4e6bce7acb90ea50c953283195545ad9e6116083da50f31aeb1fd
+Homepage: https://wiki.gnome.org/Projects/NetworkManager
+Description: network management framework (development files)
+Description-md5: c0efb500095bf4fcb545da42a30d1b62
+Supported: 5y
+
+Package: wireless-regdb
+Architecture: all
+Version: 2024.07.04-0ubuntu1~16.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Seth Forshee <seth@forshee.me>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 38
+Suggests: crda
+Filename: pool/main/w/wireless-regdb/wireless-regdb_2024.07.04-0ubuntu1~16.04.1_all.deb
+Size: 9948
+MD5sum: 082de5fcde84b9e3a32a12a4958463e9
+SHA1: 6314242233da64cea2164917102c1ea34ca3fbcf
+SHA256: c0ac376cf0c0bfa3fa2fd61cf46d674d65d71ec2f66d49082d74a20f69898122
+SHA512: f103be858e5e20136f65ebaef88fad0e82292ee56f93f90fc626cbfb4ea78f0cf3898c6c543ba74acd9fd30ba53df572bf028a6ea12af55a951030d708ff2692
+Homepage: https://wireless.wiki.kernel.org/en/developers/regulatory/wireless-regdb
+Description: wireless regulatory database
+Task: ubuntu-desktop, ubuntu-usb, kubuntu-desktop, kubuntu-full, edubuntu-desktop, edubuntu-usb, xubuntu-core, xubuntu-desktop, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, ubuntustudio-desktop-core, ubuntustudio-desktop, ubuntu-gnome-desktop, ubuntu-sdk, ubuntukylin-desktop, ubuntu-mate-core, ubuntu-mate-desktop, ubuntu-mate-cloudtop
+Description-md5: 9b699ccc910634888e4cf21e28a9467b
+Supported: 5y
+

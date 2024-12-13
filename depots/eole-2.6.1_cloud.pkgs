@@ -1,0 +1,270 @@
+Package: libopennebula-java
+Source: opennebula
+Version: 5.2.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 96
+Filename: pool/cloud/o/opennebula/libopennebula-java_5.2.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 71874
+SHA256: e3dcc23d5d41b0f50709a6181f1a21de7930ea8e247a8f9c461cfaed3afb4ac0
+SHA1: 37dad066253b42085868337e3a90143a659cb58e
+MD5sum: 4b5d27209e5eb3d851c68c86d08925b9
+Description: Java bindings for OpenNebula Cloud API (OCA)
+ OpenNebula is an open source virtual infrastructure engine that enables the
+ dynamic deployment and re-placement of virtual machines on a pool of physical
+ resources.
+ .
+ ONE (OpenNebula) extends the benefits of virtualization platforms from a
+ single physical resource to a pool of resources, decoupling the server not
+ only from the physical infrastructure but also from the physical location.
+ .
+ This package provides the OpenNebula Cloud API (OCA) Java bindings.
+
+Package: libopennebula-java-doc
+Source: opennebula
+Version: 5.2.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 2215
+Filename: pool/cloud/o/opennebula/libopennebula-java-doc_5.2.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 82464
+SHA256: c9fb7b5847991f433aba6f8d6ae0fb21cc8750574d72df5df425199d135dda2c
+SHA1: f426e82607a29eaaa63b37c41c54b79342b94a7c
+MD5sum: 0a10469a625f24fed2bd00233ce15cbc
+Description: Java bindings for OpenNebula Cloud API (OCA) - documentation
+ OpenNebula is an open source virtual infrastructure engine that enables the
+ dynamic deployment and re-placement of virtual machines on a pool of physical
+ resources.
+ .
+ ONE (OpenNebula) extends the benefits of virtualization platforms from a
+ single physical resource to a pool of resources, decoupling the server not
+ only from the physical infrastructure but also from the physical location.
+ .
+ This package provides the documentation (Javadoc API) and examples for
+ OpenNebula Cloud API (OCA) Java bindings.
+
+Package: opennebula
+Version: 5.2.1-1
+Architecture: amd64
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 32897
+Depends: apg, genisoimage, opennebula-tools (= 5.2.1-1), ruby-opennebula (= 5.2.1-1), wget, curl, ruby-json, ruby-uuidtools, ruby-amazon-ec2, ruby-parse-cron, qemu-utils, libcurl3
+Suggests: mysql-server
+Breaks: opennebula-flow (<< 5.0.2), opennebula-gate (<< 5.0.2), opennebula-sunstone (<< 5.0.2), ruby-opennebula (<< 4.90.5)
+Replaces: opennebula-flow (<< 5.0.2), opennebula-gate (<< 5.0.2), opennebula-sunstone (<< 5.0.2), ruby-opennebula (<< 4.90.5)
+Filename: pool/cloud/o/opennebula/opennebula_5.2.1-1_amd64.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 7043244
+SHA256: f45464746697221c87a8e6658bbd99fdf669676af95c1b35d67d3d20d1e94d6a
+SHA1: bbde5b4e65b9d08afbe9b239140a08f803e812ec
+MD5sum: f318dff72b4503ce395a545c6039192d
+Description: controller which executes the OpenNebula cluster services
+ OpenNebula is an open source virtual infrastructure engine that enables the
+ dynamic deployment and re-placement of virtual machines on a pool of physical
+ resources.
+ .
+ ONE (OpenNebula) extends the benefits of virtualization platforms from a
+ single physical resource to a pool of resources, decoupling the server not
+ only from the physical infrastructure but also from the physical location.
+ .
+ This package contains OpenNebula Controller which manage all nodes in the
+ cloud.
+
+Package: opennebula-common
+Source: opennebula
+Version: 5.2.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 47
+Depends: adduser, openssh-client
+Recommends: lvm2, sudo (>= 1.7.2p1)
+Filename: pool/cloud/o/opennebula/opennebula-common_5.2.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 11506
+SHA256: 274fb2ac218b5c5528b0d1156473bb2fe43ba9c797fa213894dda5ed2b43105e
+SHA1: f815bfe03cb41c70b350df45274e280834664739
+MD5sum: ade2906e4c688574eb8f98fc4d660b0f
+Description: empty package to create OpenNebula users and directories
+ OpenNebula is an open source virtual infrastructure engine that enables the
+ dynamic deployment and re-placement of virtual machines on a pool of physical
+ resources.
+ .
+ ONE (OpenNebula) extends the benefits of virtualization platforms from a
+ single physical resource to a pool of resources, decoupling the server not
+ only from the physical infrastructure but also from the physical location.
+ .
+ This package sets up the basic directory structure and users needed to run
+ an OpenNebula cloud.
+
+Package: opennebula-flow
+Source: opennebula
+Version: 5.2.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 212
+Depends: opennebula-common (= 5.2.1-1), ruby-json, ruby-opennebula (= 5.2.1-1), ruby-sinatra, thin, curl
+Conflicts: opennebula (<< 5.2.1-1)
+Filename: pool/cloud/o/opennebula/opennebula-flow_5.2.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 27990
+SHA256: 97876b00d8933bb1b93ac904d4cef260e048af61124eb98d6affe5a24e8e3028
+SHA1: f7ecdfe6bebe654d3a9e63d72f444ec7163c0f38
+MD5sum: 055e2115121c8fde99b9a78ce1009856
+Description: Manage services.
+ .
+ ONE (OpenNebula) extends the benefits of virtualization platforms from a
+ single physical resource to a pool of resources, decoupling the server not
+ only from the physical infrastructure but also from the physical location.
+ .
+ This package provides the server that allows service management.
+
+Package: opennebula-gate
+Source: opennebula
+Version: 5.2.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 58
+Depends: opennebula-common (= 5.2.1-1), ruby-json, ruby-opennebula (= 5.2.1-1), ruby-sinatra, ruby-rack, thin
+Conflicts: opennebula (<< 5.2.1-1)
+Filename: pool/cloud/o/opennebula/opennebula-gate_5.2.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 10686
+SHA256: c90698508fe85e7a37c905210bac9340c6402107f39eada7735f89e7644fea73
+SHA1: 419f4ca5b165f18a1a881b4e3a07ea1b1d0ae8ec
+MD5sum: d6359f5ea70fd9172d9aaedd9317e1ad
+Description: send information to OpenNebula from the Virtual Machines.
+ .
+ ONE (OpenNebula) extends the benefits of virtualization platforms from a
+ single physical resource to a pool of resources, decoupling the server not
+ only from the physical infrastructure but also from the physical location.
+ .
+ This package provides the server part to enable communication between the
+ Virtual Machines and OpenNebula
+
+Package: opennebula-node
+Source: opennebula
+Version: 5.2.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 29
+Depends: adduser, libvirt-bin, qemu-kvm, opennebula-common (= 5.2.1-1), ruby, vlan, ipset, pciutils
+Recommends: openssh-server | ssh-server
+Filename: pool/cloud/o/opennebula/opennebula-node_5.2.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 6398
+SHA256: 235c67ab6cf4d9b1f938417fa87f8071b7ecd4f4db8b9d81f7e81ea516cd460e
+SHA1: 61a0c192a0430b75fa2ff6b5d209944dbb0a7543
+MD5sum: bd061a83b9aa62e8101db14d91e23185
+Description: empty package to prepare a machine as OpenNebula Node
+ OpenNebula is an open source virtual infrastructure engine that enables the
+ dynamic deployment and re-placement of virtual machines on a pool of physical
+ resources.
+ .
+ ONE (OpenNebula) extends the benefits of virtualization platforms from a
+ single physical resource to a pool of resources, decoupling the server not
+ only from the physical infrastructure but also from the physical location.
+ .
+ This package prepares the machine for being a node in an OpenNebula
+ cloud.
+
+Package: opennebula-sunstone
+Source: opennebula
+Version: 5.2.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 45493
+Depends: opennebula-common (= 5.2.1-1), ruby-opennebula (= 5.2.1-1), opennebula-tools (= 5.2.1-1), thin, ruby-json, ruby-sinatra, ruby-rack, python, python-numpy
+Conflicts: opennebula (<< 5.2.1-1)
+Filename: pool/cloud/o/opennebula/opennebula-sunstone_5.2.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 7305984
+SHA256: 9773a3dc2b2744f49412709a1c88a4fd83c3c4de43d068e75681e26e417ab9fe
+SHA1: e5f0bc9fe033079abd101e5966c2bc1f733ff98c
+MD5sum: 51c080362a7c3a283606dbd183ed454e
+Description: web interface to which executes the OpenNebula cluster services
+ OpenNebula is an open source virtual infrastructure engine that enables the
+ dynamic deployment and re-placement of virtual machines on a pool of physical
+ resources.
+ .
+ ONE (OpenNebula) extends the benefits of virtualization platforms from a
+ single physical resource to a pool of resources, decoupling the server not
+ only from the physical infrastructure but also from the physical location.
+ .
+ OpenNebula Sunstone is the new OpenNebula Cloud Operations Center,
+ a GUI intended for users and admins, that will simplify the typical management
+ operations in private and hybrid cloud infrastructures. You will be able to
+ manage your virtual resources in a similar way as you do with the
+ CLI.
+
+Package: opennebula-tools
+Source: opennebula
+Version: 5.2.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 652
+Depends: opennebula-common (= 5.2.1-1), ruby-opennebula (= 5.2.1-1)
+Filename: pool/cloud/o/opennebula/opennebula-tools_5.2.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 106646
+SHA256: 86fec134d3f515dd7caf6e271bd9080b4871e3e4ae6bc905fe2097c4bed19f97
+SHA1: 2e4cbdb4c1a42495f8f61fe0e312626bf58b0e60
+MD5sum: 91b1db4c573291efdfbfba25493c8849
+Description: Command-line tools for OpenNebula Cloud
+ OpenNebula is an open source virtual infrastructure engine that enables the
+ dynamic deployment and re-placement of virtual machines on a pool of physical
+ resources.
+ .
+ ONE (OpenNebula) extends the benefits of virtualization platforms from a
+ single physical resource to a pool of resources, decoupling the server not
+ only from the physical infrastructure but also from the physical location.
+ .
+ This package provides the OpenNebula CLI.
+
+Package: ruby-opennebula
+Source: opennebula
+Version: 5.2.1-1
+Architecture: all
+Maintainer: OpenNebula Team <contact@opennebula.org>
+Installed-Size: 2075
+Depends: ruby, ruby-mysql, ruby-password, ruby-sequel, ruby-sqlite3, ruby-nokogiri, ruby-builder
+Breaks: opennebula-gate (<< 4.90.5), opennebula-sunstone (<< 4.90.5)
+Replaces: opennebula-gate (<< 4.90.5), opennebula-sunstone (<< 4.90.5)
+Filename: pool/cloud/o/opennebula/ruby-opennebula_5.2.1-1_all.deb
+Section: extra
+Priority: Priority
+Homepage: http://opennebula.org/
+Size: 212796
+SHA256: d488bc8554c7f991eaff9dd53e351e9ecce6106293aab1850169d1959fa4c545
+SHA1: 49df482d4cbe4882d34c2644151f88d0415ebeea
+MD5sum: a65d1f6eeed5794f8f0d6d5120eef414
+Description: Ruby bindings for OpenNebula Cloud API (OCA)
+ OpenNebula is an open source virtual infrastructure engine that enables the
+ dynamic deployment and re-placement of virtual machines on a pool of physical
+ resources.
+ .
+ ONE (OpenNebula) extends the benefits of virtualization platforms from a
+ single physical resource to a pool of resources, decoupling the server not
+ only from the physical infrastructure but also from the physical location.
+ .
+ This package provides the OpenNebula Cloud API (OCA) Ruby bindings.
+
