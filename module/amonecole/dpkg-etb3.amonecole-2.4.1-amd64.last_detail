@@ -1,0 +1,787 @@
+Souhait=inconnU/Installé/suppRimé/Purgé/H=à garder
+| État=Non/Installé/fichier-Config/dépaqUeté/échec-conFig/H=semi-installé/W=attend-traitement-déclenchements
+|/ Err?=(aucune)/besoin Réinstallation (État,Err: majuscule=mauvais)
+||/ Nom                              Version                                 Description
++++-================================-=======================================-=================================================================================
+ii  accountsservice                  0.6.15-2ubuntu9.7                       query and manipulate user account information
+ii  acl                              2.2.51-5ubuntu1                         Access control list utilities
+ii  acpid                            1:2.0.10-1ubuntu3                       Advanced Configuration and Power Interface event daemon
+ii  adduser                          3.113ubuntu2                            add and remove users and groups
+ii  apparmor                         2.7.102-0ubuntu3.10                     User-space parser utility for AppArmor
+ii  apt                              0.8.16~exp12ubuntu10.27                 commandline package manager
+ii  apt-cacher-ng                    0.7.2-1ubuntu2.2                        caching proxy server for software repositories
+ii  apt-show-versions                0.17                                    lists available package versions with distribution
+ii  apt-transport-https              0.8.16~exp12ubuntu10.27                 https download transport for APT
+ii  apt-utils                        0.8.16~exp12ubuntu10.27                 package managment related utility programs
+ii  aptitude                         0.6.6-1ubuntu1.2                        terminal-based package manager (terminal interface only)
+ii  aspell                           0.60.7~20110707-1                       GNU Aspell spell-checker
+ii  aspell-en                        6.0-0-6ubuntu2                          English dictionary for GNU Aspell
+ii  at                               3.1.13-1ubuntu1                         Delayed job execution and batch processing
+ii  auth-client-config               0.9ubuntu1                              pam and NSS profile switcher
+ii  bacula-common                    5.2.5-0ubuntu6.2                        network backup, recovery and verification - common support files
+ii  bacula-common-sqlite3            5.2.5-0ubuntu6.2                        network backup, recovery and verification - SQLite v3 common files
+ii  bacula-console                   5.2.5-0ubuntu6.2                        network backup, recovery and verification - text console
+ii  bacula-director-common           5.2.5-0ubuntu6.2                        network backup, recovery and verification - Director common files
+ii  bacula-director-sqlite3          5.2.5-0ubuntu6.2                        network backup, recovery and verification - SQLite 3 storage for Director
+ii  bacula-fd                        5.2.5-0ubuntu6.2                        network backup, recovery and verification - file daemon
+ii  bacula-sd                        5.2.5-0ubuntu6.2                        network backup, recovery and verification - storage daemon
+ii  bacula-sd-sqlite3                5.2.5-0ubuntu6.2                        network backup, recovery and verification - SQLite 3 SD tools
+ii  base-files                       6.5ubuntu6.8                            Debian base system miscellaneous files
+ii  base-passwd                      3.5.24                                  Debian base system master password and group files
+ii  bash                             4.2-2ubuntu2.6                          GNU Bourne Again SHell
+ii  bash-completion                  1:1.3-1ubuntu8.1                        programmable completion for the bash shell
+ii  bind9-host                       1:9.8.1.dfsg.P1-4ubuntu0.20             Version of 'host' bundled with BIND 9.X
+ii  bridge-utils                     1.5-2ubuntu7                            Utilities for configuring the Linux Ethernet bridge
+ii  bsdmainutils                     8.2.3ubuntu1                            collection of more utilities from FreeBSD
+ii  bsdutils                         1:2.20.1-1ubuntu3.1                     Basic utilities from 4.4BSD-Lite
+ii  busybox-initramfs                1:1.18.5-1ubuntu4.1                     Standalone shell setup for initramfs
+ii  busybox-static                   1:1.18.5-1ubuntu4.1                     Standalone rescue shell with tons of builtin utilities
+ii  bzip2                            1.0.6-1                                 high-quality block-sorting file compressor - utilities
+ii  ca-certificates                  20160104ubuntu0.12.04.1                 Common CA certificates
+ii  cgroup-lite                      1.1.5                                   Light-weight package to set up cgroups at system boot
+ii  check-bacula-plugin              5.2.5-1                                 network backup, recovery and verification - check tool
+ii  chromium-browser                 37.0.2062.120-0ubuntu0.12.04.4          Chromium browser
+ii  chromium-browser-l10n            37.0.2062.120-0ubuntu0.12.04.4          chromium-browser language packages
+ii  chromium-codecs-ffmpeg-extra     37.0.2062.120-0ubuntu0.12.04.4          Extra ffmpeg codecs for the Chromium Browser
+ii  cifs-utils                       2:5.1-1ubuntu2                          Common Internet File System utilities
+ii  clamav                           0.99.2+addedllvm-0ubuntu0.12.04.1       anti-virus utility for Unix - command-line interface
+ii  clamav-base                      0.99.2+addedllvm-0ubuntu0.12.04.1       anti-virus utility for Unix - base package
+ii  clamav-freshclam                 0.99.2+addedllvm-0ubuntu0.12.04.1       anti-virus utility for Unix - virus database update utility
+ii  command-not-found                0.2.46ubuntu6                           Suggest installation of packages in interactive bash sessions
+ii  command-not-found-data           0.2.46ubuntu6                           Set of data files for command-not-found.
+ii  console-data                     2:1.12-1                                keymaps, fonts, charset maps, fallback tables for console-tools
+ii  console-setup                    1.70ubuntu5                             console font and keymap setup program
+ii  convmv                           1.12-2                                  filename encoding conversion tool
+ii  coreutils                        8.13-3ubuntu3.3                         GNU core utilities
+ii  cpio                             2.11-7ubuntu3.2                         GNU cpio -- a program to manage archives of files
+ii  creole                           2.4.1-133                               gestion de configuration Creole
+ii  creole-common                    2.4.1-133                               gestion de configuration Creole - fichier commun
+ii  cron                             3.0pl1-120ubuntu4                       process scheduling daemon
+ii  cu                               1.07+eole24-2                           call up another system
+ii  dash                             0.5.7-2ubuntu2                          POSIX-compliant shell
+ii  dbconfig-common                  1.8.47                                  common framework for packaging database applications
+ii  dbus                             1.4.18-1ubuntu1.8                       simple interprocess messaging system (daemon and utilities)
+ii  dbus-x11                         1.4.18-1ubuntu1.8                       simple interprocess messaging system (X11 deps)
+ii  dconf-gsettings-backend          0.12.0-0ubuntu1.1                       simple configuration storage system - GSettings back-end
+ii  dconf-service                    0.12.0-0ubuntu1.1                       simple configuration storage system - D-Bus service
+ii  debconf                          1.5.42ubuntu1                           Debian configuration management system
+ii  debconf-i18n                     1.5.42ubuntu1                           full internationalization support for debconf
+ii  debianutils                      4.2.1ubuntu2                            Miscellaneous utilities specific to Debian
+ii  debootstrap                      1.0.40~ubuntu0.11                       Bootstrap a basic Debian system
+ii  debsums                          2.0.51                                  tool for verification of installed package files against MD5 checksums
+ii  dhcp3-relay                      4.1.ESV-R4-0ubuntu5.11                  ISC DHCP relay (transitional package)
+ii  dialog                           1.1-20111020-1                          Displays user-friendly dialog boxes from shell scripts
+ii  dictionaries-common              1.12.1ubuntu2                           Common utilities for spelling dictionary tools
+ii  diffutils                        1:3.2-1ubuntu1                          File comparison utilities
+ii  dmidecode                        2.11-4ubuntu0.1                         SMBIOS/DMI table decoder
+ii  dmsetup                          2:1.02.48-4ubuntu7.4                    The Linux Kernel Device Mapper userspace library
+ii  dnsmasq-base                     2.59-4ubuntu0.2                         Small caching DNS proxy and DHCP/TFTP server
+ii  dnsutils                         1:9.8.1.dfsg.P1-4ubuntu0.20             Clients provided with BIND
+ii  dosfstools                       3.0.12-1ubuntu1.3                       utilities for making and checking MS-DOS FAT filesystems
+ii  dpkg                             1.16.1.2ubuntu7.8                       Debian package management system
+ii  e2fslibs                         1.42-1ubuntu2.3                         ext2/ext3/ext4 file system libraries
+ii  e2fsprogs                        1.42-1ubuntu2.3                         ext2/ext3/ext4 file system utilities
+ii  ed                               1.5-3                                   classic UNIX line editor
+ii  eject                            2.1.5+deb1+cvs20081104-9                ejects CDs and operates CD-Changers under Linux
+ii  elinks                           0.12~pre5-7ubuntu1                      advanced text-mode WWW browser
+ii  elinks-data                      0.12~pre5-7ubuntu1                      advanced text-mode WWW browser - data files
+ii  eole-ajaxplorer                  4.2.3-eole5-2                           Templates et dictionnaires pour Ajaxplorer "EOLE".
+ii  eole-amon                        2.4.1-5                                 configuration du module EOLE : Amon
+ii  eole-amon-backend                2.4.1-3                                 Librairie Python pour Amon
+ii  eole-amonecole                   2.4.1-8                                 configuration du module EOLE : AmonEcole
+ii  eole-amonecole-module            2.4.1-8                                 Module AmonEcole (metapackage)
+ii  eole-annuaire                    2.4.1-2                                 Templates et dictionnaires pour le service Annuaire EOLE
+ii  eole-antivirus                   2.4.1-6                                 Templates et dictionnaires pour l'antivirus EOLE
+ii  eole-apt-cacher-ng               2.4.1-2                                 Configuration EOLE pour apt-cacher-ng
+ii  eole-archive-keyring             2014.02.03-1                            GnuPG archive keys of EOLE repository
+ii  eole-bacula                      2.4.1-7                                 Configuration (dictionnaire et templates) et Scripts bacula pour les modules Eole
+ii  eole-bacula-pkg                  2.4.1-7                                 (metapackage) Gestion des dépendances de eole-bacula.
+ii  eole-client-annuaire             2.4.1-6                                 Templates et dictionnaires configurer un client LDAP
+ii  eole-client-annuaire-pkg         2.4.1-6                                 dependency package for eole-client-annuaire
+ii  eole-cntlm                       2.4.0-5                                 EOlisation de Cntlm
+ii  eole-common-pkg                  2.4.1-88                                Dépendance commune à tous les serveurs EOLE
+ii  eole-controle-vnc                2.4.1-7                                 Templates et dictionnaires pour controle-vnc
+ii  eole-courier                     2.4.1-3                                 Templates et dictionnaires pour Courier
+ii  eole-cups                        2.4.1-4                                 Templates et dictionnaires pour CUPS
+ii  eole-debsums                     2.4.1-3                                 Check MD5 checksums of debian packages
+ii  eole-debsums-zephir-agent        2.4.1-3                                 Check MD5 checksums of debian packages - zéphir agent
+ii  eole-dhcp                        2.4.1-5                                 Templates et dictionnaires pour DHCP/TFTP EOLE
+ii  eole-dhcrelay                    2.4.0-4                                 Templates et dictionnaires pour le relayage DHCP
+ii  eole-dns                         2.4.1-5                                 Templates et dictionnaires pour le service DNS
+ii  eole-ead                         2.4.1-26                                Installation complète de l'outil EAD (Metapackage)
+ii  eole-ead-common                  2.4.1-26                                Librairies communes pour l'outil EAD
+ii  eole-ead-server                  2.4.1-26                                Backend pour l'outil EAD
+ii  eole-ead-web                     2.4.1-26                                Frontend Web pour l'outil EAD
+ii  eole-ejabberd                    2.4.0-6                                 Dictionnaire, templates et utilitaires pour Ejabberd
+ii  eole-era                         2.4.1-60                                Configuration EOLE pour Era
+ii  eole-esu                         2.4.1-7                                 Configuration ESU pour EOLE
+ii  eole-esu-rules                   2.4.1-7                                 Répertoire ESU pour EOLE
+ii  eole-exim                        2.4.1-19                                Configuration EOLE pour Exim
+ii  eole-exim-auth                   2.4.1-19                                Configuration EOLE pour Exim
+ii  eole-fichier-common              2.4.1-26                                Templates et dictionnaires pour serveur de fichier EOLE
+ii  eole-fichier-primaire            2.4.1-26                                Templates et dictionnaires pour serveur de fichier EOLE
+ii  eole-flask                       2.4.1-17                                configuration files for eole application server
+ii  eole-flask-admin                 2.4.1-17                                configuration files for eole-flask admin instance
+ii  eole-flask-server                2.4.1-17                                application server for EOLE
+ii  eole-genconfig                   2.4.1-26                                manage EOLE configuration
+ii  eole-genconfig-client            2.4.1-26                                manage EOLE configuration
+ii  eole-lxc-controller              2.4.1-88                                Utilitaire pour la mise en place des conteneurs EOLE
+ii  eole-mysql                       2.4.1-3                                 Templates et dictionnaires pour le service MySQL
+ii  eole-nsswitch                    2.4.1-2                                 Configuration nsswitch pour les modules EOLE
+ii  eole-nut                         2.4.1-2                                 Templates et dictionnaires pour Nut
+ii  eole-phpmyadmin                  2.4.0-7                                 Templates et dictionnaires pour l'application phpMyAdmin
+ii  eole-proftpd                     2.4.1-2                                 Templates et dictionnaires pour le service proftpd
+ii  eole-proxy                       2.4.1-37                                Templates et dictionnaires pour le Proxy
+ii  eole-proxy-bypass                2.4.1-60                                Configuration EOLE pour les exceptions de proxy
+ii  eole-python-fichier              2.4.0-7                                 Librairie et scripts python pour eole-fichier
+ii  eole-radius                      2.4.1-1                                 Templates et dictionnaires pour Radius EOLE
+ii  eole-radius-pkg                  2.4.1-1                                 dependency package for eole-radius
+ii  eole-register                    2.4.1-1                                 Client d'enregistrement EOLE
+ii  eole-resolvconf                  2.4.1-88                                Metapaquet pour supprimer/remplacer resolvconf
+ii  eole-reverseproxy                2.4.1-5                                 Templates et dictionnaires pour le service reverseproxy
+ii  eole-reverseproxy-pkg            2.4.1-5                                 dependency package for eole-reverseproxy
+ii  eole-roundcube                   1.0.1-eole1-1                           Templates et dictionnaires pour Roundcube "EOLE".
+ii  eole-scribe                      2.4.1-8                                 configuration du module EOLE : Scribe
+ii  eole-scribe-backend              2.4.1-15                                Backend de gestion des comptes Scribe
+ii  eole-scribe-scripts              2.4.1-15                                Scripts pour la gestion des comptes scribe
+ii  eole-scribe-web                  2.4.1-8                                 Applications pré-installées sur un module Scribe (metapackage)
+ii  eole-scribehorus                 2.4.0-10                                Configuration commune pour les modules Scribe et Horus
+ii  eole-server                      2.4.1-88                                Dictionnaires et templates communs pour EOLE
+ii  eole-spamassassin                2.4.0-5                                 Templates et dictionnaires pour le service anti-spam
+ii  eole-ssmtp-pkg                   2.4.1-88                                Dépendances sur le MTA ssmtp
+ii  eole-sso                         2.4.1-11                                Eolisation du serveur EoleSSO
+ii  eole-sso-server                  2.4.1-11                                Serveur EoleSSO pour les module EOLE
+ii  eole-sympa                       2.4.0-7                                 Templates et dictionnaires pour Sympa
+ii  eole-userpassword                2.4.1-26                                Templates et dictionnaires pour le paramètrage des mots de passe
+ii  eole-vpn                         2.4.1-1                                 Templates, dictionnaire et scripts pour le gestion du VPN
+ii  eole-web                         2.4.1-17                                Templates et dictionnaires pour les services web
+ii  eole-wpkg                        2.4.0-3                                 Configuration et Scripts WPKG pour les modules EOLE
+ii  eoleflask-aaa                    2.4.1-5                                 authentication and authorization framework for eoleflask applications
+ii  era                              2.4.1-60                                Editeur de règles pour amon (Era)
+ii  ethtool                          1:3.1-1                                 display or change Ethernet device settings
+ii  file                             5.09-2ubuntu0.6                         Determines file type using "magic" numbers
+ii  findutils                        4.4.2-4ubuntu1                          utilities for finding files--find, xargs
+ii  fontconfig                       2.8.0-3ubuntu9.2                        generic font configuration library - support binaries
+ii  fontconfig-config                2.8.0-3ubuntu9.2                        generic font configuration library - configuration
+ii  fping                            2.4b2-to-ipv6-16.1                      sends ICMP ECHO_REQUEST packets to network hosts
+ii  freeradius                       2.1.10+dfsg-3ubuntu0.12.04.2            a high-performance and highly configurable RADIUS server
+ii  freeradius-common                2.1.10+dfsg-3ubuntu0.12.04.2            FreeRADIUS common files
+ii  freeradius-ldap                  2.1.10+dfsg-3ubuntu0.12.04.2            LDAP module for FreeRADIUS server
+ii  freeradius-utils                 2.1.10+dfsg-3ubuntu0.12.04.2            FreeRADIUS client utilities
+ii  friendly-recovery                0.2.25                                  Make recovery more user-friendly
+ii  ftp                              0.17-25                                 classical file transfer client
+ii  fuse                             2.8.6-2ubuntu2.1                        Filesystem in Userspace
+ii  gawk                             1:3.1.8+dfsg-0.1ubuntu1                 GNU awk, a pattern scanning and processing language
+ii  gcc-4.6-base                     4.6.3-1ubuntu5                          GCC, the GNU Compiler Collection (base package)
+ii  gconf-service                    3.2.5-0ubuntu2                          GNOME configuration database system (D-Bus service)
+ii  gconf-service-backend            3.2.5-0ubuntu2                          GNOME configuration database system (D-Bus service)
+ii  gconf2                           3.2.5-0ubuntu2                          GNOME configuration database system (support tools)
+ii  gconf2-common                    3.2.5-0ubuntu2                          GNOME configuration database system (common files)
+ii  geoip-database                   20111220-1                              IP lookup command line tools that use the GeoIP library (country database)
+ii  gettext-base                     0.18.1.1-5ubuntu3                       GNU Internationalization utilities for the base system
+ii  gir1.2-glib-2.0                  1.32.0-1                                Introspection data for GLib, GObject, Gio and GModule
+ii  glib-networking                  2.32.1-1ubuntu2.1                       network-related giomodules for GLib
+ii  glib-networking-common           2.32.1-1ubuntu2.1                       network-related giomodules for GLib - data files
+ii  glib-networking-services         2.32.1-1ubuntu2.1                       network-related giomodules for GLib - D-Bus services
+ii  gnupg                            1.4.11-3ubuntu2.10                      GNU privacy guard - a free PGP replacement
+ii  gnutls-bin                       3.0.11+really2.12.14-5ubuntu3.12        GNU TLS library - commandline utilities
+ii  gpgv                             1.4.11-3ubuntu2.10                      GNU privacy guard - signature verification tool
+ii  gpm                              1.20.4-4                                General Purpose Mouse interface
+ii  grep                             2.10-1                                  GNU grep, egrep and fgrep
+ii  groff-base                       1.21-7                                  GNU troff text-formatting system (base system components)
+ii  grub-common                      1.99-21ubuntu3.20                       GRand Unified Bootloader (common files)
+ii  grub-gfxpayload-lists            0.6                                     GRUB gfxpayload blacklist
+ii  grub-pc                          1.99-21ubuntu3.20                       GRand Unified Bootloader, version 2 (PC/BIOS version)
+ii  grub-pc-bin                      1.99-21ubuntu3.20                       GRand Unified Bootloader, version 2 (PC/BIOS binaries)
+ii  grub2-common                     1.99-21ubuntu3.20                       GRand Unified Bootloader (common files for version 2)
+ii  gsettings-desktop-schemas        3.4.1-0ubuntu1                          GSettings deskop-wide schemas
+ii  gunicorn                         0.13.4-1                                Event-based HTTP/WSGI server
+ii  gzip                             1.4-1ubuntu2                            GNU compression utilities
+ii  hdparm                           9.37-0ubuntu3.1                         tune hard disk parameters for high performance
+ii  heirloom-mailx                   12.5-1build1                            feature-rich BSD mail(1)
+ii  hicolor-icon-theme               0.12-1ubuntu2                           default fallback theme for FreeDesktop.org icon themes
+ii  hostname                         3.06ubuntu1                             utility to set/show the host name or domain name
+ii  htop                             1.0.1-1                                 interactive processes viewer
+ii  httping                          1.4.4-1build1                           ping-like program for http-requests
+ii  ifupdown                         0.7~beta2ubuntu11.1                     high level tools to configure network interfaces
+ii  info                             4.13a.dfsg.1-8ubuntu2                   Standalone GNU Info documentation browser
+ii  initramfs-tools                  0.99ubuntu13.5                          tools for generating an initramfs
+ii  initramfs-tools-bin              0.99ubuntu13.5                          binaries used by initramfs-tools
+ii  initscripts                      2.88dsf-13.10ubuntu11.1                 scripts for initializing and shutting down the system
+ii  insserv                          1.14.0-2.1ubuntu2                       Tool to organize boot sequence using LSB init.d script dependencies
+ii  install-info                     4.13a.dfsg.1-8ubuntu2                   Manage installed documentation in info format
+ii  installation-report              2.46ubuntu1                             system installation report
+ii  iproute                          20111117-1ubuntu2.3                     networking and traffic control tools
+ii  ipsec-tools                      1:0.8.0-9ubuntu1.1                      IPsec tools for Linux
+ii  ipset                            6.11-2                                  administration tool for kernel IP sets
+ii  iptables                         1.4.12-1ubuntu5                         administration tools for packet filtering and NAT
+ii  iputils-arping                   3:20101006-1ubuntu1                     Tool to send ICMP echo requests to an ARP address
+ii  iputils-ping                     3:20101006-1ubuntu1                     Tools to test the reachability of network hosts
+ii  iputils-tracepath                3:20101006-1ubuntu1                     Tools to trace the network path to a remote host
+ii  irqbalance                       0.56-1ubuntu4                           Daemon to balance interrupts for SMP systems
+ii  isc-dhcp-client                  4.1.ESV-R4-0ubuntu5.11                  ISC DHCP client
+ii  isc-dhcp-common                  4.1.ESV-R4-0ubuntu5.11                  common files used by all the isc-dhcp* packages
+ii  isc-dhcp-relay                   4.1.ESV-R4-0ubuntu5.11                  ISC DHCP relay daemon
+ii  iso-codes                        3.31-1                                  ISO language, territory, currency, script codes and their translations
+ii  kbd                              1.15.2-3ubuntu4                         Linux console font and keytable utilities
+ii  keyboard-configuration           1.70ubuntu5                             system-wide keyboard preferences
+ii  klibc-utils                      1.5.25-1ubuntu2                         small utilities built with klibc for early boot
+ii  krb5-locales                     1.10+dfsg~beta1-2ubuntu0.7              Internationalization support for MIT Kerberos
+ii  language-pack-en                 1:12.04+20140106                        translation updates for language English
+ii  language-pack-en-base            1:12.04+20140106                        translations for language English
+ii  language-pack-fr                 1:12.04+20140106                        translation updates for language French
+ii  language-pack-fr-base            1:12.04+20140106                        translations for language French
+ii  language-pack-gnome-fr           1:12.04+20140106                        GNOME translation updates for language French
+ii  language-pack-gnome-fr-base      1:12.04+20140106                        GNOME translations for language French
+ii  language-selector-common         0.79.4                                  Language selector for Ubuntu
+ii  ldap-auth-client                 0.5.3                                   meta-package for LDAP authentication
+ii  ldap-auth-config                 0.5.3                                   Config package for LDAP authentication
+ii  ldap-utils                       2.4.28-1.1ubuntu4.6                     OpenLDAP utilities
+ii  less                             444-1ubuntu1                            pager program similar to more
+ii  libaccountsservice0              0.6.15-2ubuntu9.7                       query and manipulate user account information - shared libraries
+ii  libacl1                          2.2.51-5ubuntu1                         Access control list shared library
+ii  libapparmor1                     2.7.102-0ubuntu3.10                     changehat AppArmor library
+ii  libapt-inst1.4                   0.8.16~exp12ubuntu10.27                 deb package format runtime library
+ii  libapt-pkg-perl                  0.1.25build2                            Perl interface to libapt-pkg
+ii  libapt-pkg4.12                   0.8.16~exp12ubuntu10.27                 package managment runtime library
+ii  libasn1-8-heimdal                1.6~git20120311.dfsg.1-2ubuntu0.1       Heimdal Kerberos - ASN.1 library
+ii  libasound2                       1.0.25-1ubuntu10.2                      shared library for ALSA applications
+ii  libaspell15                      0.60.7~20110707-1                       GNU Aspell spell-checker runtime library
+ii  libatk1.0-0                      2.4.0-0ubuntu1                          ATK accessibility toolkit
+ii  libatk1.0-data                   2.4.0-0ubuntu1                          Common files for the ATK accessibility toolkit
+ii  libattr1                         1:2.4.46-5ubuntu1                       Extended attribute shared library
+ii  libavahi-client3                 0.6.30-5ubuntu2.2                       Avahi client library
+ii  libavahi-common-data             0.6.30-5ubuntu2.2                       Avahi common data files
+ii  libavahi-common3                 0.6.30-5ubuntu2.2                       Avahi common library
+ii  libbind9-80                      1:9.8.1.dfsg.P1-4ubuntu0.20             BIND9 Shared Library used by BIND
+ii  libblkid1                        2.20.1-1ubuntu3.1                       block device id library
+ii  libboost-iostreams1.46.1         1.46.1-7ubuntu3                         Boost.Iostreams Library
+ii  libbsd0                          0.3.0-2                                 utility functions from BSD systems - shared library
+ii  libbz2-1.0                       1.0.6-1                                 high-quality block-sorting file compressor library - runtime
+ii  libc-bin                         2.15-0ubuntu10.15                       Embedded GNU C Library: Binaries
+ii  libc6                            2.15-0ubuntu10.15                       Embedded GNU C Library: Shared libraries
+ii  libcairo-gobject2                1.10.2-6.1ubuntu3                       The Cairo 2D vector graphics library (GObject library)
+ii  libcairo2                        1.10.2-6.1ubuntu3                       The Cairo 2D vector graphics library
+ii  libcanberra-gtk-module           0.28-3ubuntu3                           translates GTK+ widgets signals to event sounds
+ii  libcanberra-gtk0                 0.28-3ubuntu3                           GTK+ helper for playing widget event sounds with libcanberra
+ii  libcanberra0                     0.28-3ubuntu3                           simple abstract interface for playing event sounds
+ii  libcap-ng0                       0.6.6-1ubuntu1                          An alternate POSIX capabilities library
+ii  libcap2                          1:2.22-1ubuntu3                         support for getting/setting POSIX.1e capabilities
+ii  libclamav7                       0.99.2+addedllvm-0ubuntu0.12.04.1       anti-virus utility for Unix - library
+ii  libclass-isa-perl                0.36-3                                  report the search path for a class's ISA tree
+ii  libcomerr2                       1.42-1ubuntu2.3                         common error description library
+ii  libcups2                         1.5.3-0ubuntu8.7                        Common UNIX Printing System(tm) - Core library
+ii  libcurl3                         7.22.0-3ubuntu4.17                      Multi-protocol file transfer library (OpenSSL)
+ii  libcurl3-gnutls                  7.22.0-3ubuntu4.17                      Multi-protocol file transfer library (GnuTLS)
+ii  libcwidget3                      0.5.16-3.1ubuntu1                       high-level terminal interface library for C++ (runtime files)
+ii  libdatrie1                       0.2.5-3                                 Double-array trie library
+ii  libdb5.1                         5.1.25-11build1                         Berkeley v5.1 Database Libraries [runtime]
+ii  libdbd-mysql-perl                4.020-1ubuntu0.1                        Perl5 database interface to the MySQL database
+ii  libdbi-perl                      1.616-1build2                           Perl Database Interface (DBI)
+ii  libdbi1                          0.8.4-5.1                               DB Independent Abstraction Layer for C -- shared library
+ii  libdbus-1-3                      1.4.18-1ubuntu1.8                       simple interprocess messaging system (library)
+ii  libdbus-glib-1-2                 0.98-1ubuntu1.1                         simple interprocess messaging system (GLib-based shared library)
+ii  libdconf0                        0.12.0-0ubuntu1.1                       simple configuration storage system - runtime library
+ii  libdevmapper-event1.02.1         2:1.02.48-4ubuntu7.4                    The Linux Kernel Device Mapper userspace library
+ii  libdevmapper1.02.1               2:1.02.48-4ubuntu7.4                    The Linux Kernel Device Mapper userspace library
+ii  libdns81                         1:9.8.1.dfsg.P1-4ubuntu0.20             DNS Shared Library used by BIND
+ii  libdpkg-perl                     1.16.1.2ubuntu7.8                       Dpkg perl modules
+ii  libdrm-intel1                    2.4.52-1~precise2                       Userspace interface to intel-specific kernel DRM services -- runtime
+ii  libdrm-nouveau1a                 2.4.52-1~precise2                       Userspace interface to nouveau-specific kernel DRM services -- runtime
+ii  libdrm-radeon1                   2.4.52-1~precise2                       Userspace interface to radeon-specific kernel DRM services -- runtime
+ii  libdrm2                          2.4.52-1~precise2                       Userspace interface to kernel DRM services -- runtime
+ii  libedit2                         2.11-20080614-3ubuntu2                  BSD editline and history libraries
+ii  libelf1                          0.152-1ubuntu3.1                        library to read and write ELF files
+ii  libenchant1c2a                   1.6.0-7                                 Wrapper library for various spell checker engines (runtime libs)
+ii  libept1.4.12                     1.0.6~exp1ubuntu1                       High-level library for managing Debian package information
+ii  libexpat1                        2.0.1-7.2ubuntu1.4                      XML parsing C library - runtime library
+ii  libfcgi0ldbl                     2.4.0-8.1ubuntu0.1                      Shared library of FastCGI
+ii  libffi6                          3.0.11~rc1-5                            Foreign Function Interface library runtime
+ii  libfile-copy-recursive-perl      0.38-1                                  Perl extension for recursively copying files and directories
+ii  libfile-fnmatch-perl             0.02-1build2                            Perl module that provides simple filename and pathname matching
+ii  libfontconfig1                   2.8.0-3ubuntu9.2                        generic font configuration library - runtime
+ii  libfontenc1                      1:1.1.0-1                               X11 font encoding library
+ii  libfreeradius2                   2.1.10+dfsg-3ubuntu0.12.04.2            FreeRADIUS shared library
+ii  libfreetype6                     2.4.8-1ubuntu2.3                        FreeType 2 font engine, shared library files
+ii  libfribidi0                      0.19.2-1                                Free Implementation of the Unicode BiDi algorithm
+ii  libfsplib0                       0.11-2                                  FSP v2 protocol stack library - shared library
+ii  libfuse2                         2.8.6-2ubuntu2.1                        Filesystem in Userspace (library)
+ii  libgail-3-0                      3.4.2-0ubuntu0.9                        GNOME Accessibility Implementation Library -- shared libraries
+ii  libgc1c2                         1:7.1-8ubuntu0.12.04.1                  conservative garbage collector for C and C++
+ii  libgcc1                          1:4.6.3-1ubuntu5                        GCC support library
+ii  libgconf-2-4                     3.2.5-0ubuntu2                          GNOME configuration database system (shared libraries)
+ii  libgcrypt11                      1.5.0-3ubuntu0.6                        LGPL Crypto library - runtime library
+ii  libgd-gd2-perl                   1:2.46-3build1                          Perl module wrapper for libgd - gd2 variant
+ii  libgd2-xpm                       2.0.36~rc1~dfsg-6ubuntu2.3              GD Graphics Library version 2
+ii  libgdbm3                         1.8.3-10                                GNU dbm database routines (runtime version)
+ii  libgdk-pixbuf2.0-0               2.26.1-1ubuntu1.5                       GDK Pixbuf library
+ii  libgdk-pixbuf2.0-common          2.26.1-1ubuntu1.5                       GDK Pixbuf library - data files
+ii  libgeoclue0                      0.12.0-1ubuntu12                        C API for GeoClue
+ii  libgeoip1                        1.4.8+dfsg-2                            non-DNS IP-to-country resolver library
+ii  libgirepository-1.0-1            1.32.0-1                                Library for handling GObject introspection data (runtime library)
+ii  libglade2-0                      1:2.6.4-1ubuntu1.1                      library to load .glade files at runtime
+ii  libglib2.0-0                     2.32.4-0ubuntu1                         GLib library of C routines
+ii  libgmp10                         2:5.0.2+dfsg-2ubuntu1                   Multiprecision arithmetic library
+ii  libgnutls-openssl27              2.12.14-5ubuntu3.12                     GNU TLS library - OpenSSL wrapper
+ii  libgnutls26                      2.12.14-5ubuntu3.12                     GNU TLS library - runtime library
+ii  libgpg-error0                    1.10-2ubuntu1                           library for common error values and messages in GnuPG components
+ii  libgpgme11                       1.2.0-1.4ubuntu2.1                      GPGME - GnuPG Made Easy
+ii  libgpm2                          1.20.4-4                                General Purpose Mouse - shared library
+ii  libgssapi-krb5-2                 1.10+dfsg~beta1-2ubuntu0.7              MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
+ii  libgssapi3-heimdal               1.6~git20120311.dfsg.1-2ubuntu0.1       Heimdal Kerberos - GSSAPI support library
+ii  libgstreamer-plugins-base0.10-0  0.10.36-1ubuntu0.1                      GStreamer libraries from the "base" set
+ii  libgstreamer0.10-0               0.10.36-1ubuntu1                        Core GStreamer libraries and elements
+ii  libgtk-3-0                       3.4.2-0ubuntu0.9                        GTK+ graphical user interface library
+ii  libgtk-3-common                  3.4.2-0ubuntu0.9                        common files for the GTK+ graphical user interface library
+ii  libgtk2.0-0                      2.24.10-0ubuntu6.3                      GTK+ graphical user interface library
+ii  libgtk2.0-common                 2.24.10-0ubuntu6.3                      common files for the GTK+ graphical user interface library
+ii  libhcrypto4-heimdal              1.6~git20120311.dfsg.1-2ubuntu0.1       Heimdal Kerberos - crypto library
+ii  libheimbase1-heimdal             1.6~git20120311.dfsg.1-2ubuntu0.1       Heimdal Kerberos - Base library
+ii  libheimntlm0-heimdal             1.6~git20120311.dfsg.1-2ubuntu0.1       Heimdal Kerberos - NTLM support library
+ii  libhunspell-1.3-0                1.3.2-4                                 spell checker and morphological analyzer (shared library)
+ii  libhx509-5-heimdal               1.6~git20120311.dfsg.1-2ubuntu0.1       Heimdal Kerberos - X509 support library
+ii  libice6                          2:1.0.7-2build1                         X11 Inter-Client Exchange library
+ii  libicu48                         4.8.1.1-3ubuntu0.6                      International Components for Unicode
+ii  libidn11                         1.23-2ubuntu0.1                         GNU Libidn library, implementation of IETF IDN specifications
+ii  libipset2                        6.11-2                                  IP sets library
+ii  libisc83                         1:9.8.1.dfsg.P1-4ubuntu0.20             ISC Shared Library used by BIND
+ii  libisccc80                       1:9.8.1.dfsg.P1-4ubuntu0.20             Command Channel Library used by BIND
+ii  libisccfg82                      1:9.8.1.dfsg.P1-4ubuntu0.20             Config File Handling Library used by BIND
+ii  libjasper1                       1.900.1-13ubuntu0.3                     JasPer JPEG-2000 runtime library
+ii  libjavascriptcoregtk-3.0-0       1.8.3-0ubuntu0.12.04.1                  Javascript engine library for GTK+
+ii  libjpeg-turbo8                   1.1.90+svn733-0ubuntu4.4                IJG JPEG compliant runtime library.
+ii  libjpeg8                         8c-2ubuntu7                             Independent JPEG Group's JPEG runtime library (dependency package)
+ii  libjs-jquery                     1.7.1-1ubuntu1                          JavaScript library for dynamic web applications
+ii  libk5crypto3                     1.10+dfsg~beta1-2ubuntu0.7              MIT Kerberos runtime libraries - Crypto Library
+ii  libkeyutils1                     1.5.2-2                                 Linux Key Management Utilities (library)
+ii  libklibc                         1.5.25-1ubuntu2                         minimal libc subset for use with initramfs
+ii  libkrb5-26-heimdal               1.6~git20120311.dfsg.1-2ubuntu0.1       Heimdal Kerberos - libraries
+ii  libkrb5-3                        1.10+dfsg~beta1-2ubuntu0.7              MIT Kerberos runtime libraries
+ii  libkrb5support0                  1.10+dfsg~beta1-2ubuntu0.7              MIT Kerberos runtime libraries - Support library
+ii  libldap-2.4-2                    2.4.28-1.1ubuntu4.6                     OpenLDAP libraries
+ii  libllvm3.0                       3.0-4ubuntu1                            Low-Level Virtual Machine (LLVM), runtime library
+ii  liblocale-gettext-perl           1.05-7build1                            module using libc functions for internationalization in Perl
+ii  liblockfile-bin                  1.09-3ubuntu0.1                         support binaries for and cli utilities based on liblockfile
+ii  liblockfile1                     1.09-3ubuntu0.1                         NFS-safe locking library
+ii  libltdl7                         2.4.2-1ubuntu1                          A system independent dlopen wrapper for GNU libtool
+ii  liblua50                         5.0.3-6                                 Main interpreter library for the Lua 5.0 programming language
+ii  liblualib50                      5.0.3-6                                 Extension library for the Lua 5.0 programming language
+ii  liblwres80                       1:9.8.1.dfsg.P1-4ubuntu0.20             Lightweight Resolver Library used by BIND
+ii  liblzma5                         5.1.1alpha+20110809-3                   XZ-format compression library
+ii  liblzo2-2                        2.06-1ubuntu0.1                         data compression library
+ii  libmagic1                        5.09-2ubuntu0.6                         File type determination library using "magic" numbers
+ii  libmatchbox1                     1.9-8build1                             shared library for Matchbox Project applications [runtime]
+ii  libmnl0                          1.0.1-1                                 minimalistic Netlink communication library
+ii  libmount1                        2.20.1-1ubuntu3.1                       block device id library
+ii  libmtdev1                        1.1.0-2ubuntu1                          Multitouch Protocol Translation Library - shared library
+ii  libmysqlclient18                 5.5.53-0ubuntu0.12.04.1                 MySQL database client library
+ii  libncurses5                      5.9-4                                   shared libraries for terminal handling
+ii  libncursesw5                     5.9-4                                   shared libraries for terminal handling (wide character support)
+ii  libnet-daemon-perl               0.48-1                                  Perl module for building portable Perl daemons easily
+ii  libnet1                          1.1.4-2.1                               library for the construction and handling of network packets
+ii  libnetfilter-conntrack3          0.9.1-1ubuntu1                          Netfilter netlink-conntrack library
+ii  libnewt0.52                      0.52.11-2ubuntu10                       Not Erik's Windowing Toolkit - text mode windowing with slang
+ii  libnfnetlink0                    1.0.0-1                                 Netfilter netlink library
+ii  libnih-dbus1                     1.0.3-4ubuntu9.1                        NIH D-Bus Bindings Library
+ii  libnih1                          1.0.3-4ubuntu9.1                        NIH Utility Library
+ii  libnl-3-200                      3.2.3-2ubuntu2                          library for dealing with netlink sockets
+ii  libnl-genl-3-200                 3.2.3-2ubuntu2                          library for dealing with netlink sockets - generic netlink
+ii  libnotify4                       0.7.5-1                                 sends desktop notifications to a notification daemon
+ii  libnspr4                         4.12-0ubuntu0.12.04.1                   NetScape Portable Runtime Library
+ii  libnss-ldap                      264-2.2ubuntu2                          NSS module for using LDAP as a naming service
+ii  libnss3                          2:3.26.2-0ubuntu0.12.04.1               Network Security Service libraries
+ii  libogg0                          1.2.2~dfsg-1ubuntu1                     Ogg bitstream library
+ii  libopts25                        1:5.12-0.1ubuntu1                       automated option processing library based on autogen
+ii  liborc-0.4-0                     1:0.4.16-1ubuntu2                       Library of Optimized Inner Loops Runtime Compiler
+ii  libp11-kit0                      0.12-2ubuntu1                           Library for loading and coordinating access to PKCS#11 modules - runtime
+ii  libpam-ldap                      184-8.5ubuntu2                          Pluggable Authentication Module for LDAP
+ii  libpam-modules                   1.1.3-7ubuntu2.3                        Pluggable Authentication Modules for PAM
+ii  libpam-modules-bin               1.1.3-7ubuntu2.3                        Pluggable Authentication Modules for PAM - helper binaries
+ii  libpam-passwdqc                  1.2.0-1                                 PAM module for password strength policy enforcement
+ii  libpam-runtime                   1.1.3-7ubuntu2.3                        Runtime support for the PAM library
+ii  libpam0g                         1.1.3-7ubuntu2.3                        Pluggable Authentication Modules library
+ii  libpango1.0-0                    1.30.0-0ubuntu3.1                       Layout and rendering of internationalized text
+ii  libparted0debian1                2.3-8ubuntu5.2                          disk partition manipulator - shared library
+ii  libpasswdqc0                     1.2.0-1                                 password strength checking and policy enforcement library
+ii  libpcap0.8                       1.1.1-10                                system interface for user-level packet capture
+ii  libpci3                          1:3.1.8-2ubuntu6                        Linux PCI Utilities (shared library)
+ii  libpciaccess0                    0.12.902-1ubuntu0.2                     Generic PCI access library for X
+ii  libpcre3                         8.12-4ubuntu0.2                         Perl 5 Compatible Regular Expression Library - runtime files
+ii  libperl5.14                      5.14.2-6ubuntu2.5                       shared Perl library
+ii  libpipeline1                     1.2.1-1                                 pipeline manipulation library
+ii  libpixman-1-0                    0.30.2-1ubuntu0.0.0.0.3                 pixel-manipulation library for X and cairo
+ii  libplrpc-perl                    0.2020-2                                Perl extensions for writing PlRPC servers and clients
+ii  libplymouth2                     0.8.2-2ubuntu31.1                       graphical boot animation and logger - shared libraries
+ii  libpng12-0                       1.2.46-3ubuntu4.2                       PNG library - runtime
+ii  libpolkit-gobject-1-0            0.104-1ubuntu1.1                        PolicyKit Authorization API
+ii  libpopt0                         1.16-3ubuntu1                           lib for parsing cmdline parameters
+ii  libproxy1                        0.4.7-0ubuntu4.1                        automatic proxy configuration management library (shared)
+ii  libpth20                         2.0.7-16ubuntu3                         The GNU Portable Threads
+ii  libpython2.7                     2.7.3-0ubuntu3.9                        Shared Python runtime library (version 2.7)
+ii  libreadline5                     5.2-11                                  GNU readline and history libraries, run-time libraries
+ii  libreadline6                     6.2-8                                   GNU readline and history libraries, run-time libraries
+ii  librelp0                         1.0.0-1                                 Reliable Event Logging Protocol (RELP) library
+ii  libroken18-heimdal               1.6~git20120311.dfsg.1-2ubuntu0.1       Heimdal Kerberos - roken support library
+ii  librrd4                          1.4.7-1ubuntu1                          time-series data storage and display system (runtime library)
+ii  librtmp0                         2.4~20110711.gitc28f1bab-1              toolkit for RTMP streams (shared library)
+ii  libruby1.8                       1.8.7.352-2ubuntu1.6                    Libraries necessary to run Ruby 1.8
+ii  libsasl2-2                       2.1.25.dfsg1-3ubuntu0.1                 Cyrus SASL - authentication abstraction library
+ii  libsasl2-modules                 2.1.25.dfsg1-3ubuntu0.1                 Cyrus SASL - pluggable authentication modules
+ii  libselinux1                      2.1.0-4.1ubuntu1                        SELinux runtime shared libraries
+ii  libsensors4                      1:3.3.1-2ubuntu1                        library to read temperature/voltage/fan sensors
+ii  libsigc++-2.0-0c2a               2.2.10-0ubuntu2                         type-safe Signal Framework for C++ - runtime
+ii  libsigsegv2                      2.9-4ubuntu2                            Library for handling page faults in a portable way
+ii  libslang2                        2.2.4-3ubuntu1                          S-Lang programming library - runtime version
+ii  libsm6                           2:1.2.0-2build1                         X11 Session Management library
+ii  libsnmp-base                     5.4.3~dfsg-2.4ubuntu1.3                 SNMP (Simple Network Management Protocol) MIBs and documentation
+ii  libsnmp15                        5.4.3~dfsg-2.4ubuntu1.3                 SNMP (Simple Network Management Protocol) library
+ii  libsoup2.4-1                     2.38.1-1                                HTTP library implementation in C -- Shared library
+ii  libsqlite3-0                     3.7.9-2ubuntu1.2                        SQLite 3 shared library
+ii  libss2                           1.42-1ubuntu2.3                         command-line interface parsing library
+ii  libssl1.0.0                      1.0.1-4ubuntu5.38                       SSL shared libraries
+ii  libstartup-notification0         0.12-1ubuntu1                           library for program launch feedback (shared library)
+ii  libstdc++6                       4.6.3-1ubuntu5                          GNU Standard C++ Library v3
+ii  libstrongswan                    5.0.4-8                                 strongSwan utility and crypto library
+ii  libswitch-perl                   2.16-2                                  switch statement for Perl
+ii  libsysfs2                        2.1.0+repack-1                          interface library to sysfs
+ii  libtalloc2                       2.0.7-3                                 hierarchical pool based memory allocator
+ii  libtasn1-3                       2.10-1ubuntu1.5                         Manage ASN.1 structures (runtime)
+ii  libtdb1                          1.2.9-4                                 Trivial Database - shared library
+ii  libterm-readkey-perl             2.30-4build3                            A perl module for simple terminal control
+ii  libtext-charwidth-perl           0.04-7build1                            get display widths of characters on the terminal
+ii  libtext-iconv-perl               1.7-5                                   converts between character sets in Perl
+ii  libtext-wrapi18n-perl            0.06-7                                  internationalized substitute of Text::Wrap
+ii  libthai-data                     0.1.16-3                                Data files for Thai language support library
+ii  libthai0                         0.1.16-3                                Thai language support library
+ii  libtiff4                         3.9.5-2ubuntu1.9                        Tag Image File Format (TIFF) library
+ii  libtimedate-perl                 1.2000-1                                collection of modules to manipulate date/time information
+ii  libtinfo5                        5.9-4                                   shared low-level terminfo library for terminal handling
+ii  libtokyocabinet8                 1.4.37-6.1build1                        Tokyo Cabinet Database Libraries [runtime]
+ii  libtre5                          0.8.0-2                                 regexp matching library with approximate matching
+ii  libtspi1                         0.3.7-2ubuntu1.1                        open-source TCG Software Stack (library)
+ii  libudev0                         175-0ubuntu9.10                         udev library
+ii  libupsclient1                    2.6.3-1ubuntu1.1                        network UPS tools - client library
+ii  libusb-0.1-4                     2:0.1.12-20                             userspace USB programming library
+ii  libusb-1.0-0                     2:1.0.17-1ubuntu2~cloud1                userspace USB programming library
+ii  libuuid1                         2.20.1-1ubuntu3.1                       Universally Unique ID library
+ii  libvorbis0a                      1.3.2-1ubuntu3                          The Vorbis General Audio Compression Codec (Decoder library)
+ii  libvorbisfile3                   1.3.2-1ubuntu3                          The Vorbis General Audio Compression Codec (High Level API)
+ii  libwbclient0                     2:3.6.25-0ubuntu0.12.04.5               Samba winbind client library
+ii  libwebkitgtk-3.0-0               1.8.3-0ubuntu0.12.04.1                  Web content engine library for GTK+
+ii  libwebkitgtk-3.0-common          1.8.3-0ubuntu0.12.04.1                  Web content engine library for GTK+ - data files
+ii  libwind0-heimdal                 1.6~git20120311.dfsg.1-2ubuntu0.1       Heimdal Kerberos - stringprep implementation
+ii  libwrap0                         7.6.q-21                                Wietse Venema's TCP wrappers library
+ii  libx11-6                         2:1.4.99.1-0ubuntu2.3                   X11 client-side library
+ii  libx11-data                      2:1.4.99.1-0ubuntu2.3                   X11 client-side library
+ii  libx11-xcb1                      2:1.4.99.1-0ubuntu2.3                   Xlib/XCB interface library
+ii  libxapian22                      1.2.8-1                                 Search engine library
+ii  libxatracker1                    8.0.4-0ubuntu0.7                        X acceleration library -- runtime
+ii  libxau6                          1:1.0.6-4                               X11 authorisation library
+ii  libxaw7                          2:1.0.9-3ubuntu1                        X11 Athena Widget library
+ii  libxcb-dri2-0                    1.8.1-1ubuntu0.2                        X C Binding, dri2 extension
+ii  libxcb-render0                   1.8.1-1ubuntu0.2                        X C Binding, render extension
+ii  libxcb-shm0                      1.8.1-1ubuntu0.2                        X C Binding, shm extension
+ii  libxcb-util0                     0.3.8-2                                 utility libraries for X C Binding -- atom, aux and event
+ii  libxcb1                          1.8.1-1ubuntu0.2                        X C Binding
+ii  libxcomposite1                   1:0.4.3-2build1                         X11 Composite extension library
+ii  libxcursor1                      1:1.1.12-1ubuntu0.1                     X cursor management library
+ii  libxdamage1                      1:1.1.3-2build1                         X11 damaged region extension library
+ii  libxdmcp6                        1:1.1.0-4                               X11 Display Manager Control Protocol library
+ii  libxext6                         2:1.3.0-3ubuntu0.2                      X11 miscellaneous extension library
+ii  libxfixes3                       1:5.0-4ubuntu4.4                        X11 miscellaneous 'fixes' extension library
+ii  libxfont1                        1:1.4.4-1ubuntu0.3                      X11 font rasterisation library
+ii  libxft2                          2.2.0-3ubuntu2                          FreeType-based font drawing library for X
+ii  libxi6                           2:1.7.1.901-1ubuntu1~precise3           X11 Input extension library
+ii  libxinerama1                     2:1.1.1-3ubuntu0.1                      X11 Xinerama extension library
+ii  libxkbfile1                      1:1.0.7-1ubuntu0.1                      X11 keyboard file manipulation library
+ii  libxml2                          2.7.8.dfsg-5.1ubuntu4.15                GNOME XML library
+ii  libxml2-utils                    2.7.8.dfsg-5.1ubuntu4.15                XML utilities
+ii  libxmlsec1                       1.2.14-1.2build1                        XML security library
+ii  libxmlsec1-openssl               1.2.14-1.2build1                        Openssl engine for the XML security library
+ii  libxmu6                          2:1.1.0-3                               X11 miscellaneous utility library
+ii  libxmuu1                         2:1.1.0-3                               X11 miscellaneous micro-utility library
+ii  libxpm4                          1:3.5.9-4                               X11 pixmap library
+ii  libxrandr2                       2:1.3.2-2ubuntu0.3                      X11 RandR extension library
+ii  libxrender1                      1:0.9.6-2ubuntu0.2                      X Rendering Extension client library
+ii  libxsettings-client0             0.17-6                                  utility functions for the Xsettings protocol (GPE)
+ii  libxslt1.1                       1.1.26-8ubuntu1.3                       XSLT 1.0 processing library - runtime library
+ii  libxss1                          1:1.2.1-2                               X11 Screen Saver extension library
+ii  libxt6                           1:1.1.1-2ubuntu0.1                      X11 toolkit intrinsics library
+ii  libxtst6                         2:1.2.0-4ubuntu0.1                      X11 Testing -- Record extension library
+ii  libxv1                           2:1.0.6-2ubuntu0.2                      X11 Video extension library
+ii  libxvmc1                         2:1.0.6-1ubuntu2.1                      X11 Video extension library
+ii  lightsquid                       1.8.0-1                                 Lite and fast log analizer for squid proxy
+ii  linux-firmware                   1.79.18                                 Firmware for Linux kernel drivers
+ii  linux-generic-lts-trusty         3.13.0.107.98                           Generic Linux kernel image and headers
+ii  linux-headers-3.13.0-100         3.13.0-100.147~precise1                 Header files related to Linux kernel version 3.13.0
+ii  linux-headers-3.13.0-100-generic 3.13.0-100.147~precise1                 Linux kernel headers for version 3.13.0 on 64 bit x86 SMP
+ii  linux-headers-3.13.0-107         3.13.0-107.154~precise1                 Header files related to Linux kernel version 3.13.0
+ii  linux-headers-3.13.0-107-generic 3.13.0-107.154~precise1                 Linux kernel headers for version 3.13.0 on 64 bit x86 SMP
+ii  linux-headers-generic-lts-trusty 3.13.0.107.98                           Generic Linux kernel headers
+ii  linux-image-3.13.0-100-generic   3.13.0-100.147~precise1                 Linux kernel image for version 3.13.0 on 64 bit x86 SMP
+ii  linux-image-3.13.0-107-generic   3.13.0-107.154~precise1                 Linux kernel image for version 3.13.0 on 64 bit x86 SMP
+ii  linux-image-generic-lts-trusty   3.13.0.107.98                           Generic Linux kernel image
+ii  locales                          2.13+git20120306-3                      common files for locale support
+ii  lockfile-progs                   0.1.16                                  Programs for locking and unlocking files and mailboxes
+ii  login                            1:4.1.4.2+svn3283-3ubuntu5.1            system login tools
+ii  logrotate                        3.7.8-6ubuntu5                          Log rotation utility
+ii  lsb-base                         4.0-0ubuntu20.3                         Linux Standard Base 4.0 init script functionality
+ii  lsb-release                      4.0-0ubuntu20.3                         Linux Standard Base version reporting utility
+ii  lshw                             02.15-2                                 information about hardware configuration
+ii  lsof                             4.81.dfsg.1-1build1                     List open files
+ii  ltrace                           0.5.3-2.1ubuntu2                        Tracks runtime library calls in dynamically linked programs
+ii  lvm2                             2.02.66-4ubuntu7.4                      The Linux Logical Volume Manager
+ii  lxc                              0.7.5-3ubuntu70                         Linux containers userspace tools
+ii  makedev                          2.3.1-89ubuntu2                         creates device files in /dev
+ii  man-db                           2.6.1-2ubuntu2                          on-line manual pager
+ii  manpages                         3.35-0.1ubuntu1                         Manual pages about using a GNU/Linux system
+ii  manpages-fr                      3.32d0.2p4-1                            French version of the manual pages about using GNU/Linux
+ii  matchbox-window-manager          1.2-7ubuntu1                            window manager for resource-limited systems
+ii  mawk                             1.3.3-17                                a pattern scanning and text processing language
+ii  memtest86+                       4.20-1.1ubuntu1                         thorough real-mode memory tester
+ii  mime-support                     3.51-1ubuntu1.1                         MIME files 'mime.types' & 'mailcap', and support programs
+ii  mlocate                          0.23.1-1ubuntu2                         quickly find files on the filesystem based on their name
+ii  module-init-tools                3.16-1ubuntu2                           tools for managing Linux kernel modules
+ii  molly-guard                      0.4.4-2                                 protects machines from accidental shutdowns/reboots
+ii  mount                            2.20.1-1ubuntu3.1                       Tools for mounting and manipulating filesystems
+ii  mountall                         2.36.4ubuntu0.1                         filesystem mounting tool
+ii  mtr-tiny                         0.80-1ubuntu1                           Full screen ncurses traceroute tool
+ii  mtx                              1.3.12-4ubuntu1                         controls tape autochangers
+ii  multiarch-support                2.15-0ubuntu10.15                       Transitional package to ensure multiarch compatibility
+ii  mutt                             1.5.21-5ubuntu2.2                       text-based mailreader supporting MIME, GPG, PGP and threading
+ii  mysql-client                     5.5.53-0ubuntu0.12.04.1                 MySQL database client (metapackage depending on the latest version)
+ii  mysql-client-5.5                 5.5.53-0ubuntu0.12.04.1                 MySQL database client binaries
+ii  mysql-client-core-5.5            5.5.53-0ubuntu0.12.04.1                 MySQL database core client binaries
+ii  mysql-common                     5.5.53-0ubuntu0.12.04.1                 MySQL database common files, e.g. /etc/mysql/my.cnf
+ii  nano                             2.2.6-1                                 small, friendly text editor inspired by Pico
+ii  ncurses-base                     5.9-4                                   basic terminal type definitions
+ii  ncurses-bin                      5.9-4                                   terminal-related programs and man pages
+ii  net-tools                        1.60-24.1ubuntu2                        The NET-3 networking toolkit
+ii  netbase                          4.47ubuntu1                             Basic TCP/IP networking system
+ii  netcat-openbsd                   1.89-4ubuntu1                           TCP/IP swiss army knife
+ii  nginx-common                     1.1.19-1ubuntu0.8                       small, but very powerful and efficient web server (common files)
+ii  nginx-full                       1.1.19-1ubuntu0.8                       nginx web server with full set of core modules
+ii  ntfs-3g                          1:2012.1.15AR.1-1ubuntu1.2              read/write NTFS driver for FUSE
+ii  ntp                              1:4.2.6.p3+dfsg-1ubuntu3.11             Network Time Protocol daemon and utility programs
+ii  ntpdate                          1:4.2.6.p3+dfsg-1ubuntu3.11             client for setting system time from NTP servers
+ii  numlockx                         1.2-2                                   enable NumLock in X11 sessions
+ii  nut                              2.6.3-1ubuntu1.1                        network UPS tools - metapackage
+ii  nut-client                       2.6.3-1ubuntu1.1                        network UPS tools - clients
+ii  nut-server                       2.6.3-1ubuntu1.1                        network UPS tools - core system
+ii  openbsd-inetd                    0.20091229-1ubuntu1                     The OpenBSD Internet Superserver
+ii  openssh-client                   1:5.9p1-5ubuntu1.10                     secure shell (SSH) client, for secure access to remote machines
+ii  openssh-server                   1:5.9p1-5ubuntu1.10                     secure shell (SSH) server, for secure access from remote machines
+ii  openssl                          1.0.1-4ubuntu5.38                       Secure Socket Layer (SSL) binary and related cryptographic tools
+ii  parted                           2.3-8ubuntu5.2                          disk partition manipulator
+ii  passwd                           1:4.1.4.2+svn3283-3ubuntu5.1            change and administer password and group data
+ii  patch                            2.6.1-3ubuntu0.1                        Apply a diff file to an original
+ii  pciutils                         1:3.1.8-2ubuntu6                        Linux PCI Utilities
+ii  perl                             5.14.2-6ubuntu2.5                       Larry Wall's Practical Extraction and Report Language
+ii  perl-base                        5.14.2-6ubuntu2.5                       minimal Perl system
+ii  perl-modules                     5.14.2-6ubuntu2.5                       Core Perl modules
+ii  plymouth                         0.8.2-2ubuntu31.1                       graphical boot animation and logger - main package
+ii  plymouth-theme-ubuntu-text       0.8.2-2ubuntu31.1                       graphical boot animation and logger - ubuntu-logo theme
+ii  popularity-contest               1.53ubuntu1                             Vote for your favourite packages automatically
+ii  powermgmt-base                   1.31                                    Common utils and configs for power management
+ii  ppp                              2.4.5-5ubuntu1.2                        Point-to-Point Protocol (PPP) - daemon
+ii  pppconfig                        2.3.18+nmu3ubuntu1                      A text menu based utility for configuring ppp
+ii  pppoe                            3.8-3ubuntu1                            PPP over Ethernet driver
+ii  pppoeconf                        1.20ubuntu1                             configures PPPoE/ADSL connections
+ii  procps                           1:3.2.8-11ubuntu6.4                     /proc file system utilities
+ii  psmisc                           22.15-2ubuntu1.2                        utilities that use the proc file system
+ii  pwgen                            2.06-1ubuntu2                           Automatic Password generation
+ii  python                           2.7.3-0ubuntu2.2                        interactive high-level object-oriented language (default version)
+ii  python-apt                       0.8.3ubuntu7.3                          Python interface to libapt-pkg
+ii  python-apt-common                0.8.3ubuntu7.3                          Python interface to libapt-pkg (locales)
+ii  python-arv                       2.4.1-11                                Librairies python pour ARV
+ii  python-axiom                     0.6.0-3                                 Python object database
+ii  python-cairo                     1.8.8-1ubuntu3                          Python bindings for the Cairo vector graphics library
+ii  python-cheetah                   2.4.4-2ubuntu3                          text-based template engine and Python code generator
+ii  python-cherrypy3                 3.2.2-2                                 Python web development framework - version 3
+ii  python-cjson                     1.0.5-4build1                           Very fast JSON encoder/decoder for Python
+ii  python-configobj                 4.7.2+ds-3build1                        simple but powerful config file reader and writer for Python
+ii  python-creole                    2.4.1-133                               gestion de configuration Creole
+ii  python-crypto                    2.4.1-1ubuntu0.1                        cryptographic algorithms and protocols for Python
+ii  python-dateutil                  1.5-1                                   powerful extensions to the standard datetime module
+ii  python-dbus                      1.0.0-1ubuntu1                          simple interprocess messaging system (Python interface)
+ii  python-dbus-dev                  1.0.0-1ubuntu1                          main loop integration development files for python-dbus
+ii  python-dpkt                      1.6+svn54-1                             Python packet creation / parsing module
+ii  python-elixir                    0.7.1-1                                 Declarative Mapper for SQLAlchemy
+ii  python-eoleflask                 2.4.1-17                                application server for EOLE
+ii  python-eoleflask-aaa             2.4.1-5                                 python libraries for eoleflask-aaa
+ii  python-eolegenconfig             2.4.1-26                                manage EOLE configuration
+ii  python-eoleldaptor               2.4.0-3                                 Librairie d'accès LDAP via python-ldaptor
+ii  python-eolesql                   2.4.1-2                                 Scripts et librairies python pour eole-mysql
+ii  python-eolesso                   2.4.1-11                                librairie SSO pour les module EOLE
+ii  python-epsilon                   0.6.0-3                                 utility Python modules commonly used by Divmod.org project
+ii  python-eventlet                  0.9.16-1ubuntu4.2                       concurrent networking library for Python
+ii  python-flask                     0.8-1                                   micro web framework based on Werkzeug, Jinja2 and good intentions
+ii  python-formencode                1.2.4-2ubuntu2                          validation and form generation Python package
+ii  python-fpconst                   0.7.2-4                                 Utilities for handling IEEE 754 floating point special values
+ii  python-gdbm                      2.7.3-1ubuntu1                          GNU dbm database support for Python
+ii  python-gi                        3.2.2-1~precise                         Python 2.x bindings for gobject-introspection libraries
+ii  python-glade2                    2.24.0-3                                GTK+ bindings: Glade support
+ii  python-gobject-2                 2.28.6-10ubuntu1                        deprecated static Python bindings for the GObject library
+ii  python-greenlet                  0.3.1-1ubuntu5.1                        Lightweight in-process concurrent programming
+ii  python-gtk2                      2.24.0-3                                Python bindings for the GTK+ widget set
+ii  python-http-parser               0.7.1-1                                 http request/response parser
+ii  python-ipy                       1:0.75-1                                Python module for handling IPv4 and IPv6 addresses and networks
+ii  python-jinja2                    2.6-1ubuntu0.1                          small but fast and easy to use stand-alone template engine
+ii  python-ldap                      2.3.13-1build1                          LDAP interface module for Python
+ii  python-ldaptor                   0.0.43+debian1-6ubuntu1                 pure-Python library for LDAP operations
+ii  python-libxml2                   2.7.8.dfsg-5.1ubuntu4.15                Python bindings for the GNOME XML library
+ii  python-lxml                      2.3.2-1ubuntu0.2                        pythonic binding for the libxml2 and libxslt libraries
+ii  python-m2crypto                  0.21.1-3                                a crypto and SSL toolkit for Python
+ii  python-markupsafe                0.15-1                                  XML/HTML/XHTML Markup safe string for Python
+ii  python-minimal                   2.7.3-0ubuntu2.2                        minimal subset of the Python language (default version)
+ii  python-mysqldb                   1.2.3-1ubuntu0.1                        Python interface to MySQL
+ii  python-nevow                     0.10.0-4build1                          Web application templating system for Python and Twisted
+ii  python-openid                    2.2.5-3ubuntu1                          OpenID support for servers and consumers
+ii  python-openssl                   0.12-1ubuntu2.1                         Python wrapper around the OpenSSL library
+ii  python-pam                       0.4.2-12.2ubuntu4                       A Python interface to the PAM library
+ii  python-passlib                   1.5.3-0ubuntu1                          comprehensive password hashing framework
+ii  python-pkg-resources             0.6.24-1ubuntu1                         Package Discovery and Resource Access using pkg_resources
+ii  python-pyasn1                    0.0.11a-1ubuntu1                        ASN.1 library for Python
+ii  python-pyeole                    2.4.1-63                                Librairie commune Eole
+ii  python-pyinotify                 0.9.2-1                                 simple Linux inotify Python bindings
+ii  python-pyparsing                 1.5.2-2ubuntu1                          Python parsing module
+ii  python-pysqlite2                 2.6.3-2build1                           Python interface to SQLite 3
+ii  python-pyudev                    0.13-1                                  Python bindings for libudev
+ii  python-restkit                   3.3.2-2                                 Restkit is an HTTP resource kit for Python
+ii  python-rrdtool                   1.4.7-1ubuntu1                          time-series data storage and display system (Python interface)
+ii  python-setuptools                0.6.24-1ubuntu1                         Python Distutils Enhancements (setuptools compatibility)
+ii  python-soappy                    0.12.0-4                                SOAP Support for Python
+ii  python-sqlalchemy                0.7.4-1ubuntu0.1                        SQL toolkit and Object Relational Mapper for Python
+ii  python-support                   1.0.14ubuntu2                           automated rebuilding support for Python modules
+ii  python-tiramisu                  1.0~2.41-1                              Configuration management tool
+ii  python-twisted                   11.1.0-1ubuntu2                         Event-based framework for internet applications (dependency package)
+ii  python-twisted-bin               11.1.0-1ubuntu2                         Event-based framework for internet applications
+ii  python-twisted-conch             1:11.1.0-1                              Twisted SSH Implementation
+ii  python-twisted-core              11.1.0-1ubuntu2                         Event-based framework for internet applications
+ii  python-twisted-lore              11.1.0-1                                Documentation generator with HTML and LaTeX support
+ii  python-twisted-mail              11.1.0-1                                SMTP, IMAP and POP protocol implementation
+ii  python-twisted-names             11.1.0-1                                DNS protocol implementation with client and server
+ii  python-twisted-news              11.1.0-1                                NNTP protocol implementation with client and server
+ii  python-twisted-runner            11.1.0-1                                Process management, including an inetd server
+ii  python-twisted-web               11.1.0-1                                HTTP protocol implementation together with clients and servers
+ii  python-twisted-web2              8.1.0-3build1                           An HTTP/1.1 Server Framework
+ii  python-twisted-words             11.1.0-1                                Chat and Instant Messaging
+ii  python-werkzeug                  0.8.1+dfsg-1                            collection of utilities for WSGI applications
+ii  python-xmlsec                    0.3-1                                   Python bindings for XMLSec Library
+ii  python-zope.interface            3.6.1-1ubuntu3                          Interfaces for Python
+ii  python2.7                        2.7.3-0ubuntu3.9                        Interactive high-level object-oriented language (version 2.7)
+ii  python2.7-minimal                2.7.3-0ubuntu3.9                        Minimal subset of the Python language (version 2.7)
+ii  quota                            4.00-3ubuntu1                           implementation of the disk quota system
+ii  readline-common                  6.2-8                                   GNU readline and history libraries, common files
+ii  rng-tools                        2-unofficial-mt.14-1ubuntu1             Daemon to use a Hardware TRNG
+ii  rsync                            3.0.9-1ubuntu1.1                        fast, versatile, remote (and local) file-copying tool
+ii  rsyslog                          5.8.6-1ubuntu8.9                        reliable system and kernel logging daemon
+ii  rsyslog-gnutls                   5.8.6-1ubuntu8.9                        TLS protocol support for rsyslog
+ii  rsyslog-relp                     5.8.6-1ubuntu8.9                        RELP protocol support for rsyslog
+ii  samba-common                     2:3.6.25-0ubuntu0.12.04.5               common files used by both the Samba server and client
+ii  screen                           4.0.3-14ubuntu8                         terminal multiplexor with VT100/ANSI terminal emulation
+ii  sed                              4.2.1-9                                 The GNU sed stream editor
+ii  sensible-utils                   0.0.6ubuntu2                            Utilities for sensible alternative selection
+ii  sgml-base                        1.26+nmu1ubuntu1                        SGML infrastructure and SGML catalog file support
+ii  shared-mime-info                 1.0-0ubuntu4.1                          FreeDesktop.org shared MIME database and spec
+ii  smbfs                            2:5.1-1ubuntu2                          Common Internet File System utilities - compatibility package
+ii  smistrip                         0.4.8+dfsg2-4build1                     extract MIB from text files like RFC
+ii  snmp                             5.4.3~dfsg-2.4ubuntu1.3                 SNMP (Simple Network Management Protocol) applications
+ii  snmp-mibs-downloader             1.1                                     Install and manage Management Information Base (MIB) files
+ii  sound-theme-freedesktop          0.7.pristine-2                          freedesktop.org sound theme
+ii  sqlite3                          3.7.9-2ubuntu1.2                        Command line interface for SQLite 3
+ii  ssl-cert                         1.0.28ubuntu0.1                         simple debconf wrapper for OpenSSL
+ii  ssmtp                            2.64-5build1                            extremely simple MTA to get mail off the system to a mail hub
+ii  strace                           4.5.20-2.3ubuntu1                       A system call tracer
+ii  strongswan                       5.0.4-8                                 IPsec VPN solution metapackage
+ii  strongswan-ike                   5.0.4-8                                 strongSwan Internet Key Exchange (v2) daemon
+ii  strongswan-starter               5.0.4-8                                 strongSwan daemon starter and configuration file parser
+ii  sudo                             1.8.3p1-1ubuntu3.7                      Provide limited super user privileges to specific users
+ii  sux                              1.0.1-6                                 wrapper around su which will transfer your X credentials
+ii  sysv-rc                          2.88dsf-13.10ubuntu11.1                 System-V-like runlevel change mechanism
+ii  sysvinit-utils                   2.88dsf-13.10ubuntu11.1                 System-V-like utilities
+ii  tar                              1.26-4ubuntu1.1                         GNU version of the tar archiving utility
+ii  tasksel                          2.88ubuntu9                             Tool for selecting tasks for installation on Debian systems
+ii  tasksel-data                     2.88ubuntu9                             Official tasks used for installation of Debian systems
+ii  tcpd                             7.6.q-21                                Wietse Venema's TCP wrapper utilities
+ii  tcpdump                          4.2.1-1ubuntu2.2                        command-line network traffic analyzer
+ii  tcptraceroute                    1.5beta7+debian-4                       traceroute implementation using TCP packets
+ii  telnet                           0.17-36build1                           The telnet client
+ii  time                             1.7-23.1                                The GNU time program for measuring cpu resource usage
+ii  tofrodos                         1.7.9.debian.1-1                        Converts DOS <-> Unix text files, alias tofromdos
+ii  traceroute                       1:2.0.18-1                              Traces the route taken by packets over an IPv4/IPv6 network
+ii  tree                             1.5.3-2                                 displays directory tree, in color
+ii  ttf-dejavu-core                  2.33-2ubuntu1                           Vera font family derivate with additional characters
+ii  tzdata                           2016j-0ubuntu0.12.04                    time zone and daylight-saving time data
+ii  ubuntu-keyring                   2011.11.21.1                            GnuPG keys of the Ubuntu archive
+ii  ubuntu-minimal                   1.267.1                                 Minimal core of Ubuntu
+ii  ubuntu-standard                  1.267.1                                 The Ubuntu standard system
+ii  ucf                              3.0025+nmu2ubuntu1                      Update Configuration File: preserve user changes to config files.
+ii  udev                             175-0ubuntu9.10                         rule-based device node and kernel event manager
+ii  ufw                              0.31.1-1                                program for managing a Netfilter firewall
+ii  unzip                            6.0-4ubuntu2.5                          De-archiver for .zip files
+ii  update-inetd                     4.41                                    inetd configuration file updater
+ii  upstart                          1.5-0ubuntu7.3                          event-based init daemon
+ii  ureadahead                       0.100.0-12                              Read required files in advance
+ii  usbutils                         1:005-1                                 Linux USB utilities
+ii  util-linux                       2.20.1-1ubuntu3.1                       Miscellaneous system utilities
+ii  uucp                             1.07+eole24-2                           Unix to Unix Copy Program
+ii  uuid-runtime                     2.20.1-1ubuntu3.1                       runtime components for the Universally Unique ID library
+ii  vim                              2:7.3.429-2ubuntu2.2                    Vi IMproved - enhanced vi editor
+ii  vim-common                       2:7.3.429-2ubuntu2.2                    Vi IMproved - Common files
+ii  vim-runtime                      2:7.3.429-2ubuntu2.2                    Vi IMproved - Runtime files
+ii  vim-tiny                         2:7.3.429-2ubuntu2.2                    Vi IMproved - enhanced vi editor - compact version
+ii  vlan                             1.9-3ubuntu6.1                          user mode programs to enable VLANs on your ethernet devices
+ii  vnstat                           1.11-1                                  console-based network traffic monitor
+ii  vnstati                          1.11-1                                  image output support for vnStat
+ii  w3m                              0.5.3-5ubuntu1.1                        WWW browsable pager with excellent tables/frames support
+ii  wamerican                        7.1-1                                   American English dictionary words for /usr/share/dict
+ii  watershed                        6                                       reduce superfluous executions of idempotent command
+ii  wget                             1.13.4-2ubuntu1.4                       retrieves files from the web
+ii  whiptail                         0.52.11-2ubuntu10                       Displays user-friendly dialog boxes from shell scripts
+ii  x11-common                       1:7.6+12ubuntu2                         X Window System (X.Org) infrastructure
+ii  x11-xkb-utils                    7.6+4                                   X11 XKB utilities
+ii  xauth                            1:1.0.6-1                               X authentication utility
+ii  xdg-utils                        1.1.0~rc1-2ubuntu6                      desktop integration utilities from freedesktop.org
+ii  xinit                            1.3.1-1                                 X server initialisation tool
+ii  xkb-data                         2.5-1ubuntu1.5                          X Keyboard Extension (XKB) configuration data
+ii  xml-core                         0.13                                    XML infrastructure and XML catalog file support
+ii  xserver-common                   2:1.11.4-0ubuntu10.17                   common files used by various X servers
+ii  xserver-xorg                     1:7.6+12ubuntu2                         X.Org X server
+ii  xserver-xorg-core                2:1.11.4-0ubuntu10.17                   Xorg X server - core server
+ii  xserver-xorg-input-all           1:7.6+12ubuntu2                         X.Org X server -- input driver metapackage
+ii  xserver-xorg-input-evdev         1:2.7.0-0ubuntu1.2                      X.Org X server -- evdev input driver
+ii  xserver-xorg-input-mouse         1:1.7.1-1build3                         X.Org X server -- mouse input driver
+ii  xserver-xorg-input-synaptics     1.6.2-1ubuntu1~precise2                 Synaptics TouchPad driver for X.Org server
+ii  xserver-xorg-input-vmmouse       1:12.9.0-0ubuntu0.1                     X.Org X server -- VMMouse input driver to use with VMWare
+ii  xserver-xorg-input-wacom         1:0.14.0-0ubuntu2.1                     X.Org X server -- Wacom input driver
+ii  xserver-xorg-video-all           1:7.6+12ubuntu2                         X.Org X server -- output driver metapackage
+ii  xserver-xorg-video-ati           1:6.14.99~git20111219.aacbd629-0ubuntu2 X.Org X server -- AMD/ATI display driver wrapper
+ii  xserver-xorg-video-cirrus        1:1.3.2-4build1                         X.Org X server -- Cirrus display driver
+ii  xserver-xorg-video-fbdev         1:0.4.2-4ubuntu2                        X.Org X server -- fbdev display driver
+ii  xserver-xorg-video-intel         2:2.17.0-1ubuntu4.4                     X.Org X server -- Intel i8xx, i9xx display driver
+ii  xserver-xorg-video-mach64        6.9.0-1build2                           X.Org X server -- ATI Mach64 display driver
+ii  xserver-xorg-video-mga           1:1.4.13.dfsg-4build2                   X.Org X server -- MGA display driver
+ii  xserver-xorg-video-neomagic      1:1.2.5-2build2                         X.Org X server -- Neomagic display driver
+ii  xserver-xorg-video-nouveau       1:0.0.16+git20111201+b5534a1-1build3    X.Org X server -- Nouveau display driver
+ii  xserver-xorg-video-openchrome    1:0.2.904+svn1050-1ubuntu0.1            X.Org X server -- VIA display driver
+ii  xserver-xorg-video-qxl           0.0.16-2ubuntu0.1                       X.Org X server -- QXL display driver
+ii  xserver-xorg-video-r128          6.8.1-5build2                           X.Org X server -- ATI r128 display driver
+ii  xserver-xorg-video-radeon        1:6.14.99~git20111219.aacbd629-0ubuntu2 X.Org X server -- AMD/ATI Radeon display driver
+ii  xserver-xorg-video-s3            1:0.6.3-4build2                         X.Org X server -- legacy S3 display driver
+ii  xserver-xorg-video-savage        1:2.3.3-1ubuntu1                        X.Org X server -- Savage display driver
+ii  xserver-xorg-video-siliconmotion 1:1.7.5-1build2                         X.Org X server -- SiliconMotion display driver
+ii  xserver-xorg-video-sis           1:0.10.3-3build2                        X.Org X server -- SiS display driver
+ii  xserver-xorg-video-sisusb        1:0.9.4-2build2                         X.Org X server -- SiS USB display driver
+ii  xserver-xorg-video-tdfx          1:1.4.3-4build2                         X.Org X server -- tdfx display driver
+ii  xserver-xorg-video-trident       1:1.3.4-2build2                         X.Org X server -- Trident display driver
+ii  xserver-xorg-video-vesa          1:2.3.0-7build2                         X.Org X server -- VESA display driver
+ii  xserver-xorg-video-vmware        1:12.0.1-1ubuntu1.2                     X.Org X server -- VMware display driver
+ii  xz-lzma                          5.1.1alpha+20110809-3                   XZ-format compression utilities - compatibility commands
+ii  xz-utils                         5.1.1alpha+20110809-3                   XZ-format compression utilities
+ii  zenity                           3.4.0-0ubuntu4                          Display graphical dialog boxes from shell scripts
+ii  zenity-common                    3.4.0-0ubuntu4                          Display graphical dialog boxes from shell scripts (common files)
+ii  zephir-client                    2.4.1-31                                programmes d'interconnexion d'un client EOLE avec un Zéphir
+ii  zephir-stats                     2.4.1-31                                programmes d'interconnexion d'un client EOLE avec un Zéphir
+ii  zip                              3.0-4                                   Archiver for .zip files
+ii  zlib1g                           1:1.2.3.4.dfsg-3ubuntu4                 compression library - runtime

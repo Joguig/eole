@@ -1,0 +1,264 @@
+===============================================
+Affichage liste compte utilisateur depuis membre
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+bind:x:115:119::/var/cache/bind:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+clamav:x:117:121::/var/lib/clamav:/bin/false
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+Debian-exim:x:111:114::/var/spool/exim4:/usr/sbin/nologin
+dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
+dhcpd:x:113:117::/run:/usr/sbin/nologin
+DOMACA/administrateur:*:1000500:1000513::/home/DOMACA/administrateur:/bin/false
+DOMACA/invité:*:1000501:1000514::/home/DOMACA/invité:/bin/false
+DOMACA/krbtgt:*:1000502:1000513::/home/DOMACA/krbtgt:/bin/false
+DOMACA/pcadmin:*:1001001:1000513::/home/DOMACA/pcadmin:/bin/false
+eole:x:1000:1000:eole:/home/eole:/usr/bin/manage-eole
+fwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+landscape:x:107:109::/var/lib/landscape:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+messagebus:x:101:102::/nonexistent:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+ntpsec:x:114:118::/nonexistent:/usr/sbin/nologin
+nut:x:110:111::/var/lib/nut:/usr/sbin/nologin
+polkitd:x:991:991:User for polkitd:/:/usr/sbin/nologin
+pollinate:x:102:1::/var/cache/pollinate:/bin/false
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+root:x:0:0:root:/root:/bin/bash
+salt:x:999:110:Salt:/opt/saltstack/salt:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+syslog:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+systemd-resolve:x:992:992:systemd Resolver:/:/usr/sbin/nologin
+systemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+tcpdump:x:105:107::/nonexistent:/usr/sbin/nologin
+tftp:x:116:120:tftp daemon,,,:/srv/tftp:/usr/sbin/nologin
+tss:x:106:108:TPM software stack,,,:/var/lib/tpm:/bin/false
+usbmux:x:108:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/bin/sh
+uuidd:x:104:105::/run/uuidd:/usr/sbin/nologin
+vnstat:x:112:115:vnstat daemon,,,:/var/lib/vnstat:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+===============================================
+Affichage liste des groupes depuis membre
+adm:x:4:syslog,eole
+audio:x:29:
+backup:x:34:
+bind:x:119:
+bin:x:2:
+BUILTIN/administrators:x:2000:
+BUILTIN/guests:x:2002:
+BUILTIN/users:x:2001:
+cdrom:x:24:eole
+clamav:x:121:
+crontab:x:990:
+daemon:x:1:
+Debian-exim:x:114:
+dhcpd:x:117:
+dialout:x:20:
+dip:x:30:eole
+disk:x:6:
+DOMACA/administrateurs de l’entreprise:x:1000519:
+DOMACA/administrateurs du schéma:x:1000518:
+DOMACA/admins du domaine:x:1000512:
+DOMACA/contrôleurs de domaine clonables:x:1000522:
+DOMACA/contrôleurs de domaine d’entreprise en lecture seule:x:1000498:
+DOMACA/contrôleurs de domaine en lecture seule:x:1000521:
+DOMACA/contrôleurs de domaine:x:1000516:
+DOMACA/dnsadmins:x:1001103:
+DOMACA/dnsupdateproxy:x:1001104:
+DOMACA/éditeurs de certificats:x:1000517:
+DOMACA/gpoadmins:x:1001105:
+DOMACA/groupe de réplication dont le mot de passe rodc est autorisé:x:1000571:
+DOMACA/groupe de réplication dont le mot de passe rodc est refusé:x:1000572:
+DOMACA/invités du domaine:x:1000514:
+DOMACA/ordinateurs du domaine:x:1000515:
+DOMACA/propriétaires créateurs de la stratégie de groupe:x:1000520:
+DOMACA/protected users:x:1000525:
+DOMACA/serveurs ras et ias:x:1000553:
+DOMACA/utilisateurs du domaine:x:1000513:
+DOMACA/winrmremotewmiusers__:x:1001000:
+eole:x:1000:
+fax:x:21:
+floppy:x:25:
+fwupd-refresh:x:989:
+games:x:60:
+input:x:996:
+irc:x:39:
+kmem:x:15:
+kvm:x:994:
+landscape:x:109:
+list:x:38:
+lp:x:7:
+lxd:x:101:eole
+mail:x:8:
+man:x:12:
+messagebus:x:102:
+netdev:x:113:
+news:x:9:
+nogroup:x:65534:
+ntpsec:x:118:
+nut:x:111:
+operator:x:37:
+plocate:x:116:
+plugdev:x:46:eole
+polkitd:x:991:
+proxy:x:13:
+rdma:x:106:
+render:x:993:
+root:x:0:
+salt:x:110:
+sambashare:x:988:
+sasl:x:45:
+sgx:x:995:
+shadow:x:42:
+src:x:40:
+_ssh:x:103:
+ssl-cert:x:112:
+staff:x:50:
+sudo:x:27:eole
+syslog:x:104:
+systemd-journal:x:999:
+systemd-network:x:998:
+systemd-resolve:x:992:
+systemd-timesync:x:997:
+sys:x:3:
+tape:x:26:
+tcpdump:x:107:
+tftp:x:120:
+tss:x:108:
+tty:x:5:
+users:x:100:
+utmp:x:43:
+uucp:x:10:
+uuidd:x:105:
+video:x:44:
+vnstat:x:115:
+voice:x:22:
+winbindd_priv:x:987:
+www-data:x:33:
+===============================================
+Affichage Drois des Comptes:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AUTORITE NT\ENTERPRISE DOMAIN CONTROLLERS
+AUTORITE NT\SERVICE
+AUTORITE NT\SERVICE LOCAL
+AUTORITE NT\SERVICE RÉSEAU
+AUTORITE NT\Utilisateurs authentifiés
+BUILTIN\Accès compatible pré-Windows 2000
+BUILTIN\Administrateurs
+BUILTIN\Opérateurs de compte
+BUILTIN\Opérateurs de sauvegarde
+BUILTIN\Opérateurs de serveur
+BUILTIN\Opérateurs d’impression
+BUILTIN\Utilisateurs
+BUILTIN\Utilisateurs du journal de performances
+DOMACA\Administrateur
+DOMACA\pcadmin
+NT SERVICE\ALL SERVICES
+NT SERVICE\WdiServiceHost
+Password for [DOMACA\Administrateur]:
+SeAssignPrimaryTokenPrivilege
+SeAssignPrimaryTokenPrivilege
+SeAuditPrivilege
+SeAuditPrivilege
+SeBackupPrivilege
+SeBackupPrivilege
+SeBackupPrivilege
+SeBatchLogonRight
+SeBatchLogonRight
+SeBatchLogonRight
+SeChangeNotifyPrivilege
+SeChangeNotifyPrivilege
+SeChangeNotifyPrivilege
+SeChangeNotifyPrivilege
+SeChangeNotifyPrivilege
+SeChangeNotifyPrivilege
+SeChangeNotifyPrivilege
+SeCreateGlobalPrivilege
+SeCreateGlobalPrivilege
+SeCreateGlobalPrivilege
+SeCreateGlobalPrivilege
+SeCreatePagefilePrivilege
+SeCreateSymbolicLinkPrivilege
+SeDebugPrivilege
+SeEnableDelegationPrivilege
+SeImpersonatePrivilege
+SeImpersonatePrivilege
+SeImpersonatePrivilege
+SeImpersonatePrivilege
+SeIncreaseBasePriorityPrivilege
+SeIncreaseQuotaPrivilege
+SeIncreaseQuotaPrivilege
+SeIncreaseQuotaPrivilege
+SeIncreaseWorkingSetPrivilege
+SeIncreaseWorkingSetPrivilege
+SeInteractiveLogonRight
+SeInteractiveLogonRight
+SeInteractiveLogonRight
+SeInteractiveLogonRight
+SeInteractiveLogonRight
+SeInteractiveLogonRight
+SeLoadDriverPrivilege
+SeLoadDriverPrivilege
+SeMachineAccountPrivilege
+SeManageVolumePrivilege
+SeNetworkLogonRight
+SeNetworkLogonRight
+SeNetworkLogonRight
+SeNetworkLogonRight
+SeNetworkLogonRight
+SeProfileSingleProcessPrivilege
+SeRemoteInteractiveLogonRight
+SeRemoteShutdownPrivilege
+SeRemoteShutdownPrivilege
+SeRestorePrivilege
+SeRestorePrivilege
+SeRestorePrivilege
+SeSecurityPrivilege
+SeServiceLogonRight
+SeServiceLogonRight
+SeServiceLogonRight
+SeShutdownPrivilege
+SeShutdownPrivilege
+SeShutdownPrivilege
+SeShutdownPrivilege
+SeSystemEnvironmentPrivilege
+SeSystemProfilePrivilege
+SeSystemProfilePrivilege
+SeSystemtimePrivilege
+SeSystemtimePrivilege
+SeSystemtimePrivilege
+SeTakeOwnershipPrivilege
+SeTimeZonePrivilege
+SeTimeZonePrivilege
+SeTimeZonePrivilege
+SeUndockPrivilege
+Tout le monde
+Window Manager\Window Manager Group

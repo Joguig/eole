@@ -1,0 +1,250 @@
+===============================================
+Affichage liste compte utilisateur depuis membre
+admin:*:1001108:1000513::/home/adhomes/admin:/bin/false
+administrator:*:1000500:1000513::/home/adhomes/administrator:/bin/false
+albertine.delacourt02:*:1001140:1000513::/home/adhomes/albertine.delacourt02:/bin/false
+albertine.delacourt03:*:1001141:1000513::/home/adhomes/albertine.delacourt03:/bin/false
+albertine.delacourt04:*:1001142:1000513::/home/adhomes/albertine.delacourt04:/bin/false
+annie.dubled:*:1001145:1000513::/home/adhomes/annie.dubled:/bin/false
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+bareos:x:124:135:bareos,,,:/var/lib/bareos:/usr/sbin/nologin
+bind:x:117:124::/var/cache/bind:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+clamav:x:120:127::/var/lib/clamav:/bin/false
+courier:x:126:137::/var/lib/courier:/usr/sbin/nologin
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+Debian-exim:x:116:123::/var/spool/exim4:/usr/sbin/nologin
+dhcpd:x:122:130::/var/run:/usr/sbin/nologin
+dns-dc1:*:1001103:1000513::/home/adhomes/dns-dc1:/bin/false
+dns-dc2:*:1001112:1000513::/home/adhomes/dns-dc2:/bin/false
+eole-seth-education:*:1001106:1000513::/home/adhomes/eole-seth-education:/bin/false
+eole-seth-education-reader:*:1001107:1000513::/home/adhomes/eole-seth-education-reader:/bin/false
+eole-workstation-manager:*:1001109:1000513::/home/adhomes/eole-workstation-manager:/bin/false
+eole-workstation-reader:*:1001110:1000513::/home/adhomes/eole-workstation-reader:/bin/false
+eole:x:1000:1000:EOLE user,,,:/home/eole:/usr/bin/manage-eole
+ftp:x:129:65534::/srv/ftp:/usr/sbin/nologin
+fwupd-refresh:x:112:118:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+ghislaine.delmare:*:1001143:1000513::/home/adhomes/ghislaine.delmare:/bin/false
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+gpo-dc1:*:1001105:1000513::/home/adhomes/gpo-dc1:/bin/false
+gpo-dc2:*:1001600:1000513::/home/adhomes/gpo-dc2:/bin/false
+guest:*:1000501:1000513::/home/adhomes/guest:/bin/false
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+jeanne.dubled:*:1001146:1000513::/home/adhomes/jeanne.dubled:/bin/false
+krbtgt:*:1000502:1000513::/home/adhomes/krbtgt:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+mysql:x:125:136:MySQL Server,,,:/nonexistent:/bin/false
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+ntp:x:115:122::/nonexistent:/usr/sbin/nologin
+nut:x:121:129::/var/lib/nut:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+postgres:x:127:139:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+proftpd:x:128:65534::/run/proftpd:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+root:x:0:0:root:/root:/bin/bash
+rtkit:x:114:119:RealtimeKit,,,:/proc:/usr/sbin/nologin
+salt:x:123:132::/var/lib/salt:/bin/sh
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tftp:x:119:126:tftp daemon,,,:/srv/tftp:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+usbmux:x:113:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/bin/sh
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+valentine.dupont:*:1001144:1000513::/home/adhomes/valentine.dupont:/bin/false
+vnstat:x:118:125:vnstat daemon,,,:/var/lib/vnstat:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/bin/false
+===============================================
+Affichage liste des groupes depuis membre
+00000002_4e3_a:x:1001134:
+00000002_administratifs:x:1001123:
+00000002_anglais_lv1:x:1001138:
+00000002_completaire:x:1001124:
+00000002_eleves:x:1001125:
+00000002_professeurs:x:1001126:
+00000002_terminale_generale_techno_yc_bt:x:1001136:
+00000002_t_stl:x:1001128:
+00000002:x:1001127:
+administratifs:x:1001114:
+adm:x:4:syslog,eole
+allowed rodc password replication group:x:1000571:
+audio:x:29:
+backup:x:34:
+bareos:x:135:bareos
+bind:x:124:
+bin:x:2:
+cdrom:x:24:
+cert publishers:x:1000517:
+clamav:x:127:
+completaire:x:1001115:
+courier:x:137:
+crontab:x:112:
+daemon:x:1:
+Debian-exim:x:123:
+denied rodc password replication group:x:1000572:
+dhcpd:x:130:
+dialout:x:20:
+dip:x:30:
+disk:x:6:bareos
+dnsadmins:x:1001101:
+dnsupdateproxy:x:1001102:
+domain admins:x:1000512:
+domain computers:x:1000515:
+domain controllers:x:1000516:
+domain guests:x:1000514:
+domain users:x:1000513:
+eleves:x:1001116:
+enterprise admins:x:1000519:
+enterprise read-only domain controllers:x:1000498:
+eole:x:1000:
+etb1_4e3_a:x:1001132:
+etb1_administratifs:x:1001118:
+etb1_anglais_lv1:x:1001139:
+etb1_completaire:x:1001119:
+etb1_eleves:x:1001120:
+etb1_professeurs:x:1001121:
+etb1_terminale_generale_techno_yc_bt:x:1001137:
+etb1_t_stl:x:1001130:
+etb1:x:1001122:
+fax:x:21:
+floppy:x:25:
+fwupd-refresh:x:118:
+games:x:60:
+gnats:x:41:
+gpoadmins:x:1001104:
+group policy creator owners:x:1000520:
+input:x:106:
+irc:x:39:
+kmem:x:15:
+kvm:x:108:
+landscape:x:117:
+list:x:38:
+lpadmin:x:138:
+lp:x:7:
+lxd:x:110:
+mail:x:8:eole
+man:x:12:
+messagebus:x:104:
+mysql:x:136:
+netdev:x:121:
+news:x:9:
+nogroup:x:65534:
+ntp:x:122:
+nut:x:129:
+operator:x:37:
+plocate:x:131:
+plugdev:x:46:
+postgres:x:139:
+professeurs:x:1001117:
+profs-00000002_4e3_a:x:1001135:
+profs-00000002_t_stl:x:1001129:
+profs-etb1_4e3_a:x:1001133:
+profs-etb1_t_stl:x:1001131:
+proxy:x:13:
+ras and ias servers:x:1000553:
+rdma:x:128:
+read-only domain controllers:x:1000521:
+render:x:109:
+root:x:0:
+rtkit:x:119:
+salt:x:132:
+sambashare:x:133:
+sasl:x:45:
+schema admins:x:1000518:
+sgx:x:107:
+shadow:x:42:
+src:x:40:
+_ssh:x:111:
+ssl-cert:x:120:postgres
+staff:x:50:
+sudo:x:27:
+syslog:x:113:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:105:
+sys:x:3:
+tape:x:26:bareos
+tcpdump:x:115:
+tftp:x:126:
+tss:x:116:
+tty:x:5:
+users:x:100:
+utmp:x:43:
+uucp:x:10:
+uuidd:x:114:
+video:x:44:
+vnstat:x:125:
+voice:x:22:
+winbindd_priv:x:134:
+www-data:x:33:
+===============================================
+Affichage Drois des Comptes:
+
+
+
+
+
+
+BUILTIN\Account Operators
+BUILTIN\Administrators
+BUILTIN\Backup Operators
+BUILTIN\Pre-Windows 2000 Compatible Access
+BUILTIN\Print Operators
+BUILTIN\Server Operators
+Password for [DOMSETH\Administrator]:
+SeBackupPrivilege
+SeBackupPrivilege
+SeBackupPrivilege
+SeChangeNotifyPrivilege
+SeChangeNotifyPrivilege
+SeCreateGlobalPrivilege
+SeCreatePagefilePrivilege
+SeDebugPrivilege
+SeEnableDelegationPrivilege
+SeImpersonatePrivilege
+SeIncreaseBasePriorityPrivilege
+SeIncreaseQuotaPrivilege
+SeInteractiveLogonRight
+SeInteractiveLogonRight
+SeInteractiveLogonRight
+SeInteractiveLogonRight
+SeInteractiveLogonRight
+SeLoadDriverPrivilege
+SeLoadDriverPrivilege
+SeManageVolumePrivilege
+SeNetworkLogonRight
+SeProfileSingleProcessPrivilege
+SeRemoteInteractiveLogonRight
+SeRemoteInteractiveLogonRight
+SeRemoteShutdownPrivilege
+SeRemoteShutdownPrivilege
+SeRestorePrivilege
+SeRestorePrivilege
+SeRestorePrivilege
+SeSecurityPrivilege
+SeShutdownPrivilege
+SeShutdownPrivilege
+SeShutdownPrivilege
+SeShutdownPrivilege
+SeSystemEnvironmentPrivilege
+SeSystemProfilePrivilege
+SeSystemtimePrivilege
+SeSystemtimePrivilege
+SeTakeOwnershipPrivilege
+SeUndockPrivilege

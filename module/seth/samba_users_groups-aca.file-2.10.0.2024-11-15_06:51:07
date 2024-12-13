@@ -1,0 +1,206 @@
+===============================================
+Affichage liste compte utilisateur depuis membre
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+bind:x:114:117::/var/cache/bind:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+clamav:x:117:120::/var/lib/clamav:/bin/false
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+Debian-exim:x:113:116::/var/spool/exim4:/usr/sbin/nologin
+dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
+dhcpd:x:111:112::/run:/usr/sbin/nologin
+DOMSETH/admin:*:1001104:1000513::/home/DOMSETH/admin:/bin/false
+DOMSETH/administrator:*:1000500:1000513::/home/DOMSETH/administrator:/bin/false
+DOMSETH/dns-dc1:*:1001103:1000513::/home/DOMSETH/dns-dc1:/bin/false
+DOMSETH/dns-dc2:*:1001108:1000513::/home/DOMSETH/dns-dc2:/bin/false
+DOMSETH/gpo-dc1:*:1001106:1000513::/home/DOMSETH/gpo-dc1:/bin/false
+DOMSETH/guest:*:1000501:1000514::/home/DOMSETH/guest:/bin/false
+DOMSETH/krbtgt:*:1000502:1000513::/home/DOMSETH/krbtgt:/bin/false
+eole:x:1000:1000:EOLE user,,,:/home/eole:/usr/bin/manage-eole
+fwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+landscape:x:107:109::/var/lib/landscape:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+messagebus:x:101:102::/nonexistent:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+ntpsec:x:112:115::/nonexistent:/usr/sbin/nologin
+nut:x:110:111::/var/lib/nut:/usr/sbin/nologin
+polkitd:x:991:991:User for polkitd:/:/usr/sbin/nologin
+pollinate:x:102:1::/var/cache/pollinate:/bin/false
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+root:x:0:0:root:/root:/bin/bash
+salt:x:999:110:Salt:/opt/saltstack/salt:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+syslog:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+systemd-resolve:x:992:992:systemd Resolver:/:/usr/sbin/nologin
+systemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+tcpdump:x:105:107::/nonexistent:/usr/sbin/nologin
+tftp:x:116:119:tftp daemon,,,:/srv/tftp:/usr/sbin/nologin
+tss:x:106:108:TPM software stack,,,:/var/lib/tpm:/bin/false
+usbmux:x:108:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/bin/sh
+uuidd:x:104:105::/run/uuidd:/usr/sbin/nologin
+vnstat:x:115:118:vnstat daemon,,,:/var/lib/vnstat:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+===============================================
+Affichage liste des groupes depuis membre
+adm:x:4:syslog,eole
+audio:x:29:
+backup:x:34:
+bind:x:117:
+bin:x:2:
+BUILTIN/administrators:x:2000:
+BUILTIN/guests:x:2002:
+BUILTIN/users:x:2001:
+cdrom:x:24:
+clamav:x:120:
+crontab:x:990:
+daemon:x:1:
+Debian-exim:x:116:
+dhcpd:x:112:
+dialout:x:20:
+dip:x:30:
+disk:x:6:
+DOMSETH/allowed rodc password replication group:x:1000571:
+DOMSETH/cert publishers:x:1000517:
+DOMSETH/denied rodc password replication group:x:1000572:
+DOMSETH/dnsadmins:x:1001101:
+DOMSETH/dnsupdateproxy:x:1001102:
+DOMSETH/domain admins:x:1000512:
+DOMSETH/domain computers:x:1000515:
+DOMSETH/domain controllers:x:1000516:
+DOMSETH/domain guests:x:1000514:
+DOMSETH/domain users:x:1000513:
+DOMSETH/enterprise admins:x:1000519:
+DOMSETH/enterprise read-only domain controllers:x:1000498:
+DOMSETH/gpoadmins:x:1001105:
+DOMSETH/group policy creator owners:x:1000520:
+DOMSETH/protected users:x:1000525:
+DOMSETH/ras and ias servers:x:1000553:
+DOMSETH/read-only domain controllers:x:1000521:
+DOMSETH/schema admins:x:1000518:
+eole:x:1000:
+fax:x:21:
+floppy:x:25:
+fwupd-refresh:x:989:
+games:x:60:
+input:x:996:
+irc:x:39:
+kmem:x:15:
+kvm:x:994:
+landscape:x:109:
+list:x:38:
+lp:x:7:
+lxd:x:101:
+mail:x:8:eole
+man:x:12:
+messagebus:x:102:
+netdev:x:114:
+news:x:9:
+nogroup:x:65534:
+ntpsec:x:115:
+nut:x:111:
+operator:x:37:
+plocate:x:121:
+plugdev:x:46:
+polkitd:x:991:
+proxy:x:13:
+rdma:x:106:
+render:x:993:
+root:x:0:
+salt:x:110:
+sambashare:x:988:
+sasl:x:45:
+sgx:x:995:
+shadow:x:42:
+src:x:40:
+_ssh:x:103:
+ssl-cert:x:113:
+staff:x:50:
+sudo:x:27:
+syslog:x:104:
+systemd-journal:x:999:
+systemd-network:x:998:
+systemd-resolve:x:992:
+systemd-timesync:x:997:
+sys:x:3:
+tape:x:26:
+tcpdump:x:107:
+tftp:x:119:
+tss:x:108:
+tty:x:5:
+users:x:100:eole
+utmp:x:43:
+uucp:x:10:
+uuidd:x:105:
+video:x:44:
+vnstat:x:118:
+voice:x:22:
+winbindd_priv:x:987:
+www-data:x:33:
+===============================================
+Affichage Drois des Comptes:
+
+
+
+
+
+
+
+BUILTIN\Account Operators
+BUILTIN\Administrators
+BUILTIN\Backup Operators
+BUILTIN\Pre-Windows 2000 Compatible Access
+BUILTIN\Print Operators
+BUILTIN\Server Operators
+DOMSETH\Domain Admins
+Password for [DOMSETH\Administrator]:
+SeBackupPrivilege
+SeBackupPrivilege
+SeBackupPrivilege
+SeChangeNotifyPrivilege
+SeChangeNotifyPrivilege
+SeCreateGlobalPrivilege
+SeCreatePagefilePrivilege
+SeDebugPrivilege
+SeDiskOperatorPrivilege
+SeEnableDelegationPrivilege
+SeImpersonatePrivilege
+SeIncreaseBasePriorityPrivilege
+SeIncreaseQuotaPrivilege
+SeInteractiveLogonRight
+SeInteractiveLogonRight
+SeInteractiveLogonRight
+SeInteractiveLogonRight
+SeInteractiveLogonRight
+SeLoadDriverPrivilege
+SeLoadDriverPrivilege
+SeManageVolumePrivilege
+SeNetworkLogonRight
+SeProfileSingleProcessPrivilege
+SeRemoteInteractiveLogonRight
+SeRemoteInteractiveLogonRight
+SeRemoteShutdownPrivilege
+SeRemoteShutdownPrivilege
+SeRestorePrivilege
+SeRestorePrivilege
+SeRestorePrivilege
+SeSecurityPrivilege
+SeShutdownPrivilege
+SeShutdownPrivilege
+SeShutdownPrivilege
+SeShutdownPrivilege
+SeSystemEnvironmentPrivilege
+SeSystemProfilePrivilege
+SeSystemtimePrivilege
+SeSystemtimePrivilege
+SeTakeOwnershipPrivilege
+SeUndockPrivilege
