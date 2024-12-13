@@ -1,0 +1,65 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 163 (0xa3)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=FR, ST=bourgogne, L=dijon, O=eole, OU=ci, CN=ACEoleCI
+        Validity
+            Not Before: Mar 17 14:36:12 2016 GMT
+            Not After : Jun  3 14:36:12 2024 GMT
+        Subject: CN=envole.etb3.lan
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:de:cf:d1:e7:c0:c4:60:14:1c:88:e0:d0:0a:8f:
+                    34:05:57:8e:00:d8:67:ab:a1:68:c7:29:4b:e6:3d:
+                    23:99:af:a1:47:ac:9c:5b:32:01:39:ee:3d:19:6d:
+                    05:73:5b:cd:14:e3:72:07:33:75:b9:4b:b4:cb:5b:
+                    b4:7f:10:47:d5:fc:4c:36:29:d5:71:0f:48:d6:43:
+                    a8:b0:6f:b5:08:26:b3:24:b7:a5:ae:09:1d:e4:a7:
+                    16:75:f8:d6:bd:d3:c0:be:6f:6c:d7:1e:38:ac:6e:
+                    a5:2c:b1:16:cb:e7:ee:14:55:63:cb:3a:33:8a:14:
+                    13:78:bf:c0:74:ad:eb:28:5f
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                60:33:F7:02:64:79:56:1A:1C:98:A2:0A:33:42:9E:89:1B:AD:63:F2
+            X509v3 Authority Key Identifier: 
+                keyid:38:DF:46:29:38:B2:13:8B:A5:7C:80:4B:5E:AA:24:DB:25:DC:EC:EE
+                DirName:/C=FR/ST=bourgogne/L=dijon/O=eole/OU=ci/CN=ACEoleCI
+                serial:81:5A:FE:E5:BA:70:38:01
+
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+    Signature Algorithm: sha256WithRSAEncryption
+         41:13:f2:66:de:cb:f8:96:16:03:59:11:2f:71:22:f1:49:c5:
+         67:86:6f:98:74:dd:2d:87:f5:0f:e8:7d:99:5c:05:d3:6c:85:
+         c0:dd:bb:bc:d2:99:72:2a:57:4f:be:4c:6d:9b:e1:70:16:ba:
+         ad:d7:3b:ad:74:2f:ef:22:77:1d:e5:9a:a8:5e:fa:94:75:48:
+         ff:d0:ac:4f:17:58:b6:e9:22:63:a6:80:59:dd:23:d3:20:d3:
+         e6:8d:61:48:2c:46:91:ac:85:ab:88:04:39:c6:a4:78:9c:64:
+         bd:2a:43:10:d6:db:9a:cc:49:c2:1d:62:fd:6e:35:42:de:87:
+         0a:b5
+-----BEGIN CERTIFICATE-----
+MIIC2TCCAkKgAwIBAgICAKMwDQYJKoZIhvcNAQELBQAwYDELMAkGA1UEBhMCRlIx
+EjAQBgNVBAgMCWJvdXJnb2duZTEOMAwGA1UEBwwFZGlqb24xDTALBgNVBAoMBGVv
+bGUxCzAJBgNVBAsMAmNpMREwDwYDVQQDDAhBQ0VvbGVDSTAeFw0xNjAzMTcxNDM2
+MTJaFw0yNDA2MDMxNDM2MTJaMBoxGDAWBgNVBAMMD2Vudm9sZS5ldGIzLmxhbjCB
+nzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA3s/R58DEYBQciODQCo80BVeOANhn
+q6FoxylL5j0jma+hR6ycWzIBOe49GW0Fc1vNFONyBzN1uUu0y1u0fxBH1fxMNinV
+cQ9I1kOosG+1CCazJLelrgkd5KcWdfjWvdPAvm9s1x44rG6lLLEWy+fuFFVjyzoz
+ihQTeL/AdK3rKF8CAwEAAaOB5zCB5DAJBgNVHRMEAjAAMB0GA1UdDgQWBBRgM/cC
+ZHlWGhyYogozQp6JG61j8jCBkgYDVR0jBIGKMIGHgBQ430YpOLITi6V8gEteqiTb
+Jdzs7qFkpGIwYDELMAkGA1UEBhMCRlIxEjAQBgNVBAgMCWJvdXJnb2duZTEOMAwG
+A1UEBwwFZGlqb24xDTALBgNVBAoMBGVvbGUxCzAJBgNVBAsMAmNpMREwDwYDVQQD
+DAhBQ0VvbGVDSYIJAIFa/uW6cDgBMA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAK
+BggrBgEFBQcDATANBgkqhkiG9w0BAQsFAAOBgQBBE/Jm3sv4lhYDWREvcSLxScVn
+hm+YdN0th/UP6H2ZXAXTbIXA3bu80plyKldPvkxtm+FwFrqt1zutdC/vIncd5Zqo
+XvqUdUj/0KxPF1i26SJjpoBZ3SPTINPmjWFILEaRrIWriAQ5xqR4nGS9KkMQ1tua
+zEnCHWL9bjVC3ocKtQ==
+-----END CERTIFICATE-----
