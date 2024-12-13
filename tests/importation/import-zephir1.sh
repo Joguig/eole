@@ -1,0 +1,51 @@
+#!/bin/bash
+
+if true
+then
+	if ciVersionMajeurEgal "2.3"
+	then
+	    PAQUET_MEDDE="esbl-zephir-module ecdl-zephir-module eole-zephir-medde"
+	else
+	    PAQUET_MEDDE="eole-zephir-medde"
+	fi
+	
+	echo "* install medde : $PAQUET_MEDDE"
+	apt-eole install "$PAQUET_MEDDE"
+	result=$?
+	echo "apt-eole install = $result"
+	
+	#declare -F
+	export CONFIGURATION=default
+	export CONF_METHODE=instance
+	ciConfigurationEole instance default
+	result=$?
+	echo "Configure = $result"
+	
+	echo "pause 20 secondes (attente demarrage xmlrpc zephir !"
+	sleep 20
+fi
+
+if ciVersionMajeurAPartirDe "2.8."
+then
+	if [ "$VM_DEBUG" -gt "0" ]
+	then
+		systemctl stop salt-minion-ead3.service
+		pkill journalctl
+		journalctl -f --no-pager &
+		PID_JOURNALCTL=$!
+		echo "PID_JOURNALCTL=$PID_JOURNALCTL"
+	fi
+
+	STOP_ON_ERROR=0
+	export STOP_ON_ERROR 
+	ciRunPython import_configuration_eole_ci_tests-py3.py
+	result=$?
+else
+	ciRunPython import_configuration_eole_ci_tests1.py
+	result=$?
+fi
+echo "Import exit = $result"
+
+sleep 5
+[ -n "$PID_JOURNALCTL" ] && kill -9 "$PID_JOURNALCTL"
+exit $result

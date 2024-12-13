@@ -1,0 +1,64 @@
+titre: test Postgresql HA
+status: DEVELOPPEMENT
+
+description: |
+   Le but de ce test est vérifier la procédure d'instance du module Eolebase 
+
+contrainte: architecture = amd64 and version = 2.9.0
+regroupement: 30
+
+contexts:
+- machine: postgres-master
+  modele: aca.ubuntu-dhcp
+  methode: daily
+  configuration: default
+
+- machine: postgres-replica1
+  modele: aca.ubuntu-dhcp
+  methode: daily
+  configuration: default
+
+- machine: postgres-replica2
+  modele: aca.ubuntu-dhcp
+  methode: daily
+  configuration: default
+
+tests:
+- nom: install-ha
+  commandes:
+  - machine: postgres-master
+    run: install-postgres-ha.sh
+    args:
+    - "master"
+       
+  - machine: postgres-replica1
+    run: install-postgres-ha.sh
+    args:
+    - "replica"
+    - "1"
+
+  - machine: postgres-replica2
+    run: install-postgres-ha.sh
+    args:
+    - "replica"
+    - "2"
+
+  - machine: postgres-replica1
+    run: install-postgres-ha.sh
+    args:
+    - "replica-test"
+    - "1"
+
+- nom: test-ha
+  commandes:
+  - machine: postgres-master
+    run: install-postgres-ha.sh
+    args:
+    - "prepare-test"
+       
+  - machine: postgres-replica2
+    run: install-postgres-ha.sh
+    args:
+    - "replica-test"
+    - "2"
+

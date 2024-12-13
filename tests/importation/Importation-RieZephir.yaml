@@ -1,0 +1,23 @@
+genereImage: rie.zephir-{VERSION}-AvecConf-{ARCHITECTURE}.vm
+status: PUBLIQUE
+description: |
+   Le but de ce test est d'initialiser la base Zephir avec l'ensemble 
+   des configurations de chaque machine et de chaque version EOLE. Cela 
+   permet de tester toutes les combinaison module/version dans Zephir  
+
+frequence: weekly
+contrainte: architecture = amd64 and version latest
+regroupement: 31
+
+contexts:
+- machine: rie.zephir
+  methode: instance
+  configuration: default
+
+tests:
+- commandes:
+  - run: import-zephir1.sh
+    timeout: 3000
+    
+  - automate: shutdownWithSnapshot
+  - automate: updateTemplate

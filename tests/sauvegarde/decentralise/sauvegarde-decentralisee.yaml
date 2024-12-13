@@ -1,0 +1,32 @@
+status: DEVELOPPEMENT
+description: |
+   Le but de ce test est de vérifier la procédure de sauvegarde Bareos décentralisée 
+
+#frequence:
+contrainte: architecture = amd64 
+regroupement: 70
+
+contexts:
+- machine: rie.ldapma
+  passive: oui
+
+- machine: rie.dns-banshee 
+  passive: oui
+ 
+- machine: rie.esbl-ad
+  methode: daily
+  configuration: decentralise
+
+- machine: rie.member-ad
+  methode: daily
+  configuration: decentralise
+
+tests:
+- nom: rie.esbl-ad
+  commandes:
+  - machine: rie.esbl-ad
+    run: sauvegarde_decentralise_prepare_esbl.sh
+    
+  - machine: rie.member-ad
+    run: sauvegarde_decentralise_prepare_memberad.sh
+  

@@ -1,0 +1,23 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure de restauration Bacula sur Amon
+
+#frequence:
+contrainte: architecture = amd64 and version < 2.5
+regroupement: 70
+
+testsOk:
+-  Instance-Etb1Amon
+-  Sauvegarde-Bacula-Sauvegarde-Full
+
+contexts:
+- machine: etb1.scribe
+  methode: daily
+  configuration: default
+
+tests:
+- commandes:
+  - machine: etb1.scribe
+    run: run-bacula-restaure-complete.sh
+    timeout: 1200
+    

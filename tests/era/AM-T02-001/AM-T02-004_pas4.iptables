@@ -1,0 +1,4 @@
+176,178d175
+< -A ext-adm -i eth0 -o eth1 -p tcp -m state --state NEW -m tcp --dport 8500 --tcp-flags SYN,RST,ACK SYN -m set --match-set bastion-exterieur-admin-8-src src -j ACCEPT
+< -A ext-adm -i eth0 -o eth1 -p tcp -m state --state NEW -m tcp --dport 8500 --tcp-flags SYN,RST,ACK SYN -m set --match-set bastion-exterieur-admin-8-dst dst -j ACCEPT
+< -A ext-adm -i eth0 -o eth1 -p tcp -m state --state NEW -m tcp --dport 8500 --tcp-flags SYN,RST,ACK SYN -j DROP

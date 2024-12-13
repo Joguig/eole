@@ -1,0 +1,29 @@
+titre: Instance Scribe en aca.scribe Avec mode multiEtablissement
+status: PUBLIQUE
+
+description: |
+   Le but de ce test est vérifier la procédure d'instance du module Scribe
+
+frequence: weekly
+contrainte: architecture = amd64 and version > 2.7.1
+regroupement: 30
+genereImage: aca.scribe-{VERSION}-instance-multietab-{ARCHITECTURE}.vm
+
+contexts:
+- machine: aca.scribe
+  methode: daily
+  configuration: multietab
+
+tests:
+- nom: test-01
+  commandes:
+  - run: ciConfigurationEole instance multietab
+    timeout: 1800
+
+  - run: activer-multi-etab.sh
+    args:
+    - 2
+
+  - automate: shutdownWithSnapshot
+
+  - automate: updateTemplate

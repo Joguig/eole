@@ -1,0 +1,29 @@
+status: PRODUCTION
+description: |
+   le but de ce test est de vérifier la transformation d'un module eolebase en conteneur  
+
+#frequence:
+contrainte: architecture = amd64
+regroupement: 91
+
+contexts:
+- machine: aca.eolebase
+  methode: instance
+  configuration: default
+  passive: oui
+
+- machine: aca.scribe
+  methode: instance
+  configuration: default
+  passive: oui
+
+tests:
+- nom: eolebase-queryauto
+  commandes:
+  - run:  ./test-queryauto.sh
+    machine: aca.eolebase
+
+- nom: scribe-queryauto
+  commandes:
+  - run:  ./test-queryauto.sh
+    machine: aca.scribe

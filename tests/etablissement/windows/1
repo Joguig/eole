@@ -1,0 +1,215 @@
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Including configuration from '/etc/salt/master.d/ldap.conf'
+[DEBUG   ] Reading configuration from /etc/salt/master.d/ldap.conf
+[DEBUG   ] Including configuration from '/etc/salt/master.d/schedule-veyon.conf'
+[DEBUG   ] Reading configuration from /etc/salt/master.d/schedule-veyon.conf
+[DEBUG   ] Including configuration from '/etc/salt/master.d/workstation-manager.conf'
+[DEBUG   ] Reading configuration from /etc/salt/master.d/workstation-manager.conf
+[DEBUG   ] Missing configuration file: /root/.saltrc
+[DEBUG   ] Using importlib_metadata to load entry points
+[DEBUG   ] Override  __grains__: <module 'salt.loaded.int.log_handlers.sentry_mod' from '/usr/lib/python3/dist-packages/salt/log/handlers/sentry_mod.py'>
+[DEBUG   ] Configuration file path: /etc/salt/master
+[WARNING ] Insecure logging configuration detected! Sensitive data may be logged.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Including configuration from '/etc/salt/master.d/ldap.conf'
+[DEBUG   ] Reading configuration from /etc/salt/master.d/ldap.conf
+[DEBUG   ] Including configuration from '/etc/salt/master.d/schedule-veyon.conf'
+[DEBUG   ] Reading configuration from /etc/salt/master.d/schedule-veyon.conf
+[DEBUG   ] Including configuration from '/etc/salt/master.d/workstation-manager.conf'
+[DEBUG   ] Reading configuration from /etc/salt/master.d/workstation-manager.conf
+[DEBUG   ] Missing configuration file: /root/.saltrc
+[DEBUG   ] MasterEvent PUB socket URI: /var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: /var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Connecting the Minion to the Master URI (for the return server): tcp://127.0.0.1:4506
+[DEBUG   ] Trying to connect to: tcp://127.0.0.1:4506
+[DEBUG   ] Closing AsyncZeroMQReqChannel instance
+[DEBUG   ] LazyLoaded local_cache.get_load
+[DEBUG   ] Reading minion list from /var/cache/salt/master/jobs/db/39b61a31f4ab34566206435aa453a95454817059da47d318cc4345e557ef9a/.minions.p
+[DEBUG   ] get_iter_returns for jid 20241213122103469436 sent to {'PC-1422781.dompedago.etb1.lan'} will timeout at 13:21:08.478003
+[DEBUG   ] Checking whether jid 20241213122103469436 is still running
+[DEBUG   ] Connecting the Minion to the Master URI (for the return server): tcp://127.0.0.1:4506
+[DEBUG   ] Trying to connect to: tcp://127.0.0.1:4506
+[DEBUG   ] Closing AsyncZeroMQReqChannel instance
+[DEBUG   ] retcode missing from client return
+[DEBUG   ] jid 20241213122103469436 return from PC-1422781.dompedago.etb1.lan
+[DEBUG   ] return event: {'PC-1422781.dompedago.etb1.lan': {'ret': {'grains_|-eole-workstation/ad/grains/grains.list_append_|-roles_|-list_present': {'name': 'roles', 'changes': {}, 'result': True, 'comment': "Value ['ad/member'] is already in grain roles", '__sls__': 'eole-workstation.ad.grains', '__run_num__': 0, 'start_time': '13:21:12.271341', 'duration': 0.0, '__id__': 'eole-workstation/ad/grains/grains.list_append'}, 'system_|-ad/member/windows/join/system.join_domain_|-dompedago.etb1.lan_|-join_domain': {'name': 'dompedago.etb1.lan', 'changes': {}, 'result': True, 'comment': "Computer already added to 'dompedago.etb1.lan'", '__sls__': 'ad.member.windows.join', '__run_num__': 1, 'start_time': '13:21:12.271341', 'duration': 202.992, '__id__': 'ad/member/windows/join/system.join_domain'}, 'system_|-ad/member/windows/join/system.reboot_|-ad/member/windows/join/system.reboot_|-reboot': {'changes': {}, 'result': True, 'duration': 0.0, 'start_time': '13:21:12.474333', 'comment': 'State was not run because none of the onchanges reqs changed', '__state_ran__': False, '__run_num__': 2, '__sls__': 'ad.member.windows.join'}, 'grains_|-Add Veyon grains_|-roles_|-list_present': {'name': 'roles', 'changes': {}, 'result': True, 'comment': "Value ['veyon/master', 'veyon/client'] is already in grain roles", '__sls__': 'eole-workstation.veyon.package.install', '__run_num__': 3, 'start_time': '13:21:12.474333', 'duration': 0.0, '__id__': 'Add Veyon grains'}, 'pkg_|-Install Veyon software_|-veyon_|-installed': {'name': 'veyon', 'changes': {}, 'result': True, 'comment': 'All specified packages are already installed', '__sls__': 'eole-workstation.veyon.package.install', '__run_num__': 4, 'start_time': '13:21:16.287136', 'duration': 77.937, '__id__': 'Install Veyon software'}, 'file_|-Cleanup configuration file on error_|-C:\\Program Files\\Veyon\\veyon-config.json_|-absent': {'result': True, 'name': 'C:\\Program Files\\Veyon\\veyon-config.json', 'changes': {}, 'comment': 'unless condition is true', 'skip_watch': True, '__sls__': 'eole-workstation.veyon.config.file', '__run_num__': 5, 'start_time': '13:21:16.365073', 'duration': 1375.036, '__id__': 'Cleanup configuration file on error'}, 'file_|-Download Veyon Configuration_|-C:\\Program Files\\Veyon\\veyon-config.json_|-managed': {'changes': {}, 'comment': 'The file C:\\Program Files\\Veyon\\veyon-config.json is in the correct state', 'name': 'C:\\Program Files\\Veyon\\veyon-config.json', 'result': True, '__sls__': 'eole-workstation.veyon.config.file', '__run_num__': 6, 'start_time': '13:21:17.740109', 'duration': 62.281, '__id__': 'Download Veyon Configuration'}, 'cmd_|-Register Veyon service_|-veyon-cli.exe service register_|-run': {'name': 'veyon-cli.exe service register', 'changes': {}, 'result': None, 'comment': 'Command "veyon-cli.exe service register" would have been executed', '__sls__': 'eole-workstation.veyon.service.running', '__run_num__': 7, 'start_time': '13:21:17.802390', 'duration': 0.0, '__id__': 'Register Veyon service'}, 'cmd_|-Import Veyon configuration_|-veyon-cli.exe config import veyon-config.json_|-run': {'changes': {}, 'result': True, 'duration': 0.0, 'start_time': '13:21:17.802390', 'comment': 'State was not run because none of the onchanges reqs changed', '__state_ran__': False, '__run_num__': 8, '__sls__': 'eole-workstation.veyon.config.import'}, 'cmd_|-Set LDAP password_|-veyon-cli.exe config set LDAP/BindPassword %VEYON_PASSWORD%_|-run': {'result': True, 'name': 'veyon-cli.exe config set LDAP/BindPassword %VEYON_PASSWORD%', 'changes': {}, 'comment': 'unless condition is true', 'skip_watch': True, '__sls__': 'eole-workstation.veyon.config.import', '__run_num__': 9, 'start_time': '13:21:17.802390', 'duration': 218.637, '__id__': 'Set LDAP password'}, 'service_|-Start Veyon service_|-VeyonService_|-running': {'name': 'VeyonService', 'changes': {}, 'result': True, 'comment': 'The service VeyonService is already running', '__sls__': 'eole-workstation.veyon.service.running', '__run_num__': 10, 'start_time': '13:21:18.021027', 'duration': 31.39, '__id__': 'Start Veyon service'}, 'cmd_|-Restart Veyon Service_|-veyon-cli.exe service restart_|-run': {'changes': {}, 'result': True, 'duration': 0.0, 'start_time': '13:21:18.052417', 'comment': 'State was not run because none of the onchanges reqs changed', '__state_ran__': False, '__run_num__': 11, '__sls__': 'eole-workstation.veyon.service.running'}, 'pkg_|-eole-workstation/salt/minion/package/install/pkg.installed_|-salt-minion_|-installed': {'name': 'salt-minion', 'changes': {}, 'result': True, 'comment': 'All specified packages are already installed', '__sls__': 'eole-workstation.salt.minion.package.install', '__run_num__': 12, 'start_time': '13:21:18.052417', 'duration': 62.732, '__id__': 'eole-workstation/salt/minion/package/install/pkg.installed'}, 'file_|-eole-workstation/salt/minion/config/file/file-recurse_|-C:\\ProgramData\\Salt Project\\Salt\\conf\\minion.d_|-recurse': {'name': 'C:\\ProgramData\\Salt Project\\Salt\\conf\\minion.d', 'changes': {}, 'result': True, 'comment': 'The directory C:\\ProgramData\\Salt Project\\Salt\\conf\\minion.d is in the correct state', '__sls__': 'eole-workstation.salt.minion.config.dir', '__run_num__': 13, 'start_time': '13:21:18.115149', 'duration': 62.319, '__id__': 'eole-workstation/salt/minion/config/file/file-recurse'}, 'service_|-eole-workstation/salt/minion/service/running/service-running_|-salt-minion_|-running': {'name': 'salt-minion', 'changes': {}, 'result': True, 'comment': 'The service salt-minion is already running', '__sls__': 'eole-workstation.salt.minion.service.running', '__run_num__': 14, 'start_time': '13:21:18.177468', 'duration': 31.376, '__id__': 'eole-workstation/salt/minion/service/running/service-running'}, 'test_|-eole-workstation/firefox/is-managed/test.fail_without_changes_|-Verify if Firefox is managed_|-configurable_test_state': {'name': 'Verify if Firefox is managed', 'changes': {}, 'result': True, 'comment': 'Firefox is not managed', '__sls__': 'eole-workstation.firefox.is-managed', '__run_num__': 15, 'start_time': '13:21:18.208844', 'duration': 0.0, '__id__': 'eole-workstation/firefox/is-managed/test.fail_without_changes'}, 'file_|-eole-workstation/firefox/policies/deployed/policies.json/file.managed_|-C:\\Program Files\\Mozilla Firefox\\distribution\\policies.json_|-managed': {'changes': {'newfile': 'C:\\Program Files\\Mozilla Firefox\\distribution\\policies.json'}, 'comment': 'The file C:\\Program Files\\Mozilla Firefox\\distribution\\policies.json is set to be changed\nNote: No changes made, actual changes may\nbe different due to other states.', 'name': 'C:\\Program Files\\Mozilla Firefox\\distribution\\policies.json', 'result': None, '__sls__': 'eole-workstation.firefox.policies.deployed', '__run_num__': 16, 'start_time': '13:21:18.208844', 'duration': 93.622, '__id__': 'eole-workstation/firefox/policies/deployed/policies.json/file.managed'}, 'module_|-eole-workstation-mine-update-module-run_|-mine.update_|-run': {'name': 'mine.update', 'changes': {}, 'comment': 'Module function mine.update is set to execute', 'result': None, '__sls__': 'eole-workstation.mine.update', '__run_num__': 17, 'start_time': '13:21:18.302466', 'duration': 0.0, '__id__': 'eole-workstation-mine-update-module-run'}}, 'out': 'highstate', 'retcode': 0, 'jid': '20241213122103469436'}}
+[DEBUG   ] Using importlib_metadata to load entry points
+[DEBUG   ] LazyLoaded highstate.output
+[DEBUG   ] LazyLoaded nested.output
+[DEBUG   ] jid 20241213122103469436 found all minions {'PC-1422781.dompedago.etb1.lan'}
+[DEBUG   ] Closing IPCMessageSubscriber instance
+PC-1422781.dompedago.etb1.lan:
+----------
+          ID: eole-workstation/ad/grains/grains.list_append
+    Function: grains.list_present
+        Name: roles
+      Result: True
+     Comment: Value ['ad/member'] is already in grain roles
+     Started: 13:21:12.271341
+    Duration: 0.0 ms
+     Changes:   
+----------
+          ID: ad/member/windows/join/system.join_domain
+    Function: system.join_domain
+        Name: dompedago.etb1.lan
+      Result: True
+     Comment: Computer already added to 'dompedago.etb1.lan'
+     Started: 13:21:12.271341
+    Duration: 202.992 ms
+     Changes:   
+----------
+          ID: ad/member/windows/join/system.reboot
+    Function: system.reboot
+      Result: True
+     Comment: State was not run because none of the onchanges reqs changed
+     Started: 13:21:12.474333
+    Duration: 0.0 ms
+     Changes:   
+----------
+          ID: Add Veyon grains
+    Function: grains.list_present
+        Name: roles
+      Result: True
+     Comment: Value ['veyon/master', 'veyon/client'] is already in grain roles
+     Started: 13:21:12.474333
+    Duration: 0.0 ms
+     Changes:   
+----------
+          ID: Install Veyon software
+    Function: pkg.installed
+        Name: veyon
+      Result: True
+     Comment: All specified packages are already installed
+     Started: 13:21:16.287136
+    Duration: 77.937 ms
+     Changes:   
+----------
+          ID: Cleanup configuration file on error
+    Function: file.absent
+        Name: C:\Program Files\Veyon\veyon-config.json
+      Result: True
+     Comment: unless condition is true
+     Started: 13:21:16.365073
+    Duration: 1375.036 ms
+     Changes:   
+----------
+          ID: Download Veyon Configuration
+    Function: file.managed
+        Name: C:\Program Files\Veyon\veyon-config.json
+      Result: True
+     Comment: The file C:\Program Files\Veyon\veyon-config.json is in the correct state
+     Started: 13:21:17.740109
+    Duration: 62.281 ms
+     Changes:   
+----------
+          ID: Register Veyon service
+    Function: cmd.run
+        Name: veyon-cli.exe service register
+      Result: None
+     Comment: Command "veyon-cli.exe service register" would have been executed
+     Started: 13:21:17.802390
+    Duration: 0.0 ms
+     Changes:   
+----------
+          ID: Import Veyon configuration
+    Function: cmd.run
+        Name: veyon-cli.exe config import veyon-config.json
+      Result: True
+     Comment: State was not run because none of the onchanges reqs changed
+     Started: 13:21:17.802390
+    Duration: 0.0 ms
+     Changes:   
+----------
+          ID: Set LDAP password
+    Function: cmd.run
+        Name: veyon-cli.exe config set LDAP/BindPassword %VEYON_PASSWORD%
+      Result: True
+     Comment: unless condition is true
+     Started: 13:21:17.802390
+    Duration: 218.637 ms
+     Changes:   
+----------
+          ID: Start Veyon service
+    Function: service.running
+        Name: VeyonService
+      Result: True
+     Comment: The service VeyonService is already running
+     Started: 13:21:18.021027
+    Duration: 31.39 ms
+     Changes:   
+----------
+          ID: Restart Veyon Service
+    Function: cmd.run
+        Name: veyon-cli.exe service restart
+      Result: True
+     Comment: State was not run because none of the onchanges reqs changed
+     Started: 13:21:18.052417
+    Duration: 0.0 ms
+     Changes:   
+----------
+          ID: eole-workstation/salt/minion/package/install/pkg.installed
+    Function: pkg.installed
+        Name: salt-minion
+      Result: True
+     Comment: All specified packages are already installed
+     Started: 13:21:18.052417
+    Duration: 62.732 ms
+     Changes:   
+----------
+          ID: eole-workstation/salt/minion/config/file/file-recurse
+    Function: file.recurse
+        Name: C:\ProgramData\Salt Project\Salt\conf\minion.d
+      Result: True
+     Comment: The directory C:\ProgramData\Salt Project\Salt\conf\minion.d is in the correct state
+     Started: 13:21:18.115149
+    Duration: 62.319 ms
+     Changes:   
+----------
+          ID: eole-workstation/salt/minion/service/running/service-running
+    Function: service.running
+        Name: salt-minion
+      Result: True
+     Comment: The service salt-minion is already running
+     Started: 13:21:18.177468
+    Duration: 31.376 ms
+     Changes:   
+----------
+          ID: eole-workstation/firefox/is-managed/test.fail_without_changes
+    Function: test.configurable_test_state
+        Name: Verify if Firefox is managed
+      Result: True
+     Comment: Firefox is not managed
+     Started: 13:21:18.208844
+    Duration: 0.0 ms
+     Changes:   
+----------
+          ID: eole-workstation/firefox/policies/deployed/policies.json/file.managed
+    Function: file.managed
+        Name: C:\Program Files\Mozilla Firefox\distribution\policies.json
+      Result: None
+     Comment: The file C:\Program Files\Mozilla Firefox\distribution\policies.json is set to be changed
+              Note: No changes made, actual changes may
+              be different due to other states.
+     Started: 13:21:18.208844
+    Duration: 93.622 ms
+     Changes:   
+              ----------
+              newfile:
+                  C:\Program Files\Mozilla Firefox\distribution\policies.json
+----------
+          ID: eole-workstation-mine-update-module-run
+    Function: module.run
+        Name: mine.update
+      Result: None
+     Comment: Module function mine.update is set to execute
+     Started: 13:21:18.302466
+    Duration: 0.0 ms
+     Changes:   
+
+Summary for PC-1422781.dompedago.etb1.lan
+-------------
+Succeeded: 18 (unchanged=3, changed=1)
+Failed:     0
+-------------
+Total states run:     18
+Total run time:    2.218 s

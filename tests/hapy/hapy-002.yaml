@@ -1,0 +1,31 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier l'interaction entre un module Hapy et un module Hapy-Node  
+
+#frequence:
+contrainte: ( architecture = amd64 ) 
+regroupement: 97
+
+contexts:
+- machine: aca.hapy-node
+  methode: instance
+  configuration: default
+  
+- machine: aca.hapy 
+  methode: instance
+  configuration: multi
+
+tests:
+- nom: hapy-002-install
+  commandes:
+  - machine: aca.hapy
+    run: ciMonitor onehost_create_all 
+
+  - machine: aca.hapy
+    run: ciDiagnose
+
+  - machine: aca.hapy-node
+    run: ciDiagnose
+
+  - machine: aca.hapy
+    run: prepare-hapy-271-with-an-image.sh

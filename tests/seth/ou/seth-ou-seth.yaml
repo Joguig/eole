@@ -1,0 +1,20 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la gestion des OU AD sur Seth 
+
+contrainte: architecture = amd64 and version >= 2.7.2
+regroupement: 96
+
+testsOk:
+-  Instance-AcaDc1
+
+contexts:
+- machine: aca.dc1 
+  methode: avecimport
+  configuration: default
+  
+tests:
+- nom: ou-dc1
+  commandes:
+  - machine: aca.dc1
+    run: check-ou.sh

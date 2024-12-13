@@ -1,0 +1,36 @@
+status: PRODUCTION
+description: |
+   le but de ce test est de vérifier le focntionnement de genconfig 
+
+#frequence:
+contrainte: architecture is amd64 and version in [ 2.7.2, 2.8.0, 2.8.1, 2.9.0, 2.10.0 ]
+regroupement: 91
+
+contexts:
+- machine: aca.eolebase
+  methode: instance
+  configuration: default
+  passive: oui
+
+- machine: aca.pc-linux
+  modele: aca.pc
+  base: linux
+  methode: instance
+  configuration: default
+  passive: oui
+
+setUp:
+- machine: aca.eolebase
+  run: activer-ead3.sh
+- machine: aca.pc-linux
+  run: prepare-pc-genconfig.sh
+
+tests:
+- nom: test-genconfig
+  commandes:
+  - run: test-genconfig.sh
+    machine: aca.pc-linux 
+
+tearDown:    
+- machine: aca.pc-linux
+  automate: shutdownHard

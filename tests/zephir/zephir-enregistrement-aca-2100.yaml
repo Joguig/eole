@@ -1,0 +1,39 @@
+heriteDe : zephir-enregistrement
+regroupement: 90
+#frequence: weekly
+contrainte: architecture = amd64 and version >= 2.10.0
+
+testsOk:
+-  Importation-Zephir
+
+contexts:
+- machine: aca.eolebase
+  methode: zephir
+  base: eole-2.10.0
+
+- machine: aca.scribe
+  methode: zephir
+  base: eole-2.10.0
+
+- machine: aca.sphynx
+  methode: zephir
+  base: eole-2.10.0
+
+- machine: aca.dc1
+  methode: zephir
+  base: eole-2.10.0
+
+tests:
+- nom: test01
+  commandes:
+  - machine: aca.eolebase
+    run: ciDiagnose
+
+  - machine: aca.scribe
+    run: ciDiagnose
+
+  - machine: aca.sphynx
+    run: ciDiagnose
+
+  - machine: aca.dc1
+    run: ciDiagnose

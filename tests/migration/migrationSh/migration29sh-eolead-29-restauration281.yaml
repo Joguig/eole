@@ -1,0 +1,43 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la restauration d'un Scribe 2.8.1 avec eole-ad.
+   Ce test s'execute dans le contexte Etb1 donc derriére un amon et en DMZ
+
+frequence: weekly
+contrainte: version in [ 2.9.0 ]
+regroupement: 61
+
+paths:
+- tests/seth/synchronisation
+- tests/seth
+
+testsOk:
+- seth-eolead-etb1
+
+contexts:
+- machine: etb1.seth1
+  methode: instance
+  configuration: default
+
+- machine: etb1.scribe
+  methode: daily
+  configuration: eolead
+
+tests:
+- commandes:
+    - run: prepare-seth1-eolead.sh
+      args:
+      - restaurationSh
+      machine: etb1.seth1
+
+    - run: prepare-scribe-eolead.sh
+      args:
+      - eolead
+      - restaurationSh
+      machine: etb1.scribe
+
+    - run: migrationSh_restauration.sh
+      args:
+      - 2.8.1
+      machine: etb1.scribe
+

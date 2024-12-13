@@ -1,0 +1,24 @@
+status: DEVELOPPEMENT
+description: |
+   le but de ce test est de vérifier la transformation d'un module eolebase en conteneur  
+
+frequence: manuel
+contrainte: architecture = amd64 and version in [ 2.8.1, 2.9.0])
+regroupement: 91
+
+contexts:
+- machine: aca.gateway
+  methode: minimale 
+
+tests:
+- nom: distrobuilder-install
+  commandes:
+  - run: initialise-distrobuilder.sh
+
+- nom: build-eole
+  commandes:
+  - run: build-eole.sh
+    
+- nom: build-ubuntu
+  commandes:
+  - run: build-ubuntu.sh

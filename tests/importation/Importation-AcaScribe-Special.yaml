@@ -1,0 +1,21 @@
+status: PUBLIQUE
+heriteDe: Importation-AcaScribe
+description: |
+   Le but de ce test est de vérifier l'importation de comptes dans Scribe.
+   Nous vérifions que les fichiers invalides sont correctement détectés
+   Nous vérifions la création et la maj des liens dans les dossiers .ftp
+   Nous vérifions la création des élèves & responsables depuis une extraction ONDE
+
+frequence: if version >= 2.7.2 then weekly else manuel
+
+tests:
+- nom: import-special-01
+  commandes:
+  - run: importation_ONDE.sh
+  - run: importation_ftpdir.sh
+  - run: importation_yoyo_eleves_special.sh
+    args:
+    - win
+  - run: importation_yoyo_eleves_special.sh
+    args:
+    - mac

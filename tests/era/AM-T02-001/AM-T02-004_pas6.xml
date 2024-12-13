@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<firewall name="/mnt/eole-ci-tests/tests/era/AM-T02-001/AM-T02-004_pas6.xml" netbios="1" model="/usr/share/era/modeles/4zones.xml" qos="0" version="2.3">
+    <zones>
+    </zones>
+    <include></include>
+    <services>
+        <groupe id="gr_ead" libelle="eole admin">
+        </groupe>
+    </services>
+    <qosclasses upload="" download="">
+    </qosclasses>
+    <extremites>
+    </extremites>
+    <ranges>
+    </ranges>
+    <user_groups>
+    </user_groups>
+    <applications>
+    </applications>
+    <flux-list>
+        <flux zoneA="bastion" zoneB="exterieur">
+            <montantes default_policy="0">
+            </montantes>
+            <descendantes default_policy="1">
+            </descendantes>
+        </flux>
+        <flux zoneA="exterieur" zoneB="admin">
+            <montantes default_policy="0">
+            </montantes>
+            <descendantes default_policy="1">
+                <directive service="8500" priority="8" action="4" attrs="0" nat_port="8600" src_inv="0" dest_inv="0" serv_inv="0" libelle="pas de description" ipsec="0" accept="0">
+                    <source name="admin"/>
+                    <destination name="exterieur"/>
+                </directive>
+            </descendantes>
+        </flux>
+        <flux zoneA="bastion" zoneB="admin">
+            <montantes default_policy="0">
+            </montantes>
+            <descendantes default_policy="1">
+            </descendantes>
+        </flux>
+        <flux zoneA="exterieur" zoneB="pedago">
+            <montantes default_policy="0">
+            </montantes>
+            <descendantes default_policy="1">
+            </descendantes>
+        </flux>
+        <flux zoneA="admin" zoneB="pedago">
+            <montantes default_policy="0">
+            </montantes>
+            <descendantes default_policy="1">
+            </descendantes>
+        </flux>
+        <flux zoneA="bastion" zoneB="pedago">
+            <montantes default_policy="0">
+            </montantes>
+            <descendantes default_policy="1">
+            </descendantes>
+        </flux>
+        <flux zoneA="exterieur" zoneB="dmz">
+            <montantes default_policy="0">
+            </montantes>
+            <descendantes default_policy="1">
+            </descendantes>
+        </flux>
+        <flux zoneA="admin" zoneB="dmz">
+            <montantes default_policy="0">
+            </montantes>
+            <descendantes default_policy="1">
+            </descendantes>
+        </flux>
+        <flux zoneA="bastion" zoneB="dmz">
+            <montantes default_policy="0">
+            </montantes>
+            <descendantes default_policy="1">
+            </descendantes>
+        </flux>
+        <flux zoneA="dmz" zoneB="pedago">
+            <montantes default_policy="0">
+            </montantes>
+            <descendantes default_policy="1">
+            </descendantes>
+        </flux>
+    </flux-list>
+</firewall>

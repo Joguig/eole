@@ -1,0 +1,98 @@
+status: PUBLIQUE
+description: |
+   Le but de ce test est de vérifier l'importation de comptes dans Scribe dans un context Multi Etablissement.
+   nous partons d'une image avec ETB1 et ETB2 chargés en mode Annuel (voir Importation-AcaScribe-MultiEtab.yaml)
+   Et réalisation un second import en mode ANNUEL de l'ETB2
+
+contrainte: architecture = amd64 and version > 2.7.1
+regroupement: 31
+
+paths:
+- tests/importation
+
+testsOk:
+- Importation-AcaScribe-MultiEtab
+
+contexts:
+- machine: aca.scribe
+  methode: avecimport
+  configuration: multietab
+
+tests:
+- nom: second-import-annuel
+  commandes:
+  # nous partons d'une image avec ETB1 et ETB2 chargés en mode Annuel (voir Importation-AcaScribe-MultiEtab.yaml)
+  # second import élèves en mode ANNUEL de l'ETB2
+  - machine: aca.scribe
+    run: importation_yoyo_eleves_multietab.sh
+    args:
+    - 2
+    - annuel
+
+  # second import profs en mode ANNUEL de l'ETB2
+  - machine: aca.scribe
+    run: importation_yoyo_professeurs_multietab.sh
+    args:
+    - 2
+    - annuel
+
+  - machine: aca.scribe
+    run: |
+         find /home >/tmp/liste_apres.txt
+         echo "Du fait d'un Import en mode ANUEL d'un Etablissmeent déjà importé, il ne doit pas y avoir de nouveau compte créé"
+         echo "***************** DIFFERENCE REPERTOIRES *****************"
+         diff /tmp/liste_avant.txt /tmp/liste_apres.txt
+         echo "**********************************************************"
+
+
+- nom: controles
+  commandes:
+  # élèves etb1 non impactés
+  - run: check-importation-compte.sh
+    args:
+    - eleves
+    - prenom.eleve19
+    - "etb1-4eme,etb1-c41,etb1-opt1,etb1-opt2"
+    - 0000001E
+    - ETB1
+
+  # profs etb1 non impactés
+  - run: check-importation-compte.sh
+    args:
+    - personnels
+    - prenom.prof9
+    - " "
+    - 0000001E
+    - ETB1
+
+  # prenom.eleve19 ==> prenom.eleve191 du fait que l'on charge le même jeux de donnée
+  # élèves etb2 non impactés
+  - run: check-importation-compte.sh
+    args:
+    - eleves
+    - prenom.eleve191
+    - "etb2-4eme,etb2-c41,etb2-opt1,etb2-opt2"
+    - 0000002E
+    - ETB2
+
+  # profs etb2 non impactés (jeu de données identique)
+  - machine: aca.scribe
+    run: check-importation-compte.sh
+    args:
+    - personnels
+    - prenom.prof101
+    - "profs-etb2-c41,profs-etb2-opt1,profs-etb2-opt2"
+    - 0000002E
+    - ETB2
+
+  # profs etb1 non impactés
+  # les profs de l'ETB1 n'ont pas perdu leurs équipes pédagogiques (#33882)
+  - machine: aca.scribe
+    run: check-importation-compte.sh
+    args:
+    - personnels
+    - prenom.prof10
+    - "profs-etb1-c41,profs-etb1-opt1,profs-etb1-opt2"
+    - 0000001E
+    - ETB1
+

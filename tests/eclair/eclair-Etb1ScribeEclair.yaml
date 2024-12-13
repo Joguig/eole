@@ -1,0 +1,48 @@
+status: DEVELOPPEMENT
+description: |
+   le but de ce test est de vérifier le fonctionnement de ECLAIR sur un scribe 2.8.1  
+
+contrainte: architecture = amd64 and version > 2.8.0
+regroupement: 98
+heriteDe : etb1-000
+testsOk: 
+- Instance-Etb1Scribe
+
+contexts:
+- machine: etb1.client-pxe
+  
+tests:
+- nom: preparation-scribe
+  commandes:
+  - machine: etb1.scribe
+    run: init-scribe-activer-eclair.sh
+
+  - automate: reboot
+    machine: etb1.scribe
+    
+- nom: demarre-client
+  commandes:
+  - machine: etb1.client-pxe
+    automate: reboot
+    
+  - machine: etb1.client-pxe
+    automate: pause
+    timeout: 100
+    
+  - machine: etb1.scribe
+    run: test-enregistrement-client.sh
+
+  - machine: etb1.scribe
+    run: |
+       salt 'ltsp5*' grains.append roles ad/member
+       salt 'ltsp5*' state.apply
+
+- nom: test-session-eclair
+  commandes:
+  - machine: etb1.amon
+    run: ciMonitor ssh c31e1@10.1.2.51 "mount"
+
+  - run: test-session-002.sh
+    machine: etb1.scribe
+
+    

@@ -1,0 +1,31 @@
+titre: Instance Scribe en etb1.scribe
+status: PUBLIQUE
+description: |
+   Le but de ce test est vérifier la procédure d'instance de la machine Etb1 Scribe. 
+   Le scribe est dans la DMZ. la procédure valide donc l'instance derriére un amon
+
+#frequence:
+contrainte: architecture = amd64 and version in [ 2.6.2 ]
+regroupement: 30
+genereImage: etb1.scribe-{VERSION}-instance-scribead-{ARCHITECTURE}.vm
+
+testsOk:
+-  Instance-Etb1Scribe
+
+contexts:
+- machine: etb1.scribe 
+  methode: daily
+  configuration: scribead
+
+tests:
+- nom: test-01
+  commandes:
+  - run: ciConfigurationEole instance scribead
+    machine: etb1.scribe
+    timeout: 2000
+
+  - automate: shutdownWithSnapshot
+    machine: etb1.scribe
+    
+  - automate: updateTemplate
+    machine: etb1.scribe

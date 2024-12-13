@@ -1,0 +1,122 @@
+regroupement: 99
+heriteDe : etb1-000
+contrainte: architecture = amd64 and (version >= 2.7.1)
+
+frequence: if version < 2.8.0 then manuel else weekly
+
+testsOk:
+-  Instance-Etb1Scribe
+
+contexts:
+- machine: aca.pc-linux
+  modele: aca.pc
+  base: linux
+  methode: instance
+  configuration: default
+  passive: oui
+
+tests:
+- nom: etb1-nut-01-001
+  commandes:
+  - machine: etb1.amon
+    run: |
+        service z_stats restart
+        diagnose
+
+  - machine: aca.pc-linux
+    run: check-nut.sh
+          
+  - machine: etb1.amon
+    run: /usr/share/eole/diagnose/80-nut
+
+- nom: etb1-nut-01-002
+  commandes:
+  - machine: etb1.scribe
+    run: update-dummy.sh
+    args:
+    - status
+
+  - machine: etb1.amon
+    run: service z_stats restart
+  
+  - machine: aca.pc-linux
+    run: check-nut.sh
+  
+  - machine: etb1.amon
+    run: /usr/share/eole/diagnose/80-nut
+
+- nom: etb1-nut-01-003
+  commandes:
+  - machine: etb1.scribe
+    run: update-dummy.sh
+    args:
+    - battery-charge
+
+  - machine: etb1.amon
+    run: service z_stats restart
+  
+  - machine: aca.pc-linux
+    run: check-nut.sh
+  
+  - machine: etb1.amon
+    run: /usr/share/eole/diagnose/80-nut
+
+- nom: etb1-nut-01-004
+  commandes:
+  - machine: etb1.scribe
+    run: update-dummy.sh
+    args:
+    - replace-battery
+
+  - machine: etb1.amon
+    run: service z_stats restart
+  
+  - machine: aca.pc-linux
+    run: check-nut.sh
+  
+  - machine: etb1.amon
+    run: /usr/share/eole/diagnose/80-nut
+
+- nom: etb1-nut-01-005
+  commandes:
+  - machine: etb1.scribe
+    run: update-dummy.sh
+    args:
+    - alarm
+
+  - machine: etb1.amon
+    run: service z_stats restart
+  
+  - machine: aca.pc-linux
+    run: check-nut.sh
+  
+  - machine: etb1.amon
+    run: /usr/share/eole/diagnose/80-nut
+
+- nom: etb1-nut-01-006
+  commandes:
+  - machine: etb1.scribe
+    run: service nut-server stop
+
+  - machine: etb1.amon
+    run: service z_stats restart
+  
+  - machine: aca.pc-linux
+    run: check-nut.sh
+  
+  - machine: etb1.amon
+    run: /usr/share/eole/diagnose/80-nut
+
+- nom: etb1-nut-01-007
+  commandes:
+  - machine: etb1.scribe
+    run: service nut-server start
+
+  - machine: etb1.amon
+    run: service z_stats restart
+  
+  - machine: aca.pc-linux
+    run: check-nut.sh
+  
+  - machine: etb1.amon
+    run: /usr/share/eole/diagnose/80-nut

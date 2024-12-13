@@ -1,0 +1,23 @@
+genereImage: aca.eolebase-{VERSION}-instance-default-{ARCHITECTURE}.vm
+status: PUBLIQUE
+titre: Instance aca.eolebase 3
+
+description: |
+   Le but de ce test est vérifier la procédure d'instance du module Eolebase 
+
+contrainte: architecture = amd64 and version >= 3.0
+regroupement: 30
+
+contexts:
+- machine: aca.eolebase 
+  methode: daily
+  configuration: default
+
+tests:
+- nom: test-01
+  commandes:
+  - run: |
+       env -i bash --noprofile --norc install-eolebase3.sh
+  - automate: shutdownWithSnapshot
+  - automate: updateTemplate
+  

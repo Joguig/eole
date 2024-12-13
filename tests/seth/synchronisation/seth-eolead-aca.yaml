@@ -1,0 +1,33 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la synchronisation Scribe vers Seth
+
+frequence: weekly
+contrainte: architecture = amd64 and version >= 2.7.2
+regroupement: 96
+
+testsOk:
+-  Instance-AcaScribe
+-  Instance-AcaDc1
+
+contexts:
+- machine: aca.dc1
+  methode: instance
+  configuration: default
+  passive: oui
+
+- machine: aca.scribe
+  methode: daily
+  configuration: eolead
+
+tests:
+- nom: aca-eolead
+  commandes:
+  - machine: aca.dc1
+    run: prepare-seth1-eolead.sh
+    
+  - machine: aca.scribe
+    run: init-acascribe-eolead.sh
+    
+  - machine: aca.scribe
+    run: ciDiagnose

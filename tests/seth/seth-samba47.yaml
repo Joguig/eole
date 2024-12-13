@@ -1,0 +1,83 @@
+status: DEVELOPPEMENT
+description: |
+   Le but de ce test est vérifier le DC2/DC2/FILER installé avec le module Seth en samba 4.7 avec DNS BIND
+
+frequence: manuel
+contrainte: architecture = amd64 and version > 2.6.1 and version < 2.7.0
+regroupement: 96
+
+contexts:
+- machine: aca.dc1 
+  methode: daily
+  configuration: default
+  
+- machine: aca.dc2
+  methode: daily
+  configuration: default
+
+- machine: aca.file 
+  methode: daily
+  configuration: default
+  
+tests:
+- nom: etb1-001-dc1
+  commandes:
+  - machine: aca.dc1
+    run: run-install-samba47.sh
+    
+  - machine: aca.dc1
+    run: ciDiagnose
+
+  - machine: aca.dc1
+    run: checkAD.sh
+    args:
+    - yes
+
+  - machine: aca.dc1
+    run: test_ldb.sh
+
+  - machine: aca.dc1
+    run: checkSmbConf.sh
+
+- nom: etb1-001-dc2
+  commandes:
+  - machine: aca.dc2
+    run: run-install-samba47.sh
+
+  - machine: aca.dc2
+    run: ciDiagnose
+
+  - machine: aca.dc2
+    run: checkAD.sh
+    args:
+    - yes
+    - NO_UPDATE
+
+  - machine: aca.dc2
+    run: test_ldb.sh
+
+  - machine: aca.dc2
+    run: checkSmbConf.sh
+
+- nom: etb1-001-file
+  commandes:
+  - machine: aca.file
+    run: run-install-samba47.sh
+
+  - machine: aca.file
+    run: ciDiagnose
+    
+  - machine: aca.file
+    run: checkAD.sh
+    args:
+    - yes
+    - NO_UPDATE
+
+  - machine: aca.file
+    run: test_ldb.sh
+    args:
+    - dc1
+    
+  - machine: aca.file
+    run: checkSmbConf.sh
+

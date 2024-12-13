@@ -1,0 +1,65 @@
+frequence: weekly
+status: PRODUCTION
+description: |
+   Le but de ce test est de vérifier la migration d'un Scribe 2.7.2 vers la version {VERSIONMAJEUR}.
+   Ce test s'execute dans le contexte Etb1 donc derriére un amon et en DMZ
+
+#label: master
+contrainte: version in [ 2.8.0, 2.8.1 ]
+regroupement: 60
+
+testsOk:
+- Importation-Etb1Scribe
+
+contexts:
+- machine: etb1.scribe
+  methode: instance
+  configuration: AvecImport
+  base: eole-2.7.2
+
+tests:
+- commandes:
+    - run: ciMonitor maj_auto_rc
+      machine: etb1.scribe
+
+    - run: ciMonitor reconfigure
+      machine: etb1.scribe
+      timeout: 1200
+
+    - automate: reboot
+      machine: etb1.scribe
+
+    - run: do-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      machine: etb1.scribe
+      timeout: 4800
+
+    # il faut migrer les service EoleCiTests !
+    - run: migrate-eolecitest-systemd.sh
+      machine: etb1.scribe
+
+    - automate: reboot
+      machine: etb1.scribe
+
+    - run: check-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      machine: etb1.scribe
+
+    - run: instance-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      machine: etb1.scribe
+      timeout: 1200
+
+    - run: testacl-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      - 6b.01
+      machine: etb1.scribe
+
+    - run: diagnose-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      machine: etb1.scribe

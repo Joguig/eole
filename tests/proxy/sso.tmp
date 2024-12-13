@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+    <head>
+        <meta http-equiv="Pragma" content="no-cache"/>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+        <meta http-equiv='Expires' content='Mon, 26 Jul 1997 05:00:00 GMT'/>
+        <meta http-equiv="Content-Type" CONTENT="text/html; charset=utf-8"/>
+        
+        <title>Authentification : Veuillez vous authentifier</title>
+        <link rel='stylesheet' type='text/css' href='css/main.css'>
+        <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
+        <script type="text/javascript" src="scripts/mootools-core-1.4.2.js"></script>
+    <script type="text/javascript" src="scripts/tools.js?v=2.0"></script>
+    <script type="text/javascript" src="scripts/etabs.js"></script>
+    <script type="text/javascript" src="scripts/homonymes.js"></script>
+    <script type="text/javascript">
+    var otp_enabled=false;
+
+function HideField(field)
+{
+	$(field).setStyle('display', 'none');
+}
+
+function ShowField(field)
+{
+	$(field).setStyle('display', 'inline');
+}
+// Gestion des doublons / affichage ou non des champs de saisie OTP
+function toggle_securid() {
+	var reg_form = $('register_form');
+	if (reg_form == null) {
+		return false;
+	}
+	reg_form.setStyle('display', 'none');
+	if ($('securid_register').get('checked') == true) {
+		if ($('user_registered').get('value') != 'true') {
+			$('securid_user').set('value', '');
+			$('securid_pwd').set('value', '');
+			reg_form.setStyle('display', 'block');
+		}
+	}
+	return false;
+}
+function check_user_options(check_branches) {
+	var previous_user = $('previous_user');
+	var username = $('username').get('value');
+	var sel_etab = $('select_etab');
+	var search_branch = 'default';
+	if (sel_etab != null) {
+		if (sel_etab.getSelected().length > 0) {
+			search_branch = sel_etab.getSelected()[0].get('value');
+		}
+		// CLEON : Affichage d'un message pour aider l'utilisateur
+		// Fait référence a une div homonyme
+		if (search_branch != "")
+		{
+			$('row_etab').setStyle('background-color','transparent');
+			$('row_etab').getElements('td:first-child').setStyles({'border-left':'none'});
+			$('row_etab').getElements('td:last-child').setStyles({'border-right':'none'});
+			$('row_etab').getElements('td').setStyles({'border-top':'none'});
+			HideField("homonyme");
+			ShowField("valider");
+		} else if (username != "")
+		{
+			if (sel_etab.length > 1) {
+				HideField("homonyme");
+				$('row_etab').setStyle('background-color','#FEE');
+				$('row_etab').getElements('td:first-child').setStyles({'border-left':'1px solid black'});
+				$('row_etab').getElements('td:last-child').setStyles({'border-right':'1px solid black'});
+				$('row_etab').getElements('td').setStyles({'border-top':'1px solid black'});
+				$('homonyme').position({relativeTo: $('row_etab'),position: 'bottomLeft',edge: 'topleft'});
+				$("homonyme").setStyle("width",$('row_etab').getComputedSize().width);
+				$("homonyme").setStyle("height",50);
+				ShowField("homonyme");
+				HideField("valider");
+			}
+		}
+	}
+	var cur_user = username + '@' + search_branch;
+	if (previous_user.get('value') != cur_user) {
+		previous_user.set('value', cur_user);
+		var request_check = new Request.JSON({url:'check_user_options',
+			onSuccess: function(response, responseText)
+			{
+				if ((response.search_branches != undefined) && (check_branches == 'true')) {
+					if (response.search_branches.length > 1) {
+						// doublons repérés : remplissage de la liste d'établissements
+						update_etabs(response.search_branches, search_branch);
+						if ($('row_etab') != null) {
+							$('row_etab').setStyle('display', 'table-row');
+						}
+					}
+					else {
+						if ($('row_etab') != null) {
+							$('row_etab').setStyle('display','none');
+						}
+						if (response.search_branches.length == 1) {
+							// branche unique, on la sélectionne automatiquement
+							update_etabs(response.search_branches, response.search_branches[0]);
+						}
+						else {
+							if (sel_etab != null) {
+								sel_etab.empty();
+							}
+						}
+					}
+					// on revérifie l'enregistrement de l'utilisateur
+					// après mise à jour des branches
+					previous_user.set('value', "");
+					return check_user_options('false');
+				}
+				if ( otp_enabled == true ) {
+					if (response.securid_registered != undefined) {
+						if (response.securid_registered == 'true') {
+							$('password_label').set('text', 'Mot de passe \nou Passcode OTP');
+							// utilisateur déjà enregistré
+							$('user_registered').set('value', 'true');
+							$('securid_reg_label').set('text', 'Connexion par clé OTP');
+						} else {
+							$('password_label').set('text', 'Mot de passe');
+							// affiche le champ d'enregistrement
+							$('securid_register').set('checked',false);
+							$('user_registered').set('value', 'false');
+							$('securid_reg_label').set('text', 'Enregistrer mon identifiant OTP');
+						}
+						ShowOTPCheck();
+						$('securid_user').set('value', '');
+						checkotp();
+					}
+					else {
+						$('password_label').set('text', 'Mot de passe');
+						$('securid_register').set('checked',false);
+						$('user_registered').set('value', '');
+						toggle_securid();
+						HideOTPCheck();
+					}
+				}
+			}
+		});
+		request_check.post('username='+username+'&user_branch='+search_branch+'&check_branches='+check_branches);
+	}
+}
+
+
+// CLEON: Gestion différentes des homonymes
+// Traitement sur la liste des branches afin de les présenter par groupe
+function update_etabs(branches, current_branch) {
+	var sel = $('select_etab');
+	sel.empty();
+	var cur_user=$('username').get('value');
+
+	if (branches.length == 1)
+	{
+		var opt = new Option(branches[0][1],branches[0][0]);
+		opt.selected=true;
+		sel.appendChild(opt);
+		HideField("homonyme");
+		return;
+	}
+
+	var lastBranch=readCookie(COOKIE_NAME+MD5(cur_user));
+
+	var opt = new Option('-- Veuillez choisir --', value="");
+	opt.selected=true;
+	sel.appendChild(opt);
+
+	// Construction d'une HasMap pour pouvoir grouper par Type d'établissement
+	bAcad=false;
+	var groupes=new Hashtable();
+	var login_infos = [];
+	for(var i=0; i < branches.length; i++) {
+		var branche=branches[i][0];
+		var libelle=branches[i][1];
+		var br_host = branche.split(':')[0];
+		if ( host_infos[br_host] != undefined ) {
+			if ( login_infos.contains(host_infos[br_host]) == false ) {
+				login_infos.push(host_infos[br_host]);
+			}
+		}
+		// C'est sans doute une branche d'un établissement répliqué
+		if ( branche.indexOf("localhost") == 0 )
+		{
+			// Récupération du Code RNE dans la branche
+			var re = new RegExp("^localhost:ou=(.*),ou=ac-.*");
+			var m=re.exec(branche);
+			if (m == null) {sel.appendChild(new Option(libelle, branche)); continue;}
+
+			rne=m[1].toUpperCase();
+			if (etabs[rne] == null) {sel.appendChild(new Option(libelle, branche)); continue;}
+
+			var type=etabs[rne].type;
+			var libelle=etabs[rne].libelle;
+			if ( groupes.get(type) == null)
+			{
+				// Nouveau groupe
+				var oGrp=new Element('optgroup');
+				oGrp.setProperty('label',type);
+				groupes.put(type,oGrp);
+			}
+
+			var opt = new Option(libelle, value=branche);
+			if ( lastBranch == branche) opt.selected = true;
+			groupes.get(type).appendChild(opt);
+		} else
+		{
+			bAcad=true;
+
+			var oGrp=new Element('optgroup');
+			oGrp.setProperty('label','Enseignant ou Administratif');
+			//groupes.put("Académique",oGrp);
+
+			var opt = new Option(libelle, branche);
+			oGrp.appendChild(opt);
+
+			sel.appendChild(oGrp);
+			if ( lastBranch == branche) opt.selected = true;
+		}
+	}
+
+	keys=groupes.keys();
+	for(var i=0; i < keys.length; i++)
+		sel.appendChild(groupes.get(keys[i]));
+	// =========================================
+	//$('row_etab').setStyle('display', 'table-row');
+
+	texte="<center>Des <b>homonymes</b> ont été détectés pour l'identifiant <b>"+  cur_user +"</b></center>Veuillez choisir dans la liste ci-dessus l'établissement qui doit vous authentifier.<br>";
+	if (bAcad)
+	{
+		// récupére les libellés dans les tableaux générés dans homonymes.js
+		for(var j=0; j < login_infos.length; j++)
+			texte+= msgs[login_infos[j]];
+	}
+	$('homonymetext').set("html",texte);
+	if (branches.length > 1) {
+		if ($('select_etab').getSelected()[0].get('value') == "") {
+			ShowField("homonyme");
+		}
+	}
+	// ajout d'évènements pour stocker la branche choisie dans un cookie
+	var form = $("cas_auth_form");
+	if (form!=null)
+	{
+		form.addEvent("submit",SetCookie);
+	}
+	var select = $('select_etab');
+	if (select!=null)
+	{
+		select.addEvent("change",SetCookie);
+	}
+}
+var callb_onload="check_user_options('true');toggle_securid();";
+window.addEvent('domready', function(){
+  if(Browser.ie)
+    $('avertissement_ie').setStyles({display:"block"});
+});
+</script>
+    </head>
+    <body onload="document.forms['cas_auth_form'].username.focus();setTimeout(callb_onload, 200);">
+        <div id="container">
+            <div id="sitename">
+                <h1>Veuillez vous authentifier</h1>
+            </div>
+            <div id="wrap1">
+                <div id="wrap2">
+                    <div id="content"><div id="title" style="display:none;">Veuillez vous authentifier</div>
+<div id="homonyme" style="display:none;">
+	<div id="homonymetext" style="display:none;"></div>
+</div>
+<div id="oidc" class="oidc_div"></div>
+<form action='.' method='post' name='cas_auth_form' id='cas_auth_form'>
+  <input type="hidden" name="lt" value="LT-proxyac-testfr-2968fee02f50dd16d5371c5f9d997b6c4044f826ad5e095ae4887d3d">
+    
+    
+    <table>
+       <tr><td><label for='username' accesskey='U'>Identifiant</label></td><td>
+            <input type='text' tabindex='1' name='username' id='username' title='Identifiant' autocomplete='off' onblur="check_user_options('true')"/>
+            <input type='hidden' name='previous_user' id='previous_user' value=''/>
+       </td></tr>
+       <tr><td><label id='password_label' for='password' accesskey='P'>Mot de passe</label></td><td>
+       <input type='password' tabindex='2' name='password' id='password' title='Mot de passe' autocomplete='off' />
+       </td></tr>
+       
+    </table>
+    
+<p class="loginhelp">
+
+</p>
+<p class="formvalidation">
+  <input id="valider" tabindex='6' class='btn' type='submit' alt="Submit" accesskey='O' title='Valider'/>
+</p>
+</form>
+</div></div></div>
+<div id="message" style="display:none;" class="message"></div>
+
+<div id="avertissement">
+    <br/>
+    
+</div>
+<div><div><div>
+</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

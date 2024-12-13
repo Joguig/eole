@@ -1,0 +1,24 @@
+titre: Instance eolebase+eole_proxy en aca.proxy
+
+description: |
+   Le but de préparer le aca.proxy
+
+contrainte: architecture = amd64 and version >= 2.8.1 and version < 3.0
+regroupement: 30
+genereImage: aca.proxy-{VERSION}-instance-default-{ARCHITECTURE}.vm
+
+contexts:
+- machine: aca.proxy
+  methode: daily
+  configuration: default
+
+tests:
+- nom: test-instance
+  commandes:
+  - run: ciInstanceDefault
+    timeout: 1800
+
+  - automate: shutdownWithSnapshot
+
+  - automate: updateTemplate
+

@@ -1,0 +1,23 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est de lancer les test unitaires du module Seth Education
+   en executant la commande 'apt-get install <module>-test' et 'py.test' 
+
+#frequence:
+contrainte: ( architecture = amd64 ) and version < 3.0 and version > 2.7.1
+regroupement: SE 
+
+testsOk:
+-  Instance-AcaDc1-SethEducation
+
+contexts:
+- machine: aca.dc1 
+  methode: instance
+  configuration: setheducation
+
+tests:
+- nom: module-test
+  commandes:
+  - run: run-module-tests.sh
+    timeout: 1000
+  

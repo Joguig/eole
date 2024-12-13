@@ -1,0 +1,22 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est de lancer les test unitaires du module Amonecole
+   en executant la commande 'apt-get install <module>-test' et 'py.test'
+
+frequence: if version = 2.6.1 then manuel
+contrainte: ( architecture = amd64 ) and version < 3.0
+regroupement: 52
+testsOk:
+- Importation-AmonEcole
+
+contexts:
+- machine: etb3.amonecole
+  methode: instance
+  configuration: AvecImport
+
+tests:
+- nom: module-test
+  commandes:
+  - run: run-module-tests.sh
+    timeout: 1200
+

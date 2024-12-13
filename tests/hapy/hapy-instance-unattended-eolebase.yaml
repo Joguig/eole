@@ -1,0 +1,24 @@
+regroupement: 97
+frequence: if version latest or version DEV then daily else manuel
+contrainte: architecture = amd64 and version >= 2.8.1
+
+testsOk:
+- Importation-Zephir
+- Instance-AcaEolebase
+
+contexts:
+- machine: aca.zephir
+  methode: instance
+  configuration: AvecConf
+  passive: oui
+  
+- machine: aca.eolebase
+  methode: daily
+  configuration: default
+
+tests:
+- nom: test01
+  commandes:
+  - machine: aca.eolebase
+    run: test-instance-unattended.sh
+    timeout: 1200

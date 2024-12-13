@@ -1,0 +1,83 @@
+status: DEVELOPPEMENT
+description: |
+   le but de ce test est de démarrer un scribe avec les PC Ubuntu Mate 22.04
+
+contrainte: architecture = amd64 and (version > 2.7.2)  
+regroupement: X0
+testsOk:
+- Instance-Etb1Amon
+- Instance-Etb1Scribe
+
+contexts:
+- machine: etb1.amon 
+  methode: instance
+  configuration: default
+  passive: oui
+  utiliseDerniereStableSiBesoin: oui
+  
+- machine: etb1.scribe
+  methode: instance
+  configuration: AvecImport
+  passive: oui
+
+- machine: etb1.pceleve-linux
+  modele: etb1.pceleve
+  methode: instance
+  configuration: default
+  base: linux-mate-2204
+  passive: oui
+
+setUp:
+- machine: etb1.amon
+  run: prepare-amon-pour-joineole-linux.sh
+  args:
+  - "{VERSIONMAJEUR}"
+
+- machine: etb1.scribe
+  run: prepare-scribe-pour-joineole-linux.sh
+  args:
+  - "PAQUET"
+  - jammy
+
+tests:
+- nom: joineole
+  commandes:
+  - machine: etb1.pceleve-linux
+    run: test-joineole-linux.sh
+
+  - machine: etb1.scribe
+    automate: pause
+    timeout: 60
+
+  - machine: etb1.scribe
+    run: test-enregistrement-client.sh
+    args:
+    - "{ID:etb1.pceleve-linux}"
+
+  - machine: etb1.pceleve-linux
+    automate: reboot
+    
+  - machine: etb1.pceleve-linux
+    run: check-joindomain.sh
+
+  - machine: etb1.pceleve-linux
+    run: check-saltminion-veyon.sh
+
+  - machine: etb1.pceleve-linux
+    automate: screenshot
+
+  - machine: etb1.scribe
+    run: changepasswordeole.pl
+    args:
+    - c31e1
+    - Eole12345!
+    
+  - machine: etb1.amon
+    run: check-login-linux.sh
+    args:
+    - "{ID:etb1.pceleve-linux}"
+
+- nom: export
+  commandes:
+  - machine: etb1.pceleve-linux
+    run: display-conf-pam-sssd-kerberos.sh

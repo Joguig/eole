@@ -1,0 +1,30 @@
+titre: Instance Seth en rie.pdc-ad1
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure d'instance du module Seth en contrôleur de domaine principal dans la zone RIE
+
+#frequence:
+contrainte: architecture = amd64 and version in [ 2.6.2, 2.7.0 ]
+regroupement: 30
+genereImage: rie.pdc-ad1-{VERSION}-instance-default-{ARCHITECTURE}.vm
+
+contexts:
+- machine: rie.dns-banshee
+  passive: oui
+  
+- machine: rie.pdc-ad1
+  methode: daily
+  configuration: default
+
+tests:
+- commandes:
+  - run: ciInstanceDefault
+    machine: rie.pdc-ad1
+    timeout: 1200
+
+  - automate: shutdownWithSnapshot       
+    machine: rie.pdc-ad1
+
+  - automate: updateTemplate
+    machine: rie.pdc-ad1
+  

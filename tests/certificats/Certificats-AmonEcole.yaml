@@ -1,0 +1,19 @@
+status: PRODUCTION
+description: |
+   le but de ce test est vérifier les certificats générés sur un module Amonecole 
+
+#frequence:
+contrainte: architecture = amd64
+regroupement: 53 
+testsOk: 
+- Instance-Etb3AmonEcole
+
+contexts:
+- machine: etb3.amonecole 
+  methode: instance
+  configuration: default
+
+tests:
+- commandes:
+  - run: check-certificats-ssl.sh
+  

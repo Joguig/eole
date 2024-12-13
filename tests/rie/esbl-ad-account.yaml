@@ -1,0 +1,33 @@
+titre: Tester la jonction du rie.esbl-ad au domaine du rie.pdc-ad1
+status: PRODUCTION
+description: |
+   Le but de ce test est de vérifier l’accès aux comptes du domaine.
+
+##frequence:
+contrainte: architecture = amd64 and version in [ 2.6.2 ]
+regroupement: 100
+
+testsOk:
+- Importation-RiePdcAd1
+
+contexts:
+- machine: rie.dns-banshee
+  passive: oui
+
+- machine: rie.pdc-ad1
+  methode: instance
+  configuration: AvecImport
+
+- machine: rie.esbl-ad
+  methode: instance
+  configuration: default
+
+tests:
+- nom: esbl-ad
+  commandes:
+  - machine: rie.esbl-ad
+    run: ciDiagnose
+
+  - machine: rie.esbl-ad
+    run: test_getent_ad.sh
+

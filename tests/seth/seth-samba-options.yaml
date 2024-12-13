@@ -1,0 +1,110 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier le DC1/DC2/FILER installé avec le module Seth avec  le backend LMBD
+
+#frequence:
+contrainte: architecture = amd64 and version >= 2.7.1
+regroupement: 96
+
+testsOk:
+-  Seth-001
+
+contexts:
+- machine: aca.dc1 
+  methode: daily
+  configuration: default
+  
+- machine: aca.dc2
+  methode: daily
+  configuration: default
+
+- machine: aca.file 
+  methode: daily
+  configuration: default
+
+tests:
+- nom: etb1-001-dc1
+  commandes:
+  - machine: aca.dc1
+    run: run-install-options.sh
+    
+  - machine: aca.dc1
+    run: ciDiagnose
+
+  - machine: aca.dc1
+    run: checkAD.sh
+    args:
+    - yes
+    - NO_UPDATE
+
+  - machine: aca.dc1
+    run: test_ldb.sh
+
+  - machine: aca.dc1
+    run: checkSmbConf.sh
+
+  - machine: aca.dc1
+    run: checkSysvol.sh
+
+  - machine: aca.dc1
+    run: samba-check-set-sysvol.sh
+
+- nom: etb1-001-dc2
+  commandes:
+  - machine: aca.dc2
+    run: run-install-options.sh
+
+  - machine: aca.dc2
+    run: ciDiagnose
+
+  - machine: aca.dc2
+    run: checkAD.sh
+    args:
+    - yes
+    - NO_UPDATE
+
+  - machine: aca.dc2
+    run: test_ldb.sh
+
+  - machine: aca.dc2
+    run: checkSmbConf.sh
+
+  - machine: aca.dc2
+    run: checkSysvol.sh
+
+  - machine: aca.dc2
+    run: samba-check-set-sysvol.sh
+    args:
+    - no
+    - aca.dc1
+
+- nom: install-file
+  commandes:
+  - machine: aca.file
+    run: run-install-options.sh
+
+- nom: dc-dnsupdate
+  commandes:
+  # normalement il faut attendre 10 minutes ! je force la commande pour ne pas attendre
+  - machine: aca.dc1
+    run: checkDnsUpdate.sh
+    
+- nom: check-file
+  commandes:
+  - machine: aca.file
+    run: ciDiagnose
+    
+  - machine: aca.file
+    run: checkAD.sh
+    args:
+    - yes
+    - NO_UPDATE
+
+  - machine: aca.file
+    run: test_ldb.sh
+    args:
+    - dc1
+
+  - machine: aca.file
+    run: checkSmbConf.sh
+

@@ -1,0 +1,54 @@
+status: DEVELOPPEMENT
+description: |
+   Le but de ce test est vérifier le DC1/FILER installé avec le module Seth et deux établissement Etb1/Etb2 avec ScribeAD
+
+#frequence:
+contrainte: architecture = amd64 and version > 2.7.1
+regroupement: 96
+
+testsOk:
+-  Instance-AcaDc1
+-  Instance-AcaScribe
+-  Instance-Etb1Amon
+
+contexts:
+- machine: aca.dc1
+  methode: instance
+  configuration: default
+  
+- machine: etb1.amon 
+  methode: instance
+  configuration: default
+  passive: oui
+  utiliseDerniereStableSiBesoin: oui
+  
+- machine: etb2.amon 
+  methode: instance
+  configuration: default
+  passive: oui
+  utiliseDerniereStableSiBesoin: oui
+  
+- machine: etb1.scribe
+  methode: daily
+  configuration: domseth
+
+- machine: etb2.scribe
+  methode: daily
+  configuration: domseth
+
+tests:
+- nom: multietab-dc1
+  commandes:
+  - machine: aca.dc1
+    run: init-dc1-site-etb1et2.sh
+
+  - machine: aca.dc1
+    run: ciDiagnose
+
+  - machine: etb1.scribe
+    run: ciConfigurationEole instance domseth
+    
+  - machine: etb2.scribe
+    run: ciConfigurationEole instance domseth
+    
+    

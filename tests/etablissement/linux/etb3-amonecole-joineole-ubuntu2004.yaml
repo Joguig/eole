@@ -1,0 +1,66 @@
+description: |
+   le but de ce test est de démarrer un scribe avec les PC Ubuntu Desktop 20.04
+
+contrainte: architecture = amd64 and (version >= 2.7.2)  
+regroupement: X0
+testsOk:
+- Instance-Etb3AmonEcole
+
+contexts:
+- machine: etb3.amonecole
+  methode: instance
+  configuration: AvecImport
+  passive: oui
+
+- machine: etb3.pceleve-linux
+  modele: etb3.pceleve
+  methode: instance
+  configuration: default
+  base: linux-ubuntu-2004
+  passive: oui
+
+setUp:
+- machine: etb3.amonecole
+  run: prepare-amonecole-pour-joineole-linux.sh
+  args:
+  - "{VERSIONMAJEUR}"
+  - "PAQUET"
+  - focal
+
+tests:
+- nom: joineole
+  commandes:
+  - machine: etb3.pceleve-linux
+    run: test-joineole-linux.sh
+
+  - machine: etb3.amonecole
+    automate: pause
+    timeout: 60
+
+  - machine: etb3.amonecole
+    run: test-enregistrement-client.sh
+    args:
+    - "{ID:etb3.pceleve-linux}"
+
+  - machine: etb3.pceleve-linux
+    automate: reboot
+    
+  - machine: etb3.pceleve-linux
+    run: check-joindomain.sh
+
+  - machine: etb3.pceleve-linux
+    run: check-saltminion-veyon.sh
+
+  - machine: etb3.pceleve-linux
+    automate: screenshot
+
+  - machine: etb3.amonecole
+    run: changepasswordeole.pl
+    args:
+    - c31e1
+    - Eole12345!
+    
+  - machine: etb3.amonecole
+    run: check-login-linux.sh
+    args:
+    - "{ID:etb3.pceleve-linux}"

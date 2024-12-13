@@ -1,0 +1,28 @@
+titre: Instance Amon en etb1.amon
+status: PUBLIQUE
+description: |
+   Le but de ce test est vérifier la procédure d'instance de la machine Etb1 Amon avec MITM
+
+frequence: weekly
+contrainte: architecture = amd64 and version < 3.0 and version >= 2.8.1
+regroupement: 30
+genereImage: etb1.amon-{VERSION}-instance-mitm-{ARCHITECTURE}.vm
+
+testsOk:
+-  Instance-Etb1Scribe
+
+contexts:
+- machine: etb1.amon
+  methode: daily
+  configuration: mitm
+
+tests:
+- nom: test-01
+  commandes:
+  - run: ciConfigurationEole instance mitm
+    timeout: 1200
+  - run: mitm-verif.sh
+
+  - automate: shutdownWithSnapshot
+
+  - automate: updateTemplate

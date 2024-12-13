@@ -1,0 +1,33 @@
+heriteDe : zephir-enregistrement
+regroupement: 90
+frequence: if version > 2.6.0 then weekly else manuel
+contrainte: architecture = amd64   
+
+testsOk:
+-  Importation-Zephir
+
+contexts:
+- machine: etb1.amon 
+  methode: zephir
+  base: eole-2.4.2
+  
+- machine: etb1.scribe 
+  methode: zephir
+  base: eole-2.4.2
+
+- machine: etb1.horus 
+  methode: zephir
+  base: eole-2.4.2
+
+tests:
+- nom: test01
+  commandes:
+  - machine: etb1.amon 
+    run: ciDiagnose
+     
+  - machine: etb1.scribe 
+    run: ciDiagnose
+     
+  - machine: etb1.horus 
+    run: ciDiagnose
+  

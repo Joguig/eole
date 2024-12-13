@@ -1,0 +1,49 @@
+frequence: weekly
+status: PRODUCTION
+description: |
+   Le but de ce test est de vérifier la migration d'un Amon 2.6.2 vers la version {VERSIONMAJEUR}
+   avec la procédure 'UpgradeAuto'
+
+contrainte: version in [ 2.7.2 ]
+regroupement: 60
+
+contexts:
+- machine: etb1.amon
+  methode: instance
+  configuration: default
+  base: eole-2.6.2
+
+tests:
+- commandes:
+    - run: ciMonitor maj_auto_rc
+
+    - run: ciMonitor reconfigure
+      timeout: 1200
+
+    - run: ciExtendsLvmWithDisk100G
+      timeout: 1200
+
+    - automate: reboot
+
+    - run: do-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      timeout: 4000
+
+    - automate: reboot
+
+    - run: check-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      timeout: 1200
+
+    - run: instance-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      timeout: 1200
+
+    - run: diagnose-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      timeout: 1800
+

@@ -1,0 +1,39 @@
+16a17
+> -A PREROUTING -d 192.168.0.33/32 -i eth0 -p tcp -m tcp --dport 8787 --tcp-flags SYN,RST,ACK SYN -j DNAT --to-destination 192.0.2.51:8787
+23a25,33
+> -A PREROUTING -d 10.3.2.1/32 -i eth1 -p tcp -m tcp --dport 389 --tcp-flags SYN,RST,ACK SYN -j DNAT --to-destination 192.0.2.50:389
+> -A PREROUTING -d 10.3.2.1/32 -i eth1 -p tcp -m tcp --dport 636 --tcp-flags SYN,RST,ACK SYN -j DNAT --to-destination 192.0.2.50:636
+> -A PREROUTING -d 10.3.2.1/32 -i eth1 -p tcp -m tcp --dport 8787 --tcp-flags SYN,RST,ACK SYN -j DNAT --to-destination 192.0.2.51:8787
+> -A PREROUTING -d 10.3.2.1/32 -i eth1 -p tcp -m tcp --dport 8888 --tcp-flags SYN,RST,ACK SYN -j DNAT --to-destination 192.0.2.51:8888
+> -A PREROUTING -d 10.3.2.1/32 -i eth1 -p tcp -m tcp --dport 143 --tcp-flags SYN,RST,ACK SYN -j DNAT --to-destination 192.0.2.51:143
+> -A PREROUTING -d 10.3.2.1/32 -i eth1 -p tcp -m tcp --dport 993 --tcp-flags SYN,RST,ACK SYN -j DNAT --to-destination 192.0.2.51:993
+> -A PREROUTING -d 10.3.2.1/32 -i eth1 -p tcp -m tcp --dport 25 --tcp-flags SYN,RST,ACK SYN -j DNAT --to-destination 192.0.2.51:25
+> -A PREROUTING -d 10.3.2.1/32 -i eth1 -p tcp -m tcp --dport 465 --tcp-flags SYN,RST,ACK SYN -j DNAT --to-destination 192.0.2.51:465
+> -A PREROUTING -d 10.3.2.1/32 -i eth1 -p udp -m udp --dport 69 -j DNAT --to-destination 192.0.2.50:69
+50a61,70
+> -A FORWARD -d 192.0.2.51/32 -i eth0 -o br0 -p tcp -m tcp --dport 8787 -j ACCEPT
+> -A FORWARD -d 192.0.2.50/32 -i eth1 -o br0 -p tcp -m tcp --dport 389 -j ACCEPT
+> -A FORWARD -d 192.0.2.50/32 -i eth1 -o br0 -p tcp -m tcp --dport 636 -j ACCEPT
+> -A FORWARD -d 192.0.2.51/32 -i eth1 -o br0 -p tcp -m tcp --dport 8787 -j ACCEPT
+> -A FORWARD -d 192.0.2.51/32 -i eth1 -o br0 -p tcp -m tcp --dport 8888 -j ACCEPT
+> -A FORWARD -d 192.0.2.51/32 -i eth1 -o br0 -p tcp -m tcp --dport 143 -j ACCEPT
+> -A FORWARD -d 192.0.2.51/32 -i eth1 -o br0 -p tcp -m tcp --dport 993 -j ACCEPT
+> -A FORWARD -d 192.0.2.51/32 -i eth1 -o br0 -p tcp -m tcp --dport 25 -j ACCEPT
+> -A FORWARD -d 192.0.2.51/32 -i eth1 -o br0 -p tcp -m tcp --dport 465 -j ACCEPT
+> -A FORWARD -d 192.0.2.50/32 -i eth1 -o br0 -p udp -m udp --dport 69 -j ACCEPT
+73a94,102
+> -A adm-bas -d 192.0.2.50/32 -i eth1 -p tcp -m tcp --dport 389 --tcp-flags SYN,RST,ACK SYN -j ACCEPT
+> -A adm-bas -d 192.0.2.50/32 -i eth1 -p tcp -m tcp --dport 636 --tcp-flags SYN,RST,ACK SYN -j ACCEPT
+> -A adm-bas -d 192.0.2.51/32 -i eth1 -p tcp -m tcp --dport 8787 --tcp-flags SYN,RST,ACK SYN -j ACCEPT
+> -A adm-bas -d 192.0.2.51/32 -i eth1 -p tcp -m tcp --dport 8888 --tcp-flags SYN,RST,ACK SYN -j ACCEPT
+> -A adm-bas -d 192.0.2.51/32 -i eth1 -p tcp -m tcp --dport 143 --tcp-flags SYN,RST,ACK SYN -j ACCEPT
+> -A adm-bas -d 192.0.2.51/32 -i eth1 -p tcp -m tcp --dport 993 --tcp-flags SYN,RST,ACK SYN -j ACCEPT
+> -A adm-bas -d 192.0.2.51/32 -i eth1 -p tcp -m tcp --dport 25 --tcp-flags SYN,RST,ACK SYN -j ACCEPT
+> -A adm-bas -d 192.0.2.51/32 -i eth1 -p tcp -m tcp --dport 465 --tcp-flags SYN,RST,ACK SYN -j ACCEPT
+> -A adm-bas -d 192.0.2.50/32 -i eth1 -p udp -m udp --dport 69 -j ACCEPT
+76,78d104
+< -A adm-ext -i eth1 -o eth0 -p tcp -m state --state NEW -m tcp --dport 8500 --tcp-flags SYN,RST,ACK SYN -m set --match-set bastion-admin-exterieur-1-src src -j ACCEPT
+< -A adm-ext -i eth1 -o eth0 -p tcp -m state --state NEW -m tcp --dport 8500 --tcp-flags SYN,RST,ACK SYN -m set --match-set bastion-admin-exterieur-1-dst dst -j ACCEPT
+< -A adm-ext -i eth1 -o eth0 -p tcp -m state --state NEW -m tcp --dport 8500 --tcp-flags SYN,RST,ACK SYN -j DROP
+102a129
+> -A ext-bas -d 192.0.2.51/32 -i eth0 -p tcp -m tcp --dport 8787 --tcp-flags SYN,RST,ACK SYN -j ACCEPT

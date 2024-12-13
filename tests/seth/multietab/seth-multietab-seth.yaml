@@ -1,0 +1,122 @@
+status: DEVELOPPEMENT
+description: |
+   Le but de ce test est vérifier le DC1/FILER installé avec le module Seth et deux établissements Etb1/Etb2 avec DC Seth
+
+#frequence:
+contrainte: architecture = amd64 and version >= 2.7.1
+regroupement: 96
+
+paths:
+- tests/etablissement
+- tests/etablissement/windows
+
+testsOk:
+-  Instance-AcaDc1
+-  Instance-Etb1Amon
+
+contexts:
+- machine: aca.dc1
+  methode: instance
+  configuration: default
+  passive: oui
+  
+- machine: aca.pc
+  methode: instance
+  configuration: default
+  
+- machine: etb1.amon 
+  methode: instance
+  configuration: default
+  passive: oui
+  utiliseDerniereStableSiBesoin: oui
+  
+- machine: etb2.amon 
+  methode: instance
+  configuration: default
+  passive: oui
+  utiliseDerniereStableSiBesoin: oui
+  
+- machine: etb1.dcpedago
+  methode: daily
+  configuration: siteetb1
+  passive: oui
+
+- machine: etb2.dcpedago
+  methode: daily
+  configuration: siteetb2
+  passive: oui
+
+tests:
+- nom: dc-central
+  commandes:
+  - machine: aca.dc1
+    run: init-dc1-site-etb1et2.sh
+
+  - machine: aca.dc1
+    run: ciDiagnose
+
+- nom: console-rsat
+  commandes:
+  - machine: aca.pc
+    run: test-setdns.ps1
+    args:
+    - "domseth"
+    - "{VERSIONMAJEUR}"
+
+  - machine: aca.pc
+    run: test-joindomain.ps1
+    args:
+    - "domseth"
+    - "{VERSIONMAJEUR}"
+
+  - machine: aca.pc
+    run: prepare-autologon.ps1
+    args:
+    - "domseth"
+    - "{VERSIONMAJEUR}"
+    - "admin"
+
+  - machine: aca.pc
+    automate: reboot
+
+  # il faut laisser du temps à la GPO pour réagir
+  - machine: aca.gateway
+    automate: pause
+    timeout: 600
+
+  - machine: aca.pc
+    run: wait-event-gpo.ps1
+    timeout: 600
+    args:
+    - "domseth"
+    - "{VERSIONMAJEUR}"
+    - "admin"
+
+  - machine: aca.pc
+    run: check-joindomain.ps1
+    args:
+    - "domseth"
+    - "{VERSIONMAJEUR}"
+    - "admin"
+
+- nom: etb1
+  commandes:
+  - machine: etb1.amon
+    run: ouvre.firewall
+     
+  - machine: etb1.dcpedago
+    run: instance-site-etb.sh
+    args:
+    - "1"
+    
+- nom: etb2
+  commandes:
+  - machine: etb2.amon
+    run: ouvre.firewall
+     
+  - machine: etb2.dcpedago
+    run: instance-site-etb.sh
+    args:
+    - "2"
+    
+    

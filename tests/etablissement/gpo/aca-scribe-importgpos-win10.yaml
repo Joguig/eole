@@ -1,0 +1,98 @@
+genereImage: aca.scribe-{VERSION}-avecimport-gpos-{ARCHITECTURE}.vm
+status: DEVELOPPEMENT
+description: |
+   Le but de ce test est de vérifier l'importation de comptes dans ScribeAD avec les scripts de l'Académie de Rennes'
+   Nous vérifions que les comptes sont crées, les répertoires.
+   Sur le poste client, nous executons l'import des GPO
+
+contrainte: architecture = amd64 and version > 2.7.0
+regroupement: W0
+
+paths:
+- tests/etablissement
+- tests/etablissement/windows
+
+testsOk:
+-  Importation-AcaScribe
+
+contexts:
+- machine: aca.scribe
+  methode: instance
+  configuration: AvecImport
+  passive: oui
+
+- machine: aca.pc
+  modele: aca.pc
+  methode: instance
+  configuration: default
+  base: win10
+
+tests:
+- nom: joinad
+  commandes:
+  - machine: aca.pc
+    run: test-joindomain.ps1
+    args:
+    - "domscribe"
+    - "{VERSIONMAJEUR}"
+
+  - machine: aca.pc
+    run: prepare-autologon.ps1
+    args:
+    - "domscribe"
+    - "{VERSIONMAJEUR}"
+    - "admin"
+
+  - machine: aca.pc
+    automate: reboot
+    
+  - machine: aca.pc
+    run: check-joindomain.ps1
+    args:
+    - "domscribe"
+    - "{VERSIONMAJEUR}"
+    - "admin"
+    
+- nom: test-saltminion
+  commandes:
+  - machine: aca.scribe
+    run: test-enregistrement-client.sh
+    args:
+    - "{ID:aca.pc}"
+
+- nom: log-salt-minion
+  commandes:
+  - machine: aca.pc
+    run: test-salt-minion.ps1
+      
+  - machine: aca.pc
+    run: test-veyon.ps1
+
+- nom: import-gpo
+  commandes:
+  - machine: aca.scribe
+    run: importation-gpo.sh
+
+  - machine: aca.pc
+    run: check-joindomain.ps1
+    args:
+    - "domscribe"
+    - "{VERSIONMAJEUR}"
+    - "admin"
+    
+- nom: sauvegarde-logs
+  commandes:
+  - machine: aca.pc
+    automate: screenshot
+    
+  - machine: aca.pc
+    run: sauvegarde-logs.ps1
+    
+- nom: sauvegarde
+  commandes:
+  - machine: aca.scribe
+    automate: shutdownWithSnapshot
+    
+  - machine: aca.scribe
+    automate: updateTemplate
+

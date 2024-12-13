@@ -1,0 +1,43 @@
+FROM ubuntu-focal:latest
+
+RUN 
+         deb http://eole.ac-dijon.fr/eole eole-2.8.0 main cloud python2
+         deb http://eole.ac-dijon.fr/eole eole-2.8.0-updates main cloud python2
+         deb http://eole.ac-dijon.fr/eole eole-2.8.0-security main cloud python2
+
+RUN cat >/tmp/ <<EOF
+     -----BEGIN PGP PUBLIC KEY BLOCK-----
+     Version: GnuPG v1.4.12 (GNU/Linux)
+     
+     mQINBF4oDrUBEAC6wjbpZSi95R4o8WhjqyV3KfVtNyd/bp6kqiYodjCv0W1JwZRe
+     UwBPGmWro4QApJb5FBPscxTiqPwY+vgQWYLdVD2TBC+sQ7fRPK7LFvMdvFU1wUKw
+     HSal95SbJPhsQowQO1CCHSc5X51VGvd1FYSr4jM2AmRivYlSM1Uh3xAaQgHD4xWt
+     E38GHsfaCKFswUVQtm1QHhic7kmlf5bs4PdeizA57/jcKKhXdZOYs6faiHHUDUyw
+     hoBVCMt8ZYyGIJTaSYLM61ERUzLI1DAZwdgEgUpzW87i1fnfO5B2n7SXRqJcckZ5
+     jXs9hesQO4NYw7vB6dRO/1RI8Xmo3M4eUTFCtouqHtcPvW5UF1/yycdV8fhBll7q
+     YL3r6UoZQ/B7e7PDb/zeAT2WmYeUt8OYUrgjbb69msxyPEA862BtSp7PEeWnpBII
+     1OWXOnSD/vA32fjRjr70nO3aOrJXQTybouRy448KfZfFQ+pAqDXUmgYKKZfHmfpl
+     5dWslshv0PyH4WEG6Vg6D8sAPGsWWBjmZuuCacUs1JFCJcpDhSYD+3r4AZ3MW/Pf
+     ucnYXHalSCyxDayjWYhLNe8cJYLgEWfOkxLnYCTt83dDkOfwq48PWz4oTPgrbEE5
+     +4gZmfsBJd5FHDINvyzZXigXZa6Y1AD8gm9qt4dOsquSRsqvv0dKAGp5kwARAQAB
+     tEpFT0xFIFJlcG9zaXRvcnkgKEVPTEUgMi44L0ZvY2FsIEZvc3NhKSA8cmVwb3Np
+     dG9yeUBsaXN0ZXNlb2xlLmFjLWRpam9uLmZyPokCPQQTAQoAJwUCXigOtQIbAwUJ
+     Fo5qAAULCQgHAwUVCgkICwUWAgMBAAIeAQIXgAAKCRBJZFnxtbQfS6kNEACkwM/L
+     R/9SL3FZo0d088cnzDae0YE1nOqmcTQrL6yBtOzUDgv4+4klufh8R7lMIMxE93kl
+     W7RZomefYZFPjg8vVCcCPVcUT9cqgzuBhEhIDeVeZA+y4YTX03UGRK41aZggA5+1
+     cfsxKBDCThjhstenRuG89nk17G78S3Bb8XHAPp9XYN1bDFWT4nRC6bqsSOOeyZzV
+     7CTB5Vky96MrT3XOSuVY6BfDp+nwjq3jLKvEF3sN+jW/2PnulpDX1ziI9qZi8BKJ
+     NxKKMq907puFAhL1NZH9O4Fcx8xoU1osV77c2u0NyyNg+TeaDmKwMobRWHxtHJvu
+     v0M0JX0tcDBW3pf4/hn8f1rGWEC/l6LtoCWMCFLrpLQXXSZ1816NaDv3S3Ph/WM9
+     2pJbVmhDkU3enC3tjU+YWf2SeXTTqLATovn3d8rV8Y/YXeiadYFv9fvvtlCu1Mcr
+     /u5Hjo/ONcK6mqFc7RzJ/fZvOmqrS/nIyjhoqStyzD7w8kzyYh2GhV/PTs2oZf1y
+     5FRdgFrdEqn33+mB7hamY20rqQZAal2aVtNPEjoZGEmdw/VmiPeUkTQvC4pS107z
+     dUoZycSFVuPhf/LQKvNoUpjj89oUa8WzvX+TwtmIjNrhAaTrowZO9Ojx5C/icpTG
+     fdhuMHamnbp+AA9zLs+xpBvm3FmLCiZl/RG1bw==
+     =gKRe
+     -----END PGP PUBLIC KEY BLOCK-----
+EOF
+
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install eole-archive-keyring eole-sso
+

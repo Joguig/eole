@@ -1,0 +1,22 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la gestion des mots de passe AD sur ScribeAD
+
+contrainte: architecture = amd64 and version > 2.7.1
+regroupement: 96
+
+testsOk:
+-  Instance-AcaScribe
+
+contexts:
+- machine: aca.scribe
+  methode: avecimport
+  configuration: default
+
+tests:
+- nom: pso-scribead
+  commandes:
+  - machine: aca.scribe
+    run: check-pso.sh
+
+    

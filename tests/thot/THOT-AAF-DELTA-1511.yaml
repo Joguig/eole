@@ -1,0 +1,32 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure d'import AAF Complet sur Thot
+
+frequence: if version < 2.7.2 then manuel
+contrainte: architecture = amd64 and version > 2.6.1
+regroupement: 94
+
+testsOk:
+-  Instance-AcaThot
+  
+contexts:
+- machine: aca.thot 
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test-aaf-delta-1511
+  commandes:
+  - run: run-aaf-complet.sh
+    args:
+    - aaf-VE1512/complet
+    - DUPONT
+    - OUI
+    
+  - run: check-aaf-complet-1511.sh
+  
+  - run: run-aaf-delta.sh
+    args:
+    - aaf-VE1512/delta
+    - DUPONT
+    - OUI

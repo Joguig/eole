@@ -1,0 +1,43 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la synchronisation Scribe vers Seth (cas CD73)
+
+frequence: weekly
+contrainte: architecture = amd64 and version >= 2.7.2
+regroupement: 96
+
+paths:
+- tests/importation
+
+testsOk:
+-  Instance-Etb1Scribe
+-  Instance-AcaDc1
+
+contexts:
+- machine: etb1.seth1
+  methode: instance
+  configuration: default
+
+- machine: etb1.scribe
+  methode: daily
+  configuration: eolead
+
+tests:
+- nom: etb1-t01-002-a
+  commandes:
+  - machine: etb1.seth1
+    run: prepare-seth1-eolead.sh
+
+  - machine: etb1.scribe
+    run: prepare-scribe-eolead.sh
+    args:
+    - eolead
+
+  - machine: etb1.scribe
+    run: importation_envole_eleves_et_responsables.sh
+
+  - machine: etb1.scribe
+    run: importation_envole_professeurs_et_administratifs.sh
+
+  - machine: etb1.scribe
+    run: ciDiagnose

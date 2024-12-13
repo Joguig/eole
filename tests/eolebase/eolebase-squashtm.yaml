@@ -1,0 +1,41 @@
+status: PRODUCTION
+description: |
+   le but de ce test est de vérifier la reconstruction de SquashTm à partir 
+   de la derniére sauvegarde. La nouvelle version de squash 6.0.0 s il y a lieu 
+   sera utilisée. L'image générée sera donc une migration de la bd squash  
+
+#frequence:
+contrainte: architecture is amd64 and version = 2.9.0 
+regroupement: 91
+genereImage: aca.eolebase-{VERSION}-avecimport-squashtm-{ARCHITECTURE}.vm
+
+contexts:
+- machine: aca.eolebase
+  methode: instance
+  configuration: default
+  memoire: 4096
+
+tests:
+- nom: eolebase-squash-tm
+  commandes:
+  - run: |
+      cd /mnt/eole-ci-tests/configuration/squashtm/
+      bash ./squash-tm-backup-from-jenkins.sh
+
+  - run: |
+      cd /mnt/eole-ci-tests/configuration/squashtm/
+      bash ./squash-tm-install-sur-eolebase-290-targz.sh
+
+  - timeout: 2400 
+    run: |
+      cd /mnt/eole-ci-tests/configuration/squashtm/
+      bash ./squash-tm-recreate-290-targz.sh
+
+  - run: |
+      cd /mnt/eole-ci-tests/configuration/squashtm/
+      bash ./squash-tm-patch-to-new-version-290-targz.sh
+    
+  - automate: shutdownWithSnapshot
+  
+  - automate: updateTemplate    
+    args: ['aca.squashtm-6.0.0.vm']

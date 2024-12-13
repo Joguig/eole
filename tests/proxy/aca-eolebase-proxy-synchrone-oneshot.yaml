@@ -1,0 +1,72 @@
+#frequence: manuel
+description: |
+   le but de ce test est de démarrer un Eolebase+eole-proxy + scribe + les PC
+
+contrainte: architecture = amd64 and (version >= 2.8.1)
+regroupement: 99
+
+testsOk:
+-  Importation-AcaScribe
+
+contexts:
+- machine: aca.scribe
+  methode: instance
+  configuration: AvecImport
+
+- machine: aca.gateway
+  methode: instance
+  configuration: domscribe
+  depends:
+    - depend: scribe
+      required: oui
+
+- machine: aca.proxy
+  methode: instance
+  configuration: default
+  memoire: 8192
+
+- modele: aca.pc
+  methode: instance
+  configuration: default
+  memoire: 8192
+  base: linux-mate-2204
+
+setUp:
+# je déclare l'entrée Salt dans le dnsmasq de la gateway pour les postes non intégrés 
+- machine: aca.gateway
+  run: |
+        # verification
+        dig @192.168.0.30 salt.domscribe.ac-test.fr
+        #echo "192.168.0.26 salt" >/etc/dnsmasq-hostsdir/salt.conf
+        #echo "dhcp-option=net:actest,option:dns-server,192.168.0.30" >/etc/dnsmasq.d/dhcp_domseth.conf
+        #systemctl reload dnsmasq.service
+        # verification
+        dig +short salt
+
+tests:
+- nom: install-eolebase-proxy
+  commandes:
+  - machine: aca.proxy
+    run: enregistrement-amon-si-besoin.sh
+    args:
+    - "{VERSIONMAJEUR}"
+
+  - machine: aca.proxy
+    run: init-proxy.sh
+
+  - machine: aca.pc
+    run: prepare-charge-proxy.sh
+
+- nom: oneshot-synchrone
+  commandes:
+  - machine: aca.pc
+    run: test-charge-proxy.sh
+    args:
+    - "oneshot"
+    - "synchrone"
+
+- nom: export_status
+  commandes:
+  - machine:  aca.proxy
+    run: export-fin-proxy.sh
+    

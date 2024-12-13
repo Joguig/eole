@@ -1,0 +1,45 @@
+titre: FogServer en etb1
+status: PUBLIQUE
+description: |
+   Le but de ce test est vérifier la machine Etb1 FOG SERVER. 
+   Le fogserver est dans la PEDAGO. 
+
+#frequence:
+contrainte: architecture = amd64
+regroupement: 98
+
+testsOk:
+-  Instance-Etb1Amon
+-  Instance-Etb1Scribe
+-  Instance-Etb1FogServer
+
+contexts:
+- machine: etb1.fogserver
+  methode: instance
+  configuration: default
+
+- machine: etb1.client-pxe
+
+setUp:
+- machine: etb1.amon
+  run: prepare-amon-pour-fogserver.sh
+  args:
+  - "{VERSIONMAJEUR}"
+
+# le parametre doit correspondre à la version de l'éclair !
+- machine: etb1.scribe
+  run: init-scribe-fogserver.sh
+  args:
+  - "{VERSIONMAJEUR}"
+
+tests:
+- nom: prepare-images
+  commandes:
+  - run: init_fogserver.sh
+    machine: etb1.fogserver
+    
+- nom: demarre-client
+  commandes:
+  - automate: reboot
+    machine: etb1.client-pxe
+

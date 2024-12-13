@@ -1,0 +1,88 @@
+genereImage: aca.scribe-{VERSION}-instance-AvecImport-{ARCHITECTURE}.vm
+status: PUBLIQUE
+description: |
+   Le but de ce test est de vérifier l'importation de comptes dans Scribe.
+   Nous vérifions que les comptes sont crées, les répertoires, et mails.
+   Nous créons les niveaux, classes, eleves, professeurs, et administratifs 
+
+#frequence: |
+#    if version in [ 2.4.2, 2.5.1 ] then manuel,
+#    if version DEV then daily
+    
+contrainte: architecture = amd64 
+regroupement: 31
+
+testsOk:
+-  Instance-AcaScribe
+
+contexts:
+- machine: aca.scribe
+  methode: instance
+  configuration: default
+
+tests:
+- nom: importation
+  commandes:
+  - run: importation_envole_eleves_et_responsables.sh
+    machine: aca.scribe
+
+  - run: importation_envole_professeurs_et_administratifs.sh
+    machine: aca.scribe
+
+  - run: importation_yoyo_eleves.sh
+    machine: aca.scribe
+
+  - run: importation_yoyo_professeurs.sh
+    machine: aca.scribe
+
+  - run: importation_be1d_eleves.sh
+    machine: aca.scribe
+
+- nom: controle
+  commandes:
+  - run: check-importation-compte.sh
+    machine: aca.scribe
+    args:
+    - eleves
+    - 6a.01
+    - "6a,n6"
+
+  - run: check-importation-compte.sh
+    machine: aca.scribe
+    args:
+    - personnels
+    - profpo
+
+  - run: check-importation-compte.sh
+    machine: aca.scribe
+    args:
+    - eleves
+    - c31e1
+    - "3eme,c31"
+
+  - run: check-importation-compte.sh
+    machine: aca.scribe
+    args:
+    - personnels
+    - prof1
+
+  - run: check-importation-compte.sh
+    machine: aca.scribe
+    args:
+    - eleves
+    - elina.tjalve
+    - "ce2,cycle3"
+
+  - machine: aca.scribe
+    run: |
+         find /home >/tmp/liste_apres.txt
+         echo "***************** DIFFERENCE REPERTOIRES *****************"
+         diff /tmp/liste_avant.txt /tmp/liste_apres.txt
+         echo "**********************************************************"
+
+  - automate: shutdownWithSnapshot
+    machine: aca.scribe
+
+  - automate: updateTemplate
+    machine: aca.scribe
+

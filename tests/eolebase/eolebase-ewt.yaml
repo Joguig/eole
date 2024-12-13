@@ -1,0 +1,36 @@
+status: DEVELOPPEMENT
+description: |
+   le but de ce test est de vérifier le fonctionnement de Ewt 
+
+#frequence:
+contrainte: architecture is amd64 and version latest 
+regroupement: 91
+
+contexts:
+- machine: aca.eolebase
+  methode: instance
+  configuration: default
+  passive: oui
+
+- machine: aca.pc-linux
+  modele: aca.pc
+  base: linux
+  methode: instance
+  configuration: default
+  passive: oui
+
+setUp:
+- machine: aca.eolebase
+  run: activer-ead3.sh
+- machine: aca.pc-linux
+  run: prepare-pc-genconfig.sh
+
+tests:
+- nom: test-ewt
+  commandes:
+  - run: test-ewt.sh
+    machine: aca.pc-linux 
+    
+tearDown:    
+- machine: aca.pc-linux
+  automate: shutdownHard

@@ -1,0 +1,40 @@
+regroupement: 99
+heriteDe : etb1-001
+frequence: if version < 2.6.1 then manuel
+contrainte: architecture = amd64 and (version >= 2.5.2)  
+
+testsOk:
+-  Instance-Etb1Scribe
+
+contexts:
+- machine: aca.eolecitests
+  methode: instance
+  configuration: default
+  passive: oui
+
+- machine: etb1.eolecitestsdmz
+  methode: instance
+  configuration: default
+  passive: oui
+  
+- machine: etb1.eolecitestspedago
+  methode: instance
+  configuration: default
+  passive: oui
+  
+tests:
+- nom: proxy-depuis-internet
+  commandes:
+  - machine: aca.eolecitests
+    run: check-proxy.sh
+
+- nom: proxy-depuis-dmz
+  commandes:
+  - machine: etb1.eolecitestsdmz
+    run: check-proxy.sh
+    
+- nom: proxy-depuis-pedago
+  commandes:
+  - machine: etb1.eolecitestspedago
+    run: check-proxy.sh
+    

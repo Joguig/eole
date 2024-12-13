@@ -1,0 +1,23 @@
+titre: Instance eolebase en aca.eolebase
+status: PUBLIQUE
+
+description: |
+   Le but de ce test est vérifier la procédure d'instance du module Eolebase 
+
+#frequence:
+contrainte: architecture = amd64 and version < 3.0
+regroupement: 30
+genereImage: aca.eolebase-{VERSION}-instance-default-{ARCHITECTURE}.vm
+
+contexts:
+- machine: aca.eolebase 
+  methode: daily
+  configuration: default
+
+tests:
+- nom: test-01
+  commandes:
+  - run: ciInstanceDefault
+  - automate: shutdownWithSnapshot
+  - automate: updateTemplate
+  

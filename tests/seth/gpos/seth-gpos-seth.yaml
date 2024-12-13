@@ -1,0 +1,23 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la gestion des mots de passe AD sur Seth 
+
+contrainte: architecture = amd64 and version >= 2.8.1
+regroupement: 96
+
+testsOk:
+-  Instance-AcaDc1
+
+contexts:
+- machine: aca.dc1 
+  methode: avecimport
+  configuration: default
+  
+tests:
+- nom: pso-dc1
+  commandes:
+  - machine: aca.dc1
+    run: check-gpos.sh
+
+    
+    

@@ -1,0 +1,47 @@
+#genereImage: etb1.scribe- "{VERSIONMAJEUR}"u2.4.2-default-{ARCHITECTURE}.vm
+frequence: weekly
+status: PRODUCTION
+description: |
+   Le but de ce test est de vérifier la migration d'un Scribe 2.4.2 vers la version {VERSIONMAJEUR} 
+   avec la procédure 'UpgradeAuto'
+
+contrainte: version in [ 2.5.1, 2.5.2 ]
+regroupement: 60
+
+contexts:
+- machine: etb1.scribe 
+  methode: instance
+  configuration: default
+  base: eole-2.4.2
+  
+tests:
+- commandes:
+    - run: ciMonitor maj_auto_rc
+      machine: etb1.scribe
+
+    - run: ciMonitor reconfigure
+      machine: etb1.scribe
+
+    - automate: reboot
+      machine: etb1.scribe
+    
+    - run: ciMonitor upgrade_auto
+      args:
+      - "{VERSIONMAJEUR}"
+      machine: etb1.scribe
+      timeout: 3600
+    
+    - automate: reboot
+      machine: etb1.scribe
+    
+    - run: check-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+    
+    - run: instance-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+    
+    - run: diagnose-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"

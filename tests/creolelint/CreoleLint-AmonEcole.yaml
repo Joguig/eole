@@ -1,0 +1,31 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier les dicos et template du module Amonecole
+   en executant la commande 'creolelint'
+
+frequence: if version = 2.6.1 then manuel
+contrainte: ( architecture = amd64 ) and version < 3.0
+regroupement: 51
+testsOk:
+-  Instance-Etb3AmonEcole
+
+contexts:
+- machine: etb3.amonecole
+  methode: instance
+  configuration: default
+  passive: oui
+
+tests:
+- nom: maj-auto
+  commandes:
+  - run: ciMajAuto
+    timeout: 1200
+
+- nom: creole-lint
+  commandes:
+#  - run: sed -i -e "s/#parse_message/parse_message/" /usr/lib/python2.7/dist-packages/creole/lint/parsetemplate.py
+
+  - run: cp ./9*_amonecole.xml /usr/share/eole/creole/dicos
+
+  - run: ciRunPython /usr/bin/CreoleLint
+    timeout: 8000

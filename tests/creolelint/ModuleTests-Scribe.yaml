@@ -1,0 +1,21 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est de lancer les test unitaires du module Scribe
+   en executant la commande 'apt-get install <module>-test' et 'py.test'
+
+#frequence:
+contrainte: ( architecture = amd64 ) and version < 3.0
+regroupement: 52
+testsOk:
+- Importation-Etb1Scribe
+
+contexts:
+- machine: etb1.scribe
+  methode: instance
+  configuration: AvecImport
+
+tests:
+- nom: module-test
+  commandes:
+  - run: run-module-tests.sh
+    timeout: 1000

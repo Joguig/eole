@@ -1,0 +1,45 @@
+status: DEVELOPPEMENT
+frequence: manuel
+description: |
+   le but de ce test est de vérifier le fonctionnement de l'action DHCP dans l'EAD3
+
+regroupement: 93
+testsOk:
+-  Instance-Etb1Amon
+-  Instance-Etb1Scribe
+
+contexts:
+- machine: etb1.amon
+  methode: instance
+  configuration: default
+  passive: oui
+  utiliseDerniereStableSiBesoin: oui
+
+- machine: etb1.scribe
+  methode: instance
+  configuration: AvecImport
+  passive: oui
+
+- machine: aca.robot
+  methode: instance
+  configuration: default
+  passive: oui
+
+- machine: etb1.pceleve
+  base: linux
+  methode: instance
+  configuration: default
+  passive: oui
+
+setUp:
+- machine: etb1.amon
+  run: enregistrement-amon-si-besoin.sh
+  args:
+  - "{VERSIONMAJEUR}"
+
+tests:
+- nom: dhcp-001-install
+  commandes:
+  - machine: aca.robot
+    run: run-robot-dhcp.sh
+

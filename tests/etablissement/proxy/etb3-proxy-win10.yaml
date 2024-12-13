@@ -1,0 +1,30 @@
+regroupement: W0
+frequence: if version in [ 2.5.2 ] then manuel
+contrainte: architecture = amd64 and (version >= 2.7.0)  
+
+contexts:
+- machine: etb3.amonecole 
+  methode: instance
+  configuration: default
+  
+- machine: etb3.eolecitestspedago
+  methode: instance
+  configuration: default
+  passive: oui
+  
+- machine: etb3.pceleve-10
+  modele: etb3.pceleve
+  methode: instance
+  configuration: default
+  base: win10
+  passive: oui
+  
+tests:
+- nom: proxy-win-pedago
+  commandes:
+  - machine: etb3.pceleve-10
+    run: test-proxy-configuration.ps1
+    args:
+    - "etb3"
+    - "{VERSIONMAJEUR}"
+

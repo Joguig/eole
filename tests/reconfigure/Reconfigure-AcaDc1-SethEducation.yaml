@@ -1,0 +1,19 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est de vérifier 'reconfigure' et 'diagnose' du module Seth Education
+
+contrainte: ( architecture = amd64 ) and version > 2.7.1 and version < 3.0
+regroupement: SE 
+
+testsOk:
+-  Instance-AcaDc1-SethEducation
+
+contexts:
+- machine: aca.dc1 
+  methode: instance
+  configuration: setheducation
+
+tests:
+- nom: reconfigure-test
+  commandes:
+  - run: run-reconfigure-tests.sh

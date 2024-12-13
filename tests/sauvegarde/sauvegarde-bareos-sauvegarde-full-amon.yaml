@@ -1,0 +1,58 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure de sauvegarde Bareos sur Amon
+
+frequence: if version < 2.8.0 then manuel
+contrainte: architecture = amd64 and version > 2.5.1  and version < 3.0
+regroupement: 70
+
+testsOk:
+-  Instance-Etb1Amon
+
+contexts:
+- machine: etb1.amon 
+  methode: instance
+  configuration: default
+
+- machine: etb1.eolecitestsdmz 
+  methode: instance
+  configuration: default
+
+tests:
+- nom: amon-bareos-001
+  commandes:
+  - machine: etb1.amon
+    run: run-bareos-sauvegarde-complete.sh
+    args:
+    - 3
+    - LOCAL
+    timeout: 1200
+
+- nom: amon-bareos-002
+  commandes:
+  - machine: etb1.amon
+    run: run-bareos-sauvegarde-complete.sh
+    args:
+    - 6
+    - USB
+    timeout: 1200
+
+- nom: amon-bareos-003
+  commandes:
+  - machine: etb1.eolecitestsdmz
+    run: samba-eolecitest.sh
+    args:
+    - "--check-acces"
+    - 10.1.3.253 
+      
+  # la machine eolecitestsadmin s'appelle EOLECITEST
+  - machine: etb1.amon
+    run: run-bareos-sauvegarde-complete.sh
+    args:
+    - 9
+    - SMB
+    - eolecitest
+    - 10.1.3.253
+    - sauvegardes
+    timeout: 1200
+    

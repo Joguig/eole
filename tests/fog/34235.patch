@@ -1,0 +1,24 @@
+diff --git a/postservice/99-install-fog b/postservice/99-install-fog
+index 79c9c1c..a3be748 100755
+--- a/postservice/99-install-fog
++++ b/postservice/99-install-fog
+@@ -3,8 +3,8 @@
+ . /usr/lib/eole/ihm.sh
+ 
+ FOG_INSTALLER_DIR=/opt/fog_installer
+-FOG_VERSION="1.5.9"
+-FOG_MD5="6b0ec40db0225759bea81f037fad1506"
++FOG_VERSION="dev-branch"
++FOG_MD5="c7b480554bc3e441f8621836aae00fd6"
+ 
+ download_source(){
+     rm -rf ${FOG_INSTALLER_DIR}
+@@ -34,7 +34,7 @@ download_source(){
+ _install(){
+     if [ $(CreoleGet activer_proxy_client) = "oui" ]; then
+         PROXY="$(CreoleGet proxy_client_adresse):$(CreoleGet proxy_client_port)"
+-        sed -i "s/curl --silent/curl -x ${PROXY} --silent/" ${FOG_INSTALLER_DIR}/fogproject-${FOG_VERSION}/lib/common/functions.sh
++        sed -i -e "s/curl --silent/curl -x ${PROXY} --silent/" -e 's,https://github.com/FOGProject/fos/releases/latest/download,https://github.com/FOGProject/fos/releases/download/20220416,' ${FOG_INSTALLER_DIR}/fogproject-${FOG_VERSION}/lib/common/functions.sh
+     fi
+     ${FOG_INSTALLER_DIR}/fogproject-${FOG_VERSION}/bin/installfog.sh -y > ${FOG_INSTALLER_DIR}/installer.log
+ }

@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "* Vérification eole-seth-aaf"
+if ! dpkg -l eole-seth-aaf
+then
+    #ciSignalAlerte "Le paquet eole-seth-aaf n'est pas installé"
+    #exit 1
+    echo "* Installation eole-seth-aaf"
+    ciAptEole eole-seth-aaf
+    ciMonitor reconfigure
+fi
+exit 0

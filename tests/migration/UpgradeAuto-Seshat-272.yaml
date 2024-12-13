@@ -1,0 +1,41 @@
+frequence: weekly
+status: PRODUCTION
+description: |
+   Le but de ce test est de vérifier la migration d'un Seshat 2.7.2 vers la version {VERSIONMAJEUR}
+
+contrainte: version in [ 2.8.0, 2.8.1 ]
+regroupement: 60
+
+contexts:
+- machine: aca.seshat
+  methode: instance
+  configuration: default
+  base: eole-2.7.2
+
+tests:
+- commandes:
+    - run: ciMonitor maj_auto_rc
+      timeout: 1200
+
+    - run: ciMonitor reconfigure
+
+    - automate: reboot
+    
+    - run: do-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      timeout: 3600
+
+    - automate: reboot
+    
+    - run: check-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+
+    - run: instance-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+    
+    - run: diagnose-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"

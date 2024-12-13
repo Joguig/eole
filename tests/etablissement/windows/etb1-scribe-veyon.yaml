@@ -1,0 +1,171 @@
+description: |
+   le but de ce test est de démarrer un scribe avec les PC Win 7, PC Win 10, PC Win 10 prev, PC Win 11
+   Les classer dans une UO
+
+contrainte: architecture = amd64 and (version >= 2.8.1)  
+regroupement: W0
+testsOk:
+- Instance-Etb1Amon
+- Instance-Etb1Scribe
+
+contexts:
+- machine: etb1.amon 
+  methode: instance
+  configuration: default
+  passive: oui
+  utiliseDerniereStableSiBesoin: oui
+  
+- machine: etb1.scribe
+  methode: instance
+  configuration: AvecImport
+  passive: oui
+
+- machine: etb1.eolecitestspedago
+  methode: instance
+  configuration: default
+  passive: oui
+  
+- machine: etb1.pceleve-11
+  modele: etb1.pceleve
+  methode: instance
+  configuration: default
+  base: win11
+
+- machine: etb1.pceleve-10
+  modele: etb1.pceleve
+  methode: instance
+  configuration: default
+  base: win-10.22H2
+
+- machine: etb1.pceleve-10prev
+  modele: etb1.pceleve
+  methode: instance
+  configuration: default
+  base: win-10.22H2
+
+setUp:
+- machine: etb1.amon
+  run: enregistrement-amon-si-besoin.sh
+  args:
+  - "{VERSIONMAJEUR}"
+
+tests:
+- nom: configure-ou
+  commandes:
+  - machine: etb1.scribe
+    run: check-ou-basique.sh
+    # check-ou-basique.sh positionne veyon_computer_organization_type=ou et fait un reconfigure !
+
+- nom: test-10
+  commandes:
+  # avant le test joineole.exe, car je ne maitrise pas le moment du reboot!
+  - machine: etb1.pceleve-10
+    run: prepare-autologon.ps1
+    args:
+    - "dompedago"
+    - "{VERSIONMAJEUR}"
+    - "admin"
+
+  - machine: etb1.pceleve-10
+    run: test-joineole-271.ps1
+
+  - machine: etb1.pceleve-10
+    automate: reboot
+    
+  - machine: etb1.scribe
+    run: test-enregistrement-client.sh
+    args:
+    - "{ID:etb1.pceleve-10}"
+    # la machine doit avoir rebootée pendant le pretty print !
+
+  - machine: etb1.pceleve-10
+    run: test-salt-minion.ps1
+
+- nom: test-10prev
+  commandes:
+  - machine: etb1.pceleve-10prev
+    run: prepare-autologon.ps1
+    args:
+    - "dompedago"
+    - "{VERSIONMAJEUR}"
+    - "prof2"
+
+  - machine: etb1.pceleve-10prev
+    run: test-joineole-271.ps1
+
+  - machine: etb1.pceleve-10prev
+    automate: reboot
+    
+  - machine: etb1.scribe
+    run: test-enregistrement-client.sh
+    args:
+    - "{ID:etb1.pceleve-10prev}"
+    # la machine doit avoir rebootée pendant le pretty print !
+    
+  - machine: etb1.pceleve-10prev
+    run: test-salt-minion.ps1
+  
+- nom: test-11
+  commandes:
+  - machine: etb1.pceleve-11
+    run: prepare-autologon.ps1
+    args:
+    - "dompedago"
+    - "{VERSIONMAJEUR}"
+    - "prof1"
+
+  - machine: etb1.pceleve-11
+    run: test-joineole-271.ps1
+
+  - machine: etb1.pceleve-11
+    automate: reboot
+    
+  - machine: etb1.scribe
+    run: test-enregistrement-client.sh
+    args:
+    - "{ID:etb1.pceleve-11}"
+    # la machine doit avoir rebootée pendant le pretty print !
+    
+  - machine: etb1.pceleve-11
+    run: test-salt-minion.ps1
+  
+- nom: classement-ou
+  commandes:
+  - machine: etb1.scribe
+    run: |
+        echo "* state.apply ad.join"
+        salt '*' state.apply ad.join
+
+  - machine: etb1.scribe
+    run: |
+        echo "* relance classement"
+        source check-ou-basique.sh
+        doTest
+        
+        echo "* state.apply eole-workstation.veyon"
+        salt '*' state.apply eole-workstation.veyon
+
+- nom: veyon
+  commandes:
+  - machine: etb1.pceleve-10
+    run: test-veyon.ps1
+    args:
+    - "dompedago"
+    - "{VERSIONMAJEUR}"
+
+  - machine: etb1.pceleve-10prev
+    run: test-veyon.ps1
+    args:
+    - "dompedago"
+    - "{VERSIONMAJEUR}"
+
+  - machine: etb1.pceleve-11
+    run: test-veyon.ps1
+    args:
+    - "dompedago"
+    - "{VERSIONMAJEUR}"
+
+- nom: test-ecostation
+  commandes:
+  - machine: etb1.scribe
+    run: check-ecostations.sh

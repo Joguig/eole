@@ -1,0 +1,94 @@
+status: DEVELOPPEMENT
+description: |
+   Le but de ce test est vérifier le ADWindows2012/DC2/FILER installé avec le module Seth
+
+#frequence:
+contrainte: architecture = amd64 and version >= 2.7.0
+regroupement: 96
+
+paths:
+- tests/seth
+
+contexts:
+- machine: aca.WindowsServerAD
+  base: w2012R2
+  methode: instance
+  configuration: default
+  passive: oui
+  
+- machine: aca.dc2
+  methode: daily
+  configuration: wsad
+  passive: oui
+
+- machine: aca.file
+  methode: daily
+  configuration: wsad
+  passive: oui
+
+tests:
+- nom: seth-002-dc2
+  commandes:
+  - machine: aca.WindowsServerAD
+    run: |
+       #Convert the password to secure string.
+       $NewPwd = ConvertTo-SecureString 'Eole12345!' -AsPlainText -Force
+       #Assign the new password to the user.
+       Set-ADAccountPassword Administrateur -NewPassword $NewPwd -Reset
+       #Disable change password at next logon.
+       Set-ADUser -Identity Administrateur -ChangePasswordAtLogon $false
+       #
+       New-AdGroup -Name "GpoAdmins" -GroupScope Global
+       Add-ADGroupMember -Identity "Admins du domaine" -Members "GpoAdmins" -ErrorAction Stop
+
+  - machine: aca.dc2
+    run: |
+        # attente dc1 !
+        sleep 200
+        ciGetNamesInterfaces
+        ciPingHost 192.168.0.73 "$VM_INTERFACE0_NAME"
+        echo "* net rpc info"
+        net rpc info -U "Administrateur%Eole12345!" -I 192.168.0.73
+        echo "* samba-tool domain info"
+        samba-tool domain info 192.168.0.73
+
+  - machine: aca.dc2
+    run: ciConfigurationEole instance wsad
+
+  - machine: aca.dc2
+    run: ciDiagnose
+
+  - machine: aca.dc2
+    run: checkAD.sh
+    args:
+    - "yes"
+    - "NO_UPDATE"
+    - "WSAD"
+
+  - machine: aca.dc2
+    run: test_ldb.sh
+    args:
+    - "wsad"
+
+  - machine: aca.dc2
+    run: checkSmbConf.sh
+
+- nom: seth-002-file
+  commandes:
+  - machine: aca.file
+    run: |
+        echo '[ { "tag": "addc_0008", "action": "Administrateur" }, { "tag": "addc_0009", "action": "Eole12345!" } ]' >/root/unattended.eol
+        ciConfigurationEole instance wsad
+
+  - machine: aca.file
+    run: ciDiagnose
+    
+  - machine: aca.file
+    run: checkAD.sh
+    args:
+    - "yes"
+    - "NO_UPDATE"
+    - "WSAD"
+
+  - machine: aca.file
+    run: checkSmbConf.sh

@@ -1,0 +1,19 @@
+heriteDe : zephir-enregistrement
+regroupement: 90
+frequence: manuel
+contrainte: architecture = amd64 and version >= 2.7.0
+
+testsOk:
+-  Importation-Zephir
+
+contexts:
+- machine: etb1.amon
+  methode: zephir
+  base: eole-2.7.0
+
+tests:
+- nom: test01
+  commandes:
+  - machine: etb1.amon
+    run: ciDiagnose
+    timeout: 1200

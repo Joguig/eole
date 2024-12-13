@@ -1,0 +1,65 @@
+actif: oui
+titre: Vérifier le fonctionnement des règles exceptions Amon
+frequence: weekly
+regroupement: 60
+
+contrainte: architecture = amd64 and (version = 2.4.1)  
+testsOk:
+-  Instance-Etb1Amon
+
+contexts:
+- machine: etb1.amon
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test-am-t02-004-pas0
+  commandes:
+  - run: init-tests-bastion.sh
+
+- nom: test-am-t02-004-pas2
+# Exception de destination sur extérieur -> admin port 8500
+  commandes:
+  - run: run-test-bastion.sh
+    args:
+    - AM-T02-004_pas2 
+  
+- nom: test-am-t02-004-pas3
+# Exception de destination sur extérieur -> admin avec inversion de la politique par défaut port 8500
+  commandes:
+  - run: run-test-bastion.sh
+    args:
+    - AM-T02-004_pas3 
+
+- nom: test-am-t02-004-pas4
+# Exception de destination sur extérieur -> admin avec inversion de la politique par défaut port 8500
+  commandes:
+  - run: run-test-bastion.sh
+    args:
+    - AM-T02-004_pas4 
+
+- nom: test-am-t02-004-pas5
+  commandes:
+  - run: run-test-bastion.sh
+    args:
+    - AM-T02-004_pas5 
+
+- nom: test-am-t02-004-pas6
+# Redirection de port 8500 vers 8600
+  commandes:
+  - run: run-test-bastion.sh
+    args:
+    - AM-T02-004_pas6 
+
+- nom: test-am-t02-004-pas7
+  commandes:
+  - run: run-test-bastion.sh
+    args:
+    - AM-T02-004_pas7 
+
+- nom: test-am-t02-004-pas8
+# Ajout d'une exception IP 'ac-dijon' pour 8500
+  commandes:
+  - run: run-test-bastion.sh
+    args:
+    - AM-T02-004_pas8 

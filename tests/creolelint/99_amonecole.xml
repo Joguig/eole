@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<creole>
+    <files/>
+    <variables>
+        <family name='general'>
+            <!-- optimisation générale -->
+            <variable name='nombre_interfaces' redefine='True' hidden='True'>
+                <value>2</value>
+            </variable>
+            <!-- optimisations pour common-squid2.conf -->
+            <!--<variable name='activer_cache_pere' redefine='True' hidden='True'>
+                <value>non</value>
+            </variable>-->
+            <variable name='activer_cache_pere_zone' redefine='True' hidden='True'>
+                <value>non</value>
+            </variable>
+            <variable name='activer_proxy_refresh_pattern' redefine='True' hidden='True'>
+                <value>non</value>
+            </variable>
+            <!-- optimisations pour ead.cfg -->
+            <variable name='activer_ead_reverseproxy' redefine='True' hidden='True'>
+                <value>non</value>
+            </variable>
+            <!-- optimisations pour nginx.default -->
+            <variable name='activer_nginx_web' redefine='True' hidden='True' remove_condition='True'>
+                <value>non</value>
+            </variable>
+            <variable name='activer_ejabberd' redefine='True' hidden='True' remove_condition='True'>
+                <value>non</value>
+            </variable>
+            <variable name='activer_revprox_ead' redefine='True' hidden='True' remove_condition='True'>
+                <value>non</value>
+            </variable>
+            <variable name='activer_revprox_rewrite' redefine='True' hidden='True' remove_condition='True'>
+                <value>non</value>
+            </variable>
+        </family>
+    </variables>
+    <constraints/>
+    <help/>
+</creole>

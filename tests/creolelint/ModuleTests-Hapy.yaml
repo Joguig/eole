@@ -1,0 +1,20 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est de lancer les test unitaires du module Hapy
+   en executant la commande 'apt-get install <module>-test' et 'py.test' 
+
+#frequence:
+contrainte: ( architecture = amd64 ) and version < 3.0
+regroupement: 52 
+
+contexts:
+- machine: aca.hapy 
+  methode: instance
+  configuration: default
+
+tests:
+- nom: module-test
+  commandes:
+  - run: run-module-tests.sh
+    timeout: 1000
+  

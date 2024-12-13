@@ -1,0 +1,24 @@
+titre: Instance Zephir en aca.zephir
+status: PUBLIQUE
+
+description: |
+   Le but de ce test est vérifier la procédure d'instance du module Zephir
+
+#frequence:
+contrainte: architecture = amd64 
+regroupement: 30
+genereImage: aca.zephir-{VERSION}-instance-default-{ARCHITECTURE}.vm
+
+contexts:
+- machine: aca.zephir 
+  methode: daily
+  configuration: default
+
+tests:
+- commandes:
+  - run: ciInstanceDefault
+    timeout: 1200
+
+  - automate: shutdownWithSnapshot       
+
+  - automate: updateTemplate

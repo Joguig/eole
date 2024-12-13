@@ -1,0 +1,43 @@
+#genereImage: aca.zephir- "{VERSIONMAJEUR}"u2.7.1-default-{ARCHITECTURE}.vm
+frequence: weekly
+status: PRODUCTION
+description: |
+   Le but de ce test est de vérifier la migration d'un Zéphir 2.7.1 vers la version {VERSIONMAJEUR}
+   avec la procédure 'MajRelease'
+
+contrainte: version in [ 2.7.2 ]
+regroupement: 60
+
+contexts:
+- machine: aca.zephir
+  methode: instance
+  configuration: default
+  base: eole-2.7.1
+
+tests:
+- commandes:
+    - run: ciMonitor maj_auto_rc
+      timeout: 1200
+
+    - run: ciMonitor reconfigure
+
+    - automate: reboot
+
+    - run: do-majrelease.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      timeout: 3600
+
+    - run: check-apres-majrelease.sh
+      args:
+      - "{VERSIONMAJEUR}"
+
+    - run: reconfigure-apres-majrelease.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      timeout: 2000
+
+    - run: diagnose-apres-majrelease.sh
+      args:
+      - "{VERSIONMAJEUR}"
+

@@ -1,0 +1,17 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure de Restauration.Sh sur Sphynx
+
+frequence: if version >= 2.7.2 then weekly else manuel
+contrainte: architecture = amd64
+regroupement: 70
+
+contexts:
+- machine: aca.sphynx
+  methode: daily
+  configuration: default
+
+tests:
+- nom: sphynx-restauration.sh-001
+  commandes:
+  - run: prepare_sphynx_restauration.sh

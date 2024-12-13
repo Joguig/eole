@@ -1,0 +1,32 @@
+status: DEVELOPPEMENT
+description: |
+   le but de ce test est de vérifier la recompilation Samba 
+
+frequence: manuel
+regroupement: 91
+genereImage: aca.eolebase-{VERSION}-instance-sambadev-{ARCHITECTURE}.vm
+
+contexts:
+- machine: aca.eolebase
+  methode: instance
+  configuration: samba
+
+tests:
+- nom: prepare
+  commandes:
+  - run: git_clone_samba.sh
+  
+  - run: (install-tools-docker.sh; exit 0)
+
+  - run: create_builder_debian_docker.sh
+
+  - automate: shutdownWithSnapshot
+  # receréation de la VM, elle va utiliser la nouvelle image !
+  - automate: recreate
+  
+- nom: recompile
+  commandes:
+  - run: recompilation_samba.sh
+    args:
+    - "{VERSIONMAJEUR}"
+   

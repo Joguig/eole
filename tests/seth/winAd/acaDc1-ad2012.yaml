@@ -1,0 +1,45 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier le ADWindows2012/DC2/FILER installé avec le module Seth
+
+frequence: manuel
+contrainte: architecture = amd64 and version = 2.8.1
+regroupement: 96
+genereImage: aca.WindowsServerAD-instance-default-amd64.vm
+
+contexts:
+- machine: aca.eolecitests
+  methode: instance
+  configuration: default
+
+- machine: aca.WindowsServerAD
+  base: w2012R2
+  methode: instance
+  configuration: default
+  
+tests:
+- nom: w2012-dc1
+  commandes:
+  - machine: aca.WindowsServerAD
+    run: set-static-ip-and-name.ps1
+
+  - machine: aca.WindowsServerAD
+    automate: reboot
+
+  - machine: aca.WindowsServerAD
+    run: install-ADFeatures.ps1
+
+  - machine: aca.WindowsServerAD
+    automate: reboot
+
+  - machine: aca.WindowsServerAD
+    run: create-domain-DOMACA.ps1
+
+  - machine: aca.WindowsServerAD
+    automate: reboot
+
+  - machine: aca.WindowsServerAD
+    automate: shutdownWithSnapshot
+
+  - machine: aca.WindowsServerAD
+    automate: updateTemplateWindows

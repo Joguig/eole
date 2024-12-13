@@ -1,0 +1,18 @@
+heriteDe : zephir-enregistrement
+regroupement: 90
+frequence: if version latest or version DEV then weekly else manuel
+contrainte: architecture = amd64 and version >= 2.7.2
+
+testsOk:
+-  Importation-Zephir
+
+contexts:
+- machine: aca.hapy
+  methode: zephir
+  base: eole-2.7.2
+
+tests:
+- nom: test01
+  commandes:
+  - machine: aca.hapy
+    run: ciDiagnose

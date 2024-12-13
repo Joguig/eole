@@ -1,0 +1,51 @@
+frequence: manuel
+description: |
+   le but de ce test est de démarrer un scribe avec les PC
+
+contrainte: architecture = amd64 and (version >= 2.7.1)  
+regroupement: 99
+
+contexts:
+- machine: aca.gateway
+  methode: instance
+  configuration: domscribe
+
+- machine: aca.pc
+  modele: aca.pc
+  methode: instance
+  configuration: default
+  base: win11
+  passive: oui
+  
+tests:
+- nom: etb1-t01-002-a
+  commandes:
+  - machine: aca.pc
+    run: test-setdns.ps1
+    args:
+    - "domscribe"
+    - "{VERSIONMAJEUR}"
+
+  - machine: aca.pc
+    run: test-joindomain.ps1
+    args:
+    - "domscribe"
+    - "{VERSIONMAJEUR}"
+
+  - machine: aca.pc
+    run: prepare-autologon.ps1
+    args:
+    - "domscribe"
+    - "{VERSIONMAJEUR}"
+    - "admin"
+
+  - machine: aca.pc
+    automate: reboot
+    
+  - machine: aca.pc
+    run: check-joindomain.ps1
+    args:
+    - "domscribe"
+    - "{VERSIONMAJEUR}"
+    - "admin"
+    

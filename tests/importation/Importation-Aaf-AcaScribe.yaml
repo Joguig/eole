@@ -1,0 +1,53 @@
+status: PUBLIQUE
+description: |
+   Le but de ce test est de vérifier le chargement d'un fichier AAF dans Scribe.
+   Nous vérifions que les comptes sont crées, les répertoires, et mails.
+   Nous créons les niveaux, classes, eleves, professeurs, et administratifs
+
+frequence: if version >= 2.7.2 then weekly else manuel
+
+contrainte: architecture = amd64
+regroupement: 31
+
+testsOk:
+-  Instance-AcaScribe
+
+contexts:
+- machine: aca.scribe
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test-01
+  commandes:
+  - run: importation_aaf_eleves_et_responsables.sh
+    timeout: 1000
+
+  - run: check-importation-compte.sh
+    machine: aca.scribe
+    args:
+    - eleves
+    - enzo.simoes
+    - "3c,3eme"
+
+  - run: check-importation-compte.sh
+    machine: aca.scribe
+    args:
+    - responsables
+    - julie.garnier
+
+  - run: importation_aaf_professeurs_et_administratifs.sh
+    timeout: 1000
+
+  - run: check-importation-compte.sh
+    machine: aca.scribe
+    args:
+    - personnels
+    - aida.goncalves
+    - "profs-5b,profs-4a,profs-3c,profs-3a,esp2"
+
+  - run: check-importation-compte.sh
+    machine: aca.scribe
+    args:
+    - administratifs
+    - sebastien.reat

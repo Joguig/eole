@@ -1,0 +1,180 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure d'import AAF Complet sur Thot
+
+frequence: if version < 2.7.2 then manuel
+contrainte: architecture = amd64 and version >= 2.7.1
+regroupement: 94
+
+testsOk:
+-  Instance-AcaThot
+  
+contexts:
+- machine: aca.thot 
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test-aaf-delta-001
+  commandes:
+  - run: run-aaf-delta.sh
+    args:
+    - aaf-delta/eleves/addRequest/delta
+    
+- nom: test-aaf-delta-002
+  commandes:
+  - automate: recreate
+  - run: run-aaf-complet.sh
+    args:
+    - aaf-delta/eleves/deleteRequest/complet
+    
+  - run: run-aaf-delta.sh
+    args:
+    - aaf-delta/eleves/deleteRequest/delta
+    - DUPONT
+    - NON
+    
+- nom: test-aaf-delta-003
+  commandes:
+  - automate: recreate
+  - run: run-aaf-delta.sh
+    args:
+    - aaf-delta/eleves/modifyRequest_CasAnormal/delta
+    
+- nom: test-aaf-delta-004
+  commandes:
+  - automate: recreate
+  - run: run-aaf-complet.sh
+    args:
+    - aaf-delta/eleves/modifyRequest_CasNormal/complet
+  - run: run-aaf-delta.sh
+    args:
+    - aaf-delta/eleves/modifyRequest_CasNormal/delta
+  
+- nom: test-aaf-delta-005
+  commandes:
+  - automate: recreate
+  - run: run-aaf-complet.sh
+    args:
+    - aaf-delta/etab/complet
+    - 0210100V
+    - OUI
+    
+  - run: run-aaf-delta.sh
+    args:
+    - aaf-delta/etab/delta
+    - 0210100V
+    - OUI
+
+- nom: test-aaf-delta-006
+  commandes:
+  - automate: recreate
+  - run: run-aaf-delta.sh
+    args:
+    - aaf-delta/personnels/delta/addRequest
+    - Lumigny
+    - OUI
+
+- nom: test-aaf-delta-007
+  commandes:
+  - automate: recreate
+  - run: run-aaf-complet.sh
+    args:
+    - aaf-delta/personnels/delta/deleteRequest/complet
+    - DUPONT
+    - OUI
+    
+  - run: run-aaf-delta.sh
+    args:
+    - aaf-delta/personnels/delta/deleteRequest/delta
+    - DUPONT
+    - NON
+
+- nom: test-aaf-delta-007b
+  commandes:
+  - automate: recreate
+  - run: run-aaf-complet.sh
+    args:
+    - aaf-delta/personnels/delta/deleteRequestBis/complet
+    - DUPONT
+    - OUI
+    
+  - run: run-aaf-delta.sh
+    args:
+    - aaf-delta/personnels/delta/deleteRequestBis/delta
+    - DUPONT
+    - NON
+
+- nom: test-aaf-delta-008
+  commandes:
+  - automate: recreate
+  - run: run-aaf-complet.sh
+    args:
+    - aaf-delta/personnels/delta/modifyRequest/complet
+    - DUPONT
+    - OUI
+    
+  - run: run-aaf-delta.sh
+    args:
+    - aaf-delta/personnels/delta/modifyRequest/delta
+    - DUPONNE
+    - OUI
+
+- nom: test-aaf-delta-009
+  commandes:
+  - automate: recreate
+  - run: run-aaf-complet.sh
+    args:
+    - aaf-delta/personnels/delta/modifyRequestCasAnormal/complet
+    
+  - run: run-aaf-delta.sh
+    args:
+    - aaf-delta/personnels/delta/modifyRequestCasAnormal/delta
+
+- nom: test-aaf-delta-010
+  commandes:
+  - automate: recreate
+  - run: run-aaf-delta.sh
+    args:
+    - aaf-delta/responsables/delta/addRequest
+    - RASTAPOPOULOS
+    - OUI
+
+- nom: test-aaf-delta-011
+  commandes:
+  - automate: recreate
+  - run: run-aaf-complet.sh
+    args:
+    - aaf-delta/responsables/delta/deleteRequest/complet
+    - DUPONT
+    - OUI
+    
+  - run: run-aaf-delta.sh
+    args:
+    - aaf-delta/responsables/delta/deleteRequest/delta
+    - DUPONT
+    - NON
+
+- nom: test-aaf-delta-012
+  commandes:
+  - automate: recreate
+  - run: run-aaf-complet.sh
+    args:
+    - aaf-delta/responsables/delta/modifyRequest/complet
+    - RASTAPOPOULOS
+    - OUI
+    
+  - run: run-aaf-delta.sh
+    args:
+    - aaf-delta/responsables/delta/modifyRequest/delta
+    - HENRY
+    - OUI
+
+- nom: test-aaf-delta-013
+  commandes:
+  - automate: recreate
+  - run: run-aaf-delta.sh
+    args:
+    - aaf-delta/responsables/delta/modifyRequestCasAnormal
+    - HENRY
+    - NON

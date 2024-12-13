@@ -1,0 +1,25 @@
+titre: Instance Horus en aca.horus
+status: PUBLIQUE
+
+description: |
+   Le but de ce test est vérifier la procédure d'instance du module Horus
+
+#frequence:
+contrainte: architecture = amd64 
+regroupement: 30
+genereImage: aca.horus-{VERSION}-instance-default-{ARCHITECTURE}.vm
+
+contexts:
+- machine: aca.horus 
+  methode: daily
+  configuration: default
+  
+tests:
+- nom: test-01
+  commandes:
+  - run: ciInstanceDefault
+    timeout: 1800
+
+  - automate: shutdownWithSnapshot
+
+  - automate: updateTemplate

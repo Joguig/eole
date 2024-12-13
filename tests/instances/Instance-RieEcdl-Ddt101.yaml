@@ -1,0 +1,33 @@
+titre: Instance eCDL en rie.ecdl-ddt101
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure d'instance du module eCDL dans la zone RIE
+
+#frequence:
+contrainte: architecture = amd64 and version in [ 2.6.2, 2.7.0 ]
+regroupement: 30
+genereImage: rie.ecdl-ddt101-{VERSION}-instance-default-{ARCHITECTURE}.vm
+
+contexts:
+- machine: rie.dns-banshee
+  passive: oui
+  
+- machine: rie.ldapma
+  passive: oui
+  
+- machine: rie.ecdl-ddt101
+  methode: daily
+  configuration: default
+
+tests:
+- commandes:
+  - run: ciInstanceDefault
+    machine: rie.ecdl-ddt101
+    timeout: 1200
+
+  - automate: shutdownWithSnapshot       
+    machine: rie.ecdl-ddt101
+
+  - automate: updateTemplate
+    machine: rie.ecdl-ddt101
+  

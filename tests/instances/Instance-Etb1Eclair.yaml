@@ -1,0 +1,32 @@
+titre: Instance Eclair en etb1.eclairdmz
+status: DEVELOPPEMENT
+description: |
+   Le but de ce test est vérifier la procédure d'instance de la machine Etb1 Eclair
+   La procédure valide donc l'instance avec un amon, un scribe
+
+frequence: manuel
+contrainte: architecture = amd64
+regroupement: 30
+genereImage: etb1.eclairdmz-{VERSION}-instance-default-{ARCHITECTURE}.vm
+
+testsOk:
+-  Instance-Etb1Amon
+-  Instance-Etb1Scribe
+
+contexts:
+- machine: etb1.eclairdmz
+  methode: daily
+  configuration: default
+
+tests:
+- nom: test-01
+  commandes:
+  - run: ciInstanceDefault
+    machine: etb1.eclairdmz
+    timeout: 2700
+
+  - automate: shutdownWithSnapshot
+    machine: etb1.eclairdmz
+
+  - automate: updateTemplate
+    machine: etb1.eclairdmz

@@ -1,0 +1,87 @@
+description: |
+   le but de ce test est de démarrer un scribe avec les PC
+
+contrainte: architecture = amd64 and (version >= 2.7.1)  
+regroupement: W0
+testsOk:
+- Instance-Etb1Amon
+- Instance-Etb1Scribe
+
+contexts:
+- machine: aca.gateway
+  methode: instance
+  configuration: default
+
+- machine: etb1.amon
+  methode: instance
+  configuration: default
+  passive: oui
+  utiliseDerniereStableSiBesoin: oui
+  
+- machine: etb1.scribe
+  methode: instance
+  configuration: AvecImport
+  passive: oui
+
+- machine: etb1.eolecitestspedago
+  methode: instance
+  configuration: default
+  passive: oui
+  
+- machine: etb1.pceleve
+  modele: etb1.pceleve
+  methode: instance
+  configuration: default
+  base: win-10.22H2
+
+setUp:
+- machine: etb1.amon
+  run: enregistrement-amon-si-besoin.sh
+  args:
+  - "{VERSIONMAJEUR}"
+tests:
+- nom: joinad
+  commandes:
+  # avant le test joineole.exe, car je ne maitrise pas le moment du reboot!
+  - machine: etb1.pceleve
+    run: prepare-autologon.ps1
+    args:
+    - "dompedago"
+    - "{VERSIONMAJEUR}"
+    - "admin"
+
+  - machine: etb1.pceleve
+    run: test-joineole-271.ps1
+
+  - machine: etb1.pceleve
+    automate: reboot
+    
+  # il faut laisser du temps à salt pour réagir
+  - machine: etb1.scribe
+    automate: pause
+    timeout: 120
+
+  - machine: etb1.scribe
+    run: test-enregistrement-client.sh
+    args:
+    - "{ID:etb1.pceleve}"
+    # la machine doit avoir rebootée pendant le pretty print !
+
+- nom: log-salt-minion
+  commandes:
+  - machine: etb1.pceleve
+    run: test-salt-minion.ps1
+  
+  - machine: etb1.pceleve
+    run: test-veyon.ps1
+    args:
+    - "dompedago"
+    - "{VERSIONMAJEUR}"
+
+- nom: sauvegarde
+  commandes:
+  - machine: etb1.pceleve
+    automate: screenshot
+
+  - machine: etb1.pceleve
+    run: sauvegarde-logs.ps1

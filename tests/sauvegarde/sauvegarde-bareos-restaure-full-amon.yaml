@@ -1,0 +1,26 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure de sauvegarde Bareos sur Amon
+
+frequence: if version < 2.8.0 then manuel
+contrainte: architecture = amd64 and version > 2.5.1 and version < 3.0
+regroupement: 70
+
+paths:
+- tests/migration
+
+testsOk:
+-  Instance-Etb1Amon
+-  Sauvegarde-Bareos-Sauvegarde-Full-Amon
+
+contexts:
+- machine: etb1.amon
+  methode: daily
+  configuration: default
+
+tests:
+- commandes:
+  - machine: etb1.amon
+    run: run-bareos-restaure-complete.sh
+    timeout: 1200
+    

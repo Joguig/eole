@@ -1,0 +1,20 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est de lancer les test unitaires du module Seth
+   en executant la commande 'apt-get install <module>-test' et 'py.test' 
+
+#frequence:
+contrainte: ( architecture = amd64 )and (version >= 2.7.1)
+regroupement: W0
+
+contexts:
+- machine: aca.dc1 
+  methode: instance
+  configuration: default
+
+tests:
+- nom: module-test
+  commandes:
+  - run: run-gpo-tool-tests.sh
+    timeout: 2000
+  

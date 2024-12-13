@@ -1,0 +1,41 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la sauvegarde migration29.Sh sur un Scribe 2.8.1 avec eole-ad.
+   Ce test s'execute dans le contexte Etb1 donc derrière un amon et en DMZ
+
+contrainte: version in [ 2.8.1 ]
+regroupement: 61
+
+paths:
+- tests/seth/synchronisation
+- tests/seth
+
+testsOk:
+- seth-eolead-etb1
+
+contexts:
+- machine: etb1.seth1
+  base: eole-2.9.0
+  methode: instance
+  configuration: default
+
+- machine: etb1.scribe
+  #base: eole-2.7.2
+  methode: daily
+  configuration: eolead
+
+tests:
+- commandes:
+    - run: prepare-seth1-eolead.sh
+      machine: etb1.seth1
+
+    - run: prepare-scribe-eolead.sh
+      args:
+      - eolead
+      - sauvegardeSh
+      machine: etb1.scribe
+
+    - run: migrationSh_sauvegarde.sh
+      args:
+      - 29
+      machine: etb1.scribe

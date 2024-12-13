@@ -1,0 +1,15 @@
+
+# Ubuntu
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu focal main universe multiverse restricted
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu focal-security main universe multiverse restricted
+deb [ arch=amd64 ] http://eole.ac-dijon.fr/ubuntu focal-updates main universe multiverse restricted
+
+# EOLE
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.8.0 main cloud python2
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.8.0-security main cloud python2
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.8.0-updates main cloud python2
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/eole eole-2.8.0-proposed-updates main cloud python2
+
+# Envole
+deb [ arch=amd64 ] http://test-eole.ac-dijon.fr/envole envole-8-unstable main
+

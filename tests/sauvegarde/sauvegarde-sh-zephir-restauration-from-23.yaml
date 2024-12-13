@@ -1,0 +1,20 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure de Restauration.Sh sur Zephir
+   a partir d'une sauvegarde 2.3
+
+frequence: manuel
+contrainte: architecture = amd64 and version = 2.5.2  
+regroupement: 70
+
+contexts:
+- machine: aca.zephir
+  methode: instance
+  configuration: default
+
+tests:
+- nom: zephir-restauration.sh-001
+  commandes:
+  - run: prepare_zephir_restauration.sh
+    args:
+    - 2.3

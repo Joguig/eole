@@ -1,0 +1,356 @@
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Including configuration from '/etc/salt/master.d/ldap.conf'
+[DEBUG   ] Reading configuration from /etc/salt/master.d/ldap.conf
+[DEBUG   ] Including configuration from '/etc/salt/master.d/schedule-veyon.conf'
+[DEBUG   ] Reading configuration from /etc/salt/master.d/schedule-veyon.conf
+[DEBUG   ] Including configuration from '/etc/salt/master.d/workstation-manager.conf'
+[DEBUG   ] Reading configuration from /etc/salt/master.d/workstation-manager.conf
+[DEBUG   ] Missing configuration file: /root/.saltrc
+[WARNING ] Insecure logging configuration detected! Sensitive data may be logged.
+[DEBUG   ] Configuration file path: /etc/salt/master
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Including configuration from '/etc/salt/master.d/ldap.conf'
+[DEBUG   ] Reading configuration from /etc/salt/master.d/ldap.conf
+[DEBUG   ] Including configuration from '/etc/salt/master.d/schedule-veyon.conf'
+[DEBUG   ] Reading configuration from /etc/salt/master.d/schedule-veyon.conf
+[DEBUG   ] Including configuration from '/etc/salt/master.d/workstation-manager.conf'
+[DEBUG   ] Reading configuration from /etc/salt/master.d/workstation-manager.conf
+[DEBUG   ] Missing configuration file: /root/.saltrc
+[DEBUG   ] Using selector: EpollSelector
+[DEBUG   ] Using selector: EpollSelector
+[DEBUG   ] Marking 'base64_encode' as a jinja filter
+[DEBUG   ] Marking 'base64_decode' as a jinja filter
+[DEBUG   ] Marking 'md5' as a jinja filter
+[DEBUG   ] Marking 'sha1' as a jinja filter
+[DEBUG   ] Marking 'sha256' as a jinja filter
+[DEBUG   ] Marking 'sha512' as a jinja filter
+[DEBUG   ] Marking 'hmac' as a jinja filter
+[DEBUG   ] Marking 'hmac_compute' as a jinja filter
+[DEBUG   ] Marking 'random_hash' as a jinja filter
+[DEBUG   ] Marking 'rand_str' as a jinja filter
+[DEBUG   ] Marking 'file_hashsum' as a jinja filter
+[DEBUG   ] Marking 'http_query' as a jinja filter
+[DEBUG   ] Marking 'ifelse' as a jinja global
+[DEBUG   ] Marking 'strftime' as a jinja filter
+[DEBUG   ] Marking 'date_format' as a jinja filter
+[DEBUG   ] Marking 'raise' as a jinja global
+[DEBUG   ] Marking 'match' as a jinja test
+[DEBUG   ] Marking 'equalto' as a jinja test
+[DEBUG   ] Marking 'skip' as a jinja filter
+[DEBUG   ] Marking 'sequence' as a jinja filter
+[DEBUG   ] Marking 'to_bool' as a jinja filter
+[DEBUG   ] Marking 'indent' as a jinja filter
+[DEBUG   ] Marking 'tojson' as a jinja filter
+[DEBUG   ] Marking 'quote' as a jinja filter
+[DEBUG   ] Marking 'regex_escape' as a jinja filter
+[DEBUG   ] Marking 'regex_search' as a jinja filter
+[DEBUG   ] Marking 'regex_match' as a jinja filter
+[DEBUG   ] Marking 'regex_replace' as a jinja filter
+[DEBUG   ] Marking 'uuid' as a jinja filter
+[DEBUG   ] Marking 'unique' as a jinja filter
+[DEBUG   ] Marking 'min' as a jinja filter
+[DEBUG   ] Marking 'max' as a jinja filter
+[DEBUG   ] Marking 'avg' as a jinja filter
+[DEBUG   ] Marking 'union' as a jinja filter
+[DEBUG   ] Marking 'intersect' as a jinja filter
+[DEBUG   ] Marking 'difference' as a jinja filter
+[DEBUG   ] Marking 'symmetric_difference' as a jinja filter
+[DEBUG   ] Marking 'method_call' as a jinja filter
+[DEBUG   ] Marking 'yaml_dquote' as a jinja filter
+[DEBUG   ] Marking 'yaml_squote' as a jinja filter
+[DEBUG   ] Marking 'yaml_encode' as a jinja filter
+[DEBUG   ] PubClient connecting to <salt.transport.tcp.PublishClient object at 0x758f05651720> '/var/run/salt/master/master_event_pub.ipc'
+[DEBUG   ] PubClient conencted to <salt.transport.tcp.PublishClient object at 0x758f05651720> '/var/run/salt/master/master_event_pub.ipc'
+[DEBUG   ] Closing AsyncReqChannel instance
+[DEBUG   ] The functions from module 'local_cache' are being loaded by dir() on the loaded module
+[DEBUG   ] LazyLoaded local_cache.get_load
+[DEBUG   ] Reading minion list from /var/cache/salt/master/jobs/13/e6d63b9c2f5a9fb71276802c2714f684f2e063d6b3e4f284d7104d08a009b1/.minions.p
+[DEBUG   ] get_iter_returns for jid 20241213053137697850 sent to {'pc-1422498'} will timeout at 06:31:42.721789
+[DEBUG   ] Skipping non return event: salt/job/20241213053137697850/publish
+[DEBUG   ] Checking whether jid 20241213053137697850 is still running
+[DEBUG   ] Using selector: EpollSelector
+[DEBUG   ] Closing AsyncReqChannel instance
+[DEBUG   ] retcode missing from client return
+[DEBUG   ] retcode missing from client return
+[DEBUG   ] jid 20241213053137697850 return from pc-1422498
+[DEBUG   ] return event: {'pc-1422498': {'ret': {'pkg_|-ad/member/linux/package/conflicts/pkg.purged_|-ad/member/linux/package/conflicts/pkg.purged_|-purged': {'name': 'ad/member/linux/package/conflicts/pkg.purged', 'changes': {}, 'result': True, 'comment': 'All specified packages are already absent', '__sls__': 'ad.member.linux.package.conflicts', '__run_num__': 0, 'start_time': '06:31:42.627759', 'duration': 68.042, '__id__': 'ad/member/linux/package/conflicts/pkg.purged'}, 'pkg_|-ad/member/linux/package/install/pkg.installed_|-ad/member/linux/package/install/pkg.installed_|-installed': {'name': 'ad/member/linux/package/install/pkg.installed', 'changes': {}, 'result': True, 'comment': 'All specified packages are already installed', '__sls__': 'ad.member.linux.package.install', '__run_num__': 1, 'start_time': '06:31:42.704287', 'duration': 9.896, '__id__': 'ad/member/linux/package/install/pkg.installed'}, 'file_|-ad/member/linux/config/krb5/file.managed_|-/etc/krb5.conf_|-managed': {'changes': {'diff': '--- \n+++ \n@@ -1,9 +1,8 @@\n [libdefaults]\n-default_realm = ETB3.LAN\n+ default_realm = "ETB3.LAN"\n  dns_lookup_realm = true\n  dns_lookup_kdc = true\n  rdns = false\n-udp_preference_limit = 0\n \n [realms]\n  ETB3.LAN = {\n'}, 'comment': 'The file /etc/krb5.conf is set to be changed\nNote: No changes made, actual changes may\nbe different due to other states.', 'name': '/etc/krb5.conf', 'result': None, '__sls__': 'ad.member.linux.config.krb5', '__run_num__': 2, 'start_time': '06:31:42.716209', 'duration': 33.586, '__id__': 'ad/member/linux/config/krb5/file.managed'}, 'grains_|-eole-workstation/ad/grains/grains.list_append_|-roles_|-list_present': {'name': 'roles', 'changes': {}, 'result': True, 'comment': "Value ['ad/member'] is already in grain roles", '__sls__': 'eole-workstation.ad.grains', '__run_num__': 3, 'start_time': '06:31:42.751242', 'duration': 1.011, '__id__': 'eole-workstation/ad/grains/grains.list_append'}, 'file_|-ad/member/linux/join/passwd-file/file.managed_|-/root/kinit-password_|-managed': {'result': True, 'name': '/root/kinit-password', 'changes': {}, 'comment': 'unless condition is true', 'skip_watch': True, '__sls__': 'ad.member.linux.join', '__run_num__': 4, 'start_time': '06:31:42.752574', 'duration': 592.04, '__id__': 'ad/member/linux/join/passwd-file/file.managed'}, 'cmd_|-ad/member/linux/join/kinit/cmd.run_|-kinit --password-file=/root/kinit-password eole-workstation-manager_|-run': {'changes': {}, 'result': True, 'duration': 0.004, 'start_time': '06:31:43.345428', 'comment': 'State was not run because none of the onchanges reqs changed', '__state_ran__': False, '__run_num__': 5, '__sls__': 'ad.member.linux.join'}, 'cmd_|-ad/member/linux/join/join/cmd.run_|-realm -v join --unattended "etb3.lan"_|-run': {'changes': {}, 'result': True, 'duration': 0.004, 'start_time': '06:31:43.345830', 'comment': 'State was not run because none of the onchanges reqs changed', '__state_ran__': False, '__run_num__': 6, '__sls__': 'ad.member.linux.join'}, 'cmd_|-ad/member/linux/join/kdestroy/cmd.run_|-kdestroy_|-run': {'changes': {}, 'result': True, 'duration': 0.004, 'start_time': '06:31:43.346095', 'comment': 'State was not run because none of the onchanges reqs changed', '__state_ran__': False, '__run_num__': 7, '__sls__': 'ad.member.linux.join'}, 'file_|-ad/member/linux/join/passwd-file/file.absent_|-/root/kinit-password_|-absent': {'name': '/root/kinit-password', 'changes': {}, 'result': True, 'comment': 'File /root/kinit-password is not present', '__sls__': 'ad.member.linux.join', '__run_num__': 8, 'start_time': '06:31:43.346240', 'duration': 1.28, '__id__': 'ad/member/linux/join/passwd-file/file.absent'}, 'ini_|-ad/member/linux/config/sssd/ini.options_present_|-/etc/sssd/sssd.conf_|-options_present': {'name': '/etc/sssd/sssd.conf', 'changes': {}, 'result': True, 'comment': 'Unchanged key access_provider in section domain/etb3.lan.\nUnchanged key fallback_homedir in section domain/etb3.lan.\nUnchanged key use_fully_qualified_names in section domain/etb3.lan.\n', '__sls__': 'ad.member.linux.config.sssd', '__run_num__': 9, 'start_time': '06:31:43.348345', 'duration': 1.837, '__id__': 'ad/member/linux/config/sssd/ini.options_present'}, 'service_|-ad/member/linux/service/running/service.running/sssd_|-sssd_|-running': {'name': 'sssd', 'changes': {}, 'result': True, 'comment': 'The service sssd is already running', '__sls__': 'ad.member.linux.service.running', '__run_num__': 10, 'start_time': '06:31:43.350538', 'duration': 23.764, '__id__': 'ad/member/linux/service/running/service.running/sssd'}, 'pkg_|-pam_mount/package/install/dependencies/pkg.installed_|-pam_mount/package/install/dependencies/pkg.installed_|-installed': {'name': 'pam_mount/package/install/dependencies/pkg.installed', 'changes': {}, 'result': True, 'comment': 'All specified packages are already installed', '__sls__': 'pam-mount.package.install', '__run_num__': 11, 'start_time': '06:31:43.374541', 'duration': 9.614, '__id__': 'pam_mount/package/install/dependencies/pkg.installed'}, 'pkg_|-pam-mount/package/install/libpam-mount/pkg.installed_|-libpam-mount_|-installed': {'name': 'libpam-mount', 'changes': {}, 'result': True, 'comment': 'All specified packages are already installed', '__sls__': 'pam-mount.package.install', '__run_num__': 12, 'start_time': '06:31:43.384345', 'duration': 9.017, '__id__': 'pam-mount/package/install/libpam-mount/pkg.installed'}, 'file_|-pam-mount/config/file/file.managed_|-/etc/security/pam_mount.conf.xml_|-managed': {'changes': {}, 'comment': 'The file /etc/security/pam_mount.conf.xml is in the correct state', 'name': '/etc/security/pam_mount.conf.xml', 'result': True, '__sls__': 'pam-mount.config.file', '__run_num__': 13, 'start_time': '06:31:43.393661', 'duration': 32.046, '__id__': 'pam-mount/config/file/file.managed'}, 'pkgrepo_|-eole-workstation/veyon/repo/install/pkgrepo.managed_|-deb http://ppa.launchpad.net/veyon/stable/ubuntu jammy main_|-managed': {'name': 'deb http://ppa.launchpad.net/veyon/stable/ubuntu jammy main', 'changes': {}, 'result': True, 'comment': "Package repo 'deb http://ppa.launchpad.net/veyon/stable/ubuntu jammy main' already configured", '__sls__': 'eole-workstation.veyon.repo.install', '__run_num__': 14, 'start_time': '06:31:43.425915', 'duration': 90.735, '__id__': 'eole-workstation/veyon/repo/install/pkgrepo.managed'}, 'grains_|-Add Veyon grains_|-roles_|-list_present': {'name': 'roles', 'changes': {}, 'result': True, 'comment': "Value ['veyon/master', 'veyon/client'] is already in grain roles", '__sls__': 'eole-workstation.veyon.package.install', '__run_num__': 15, 'start_time': '06:31:43.516882', 'duration': 1.096, '__id__': 'Add Veyon grains'}, 'pkg_|-Install Veyon software_|-veyon_|-installed': {'name': 'veyon', 'changes': {}, 'result': True, 'comment': 'All specified packages are already installed and are at the desired version', '__sls__': 'eole-workstation.veyon.package.install', '__run_num__': 16, 'start_time': '06:31:43.518304', 'duration': 25.009, '__id__': 'Install Veyon software'}, 'pkg_|-Install Python LDAP dependency_|-python3-ldap_|-installed': {'name': 'python3-ldap', 'changes': {}, 'result': True, 'comment': 'All specified packages are already installed', '__sls__': 'eole-workstation.veyon.package.install', '__run_num__': 17, 'start_time': '06:31:43.543525', 'duration': 9.002, '__id__': 'Install Python LDAP dependency'}, 'file_|-Cleanup configuration file on error_|-/tmp/veyon-config.json_|-absent': {'result': True, 'name': '/tmp/veyon-config.json', 'changes': {}, 'comment': 'unless condition is true', 'skip_watch': True, '__sls__': 'eole-workstation.veyon.config.file', '__run_num__': 18, 'start_time': '06:31:43.552723', 'duration': 86.796, '__id__': 'Cleanup configuration file on error'}, 'file_|-Download Veyon Configuration_|-/tmp/veyon-config.json_|-managed': {'changes': {}, 'comment': 'The file /tmp/veyon-config.json is in the correct state', 'name': '/tmp/veyon-config.json', 'result': True, '__sls__': 'eole-workstation.veyon.config.file', '__run_num__': 19, 'start_time': '06:31:43.639922', 'duration': 25.781, '__id__': 'Download Veyon Configuration'}, 'cmd_|-Import Veyon configuration_|-veyon-cli config import veyon-config.json_|-run': {'changes': {}, 'result': True, 'duration': 0.004, 'start_time': '06:31:43.666300', 'comment': 'State was not run because none of the onchanges reqs changed', '__state_ran__': False, '__run_num__': 20, '__sls__': 'eole-workstation.veyon.config.import'}, 'cmd_|-Set LDAP password_|-veyon-cli config set LDAP/BindPassword $VEYON_PASSWORD_|-run': {'result': True, 'name': 'veyon-cli config set LDAP/BindPassword $VEYON_PASSWORD', 'changes': {}, 'comment': 'unless condition is true', 'skip_watch': True, '__sls__': 'eole-workstation.veyon.config.import', '__run_num__': 21, 'start_time': '06:31:43.666643', 'duration': 80.936, '__id__': 'Set LDAP password'}, 'service_|-Start Veyon service_|-veyon_|-running': {'name': 'veyon', 'changes': {}, 'result': True, 'comment': 'The service veyon is already running', '__sls__': 'eole-workstation.veyon.service.running', '__run_num__': 22, 'start_time': '06:31:43.747918', 'duration': 18.836, '__id__': 'Start Veyon service'}, 'cmd_|-Restart Veyon Service_|-veyon-cli service restart_|-run': {'changes': {}, 'result': True, 'duration': 0.003, 'start_time': '06:31:43.767336', 'comment': 'State was not run because none of the onchanges reqs changed', '__state_ran__': False, '__run_num__': 23, '__sls__': 'eole-workstation.veyon.service.running'}, 'test_|-eole-workstation/firefox/is-managed/test.fail_without_changes_|-Verify if Firefox is managed_|-configurable_test_state': {'name': 'Verify if Firefox is managed', 'changes': {}, 'result': True, 'comment': 'Firefox is not managed', '__sls__': 'eole-workstation.firefox.is-managed', '__run_num__': 24, 'start_time': '06:31:43.767417', 'duration': 0.869, '__id__': 'eole-workstation/firefox/is-managed/test.fail_without_changes'}, 'file_|-eole-workstation/firefox/policies/deployed/policies.json/file.managed_|-/etc/firefox/policies/policies.json_|-managed': {'changes': {'newfile': '/etc/firefox/policies/policies.json'}, 'comment': 'The file /etc/firefox/policies/policies.json is set to be changed\nNote: No changes made, actual changes may\nbe different due to other states.', 'name': '/etc/firefox/policies/policies.json', 'result': None, '__sls__': 'eole-workstation.firefox.policies.deployed', '__run_num__': 25, 'start_time': '06:31:43.768576', 'duration': 44.062, '__id__': 'eole-workstation/firefox/policies/deployed/policies.json/file.managed'}, 'module_|-eole-workstation-mine-update-module-run_|-mine.update_|-run': {'name': 'mine.update', 'changes': {}, 'comment': 'Module function mine.update is set to execute', 'result': None, '__sls__': 'eole-workstation.mine.update', '__run_num__': 26, 'start_time': '06:31:43.812841', 'duration': 1.006, '__id__': 'eole-workstation-mine-update-module-run'}}, 'out': 'highstate', 'retcode': 0, 'jid': '20241213053137697850'}}
+[DEBUG   ] The functions from module 'highstate' are being loaded by dir() on the loaded module
+[DEBUG   ] LazyLoaded highstate.output
+[DEBUG   ] The functions from module 'nested' are being loaded by dir() on the loaded module
+[DEBUG   ] LazyLoaded nested.output
+[DEBUG   ] The functions from module 'nested' are being loaded by dir() on the loaded module
+[DEBUG   ] LazyLoaded nested.output
+[DEBUG   ] jid 20241213053137697850 found all minions {'pc-1422498'}
+pc-1422498:
+----------
+          ID: ad/member/linux/package/conflicts/pkg.purged
+    Function: pkg.purged
+      Result: True
+     Comment: All specified packages are already absent
+     Started: 06:31:42.627759
+    Duration: 68.042 ms
+     Changes:   
+----------
+          ID: ad/member/linux/package/install/pkg.installed
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed
+     Started: 06:31:42.704287
+    Duration: 9.896 ms
+     Changes:   
+----------
+          ID: ad/member/linux/config/krb5/file.managed
+    Function: file.managed
+        Name: /etc/krb5.conf
+      Result: None
+     Comment: The file /etc/krb5.conf is set to be changed
+              Note: No changes made, actual changes may
+              be different due to other states.
+     Started: 06:31:42.716209
+    Duration: 33.586 ms
+     Changes:   
+              ----------
+              diff:
+                  --- 
+                  +++ 
+                  @@ -1,9 +1,8 @@
+                   [libdefaults]
+                  -default_realm = ETB3.LAN
+                  + default_realm = "ETB3.LAN"
+                    dns_lookup_realm = true
+                    dns_lookup_kdc = true
+                    rdns = false
+                  -udp_preference_limit = 0
+                   
+                   [realms]
+                    ETB3.LAN = {
+----------
+          ID: eole-workstation/ad/grains/grains.list_append
+    Function: grains.list_present
+        Name: roles
+      Result: True
+     Comment: Value ['ad/member'] is already in grain roles
+     Started: 06:31:42.751242
+    Duration: 1.011 ms
+     Changes:   
+----------
+          ID: ad/member/linux/join/passwd-file/file.managed
+    Function: file.managed
+        Name: /root/kinit-password
+      Result: True
+     Comment: unless condition is true
+     Started: 06:31:42.752574
+    Duration: 592.04 ms
+     Changes:   
+----------
+          ID: ad/member/linux/join/kinit/cmd.run
+    Function: cmd.run
+        Name: kinit --password-file=/root/kinit-password eole-workstation-manager
+      Result: True
+     Comment: State was not run because none of the onchanges reqs changed
+     Started: 06:31:43.345428
+    Duration: 0.004 ms
+     Changes:   
+----------
+          ID: ad/member/linux/join/join/cmd.run
+    Function: cmd.run
+        Name: realm -v join --unattended "etb3.lan"
+      Result: True
+     Comment: State was not run because none of the onchanges reqs changed
+     Started: 06:31:43.345830
+    Duration: 0.004 ms
+     Changes:   
+----------
+          ID: ad/member/linux/join/kdestroy/cmd.run
+    Function: cmd.run
+        Name: kdestroy
+      Result: True
+     Comment: State was not run because none of the onchanges reqs changed
+     Started: 06:31:43.346095
+    Duration: 0.004 ms
+     Changes:   
+----------
+          ID: ad/member/linux/join/passwd-file/file.absent
+    Function: file.absent
+        Name: /root/kinit-password
+      Result: True
+     Comment: File /root/kinit-password is not present
+     Started: 06:31:43.346240
+    Duration: 1.28 ms
+     Changes:   
+----------
+          ID: ad/member/linux/config/sssd/ini.options_present
+    Function: ini.options_present
+        Name: /etc/sssd/sssd.conf
+      Result: True
+     Comment: Unchanged key access_provider in section domain/etb3.lan.
+              Unchanged key fallback_homedir in section domain/etb3.lan.
+              Unchanged key use_fully_qualified_names in section domain/etb3.lan.
+     Started: 06:31:43.348345
+    Duration: 1.837 ms
+     Changes:   
+----------
+          ID: ad/member/linux/service/running/service.running/sssd
+    Function: service.running
+        Name: sssd
+      Result: True
+     Comment: The service sssd is already running
+     Started: 06:31:43.350538
+    Duration: 23.764 ms
+     Changes:   
+----------
+          ID: pam_mount/package/install/dependencies/pkg.installed
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed
+     Started: 06:31:43.374541
+    Duration: 9.614 ms
+     Changes:   
+----------
+          ID: pam-mount/package/install/libpam-mount/pkg.installed
+    Function: pkg.installed
+        Name: libpam-mount
+      Result: True
+     Comment: All specified packages are already installed
+     Started: 06:31:43.384345
+    Duration: 9.017 ms
+     Changes:   
+----------
+          ID: pam-mount/config/file/file.managed
+    Function: file.managed
+        Name: /etc/security/pam_mount.conf.xml
+      Result: True
+     Comment: The file /etc/security/pam_mount.conf.xml is in the correct state
+     Started: 06:31:43.393661
+    Duration: 32.046 ms
+     Changes:   
+----------
+          ID: eole-workstation/veyon/repo/install/pkgrepo.managed
+    Function: pkgrepo.managed
+        Name: deb http://ppa.launchpad.net/veyon/stable/ubuntu jammy main
+      Result: True
+     Comment: Package repo 'deb http://ppa.launchpad.net/veyon/stable/ubuntu jammy main' already configured
+     Started: 06:31:43.425915
+    Duration: 90.735 ms
+     Changes:   
+----------
+          ID: Add Veyon grains
+    Function: grains.list_present
+        Name: roles
+      Result: True
+     Comment: Value ['veyon/master', 'veyon/client'] is already in grain roles
+     Started: 06:31:43.516882
+    Duration: 1.096 ms
+     Changes:   
+----------
+          ID: Install Veyon software
+    Function: pkg.installed
+        Name: veyon
+      Result: True
+     Comment: All specified packages are already installed and are at the desired version
+     Started: 06:31:43.518304
+    Duration: 25.009 ms
+     Changes:   
+----------
+          ID: Install Python LDAP dependency
+    Function: pkg.installed
+        Name: python3-ldap
+      Result: True
+     Comment: All specified packages are already installed
+     Started: 06:31:43.543525
+    Duration: 9.002 ms
+     Changes:   
+----------
+          ID: Cleanup configuration file on error
+    Function: file.absent
+        Name: /tmp/veyon-config.json
+      Result: True
+     Comment: unless condition is true
+     Started: 06:31:43.552723
+    Duration: 86.796 ms
+     Changes:   
+----------
+          ID: Download Veyon Configuration
+    Function: file.managed
+        Name: /tmp/veyon-config.json
+      Result: True
+     Comment: The file /tmp/veyon-config.json is in the correct state
+     Started: 06:31:43.639922
+    Duration: 25.781 ms
+     Changes:   
+----------
+          ID: Import Veyon configuration
+    Function: cmd.run
+        Name: veyon-cli config import veyon-config.json
+      Result: True
+     Comment: State was not run because none of the onchanges reqs changed
+     Started: 06:31:43.666300
+    Duration: 0.004 ms
+     Changes:   
+----------
+          ID: Set LDAP password
+    Function: cmd.run
+        Name: veyon-cli config set LDAP/BindPassword $VEYON_PASSWORD
+      Result: True
+     Comment: unless condition is true
+     Started: 06:31:43.666643
+    Duration: 80.936 ms
+     Changes:   
+----------
+          ID: Start Veyon service
+    Function: service.running
+        Name: veyon
+      Result: True
+     Comment: The service veyon is already running
+     Started: 06:31:43.747918
+    Duration: 18.836 ms
+     Changes:   
+----------
+          ID: Restart Veyon Service
+    Function: cmd.run
+        Name: veyon-cli service restart
+      Result: True
+     Comment: State was not run because none of the onchanges reqs changed
+     Started: 06:31:43.767336
+    Duration: 0.003 ms
+     Changes:   
+----------
+          ID: eole-workstation/firefox/is-managed/test.fail_without_changes
+    Function: test.configurable_test_state
+        Name: Verify if Firefox is managed
+      Result: True
+     Comment: Firefox is not managed
+     Started: 06:31:43.767417
+    Duration: 0.869 ms
+     Changes:   
+----------
+          ID: eole-workstation/firefox/policies/deployed/policies.json/file.managed
+    Function: file.managed
+        Name: /etc/firefox/policies/policies.json
+      Result: None
+     Comment: The file /etc/firefox/policies/policies.json is set to be changed
+              Note: No changes made, actual changes may
+              be different due to other states.
+     Started: 06:31:43.768576
+    Duration: 44.062 ms
+     Changes:   
+              ----------
+              newfile:
+                  /etc/firefox/policies/policies.json
+----------
+          ID: eole-workstation-mine-update-module-run
+    Function: module.run
+        Name: mine.update
+      Result: None
+     Comment: Module function mine.update is set to execute
+     Started: 06:31:43.812841
+    Duration: 1.006 ms
+     Changes:   
+
+Summary for pc-1422498
+-------------
+Succeeded: 27 (unchanged=3, changed=2)
+Failed:     0
+-------------
+Total states run:     27
+Total run time:    1.166 s

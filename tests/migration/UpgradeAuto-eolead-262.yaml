@@ -1,0 +1,74 @@
+#genereImage: etb1.scribe- "{VERSIONMAJEUR}"u2.6.2-default-{ARCHITECTURE}.vm
+frequence: manuel
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la migration d'un Scribe 2.6.2 avec eole-ad vers la version {VERSIONMAJEUR}. 
+   Ce test s'execute dans le contexte Etb1 donc derriére un amon et en DMZ 
+
+#label: master
+contrainte: version is 2.7.2
+regroupement: 60
+
+paths:
+- tests/seth/synchronisation
+- tests/seth
+
+testsOk:
+- seth-eolead-etb1
+
+contexts:
+- machine: etb1.scribe 
+  base: eole-2.6.2
+  methode: instance
+  configuration: AvecImport
+  passive: oui
+  utiliseDerniereStableSiBesoin: oui
+
+- machine: etb1.seth1
+  methode: instance
+  configuration: default
+
+tests:
+- commandes:
+    - run: prepare-seth1-eolead.sh
+      machine: etb1.seth1
+
+    - run: prepare-scribe-eolead.sh
+      args:
+      - eolead
+      machine: etb1.scribe
+
+    - run: do-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      machine: etb1.scribe
+      timeout: 4800
+    
+    # il faut migrer les service EoleCiTests ! 
+    - run: migrate-eolecitest-systemd.sh
+      machine: etb1.scribe
+    
+    - automate: reboot
+      machine: etb1.scribe
+    
+    - run: check-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      machine: etb1.scribe
+
+    - run: instance-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      machine: etb1.scribe
+      timeout: 1200
+    
+    - run: testacl-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      - enseignant1
+      machine: etb1.scribe
+
+    - run: diagnose-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      machine: etb1.scribe

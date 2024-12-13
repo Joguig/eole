@@ -1,0 +1,50 @@
+status: DEVELOPPEMENT
+description: |
+   le but de ce test est de vérifier le fonctionnement de BIND depuis les differents serveurs 
+
+regroupement: 99
+frequence: if version in [ 2.5.2 ] then manuel
+contrainte: architecture = amd64 and (version >= 2.5.2)  
+
+testsOk:
+-  Instance-Etb1Amon
+-  Instance-Etb1Scribe
+
+contexts:
+- machine: etb1.amon 
+  methode: instance
+  configuration: default
+  utiliseDerniereStableSiBesoin: oui
+  
+- machine: etb1.scribe
+  methode: instance
+  configuration: AvecImport
+
+- machine: etb1.eolecitestspedago
+  methode: instance
+  configuration: default
+  
+tests:
+- nom: etb1-bind-depuis-amon
+  commandes:
+  - machine: etb1.amon
+    run: prepare-bind-addc.sh
+
+  - machine: etb1.amon
+    run: test-bind-T06-001.sh
+    args:
+    - "{VERSIONMAJEUR}"
+
+- nom: etb1-bind-depuis-scribe
+  commandes:
+  - machine: etb1.scribe
+    run: test-bind-T06-001.sh
+    args:
+    - "{VERSIONMAJEUR}"
+
+- nom: etb1-bind-depuis-station
+  commandes:
+  - machine: etb1.eolecitestspedago
+    run: test-bind-T06-001.sh
+    args:
+    - "{VERSIONMAJEUR}"

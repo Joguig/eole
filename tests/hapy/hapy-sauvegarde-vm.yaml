@@ -1,0 +1,26 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la sauvegarde d'une VM présente sur Hapy 
+
+#frequence:
+contrainte: architecture = amd64 and version > 2.7.1
+regroupement: 97
+
+testsOk:
+-  Importation-AcaHapy
+
+contexts:
+- machine: aca.hapy
+  methode: instance
+  configuration: AvecImport
+  
+- machine: aca.eolecitests
+  methode: instance
+  configuration: default
+  passive: oui
+
+tests:
+- nom: hapy-sauvegarde-vm
+  commandes:
+  - machine: aca.hapy
+    run: test-sauvegarde-vm.sh

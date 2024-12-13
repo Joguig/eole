@@ -1,0 +1,71 @@
+frequence: weekly
+status: PRODUCTION
+description: |
+   Le but de ce test est de vérifier la migration d'un Hapy 2.4.2 vers la version 2.6.2
+
+paths:
+- tests/migration
+
+contrainte: version in [ 2.6.2 ]
+regroupement: 60
+genereImage: aca.hapy-{VERSION}-upgrade-242-{ARCHITECTURE}.vm
+
+contexts:
+- machine: aca.hapy
+  methode: instance
+  configuration: default
+  base: eole-2.4.2
+
+tests:
+- nom: preparation-hapy
+  commandes:
+    # Upgrade 2.4.2 -> 2.5.2 requires proposed-updates packages
+    - run: ciMonitor maj_auto_rc
+      timeout: 1200
+    - run: ciMonitor reconfigure
+    - run: prepare-hapy-with-an-image.sh
+
+- nom: upgrade-2.5.2
+  commandes:
+    - run: do-upgradeauto.sh
+      args:
+      - 2.5.2
+      timeout: 4000
+    - automate: reboot
+    - run: check-apres-upgradeauto.sh
+      args:
+      - 2.5.2
+    - run: instance-apres-upgradeauto.sh
+      args:
+      - 2.5.2
+    # Upgrade 2.5.2 -> 2.6.2 requires proposed-updates packages
+    - run: ciMonitor maj_auto_rc
+      timeout: 1200
+    - run: ciMonitor reconfigure
+
+- nom: upgrade-2.6.2
+  commandes:
+    - run: do-upgradeauto.sh
+      args:
+      - 2.6.2
+      timeout: 4000
+    # il faut migrer les service EoleCiTests avant reboot ! 
+    - run: migrate-eolecitest-systemd.sh
+    # gestion bug upgrade schedule #26920
+    #- run: /bin/cp ./config_schedule_262.eol /etc/eole/extra/schedule/config.eol
+    - automate: reboot
+    # Instance 2.6.2 requires proposed-updates packages
+    - run: ciMonitor maj_auto_rc
+      timeout: 1200
+    - run: check-apres-upgradeauto.sh
+      args:
+      - 2.6.2
+    - run: instance-apres-upgradeauto.sh
+      args:
+      - 2.6.2
+    
+- nom: diagnose-finale
+  commandes:
+    - run: diagnose-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"

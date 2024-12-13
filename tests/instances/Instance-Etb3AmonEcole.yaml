@@ -1,0 +1,25 @@
+titre: Instance Amonecole en etb3.amonecole
+status: PUBLIQUE
+
+description: |
+   Le but de ce test est vérifier la procédure d'instance de la machine Etb3 Amonecole
+
+#frequence:
+contrainte: architecture = amd64
+regroupement: 30
+genereImage: etb3.amonecole-{VERSION}-instance-default-{ARCHITECTURE}.vm
+
+contexts:
+- machine: etb3.amonecole 
+  methode: daily
+  configuration: default
+
+tests:
+- nom: test-01
+  commandes:
+  - run: ciInstanceDefault
+    timeout: 2100
+    
+  - automate: shutdownWithSnapshot
+  
+  - automate: updateTemplate

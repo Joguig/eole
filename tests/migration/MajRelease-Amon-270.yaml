@@ -1,0 +1,42 @@
+#genereImage: etb1.amon- "{VERSIONMAJEUR}"u2.7.0-default-{ARCHITECTURE}.vm
+frequence: if version in [ 2.7.1 ] then manuel else weekly
+status: PRODUCTION
+description: |
+   Le but de ce test est de vérifier la migration d'un Amon 2.7.0 vers la version {VERSIONMAJEUR}
+   avec la procédure 'MajRelease'
+
+contrainte: version in [ 2.7.1, 2.7.2 ]
+regroupement: 60
+
+contexts:
+- machine: etb1.amon
+  methode: instance
+  configuration: default
+  base: eole-2.7.0
+
+tests:
+- commandes:
+    - run: ciMonitor maj_auto_rc
+      timeout: 1200
+
+    - run: ciMonitor reconfigure
+
+    - automate: reboot
+
+    - run: do-majrelease.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      timeout: 3600
+
+    - run: check-apres-majrelease.sh
+      args:
+      - "{VERSIONMAJEUR}"
+
+    - run: reconfigure-apres-majrelease.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      timeout: 2000
+
+    - run: diagnose-apres-majrelease.sh
+      args:
+      - "{VERSIONMAJEUR}"

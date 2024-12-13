@@ -1,0 +1,85 @@
+dn: OU="Utilisateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+
+dn: OU="Professeurs",OU="Utilisateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+
+dn: OU="Administratifs",OU="Utilisateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+
+dn: OU="Eleves",OU="Utilisateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+
+dn: OU="Ordinateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+
+dn: OU="Equipements fixes",OU="Ordinateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+
+dn: OU="Equipements mobiles",OU="Ordinateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+
+dn: OU="CLASSE MOBILE 1",OU="Equipements mobiles",OU="Ordinateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+
+dn: OU="CLASSE MOBILE 2",OU="Equipements mobiles",OU="Ordinateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+
+dn: OU="SALLE DE COURS",OU="Equipements fixes",OU="Ordinateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+
+dn: OU="SALLE DES PROFESSEURS",OU="Equipements fixes",OU="Ordinateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+
+dn: OU="MULTIMEDIA",OU="Equipements fixes",OU="Ordinateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+
+dn: OU="TECHNOLOGIE",OU="Equipements fixes",OU="Ordinateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+
+dn: OU="CDI",OU="Equipements fixes",OU="Ordinateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+
+dn: OU="ULIS",OU="Equipements fixes",OU="Ordinateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+
+dn: OU="SEGPA",OU="Equipements fixes",OU="Ordinateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+
+dn: OU="UPI",OU="Equipements fixes",OU="Ordinateurs du Domaine",DC=SDOMAINE,DC=ac-rennes,DC=fr
+changetype: add
+objectClass: top
+objectClass: organizationalunit
+

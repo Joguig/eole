@@ -1,0 +1,23 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la gestion des mots de passe AD sur Seth 
+
+contrainte: architecture = amd64 and version >= 2.9.0
+regroupement: 96
+
+testsOk:
+- Instance-Etb3AmonEcole
+
+contexts:
+- machine: etb3.amonecole
+  methode: avecimport
+  configuration: default
+  
+tests:
+- nom: pso-amonecole
+  commandes:
+  - machine: etb3.amonecole
+    run: check-gpos.sh
+
+    
+    

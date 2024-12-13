@@ -1,0 +1,25 @@
+titre: Instance Scribe en aca.scribe avec paquet ScribeAd
+status: PUBLIQUE
+
+description: |
+   Le but de ce test est vérifier la procédure d'instance du module Scribe en mode Scribe AD
+
+#frequence:
+contrainte: architecture = amd64 and version in [ 2.6.2 ]
+regroupement: 30
+genereImage: aca.scribe-{VERSION}-instance-scribead-{ARCHITECTURE}.vm
+
+contexts:
+- machine: aca.scribe
+  methode: daily
+  configuration: scribead
+
+tests:
+- nom: test-01
+  commandes:
+  - run: ciConfigurationEole instance scribead
+    timeout: 1200
+
+  - automate: shutdownWithSnapshot
+
+  - automate: updateTemplate

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170328 15:31:18.510" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
+<suite source="/mnt/eole-ci-tests/tests/eolebase/gerald/MajAuto.robot" id="s1" name="MajAuto">
+<test id="s1-t1" name="Connect with SSH">
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given `host` and `port`.</doc>
+<arguments>
+<arg>${HOST}</arg>
+</arguments>
+<status status="PASS" endtime="20170328 15:31:18.694" starttime="20170328 15:31:18.693"></status>
+</kw>
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given `username` and `password`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20170328 15:31:18.694" level="INFO">Logging into 'eolebase.ac-test.fr:22' as 'root'.</msg>
+<msg timestamp="20170328 15:31:20.148" level="INFO">Read output: 
+EOLE est une distribution libre dérivée de la distribution Ubuntu.
+Veuillez consulter les licences de chacun des produits dans
+/usr/share/doc/*/copyright/.
+
+Documentation EOLE : http://eole.ac-dijon.fr/documentations/
+
+Last login: Tue Mar 28 15:00:06 2017 from 192.168.0.1
+root@eolebase:~#</msg>
+<status status="PASS" endtime="20170328 15:31:20.149" starttime="20170328 15:31:18.694"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Connexion réussie</arg>
+</arguments>
+<msg timestamp="20170328 15:31:20.149" level="INFO">Connexion réussie</msg>
+<status status="PASS" endtime="20170328 15:31:20.150" starttime="20170328 15:31:20.149"></status>
+</kw>
+<doc>Connect to server with SSH</doc>
+<status status="PASS" endtime="20170328 15:31:20.150" critical="yes" starttime="20170328 15:31:18.692"></status>
+</test>
+<test id="s1-t2" name="Test witch server">
+<kw name="Set Client Configuration" library="SSHLibrary">
+<doc>Update the `configuration` of the current connection.</doc>
+<arguments>
+<arg>prompt=#</arg>
+<arg>timeout=5</arg>
+</arguments>
+<status status="PASS" endtime="20170328 15:31:20.152" starttime="20170328 15:31:20.151"></status>
+</kw>
+<kw name="Read Until Prompt" library="SSHLibrary">
+<doc>Consumes and returns the server output until the prompt is found.</doc>
+<assign>
+<var>${output}</var>
+</assign>
+<msg timestamp="20170328 15:31:25.156" level="FAIL">No match found for '#' in 5 seconds
+Output:
+.</msg>
+<status status="FAIL" endtime="20170328 15:31:25.156" starttime="20170328 15:31:20.152"></status>
+</kw>
+<doc>Test witch server</doc>
+<status status="FAIL" endtime="20170328 15:31:25.158" critical="yes" starttime="20170328 15:31:20.150">No match found for '#' in 5 seconds
+Output:
+.</status>
+</test>
+<test id="s1-t3" name="Execute Command And Verify Output">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20170328 15:31:25.161" level="INFO">test</msg>
+<status status="PASS" endtime="20170328 15:31:25.161" starttime="20170328 15:31:25.160"></status>
+</kw>
+<doc>Execute Command can be used to ran commands on the remote machine.
+The keyword returns the standard output by default.</doc>
+<status status="PASS" endtime="20170328 15:31:25.161" critical="yes" starttime="20170328 15:31:25.159"></status>
+</test>
+<doc>Test suite for MajAuto options</doc>
+<status status="FAIL" endtime="20170328 15:31:25.162" starttime="20170328 15:31:18.513"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="2">Critical Tests</stat>
+<stat fail="1" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="MajAuto" pass="2">MajAuto</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

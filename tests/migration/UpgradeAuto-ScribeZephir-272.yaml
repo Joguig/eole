@@ -1,0 +1,82 @@
+frequence: weekly
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la migration d'un Scribe 2.7.2 vers la version {VERSIONMAJEUR}. 
+   Notes, que le scribe est enregistré sur un Zéphir.
+   Ce test s'execute dans le contexte Etb1 donc derriére un amon et en DMZ 
+
+contrainte: version in [ 2.8.0, 2.8.1 ]
+regroupement: 60
+
+paths:
+- tests/importation
+
+testsOk:
+- Importation-Zephir
+- Importation-Etb1Scribe
+
+contexts:
+- machine: aca.zephir
+  methode: instance
+  configuration: AvecConf
+  passive: oui
+
+- machine: etb1.scribe 
+  methode: zephir
+  configuration: default
+  base: eole-2.7.2
+
+tests:
+- commandes:
+    - run: importation_envole_eleves_et_responsables.sh
+      machine: etb1.scribe
+    
+    - run: importation_envole_professeurs_et_administratifs.sh
+      machine: etb1.scribe
+    
+    - run: importation_yoyo_eleves.sh
+      machine: etb1.scribe
+    
+    - run: importation_yoyo_professeurs.sh
+      machine: etb1.scribe
+    
+    - run: importation_be1d_eleves.sh
+      machine: etb1.scribe
+
+    - automate: reboot
+      machine: etb1.scribe
+    
+    - run: do-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      machine: etb1.scribe
+      timeout: 4800
+    
+    # il faut migrer les service EoleCiTests ! 
+    - run: migrate-eolecitest-systemd.sh
+      machine: etb1.scribe
+    
+    - automate: reboot
+      machine: etb1.scribe
+    
+    - run: check-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      machine: etb1.scribe
+
+    - run: instance-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      machine: etb1.scribe
+      timeout: 1200
+    
+    - run: testacl-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      - 6b.01
+      machine: etb1.scribe
+
+    - run: diagnose-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      machine: etb1.scribe

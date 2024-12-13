@@ -1,0 +1,35 @@
+titre: Instance scribe en aca.scribe et ajout JANUS
+status: DEVELOPPEMENT
+
+description: |
+   Le but de préparer le module Eolebase pour EWT
+
+contrainte: architecture = amd64 and version in [ 2.7.2, 2.8.1, 2.9.0, 2.10.0 ]
+regroupement: 30
+genereImage: aca.scribe-{VERSION}-janus-{ARCHITECTURE}.vm
+
+contexts:
+- machine: aca.scribe
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test-01
+  commandes:
+  - run: |
+         apt-get install -y git
+         apt-get install -y make
+         apt-eole install eole-web
+         ciMajAutoSansTest
+         apt-eole install eole-envole-dependances
+  
+  - run: |
+         cd /root
+         git clone https://dev-eole.ac-dijon.fr/git/janus.git
+         cd janus
+         make install
+         ciMonitor reconfigure
+
+  - automate: shutdownWithSnapshot
+  - automate: updateTemplate
+

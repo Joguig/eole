@@ -1,0 +1,29 @@
+status: PRODUCTION
+contrainte: architecture = amd64 and version > 2.8
+regroupement: 93
+
+testsOk:
+-  Instance-AcaScribe
+
+contexts:
+- machine: aca.scribe
+  methode: instance
+  configuration: default
+  
+- machine: aca.pc
+  methode: instance
+  configuration: default
+  base: linux-mate-2204
+
+- machine: aca.pc
+  methode: instance
+  configuration: default
+  base: linux-mate-2204
+  
+tests:
+- nom: scribe-t01-002-a
+  commandes:
+  - machine: aca.pc
+    run: interroge-ead.sh
+    args:
+    - "{VERSIONMAJEUR}"

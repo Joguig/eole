@@ -1,0 +1,19 @@
+status: PRODUCTION
+description: |
+   le but de ce test est de vérifier l'envoi de message Smtp
+
+contrainte: architecture = amd64 and version < 3.0
+frequence: if version in [ 2.6.0, 2.6.1 ] then manuel
+regroupement: 91
+
+contexts:
+- machine: aca.eolebase
+  methode: instance
+  configuration: default
+  passive: oui
+
+tests:
+- nom: eolebase-exim
+  commandes:
+  - run:  ./test-mail.sh
+    machine: aca.eolebase

@@ -1,0 +1,29 @@
+titre: Instance Seth aca.dc1.setheducation
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure d'instance du module Seth avec les fonctionnalités métier du Scribe.
+
+frequence: if version >= 2.8.1 then weekly else manuel
+contrainte: architecture = amd64 and version > 2.7.1
+regroupement: SE
+genereImage: aca.dc1-{VERSION}-instance-setheducation-{ARCHITECTURE}.vm
+
+contexts:
+- machine: aca.dc1 
+  methode: daily
+  configuration: setheducation
+
+tests:
+- nom: test-01
+  commandes:
+  - run: ciConfigurationEole instance setheducation
+
+  # le maj_auto va tirer smaba > à la distribution !
+  - run: ciMonitor maj_auto
+
+  - run: ciMonitor reconfigure
+
+  - automate: shutdownWithSnapshot
+
+  - automate: updateTemplate
+  

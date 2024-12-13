@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Vérifier fichiers prof</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Vérifier fichiers prof</td></tr>
+</thead><tbody>
+<tr>
+    <td>open</td>
+    <td>${baseUrl}/ajaxplorer/</td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=username</td>
+    <td>prof1</td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=password</td>
+    <td>$eole123456</td>
+</tr>
+<tr>
+    <td>clickAndWait</td>
+    <td>id=valider</td>
+    <td></td>
+</tr>
+<tr>
+    <td>waitForElementPresent</td>
+    <td>id=webfx-tree-object-4-label</td>
+    <td></td>
+</tr>
+<tr>
+    <td>waitForText</td>
+    <td>id=webfx-tree-object-4-label</td>
+    <td>home</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=webfx-tree-object-4-label</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>css=img.simple_button_arrow</td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=search_txt</td>
+    <td>docupload</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>css=#search_button &gt; img</td>
+    <td></td>
+</tr>
+<tr>
+    <td>waitForElementPresent</td>
+    <td>css=em</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>css=em</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>css=img.simple_button_arrow</td>
+    <td></td>
+</tr>
+<tr>
+    <td>waitForTitle</td>
+    <td>AjaXplorer - devoir_1_test_selenium-c31</td>
+    <td></td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>xpath=(//span[@id='ajxp_label'])[1]</td>
+    <td>c31e1--dossier_eleve</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>xpath=(//span[@id='ajxp_label'])[2]</td>
+    <td>c31e1--docupload.txt</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>xpath=(//span[@id='ajxp_label'])[3]</td>
+    <td>c31e1--fichier_eleve.txt</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>xpath=(//span[@id='ajxp_label'])[4]</td>
+    <td>c31e2--NON_FAIT_docupload.txt</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>xpath=(//span[@id='ajxp_label'])[5]</td>
+    <td>c31e3--NON_FAIT_docupload.txt</td>
+</tr>
+<tr>
+    <td>contextMenu</td>
+    <td>xpath=(//span[@id='ajxp_label'])[1]</td>
+    <td></td>
+</tr>
+<tr>
+    <td>waitForElementPresent</td>
+    <td>css=li &gt; #action_instance_ls</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>css=li &gt; #action_instance_ls</td>
+    <td></td>
+</tr>
+<tr>
+    <td>waitForTitle</td>
+    <td>AjaXplorer - c31e1--dossier_eleve</td>
+    <td></td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=ajxp_label</td>
+    <td>fichier_eleve_dans_dossier.txt</td>
+</tr>
+<tr>
+    <td>contextMenu</td>
+    <td>id=table_rows_container-1</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=action_instance_mkfile</td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>name=filename</td>
+    <td>fichier_prof_a_rendre.txt</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>name=ok</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>css=img[title=&quot;Dossier parent&quot;]</td>
+    <td></td>
+</tr>
+<tr>
+    <td>contextMenu</td>
+    <td>id=table_rows_container-1</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=action_instance_mkfile</td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>name=filename</td>
+    <td>fichier_prof_non_rendu.txt</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>name=ok</td>
+    <td></td>
+</tr>
+<tr>
+    <td>contextMenu</td>
+    <td>id=table_rows_container-1</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=action_instance_mkfile</td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>name=filename</td>
+    <td>c31e1--fichier_prof_rendu.txt</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>name=ok</td>
+    <td></td>
+</tr>
+<tr>
+    <td>contextMenu</td>
+    <td>id=table_rows_container-1</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=action_instance_mkfile</td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>name=filename</td>
+    <td>c31e1--</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>name=ok</td>
+    <td></td>
+</tr>
+<tr>
+    <td>contextMenu</td>
+    <td>id=table_rows_container-1</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=action_instance_mkfile</td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>name=filename</td>
+    <td>c31e1</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>name=ok</td>
+    <td></td>
+</tr>
+<tr>
+    <td>clickAndWait</td>
+    <td>id=logout_button_label</td>
+    <td></td>
+</tr>
+<tr>
+    <td>assertTitle</td>
+    <td>Authentification : Veuillez vous authentifier</td>
+    <td></td>
+</tr>
+<tr>
+    <td>open</td>
+    <td>${baseUrl}:8443/logout</td>
+    <td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

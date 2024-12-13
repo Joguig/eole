@@ -1,0 +1,19 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la restauration migration29.Sh sur aca.scribe
+
+frequence: weekly
+contrainte: architecture = amd64 and version in [ 2.9.0 ]
+regroupement: 61
+
+contexts:
+- machine: aca.scribe
+  methode: instance
+  configuration: default
+
+tests:
+- nom: zephir-migration29sh-001
+  commandes:
+  - run: migrationSh_restauration.sh
+    args:
+    - 2.8.1

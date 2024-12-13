@@ -1,0 +1,23 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la restauration migration28.Sh sur etb3.amonecole
+
+frequence: weekly
+contrainte: architecture = amd64 and version in [ 2.8.1 ]
+regroupement: 61
+
+paths:
+- tests/migration
+
+contexts:
+- machine: etb3.amonecole
+  methode: instance
+  configuration: default
+
+tests:
+- nom: zephir-migration28sh-001
+  commandes:
+  - run: migrationSh_restauration.sh
+    args:
+    - 2.6.2
+  - run: check-domaines_noauth_user.sh

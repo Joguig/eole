@@ -1,0 +1,19 @@
+regroupement: 99
+heriteDe : etb1-proxy-001
+frequence: if version < 2.6.1 then manuel
+contrainte: architecture = amd64 and (version >= 2.5.2)  
+
+testsOk:
+-  Instance-Etb1Scribe
+
+contexts:
+- machine: etb1.eolecitestsadmin
+  methode: instance
+  configuration: default
+  passive: oui
+  
+tests:
+- nom: proxy-depuis-admin
+  commandes:
+  - machine: etb1.eolecitestsadmin
+    run: check-proxy.sh

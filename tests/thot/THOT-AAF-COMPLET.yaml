@@ -1,0 +1,25 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure d'import AAF Complet sur Thot
+
+frequence: weekly
+contrainte: architecture = amd64 and (version >= 2.4.1) and (version <= 2.5.1)  
+regroupement: 94
+genereImage: aca.thot-{VERSION}-AvecConf-{ARCHITECTURE}.vm
+
+testsOk:
+-  Instance-AcaThot
+
+contexts:
+- machine: aca.thot 
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test-aaf-complet
+  commandes:
+  - run: import-aaf-complet.sh
+    timeout: 7200
+  - automate: shutdownWithSnapshot
+  - automate: updateTemplate
+  

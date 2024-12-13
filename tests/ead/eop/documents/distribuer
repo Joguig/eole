@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Distribuer</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Distribuer</td></tr>
+</thead><tbody>
+<tr>
+    <td>clickAndWait</td>
+    <td>link=EOP</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>css=b.caret</td>
+    <td></td>
+</tr>
+<tr>
+    <td>clickAndWait</td>
+    <td>link=Distribuer</td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=nomdev</td>
+    <td>Devoir 1 test selenium</td>
+</tr>
+<tr>
+    <td>select</td>
+    <td>id=groupe</td>
+    <td>label=c31</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=eleve_only-0</td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>css=div.plupload.html5 input:nth(0)</td>
+    <td>${basePath}/docupload.txt</td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>css=div.plupload.html5 input:nth(1)</td>
+    <td>${basePath}/annexeupload.txt</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=rep_dest-0</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=dist_envoi_mail</td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=dist_sujet_mail</td>
+    <td>Sujet du mail de test devoir 1</td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=dist_corps_mail</td>
+    <td>Contenu du mail de test devoir 1</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=btnSubmitDistribuer</td>
+    <td></td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=recap-ref</td>
+    <td>Devoir 1 test selenium</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=recap-inperso</td>
+    <td>Distribuer immédiatement</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=recap-eleveonly</td>
+    <td>Uniquement aux élèves</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=recap-groupes</td>
+    <td>c31</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=recap-dev</td>
+    <td>docupload.txt</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=recap-data</td>
+    <td>annexeupload.txt</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=recap-confirm</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=link-historique</td>
+    <td></td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr/td[1]</td>
+    <td>devoir_1_test_selenium-c31</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr/td[2]</td>
+    <td>c31</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr/td[3]</td>
+    <td>oui</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr/td[4]</td>
+    <td>Distribué</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr/td[5]</td>
+    <td>Ramasser</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=recap-eleveonly</td>
+    <td>Uniquement aux élèves</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=recap-eleveonly</td>
+    <td>Uniquement aux élèves</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=recap-eleveonly</td>
+    <td>Uniquement aux élèves</td>
+</tr>
+</tbody></table>
+</body>
+</html>

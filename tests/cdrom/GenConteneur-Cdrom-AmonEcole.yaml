@@ -1,0 +1,21 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure d'instance du module Seth 
+
+#frequence: onNewIso
+frequence: manuel
+contrainte: architecture = amd64 and version < 2.9.0
+regroupement: 22
+
+contexts:
+- machine: etb3.amonecole 
+  methode: minimale
+  cdrom: eole
+
+tests:
+- nom: test-01
+  commandes:
+  - run: ciMonitor gen_conteneurs
+    timeout: 3600
+  
+  - run: lxc-status

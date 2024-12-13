@@ -1,0 +1,22 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est de lancer les test unitaires du module Scribe
+   en executant la commande 'apt-get install <module>-test' et 'py.test' 
+
+#frequence:
+contrainte: ( architecture = amd64 ) and (version >= 2.7.1)
+regroupement: W0 
+testsOk:
+-  Instance-AcaScribe
+
+contexts:
+- machine: aca.scribe 
+  methode: instance
+  configuration: default
+
+tests:
+- nom: module-test
+  commandes:
+  - run: run-gpo-tool-tests.sh
+    timeout: 2000
+  

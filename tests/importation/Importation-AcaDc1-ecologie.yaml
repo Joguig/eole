@@ -1,0 +1,30 @@
+genereImage: aca.dc1-{VERSION}-avecimport-ecologie-{ARCHITECTURE}.vm
+status: PRODUCTION
+description: |
+   Le but de ce test est de vérifier l'importation de comptes dans Seth.
+   Dans la configuration eocologie le SID est fixé
+   Nous vérifions que les comptes sont crées, les répertoires. 
+
+frequence: weekly
+contrainte: architecture = amd64 and version >= 2.6.1 
+regroupement: 31
+
+testsOk:
+- Instance-AcaDc1-Ecologie
+
+contexts:
+- machine: aca.dc1
+  methode: instance
+  configuration: ecologie
+
+tests:
+- nom: test-01
+  commandes:
+  - run: importation-seth.sh
+    args:
+    - ecologie
+
+  - automate: shutdownWithSnapshot
+
+  - automate: updateTemplate
+

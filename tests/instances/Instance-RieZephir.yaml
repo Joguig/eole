@@ -1,0 +1,23 @@
+titre: Instance Zephir en rie.zephir
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure d'instance du module Zephir pour l'écologie
+
+#frequence:
+contrainte: architecture = amd64 and version in [ 2.6.2, 2.7.0 ]
+regroupement: 30
+genereImage: rie.zephir-{VERSION}-instance-default-{ARCHITECTURE}.vm
+
+contexts:
+- machine: rie.zephir 
+  methode: daily
+  configuration: default
+
+tests:
+- commandes:
+  - run: ciInstanceDefault
+    timeout: 1200
+
+  - automate: shutdownWithSnapshot       
+
+  - automate: updateTemplate

@@ -1,0 +1,47 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier le module Hapy après la procédure d'instance
+   Nous allons tester
+   * les paquets présents
+   * les régles iptables
+   * le debsum des paquets
+
+#frequence:
+contrainte: ( architecture = amd64 ) and version < 3.0
+regroupement: 50
+testsOk:
+-  Instance-AcaHapy
+
+contexts:
+- machine: aca.hapy
+  methode: instance
+  configuration: default
+
+tests:
+- nom: check-dpkg
+  commandes:
+  - run: run-CheckDpkg.sh
+
+- nom: check-iptables
+  commandes:
+  - run: run-CheckIptables.sh
+
+- nom: check-ipsets
+  commandes:
+  - run: run-CheckIpsets.sh
+
+- nom: check-logs
+  commandes:
+  - run: run-CheckLogs.sh
+
+- nom: check-logrotate
+  commandes:
+  - run: run-CheckLogRotate.sh
+
+- nom: check-instance
+  commandes:
+  - run: run-CheckInstance.sh
+
+- nom: check-debsums
+  commandes:
+  - run: run-CheckDebsums.sh

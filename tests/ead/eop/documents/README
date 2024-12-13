@@ -1,0 +1,28 @@
+------------------------------
+| TESTS EOP PARTIE DOCUMENTS |
+------------------------------
+
+UTILISATION
+------------------------------
+
+Pour utiliser cette suite de tests :
+
+- installer le plugin firefox SELENIUM IDE : cf le mémo sur Selenium http://dev-eole.ac-dijon.fr/projects/ic/wiki ;
+- documents_test_suite est le fichier qui liste les cas de tests, à ouvrir dans selenium ;
+- chaque cas de test correspond à un fichier séparé.
+
+PRÉAMBULE DES TESTS
+------------------------------
+
+Tous les cas de tests sont interdépendants, notamment leur ordre est important.
+
+La suite de tests ne peut pas être "relancée" sans revenir au préalable à un état initial où aucun document n'est distribué. Le script eop_etat_initial.py sert donc à "faire le ménage" dans les dossiers des profs et des élèves. On part du principe qu'on utilise la conf d'utilisateurs définie dans les fichiers ../../conf/*.csv (import annuel des fichiers dans l'EAD).
+
+ADAPTATIONS LOCALES
+------------------------------
+
+L'utilisation de l'upload de documents nécessite d'avoir des fichiers docupload.txt, annexeupload.txt et doceleve.txt dans le répertoire ~.
+
+Pour l'instant il faut forcément lancer les tests via l'interface graphique de Selenium IDE.
+Les adresses et les ports de développement sont EN DUR dans les tests, il faut les changer pour les adapter à la machine concernée avec une commande du genre :
+sed -i -e 's/192.168.230.92/IP_MACHINE/g' -e 's/:8080/PORT/g' *

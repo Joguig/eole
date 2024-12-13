@@ -1,0 +1,26 @@
+genereImage: aca.hapy-{VERSION}-instance-AvecImport-{ARCHITECTURE}.vm
+status: PUBLIQUE
+description: |
+   Le but de ce test est de vérifier l'import d'un VM et le démarrage de celle ci
+
+contrainte: architecture = amd64 and version > 2.7.0  and version < 3.0
+regroupement: 31
+
+testsOk:
+-  Instance-AcaHapy
+
+contexts:
+- machine: aca.hapy
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test-01
+  commandes:
+  - run: prepare-hapy-271-with-an-image.sh
+
+  - automate: shutdownWithSnapshot
+
+  - automate: updateTemplate
+
+  

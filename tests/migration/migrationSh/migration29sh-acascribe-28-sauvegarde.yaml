@@ -1,0 +1,19 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la sauvegarde migration28.Sh sur aca.scribe 2.8
+
+frequence: weekly
+contrainte: architecture = amd64 and version in [ 2.8.1 ]
+regroupement: 61
+
+contexts:
+- machine: aca.scribe
+  methode: instance
+  configuration: AvecImport
+
+tests:
+- nom: acascribe-migration.sh-001
+  commandes:
+  - run: migrationSh_sauvegarde.sh
+    args:
+    - 29

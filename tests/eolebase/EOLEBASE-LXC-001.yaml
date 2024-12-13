@@ -1,0 +1,22 @@
+status: PRODUCTION
+description: |
+   le but de ce test est de vérifier la transformation d'un module eolebase en conteneur  
+
+frequence: if version in [ 2.5.2 ] then manuel
+contrainte: architecture = amd64 and not (version in [2.6.0, 2.7.0, 2.7.1, 2.7.2, 2.8.0]) and version < 3.0
+regroupement: 91
+
+contexts:
+- machine: aca.eolebase
+  methode: minimale 
+
+tests:
+- nom: eolebase-lxc-001
+  commandes:
+  - run: ciMajAuto
+
+  - automate: reboot
+  
+  - run: run-gen-containeurs.sh
+    timeout: 3600
+    

@@ -1,0 +1,54 @@
+genereImage: aca.eolebase-{VERSION}-avecimport-default-{ARCHITECTURE}.vm
+status: PUBLIQUE
+titre: Importation laboite en aca.eolebase 3
+description: |
+   Le but de ce test est vérifier la procédure d'import de LaBoite sur un k3d
+
+contrainte: architecture = amd64 and version >= 3.0
+regroupement: 31
+
+testsOk:
+-  Instance-AcaEole3-k3d
+
+contexts:
+- machine: aca.eolebase 
+  methode: instance
+  memoire: 20480
+  configuration: default
+  files:
+  - nom: tls.crt
+    username: lflori
+  - nom: tls.key
+    username: lflori
+
+setUp:
+# j'ai besoin d'une commande avant de modifier la GW !
+- machine: aca.eolebase
+  run: systemctl status --no-pager
+
+- machine: aca.gateway
+  run: preparation-gateway-eole3.sh
+  args:
+  - aca.eolebase
+  - eole3.ac-test.fr
+ 
+tearDown:
+- machine: aca.gateway
+  run: clean-gateway-eole3.sh
+  args:
+  - aca.eolebase
+
+tests:
+- nom: importation
+  commandes:
+  - run: importation-laboite.sh
+    args:
+    - eole3.ac-test.fr
+  
+  - machine: aca.eolebase
+    run: exports-logs-laboite.sh
+    
+  - automate: shutdownWithSnapshot
+  
+  - automate: updateTemplate
+  

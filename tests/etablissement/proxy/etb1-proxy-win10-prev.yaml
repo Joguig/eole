@@ -1,0 +1,45 @@
+regroupement: W0
+frequence: if version in [ 2.5.2 ] then manuel
+contrainte: architecture = amd64 and (version >= 2.7.0)  
+
+testsOk:
+- etb1-proxy-001 
+
+contexts:
+- machine: etb1.amon 
+  methode: instance
+  configuration: default
+  passive: oui
+  utiliseDerniereStableSiBesoin: oui
+  
+- machine: etb1.scribe
+  methode: instance
+  configuration: AvecImport
+  passive: oui
+
+- machine: etb1.eolecitestspedago
+  methode: instance
+  configuration: default
+  passive: oui
+  
+- machine: etb1.pceleve-10
+  modele: etb1.pceleve
+  methode: instance
+  configuration: default
+  base: win-10.22H2
+  passive: oui
+
+setUp:
+- machine: etb1.amon
+  run: enregistrement-amon-si-besoin.sh
+  args:
+  - "{VERSIONMAJEUR}"
+
+tests:
+- nom: proxy-win-pedago
+  commandes:
+  - machine: etb1.pceleve-10
+    run: test-proxy-configuration.ps1
+    args:
+    - "dompedago"
+    - "{VERSIONMAJEUR}"

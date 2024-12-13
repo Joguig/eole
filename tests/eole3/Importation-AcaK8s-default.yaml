@@ -1,0 +1,47 @@
+genereImage: aca.k8s-{VERSION}-instance-default-{ARCHITECTURE}.vm
+status: DEVELOPPEMENT
+titre: Importation laboite en aca.k8s
+description: |
+   Le but de ce test est vérifier la procédure d'import de LaBoite sur un k8s
+
+contrainte: architecture = amd64 and version >= 3.0
+regroupement: 31
+
+testsOk:
+-  Instance-AcaK8s
+
+contexts:
+- machine: aca.k8s
+  methode: instance
+  configuration: default
+  files:
+  - nom: eolebase.ac-test.fr.crt
+    username: jenkins
+  - nom: eolebase.ac-test.fr.key
+    username: jenkins
+
+setUp:
+# j'ai besoin d'une commande avant de modifier la GW !
+- machine: aca.k8s
+  run: systemctl status --no-pager
+
+- machine: aca.gateway
+  run: preparation-gateway-eole3.sh
+  args:
+  - aca.k8s
+  - k8s.ac-test.fr
+  
+tearDown:
+- machine: aca.gateway
+  run: clean-gateway-eole3.sh
+  args:
+  - aca.k8s
+
+tests:
+- nom: importation
+  commandes:
+  - machine: aca.k8s
+    run: importation-laboite.sh
+
+  - machine: aca.k8s
+    run: exports-logs-laboite.sh

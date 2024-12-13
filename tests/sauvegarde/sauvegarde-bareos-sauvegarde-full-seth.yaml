@@ -1,0 +1,56 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure de sauvegarde Bareos sur Seth
+
+frequence: weekly
+contrainte: architecture = amd64 and version > 2.7.2
+regroupement: 70
+
+testsOk:
+- Importation-AcaDc1
+
+contexts:
+- machine: aca.dc1
+  methode: instance
+  configuration: AvecImport
+
+- machine: aca.eolecitests
+  methode: instance
+  configuration: default
+
+tests:
+- nom: seth-bareos-000
+  commandes:
+  - machine: aca.dc1
+    run: prepare_seth_sauvegarde.sh
+
+  - machine: aca.dc1
+    run: run-bareos-sauvegarde-complete.sh
+    args:
+    - 3
+    - LOCAL
+    timeout: 1200
+
+  - machine: aca.dc1
+    run: run-bareos-sauvegarde-complete.sh
+    args:
+    - 6
+    - USB
+    timeout: 1200
+
+  - machine: aca.eolecitests
+    run: samba-eolecitest.sh
+    args:
+    - "--check-acces"
+    - 192.168.0.253
+
+  - machine: aca.dc1
+    run: run-bareos-sauvegarde-complete.sh
+    args:
+    - 9
+    - SMB
+    - eolecitest
+    - 192.168.0.253
+    - sauvegardes
+    timeout: 1200
+

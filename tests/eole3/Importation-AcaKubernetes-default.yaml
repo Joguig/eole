@@ -1,0 +1,71 @@
+status: DEVELOPPEMENT
+titre: Importation laboite en Cluster Kubernetes
+description: |
+   Le but de ce test est vérifier la procédure d'import de LaBoite sur un Cluster Kubernetes à 5 noeuds
+
+contrainte: architecture = amd64 and version >= 3.0
+regroupement: 31
+
+contexts:
+- machine: aca.k8s
+  modele: aca.kubernetes-master
+  methode: instance
+  configuration: default
+  files:
+  - nom: eolebase.ac-test.fr.crt
+    username: jenkins
+  - nom: eolebase.ac-test.fr.key
+    username: jenkins
+
+- machine: aca.k8s01
+  modele: aca.kubernetes-node
+  methode: instance
+  configuration: default
+
+- machine: aca.k8s02
+  modele: aca.kubernetes-node
+  methode: instance
+  configuration: default
+
+- machine: aca.k8s03
+  modele: aca.kubernetes-node
+  methode: instance
+  configuration: default
+
+- machine: aca.k8s04
+  modele: aca.kubernetes-node
+  methode: instance
+  configuration: default
+
+- machine: aca.k8s05
+  modele: aca.kubernetes-node
+  methode: instance
+  configuration: default
+
+setUp:
+# j'ai besoin d'une commande avant de modifier la GW !
+- machine: aca.k8s
+  run: systemctl status --no-pager
+
+- machine: aca.gateway
+  run: preparation-gateway-eole3.sh
+  args:
+  - aca.k8s
+  - k8s.ac-test.fr
+  
+tearDown:
+- machine: aca.gateway
+  run: clean-gateway-eole3.sh
+  args:
+  - aca.k8s
+  
+tests:
+- nom: importation
+  commandes:
+  - machine: aca.k8s
+    run: importation-laboite.sh
+    args:
+    - k8s.ac-test.fr
+  
+  - machine: aca.k8s
+    run: exports-logs-laboite.sh

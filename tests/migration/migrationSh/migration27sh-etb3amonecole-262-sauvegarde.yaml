@@ -1,0 +1,19 @@
+status: DEVELOPPEMENT
+description: |
+   Le but de ce test est vérifier la sauvegarde migration27.sh sur etb3.amonecole 2.6.2
+
+contrainte: architecture = amd64 and version in [ 2.6.2 ]
+regroupement: 61
+frequence: manuel
+
+contexts:
+- machine: etb3.amonecole
+  methode: instance
+  configuration: AvecImport
+
+tests:
+- nom: etb3amonecole-migration.sh-001
+  commandes:
+  - run: migrationSh_sauvegarde.sh
+    args:
+    - 27

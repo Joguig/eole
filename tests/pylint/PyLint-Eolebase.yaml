@@ -1,0 +1,33 @@
+status: DEVELOPPEMENT
+frequence: weekly
+description: |
+   Le but de ce test est vérifier la la qualité du code de l'ensemble des paquets EOLE 
+   présent sur un module Eolebase. Ce controle se fait sur les fichiers Python (pylint+pep8),
+   et shell script  
+
+contrainte: architecture = amd64 and version  latest
+regroupement: 54
+
+contexts:
+- machine: aca.eolebase 
+  methode: instance
+  configuration: default
+  passive: oui
+
+tests:
+- nom: init
+  commandes:
+  - run: run-check-source-paquet.sh
+  
+- nom: pylint
+  commandes:
+  - run: run-pylint.sh
+
+- nom: pep8
+  commandes:
+  - run: run-pep8.sh
+
+- nom: shellcheck
+  commandes:
+  - run: run-shellcheck.sh
+    

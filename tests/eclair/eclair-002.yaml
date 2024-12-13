@@ -1,0 +1,55 @@
+status: PRODUCTION
+description: |
+   le but de ce test est de vérifier le fonctionnement de ECLAIR avec AmonEcole  
+
+contrainte: architecture = amd64
+frequence: if version in [ 2.6.0, 2.6.1 ] then manuel
+regroupement: 98
+
+contexts:
+- machine: etb3.amonecole
+  methode: instance
+  configuration: AvecImport
+
+- machine: etb3.eclair
+  methode: daily
+  configuration: default
+
+- machine: etb3.client-pxe
+
+tearDown:
+- run: stop-eclair.sh
+  machine: etb3.eclair
+
+tests:
+- nom: preparation-scribe
+  commandes:
+  # le parametre doit correspondre à la version de l'éclair !
+  - machine: etb3.amonecole
+    run: init-amonecole-001.sh
+    args:
+    - "{VERSIONMAJEUR}"
+
+  - automate: reboot
+    machine: etb3.amonecole
+    
+- nom: instance-eclair
+  commandes:
+  - machine: etb3.eclair
+    run: init-eclair-001.sh
+    timeout: 1200
+
+  - automate: reboot
+    machine: etb3.eclair
+
+- nom: demarre-client
+  commandes:
+  - automate: reboot
+    machine: etb3.client-pxe
+
+- nom: test-session-eclair
+  commandes:
+  - run: test-session-001.sh
+    machine: etb3.eclair
+
+    

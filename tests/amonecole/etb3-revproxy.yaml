@@ -1,0 +1,50 @@
+# eole-ci-tests
+# Copyright © 2014-2022 Pôle de Compétence Logiciels Libres EOLE <eole@ac-dijon.fr>
+# 
+# License CeCILL:
+# in french: http://www.cecill.info/licences/Licence_CeCILL_V2-fr.html
+# in english http://www.cecill.info/licences/Licence_CeCILL_V2-en.html
+#
+status: DEVELOPPEMENT
+description: |
+   le but de ce test est de tester le revproxy amonecole avec un pc linux en pedago
+
+contrainte: architecture = amd64 and (version >= 2.8.1)
+regroupement: 9A
+
+testsOk:
+- Instance-Etb3AmonEcole
+
+contexts:
+- machine: etb3.amonecole
+  methode: instance
+  configuration: AvecImport
+  passive: oui
+
+- machine: etb3.pceleve
+  modele: etb3.pceleve
+  methode: instance
+  configuration: default
+  base: linux-mate-2004
+
+tests:
+- nom: prepare
+  commandes:
+  - machine: etb3.pceleve
+    run: |
+         nmcli connection modify netplan-ens4 ipv4.addresses 10.3.2.49
+         nmcli connection modify netplan-ens4 ipv4.method manual
+         nmcli connection modify netplan-ens4 ipv4.gateway 10.3.2.1
+         nmcli connection down netplan-ens4
+         nmcli connection up netplan-ens4
+         ip addr
+         apt-get install -y lighttpd
+         cat </mnt/eole-ci-tests/scripts/lxde/index.lighttpd.html  >/var/www/html/index.lighttpd.html
+         wget 10.3.2.49 -O -
+
+  - machine: etb3.amonecole
+    run: ae-t04-01.sh
+
+  - machine: aca.gateway
+    run: wget http://etb3.ac-test.fr -O -
+

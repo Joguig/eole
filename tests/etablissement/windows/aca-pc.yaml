@@ -1,0 +1,47 @@
+frequence: manuel
+description: |
+   le but de ce test est de démarrer un scribe avec les PC
+
+contrainte: architecture = amd64 and (version >= 2.5.2)  
+regroupement: 99
+testsOk: 
+- Instance-AcaScribe
+
+contexts:
+- machine: aca.scribe
+  methode: instance
+  configuration: default
+  passive: oui
+  
+- machine: aca.gateway
+  methode: instance
+  configuration: domscribe
+  depends:
+    - depend: scribe
+      required: oui
+
+- machine: aca.pc-10.22H2
+  modele: aca.pc
+  methode: instance
+  configuration: default
+  base: win-10.22H2
+  passive: oui
+
+tests:
+- nom: etb1-t01-002-a
+  commandes:
+  - machine: aca.pc-10.22H2
+    run: test-install-choco.ps1
+    args:
+    - "22H2"
+
+- nom: etb1-t01-002-b
+  commandes:
+  - machine: aca.pc-10.22H2
+    run: test-connectivite.ps1
+
+- nom: etb1-t01-002-c
+  commandes:
+  - machine: aca.pc-10.22H2
+    run: test-joineole.ps1
+

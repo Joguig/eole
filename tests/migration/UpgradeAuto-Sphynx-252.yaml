@@ -1,0 +1,46 @@
+#genereImage: aca.sphynx- "{VERSIONMAJEUR}"u2.5.2-default-{ARCHITECTURE}.vm
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la migration d'un Sphynx 2.5.2 vers la version {VERSIONMAJEUR}
+
+frequence: if version in [ 2.6.0, 2.6.1 ] then manuel
+contrainte: version in [ 2.6.0, 2.6.1, 2.6.2 ]
+regroupement: 60
+
+contexts:
+- machine: aca.sphynx
+  methode: instance
+  configuration: default
+  base: eole-2.5.2
+
+tests:
+- commandes:
+    - run: ciMonitor maj_auto_rc
+      timeout: 1200
+
+    - run: ciMonitor reconfigure
+
+    - automate: reboot
+
+    - run: do-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      timeout: 3600
+
+    # il faut migrer les service EoleCiTests !
+    - run: migrate-eolecitest-systemd.sh
+
+    - automate: reboot
+
+    - run: check-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+
+    - run: instance-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      timeout: 1200
+
+    - run: diagnose-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"

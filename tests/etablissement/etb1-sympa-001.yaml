@@ -1,0 +1,22 @@
+regroupement: 99
+heriteDe : etb1-000
+contrainte: architecture = amd64 and (version < 2.9.0)
+
+frequence: if version < 2.8.0 then manuel else weekly
+
+testsOk:
+-  Instance-Etb1Scribe
+
+tests:
+- nom: etb1-sympa
+  commandes:
+  - machine: etb1.scribe
+    run: test-sympa-001.sh
+    timeout: 900
+
+- nom: etb1-exim
+  commandes:
+  - machine: etb1.scribe
+    run: test-exim-001.sh
+    timeout: 3600
+

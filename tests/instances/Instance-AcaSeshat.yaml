@@ -1,0 +1,25 @@
+titre: Instance Seshat en aca.seshat
+status: PUBLIQUE
+
+description: |
+   Le but de ce test est vérifier la procédure d'instance du module Seshat
+
+#frequence:
+contrainte: architecture = amd64 
+regroupement: 30
+genereImage: aca.seshat-{VERSION}-instance-default-{ARCHITECTURE}.vm
+
+contexts:
+- machine: aca.seshat
+  methode: daily
+  configuration: default
+
+tests:
+- nom: test-01
+  commandes:
+  - run: ciInstanceDefault
+    timeout: 1200
+  
+  - automate: shutdownWithSnapshot
+  
+  - automate: updateTemplate

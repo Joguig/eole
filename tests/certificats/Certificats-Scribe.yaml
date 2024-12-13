@@ -1,0 +1,20 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier les certificats générés sur un module Scribe 
+
+#frequence:
+contrainte: architecture = amd64
+regroupement: 53 
+
+testsOk: 
+- Instance-AcaScribe
+
+contexts:
+- machine: aca.scribe 
+  methode: instance
+  configuration: default
+
+tests:
+- commandes:
+  - run: check-certificats-ssl.sh
+  

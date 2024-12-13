@@ -1,0 +1,44 @@
+titre: Instance FogServer en etb1.fogserver
+status: PUBLIQUE
+description: |
+   Le but de ce test est vérifier la procédure d'instance de la machine Etb1 FOG SERVER. 
+   Le fogserver est dans la PEDAGO. la procédure valide donc l'instance derriére un amon
+
+#frequence:
+contrainte: architecture = amd64 and version >= 2.8.0  and version < 3.0
+regroupement: 30
+genereImage: etb1.fogserver-{VERSION}-instance-default-{ARCHITECTURE}.vm
+
+testsOk:
+-  Instance-Etb1Amon
+-  Instance-Etb1Scribe
+
+contexts:
+- machine: etb1.fogserver
+  methode: daily
+  configuration: default
+
+setUp:
+- machine: etb1.amon
+  run: prepare-amon-pour-fogserver.sh
+  args:
+  - "{VERSIONMAJEUR}"
+
+# le parametre doit correspondre à la version de l'éclair !
+- machine: etb1.scribe
+  run: init-scribe-fogserver.sh
+  args:
+  - "{VERSIONMAJEUR}"
+  
+tests:
+- nom: test-01
+  commandes:
+  - run: ciInstanceDefault
+    machine: etb1.fogserver
+    timeout: 2000
+
+  - automate: shutdownWithSnapshot
+    machine: etb1.fogserver
+    
+  - automate: updateTemplate
+    machine: etb1.fogserver

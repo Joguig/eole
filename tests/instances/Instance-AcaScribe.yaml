@@ -1,0 +1,25 @@
+titre: Instance Scribe en aca.scribe
+status: PUBLIQUE
+
+description: |
+   Le but de ce test est vérifier la procédure d'instance du module Scribe
+
+#frequence:
+contrainte: architecture = amd64 
+regroupement: 30
+genereImage: aca.scribe-{VERSION}-instance-default-{ARCHITECTURE}.vm
+
+contexts:
+- machine: aca.scribe 
+  methode: daily
+  configuration: default
+
+tests:
+- nom: test-01
+  commandes:
+  - run: ciInstanceDefault
+    timeout: 1800
+
+  - automate: shutdownWithSnapshot
+
+  - automate: updateTemplate

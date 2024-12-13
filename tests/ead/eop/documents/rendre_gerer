@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Rendre</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Rendre</td></tr>
+</thead><tbody>
+<tr>
+    <td>click</td>
+    <td>id=link-rendre</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=ren_envoi_mail</td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=ren_sujet_mail</td>
+    <td>Sujet du mail de rendu</td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=ren_corps_mail</td>
+    <td>Contenu du mail de rendu</td>
+</tr>
+<tr>
+    <td>select</td>
+    <td>id=list_dev_a_ren</td>
+    <td>label=devoir_2_test_selenium-c31</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=btnSubmitRendre</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=link-historique</td>
+    <td></td>
+</tr>
+<tr>
+    <td>waitForText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr[2]/td[4]</td>
+    <td>Rendu</td>
+</tr>
+<tr>
+    <td>waitForText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr[3]/td[4]</td>
+    <td>Rendu</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr[3]/td</td>
+    <td>devoir_2_test_selenium-c31</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr[3]/td[5]</td>
+    <td>Supprimer</td>
+</tr>
+</tbody></table>
+</body>
+</html>

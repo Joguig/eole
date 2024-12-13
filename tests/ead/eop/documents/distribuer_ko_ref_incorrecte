@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Distribuer ko réf incorrecte</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Distribuer ko réf incorrecte</td></tr>
+</thead><tbody>
+<tr>
+    <td>click</td>
+    <td>id=link-distribuer</td>
+    <td></td>
+</tr>
+<tr>
+    <td>select</td>
+    <td>id=groupe</td>
+    <td>label=c31</td>
+</tr>
+<tr>
+    <td>assertElementPresent</td>
+    <td>id=nomdev_message</td>
+    <td></td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=nomdev_message</td>
+    <td>Une référence doit être fournie.</td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=nomdev</td>
+    <td>Devoir 1 test selenium</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>link=Vider la liste</td>
+    <td></td>
+</tr>
+<tr>
+    <td>assertElementNotPresent</td>
+    <td>id=nomdev_message</td>
+    <td></td>
+</tr>
+<tr>
+    <td>select</td>
+    <td>id=groupe</td>
+    <td>label=c31</td>
+</tr>
+<tr>
+    <td>assertElementPresent</td>
+    <td>id=nomdev_message</td>
+    <td></td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=nomdev_message</td>
+    <td>Cette référence est déjà utilisée pour c31.</td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=nomdev</td>
+    <td>/etc/dangereuxpirate</td>
+</tr>
+<tr>
+    <td>select</td>
+    <td>id=groupe</td>
+    <td>label=c32</td>
+</tr>
+<tr>
+    <td>assertElementPresent</td>
+    <td>id=nomdev_message</td>
+    <td></td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=nomdev_message</td>
+    <td>La référence ne doit pas contenir le caractère '/'.</td>
+</tr>
+</tbody></table>
+</body>
+</html>

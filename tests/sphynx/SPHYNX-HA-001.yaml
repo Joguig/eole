@@ -1,0 +1,39 @@
+status: DEVELOPPEMENT
+description: |
+   Le but de ce test est vérifier une infra sphynx complete
+
+frequence: manuel
+contrainte: architecture = amd64 and version > 2.5.2  
+regroupement: 92
+
+testsOk:
+-  Instance-AcaSphynx
+  
+contexts:
+- machine: aca.sphynx 
+  methode: instance
+  configuration: hamaster
+  
+- machine: aca.sphynxslave 
+  methode: instance
+  configuration: haslave
+  
+- machine: aca.srvagriates 
+  methode: instance
+  configuration: default
+  
+- machine: etb1.amon
+  methode: instance
+  configuration: default
+  
+- machine: etb1.pcprofs 
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test01
+  commandes:
+  - machine: etb1.pcprofs
+    run: firefox http://172.30.101.23 
+
+  

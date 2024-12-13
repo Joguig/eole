@@ -1,0 +1,90 @@
+status: PUBLIQUE
+description: |
+   Le but de ce test est de vérifier l'importation de comptes dans Scribe dans un context Multi Etablissement.
+   Nous vérifions que les comptes sont crées, les répertoires, et mails.
+   Nous créons les niveaux, classes, eleves, professeurs, et administratifs
+
+contrainte: architecture = amd64 and version > 2.7.1
+regroupement: 31
+
+paths:
+- tests/importation
+
+testsOk:
+- Importation-AcaScribe-MultiEtab
+
+contexts:
+- machine: aca.scribe
+  methode: avecimport
+  configuration: multietab
+
+tests:
+- nom: premier-import-dans-etb1
+  commandes:
+  - machine: aca.scribe
+    run: importation_changement_etab_eleve.sh
+    args:
+    - 1
+    - maj
+
+  - machine: aca.scribe
+    run: importation_changement_etab_professeur.sh
+    args:
+    - 1
+    - maj
+
+- nom: vérification-changement-etb1
+  commandes:
+  - run: check-importation-compte.sh
+    machine: aca.scribe
+    args:
+    - eleves
+    - elevechangementetab
+    - "etb1-3eme,etb1-c31"
+    - 0000001E
+    - ETB1
+
+  - run: check-importation-compte.sh
+    machine: aca.scribe
+    args:
+    - personnels
+    - profchangementetab
+    - "profs-etb1-c41,profs-etb1-opt1,profs-etb1-opt2"
+    - 0000001E
+    - ETB1
+
+- nom: second-import-dans-etb2
+  commandes:
+  # on refait un import de type maj pour vérifier que les groupes de l'élève sont bien migrés
+  - machine: aca.scribe
+    run: importation_changement_etab_eleve.sh
+    args:
+    - 2
+    - maj
+
+  # on refait un import de type maj pour vérifier que les groupes de l'enseignant sont bien migrés
+  - machine: aca.scribe
+    run: importation_changement_etab_professeur.sh
+    args:
+    - 2
+    - maj
+
+- nom: vérification-changement-etb2
+  commandes:
+  - run: check-importation-compte.sh
+    machine: aca.scribe
+    args:
+    - personnels
+    - profchangementetab
+    - "profs-etb2-c41,profs-etb2-opt1,profs-etb2-opt2"
+    - 0000002E
+    - ETB2
+
+  - run: check-importation-compte.sh
+    machine: aca.scribe
+    args:
+    - eleves
+    - elevechangementetab
+    - "etb2-3eme,etb2-c31"
+    - 0000002E
+    - ETB2

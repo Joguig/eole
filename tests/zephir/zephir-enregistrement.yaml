@@ -1,0 +1,12 @@
+frequence: manuel
+regroupement: 90
+contrainte: architecture = amd64  
+
+testsOk: 
+- Importation-Zephir
+
+contexts:
+- machine: aca.zephir
+  methode: instance
+  configuration: AvecConf
+  passive: oui

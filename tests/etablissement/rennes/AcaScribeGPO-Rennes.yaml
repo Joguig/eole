@@ -1,0 +1,76 @@
+genereImage: aca.scribe-{VERSION}-avecimport-Rennes-{ARCHITECTURE}.vm
+status: DEVELOPPEMENT
+description: |
+   Le but de ce test est de vérifier l'importation de comptes dans ScribeAD avec les scripts de l'Académie de Rennes'
+   Nous vérifions que les comptes sont crées, les répertoires.
+   Sur le poste client, nous executons l'import des GPO de l'académie de Rennes
+
+contrainte: architecture = amd64 and version > 2.7.0
+regroupement: W0
+
+paths:
+- tests/etablissement
+- tests/etablissement/windows
+
+testsOk:
+-  Importation-AcaScribe
+
+contexts:
+- machine: aca.scribe
+  methode: instance
+  configuration: AvecImport
+  passive: oui
+
+- machine: aca.pc
+  modele: aca.pc
+  methode: instance
+  configuration: default
+  base: win10
+
+tests:
+- nom: joinad
+  commandes:
+  - machine: aca.pc
+    run: test-joindomain.ps1
+    args:
+    - "domscribe"
+    - "{VERSIONMAJEUR}"
+
+  - machine: aca.pc
+    automate: reboot
+    
+  - machine: aca.pc
+    run: check-joindomain.ps1
+    args:
+    - "domscribe"
+    - "{VERSIONMAJEUR}"
+    
+- nom: preparation-01
+  commandes:
+  - machine: aca.scribe
+    run: preparation-scribead-rennes.sh
+
+- nom: install-gpo-01
+  commandes:
+  - machine: aca.pc
+    run: switch-eolecitestservice-admin.ps1
+
+  - machine: aca.pc
+    run: install-gpo-rennes.ps1
+    # crée c:\eole\SqueletteGPO\Installation-GPO.1.8.6.ps1 !
+
+  - machine: aca.pc
+    run: "C:\\eole\\SqueletteGPO\\Installation-GPO.1.8.6.ps1"
+
+- nom: test-01
+  commandes:
+  - machine: aca.scribe
+    run: ssh addc samba-tool gpo listall
+
+- nom: sauvegarde
+  commandes:
+  - machine: aca.scribe
+    automate: shutdownWithSnapshot
+    
+  - machine: aca.scribe
+    automate: updateTemplate

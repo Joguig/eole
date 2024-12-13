@@ -1,0 +1,34 @@
+frequence: manuel
+description: |
+   le but de ce test est d'être inclus dans 
+   d'autres tests
+
+regroupement: 99
+testsOk:
+-  Instance-Etb1Amon
+-  Instance-Etb1Scribe
+
+contexts:
+- machine: etb1.amon 
+  methode: instance
+  configuration: default
+  passive: oui
+  utiliseDerniereStableSiBesoin: oui
+  
+- machine: etb1.scribe
+  methode: instance
+  configuration: AvecImport
+  passive: oui
+
+setUp:
+- machine: etb1.amon
+  run: enregistrement-amon-si-besoin.sh
+  args:
+  - "{VERSIONMAJEUR}"
+
+tests:
+- nom: etb1-001-install
+  commandes:
+  - machine: aca.gateway
+    run: echo "Test"
+    

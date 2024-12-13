@@ -1,0 +1,26 @@
+titre: Instance Amonecole en etb3.amonecole
+status: PUBLIQUE
+
+description: |
+   Le but de ce test est vérifier la procédure d'instance de la machine Etb3 Amonecole
+
+frequence: weekly
+contrainte: architecture = amd64 and version >= 2.8.1
+regroupement: 30
+genereImage: etb3.amonecole-{VERSION}-instance-lemonng-{ARCHITECTURE}.vm
+
+contexts:
+- machine: etb3.amonecole 
+  methode: daily
+  configuration: lemonng
+
+tests:
+- nom: test-01
+  commandes:
+  - run: ciConfigurationEole instance lemonng
+    timeout: 2100
+  - run: lemonng-verif.sh
+    
+  - automate: shutdownWithSnapshot
+  
+  - automate: updateTemplate

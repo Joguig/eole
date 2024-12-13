@@ -1,0 +1,22 @@
+frequence: manuel
+description: |
+   le but de ce test est d'être inclus dans 
+   d'autres tests
+
+heriteDe : etb1-000
+regroupement: 99
+testsOk:
+-  Instance-Etb1Horus
+
+contexts:
+- machine: etb1.horus 
+  methode: instance
+  configuration: default
+  passive: oui
+  
+tests:
+- nom: etb1-001-install
+  commandes:
+  - machine: aca.gateway
+    run: echo "Test"
+    

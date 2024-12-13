@@ -1,0 +1,21 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier le préparamétrage d'un moduel Hapy 
+
+#frequence:
+contrainte: architecture = amd64 and version > 2.7.1
+regroupement: 97
+
+testsOk:
+-  Instance-AcaHapy
+
+contexts:
+- machine: aca.hapy
+  methode: instance
+  configuration: default
+  
+tests:
+- nom: hapy-restauration
+  commandes:
+  - machine: aca.hapy
+    run: test-restauration.sh

@@ -1,0 +1,59 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure de sauvegarde Bareos sur Scribe
+
+#frequence:
+contrainte: architecture = amd64 and version > 2.5.1  
+regroupement: 70
+
+testsOk:
+-  Instance-Etb1Scribe
+
+contexts:
+- machine: etb1.scribe 
+  methode: instance
+  configuration: AvecImport
+  
+- machine: etb1.eolecitestsdmz 
+  methode: instance
+  configuration: default
+  passive: oui
+  
+tests:
+- nom: scribe-bareos-001
+  commandes:
+  - machine: etb1.scribe
+    run: run-bareos-sauvegarde-complete.sh
+    args:
+    - 3
+    - LOCAL
+    timeout: 1200
+
+- nom: scribe-bareos-002
+  commandes:
+  - machine: etb1.scribe
+    run: run-bareos-sauvegarde-complete.sh
+    args:
+    - 6
+    - USB
+    timeout: 1200
+
+- nom: scribe-bareos-003
+  commandes:
+  - machine: etb1.eolecitestsdmz
+    run: samba-eolecitest.sh
+    args:
+    - "--check-acces"
+    - 10.1.3.253 
+      
+  # la machine eolecitestsadmin s'appelle EOLECITEST
+  - machine: etb1.scribe
+    run: run-bareos-sauvegarde-complete.sh
+    args:
+    - 9
+    - SMB
+    - eolecitest
+    - 10.1.3.253
+    - sauvegardes
+    timeout: 1200
+    

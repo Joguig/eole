@@ -1,0 +1,69 @@
+genereImage: etb4.amonecoleeclair-{VERSION}-instance-AvecImport-{ARCHITECTURE}.vm
+status: PUBLIQUE
+description: |
+   Le but de ce test est de vérifier l'importation de comptes dans Amonecole-Eclair.
+   Nous vérifions que les comptes sont crées, les répertoires, et mails.
+   Nous créons les niveaux, classes, eleves, professeurs, et administratifs
+
+frequence: |
+    if version DEV then daily
+
+contrainte: architecture = amd64
+regroupement: 31
+testsOk:
+-  Instance-Etb4AmonEcoleEclair
+
+contexts:
+- machine: etb4.amonecoleeclair
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test-01
+  commandes:
+  - run: importation_envole_eleves_et_responsables.sh
+
+  - run: check-importation-compte.sh
+    args:
+    - eleves
+    - 6a.01
+    - "6a,n6"
+
+  - run: importation_envole_professeurs_et_administratifs.sh
+
+  - run: check-importation-compte.sh
+    args:
+    - personnels
+    - profpo
+  
+  - run: importation_yoyo_eleves.sh
+
+  - run: check-importation-compte.sh
+    args:
+    - eleves
+    - c31e1
+    - "3eme,c31"
+
+  - run: importation_yoyo_professeurs.sh
+
+  - run: check-importation-compte.sh
+    args:
+    - personnels
+    - prof1
+
+  - run: importation_be1d_eleves.sh
+
+  - run: check-importation-compte.sh
+    args:
+    - eleves
+    - elina.tjalve
+    - "ce2,cycle3"
+
+  - run: |
+         find /home >/tmp/liste_apres.txt
+         echo "***************** DIFFERENCE REPERTOIRES *****************"
+         diff /tmp/liste_avant.txt /tmp/liste_apres.txt
+         echo "**********************************************************"
+
+  - automate: shutdownWithSnapshot
+  - automate: updateTemplate

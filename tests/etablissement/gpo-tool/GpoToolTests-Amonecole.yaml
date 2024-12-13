@@ -1,0 +1,19 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est de valider le fonctionnement de GPO-TOO sur Amonecole
+
+#frequence:
+contrainte: ( architecture = amd64 )and (version >= 2.7.1)
+regroupement: W0
+
+contexts:
+- machine: etb3.amonecole 
+  methode: instance
+  configuration: default
+
+tests:
+- nom: module-test
+  commandes:
+  - run: run-gpo-tool-tests.sh
+    timeout: 2000
+  

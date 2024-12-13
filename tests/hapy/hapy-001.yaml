@@ -1,0 +1,28 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier le préparamétrage d'un moduel Hapy 
+
+contrainte: architecture = amd64 
+frequence: if version in [ 2.6.0, 2.6.1 ] then manuel
+regroupement: 97
+
+testsOk:
+-  Instance-AcaHapy
+
+contexts:
+- machine: aca.hapy
+  methode: instance
+  configuration: default
+  
+tests:
+- nom: hapy-001-install
+  commandes:
+  - machine: aca.hapy
+    run: test-preparametrage.sh
+
+  - machine: aca.hapy
+    run: ciMonitor reconfigure
+
+  - machine: aca.hapy
+    run: ciDiagnose
+    

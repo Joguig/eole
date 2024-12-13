@@ -1,0 +1,29 @@
+genereImage: aca.dc1-{VERSION}-instance-AvecImport-{ARCHITECTURE}.vm
+status: PUBLIQUE
+description: |
+   Le but de ce test est de vérifier l'importation de comptes dans Seth.
+   Nous vérifions que les comptes sont crées, les répertoires. 
+
+frequence: if version in [ 2.6.0 ] then manuel
+contrainte: architecture = amd64 and version > 2.6 
+regroupement: 31
+
+testsOk:
+-  Instance-Acadc1
+
+contexts:
+- machine: aca.dc1
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test-01
+  commandes:
+  - run: importation-seth.sh
+    args:
+    - default
+
+  - automate: shutdownWithSnapshot
+
+  - automate: updateTemplate
+

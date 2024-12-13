@@ -1,0 +1,34 @@
+titre: Importation des comptes de test sur le rie.pdc-ad1
+status: PRODUCTION
+description: |
+   Le but de ce test est de vérifier l'importation de comptes dans Seth.
+   Dans la configuration eocologie le SID est fixé
+   Nous vérifions que les comptes sont crées, les répertoires. 
+
+frequence: weekly
+contrainte: architecture = amd64 and version > 2.6
+regroupement: 31
+genereImage: rie.pdc-ad1-{VERSION}-instance-AvecImport-{ARCHITECTURE}.vm
+
+testsOk:
+- Instance-RiePdc-Ad1
+
+contexts:
+- machine: rie.dns-banshee
+  passive: oui
+
+- machine: rie.pdc-ad1
+  methode: instance
+  configuration: default
+
+tests:
+- commandes:
+  - run: importation-pdc.sh
+    machine: rie.pdc-ad1
+
+  - automate: shutdownWithSnapshot
+    machine: rie.pdc-ad1
+
+  - automate: updateTemplate
+    machine: rie.pdc-ad1
+

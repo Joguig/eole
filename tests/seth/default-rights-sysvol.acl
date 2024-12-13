@@ -1,0 +1,29 @@
+# file: /home/sysvol
+# owner: 0
+# group: 3000000
+user::rwx
+user:root:rwx
+user:3000000:rwx
+user:3000001:r-x
+user:3000002:rwx
+user:3000003:r-x
+group::rwx
+group:3000000:rwx
+group:3000001:r-x
+group:3000002:rwx
+group:3000003:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:0:rwx
+default:user:3000000:rwx
+default:user:3000001:r-x
+default:user:3000002:rwx
+default:user:3000003:r-x
+default:group::---
+default:group:3000000:rwx
+default:group:3000001:r-x
+default:group:3000002:rwx
+default:group:3000003:r-x
+default:mask::rwx
+default:other::---

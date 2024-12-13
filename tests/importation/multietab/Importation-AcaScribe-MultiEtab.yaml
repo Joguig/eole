@@ -1,0 +1,81 @@
+genereImage: aca.scribe-{VERSION}-avecimport-multietab-{ARCHITECTURE}.vm
+status: PUBLIQUE
+description: |
+   Le but de ce test est de vérifier l'importation de comptes dans Scribe dans un context Multi Etablissement.
+   Nous vérifions que les comptes sont crées, les répertoires, et mails.
+   Nous créons les niveaux, classes, eleves, professeurs, et administratifs
+
+frequence: weekly
+contrainte: architecture = amd64 and version > 2.7.1
+regroupement: 31
+
+paths:
+- tests/importation
+
+testsOk:
+-  Instance-AcaScribeMultiEtab
+
+contexts:
+- machine: aca.scribe
+  methode: instance
+  configuration: multietab
+
+tests:
+- nom: importation
+  commandes:
+  - run: activer-multi-etab.sh
+    args:
+    - 2
+
+  - run: importation_multi_etablissement.sh
+    args:
+    - 2
+
+  - machine: aca.scribe
+    run: |
+         find /home >/tmp/liste_apres.txt
+         echo "***************** DIFFERENCE REPERTOIRES *****************"
+         diff /tmp/liste_avant.txt /tmp/liste_apres.txt
+         echo "**********************************************************"
+
+- nom: control
+  commandes:
+  - run: check-importation-compte.sh
+    args:
+    - eleves
+    - prenom.eleve19
+    - "etb1-4eme,etb1-c41,etb1-opt1,etb1-opt2"
+    - 0000001E
+    - ETB1
+
+  - run: check-importation-compte.sh
+    args:
+    - personnels
+    - prenom.prof9
+    - " "
+    - 0000001E
+    - ETB1
+
+  # prenom.eleve19 ==> prenom.eleve191 du fait que l'on charge le même jeux de donnée
+  - run: check-importation-compte.sh
+    args:
+    - eleves
+    - prenom.eleve191
+    - "etb2-4eme,etb2-c41,etb2-opt1,etb2-opt2"
+    - 0000002E
+    - ETB2
+
+  # prenom.prof9 ==> prenom.prof91 du fait que l'on charge le même jeux de donnée
+  - run: check-importation-compte.sh
+    args:
+    - personnels
+    - prenom.prof91
+    - " "
+    - 0000002E
+    - ETB2
+
+- nom: generation-images
+  commandes:
+  - automate: shutdownWithSnapshot
+
+  - automate: updateTemplate

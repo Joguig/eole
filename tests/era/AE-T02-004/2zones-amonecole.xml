@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<firewall name="Concatenated_Do_Not_Edit" netbios="1" qos="0" version="2.4">
+    <zones>
+        <zone interface="%%nom_zone_eth0" ip="%%adresse_ip_eth0" level="10" name="exterieur" netmask="%%adresse_netmask_eth0" network="%%adresse_network_eth0" />
+        <zone interface="%%nom_zone_eth1" ip="%%adresse_ip_eth1" level="50" name="admin" netmask="%%adresse_netmask_eth1" network="%%adresse_network_eth1" />
+        <zone interface="lo" ip="127.0.0.1" level="100" name="bastion" netmask="255.255.255.255" network="0.0.0.0" />
+    </zones><include>
+%if %%getVar('activer_eop', 'non') == "oui"
+iptables -t nat -I PREROUTING -p tcp -m tcp --dport 6080 --tcp-flags SYN,RST,ACK SYN -j DNAT --to-destination %%container_ip_fichier:6080
+%end if
+
+    </include><services>
+        <service id="11" libelle="service 8500" name="8500" ports="8500" protocol="tcp" />
+        <service id="46" libelle="Acces web aux agents Zéphir" name="agents_zephir" ports="8090" protocol="tcp" />
+        <service id="6" libelle="serveur de noms" name="dns-tcp" ports="53" protocol="tcp" />
+        <service id="7" libelle="serveur de noms" name="dns-udp" ports="53" protocol="udp" />
+        <service id="36" libelle="ead" name="ead" ports="4200" protocol="tcp" />
+        <service id="73" libelle="port EAD du Scribe avec reverse proxy" name="ead-scribe" ports="%%revprox_ead_port" protocol="tcp" />
+        <service id="echo-reply" libelle="règle icmp echo-reply" name="echo-reply" ports="0" protocol="ICMP" />
+        <service id="echo-request" libelle="règle icmp echo-request" name="echo-request" ports="0" protocol="ICMP" />
+        <service id="45" libelle="Service Eole SSO" name="eole-sso" ports="%%eolesso_port" protocol="tcp" />
+        <service id="79" libelle="Redirection du service EoleSSO" name="revprox-sso" ports="8443" protocol="tcp" />
+        <service id="51" libelle="protocole pour ipsec" name="esp" ports="0" protocol="esp" />
+        <service id="78" libelle="transfert de fichiers sur le port 21" name="ftp" ports="21" protocol="tcp" />
+        <service id="26" libelle="transfert de fichiers" name="ftp-tcp" ports="20-21" protocol="tcp" />
+        <service id="29" libelle="service ftps" name="ftps" ports="989-990" protocol="tcp" />
+        <service id="3" libelle="serveur web" name="http" ports="80" protocol="tcp" />
+        <service id="5" libelle="serveur web sécurisé" name="https" ports="443" protocol="tcp" />
+        <service id="21" libelle="service imap" name="imap" ports="143" protocol="tcp" />
+        <service id="23" libelle="service imap4-ssl" name="imap4-ssl" ports="993" protocol="tcp" />
+        <service id="15" libelle="service irc" name="irc" ports="194" protocol="tcp" />
+        <service id="16" libelle="service ircs" name="ircs" ports="994" protocol="tcp" />
+        <service id="13" libelle="service ircu" name="ircu" ports="6665-6669" protocol="tcp" />
+        <service id="53" libelle="protocole pour ipsec" name="isakmp_4500" ports="4500" protocol="udp" />
+        <service id="52" libelle="protocol pour ipsec" name="isakmp_500" ports="500" protocol="udp" />
+        <service id="22" libelle="service d'annuaire" name="ldap" ports="389" protocol="tcp" tcpwrapper="slapd" />
+        <service id="24" libelle="service ldaps" name="ldaps" ports="636" protocol="tcp" tcpwrapper="slapd" />
+        <service id="54" libelle="port d'accès &#224; l'application lightsquid" name="lightsquid" ports="%%lightsquid_port" protocol="tcp" />
+        <service id="72" libelle="ltspfsd" name="ltspfsd" ports="9220" protocol="tcp" />
+        <service id="15" libelle="service mdqs" name="mdqs" ports="666" protocol="tcp" />
+        <service id="17" libelle="service msnp" name="msnp" ports="1863" protocol="tcp" />
+        <service id="71" libelle="nbd-client" name="nbd-client" ports="2000" protocol="tcp" />
+        <service id="32" libelle="nouvelles" name="news" ports="2009" protocol="tcp" />
+        <service id="30" libelle="service nntp" name="nntp" ports="119" protocol="tcp" />
+        <service id="31" libelle="service nntps" name="nntps" ports="563" protocol="tcp" />
+        <service id="43" libelle="Serveur d'authentification NuFw" name="nuauth" ports="4129" protocol="tcp" />
+        <service id="28" libelle="service pftp" name="pftp" ports="662" protocol="tcp" />
+        <service id="20" libelle="service pop" name="pop" ports="110" protocol="tcp" />
+        <service id="25" libelle="service pop3s" name="pop3s" ports="995" protocol="tcp" />
+        <service id="60" libelle="" name="portmap" ports="111" protocol="tcp" />
+        <service id="61" libelle="" name="lockd" ports="4005" protocol="tcp" />
+        <service id="62" libelle="" name="mountd" ports="4003" protocol="tcp" />
+        <service id="48" libelle="administration posh" name="posh-admin" ports="7070" protocol="tcp" />
+        <service id="4" libelle="service proxy" name="proxy" ports="3128" protocol="tcp" />
+        <service id="12" libelle="proxy" name="proxy-8080" ports="8080" protocol="tcp" />
+        <service id="70" libelle="pulseaudio" name="pulseaudio" ports="16001" protocol="tcp" />
+        <service id="64" libelle="protocole RELP pour rsyslog" name="rsyslog_RELP" ports="20514" protocol="tcp" />
+        <service id="65" libelle="protocole TCP pour rsyslog" name="rsyslog_TCP" ports="10514" protocol="tcp" />
+        <service id="66" libelle="protocole UDP pour rsyslog" name="rsyslog_UDP" ports="514" protocol="udp" />
+        <service id="38" libelle="samba tcp" name="samba-tcp" ports="137-139" protocol="tcp" />
+        <service id="37" libelle="samba" name="samba-udp" ports="137-139" protocol="udp" />
+        <service id="39" libelle="samba3" name="samba3" ports="445" protocol="tcp" />
+        <service id="45" libelle="" name="scribe-controlevnc" ports="8789-8790" protocol="tcp" />
+        <service id="36" libelle="service scribe sur les clients" name="scribe-service" ports="8788" protocol="tcp" />
+        <service id="40" libelle="vnc 5800" name="scribe_vnc1" ports="5800" protocol="tcp" />
+        <service id="41" libelle="vnc 5900" name="scribe_vnc2" ports="5900" protocol="tcp" />
+        <service id="59" libelle="Serveur NFS" name="serveur_nfs" ports="2049" protocol="tcp" />
+        <service id="27" libelle="service sftp" name="sftp" ports="115" protocol="tcp" />
+        <service id="19" libelle="service mail" name="smtp" ports="25" protocol="tcp" />
+        <service id="77" libelle="Service SMTP SSL" name="smtps" ports="465" protocol="tcp" />
+        <service id="8" libelle="shell sécrurisé" name="ssh" ports="22" protocol="tcp" tcpwrapper="sshd" />
+        <service id="58" libelle="serveur sympa internet" name="sympa-internet" ports="8787" protocol="tcp" />
+        <service id="57" libelle="sympa domaine restreint" name="sympa-restreint" ports="8888" protocol="tcp" />
+        <service id="18" libelle="service talk" name="talk" ports="517-518" protocol="tcp" />
+        <service id="33" libelle="tous les ports en tcp" name="tcp" ports="0-65535" protocol="tcp" />
+        <service id="tout" libelle="tous les services" name="tous" ports="0" protocol="TOUT" />
+        <service id="34" libelle="tous les ports en udp" name="udp" ports="0-65535" protocol="udp" />
+        <service id="9" libelle="appliquation web d'administration" name="webmin" ports="10000" protocol="tcp" />
+        <service id="55" libelle="port 2eme instance de squid" name="proxy2" ports="%%dansguardian_port3" protocol="tcp" />
+        <service id="56" libelle="serveur de temps" name="ntp" ports="123" protocol="udp" />
+        <service id="63" libelle="Serveur jabber (XMPP)" name="xmpp" ports="5222" protocol="tcp" />
+        <service id="67" libelle="Proxy Cntlm" name="cntlm" ports="%%cntlm_port" protocol="tcp" />
+        <service id="68" libelle="Accès &#224; gen_config depuis l'extérieur en https" name="gen_config" ports="7000" protocol="tcp" />
+        <service id="70" libelle="" name="radius" ports="1812" protocol="udp" />
+        <service id="74" libelle="" name="radius-acct" ports="1813" protocol="udp" />
+        <service id="75" libelle="Accès aux serveurs TFTP" name="tftpd-hpa" ports="69" protocol="udp" tcpwrapper="in.tftpd" />
+        <service id="76" libelle="Interface CUPS" name="cups" ports="631" protocol="tcp" />
+        <groupe id="admin_amon" libelle="Port autorise pour l'administration distante d'Amon (ssh, ead, agents zephir)">
+            <service id="46" libelle="Acces web aux agents Zéphir" name="agents_zephir" ports="8090" protocol="tcp" />
+            <service id="36" libelle="ead" name="ead" ports="4200" protocol="tcp" />
+            <service id="echo-request" libelle="règle icmp echo-request" name="echo-request" ports="0" protocol="ICMP" />
+        </groupe>
+        <groupe id="dns" libelle="dns tcp et udp">
+            <service id="7" libelle="serveur de noms" name="dns-udp" ports="53" protocol="udp" />
+            <service id="6" libelle="serveur de noms" name="dns-tcp" ports="53" protocol="tcp" />
+        </groupe>
+        <groupe id="eclair-dmz" libelle="Eclair en DMZ">
+            <service id="72" libelle="ltspfsd" name="ltspfsd" ports="9220" protocol="tcp" />
+            <service id="71" libelle="nbd-client" name="nbd-client" ports="2000" protocol="tcp" />
+            <service id="70" libelle="pulseaudio" name="pulseaudio" ports="16001" protocol="tcp" />
+            <service id="41" libelle="vnc 5900" name="scribe_vnc2" ports="5900" protocol="tcp" />
+        </groupe>
+        <groupe id="gr_forum" libelle="interdire l'utilisation des forums">
+            <service id="30" libelle="service nntp" name="nntp" ports="119" protocol="tcp" />
+            <service id="31" libelle="service nntps" name="nntps" ports="563" protocol="tcp" />
+            <service id="32" libelle="nouvelles" name="news" ports="2009" protocol="tcp" />
+        </groupe>
+        <groupe id="gr_ftp" libelle="">
+            <service id="26" libelle="transfert de fichiers" name="ftp-tcp" ports="20-21" protocol="tcp" />
+            <service id="29" libelle="service ftps" name="ftps" ports="989-990" protocol="tcp" />
+            <service id="28" libelle="service pftp" name="pftp" ports="662" protocol="tcp" />
+            <service id="27" libelle="service sftp" name="sftp" ports="115" protocol="tcp" />
+        </groupe>
+        <groupe id="gr_irc" libelle="interdire l'utilisation des dialogues en direct (icq)">
+            <service id="18" libelle="service talk" name="talk" ports="517-518" protocol="tcp" />
+            <service id="17" libelle="service msnp" name="msnp" ports="1863" protocol="tcp" />
+            <service id="15" libelle="service mdqs" name="mdqs" ports="666" protocol="tcp" />
+            <service id="16" libelle="service ircs" name="ircs" ports="994" protocol="tcp" />
+            <service id="15" libelle="service irc" name="irc" ports="194" protocol="tcp" />
+            <service id="13" libelle="service ircu" name="ircu" ports="6665-6669" protocol="tcp" />
+        </groupe>
+        <groupe id="gr_messagerie" libelle="interdire l'utilisation des dialogues en direct (icq)">
+            <service id="21" libelle="service imap" name="imap" ports="143" protocol="tcp" />
+            <service id="23" libelle="service imap4-ssl" name="imap4-ssl" ports="993" protocol="tcp" />
+            <service id="22" libelle="service d'annuaire" name="ldap" ports="389" protocol="tcp" />
+            <service id="24" libelle="service ldaps" name="ldaps" ports="636" protocol="tcp" />
+            <service id="20" libelle="service pop" name="pop" ports="110" protocol="tcp" />
+            <service id="25" libelle="service pop3s" name="pop3s" ports="995" protocol="tcp" />
+            <service id="19" libelle="service mail" name="smtp" ports="25" protocol="tcp" />
+            <service id="77" libelle="Service SMTP SSL" name="smtps" ports="465" protocol="tcp" />
+        </groupe>
+        <groupe id="gr_smtp" libelle="smtp et smtps">
+            <service id="19" libelle="service mail" name="smtp" ports="25" protocol="tcp" />
+            <service id="77" libelle="Service SMTP SSL" name="smtps" ports="465" protocol="tcp" />
+        </groupe>
+        <groupe id="gr_pop" libelle="pop3 et pop3s">
+            <service id="20" libelle="service pop" name="pop" ports="110" protocol="tcp" />
+            <service id="25" libelle="service pop3s" name="pop3s" ports="995" protocol="tcp" />
+        </groupe>
+        <groupe id="gr_imap" libelle="imap et imap-ssl">
+            <service id="21" libelle="service imap" name="imap" ports="143" protocol="tcp" />
+            <service id="23" libelle="service imap4-ssl" name="imap4-ssl" ports="993" protocol="tcp" />
+        </groupe>
+        <groupe id="gr_redirection" libelle="Protocoles a rediriger vers le proxy">
+            <service id="3" libelle="serveur web" name="http" ports="80" protocol="tcp" />
+            <service id="4" libelle="service proxy" name="proxy" ports="3128" protocol="tcp" />
+            <service id="12" libelle="proxy" name="proxy-8080" ports="8080" protocol="tcp" />
+            <service id="5" libelle="serveur web sécurisé" name="https" ports="443" protocol="tcp" />
+        </groupe>
+        <groupe id="gr_redirection_http" libelle="Protocoles http a rediriger vers le proxy">
+            <service id="3" libelle="serveur web" name="http" ports="80" protocol="tcp" />
+            <service id="4" libelle="service proxy" name="proxy" ports="3128" protocol="tcp" />
+            <service id="12" libelle="proxy" name="proxy-8080" ports="8080" protocol="tcp" />
+        </groupe>
+        <groupe id="gr_redirection_https" libelle="Https a redifiger vers le proxy">
+            <service id="5" libelle="serveur web sécurisé" name="https" ports="443" protocol="tcp" />
+        </groupe>
+        <groupe id="gr_restreint" libelle="on ferme tout sauf l'utilisation du web par le proxy">
+            <service id="33" libelle="tous les ports en tcp" name="tcp" ports="0-65535" protocol="tcp" />
+            <service id="34" libelle="tous les ports en udp" name="udp" ports="0-65535" protocol="udp" />
+        </groupe>
+        <groupe id="ipsec" libelle="Services utilises pas ipsec">
+            <service id="51" libelle="protocole pour ipsec" name="esp" ports="0" protocol="esp" />
+            <service id="53" libelle="protocole pour ipsec" name="isakmp_4500" ports="4500" protocol="udp" />
+            <service id="52" libelle="protocol pour ipsec" name="isakmp_500" ports="500" protocol="udp" />
+        </groupe>
+        <groupe id="nfs" libelle="Serveur NFS + portmap">
+            <service id="60" libelle="" name="portmap" ports="111" protocol="tcp" />
+            <service id="61" libelle="" name="lockd" ports="4005" protocol="tcp" />
+            <service id="62" libelle="" name="mountd" ports="4003" protocol="tcp" />
+            <service id="59" libelle="Serveur NFS" name="serveur_nfs" ports="2049" protocol="tcp" />
+        </groupe>
+        <groupe id="samba" libelle="samba proto">
+            <service id="37" libelle="samba" name="samba-udp" ports="137-139" protocol="udp" />
+            <service id="38" libelle="samba tcp" name="samba-tcp" ports="137-139" protocol="tcp" />
+            <service id="39" libelle="samba3" name="samba3" ports="445" protocol="tcp" />
+        </groupe>
+        <groupe id="scribe-pedago" libelle="service Scribe DMZ vers pedago">
+            <service id="38" libelle="samba tcp" name="samba-tcp" ports="137-139" protocol="tcp" />
+            <service id="37" libelle="samba" name="samba-udp" ports="137-139" protocol="udp" />
+            <service id="39" libelle="samba3" name="samba3" ports="445" protocol="tcp" />
+            <service id="36" libelle="service scribe sur les clients" name="scribe-service" ports="8788" protocol="tcp" />
+            <service id="40" libelle="vnc 5800" name="scribe_vnc1" ports="5800" protocol="tcp" />
+            <service id="41" libelle="vnc 5900" name="scribe_vnc2" ports="5900" protocol="tcp" />
+        </groupe>
+        <groupe id="scribe-pedago-dmz" libelle="client scribe vers la DMZ">
+            <service id="22" libelle="service d'annuaire" name="ldap" ports="389" protocol="tcp" />
+            <service id="24" libelle="service ldaps" name="ldaps" ports="636" protocol="tcp" />
+            <service id="38" libelle="samba tcp" name="samba-tcp" ports="137-139" protocol="tcp" />
+            <service id="37" libelle="samba" name="samba-udp" ports="137-139" protocol="udp" />
+            <service id="39" libelle="samba3" name="samba3" ports="445" protocol="tcp" />
+            <service id="45" libelle="" name="scribe-controlevnc" ports="8789-8790" protocol="tcp" />
+            <service id="40" libelle="vnc 5800" name="scribe_vnc1" ports="5800" protocol="tcp" />
+            <service id="41" libelle="vnc 5900" name="scribe_vnc2" ports="5900" protocol="tcp" />
+        </groupe>
+        <groupe id="scribe-posh" libelle="Ouverture des ports pour l'utilisation de nginx pour Posh">
+            <service id="3" libelle="serveur web" name="http" ports="80" protocol="tcp" />
+            <service id="5" libelle="serveur web sécurisé" name="https" ports="443" protocol="tcp" />
+            <service id="48" libelle="administration posh" name="posh-admin" ports="7070" protocol="tcp" />
+        </groupe>
+        <groupe id="scribe_ext" libelle="services extranet scribe ">
+            <service id="26" libelle="transfert de fichiers" name="ftp-tcp" ports="20-21" protocol="tcp" />
+            <service id="5" libelle="serveur web sécurisé" name="https" ports="443" protocol="tcp" />
+        </groupe>
+        <groupe id="sympa" libelle="serveur sympa">
+            <service id="58" libelle="serveur sympa internet" name="sympa-internet" ports="8787" protocol="tcp" />
+            <service id="57" libelle="sympa domaine restreint" name="sympa-restreint" ports="8888" protocol="tcp" />
+        </groupe>
+        <groupe id="vnc" libelle="vnc">
+            <service id="40" libelle="vnc 5800" name="scribe_vnc1" ports="5800" protocol="tcp" />
+            <service id="41" libelle="vnc 5900" name="scribe_vnc2" ports="5900" protocol="tcp" />
+        </groupe>
+        <groupe id="gr_radius" libelle="Serveur radius (UDP)">
+            <service id="70" libelle="" name="radius" ports="1812" protocol="udp" />
+            <service id="74" libelle="" name="radius-acct" ports="1813" protocol="udp" />
+        </groupe>
+    </services><extremites>
+        <extremite libelle="clients de l'agrégateur de logs en udp" name="clients_udp_rsyslog" netmask="%%netmask_client_logs_udp" subnet="0" zone="exterieur">
+            <ip address="%%adresses_ip_clients_logs_udp" />
+        </extremite>
+        <extremite libelle="clients de l'agrégateur de logs en tcp" name="clients_tcp_rsyslog" netmask="%%netmask_client_logs_tcp" subnet="0" zone="exterieur">
+            <ip address="%%adresses_ip_clients_logs_tcp" />
+        </extremite>
+        <extremite libelle="clients de l'agrégateur de logs en relp" name="clients_relp_rsyslog" netmask="%%netmask_client_logs_relp" subnet="0" zone="exterieur">
+            <ip address="%%adresses_ip_clients_logs_relp" />
+        </extremite>
+    <extremite libelle="adresse du bastion sur le reseau admin" name="admin_bastion" netmask="255.255.255.255" subnet="0" zone="exterieur">
+            <ip address="%%adresse_ip_eth1" />
+        </extremite>
+        <extremite libelle="zone restreinte" name="admin_restreint" netmask="%%adresse_netmask_eth1" subnet="1" zone="admin">
+            <ip address="%%adresse_network_eth1" />
+        </extremite>
+        <extremite libelle="Zone entière" name="exterieur" netmask="%%adresse_netmask_eth0" subnet="1" zone="exterieur">
+            <ip address="%%adresse_ip_eth0" />
+        </extremite>
+        <extremite libelle="reseau autorise a se connecter a ssh depuis le reseau administratif" name="admin_ssh" netmask="%%netmask_ssh_eth1" subnet="1" zone="admin">
+            <ip address="%%ip_ssh_eth1" />
+        </extremite>
+        <extremite libelle="Zone entière" name="admin" netmask="%%adresse_netmask_eth1" subnet="1" zone="admin">
+            <ip address="%%adresse_ip_eth1" />
+        </extremite>
+        <extremite libelle="zone restreinte" name="exterieur_restreint" netmask="%%adresse_netmask_eth0" subnet="1" zone="exterieur">
+            <ip address="%%adresse_network_eth0" />
+        </extremite>
+        <extremite libelle="reseau autorise a administrer depuis le reseau administratif" name="admin_admin" netmask="%%netmask_admin_eth1" subnet="1" zone="admin">
+            <ip address="%%ip_admin_eth1" />
+        </extremite>
+        <extremite libelle="reseau autorise a se connecter a ssh" name="exterieur_ssh" netmask="%%netmask_ssh_eth0" subnet="1" zone="exterieur">
+            <ip address="%%ip_ssh_eth0" />
+        </extremite>
+        <extremite libelle="Zone entière" name="bastion" netmask="255.255.255.255" subnet="1" zone="bastion">
+            <ip address="127.0.0.1" />
+        </extremite>
+        <extremite libelle="reseau autorise a administrer depuis l'exterieur" name="exterieur_admin" netmask="%%netmask_admin_eth0" subnet="1" zone="exterieur">
+            <ip address="%%ip_admin_eth0" />
+        </extremite>
+        <extremite libelle="IP de bastion sur la zone exterieur" name="exterieur_bastion" netmask="255.255.255.255" subnet="0" zone="exterieur">
+            <ip address="%%adresse_ip_eth0" />
+        </extremite>
+        <extremite container="internet" interface="containers" libelle="conteneur internet" name="internet" netmask="255.255.255.255" subnet="0" type="conteneur" zone="bastion">
+            <ip address="%%container_ip_internet" />
+        </extremite>
+        <extremite container="internet" interface="eth1" libelle="eth1 dans le conteneur internet" name="internet_eth1" netmask="255.255.255.255" subnet="0" type="conteneur" zone="bastion">
+            <ip address="%%adresse_ip_eth1_proxy_link" />
+        </extremite>
+        <extremite container="internet" interface="eth2" libelle="eth2 dans le conteneur internet" name="internet_eth2" netmask="255.255.255.255" subnet="0" type="conteneur" zone="bastion">
+            <ip address="%%adresse_ip_eth2_proxy_link" />
+        </extremite>
+    <extremite container="partage" interface="eth1" libelle="eth1 dans le conteneur partage" name="partage_eth1" netmask="255.255.255.255" subnet="0" type="conteneur" zone="bastion">
+            <ip address="%%adresse_ip_fichier_link" />
+        </extremite>
+        <extremite interface="containers" libelle="Client NFS" name="client_nfs" netmask="255.255.255.255" subnet="0" type="conteneur" zone="admin">
+            <ip address="%%adresses_ip_clients_nfs" />
+        </extremite>
+        <extremite container="internet" interface="containers" libelle="conteneur partage" name="partage" netmask="255.255.255.255" subnet="0" type="conteneur" zone="bastion">
+            <ip address="%%container_ip_proxy" />
+        </extremite>
+        <extremite container="reseau" interface="containers" libelle="conteneur reseau" name="reseau" netmask="255.255.255.255" subnet="0" type="conteneur" zone="bastion">
+            <ip address="%%container_ip_reseau" />
+        </extremite>
+        <extremite container="bdd" interface="containers" libelle="conteneur bdd" name="bdd" netmask="255.255.255.255" subnet="0" type="conteneur" zone="bastion">
+            <ip address="%%container_ip_bdd" />
+        </extremite>
+    <extremite libelle="adresse du bastion sur le reseau admin" name="admin_bastion" netmask="255.255.255.255" subnet="0" zone="exterieur">
+            <ip address="%%adresse_ip_eth1" />
+        </extremite>
+        <extremite libelle="zone restreinte" name="admin_restreint" netmask="%%adresse_netmask_eth1" subnet="1" zone="admin">
+            <ip address="%%adresse_network_eth1" />
+        </extremite>
+        <extremite libelle="Zone entière" name="exterieur" netmask="%%adresse_netmask_eth0" subnet="1" zone="exterieur">
+            <ip address="%%adresse_ip_eth0" />
+        </extremite>
+        <extremite libelle="reseau autorise a se connecter a ssh depuis le reseau administratif" name="admin_ssh" netmask="%%netmask_ssh_eth1" subnet="1" zone="admin">
+            <ip address="%%ip_ssh_eth1" />
+        </extremite>
+        <extremite libelle="Zone entière" name="admin" netmask="%%adresse_netmask_eth1" subnet="1" zone="admin">
+            <ip address="%%adresse_ip_eth1" />
+        </extremite>
+        <extremite libelle="zone restreinte" name="exterieur_restreint" netmask="%%adresse_netmask_eth0" subnet="1" zone="exterieur">
+            <ip address="%%adresse_network_eth0" />
+        </extremite>
+        <extremite libelle="reseau autorise a administrer depuis le reseau administratif" name="admin_admin" netmask="%%netmask_admin_eth1" subnet="1" zone="admin">
+            <ip address="%%ip_admin_eth1" />
+        </extremite>
+        <extremite libelle="reseau autorise a se connecter a ssh" name="exterieur_ssh" netmask="%%netmask_ssh_eth0" subnet="1" zone="exterieur">
+            <ip address="%%ip_ssh_eth0" />
+        </extremite>
+        <extremite libelle="Zone entière" name="bastion" netmask="255.255.255.255" subnet="1" zone="bastion">
+            <ip address="127.0.0.1" />
+        </extremite>
+        <extremite libelle="reseau autorise a administrer depuis l'exterieur" name="exterieur_admin" netmask="%%netmask_admin_eth0" subnet="1" zone="exterieur">
+            <ip address="%%ip_admin_eth0" />
+        </extremite>
+        <extremite libelle="IP de bastion sur la zone exterieur" name="exterieur_bastion" netmask="255.255.255.255" subnet="0" zone="exterieur">
+            <ip address="%%adresse_ip_eth0" />
+        </extremite>
+        <extremite container="internet" interface="containers" libelle="conteneur internet" name="internet" netmask="255.255.255.255" subnet="0" type="conteneur" zone="bastion">
+            <ip address="%%container_ip_internet" />
+        </extremite>
+        <extremite container="internet" interface="eth1" libelle="eth1 dans le conteneur internet" name="internet_eth1" netmask="255.255.255.255" subnet="0" type="conteneur" zone="bastion">
+            <ip address="%%adresse_ip_eth1_proxy_link" />
+        </extremite>
+        <extremite container="internet" interface="eth2" libelle="eth2 dans le conteneur internet" name="internet_eth2" netmask="255.255.255.255" subnet="0" type="conteneur" zone="bastion">
+            <ip address="%%adresse_ip_eth2_proxy_link" />
+        </extremite>
+    </extremites><ranges>
+        </ranges><user_groups>
+        </user_groups><flux-list>
+        <flux zoneA="bastion" zoneB="exterieur">
+            <montantes default_policy="0">
+                <directive action="2" attrs="17" dest_inv="0" libelle="ouverture de posh a travers de nginx" mark_operator="None" mark_value="" priority="1" serv_inv="0" service="scribe-posh" src_inv="0" tag="ActiverNGINX">
+                    <source name="exterieur" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="1" dest_inv="0" ipsec="0" libelle="autoriser la reception des mails depuis exterieur" mark_operator="None" mark_value="" priority="2" serv_inv="0" service="smtp" src_inv="0" tag="autoriser la reception des mails depuis exterieur">
+                    <source name="exterieur" />
+                    <destination name="reseau" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="interface web sympa" mark_operator="None" mark_value="" priority="3" serv_inv="0" service="sympa-internet" src_inv="0" tag="AdminDepuisEth0">
+                    <source name="exterieur_admin" />
+                    <destination name="reseau" />
+                </directive>
+            <directive action="2" attrs="17" dest_inv="0" libelle="ouverture de posh a travers de nginx" mark_operator="None" mark_value="" priority="4" serv_inv="0" service="scribe-posh" src_inv="0" tag="ActiverNGINX">
+                    <source name="exterieur" />
+                    <destination name="bastion" />
+                </directive>
+                <directive action="2" attrs="17" dest_inv="0" libelle="ouverture de l'EAD Scribe a travers de nginx" mark_operator="None" mark_value="" priority="5" serv_inv="0" service="ead-scribe" src_inv="0" tag="ead_scribe">
+                    <source name="exterieur" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="ssh exterieur vers Amon" priority="6" serv_inv="0" service="ssh" src_inv="0" tag="SSHDepuisEth0">
+                    <source name="exterieur_ssh" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="administration exterieure vers Amon" priority="7" serv_inv="0" service="admin_amon" src_inv="0" tag="AdminDepuisEth0">
+                    <source name="exterieur_admin" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="administration exterieure vers Amon" priority="8" serv_inv="0" service="lightsquid" src_inv="0" tag="lightsquid0">
+                    <source name="exterieur_admin" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="pas de description" priority="9" serv_inv="0" service="eole-sso" src_inv="0" tag="eole_sso">
+                    <source name="exterieur" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="redirection du service EoleSSO par le proxy inverse" priority="10" serv_inv="0" service="revprox-sso" src_inv="0" tag="revprox_sso">
+                    <source name="exterieur" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="0" dest_inv="0" ipsec="0" libelle="Autoriser ipsec" priority="11" serv_inv="0" service="ipsec" src_inv="0">
+                    <source name="exterieur" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="gen_config exterieur vers Amon" priority="12" serv_inv="0" service="gen_config" src_inv="0" tag="SSHDepuisEth0">
+                    <source name="exterieur_ssh" />
+                    <destination name="bastion" />
+                </directive>
+            <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="pas de description" priority="13" serv_inv="0" service="rsyslog_RELP" src_inv="0" tag="ClientRsyslogRELP">
+                    <source name="clients_relp_rsyslog" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="pas de description" priority="14" serv_inv="0" service="rsyslog_TCP" src_inv="0" tag="ClientRsyslogTCP">
+                    <source name="clients_tcp_rsyslog" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="pas de description" priority="15" serv_inv="0" service="rsyslog_UDP" src_inv="0" tag="ClientRsyslogUDP">
+                    <source name="clients_udp_rsyslog" />
+                    <destination name="bastion" />
+                </directive>
+            </montantes>
+            <descendantes default_policy="1">
+            </descendantes>
+        </flux>
+        <flux zoneA="exterieur" zoneB="admin">
+            <montantes default_policy="0">
+            </montantes>
+            <descendantes default_policy="1">
+            <directive accept="0" action="16" attrs="0" dest_inv="0" ipsec="0" libelle="pas de description" nat_extr="exterieur_bastion" nat_port="0" priority="1" serv_inv="0" service="tous" src_inv="0">
+                    <source name="admin_restreint" />
+                    <destination name="exterieur" />
+                </directive>
+                <directive accept="0" action="4" attrs="17" dest_inv="1" ipsec="0" libelle="Redirection des flux http sans proxy" nat_port="3128" priority="2" serv_inv="0" service="gr_redirection_http" src_inv="0" tag="ProxyBypass1">
+                    <source name="admin" />
+                    <destination name="exterieur_bastion" />
+                    <exception dest="1" eolvar="%%proxy_bypass_network_eth1/%%calc_classe(%%proxy_bypass_netmask_eth1)" ip="" name="" src="0" />
+                    <exception dest="1" eolvar="%%proxy_bypass_domain_eth1" ip="" name="" src="0" />
+                </directive>
+                <directive accept="0" action="4" attrs="17" dest_inv="1" ipsec="0" libelle="Redirection des flux http sans proxy" nat_port="3128" priority="3" serv_inv="0" service="gr_redirection_http" src_inv="0" tag="ForceProxy1">
+                    <source name="admin" />
+                    <destination name="exterieur_bastion" />
+                </directive>
+                <directive accept="0" action="4" attrs="17" dest_inv="0" ipsec="0" libelle="Redirection des flux vers le serveur de distribution du fichier wpad" nat_port="81" priority="4" serv_inv="0" service="gr_redirection_http" src_inv="0" tag="ProxyBypass1">
+                    <source name="admin" />
+                    <destination name="exterieur" />
+                    <exception dest="1" eolvar="%%proxy_bypass_network_eth1/%%calc_classe(%%proxy_bypass_netmask_eth1)" ip="" name="" src="0" />
+                    <exception dest="1" eolvar="%%proxy_bypass_domain_eth1" ip="" name="" src="0" />
+                </directive>
+                <directive accept="0" action="4" attrs="17" dest_inv="0" ipsec="0" libelle="Redirection des flux vers le serveur de distribution du fichier wpad" nat_port="81" priority="5" serv_inv="0" service="gr_redirection_http" src_inv="0" tag="ForceProxy1">
+                    <source name="admin" />
+                    <destination name="exterieur" />
+                </directive>
+                <directive accept="0" action="4" attrs="17" dest_inv="0" ipsec="0" libelle="Redirection des flux https sans proxy vers une page d'erreur" nat_port="82" priority="6" serv_inv="0" service="gr_redirection_https" src_inv="0" tag="ProxyBypass1">
+                    <source name="admin" />
+                    <destination name="exterieur" />
+                    <exception dest="1" eolvar="%%proxy_bypass_network_eth1/%%calc_classe(%%proxy_bypass_netmask_eth1)" ip="" name="" src="0" />
+                    <exception dest="1" eolvar="%%proxy_bypass_domain_eth1" ip="" name="" src="0" />
+                </directive>
+                <directive accept="0" action="4" attrs="17" dest_inv="0" ipsec="0" libelle="Redirection des flux https sans proxy vers une page d'erreur" nat_port="82" priority="7" serv_inv="0" service="gr_redirection_https" src_inv="0" tag="ForceProxy1">
+                    <source name="admin" />
+                    <destination name="exterieur" />
+                </directive>
+            </descendantes>
+        </flux>
+        <flux zoneA="bastion" zoneB="admin">
+            <montantes default_policy="0">
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="pas de description" mark_operator="None" mark_value="" priority="1" serv_inv="0" service="ldap" src_inv="0" tag="activer_ldap">
+                    <source name="admin" />
+                    <destination name="bdd" />
+                </directive>
+                <directive accept="0" action="2" attrs="0" dest_inv="0" ipsec="0" libelle="pas de description" mark_operator="None" mark_value="" priority="2" serv_inv="0" service="ldaps" src_inv="0" tag="activer_ldaps">
+                    <source name="admin" />
+                    <destination name="bdd" />
+                </directive>
+                <directive accept="0" action="2" attrs="0" dest_inv="0" ipsec="0" libelle="autoriser les requetes ntp" mark_operator="None" mark_value="" priority="3" serv_inv="0" service="ntp" src_inv="0">
+                    <source name="admin" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="interface web sympa" mark_operator="None" mark_value="" priority="4" serv_inv="0" service="sympa-internet" src_inv="0" tag="AdminDepuisEth1">
+                    <source name="admin_admin" />
+                    <destination name="reseau" />
+                </directive>
+                <directive accept="0" action="2" attrs="0" dest_inv="0" ipsec="0" libelle="interface web sympa" mark_operator="None" mark_value="" priority="5" serv_inv="0" service="sympa-restreint" src_inv="0">
+                    <source name="admin" />
+                    <destination name="reseau" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="Activer NFS depuis les clients" priority="6" serv_inv="0" service="nfs" src_inv="0" tag="activer_nfs">
+                    <source name="client_nfs" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="pas de description" priority="7" serv_inv="0" service="imap" src_inv="0" tag="activer_courrier_imap">
+                    <source name="admin" />
+                    <destination name="reseau" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="pas de description" priority="8" serv_inv="0" service="imap4-ssl" src_inv="0" tag="activer_courrier_imap">
+                    <source name="admin" />
+                    <destination name="reseau" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="pas de description" priority="9" serv_inv="0" service="pop" src_inv="0" tag="activer_courrier_pop">
+                    <source name="admin" />
+                    <destination name="reseau" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="pas de description" priority="10" serv_inv="0" service="pop3s" src_inv="0" tag="activer_courrier_pop">
+                    <source name="admin" />
+                    <destination name="reseau" />
+                </directive>
+                <directive accept="0" action="2" attrs="0" dest_inv="0" ipsec="0" libelle="pas de description" priority="11" serv_inv="0" service="smtp" src_inv="0">
+                    <source name="admin" />
+                    <destination name="reseau" />
+                </directive>
+                <directive accept="0" action="2" attrs="0" dest_inv="0" ipsec="0" libelle="pas de description" priority="12" serv_inv="0" service="smtps" src_inv="0">
+                    <source name="admin" />
+                    <destination name="reseau" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="pas de description" priority="13" serv_inv="0" service="xmpp" src_inv="0" tag="activer_xmpp">
+                    <source name="admin" />
+                    <destination name="reseau" />
+                </directive>
+                <directive accept="0" action="2" attrs="0" dest_inv="0" ipsec="0" libelle="pas de description" mark_operator="None" mark_value="" priority="14" serv_inv="0" service="tftpd-hpa" src_inv="0" tag="activer_tftp">
+                    <source name="admin" />
+                    <destination name="bdd" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="interface web CUPS" mark_operator="None" mark_value="" priority="15" serv_inv="0" service="cups" src_inv="0" tag="activer_cups1">
+                    <source name="admin_admin" />
+                    <destination name="partage_eth1" />
+                </directive>
+                <directive accept="0" action="2" attrs="0" dest_inv="0" ipsec="0" libelle="Controle VNC" mark_operator="None" mark_value="" priority="16" serv_inv="0" service="scribe-controlevnc" src_inv="0">
+                    <source name="admin" />
+                    <destination name="partage_eth1" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="Controle VNC" mark_operator="None" mark_value="" priority="17" serv_inv="0" service="ftp" src_inv="0" tag="activer_proftpd">
+                    <source name="admin" />
+                    <destination name="partage_eth1" />
+                </directive>
+                <directive accept="0" action="2" attrs="0" dest_inv="0" ipsec="0" libelle="Controle VNC" mark_operator="None" mark_value="" priority="18" serv_inv="0" service="samba" src_inv="0">
+                    <source name="admin" />
+                    <destination name="partage_eth1" />
+                </directive>
+                <directive accept="0" action="2" attrs="0" dest_inv="0" ipsec="0" libelle="Autorise le ping vers le conteneur" priority="19" serv_inv="0" service="echo-request" src_inv="0">
+                    <source name="admin" />
+                    <destination name="partage_eth1" />
+                </directive>
+                <directive accept="0" action="2" attrs="0" dest_inv="0" ipsec="0" libelle="Autorise le ping vers le conteneur" priority="20" serv_inv="0" service="echo-request" src_inv="0">
+                    <source name="admin" />
+                    <destination name="internet_eth1" />
+                </directive>
+            <directive accept="0" action="4" attrs="0" dest_inv="0" ipsec="0" libelle="Redirection pour le fichier wpad." nat_port="81" priority="21" serv_inv="0" service="http" src_inv="0">
+                    <source name="admin" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="ssh admin vers Amon" priority="22" serv_inv="0" service="ssh" src_inv="0" tag="SSHDepuisEth1">
+                    <source name="admin_ssh" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="administration admin vers Amon" priority="23" serv_inv="0" service="admin_amon" src_inv="0" tag="AdminDepuisEth1">
+                    <source name="admin_admin" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="0" dest_inv="0" ipsec="0" libelle="pas de description" priority="24" serv_inv="0" service="dns-tcp" src_inv="0">
+                    <source name="admin" />
+                    <destination name="internet_eth1" />
+                </directive>
+                <directive accept="0" action="2" attrs="0" dest_inv="0" ipsec="0" libelle="pas de description" priority="25" serv_inv="0" service="dns-udp" src_inv="0">
+                    <source name="admin" />
+                    <destination name="internet_eth1" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="autoriser l'acces a Nuauth" priority="26" serv_inv="0" service="nuauth" src_inv="0" tag="auth_nufw">
+                    <source name="admin" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="pas de description" priority="27" serv_inv="0" service="eole-sso" src_inv="0" tag="eole_sso">
+                    <source name="admin" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="0" dest_inv="0" ipsec="0" libelle="pas de description" priority="28" serv_inv="0" service="proxy" src_inv="0">
+                    <source name="admin" />
+                    <destination name="internet_eth1" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="pas de description" priority="29" serv_inv="0" service="proxy2" src_inv="0" tag="Activer squid2">
+                    <source name="admin" />
+                    <destination name="internet_eth1" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="pas de description" priority="30" serv_inv="0" service="cntlm" src_inv="0" tag="cntlm">
+                    <source name="admin" />
+                    <destination name="internet_eth1" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="gen_config admin vers Amon" priority="31" serv_inv="0" service="gen_config" src_inv="0" tag="SSHDepuisEth1">
+                    <source name="admin_ssh" />
+                    <destination name="bastion" />
+                </directive>
+                <directive accept="0" action="2" attrs="17" dest_inv="0" ipsec="0" libelle="raduis admin vers Amon" priority="32" serv_inv="0" service="gr_radius" src_inv="0" tag="ActiverRadiuseth1">
+                    <source name="admin" />
+                    <destination name="bastion" />
+                </directive>
+            </montantes>
+            <descendantes default_policy="1">
+            </descendantes>
+        </flux>
+    </flux-list></firewall>

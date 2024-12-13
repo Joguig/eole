@@ -1,0 +1,40 @@
+status: DEVELOPPEMENT
+description: |
+   Le but de ce test est vérifier l'importation AAF sur un cluster AD DC1/DC2/FILE 
+
+frequence: manuel
+heriteDe: seth-aaf-mini
+contrainte: architecture = amd64 and version >= 2.6.2
+regroupement: 96
+
+testsOk:
+-  Instance-Etb1Amon
+-  Instance-AcaDc1
+
+contexts:
+- machine: etb1.amon 
+  methode: instance
+  configuration: default
+  passive: oui
+  utiliseDerniereStableSiBesoin: oui
+  
+- machine: etb1.dcpedago
+  methode: instance
+  configuration: default
+  passive: oui
+
+- machine: etb1.pceleve
+  methode: instance
+  configuration: domain
+  base: win10
+  passive: oui
+  
+tests:
+- nom: etb1-dcpedago
+  commandes:
+  - machine: etb1.amon
+    run: ouvre.firewall
+       
+  - machine: etb1.dcpedago
+    run: cInstance
+    

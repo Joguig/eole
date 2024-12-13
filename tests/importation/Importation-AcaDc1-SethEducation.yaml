@@ -1,0 +1,28 @@
+genereImage: aca.dc1-{VERSION}-avecimport-setheducation-{ARCHITECTURE}.vm
+status: PUBLIQUE
+description: |
+   Le but de ce test est de vérifier l'importation de comptes dans Seth avec le paquet Seth Education
+   Nous vérifions que les comptes sont crées, les répertoires. 
+
+contrainte: architecture = amd64 and version > 2.7.1 
+regroupement: SE
+
+testsOk:
+-  Instance-AcaDc1-SethEducation
+
+contexts:
+- machine: aca.dc1
+  methode: instance
+  configuration: setheducation
+
+tests:
+- nom: test-01
+  commandes:
+  - run: importation-seth.sh
+    args:
+    - setheducation
+    
+  - automate: shutdownWithSnapshot
+
+  - automate: updateTemplate
+

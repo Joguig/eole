@@ -1,0 +1,50 @@
+genereImage: aca.envole-{VERSION}-instance-AvecImport-{ARCHITECTURE}.vm
+status: PUBLIQUE
+description: |
+   Le but de ce test est de vérifier le chargement des fichiers ENVOLE dans la machine Aca.Envole.
+   Nous vérifions que les comptes sont crées, les répertoires, et mails.
+   Nous créons les niveaux, classes, eleves, professeurs, et administratifs
+
+frequence: if version is 2.5.2 then weekly
+
+contrainte: architecture = amd64 and not (version is 2.6.0)
+regroupement: EN
+
+contexts:
+- machine: aca.envole
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test-01
+  commandes:
+  - run: importation_envole_eleves_et_responsables.sh
+  
+  - run: check-importation-compte.sh
+    args:
+    - eleves
+    - 6a.01
+    - "6a,n6"
+  
+  - run: importation_envole_professeurs_et_administratifs.sh
+  - run: install-envole.sh
+    timeout: 1200
+
+  - run: check-importation-compte.sh
+    args:
+    - personnels
+    - profpo
+  
+
+  - run: ciGenConfigSave
+  - run: ciMonitor reconfigure
+    timeout: 1800
+
+  - run: |
+         find /home >/tmp/liste_apres.txt
+         echo "***************** DIFFERENCE REPERTOIRES *****************"
+         diff /tmp/liste_avant.txt /tmp/liste_apres.txt
+         echo "**********************************************************"
+
+  - automate: shutdownWithSnapshot
+  - automate: updateTemplate

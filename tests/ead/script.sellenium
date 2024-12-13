@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://scribe.ac-test.fr:4200/" />
+<title>script</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">script</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=scribe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=valider</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Outils</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#menu_scribe_extraction &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Importation annuelle des bases</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sconet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Enseignants et personnels administratifs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#content &gt; div &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#content &gt; div &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=enseignant</td>
+	<td>/mnt/eole-ci-tests/dataset/données_scribe/sts_emp_0210050R_2009.xml</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.simple_link &gt; h1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.simple_link &gt; h1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Importation des comptes en cours, veuillez conserver cette page. Cette opération peut être longue.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Lecture des fichiers en cours, veuillez conserver cette page.</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

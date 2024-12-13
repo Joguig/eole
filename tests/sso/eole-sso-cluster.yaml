@@ -1,0 +1,52 @@
+frequence: weekly
+status: PRODUCTION
+description: |
+   le but de ce test est de vérifier le fonctionnement de SSO Cluster Scribe/Eolebase
+
+contrainte: architecture is amd64 and version > 2.7.0 and version < 2.9.0
+regroupement: 91
+
+contexts:
+- machine: aca.pc
+  methode: instance
+  configuration: default
+  base: linux-mate-2204
+
+- machine: aca.eolebase
+  methode: instance
+  configuration: default
+  passive: oui
+
+- machine: aca.scribe
+  methode: instance
+  configuration: default
+  passive: oui
+
+tests:
+- nom: preparation
+  commandes:
+  - machine: aca.eolebase
+    run: preparation-eolebase.sh
+
+  - machine: aca.scribe
+    run: preparation-scribe.sh
+
+  - machine: aca.eolebase
+    run: import-certificat-eolebase.sh
+
+  - machine: aca.scribe
+    run: import-certificat-scribe.sh
+
+  - machine: aca.pc
+    run: interroge-ead.sh
+    args:
+    - "{VERSIONMAJEUR}"
+
+  - machine: aca.pc
+    run: shutdown --reboot --no-wall 1
+
+  - machine: aca.scribe
+    run: interroge-redis-scribe.sh
+
+  - machine: aca.eolebase
+    run: interroge-redis-eolebase.sh

@@ -1,0 +1,49 @@
+frequence: weekly
+status: PRODUCTION
+description: |
+   Le but de ce test est de vérifier la migration d'un AmonEcole 2.8.1 vers la version {VERSIONMAJEUR}
+
+contrainte: version in [ 2.9.0 ]
+regroupement: 60
+
+contexts:
+- machine: etb3.amonecole
+  methode: instance
+  configuration: default
+  base: eole-2.8.1
+
+tests:
+- commandes:
+    - run: ciMonitor maj_auto_rc
+      timeout: 1200
+
+    - run: ciMonitor reconfigure
+
+    - automate: reboot
+
+    - run: create-domaines_noauth_user.sh
+      args:
+      - "{VERSIONMAJEUR}"
+    - run: do-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      timeout: 3600
+
+    - automate: reboot
+
+    - run: check-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+
+    - run: instance-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      timeout: 2000
+
+    - run: diagnose-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+
+    - run: check-domaines_noauth_user.sh
+      args:
+      - "{VERSIONMAJEUR}"

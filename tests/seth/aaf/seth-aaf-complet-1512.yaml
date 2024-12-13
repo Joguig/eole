@@ -1,0 +1,25 @@
+status: DEVELOPPEMENT
+description: |
+   Le but de ce test est vérifier la procédure d'import AAF sur Seth
+
+frequence: manuel
+contrainte: architecture = amd64 and version = 2.6.2
+regroupement: 96
+genereImage: aca.dc1-{VERSION}-avecimport-AAF1512-{ARCHITECTURE}.vm
+
+testsOk:
+-  Instance-AcaDc1
+
+contexts:
+- machine: aca.dc1 
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test-aaf-complet
+  commandes:
+  - run: import-aaf-complet-1512-Seth.sh
+    timeout: 7200
+  - automate: shutdownWithSnapshot
+  - automate: updateTemplate
+  

@@ -1,0 +1,898 @@
+TEST: Listing Users : OK
+# record 1
+dn: CN=10b3ad2a-6883-4fa7-90fc-6377cbdc1b26,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 2
+dn: CN=byaddr,CN=ethers,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 3
+dn: CN=a3dac986-80e7-4e59-a059-54cb1ab43cb9,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 4
+dn: CN=f58300d1-b71a-4DB6-88a1-a8b9538beaca,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 5
+dn: CN=ipsecNFA{59319C04-5EE3-11D2-ACE8-0060B0ECCA17},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 6
+dn: CN=group,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 7
+dn: CN=hosts,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 8
+dn: CN=ac-test,CN=passwd,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 9
+dn: CN=byname,CN=hosts,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 10
+dn: CN=administratif,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: administratif
+
+# record 11
+dn: CN=ipsecNegotiationPolicy{7238523F-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 12
+dn: CN=ipsecNFA{594272E2-071D-11D3-AD22-0060B0ECCA17},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 13
+dn: CN=ipsecNFA{72385232-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 14
+dn: CN=ac-test,CN=bootparams,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 15
+dn: CN=ac-test,CN=netmasks,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 16
+dn: CN=ipsecNegotiationPolicy{59319BF0-5EE3-11D2-ACE8-0060B0ECCA17},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 17
+dn: CN=d85c0bfd-094f-4cad-a2b5-82ac9268475d,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 18
+dn: CN=Administrator,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: Administrator
+
+# record 19
+dn: CN=LostAndFound,DC=ac-test,DC=fr
+
+# record 20
+dn: CN=2416c60a-fe15-4d7a-a61e-dffd5df864d3,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 21
+dn: CN=Enterprise Read-only Domain Controllers,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: Enterprise Read-Only Domain Controllers
+
+# record 22
+dn: CN=ac-test,CN=netgroup,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 23
+dn: CN=6ada9ff7-c9df-45c1-908e-9fef2fab008a,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 24
+dn: CN=Replicator,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Replicator
+
+# record 25
+dn: CN=bynumber,CN=protocols,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 26
+dn: DC=i.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=ac-test,DC=fr
+
+# record 27
+dn: CN=byaddr,CN=netmasks,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 28
+dn: CN=FileLinks,CN=System,DC=ac-test,DC=fr
+
+# record 29
+dn: CN=f607fd87-80cf-45e2-890b-6cf97ec0e284,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 30
+dn: CN=Guest,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: Guest
+
+# record 31
+dn: CN=byname,CN=protocols,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 32
+dn: DC=b.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=ac-test,DC=fr
+
+# record 33
+dn: CN=rpc,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 34
+dn: DC=k.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=ac-test,DC=fr
+
+# record 35
+dn: CN=krbtgt,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: krbtgt
+
+# record 36
+dn: CN=Performance Monitor Users,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Performance Monitor Users
+
+# record 37
+dn: CN=RAS and IAS Servers Access Check,CN=System,DC=ac-test,DC=fr
+
+# record 38
+dn: CN=ipsecPolicy{72385230-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 39
+dn: CN=Cryptographic Operators,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Cryptographic Operators
+
+# record 40
+dn: DC=d.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=ac-test,DC=fr
+
+# record 41
+dn: CN=T STL,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: T STL
+
+# record 42
+dn: CN=shadow,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 43
+dn: CN=Certificate Service DCOM Access,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Certificate Service DCOM Access
+
+# record 44
+dn: CN=passwd,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 45
+dn: DC=m.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=ac-test,DC=fr
+
+# record 46
+dn: CN=6E157EDF-4E72-4052-A82A-EC3F91021A22,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 47
+dn: CN=Builtin,DC=ac-test,DC=fr
+
+# record 48
+dn: CN=byhost,CN=netgroup,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 49
+dn: CN=Content,CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=ac-test,DC=fr
+
+# record 50
+dn: CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 51
+dn: CN=Policies,CN=System,DC=ac-test,DC=fr
+
+# record 52
+dn: DC=f.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=ac-test,DC=fr
+
+# record 53
+dn: CN=Users,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Users
+
+# record 54
+dn: CN=byname,CN=netid,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 55
+dn: CN=ipsecNFA{59319BE2-5EE3-11D2-ACE8-0060B0ECCA17},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 56
+dn: CN=ipsecISAKMPPolicy{72385237-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 57
+dn: CN=mail,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 58
+dn: CN=RID Set,CN=DC1,OU=Domain Controllers,DC=ac-test,DC=fr
+
+# record 59
+dn: CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=ac-test,DC=fr
+
+# record 60
+dn: DC=h.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=ac-test,DC=fr
+
+# record 61
+dn: CN=2951353e-d102-4ea5-906c-54247eeec741,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 62
+dn: CN=a86fe12a-0f62-4e2a-b271-d27f601f8182,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 63
+dn: CN=0b7fb422-3609-4587-8c2e-94b10f67d1bf,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 64
+dn: CN=5c82b233-75fc-41b3-ac71-c69592e6bf15,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 65
+dn: DC=a.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=ac-test,DC=fr
+
+# record 66
+dn: CN=6bcd5680-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 67
+dn: CN=PolicyTemplate,CN=WMIPolicy,CN=System,DC=ac-test,DC=fr
+
+# record 68
+dn: CN=ac-test,CN=ypservers,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 69
+dn: CN=byname,CN=ethers,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 70
+dn: CN=6bcd568c-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 71
+dn: CN=Machine,CN={6AC1786C-016F-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=ac-test,DC=fr
+
+# record 72
+dn: DC=j.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=ac-test,DC=fr
+
+# record 73
+dn: OU=Domain Controllers,DC=ac-test,DC=fr
+
+# record 74
+dn: CN=6bcd5685-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 75
+dn: CN=ac-test,CN=hosts,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 76
+dn: CN=WMIPolicy,CN=System,DC=ac-test,DC=fr
+
+# record 77
+dn: DC=c.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=ac-test,DC=fr
+
+# record 78
+dn: CN=Read-only Domain Controllers,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: Read-Only Domain Controllers
+
+# record 79
+dn: CN=ipsecNegotiationPolicy{72385233-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 80
+dn: DC=l.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=ac-test,DC=fr
+
+# record 81
+dn: CN=6bcd568d-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 82
+dn: CN=FILE,CN=Computers,DC=ac-test,DC=fr
+sAMAccountName: FILE$
+
+# record 83
+dn: CN=6bcd567d-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 84
+dn: CN=Print Operators,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Print Operators
+
+# record 85
+dn: CN=ipsecNFA{594272FD-071D-11D3-AD22-0060B0ECCA17},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 86
+dn: CN=ActiveDirectoryUpdate,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 87
+dn: DC=e.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=ac-test,DC=fr
+
+# record 88
+dn: CN=RID Set,CN=DC2,OU=Domain Controllers,DC=ac-test,DC=fr
+
+# record 89
+dn: CN=Windows2003Update,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 90
+dn: CN=bydefaults,CN=shadow,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 91
+dn: CN=ac-test,CN=rpc,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 92
+dn: DC=ac-test,DC=fr
+
+# record 93
+dn: CN=RAS and IAS Servers,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: RAS and IAS Servers
+
+# record 94
+dn: CN=S-1-5-9,CN=ForeignSecurityPrincipals,DC=ac-test,DC=fr
+
+# record 95
+dn: CN=293f0798-ea5c-4455-9f5d-45f33a30703b,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 96
+dn: CN=Password Settings Container,CN=System,DC=ac-test,DC=fr
+
+# record 97
+dn: CN=User,CN={6AC1786C-016F-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=ac-test,DC=fr
+
+# record 98
+dn: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=ac-test,DC=fr
+
+# record 99
+dn: CN=6bcd567e-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 100
+dn: CN=ipsecPolicy{72385236-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 101
+dn: CN=PolicyType,CN=WMIPolicy,CN=System,DC=ac-test,DC=fr
+
+# record 102
+dn: CN=DnsUpdateProxy,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: DnsUpdateProxy
+
+# record 103
+dn: DC=g.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=ac-test,DC=fr
+
+# record 104
+dn: CN=Domain Controllers,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: Domain Controllers
+
+# record 105
+dn: CN=Allowed RODC Password Replication Group,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: Allowed RODC Password Replication Group
+
+# record 106
+dn: CN=AdminSDHolder,CN=System,DC=ac-test,DC=fr
+
+# record 107
+dn: CN=annie.dubled01,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: annie.dubled01
+
+# record 108
+dn: CN=Server Operators,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Server Operators
+
+# record 109
+dn: CN=Default Domain Policy,CN=System,DC=ac-test,DC=fr
+
+# record 110
+dn: CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 111
+dn: CN=ipsecPolicy{7238523C-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 112
+dn: CN=dda1d01d-4bd7-4c49-a184-46f9241b560e,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 113
+dn: CN=Program Data,DC=ac-test,DC=fr
+
+# record 114
+dn: CN=netid,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 115
+dn: CN=71482d49-8870-4cb3-a438-b6fc9ec35d70,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 116
+dn: CN={6AC1786C-016F-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=ac-test,DC=fr
+
+# record 117
+dn: CN=byname,CN=services,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 118
+dn: CN=ipsecFilter{7238523A-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 119
+dn: CN=Event Log Readers,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Event Log Readers
+
+# record 120
+dn: CN=8ca38317-13a4-4bd4-806f-ebed6acb5d0c,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 121
+dn: CN=Microsoft,CN=Program Data,DC=ac-test,DC=fr
+
+# record 122
+dn: CN=Computers,DC=ac-test,DC=fr
+
+# record 123
+dn: CN=bydefaults,CN=netgroup,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 124
+dn: CN=DFSR-GlobalSettings,CN=System,DC=ac-test,DC=fr
+
+# record 125
+dn: CN=ObjectMoveTable,CN=FileLinks,CN=System,DC=ac-test,DC=fr
+
+# record 126
+dn: CN=ab402345-d3c3-455d-9ff7-40268a1099b6,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 127
+dn: CN=ethers,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 128
+dn: CN=Pre-Windows 2000 Compatible Access,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Pre-Windows 2000 Compatible Access
+
+# record 129
+dn: CN=protocols,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 130
+dn: CN=61b34cb0-55ee-4be9-b595-97810b92b017,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 131
+dn: CN=c88227bc-fcca-4b58-8d8a-cd3d64528a02,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 132
+dn: CN=bab5f54d-06c8-48de-9b87-d78b796564e4,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 133
+dn: CN=9738c400-7795-4d6e-b19d-c16cd6486166,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 134
+dn: CN=DC2,OU=Domain Controllers,DC=ac-test,DC=fr
+sAMAccountName: DC2$
+
+# record 135
+dn: CN=b96ed344-545a-4172-aa0c-68118202f125,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 136
+dn: DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=ac-test,DC=fr
+
+# record 137
+dn: CN=0e660ea3-8a5e-4495-9ad7-ca1bd4638f9e,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 138
+dn: CN=Domain Computers,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: Domain Computers
+
+# record 139
+dn: CN=ipsecNegotiationPolicy{59319C01-5EE3-11D2-ACE8-0060B0ECCA17},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 140
+dn: CN=Domain Admins,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: Domain Admins
+
+# record 141
+dn: CN=File Replication Service,CN=System,DC=ac-test,DC=fr
+
+# record 142
+dn: CN=51cba88b-99cf-4e16-bef2-c427b38d0767,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 143
+dn: CN=4aaabc3a-c416-4b9c-a6bb-4b453ab1c1f0,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 144
+dn: CN=57428d75-bef7-43e1-938b-2e749f5a8d56,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 145
+dn: CN=4dfbb973-8a62-4310-a90c-776e00f83222,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 146
+dn: CN=System,DC=ac-test,DC=fr
+
+# record 147
+dn: CN=446f24ea-cfd5-4c52-8346-96e170bcb912,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 148
+dn: CN=de10d491-909f-4fb0-9abb-4b7865c0fe80,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 149
+dn: CN=services,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 150
+dn: CN=4c93ad42-178a-4275-8600-16811d28f3aa,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 151
+dn: CN=byname,CN=passwd,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 152
+dn: CN=bydefaults,CN=bootparams,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 153
+dn: CN=RID Manager$,CN=System,DC=ac-test,DC=fr
+
+# record 154
+dn: CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=ac-test,DC=fr
+
+# record 155
+dn: CN=6bcd5681-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 156
+dn: CN=6bcd5686-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 157
+dn: CN=ipsecNFA{59319BF3-5EE3-11D2-ACE8-0060B0ECCA17},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 158
+dn: CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 159
+dn: CN=Machine,CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=ac-test,DC=fr
+
+# record 160
+dn: CN=aed72870-bf16-4788-8ac7-22299c8207f1,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 161
+dn: CN=bydefaults,CN=ypservers,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 162
+dn: CN=Dfs-Configuration,CN=System,DC=ac-test,DC=fr
+
+# record 163
+dn: CN=ipsecFilter{72385235-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 164
+dn: CN=bynumber,CN=rpc,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 165
+dn: CN=netgroup,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 166
+dn: CN=6bcd5682-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 167
+dn: CN=DnsAdmins,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: DnsAdmins
+
+# record 168
+dn: CN=Guests,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Guests
+
+# record 169
+dn: CN=6bcd5687-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 170
+dn: CN=bygid,CN=group,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 171
+dn: CN=Network Configuration Operators,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Network Configuration Operators
+
+# record 172
+dn: CN=ForeignSecurityPrincipals,DC=ac-test,DC=fr
+
+# record 173
+dn: CN=Performance Log Users,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Performance Log Users
+
+# record 174
+dn: CN=9cac1f66-2167-47ad-a472-2a13251310e4,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 175
+dn: CN=6bcd568a-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 176
+dn: CN=6bcd567a-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 177
+dn: CN=ipsecNFA{6A1F5C6F-72B7-11D2-ACF0-0060B0ECCA17},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 178
+dn: CN=ComPartitionSets,CN=System,DC=ac-test,DC=fr
+
+# record 179
+dn: CN=netmasks,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 180
+dn: CN=MicrosoftDNS,CN=System,DC=ac-test,DC=fr
+
+# record 181
+dn: CN=6bcd567f-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 182
+dn: CN=6ff880d6-11e7-4ed1-a20f-aac45da48650,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 183
+dn: CN=Schema Admins,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: Schema Admins
+
+# record 184
+dn: CN=6bcd5678-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 185
+dn: CN=S-1-5-17,CN=ForeignSecurityPrincipals,DC=ac-test,DC=fr
+
+# record 186
+dn: CN=valentine.dupont01,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: valentine.dupont01
+
+# record 187
+dn: CN=Topology,CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=ac-test,DC=fr
+
+# record 188
+dn: CN=Remote Desktop Users,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Remote Desktop Users
+
+# record 189
+dn: CN=231fb90b-c92a-40c9-9379-bacfc313a3e3,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 190
+dn: CN=ipsecNFA{7238523E-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 191
+dn: CN=IIS_IUSRS,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: IIS_IUSRS
+
+# record 192
+dn: CN=ipsecISAKMPPolicy{7238523D-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 193
+dn: CN=7868d4c8-ac41-4e05-b401-776280e8e9f1,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 194
+dn: CN=byaddr,CN=networks,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 195
+dn: CN=3051c66f-b332-4a73-9a20-2d6a7d6e6a1c,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 196
+dn: CN=byuid,CN=passwd,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 197
+dn: DC=@,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=ac-test,DC=fr
+
+# record 198
+dn: CN=Users,DC=ac-test,DC=fr
+
+# record 199
+dn: CN=ypservers,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 200
+dn: CN=Enterprise Admins,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: Enterprise Admins
+
+# record 201
+dn: CN=860c36ed-5241-4c62-a18b-cf6ff9994173,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 202
+dn: CN=8437C3D8-7689-4200-BF38-79E4AC33DFA0,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 203
+dn: CN=WMIGPO,CN=WMIPolicy,CN=System,DC=ac-test,DC=fr
+
+# record 204
+dn: CN=ac-test,CN=netid,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 205
+dn: CN=byname,CN=group,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 206
+dn: CN=Server,CN=System,DC=ac-test,DC=fr
+
+# record 207
+dn: CN=ac-test,CN=networks,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 208
+dn: CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 209
+dn: CN=WinsockServices,CN=System,DC=ac-test,DC=fr
+
+# record 210
+dn: CN=ComPartitions,CN=System,DC=ac-test,DC=fr
+
+# record 211
+dn: CN=bootparams,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 212
+dn: CN=jeanne.dubled01,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: jeanne.dubled01
+
+# record 213
+dn: CN=Denied RODC Password Replication Group,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: Denied RODC Password Replication Group
+
+# record 214
+dn: CN=ipsecNegotiationPolicy{7238523B-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 215
+dn: CN=eleve,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: eleve
+
+# record 216
+dn: CN=byaddr,CN=hosts,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 217
+dn: CN=S-1-5-4,CN=ForeignSecurityPrincipals,DC=ac-test,DC=fr
+
+# record 218
+dn: CN=a1789bfb-e0a2-4739-8cc0-e77d892d080a,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 219
+dn: CN=enseignant,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: enseignant
+
+# record 220
+dn: CN=Cert Publishers,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: Cert Publishers
+
+# record 221
+dn: CN=8ddf6913-1c7b-4c59-a5af-b9ca3b3d2c4c,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 222
+dn: CN=Domain Users,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: Domain Users
+
+# record 223
+dn: CN=Incoming Forest Trust Builders,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Incoming Forest Trust Builders
+
+# record 224
+dn: CN=admin,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: admin
+
+# record 225
+dn: CN=ac-test,CN=shadow,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 226
+dn: CN=7ffef925-405b-440a-8d58-35e8cd6e98c3,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 227
+dn: CN=User,CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=ac-test,DC=fr
+
+# record 228
+dn: CN=ghislaine.delmare01,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: ghislaine.delmare01
+
+# record 229
+dn: CN=f7ed4553-d82b-49ef-a839-2f38a36bb069,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 230
+dn: CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 231
+dn: CN=7cfb016c-4f87-4406-8166-bd9df943947f,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 232
+dn: CN=f3dd09dd-25e8-4f9c-85df-12d6d2f2f2f5,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 233
+dn: CN=Domain Guests,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: Domain Guests
+
+# record 234
+dn: CN=ac-test,CN=ethers,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 235
+dn: CN=AppCategories,CN=Default Domain Policy,CN=System,DC=ac-test,DC=fr
+
+# record 236
+dn: CN=6bcd5683-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 237
+dn: CN=byuser,CN=netgroup,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 238
+dn: CN=Group Policy Creator Owners,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: Group Policy Creator Owners
+
+# record 239
+dn: CN=Meetings,CN=System,DC=ac-test,DC=fr
+
+# record 240
+dn: CN=Windows Authorization Access Group,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Windows Authorization Access Group
+
+# record 241
+dn: CN=byname,CN=networks,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 242
+dn: CN=6bcd5688-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 243
+dn: CN=Backup Operators,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Backup Operators
+
+# record 244
+dn: CN=networks,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 245
+dn: CN=98de1d3e-6611-443b-8b4e-f4337f1ded0b,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 246
+dn: CN=Infrastructure,DC=ac-test,DC=fr
+
+# record 247
+dn: CN=3c784009-1f57-4e2a-9b04-6915c9e71961,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 248
+dn: CN=SOM,CN=WMIPolicy,CN=System,DC=ac-test,DC=fr
+
+# record 249
+dn: CN=6bcd568b-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 250
+dn: CN=ipsecISAKMPPolicy{72385231-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# record 251
+dn: CN=albertine.delacourt04,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: albertine.delacourt04
+
+# record 252
+dn: CN=albertine.delacourt03,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: albertine.delacourt03
+
+# record 253
+dn: CN=6bcd567b-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 254
+dn: CN=6bcd5684-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 255
+dn: CN=albertine.delacourt02,CN=Users,DC=ac-test,DC=fr
+sAMAccountName: albertine.delacourt02
+
+# record 256
+dn: CN=DC1,OU=Domain Controllers,DC=ac-test,DC=fr
+sAMAccountName: DC1$
+
+# record 257
+dn: CN=6bcd5689-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 258
+dn: CN=VolumeTable,CN=FileLinks,CN=System,DC=ac-test,DC=fr
+
+# record 259
+dn: CN=byaddr,CN=mail,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 260
+dn: CN=6bcd5679-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 261
+dn: CN=Distributed COM Users,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Distributed COM Users
+
+# record 262
+dn: CN=ac-test,CN=group,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 263
+dn: CN=ebad865a-d649-416f-9922-456b53bbb5b8,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 264
+dn: CN=NTDS Quotas,DC=ac-test,DC=fr
+
+# record 265
+dn: CN=Account Operators,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Account Operators
+
+# record 266
+dn: CN=3e4f4182-ac5d-4378-b760-0eab2de593e2,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 267
+dn: CN=Terminal Server License Servers,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Terminal Server License Servers
+
+# record 268
+dn: CN=6bcd567c-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 269
+dn: CN=ac-test,CN=protocols,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 270
+dn: CN=Administrators,CN=Builtin,DC=ac-test,DC=fr
+sAMAccountName: Administrators
+
+# record 271
+dn: CN=13d15cf0-e6c8-11d6-9793-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 272
+dn: CN=ac-test,CN=services,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 273
+dn: CN=c4f17608-e611-11d6-9793-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=ac-test,DC=fr
+
+# record 274
+dn: CN=ac-test,CN=mail,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 275
+dn: CN=aliases,CN=mail,CN=ypServ30,CN=RpcServices,CN=System,DC=ac-test,DC=fr
+
+# record 276
+dn: CN=ipsecNegotiationPolicy{59319BDF-5EE3-11D2-ACE8-0060B0ECCA17},CN=IP Security,CN=System,DC=ac-test,DC=fr
+
+# Referral
+ref: ldap://ac-test.fr/CN=Configuration,DC=ac-test,DC=fr
+
+# Referral
+ref: ldap://ac-test.fr/DC=DomainDnsZones,DC=ac-test,DC=fr
+
+# Referral
+ref: ldap://ac-test.fr/DC=ForestDnsZones,DC=ac-test,DC=fr
+
+# returned 279 records
+# 276 entries
+# 3 referrals
+TEST: Listing Users : ERREUR  (nb obtenu=0)
+RESULTAT=1

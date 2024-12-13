@@ -1,0 +1,28 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier les dicos et template du module Amon
+   en executant la commande 'creolelint' 
+
+frequence: if version in [ 2.6.0, 2.6.1 ] then manuel
+contrainte: ( architecture = amd64 ) and version < 3.0
+regroupement: 51 
+testsOk:
+-  Instance-AcaEolebase
+
+contexts:
+- machine: aca.eolebase 
+  methode: instance
+  configuration: default
+  passive: oui
+  setUp:
+  - run: ip addr
+
+tests:
+- nom: maj-auto
+  commandes:
+  - run: ciMajAuto
+    
+- nom: creole-lint
+  commandes:
+  - run: ciRunPython /usr/bin/CreoleLint
+    timeout: 3600

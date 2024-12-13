@@ -1,0 +1,24 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure d'import AAF 1er DEGRE sur Thot
+
+frequence: if version < 2.7.2 then manuel
+contrainte: version >= 2.7.2
+regroupement: 94
+#genereImage: aca.thot-{VERSION}-avecimport-AAF1D2003-{ARCHITECTURE}.vm
+
+testsOk:
+-  Instance-AcaThot
+
+contexts:
+- machine: aca.thot
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test-aaf1d-complet
+  commandes:
+  - run: import-aaf1d-complet-2003.sh
+    #  - automate: shutdownWithSnapshot
+    #  - automate: updateTemplate
+

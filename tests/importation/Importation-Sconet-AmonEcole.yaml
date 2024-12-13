@@ -1,0 +1,65 @@
+genereImage: etb3.amonecole-{VERSION}-avecimport-Sconet-{ARCHITECTURE}.vm
+status: PUBLIQUE
+description: |
+   Le but de ce test est de vérifier le chargement d'un fichier SCONET dans Amonecole.
+   Nous vérifions que les comptes sont crées, les répertoires, et mails.
+   Nous créons les niveaux, classes, eleves, professeurs, et administratifs 
+
+frequence: if version >= 2.8.1 then weekly else manuel
+contrainte: architecture = amd64 
+regroupement: 31
+
+testsOk:
+-  Instance-Etb3AmonEcole
+
+contexts:
+- machine: etb3.amonecole 
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test-01
+  commandes:
+  - run: importation_sconet_eleves_et_responsables.sh
+    timeout: 1000
+
+  - run: check-importation-compte.sh
+    args:
+    - eleves
+    - prenom.eleve113
+    - "3eme,c32"
+
+  - run: check-importation-compte.sh
+    args:
+    - responsables
+    - prenom.parent65
+
+  - run: importation_sconet_professeurs_et_administratifs.sh
+    timeout: 1000
+
+  - run: check-importation-compte.sh
+    args:
+    - personnels
+    - prenom.prof21
+    - "maths,profs-c32,profs-c34,profs-c42,profs-c51,profs-c53"
+
+  - run: check-importation-compte.sh
+    args:
+    - administratifs
+    - prenom.prof26
+
+  - run: check-importation-compte.sh
+    contrainte: version > 2.7.1 
+    args:
+    - personnels
+    - prenom.suppleant
+    
+  - run: |
+         find /home >/tmp/liste_apres.txt
+         echo "***************** DIFFERENCE REPERTOIRES *****************"
+         diff /tmp/liste_avant.txt /tmp/liste_apres.txt
+         echo "**********************************************************"
+
+  - automate: shutdownWithSnapshot
+  
+  - automate: updateTemplate

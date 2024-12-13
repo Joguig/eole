@@ -1,0 +1,28 @@
+status: PRODUCTION
+regroupement: 97
+contrainte: architecture = amd64 and version >= 2.8.1
+
+#frequence: manuel
+
+testsOk:
+- Importation-Zephir
+- Instance-AcaHapy
+- hapy-instance-unattended-etb1amon
+- hapy-instance-unattended-etb1scribe
+
+contexts:
+- machine: aca.zephir
+  methode: instance
+  configuration: AvecConf
+
+- machine: etb1.hapy
+  methode: daily
+  configuration: autodeploy
+  memoire: 20480
+
+tests:
+- nom: test01
+  commandes:
+  - machine: etb1.hapy
+    run: test-automatisation.sh
+    timeout: 6000

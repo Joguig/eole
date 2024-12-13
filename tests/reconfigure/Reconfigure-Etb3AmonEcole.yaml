@@ -1,0 +1,20 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est de vérifier 'reconfigure' et 'diagnose' du module Amonecole
+
+frequence: if version < 2.7.2 then manuel
+contrainte: ( architecture = amd64 ) and version < 3.0
+regroupement: 55
+
+testsOk:
+-  Instance-Etb3AmonEcole
+
+contexts:
+- machine: etb3.amonecole
+  methode: instance
+  configuration: default
+
+tests:
+- nom: reconfigure-test
+  commandes:
+  - run: run-reconfigure-tests.sh

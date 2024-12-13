@@ -1,0 +1,32 @@
+genereImage: aca.scribe-{VERSION}-avecimport-Aaf-Anon-{ARCHITECTURE}.vm
+status: if version < 2.9 then DEVELOPPEMENT else PUBLIQUE
+description: |
+   Le but de ce test est de préparer un module Scribe avec un jeu de données représentatif.
+   Nous vérifions que les comptes sont crées, les répertoires, et mails.
+   Nous créons les niveaux, classes, eleves, professeurs, et administratifs
+
+frequence: weekly
+
+contrainte: architecture = amd64 and version > 2.8.0
+regroupement: 31
+
+testsOk:
+-  Instance-AcaScribe
+
+contexts:
+- machine: aca.scribe
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test-01
+  commandes:
+  - run: importation_aaf_anon_eleves_et_responsables.sh
+
+  - run: importation_aaf_anon_professeurs_et_administratifs.sh
+
+  - automate: shutdownWithSnapshot
+    machine: aca.scribe
+
+  - automate: updateTemplate
+    machine: aca.scribe

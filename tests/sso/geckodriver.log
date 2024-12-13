@@ -1,0 +1,198 @@
+1733524511233	geckodriver	INFO	Listening on 127.0.0.1:54501
+1733524512111	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--headless" "--remote-debugging-port" "42069" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileaoRCeB"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+1733524513199	RemoteAgent	DEBUG	WebDriver BiDi enabled
+1733524513208	RemoteAgent	DEBUG	CDP enabled
+1733524513208	Marionette	INFO	Marionette enabled
+1733524513210	RemoteAgent	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1733524513210	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1733524513211	RemoteAgent	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1733524513211	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.activity-stream.showSponsoredTopSites to false
+1733524513211	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1733524513211	RemoteAgent	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1733524513211	RemoteAgent	DEBUG	Setting recommended pref browser.search.update to false
+1733524513212	RemoteAgent	DEBUG	Setting recommended pref browser.startup.couldRestoreSession.count to -1
+1733524513212	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.closeWindowWithLastTab to false
+1733524513212	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1733524513212	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnClose to false
+1733524513213	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1733524513213	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1733524513213	RemoteAgent	DEBUG	Setting recommended pref browser.toolbars.bookmarks.visibility to never
+1733524513213	RemoteAgent	DEBUG	Setting recommended pref browser.topsites.contile.enabled to false
+1733524513214	RemoteAgent	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1733524513214	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.merino.endpointURL to 
+1733524513214	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1733524513214	RemoteAgent	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1733524513214	RemoteAgent	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1733524513214	RemoteAgent	DEBUG	Setting recommended pref dom.file.createInChild to true
+1733524513215	RemoteAgent	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1733524513215	RemoteAgent	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1733524513215	RemoteAgent	DEBUG	Setting recommended pref dom.navigation.locationChangeRateLimit.count to 0
+1733524513215	RemoteAgent	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1733524513215	RemoteAgent	DEBUG	Setting recommended pref dom.screenorientation.allow-lock to true
+1733524513216	RemoteAgent	DEBUG	Setting recommended pref dom.successive_dialog_time_limit to 0
+1733524513216	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1733524513216	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.discovery.api_url to data:, 
+1733524513216	RemoteAgent	DEBUG	Setting recommended pref network.http.phishy-userpass-length to 255
+1733524513216	RemoteAgent	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1733524513216	RemoteAgent	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1733524513217	RemoteAgent	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1733524513217	RemoteAgent	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1733524513217	RemoteAgent	DEBUG	Setting recommended pref signon.autofillForms to false
+1733524513217	RemoteAgent	DEBUG	Setting recommended pref signon.rememberSignons to false
+1733524513217	RemoteAgent	DEBUG	Setting recommended pref widget.windows.window_occlusion_tracking.enabled to false
+1733524513218	RemoteAgent	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1733524513219	Marionette	TRACE	Received observer notification final-ui-startup
+1733524513221	RemoteAgent	TRACE	Received observer notification final-ui-startup
+1733524513408	Marionette	INFO	Listening on port 36333
+1733524513410	Marionette	DEBUG	Marionette is listening
+Read port: 36333
+1733524513418	RemoteAgent	TRACE	Available local IP addresses: 127.0.0.1, [::1]
+WebDriver BiDi listening on ws://127.0.0.1:42069
+1733524513434	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.features.standard to -tp,tpPrivate,cookieBehavior0,-cm,-fp
+1733524513435	RemoteAgent	DEBUG	Setting recommended pref network.cookie.cookieBehavior to 0
+1733524513435	CDP	DEBUG	Waiting for initial application window
+1733524513445	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:46712
+1733524513528	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"browserName":"firefox","acceptInsecureCerts":true,"pageLoadStrategy":"normal"}]
+1733524513532	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1733524513592	Marionette	DEBUG	Waiting for initial application window
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+1733524516291	Marionette	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1733524516292	RemoteAgent	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1733524516303	RemoteAgent	TRACE	[8] ProgressListener Start: expectNavigation=false resolveWhenStarted=false unloadTimeout=5000 waitForExplicitStart=false
+1733524516303	RemoteAgent	TRACE	[8] ProgressListener Setting unload timer (5000ms)
+1733524516304	RemoteAgent	TRACE	[8] Document already finished loading: about:blank
+1733524516304	RemoteAgent	TRACE	[8] ProgressListener Stop: has error=false
+DevTools listening on ws://127.0.0.1:42069/devtools/browser/3d53fd84-600b-459d-a86a-8d66efe7b000
+1733524516321	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"d3d368bd-9281-4219-94e6-328794e217f5","capabilities":{"browserName":"firefox","browserVersion":"117.0.1","platformName":"linux","acceptInsecureCerts":true,"pageLoadStrategy":"normal","setWindowRect":true,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"strictFileInteractability":false,"unhandledPromptBehavior":"dismiss and notify","moz:accessibilityChecks":false,"moz:buildID":"20230912072954","moz:debuggerAddress":"127.0.0.1:42069","moz:headless":true,"moz:platformVersion":"5.15.0-126-generic","moz:processID":2477,"moz:profile":"/tmp/rust_mozprofileaoRCeB","moz:shutdownTimeout":60000,"moz:webdriverClick":true,"moz:windowless":false,"proxy":{}}}]
+1733524516350	Marionette	DEBUG	0 -> [0,2,"WebDriver:SetTimeouts",{"implicit":10000}]
+1733524516351	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1733524516354	Marionette	DEBUG	0 -> [0,3,"WebDriver:Navigate",{"url":"https://scribe.ac-test.fr:4200/"}]
+1733524516361	Marionette	TRACE	[8] Received event beforeunload for about:blank
+1733524516409	Marionette	TRACE	Remoteness change detected. Set new top-level browsing context to 11
+1733524516415	Marionette	TRACE	[11] Received event beforeunload for about:blank
+1733524516418	Marionette	TRACE	[11] Received event pagehide for about:blank
+1733524516563	Marionette	TRACE	[11] Received event DOMContentLoaded for https://scribe.ac-test.fr:4200/
+1733524516567	Marionette	TRACE	[11] Received event pageshow for https://scribe.ac-test.fr:4200/
+1733524516567	Marionette	DEBUG	0 <- [1,3,null,{"value":null}]
+1733524516574	Marionette	DEBUG	0 -> [0,4,"WebDriver:FindElements",{"using":"xpath","value":"//a[@href]"}]
+1733524516579	RemoteAgent	TRACE	WebDriverProcessData actor created for PID 2669
+1733524516581	Marionette	TRACE	[11] MarionetteCommands actor created for window id 6442450945
+1733524516600	Marionette	DEBUG	0 <- [1,4,null,[{"element-6066-11e4-a52e-4f735466cecf":"47c4b8cf-3ccc-439e-8ae5-c5fee8f43bb6"},{"element-6066-11e4-a52e-4f735466cecf":"a0a4bfb1-d0e4-488f-b906-88b0e0278ac5"},{"element-6066-11e4-a52e-4f735466cecf":"a110529a-8caf-400b-b861-eb59b73deabf"},{"element-6066-11e4-a52e-4f735466cecf":"8a01fa73-d7c5-4d5e-877d-5bc166a2f29f"},{"element-6066-11e4-a52e-4f735466cecf":"3584f189-552f-448b-9125-1fe9a24281fc"},{"element-6066-11e4-a52e-4f735466cecf":"3fcc7de1-603e-4022-8c00-7f5f99388d51"},{"element-6066-11e4-a52e-4f735466cecf":"e85b8873-0bb8-4664-8ace-7eb5abda9fb0"},{"element-6066-11e4-a52e-4f735466cecf":"eb7028a5-5c65-4b1e-a9f4-f712a54774f3"},{"element-6066-11e4-a52e-4f735466cecf":"8ba0eca5-bb42-44a6-a535-c83ae9ad18ee"}]]
+1733524516609	Marionette	DEBUG	0 -> [0,5,"WebDriver:ExecuteScript",{"script":"return (function(){return (function(){var h=this||self;function aa(a){return\"string\"==typeof a}function ba(a,b){a=a.split(\".\" ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","args":[{"element-6066-11e4-a52e-4f735466cecf":"47c4b8cf-3ccc-439e-8ae5-c5fee8f43bb6"},"href"]}]
+1733524516621	Marionette	DEBUG	0 <- [1,5,null,{"value":"https://scribe.ac-test.fr:4200/connect/?server=1"}]
+1733524516629	Marionette	DEBUG	0 -> [0,6,"WebDriver:ExecuteScript",{"script":"return (function(){return (function(){var h=this||self;function aa(a){return\"string\"==typeof a}function ba(a,b){a=a.split(\".\" ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","args":[{"element-6066-11e4-a52e-4f735466cecf":"a0a4bfb1-d0e4-488f-b906-88b0e0278ac5"},"href"]}]
+1733524516636	Marionette	DEBUG	0 <- [1,6,null,{"value":"javascript:ToggleAdmin('rightside_top_link','rightside_bottom')"}]
+1733524516641	Marionette	DEBUG	0 -> [0,7,"WebDriver:ExecuteScript",{"script":"return (function(){return (function(){var h=this||self;function aa(a){return\"string\"==typeof a}function ba(a,b){a=a.split(\".\" ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","args":[{"element-6066-11e4-a52e-4f735466cecf":"a110529a-8caf-400b-b861-eb59b73deabf"},"href"]}]
+1733524516648	Marionette	DEBUG	0 <- [1,7,null,{"value":"https://scribe.ac-test.fr:4200/"}]
+1733524516654	Marionette	DEBUG	0 -> [0,8,"WebDriver:ExecuteScript",{"script":"return (function(){return (function(){var h=this||self;function aa(a){return\"string\"==typeof a}function ba(a,b){a=a.split(\".\" ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","args":[{"element-6066-11e4-a52e-4f735466cecf":"8a01fa73-d7c5-4d5e-877d-5bc166a2f29f"},"href"]}]
+1733524516661	Marionette	DEBUG	0 <- [1,8,null,{"value":"javascript:location.reload();"}]
+1733524516666	Marionette	DEBUG	0 -> [0,9,"WebDriver:ExecuteScript",{"script":"return (function(){return (function(){var h=this||self;function aa(a){return\"string\"==typeof a}function ba(a,b){a=a.split(\".\" ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","args":[{"element-6066-11e4-a52e-4f735466cecf":"3584f189-552f-448b-9125-1fe9a24281fc"},"href"]}]
+1733524516675	Marionette	DEBUG	0 <- [1,9,null,{"value":"https://scribe.ac-test.fr:4200/add_server/"}]
+1733524516680	Marionette	DEBUG	0 -> [0,10,"WebDriver:ExecuteScript",{"script":"return (function(){return (function(){var h=this||self;function aa(a){return\"string\"==typeof a}function ba(a,b){a=a.split(\".\" ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","args":[{"element-6066-11e4-a52e-4f735466cecf":"3fcc7de1-603e-4022-8c00-7f5f99388d51"},"href"]}]
+1733524516688	Marionette	DEBUG	0 <- [1,10,null,{"value":"https://scribe.ac-test.fr:4200/del_server/"}]
+1733524516693	Marionette	DEBUG	0 -> [0,11,"WebDriver:ExecuteScript",{"script":"return (function(){return (function(){var h=this||self;function aa(a){return\"string\"==typeof a}function ba(a,b){a=a.split(\".\" ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","args":[{"element-6066-11e4-a52e-4f735466cecf":"e85b8873-0bb8-4664-8ace-7eb5abda9fb0"},"href"]}]
+1733524516702	Marionette	DEBUG	0 <- [1,11,null,{"value":"https://scribe.ac-test.fr:4200/logout/"}]
+1733524516707	Marionette	DEBUG	0 -> [0,12,"WebDriver:ExecuteScript",{"script":"return (function(){return (function(){var h=this||self;function aa(a){return\"string\"==typeof a}function ba(a,b){a=a.split(\".\" ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","args":[{"element-6066-11e4-a52e-4f735466cecf":"eb7028a5-5c65-4b1e-a9f4-f712a54774f3"},"href"]}]
+1733524516714	Marionette	DEBUG	0 <- [1,12,null,{"value":"javascript:IncreaseOnly('auth_local','auth_local_increase');"}]
+1733524516720	Marionette	DEBUG	0 -> [0,13,"WebDriver:ExecuteScript",{"script":"return (function(){return (function(){var h=this||self;function aa(a){return\"string\"==typeof a}function ba(a,b){a=a.split(\".\" ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","args":[{"element-6066-11e4-a52e-4f735466cecf":"8ba0eca5-bb42-44a6-a535-c83ae9ad18ee"},"href"]}]
+1733524516727	Marionette	DEBUG	0 <- [1,13,null,{"value":"https://scribe.ac-test.fr:4200/connect/?server=1&local_auth=true"}]
+1733524516729	Marionette	DEBUG	0 -> [0,14,"WebDriver:GetTitle",{}]
+1733524516730	Marionette	DEBUG	0 <- [1,14,null,{"value":"EoleAdmin2 Aca"}]
+1733524516732	Marionette	DEBUG	0 -> [0,15,"WebDriver:FindElement",{"using":"link text","value":"scribe"}]
+1733524516753	Marionette	DEBUG	0 <- [1,15,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"47c4b8cf-3ccc-439e-8ae5-c5fee8f43bb6"}}]
+1733524516755	Marionette	DEBUG	0 -> [0,16,"WebDriver:ElementClick",{"id":"47c4b8cf-3ccc-439e-8ae5-c5fee8f43bb6"}]
+1733524516780	Marionette	TRACE	Received DOM event click for https://scribe.ac-test.fr:4200/connect/?server=1
+1733524516788	Marionette	TRACE	[11] Received event beforeunload for https://scribe.ac-test.fr:4200/
+1733524516843	Marionette	TRACE	[11] Received event pagehide for https://scribe.ac-test.fr:4200/
+1733524516847	Marionette	TRACE	[11] MarionetteCommands actor destroyed for window id 6442450945
+1733524517619	Marionette	TRACE	[11] Received event DOMContentLoaded for https://scribe.ac-test.fr/sso/?service=https://scribe.ac-test.fr:4200/connect/
+1733524517625	Marionette	TRACE	[11] Received event pageshow for https://scribe.ac-test.fr/sso/?service=https://scribe.ac-test.fr:4200/connect/
+1733524517625	Marionette	DEBUG	0 <- [1,16,null,{"value":null}]
+1733524517647	Marionette	DEBUG	0 -> [0,17,"WebDriver:FindElement",{"using":"tag name","value":"login"}]
+1733524517665	Marionette	TRACE	[11] MarionetteCommands actor created for window id 6442450946
+1733524527666	Marionette	DEBUG	0 <- [1,17,{"error":"no such element","message":"Unable to locate element: login","stacktrace":"RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8\nWebDriverError@chrome://remote/content/shared/webdriver/Er ... chrome://remote/content/shared/webdriver/Errors.sys.mjs:506:5\ndom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:132:16\n"},null]
+1733524527671	Marionette	DEBUG	0 -> [0,18,"WebDriver:FindElement",{"using":"css selector","value":"[name=\"username\"]"}]
+1733524527674	Marionette	DEBUG	0 <- [1,18,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"045ebd15-6d5a-44e4-b9a2-b6ded5b56ba6"}}]
+1733524527679	Marionette	DEBUG	0 -> [0,19,"WebDriver:ExecuteScript",{"script":"return (function(){return (function(){var h=this||self;function aa(a){return\"string\"==typeof a}function ba(a,b){a=a.split(\".\" ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","args":[{"element-6066-11e4-a52e-4f735466cecf":"045ebd15-6d5a-44e4-b9a2-b6ded5b56ba6"},"value"]}]
+1733524527687	Marionette	DEBUG	0 <- [1,19,null,{"value":""}]
+1733524527691	Marionette	DEBUG	0 -> [0,20,"WebDriver:ElementClear",{"id":"045ebd15-6d5a-44e4-b9a2-b6ded5b56ba6"}]
+1733524527693	Marionette	DEBUG	0 <- [1,20,null,{"value":null}]
+1733524527695	Marionette	DEBUG	0 -> [0,21,"WebDriver:ElementSendKeys",{"id":"045ebd15-6d5a-44e4-b9a2-b6ded5b56ba6","text":"admin","value":["a","d","m","i","n"]}]
+1733524527704	Marionette	DEBUG	0 <- [1,21,null,{"value":null}]
+1733524527711	Marionette	DEBUG	0 -> [0,22,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"password\"]"}]
+1733524527713	Marionette	DEBUG	0 <- [1,22,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"9e39c65d-f351-41b5-98c8-db05a35620d8"}}]
+1733524527716	Marionette	DEBUG	0 -> [0,23,"WebDriver:ElementClear",{"id":"9e39c65d-f351-41b5-98c8-db05a35620d8"}]
+1733524527718	Marionette	DEBUG	0 <- [1,23,null,{"value":null}]
+1733524527721	Marionette	DEBUG	0 -> [0,24,"WebDriver:ElementSendKeys",{"id":"9e39c65d-f351-41b5-98c8-db05a35620d8","text":"Eole12345!","value":["E","o","l","e","1","2","3","4","5","!"]}]
+1733524527733	Marionette	DEBUG	0 <- [1,24,null,{"value":null}]
+1733524527736	Marionette	DEBUG	0 -> [0,25,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"valider\"]"}]
+1733524527737	Marionette	DEBUG	0 <- [1,25,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"5cbd4536-bac6-426a-b0bd-ea35531d6125"}}]
+1733524527741	Marionette	DEBUG	0 -> [0,26,"WebDriver:ElementClick",{"id":"5cbd4536-bac6-426a-b0bd-ea35531d6125"}]
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://scribe.ac-test.fr."
+1733524527754	Marionette	TRACE	Received DOM event click for [object HTMLInputElement]
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://scribe.ac-test.fr."
+1733524527758	Marionette	TRACE	[11] Received event beforeunload for https://scribe.ac-test.fr/sso/?service=https://scribe.ac-test.fr:4200/connect/
+1733524528485	Marionette	TRACE	[11] Received event pagehide for https://scribe.ac-test.fr/sso/?service=https://scribe.ac-test.fr:4200/connect/
+1733524528492	Marionette	TRACE	[11] MarionetteCommands actor destroyed for window id 6442450946
+1733524528564	Marionette	TRACE	[11] Received event DOMContentLoaded for https://scribe.ac-test.fr:4200/connect/?server=1
+1733524528567	Marionette	TRACE	[11] Received event pageshow for https://scribe.ac-test.fr:4200/connect/?server=1
+1733524528567	Marionette	DEBUG	0 <- [1,26,null,{"value":null}]
+1733524538584	Marionette	DEBUG	0 -> [0,27,"WebDriver:GetPageSource",{}]
+1733524538586	Marionette	TRACE	[11] MarionetteCommands actor created for window id 6442450947
+1733524538588	Marionette	DEBUG	0 <- [1,27,null,{"value":"<html lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head>\n\t<meta content=\"text/html; charset=utf-8\" http-equi ... on><option name=\"main1.css\" selected=\"selected\">main1.css</option></select></form></div></div></div>\n\t\t</div>\n\n</body></html>"}]
+1733524538593	Marionette	DEBUG	0 -> [0,28,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1733524538594	Marionette	INFO	Stopped listening on port 36333
+1733524539123	Marionette	TRACE	[11] MarionetteCommands actor destroyed for window id 6442450947
+1733524539163	Marionette	TRACE	Received observer notification quit-application
+1733524539165	Marionette	TRACE	Received observer notification quit-application
+1733524539166	RemoteAgent	DEBUG	Resetting recommended pref apz.content_response_timeout
+1733524539166	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.introCount
+1733524539167	RemoteAgent	DEBUG	Resetting recommended pref browser.download.panel.shown
+1733524539167	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.activity-stream.showSponsoredTopSites
+1733524539167	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.enabled
+1733524539168	RemoteAgent	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1733524539169	RemoteAgent	DEBUG	Resetting recommended pref browser.search.update
+1733524539169	RemoteAgent	DEBUG	Resetting recommended pref browser.startup.couldRestoreSession.count
+1733524539170	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.closeWindowWithLastTab
+1733524539170	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.unloadOnLowMemory
+1733524539170	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnClose
+1733524539170	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1733524539171	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnOpen
+1733524539171	RemoteAgent	DEBUG	Resetting recommended pref browser.toolbars.bookmarks.visibility
+1733524539171	RemoteAgent	DEBUG	Resetting recommended pref browser.topsites.contile.enabled
+1733524539172	RemoteAgent	DEBUG	Resetting recommended pref browser.usedOnWindows10.introURL
+1733524539172	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.merino.endpointURL
+1733524539174	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1733524539175	RemoteAgent	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1733524539176	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_open_during_load
+1733524539176	RemoteAgent	DEBUG	Resetting recommended pref dom.file.createInChild
+1733524539177	RemoteAgent	DEBUG	Resetting recommended pref dom.max_chrome_script_run_time
+1733524539177	RemoteAgent	DEBUG	Resetting recommended pref dom.max_script_run_time
+1733524539178	RemoteAgent	DEBUG	Resetting recommended pref dom.navigation.locationChangeRateLimit.count
+1733524539178	RemoteAgent	DEBUG	Resetting recommended pref dom.push.connection.enabled
+1733524539178	RemoteAgent	DEBUG	Resetting recommended pref dom.screenorientation.allow-lock
+1733524539179	RemoteAgent	DEBUG	Resetting recommended pref dom.successive_dialog_time_limit
+1733524539179	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1733524539179	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.discovery.api_url
+1733524539180	RemoteAgent	DEBUG	Resetting recommended pref network.http.phishy-userpass-length
+1733524539180	RemoteAgent	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1733524539180	RemoteAgent	DEBUG	Resetting recommended pref privacy.trackingprotection.enabled
+1733524539180	RemoteAgent	DEBUG	Resetting recommended pref security.fileuri.strict_origin_policy
+1733524539181	RemoteAgent	DEBUG	Resetting recommended pref security.notification_enable_delay
+1733524539182	RemoteAgent	DEBUG	Resetting recommended pref signon.autofillForms
+1733524539182	RemoteAgent	DEBUG	Resetting recommended pref signon.rememberSignons
+1733524539183	RemoteAgent	DEBUG	Resetting recommended pref widget.windows.window_occlusion_tracking.enabled
+1733524539184	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1733524539184	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1733524539184	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.cookieBehavior
+1733524539185	RemoteAgent	TRACE	Received observer notification quit-application
+1733524539186	Marionette	DEBUG	Marionette stopped listening
+1733524539187	Marionette	DEBUG	0 <- [1,28,null,{"cause":"shutdown","forced":false,"in_app":true}]
+1733524539206	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1733524539207	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.cookieBehavior
+1733524539210	Marionette	DEBUG	Closed connection 0

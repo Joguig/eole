@@ -1,0 +1,42 @@
+#genereImage: aca.thot- "{VERSIONMAJEUR}"u2.6.2-default-{ARCHITECTURE}.vm
+frequence: weekly
+status: PRODUCTION
+description: |
+   Le but de ce test est de vérifier la migration d'un Thot 2.8.1 vers la version {VERSIONMAJEUR}
+
+contrainte: version in [ 2.9.0 ]
+regroupement: 60
+
+contexts:
+- machine: aca.thot
+  methode: instance
+  configuration: default
+  base: eole-2.8.1
+
+tests:
+- commandes:
+    - run: ciMonitor maj_auto_rc
+      timeout: 1200
+
+    - run: ciMonitor reconfigure
+
+    - automate: reboot
+    
+    - run: do-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      timeout: 3600
+
+    - automate: reboot
+    
+    - run: check-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+
+    - run: instance-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"
+    
+    - run: diagnose-apres-upgradeauto.sh
+      args:
+      - "{VERSIONMAJEUR}"

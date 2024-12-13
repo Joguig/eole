@@ -1,0 +1,46 @@
+#genereImage: etb3.amonecole- "{VERSIONMAJEUR}"u2.5.1-default-{ARCHITECTURE}.vm
+frequence: weekly
+status: PRODUCTION
+description: |
+   Le but de ce test est de vérifier la migration d'un Amonecole 2.5.1 vers la version {VERSIONMAJEUR} 
+   avec la procédure 'MajRelease'
+
+contrainte: version is 2.5.2  
+regroupement: 60
+
+contexts:
+- machine: etb3.amonecole
+  methode: instance
+  configuration: default
+  base: eole-2.5.1
+
+tests:
+- commandes:
+    - run: ciMonitor maj_auto_rc
+      timeout: 1200
+
+    - run: ciMonitor reconfigure
+      timeout: 1200
+
+    - automate: reboot
+    
+    - run: do-majrelease.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      timeout: 3600
+
+    - run: check-apres-majrelease.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      - linux-generic-lts-vivid
+      timeout: 1200
+    
+    # peut etre tres long, avec le rechargement de l'iso
+    - run: reconfigure-apres-majrelease.sh
+      args:
+      - "{VERSIONMAJEUR}"
+      timeout: 2000
+    
+    - run: diagnose-apres-majrelease.sh
+      args:
+      - "{VERSIONMAJEUR}"

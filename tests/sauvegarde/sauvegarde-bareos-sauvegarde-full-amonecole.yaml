@@ -1,0 +1,59 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure de sauvegarde Bareos sur Amonecole
+
+frequence: if version in [ 2.5.2 ] then manuel
+contrainte: architecture = amd64 and version > 2.5.1  
+regroupement: 70
+
+testsOk:
+-  Instance-Etb3AmonEcole
+
+contexts:
+- machine: etb3.amonecole 
+  methode: instance
+  configuration: AvecImport
+
+- machine: etb3.eolecitestspedago 
+  methode: instance
+  configuration: default
+
+tests:
+- nom: amonecole-bareos-001
+  commandes:
+  - machine: etb3.amonecole
+    run: run-bareos-sauvegarde-complete.sh
+    args:
+    - 3
+    - LOCAL
+    timeout: 1200
+
+- nom: amonecole-bareos-002
+  commandes:
+  - machine: etb3.amonecole
+    run: run-bareos-sauvegarde-complete.sh
+    
+    args:
+    - 6
+    - USB
+    timeout: 1200
+
+- nom: amonecole-bareos-003
+  commandes:
+  - machine: etb3.eolecitestspedago
+    run: samba-eolecitest.sh
+    args:
+    - "--check-acces"
+    - 10.3.2.253 
+
+  # la machine eolecitestspedago s'appelle EOLECITEST
+  - machine: etb3.amonecole
+    run: run-bareos-sauvegarde-complete.sh
+    args:
+    - 9
+    - SMB
+    - eolecitest
+    - 10.3.2.253
+    - sauvegardes
+    timeout: 1200
+

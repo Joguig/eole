@@ -1,0 +1,65 @@
+actif: oui
+squashId: 328
+titre: Vérifier le fonctionnement des règles exceptions AmonEcole
+frequence: weekly
+
+contrainte: architecture = amd64 and (version = 2.4.1)  
+testsOk:
+-  Instance-Etb3AmonEcole
+
+contexts:
+- machine: etb3.amonecole
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test-ae-t02-004-pas0
+  commandes:
+  - run: init-tests-bastion.sh
+
+- nom: test-ae-t02-004-pas2
+# Exception de destination sur extérieur -> admin port 8500
+  commandes:
+  - run: run-test-bastion.sh
+    args:
+    - AE-T02-004_pas2 
+  
+- nom: test-ae-t02-004-pas3
+# Exception de destination sur extérieur -> admin avec inversion de la politique par défaut port 8500
+  commandes:
+  - run: run-test-bastion.sh
+    args:
+    - AE-T02-004_pas3 
+
+- nom: test-ae-t02-004-pas4
+# Exception de destination sur extérieur -> admin avec inversion de la politique par défaut port 8500
+  commandes:
+  - run: run-test-bastion.sh
+    args:
+    - AE-T02-004_pas4 
+
+- nom: test-ae-t02-004-pas5
+  commandes:
+  - run: run-test-bastion.sh
+    args:
+    - AE-T02-004_pas5 
+
+- nom: test-ae-t02-004-pas6
+# Redirection de port 8500 vers 8600
+  commandes:
+  - run: run-test-bastion.sh
+    args:
+    - AE-T02-004_pas6 
+
+- nom: test-ae-t02-004-pas7
+  commandes:
+  - run: run-test-bastion.sh
+    args:
+    - AE-T02-004_pas7 
+
+- nom: test-ae-t02-004-pas8
+# Ajout d'une exception IP 'ac-dijon' pour 8500
+  commandes:
+  - run: run-test-bastion.sh
+    args:
+    - AE-T02-004_pas8 

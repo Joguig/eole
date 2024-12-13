@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Distribuer ok 2</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Distribuer ok 2</td></tr>
+</thead><tbody>
+<tr>
+    <td>clickAndWait</td>
+    <td>id=linkDistribuer</td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>id=nomdev</td>
+    <td>Devoir 2 test selenium</td>
+</tr>
+<tr>
+    <td>select</td>
+    <td>id=groupe</td>
+    <td>label=c31</td>
+</tr>
+<tr>
+    <td>select</td>
+    <td>id=groupe</td>
+    <td>label=c32</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=eleve_only-1</td>
+    <td></td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>css=div.plupload.html5&gt;input:nth(0)</td>
+    <td>~/docupload.txt</td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>css=div.plupload.html5&gt;input:nth(1)</td>
+    <td>~/annexeupload.txt</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=rep_dest-1</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=btnSubmitDistribuer</td>
+    <td></td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=recap-ref</td>
+    <td>Devoir 2 test selenium</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=recap-inperso</td>
+    <td>Distribuer plus tard</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=recap-eleveonly</td>
+    <td>À tous les membres</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=recap-groupes</td>
+    <td>c31 c32</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=recap-dev</td>
+    <td>docupload.txt</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>id=recap-data</td>
+    <td>annexeupload.txt</td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>id=recap-confirm</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>link=Documents</td>
+    <td></td>
+</tr>
+<tr>
+    <td>click</td>
+    <td>link=Historique</td>
+    <td></td>
+</tr>
+<tr>
+    <td>waitForText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr/td[4]</td>
+    <td>Distribué</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr/td</td>
+    <td>devoir_2_test_selenium-c31</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr/td[2]</td>
+    <td>c31</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr/td[3]</td>
+    <td>non</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr/td[4]</td>
+    <td>Distribué</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr/td[5]</td>
+    <td>Ramasser Supprimer</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr[2]/td</td>
+    <td>devoir_2_test_selenium-c32</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr[2]/td[2]</td>
+    <td>c32</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr[2]/td[3]</td>
+    <td>non</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr[2]/td[4]</td>
+    <td>Distribué</td>
+</tr>
+<tr>
+    <td>assertText</td>
+    <td>//table[@id='tableauhistorique']/tbody/tr[2]/td[5]</td>
+    <td>Ramasser Supprimer</td>
+</tr>
+</tbody></table>
+</body>
+</html>

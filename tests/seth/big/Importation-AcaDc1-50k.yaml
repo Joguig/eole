@@ -1,0 +1,30 @@
+genereImage: aca.dc1-{VERSION}-avecimport-50k-{ARCHITECTURE}.vm
+status: PRODUCTION
+description: |
+   Le but de ce test est de vérifier l'importation de 50k comptes dans Seth.
+   Nous vérifions que les comptes sont crées, les répertoires. 
+
+frequence: if version >= 2.7.2 then weekly else manuel
+contrainte: architecture = amd64 and version >= 2.6.2 
+regroupement: 96
+
+testsOk:
+-  Instance-Acadc1
+
+contexts:
+- machine: aca.dc1
+  methode: instance
+  configuration: default
+
+tests:
+- nom: test-01
+  commandes:
+  - run: importation-seth.sh
+    args:
+    - 50k
+    timeout: 10000
+
+  - automate: shutdownWithSnapshot
+
+  - automate: updateTemplate
+

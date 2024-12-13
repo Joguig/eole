@@ -1,0 +1,34 @@
+status: DEVELOPPEMENT
+
+description: |
+   le but de ce test est de vérifier le fonctionnement de BIND depuis les differents serveurs 
+
+regroupement: 99
+frequence: if version in [ 2.5.2 ] then manuel
+contrainte: architecture = amd64 and (version >= 2.5.2)  
+
+testsOk:
+-  Instance-Etb3AmonEcole
+
+contexts:
+- machine: etb3.amonecole
+  methode: instance
+  configuration: default
+  passive: oui
+
+- machine: etb3.eolecitestspedago
+  methode: instance
+  configuration: default
+  passive: oui
+
+tests:
+- nom: etb3-bind-depuis-amonecole
+  commandes:
+  - machine: etb3.amonecole
+    run: prepare-bind-addc.sh
+
+  - machine: etb3.eolecitestspedago
+    run: test-bind-T06-001.sh
+    args:
+    - "{VERSIONMAJEUR}"
+

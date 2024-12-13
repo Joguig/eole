@@ -1,0 +1,133 @@
+
+- install aca.dc1 2.8.1 avec import
+- install eole3.ac-test.fr
+
+- ssh dc1
+  check prof1 !
+  smbclient //dc1/sysvol -Uprof1%Eole12345! -c 'ls'
+  ==> OK
+  smbclient //dc1/sysvol -Uprof1%Eole12346! -c 'ls'
+  ==> NOK ( normal)
+  
+  samba-too user create keycloak-service
+  samba-tool spn add HTTP/dc1.domseth.ac-test.fr@DOMSETH.AC-TEST.FR keycloak-service
+  samba-tool domain exportkeytab /tmp/keycloak-service.keytab --principal=HTTP/dc1.domseth.ac-test.fr@DOMSETH.AC-TEST.FR
+  ktutil
+  rkt /tmp/keycloak-service.keytab
+  l
+  >>> slot KVNO Principal
+  >>> ---- ---- ---------------------------------------------------------------------
+  >>>    1    2      keycloak-service@DOMSETH.AC-TEST.FR
+  >>>    2    2      keycloak-service@DOMSETH.AC-TEST.FR
+  >>>    3    2      keycloak-service@DOMSETH.AC-TEST.FR
+  >>>    4    1 HTTP/dc1.domseth.ac-test.fr@DOMSETH.AC-TEST.FR
+  >>>    5    1 HTTP/dc1.domseth.ac-test.fr@DOMSETH.AC-TEST.FR
+  >>>    6    1 HTTP/dc1.domseth.ac-test.fr@DOMSETH.AC-TEST.FR
+  >>>
+  q
+  exit
+- sur poste local
+  scp root@192.168.0.5:/tmp/keycloak-service.keytab .
+  scp keycloak-service.keytab root@eole3.ac-test.fr:/tmp/
+
+- sur eole3
+  ssh -XC root@eole3.ac-test.fr
+  kubectl cp -n laboite /tmp/keycloak-service.keytab keycloak-0:/tmp/
+  kubectl cp -n laboite /tmp/keycloak-service.keytab keycloak-1:/tmp/
+
+- sur le poste client
+  firefox https://auth.eole3.ac-test.fr/auth/
+  aller sur la console admin
+  se connecter 'keycloak%$Pass&123456$'
+  Dans 'User Federation'
+  Selectionner 'Kerberos'
+  dans la page 'Required Settings'
+    Console Display Name = 'domseth'
+    Kerberos Realm = DOMSETH.AC-TEST.FR
+    Server Principal = HTTP/dc1.domseth.ac-test.fr@DOMSETH.AC-TEST.FR
+    KeyTab = /tmp/keycloak-service.keytab
+    Debug = ON
+    Allow Password Authentication = ON
+    Edit Mode = READ_ONLY
+    Update Profile First Login = OFF
+    Cache Settings
+    Cache Policy = DEFAULT
+
+- sur le poste client
+  lancer firefox dans une autre session (private) ou un autre navigateur
+  aller https://portail.eole3.ac-test.fr/
+  se connecter 'prof1%Eole12345!'
+  ==> 'You need to update your user profile to activate your account.'
+  saisir le 'First Name' (FirstName1) et 'Last Name' (LastName1)
+  First Name sera le  login de laboite
+  valider
+  la page est redirigé vers 'Votre compte n'a pas été activé Un administrateur va bientôt valider votre compte'
+  Aller dans préférence 
+  Vérifier :
+  Prénom = FirstName1
+  Nom = LastName1
+  Courriel = prof1@domseth.ac-test.fr (Bof !)
+  
+  
+- sur eole3.ac-test.fr
+  kubectl logs -n laboite keycloak-0
+  
+08:40:05,469 INFO  [stdout] (default task-26) Debug is  true storeKey true useTicketCache false useKeyTab false doNotPrompt false ticketCache is null isInitiator true KeyTab is null refreshKrb5Config is false principal is null tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+08:40:05,470 INFO  [stdout] (default task-26)       [Krb5LoginModule] user entered username: prof1@DOMSETH.AC-TEST.FR
+08:40:05,470 INFO  [stdout] (default task-26) 
+08:40:05,791 INFO  [stdout] (default task-26) principal is prof1@DOMSETH.AC-TEST.FR
+08:40:05,796 INFO  [stdout] (default task-26) EncryptionKey: keyType=18 keyBytes (hex dump)=0000: B9 CB 08 44 C9 25 26 E8   0F 0D B5 40 E2 08 22 03  ...D.%&....@..".
+08:40:05,797 INFO  [stdout] (default task-26) 0010: 83 08 69 C3 BD E4 B6 EA   02 17 7A A5 5C 03 F5 63  ..i.......z.\..c
+08:40:05,797 INFO  [stdout] (default task-26) 
+08:40:05,797 INFO  [stdout] (default task-26) EncryptionKey: keyType=17 keyBytes (hex dump)=0000: 97 0F B0 C3 85 16 59 6A   73 C1 54 42 AA BF 55 BA  ......Yjs.TB..U.
+08:40:05,797 INFO  [stdout] (default task-26) 
+08:40:05,798 INFO  [stdout] (default task-26) EncryptionKey: keyType=20 keyBytes (hex dump)=0000: 12 6C 4E 7A 0D CA 67 24   0C D4 FA 29 C8 4A 2D 9B  .lNz..g$...).J-.
+08:40:05,798 INFO  [stdout] (default task-26) 0010: 93 27 83 30 22 C4 D1 8D   56 7D 18 CE 06 60 2B B2  .'.0"...V....`+.
+08:40:05,798 INFO  [stdout] (default task-26) 
+08:40:05,798 INFO  [stdout] (default task-26) EncryptionKey: keyType=19 keyBytes (hex dump)=0000: 2C EE C7 C3 15 D1 07 F7   9A 03 0D CE 3E BD 17 13  ,...........>...
+08:40:05,798 INFO  [stdout] (default task-26) 
+08:40:05,800 INFO  [stdout] (default task-26) EncryptionKey: keyType=16 keyBytes (hex dump)=0000: AB 89 DC 9D EA D3 EA 3E   F8 67 4A 51 EA 3E 2A 43  .......>.gJQ.>*C
+08:40:05,800 INFO  [stdout] (default task-26) 0010: D0 C7 A4 1C BA CD 01 85                            ........
+08:40:05,801 INFO  [stdout] (default task-26) 
+08:40:05,801 INFO  [stdout] (default task-26) EncryptionKey: keyType=23 keyBytes (hex dump)=0000: CA D1 12 62 70 FC CF 46   3A CF 56 CC FB 96 A9 A8  ...bp..F:.V.....
+08:40:05,801 INFO  [stdout] (default task-26) 
+08:40:05,820 INFO  [stdout] (default task-26) Added server's keyKerberos Principal prof1@DOMSETH.AC-TEST.FRKey Version 0key EncryptionKey: keyType=18 keyBytes (hex dump)=
+08:40:05,820 INFO  [stdout] (default task-26) 0000: B9 CB 08 44 C9 25 26 E8   0F 0D B5 40 E2 08 22 03  ...D.%&....@..".
+08:40:05,820 INFO  [stdout] (default task-26) 0010: 83 08 69 C3 BD E4 B6 EA   02 17 7A A5 5C 03 F5 63  ..i.......z.\..c
+08:40:05,820 INFO  [stdout] (default task-26) 
+08:40:05,820 INFO  [stdout] (default task-26) 
+08:40:05,821 INFO  [stdout] (default task-26)       [Krb5LoginModule] added Krb5Principal  prof1@DOMSETH.AC-TEST.FR to Subject
+08:40:05,821 INFO  [stdout] (default task-26) Added server's keyKerberos Principal prof1@DOMSETH.AC-TEST.FRKey Version 0key EncryptionKey: keyType=17 keyBytes (hex dump)=
+08:40:05,821 INFO  [stdout] (default task-26) 0000: 97 0F B0 C3 85 16 59 6A   73 C1 54 42 AA BF 55 BA  ......Yjs.TB..U.
+08:40:05,821 INFO  [stdout] (default task-26) 
+08:40:05,821 INFO  [stdout] (default task-26) 
+08:40:05,821 INFO  [stdout] (default task-26)       [Krb5LoginModule] added Krb5Principal  prof1@DOMSETH.AC-TEST.FR to Subject
+08:40:05,821 INFO  [stdout] (default task-26) Added server's keyKerberos Principal prof1@DOMSETH.AC-TEST.FRKey Version 0key EncryptionKey: keyType=20 keyBytes (hex dump)=
+08:40:05,821 INFO  [stdout] (default task-26) 0000: 12 6C 4E 7A 0D CA 67 24   0C D4 FA 29 C8 4A 2D 9B  .lNz..g$...).J-.
+08:40:05,821 INFO  [stdout] (default task-26) 0010: 93 27 83 30 22 C4 D1 8D   56 7D 18 CE 06 60 2B B2  .'.0"...V....`+.
+08:40:05,821 INFO  [stdout] (default task-26) 
+08:40:05,821 INFO  [stdout] (default task-26) 
+08:40:05,822 INFO  [stdout] (default task-26)       [Krb5LoginModule] added Krb5Principal  prof1@DOMSETH.AC-TEST.FR to Subject
+08:40:05,822 INFO  [stdout] (default task-26) Added server's keyKerberos Principal prof1@DOMSETH.AC-TEST.FRKey Version 0key EncryptionKey: keyType=19 keyBytes (hex dump)=
+08:40:05,822 INFO  [stdout] (default task-26) 0000: 2C EE C7 C3 15 D1 07 F7   9A 03 0D CE 3E BD 17 13  ,...........>...
+08:40:05,822 INFO  [stdout] (default task-26) 
+08:40:05,822 INFO  [stdout] (default task-26) 
+08:40:05,822 INFO  [stdout] (default task-26)       [Krb5LoginModule] added Krb5Principal  prof1@DOMSETH.AC-TEST.FR to Subject
+08:40:05,822 INFO  [stdout] (default task-26) Added server's keyKerberos Principal prof1@DOMSETH.AC-TEST.FRKey Version 0key EncryptionKey: keyType=16 keyBytes (hex dump)=
+08:40:05,822 INFO  [stdout] (default task-26) 0000: AB 89 DC 9D EA D3 EA 3E   F8 67 4A 51 EA 3E 2A 43  .......>.gJQ.>*C
+08:40:05,822 INFO  [stdout] (default task-26) 0010: D0 C7 A4 1C BA CD 01 85                            ........
+08:40:05,822 INFO  [stdout] (default task-26) 
+08:40:05,822 INFO  [stdout] (default task-26) 
+08:40:05,822 INFO  [stdout] (default task-26)       [Krb5LoginModule] added Krb5Principal  prof1@DOMSETH.AC-TEST.FR to Subject
+08:40:05,823 INFO  [stdout] (default task-26) Added server's keyKerberos Principal prof1@DOMSETH.AC-TEST.FRKey Version 0key EncryptionKey: keyType=23 keyBytes (hex dump)=
+08:40:05,823 INFO  [stdout] (default task-26) 0000: CA D1 12 62 70 FC CF 46   3A CF 56 CC FB 96 A9 A8  ...bp..F:.V.....
+08:40:05,823 INFO  [stdout] (default task-26) 
+08:40:05,823 INFO  [stdout] (default task-26) 
+08:40:05,823 INFO  [stdout] (default task-26)       [Krb5LoginModule] added Krb5Principal  prof1@DOMSETH.AC-TEST.FR to Subject
+08:40:05,823 INFO  [stdout] (default task-26) Commit Succeeded 
+08:40:05,823 INFO  [stdout] (default task-26) 
+08:40:05,823 INFO  [stdout] (default task-26)       [Krb5LoginModule]: Entering logout
+08:40:05,824 INFO  [stdout] (default task-26)       [Krb5LoginModule]: logged out Subject
+
+    kubectl logs -n laboite keycloak-1
+   

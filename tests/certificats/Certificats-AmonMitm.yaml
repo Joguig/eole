@@ -1,0 +1,20 @@
+status: PRODUCTION
+description: |
+   le but de ce test est vérifier les certificats générés sur un module Amon 
+
+#frequence:
+contrainte: architecture = amd64 and version >= 2.8.1
+regroupement: 53 
+testsOk: 
+- Instance-Etb1AmonMitm
+
+contexts:
+- machine: etb1.amon 
+  methode: instance
+  configuration: mitm
+  passive: oui
+
+tests:
+- commandes:
+  - run: check-certificats-ssl.sh
+  

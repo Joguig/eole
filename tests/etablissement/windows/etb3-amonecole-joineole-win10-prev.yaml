@@ -1,0 +1,96 @@
+description: |
+   le but de ce test est de démarrer un amonecole avec les PC Win 10 (image avant la dernière)
+
+frequence: if version < 2.8.0 then manuel else weekly
+contrainte: architecture = amd64 and (version >= 2.7.1)  
+regroupement: W0
+
+testsOk:
+- Instance-Etb3AmonEcole
+
+contexts:
+- machine: aca.gateway
+  methode: instance
+  configuration: default
+
+- machine: etb3.amonecole
+  methode: instance
+  configuration: AvecImport
+  passive: oui
+
+- machine: etb3.eolecitestspedago
+  methode: instance
+  configuration: default
+  passive: oui
+  
+- machine: etb3.pceleve
+  modele: etb3.pceleve
+  methode: instance
+  configuration: default
+  base: win-10.22H2
+
+setUp:
+- machine: etb3.amonecole
+  run: enregistrement-amon-si-besoin.sh
+  args:
+  - "{VERSIONMAJEUR}"
+
+tests:
+- nom: joineole
+  commandes:
+  # avant le test joineole.exe, car je ne maitrise pas le moment du reboot!
+  - machine: etb3.pceleve
+    run: prepare-autologon.ps1
+    args:
+    - "etb3"
+    - "{VERSIONMAJEUR}"
+    - "prof1"
+
+  - machine: etb3.pceleve
+    run: test-joineole-271.ps1
+
+  - machine: etb3.pceleve
+    automate: reboot
+    
+  # il faut laisser du temps à salt pour réagir
+  - machine: etb3.amonecole
+    automate: pause
+    timeout: 120
+
+  - machine: etb3.amonecole
+    run: test-enregistrement-client.sh
+    args:
+    - "{ID:etb3.pceleve}"
+    # la machine doit avoir rebootée pendant le pretty print !
+
+- nom: log-salt-minion
+  commandes:
+  - machine: aca.gateway
+    automate: pause
+    timeout: 600
+
+  - machine: etb3.pceleve
+    run: wait-event-gpo.ps1
+    timeout: 600
+    ignoreError: oui
+    args:
+    - "etb3"
+    - "{VERSIONMAJEUR}"
+    - "prof1"
+
+  - machine: etb3.pceleve
+    run: test-salt-minion.ps1
+    
+  - machine: etb3.pceleve
+    run: test-veyon.ps1
+    args:
+    - "etb3"
+    - "{VERSIONMAJEUR}"
+
+- nom: sauvegarde
+  commandes:
+  - machine: etb3.pceleve
+    automate: screenshot
+
+  - machine: etb3.pceleve
+    run: sauvegarde-logs.ps1

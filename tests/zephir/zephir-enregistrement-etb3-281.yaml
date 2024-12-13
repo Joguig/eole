@@ -1,0 +1,20 @@
+heriteDe : zephir-enregistrement
+regroupement: 90
+frequence: weekly
+contrainte: architecture = amd64 and version >= 2.8.1
+
+testsOk:
+-  Importation-Zephir
+
+contexts:
+- machine: etb3.amonecole
+  methode: zephir
+  base: eole-2.8.1
+
+tests:
+- nom: test01
+  commandes:
+  - machine: etb3.amonecole
+    run: ciDiagnose
+    timeout: 2000
+

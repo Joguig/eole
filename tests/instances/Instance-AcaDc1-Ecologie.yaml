@@ -1,0 +1,29 @@
+titre: Instance Seth aca.dc1.ecologie
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure d'instance du module Seth avec une version de Samba non distribuée par Ubuntu et un SID fixe.
+
+frequence: weekly
+contrainte: architecture = amd64 and version > 2.7.1
+regroupement: 30
+genereImage: aca.dc1-{VERSION}-instance-ecologie-{ARCHITECTURE}.vm
+
+contexts:
+- machine: aca.dc1 
+  methode: daily
+  configuration: ecologie
+
+tests:
+- nom: test-01
+  commandes:
+  - run: ciConfigurationEole instance ecologie
+
+  # le maj_auto va tirer smaba > à la distribution !
+  - run: ciMonitor maj_auto
+
+  - run: ciMonitor reconfigure
+
+  - automate: shutdownWithSnapshot
+
+  - automate: updateTemplate
+  

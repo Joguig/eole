@@ -1,0 +1,28 @@
+----------------------------------------
+| TESTS EOP PARTIE MOT DE PASSE ÉlÈVES |
+----------------------------------------
+
+UTILISATION
+------------------------------
+
+Pour utiliser cette suite de tests :
+
+- installer le plugin firefox SELENIUM IDE : cf le mémo sur Selenium http://dev-eole.ac-dijon.fr/projects/ic/wiki ;
+- motdepasse_test_suite est le fichier qui liste les cas de tests, à ouvrir dans selenium ;
+- chaque cas de test correspond à un fichier séparé.
+
+PRÉAMBULE DES TESTS
+------------------------------
+
+Tous les cas de tests sont interdépendants, notamment leur ordre est important.
+
+Le mot de passe initial de prof1 doit être $eole123456 pour lancer les tests.
+
+Le dernier cas de test "ok_back_to_default" sert à réinitialiser les mots de passe élève à $eole123456. Si l'un des tests est en échec et que la suite ne se termine pas correctement, il se peut donc que les mots de passe des élèves ne soient pas réinitialisés correctement.
+
+ADAPTATIONS LOCALES
+------------------------------
+
+Pour l'instant il faut forcément lancer les tests via l'interface graphique de Selenium IDE.
+Les adresses et les ports de développement sont EN DUR dans les tests, il faut les changer pour les adapter à la machine concernée avec une commande du genre :
+sed -i -e 's/192.168.230.92/IP_MACHINE/g' -e 's/:8080/PORT/g' *

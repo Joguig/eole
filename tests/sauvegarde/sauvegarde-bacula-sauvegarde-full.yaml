@@ -1,0 +1,26 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure de sauvegarde Bacula sur Amonecole
+
+#frequence:
+contrainte: architecture = amd64 and version < 2.5
+regroupement: 70
+
+testsOk:
+-  Instance-Etb1Amon
+-  Instance-Etb1Scribe
+
+contexts:
+- machine: etb1.amon 
+  methode: instance
+  configuration: default
+
+- machine: etb1.scribe 
+  methode: instance
+  configuration: default
+
+tests:
+- nom: scribe-bacula-001
+  commandes:
+  - machine: etb1.scribe
+    run: run-bacula-sauvegarde-complete.sh

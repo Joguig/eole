@@ -1,0 +1,29 @@
+regroupement: 97
+frequence: if version latest or version DEV then daily else manuel
+contrainte: architecture = amd64 and version >= 2.8.1
+
+testsOk:
+-  Importation-Zephir
+-  Instance-Etb1Amon
+-  Instance-Etb1Scribe
+
+contexts:
+- machine: aca.zephir
+  methode: instance
+  configuration: AvecConf
+  passive: oui
+  
+- machine: etb1.amon
+  methode: instance
+  configuration: default
+
+- machine: etb1.scribe
+  methode: daily
+  configuration: default
+
+tests:
+- nom: test01
+  commandes:
+  - machine: etb1.scribe
+    run: test-instance-unattended.sh
+    timeout: 1200

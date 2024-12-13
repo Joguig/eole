@@ -1,0 +1,4 @@
+24d23
+< -A PREROUTING -i eth1 -p tcp -m tcp --dport 8500 --tcp-flags SYN,RST,ACK SYN -j REDIRECT --to-ports 8600
+120d118
+< -A adm-bas -i eth1 -p tcp -m tcp --dport 8600 -j ACCEPT

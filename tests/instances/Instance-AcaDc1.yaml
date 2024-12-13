@@ -1,0 +1,22 @@
+titre: Instance Seth aca.dc1
+status: PUBLIQUE
+description: |
+   Le but de ce test est vérifier la procédure d'instance du module Seth 
+
+#frequence:
+contrainte: architecture = amd64
+regroupement: 30
+genereImage: aca.dc1-{VERSION}-instance-default-{ARCHITECTURE}.vm
+
+contexts:
+- machine: aca.dc1 
+  methode: daily
+  configuration: default
+
+tests:
+- nom: test-01
+  commandes:
+  - run: ciInstanceDefault
+  - automate: shutdownWithSnapshot
+  - automate: updateTemplate
+  

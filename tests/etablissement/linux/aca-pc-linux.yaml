@@ -1,0 +1,43 @@
+frequence: manuel
+description: |
+   le but de ce test est de démarrer un scribe avec les PC
+
+contrainte: architecture = amd64 and (version >= 2.5.2)  
+regroupement: 99
+
+contexts:
+- machine: aca.pc-mate-2204
+  modele: aca.pc
+  methode: instance
+  configuration: default
+  base: linux-mate-2204
+  passive: oui
+
+- machine: aca.pc-ubuntu-2204
+  modele: aca.pc
+  methode: instance
+  configuration: default
+  base: linux-ubuntu-2204
+  passive: oui
+
+- machine: aca.pc-ubuntu-2004
+  modele: aca.pc
+  methode: instance
+  configuration: default
+  base: linux-ubuntu-2004
+  passive: oui
+
+- machine: aca.pc-linuxmint-20
+  modele: aca.pc
+  methode: instance
+  configuration: default
+  base: linux-linuxmint-20
+  passive: oui
+
+- machine: aca.pc-linuxmint-21
+  modele: aca.pc
+  methode: instance
+  configuration: default
+  base: linux-linuxmint-21.3
+  passive: oui
+  

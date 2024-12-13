@@ -1,0 +1,18 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure Sauvegarde.Sh sur Zephir
+   L'archive générée sera utilisée par sauvegarde-sh-zephir-restauration-from-2XY
+
+frequence: if version >= 2.7.2 then weekly else manuel
+contrainte: architecture = amd64
+regroupement: 70
+
+contexts:
+- machine: aca.zephir
+  methode: instance
+  configuration: AvecConf
+
+tests:
+- nom: zephir-sauvegarde.sh-001
+  commandes:
+  - run: prepare_zephir_sauvegarde.sh

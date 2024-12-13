@@ -1,0 +1,28 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure de sauvegarde Bareos sur Amonecole
+
+frequence: if version in [ 2.5.2 ] then manuel
+contrainte: architecture = amd64 and version > 2.5.2
+regroupement: 70
+
+paths:
+- test/migration
+
+testsOk:
+-  Instance-Etb3AmonEcole
+-  Sauvegarde-Bareos-Sauvegarde-Full-Amonecole
+
+contexts:
+- machine: etb3.amonecole
+  methode: daily
+  configuration: default
+
+tests:
+- commandes:
+  - run: run-bareos-restaure-complete.sh
+    timeout: 2000
+
+  - run: ciMonitor reconfigure
+
+  - run: ciDiagnose

@@ -1,0 +1,37 @@
+status: PRODUCTION
+description: |
+   Le but de ce test est vérifier la procédure de sauvegarde Bareos sur Scribe vers un poste Windows10
+
+#frequence:
+# le bug #25511 n'est ps backporté en 2.6.2
+contrainte: architecture = amd64 and version >= 2.7.0 
+regroupement: W0
+
+testsOk:
+-  Instance-Etb1Scribe
+
+contexts:
+- machine: etb1.scribe 
+  methode: instance
+  configuration: AvecImport
+  passive: oui
+  
+- machine: etb1.pcdmz 
+  modele: etb1.pcdmz
+  configuration: default
+  base: win-10.22H2
+  passive: oui
+
+tests:
+- nom: scribe-bareos-004
+  commandes:
+  - machine: etb1.pcdmz
+    run: prepare_windows_sauvegarde.ps1
+
+  - machine: etb1.scribe
+    run: run-bareos-sauvegarde-complete.sh
+    args:
+    - 3
+    - SMBWIN
+    - etb1.pcdmz
+    

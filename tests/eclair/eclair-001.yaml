@@ -1,0 +1,63 @@
+status: PRODUCTION
+description: |
+   le but de ce test est de vérifier le fonctionnement de ECLAIR en DMZ
+
+contrainte: architecture = amd64
+frequence: manuel
+regroupement: 98
+heriteDe : etb1-000
+testsOk:
+- Instance-Etb1Eclair
+
+contexts:
+# Instance-Etb1Eclair ne genere plus l'image ! ==> daily
+- machine: etb1.eclairdmz
+  methode: daily
+  configuration: default
+
+- machine: etb1.client-pxe
+
+tearDown:
+- run: stop-eclair.sh
+  machine: etb1.eclairdmz
+
+tests:
+- nom: preparation-scribe
+  commandes:
+  # le parametre doit correspondre à la version de l'éclair !
+  - machine: etb1.scribe
+    run: init-scribe-001.sh
+    args:
+    - "{VERSIONMAJEUR}"
+
+  - automate: reboot
+    machine: etb1.scribe
+
+- nom: instance-eclair
+  commandes:
+  - machine: etb1.eclairdmz
+    run: init-eclair-001.sh
+    args:
+    - "scribe.etb1.lan"
+    timeout: 1200
+
+  - automate: reboot
+    machine: etb1.eclairdmz
+
+# bizarrement le tftp tombe en timeout. il faut ouvrir le firewall
+- nom: ouvre-firewall
+  commandes:
+  - run: ouvre.firewall
+    machine: etb1.amon
+
+- nom: demarre-client
+  commandes:
+  - automate: reboot
+    machine: etb1.client-pxe
+
+- nom: test-session-eclair
+  commandes:
+  - run: test-session-001.sh
+    machine: etb1.eclairdmz
+
+

@@ -1,0 +1,41 @@
+status: DEVELOPPEMENT
+description: |
+   le but de ce test est de vérifier le fonctionnement de ECLAIR avec AmonEcoleEclair  
+
+#frequence:
+contrainte: architecture = amd64
+regroupement: 98
+
+contexts:
+- machine: etb4.amonecoleeclair
+  methode: instance
+  configuration: AvecImport
+
+- machine: etb4.client-pxe
+
+
+tests:
+- nom: prepare
+  commandes:
+  # le parametre doit correspondre à la version de l'éclair !
+  - run: init-amonecoleeclair-001.sh
+    args:
+    - "{VERSIONMAJEUR}"
+    machine: etb4.amonecoleeclair
+    
+- nom: demarre-client
+  commandes:
+  - automate: reboot
+    machine: etb4.client-pxe
+
+- nom: test-session-eclair
+  commandes:
+  - run: ssh ltspserver <test-session-001.sh
+    machine: etb4.amonecoleeclair
+
+tearDown:
+- automate: shutdown
+  machine: etb4.client-pxe
+
+- run: stop-eclair.sh
+  machine: etb4.amonecoleeclair

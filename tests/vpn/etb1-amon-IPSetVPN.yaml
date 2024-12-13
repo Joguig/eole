@@ -1,0 +1,78 @@
+status: DEVELOPPEMENT
+description: |
+   le but de ce test est de vérifier la mise en place d'une structure IPset VPN 
+   avec un sphynx, un zephir, et plusieurs Amon/Amonecole 
+frequence: manuel
+contrainte: architecture = amd64 and version > 2.6  
+regroupement: 99
+
+testsOk:
+-  Importation-Zephir
+
+contexts:
+- machine: aca.zephir
+  methode: instance
+  configuration: AvecConf
+  passive: oui
+  base: eole-2.6.0
+
+- machine: etb1.amon 
+  methode: zephir
+  configuration: IPsetVPN
+  base: eole-2.5.2
+  
+- machine: etb2.amon 
+  methode: zephir
+  configuration: IPsetVPN
+  base: eole-2.5.2
+  
+- machine: etb3.amonecole 
+  methode: zephir
+  configuration: IPsetVPN
+  base: eole-2.5.2
+
+- machine: aca.sphynx 
+  methode: zephir
+  configuration: default
+  base: eole-2.6.0
+  
+tests:
+- nom: ipsetvpn-001
+  commandes:
+  - run: inject-base-arv.sh
+    machine: aca.sphynx
+
+  - run: genere-conf-ipsec.sh
+    machine: aca.sphynx
+
+  - run: active_rvp.sh
+    machine: etb1.amon
+    
+  - run: active_rvp.sh
+    machine: etb2.amon
+    
+  - run: active_rvp.sh
+    machine: etb3.amonecole
+
+- nom: test-vpn-etb2
+  commandes:
+  - run: ipsec statusall
+    machine: etb1.amon
+    
+  - run: ping 10.2.1.1
+    machine: etb1.amon
+    
+  - run: dig @localhost exception.etb2.lan
+    machine: etb1.amon
+    
+- nom: test-vpn-etb3
+  commandes:
+  - run: ipsec statusall
+    machine: etb3.amonecole
+    
+  - run: ping 10.2.1.1
+    machine: etb3.amonecole
+    
+  - run: dig @localhost exception.etb2.lan
+    machine: etb3.amonecole
+    
